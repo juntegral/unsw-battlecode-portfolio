@@ -1,0 +1,1277 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>g5 Wave Timeline</title>
+<style>
+:root {
+  color-scheme: light;
+  --font-sans: "Pretendard", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", "Segoe UI", sans-serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --bg: #ebeae6; --surface: #ffffff; --inset: #f6f5f2; --lane: #f6f5f2;
+  --border: #d3d1ca; --border-strong: #a9a79f; --rail: #a9a79f; --track: #e4e3de;
+  --text: #171715; --text-2: #4a4945; --text-3: #62615b;
+  --good: #0a6b0a; --good-bg: #e3f1e3; --bad: #ad2626; --bad-bg: #fbe6e6;
+  --warn: #855600; --warn-bg: #fcefd0; --run: #1b56a0; --run-bg: #e2ecf9; --idle: #4a4945; --idle-bg: #ebeae6;
+  --good-mark: #3f9a3f; --bad-mark: #d05a5a; --warn-mark: #a8740c; --run-mark: #3f7fd0;
+  --focus: #1b56a0;
+  --shadow: 0 1px 2px rgba(23,23,21,.06), 0 2px 8px rgba(23,23,21,.04);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #0f0f0e; --surface: #1c1c1a; --inset: #242422; --lane: #242422;
+    --border: #45443f; --border-strong: #6a6962; --rail: #6a6962; --track: #2e2e2b;
+    --text: #ecebe6; --text-2: #c4c3ba; --text-3: #a3a299;
+    --good: #7cc47c; --good-bg: #1a2e1a; --bad: #ec9a9a; --bad-bg: #3a1f1f;
+    --warn: #e2b560; --warn-bg: #33290f; --run: #94bced; --run-bg: #172538; --idle: #c4c3ba; --idle-bg: #2a2a27;
+    --good-mark: #5fae5f; --bad-mark: #d07474; --warn-mark: #c79a3e; --run-mark: #5d95dc;
+    --focus: #94bced; --shadow: none;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #0f0f0e; --surface: #1c1c1a; --inset: #242422; --lane: #242422;
+  --border: #45443f; --border-strong: #6a6962; --rail: #6a6962; --track: #2e2e2b;
+  --text: #ecebe6; --text-2: #c4c3ba; --text-3: #a3a299;
+  --good: #7cc47c; --good-bg: #1a2e1a; --bad: #ec9a9a; --bad-bg: #3a1f1f;
+  --warn: #e2b560; --warn-bg: #33290f; --run: #94bced; --run-bg: #172538; --idle: #c4c3ba; --idle-bg: #2a2a27;
+  --good-mark: #5fae5f; --bad-mark: #d07474; --warn-mark: #c79a3e; --run-mark: #5d95dc;
+  --focus: #94bced; --shadow: none;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 400 1rem/1.5 var(--font-sans); font-variant-numeric: tabular-nums; }
+a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+a:hover { color: var(--run); }
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; border-radius: 4px; }
+code, .mono { font-family: var(--font-mono); font-size: max(13px, .92em); overflow-wrap: anywhere; }
+code { background: var(--inset); padding: 0 4px; border-radius: 4px; }
+.panel code { background: var(--surface); }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.prose { max-inline-size: 68ch; word-break: keep-all; overflow-wrap: anywhere; line-break: strict; text-wrap: pretty; }
+.clamp { display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; word-break: keep-all; overflow-wrap: anywhere; }
+.c1 { -webkit-line-clamp: 1; } .c2 { -webkit-line-clamp: 2; } .c3 { -webkit-line-clamp: 3; }
+.t2 { color: var(--text-2); } .t3 { color: var(--text-3); }
+.small { font-size: .875rem; line-height: 1.4; } .label { font-size: .8125rem; line-height: 1.4; font-weight: 500; color: var(--text-3); }
+svg.i { width: 12px; height: 12px; flex: none; vertical-align: -1px; }
+
+/* header */
+.top { max-inline-size: 1440px; margin: 0 auto; padding: 16px 16px 12px; display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; justify-content: space-between; min-block-size: 56px; }
+.top h1 { margin: 0; font-size: 1.125rem; line-height: 1.3; font-weight: 600; text-wrap: balance; }
+.top .meta { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; font-size: .8125rem; color: var(--text-3); }
+button, .seg-btn { font: 500 .8125rem/1 var(--font-sans); color: var(--text); background: var(--surface); border: 1px solid var(--border-strong); border-radius: 8px; min-block-size: 32px; padding: 0 12px; cursor: pointer; }
+@media (pointer: coarse) { button, .seg-btn, details > summary { min-block-size: 44px; } }
+#alert { max-inline-size: 1440px; margin: 0 auto 8px; padding: 0 16px; }
+#alert .box { background: var(--warn-bg); border-inline-start: 3px solid var(--warn-mark); border-radius: 8px; padding: 12px 16px; display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; }
+#alert .box b { display: block; font-weight: 600; }
+#alert .box p { margin: 2px 0 0; font-size: .875rem; color: var(--text-2); }
+
+/* board grid */
+#board { max-inline-size: 1440px; margin: 0 auto; padding: 0 16px 24px; display: grid; gap: 16px; grid-template-columns: minmax(0, 1fr);
+  grid-template-areas: "n5" "flow" "hh" "t5" "pol"; }
+#n-g5 { grid-area: n5; } #flow { grid-area: flow; } #hist-head { grid-area: hh; }
+#t-g5 { grid-area: t5; } #policy { grid-area: pol; }
+@media (min-width: 720px) {
+  #board { padding: 0 24px 32px; }
+  .top, #alert { padding-inline: 24px; }
+}
+@media (min-width: 1024px) { #board { column-gap: 24px; } }
+@media (min-width: 1240px) {
+  #board { padding: 0 32px 40px; gap: 24px; }
+  .top, #alert { padding-inline: 32px; }
+}
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; box-shadow: var(--shadow); min-width: 0; }
+
+/* pills, chips, tags */
+.pill { display: inline-flex; align-items: center; gap: 4px; height: 22px; padding: 0 6px; border-radius: 999px; font-size: .8125rem; font-weight: 600; line-height: 1; white-space: nowrap; border: 1px solid transparent; }
+.o-adopt { color: var(--good); background: var(--good-bg); } .o-reject { color: var(--bad); background: var(--bad-bg); }
+.o-incomplete, .o-unknown, .s-stopping, .s-stale-lock { color: var(--warn); background: var(--warn-bg); }
+.o-running, .s-running { color: var(--run); background: var(--run-bg); }
+.s-queued { color: var(--run); background: transparent; border-color: var(--run); }
+.s-stopped, .s-missing, .s-unknown { color: var(--idle); background: var(--idle-bg); }
+.chip { display: inline-flex; align-items: center; gap: 3px; padding: 0 8px; min-height: 22px; border-radius: 6px; font-size: .8125rem; font-weight: 600; white-space: nowrap; }
+.chip.up { color: var(--good); background: var(--good-bg); } .chip.down { color: var(--bad); background: var(--bad-bg); } .chip.flat, .chip.na { color: var(--text-2); background: var(--inset); }
+.chip .nm { font-weight: 500; color: inherit; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.tag { display: inline-block; padding: 0 6px; border: 1px solid var(--border-strong); border-radius: 6px; font-size: .8125rem; font-weight: 500; color: var(--text-2); line-height: 1.5; white-space: nowrap; }
+.dl { font-weight: 600; white-space: nowrap; } .dl.up { color: var(--good); } .dl.down { color: var(--bad); } .dl.flat { color: var(--text-2); } .dl.na { color: var(--text-3); font-weight: 400; }
+.warnline { color: var(--warn); font-size: .8125rem; display: flex; gap: 4px; align-items: center; }
+
+/* now card */
+.now-card { container: now / inline-size; display: flex; flex-direction: column; }
+.now-head { padding: 20px; display: flex; flex-direction: column; gap: 14px; }
+.row-a { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.row-a h2 { margin: 0; font-size: 1.5rem; line-height: 1.2; font-weight: 700; text-wrap: balance; }
+.kv { display: grid; grid-template-columns: auto 1fr 1fr; gap: 12px 24px; margin: 0; }
+.kv dt { font-size: .8125rem; font-weight: 500; color: var(--text-3); }
+.kv dd { margin: 2px 0 0; }
+.kv .big { font-size: 2rem; line-height: 1.1; font-weight: 700; font-variant-numeric: proportional-nums; }
+.kv .mid { font-size: 1.25rem; line-height: 1.2; font-weight: 700; }
+.kv .mid.time { font-weight: 600; display: inline-block; min-inline-size: 7.5em; }
+.kv .sub { display: block; font-size: .8125rem; color: var(--text-3); margin-top: 2px; }
+.growth-line { font-size: .875rem; line-height: 1.5; display: flex; flex-wrap: wrap; gap: 6px 8px; align-items: center; }
+.growth-line .gen { font-weight: 600; }
+.crit-line { font-size: .875rem; line-height: 1.5; color: var(--text-2); display: flex; gap: 8px; align-items: flex-start; justify-content: space-between; }
+.crit-line .clamp { flex: 1; }
+.crit-line .why { white-space: nowrap; font-size: .8125rem; }
+.lbl { font-size: .8125rem; font-weight: 600; color: var(--text-3); margin-inline-end: 4px; }
+.after { font-size: .875rem; color: var(--text-2); }
+.pinned { border-top: 1px solid var(--border); padding: 16px 20px 20px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+.pinned.live { box-shadow: inset 3px 0 0 var(--run-mark); }
+.pin-h { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.pin-h h3 { margin: 0; font-size: .8125rem; font-weight: 600; color: var(--text-3); }
+.elapsed { font-size: 1.125rem; font-weight: 600; min-inline-size: 7.5em; text-align: end; }
+.wave-line { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; }
+.wave-line .wid { font-size: 1.5rem; font-weight: 700; line-height: 1.2; }
+.wave-line .togen { margin-inline-start: auto; font-size: .875rem; font-weight: 600; color: var(--text-2); }
+.stepper { display: flex; gap: 6px; list-style: none; margin: 0; padding: 0; font-size: .8125rem; color: var(--text-3); align-items: center; flex-wrap: wrap; }
+.stepper li[aria-current] { color: var(--run); font-weight: 600; display: inline-flex; align-items: center; gap: 4px; }
+.stepper li[aria-current]::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--run-mark); }
+.status { font-size: .875rem; color: var(--text-2); }
+.bar { height: 6px; background: var(--track); border-radius: 3px; overflow: hidden; }
+.bar > i { display: block; height: 100%; background: var(--run-mark); border-radius: 3px; }
+.hyp .stmt { font-size: 1rem; line-height: 1.45; }
+.msg { border-inline-start: 2px solid var(--border-strong); padding-inline-start: 12px; font-size: .875rem; line-height: 1.55; color: var(--text-2); }
+.callout { background: var(--surface); border: 1px solid var(--border-strong); border-inline-start: 3px solid var(--warn-mark); border-radius: 8px; padding: 8px 12px; font-size: .875rem; }
+details > summary { list-style: none; }
+details > summary::-webkit-details-marker { display: none; }
+.disc > summary::before, .pol > summary::before { content: ""; width: 0; height: 0; border-style: solid; border-width: 5px 0 5px 7px; border-color: transparent transparent transparent currentColor; flex: none; transition: transform .12s; }
+.disc[open] > summary::before, .pol[open] > summary::before { transform: rotate(90deg); }
+.pinned > details > summary, .disc > summary { font-size: .875rem; font-weight: 500; color: var(--text-2); cursor: pointer; min-block-size: 32px; display: flex; align-items: center; gap: 6px; }
+@container now (max-width: 419px) {
+  .now-head { padding: 16px; }
+  .kv { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+  .kv .big { font-size: 1.75rem; } .kv .mid { font-size: 1rem; } .kv .mid.time { min-inline-size: 0; }
+  .elapsed { min-inline-size: 0; }
+  .pinned { padding: 16px; }
+  .msg.clamp { -webkit-line-clamp: 2; }
+}
+
+/* flow band */
+#flow { padding: 16px 20px; container: flow / inline-size; }
+.flow-h { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; margin-bottom: 12px; }
+.flow-h h2, #hist-head h2 { margin: 0; font-size: 1.125rem; font-weight: 600; }
+.seg-ctl { display: inline-flex; border: 1px solid var(--border-strong); border-radius: 8px; overflow: hidden; }
+.seg-ctl button { border: 0; border-radius: 0; min-block-size: 30px; background: transparent; }
+.seg-ctl button + button { border-inline-start: 1px solid var(--border-strong); }
+.seg-ctl button[aria-pressed="true"] { color: var(--run); background: var(--run-bg); font-weight: 600; }
+.legend { display: flex; flex-wrap: wrap; gap: 4px 12px; font-size: .8125rem; color: var(--text-3); }
+.legend span { display: inline-flex; align-items: center; gap: 4px; }
+.sw { width: 14px; height: 10px; border-radius: 3px; display: inline-block; }
+.plot { display: grid; grid-template-columns: 2.5rem minmax(0, 1fr); row-gap: 8px; }
+.axis { position: relative; height: 20px; font-size: .8125rem; color: var(--text-3); }
+.axis span { position: absolute; transform: translateX(-50%); white-space: nowrap; top: 0; }
+.lane-l { font-size: .875rem; font-weight: 600; align-self: center; }
+.lane { position: relative; height: 28px; background: var(--lane); border: 1px solid var(--border); border-radius: 4px; }
+.seg { position: absolute; top: 2px; bottom: 2px; min-width: 3px; border-radius: 4px; border: 1px solid; display: flex; align-items: center; gap: 3px; padding: 0 4px; font-size: .8125rem; font-weight: 600; overflow: hidden; white-space: nowrap; text-decoration: none; }
+.seg.adopt { background: var(--good-bg); border-color: var(--good-mark); color: var(--good); }
+.seg.reject { background: var(--bad-bg); border-color: var(--bad-mark); color: var(--bad); }
+.seg.incomplete { background: var(--warn-bg); border-color: var(--warn-mark); border-style: dashed; color: var(--warn); }
+.seg.unknown { background: var(--idle-bg); border-color: var(--warn-mark); border-style: dotted; color: var(--warn); }
+.seg.running { background: var(--run-bg); border-color: var(--run-mark); border-right-style: none; color: var(--run); border-top-right-radius: 0; border-bottom-right-radius: 0; }
+.seg .d { font-weight: 500; }
+.seg.lbl-none > *, .seg.lbl-short .d { display: none; }
+.gap-l { position: absolute; top: 0; bottom: 0; display: flex; align-items: center; justify-content: center; font-size: .8125rem; color: var(--text-3); overflow: hidden; white-space: nowrap; }
+.nowline { position: absolute; top: -22px; bottom: 0; right: 0; border-right: 2px solid var(--run-mark); pointer-events: none; }
+.nowline span { position: absolute; right: 4px; top: 0; font-size: .8125rem; color: var(--run); white-space: nowrap; }
+
+/* history */
+#hist-head { display: flex; flex-direction: column; gap: 6px; }
+#hist-head .hh { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; justify-content: space-between; }
+#hist-head .key { font-size: .8125rem; color: var(--text-3); line-height: 1.5; word-break: keep-all; }
+.tl { container: tl / inline-size; overflow: hidden; }
+.tl-h { padding: 16px 16px 8px; display: flex; flex-direction: column; gap: 4px; }
+.tl-h h2 { margin: 0; font-size: 1rem; font-weight: 600; }
+.tl-h h2 .cnt { font-weight: 400; font-size: .875rem; color: var(--text-2); margin-inline-start: 6px; }
+.colhead { display: none; padding: 8px 16px; border-bottom: 1px solid var(--border); font-size: .8125rem; font-weight: 500; color: var(--text-3); }
+.entry { border-top: 1px solid var(--border); position: relative; }
+.entries > .entry:first-child { border-top: 0; }
+.rs, .colhead-g { display: grid; column-gap: 8px; row-gap: 4px; align-items: center;
+  grid-template-columns: 20px auto minmax(0, 1fr) auto 16px;
+  grid-template-areas: "rail out idgen dur chev" "rail txt txt txt txt" "rail chips chips meta meta" "rail crit crit crit crit"; }
+.rs { padding: 12px 16px; cursor: pointer; list-style: none; color: inherit; text-decoration: none; }
+.rs::-webkit-details-marker { display: none; }
+details.row > summary { list-style: none; }
+details.row[open] > .rs, .rs:hover { background: var(--inset); }
+.c-rail { grid-area: rail; align-self: stretch; position: relative; }
+.c-rail::before { content: ""; position: absolute; left: 9px; top: -12px; bottom: -12px; border-left: 2px solid var(--rail); }
+.entries > .entry:first-child .c-rail::before { top: 50%; }
+.c-rail svg { position: relative; display: block; margin-top: 4px; width: 20px; height: 20px; }
+.c-id { grid-area: id; display: none; font-size: .875rem; font-weight: 600; color: var(--text-2); }
+.c-out { grid-area: out; }
+.c-gen { grid-area: gen; display: none; font-size: .875rem; }
+.c-idgen { grid-area: idgen; font-size: .875rem; color: var(--text-2); min-width: 0; }
+.c-win { grid-area: win; } .c-g { grid-area: g; } .c-surv { grid-area: surv; }
+.c-win, .c-g, .c-surv { display: none; font-size: .875rem; text-align: end; }
+.c-dur { grid-area: dur; font-size: .875rem; font-weight: 600; text-align: end; white-space: nowrap; }
+.c-chev { grid-area: chev; color: var(--text-3); }
+.c-chev svg { width: 16px; height: 16px; transition: transform .12s; display: block; }
+details[open] > .rs .c-chev svg { transform: rotate(90deg); }
+.c-txt { grid-area: txt; font-size: 1rem; line-height: 1.45; color: var(--text-2); min-width: 0; }
+.c-txt .lead { font-weight: 600; color: var(--text); }
+.c-chips { grid-area: chips; }
+.c-meta { grid-area: meta; font-size: .8125rem; color: var(--text-3); text-align: end; display: flex; flex-direction: column; align-items: flex-end; gap: 2px; align-self: start; }
+.c-crit { grid-area: crit; font-size: .875rem; line-height: 1.45; color: var(--text-2); min-width: 0; }
+.c-crit b { color: var(--text-2); }
+.gen-r { font-weight: 600; } .gen-r.new { color: var(--good); } .gen-arrow { color: var(--text-3); }
+.entry.quiet .c-txt { color: var(--text-2); }
+.gap { display: grid; grid-template-columns: 20px 1fr; column-gap: 8px; padding: 0 16px; min-block-size: 28px; align-items: center; border-top: 1px solid var(--border); font-size: .8125rem; color: var(--text-3); }
+.gap .rl { align-self: stretch; background: repeating-linear-gradient(to bottom, var(--rail) 0 4px, transparent 4px 8px) no-repeat 9px 0 / 2px 100%; }
+.tl-f { border-top: 1px solid var(--border); padding: 12px 16px; }
+.log { margin: 8px 0 0; padding: 0; list-style: none; font-family: var(--font-mono); font-size: 13px; line-height: 1.5; color: var(--text-2); white-space: pre-wrap; overflow-wrap: anywhere; }
+.log .m-good { color: var(--good); } .log .m-bad { color: var(--bad); } .log .m-warn { color: var(--warn); }
+@container tl (min-width: 520px) {
+  .rs, .colhead-g { grid-template-columns: 20px 3rem 4.75rem 4.5rem 3rem 3.5rem 3rem minmax(0, 1fr) 6rem 16px;
+    grid-template-areas: "rail id out gen win g surv . dur chev" "rail txt txt txt txt txt txt txt meta meta" "rail crit crit crit crit crit crit crit meta meta"; }
+  .colhead { display: block; }
+  .c-id, .c-gen, .c-win, .c-g, .c-surv { display: block; }
+  .c-idgen, .c-chips { display: none; }
+  .c-meta .narrow-only { display: none; }
+}
+@container tl (max-width: 519px) { .c-meta .wide-only { display: none; } .c-crit.clamp { -webkit-line-clamp: 2; } }
+
+/* panel */
+.panel { container: panel / inline-size; background: var(--inset); border-top: 1px solid var(--border); padding: 16px 20px 20px 44px; display: flex; flex-direction: column; gap: 20px; }
+.panel section > h4 { margin: 0 0 8px; font-size: .8125rem; font-weight: 600; color: var(--text-3); }
+.panel section > h5 { margin: 12px 0 6px; font-size: .875rem; font-weight: 600; }
+.panel .prose, .panel p { font-size: 1rem; line-height: 1.65; margin: 0; }
+.panel .cap { font-size: .8125rem; color: var(--text-3); margin: 6px 0 0; line-height: 1.5; }
+.gates { display: grid; grid-template-columns: 1.25rem 11rem minmax(0, 1fr); gap: 0 8px; font-size: .875rem; color: var(--text-2); }
+.gates > div { padding: 6px 0; border-bottom: 1px solid var(--border); display: contents; }
+.gates .gi, .gates .gl, .gates .gv { padding: 6px 0; border-bottom: 1px solid var(--border); }
+.gates .gl { font-weight: 500; }
+.gi svg { width: 14px; height: 14px; }
+.g-met { color: var(--good); } .g-unmet { color: var(--bad); } .g-diff { color: var(--warn); } .g-prog { color: var(--run); } .g-na { color: var(--text-3); }
+.crit-dl { margin: 0; display: flex; flex-direction: column; gap: 10px; }
+.crit-dl dt { font-size: .8125rem; font-weight: 600; color: var(--text-3); }
+.crit-dl dd { margin: 2px 0 0; }
+.ev { margin-top: 6px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font-size: .8125rem; color: var(--text-3); }
+table.sum, table.bd, table.md { width: 100%; border-collapse: collapse; font-size: .875rem; line-height: 1.45; }
+table.sum th, table.sum td, table.bd th, table.bd td, table.md th, table.md td { padding: 8px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+table.sum th, table.bd th { font-size: .8125rem; font-weight: 500; color: var(--text-3); text-align: end; }
+table.sum th:first-child, table.sum td:first-child, table.bd th:first-child, table.bd td:first-child { text-align: start; }
+table.sum td, table.bd td { text-align: end; }
+table.bd td .d2 { display: block; font-size: .8125rem; color: var(--text-3); font-weight: 400; }
+table.bd td.links { text-align: start; }
+table.md th, table.md td { text-align: start; white-space: normal; word-break: keep-all; overflow-wrap: anywhere; }
+table.md th { font-weight: 600; color: var(--text-2); font-size: .8125rem; }
+.gbar { display: none; position: relative; width: 56px; height: 8px; background: var(--track); border-radius: 4px; margin: 4px 0 0 auto; }
+.gbar i { position: absolute; top: 0; bottom: 0; border-radius: 4px; }
+.gbar::after { content: ""; position: absolute; left: 50%; top: -2px; bottom: -2px; border-left: 1px solid var(--border-strong); }
+.gbar i.up { background: var(--good-mark); } .gbar i.down { background: var(--bad-mark); }
+.facts { margin: 0; display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 4px 16px; font-size: .875rem; }
+.facts dt { color: var(--text-3); font-size: .8125rem; }
+.facts dd { margin: 0; overflow-wrap: anywhere; }
+.recent-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+.recent-list li { padding: 12px 0; border-bottom: 1px solid var(--border); color: var(--text-2); }
+.recent-list li:first-child { color: var(--text); padding-top: 0; }
+.md-notes h5 { font-size: .9375rem; font-weight: 600; margin: 16px 0 8px; } .md-notes h6 { font-size: .875rem; font-weight: 600; margin: 12px 0 6px; }
+.md-notes p, .md-notes li { font-size: 1rem; line-height: 1.65; }
+.md-notes ul { padding-inline-start: 20px; margin: 6px 0; }
+.md-notes .ready { background: var(--surface); border-inline-start: 3px solid var(--border-strong); padding: 8px 12px; border-radius: 6px; margin: 8px 0; }
+.md-notes pre { font-family: var(--font-mono); font-size: 13px; white-space: pre-wrap; overflow-wrap: anywhere; background: var(--surface); padding: 8px 12px; border-radius: 6px; }
+.panel details > summary { cursor: pointer; font-size: .875rem; font-weight: 500; color: var(--text-2); min-block-size: 32px; display: flex; align-items: center; gap: 6px; }
+@container panel (min-width: 560px) { .gbar { display: block; } }
+@container panel (max-width: 559px) {
+  .gates { grid-template-columns: 1.25rem minmax(0, 1fr); }
+  .gates .gv { grid-column: 2; padding-top: 0; }
+  .gates .gl { border-bottom: 0; padding-bottom: 2px; }
+  .gates .gi { border-bottom: 0; }
+  table.md thead, table.bd thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  table.md tr, table.bd tr { display: block; padding: 8px 0; border-bottom: 1px solid var(--border); }
+  table.md td, table.bd td { display: grid; grid-template-columns: minmax(4.5em, 30%) 1fr; gap: 8px; border: 0; padding: 2px 0; text-align: start; }
+  table.md td > div, table.bd td > div { min-width: 0; }
+  table.md td::before, table.bd td::before { content: attr(data-label); font-size: .8125rem; font-weight: 500; color: var(--text-3); }
+}
+@media (max-width: 719px) { .panel { padding: 16px; } }
+
+/* policy & footer */
+#policy { padding: 12px 20px; }
+#policy > details > summary { font-size: .875rem; font-weight: 500; cursor: pointer; min-block-size: 32px; display: flex; align-items: center; gap: 8px; }
+#policy ol { margin: 8px 0; padding-inline-start: 22px; font-size: 1rem; line-height: 1.65; }
+footer { max-inline-size: 1440px; margin: 0 auto; padding: 0 16px 32px; font-size: .8125rem; color: var(--text-3); }
+footer dl { display: grid; grid-template-columns: max-content 1fr; gap: 2px 12px; margin: 0 0 8px; }
+footer dt { font-weight: 600; } footer dd { margin: 0; }
+@media (min-width: 720px) { footer { padding: 0 24px 32px; } }
+.skel { min-block-size: 360px; background: var(--inset); border-radius: 12px; }
+.flash { animation: flash .8s ease-out; }
+@keyframes flash { from { background: var(--run-bg); } to { background: transparent; } }
+@media (prefers-reduced-motion: reduce) { .flash { animation: none; } .c-chev svg { transition: none; } }
+[id] { scroll-margin-top: 16px; }
+</style>
+</head>
+<body>
+<header class="top">
+  <h1>g5 웨이브 타임라인</h1>
+  <div class="meta"><span id="fresh">불러오는 중…</span><span id="disk"></span><button id="refresh" type="button">새로고침</button></div>
+</header>
+<div id="alert" role="alert"></div>
+<main id="board"><div class="skel"></div></main>
+<footer id="foot"></footer>
+<p id="announce" class="sr-only" aria-live="polite"></p>
+<script>
+'use strict';
+// ---- constants (policy summarised from lineages/LOOP.md, GROWTH.md as of 2026-09-28) ----
+var POLICY = { seeds: 2, perVersion: 160, maps: 10, opponents: 4, sides: ['A', 'B'] };
+var MAPS = [['autarky'], ['default'], ['devil'], ['portals'], ['prisoners_dilemma', 'prisoners'], ['queen_of_spades', 'queen'],
+  ['schooltime'], ['slithery_fight', 'slithery'], ['trauma'], ['trophy']];
+var OPPS = [['archetype_hunter', 'hunter', '헌터'], ['archetype_swarm', 'swarm', '스웜'], ['h2'], ['replay_rules_v8', 'v8']];
+var METRICS = [['승', /(^|[^상])승(?!격)/], ['G', /(^|[^A-Za-z])G(?![A-Za-z])/], ['생존', /생존|사망/], ['전멸', /전멸/]];
+var REASON_KO = { 'no successful explicit finish; nothing exported': '명시적 완료 없이 끝남 · 내보낸 봇 없음' };
+var OUT_LABEL = { adopt: '채택', reject: '기각', incomplete: '중단', unknown: '끊김', running: '진행 중' };
+var STATE_LABEL = { running: '실행 중', queued: '평가 대기', stopping: '이번 웨이브 후 정지', stopped: '정지', 'stale-lock': '잠금만 남음 · 러너 없음', missing: '폴더 없음', unknown: '알 수 없음' };
+
+// ---- render primitives: every value goes through esc() unless wrapped by raw() ----
+var ESC = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' };
+function Raw(s) { this.s = s; }
+function raw(s) { return new Raw(String(s)); }
+function esc(v) { return String(v == null ? '' : v).replace(/[&<>"']/g, function (c) { return ESC[c]; }); }
+function part(v) { return v == null || v === false ? '' : Array.isArray(v) ? v.map(part).join('') : v instanceof Raw ? v.s : esc(v); }
+function h(tpl) { var a = arguments, i = 0; return raw(tpl.replace(/\{\}/g, function () { return part(a[++i]); })); }
+function num(v) { return v == null || v === '' ? null : (Number.isFinite(+v) ? +v : null); }
+function pct(x) { return Math.min(100, Math.max(0, +x || 0)).toFixed(2); }
+function hasKo(s) { return /[가-힣]/.test(String(s || '')); }
+function inline(s) {
+  return raw(esc(s).replace(/\x60([^\x60]+)\x60/g, '<code>$1</code>').replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>'));
+}
+function txt(s) { return hasKo(s) ? inline(s) : h('<span lang="en">{}</span>', inline(s)); }
+
+var SVG = {
+  check: '<svg class="i" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 6.5l2.5 2.5L10 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+  x: '<svg class="i" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 3l6 6M9 3l-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>',
+  square: '<svg class="i" viewBox="0 0 12 12" aria-hidden="true"><rect x="3" y="3" width="6" height="6" rx="1" fill="currentColor"/></svg>',
+  dot: '<svg class="i" viewBox="0 0 12 12" aria-hidden="true"><circle cx="6" cy="6" r="3.2" fill="currentColor"/></svg>',
+  help: '<svg class="i" viewBox="0 0 12 12" aria-hidden="true"><circle cx="6" cy="6" r="4.6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-dasharray="2 1.6"/></svg>',
+  clock: '<svg class="i" viewBox="0 0 12 12" aria-hidden="true"><circle cx="6" cy="6" r="4.6" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M6 3.5V6l1.8 1.2" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>',
+  pause: '<svg class="i" viewBox="0 0 12 12" aria-hidden="true"><path d="M4.2 3v6M7.8 3v6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>',
+  alert: '<svg class="i" viewBox="0 0 12 12" aria-hidden="true"><path d="M6 1.5l5 9H1z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/><path d="M6 5v2.4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><circle cx="6" cy="8.9" r=".7" fill="currentColor"/></svg>',
+  dash: '<svg class="i" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 6h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>',
+  up: '<svg class="i" viewBox="0 0 10 10" aria-hidden="true" style="width:10px;height:10px"><path d="M5 1.5l4 7H1z" fill="currentColor"/></svg>',
+  down: '<svg class="i" viewBox="0 0 10 10" aria-hidden="true" style="width:10px;height:10px"><path d="M5 8.5l4-7H1z" fill="currentColor"/></svg>',
+  chev: '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3.5l4.5 4.5L6 12.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+};
+var OUT_ICON = { adopt: SVG.check, reject: SVG.x, incomplete: SVG.square, unknown: SVG.help, running: SVG.dot };
+var STATE_ICON = { running: SVG.dot, queued: SVG.clock, stopping: SVG.pause, stopped: SVG.square, 'stale-lock': SVG.alert };
+var RAIL = {
+  adopt: '<svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="6" fill="var(--good-mark)" stroke="var(--surface)" stroke-width="2"/></svg>',
+  reject: '<svg viewBox="0 0 20 20" aria-hidden="true"><rect x="6" y="6" width="8" height="8" transform="rotate(45 10 10)" fill="var(--bad-mark)" stroke="var(--surface)" stroke-width="1.5"/></svg>',
+  incomplete: '<svg viewBox="0 0 20 20" aria-hidden="true"><rect x="5.5" y="5.5" width="9" height="9" rx="1" fill="var(--surface)" stroke="var(--warn-mark)" stroke-width="2"/></svg>',
+  unknown: '<svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="5" fill="var(--surface)" stroke="var(--warn-mark)" stroke-width="2" stroke-dasharray="2.5 2"/></svg>',
+  running: '<svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="6" fill="var(--surface)" stroke="var(--run-mark)" stroke-width="2"/><circle cx="10" cy="10" r="2.5" fill="var(--run-mark)"/></svg>'
+};
+
+// ---- formats ----
+function dur(ms) {
+  ms = num(ms); if (ms == null || ms < 0) return '–';
+  var s = Math.floor(ms / 1000), m = Math.floor(s / 60), hh = Math.floor(m / 60);
+  if (s < 60) return s + '초';
+  if (m < 60) return m + '분';
+  return m % 60 ? hh + '시간 ' + (m % 60) + '분' : hh + '시간';
+}
+function pad(n) { return (n < 10 ? '0' : '') + n; }
+function hms(d) { return pad(d.getHours()) + ':' + pad(d.getMinutes()) + ':' + pad(d.getSeconds()); }
+function hm(d) { return pad(d.getHours()) + ':' + pad(d.getMinutes()); }
+function dayKey(d) { return d.getFullYear() + '-' + d.getMonth() + '-' + d.getDate(); }
+function clock(iso) {
+  if (!iso) return '–';
+  var d = new Date(iso), now = new Date(), y = new Date(now.getTime() - 864e5);
+  if (isNaN(d)) return '–';
+  if (dayKey(d) === dayKey(now)) return hm(d);
+  if (dayKey(d) === dayKey(y)) return '어제 ' + hm(d);
+  return (d.getMonth() + 1) + '/' + d.getDate() + ' ' + hm(d);
+}
+function stamp(iso) { var d = new Date(iso); return isNaN(d) ? '–' : (d.getMonth() + 1) + '/' + d.getDate() + ' ' + hm(d); }
+function range(a, b) {
+  if (!a) return '';
+  if (!b) return clock(a) + ' 시작';
+  var da = new Date(a), db = new Date(b);
+  return clock(a) + '–' + (dayKey(da) === dayKey(db) ? hm(db) : clock(b));
+}
+function ago(iso) {
+  if (!iso) return '–';
+  var s = Math.max(0, (Date.now() - new Date(iso)) / 1000);
+  return s < 60 ? '방금' : s < 3600 ? Math.floor(s / 60) + '분 전' : s < 86400 ? Math.floor(s / 3600) + '시간 전' : Math.floor(s / 86400) + '일 전';
+}
+function sign(d, digits) {
+  var r = digits ? Math.round(d * Math.pow(10, digits)) / Math.pow(10, digits) : Math.round(d);
+  if (r === 0) return { cls: 'flat', text: digits ? '±0.' + '0'.repeat(digits) : '±0', word: '변화 없음' };
+  var t = Math.abs(r).toFixed(digits || 0);
+  return r > 0 ? { cls: 'up', text: '+' + t, word: '상승' } : { cls: 'down', text: '−' + t, word: '하락' };
+}
+// Delta cell: text colour only. lowerBetter inverts colour for wipeouts.
+function deltaCell(d, digits, name, lowerBetter) {
+  if (d == null || !isFinite(d)) return h('<span class="dl na">–<span class="sr-only">{} 기록 없음</span></span>', name);
+  var s = sign(d, digits), cls = lowerBetter && s.cls !== 'flat' ? (s.cls === 'up' ? 'down' : 'up') : s.cls;
+  var icon = s.cls === 'up' ? SVG.up : s.cls === 'down' ? SVG.down : '';
+  return h('<span class="dl {}">{}{}<span class="sr-only"> {} {}</span></span>', cls, raw(icon), s.text, name, s.word);
+}
+function chip(label, d, digits, lowerBetter) {
+  if (d == null || !isFinite(d)) return h('<span class="chip na">{} –</span>', label);
+  var s = sign(d, digits), cls = lowerBetter && s.cls !== 'flat' ? (s.cls === 'up' ? 'down' : 'up') : s.cls;
+  var icon = s.cls === 'up' ? SVG.up : s.cls === 'down' ? SVG.down : '';
+  return h('<span class="chip {}">{}{} {}<span class="sr-only"> {}</span></span>', cls, raw(icon), label, s.text, s.word);
+}
+function pill(o) { return h('<span class="pill o-{}">{}{}</span>', o, raw(OUT_ICON[o] || ''), OUT_LABEL[o] || o); }
+
+// ---- data helpers ----
+function short(id) { return id ? 'w' + Number(String(id).slice(1)) : '–'; }
+function chron(l) { return (l.waves || []).slice().sort(function (a, b) { return a.id < b.id ? -1 : a.id > b.id ? 1 : 0; }); }
+function resultCheck(w) { var c = (w.checks || []).filter(function (c) { return c.result && c.result.baseline; }); return c.length ? c[c.length - 1] : null; }
+function liveCheck(w) { var c = w.checks || []; return c.length ? c[c.length - 1] : null; }
+function metrics(check) {
+  if (!check || !check.result || !check.result.baseline) return null;
+  var b = check.result.baseline, c = check.result.candidate;
+  function m(bv, cv) { bv = num(bv); cv = num(cv); return { b: bv, c: cv, d: bv == null || cv == null ? null : cv - bv }; }
+  return { n: num(c.n), win: m(b.wins, c.wins), surv: m(b.survived, c.survived), g: m(b.meanG, c.meanG), wipe: m(num(b.n) - num(b.survived), num(c.n) - num(c.survived)) };
+}
+function phase(w) {
+  var lc = liveCheck(w);
+  if (!lc) return 'explore';
+  var done = (num(lc.baselineDone) || 0) + (num(lc.candidateDone) || 0), exp = num(lc.expected) || 0;
+  return lc.status || (exp && done >= 2 * exp) ? 'judge' : 'confirm';
+}
+function evalText(l) {
+  var jobs = l.jobs || [], run = jobs.filter(function (j) { return j.status === 'running'; }).length, q = jobs.filter(function (j) { return j.status === 'queued'; }).length;
+  return run ? '평가 경기 ' + run + '건 실행 중' : q ? '평가 경기 ' + q + '건 대기' : '평가 경기 없음';
+}
+function lead(text) {
+  text = String(text || ''); var m = text.match(/^(.{2,28}?)(?=[:(（])/);
+  return m ? { lead: m[1], rest: text.slice(m[1].length) } : { lead: null, rest: text };
+}
+function trimRef(s) { var m = String(s || '').match(/^([\s\S]*?)\s*근거\s+(\S+)\s*$/); return m ? [m[1], m[2]] : [String(s || ''), null]; }
+function hypStatementName(stmt) {
+  if (!stmt) return null;
+  var s = String(stmt).replace(/^c\d+[a-z]?(\([^)]*\))?\s*:\s*/, '');
+  var named = String(stmt).match(/^c\d+[a-z]?\(([^)]{1,30})\)/);
+  if (named) return named[1];
+  return s.split(/[.:]/)[0].trim() || null;
+}
+function triedName(w) {
+  var r = w.reason || '', m = r.match(/(c\d+[a-z]?)\(([^)]+)\)/) || r.match(/(c\d+[a-z]?)\s+([^:;]+):/);
+  if (m) return m[2].trim();
+  var hy = w.growth && w.growth.hypothesis;
+  return hy ? hypStatementName(hy.statement) : null;
+}
+function lesson(j) { var m = String(j || '').match(/교훈\s*:\s*([^—]+)/); return m ? m[1].trim() : null; }
+function sentences(s) { return (String(s || '').match(/[^.。!?]+[.。!?]?/g) || []).map(function (x) { return x.trim(); }).filter(Boolean); }
+var RULE = /(기각|채택|유지)한다|(기각|채택)할 것|(하면|이면|경우)\s*.{0,20}(기각|채택|유지)/;
+function presetRules(nom) { return sentences(nom).filter(function (x) { return RULE.test(x); }); }
+function nominationRest(nom) { return sentences(nom).filter(function (x) { return !RULE.test(x); }).join(' '); }
+function exitText(code) {
+  if (code == null) return '–';
+  return code === 0 ? '정상 종료' : code === 143 ? '강제 종료 (SIGTERM 143)' : code === 137 ? '강제 종료 (SIGKILL 137)' : '종료 코드 ' + code;
+}
+function base(id) { return id ? String(id).replace(/[a-z]+$/, '') : null; }
+function idsOf(w) { var g = w.growth || {}, s = []; if (g.hypothesis && g.hypothesis.id) s.push(g.hypothesis.id); if (g.candidate) s.push(g.candidate); return s; }
+function sameHyp(a, b) {
+  var ga = idsOf(a); if (!ga.length) return false;
+  var gb = b.growth || {}, tb = [];
+  if (gb.hypothesis && gb.hypothesis.id) tb.push(gb.hypothesis.id);
+  if (gb.candidate) { tb.push(gb.candidate); tb.push(base(gb.candidate)); }
+  return ga.some(function (x) { return tb.indexOf(x) >= 0 || tb.indexOf(base(x)) >= 0; });
+}
+function neighbours(w, l) { var c = chron(l), i = c.findIndex(function (x) { return x.id === w.id; }); return { list: c, i: i }; }
+function prevW(w, l) { var n = neighbours(w, l); return n.i > 0 ? n.list[n.i - 1] : null; }
+function nextW(w, l) { var n = neighbours(w, l); return n.i >= 0 && n.i < n.list.length - 1 ? n.list[n.i + 1] : null; }
+function priorSame(w, l) { var n = neighbours(w, l); for (var i = n.i - 1; i >= 0; i--) if (sameHyp(n.list[i], w)) return n.list[i]; return null; }
+function laterSame(w, l) { var n = neighbours(w, l); for (var i = n.i + 1; i < n.list.length; i++) if (sameHyp(w, n.list[i])) return n.list[i]; return null; }
+function inherit(w, l, key) {
+  var own = w.growth && w.growth[key];
+  if (own) return { text: own, from: null };
+  var p = priorSame(w, l);
+  return p && p.growth && p.growth[key] ? { text: p.growth[key], from: p } : null;
+}
+function logTime(s) { return new Date(String(s).slice(0, 19).replace(' ', 'T')); }
+function stopAt(l, from, to) {
+  if (!from) return false; var a = new Date(from).getTime() - 120000, b = to ? new Date(to).getTime() : a + 240000;
+  return (l.log || []).some(function (s) { var t = logTime(s).getTime(); return /STOP:/.test(s) && t >= a && t <= b; });
+}
+// Gap between two waves: an aborted first run of the next wave, a loop stop, or plain rest.
+function gapInfo(l, p, w) {
+  var from = new Date(p.ended).getTime(), to = new Date(w.started).getTime(), g = to - from, ts = null, te = null;
+  (l.log || []).forEach(function (s) {
+    var t = logTime(s).getTime();
+    if (t < from - 5000 || t > to - 60000) return;
+    if (s.indexOf('wave ' + w.id + ' start') >= 0 && ts == null) ts = t;
+    if (s.indexOf('wave ' + w.id + ' exit') >= 0 && ts != null) te = t;
+  });
+  var span = hm(new Date(from)) + '–' + hm(new Date(to));
+  if (ts != null && te != null) return { ms: g, short: '첫 실행 중단', text: '첫 실행 중단 ' + dur(te - ts) + ' (' + hm(new Date(ts)) + '–' + hm(new Date(te)) + ') · 재시작' };
+  if (stopAt(l, p.ended, w.started)) return { ms: g, short: '정지', text: '루프 정지 ' + dur(g) + ' (' + span + ')' };
+  return { ms: g, short: '쉼', text: '쉼 ' + dur(g) };
+}
+function exportedIn(l, id) {
+  var log = l.log || [], a = -1, b = -1;
+  log.forEach(function (s, i) { if (s.indexOf('wave ' + id + ' start') >= 0) a = i; if (s.indexOf('wave ' + id + ' exit') >= 0) b = i; });
+  if (a < 0 || b < 0) return 'unknown';
+  for (var i = a; i <= b; i++) if (/exported/.test(log[i])) return 'yes';
+  return 'none';
+}
+function counts(l) {
+  var c = { adopt: 0, reject: 0, incomplete: 0, unknown: 0, running: 0 };
+  (l.waves || []).forEach(function (w) { if (c[w.outcome] != null) c[w.outcome]++; });
+  c.finished = c.adopt + c.reject + c.incomplete + c.unknown; return c;
+}
+var LABELS = /(좋아질 상황|나빠질 가능성|틀렸다면)\s*:/;
+function fieldOf(text, label) {
+  var m = String(text).match(new RegExp(label + '\\s*:\\s*([\\s\\S]*?)(?=(?:좋아질 상황|나빠질 가능성|틀렸다면)\\s*:|$)'));
+  return m ? m[1].replace(/\s+/g, ' ').replace(/^[-\s]+|[\s.-]+$/g, '').trim() : null;
+}
+function latestHyp(w) {
+  var lines = (w.notes || []).join('\n').split('\n'), at = -1, re = /^\s*(?:[-*]\s*)?가설\s+(c\d+[a-z]?)(?:\(([^)]{1,30})\))?\s*:\s*(.*)$/;
+  for (var i = 0; i < lines.length; i++) if (!/^\s*#/.test(lines[i]) && re.test(lines[i])) at = i;
+  if (at < 0) return null;
+  var m = lines[at].match(re), stmt = [m[3]], bullets = [], inl = LABELS.test(lines[at]);
+  for (var j = at + 1; !inl && j < lines.length; j++) {
+    var ln = lines[j];
+    if (/^\s*[-*]\s*/.test(ln) && LABELS.test(ln.slice(0, 40))) bullets.push(ln.replace(/^\s*[-*]\s*/, ''));
+    else if (!bullets.length && /^\s*[-*]\s*가설\s+c\d/.test(ln)) continue;
+    else if (!bullets.length && ln.trim() && !/^\s*[-*#|]/.test(ln) && !/^\s*c\d+[a-z]?\b/.test(ln)) stmt.push(ln.trim());
+    else break;
+  }
+  var all = [stmt.join(' ')].concat(bullets).join('\n'), variants = [], vre = /(?:^|[\s.;(])(c\d+[a-z]?)\s*:/g, vm;
+  while ((vm = vre.exec(m[3]))) if (vm[1] !== m[1] && variants.indexOf(vm[1]) < 0) variants.push(vm[1]);
+  return { id: m[1], name: m[2] || null, variants: variants, statement: stmt.join(' ').split(LABELS)[0].replace(/\s*[-—]\s*$/, '').trim(),
+    better: fieldOf(all, '좋아질 상황'), worse: fieldOf(all, '나빠질 가능성'), falsify: fieldOf(all, '틀렸다면'), relation: 'latest' };
+}
+// Drop the leading "cN(name):" that NOTES repeats inside the statement; keep the name separately.
+function normHyp(hy) {
+  if (!hy) return null;
+  var m = String(hy.statement || '').match(/^(c\d+[a-z]?)(?:\(([^)]{1,30})\))?\s*:\s*/);
+  return Object.assign({}, hy, { name: hy.name || (m && m[2]) || null, statement: m ? hy.statement.slice(m[0].length) : hy.statement });
+}
+// Name and inline variants shown after a hypothesis id, e.g. " · 모으기" or " (+c15 변형)".
+function hyExtra(hy) { return (hy.name ? ' · ' + hy.name : '') + (hy.variants && hy.variants.length ? ' (+' + hy.variants.join(', ') + ' 변형)' : ''); }
+function hypFor(w) {
+  var g = w.growth || {}, hy = g.hypothesis;
+  if (hy && (hy.relation === 'exact' || hy.relation === 'derived')) return normHyp(hy);
+  if (['running', 'incomplete', 'unknown'].indexOf(w.outcome) >= 0) { var lh = latestHyp(w); if (lh) return normHyp(lh); }
+  return normHyp(hy);
+}
+function relTag(hy, w) {
+  var cand = w.growth && w.growth.candidate;
+  if (!hy) return null;
+  if (hy.relation === 'exact') return { tag: '후보 가설', note: '후보 ' + hy.id + '의 가설' };
+  if (hy.relation === 'derived') return { tag: '파생', note: '후보 ' + (cand || '?') + '는 가설 ' + hy.id + '에서 파생 · 부모 가설의 기준을 표시' };
+  if (hy.relation === 'latest') return { tag: '이 웨이브 최근 가설', note: '이 웨이브 NOTES에 마지막으로 적힌 가설 · 아직 확인 후보 아님' };
+  if (cand && cand !== hy.id) return { tag: '웨이브 기록 · 첫 가설', note: '이 웨이브 NOTES의 첫 가설 · 후보 ' + cand + '과의 연결은 기록에서 찾지 못함 · 후보의 실제 기준과 다를 수 있음' };
+  return { tag: '웨이브 기록 · 첫 가설', note: '이 웨이브 NOTES의 첫 가설' };
+}
+// ---- evidence matching ----
+function aliasRe(a) { return /[가-힣]/.test(a) ? new RegExp(a) : new RegExp('(^|[^A-Za-z0-9_])' + a + '(?![A-Za-z0-9_])', 'i'); }
+function mentions(text, result) {
+  var out = [];
+  if (!text || !result) return out;
+  METRICS.forEach(function (m) { if (m[1].test(text)) out.push({ kind: 'metric', key: m[0] }); });
+  [['map', MAPS, result.byMap], ['opp', OPPS, result.byOpponent]].forEach(function (grp) {
+    (grp[1] || []).forEach(function (aliases) {
+      var key = aliases[0];
+      if (!grp[2] || !grp[2][key]) { var alt = Object.keys(grp[2] || {}).filter(function (k) { return aliases.indexOf(k) >= 0; })[0]; if (!alt) return; key = alt; }
+      if (aliases.some(function (a) { return aliasRe(a).test(text); })) out.push({ kind: grp[0], key: key });
+    });
+  });
+  return out;
+}
+function rowDelta(r) {
+  if (!r || !r.baseline) return null;
+  return { win: num(r.candidate.wins) - num(r.baseline.wins), surv: num(r.candidate.survived) - num(r.baseline.survived), g: num(r.candidate.meanG) - num(r.baseline.meanG) };
+}
+function evidence(text, check) {
+  if (!check || !check.result) return '';
+  var res = check.result, ms = mentions(text, res), met = metrics(check), chips = [];
+  ms.forEach(function (m) {
+    if (m.kind === 'metric') {
+      if (m.key === '승') chips.push(chip('승', met.win.d));
+      else if (m.key === 'G') chips.push(chip('G', met.g.d, 1));
+      else if (m.key === '생존') chips.push(chip('생존', met.surv.d));
+      else chips.push(chip('전멸', met.wipe.d, 0, true));
+    } else {
+      var r = (m.kind === 'map' ? res.byMap : res.byOpponent)[m.key], d = rowDelta(r);
+      if (!d) return;
+      var s1 = sign(d.g, 1), s2 = sign(d.win), cls = s1.cls === 'down' || s2.cls === 'down' ? (s1.cls === 'up' || s2.cls === 'up' ? 'flat' : 'down') : (s1.cls === 'up' || s2.cls === 'up' ? 'up' : 'flat');
+      chips.push(h('<span class="chip {}"><span class="nm mono">{}</span> G {} · 승 {}</span>', cls, m.key, s1.text, s2.text));
+    }
+  });
+  if (!chips.length) return '';
+  var extra = chips.length > 6 ? chips.length - 6 : 0;
+  return h('<div class="ev"><span>→ 확인 결과</span>{}{}</div>', chips.slice(0, 6), extra ? ' 외 ' + extra : '');
+}
+function linkTags(name, hy) {
+  if (!hy) return [];
+  var tags = [];
+  [['better', '좋아질 곳'], ['worse', '나빠질 곳'], ['falsify', '반증 기준']].forEach(function (f) {
+    var t = hy[f[0]]; if (!t) return;
+    var group = MAPS.concat(OPPS).filter(function (a) { return a.indexOf(name) >= 0; })[0] || [name];
+    if (group.some(function (a) { return aliasRe(a).test(t); })) tags.push(h('<span class="tag">{}</span>', f[1]));
+  });
+  return tags;
+}
+function regressions(res) {
+  var items = [], kinds = { map: 0, opp: 0, side: 0 };
+  [['map', res.byMap], ['opp', res.byOpponent], ['side', res.bySide]].forEach(function (g) {
+    Object.keys(g[1] || {}).forEach(function (k) {
+      var d = rowDelta(g[1][k]); if (!d) return;
+      var gr = Math.round(d.g * 10) / 10;
+      if (d.win < 0 || d.surv < 0 || gr < 0) {
+        kinds[g[0]]++;
+        var parts = [];
+        if (gr < 0) parts.push('G ' + sign(d.g, 1).text);
+        if (d.win < 0) parts.push('승 ' + sign(d.win).text);
+        if (d.surv < 0) parts.push('생존 ' + sign(d.surv).text);
+        items.push({ name: g[0] === 'side' ? '진영 ' + k : k, g: gr, win: d.win, text: parts.join(' ') });
+      }
+    });
+  });
+  items.sort(function (a, b) { return a.g - b.g || a.win - b.win; });
+  return { kinds: kinds, items: items };
+}
+function ciText(reason) {
+  var r = String(reason || ''), m = r.match(/\[\s*(-?[\d.]+)\s*,\s*(-?[\d.]+)\s*\]/) || r.match(/95%\s*(-?[\d.]+)\s*\.\.\s*(-?[\d.]+)/);
+  return m ? 'G 차이 95% 구간 ' + m[1] + ' ~ ' + m[2] + ' · 판정문에서 읽음' : null;
+}
+// ---- promotion criteria ----
+function gates(w) {
+  var ck = resultCheck(w) || liveCheck(w), rows = [];
+  if (!ck) return null;
+  var finished = w.outcome !== 'running', res = ck.result;
+  var seeds = (ck.seeds || []).length;
+  rows.push({ label: '시드 ' + POLICY.seeds + '개', st: seeds === POLICY.seeds ? 'met' : 'diff',
+    val: seeds === POLICY.seeds ? seeds + '개 · ' + (ck.seeds || []).join(' · ') : '기준 ' + POLICY.seeds + ' · 실제 ' + seeds });
+  var exp = num(ck.expected), bd = num(ck.baselineDone) || 0, cd = num(ck.candidateDone) || 0, st;
+  if (exp !== POLICY.perVersion) st = 'diff'; else if (bd === exp && cd === exp) st = 'met'; else st = finished ? 'unmet' : 'prog';
+  rows.push({ label: '버전당 ' + POLICY.perVersion + '판 완료', st: st, val: '기준 ' + bd + '/' + (exp == null ? '?' : exp) + ' · 후보 ' + cd + '/' + (exp == null ? '?' : exp) + (st === 'prog' ? ' · ' + (bd + cd) + '/' + (2 * exp) : '') });
+  var mp = num(ck.maps), op = num(ck.opponents);
+  rows.push({ label: '지도 ' + POLICY.maps + '곳 · 상대 ' + POLICY.opponents + '명', st: mp === POLICY.maps && op === POLICY.opponents ? 'met' : 'diff', val: '지도 ' + (mp == null ? '?' : mp) + ' · 상대 ' + (op == null ? '?' : op) });
+  if (res && res.bySide) {
+    var A = res.bySide.A, B = res.bySide.B, an = A && A.candidate ? num(A.candidate.n) : 0, bn = B && B.candidate ? num(B.candidate.n) : 0;
+    rows.push({ label: '양 진영', st: an > 0 && bn > 0 ? 'met' : 'unmet', val: 'A ' + an + '판 · B ' + bn + '판' });
+  } else rows.push({ label: '양 진영', st: finished ? 'na' : 'prog', val: finished ? '기록 없음' : '진행 중' });
+  var status = ck.status;
+  rows.push({ label: '리포트 유효', st: status === 'valid' ? 'met' : status ? 'unmet' : finished ? 'na' : 'prog',
+    val: raw((status === 'valid' ? '유효 · ' : status ? esc(status) + ' · ' : finished ? '기록 없음 · ' : '진행 중 · ') + '<code>' + esc(ck.id) + '</code>') });
+  var botSt, botVal;
+  if (w.outcome === 'adopt') { if (w.exit === 0 && w.commit) { botSt = 'met'; botVal = raw('러너 검사 후 채택 커밋 <code title="' + esc(w.commit) + '">' + esc(String(w.commit).slice(0, 7)) + '</code>'); } else { botSt = 'diff'; botVal = '커밋 기록 없음'; } }
+  else if (w.outcome === 'reject') { botSt = 'na'; botVal = '채택하지 않음'; }
+  else if (w.outcome === 'running') { botSt = 'prog'; botVal = '판정 전'; }
+  else { botSt = 'na'; botVal = '채택 없음'; }
+  rows.push({ label: 'bot/ = 확인한 후보', st: botSt, val: botVal });
+  var app = rows.filter(function (r) { return r.st !== 'na'; });
+  return { check: ck, rows: rows, applicable: app.length, met: app.filter(function (r) { return r.st === 'met'; }).length,
+    diff: app.filter(function (r) { return r.st === 'diff'; }).length, unmet: app.filter(function (r) { return r.st === 'unmet'; }).length,
+    prog: app.filter(function (r) { return r.st === 'prog'; }).length, multi: (w.checks || []).filter(function (c) { return c.result; }).length };
+}
+function gateWord(w) {
+  var g = gates(w);
+  if (!g || ['incomplete', 'unknown'].indexOf(w.outcome) >= 0 && !resultCheck(w)) return { cls: 'g-na', icon: SVG.dash, text: '적용 안 됨' };
+  if (g.unmet) return { cls: 'g-unmet', icon: SVG.x, text: '공통 미충족 ' + g.unmet };
+  if (g.diff) return { cls: 'g-diff', icon: SVG.alert, text: '공통 기준과 다름 ' + g.diff };
+  if (g.prog) return { cls: 'g-prog', icon: SVG.dot, text: '공통 기준 진행 중' };
+  return { cls: 'g-met', icon: SVG.check, text: '공통 충족' };
+}
+function decisive(w, l) {
+  var nom = inherit(w, l, 'nomination'), rules = nom ? presetRules(nom.text) : [];
+  if (rules.length) return { tag: '미리 정한 규칙', text: rules[0], from: nom.from };
+  var hy = w.growth && w.growth.hypothesis, cand = w.growth && w.growth.candidate;
+  if (hy && hy.falsify) {
+    if (hy.relation === 'exact') return { tag: '틀렸다면', text: hy.falsify };
+    if (hy.relation === 'derived') return { tag: '틀렸다면 (' + hy.id + ' 기준)', text: hy.falsify };
+    if (!(hy.relation === 'wave' && cand && cand !== hy.id)) return { tag: '틀렸다면 (' + hy.id + ')', text: hy.falsify };
+  }
+  var pr = inherit(w, l, 'prediction');
+  if (pr) return { tag: '예측', text: pr.text, from: pr.from };
+  if (hy && hy.relation === 'wave' && cand && cand !== hy.id) return { none: '후보 ' + cand + '의 가설 기록 없음 · 첫 가설 ' + hy.id + '은 펼쳐서' };
+  return { none: '이 웨이브에 적힌 기준 없음 · 공통 기준만' };
+}
+function critLine(w, l) {
+  var gw = gateWord(w), gw_ = h('<span class="{}">{}{}</span>', gw.cls, raw(gw.icon), ' ' + gw.text);
+  if (['incomplete', 'unknown'].indexOf(w.outcome) >= 0 && !resultCheck(w)) {
+    var hy = hypFor(w), later = laterSame(w, l), bits = ['확인 경기 없음'];
+    if (hy) bits.push('시험하던 가설 ' + hy.id);
+    return { html: h('<span class="lbl">기준</span>{} · {}{}', gw_, bits.join(' · '), later ? h(' · <a href="#{}">→ {}</a>', l.name + '-' + later.id, short(later.id)) : ''),
+      title: '기준 – 적용 안 됨 · ' + bits.join(' · ') + (later ? ' · → ' + short(later.id) : '') };
+  }
+  var d = decisive(w, l);
+  if (d.none) return { html: h('<span class="lbl">기준</span>{} · <span class="t3">{}</span>', gw_, d.none), title: '기준 ' + gw.text + ' · ' + d.none };
+  var from = d.from ? ' (' + short(d.from.id) + ' 기록)' : '';
+  return { html: h('<span class="lbl">기준</span>{} · <b>{}{}</b>: {}', gw_, d.tag, from, txt(d.text)), title: '기준 ' + gw.text + ' · ' + d.tag + from + ': ' + d.text };
+}
+
+// ---- state ----
+var data = null, lastText = '', lastOk = 0, prevData = null;
+var openKeys = new Set();
+try { JSON.parse(sessionStorage.getItem('waveDash.open') || '[]').forEach(function (k) { openKeys.add(k); }); } catch (e) {}
+var order = 'new', span = '24h';
+try { order = localStorage.getItem('waveDash.order') || 'new'; span = localStorage.getItem('waveDash.span') || '24h'; } catch (e) {}
+function saveOpen() { try { sessionStorage.setItem('waveDash.open', JSON.stringify(Array.from(openKeys))); } catch (e) {} }
+function isOpen(k) { return openKeys.has(k) ? raw(' open') : ''; }
+function disc(key, summary, body, cls) { return h('<details class="{}" data-key="{}"{}><summary>{}</summary>{}</details>', cls || 'disc', key, isOpen(key), summary, body); }
+
+// ---- views ----
+function nowCard(l) {
+  if (l.state === 'missing') return h('<article class="card now-card" id="n-{}"><div class="now-head"><div class="row-a"><h2>{}</h2>{}</div><p class="t2">계통 폴더가 없습니다.</p></div></article>', l.name, l.name, stateBadge('missing'));
+  var c = counts(l), waves = chron(l), running = waves.filter(function (w) { return w.running; })[0];
+  var adopts = waves.filter(function (w) { return w.outcome === 'adopt'; }), lastAdopt = adopts[adopts.length - 1];
+  var total = num(l.stats && l.stats.totalMs); if (total == null) total = waves.reduce(function (s, w) { return s + (num(w.durationMs) || 0); }, 0);
+  var genSub = c.adopt ? '채택 ' + c.adopt + '회' : '처음 세대 · 채택 없음';
+  var fin = [c.adopt ? '채택 ' + c.adopt : '채택 0', '기각 ' + c.reject, '중단 ' + c.incomplete].concat(c.unknown ? ['끊김 ' + c.unknown] : []).join(' · ');
+  var sinceRun = running ? running.started : '';
+  var kv = h('<dl class="kv"><div><dt>현재 세대</dt><dd><span class="big">{}</span><span class="sub">{}</span></dd></div>' +
+    '<div><dt>끝난 웨이브</dt><dd><span class="mid">{}</span><span class="sub">{}</span></dd></div>' +
+    '<div><dt>누적 시간</dt><dd><span class="mid time"{}>{}</span><span class="sub">{}</span></dd></div></dl>',
+    l.version == null ? 'r?' : 'r' + l.version, l.version == null ? 'NOTES에 ready 줄 없음' : genSub,
+    c.finished, fin,
+    running ? h(' data-since="{}" data-base-ms="{}"', sinceRun, total) : '', dur(total + (running ? Date.now() - new Date(running.started) : 0)),
+    running ? raw('완료 ' + esc(dur(total)) + ' + 진행 <span data-since="' + esc(sinceRun) + '">' + esc(dur(Date.now() - new Date(running.started))) + '</span>') : '완료 웨이브 합계 · 정지 구간 제외');
+  var growth = '', crit = '', after = '', mismatch = '';
+  if (lastAdopt) {
+    var m = metrics(resultCheck(lastAdopt)), lg = lead((lastAdopt.growth && lastAdopt.growth.logic) || trimRef(l.versionText)[0]);
+    growth = h('<div class="growth-line"><span class="gen">r{}</span><span>·</span><span class="gen">{}</span><span>·</span><a href="#{}">{}</a>{}</div>',
+      lastAdopt.version, lg.lead || lg.rest.slice(0, 28), l.name + '-' + lastAdopt.id, short(lastAdopt.id),
+      m ? h('<span class="chips">{}{}{}</span>', chip('승', m.win.d), chip('G', m.g.d, 1), chip('생존', m.surv.d)) : '');
+    var cl = critLine(lastAdopt, l), clHtml = raw(cl.html.s.replace('<span class="lbl">기준</span>', '<span class="lbl">승격 기준</span>'));
+    crit = h('<div class="crit-line"><span class="clamp c2" title="{}">{}</span><a class="why" href="#{}">왜 승격했나 ›</a></div>', cl.title, clHtml, l.name + '-' + lastAdopt.id + '-p2');
+    var later = waves.filter(function (w) { return w.id > lastAdopt.id && ['reject', 'incomplete', 'unknown'].indexOf(w.outcome) >= 0; });
+    if (later.length) after = h('<div class="after"><span class="lbl">그 뒤</span>{}{}</div>', later.slice(0, 3).map(function (w, i) {
+      return h('{}<a href="#{}">{} {}</a>', i ? ' · ' : '', l.name + '-' + w.id, short(w.id), OUT_LABEL[w.outcome]);
+    }), later.length > 3 ? ' 외 ' + (later.length - 3) + '개' : '');
+  } else growth = h('<div class="growth-line t2">아직 채택 없음 · r1은 처음 세대</div>');
+  if (l.version != null && l.adoptedVersion != null && l.version !== l.adoptedVersion && Math.max(l.version, l.adoptedVersion) > 1)
+    mismatch = h('<div class="warnline">{} 세대 기록 불일치 · NOTES r{} / 채택 결과 r{}</div>', raw(SVG.alert), l.version, l.adoptedVersion);
+  return h('<article class="card now-card" id="n-{}" aria-labelledby="h-{}"><div class="now-head"><div class="row-a"><h2 id="h-{}">{}</h2>{}</div>{}{}{}{}{}</div>{}</article>',
+    l.name, l.name, l.name, l.name, stateBadge(l.state), kv, growth, crit, after, mismatch, pinned(l, running));
+}
+function stateBadge(s) { return h('<span class="pill s-{}">{}{}</span>', s, raw(STATE_ICON[s] || ''), STATE_LABEL[s] || s); }
+function lastRange(l) {
+  var ds = chron(l).filter(function (w) { return (w.outcome === 'adopt' || w.outcome === 'reject') && num(w.durationMs) != null; }).map(function (w) { return w.durationMs; });
+  if (!ds.length) return '';
+  var lo = Math.min.apply(null, ds), hi = Math.max.apply(null, ds);
+  return ds.length === 1 || dur(lo) === dur(hi) ? dur(lo) : dur(lo) + '–' + dur(hi);
+}
+function pinned(l, w) {
+  if (!w) {
+    var lw = l.lastWave, lastW = chron(l).filter(function (x) { return x.id === lw; })[0];
+    var stTxt = { stopped: '루프 정지', queued: '평가 대기', 'stale-lock': '잠금만 남음 · 러너 없음' }[l.state] || STATE_LABEL[l.state] || '';
+    return h('<section class="pinned" id="{}-now"><div class="pin-h"><h3>진행 웨이브</h3><span class="elapsed t3">–</span></div>' +
+      '<div class="wave-line"><span class="wid t3">–</span><span class="t2">진행 중인 웨이브 없음</span></div>' +
+      '<div class="status">{}</div></section>', l.name,
+      (lastW ? '마지막 ' + short(lastW.id) + (lastW.ended ? ' · ' + clock(lastW.ended) + ' 종료' : '') + ' · ' : '') + stTxt);
+  }
+  var ph = phase(w), lc = liveCheck(w), steps = [['explore', '탐색'], ['confirm', '확인 경기'], ['judge', '판정']];
+  var stepper = h('<ol class="stepper" aria-label="웨이브 단계">{}</ol>', steps.map(function (s, i) {
+    return h('{}<li{}>{}</li>', i ? raw('<li aria-hidden="true">›</li>') : '', s[0] === ph ? raw(' aria-current="step"') : '', s[1]);
+  }));
+  var status, prog = '';
+  if (ph === 'explore') status = evalText(l);
+  else if (ph === 'confirm') status = '확인 경기 ' + ((num(lc.baselineDone) || 0) + (num(lc.candidateDone) || 0)) + '/' + 2 * (num(lc.expected) || 0);
+  else status = '확인 끝 · 판정 정리 중';
+  if (ph !== 'explore' && lc) {
+    var done = (num(lc.baselineDone) || 0) + (num(lc.candidateDone) || 0), tot = 2 * (num(lc.expected) || 0), p = tot ? done / tot * 100 : 0;
+    prog = h('<div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="{}" aria-label="{} 확인 경기 진행률"><i style="width:{}%"></i></div><div class="label">기준 r{} {}/{} · 후보 {}/{}</div>',
+      Math.round(p), l.name, pct(p), w.readyBefore, num(lc.baselineDone) || 0, num(lc.expected), num(lc.candidateDone) || 0, num(lc.expected));
+  }
+  var lr = lastRange(l);
+  var hy = hypFor(w), rt = relTag(hy, w);
+  var hypHtml = hy ? h('<div class="hyp"><div class="label">시험 중 가설 {} <span class="mono">{}</span>{}</div><div class="stmt clamp c2" title="{}">{}</div></div>',
+      rt ? h('<span class="tag">{}</span>', rt.tag) : '', hy.id, hyExtra(hy), hy.statement, txt(hy.statement))
+    : h('<div class="small t3">시험 중 가설 · NOTES에 아직 기록 없음</div>');
+  var critTxt = { explore: '아직 확인 전 (탐색 단계)', confirm: status, judge: '확인 끝 · 판정 전' }[ph];
+  var nom = w.growth && w.growth.nomination, rules = nom ? presetRules(nom) : [];
+  var critHtml = h('<div class="status"><span class="lbl">승격 기준</span>{}{}</div>{}', critTxt,
+    nom && w.growth.candidate ? ' · 확인 후보 ' + w.growth.candidate : '', rules.length ? h('<div class="callout">{}</div>', rules.join(' ')) : '');
+  var recent = w.recent || [], msg = '';
+  if (recent.length) {
+    var age = w.transcriptUpdated ? (Date.now() - new Date(w.transcriptUpdated)) / 60000 : 0, alive = (l.jobs || []).length > 0;
+    var meta = age > 20 && !alive ? h('<div class="warnline">{} 마지막 기록 <span data-ago="{}">{}</span> · 멈춤 의심</div>', raw(SVG.alert), w.transcriptUpdated, ago(w.transcriptUpdated))
+      : h('<div class="label">마지막 기록 <span data-ago="{}">{}</span>{} · 에이전트 기록 {}개</div>', w.transcriptUpdated, ago(w.transcriptUpdated), age > 20 ? ' · 평가 경기 기다리는 중' : '', recent.length);
+    msg = h('<div class="msg clamp c3" title="{}">{}</div>{}', recent[0], txt(recent[0]), meta);
+  }
+  var key = l.name + ':' + w.id + ':row';
+  return h('<section class="pinned live" id="{}-now"><div class="pin-h"><h3>진행 웨이브</h3><span class="elapsed" data-since="{}">{} 경과</span></div>' +
+    '<div class="wave-line"><span class="wid" title="{}">{}</span>{}<span class="togen">r{} → ?</span></div>' +
+    '<div class="status">{}{}</div>{}{}{}{}{}</section>',
+    l.name, w.started, dur(Date.now() - new Date(w.started)), w.id, short(w.id), stepper, w.readyBefore,
+    status, lr ? h(' <span class="label">· 지난 웨이브 {}</span>', lr) : '', prog, hypHtml, critHtml, msg,
+    disc(key, '이 웨이브 자세히 · 승격 기준 · 에이전트 기록', h('<div class="panel">{}</div>', runningPanel(w, l))));
+}
+function flow() {
+  var all = [], now = Date.now(), earliest = now;
+  data.lineages.forEach(function (l) { chron(l).forEach(function (w) { var s = new Date(w.started).getTime(); if (isFinite(s)) earliest = Math.min(earliest, s); }); });
+  var t0 = span === '24h' ? Math.max(now - 864e5, earliest) : earliest;
+  var fl = new Date(t0); fl.setMinutes(0, 0, 0); t0 = fl.getTime();
+  var t1 = now, D = Math.max(1, t1 - t0);
+  var width = flowWidth || 900, step = [1, 2, 3, 6, 12, 24, 48, 72, 168, 336, 720].filter(function (hr) { return (hr * 36e5) / D * width >= 64; })[0] || 720;
+  var ticks = [], t = new Date(t0); t.setMinutes(0, 0, 0);
+  while (t.getTime() <= t1) {
+    var onStep = step < 24 ? t.getHours() % step === 0 : t.getHours() === 0 && Math.round((t.getTime() - new Date(t0).setHours(0, 0, 0, 0)) / 864e5) % (step / 24) === 0;
+    if (onStep && t.getTime() >= t0) {
+      var x = (t.getTime() - t0) / D * 100;
+      if (x > 2 && x < 92) ticks.push(h('<span style="left:{}%">{}</span>', pct(x), t.getHours() === 0 ? (t.getMonth() + 1) + '/' + t.getDate() : pad(t.getHours()) + '시'));
+    }
+    t = new Date(t.getTime() + 36e5);
+  }
+  var lanes = data.lineages.map(function (l) {
+    var ws = chron(l), segs = [], summary = [];
+    ws.forEach(function (w, i) {
+      var s = new Date(w.started).getTime(); if (!isFinite(s)) return;
+      var e = w.ended ? new Date(w.ended).getTime() : w.running ? now : (w.transcriptUpdated ? new Date(w.transcriptUpdated).getTime() : s);
+      if (e < t0) return;
+      var left = (Math.max(s, t0) - t0) / D * 100, wd = (Math.min(e, t1) - Math.max(s, t0)) / D * 100;
+      var label = l.name + ' ' + short(w.id) + ' ' + OUT_LABEL[w.outcome] + ', ' + range(w.started, w.ended) + ', ' + dur(e - s);
+      summary.push(label);
+      segs.push(h('<a class="seg {}" href="#{}" style="left:{}%;width:{}%" title="{}" aria-label="{}">{}<span>{}</span><span class="d">{}</span></a>',
+        w.outcome, w.running ? l.name + '-now' : l.name + '-' + w.id, pct(left), pct(wd), label, label, raw(OUT_ICON[w.outcome] || ''), short(w.id), dur(e - s)));
+      var nx = ws[i + 1];
+      if (w.ended && nx) {
+        var ge = new Date(nx.started).getTime(), gs = new Date(w.ended).getTime();
+        if (ge - gs >= 18e5 && ge > t0) {
+          var gl = (Math.max(gs, t0) - t0) / D * 100, gw = (ge - Math.max(gs, t0)) / D * 100, gi = gapInfo(l, w, nx), stop = gi.short !== '쉼';
+          var gt = gi.text;
+          summary.push(gt);
+          segs.push(h('<span class="gap-l" style="left:{}%;width:{}%" title="{}">{}</span>', pct(gl), pct(gw), gt, gw / 100 * width > 130 ? gt : gi.short));
+        }
+      }
+    });
+    return h('<div class="lane-l">{}</div><div class="lane">{}</div><p class="sr-only">{}</p>', l.name, segs, l.name + ': ' + summary.join(', '));
+  });
+  var sw = function (cls) { return h('<i class="sw seg {}" style="position:static;display:inline-block"></i>', cls); };
+  return h('<section class="card" id="flow" aria-labelledby="flow-h"><div class="flow-h"><h2 id="flow-h">시간 흐름</h2>' +
+    '<div class="seg-ctl" role="group" aria-label="기간"><button type="button" data-span="24h" aria-pressed="{}">최근 24시간</button><button type="button" data-span="all" aria-pressed="{}">전체</button></div>' +
+    '<div class="legend"><span>{}채택</span><span>{}기각</span><span>{}중단</span><span>{}끊김</span><span>{}진행 중</span><span>· 정지·쉼</span></div></div>' +
+    '<div class="plot"><div></div><div class="axis">{}<div class="nowline"><span>지금 {}</span></div></div>{}</div></section>',
+    span === '24h' ? 'true' : 'false', span === 'all' ? 'true' : 'false', sw('adopt'), sw('reject'), sw('incomplete'), sw('unknown'), sw('running'),
+    ticks, hm(new Date()), lanes);
+}
+var flowWidth = 0;
+function histHead() {
+  return h('<section id="hist-head" aria-labelledby="hh-h"><div class="hh"><h2 id="hh-h">웨이브 기록</h2>' +
+    '<div class="seg-ctl" role="group" aria-label="정렬"><button type="button" data-order="new" aria-pressed="{}">최신 먼저</button><button type="button" data-order="old" aria-pressed="{}">처음부터</button></div></div>' +
+    '<p class="key">세대 = 시작 → 결과 (– 새 세대 없음, ? 판정 전) · 승·G·생존 = 확인 경기 후보 − 기준 (같은 새 시드 160판) · G = 가장 긴 용 길이 평균 · 기준 = 공통 관문 결과와 이 웨이브의 결정 기준 · 줄을 누르면 근거가 열립니다</p></section>',
+    order === 'new' ? 'true' : 'false', order === 'old' ? 'true' : 'false');
+}
+function timeline(l) {
+  if (l.state === 'missing') return h('<section class="card tl" id="t-{}"><div class="tl-h"><h2>{} 웨이브 기록</h2><p class="t2">계통 폴더가 없습니다.</p></div></section>', l.name, l.name);
+  var c = counts(l), ws = chron(l), entries = [];
+  ws.forEach(function (w, i) {
+    var p = ws[i - 1];
+    if (p && p.ended && w.started) {
+      var g = new Date(w.started) - new Date(p.ended);
+      if (g > 3e5) entries.push({ gap: true, of: w, html: h('<div class="gap"><span class="rl"></span><span>{}</span></div>', gapInfo(l, p, w).text) });
+    }
+    entries.push({ w: w, html: w.running ? runRow(w, l) : row(w, l) });
+  });
+  if (order === 'new') entries.reverse();
+  var finishedEntries = entries.filter(function (e) { return e.w && !e.w.running; }), older = '';
+  var body = entries;
+  if (finishedEntries.length > 12) {
+    var cut = finishedEntries.slice(order === 'new' ? 12 : 0, order === 'new' ? finishedEntries.length : finishedEntries.length - 12);
+    var cutW = new Set(cut.map(function (e) { return e.w; }));
+    var hidden = function (e) { return (e.w && cutW.has(e.w)) || (e.gap && cutW.has(e.of)); };
+    body = entries.filter(function (e) { return !hidden(e); });
+    older = disc(l.name + ':older', (order === 'new' ? '이전 웨이브 ' : '처음 ') + cut.length + (order === 'new' ? '개' : '개 웨이브'), h('<div class="entries">{}</div>', entries.filter(hidden).map(function (e) { return e.html; })));
+  }
+  var gen = l.versionText ? disc(l.name + ':gen', 'r' + l.version + ' 전체 설명', h('<div class="prose" style="margin-top:6px">{}</div>{}', txt(trimRef(l.versionText)[0]),
+    trimRef(l.versionText)[1] ? h('<p class="label">근거 <code>{}</code></p>', trimRef(l.versionText)[1]) : '')) : '';
+  var logLines = (l.log || []).slice().reverse();
+  var log = logLines.length ? disc(l.name + ':log', '운영 기록 · index.log 최근 ' + logLines.length + '줄', h('<ol class="log">{}</ol>', logLines.map(function (s) {
+    var mk = /\(adopt\)/.test(s) ? raw('<span class="m-good">▲ </span>') : /\(reject\)/.test(s) ? raw('<span class="m-bad">✕ </span>') : /exit 143|STOP/.test(s) ? raw('<span class="m-warn">■ </span>') : '';
+    return h('<li>{}{}</li>', mk, s);
+  }))) : '';
+  var colhead = h('<div class="colhead" aria-hidden="true"><div class="colhead-g"><span style="grid-area:id">웨이브</span><span style="grid-area:out">결과</span><span style="grid-area:gen">세대</span><span style="grid-area:win;text-align:end">승</span><span style="grid-area:g;text-align:end">G</span><span style="grid-area:surv;text-align:end">생존</span><span style="grid-area:dur;text-align:end">소요</span></div></div>');
+  var list = ws.length ? body.map(function (e) { return e.html; }) : h('<p class="t2" style="padding:0 16px 16px">아직 웨이브가 없습니다. 첫 웨이브가 시작되면 여기에 쌓입니다.</p>');
+  return h('<section class="card tl" id="t-{}" aria-labelledby="th-{}"><div class="tl-h"><h2 id="th-{}">{} 웨이브 기록<span class="cnt">{}개 · 끝남 {} · 진행 {}</span></h2>{}</div>{}<div class="entries">{}{}{}</div>{}</section>',
+    l.name, l.name, l.name, l.name, ws.length, c.finished, c.running, gen, colhead, order === 'old' ? older : '', list, order === 'new' ? older : '', log ? h('<div class="tl-f">{}</div>', log) : '');
+}
+function genCell(w) {
+  if (w.outcome === 'adopt' && w.version) return h('<span class="t2">r{}</span> <span class="gen-arrow">→</span> <span class="gen-r new">r{}</span>', w.readyBefore, w.version);
+  return h('<span class="t2">r{}</span> <span class="gen-arrow">→</span> <span class="t3" title="새 세대 없음">–</span>', w.readyBefore == null ? '?' : w.readyBefore);
+}
+function rowText(w, l) {
+  var g = w.growth || {};
+  if (w.outcome === 'adopt') {
+    var t = g.logic || (w.version === l.version ? trimRef(l.versionText)[0] : null);
+    if (!t) return h('{}<span class="t3"> · ready 줄 없음</span>', triedName(w) || '');
+    var ld = lead(t);
+    return { html: ld.lead ? h('<span class="lead">{}</span>{}', ld.lead, inline(ld.rest)) : txt(t), title: t };
+  }
+  if (w.outcome === 'reject') {
+    var ls = lesson(g.judgment), nm = triedName(w), tail = ls ? ' — 교훈: ' + ls : w.reason ? ' — ' + w.reason.split(';')[0] : '';
+    return { html: h('시험 {}{}{}', g.candidate ? h('<code>{}</code>', g.candidate) : '후보', nm ? ' · ' + nm : '', txt(tail)), title: '시험 ' + (g.candidate || '') + (nm ? ' · ' + nm : '') + tail };
+  }
+  if (w.outcome === 'incomplete') {
+    var ko = w.reason && REASON_KO[w.reason];
+    if (!w.reason) return { html: h('중단 사유 · 러너가 이유를 남기지 않음'), title: '' };
+    return { html: ko ? h('중단 사유 · {} <span class="t3 small" lang="en">— {}</span>', ko, w.reason) : h('중단 사유 · {}', txt(w.reason)), title: '중단 사유 · ' + (ko || '') + ' — ' + w.reason };
+  }
+  return { html: h('결과 파일 없음 · 러너가 결과를 남기지 않고 끝남'), title: '' };
+}
+function row(w, l) {
+  var m = metrics(resultCheck(w)), key = l.name + ':' + w.id + ':row', rt = rowText(w, l);
+  if (rt instanceof Raw) rt = { html: rt, title: '' };
+  var cl = critLine(w, l), prior = priorSame(w, l), cand = w.growth && w.growth.candidate;
+  var tags = [];
+  if (w.fallbackUsed) tags.push(h('<span class="tag">예비 모델</span>'));
+  if (w.outcome === 'adopt' && !m) tags.push(h('<span class="tag">확인 결과 없음</span>'));
+  if (w.exit != null && w.exit !== 0) tags.push(h('<span class="tag">강제 종료 {}</span>', w.exit));
+  var meta = h('<div class="c-meta"><span>{}</span>{}{}</div>', range(w.started, w.ended),
+    cand ? h('<span class="wide-only"><code>{}</code>{}</span>', cand, prior ? h(' · <a href="#{}" title="같은 가설을 {}에서 먼저 시험">↳ {}</a>', l.name + '-' + prior.id, short(prior.id), short(prior.id)) : '') : '', tags);
+  var chips = m ? h('<div class="c-chips chips">{}{}{}</div>', chip('승', m.win.d), chip('G', m.g.d, 1), chip('생존', m.surv.d)) : h('<div class="c-chips"></div>');
+  var quiet = w.outcome !== 'adopt' ? ' quiet' : '';
+  return h('<details class="entry row{}" id="{}" data-key="{}" data-outcome="{}"{}><summary class="rs">' +
+    '<span class="c-rail">{}</span><span class="c-id" title="{}">{}</span><span class="c-out">{}</span><span class="c-gen">{}</span>' +
+    '<span class="c-idgen"><b title="{}">{}</b> · {}</span>' +
+    '<span class="c-win">{}</span><span class="c-g">{}</span><span class="c-surv">{}</span><span class="c-dur">{}</span><span class="c-chev">{}</span>' +
+    '<span class="c-txt clamp c2" title="{}">{}</span>{}{}<span class="c-crit clamp c1" title="{}">{}</span></summary>{}</details>',
+    quiet, l.name + '-' + w.id, key, w.outcome, isOpen(key),
+    raw(RAIL[w.outcome] || RAIL.unknown), w.id, short(w.id), pill(w.outcome), genCell(w), w.id, short(w.id), genCell(w),
+    m ? deltaCell(m.win.d, 0, '승') : deltaCell(null, 0, '승'), m ? deltaCell(m.g.d, 1, 'G') : deltaCell(null, 1, 'G'), m ? deltaCell(m.surv.d, 0, '생존') : deltaCell(null, 0, '생존'),
+    dur(w.durationMs), raw(SVG.chev), rt.title, rt.html, chips, meta, cl.title, cl.html,
+    openKeys.has(key) ? h('<div class="panel">{}</div>', panel(w, l)) : raw('<div class="panel" data-lazy="1"></div>'));
+}
+function runRow(w, l) {
+  var ph = phase(w), lc = liveCheck(w), st = ph === 'explore' ? '지금 탐색 단계 · ' + evalText(l) : ph === 'confirm' ? '확인 경기 중' : '확인 끝 · 판정 중';
+  var dcell = ph === 'confirm' && lc ? h('<span class="c-win" style="grid-column:win / surv;text-align:end">확인 {}/{}</span>', (num(lc.baselineDone) || 0) + (num(lc.candidateDone) || 0), 2 * (num(lc.expected) || 0))
+    : h('<span class="c-win t3">·</span><span class="c-g t3">·</span><span class="c-surv t3">·</span>');
+  return h('<div class="entry" id="{}"><a class="rs" href="#{}-now">' +
+    '<span class="c-rail">{}</span><span class="c-id" title="{}">{}</span><span class="c-out">{}</span><span class="c-gen">r{} <span class="gen-arrow">→</span> ?</span>' +
+    '<span class="c-idgen"><b>{}</b> · r{} → ?</span>{}<span class="c-dur" data-since="{}">{}</span><span class="c-chev"></span>' +
+    '<span class="c-txt">{} <span aria-hidden="true">↑</span><span class="sr-only">위 진행 웨이브에서 보기</span></span><div class="c-meta"><span>{} 시작</span></div></a></div>',
+    l.name + '-' + w.id, l.name, raw(RAIL.running), w.id, short(w.id), pill('running'), w.readyBefore, short(w.id), w.readyBefore, dcell, w.started, dur(Date.now() - new Date(w.started)),
+    st, clock(w.started));
+}
+// ---- panel sections ----
+function sec(title, body, id) { return h('<section{}><h4>{}</h4>{}</section>', id ? h(' id="{}"', id) : '', title, body); }
+function p1(w, l) {
+  if (w.outcome === 'adopt') {
+    var t = (w.growth && w.growth.logic) || (w.version === l.version ? trimRef(l.versionText)[0] : null), ref = null;
+    (l.versionText && w.version === l.version) && (ref = trimRef(l.versionText)[1]);
+    var checkRef = resultCheck(w);
+    return sec('바꾼 로직', h('<div class="prose">{}</div>{}', t ? txt(t) : '이 세대의 ready 줄을 찾지 못했습니다.',
+      ref || checkRef ? h('<p class="cap">근거 <code>{}</code></p>', ref || ('checks/' + checkRef.id + '/report.json')) : ''));
+  }
+  var hy = hypFor(w), cand = w.growth && w.growth.candidate;
+  return sec('시험한 후보', cand || hy ? h('<div class="prose">{}{}</div>', cand ? h('<code>{}</code> ', cand) : '', hy ? txt(hy.statement) : '') : h('<p class="t3">후보 기록 없음</p>'));
+}
+function p2(w, l) {
+  var g = gates(w), aHtml;
+  var running = w.outcome === 'running', ended = ['incomplete', 'unknown'].indexOf(w.outcome) >= 0;
+  if (!g) aHtml = h('<p class="small t2">{} <a href="#policy">공통 원칙 전체 ↓</a></p>', running ? '아직 확인 전 — 탐색 단계.' : '확인 경기가 없어 공통 기준을 적용하지 않았습니다.');
+  else {
+    var ic = { met: [SVG.check, 'g-met', '충족'], unmet: [SVG.x, 'g-unmet', '미충족'], diff: [SVG.alert, 'g-diff', '기준과 다름'], prog: [SVG.dot, 'g-prog', '진행 중'], na: [SVG.dash, 'g-na', '해당 없음'] };
+    aHtml = h('<h5>공통 기준 · 모든 웨이브 같음 · 적용 {}개 중 {}개 충족{} <a class="small" href="#policy">공통 원칙 전체 ↓</a></h5><div class="gates">{}</div><p class="cap">새 시드인지는 러너가 정합니다 · 이 화면은 개수·판 수·유효성만 확인합니다.{}</p>{}',
+      g.applicable, g.met, ended ? ' · 중단됨' : '', g.rows.map(function (r) {
+        var x = ic[r.st];
+        return h('<span class="gi {}" title="{}">{}</span><span class="gl">{}</span><span class="gv">{} <span class="sr-only">{}</span></span>', x[1], x[2], raw(x[0]), r.label, r.val, x[2]);
+      }), g.check.seeds && g.check.seeds.length ? '' : '', g.multi > 1 ? h('<p class="warnline">{} 확인이 {}번 기록됨 — "같은 후보·기준의 시드를 다시 뽑지 않는다" 원칙과 함께 보세요.</p>', raw(SVG.alert), g.multi) : '');
+  }
+  // P2b
+  var hy = hypFor(w), rt = relTag(hy, w), ck = resultCheck(w), items = [];
+  var head = ended ? '당시 세운 기준 (적용되지 않음)' : running ? '이번 웨이브 기준 (지금까지 기록)' : '이번 웨이브 기준';
+  function ev(t) { return ended || running ? '' : evidence(t, ck); }
+  if (hy) {
+    items.push(h('<div><dt>가설 <span class="mono">{}</span>{} {}</dt><dd><div class="prose">{}</div>{}</dd></div>', hy.id, hyExtra(hy), rt ? h('<span class="tag">{}</span>', rt.tag) : '', txt(hy.statement), rt ? h('<p class="cap">{}</p>', rt.note) : ''));
+    if (hy.better) items.push(h('<div><dt>좋아질 상황</dt><dd><div class="prose">{}</div>{}</dd></div>', txt(hy.better), ev(hy.better)));
+    if (hy.worse) items.push(h('<div><dt>나빠질 가능성</dt><dd><div class="prose">{}</div>{}</dd></div>', txt(hy.worse), ev(hy.worse)));
+    if (hy.falsify) items.push(h('<div><dt>틀렸다면</dt><dd><div class="prose">{}</div>{}</dd></div>', txt(hy.falsify), ev(hy.falsify)));
+  }
+  var pr = inherit(w, l, 'prediction');
+  if (pr) items.push(h('<div><dt>확인 전 예측{}</dt><dd><div class="prose">{}</div>{}</dd></div>', pr.from ? ' (' + short(pr.from.id) + ' 기록)' : '', txt(pr.text), ev(pr.text)));
+  var nom = inherit(w, l, 'nomination');
+  if (nom) {
+    var rest = nominationRest(nom.text), rules = presetRules(nom.text), from = nom.from ? ' (' + short(nom.from.id) + ' 기록)' : '';
+    if (rest) items.push(h('<div><dt>확인 후보로 올린 이유{}</dt><dd><div class="prose">{}</div></dd></div>', from, txt(rest)));
+    if (rules.length) items.push(h('<div><dt>미리 정한 규칙{}</dt><dd><div class="callout">{}</div>{}</dd></div>', from, txt(rules.join(' ')), ev(rules.join(' '))));
+  }
+  var bHtml = items.length ? h('<dl class="crit-dl">{}</dl>{}', items, !ended && !running && ck ? h('<p class="cap">→ 표시는 문장 속 지도·상대·지표 이름을 찾아 이 확인 결과를 붙인 것입니다. 판정이 아닙니다.</p>') : (!ck && !running ? h('<p class="cap">확인 결과 없음</p>') : ''))
+    : h('<p class="small t3">이 웨이브 NOTES에서 가설·예측·사전 규칙을 찾지 못했습니다. 아래 NOTES 기록을 확인하세요.</p>');
+  return h('<section id="{}"><h4>승격 기준</h4>{}<h5>{}</h5>{}</section>', l.name + '-' + w.id + '-p2', aHtml, head, bHtml);
+}
+function bdTable(title, rows, hy, key, w, l, digest) {
+  var names = Object.keys(rows || {}); if (!names.length) return '';
+  var maxG = Math.max.apply(null, names.map(function (n) { var d = rowDelta(rows[n]); return d ? Math.abs(d.g) : 0; }).concat([0.1]));
+  var body = names.map(function (n) {
+    var r = rows[n], d = rowDelta(r); if (!d) return '';
+    var gw = Math.min(50, Math.abs(d.g) / maxG * 50);
+    return h('<tr><td data-label="이름"><div><span class="mono">{}</span></div></td><td data-label="승"><div>{}<span class="d2">{} → {}</span></div></td><td data-label="생존"><div>{}<span class="d2">{} → {}</span></div></td>' +
+      '<td data-label="평균 G"><div>{}<span class="d2">{} → {}</span><span class="gbar"><i class="{}" style="{}:50%;width:{}%"></i></span></div></td><td class="links" data-label="기준 연결"><div>{}</div></td></tr>',
+      n, deltaCell(d.win, 0, '승'), r.baseline.wins, r.candidate.wins, deltaCell(d.surv, 0, '생존'), r.baseline.survived, r.candidate.survived,
+      deltaCell(d.g, 1, 'G'), num(r.baseline.meanG).toFixed(1), num(r.candidate.meanG).toFixed(1), d.g >= 0 ? 'up' : 'down', d.g >= 0 ? 'left' : 'right', pct(gw), linkTags(n, hy));
+  });
+  return disc(l.name + ':' + w.id + ':' + key, digest, h('<table class="bd"><caption class="sr-only">{} 기준 → 후보 · 같은 시드</caption><thead><tr><th>이름</th><th>승</th><th>생존</th><th>평균 G</th><th style="text-align:start">기준 연결</th></tr></thead><tbody>{}</tbody></table>', title, body));
+}
+function digestOf(label, rows, unit) {
+  var names = Object.keys(rows || {}), up = 0, down = 0;
+  names.forEach(function (n) { var d = rowDelta(rows[n]); if (!d) return; var r = Math.round(d.g * 10) / 10; if (r > 0) up++; else if (r < 0) down++; });
+  return label + ' · ' + names.length + unit + ' · G 오름 ' + up + (down ? ' · 내림 ' + down : '');
+}
+function p3(w, l) {
+  var checks = w.checks || [];
+  if (!checks.length) return sec('확인 결과', h('<p class="small t2">{}</p>', w.outcome === 'incomplete' ? '확인 경기 없음 — 탐색 단계에서 끝났습니다' : '확인 경기 기록 없음'));
+  var hy = hypFor(w);
+  var blocks = checks.map(function (ck, i) {
+    var m = metrics(ck), head = checks.length > 1 ? h('<h5>확인 {} · <code>{}</code></h5>', i + 1, ck.id) : '';
+    if (!m) {
+      var done = (num(ck.baselineDone) || 0) + (num(ck.candidateDone) || 0), tot = 2 * (num(ck.expected) || 0);
+      return h('{}<div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="{}"><i style="width:{}%"></i></div><p class="cap">기준 {}/{} · 후보 {}/{}{}</p>',
+        head, tot ? Math.round(done / tot * 100) : 0, pct(tot ? done / tot * 100 : 0), num(ck.baselineDone) || 0, num(ck.expected), num(ck.candidateDone) || 0, num(ck.expected), w.outcome === 'incomplete' ? ' · 중단됨' : '');
+    }
+    var cand = (w.growth && w.growth.candidate) || '후보', res = ck.result, rg = regressions(res), ci = ciText(w.reason);
+    var cap = h('<p class="cap">시드 {}개 · 버전당 {}판 · 지도 {} · 상대 {} · 양 진영 · 기준 r{} vs 후보 {} · <code>{}</code>{}</p>',
+      (ck.seeds || []).length, num(ck.expected), num(ck.maps), num(ck.opponents), w.readyBefore, cand, ck.id, ck.at ? ' · ' + clock(ck.at) : '');
+    var tbl = h('<table class="sum"><thead><tr><th>지표</th><th>기준 r{}</th><th>후보 {}</th><th>변화</th></tr></thead><tbody>' +
+      '<tr><td>승</td><td>{} / {}</td><td>{} / {}</td><td>{}</td></tr><tr><td>생존 (전멸)</td><td>{} ({})</td><td>{} ({})</td><td>{}</td></tr>' +
+      '<tr><td>평균 G</td><td>{}</td><td>{}</td><td>{}</td></tr></tbody></table>',
+      w.readyBefore, cand, m.win.b, m.n, m.win.c, m.n, deltaCell(m.win.d, 0, '승'), m.surv.b, m.wipe.b, m.surv.c, m.wipe.c, deltaCell(m.surv.d, 0, '생존'),
+      m.g.b.toFixed(2), m.g.c.toFixed(2), deltaCell(m.g.d, 2, 'G'));
+    var kinds = [];
+    if (rg.kinds.map) kinds.push('지도 ' + rg.kinds.map + '곳'); if (rg.kinds.opp) kinds.push('상대 ' + rg.kinds.opp + '명'); if (rg.kinds.side) kinds.push('진영 ' + rg.kinds.side + '개');
+    var reg = rg.items.length ? kinds.join(' · ') + ' — ' + rg.items.slice(0, 3).map(function (x) { return x.name + ' ' + x.text; }).join(' · ') + (rg.items.length > 3 ? ' 외 ' + (rg.items.length - 3) + '곳' : '')
+      : '없음 (지도·상대·진영 모두 같거나 상승)';
+    return h('{}{}{}<p class="small" style="margin-top:8px"><span class="lbl">후퇴한 곳</span>{}</p>{}{}{}{}', head, cap, tbl, reg, ci ? h('<p class="cap">{}</p>', ci) : '',
+      bdTable('지도별', res.byMap, hy, 'maps', w, l, digestOf('지도별', res.byMap, '곳')),
+      bdTable('상대별', res.byOpponent, hy, 'opps', w, l, digestOf('상대별', res.byOpponent, '명')),
+      bdTable('진영별', res.bySide, hy, 'sides', w, l, '진영별 · ' + Object.keys(res.bySide || {}).join('·')));
+  });
+  return sec('확인 결과', blocks);
+}
+function p4(w, l) {
+  var facts = [], nx = nextW(w, l), later = laterSame(w, l);
+  var sentence = w.outcome === 'adopt' ? h('채택 — r{} → r{}. 러너가 리포트 유효성과 bot/ = 확인 후보를 검사한 뒤 커밋했습니다{}.', w.readyBefore, w.version, w.commit ? h(' (<code title="{}">{}</code>)', w.commit, String(w.commit).slice(0, 7)) : '')
+    : w.outcome === 'reject' ? h('기각 — 새 세대 없음 (시작 r{}).', w.readyBefore)
+    : w.outcome === 'incomplete' ? h('채택 없이 끝났습니다 — 새 세대가 기록되지 않았습니다 (시작 r{}).', w.readyBefore)
+    : h('결과 파일 없이 끝났습니다 — 새 세대 없음.');
+  if (w.outcome !== 'adopt') {
+    if (exportedIn(l, w.id) === 'none') facts.push('운영 기록: 이 웨이브의 시작과 종료 사이에 내보내기 줄이 없습니다.');
+    if (nx && nx.readyBefore != null) facts.push('다음 웨이브 ' + short(nx.id) + '도 r' + nx.readyBefore + '에서 시작했습니다 (start.json 기록).');
+    facts.push('bot/ 폴더 내용은 이 화면이 검사하지 않습니다.');
+  }
+  var cont = later ? h('<p class="small"><a href="#{}">이어짐 → {}에서 같은 가설 {}로 {} ›</a></p>', l.name + '-' + later.id, short(later.id), (later.growth && (later.growth.candidate || (later.growth.hypothesis && later.growth.hypothesis.id))) || '', later.outcome === 'adopt' ? '채택' : '다시 시험') : '';
+  var j = w.growth && w.growth.judgment, showJ = j && !(w.reason && w.reason.indexOf(j) >= 0);
+  var ko = w.reason && REASON_KO[w.reason];
+  return sec('판정', h('<p>{} {}</p>{}{}<dl class="facts" style="margin-top:10px">{}{}<dt>종료</dt><dd>{}</dd></dl>', pill(w.outcome), sentence,
+    facts.length ? h('<ul class="small t2" style="margin:6px 0 0;padding-inline-start:18px">{}</ul>', facts.map(function (f) { return h('<li>{}</li>', f); })) : '', cont,
+    showJ ? h('<dt>최종 판단 (NOTES)</dt><dd class="prose">{}</dd>', txt(j)) : '',
+    w.reason ? h('<dt>판정 이유 (result.json)</dt><dd>{}{}</dd>', ko ? h('<div>{}</div><div class="small t3" lang="en">원문 {}</div>', ko, w.reason) : txt(w.reason), '') : '',
+    exitText(w.exit)));
+}
+function modelFacts(m) {
+  if (!m) return '';
+  return h('<dt>에이전트 결과</dt><dd>{}</dd><dt>턴</dt><dd>{}</dd><dt>에이전트 실측</dt><dd>{}</dd><dt>API 시간</dt><dd>{}</dd><dt>비용</dt><dd>{}</dd>',
+    m.subtype || '–', m.turns == null ? '–' : m.turns, dur(m.wallMs), dur(m.apiMs), num(m.costUsd) == null ? '–' : '$' + num(m.costUsd).toFixed(2));
+}
+function p5(w, l) {
+  var pv = prevW(w, l), gap = '';
+  if (pv && pv.ended && w.started) gap = gapInfo(l, pv, w).text;
+  var prior = priorSame(w, l), later = laterSame(w, l), cont = [];
+  if (prior) cont.push(short(prior.id) + ' (' + OUT_LABEL[prior.outcome] + ', 같은 가설 ' + ((prior.growth && (prior.growth.candidate || (prior.growth.hypothesis && prior.growth.hypothesis.id))) || '') + ')');
+  if (later) cont.push('→ ' + short(later.id));
+  return sec('시간 · 실행 정보', h('<dl class="facts"><dt>시작</dt><dd>{}</dd><dt>종료</dt><dd>{}</dd><dt>소요</dt><dd>{}</dd>{}<dt>시작 세대</dt><dd>r{}</dd><dt>결과 세대</dt><dd>{}</dd>' +
+    '<dt>종료 코드</dt><dd>{}</dd>{}<dt>예비 모델</dt><dd>{}</dd>{}<dt>웨이브 ID</dt><dd class="mono">{}</dd>{}{}<dt>마지막 기록</dt><dd>{}</dd></dl>',
+    stamp(w.started), w.ended ? stamp(w.ended) : '–', w.running ? h('<span data-since="{}">{}</span>', w.started, dur(Date.now() - new Date(w.started))) : dur(w.durationMs),
+    gap ? h('<dt>앞 웨이브와 간격</dt><dd>{}</dd>', gap) : '', w.readyBefore == null ? '?' : w.readyBefore, w.outcome === 'adopt' && w.version ? 'r' + w.version : w.running ? '판정 전' : '없음',
+    exitText(w.exit), modelFacts(w.model), w.fallbackUsed ? '사용' : '사용 안 함', w.fallbackUsed ? modelFacts(w.fallbackModel) : '',
+    w.id, w.commit ? h('<dt>커밋</dt><dd><code title="{}">{}</code></dd>', w.commit, String(w.commit).slice(0, 7)) : '',
+    (w.growth && w.growth.candidate) || cont.length ? h('<dt>후보 · 이어짐</dt><dd>{}{}</dd>', w.growth && w.growth.candidate ? h('<code>{}</code> ', w.growth.candidate) : '', cont.join(' · ')) : '',
+    w.transcriptUpdated ? stamp(w.transcriptUpdated) : '–'));
+}
+function p6(w, l) {
+  var n = (w.notes || []).length;
+  if (!n) return '';
+  return disc(l.name + ':' + w.id + ':notes', 'NOTES 기록 · 섹션 ' + n + '개', h('<div class="md-notes">{}</div>', w.notes.map(markdown)));
+}
+function p7(w, l) {
+  var r = w.recent || [], jobs = l.jobs || [];
+  return sec('에이전트 기록 (최신 순 ' + r.length + '개)', h('<ol class="recent-list">{}</ol><p class="cap">마지막 기록 <span data-ago="{}">{}</span> · 항목별 시각은 기록되지 않음</p>{}',
+    r.map(function (t) { return h('<li class="prose">{}</li>', txt(t)); }), w.transcriptUpdated, ago(w.transcriptUpdated),
+    jobs.length ? h('<p class="cap mono">{}</p>', jobs.map(function (j) { return (j.status === 'running' ? '실행 중' : '대기') + ' · pid ' + j.pid + (j.childPid ? ' (자식 ' + j.childPid + ')' : ''); }).join(' / ')) : ''));
+}
+function panel(w, l) { return [p1(w, l), p2(w, l), p3(w, l), p4(w, l), p5(w, l), p6(w, l)]; }
+function runningPanel(w, l) {
+  var hy = hypFor(w), rt = relTag(hy, w), lc = liveCheck(w);
+  var s1 = sec('시험 중 가설', hy ? h('<div class="label">{} <span class="mono">{}</span>{}</div><div class="prose">{}</div>{}', rt ? h('<span class="tag">{}</span>', rt.tag) : '', hy.id, hyExtra(hy), txt(hy.statement),
+    h('<dl class="crit-dl" style="margin-top:8px">{}{}{}</dl>', hy.better ? h('<div><dt>좋아질 상황</dt><dd class="prose">{}</dd></div>', txt(hy.better)) : '', hy.worse ? h('<div><dt>나빠질 가능성</dt><dd class="prose">{}</dd></div>', txt(hy.worse)) : '', hy.falsify ? h('<div><dt>틀렸다면</dt><dd class="prose">{}</dd></div>', txt(hy.falsify)) : ''))
+    : h('<p class="small t3">NOTES에 아직 가설이 없습니다.</p>'));
+  var s2 = lc ? p3(w, l) : '';
+  return [s1, s2, p7(w, l), p2(w, l), p5(w, l), p6(w, l)];
+}
+// ---- NOTES markdown (escape first; joins hard-wrapped lines) ----
+function markdown(src) {
+  var out = [], para = [], list = null, table = null, fence = null;
+  function endPara() { if (para.length) { out.push(h('<p class="prose">{}</p>', inline(para.join(' ')))); para = []; } }
+  function endList() { if (list) { out.push(h('<ul>{}</ul>', list.map(function (li) { return h('<li class="prose">{}</li>', inline(li)); }))); list = null; } }
+  function endTable() {
+    if (!table) return;
+    var rows = table.filter(function (r) { return !/^\s*\|?\s*:?-{2,}/.test(r); }).map(function (r) { return r.replace(/^\s*\|/, '').replace(/\|\s*$/, '').split('|').map(function (c) { return c.trim(); }); });
+    var head = rows.shift() || [];
+    out.push(h('<table class="md"><thead><tr>{}</tr></thead><tbody>{}</tbody></table>', head.map(function (c) { return h('<th scope="col">{}</th>', inline(c)); }),
+      rows.map(function (r) { return h('<tr>{}</tr>', r.map(function (c, i) { return h('<td data-label="{}"><div>{}</div></td>', head[i] || '', inline(c)); })); })));
+    table = null;
+  }
+  function endAll() { endPara(); endList(); endTable(); }
+  String(src).split('\n').forEach(function (line) {
+    if (fence) { if (/^\x60{3}/.test(line)) { out.push(h('<pre><code>{}</code></pre>', fence.join('\n'))); fence = null; } else fence.push(line); return; }
+    if (/^\x60{3}/.test(line)) { endAll(); fence = []; return; }
+    if (/^\s*\|/.test(line)) { endPara(); endList(); (table = table || []).push(line); return; }
+    endTable();
+    var hd = line.match(/^(#{2,6})\s+(.*)$/);
+    if (hd) { endAll(); out.push(hd[1].length <= 3 ? h('<h5>{}</h5>', inline(hd[2])) : h('<h6>{}</h6>', inline(hd[2]))); return; }
+    if (/^\s*ready:\s*r\d+/i.test(line)) { endAll(); out.push(h('<div class="ready"><span class="lbl">채택 줄</span>{}</div>', inline(line.trim()))); return; }
+    var li = line.match(/^\s*[-*]\s+(.*)$/);
+    if (li) { endPara(); (list = list || []).push(li[1]); return; }
+    if (!line.trim()) { endPara(); endList(); return; }
+    if (list && /^\s{2,}\S/.test(line)) { list[list.length - 1] += ' ' + line.trim(); return; }
+    endList(); para.push(line.trim());
+  });
+  endAll(); if (fence) out.push(h('<pre><code>{}</code></pre>', fence.join('\n')));
+  return out;
+}
+function policyCard() {
+  var body = h('<ol class="prose">{}</ol><p class="label">출처: lineages/LOOP.md, lineages/GROWTH.md · 이 페이지에 고정된 요약 (2026-09-28)</p>', [
+    '확인은 고정한 후보와 웨이브 시작 때의 최선을 같은 새 조건에서 비교한다: 새 시드 2개 × 지도 10 × 상대 4 × 양 진영 = 버전당 160판.',
+    '보고서는 판단 근거이지 자동 승격 점수가 아니다.',
+    '뚜렷하게 더 낫다는 근거가 있을 때만 채택하고, 애매하면 기존 최선을 유지하며 이유를 남긴다. 기각도 유효한 결과다.',
+    '승패뿐 아니라 전멸·생존·성장(G)과 지도·진영별 차이 같은 상충 신호를 함께 본다.',
+    '개선 주장은 검증한 범위(이 지도 10개·로컬 상대 4개)로 한정한다.',
+    '한 웨이브에서 채택은 한 번이다. 미완료는 채택·성장으로 세지 않는다.',
+    '같은 후보·기준의 시드를 다시 뽑지 않는다.',
+    '채택 때 러너가 리포트 유효성과 bot/ = 확인한 후보인지 검사하고 커밋·내보낸다.'].map(function (t) { return h('<li>{}</li>', t); }));
+  return h('<section class="card" id="policy">{}</section>', disc('policy', '승격 공통 기준 · 시드 2 × 지도 10 × 상대 4 × 양 진영 = 버전당 160판 · 뚜렷하게 나을 때만 채택', body, 'pol'));
+}
+function footerHtml() {
+  var terms = [['채택', '확인한 후보가 새 세대가 됨'], ['기각', '이전 최선보다 뚜렷하게 낫지 않아 버림'], ['중단', '결론 없이 끝남'], ['끊김', '결과 파일 없이 끝남(러너 없음)'],
+    ['G', '가장 긴 용 길이의 판 평균'], ['확인 경기', '새 시드 160판으로 이전 최선과 비교'], ['공통 관문', '모든 웨이브에 같은 확인 조건'],
+    ['결정 기준', '이 웨이브 NOTES의 미리 정한 규칙·틀렸다면·예측 중 첫 번째'], ['쉼·정지', '웨이브 사이 시간(누적에 넣지 않음)']];
+  return h('<dl>{}</dl><p>15초마다 자동 갱신 · 읽기 전용 · 시각은 이 컴퓨터 기준</p>', terms.map(function (t) { return h('<dt>{}</dt><dd>{}</dd>', t[0], t[1]); }));
+}
+function view() {
+  var g5 = data.lineages.filter(function (l) { return l.name === 'g5'; })[0] || { name: 'g5', state: 'missing' };
+  return [nowCard(g5), flow(), histHead(), timeline(g5), policyCard()];
+}
+
+// ---- behaviour ----
+var board = document.getElementById('board');
+function header() {
+  var fresh = document.getElementById('fresh'), stale = lastOk && Date.now() - lastOk > 45000;
+  if (!data) return;
+  fresh.innerHTML = part(stale ? h('<span class="pill o-incomplete">{} 갱신 멈춤 · {} 기준 데이터</span>', raw(SVG.alert), hms(new Date(lastOk))) : h('{} 기준', hms(new Date(lastOk))));
+  var d = num(data.diskFreeGiB), disk = document.getElementById('disk');
+  disk.innerHTML = part(d == null ? '' : d >= 25 ? h('디스크 {} GiB', d) : d >= 20 ? h('<span class="pill o-incomplete">디스크 {} GiB · 20 GiB 미만이면 새 경기 중단</span>', d) : h('<span class="pill o-reject">디스크 {} GiB · 새 경기 중단 수준</span>', d));
+}
+function render() {
+  if (!data) return;
+  var active = document.activeElement, focusKey = active && active.closest ? (active.closest('[data-key]') || {}).dataset : null;
+  focusKey = focusKey ? focusKey.key : null;
+  var y = window.scrollY;
+  board.innerHTML = part(view());
+  document.getElementById('foot').innerHTML = part(footerHtml());
+  header();
+  sizeFlow();
+  window.scrollTo(0, y);
+  if (focusKey) { var el = board.querySelector('[data-key="' + CSS.escape(focusKey) + '"] > summary'); if (el) el.focus({ preventScroll: true }); }
+}
+function sizeFlow() {
+  var lane = board.querySelector('.lane');
+  if (lane) {
+    var w = lane.clientWidth;
+    if (w && Math.abs(w - flowWidth) > 40) { flowWidth = w; var f = document.getElementById('flow'); if (f) { f.outerHTML = part(flow()); } }
+  }
+  board.querySelectorAll('.seg').forEach(function (s) { var w = s.offsetWidth; s.classList.toggle('lbl-none', w < 36); s.classList.toggle('lbl-short', w >= 36 && w < 90); });
+}
+function announce(prev, cur) {
+  if (!prev) return;
+  var msgs = [], changed = [];
+  cur.lineages.forEach(function (l) {
+    var pl = prev.lineages.filter(function (x) { return x.name === l.name; })[0]; if (!pl) return;
+    var pw = {}; (pl.waves || []).forEach(function (w) { pw[w.id] = w; });
+    (l.waves || []).forEach(function (w) {
+      var o = pw[w.id];
+      if (!o && w.running) { msgs.push(l.name + ' ' + short(w.id) + ' 시작'); changed.push(l.name + '-' + w.id); return; }
+      if (!o) return;
+      if (o.outcome !== w.outcome && w.outcome !== 'running') {
+        msgs.push(l.name + ' ' + short(w.id) + ' ' + OUT_LABEL[w.outcome] + (w.outcome === 'adopt' && w.version ? ' — r' + w.readyBefore + ' → r' + w.version : ''));
+        changed.push(l.name + '-' + w.id);
+      } else if (w.running && o.running && phase(o) !== phase(w)) {
+        msgs.push(l.name + ' ' + short(w.id) + (phase(w) === 'confirm' ? ' 확인 경기 시작' : ' 판정 단계')); changed.push(l.name + '-now');
+      }
+    });
+    if (pl.state !== l.state && l.state === 'stopped') msgs.push(l.name + ' 루프 정지');
+  });
+  if (msgs.length) document.getElementById('announce').textContent = msgs.join('. ');
+  changed.forEach(function (id) { var el = document.getElementById(id); if (el) { el.classList.add('flash'); setTimeout(function () { el.classList.remove('flash'); }, 900); } });
+}
+function showAlert(status) {
+  var a = document.getElementById('alert');
+  if (!status) { a.innerHTML = ''; return; }
+  var body = status === 403 ? '접근 토큰이 필요합니다. operator-only/dashboard.url의 주소로 다시 여세요.'
+    : status === -1 ? '데이터는 받았지만 화면을 그리지 못했습니다. 이전 화면을 유지합니다. 브라우저 콘솔 오류를 확인하세요.'
+    : '화면은 ' + (lastOk ? hms(new Date(lastOk)) : '–') + ' 기준입니다. 서버가 꺼졌는지 확인하세요.';
+  a.innerHTML = part(h('<div class="box"><div><b>새 데이터를 받지 못했습니다</b><p>{}</p></div><button type="button" id="retry">다시 시도</button></div>', body));
+}
+function load() {
+  fetch('/api/state', { cache: 'no-store', credentials: 'same-origin' }).then(function (r) {
+    if (!r.ok) { var e = new Error('HTTP ' + r.status); e.status = r.status; throw e; }
+    return r.text();
+  }).then(function (t) {
+    var cmp = t.replace(/"at":"[^"]*",?/, '');
+    if (cmp === lastText) { lastOk = Date.now(); showAlert(null); header(); return; }
+    var next = JSON.parse(t), before = data;
+    data = next;
+    try { render(); } catch (err) { data = before; console.error(err); showAlert(-1); return; }
+    lastText = cmp; lastOk = Date.now(); prevData = before; showAlert(null); header();
+    announce(prevData, data);
+    if (!prevData) deepLink();
+  }).catch(function (e) { showAlert(e.status || -2); header(); });
+}
+// lazy panels: fill a row's panel when it opens
+document.addEventListener('toggle', function (e) {
+  var d = e.target; if (!d || !d.dataset || !d.dataset.key) return;
+  if (d.open) openKeys.add(d.dataset.key); else openKeys.delete(d.dataset.key);
+  saveOpen();
+  if (d.open && d.classList.contains('row')) {
+    var pnl = d.querySelector(':scope > .panel[data-lazy]');
+    if (pnl && data) {
+      var parts = d.dataset.key.split(':'), l = data.lineages.filter(function (x) { return x.name === parts[0]; })[0], w = l && l.waves.filter(function (x) { return x.id === parts[1]; })[0];
+      if (w) { pnl.innerHTML = part(panel(w, l)); pnl.removeAttribute('data-lazy'); }
+    }
+  }
+}, true);
+document.addEventListener('click', function (e) {
+  var b = e.target.closest && e.target.closest('button');
+  if (!b) return;
+  if (b.id === 'refresh' || b.id === 'retry') { lastText = ''; load(); }
+  if (b.dataset.order) { order = b.dataset.order; try { localStorage.setItem('waveDash.order', order); } catch (x) {} render(); }
+  if (b.dataset.span) { span = b.dataset.span; try { localStorage.setItem('waveDash.span', span); } catch (x) {} render(); }
+});
+function deepLink() {
+  if (/^#g[345]-now$/.test(location.hash)) {
+    if (location.hash !== '#g5-now') history.replaceState(null, '', '#g5-now');
+    var now = document.getElementById('g5-now');
+    if (now) now.scrollIntoView({ block: 'start' });
+    return;
+  }
+  var m = location.hash.match(/^#(g\d+)-(w\d{6})(-p2)?$/);
+  if (!m || !data) return;
+  var key = m[1] + ':' + m[2] + ':row';
+  if (!openKeys.has(key)) { openKeys.add(key); saveOpen(); render(); }
+  var el = document.getElementById(m[1] + '-' + m[2] + (m[3] || '')) || document.getElementById(m[1] + '-' + m[2]);
+  if (el) { el.scrollIntoView({ block: 'start' }); var s = document.getElementById(m[1] + '-' + m[2]); if (s && s.querySelector('summary')) s.querySelector('summary').focus({ preventScroll: true }); }
+}
+window.addEventListener('hashchange', deepLink);
+var rz; window.addEventListener('resize', function () { clearTimeout(rz); rz = setTimeout(function () { if (data) sizeFlow(); }, 150); });
+function tick() {
+  document.querySelectorAll('[data-since]').forEach(function (el) {
+    var s = el.getAttribute('data-since'); if (!s) return;
+    var v = dur((+el.getAttribute('data-base-ms') || 0) + Date.now() - new Date(s));
+    el.textContent = el.classList.contains('elapsed') ? v + ' 경과' : v;
+  });
+}
+setInterval(tick, 1000);
+setInterval(function () { document.querySelectorAll('[data-ago]').forEach(function (el) { el.textContent = ago(el.getAttribute('data-ago')); }); }, 15000);
+setInterval(header, 5000);
+setInterval(function () { if (data) { var f = document.getElementById('flow'); if (f) { f.outerHTML = part(flow()); sizeFlow(); } } }, 60000);
+setInterval(load, 15000);
+load();
+</script>
+</body>
+</html>

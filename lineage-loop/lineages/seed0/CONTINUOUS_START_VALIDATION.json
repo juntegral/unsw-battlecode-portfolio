@@ -1,0 +1,140 @@
+{
+  "at": "2026-09-27T22:50:12.612Z",
+  "stage": "continuous-running",
+  "transitionUpdated": "2026-09-27T22:47:46.220Z",
+  "lineages": [
+    {
+      "name": "g3",
+      "wave": "w000002",
+      "runnerAlive": true,
+      "pid": 77668,
+      "childPid": 77671,
+      "first": {
+        "outcome": "adopt",
+        "exit": 0,
+        "version": 2,
+        "commit": "6cfd1e2dc7abb2d4a858a6abd5a58b71623202bc",
+        "report": "~/01. Project/개인 프로젝트/unsw-arena-g3/lineages/g3/checks/w000001-fb489383/report.json",
+        "sourceHash": "9a52dd40a7573aa312a5602a3dfe5e2096fb2dcb11ea7cce5bd77cb8878db486",
+        "baseline": {
+          "n": 160,
+          "wins": 120,
+          "survived": 154,
+          "meanG": 22.14375
+        },
+        "candidate": {
+          "n": 160,
+          "wins": 125,
+          "survived": 153,
+          "meanG": 24.7875
+        }
+      },
+      "baselineMatchesFirst": true,
+      "client": {
+        "cwd": "~/01. Project/개인 프로젝트/unsw-arena-g3",
+        "skills": [],
+        "mcp_servers": [],
+        "agents": [
+          "claude",
+          "Explore",
+          "general-purpose",
+          "Plan"
+        ],
+        "plugins": [
+          {
+            "name": "agents-md",
+            "path": "builtin",
+            "source": "agents-md@builtin"
+          },
+          {
+            "name": "telemetry",
+            "path": "builtin",
+            "source": "telemetry@builtin"
+          }
+        ],
+        "autoMemoryEnabled": false,
+        "memoryPathsFieldReported": false,
+        "tools": [
+          "Bash",
+          "Edit",
+          "Glob",
+          "Grep",
+          "Read",
+          "TaskStop",
+          "Write"
+        ],
+        "safeModeConfigured": true,
+        "noSessionPersistenceConfigured": true
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "g4",
+      "wave": "w000002",
+      "runnerAlive": true,
+      "pid": 41746,
+      "childPid": 41753,
+      "first": {
+        "outcome": "adopt",
+        "exit": 0,
+        "version": 2,
+        "commit": "a4359d9da193cc94823c225903318dd08b3e1983",
+        "report": "~/01. Project/개인 프로젝트/unsw-arena-g4/lineages/g4/checks/w000001-3c2d9a28/report.json",
+        "sourceHash": "fedc52d9476f59c1ccd430745d11c9306abe9d36eaa05a696416494acff5e7e0",
+        "baseline": {
+          "n": 160,
+          "wins": 132,
+          "survived": 155,
+          "meanG": 24.0375
+        },
+        "candidate": {
+          "n": 160,
+          "wins": 137,
+          "survived": 157,
+          "meanG": 28.9375
+        }
+      },
+      "baselineMatchesFirst": true,
+      "client": {
+        "cwd": "~/01. Project/개인 프로젝트/unsw-arena-g4",
+        "skills": [],
+        "mcp_servers": [],
+        "agents": [
+          "claude",
+          "Explore",
+          "general-purpose",
+          "Plan"
+        ],
+        "plugins": [
+          {
+            "name": "agents-md",
+            "path": "builtin",
+            "source": "agents-md@builtin"
+          },
+          {
+            "name": "telemetry",
+            "path": "builtin",
+            "source": "telemetry@builtin"
+          }
+        ],
+        "autoMemoryEnabled": false,
+        "memoryPathsFieldReported": false,
+        "tools": [
+          "Bash",
+          "Edit",
+          "Glob",
+          "Grep",
+          "Read",
+          "TaskStop",
+          "Write"
+        ],
+        "safeModeConfigured": true,
+        "noSessionPersistenceConfigured": true
+      },
+      "passed": true,
+      "errors": []
+    }
+  ],
+  "passed": true
+}

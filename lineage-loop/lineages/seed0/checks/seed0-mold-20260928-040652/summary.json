@@ -1,0 +1,94 @@
+{
+  "submission": {
+    "id": 9109,
+    "version": 22,
+    "name": "seed0-mold-20260928-040652",
+    "status": "active"
+  },
+  "battle": {
+    "id": 416934,
+    "ranked": false,
+    "map": "Default",
+    "rounds": 500,
+    "opponent": "risq-v",
+    "opponentEloBefore": 1509,
+    "ourSide": "A",
+    "result": "win",
+    "eloChange": 0
+  },
+  "result": {
+    "terminated": true,
+    "endReason": "roundLimit",
+    "winner": "A",
+    "teamA": {
+      "dragonCount": 6,
+      "longestDragon": 14,
+      "totalLength": 29
+    },
+    "teamB": {
+      "dragonCount": 37,
+      "longestDragon": 6,
+      "totalLength": 128
+    }
+  },
+  "events": {
+    "A": {
+      "turns": 2510,
+      "actions": 2510,
+      "splits": 18,
+      "deaths": 16,
+      "deathReasons": {
+        "H": 9,
+        "O": 5,
+        "W": 2
+      },
+      "instructionExceeded": 0,
+      "instructionPoints": {
+        "n": 2510,
+        "median": 10238348,
+        "p95": 19919659,
+        "max": 30829151
+      }
+    },
+    "B": {
+      "turns": 14359,
+      "actions": 14359,
+      "splits": 97,
+      "deaths": 64,
+      "deathReasons": {
+        "W": 13,
+        "O": 13,
+        "S": 15,
+        "H": 23
+      },
+      "instructionExceeded": 0,
+      "instructionPoints": {
+        "n": 0,
+        "max": null
+      }
+    }
+  },
+  "cumulativeSubmission": {
+    "wins": 4,
+    "draws": 0,
+    "losses": 7
+  },
+  "additionalSeries": [
+    {
+      "id": 416897,
+      "opponent": "PoGang",
+      "wins": 2,
+      "losses": 3,
+      "ranked": true
+    },
+    {
+      "id": 416902,
+      "opponent": "Lon Co Kiri",
+      "wins": 1,
+      "losses": 4,
+      "ranked": true
+    }
+  ],
+  "scope": "This session submitted once and requested exactly one unranked game. The two ranked series were requested separately under the same account; their trigger was not established.",
+  "zipSHA256": "8babe2d47e798bd8370ee8bc2fbe86aed8dce96f3b815958bec99a3356085039"
+}
