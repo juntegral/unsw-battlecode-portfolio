@@ -1,0 +1,55 @@
+{
+  "label": "cand-pd10-base",
+  "bot": "~/01. Project/개인 프로젝트/unsw-heuristic/bot",
+  "at": "2026-09-29T17:58:14.283Z",
+  "benchmark": {
+    "maps": 3,
+    "opps": [
+      "replay_rules_v8",
+      "archetype_swarm",
+      "archetype_hunter",
+      "h2"
+    ],
+    "seeds": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "sides": 2
+  },
+  "all": {
+    "n": 96,
+    "G": 28.708333333333332,
+    "alive": 0.9791666666666666,
+    "win": 0.9479166666666666
+  },
+  "byOpp": {
+    "replay_rules_v8": {
+      "n": 24,
+      "G": 30,
+      "alive": 1,
+      "win": 0.9583333333333334
+    },
+    "archetype_swarm": {
+      "n": 24,
+      "G": 24.458333333333332,
+      "alive": 1,
+      "win": 0.9583333333333334
+    },
+    "archetype_hunter": {
+      "n": 24,
+      "G": 19.583333333333332,
+      "alive": 0.9166666666666666,
+      "win": 0.875
+    },
+    "h2": {
+      "n": 24,
+      "G": 40.791666666666664,
+      "alive": 1,
+      "win": 1
+    }
+  },
+  "problems": 0,
+  "errors": 0
+}

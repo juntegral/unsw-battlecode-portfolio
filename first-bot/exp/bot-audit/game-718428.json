@@ -1,0 +1,548 @@
+{
+  "gameId": 718428,
+  "map": "Prisoners Dilemma",
+  "opp": 801,
+  "us": "A",
+  "submission": 13313,
+  "winner": "B",
+  "rounds": 500,
+  "turns": 3449,
+  "labelled": 3449,
+  "move": 2927,
+  "tags": {
+    "map": 269,
+    "cov": 270,
+    "escsplit": 253,
+    "F": 81,
+    "F2": 81,
+    "cl": 296,
+    "noexit": 256,
+    "PORTAL?": 7,
+    "grab": 59,
+    "csplit": 8,
+    "noexit_spare": 3,
+    "lsplit": 1,
+    "g": 89,
+    "feed": 4,
+    "late": 76,
+    "gx": 3
+  },
+  "kinds": {
+    "move": 2927,
+    "escsplit": 253,
+    "noexit": 256,
+    "csplit": 8,
+    "lsplit": 1,
+    "feed": 4
+  },
+  "explicitGoals": {
+    "none": 2757,
+    "early_action": 522,
+    "F": 81,
+    "g": 89
+  },
+  "goalModifiers": {
+    "cov": 270,
+    "F": 81,
+    "F2": 81,
+    "cl": 296,
+    "grab": 59,
+    "g": 89
+  },
+  "splits": {
+    "escsplit": 253,
+    "csplit": 8,
+    "lsplit": 1
+  },
+  "splitActual": {
+    "escsplit": 253,
+    "csplit": 8,
+    "lsplit": 1
+  },
+  "phases": {
+    "r0-99": {
+      "turns": 447,
+      "tags": {
+        "map": 55,
+        "cov": 127,
+        "escsplit": 50,
+        "F": 19,
+        "F2": 19,
+        "cl": 50,
+        "noexit": 50,
+        "PORTAL?": 3,
+        "grab": 2,
+        "csplit": 1
+      },
+      "goals": {
+        "none": 327,
+        "early_action": 101,
+        "F": 19
+      },
+      "splits": {
+        "escsplit": 50,
+        "csplit": 1
+      }
+    },
+    "r100-249": {
+      "turns": 1103,
+      "tags": {
+        "cov": 94,
+        "F": 57,
+        "F2": 57,
+        "cl": 107,
+        "noexit": 76,
+        "escsplit": 77,
+        "map": 87,
+        "csplit": 7,
+        "grab": 6,
+        "noexit_spare": 1
+      },
+      "goals": {
+        "none": 886,
+        "F": 57,
+        "early_action": 160
+      },
+      "splits": {
+        "escsplit": 77,
+        "csplit": 7
+      }
+    },
+    "r250-299": {
+      "turns": 625,
+      "tags": {
+        "cl": 26,
+        "noexit": 25,
+        "escsplit": 25,
+        "map": 25,
+        "cov": 33,
+        "PORTAL?": 2,
+        "F": 5,
+        "F2": 5
+      },
+      "goals": {
+        "none": 570,
+        "early_action": 50,
+        "F": 5
+      },
+      "splits": {
+        "escsplit": 25
+      }
+    },
+    "r300-339": {
+      "turns": 479,
+      "tags": {
+        "cl": 21,
+        "noexit": 20,
+        "escsplit": 20,
+        "map": 21,
+        "grab": 7,
+        "PORTAL?": 2,
+        "cov": 16,
+        "lsplit": 1
+      },
+      "goals": {
+        "none": 438,
+        "early_action": 41
+      },
+      "splits": {
+        "escsplit": 20,
+        "lsplit": 1
+      }
+    },
+    "r340-429": {
+      "turns": 547,
+      "tags": {
+        "cl": 57,
+        "noexit": 49,
+        "escsplit": 45,
+        "g": 89,
+        "map": 45,
+        "grab": 44,
+        "noexit_spare": 2,
+        "feed": 4
+      },
+      "goals": {
+        "none": 360,
+        "early_action": 98,
+        "g": 89
+      },
+      "splits": {
+        "escsplit": 45
+      }
+    },
+    "r430-449": {
+      "turns": 70,
+      "tags": {
+        "cl": 10,
+        "noexit": 10,
+        "escsplit": 10,
+        "map": 10
+      },
+      "goals": {
+        "none": 50,
+        "early_action": 20
+      },
+      "splits": {
+        "escsplit": 10
+      }
+    },
+    "r450-469": {
+      "turns": 70,
+      "tags": {
+        "cl": 10,
+        "noexit": 10,
+        "escsplit": 10,
+        "map": 10
+      },
+      "goals": {
+        "none": 50,
+        "early_action": 20
+      },
+      "splits": {
+        "escsplit": 10
+      }
+    },
+    "r470-494": {
+      "turns": 87,
+      "tags": {
+        "late": 63,
+        "cl": 13,
+        "noexit": 12,
+        "escsplit": 12,
+        "map": 12
+      },
+      "goals": {
+        "none": 63,
+        "early_action": 24
+      },
+      "splits": {
+        "escsplit": 12
+      }
+    },
+    "r495-499": {
+      "turns": 21,
+      "tags": {
+        "late": 13,
+        "noexit": 4,
+        "escsplit": 4,
+        "map": 4,
+        "cl": 2,
+        "gx": 3
+      },
+      "goals": {
+        "none": 13,
+        "early_action": 8
+      },
+      "splits": {
+        "escsplit": 4
+      }
+    }
+  },
+  "lengths": {
+    "2": {
+      "turns": 1446,
+      "tags": {
+        "F": 7,
+        "F2": 7,
+        "cov": 109,
+        "cl": 272,
+        "map": 13,
+        "grab": 20,
+        "noexit": 5,
+        "noexit_spare": 3,
+        "late": 16
+      }
+    },
+    "7": {
+      "turns": 5,
+      "tags": {
+        "grab": 2,
+        "g": 1,
+        "feed": 1
+      }
+    },
+    "8+": {
+      "turns": 871,
+      "tags": {
+        "map": 252,
+        "escsplit": 251,
+        "g": 32,
+        "grab": 9,
+        "late": 60,
+        "gx": 3
+      }
+    },
+    "3-4": {
+      "turns": 1110,
+      "tags": {
+        "cov": 161,
+        "map": 4,
+        "noexit": 251,
+        "PORTAL?": 7,
+        "grab": 23,
+        "csplit": 8,
+        "F": 74,
+        "F2": 74,
+        "cl": 24,
+        "escsplit": 2,
+        "lsplit": 1,
+        "g": 40,
+        "feed": 2
+      }
+    },
+    "5-6": {
+      "turns": 17,
+      "tags": {
+        "grab": 5,
+        "g": 16,
+        "feed": 1
+      }
+    }
+  },
+  "cooccurrence": {
+    "F+F2": 81,
+    "F+cov": 51,
+    "F+cl": 2,
+    "F2+cov": 51,
+    "F2+cl": 2,
+    "cl+cov": 2,
+    "F+grab": 1,
+    "F2+grab": 1,
+    "cl+grab": 1,
+    "cl+g": 2,
+    "g+grab": 19
+  },
+  "labelActionMismatch": 0,
+  "duplicates": 0,
+  "missingLabels": 0,
+  "unexpected": [],
+  "gateChecks": {
+    "escsplit_unit_limit": {
+      "n": 253,
+      "pass": 253
+    },
+    "csplit_unit_limit": {
+      "n": 8,
+      "pass": 8
+    },
+    "csplit_clock": {
+      "n": 8,
+      "pass": 8
+    },
+    "csplit_length": {
+      "n": 8,
+      "pass": 8
+    },
+    "csplit_actual_units": {
+      "n": 8,
+      "pass": 8
+    },
+    "csplit_not_true_long_king": {
+      "n": 8,
+      "pass": 8
+    },
+    "lsplit_unit_limit": {
+      "n": 1,
+      "pass": 1
+    },
+    "lsplit_clock": {
+      "n": 1,
+      "pass": 1
+    },
+    "lsplit_length": {
+      "n": 1,
+      "pass": 1
+    },
+    "lsplit_actual_units": {
+      "n": 1,
+      "pass": 1
+    }
+  },
+  "maxDragonId": 459,
+  "sonarFromIdOver255": 1780,
+  "resources": {
+    "freeMemoryPct": 66,
+    "freeDiskGB": 36
+  },
+  "priority": 10,
+  "checks": {
+    "sim": 0,
+    "splits": 0,
+    "drops": 0,
+    "eatTC": 0,
+    "ledger": 0,
+    "final": 0,
+    "lineage": 0,
+    "natBal": 0,
+    "dropBal": 0,
+    "unknownDeath": 0
+  },
+  "result": {
+    "terminated": true,
+    "endReason": "roundLimit",
+    "winner": "B",
+    "teamA": {
+      "dragonCount": 3,
+      "longestDragon": 20,
+      "totalLength": 33
+    },
+    "teamB": {
+      "dragonCount": 2,
+      "longestDragon": 31,
+      "totalLength": 46
+    }
+  },
+  "endReason": "roundLimit",
+  "ledgerTurns": 3449,
+  "finalKing": {
+    "len": 20,
+    "gen": 2,
+    "born": 496,
+    "cp": {
+      "300": {
+        "Lt": 2,
+        "eat": [
+          9,
+          8,
+          2,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "cost": 0,
+        "lossOff": 0,
+        "lossPath": 2,
+        "transfers": 1,
+        "wasKing": 0
+      },
+      "350": {
+        "Lt": 3,
+        "eat": [
+          9,
+          8,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "cost": 0,
+        "lossOff": 0,
+        "lossPath": 2,
+        "transfers": 1,
+        "wasKing": 0
+      },
+      "400": {
+        "Lt": 16,
+        "eat": [
+          4,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "cost": 0,
+        "lossOff": 0,
+        "lossPath": 2,
+        "transfers": 1,
+        "wasKing": 1
+      },
+      "450": {
+        "Lt": 21,
+        "eat": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "cost": 0,
+        "lossOff": 0,
+        "lossPath": 2,
+        "transfers": 1,
+        "wasKing": 1
+      }
+    },
+    "win": [
+      [
+        1,
+        0,
+        0,
+        1,
+        3,
+        0,
+        2,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        4,
+        2,
+        2,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  "maxInstr": 23343756,
+  "faults": 0,
+  "over80M": 0,
+  "depths": {
+    "7": 2927
+  }
+}

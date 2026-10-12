@@ -1,0 +1,63 @@
+{
+  "label": "cand-avoid6",
+  "bot": "~/01. Project/개인 프로젝트/unsw-heuristic/exp/cand-avoid6/bot",
+  "at": "2026-09-29T15:53:47.228Z",
+  "benchmark": {
+    "maps": 10,
+    "opps": [
+      "replay_rules_v8",
+      "archetype_swarm",
+      "archetype_hunter",
+      "h2"
+    ],
+    "seeds": [
+      1,
+      2
+    ],
+    "sides": 2
+  },
+  "all": {
+    "n": 160,
+    "G": 38.49375,
+    "alive": 0.9625,
+    "win": 0.8375
+  },
+  "byOpp": {
+    "replay_rules_v8": {
+      "n": 40,
+      "G": 34.1,
+      "alive": 0.95,
+      "win": 0.675
+    },
+    "archetype_swarm": {
+      "n": 40,
+      "G": 33.175,
+      "alive": 1,
+      "win": 0.9
+    },
+    "archetype_hunter": {
+      "n": 40,
+      "G": 27.825,
+      "alive": 0.9,
+      "win": 0.775
+    },
+    "h2": {
+      "n": 40,
+      "G": 58.875,
+      "alive": 1,
+      "win": 1
+    }
+  },
+  "problems": 0,
+  "errors": 0,
+  "vsBaseline": {
+    "baseline": "eval-r1",
+    "pairs": 160,
+    "dG": 0.2875,
+    "ci95": [
+      -1.33125,
+      2.15625
+    ],
+    "note": "map-cluster bootstrap"
+  }
+}

@@ -1,0 +1,35 @@
+## 500-round maps: intake and what happened to the mass (intake-gap cache, every game)
+
+| family | games | natural intake us / opp | units r100 · r250 | end longest (0 if eliminated) us / opp | end total length | eliminated |
+|---|---:|---|---|---|---:|---:|
+| px (px-king-v2, px8, px9d) | 105 | 508.0 / 626.7 | 20.2 · 25.2 | 19.0 / 37.3 | 50.9 | 23% |
+| swarm8 | 35 | 246.5 / 699.1 | 13.3 · 16.7 | 26.2 / 43.4 | 47.4 | 17% |
+| merge2 (3 waves) | 105 | 135.7 / 682.1 | 3.8 · 3.3 | 23.8 / 41.8 | 41.2 | 29% |
+| stack5-7 (W5-W8) | 140 | 223.5 / 731.5 | 12.3 · 16.4 | 22.4 / 43.0 | 42.7 | 12% |
+| stack8 (W9) | 35 | 212.2 / 751.9 | 11.1 · 15.2 | 24.5 / 43.2 | 46.3 | 14% |
+| stack9 (W10) | 35 | 231.8 / 862.5 | 12.1 · 16.1 | 23.2 / 47.2 | 46.5 | 3% |
+| stack10 (W11) | 35 | 206.9 / 749.6 | 10.8 · 15.4 | 22.8 / 42.7 | 47.8 | 6% |
+
+## 500-round maps without Autarky (intake-gap cache)
+
+| family | games | natural intake us / opp | end longest us / opp | end total length |
+|---|---:|---|---|---:|
+| px (px-king-v2, px8, px9d) | 84 | 596.8 / 714.0 | 21.3 / 40.3 | 58.9 |
+| swarm8 | 28 | 223.3 / 789.8 | 17.5 / 41.0 | 38.0 |
+| merge2 (3 waves) | 84 | 85.1 / 769.4 | 15.1 / 38.7 | 29.0 |
+| stack5-7 (W5-W8) | 112 | 191.0 / 829.4 | 16.0 / 41.5 | 35.4 |
+| stack8 (W9) | 28 | 176.9 / 855.0 | 18.7 / 41.4 | 40.1 |
+| stack9 (W10) | 28 | 201.3 / 987.0 | 18.6 / 48.5 | 41.9 |
+| stack10 (W11) | 28 | 169.0 / 851.0 | 16.9 / 41.6 | 41.5 |
+
+## The final king's line r300-499 (endgame-king cache; games that reached r500 on 500-round maps)
+
+| family | games | L300 | + natural | + own sacrifice | + own other deaths | + enemy deaths | − sprint | − split off | − split path | = end king | games losing the team's longest (>= 8) to an enemy head from r340 | longest deaths from r300 per game |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| px (px-king-v2, px8, px9d) | 81 | 4.5 | 19.3 | 8.4 | 14.2 | 1.4 | -0.1 | -3.1 | -20.0 | 24.6 | 24% (21/87) | 1.09 |
+| swarm8 | 29 | 9.7 | 16.8 | 7.6 | 5.1 | 1.4 | -0.8 | -1.8 | -6.3 | 31.6 | 6% (2/32) | 0.48 |
+| merge2 (3 waves) | 75 | 17.7 | 13.9 | 4.0 | 3.2 | 1.5 | -0.9 | -0.5 | -5.5 | 33.3 | 15% (12/80) | 0.29 |
+| stack5-7 (W5-W8) | 122 | 7.7 | 12.4 | 8.3 | 3.5 | 1.1 | -1.7 | -0.8 | -5.0 | 25.5 | 17% (22/130) | 0.47 |
+| stack8 (W9) | 30 | 9.5 | 14.3 | 9.0 | 5.2 | 0.5 | -1.6 | -1.9 | -6.4 | 28.6 | 9% (3/32) | 0.42 |
+| stack9 (W10) | 34 | 6.3 | 11.8 | 9.4 | 5.2 | 0.8 | -1.7 | -3.2 | -4.7 | 23.9 | 20% (7/35) | 0.46 |
+| stack10 (W11) | 33 | 5.8 | 10.9 | 10.5 | 2.9 | 1.2 | -1.4 | -1.2 | -4.5 | 24.2 | 9% (3/34) | 0.26 |

@@ -1,0 +1,2358 @@
+[
+  {
+    "name": "GAMMA",
+    "type": "double",
+    "value": "0.88",
+    "line": 8,
+    "uses": [
+      "plan.cpp:28"
+    ]
+  },
+  {
+    "name": "GAMMA_WAIT",
+    "type": "double",
+    "value": "0.97",
+    "line": 9,
+    "uses": [
+      "plan.cpp:29"
+    ]
+  },
+  {
+    "name": "PEARL_DECAY",
+    "type": "double",
+    "value": "0.985",
+    "line": 10,
+    "uses": [
+      "world.cpp:412",
+      "world.cpp:416",
+      "world.cpp:418"
+    ]
+  },
+  {
+    "name": "SPAWN_CONF",
+    "type": "double",
+    "value": "0.75",
+    "line": 11,
+    "uses": [
+      "plan.cpp:338",
+      "plan.cpp:557",
+      "world.cpp:418"
+    ]
+  },
+  {
+    "name": "MIRROR_CONF",
+    "type": "double",
+    "value": "0.80",
+    "line": 12,
+    "uses": [
+      "world.cpp:406"
+    ]
+  },
+  {
+    "name": "PRIOR_UNSEEN",
+    "type": "double",
+    "value": "0.05",
+    "line": 13,
+    "uses": [
+      "world.cpp:29"
+    ]
+  },
+  {
+    "name": "FOUNTAIN_MAX_GAP",
+    "type": "int",
+    "value": "12",
+    "line": 14,
+    "uses": [
+      "world.cpp:419"
+    ]
+  },
+  {
+    "name": "FOUNTAIN_VALUE",
+    "type": "double",
+    "value": "0.9",
+    "line": 15,
+    "uses": [
+      "plan.cpp:339"
+    ]
+  },
+  {
+    "name": "MAX_SOURCES",
+    "type": "int",
+    "value": "20",
+    "line": 16,
+    "uses": [
+      "plan.cpp:381",
+      "plan.cpp:382",
+      "plan.cpp:389"
+    ]
+  },
+  {
+    "name": "ATTRACT_RADIUS",
+    "type": "int",
+    "value": "16",
+    "line": 17,
+    "uses": [
+      "plan.cpp:147",
+      "plan.cpp:304",
+      "plan.cpp:343",
+      "plan.cpp:423",
+      "plan.cpp:451"
+    ]
+  },
+  {
+    "name": "FUTURE_SPAWN_HORIZON",
+    "type": "int",
+    "value": "120",
+    "line": 18,
+    "uses": [
+      "plan.cpp:338"
+    ]
+  },
+  {
+    "name": "CONTEST_ENEMY_CLOSER",
+    "type": "double",
+    "value": "0.15",
+    "line": 19,
+    "uses": [
+      "plan.cpp:416"
+    ]
+  },
+  {
+    "name": "CONTEST_ENEMY_ONE_CLOSER",
+    "type": "double",
+    "value": "0.3",
+    "line": 19,
+    "uses": [
+      "plan.cpp:417"
+    ]
+  },
+  {
+    "name": "CONTEST_EQUAL",
+    "type": "double",
+    "value": "0.9",
+    "line": 19,
+    "uses": [
+      "plan.cpp:418",
+      "plan.cpp:420"
+    ]
+  },
+  {
+    "name": "CONTEST_ALLY_CLOSER",
+    "type": "double",
+    "value": "0.15",
+    "line": 20,
+    "uses": [
+      "plan.cpp:421",
+      "plan.cpp:449",
+      "plan.cpp:1112"
+    ]
+  },
+  {
+    "name": "EXPLORE_W",
+    "type": "double",
+    "value": "0.35",
+    "line": 21,
+    "uses": [
+      "plan.cpp:243"
+    ]
+  },
+  {
+    "name": "BLOCK_SPAWN_PENALTY",
+    "type": "double",
+    "value": "0.5",
+    "line": 22,
+    "uses": [
+      "plan.cpp:561",
+      "plan.cpp:1391"
+    ]
+  },
+  {
+    "name": "AREA_TRAP_PENALTY",
+    "type": "double",
+    "value": "60.0",
+    "line": 25,
+    "uses": [
+      "plan.cpp:506"
+    ]
+  },
+  {
+    "name": "AREA_MARGIN",
+    "type": "int",
+    "value": "2",
+    "line": 26,
+    "uses": [
+      "plan.cpp:506"
+    ]
+  },
+  {
+    "name": "AREA_BONUS_PER_TILE",
+    "type": "double",
+    "value": "0.04",
+    "line": 27,
+    "uses": [
+      "plan.cpp:513"
+    ]
+  },
+  {
+    "name": "AREA_CAP_EXTRA",
+    "type": "int",
+    "value": "16",
+    "line": 28,
+    "uses": [
+      "plan.cpp:477"
+    ]
+  },
+  {
+    "name": "AREA_CAP_MIN",
+    "type": "int",
+    "value": "96",
+    "line": 29,
+    "uses": [
+      "plan.cpp:477"
+    ]
+  },
+  {
+    "name": "AREA_DEADEND_PENALTY",
+    "type": "double",
+    "value": "8.0",
+    "line": 30,
+    "uses": [
+      "plan.cpp:508"
+    ]
+  },
+  {
+    "name": "AREA_ROOM_PENALTY",
+    "type": "double",
+    "value": "0.5",
+    "line": 31,
+    "uses": [
+      "plan.cpp:509"
+    ]
+  },
+  {
+    "name": "AREA_FILL_PENALTY",
+    "type": "double",
+    "value": "3.0",
+    "line": 32,
+    "uses": [
+      "plan.cpp:511"
+    ]
+  },
+  {
+    "name": "AREA_FILL_RATIO",
+    "type": "double",
+    "value": "1.5",
+    "line": 33,
+    "uses": [
+      "plan.cpp:510"
+    ]
+  },
+  {
+    "name": "AREA_FILL_MARGIN",
+    "type": "int",
+    "value": "4",
+    "line": 34,
+    "uses": [
+      "plan.cpp:510"
+    ]
+  },
+  {
+    "name": "TAIL_REACH_BONUS",
+    "type": "double",
+    "value": "1.5",
+    "line": 35,
+    "uses": [
+      "plan.cpp:514"
+    ]
+  },
+  {
+    "name": "HEAD_PATH_PENALTY",
+    "type": "double",
+    "value": "1.5",
+    "line": 36,
+    "uses": [
+      "plan.cpp:170"
+    ]
+  },
+  {
+    "name": "PORTAL_STALE_PENALTY",
+    "type": "double",
+    "value": "1.0",
+    "line": 39,
+    "uses": [
+      "plan.cpp:256"
+    ]
+  },
+  {
+    "name": "PORTAL_BLIND_PENALTY",
+    "type": "double",
+    "value": "0.5",
+    "line": 40,
+    "uses": [
+      "plan.cpp:256"
+    ]
+  },
+  {
+    "name": "PORTAL_HEAD_NEAR_PENALTY",
+    "type": "double",
+    "value": "8.0",
+    "line": 41,
+    "uses": [
+      "plan.cpp:260",
+      "plan.cpp:281"
+    ]
+  },
+  {
+    "name": "FRONTIER_VALUE",
+    "type": "double",
+    "value": "4.0",
+    "line": 46,
+    "uses": [
+      "plan.cpp:293"
+    ]
+  },
+  {
+    "name": "FRONTIER_FED_FRAC",
+    "type": "double",
+    "value": "0.25",
+    "line": 47,
+    "uses": [
+      "plan.cpp:293"
+    ]
+  },
+  {
+    "name": "HUNGER_ROUNDS",
+    "type": "int",
+    "value": "25",
+    "line": 48,
+    "uses": [
+      "plan.cpp:290"
+    ]
+  },
+  {
+    "name": "FRONTIER_UNSEEN_GAIN",
+    "type": "double",
+    "value": "2.5",
+    "line": 49,
+    "uses": [
+      "plan.cpp:292"
+    ]
+  },
+  {
+    "name": "FRONTIER_FADE_ROUNDS",
+    "type": "int",
+    "value": "120",
+    "line": 50,
+    "uses": [
+      "plan.cpp:289"
+    ]
+  },
+  {
+    "name": "FRONTIER_MAX_SOURCES",
+    "type": "int",
+    "value": "4",
+    "line": 51,
+    "uses": [
+      "plan.cpp:442"
+    ]
+  },
+  {
+    "name": "FRONTIER_COMMIT_MARGIN",
+    "type": "double",
+    "value": "0.5",
+    "line": 52,
+    "uses": [
+      "plan.cpp:1616"
+    ]
+  },
+  {
+    "name": "BLIND_RISK",
+    "type": "double",
+    "value": "0.8",
+    "line": 53,
+    "uses": [
+      "plan.cpp:321"
+    ]
+  },
+  {
+    "name": "BLIND_RISK_PER_LEN",
+    "type": "double",
+    "value": "0.05",
+    "line": 54,
+    "uses": [
+      "plan.cpp:321"
+    ]
+  },
+  {
+    "name": "BLIND_MIN_LEN",
+    "type": "int",
+    "value": "3",
+    "line": 55,
+    "uses": [
+      "plan.cpp:543",
+      "plan.cpp:1357"
+    ]
+  },
+  {
+    "name": "FRONTIER_BLOCK_ROUNDS",
+    "type": "int",
+    "value": "6",
+    "line": 56,
+    "uses": [
+      "plan.cpp:297"
+    ]
+  },
+  {
+    "name": "BLIND_DESPERATE_PENALTY",
+    "type": "double",
+    "value": "25.0",
+    "line": 57,
+    "uses": [
+      "plan.cpp:1361"
+    ]
+  },
+  {
+    "name": "PORTAL_UNPROBED_PENALTY",
+    "type": "double",
+    "value": "4.0",
+    "line": 59,
+    "uses": [
+      "plan.cpp:1376"
+    ]
+  },
+  {
+    "name": "PORTAL_DIRTY_PENALTY",
+    "type": "double",
+    "value": "8.0",
+    "line": 60,
+    "uses": [
+      "plan.cpp:1376",
+      "plan.cpp:1379"
+    ]
+  },
+  {
+    "name": "DOOM_VALUE",
+    "type": "double",
+    "value": "-200.0",
+    "line": 61,
+    "uses": [
+      "plan.cpp:1640"
+    ]
+  },
+  {
+    "name": "T1",
+    "type": "double",
+    "value": "30.0",
+    "line": 64,
+    "uses": [
+      "plan.cpp:221"
+    ]
+  },
+  {
+    "name": "T2",
+    "type": "double",
+    "value": "24.0",
+    "line": 65,
+    "uses": [
+      "plan.cpp:222"
+    ]
+  },
+  {
+    "name": "T3",
+    "type": "double",
+    "value": "15.0",
+    "line": 65,
+    "uses": [
+      "plan.cpp:223"
+    ]
+  },
+  {
+    "name": "T4",
+    "type": "double",
+    "value": "9.0",
+    "line": 65,
+    "uses": [
+      "plan.cpp:224"
+    ]
+  },
+  {
+    "name": "TRADE_BAD_FOR_THEM",
+    "type": "double",
+    "value": "0.45",
+    "line": 66,
+    "uses": [
+      "plan.cpp:221"
+    ]
+  },
+  {
+    "name": "T_FAR_BAD_FOR_THEM",
+    "type": "double",
+    "value": "0.2",
+    "line": 67,
+    "uses": [
+      "plan.cpp:222",
+      "plan.cpp:223",
+      "plan.cpp:224"
+    ]
+  },
+  {
+    "name": "PSEUDO_HEAD_MULT",
+    "type": "double",
+    "value": "0.5",
+    "line": 68,
+    "uses": [
+      "plan.cpp:225"
+    ]
+  },
+  {
+    "name": "ENDGAME_THREAT_MULT",
+    "type": "double",
+    "value": "2.0",
+    "line": 69,
+    "uses": [
+      "plan.cpp:227",
+      "plan.cpp:228"
+    ]
+  },
+  {
+    "name": "KING_THREAT_MULT",
+    "type": "double",
+    "value": "1.5",
+    "line": 70,
+    "uses": [
+      "plan.cpp:202",
+      "plan.cpp:226"
+    ]
+  },
+  {
+    "name": "KING_MIN_LEN",
+    "type": "int",
+    "value": "8",
+    "line": 71,
+    "uses": [
+      "plan.cpp:202",
+      "plan.cpp:226",
+      "plan.cpp:611",
+      "plan.cpp:799",
+      "plan.cpp:901",
+      "plan.cpp:933",
+      "plan.cpp:963",
+      "plan.cpp:1138",
+      "plan.cpp:1204",
+      "plan.cpp:1205",
+      "plan.cpp:1207",
+      "plan.cpp:1223",
+      "plan.cpp:1225",
+      "plan.cpp:1230"
+    ]
+  },
+  {
+    "name": "ENDGAME_ROUNDS",
+    "type": "int",
+    "value": "30",
+    "line": 72,
+    "uses": [
+      "plan.cpp:289",
+      "plan.cpp:1202"
+    ]
+  },
+  {
+    "name": "ECHO_LINE_PENALTY",
+    "type": "double",
+    "value": "1.2",
+    "line": 73,
+    "uses": [
+      "plan.cpp:178"
+    ]
+  },
+  {
+    "name": "ECHO_LINE_RANGE",
+    "type": "int",
+    "value": "6",
+    "line": 74,
+    "uses": [
+      "plan.cpp:180"
+    ]
+  },
+  {
+    "name": "ENEMY_MEMORY_ROUNDS",
+    "type": "int",
+    "value": "8",
+    "line": 75,
+    "uses": [
+      "plan.cpp:87",
+      "plan.cpp:113"
+    ]
+  },
+  {
+    "name": "ESCAPE_MIN_LEN",
+    "type": "int",
+    "value": "6",
+    "line": 81,
+    "uses": [
+      "plan.cpp:1426",
+      "plan.cpp:1780",
+      "plan.cpp:1801"
+    ]
+  },
+  {
+    "name": "RAMMER_TRUST",
+    "type": "int",
+    "value": "4",
+    "line": 82,
+    "uses": [
+      "plan.cpp:1426",
+      "plan.cpp:1801"
+    ]
+  },
+  {
+    "name": "W_KILL",
+    "type": "double",
+    "value": "4.0",
+    "line": 85,
+    "uses": [
+      "plan.cpp:577",
+      "plan.cpp:582",
+      "plan.cpp:593",
+      "plan.cpp:668",
+      "plan.cpp:669",
+      "plan.cpp:670"
+    ]
+  },
+  {
+    "name": "KILL_MIN_DIFF",
+    "type": "int",
+    "value": "3",
+    "line": 86,
+    "uses": [
+      "plan.cpp:668"
+    ]
+  },
+  {
+    "name": "KILL_MIN_RATIO",
+    "type": "double",
+    "value": "2.0",
+    "line": 87,
+    "uses": [
+      "plan.cpp:668"
+    ]
+  },
+  {
+    "name": "HUNT_MAX_LEN",
+    "type": "int",
+    "value": "5",
+    "line": 88,
+    "uses": [
+      "plan.cpp:377"
+    ]
+  },
+  {
+    "name": "W_HUNT",
+    "type": "double",
+    "value": "0.6",
+    "line": 89,
+    "uses": []
+  },
+  {
+    "name": "W_ESCORT",
+    "type": "double",
+    "value": "0.08",
+    "line": 90,
+    "uses": [
+      "plan.cpp:675"
+    ]
+  },
+  {
+    "name": "STRIKE_MAX_STEPS",
+    "type": "int",
+    "value": "4",
+    "line": 91,
+    "uses": [
+      "plan.cpp:1528"
+    ]
+  },
+  {
+    "name": "ENDGAME_ANY_TRADE_ROUND",
+    "type": "int",
+    "value": "495",
+    "line": 92,
+    "uses": [
+      "plan.cpp:631",
+      "plan.cpp:670",
+      "plan.cpp:1820"
+    ]
+  },
+  {
+    "name": "SPLIT_LAST_ROUND",
+    "type": "int",
+    "value": "450",
+    "line": 95,
+    "uses": [
+      "plan.cpp:683",
+      "plan.cpp:880"
+    ]
+  },
+  {
+    "name": "SPLIT_FIRST_LEN",
+    "type": "int",
+    "value": "5",
+    "line": 96,
+    "uses": [
+      "plan.cpp:693",
+      "plan.cpp:883"
+    ]
+  },
+  {
+    "name": "SPLIT_FIRST_CHILD",
+    "type": "int",
+    "value": "2",
+    "line": 97,
+    "uses": [
+      "plan.cpp:694"
+    ]
+  },
+  {
+    "name": "SPLIT_LEN",
+    "type": "int",
+    "value": "8",
+    "line": 98,
+    "uses": [
+      "plan.cpp:692",
+      "plan.cpp:696"
+    ]
+  },
+  {
+    "name": "SPLIT_CHILD",
+    "type": "int",
+    "value": "3",
+    "line": 99,
+    "uses": [
+      "plan.cpp:698"
+    ]
+  },
+  {
+    "name": "SPLIT_CAP_BASE",
+    "type": "int",
+    "value": "3",
+    "line": 100,
+    "uses": [
+      "plan.cpp:687"
+    ]
+  },
+  {
+    "name": "SPLIT_CAP_RICH",
+    "type": "int",
+    "value": "5",
+    "line": 101,
+    "uses": [
+      "plan.cpp:689"
+    ]
+  },
+  {
+    "name": "SPLIT_SMALL_MAP_TILES",
+    "type": "int",
+    "value": "300",
+    "line": 102,
+    "uses": [
+      "plan.cpp:692"
+    ]
+  },
+  {
+    "name": "SPLIT_MIN_CHILD_EXITS",
+    "type": "int",
+    "value": "2",
+    "line": 103,
+    "uses": [
+      "plan.cpp:734",
+      "plan.cpp:802",
+      "plan.cpp:904"
+    ]
+  },
+  {
+    "name": "POCKET_EAT",
+    "type": "bool",
+    "value": "true",
+    "line": 108,
+    "uses": [
+      "plan.cpp:1689"
+    ]
+  },
+  {
+    "name": "POCKET_EAT_MAP_DRAGONS",
+    "type": "bool",
+    "value": "false",
+    "line": 109,
+    "uses": [
+      "plan.cpp:1690"
+    ]
+  },
+  {
+    "name": "POCKET_MAP_LOW_YIELD",
+    "type": "bool",
+    "value": "true",
+    "line": 113,
+    "uses": [
+      "plan.cpp:1688"
+    ]
+  },
+  {
+    "name": "POCKET_LANE_YIELD",
+    "type": "int",
+    "value": "2",
+    "line": 114,
+    "uses": [
+      "plan.cpp:1688"
+    ]
+  },
+  {
+    "name": "POCKET_MIN_LANE",
+    "type": "int",
+    "value": "3",
+    "line": 116,
+    "uses": [
+      "plan.cpp:1686"
+    ]
+  },
+  {
+    "name": "POCKET_EXPOSED_BONUS",
+    "type": "int",
+    "value": "1",
+    "line": 117,
+    "uses": [
+      "plan.cpp:1692"
+    ]
+  },
+  {
+    "name": "POCKET_ENEMY_DIST",
+    "type": "int",
+    "value": "4",
+    "line": 118,
+    "uses": [
+      "plan.cpp:1689"
+    ]
+  },
+  {
+    "name": "FEED_FIRST_ROUND",
+    "type": "int",
+    "value": "430",
+    "line": 121,
+    "uses": [
+      "plan.cpp:1290",
+      "plan.cpp:1294",
+      "plan.cpp:1300",
+      "plan.cpp:1308",
+      "plan.cpp:1331"
+    ]
+  },
+  {
+    "name": "FEED_MAX_DIST",
+    "type": "int",
+    "value": "5",
+    "line": 122,
+    "uses": [
+      "plan.cpp:1319"
+    ]
+  },
+  {
+    "name": "FEED_SLACK",
+    "type": "int",
+    "value": "8",
+    "line": 123,
+    "uses": [
+      "plan.cpp:1331",
+      "plan.cpp:1335"
+    ]
+  },
+  {
+    "name": "GATHER_BROADCAST",
+    "type": "int",
+    "value": "300",
+    "line": 126,
+    "uses": [
+      "plan.cpp:1043",
+      "plan.cpp:1054",
+      "plan.cpp:1379"
+    ]
+  },
+  {
+    "name": "GATHER_START",
+    "type": "int",
+    "value": "340",
+    "line": 127,
+    "uses": [
+      "plan.cpp:684",
+      "plan.cpp:883",
+      "plan.cpp:932",
+      "plan.cpp:1069",
+      "plan.cpp:1288"
+    ]
+  },
+  {
+    "name": "GATHER_STALE",
+    "type": "int",
+    "value": "20",
+    "line": 128,
+    "uses": [
+      "plan.cpp:1064"
+    ]
+  },
+  {
+    "name": "GATHER_KING_MEMORY",
+    "type": "int",
+    "value": "100",
+    "line": 129,
+    "uses": [
+      "plan.cpp:1062",
+      "plan.cpp:1298"
+    ]
+  },
+  {
+    "name": "GATHER_W",
+    "type": "double",
+    "value": "0.12",
+    "line": 130,
+    "uses": [
+      "plan.cpp:532",
+      "plan.cpp:533"
+    ]
+  },
+  {
+    "name": "GATHER_FEED_UNITS",
+    "type": "int",
+    "value": "4",
+    "line": 131,
+    "uses": [
+      "plan.cpp:1070",
+      "plan.cpp:1332",
+      "plan.cpp:1335"
+    ]
+  },
+  {
+    "name": "GATHER_FEED_MIN_LEN",
+    "type": "int",
+    "value": "4",
+    "line": 132,
+    "uses": [
+      "plan.cpp:1071",
+      "plan.cpp:1332",
+      "plan.cpp:1335"
+    ]
+  },
+  {
+    "name": "CONV_ON",
+    "type": "bool",
+    "value": "true",
+    "line": 137,
+    "uses": [
+      "plan.cpp:1254"
+    ]
+  },
+  {
+    "name": "CONV_START",
+    "type": "int",
+    "value": "300",
+    "line": 138,
+    "uses": [
+      "plan.cpp:1254"
+    ]
+  },
+  {
+    "name": "CONV_MAX_LEN",
+    "type": "int",
+    "value": "4",
+    "line": 139,
+    "uses": [
+      "plan.cpp:1254"
+    ]
+  },
+  {
+    "name": "CONV_ALLY_MIN",
+    "type": "int",
+    "value": "8",
+    "line": 140,
+    "uses": [
+      "plan.cpp:1260"
+    ]
+  },
+  {
+    "name": "CONV_ALLY_MARGIN",
+    "type": "int",
+    "value": "4",
+    "line": 141,
+    "uses": [
+      "plan.cpp:1260"
+    ]
+  },
+  {
+    "name": "CONV_MAX_DIST",
+    "type": "int",
+    "value": "3",
+    "line": 142,
+    "uses": [
+      "plan.cpp:1267",
+      "plan.cpp:1276"
+    ]
+  },
+  {
+    "name": "CONV_MIN_UNITS",
+    "type": "int",
+    "value": "3",
+    "line": 143,
+    "uses": [
+      "plan.cpp:1254"
+    ]
+  },
+  {
+    "name": "RAM_SMALL_ON",
+    "type": "bool",
+    "value": "false",
+    "line": 147,
+    "uses": [
+      "plan.cpp:643"
+    ]
+  },
+  {
+    "name": "RAM_SMALL_MAX_LEN",
+    "type": "int",
+    "value": "4",
+    "line": 148,
+    "uses": [
+      "plan.cpp:643"
+    ]
+  },
+  {
+    "name": "RAM_SMALL_NEED_COLLECTOR",
+    "type": "bool",
+    "value": "true",
+    "line": 152,
+    "uses": [
+      "plan.cpp:651"
+    ]
+  },
+  {
+    "name": "RAM_COLLECTOR_DIST",
+    "type": "int",
+    "value": "3",
+    "line": 153,
+    "uses": [
+      "plan.cpp:654"
+    ]
+  },
+  {
+    "name": "RAM_SMALL_VALUE",
+    "type": "double",
+    "value": "12.0",
+    "line": 154,
+    "uses": [
+      "plan.cpp:577",
+      "plan.cpp:582",
+      "plan.cpp:593"
+    ]
+  },
+  {
+    "name": "KS_ON",
+    "type": "bool",
+    "value": "false",
+    "line": 158,
+    "uses": [
+      "plan.cpp:1204"
+    ]
+  },
+  {
+    "name": "KS_ROUNDS",
+    "type": "int",
+    "value": "50",
+    "line": 159,
+    "uses": [
+      "plan.cpp:1204"
+    ]
+  },
+  {
+    "name": "KS_DEADEND_MULT",
+    "type": "double",
+    "value": "2.0",
+    "line": 160,
+    "uses": [
+      "plan.cpp:508"
+    ]
+  },
+  {
+    "name": "FRAG_ON",
+    "type": "bool",
+    "value": "true",
+    "line": 170,
+    "uses": [
+      "plan.cpp:742",
+      "plan.cpp:1253"
+    ]
+  },
+  {
+    "name": "FRAG_START",
+    "type": "int",
+    "value": "250",
+    "line": 171,
+    "uses": [
+      "plan.cpp:742"
+    ]
+  },
+  {
+    "name": "FRAG_END",
+    "type": "int",
+    "value": "420",
+    "line": 172,
+    "uses": [
+      "plan.cpp:742"
+    ]
+  },
+  {
+    "name": "FRAG_MIN_LEN",
+    "type": "int",
+    "value": "7",
+    "line": 173,
+    "uses": [
+      "plan.cpp:743"
+    ]
+  },
+  {
+    "name": "FRAG_CHILD",
+    "type": "int",
+    "value": "2",
+    "line": 174,
+    "uses": [
+      "plan.cpp:752",
+      "plan.cpp:1253"
+    ]
+  },
+  {
+    "name": "FRAG_GAP",
+    "type": "int",
+    "value": "15",
+    "line": 175,
+    "uses": [
+      "plan.cpp:743"
+    ]
+  },
+  {
+    "name": "FRAG_KING_MEMORY",
+    "type": "int",
+    "value": "40",
+    "line": 176,
+    "uses": [
+      "plan.cpp:751",
+      "plan.cpp:799",
+      "plan.cpp:883",
+      "plan.cpp:901"
+    ]
+  },
+  {
+    "name": "FRAG_FORAGE",
+    "type": "int",
+    "value": "20",
+    "line": 179,
+    "uses": [
+      "plan.cpp:1253"
+    ]
+  },
+  {
+    "name": "FRAG_TILES_PER_UNIT",
+    "type": "int",
+    "value": "130",
+    "line": 185,
+    "uses": [
+      "plan.cpp:744"
+    ]
+  },
+  {
+    "name": "FRAG_CAP_MIN",
+    "type": "int",
+    "value": "6",
+    "line": 186,
+    "uses": [
+      "plan.cpp:744"
+    ]
+  },
+  {
+    "name": "FRAG_CAP_MAX",
+    "type": "int",
+    "value": "16",
+    "line": 187,
+    "uses": [
+      "plan.cpp:744"
+    ]
+  },
+  {
+    "name": "GRAB_ON",
+    "type": "bool",
+    "value": "true",
+    "line": 196,
+    "uses": [
+      "plan.cpp:1207",
+      "world.cpp:134"
+    ]
+  },
+  {
+    "name": "GRAB_ROUNDS",
+    "type": "int",
+    "value": "6",
+    "line": 197,
+    "uses": [
+      "plan.cpp:1008"
+    ]
+  },
+  {
+    "name": "GRAB_SEEN_GAP",
+    "type": "int",
+    "value": "2",
+    "line": 198,
+    "uses": [
+      "world.cpp:134"
+    ]
+  },
+  {
+    "name": "GRAB_REACH",
+    "type": "int",
+    "value": "6",
+    "line": 199,
+    "uses": [
+      "plan.cpp:345",
+      "plan.cpp:1833"
+    ]
+  },
+  {
+    "name": "GRAB_VALUE",
+    "type": "double",
+    "value": "1.5",
+    "line": 200,
+    "uses": [
+      "plan.cpp:348"
+    ]
+  },
+  {
+    "name": "GRAB_KING_ROUNDS",
+    "type": "int",
+    "value": "50",
+    "line": 201,
+    "uses": [
+      "plan.cpp:1207"
+    ]
+  },
+  {
+    "name": "KS2_ON",
+    "type": "bool",
+    "value": "false",
+    "line": 209,
+    "uses": [
+      "plan.cpp:1205"
+    ]
+  },
+  {
+    "name": "KS2_ROUNDS",
+    "type": "int",
+    "value": "100",
+    "line": 210,
+    "uses": [
+      "plan.cpp:1205"
+    ]
+  },
+  {
+    "name": "KS2_REACH",
+    "type": "int",
+    "value": "7",
+    "line": 211,
+    "uses": [
+      "plan.cpp:117",
+      "plan.cpp:124",
+      "plan.cpp:200"
+    ]
+  },
+  {
+    "name": "KS2_T5",
+    "type": "double",
+    "value": "7.0",
+    "line": 212,
+    "uses": [
+      "plan.cpp:201"
+    ]
+  },
+  {
+    "name": "KS2_T6",
+    "type": "double",
+    "value": "5.0",
+    "line": 212,
+    "uses": [
+      "plan.cpp:201"
+    ]
+  },
+  {
+    "name": "KS2_T7",
+    "type": "double",
+    "value": "3.0",
+    "line": 212,
+    "uses": [
+      "plan.cpp:201"
+    ]
+  },
+  {
+    "name": "TG_ON",
+    "type": "bool",
+    "value": "true",
+    "line": 229,
+    "uses": [
+      "plan.cpp:45",
+      "plan.cpp:53",
+      "plan.cpp:92",
+      "plan.cpp:193",
+      "plan.cpp:725",
+      "plan.cpp:836",
+      "plan.cpp:1866"
+    ]
+  },
+  {
+    "name": "TG_UNSEEN_LEN",
+    "type": "int",
+    "value": "5",
+    "line": 230,
+    "uses": [
+      "plan.cpp:102"
+    ]
+  },
+  {
+    "name": "ESC_SPLIT_ON",
+    "type": "bool",
+    "value": "false",
+    "line": 237,
+    "uses": [
+      "plan.cpp:1444"
+    ]
+  },
+  {
+    "name": "ESC_SPLIT_TAIL_DIST",
+    "type": "int",
+    "value": "5",
+    "line": 238,
+    "uses": [
+      "plan.cpp:1474"
+    ]
+  },
+  {
+    "name": "PX_ON",
+    "type": "bool",
+    "value": "false",
+    "line": 246,
+    "uses": [
+      "plan.cpp:262",
+      "plan.cpp:1379",
+      "plan.cpp:1380",
+      "plan.cpp:1503",
+      "plan.cpp:1517",
+      "plan.cpp:1873"
+    ]
+  },
+  {
+    "name": "PX_ALLY_ROUNDS",
+    "type": "int",
+    "value": "20",
+    "line": 247,
+    "uses": [
+      "plan.cpp:279"
+    ]
+  },
+  {
+    "name": "PX_ALLY_DIST",
+    "type": "int",
+    "value": "6",
+    "line": 248,
+    "uses": [
+      "plan.cpp:279"
+    ]
+  },
+  {
+    "name": "PX_LONG_LEN",
+    "type": "int",
+    "value": "15",
+    "line": 249,
+    "uses": [
+      "plan.cpp:1379"
+    ]
+  },
+  {
+    "name": "GX_ON",
+    "type": "bool",
+    "value": "true",
+    "line": 253,
+    "uses": [
+      "plan.cpp:1085"
+    ]
+  },
+  {
+    "name": "GX_SLACK",
+    "type": "int",
+    "value": "5",
+    "line": 254,
+    "uses": [
+      "plan.cpp:1085"
+    ]
+  },
+  {
+    "name": "SPLIT_TAIL_ON",
+    "type": "bool",
+    "value": "false",
+    "line": 263,
+    "uses": [
+      "plan.cpp:701",
+      "plan.cpp:1767"
+    ]
+  },
+  {
+    "name": "SPLIT_TAIL_DIST",
+    "type": "int",
+    "value": "5",
+    "line": 264,
+    "uses": [
+      "plan.cpp:708"
+    ]
+  },
+  {
+    "name": "CSPLIT_ON",
+    "type": "bool",
+    "value": "true",
+    "line": 282,
+    "uses": [
+      "plan.cpp:790"
+    ]
+  },
+  {
+    "name": "CSPLIT_START",
+    "type": "int",
+    "value": "1",
+    "line": 283,
+    "uses": [
+      "plan.cpp:790"
+    ]
+  },
+  {
+    "name": "CSPLIT_END",
+    "type": "int",
+    "value": "250",
+    "line": 284,
+    "uses": [
+      "plan.cpp:790"
+    ]
+  },
+  {
+    "name": "CSPLIT_MIN_LEN",
+    "type": "int",
+    "value": "4",
+    "line": 285,
+    "uses": [
+      "plan.cpp:792"
+    ]
+  },
+  {
+    "name": "CSPLIT_CHILD",
+    "type": "int",
+    "value": "2",
+    "line": 286,
+    "uses": [
+      "plan.cpp:800"
+    ]
+  },
+  {
+    "name": "CSPLIT_GAP",
+    "type": "int",
+    "value": "8",
+    "line": 287,
+    "uses": [
+      "plan.cpp:792"
+    ]
+  },
+  {
+    "name": "CSPLIT_TILES_PER_UNIT",
+    "type": "int",
+    "value": "45",
+    "line": 293,
+    "uses": [
+      "plan.cpp:748",
+      "plan.cpp:794",
+      "plan.cpp:899"
+    ]
+  },
+  {
+    "name": "CSPLIT_TARGET_MIN",
+    "type": "int",
+    "value": "8",
+    "line": 294,
+    "uses": [
+      "plan.cpp:748",
+      "plan.cpp:794",
+      "plan.cpp:899"
+    ]
+  },
+  {
+    "name": "CSPLIT_TARGET_MAX",
+    "type": "int",
+    "value": "40",
+    "line": 295,
+    "uses": [
+      "plan.cpp:748",
+      "plan.cpp:794",
+      "plan.cpp:899"
+    ]
+  },
+  {
+    "name": "CSPLIT_TAIL_DIST",
+    "type": "int",
+    "value": "2",
+    "line": 296,
+    "uses": [
+      "plan.cpp:802",
+      "plan.cpp:904"
+    ]
+  },
+  {
+    "name": "CSPLIT_SEED_UNITS",
+    "type": "int",
+    "value": "5",
+    "line": 304,
+    "uses": [
+      "plan.cpp:1223"
+    ]
+  },
+  {
+    "name": "CSPLIT_SEED_START",
+    "type": "int",
+    "value": "50",
+    "line": 305,
+    "uses": [
+      "plan.cpp:793",
+      "plan.cpp:1230"
+    ]
+  },
+  {
+    "name": "FGUARD_ON",
+    "type": "bool",
+    "value": "true",
+    "line": 314,
+    "uses": [
+      "plan.cpp:932"
+    ]
+  },
+  {
+    "name": "FG_MIN_UNITS",
+    "type": "int",
+    "value": "3",
+    "line": 315,
+    "uses": [
+      "plan.cpp:932"
+    ]
+  },
+  {
+    "name": "FG_ALLY_STALE",
+    "type": "int",
+    "value": "20",
+    "line": 316,
+    "uses": [
+      "plan.cpp:942"
+    ]
+  },
+  {
+    "name": "FG_GUARD_DIST",
+    "type": "int",
+    "value": "3",
+    "line": 317,
+    "uses": [
+      "plan.cpp:947",
+      "plan.cpp:961"
+    ]
+  },
+  {
+    "name": "FG_GROUP_DIST",
+    "type": "int",
+    "value": "3",
+    "line": 318,
+    "uses": [
+      "plan.cpp:986"
+    ]
+  },
+  {
+    "name": "FG_MAX_DIST",
+    "type": "int",
+    "value": "20",
+    "line": 319,
+    "uses": [
+      "plan.cpp:951"
+    ]
+  },
+  {
+    "name": "FG_HOLD",
+    "type": "int",
+    "value": "2",
+    "line": 320,
+    "uses": [
+      "plan.cpp:531",
+      "plan.cpp:1000"
+    ]
+  },
+  {
+    "name": "FG_W",
+    "type": "double",
+    "value": "0.12",
+    "line": 321,
+    "uses": [
+      "plan.cpp:531"
+    ]
+  },
+  {
+    "name": "COV_ON",
+    "type": "bool",
+    "value": "true",
+    "line": 329,
+    "uses": [
+      "plan.cpp:351",
+      "plan.cpp:1794"
+    ]
+  },
+  {
+    "name": "COV_MAX_LEN",
+    "type": "int",
+    "value": "4",
+    "line": 330,
+    "uses": [
+      "plan.cpp:351",
+      "plan.cpp:1794"
+    ]
+  },
+  {
+    "name": "COV_CONTEST",
+    "type": "double",
+    "value": "0.6",
+    "line": 331,
+    "uses": [
+      "plan.cpp:419"
+    ]
+  },
+  {
+    "name": "NOEXIT_SPARE_ON",
+    "type": "bool",
+    "value": "true",
+    "line": 337,
+    "uses": [
+      "plan.cpp:1729"
+    ]
+  },
+  {
+    "name": "MAPID_TAG",
+    "type": "bool",
+    "value": "true",
+    "line": 342,
+    "uses": [
+      "main.cpp:54"
+    ]
+  },
+  {
+    "name": "BSPLIT_ON",
+    "type": "bool",
+    "value": "true",
+    "line": 353,
+    "uses": [
+      "plan.cpp:761"
+    ]
+  },
+  {
+    "name": "BSPLIT_END",
+    "type": "int",
+    "value": "166",
+    "line": 354,
+    "uses": [
+      "plan.cpp:762"
+    ]
+  },
+  {
+    "name": "BSPLIT_MIN_LEN",
+    "type": "int",
+    "value": "4",
+    "line": 355,
+    "uses": [
+      "plan.cpp:762"
+    ]
+  },
+  {
+    "name": "BSPLIT_MAX_LEN",
+    "type": "int",
+    "value": "9",
+    "line": 356,
+    "uses": [
+      "plan.cpp:762"
+    ]
+  },
+  {
+    "name": "BSPLIT_CHILD",
+    "type": "int",
+    "value": "2",
+    "line": 357,
+    "uses": [
+      "plan.cpp:764"
+    ]
+  },
+  {
+    "name": "BSPLIT_CAP",
+    "type": "int",
+    "value": "16",
+    "line": 358,
+    "uses": [
+      "plan.cpp:763"
+    ]
+  },
+  {
+    "name": "FLOOR_ON",
+    "type": "bool",
+    "value": "true",
+    "line": 382,
+    "uses": [
+      "plan.cpp:880"
+    ]
+  },
+  {
+    "name": "FLOOR_START",
+    "type": "int",
+    "value": "30",
+    "line": 383,
+    "uses": [
+      "plan.cpp:880"
+    ]
+  },
+  {
+    "name": "FLOOR_UNITS",
+    "type": "int",
+    "value": "3",
+    "line": 384,
+    "uses": [
+      "plan.cpp:882"
+    ]
+  },
+  {
+    "name": "FLOOR_MIN_LEN",
+    "type": "int",
+    "value": "4",
+    "line": 385,
+    "uses": [
+      "plan.cpp:882"
+    ]
+  },
+  {
+    "name": "FLOOR_CHILD",
+    "type": "int",
+    "value": "2",
+    "line": 386,
+    "uses": [
+      "plan.cpp:885"
+    ]
+  },
+  {
+    "name": "FLOOR_TAIL_DIST",
+    "type": "int",
+    "value": "2",
+    "line": 387,
+    "uses": [
+      "plan.cpp:870",
+      "plan.cpp:887"
+    ]
+  },
+  {
+    "name": "FLOOR_MIN_EXITS",
+    "type": "int",
+    "value": "1",
+    "line": 388,
+    "uses": [
+      "plan.cpp:870",
+      "plan.cpp:887"
+    ]
+  },
+  {
+    "name": "KCAP_ON",
+    "type": "bool",
+    "value": "true",
+    "line": 394,
+    "uses": [
+      "plan.cpp:864"
+    ]
+  },
+  {
+    "name": "KCAP_LEN",
+    "type": "int",
+    "value": "7",
+    "line": 395,
+    "uses": [
+      "plan.cpp:866"
+    ]
+  },
+  {
+    "name": "KCAP_UNITS",
+    "type": "int",
+    "value": "6",
+    "line": 396,
+    "uses": [
+      "plan.cpp:866"
+    ]
+  },
+  {
+    "name": "KCAP_END",
+    "type": "int",
+    "value": "250",
+    "line": 397,
+    "uses": [
+      "plan.cpp:864"
+    ]
+  },
+  {
+    "name": "KCAP_CHILD",
+    "type": "int",
+    "value": "2",
+    "line": 398,
+    "uses": [
+      "plan.cpp:868"
+    ]
+  },
+  {
+    "name": "F2_ON",
+    "type": "bool",
+    "value": "true",
+    "line": 415,
+    "uses": [
+      "plan.cpp:938",
+      "plan.cpp:939",
+      "plan.cpp:953",
+      "plan.cpp:1791"
+    ]
+  },
+  {
+    "name": "FG2_MAX_DIST",
+    "type": "int",
+    "value": "6",
+    "line": 416,
+    "uses": [
+      "plan.cpp:971"
+    ]
+  },
+  {
+    "name": "FG2_KEEP_DIST",
+    "type": "int",
+    "value": "9",
+    "line": 417,
+    "uses": [
+      "plan.cpp:967"
+    ]
+  },
+  {
+    "name": "FG2_CLAIM_STALE",
+    "type": "int",
+    "value": "5",
+    "line": 418,
+    "uses": [
+      "plan.cpp:963"
+    ]
+  },
+  {
+    "name": "F2P_ON",
+    "type": "bool",
+    "value": "false",
+    "line": 426,
+    "uses": [
+      "plan.cpp:357",
+      "plan.cpp:997"
+    ]
+  },
+  {
+    "name": "CLAIM_ALLY_ON",
+    "type": "bool",
+    "value": "true",
+    "line": 438,
+    "uses": [
+      "plan.cpp:357",
+      "plan.cpp:371",
+      "plan.cpp:402",
+      "plan.cpp:1860"
+    ]
+  },
+  {
+    "name": "CLAIM_ENEMY_ON",
+    "type": "bool",
+    "value": "false",
+    "line": 439,
+    "uses": [
+      "plan.cpp:357",
+      "plan.cpp:371",
+      "plan.cpp:409",
+      "plan.cpp:1861"
+    ]
+  },
+  {
+    "name": "CLAIM_REACH",
+    "type": "int",
+    "value": "6",
+    "line": 440,
+    "uses": [
+      "plan.cpp:362",
+      "plan.cpp:1852"
+    ]
+  },
+  {
+    "name": "CLAIM_ROUNDS",
+    "type": "int",
+    "value": "8",
+    "line": 441,
+    "uses": [
+      "plan.cpp:359"
+    ]
+  },
+  {
+    "name": "CLAIM_SEEN",
+    "type": "int",
+    "value": "2",
+    "line": 442,
+    "uses": [
+      "plan.cpp:364"
+    ]
+  },
+  {
+    "name": "CLAIM_MAX_LEN",
+    "type": "int",
+    "value": "4",
+    "line": 443,
+    "uses": [
+      "plan.cpp:371",
+      "plan.cpp:406"
+    ]
+  },
+  {
+    "name": "CLAIM_VALUE",
+    "type": "double",
+    "value": "1.3",
+    "line": 444,
+    "uses": [
+      "plan.cpp:403"
+    ]
+  },
+  {
+    "name": "PX2_ON",
+    "type": "bool",
+    "value": "false",
+    "line": 452,
+    "uses": [
+      "plan.cpp:1382",
+      "plan.cpp:1879"
+    ]
+  },
+  {
+    "name": "PX2_ALLY_PENALTY",
+    "type": "double",
+    "value": "30.0",
+    "line": 453,
+    "uses": [
+      "plan.cpp:1382"
+    ]
+  },
+  {
+    "name": "LSPLIT_ON",
+    "type": "bool",
+    "value": "true",
+    "line": 479,
+    "uses": [
+      "plan.cpp:896"
+    ]
+  },
+  {
+    "name": "LSPLIT_START",
+    "type": "int",
+    "value": "250",
+    "line": 480,
+    "uses": [
+      "plan.cpp:896"
+    ]
+  },
+  {
+    "name": "LSPLIT_END",
+    "type": "int",
+    "value": "340",
+    "line": 481,
+    "uses": [
+      "plan.cpp:896"
+    ]
+  },
+  {
+    "name": "LSPLIT_MIN_LEN",
+    "type": "int",
+    "value": "4",
+    "line": 482,
+    "uses": [
+      "plan.cpp:898"
+    ]
+  },
+  {
+    "name": "LSPLIT_MAX_LEN",
+    "type": "int",
+    "value": "6",
+    "line": 483,
+    "uses": [
+      "plan.cpp:898"
+    ]
+  },
+  {
+    "name": "LSPLIT_CHILD",
+    "type": "int",
+    "value": "2",
+    "line": 484,
+    "uses": [
+      "plan.cpp:902"
+    ]
+  },
+  {
+    "name": "LSPLIT_GAP",
+    "type": "int",
+    "value": "8",
+    "line": 485,
+    "uses": [
+      "plan.cpp:898"
+    ]
+  },
+  {
+    "name": "FRAG_CAP_CSPLIT_ON",
+    "type": "bool",
+    "value": "true",
+    "line": 491,
+    "uses": [
+      "plan.cpp:746"
+    ]
+  },
+  {
+    "name": "LNT_ON",
+    "type": "bool",
+    "value": "true",
+    "line": 511,
+    "uses": [
+      "plan.cpp:579",
+      "plan.cpp:610",
+      "plan.cpp:631",
+      "plan.cpp:1368",
+      "plan.cpp:1405",
+      "plan.cpp:1531",
+      "plan.cpp:1815"
+    ]
+  },
+  {
+    "name": "LNT_RAM_ON",
+    "type": "bool",
+    "value": "false",
+    "line": 514,
+    "uses": [
+      "plan.cpp:610"
+    ]
+  },
+  {
+    "name": "LNT_MAX_LEN",
+    "type": "int",
+    "value": "4",
+    "line": 515,
+    "uses": [
+      "plan.cpp:610"
+    ]
+  },
+  {
+    "name": "LNT_MIN_D3",
+    "type": "int",
+    "value": "1",
+    "line": 516,
+    "uses": [
+      "plan.cpp:618"
+    ]
+  },
+  {
+    "name": "LNT_VETO_D3",
+    "type": "int",
+    "value": "-1",
+    "line": 517,
+    "uses": [
+      "plan.cpp:632",
+      "plan.cpp:1820"
+    ]
+  },
+  {
+    "name": "LNT_MIN_UNITS",
+    "type": "int",
+    "value": "3",
+    "line": 518,
+    "uses": [
+      "plan.cpp:610"
+    ]
+  },
+  {
+    "name": "LNT_KINT_MIN_LEN",
+    "type": "int",
+    "value": "8",
+    "line": 519,
+    "uses": [
+      "plan.cpp:626"
+    ]
+  },
+  {
+    "name": "LNT_KINT_NEED_LONGEST",
+    "type": "bool",
+    "value": "false",
+    "line": 520,
+    "uses": [
+      "plan.cpp:626"
+    ]
+  },
+  {
+    "name": "UTAB_ON",
+    "type": "bool",
+    "value": "false",
+    "line": 531,
+    "uses": [
+      "plan.cpp:796"
+    ]
+  },
+  {
+    "name": "UTAB_EARLY_END",
+    "type": "int",
+    "value": "50",
+    "line": 533,
+    "uses": [
+      "plan.cpp:816"
+    ]
+  },
+  {
+    "name": "UTAB_PORTALS",
+    "type": "bool",
+    "value": "false",
+    "line": 534,
+    "uses": [
+      "plan.cpp:815"
+    ]
+  },
+  {
+    "name": "GH_ON",
+    "type": "bool",
+    "value": "true",
+    "line": 567,
+    "uses": [
+      "plan.cpp:532",
+      "plan.cpp:1093",
+      "plan.cpp:1888"
+    ]
+  },
+  {
+    "name": "GH_HOLD",
+    "type": "int",
+    "value": "3",
+    "line": 568,
+    "uses": [
+      "plan.cpp:532",
+      "plan.cpp:1888"
+    ]
+  },
+  {
+    "name": "GH_DROP_R",
+    "type": "int",
+    "value": "2",
+    "line": 569,
+    "uses": [
+      "plan.cpp:1102",
+      "plan.cpp:1103"
+    ]
+  },
+  {
+    "name": "GH_DROP_START",
+    "type": "int",
+    "value": "300",
+    "line": 570,
+    "uses": [
+      "plan.cpp:1093"
+    ]
+  },
+  {
+    "name": "KX_ON",
+    "type": "bool",
+    "value": "true",
+    "line": 571,
+    "uses": [
+      "plan.cpp:1138"
+    ]
+  },
+  {
+    "name": "KX_START",
+    "type": "int",
+    "value": "300",
+    "line": 572,
+    "uses": [
+      "plan.cpp:1138"
+    ]
+  },
+  {
+    "name": "KX_DIST",
+    "type": "int",
+    "value": "7",
+    "line": 573,
+    "uses": [
+      "plan.cpp:534",
+      "plan.cpp:1148",
+      "plan.cpp:1155"
+    ]
+  },
+  {
+    "name": "KX_W",
+    "type": "double",
+    "value": "0.4",
+    "line": 574,
+    "uses": [
+      "plan.cpp:534"
+    ]
+  },
+  {
+    "name": "KX_STALE",
+    "type": "int",
+    "value": "3",
+    "line": 575,
+    "uses": [
+      "plan.cpp:1143"
+    ]
+  },
+  {
+    "name": "KX_KING_FRESH",
+    "type": "int",
+    "value": "20",
+    "line": 576,
+    "uses": [
+      "plan.cpp:1119"
+    ]
+  },
+  {
+    "name": "LWK_ON",
+    "type": "bool",
+    "value": "false",
+    "line": 577,
+    "uses": [
+      "plan.cpp:1294"
+    ]
+  },
+  {
+    "name": "LWK_KING_FRESH",
+    "type": "int",
+    "value": "20",
+    "line": 578,
+    "uses": [
+      "plan.cpp:1298"
+    ]
+  },
+  {
+    "name": "DFS_DEPTH_MAX",
+    "type": "int",
+    "value": "7",
+    "line": 581,
+    "uses": [
+      "plan.cpp:1590"
+    ]
+  },
+  {
+    "name": "DFS_DEPTH_MIN",
+    "type": "int",
+    "value": "3",
+    "line": 582,
+    "uses": [
+      "plan.cpp:1590"
+    ]
+  },
+  {
+    "name": "DFS_NODE_BUDGET",
+    "type": "long long",
+    "value": "40000",
+    "line": 583,
+    "uses": [
+      "plan.cpp:524",
+      "plan.cpp:1591",
+      "plan.cpp:1601"
+    ]
+  },
+  {
+    "name": "POINTS_SOFT",
+    "type": "long long",
+    "value": "16'000'000",
+    "line": 584,
+    "uses": [
+      "plan.cpp:1200"
+    ]
+  },
+  {
+    "name": "POINTS_HARD",
+    "type": "long long",
+    "value": "26'000'000",
+    "line": 585,
+    "uses": [
+      "plan.cpp:1200"
+    ]
+  },
+  {
+    "name": "SPRINT_COST",
+    "type": "double",
+    "value": "1.6",
+    "line": 586,
+    "uses": [
+      "plan.cpp:1404",
+      "plan.cpp:1405",
+      "plan.cpp:1416",
+      "plan.cpp:1502",
+      "plan.cpp:1516",
+      "plan.cpp:1556",
+      "plan.cpp:1558"
+    ]
+  },
+  {
+    "name": "UNKNOWN_EDGE_PENALTY",
+    "type": "double",
+    "value": "0.3",
+    "line": 587,
+    "uses": [
+      "plan.cpp:560",
+      "plan.cpp:1390",
+      "plan.cpp:1417",
+      "plan.cpp:1502",
+      "plan.cpp:1516"
+    ]
+  },
+  {
+    "name": "JITTER",
+    "type": "double",
+    "value": "0.002",
+    "line": 588,
+    "uses": [
+      "plan.cpp:1622"
+    ]
+  },
+  {
+    "name": "SEND_SONAR",
+    "type": "bool",
+    "value": "true",
+    "line": 591,
+    "uses": [
+      "main.cpp:47"
+    ]
+  },
+  {
+    "name": "INDICATOR",
+    "type": "bool",
+    "value": "true",
+    "line": 592,
+    "uses": [
+      "main.cpp:58"
+    ]
+  },
+  {
+    "name": "PROFILE",
+    "type": "bool",
+    "value": "false",
+    "line": 593,
+    "uses": [
+      "plan.cpp:1900"
+    ]
+  }
+]

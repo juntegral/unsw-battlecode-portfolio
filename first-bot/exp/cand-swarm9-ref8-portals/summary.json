@@ -1,0 +1,48 @@
+{
+  "label": "cand-swarm9-ref8-portals",
+  "bot": "~/01. Project/개인 프로젝트/unsw-heuristic/exp/cand-swarm8/bot",
+  "at": "2026-09-29T21:10:07.571Z",
+  "benchmark": {
+    "maps": 1,
+    "opps": [
+      "proxy_swarm",
+      "proxy_elim",
+      "proxy_king"
+    ],
+    "seeds": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "sides": 2
+  },
+  "all": {
+    "n": 24,
+    "G": 24.625,
+    "alive": 1,
+    "win": 0.25
+  },
+  "byOpp": {
+    "proxy_swarm": {
+      "n": 8,
+      "G": 22.25,
+      "alive": 1,
+      "win": 0
+    },
+    "proxy_elim": {
+      "n": 8,
+      "G": 25.625,
+      "alive": 1,
+      "win": 0.25
+    },
+    "proxy_king": {
+      "n": 8,
+      "G": 26,
+      "alive": 1,
+      "win": 0.5
+    }
+  },
+  "problems": 0,
+  "errors": 0
+}

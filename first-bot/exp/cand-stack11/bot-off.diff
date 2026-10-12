@@ -1,0 +1,224 @@
+diff -r exp/cand-stack10/bot/params.hpp exp/cand-stack11/bot-off/params.hpp
+135c135
+< // (research/experiments/mech-stack1.md). Toggles: CONV_ON (M1), RAM_SMALL_ON (M2), KS_ON (M3); stack2 below: FRAG_ON, GRAB_ON; stack3: KS2_ON; stack4: TG_ON, ESC_SPLIT_ON, PX_ON, GX_ON, SPLIT_TAIL_ON; stack5: CSPLIT_ON, FGUARD_ON, COV_ON; stack7: FLOOR_ON, KCAP_ON; stack8: F2_ON, F2P_ON, PX2_ON, CLAIM_ALLY_ON, CLAIM_ENEMY_ON; stack9: LSPLIT_ON, FRAG_CAP_CSPLIT_ON (and COV_ON on); stack10: LNT_ON, UTAB_ON. M1 conv (R3/K1, mass ledger H1): from CONV_START a small piece next to a big
+---
+> // (research/experiments/mech-stack1.md). Toggles: CONV_ON (M1), RAM_SMALL_ON (M2), KS_ON (M3); stack2 below: FRAG_ON, GRAB_ON; stack3: KS2_ON; stack4: TG_ON, ESC_SPLIT_ON, PX_ON, GX_ON, SPLIT_TAIL_ON; stack5: CSPLIT_ON, FGUARD_ON, COV_ON; stack7: FLOOR_ON, KCAP_ON; stack8: F2_ON, F2P_ON, PX2_ON, CLAIM_ALLY_ON, CLAIM_ENEMY_ON; stack9: LSPLIT_ON, FRAG_CAP_CSPLIT_ON (and COV_ON on); stack10: LNT_ON, UTAB_ON; stack11: GH_ON, KX_ON, LWK_ON. M1 conv (R3/K1, mass ledger H1): from CONV_START a small piece next to a big
+511a512,514
+> // stack11 (coordinator, W11 verdict): lnt's ram branch only (lntRam: ram an adjacent enemy head when locally ahead, d3 >= LNT_MIN_D3; tag
+> // " lnt<d3>"). false = those turns fall back to stack9's trade rules; the veto (" lntv", with the kint >= 8 and r495 exceptions) stays. true = stack10.
+> constexpr bool   LNT_RAM_ON = true;             // identity copy: stack10's value
+533a537,578
+> 
+> // --- stack11 (2026-09-30): the three proposals of the endgame king study research/observations/endgame-king.md (section 7; our 21 elite
+> // sets, 1,469 games, + top-vs-top 500-round games), each with its own toggle and indicator tag (research/experiments/cand-stack11.md).
+> // With GH_ON, KX_ON and LWK_ON all false the bot plays exactly as stack10 (checked by replay event hashes on two local games).
+> // On 500-round maps our final king ends 20.4 shorter than top winners' (stack5-7), 17.5 of it in sacrifice pearls. Gathering supplies
+> // 57-76% of the line's sacrifice pearls but leaks: the team's longest at the start of gathering is the final king in 33%, and other own
+> // dragons eat 26-35% of the pearls of labelled feeds aimed at the line (merge2 20%). Our king lives next to enemy heads (52% of its
+> // r300-399 turns have one within Manhattan 6; top winners 32%) and we lose the team's longest to an enemy head after r340 in 13% of games
+> // (winners 5%); conv is blocked by an enemy head in view in 36-39% of its geometric states (winners 17%).
+> // gh (proposal 1): gatherers hold back at the king, and fresh drops beside a longer ally's head are left to it.
+> //   hold: the gathering leaf penalty (dfs) is GATHER_W x max(0, goal distance - GH_HOLD) instead of GATHER_W x goal distance (as F's
+> //     FG_HOLD). Tag " gh" on a gathering move turn whose goal distance at our head is <= GH_HOLD + 2.
+> //   drops: from GH_DROP_START, a fresh death drop (freshDrop) within Manhattan GH_DROP_R of the head of an ally seen this turn that is
+> //     longer than us is worth CONTEST_ALLY_CLOSER times a pearl wherever the planner values a pearl on it: the search's step value, its
+> //     attraction source (which loses grab's boost and tag for this dragon; the ally-closer discount applies at every distance), and the
+> //     first-step and sprint values of the candidates (a dragon beside the drop would otherwise take it on its first step). Whether a move
+> //     eats is unchanged (the body model). Tag " ghd@<x>,<y>" (the nearest such drop) on a move turn with one within 3 steps of our head.
+> // kx (proposal 2): from KX_START the king keeps away from enemy heads on the recognised fight maps (kxMapOn: Schooltime, Slithery Fight,
+> //   Trauma, Autarky; World::mapFamIs, off before recognition and on "map=none"). The king = length >= KING_MIN_LEN and no ally longer than
+> //   us with news (seen, heard or relayed) within KX_KING_FRESH rounds (kingFresh(); not gatherKing_, whose 100-round memory counts dead
+> //   allies: World::dragons is cleared only at init). kxDist_ = path distance over known edges (bodies ignored, as goalDist_) from the enemy
+> //   heads seen within KX_STALE rounds, up to KX_DIST; while a known enemy head is within KX_DIST of our head, the search's leaf pays
+> //   KX_W x (KX_DIST - kxDist_). Unlike stack1 ks and stack3 ks2 (threat weights on tiles inside the sprint reach of enemy heads long enough
+> //   to strike, r450 / r400 on; the king's position did not change), kx prices plain distance to every enemy head, pieces included (their
+> //   presence blocks conv and feed), from r300, as a pull over the whole search horizon. Tag " kx<d>" (d = kxDist_ at our head), and
+> //   " kxm" when the chosen move ends farther than d.
+> // lwk (proposal 3): the late window (from FEED_FIRST_ROUND) also feeds only the king class (an ally at least kingLen - 2 long, as the
+> //   gathering window's earlyOnlyKing), with kingLen taken from news of the last LWK_KING_FRESH rounds (not GATHER_KING_MEMORY: a dead
+> //   king's record would stop feeds to the new one). Tag " lwk" on a move turn whose feed the old late-window rule (any longer ally within
+> //   FEED_MAX_DIST) would have made.
+> constexpr bool   GH_ON = false;
+> constexpr int    GH_HOLD = 3;               // the study: no gathering pull within 3 of the goal (feeds reach 5)
+> constexpr int    GH_DROP_R = 2;             // drops within Manhattan 2 of a longer ally's head are left to it
+> constexpr int    GH_DROP_START = 300;       // CONV_START: the feeds (conv from r300, feed from r340) whose pearls the rule leaves to the target
+> constexpr bool   KX_ON = false;
+> constexpr int    KX_START = 300;            // the exposure gap is widest in r300-399 (52% vs 32%)
+> constexpr int    KX_DIST = 7;               // keep >= 7 from enemy heads (the exposure metric counts <= 6)
+> constexpr double KX_W = 0.4;                // leaf penalty per tile below KX_DIST (GATHER_W 0.12 moves gatherers 19 steps)
+> constexpr int    KX_STALE = 3;              // enemy heads seen this recently
+> constexpr int    KX_KING_FRESH = 20;        // GATHER_STALE: a longer ally with news this recent says we are not the king
+> constexpr bool   LWK_ON = false;
+> constexpr int    LWK_KING_FRESH = 20;       // GATHER_STALE: kingLen from news this recent in the late window
+diff -r exp/cand-stack10/bot/plan.cpp exp/cand-stack11/bot-off/plan.cpp
+328c328
+<     struct Src { int t; double v; int wait; bool grab; bool cov = false; }; // cov: stack5
+---
+>     struct Src { int t; double v; int wait; bool grab; bool cov = false; bool gh = false; }; // cov: stack5; gh: stack11
+345a346,347
+>         const bool ghs = ghOn_ && ghDrop_[t];                 // stack11 gh: left to the longer ally beside it (no grab for us)
+>         if (ghs) grab = false;
+350c352
+<         src.push_back({t, v, wait, grab, cov});
+---
+>         src.push_back({t, v, wait, grab, cov, ghs});
+419c421
+<             if (af < dist) contest *= P::CONTEST_ALLY_CLOSER;
+---
+>             if (af < dist || s.gh) contest *= P::CONTEST_ALLY_CLOSER; // stack11 gh: at every distance for a drop left to a longer ally
+529a532
+>                                  : P::GH_ON ? P::GATHER_W * std::max(0, std::min(goalDist_[t], 200) - P::GH_HOLD)   // stack11 gh: hold back at the king
+530a534
+>         if (kxOn_) v -= P::KX_W * std::max(0, P::KX_DIST - (int)kxDist_[t]);                        // stack11 kx: the king keeps away
+555c559
+<         double v = p * g - threatAt(u) * g - softPenalty_[u] * g - portalPenalty(t, d, u) * g;
+---
+>         double v = pearlValue(u, p) * g - threatAt(u) * g - softPenalty_[u] * g - portalPenalty(t, d, u) * g; // stack11 gh: pearlValue
+606c610
+<     if (!P::LNT_ON || w_.myLen > P::LNT_MAX_LEN || w_.unitCount < P::LNT_MIN_UNITS) return false;
+---
+>     if (!P::LNT_ON || !P::LNT_RAM_ON || w_.myLen > P::LNT_MAX_LEN || w_.unitCount < P::LNT_MIN_UNITS) return false; // stack11: LNT_RAM_ON
+1083a1088,1157
+> // stack11 gh (drops): from GH_DROP_START, fresh death drops (freshDrop, a pearl likely there) within Manhattan GH_DROP_R of the head of an
+> // ally seen this turn that is longer than us (the feed rule's length: a whole chain in view is exact). They are left to that ally.
+> void Planner::computeGhDrops() {
+>     for (int t : ghdTiles_) ghDrop_[t] = 0;
+>     ghdTiles_.clear(); ghOn_ = false;
+>     if (!P::GH_ON || w_.round < P::GH_DROP_START || w_.allyHeadsNow.empty()) return;
+>     int n = w_.geo.tiles();
+>     if ((int)ghDrop_.size() != n) ghDrop_.assign(n, 0);
+>     for (int id : w_.allyHeadsNow) {
+>         auto it = w_.dragons.find(id); if (it == w_.dragons.end()) continue;
+>         const Dragon& a = it->second;
+>         int la = a.tailSeen && a.lastSeen == w_.round ? a.visLen : std::max(a.minLen, a.estLen);
+>         if (a.headT < 0 || la <= w_.myLen) continue;
+>         int ax = a.headT % w_.geo.W, ay = a.headT / w_.geo.W;
+>         for (int dy = -P::GH_DROP_R; dy <= P::GH_DROP_R; dy++) for (int dx = -P::GH_DROP_R; dx <= P::GH_DROP_R; dx++) {
+>             if (Geo::abs(dx) + Geo::abs(dy) > P::GH_DROP_R) continue;
+>             int t = w_.geo.idx(w_.geo.wrapX(ax + dx), w_.geo.wrapY(ay + dy));
+>             if (ghDrop_[t] || !freshDrop(t) || w_.pearlProb(t, w_.round) < 0.15) continue;
+>             ghDrop_[t] = 1; ghdTiles_.push_back(t); ghOn_ = true;
+>         }
+>     }
+> }
+> 
+> // stack11 gh: the value of a pearl of probability p on tile t (the ally-closer discount on a drop left to a longer ally)
+> double Planner::pearlValue(int t, double p) const { return ghOn_ && ghDrop_[t] ? p * P::CONTEST_ALLY_CLOSER : p; }
+> 
+> // stack11 kx: are we the king? Only news from the last KX_KING_FRESH rounds counts. World::dragons keeps every dragon ever seen (it is
+> // cleared once, at init), so the gathering's 100-round memory (GATHER_KING_MEMORY, gatherKing_) can keep a dead longer ally in our
+> // belief; a longer ally seen, heard (its message) or relayed (a relay carries the round of its news) within KX_KING_FRESH rounds says no.
+> bool Planner::kingFresh() const {
+>     for (auto& [id, d] : w_.dragons) {
+>         if (id == w_.myId || d.team != w_.myTeam || d.headT < 0 || w_.round - d.headSeen > P::KX_KING_FRESH) continue;
+>         if (std::max(d.estLen, d.minLen) > w_.myLen) return false;
+>     }
+>     return true;
+> }
+> 
+> // stack11 kx: the fight maps of the study's KX_MAPS (Schooltime and Slithery Fight first, then Trauma and Autarky), as this process
+> // recognised the family (off before recognition and on "map=none"; Portals and the elimination maps are off)
+> bool Planner::kxMapOn() const {
+>     for (const char* f : {"Schooltime", "Slithery_Fight", "Trauma", "Autarky"})
+>         if (w_.mapFamIs(f)) return true;
+>     return false;
+> }
+> 
+> // stack11 kx (endgame king study 7.2): the king (kingFresh, length >= KING_MIN_LEN) from KX_START on a KX map keeps away from enemy
+> // heads. kxDist_ = path distance over known edges, bodies ignored (as goalDist_), from every enemy head seen within KX_STALE rounds, up
+> // to KX_DIST (99 beyond). On only while such a head is within KX_DIST of our head (the rule's firing condition; every firing is tagged).
+> void Planner::computeKingAway() {
+>     kxOn_ = false;
+>     if (!P::KX_ON || w_.round < P::KX_START || w_.myLen < P::KING_MIN_LEN || !kxMapOn() || !kingFresh()) return;
+>     int n = w_.geo.tiles();
+>     kxDist_.assign(n, 99);
+>     kxQ_.clear();
+>     for (auto& [id, d] : w_.dragons) {
+>         if (d.team == w_.myTeam || d.headT < 0 || w_.round - d.headSeen > P::KX_STALE) continue;
+>         if (kxDist_[d.headT] > 0) { kxDist_[d.headT] = 0; kxQ_.push_back(d.headT); }
+>     }
+>     for (size_t qi = 0; qi < kxQ_.size(); qi++) {
+>         int t = kxQ_[qi];
+>         if (kxDist_[t] >= P::KX_DIST) continue;
+>         for (int dir = 0; dir < 4; dir++) {
+>             int u = w_.across(t, dir);
+>             if (u < 0 || kxDist_[u] <= kxDist_[t] + 1) continue;
+>             kxDist_[u] = (int16_t)(kxDist_[t] + 1); kxQ_.push_back(u);
+>         }
+>     }
+>     kxOn_ = kxDist_[w_.headT] <= P::KX_DIST;
+> }
+> 
+1165a1240
+>     computeGhDrops();        // stack11 gh (before the attraction field)
+1168a1244
+>     computeKingAway();       // stack11 kx
+1212a1289
+>     lwkHeld_ = false;                                                                    // stack11 lwk
+1215a1293,1295
+>         // stack11 lwk: the late window feeds the king class too, with kingLen from news of the last LWK_KING_FRESH rounds
+>         const bool lwk = P::LWK_ON && w_.round >= P::FEED_FIRST_ROUND;
+>         int oldTo = -1, oldDist = 99;                // stack11 lwk: the nearest longer ally outside the king class (the old rule's choice)
+1218c1298
+<             if (id != w_.myId && d.team == w_.myTeam && d.headT >= 0 && w_.round - d.headSeen <= P::GATHER_KING_MEMORY)
+---
+>             if (id != w_.myId && d.team == w_.myTeam && d.headT >= 0 && w_.round - d.headSeen <= (lwk ? P::LWK_KING_FRESH : P::GATHER_KING_MEMORY))
+1226a1307
+>             const bool lwkOut = lwk && la < kingLen - 2;   // stack11 lwk: not the king class (the old late-window rule fed it)
+1246a1328
+>             if (lwkOut) { if (found < oldDist) { oldDist = found; oldTo = id; } continue; } // stack11 lwk
+1250c1332,1337
+<         if (feedTo >= 0 && (lateWindow || (gathering && w_.unitCount >= P::GATHER_FEED_UNITS && w_.myLen >= P::GATHER_FEED_MIN_LEN))) {
+---
+>         const bool feedNow = feedTo >= 0 && (lateWindow || (gathering && w_.unitCount >= P::GATHER_FEED_UNITS && w_.myLen >= P::GATHER_FEED_MIN_LEN));
+>         if (lwk && !feedNow && oldTo >= 0 && oldDist < 99) { // stack11 lwk: would the old rule (the nearest longer ally, any class) have fed?
+>             const int od = std::min(oldDist, feedDist);
+>             lwkHeld_ = w_.round >= 500 - (w_.myLen + od + P::FEED_SLACK) || (gathering && w_.unitCount >= P::GATHER_FEED_UNITS && w_.myLen >= P::GATHER_FEED_MIN_LEN);
+>         }
+>         if (feedNow) {
+1303c1390
+<         c.base = p1 - th1 - softPenalty_[u1] - portalPenalty(w_.headT, d1, u1) - portalExtra - (w_.edgeUnknown(w_.headT, d1) ? P::UNKNOWN_EDGE_PENALTY : 0.0);
+---
+>         c.base = pearlValue(u1, p1) - th1 - softPenalty_[u1] - portalPenalty(w_.headT, d1, u1) - portalExtra - (w_.edgeUnknown(w_.headT, d1) ? P::UNKNOWN_EDGE_PENALTY : 0.0);
+1329c1416
+<                 s.base = p1 + p2 - P::SPRINT_COST - th2 - softPenalty_[u2] - portalPenalty(u1, d2, u2)
+---
+>                 s.base = pearlValue(u1, p1) + pearlValue(u2, p2) - P::SPRINT_COST - th2 - softPenalty_[u2] - portalPenalty(u1, d2, u2)
+1415c1502
+<                         s2.base = p1 + p2 - P::SPRINT_COST - softPenalty_[u2] - portalPenalty(u1, d2, u2) - (w_.edgeUnknown(u1, d2) ? P::UNKNOWN_EDGE_PENALTY : 0.0);
+---
+>                         s2.base = pearlValue(u1, p1) + pearlValue(u2, p2) - P::SPRINT_COST - softPenalty_[u2] - portalPenalty(u1, d2, u2) - (w_.edgeUnknown(u1, d2) ? P::UNKNOWN_EDGE_PENALTY : 0.0);
+1429c1516
+<                         s3.base = p1 + p2 + p3 - 2.0 * P::SPRINT_COST - softPenalty_[u3] - portalPenalty(u2, d3, u3) - (w_.edgeUnknown(u2, d3) ? P::UNKNOWN_EDGE_PENALTY : 0.0);
+---
+>                         s3.base = pearlValue(u1, p1) + pearlValue(u2, p2) + pearlValue(u3, p3) - 2.0 * P::SPRINT_COST - softPenalty_[u3] - portalPenalty(u2, d3, u3) - (w_.edgeUnknown(u2, d3) ? P::UNKNOWN_EDGE_PENALTY : 0.0);
+1798a1886,1899
+>     // stack11 gh: " gh" on a gathering turn within GH_HOLD + 2 of the goal (the leaf penalty stops at GH_HOLD); " ghd@x,y" names the
+>     // nearest drop left to a longer ally within 3 steps of our head (headDist_: known edges, bodies ignored)
+>     if (P::GH_ON && goalOn_ && !fGoal_ && goalDist_[w_.headT] <= P::GH_HOLD + 2) act.indicator += " gh";
+>     if (ghOn_) {
+>         int bt = -1, bd = 4;
+>         for (int t : ghdTiles_) if (headDist_[t] >= 0 && headDist_[t] < bd) { bd = headDist_[t]; bt = t; }
+>         if (bt >= 0) { snprintf(buf, sizeof buf, " ghd@%d,%d", bt % w_.geo.W, bt / w_.geo.W); act.indicator += buf; }
+>     }
+>     // stack11 kx: " kx<d>" (path distance of the nearest enemy head seen within KX_STALE rounds, at our head); " kxm" when the move ends farther
+>     if (kxOn_) {
+>         snprintf(buf, sizeof buf, " kx%d", (int)kxDist_[w_.headT]); act.indicator += buf;
+>         if (!c.tiles.empty() && kxDist_[c.tiles.back()] > kxDist_[w_.headT]) act.indicator += " kxm";
+>     }
+>     if (lwkHeld_) act.indicator += " lwk";                                                      // stack11 lwk
+diff -r exp/cand-stack10/bot/plan.hpp exp/cand-stack11/bot-off/plan.hpp
+132a133,145
+>     // stack11 gh / kx / lwk (params.hpp stack11 section)
+>     std::vector<uint8_t> ghDrop_;               // gh: 1 on a fresh drop left to a longer ally this turn
+>     std::vector<int> ghdTiles_;                 // gh: those tiles (cleared next turn; the tag names the nearest)
+>     bool ghOn_ = false;                         // gh: some drop is left to a longer ally this turn
+>     std::vector<int16_t> kxDist_;               // kx: path distance (<= KX_DIST) from enemy heads seen within KX_STALE rounds; 99 beyond
+>     std::vector<int> kxQ_;                      // kx: BFS queue
+>     bool kxOn_ = false;                         // kx: the king-away leaf penalty applies this turn
+>     bool lwkHeld_ = false;                      // lwk: the king-class rule stopped a late-window feed this turn
+>     void computeGhDrops();                      // gh: ghDrop_ / ghdTiles_ / ghOn_
+>     void computeKingAway();                     // kx: kxDist_ / kxOn_
+>     bool kingFresh() const;                     // kx: no ally longer than us with news within KX_KING_FRESH rounds
+>     bool kxMapOn() const;                       // kx: a recognised KX map family
+>     double pearlValue(int t, double p) const;   // gh: p, or p x CONTEST_ALLY_CLOSER on a drop left to a longer ally

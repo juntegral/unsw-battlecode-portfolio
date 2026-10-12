@@ -1,0 +1,17 @@
+crossings: exit kind | previous-round probe | label v  ->  N, body dead within 3 (rate), own-blocked on the exit tile
+  PORTAL? | probe clean            | not desperate              2720    86 (3.2%)  own 35
+  known   | probe clean            | not desperate              2657   105 (4.0%)  own 60
+  known   | probe dirty:ally       | not desperate               578    56 (9.7%)  own 90
+  PORTAL? | probe clean            | desperate                   413    58 (14.0%)  own 10
+  known   | probe dirty:allyHead   | not desperate               154    33 (21.4%)  own 54
+  PORTAL? | probe none             | desperate                   122    25 (20.5%)  own 18
+  PORTAL? | probe dirty:ally       | desperate                   112    15 (13.4%)  own 10
+  known   | probe clean            | desperate                    69     4 (5.8%)  own 3
+  known   | probe none             | not desperate                59     7 (11.9%)  own 0
+  PORTAL? | probe dirty:allyHead   | desperate                    48    13 (27.1%)  own 13
+  known   | probe dirty:enemy      | not desperate                45    12 (26.7%)  own 1
+  known   | probe dirty:enemyHead  | not desperate                29     3 (10.3%)  own 0
+  PORTAL? | probe dirty:enemy      | desperate                    27    11 (40.7%)  own 1
+  PORTAL? | probe dirty:enemyHead  | desperate                     9     3 (33.3%)  own 0
+  known   | probe dirty:enemyHead  | desperate                     2     1 (50.0%)  own 0
+  known   | probe dirty:ally       | desperate                     2     0 (0.0%)  own 0

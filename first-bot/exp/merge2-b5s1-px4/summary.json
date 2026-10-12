@@ -1,0 +1,45 @@
+{
+  "label": "merge2-b5s1-px4",
+  "bot": "~/01. Project/개인 프로젝트/unsw-heuristic/bot",
+  "at": "2026-09-30T01:36:04.333Z",
+  "benchmark": {
+    "maps": 5,
+    "opps": [
+      "proxy4_swarm",
+      "proxy4_elim",
+      "proxy4_king"
+    ],
+    "seeds": [
+      1
+    ],
+    "sides": 2
+  },
+  "all": {
+    "n": 30,
+    "G": 10.233333333333333,
+    "alive": 0.6333333333333333,
+    "win": 0.03333333333333333
+  },
+  "byOpp": {
+    "proxy4_swarm": {
+      "n": 10,
+      "G": 9.8,
+      "alive": 0.6,
+      "win": 0.1
+    },
+    "proxy4_elim": {
+      "n": 10,
+      "G": 9.2,
+      "alive": 0.6,
+      "win": 0
+    },
+    "proxy4_king": {
+      "n": 10,
+      "G": 11.7,
+      "alive": 0.7,
+      "win": 0
+    }
+  },
+  "problems": 0,
+  "errors": 0
+}

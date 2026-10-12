@@ -1,0 +1,367 @@
+--- exp/cand-stack4/bot/params.hpp	2026-09-30 14:17:21
++++ exp/cand-stack5/bot/params.hpp	2026-09-30 15:17:49
+@@ -132,7 +132,7 @@
+ constexpr int    GATHER_FEED_MIN_LEN = 4;   // before the late window, only feeders at least this long (an L2 gives one pearl)
+ 
+ // --- stack1 (2026-09-30): hypotheses from top-vs-top replays, each with its own indicator tag for the per-wave check
+-// (research/experiments/mech-stack1.md). Toggles: CONV_ON (M1), RAM_SMALL_ON (M2), KS_ON (M3); stack2 below: FRAG_ON, GRAB_ON; stack3: KS2_ON; stack4: TG_ON, ESC_SPLIT_ON, PX_ON, GX_ON, SPLIT_TAIL_ON. M1 conv (R3/K1, mass ledger H1): from CONV_START a small piece next to a big
++// (research/experiments/mech-stack1.md). Toggles: CONV_ON (M1), RAM_SMALL_ON (M2), KS_ON (M3); stack2 below: FRAG_ON, GRAB_ON; stack3: KS2_ON; stack4: TG_ON, ESC_SPLIT_ON, PX_ON, GX_ON, SPLIT_TAIL_ON; stack5: CSPLIT_ON, FGUARD_ON, COV_ON. M1 conv (R3/K1, mass ledger H1): from CONV_START a small piece next to a big
+ // visible ally dies into its own neck so that ally eats the pearls. Tag "feed #<ally> d<dist> L<len> conv".
+ constexpr bool   CONV_ON = true;
+ constexpr int    CONV_START = 300;          // top winners start sacrificing about r300 (half done by r380)
+@@ -234,7 +234,7 @@
+ // Cornered is judged with the reach we are sure of (a head in view, length <= 4 and shorter than us, reach = its visible
+ // segments - 1; see plan.cpp): with estimated reaches most firings were not cornered turns in the local check.
+ // Tag "esc-split<n> L<len>".
+-constexpr bool   ESC_SPLIT_ON = true;
++constexpr bool   ESC_SPLIT_ON = false;      // W4 online: off. It fired 0.24 a game (gate >= 0.3) and kept 54% of the body at +30 (gate >= 85%)
+ constexpr int    ESC_SPLIT_TAIL_DIST = 5;   // our tail at least this path distance from every enemy head seen within 3 rounds
+ // px (rank 4): avoid portal exits crowded by our own dragons. merge2: 55 non-desperate deaths on the crossing step with our
+ // own dragon at the exit (0.26 a game), 30 gathering deaths by collision with our own dragons, and a L74 king lost on a
+@@ -243,7 +243,7 @@
+ // length >= PX_LONG_LEN) an unprobed first-step crossing costs PORTAL_DIRTY_PENALTY instead of PORTAL_UNPROBED_PENALTY.
+ // Tag " px" on the move label when some legal candidate's crossing pays a px penalty and the chosen move crosses none;
+ // " pxx" when it does.
+-constexpr bool   PX_ON = true;
++constexpr bool   PX_ON = false;             // W4 online: off. Non-desperate crossing-step deaths against our own dragons 0.39 a game (gate <= 0.10; stack3 0.14); px avoided only 10%
+ constexpr int    PX_ALLY_ROUNDS = 20;
+ constexpr int    PX_ALLY_DIST = 6;
+ constexpr int    PX_LONG_LEN = 15;
+@@ -262,6 +262,76 @@
+ // wave near the study's protection floor (0.9) untested, so it waits for a later wave.
+ constexpr bool   SPLIT_TAIL_ON = false;
+ constexpr int    SPLIT_TAIL_DIST = 5;
++
++// --- stack5 (2026-09-30): territory coverage, the top two proposals of the territory study research/observations/
++// top-territory.md (section 10; 8,431 top-vs-top games + our 840 elite-set games), each with its own toggle and indicator tag
++// (research/experiments/cand-stack5.md). With CSPLIT_ON, FGUARD_ON, COV_ON and NOEXIT_SPARE_ON all false the bot plays exactly
++// as stack4 with the same stack4 toggles (checked by replay event hashes on two local games).
++// csplit (proposal 1): split to cover. Where a pearl is eaten is decided by whose head is nearer when it spawns: with the top
++// winners' distance distribution merge2 would lose 20% of its own-territory pearls instead of 56% (study 2.1). merge2 holds
++// 4 dragons at r100 (top winners 30 on 500-round maps, 21 on elimination maps) because its split rule is blocked by the unit
++// cap (56% of blocked turns on 500-round maps), the king rule (18% / 38%) and length < 8 (18% / 45%) (study 7.4). Before
++// CSPLIT_END a dragon of length >= CSPLIT_MIN_LEN splits off a CSPLIT_CHILD-segment child while the team has fewer units
++// than the map-scaled target, with an enemy head in view too (top winners: 40% of splits on 500-round maps); only the
++// child's spot is checked (a known, open tail, >= 2 exits, no enemy head within CSPLIT_TAIL_DIST of it).
++// The king: a dragon of length >= KING_MIN_LEN splits only when a longer ally is known (frag's test), so the king keeps its
++// length (merge2 holds Autarky and PD6 with it, and there early splits lose family length: E1 below). A shorter "king" is a
++// piece: on maps that start with short dragons only (QoS, Trophy, Trauma: 2 of length 3-4) the king rule blocked 38% of
++// merge2's turns and merge2 stayed at 2 dragons all game (study 8 A1); top winners' longest stays about 4 until r200.
++// Tag "csplit<n> u<units> L<len> t<target>" (+ " v" with an enemy head in view, + " k" when we believe we are the longest).
++constexpr bool   CSPLIT_ON = true;
++constexpr int    CSPLIT_START = 1;          // not in round 0: every start dragon sees the team's start count (swarm8 S5)
++constexpr int    CSPLIT_END = 250;          // S1 frag takes over from FRAG_START = 250 with its own cap (disjoint windows)
++constexpr int    CSPLIT_MIN_LEN = 4;        // parent keeps >= 2 (4 -> 2+2: top winners' children are 76% length 2)
++constexpr int    CSPLIT_CHILD = 2;
++constexpr int    CSPLIT_GAP = 8;            // rounds between two csplits of one dragon, so its children spread out
++// Target = map tiles / CSPLIT_TILES_PER_UNIT, clamped. The study's target is own-territory tiles / 20 (top winners hold 1.7-12.0
++// dragons per 100 own tiles at r100, median 5.0); a team's territory is 38-50% of the map (report-all 8), and the bot cannot
++// see it at the start, hence W*H/45 (the study's fallback): Autarky 21, Default 22, Devil/PD/Portals 11, QoS 19,
++// Schooltime 53 -> 40, Slithery Fight 37, Trauma 25, Trophy 13 (top winners at r100: 23, 19, 30/15/26, 13, 44, 59, 17, 31).
++// The clamp keeps room under the 64-unit limit for escape splits.
++constexpr int    CSPLIT_TILES_PER_UNIT = 45;
++constexpr int    CSPLIT_TARGET_MIN = 8;
++constexpr int    CSPLIT_TARGET_MAX = 40;
++constexpr int    CSPLIT_TAIL_DIST = 2;      // childSafe()'s near-tail rule (enemyDist_[tail] <= 2), measured so that it works
++// E1 (research/observations/top-decisions-large.md 3.2): top-vs-top, a split of length >= 4 before r50 loses family length
++// after 10 rounds on Autarky (-0.83), PD6 (-0.96), Slithery Fight (-0.55), Portals (-0.35) and PD10 (-0.29), and gains on
++// Trauma (+1.37), Schooltime (+0.36), Devil (+0.30), Trophy (+0.27). Autarky, PD6, PD10 and Slithery Fight start each team
++// with a long dragon (14, 11, 11, 25) and/or many dragons (6, 3, 5, 7). A start dragon that sees such a start (team units >=
++// CSPLIT_SEED_UNITS, or a dragon of ours of length >= KING_MIN_LEN by round 2) makes no csplit before CSPLIT_SEED_START, nor does
++// any dragon that before then is, or sees or hears, a dragon of ours of length >= KING_MIN_LEN (a child cannot see the start).
++// Portals (3 of length 3) is not told apart from Devil (3 of length 4) this way; its pieces must eat to length 4 first.
++constexpr int    CSPLIT_SEED_UNITS = 5;
++constexpr int    CSPLIT_SEED_START = 50;
++// F (proposal 2): fountain guard. Top winners lose 7% (500-round) / 6% (elimination) of their own fountain pearls and 22% / 20%
++// outside fountains; merge2 loses 50% / 33% at fountains, and its heads are within 3 steps of only 22% of its own fountains
++// at r100 (top winners 61% / 55%) (study 2.3, 3). Unguarded fountain pockets a few steps inside the border feed one raider for
++// 100+ rounds (study 8: A2, A6, A8, A10, B5, B7). Before GATHER_START a dragon that is not the king (length >= KING_MIN_LEN and
++// our longest) heads for the nearest known fountain of our side that no ally head (seen or heard within FG_ALLY_STALE rounds)
++// guards within FG_GUARD_DIST, and holds its group: the goal field is 0 on the group's fountains and within FG_HOLD of them.
++// Our side = nearer to this dragon's first head tile than the mirror image is (symmetry resolved). Tag " F<d>@<x>,<y>" on the
++// move label: path distance to the group and the fountain chosen.
++constexpr bool   FGUARD_ON = true;
++constexpr int    FG_MIN_UNITS = 3;          // a team of one or two feeds freely
++constexpr int    FG_ALLY_STALE = 20;        // an ally head this old (seen or heard) still guards (GATHER_STALE)
++constexpr int    FG_GUARD_DIST = 3;         // the study's "guarded": a head within 3 steps
++constexpr int    FG_GROUP_DIST = 3;         // fountains within this Manhattan distance of the chosen one form its group
++constexpr int    FG_MAX_DIST = 20;          // only groups this near (path distance over known edges, bodies ignored)
++constexpr int    FG_HOLD = 2;               // no pull within this distance of the group
++constexpr double FG_W = 0.12;               // leaf penalty per tile beyond FG_HOLD (GATHER_W)
++// cov (proposal 3): pieces of length <= COV_MAX_LEN keep sources of our side at contest factor >= COV_CONTEST when an enemy
++// head is nearer (the contest discount is 0.15 today, so our pieces cede our territory where an enemy already stands: 53% /
++// 55% of merge2's own-territory pearls spawn with an enemy head 3+ steps nearer; top winners 10% / 13%).
++// Tag " cov" when the move ends on our side with no other ally head within 6 of its last tile.
++constexpr bool   COV_ON = false;            // off for W5: the study expects little from it without csplit's density first
++constexpr int    COV_MAX_LEN = 4;
++constexpr double COV_CONTEST = 0.6;
++// no-exit spare (a csplit companion; cand-swarm3 T0): a dragon with no exit dies "going forward"; when that tile holds an ally's
++// head, the head to head kills the ally too. With csplit's pieces this became common in the local check (v1, 60 games vs proxy
++// v4): our dragons died in head to heads with each other 3.8 times a game (stack4 0.6); 81 of the 226 deaths were such a
++// no-exit mover (its victims account for most of the rest). Die elsewhere instead: an unexplored portal edge (it may still be
++// open), else left or right if no ally head is there, else into our own neck (harms nobody). Tag "no-exit s".
++constexpr bool   NOEXIT_SPARE_ON = true;
+ 
+ // --- search / budget ---
+ constexpr int    DFS_DEPTH_MAX = 7;
+--- exp/cand-stack4/bot/plan.hpp	2026-09-30 13:22:08
++++ exp/cand-stack5/bot/plan.hpp	2026-09-30 14:23:30
+@@ -64,6 +64,13 @@
+     bool gxOff_ = false;               // stack4 gx: the gathering goal is off this turn only for lack of rounds
+     mutable bool splitTailBlocked_ = false; // stack4 split tail: the tail rule stopped a policy split this turn
+     mutable int splitTailDist_ = 99;   // stack4 split tail: our tail's distance to the nearest known enemy head
++    // stack5 csplit / F / cov
++    int lastCsplitRound_ = -1000;      // csplit: our last coverage split
++    mutable int csplitTarget_ = 0;     // csplit: this turn's unit target (for the tag)
++    bool seedMap_ = false;             // csplit E1: a start dragon saw a start with many dragons or a long one
++    int homeT_ = -1;                   // F / cov: our first head tile (our side = nearer to it than its mirror image is)
++    bool fGoal_ = false; int fTarget_ = -1; // F: the goal is a fountain group; the fountain chosen
++    bool ourSide(int t) const;         // F / cov
+ 
+     void computeEnemyDistance();
+     void computeAttract();
+@@ -88,6 +95,9 @@
+     bool wantSplit(int& size) const;
+     bool childSafe() const;                     // the child born at our tail can move (no enemy head in view)
+     bool wantFrag(int& size) const;             // stack2 S1
++    bool wantCsplit(int& size) const;           // stack5 csplit
++    bool csplitChildSafe() const;               // stack5 csplit: childSafe() without its "no enemy head in view" rule
++    void computeFountainGoal();                 // stack5 F
+     bool longerAllyKnown(int maxAge) const;     // stack2 S1: an ally seen or heard within maxAge rounds is longer than us
+     bool freshDrop(int t) const;                // stack2 S2: t holds a death drop we first saw within GRAB_ROUNDS
+     int pickSonarDir(int fromT, int facing, bool* probe = nullptr) const;
+--- exp/cand-stack4/bot/plan.cpp	2026-09-30 13:57:51
++++ exp/cand-stack5/bot/plan.cpp	2026-09-30 14:58:18
+@@ -325,7 +325,7 @@
+     int n = w_.geo.tiles();
+     attract_.assign(n, 0.0);
+     SC.pnow.assign(n, 0.0);
+-    struct Src { int t; double v; int wait; bool grab; };
++    struct Src { int t; double v; int wait; bool grab; bool cov = false; }; // cov: stack5
+     std::vector<Src> src; src.reserve(256);
+     int hx = w_.headT % w_.geo.W, hy = w_.headT / w_.geo.W;
+     grabTiles_.clear();
+@@ -344,7 +344,9 @@
+         // stack2 S2 (H5): a fresh death drop within reach is worth more, and the enemy contest below does not discount it
+         bool grab = grabOn_ && p >= 0.15 && headDist_[t] >= 0 && headDist_[t] <= P::GRAB_REACH && freshDrop(t);
+         if (grab) { v = std::max(v, p * P::GRAB_VALUE); grabTiles_.push_back(t); }
+-        src.push_back({t, v, wait, grab});
++        // stack5 cov: for a piece, a coming spawn or a fountain of our side is contested, not ceded, when an enemy head is nearer
++        bool cov = P::COV_ON && w_.myLen <= P::COV_MAX_LEN && p < 0.15 && ourSide(t);
++        src.push_back({t, v, wait, grab, cov});
+     }
+     // hunting: short dragons value a much longer enemy head; any dragon values an enemy shadowing a longer teammate
+     if (w_.unitCount >= 2) {
+@@ -378,6 +380,7 @@
+             else if (ef < dist - 1) contest = P::CONTEST_ENEMY_CLOSER;
+             else if (ef == dist - 1) contest = P::CONTEST_ENEMY_ONE_CLOSER;
+             else if (ef == dist) contest = P::CONTEST_EQUAL;
++            if (s.cov) contest = std::max(contest, P::COV_CONTEST); // stack5 cov
+             if (af < dist) contest *= P::CONTEST_ALLY_CLOSER;
+             attract_[t] += s.v * GPOW[std::min(63, dist)] * GWAIT[std::min(511, std::max(0, s.wait - dist))] * contest;
+             if (dist >= P::ATTRACT_RADIUS) continue;
+@@ -488,7 +491,8 @@
+         int freeN = 0;
+         for (int d = 0; d < 4; d++) { if (d == opp(lastDir)) continue; int u = w_.across(t, d); if (u >= 0 && tileEnterable(u, stepBase + 1, removed, path)) freeN++; }
+         v += freeN * 0.15;
+-        if (goalOn_) v -= P::GATHER_W * std::min(goalDist_[t], 200);
++        if (goalOn_) v -= fGoal_ ? P::FG_W * std::max(0, std::min(goalDist_[t], 200) - P::FG_HOLD)   // stack5 F: hold the group
++                                 : P::GATHER_W * std::min(goalDist_[t], 200);
+         if (freeN == 0) v += DEATH * 0.5 * GPOW[std::min(63, turns)];
+         return v;
+     }
+@@ -659,6 +663,107 @@
+         if (std::max(d.estLen, d.minLen) > w_.myLen) longer++;
+     }
+     return longer > std::max(0, believed - (w_.unitCount - 1));
++}
++
++// stack5 csplit (territory study 10, proposal 1): before CSPLIT_END, while the team has fewer units than the map-scaled
++// target, a dragon of length >= CSPLIT_MIN_LEN splits off a CSPLIT_CHILD-segment piece that covers our territory. merge2's
++// policy split (wantSplit) stays first and unchanged; its cap, king and length rules blocked 56% / 18% / 18% of merge2's
++// dragon-turns on 500-round maps (study 7.4). An enemy head in view does not stop it (top winners: 40% of splits on 500-round
++// maps, 23% on elimination maps); the child's spot does (csplitChildSafe).
++bool Planner::wantCsplit(int& size) const {
++    if (!P::CSPLIT_ON || w_.round < P::CSPLIT_START || w_.round >= P::CSPLIT_END) return false;
++    int L = w_.myLen;
++    if (L < P::CSPLIT_MIN_LEN || w_.round - lastCsplitRound_ < P::CSPLIT_GAP) return false;
++    if (seedMap_ && w_.round < P::CSPLIT_SEED_START) return false;          // E1: long or many start dragons, not before r50
++    csplitTarget_ = std::clamp(w_.geo.tiles() / P::CSPLIT_TILES_PER_UNIT, P::CSPLIT_TARGET_MIN, P::CSPLIT_TARGET_MAX);
++    if (w_.unitCount >= std::min(w_.unitLimit, csplitTarget_)) return false;
++    // the king (length >= KING_MIN_LEN) keeps its length: only a dragon that knows a longer ally splits at that length
++    if (L >= P::KING_MIN_LEN && !longerAllyKnown(P::FRAG_KING_MEMORY)) return false;
++    size = P::CSPLIT_CHILD;
++    if (L - size < 2) return false;
++    return csplitChildSafe();
++}
++
++// stack5 csplit: childSafe() without its "no enemy head in view" rule. The child's head (our tail) must be known and open,
++// with >= SPLIT_MIN_CHILD_EXITS exits, and no enemy head within CSPLIT_TAIL_DIST steps of it. childSafe()'s near-tail rule
++// (enemyDist_[tail] <= 2) never fired: the enemy field gives no distance to an occupied tile such as our tail (failure study,
++// stack4 cand-stack4.md). SC.enemyFar (heads seen within 3 rounds) passes tiles once they are vacated; an enemy head beside the
++// tail is seen through the neighbour it stands on.
++bool Planner::csplitChildSafe() const {
++    int L = w_.myLen;
++    if (w_.body.empty() || (int)w_.body.size() < L) return false;
++    int tail = w_.body[L - 1], neck = w_.body[L - 2];
++    if (tail < 0 || neck < 0) return false;
++    const Tile& tt = w_.tiles[tail];
++    if (tt.seen < w_.round - 1) return false;
++    for (int d = 0; d < 4; d++) if (tt.edge[d] == EDGE_UNKNOWN) return false;
++    int near = SC.enemyFar[tail];
++    for (int d = 0; d < 4; d++) { int u = w_.across(tail, d); if (u >= 0 && u != neck) near = std::min(near, SC.enemyFar[u] + 1); }
++    if (near <= P::CSPLIT_TAIL_DIST) return false;
++    const std::vector<int16_t>& ed = P::TG_ON ? enemyDistOld_ : enemyDist_;  // as childSafe()
++    int exits = 0;
++    for (int d = 0; d < 4; d++) {
++        int u = w_.across(tail, d);
++        if (u < 0 || u == neck) continue;
++        if (w_.occNow[u] != 0 || ed[u] <= 1) continue;
++        exits++;
++    }
++    return exits >= P::SPLIT_MIN_CHILD_EXITS;
++}
++
++// stack5 F / cov: our side = tiles nearer (torus Manhattan) to our first head tile than their mirror image is. The enemy starts
++// on the mirror of our start, so near our start this is the study's territory (a tile belongs to the team whose starting
++// bodies are nearer). Unknown until the symmetry is resolved.
++bool Planner::ourSide(int t) const {
++    if (w_.sym < 0 || homeT_ < 0) return false;
++    int m = w_.mirrorTile(t, w_.sym);
++    return m != t && w_.geo.manhattan(homeT_, t) < w_.geo.manhattan(homeT_, m);
++}
++
++// stack5 F (territory study 10, proposal 2): before GATHER_START, when no gathering goal is on, a dragon that is not the king
++// heads for the nearest known fountain of our side (a mirrored fountain counts: mirrored tiles share one countdown) that no
++// ally head guards (seen or heard within FG_ALLY_STALE rounds, within FG_GUARD_DIST; an ally nearer to it than we are, or
++// as near with a lower id). The goal field (goalDist_) is the path distance to its group (our side's known fountains within
++// FG_GROUP_DIST of it) and the leaf penalty spares FG_HOLD steps around it, so the dragon holds the group and eats there.
++void Planner::computeFountainGoal() {
++    fGoal_ = false;
++    if (!P::FGUARD_ON || goalOn_ || w_.round >= P::GATHER_START || w_.unitCount < P::FG_MIN_UNITS) { fTarget_ = -1; return; }
++    if (w_.iAmLongest() && w_.myLen >= P::KING_MIN_LEN) { fTarget_ = -1; return; } // the king feeds itself
++    if (w_.sym < 0 || homeT_ < 0) return;
++    int n = w_.geo.tiles();
++    auto fount = [&](int t) { if (w_.isFountain(t)) return true; if (w_.tiles[t].seen >= 0) return false; int m = w_.mirrorTile(t, w_.sym); return m != t && w_.isFountain(m); };
++    std::vector<std::pair<int, int>> allyHeads; // (tile, id)
++    for (auto& [id, d] : w_.dragons)
++        if (id != w_.myId && d.team == w_.myTeam && d.headT >= 0 && w_.round - d.headSeen <= P::FG_ALLY_STALE) allyHeads.push_back({d.headT, id});
++    auto guardedByOther = [&](int t) {
++        int mine = w_.geo.manhattan(w_.headT, t);
++        for (auto& [a, id] : allyHeads) {
++            int da = w_.geo.manhattan(a, t);
++            if (da <= P::FG_GUARD_DIST && (da < mine || (da == mine && id < w_.myId))) return true;
++        }
++        return false;
++    };
++    auto usable = [&](int t) { return t >= 0 && fount(t) && ourSide(t) && headDist_[t] >= 0 && headDist_[t] <= P::FG_MAX_DIST && !guardedByOther(t); };
++    int target = usable(fTarget_) ? fTarget_ : -1;   // keep the fountain we hold or head for
++    if (target < 0) {
++        int bd = 1 << 20;
++        for (int t = 0; t < n; t++) if (headDist_[t] >= 0 && headDist_[t] < bd && usable(t)) { bd = headDist_[t]; target = t; }
++    }
++    fTarget_ = target;
++    if (target < 0) return;
++    goalDist_.assign(n, 9999);
++    queue_.clear();
++    for (int t = 0; t < n; t++)
++        if (w_.geo.manhattan(t, target) <= P::FG_GROUP_DIST && (t == target || (fount(t) && ourSide(t)))) { goalDist_[t] = 0; queue_.push_back(t); }
++    for (size_t qi = 0; qi < queue_.size(); qi++) {
++        int t = queue_[qi];
++        for (int dir = 0; dir < 4; dir++) {
++            int u = w_.across(t, dir);
++            if (u < 0 || goalDist_[u] <= goalDist_[t] + 1) continue;
++            goalDist_[u] = goalDist_[t] + 1; queue_.push_back(u);
++        }
++    }
++    goalOn_ = fGoal_ = goalDist_[w_.headT] < 9999;
+ }
+ 
+ // stack2 S2: tile t holds a death drop (World::ingestTiles) first seen within GRAB_ROUNDS, still there at our last sight
+@@ -805,6 +910,18 @@
+         act.indicator = "degraded";
+         return act;
+     }
++    // stack5: our first head tile (F / cov: our side) and the E1 start check (csplit): a start dragon that sees many start
++    // units or a long start dragon (its own length, or an ally's seen or heard by round 2)
++    if (homeT_ < 0) {
++        homeT_ = w_.headT;
++        seedMap_ = w_.birthRound == 0 && (w_.unitCount >= P::CSPLIT_SEED_UNITS || w_.myLen >= P::KING_MIN_LEN);
++    }
++    if (w_.birthRound == 0 && w_.round <= 2 && w_.maxAllyLenSeen >= P::KING_MIN_LEN) seedMap_ = true;
++    // a child cannot see the start: before CSPLIT_SEED_START any dragon that is, or has seen or heard, a dragon of ours of length
++    // >= KING_MIN_LEN takes the map for one that starts with a long dragon (local check, 60 games: our dragons reached 8 before
++    // r50 from round 1 on Autarky, PD and Slithery Fight, and in 3 of the 42 other games only from r28; children born at r2 and
++    // r35 on Slithery Fight made 37 csplits before r50 under the start-only check)
++    if (w_.round < P::CSPLIT_SEED_START && (w_.myLen >= P::KING_MIN_LEN || w_.maxAllyLenSeen >= P::KING_MIN_LEN)) seedMap_ = true;
+ 
+     SC.bodyIndex.assign(n, -1);
+     for (size_t i = 0; i < w_.body.size(); i++) if (w_.body[i] >= 0) SC.bodyIndex[w_.body[i]] = (int)i;
+@@ -816,6 +933,7 @@
+     computeSoftPenalty();
+     computeAttract();
+     computeGoal();
++    computeFountainGoal();   // stack5 F (only when no gathering goal is on)
+     long long tp2 = nowPoints();
+ 
+     // ---- stack1 M1 conv (R3/K1, mass ledger H1): from CONV_START a small piece beside a big visible ally dies into its
+@@ -1280,21 +1398,37 @@
+             int u = w_.across(w_.headT, d);
+             if (u >= 0) { int hid = w_.headOf[u]; if (hid >= 0 && w_.dragons[hid].team != w_.myTeam) { act.dirs = std::string(1, DIRCH[d]); act.indicator = "last-trade"; act.path = {u}; return act; } }
+         }
+-        act.dirs = std::string(1, DIRCH[w_.myDir]); act.indicator = "no-exit";
++        // stack5 no-exit spare (cand-swarm3 T0): not into an ally's head, which dies with us (a head to head)
++        int dieDir = w_.myDir; bool spare = false;
++        if (P::NOEXIT_SPARE_ON) {
++            auto allyHeadAt = [&](int d) { int u = w_.across(w_.headT, d); return u >= 0 && w_.headOf[u] >= 0 && w_.headOf[u] != w_.myId; };
++            if (allyHeadAt(w_.myDir)) {
++                spare = true; dieDir = -1;
++                for (int d = 0; d < 4 && dieDir < 0; d++) if (d != opp(w_.myDir) && w_.across(w_.headT, d) == -2) dieDir = d;
++                const int side[2] = {leftOf(w_.myDir), rightOf(w_.myDir)};
++                for (int i = 0; i < 2 && dieDir < 0; i++) if (!allyHeadAt(side[i])) dieDir = side[i];
++                if (dieDir < 0) dieDir = opp(w_.myDir); // into our own neck: harms nobody
++            }
++        }
++        act.dirs = std::string(1, DIRCH[dieDir]); act.indicator = spare ? "no-exit s" : "no-exit";
+         return act;
+     }
+ 
+     // ---- split instead of moving when the policy says so and this move is not urgent
+     // (stack2 S1: or a fragment split when the policy says no, tagged " frag")
+-    int splitSize = 0; bool frag = false;
+-    if (!cands[best].trade && !cands[best].blind && (wantSplit(splitSize) || (frag = wantFrag(splitSize)))) {
++    // (stack5 csplit: or a coverage split when neither says so, tagged "csplit<n> u<units> L<len> t<target>")
++    int splitSize = 0; bool frag = false, csplit = false;
++    if (!cands[best].trade && !cands[best].blind && (wantSplit(splitSize) || (frag = wantFrag(splitSize)) || (csplit = wantCsplit(splitSize)))) {
+         double immediate = cands[best].tiles.empty() ? 0.0 : SC.pnow[cands[best].tiles[0]];
+         bool threatened = false; for (int t : cands[best].tiles) if (threatAt(t) > 0.0) threatened = true;
+         if (immediate < 0.5 && !threatened && safety[best] > -1.0 && enemyDist_[w_.headT] > 2) {
+             act.kind = Action::SPLIT; act.splitSize = splitSize;
+             if (frag) lastFragRound_ = w_.round;
++            if (csplit) lastCsplitRound_ = w_.round;
+             setSonar(act);
+             char buf[64]; snprintf(buf, sizeof buf, "split%d u%d L%d%s", splitSize, w_.unitCount, w_.myLen, frag ? " frag" : "");
++            if (csplit) snprintf(buf, sizeof buf, "csplit%d u%d L%d t%d%s%s", splitSize, w_.unitCount, w_.myLen, csplitTarget_,
++                                 w_.enemyHeadsNow.empty() ? "" : " v", w_.iAmLongest() ? " k" : ""); // stack5 csplit
+             act.indicator = buf;
+             if (P::SPLIT_TAIL_ON && !frag) { snprintf(buf, sizeof buf, " e%d", splitTailDist_); act.indicator += buf; } // stack4 split tail
+             return act;
+@@ -1317,8 +1451,16 @@
+     char buf[160];
+     snprintf(buf, sizeof buf, "%s v%.1f d%d L%d%s%s%s", act.dirs.c_str(), value[best], depthDone, w_.myLen, c.trade ? " TRADE" : "", c.blind ? " PORTAL?" : "", late_ ? " late" : "");
+     act.indicator = buf;
+-    if (goalOn_) { snprintf(buf, sizeof buf, " %s%d", gatherKing_ ? "K" : "g", goalDist_[w_.headT]); act.indicator += buf; }
+-    if (c.esc) act.indicator += " esc";                                                              // cand-avoid2
++    if (goalOn_ && !fGoal_) { snprintf(buf, sizeof buf, " %s%d", gatherKing_ ? "K" : "g", goalDist_[w_.headT]); act.indicator += buf; }
++    if (fGoal_) { snprintf(buf, sizeof buf, " F%d@%d,%d", goalDist_[w_.headT], fTarget_ % w_.geo.W, fTarget_ / w_.geo.W); act.indicator += buf; } // stack5 F
++    // stack5 cov: the move ends on our side with no other ally head (seen within 3 rounds) within 6 of its last tile
++    if (P::COV_ON && w_.myLen <= P::COV_MAX_LEN && !c.trade && !c.tiles.empty() && ourSide(c.tiles.back())) {
++        bool ally6 = false;
++        for (auto& [id, d] : w_.dragons)
++            if (id != w_.myId && d.team == w_.myTeam && d.headT >= 0 && w_.round - d.headSeen <= 3 && w_.geo.manhattan(d.headT, c.tiles.back()) <= 6) { ally6 = true; break; }
++        if (!ally6) act.indicator += " cov";
++    }
++    if (c.esc) act.indicator += " esc";                                                            // cand-avoid2
+     if (w_.myLen >= P::ESCAPE_MIN_LEN && survivedExposures_ >= P::RAMMER_TRUST) act.indicator += " T"; // cand-avoid2: escapes off
+     // stack1 M2: " ram4" when the small-piece rule allows this one-step ram (" ram4o": merge2's rule would have too),
+     // then " c1" if an ally head is within 3 of the enemy head (a collector for the pearls), else " c0"

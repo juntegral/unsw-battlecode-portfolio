@@ -1,0 +1,56 @@
+{
+  "label": "cand-avoid6-proxies",
+  "bot": "~/01. Project/개인 프로젝트/unsw-heuristic/exp/cand-avoid6/bot",
+  "at": "2026-09-29T15:41:19.184Z",
+  "benchmark": {
+    "maps": 10,
+    "opps": [
+      "proxy_swarm",
+      "proxy_elim",
+      "proxy_king"
+    ],
+    "seeds": [
+      1,
+      2
+    ],
+    "sides": 2
+  },
+  "all": {
+    "n": 120,
+    "G": 21,
+    "alive": 0.7666666666666667,
+    "win": 0.44166666666666665
+  },
+  "byOpp": {
+    "proxy_swarm": {
+      "n": 40,
+      "G": 16.375,
+      "alive": 0.725,
+      "win": 0.325
+    },
+    "proxy_elim": {
+      "n": 40,
+      "G": 22.2,
+      "alive": 0.75,
+      "win": 0.5
+    },
+    "proxy_king": {
+      "n": 40,
+      "G": 24.425,
+      "alive": 0.825,
+      "win": 0.5
+    }
+  },
+  "problems": 0,
+  "errors": 0,
+  "vsBaseline": {
+    "baseline": "r1-vs-proxies-v1",
+    "pairs": 120,
+    "dG": 0.8916666666666667,
+    "ci95": [
+      -1.0833333333333333,
+      2.841666666666667
+    ],
+    "note": "map-cluster bootstrap"
+  }
+}

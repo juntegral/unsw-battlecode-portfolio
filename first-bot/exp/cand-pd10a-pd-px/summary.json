@@ -1,0 +1,58 @@
+{
+  "label": "cand-pd10a-pd-px",
+  "bot": "~/01. Project/개인 프로젝트/unsw-heuristic/exp/cand-pd10a/bot",
+  "at": "2026-09-29T18:21:20.191Z",
+  "benchmark": {
+    "maps": 3,
+    "opps": [
+      "proxy_swarm",
+      "proxy_elim",
+      "proxy_king"
+    ],
+    "seeds": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "sides": 2
+  },
+  "all": {
+    "n": 72,
+    "G": 17.88888888888889,
+    "alive": 0.9583333333333334,
+    "win": 0.4305555555555556
+  },
+  "byOpp": {
+    "proxy_swarm": {
+      "n": 24,
+      "G": 18.958333333333332,
+      "alive": 1,
+      "win": 0.4166666666666667
+    },
+    "proxy_elim": {
+      "n": 24,
+      "G": 16.666666666666668,
+      "alive": 0.9166666666666666,
+      "win": 0.4166666666666667
+    },
+    "proxy_king": {
+      "n": 24,
+      "G": 18.041666666666668,
+      "alive": 0.9583333333333334,
+      "win": 0.4583333333333333
+    }
+  },
+  "problems": 0,
+  "errors": 0,
+  "vsBaseline": {
+    "baseline": "cand-pd10-base-px",
+    "pairs": 72,
+    "dG": 4.569444444444445,
+    "ci95": [
+      -0.2916666666666667,
+      13.625
+    ],
+    "note": "map-cluster bootstrap"
+  }
+}

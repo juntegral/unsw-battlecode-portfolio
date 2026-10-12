@@ -1,0 +1,63 @@
+{
+  "label": "cand-pd10a",
+  "bot": "~/01. Project/개인 프로젝트/unsw-heuristic/exp/cand-pd10a/bot",
+  "at": "2026-09-29T18:50:08.074Z",
+  "benchmark": {
+    "maps": 10,
+    "opps": [
+      "replay_rules_v8",
+      "archetype_swarm",
+      "archetype_hunter",
+      "h2"
+    ],
+    "seeds": [
+      1,
+      2
+    ],
+    "sides": 2
+  },
+  "all": {
+    "n": 160,
+    "G": 38.71875,
+    "alive": 0.95625,
+    "win": 0.86875
+  },
+  "byOpp": {
+    "replay_rules_v8": {
+      "n": 40,
+      "G": 35.8,
+      "alive": 0.95,
+      "win": 0.775
+    },
+    "archetype_swarm": {
+      "n": 40,
+      "G": 31.65,
+      "alive": 0.975,
+      "win": 0.875
+    },
+    "archetype_hunter": {
+      "n": 40,
+      "G": 27.425,
+      "alive": 0.9,
+      "win": 0.825
+    },
+    "h2": {
+      "n": 40,
+      "G": 60,
+      "alive": 1,
+      "win": 1
+    }
+  },
+  "problems": 0,
+  "errors": 0,
+  "vsBaseline": {
+    "baseline": "eval-r1",
+    "pairs": 160,
+    "dG": 0.5125,
+    "ci95": [
+      -1.56875,
+      2.79375
+    ],
+    "note": "map-cluster bootstrap"
+  }
+}

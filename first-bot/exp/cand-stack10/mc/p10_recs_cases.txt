@@ -1,0 +1,18 @@
+      case 'lnt': case 'kint': { // stack10 (cand-stack10.md): the trade this label made: its local numbers at the turn start and its pearls
+        const q = x.x10; delete x.x10;
+        x.ex = q && q.done ? 1 : 0;
+        if (q) { x.d3 = q.d3; x.d8 = q.d8; x.adjS = q.adjS; x.Lv = q.LvD; x.drops = q.drops; x.own20 = q.own20; x.opp20 = q.opp20; x.net20 = q.net20; }
+        x.sit = x.k === 'lnt' ? (q && q.d3 >= 1 && q.adjS ? 1 : 0) : (q && q.d3 <= -1 ? 1 : 0);
+        x.ok = x.ex ? (x.k === 'lnt' ? (x.own20 > x.opp20 ? 1 : 0) : (x.net20 > 0 ? 1 : 0)) : 0;
+        { const dz = life.get(x.id) && life.get(x.id).death; x.death0 = dz && dz.r === x.r ? { r: dz.r, cause: dz.cause, otherLen: dz.otherLen } : null; }
+        break;
+      }
+      case 'lntv': { // stack10: the veto's turn (the replay d3 of the 7x7 view, the target excluded) and the body 10 rounds on (observation)
+        x.ex = 1; x.sit = x.d3r !== null && x.d3r <= -1 ? 1 : 0; x.match = x.d3r === x.d3t ? 1 : 0;
+        x.alive10 = body(x.id, x.r + 10);
+        const dz = life.get(x.id) && life.get(x.id).death;
+        x.rammed10 = dz && dz.cause === 2 && dz.r <= x.r + 10 ? 1 : 0;
+        x.death10 = dz && dz.r <= x.r + 10 ? { r: dz.r, cause: dz.cause, otherLen: dz.otherLen } : null;
+        x.ok = x.alive10;
+        break;
+      }

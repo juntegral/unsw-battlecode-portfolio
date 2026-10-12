@@ -1,0 +1,46 @@
+{
+  "label": "base-px3e-dev",
+  "bot": "~/01. Project/개인 프로젝트/unsw-heuristic/exp/base-px3e/bot",
+  "at": "2026-09-29T17:37:09.395Z",
+  "benchmark": {
+    "maps": 6,
+    "opps": [
+      "proxy_swarm",
+      "proxy_elim",
+      "proxy_king"
+    ],
+    "seeds": [
+      1,
+      2
+    ],
+    "sides": 2
+  },
+  "all": {
+    "n": 72,
+    "G": 21.333333333333332,
+    "alive": 0.9166666666666666,
+    "win": 0.5138888888888888
+  },
+  "byOpp": {
+    "proxy_swarm": {
+      "n": 24,
+      "G": 20.583333333333332,
+      "alive": 0.9166666666666666,
+      "win": 0.5416666666666666
+    },
+    "proxy_elim": {
+      "n": 24,
+      "G": 22.75,
+      "alive": 0.9583333333333334,
+      "win": 0.5
+    },
+    "proxy_king": {
+      "n": 24,
+      "G": 20.666666666666668,
+      "alive": 0.875,
+      "win": 0.5
+    }
+  },
+  "problems": 0,
+  "errors": 0
+}

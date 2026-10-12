@@ -1,0 +1,1 @@
+  S.s10 = games.filter(g => g.s10).map(g => ({ ...g.s10, set: g.set, map: g.map, game: g.game, oppName: g.opp }));                     // stack10

@@ -1,0 +1,60 @@
+diff -ru exp/cand-portal1/bot/params.hpp exp/cand-portal2/bot/params.hpp
+--- exp/cand-portal1/bot/params.hpp	2026-09-30 00:20:41
++++ exp/cand-portal2/bot/params.hpp	2026-09-30 00:24:51
+@@ -58,6 +58,12 @@
+                                                  // still a legal step, chosen only when every other step is doomed
+ constexpr double PORTAL_UNPROBED_PENALTY = 4.0;  // known portal, exit out of view, no probe from here last turn
+ constexpr double PORTAL_DIRTY_PENALTY = 8.0;     // known portal, exit out of view, last turn's probe hit a dragon
++
++// --- cand-portal2: frustration. A pearl we keep seeing but never take (a pocket our length cannot turn in, a dead end
++// the safety check refuses) stops pulling, so a dragon beyond a portal does not circle it for the rest of the game.
++constexpr int    FRUST_GRACE = 12;           // turns a pearl may stay in view uneaten before its pull fades
++constexpr int    FRUST_SPAN = 24;            // turns over which the pull fades to FRUST_FLOOR
++constexpr double FRUST_FLOOR = 0.1;
+ constexpr double DOOM_VALUE = -200.0;        // below this the best move is death within the horizon
+ 
+ // --- threat from enemy heads (d = path distance from the enemy head to the tile) ---
+diff -ru exp/cand-portal1/bot/plan.cpp exp/cand-portal2/bot/plan.cpp
+--- exp/cand-portal1/bot/plan.cpp	2026-09-30 00:21:07
++++ exp/cand-portal2/bot/plan.cpp	2026-09-30 00:24:51
+@@ -229,6 +229,8 @@
+         else if (x.seen >= 0 && x.spawnRound > w_.round && x.spawnRound - w_.round <= P::FUTURE_SPAWN_HORIZON) { v = P::SPAWN_CONF * 0.9; wait = x.spawnRound - w_.round; }
+         if (w_.isFountain(t) && w_.occNow[t] == 0) v = std::max(v, P::FOUNTAIN_VALUE);
+         if (v <= 0.0) continue;
++        if (w_.frustration[t] > P::FRUST_GRACE) // cand-portal2: a pearl we keep seeing but never take stops pulling
++            v *= std::max(P::FRUST_FLOOR, 1.0 - (double)(w_.frustration[t] - P::FRUST_GRACE) / P::FRUST_SPAN);
+         int md = Geo::abs(w_.geo.dx(hx, t % w_.geo.W)) + Geo::abs(w_.geo.dy(hy, t / w_.geo.W));
+         if (headDist_[t] >= 0) md = std::min(md, headDist_[t]); // a remembered tile behind a known portal is near
+         if (md > P::ATTRACT_RADIUS + 6) continue;
+diff -ru exp/cand-portal1/bot/world.cpp exp/cand-portal2/bot/world.cpp
+--- exp/cand-portal1/bot/world.cpp	2026-09-30 00:00:03
++++ exp/cand-portal2/bot/world.cpp	2026-09-30 00:24:51
+@@ -28,6 +28,7 @@
+     portals.clear();
+     pearlPriorUnseen = P::PRIOR_UNSEEN;
+     frontierBlock.assign((size_t)n * 4, 0);
++    frustration.assign((size_t)n, 0);
+ }
+ 
+ int World::mirrorTile(int t, int hyp) const {
+@@ -117,6 +118,9 @@
+         if (x.seen < 0) { tilesObserved++; if (o.pearl) pearlsAtFirstSight++; }
+         x.seen = (int16_t)round;
+         if (o.pearl) x.pearlSeen = (int16_t)round; else x.emptySeen = (int16_t)round;
++        // cand-portal2: a pearl in view grows frustration unless we just grew; an empty tile resets it
++        if (!o.pearl) frustration[t] = 0;
++        else if (lastAteRound != round && frustration[t] < 255) frustration[t]++;
+         if (o.pearlIn < 0) { x.spawnRound = NEVER; continue; }
+         int c = o.pearlIn;
+         int newSpawn = round + c;
+diff -ru exp/cand-portal1/bot/world.hpp exp/cand-portal2/bot/world.hpp
+--- exp/cand-portal1/bot/world.hpp	2026-09-29 23:59:48
++++ exp/cand-portal2/bot/world.hpp	2026-09-30 00:24:51
+@@ -90,6 +90,7 @@
+     // cand-portal1: hunger (rounds since our length last grew) and frontiers muted after a dirty probe
+     int lastAteRound = -1, prevLen = 0;
+     std::vector<int16_t> frontierBlock;   // tile*4+dir -> round until which that unexplored portal is ignored
++    std::vector<uint8_t> frustration;     // cand-portal2: turns this pearl has been in view while we did not eat it
+ 
+     // map-level statistics
+     double pearlPriorUnseen = 0.05;

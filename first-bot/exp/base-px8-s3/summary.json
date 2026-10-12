@@ -1,0 +1,52 @@
+{
+  "label": "base-px8-s3",
+  "bot": "~/01. Project/개인 프로젝트/unsw-heuristic/exp/base-px8/bot",
+  "at": "2026-09-29T18:14:04.675Z",
+  "benchmark": {
+    "maps": 10,
+    "opps": [
+      "proxy_swarm",
+      "proxy_elim",
+      "proxy_king",
+      "r1"
+    ],
+    "seeds": [
+      3
+    ],
+    "sides": 2
+  },
+  "all": {
+    "n": 80,
+    "G": 20.1125,
+    "alive": 0.8125,
+    "win": 0.6375
+  },
+  "byOpp": {
+    "proxy_swarm": {
+      "n": 20,
+      "G": 14.4,
+      "alive": 0.65,
+      "win": 0.4
+    },
+    "proxy_elim": {
+      "n": 20,
+      "G": 19.6,
+      "alive": 0.85,
+      "win": 0.75
+    },
+    "proxy_king": {
+      "n": 20,
+      "G": 20.75,
+      "alive": 0.75,
+      "win": 0.6
+    },
+    "r1": {
+      "n": 20,
+      "G": 25.7,
+      "alive": 1,
+      "win": 0.8
+    }
+  },
+  "problems": 0,
+  "errors": 0
+}

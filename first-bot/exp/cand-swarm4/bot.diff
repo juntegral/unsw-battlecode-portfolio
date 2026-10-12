@@ -1,0 +1,223 @@
+# cand-swarm4 vs the old bot/ (git 85f552e~1:bot, g4-r4). Apply with: cd <copy of old bot> && patch -p1 < bot.diff
+diff -ruN old-bot/params.hpp exp/cand-swarm4/bot/params.hpp
+--- old-bot/params.hpp	2026-09-30 03:52:09
++++ exp/cand-swarm4/bot/params.hpp	2026-09-30 03:33:43
+@@ -76,6 +76,30 @@
+ constexpr int SPLIT_SMALL_MAP_TILES = 300; // below this, only dragons of SPLIT_LEN or more split at all
+ constexpr int SPLIT_MIN_CHILD_EXITS = 2;
+ 
++// --- swarm early game (cand-swarm1; research/experiments/cand-swarm1.md). Top teams: 68% of splits are 4 -> 2+2, 77% of
++// children are length 2, units ~17 at r100 and ~32 at r300, longest 4 until ~r200. Our bot capped units at 3..5.
++constexpr int    SWARM_START = 1;             // S5 (cand-swarm4): no swarm split in round 0, so every start dragon sees the
++                                              //     team's exact start count (children of round-0 splits would inflate it)
++constexpr int    SWARM_END = 250;             // S1: voluntary swarm splits only before this round (then pieces grow)
++constexpr int    SWARM_MIN_LEN = 4;           // S1: a dragon of SWARM_MIN_LEN..SWARM_MAX_LEN splits into short pieces:
++constexpr int    SWARM_MAX_LEN = 7;           //     4 -> 2+2, 5 -> 3+2, 6 -> 3+3, 7 -> 4+3; 8+ keeps the old policy (king seeds)
++constexpr int    SWARM_TILES_PER_UNIT = 16;   // S2: unit cap = tiles / this (map area) ...
++constexpr int    SWARM_CAP_MIN = 16;          //     ... clamped to [SWARM_CAP_MIN, SWARM_CAP_MAX] ...
++constexpr int    SWARM_CAP_MAX = 48;
++constexpr double SWARM_RICH_MULT = 1.25;      //     ... times this where fountains / visible pearls say food is plentiful
++constexpr int    SWARM_TRADE_MAX_LEN = 4;     // S3: pieces this short accept even-or-better head-on trades ...
++constexpr int    SWARM_TRADE_MIN_UNITS = 4;   //     ... while the team has at least this many units ...
++constexpr int    SWARM_TRADE_LAST_ROUND = 339;//     ... and before the gathering starts
++constexpr double SWARM_TRADE_BASE = 2.0;      //     value of ramming an enemy head as long as us
++constexpr double SWARM_TRADE_PER_LEN = 1.0;   //     plus this per segment the enemy has over us
++constexpr double SWARM_EVEN_THREAT_MULT = 0.3;//     threat multiplier for such pieces from enemy heads at least as long
++constexpr int    SWARM_OFF_START_UNITS = 6;   // S5 (cand-swarm4): a start dragon of a team that begins with at least this many
++                                              //     dragons keeps the old split policy (Autarky 6, Slithery Fight 7: a long start
++                                              //     dragon plus small ones that grow alone; the swarm only thinned their growth)
++constexpr int    FEED_LOCAL_START = 360;      // T1 (cand-swarm3): from here a dragon also feeds a nearby ally that is not the
++constexpr int    FEED_LOCAL_MARGIN = 2;       //     team's longest, when that ally is at least this much longer (top teams:
++                                              //     sacrifices far from the king, eaten by a nearby longer ally)
++
+ // --- late consolidation (feeding the longest teammate) ---
+ constexpr int FEED_FIRST_ROUND = 430;       // never earlier
+ constexpr int FEED_MAX_DIST = 5;           // path distance from the longer teammate's head to ours
+@@ -88,7 +112,8 @@
+ constexpr int    GATHER_KING_MEMORY = 100;  // an ally heard to be longer within this many rounds means we are not the king
+ constexpr double GATHER_W = 0.12;           // leaf penalty per tile of path distance to the goal
+ constexpr int    GATHER_FEED_UNITS = 4;     // before the late window, feed only if this many units are alive (keeps 3)
+-constexpr int    GATHER_FEED_MIN_LEN = 4;   // before the late window, only feeders at least this long (an L2 gives one pearl)
++constexpr int    GATHER_FEED_MIN_LEN = 3;   // before the late window, only feeders at least this long (an L2 gives one pearl)
++                                            // T2 (cand-swarm3): 4 -> 3, the swarm's pieces are mostly 2..4 long
+ 
+ // --- search / budget ---
+ constexpr int    DFS_DEPTH_MAX = 7;
+diff -ruN old-bot/plan.cpp exp/cand-swarm4/bot/plan.cpp
+--- old-bot/plan.cpp	2026-09-30 03:52:09
++++ exp/cand-swarm4/bot/plan.cpp	2026-09-30 03:33:43
+@@ -133,6 +133,8 @@
+     else if (d == 2) T = le >= 3 ? P::T2 * (favForThem ? 1.0 : P::T_FAR_BAD_FOR_THEM) : 0.0;
+     else if (d == 3) T = le >= 4 ? P::T3 * (favForThem ? 1.0 : P::T_FAR_BAD_FOR_THEM) : 0.0;
+     else T = le >= 5 ? P::T4 * (favForThem ? 1.0 : P::T_FAR_BAD_FOR_THEM) : 0.0;
++    // S3 (cand-swarm1): a small piece of a big swarm takes the even-or-better trade instead of running from it
++    if (le >= lm && swarmTrades()) T = std::min(T, (d <= 1 ? P::T1 : d == 2 ? P::T2 : d == 3 ? P::T3 : P::T4) * P::SWARM_EVEN_THREAT_MULT);
+     if (enemyPseudo_[t]) T *= P::PSEUDO_HEAD_MULT;
+     if (w_.iAmLongest() && lm >= P::KING_MIN_LEN) T *= P::KING_THREAT_MULT;
+     if (late_ && ahead_ && w_.iAmLongest()) T *= P::ENDGAME_THREAT_MULT;
+@@ -199,7 +201,7 @@
+     if (w_.unitCount >= 2) {
+         for (int id : w_.enemyHeadsNow) {
+             const Dragon& d = w_.dragons[id];
+-            double tv = tradeValue(id);
++            double tv = tradeValue(id, true); // S3 trades are taken when offered, not hunted
+             if (tv > 0.0 && w_.myLen <= P::HUNT_MAX_LEN) src.push_back({d.headT, std::min(tv * 0.15, 3.0), 0});
+         }
+     }
+@@ -333,8 +335,14 @@
+     return best;
+ }
+ 
+-// value of trading heads with this enemy this turn (0 = not allowed)
+-double Planner::tradeValue(int enemyId) const {
++// S3 (cand-swarm1): top teams' kills are head-on trades of small pieces (median 3 vs 3). A short piece of a big team
++// takes such a trade instead of running from it: the swarm can afford the unit, the other side often cannot.
++bool Planner::swarmTrades() const {
++    return w_.myLen <= P::SWARM_TRADE_MAX_LEN && w_.unitCount >= P::SWARM_TRADE_MIN_UNITS && w_.round <= P::SWARM_TRADE_LAST_ROUND;
++}
++
++// value of trading heads with this enemy this turn (0 = not allowed). forHunt: only the trades worth walking to.
++double Planner::tradeValue(int enemyId, bool forHunt) const {
+     auto it = w_.dragons.find(enemyId);
+     if (it == w_.dragons.end()) return 0.0;
+     const Dragon& d = it->second;
+@@ -346,6 +354,7 @@
+     if (le >= lm + P::KILL_MIN_DIFF && le >= (int)(P::KILL_MIN_RATIO * lm)) v = P::W_KILL * (le - lm);
+     if (le > w_.teamLongestKnown()) v = std::max(v, P::W_KILL * (le - lm + 2)); // removes the tiebreak leader
+     if (w_.round >= P::ENDGAME_ANY_TRADE_ROUND && le > lm) v = std::max(v, P::W_KILL * (le - lm));
++    if (!forHunt && le >= lm && swarmTrades()) v = std::max(v, P::SWARM_TRADE_BASE + P::SWARM_TRADE_PER_LEN * (le - lm)); // S3
+     // escort: a neutral trade is worth it when this enemy shadows a much longer teammate
+     if (v <= 0.0 && le >= lm - 1 && w_.unitCount >= 3) {
+         for (auto& [aid, a] : w_.dragons) {
+@@ -357,10 +366,30 @@
+ }
+ 
+ // ------------------------------------------------------------------------------------------------
+-bool Planner::wantSplit(int& size) const {
++// S2 (cand-swarm1): unit cap of the swarm phase, from the map area, raised where food is plentiful.
++int Planner::swarmCap() const {
++    int tiles = w_.geo.tiles();
++    double cap = tiles / (double)P::SWARM_TILES_PER_UNIT;
++    int pearlsInView = 0; for (int t = 0; t < tiles; t++) if (w_.tiles[t].seen == w_.round && w_.tiles[t].pearlSeen == w_.round) pearlsInView++;
++    if (w_.fountainCount >= 4 || pearlsInView >= 3) cap *= P::SWARM_RICH_MULT;
++    return std::clamp((int)cap, P::SWARM_CAP_MIN, P::SWARM_CAP_MAX);
++}
++
++bool Planner::wantSplit(int& size, bool* swarm) const {
++    if (swarm) *swarm = false;
++    int L = w_.myLen;
++    // S1 (cand-swarm1): before SWARM_END every dragon of 4..7 splits into short pieces (4 -> 2+2), up to the S2 cap.
++    // Enemy heads in view do not stop it (top teams split in contact); the child spot and the move gates below still apply.
++    // S5 (cand-swarm4): not in round 0, and not by a start dragon of a team that began with SWARM_OFF_START_UNITS or more
++    bool swarmOff = w_.bornRound == 0 && w_.bornUnits >= P::SWARM_OFF_START_UNITS;
++    if (w_.round >= P::SWARM_START && w_.round < P::SWARM_END && !swarmOff && L >= P::SWARM_MIN_LEN && L <= P::SWARM_MAX_LEN) {
++        if (w_.unitCount >= std::min(w_.unitLimit, swarmCap())) return false;
++        size = L <= 5 ? 2 : L / 2;
++        if (swarm) *swarm = true;
++        return childSpotOk();
++    }
+     if (w_.round > P::SPLIT_LAST_ROUND) return false;
+     if (w_.round >= P::GATHER_START && w_.unitCount >= 2) return false; // gathering: only the lone dragon's insurance split
+-    int L = w_.myLen;
+     int tiles = w_.geo.tiles();
+     int cap = std::min(P::SPLIT_CAP_BASE, std::max(2, tiles / 60));
+     int pearlsInView = 0; for (int t = 0; t < tiles; t++) if (w_.tiles[t].seen == w_.round && w_.tiles[t].pearlSeen == w_.round) pearlsInView++;
+@@ -377,7 +406,12 @@
+     }
+     if (L - size < 2 || size < 2) return false;
+     if (!w_.enemyHeadsNow.empty()) return false;
+-    // the child's head is our tail: its surroundings must be known and open, with no enemy in reach
++    return childSpotOk();
++}
++
++// the child's head is our tail: its surroundings must be known and open, with no enemy in reach
++bool Planner::childSpotOk() const {
++    int L = w_.myLen;
+     if (w_.body.empty() || (int)w_.body.size() < L) return false;
+     int tail = w_.body[L - 1], neck = w_.body[L - 2];
+     if (tail < 0 || neck < 0) return false;
+@@ -515,7 +549,9 @@
+             // a whole chain in view is exact; a sonar length can predate a split made this round
+             int la = a.tailSeen && a.lastSeen == w_.round ? a.visLen : std::max(a.minLen, a.estLen);
+             if (a.headT < 0 || la <= w_.myLen) continue;
+-            if (earlyOnlyKing && la < kingLen - 2) continue;
++            // T1 (cand-swarm3): from FEED_LOCAL_START a clearly longer ally close by is fed even when it is not the king
++            bool localFeed = w_.round >= P::FEED_LOCAL_START && la >= w_.myLen + P::FEED_LOCAL_MARGIN;
++            if (earlyOnlyKing && la < kingLen - 2 && !localFeed) continue;
+             if (w_.round < P::FEED_FIRST_ROUND) { // gathering: not into a king with an enemy head beside it (c10h)
+                 bool contested = false;
+                 for (int eid : w_.enemyHeadsNow) if (w_.geo.manhattan(w_.dragons[eid].headT, a.headT) <= 3) contested = true;
+@@ -731,19 +767,30 @@
+             int u = w_.across(w_.headT, d);
+             if (u >= 0) { int hid = w_.headOf[u]; if (hid >= 0 && w_.dragons[hid].team != w_.myTeam) { act.dirs = std::string(1, DIRCH[d]); act.indicator = "last-trade"; act.path = {u}; return act; } }
+         }
+-        act.dirs = std::string(1, DIRCH[w_.myDir]); act.indicator = "no-exit";
++        // T0 (cand-swarm3): never die into an ally's head, which kills the ally too (v1: 4.6 such collisions a game, all
++        // from this fallback). An unknown portal exit may still be open; else forward, left, right skipping ally heads.
++        int dieDir = -1;
++        for (int d = 0; d < 4 && dieDir < 0; d++) if (d != opp(w_.myDir) && w_.across(w_.headT, d) == -2) dieDir = d;
++        const int order[3] = {w_.myDir, leftOf(w_.myDir), rightOf(w_.myDir)};
++        for (int i = 0; i < 3 && dieDir < 0; i++) {
++            int u = w_.across(w_.headT, order[i]);
++            if (u >= 0 && w_.headOf[u] >= 0 && w_.headOf[u] != w_.myId) continue; // an ally head (enemy heads were taken above)
++            dieDir = order[i];
++        }
++        if (dieDir < 0) dieDir = opp(w_.myDir); // into our own neck: harms nobody
++        act.dirs = std::string(1, DIRCH[dieDir]); act.indicator = "no-exit";
+         return act;
+     }
+ 
+     // ---- split instead of moving when the policy says so and this move is not urgent
+-    int splitSize = 0;
+-    if (!cands[best].trade && !cands[best].blind && wantSplit(splitSize)) {
++    int splitSize = 0; bool swarmSplit = false;
++    if (!cands[best].trade && !cands[best].blind && wantSplit(splitSize, &swarmSplit)) {
+         double immediate = cands[best].tiles.empty() ? 0.0 : SC.pnow[cands[best].tiles[0]];
+         bool threatened = false; for (int t : cands[best].tiles) if (threatAt(t) > 0.0) threatened = true;
+         if (immediate < 0.5 && !threatened && safety[best] > -1.0 && enemyDist_[w_.headT] > 2) {
+             act.kind = Action::SPLIT; act.splitSize = splitSize;
+             setSonar(act);
+-            char buf[64]; snprintf(buf, sizeof buf, "split%d u%d L%d", splitSize, w_.unitCount, w_.myLen);
++            char buf[64]; snprintf(buf, sizeof buf, "%s%d u%d L%d", swarmSplit ? "swarm-split" : "split", splitSize, w_.unitCount, w_.myLen);
+             act.indicator = buf;
+             return act;
+         }
+diff -ruN old-bot/plan.hpp exp/cand-swarm4/bot/plan.hpp
+--- old-bot/plan.hpp	2026-09-30 03:52:09
++++ exp/cand-swarm4/bot/plan.hpp	2026-09-30 03:33:43
+@@ -52,8 +52,11 @@
+     double areaSafety(int startT, int startRemoved, const std::vector<int>& pathTiles);
+     double dfs(int t, int lastDir, int depth, int maxDepth, int removed, int lenNow, std::vector<int>& path, long long deadline);
+     bool tileEnterable(int t, int step, int removed, const std::vector<int>& path) const;
+-    double tradeValue(int enemyId) const;
+-    bool wantSplit(int& size) const;
++    double tradeValue(int enemyId, bool forHunt = false) const;
++    bool wantSplit(int& size, bool* swarm = nullptr) const;
++    bool swarmTrades() const;          // S3: this piece accepts even head-on trades (cand-swarm1)
++    int swarmCap() const;              // S2: unit cap of the swarm phase (cand-swarm1)
++    bool childSpotOk() const;          // a split child (born at our tail) has known, open surroundings
+     int pickSonarDir(bool* probe = nullptr) const;
+     void setSonar(Action& act) const;
+     int pickHotspot() const;
+diff -ruN old-bot/world.cpp exp/cand-swarm4/bot/world.cpp
+--- old-bot/world.cpp	2026-09-30 03:52:09
++++ exp/cand-swarm4/bot/world.cpp	2026-09-30 03:33:43
+@@ -89,6 +89,7 @@
+ // ------------------------------------------------------------------------------------------------
+ void World::ingest(const RoundBlock& rb) {
+     round = rb.round; myLen = rb.length; unitCount = rb.unitCount; myDir = rb.dir; parsedOk = rb.ok;
++    if (bornRound < 0) { bornRound = rb.round; bornUnits = rb.unitCount; }
+     if (!rb.ok) return; // keep the old picture; the planner falls back to a cautious move
+     prevHeadT = headT;
+     int winTile[49];
+diff -ruN old-bot/world.hpp exp/cand-swarm4/bot/world.hpp
+--- old-bot/world.hpp	2026-09-30 03:52:09
++++ exp/cand-swarm4/bot/world.hpp	2026-09-30 03:33:43
+@@ -47,6 +47,7 @@
+     Geo geo;
+     int myId = 0; char myTeam = 'A'; int unitLimit = 64;
+     int round = 0, myLen = 3, unitCount = 1, myDir = 0, headT = -1;
++    int bornRound = -1, bornUnits = 0;   // round and team unit count at this process's first turn (cand-swarm4, S5)
+     bool parsedOk = false;
+     std::vector<Tile> tiles;
+ 

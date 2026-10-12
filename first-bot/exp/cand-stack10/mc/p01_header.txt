@@ -1,0 +1,18 @@
+//   stack10 (research/experiments/cand-stack10.md; study research/observations/economy-principles.md sections 4, 7 and 14):
+//   lnt       move label " lnt<d3>" (" lnt<d3>o": the old trade rules would have traded too) on a one-step TRADE: a piece (length <= 4)
+//             rams an adjacent enemy head when locally ahead (d3 = our heads - enemy heads within Chebyshev 3 of our head, the pair
+//             excluded; exp/econ-principles/extract.js v3). Situation: replay d3 >= +1 and the target adjacent across an open edge at the
+//             turn start. Effect: the head-on happened; the two bodies' pearls (ceil(Lm/2) + ceil(Lv/2), the death records) eaten
+//             within 20 rounds by us and by the opponent; net20 = (Lv - Lm) + ours20 - theirs20 ("의도대로" = we ate more than them).
+//   lntv      move label " lntv<d3>": the veto (d3 <= -1) removed the trade the turn would otherwise have chosen. Situation: replay d3
+//             (our heads - enemy heads in the 7x7 view + 1, the target excluded) <= -1. Effect (observation): the body 10 rounds on.
+//   kint      " kint" on a TRADE the veto would have removed but for its exception (a target of proven length >= 8 longer than our
+//             longest known). Situation: replay d3 <= -1. Effect: net20 > 0.
+//   utab      the csplit label's " tab" after t<target>: the unit target came from the layout table. Situation: the process's last map
+//             tag at the firing named a layout (a / b).
+//   stack10 metrics (tag-independent; section shown with lnt / lntv / kint / tab tags or --lnt): the study's E4 rows for our team, as
+//             exp/econ-principles/extract.js O and C: every B3 opportunity (our piece of length <= 4 with an enemy head adjacent across an
+//             open edge at its turn start; the longest if several) with its replay d3 and whether it rammed that head in one step, and
+//             every trade we made (a move of ours into an enemy head) with d3, d8 (Manhattan 8 of the contact tile) and its 20-round
+//             pearls; E3's r100 units by true layout against the table, r0-199 natural pearls eaten, our territory's natural pearls
+//             eaten by the opponent, and the r200 king.

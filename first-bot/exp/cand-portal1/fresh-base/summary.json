@@ -1,0 +1,53 @@
+{
+  "label": "fresh-base",
+  "bot": "~/01. Project/개인 프로젝트/unsw-heuristic/bot",
+  "at": "2026-09-29T16:15:23.587Z",
+  "benchmark": {
+    "maps": 3,
+    "opps": [
+      "replay_rules_v8",
+      "archetype_swarm",
+      "archetype_hunter",
+      "h2"
+    ],
+    "seeds": [
+      3,
+      4
+    ],
+    "sides": 2
+  },
+  "all": {
+    "n": 48,
+    "G": 31.875,
+    "alive": 1,
+    "win": 0.9791666666666666
+  },
+  "byOpp": {
+    "replay_rules_v8": {
+      "n": 12,
+      "G": 30.75,
+      "alive": 1,
+      "win": 1
+    },
+    "archetype_swarm": {
+      "n": 12,
+      "G": 32.25,
+      "alive": 1,
+      "win": 1
+    },
+    "archetype_hunter": {
+      "n": 12,
+      "G": 31.75,
+      "alive": 1,
+      "win": 1
+    },
+    "h2": {
+      "n": 12,
+      "G": 32.75,
+      "alive": 1,
+      "win": 0.9166666666666666
+    }
+  },
+  "problems": 0,
+  "errors": 0
+}

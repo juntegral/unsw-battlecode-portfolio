@@ -1,0 +1,21 @@
+      { // stack10: the B3 opportunity taken (a one-step move into that head), our trades (any move of ours into an enemy head, extract.js C
+        // row: d3 around our head at the turn start, d8 around the contact tile, the pair excluded), and the lnt / lntv / kint records
+        const o10 = S10.oppNow.get(d.id); S10.oppNow.delete(d.id);
+        const f10 = d.fate, hit10 = f10 && f10.reason === 'H' && f10.hitTeam !== us ? c.drag.get(f10.hit) : null;
+        if (o10 && o10.r === r && d.steps === 1 && hit10 && f10.hit === o10.adj) o10.taken = 1;
+        let x10 = null;
+        if (hit10) {
+          const h0 = K(before[0]), vk = K(hit10.body[0]), lc = s10lc(c, h0, vk, d.id, hit10.id);
+          let adjS = 0; for (let j = 0; j < 4; j++) if (NB[h0 * 4 + j] === vk) adjS = 1;
+          x10 = { r, Lm: before.length, Lv: hit10.body.length, d3: lc.d3, d8: lc.d8, adjS, steps: d.steps, lnt: t.kind === 'move' && t.lnt ? 1 : 0,
+            kint: t.kind === 'move' && t.kint ? 1 : 0, mIdx: -1, vIdx: -1, dm: 0, dv: 0, LmD: before.length, LvD: hit10.body.length,
+            lab: t.kind === 'move' ? (t.trade ? 'trade' : 'move') : t.kind };
+          S10.xch.push(x10); S10.xPend.set(d.id, x10);
+        }
+        if (t.kind === 'move' && t.lnt) made.push({ k: 'lnt', ...base, d3t: t.lnt.d3, o: t.lnt.o, x10 });
+        if (t.kind === 'move' && t.kint) made.push({ k: 'kint', ...base, x10 });
+        if (t.kind === 'move' && t.lntv !== undefined) {
+          const lc = s10lc(c, K(before[0]), -1, d.id, -1);
+          made.push({ k: 'lntv', ...base, d3t: t.lntv, d3r: lc.v3e > 0 ? lc.v3o - lc.v3e + 1 : null });
+        }
+      }

@@ -1,0 +1,478 @@
+diff -ru bot/main.cpp exp/cand-portal1/bot/main.cpp
+--- bot/main.cpp	2026-09-29 20:15:00
++++ exp/cand-portal1/bot/main.cpp	2026-09-30 00:00:04
+@@ -19,7 +19,7 @@
+     world.init(ib);
+     Planner planner(world);
+     RoundBlock rb;
+-    int lastSonarDir = -1;
++    int lastSonarDir = -1, lastSonarFrom = -1;
+     for (;;) {
+         if (!reader.readRound(rb)) break;   // EOF or ENDGAME
+         world.ingest(rb);
+@@ -30,6 +30,7 @@
+             if (e.enemy > 0 || e.enemyHead > 0) world.enemyEchoDir[lastSonarDir] = world.round;
+             world.probeDir = lastSonarDir; world.probeRound = world.round;
+             world.probeClear = (e.ally + e.allyHead + e.enemy + e.enemyHead) == 0;
++            world.probeFromT = lastSonarFrom; // the ray left our head as it stood after last turn's action
+         }
+         Action a = planner.decide();
+         // a well-formed fallback first: if the intended line were ever malformed, this one still applies
+@@ -41,11 +42,11 @@
+         } else if (!a.dirs.empty()) {
+             writer.move(a.dirs.c_str());
+         }
+-        lastSonarDir = -1;
++        lastSonarDir = -1; lastSonarFrom = -1;
+         if (P::SEND_SONAR && a.sonarDir >= 0) {
+             uint64_t msg = a.relayId >= 0 ? world.encodeKingMsg(a.relayId, a.relayRound, a.relayT, a.relayLen) : world.encodeMsg(a.hotT);
+             if (a.sonarAll) { for (int d = 0; d < 4; d++) writer.sonar(d, msg); lastSonarDir = -2; } // several rays: no attribution
+-            else { writer.sonar(a.sonarDir, msg); lastSonarDir = a.sonarDir; }
++            else { writer.sonar(a.sonarDir, msg); lastSonarDir = a.sonarDir; lastSonarFrom = a.sonarFromT; }
+         }
+         if (P::INDICATOR && !a.indicator.empty()) writer.indicator(a.indicator);
+         writer.endTurn();
+diff -ru bot/params.hpp exp/cand-portal1/bot/params.hpp
+--- bot/params.hpp	2026-09-29 20:15:00
++++ exp/cand-portal1/bot/params.hpp	2026-09-30 00:20:41
+@@ -34,11 +34,30 @@
+ constexpr int    AREA_FILL_MARGIN = 4;
+ constexpr double TAIL_REACH_BONUS = 1.5;
+ constexpr double HEAD_PATH_PENALTY = 1.5;    // tiles straight ahead of another dragon's head (k=1..3)
+-constexpr double PORTAL_STALE_PENALTY = 3.0; // known portal exit not seen recently (scaled by staleness/20 rounds)
+-constexpr double PORTAL_TIGHT_PENALTY = 2.0; // known portal exit with <= 1 free neighbour
+-constexpr double PORTAL_BLIND_PENALTY = 1.0; // exit tile not in view now: a head may have moved there
++// cand-portal1: a known exit is remembered like any other tile; the search and the flood fill already see a tight or
++// dead-end exit through across(), so only the unseen-occupant risk stays (the old TIGHT 2.0 and STALE 3.0 are gone).
++constexpr double PORTAL_STALE_PENALTY = 1.0; // known portal exit not seen recently (scaled by staleness/20 rounds)
++constexpr double PORTAL_BLIND_PENALTY = 0.5; // exit tile not in view now: a head may have moved there
+ constexpr double PORTAL_HEAD_NEAR_PENALTY = 8.0; // a head (any team) was seen within 2 of the unseen exit recently
+-constexpr double PORTAL_GAMBLE_VALUE = 1.0;  // entering an unknown portal after a clean sonar probe
++
++// --- unexplored portals (cand-portal1) ---
++// An edge whose partner we have never seen is a frontier: it is an attraction source, a leaf of the search, and after a
++// clean probe (one ray cast from the entry tile through the portal hit no dragon) a first-step candidate.
++constexpr double FRONTIER_VALUE = 4.0;       // expected value behind an unexplored portal when hungry
++constexpr double FRONTIER_FED_FRAC = 0.25;   // share of FRONTIER_VALUE right after eating
++constexpr int    HUNGER_ROUNDS = 25;         // rounds without eating until the frontier counts in full
++constexpr double FRONTIER_UNSEEN_GAIN = 2.5; // value x min(1, gain * share of the map this dragon has never seen)
++constexpr int    FRONTIER_FADE_ROUNDS = 120; // value fades to 0 between 30+this and 30 rounds before the end
++constexpr int    FRONTIER_MAX_SOURCES = 4;   // nearest frontiers that pull (field = the best one, not the sum)
++constexpr double FRONTIER_COMMIT_MARGIN = 0.5; // enter after a clean probe when frontier - risk exceeds this
++constexpr double BLIND_RISK = 0.8;           // expected cost of stepping into an unseen exit after a clean probe
++constexpr double BLIND_RISK_PER_LEN = 0.05;  // + per segment: an unseen head beside the exit costs the whole dragon
++constexpr int    BLIND_MIN_LEN = 3;          // L2 cannot escape-split out of a dead end
++constexpr int    FRONTIER_BLOCK_ROUNDS = 6;  // a probe that hit a dragon: ignore that frontier this long
++constexpr double BLIND_DESPERATE_PENALTY = 25.0; // an unexplored portal without a clean probe (or in the last rounds):
++                                                 // still a legal step, chosen only when every other step is doomed
++constexpr double PORTAL_UNPROBED_PENALTY = 4.0;  // known portal, exit out of view, no probe from here last turn
++constexpr double PORTAL_DIRTY_PENALTY = 8.0;     // known portal, exit out of view, last turn's probe hit a dragon
+ constexpr double DOOM_VALUE = -200.0;        // below this the best move is death within the horizon
+ 
+ // --- threat from enemy heads (d = path distance from the enemy head to the tile) ---
+diff -ru bot/plan.cpp exp/cand-portal1/bot/plan.cpp
+--- bot/plan.cpp	2026-09-29 20:15:00
++++ exp/cand-portal1/bot/plan.cpp	2026-09-30 00:21:07
+@@ -155,9 +155,11 @@
+     return v;
+ }
+ 
+-// penalty for stepping through a known portal into a region we cannot currently see
++// penalty for stepping through a known portal into a region we cannot currently see. cand-portal1: only the risk that
++// something unseen stands on or beside the exit; a tight or dead-end exit is seen by the search and the flood fill.
+ double Planner::portalPenalty(int from, int d, int to) const {
+     if (w_.tiles[from].edge[d] != EDGE_PORTAL) return 0.0;
++    if (from == w_.headT && probeOk_ && w_.probeDir == d) return 0.0; // a ray through it just now hit no dragon
+     double pen = 0.0;
+     int seen = w_.tiles[to].seen;
+     if (seen != w_.round) {
+@@ -168,12 +170,48 @@
+             if (w_.geo.manhattan(dg.headT, to) <= 2) { pen += P::PORTAL_HEAD_NEAR_PENALTY; break; }
+         }
+     }
+-    int freeN = 0;
+-    for (int dd = 0; dd < 4; dd++) { if (dd == opp(d)) continue; int u = w_.across(to, dd); if (u >= 0 && w_.occNow[u] == 0) freeN++; }
+-    if (freeN <= 1) pen += P::PORTAL_TIGHT_PENALTY;
+     return pen;
+ }
+ 
++// ---- unexplored portals (cand-portal1) ----
++// The value of trying an unexplored portal grows with hunger (rounds since we last grew), with the share of the map we
++// have never seen, and fades before the end. A probe that hit a dragon mutes that one edge for a few rounds.
++void Planner::computeFrontier() {
++    int left = 500 - w_.round;
++    double timeF = std::clamp((left - P::ENDGAME_ROUNDS) / (double)P::FRONTIER_FADE_ROUNDS, 0.0, 1.0);
++    double hunger = std::clamp((w_.round - w_.lastAteRound) / (double)P::HUNGER_ROUNDS, 0.0, 1.0);
++    double unseen = 1.0 - (double)w_.tilesObserved / std::max(1, w_.geo.tiles());
++    double unseenF = std::clamp(P::FRONTIER_UNSEEN_GAIN * unseen, 0.0, 1.0);
++    frontierBase_ = P::FRONTIER_VALUE * (P::FRONTIER_FED_FRAC + (1.0 - P::FRONTIER_FED_FRAC) * hunger) * timeF * unseenF;
++    probeOk_ = w_.probeRound == w_.round && w_.probeClear && w_.probeDir >= 0 && w_.probeFromT == w_.headT;
++    if (w_.probeRound == w_.round && !w_.probeClear && w_.probeDir >= 0 && w_.probeFromT >= 0 &&
++        w_.across(w_.probeFromT, w_.probeDir) == -2)
++        w_.frontierBlock[(size_t)w_.probeFromT * 4 + w_.probeDir] = (int16_t)std::min(30000, w_.round + P::FRONTIER_BLOCK_ROUNDS);
++    // path distance from our head over known edges, bodies ignored (ranking of attraction sources through portals)
++    int n = w_.geo.tiles();
++    headDist_.assign(n, -1);
++    queue_.clear(); queue_.push_back(w_.headT); headDist_[w_.headT] = 0;
++    for (size_t qi = 0; qi < queue_.size(); qi++) {
++        int t = queue_[qi];
++        if (headDist_[t] >= P::ATTRACT_RADIUS + 6) continue;
++        for (int dir = 0; dir < 4; dir++) {
++            int u = w_.across(t, dir);
++            if (u < 0 || headDist_[u] >= 0) continue;
++            headDist_[u] = headDist_[t] + 1; queue_.push_back(u);
++        }
++    }
++}
++
++double Planner::frontierValue(int t, int d) const {
++    if (frontierBase_ <= 0.0) return 0.0;
++    const Tile& x = w_.tiles[t];
++    if (x.seen < 0 || x.edge[d] != EDGE_PORTAL || w_.across(t, d) != -2) return 0.0;
++    if (w_.frontierBlock[(size_t)t * 4 + d] > w_.round) return 0.0;
++    return frontierBase_;
++}
++
++double Planner::blindRisk(int len) const { return P::BLIND_RISK + P::BLIND_RISK_PER_LEN * len; }
++
+ // Pearl attraction field: sum over sources of v * gamma^dist * gammaWait^(wait-dist) with contention factors.
+ void Planner::computeAttract() {
+     int n = w_.geo.tiles();
+@@ -192,6 +230,7 @@
+         if (w_.isFountain(t) && w_.occNow[t] == 0) v = std::max(v, P::FOUNTAIN_VALUE);
+         if (v <= 0.0) continue;
+         int md = Geo::abs(w_.geo.dx(hx, t % w_.geo.W)) + Geo::abs(w_.geo.dy(hy, t / w_.geo.W));
++        if (headDist_[t] >= 0) md = std::min(md, headDist_[t]); // a remembered tile behind a known portal is near
+         if (md > P::ATTRACT_RADIUS + 6) continue;
+         src.push_back({t, v, wait});
+     }
+@@ -207,6 +246,8 @@
+     if (src.size() > (size_t)P::MAX_SOURCES) {
+         std::partial_sort(src.begin(), src.begin() + P::MAX_SOURCES, src.end(), [&](const Src& a, const Src& b) {
+             int da = w_.geo.manhattan(w_.headT, a.t), db = w_.geo.manhattan(w_.headT, b.t);
++            if (headDist_[a.t] >= 0) da = std::min(da, headDist_[a.t]);
++            if (headDist_[b.t] >= 0) db = std::min(db, headDist_[b.t]);
+             return a.v * GPOW[std::min(63, da)] * GWAIT[std::min(511, std::max(0, a.wait - da))] >
+                    b.v * GPOW[std::min(63, db)] * GWAIT[std::min(511, std::max(0, b.wait - db))];
+         });
+@@ -235,6 +276,35 @@
+             }
+         }
+     }
++    // cand-portal1: the nearest unexplored portals pull like a few pearls when we are hungry. One frontier is entered at
++    // a time, so their pulls do not add up: the field is the best single frontier (an ally nearer to it takes it).
++    frontierField_.assign(n, 0.0);
++    if (frontierBase_ > 0.0) {
++        std::vector<std::pair<int, int>> fr; // (path distance, entry tile)
++        for (int t = 0; t < n; t++) {
++            if (headDist_[t] < 0 || w_.tiles[t].seen < 0) continue;
++            for (int d = 0; d < 4; d++) if (frontierValue(t, d) > 0.0) { fr.push_back({headDist_[t], t}); break; }
++        }
++        std::sort(fr.begin(), fr.end());
++        if (fr.size() > (size_t)P::FRONTIER_MAX_SOURCES) fr.resize(P::FRONTIER_MAX_SOURCES);
++        for (auto& f : fr) {
++            std::fill(distBuf_.begin(), distBuf_.end(), -1);
++            queue_.clear(); queue_.push_back(f.second); distBuf_[f.second] = 0;
++            int af = SC.allyFar[f.second];
++            for (size_t qi = 0; qi < queue_.size(); qi++) {
++                int t = queue_[qi]; int dist = distBuf_[t];
++                double v = frontierBase_ * GPOW[std::min(63, dist)] * (af < dist ? P::CONTEST_ALLY_CLOSER : 1.0);
++                if (v > frontierField_[t]) frontierField_[t] = v;
++                if (dist >= P::ATTRACT_RADIUS) continue;
++                for (int dir = 0; dir < 4; dir++) {
++                    int u = w_.across(t, dir);
++                    if (u < 0 || distBuf_[u] >= 0) continue;
++                    if (w_.occNow[u] != 0 && w_.freeAt[u] > dist + 2) continue;
++                    distBuf_[u] = dist + 1; queue_.push_back(u);
++                }
++            }
++        }
++    }
+ }
+ 
+ // ------------------------------------------------------------------------------------------------
+@@ -301,6 +371,7 @@
+     bool over = nodes_ > P::DFS_NODE_BUDGET || (((nodes_ & 63) == 0) && nowPoints() > deadline);
+     if (depth >= maxDepth || over) {
+         double v = attract_[t] * GPOW[std::min(63, turns + 1)] + exploreValue(t) * GPOW[std::min(63, turns + 1)];
++        if (frontierField_[t] > 0.0) v += frontierField_[t] * GPOW[std::min(63, turns + 1)]; // cand-portal1
+         int freeN = 0;
+         for (int d = 0; d < 4; d++) { if (d == opp(lastDir)) continue; int u = w_.across(t, d); if (u >= 0 && tileEnterable(u, stepBase + 1, removed, path)) freeN++; }
+         v += freeN * 0.15;
+@@ -312,6 +383,15 @@
+     for (int d = 0; d < 4; d++) {
+         if (d == opp(lastDir)) continue;
+         int u = w_.across(t, d);
++        if (u == -2) { // cand-portal1: an unexplored portal is a leaf worth the frontier minus the blind risk
++            double fv = lenNow >= P::BLIND_MIN_LEN ? frontierValue(t, d) : 0.0;
++            if (fv > 0.0) {
++                any = true;
++                double v = (fv - blindRisk(lenNow)) * GPOW[std::min(63, turns + 1)];
++                if (v > best) best = v;
++            }
++            continue;
++        }
+         if (u < 0) continue;
+         if (!tileEnterable(u, stepBase + 1, removed, path)) continue;
+         any = true;
+@@ -395,21 +475,24 @@
+     return exits >= P::SPLIT_MIN_CHILD_EXITS;
+ }
+ 
+-int Planner::pickSonarDir(bool* probe) const {
+-    // probe an unknown-exit portal straight ahead (within 3 tiles) so we may enter it next turn
++// cand-portal1: the ray leaves our head as it stands AFTER this turn's action (fromT, facing). Probe a portal on an edge of
++// that tile: an unexplored one first (so we may enter it next turn), else a known one whose exit we cannot see.
++// A ray opposite to our facing would leave from the tail, so that direction is never a probe.
++int Planner::pickSonarDir(int fromT, int facing, bool* probe) const {
+     if (probe) *probe = false;
+-    for (int d = 0; d < 4; d++) {
+-        if (d == opp(w_.myDir)) continue;
+-        int t = w_.headT;
+-        for (int k = 0; k < 3; k++) {
+-            if (w_.tiles[t].edge[d] == EDGE_KELP) break;
+-            int u = w_.across(t, d);
+-            if (u == -2) { if (probe) *probe = true; return d; }
+-            if (u < 0) break;
+-            t = u;
++    if (fromT >= 0) {
++        int bestD = -1; double bestV = 0.0;
++        for (int d = 0; d < 4; d++) {
++            if (d == opp(facing) || w_.tiles[fromT].edge[d] != EDGE_PORTAL) continue;
++            int u = w_.across(fromT, d);
++            double v = 0.0;
++            if (u == -2) v = 2.0 + frontierValue(fromT, d);
++            else if (u >= 0 && w_.tiles[u].seen != w_.round) v = 1.0;
++            if (v > bestV) { bestV = v; bestD = d; }
+         }
++        if (bestD >= 0) { if (probe) *probe = true; return bestD; }
+     }
+-    int d = (turnCounter_ + w_.myId) & 3;
++    int d = (turnCounter_ + w_.myId) & 3;     // not a probe: the rotation as before (relative to the facing we started with)
+     if (d == opp(w_.myDir)) d = w_.myDir;
+     return d;
+ }
+@@ -417,7 +500,13 @@
+ // late game: every ray carries our message so the team learns where the king and the feeders are (c10)
+ void Planner::setSonar(Action& act) const {
+     bool probe = false;
+-    act.sonarDir = pickSonarDir(&probe); act.hotT = pickHotspot();
++    int fromT = w_.headT, facing = w_.myDir;
++    if (act.kind == Action::MOVE) {
++        if (act.path.empty()) fromT = -1; // blind portal entry: we do not know where the head comes out
++        else { fromT = act.path.back(); facing = dirFromChar(act.dirs.empty() ? 'N' : act.dirs.back()); if (facing < 0) facing = w_.myDir; }
++    }
++    act.sonarDir = pickSonarDir(fromT, facing, &probe); act.hotT = pickHotspot();
++    act.sonarFromT = fromT;
+     act.sonarAll = !probe && w_.round >= P::GATHER_BROADCAST;
+     // every other turn a non-king passes on the king's last known head, so news of it spreads beyond its own rays
+     if (act.sonarAll && !gatherKing_ && goalId_ >= 0 && ((w_.round + w_.myId) & 1)) {
+@@ -494,6 +583,7 @@
+     long long tp0 = nowPoints();
+     computeEnemyDistance();
+     long long tp1 = nowPoints();
++    computeFrontier();
+     computeSoftPenalty();
+     computeAttract();
+     computeGoal();
+@@ -548,19 +638,21 @@
+     }
+ 
+     // ---- candidates: first action = 1 step, a justified 2-step sprint, or a probed unknown portal
+-    struct Cand { std::vector<int> dirs; std::vector<int> tiles; int removed; int pearls; double base; bool legal; bool trade; bool blind; };
++    struct Cand { std::vector<int> dirs; std::vector<int> tiles; int removed; int pearls; double base; bool legal; bool trade; bool blind; bool voluntary = false; };
+     std::vector<Cand> cands;
+     std::vector<int> path;
+-    bool probeOk = w_.probeRound == w_.round && w_.probeClear && w_.prevHeadT >= 0 && w_.probeDir >= 0 &&
+-                   w_.across(w_.prevHeadT, w_.probeDir) == w_.headT; // we stepped along the probed line
+     for (int d1 = 0; d1 < 4; d1++) {
+         if (d1 == opp(w_.myDir) && w_.myLen >= 2) continue; // into our own neck
+         int u1 = w_.across(w_.headT, d1);
+         Cand c; c.dirs = {d1}; c.removed = 0; c.pearls = 0; c.base = 0; c.legal = false; c.trade = false; c.blind = false;
+         if (u1 == -1) { cands.push_back(c); continue; }
+-        if (u1 == -2) { // unknown portal exit: only after a clean probe along this direction
+-            c.blind = true;
+-            if (probeOk && w_.probeDir == d1 && !late_) { c.legal = true; c.base = P::PORTAL_GAMBLE_VALUE; }
++        if (u1 == -2) { // unexplored portal: worth trying after a clean probe cast from this very tile in this direction
++            c.blind = true; c.legal = true;
++            double fv = w_.myLen >= P::BLIND_MIN_LEN ? frontierValue(w_.headT, d1) : 0.0;
++            bool clean = probeOk_ && w_.probeDir == d1;
++            c.base = fv - blindRisk(w_.myLen); // + the best ordinary safety, added below
++            c.voluntary = clean && !late_ && fv > 0.0;
++            if (!c.voluntary) c.base -= P::BLIND_DESPERATE_PENALTY; // only when all else is doomed
+             cands.push_back(c); continue;
+         }
+         int hid = w_.headOf[u1];
+@@ -569,13 +661,20 @@
+             c.tiles = {u1}; c.legal = tv > 0.0; c.trade = true; c.base = tv > 0.0 ? tv : DEATH;
+             cands.push_back(c); continue;
+         }
++        // cand-portal1: a known portal whose exit we cannot see: free right after a clean probe from here, dearer without
++        // one, dearest when that probe hit a dragon (it may stand on the exit)
++        double portalExtra = 0.0;
++        if (w_.tiles[w_.headT].edge[d1] == EDGE_PORTAL && w_.tiles[u1].seen != w_.round) {
++            bool probedHere = w_.probeRound == w_.round && w_.probeFromT == w_.headT && w_.probeDir == d1;
++            portalExtra = !probedHere ? P::PORTAL_UNPROBED_PENALTY : (w_.probeClear ? 0.0 : P::PORTAL_DIRTY_PENALTY);
++        }
+         path.assign(1, w_.headT);
+         if (!tileEnterable(u1, 1, 0, path)) { cands.push_back(c); continue; }
+         c.legal = true; c.tiles = {u1};
+         double p1 = SC.pnow[u1];
+         c.pearls = p1 >= 0.5 ? 1 : 0; c.removed = c.pearls ? 0 : 1;
+         double th1 = threatAt(u1);
+-        c.base = p1 - th1 - softPenalty_[u1] - portalPenalty(w_.headT, d1, u1) - (w_.edgeUnknown(w_.headT, d1) ? P::UNKNOWN_EDGE_PENALTY : 0.0);
++        c.base = p1 - th1 - softPenalty_[u1] - portalPenalty(w_.headT, d1, u1) - portalExtra - (w_.edgeUnknown(w_.headT, d1) ? P::UNKNOWN_EDGE_PENALTY : 0.0);
+         if (w_.tiles[u1].spawnRound == w_.round + 1 && p1 < 0.5) c.base -= P::BLOCK_SPAWN_PENALTY;
+         cands.push_back(c);
+         // 2-step sprints cost a segment: only when they grab a pearl, escape a threat, or trade
+@@ -584,6 +683,7 @@
+                 if (d2 == opp(d1)) continue;
+                 int u2 = w_.across(u1, d2);
+                 if (u2 < 0) continue;
++                if (w_.tiles[u1].edge[d2] == EDGE_PORTAL && w_.tiles[u2].seen != w_.round) continue; // no unprobed portal
+                 Cand s = c; s.dirs = {d1, d2}; s.legal = false; s.trade = false;
+                 int hid2 = w_.headOf[u2];
+                 if (hid2 >= 0 && hid2 != w_.myId && w_.dragons[hid2].team != w_.myTeam) {
+@@ -600,7 +700,8 @@
+                 s.pearls = c.pearls + (p2 >= 0.5 ? 1 : 0);
+                 s.removed = c.removed + (p2 >= 0.5 ? 0 : 1) + 1; // +1: sprint payment
+                 s.base = p1 + p2 - P::SPRINT_COST - th2 - softPenalty_[u2] - portalPenalty(u1, d2, u2)
+-                         - (w_.edgeUnknown(u1, d2) ? P::UNKNOWN_EDGE_PENALTY : 0.0);
++                         - (w_.edgeUnknown(u1, d2) ? P::UNKNOWN_EDGE_PENALTY : 0.0)
++                         - portalPenalty(w_.headT, d1, u1) - portalExtra; // cand-portal1: the first step's portal too
+                 cands.push_back(s);
+             }
+         }
+@@ -625,6 +726,7 @@
+                     if (t == w_.headT && d == opp(w_.myDir)) continue;
+                     int u = w_.across(t, d);
+                     if (u < 0 || distBuf_[u] >= 0) continue;
++                    if (w_.tiles[t].edge[d] == EDGE_PORTAL && w_.tiles[u].seen != w_.round) continue; // cand-portal1
+                     if (u == target) { if (dd + 1 >= 3) { parBuf_[u] = t; pdir[u] = d; distBuf_[u] = dd + 1; found = u; } continue; }
+                     if (w_.occNow[u] != 0 || w_.headOf[u] >= 0) continue;
+                     distBuf_[u] = dd + 1; parBuf_[u] = t; pdir[u] = d; queue_.push_back(u);
+@@ -649,6 +751,18 @@
+         path.assign(1, w_.headT); for (int t : c.tiles) path.push_back(t);
+         safety[i] = areaSafety(c.tiles.back(), c.removed, path);
+     }
++    // cand-portal1: we cannot flood-fill an unseen exit; assume it is as roomy as our best ordinary step, so the blind
++    // step competes on the frontier value minus the blind risk
++    {
++        bool anySafe = false; double safetyRef = 0.0;
++        for (size_t i = 0; i < cands.size(); i++) {
++            const Cand& c = cands[i];
++            if (!c.legal || c.trade || c.blind) continue;
++            if (!anySafe || safety[i] > safetyRef) safetyRef = safety[i];
++            anySafe = true;
++        }
++        for (size_t i = 0; i < cands.size(); i++) if (cands[i].legal && cands[i].blind) safety[i] = safetyRef;
++    }
+     long long tp3 = nowPoints();
+ 
+     // ---- iterative deepening search from each legal non-trade candidate
+@@ -662,7 +776,7 @@
+         for (size_t i = 0; i < cands.size(); i++) {
+             Cand& c = cands[i];
+             if (!c.legal) continue;
+-            if (c.trade || c.blind) { v2[i] = c.base; continue; }
++            if (c.trade || c.blind) { v2[i] = c.base + safety[i]; continue; } // safety: 0 for trades, the reference for blind
+             path.assign(1, w_.headT); for (int t : c.tiles) path.push_back(t);
+             double cont = dfs(c.tiles.back(), c.dirs.back(), 0, depth, c.removed, w_.myLen + c.pearls - ((int)c.dirs.size() - 1), path, hard);
+             v2[i] = c.base + safety[i] + cont;
+@@ -672,6 +786,17 @@
+         value = v2; depthDone = depth;
+     }
+     long long tp4 = nowPoints();
++
++    // cand-portal1: at an unexplored portal with a clean probe, staying keeps only the option to enter later (the ordinary
++    // values already hold the frontier's pull), so entering is worth the best ordinary value plus what the frontier
++    // promises beyond its risk, minus a margin
++    {
++        double bestOrd = -1e18;
++        for (size_t i = 0; i < cands.size(); i++) if (cands[i].legal && !cands[i].blind && value[i] > bestOrd) bestOrd = value[i];
++        for (size_t i = 0; i < cands.size(); i++)
++            if (cands[i].legal && cands[i].voluntary && bestOrd > -1e17)
++                value[i] = std::max(value[i], bestOrd + cands[i].base - P::FRONTIER_COMMIT_MARGIN);
++    }
+ 
+     // deterministic per-dragon jitter so mirrored dragons do not make identical choices on ties
+     for (size_t i = 0; i < cands.size(); i++) if (cands[i].legal) {
+diff -ru bot/plan.hpp exp/cand-portal1/bot/plan.hpp
+--- bot/plan.hpp	2026-09-29 20:15:00
++++ exp/cand-portal1/bot/plan.hpp	2026-09-30 00:20:41
+@@ -14,6 +14,7 @@
+     int splitSize = 0;          // for SPLIT
+     std::vector<int> path;      // tiles the head will occupy in order (for MOVE)
+     int sonarDir = -1;          // ray to send this turn (-1 none)
++    int sonarFromT = -1;        // our head after this action: where a single ray leaves from (probe bookkeeping)
+     bool sonarAll = false;      // send the message on all four rays (no echo attribution)
+     int relayId = -1, relayRound = -1, relayT = -1, relayLen = 0; // relay the king's position instead of our own (c10d)
+     int hotT = -1;              // hotspot tile to advertise
+@@ -41,11 +42,19 @@
+     int turnCounter_ = 0;
+     long long nodes_ = 0;
+     bool late_ = false, ahead_ = false;
++    // cand-portal1: unexplored portals
++    double frontierBase_ = 0.0;        // this turn's value of an unexplored portal edge (hunger x time x unseen map)
++    bool probeOk_ = false;             // last turn's single ray left our current head and hit no dragon
++    std::vector<int> headDist_;        // path distance from our head over known edges (bodies ignored), -1 unreached
++    std::vector<double> frontierField_;// best single unexplored-portal pull per tile (max, not sum)
+ 
+     void computeEnemyDistance();
+     void computeAttract();
+     void computeSoftPenalty();
+     void computeGoal();
++    void computeFrontier();
++    double frontierValue(int t, int d) const;   // > 0 iff (t, d) is an unexplored portal worth trying now
++    double blindRisk(int len) const;
+     double threatAt(int t) const;
+     double exploreValue(int t);
+     double portalPenalty(int from, int d, int to) const;
+@@ -54,7 +63,7 @@
+     bool tileEnterable(int t, int step, int removed, const std::vector<int>& path) const;
+     double tradeValue(int enemyId) const;
+     bool wantSplit(int& size) const;
+-    int pickSonarDir(bool* probe = nullptr) const;
++    int pickSonarDir(int fromT, int facing, bool* probe = nullptr) const;
+     void setSonar(Action& act) const;
+     int pickHotspot() const;
+ };
+diff -ru bot/world.cpp exp/cand-portal1/bot/world.cpp
+--- bot/world.cpp	2026-09-29 20:15:00
++++ exp/cand-portal1/bot/world.cpp	2026-09-30 00:00:03
+@@ -27,6 +27,7 @@
+     dragons.clear();
+     portals.clear();
+     pearlPriorUnseen = P::PRIOR_UNSEEN;
++    frontierBlock.assign((size_t)n * 4, 0);
+ }
+ 
+ int World::mirrorTile(int t, int hyp) const {
+@@ -89,6 +90,8 @@
+ // ------------------------------------------------------------------------------------------------
+ void World::ingest(const RoundBlock& rb) {
+     round = rb.round; myLen = rb.length; unitCount = rb.unitCount; myDir = rb.dir; parsedOk = rb.ok;
++    if (lastAteRound < 0 || myLen > prevLen) lastAteRound = round; // first turn of this process, or we grew
++    prevLen = myLen;
+     if (!rb.ok) return; // keep the old picture; the planner falls back to a cautious move
+     prevHeadT = headT;
+     int winTile[49];
+diff -ru bot/world.hpp exp/cand-portal1/bot/world.hpp
+--- bot/world.hpp	2026-09-29 20:15:00
++++ exp/cand-portal1/bot/world.hpp	2026-09-29 23:59:48
+@@ -82,9 +82,14 @@
+     int maxAllyLenSeen = 0;        // longest ally length ever seen or heard
+     int bestEnemyLen = 0;          // longest enemy length ever established
+ 
+-    // sonar probe: the ray sent last turn (from prevHeadT in probeDir) hit no dragon => probeClear
++    // sonar probe: the single ray sent last turn from probeFromT (our head after that move) in probeDir hit no dragon => probeClear
+     int prevHeadT = -1;
+     int probeDir = -1, probeRound = -1; bool probeClear = false;
++    int probeFromT = -1;
++
++    // cand-portal1: hunger (rounds since our length last grew) and frontiers muted after a dirty probe
++    int lastAteRound = -1, prevLen = 0;
++    std::vector<int16_t> frontierBlock;   // tile*4+dir -> round until which that unexplored portal is ignored
+ 
+     // map-level statistics
+     double pearlPriorUnseen = 0.05;

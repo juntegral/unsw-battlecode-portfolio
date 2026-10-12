@@ -1,0 +1,6 @@
+  // ---- stack10: each trade's two bodies' pearls eaten within 10 / 20 rounds by us and by the opponent (extract.js dstat; the death records)
+  for (const x of S10.xch) {
+    x.drops = x.dm + x.dv; x.own20 = 0; x.opp20 = 0; x.own10 = 0; x.opp10 = 0;
+    for (const i of [x.mIdx, x.vIdx]) { if (i < 0) continue; for (const q of deathEat.get(i) || []) { const dr = q[2] - x.r; if (dr > 20) continue; if (q[1] === us) { x.own20++; if (dr <= 10) x.own10++; } else { x.opp20++; if (dr <= 10) x.opp10++; } } }
+    x.net20 = (x.LvD - x.LmD) + x.own20 - x.opp20; x.done = x.mIdx >= 0 && x.vIdx >= 0 ? 1 : 0;
+  }

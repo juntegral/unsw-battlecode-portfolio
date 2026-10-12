@@ -1,0 +1,231 @@
+{
+  "gameId": 724085,
+  "map": "Default",
+  "opp": 20,
+  "us": "A",
+  "submission": 13393,
+  "winner": "B",
+  "rounds": 249,
+  "turns": 1444,
+  "labelled": 1444,
+  "move": 1416,
+  "tags": {
+    "cov": 307,
+    "map": 22,
+    "csplit": 15,
+    "tg": 94,
+    "tgx": 94,
+    "cl": 98,
+    "PORTAL?": 9,
+    "noexit": 10,
+    "grab": 26,
+    "escsplit": 3,
+    "noexit_spare": 2,
+    "lntv": 3
+  },
+  "kinds": {
+    "move": 1416,
+    "csplit": 15,
+    "noexit": 10,
+    "escsplit": 3
+  },
+  "explicitGoals": {
+    "none": 1416,
+    "early_action": 28
+  },
+  "goalModifiers": {
+    "cov": 307,
+    "cl": 98,
+    "grab": 26
+  },
+  "splits": {
+    "csplit": 15,
+    "escsplit": 3
+  },
+  "splitActual": {
+    "csplit": 15,
+    "escsplit": 3
+  },
+  "phases": {
+    "r0-99": {
+      "turns": 751,
+      "tags": {
+        "cov": 155,
+        "map": 11,
+        "csplit": 7,
+        "tg": 51,
+        "tgx": 44,
+        "cl": 36,
+        "PORTAL?": 1,
+        "noexit": 1,
+        "grab": 2
+      },
+      "goals": {
+        "none": 743,
+        "early_action": 8
+      },
+      "splits": {
+        "csplit": 7
+      }
+    },
+    "r100-249": {
+      "turns": 693,
+      "tags": {
+        "cov": 152,
+        "tgx": 50,
+        "grab": 24,
+        "cl": 62,
+        "tg": 43,
+        "csplit": 8,
+        "map": 11,
+        "PORTAL?": 8,
+        "noexit": 9,
+        "escsplit": 3,
+        "noexit_spare": 2,
+        "lntv": 3
+      },
+      "goals": {
+        "none": 673,
+        "early_action": 20
+      },
+      "splits": {
+        "csplit": 8,
+        "escsplit": 3
+      }
+    }
+  },
+  "lengths": {
+    "2": {
+      "turns": 1077,
+      "tags": {
+        "map": 17,
+        "tg": 73,
+        "tgx": 92,
+        "cl": 67,
+        "cov": 228,
+        "grab": 13,
+        "noexit": 6,
+        "noexit_spare": 1,
+        "PORTAL?": 1
+      }
+    },
+    "7": {
+      "turns": 5,
+      "tags": {
+        "csplit": 2
+      }
+    },
+    "3-4": {
+      "turns": 292,
+      "tags": {
+        "cov": 79,
+        "map": 4,
+        "csplit": 12,
+        "tg": 18,
+        "cl": 31,
+        "PORTAL?": 8,
+        "noexit": 4,
+        "grab": 10,
+        "escsplit": 2,
+        "noexit_spare": 1,
+        "tgx": 1,
+        "lntv": 3
+      }
+    },
+    "5-6": {
+      "turns": 12,
+      "tags": {
+        "csplit": 1,
+        "tgx": 1,
+        "tg": 1
+      }
+    },
+    "8+": {
+      "turns": 58,
+      "tags": {
+        "tg": 2,
+        "grab": 3,
+        "escsplit": 1,
+        "map": 1
+      }
+    }
+  },
+  "cooccurrence": {
+    "cl+cov": 29,
+    "cl+grab": 4,
+    "cov+grab": 3
+  },
+  "labelActionMismatch": 0,
+  "duplicates": 0,
+  "missingLabels": 0,
+  "unexpected": [],
+  "gateChecks": {
+    "csplit_unit_limit": {
+      "n": 15,
+      "pass": 15
+    },
+    "csplit_clock": {
+      "n": 15,
+      "pass": 15
+    },
+    "csplit_length": {
+      "n": 15,
+      "pass": 15
+    },
+    "csplit_actual_units": {
+      "n": 15,
+      "pass": 15
+    },
+    "csplit_not_true_long_king": {
+      "n": 15,
+      "pass": 15
+    },
+    "escsplit_unit_limit": {
+      "n": 3,
+      "pass": 3
+    }
+  },
+  "maxDragonId": 113,
+  "sonarFromIdOver255": 0,
+  "resources": {
+    "freeMemoryPct": 66,
+    "freeDiskGB": 36
+  },
+  "priority": 10,
+  "checks": {
+    "sim": 0,
+    "splits": 0,
+    "drops": 0,
+    "eatTC": 0,
+    "ledger": 0,
+    "final": 0,
+    "lineage": 0,
+    "natBal": 0,
+    "dropBal": 0,
+    "unknownDeath": 0
+  },
+  "result": {
+    "terminated": true,
+    "endReason": "teamEliminated",
+    "winner": "B",
+    "teamA": {
+      "dragonCount": 0,
+      "longestDragon": 0,
+      "totalLength": 0
+    },
+    "teamB": {
+      "dragonCount": 64,
+      "longestDragon": 8,
+      "totalLength": 195
+    }
+  },
+  "endReason": "teamEliminated",
+  "ledgerTurns": 1444,
+  "finalKing": null,
+  "maxInstr": 27709757,
+  "faults": 0,
+  "over80M": 0,
+  "depths": {
+    "7": 1416
+  }
+}

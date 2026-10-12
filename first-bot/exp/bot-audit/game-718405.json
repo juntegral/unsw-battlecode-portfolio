@@ -1,0 +1,243 @@
+{
+  "gameId": 718405,
+  "map": "Trophy",
+  "opp": 70,
+  "us": "A",
+  "submission": 13313,
+  "winner": "B",
+  "rounds": 140,
+  "turns": 663,
+  "labelled": 663,
+  "move": 626,
+  "tags": {
+    "cov": 80,
+    "map": 23,
+    "cl": 107,
+    "csplit": 16,
+    "tgx": 50,
+    "tg": 32,
+    "noexit": 14,
+    "grab": 59,
+    "TRADE": 2,
+    "lnt": 2,
+    "escsplit": 4,
+    "lasttrade": 2,
+    "floor": 1
+  },
+  "kinds": {
+    "move": 626,
+    "csplit": 16,
+    "noexit": 14,
+    "escsplit": 4,
+    "lasttrade": 2,
+    "floor": 1
+  },
+  "explicitGoals": {
+    "none": 626,
+    "early_action": 37
+  },
+  "goalModifiers": {
+    "cov": 80,
+    "cl": 107,
+    "grab": 59
+  },
+  "splits": {
+    "csplit": 16,
+    "escsplit": 4,
+    "floor": 1
+  },
+  "splitActual": {
+    "csplit": 16,
+    "escsplit": 4,
+    "floor": 1
+  },
+  "phases": {
+    "r0-99": {
+      "turns": 529,
+      "tags": {
+        "cov": 72,
+        "map": 17,
+        "cl": 89,
+        "csplit": 13,
+        "tgx": 38,
+        "tg": 14,
+        "noexit": 8,
+        "grab": 30,
+        "TRADE": 1,
+        "lnt": 1,
+        "escsplit": 2
+      },
+      "goals": {
+        "none": 506,
+        "early_action": 23
+      },
+      "splits": {
+        "csplit": 13,
+        "escsplit": 2
+      }
+    },
+    "r100-249": {
+      "turns": 134,
+      "tags": {
+        "grab": 29,
+        "noexit": 6,
+        "tg": 18,
+        "tgx": 12,
+        "cl": 18,
+        "TRADE": 1,
+        "lnt": 1,
+        "escsplit": 2,
+        "lasttrade": 2,
+        "map": 6,
+        "csplit": 3,
+        "floor": 1,
+        "cov": 8
+      },
+      "goals": {
+        "none": 120,
+        "early_action": 14
+      },
+      "splits": {
+        "escsplit": 2,
+        "csplit": 3,
+        "floor": 1
+      }
+    }
+  },
+  "lengths": {
+    "2": {
+      "turns": 469,
+      "tags": {
+        "map": 21,
+        "cl": 63,
+        "cov": 53,
+        "tgx": 46,
+        "tg": 19,
+        "noexit": 11,
+        "grab": 35,
+        "TRADE": 1,
+        "lnt": 1,
+        "lasttrade": 1
+      }
+    },
+    "3-4": {
+      "turns": 183,
+      "tags": {
+        "cov": 27,
+        "map": 2,
+        "cl": 44,
+        "csplit": 10,
+        "tg": 13,
+        "noexit": 3,
+        "grab": 22,
+        "TRADE": 1,
+        "lnt": 1,
+        "escsplit": 4,
+        "tgx": 4,
+        "floor": 1,
+        "lasttrade": 1
+      }
+    },
+    "5-6": {
+      "turns": 11,
+      "tags": {
+        "csplit": 6,
+        "grab": 2
+      }
+    }
+  },
+  "cooccurrence": {
+    "cl+cov": 21,
+    "cl+grab": 7,
+    "cov+grab": 2
+  },
+  "labelActionMismatch": 0,
+  "duplicates": 0,
+  "missingLabels": 0,
+  "unexpected": [],
+  "gateChecks": {
+    "csplit_unit_limit": {
+      "n": 16,
+      "pass": 16
+    },
+    "csplit_clock": {
+      "n": 16,
+      "pass": 16
+    },
+    "csplit_length": {
+      "n": 16,
+      "pass": 16
+    },
+    "csplit_actual_units": {
+      "n": 16,
+      "pass": 16
+    },
+    "csplit_not_true_long_king": {
+      "n": 16,
+      "pass": 16
+    },
+    "lnt_actual_d3_excluding_victim": {
+      "n": 2,
+      "pass": 2
+    },
+    "lnt_d3_1plus": {
+      "n": 2,
+      "pass": 2
+    },
+    "escsplit_unit_limit": {
+      "n": 4,
+      "pass": 4
+    },
+    "floor_unit_limit": {
+      "n": 1,
+      "pass": 1
+    },
+    "floor_opponent_8plus": {
+      "n": 1,
+      "pass": 1
+    }
+  },
+  "maxDragonId": 111,
+  "sonarFromIdOver255": 0,
+  "resources": {
+    "freeMemoryPct": 66,
+    "freeDiskGB": 36
+  },
+  "priority": 10,
+  "checks": {
+    "sim": 0,
+    "splits": 0,
+    "drops": 0,
+    "eatTC": 0,
+    "ledger": 0,
+    "final": 0,
+    "lineage": 0,
+    "natBal": 0,
+    "dropBal": 0,
+    "unknownDeath": 0
+  },
+  "result": {
+    "terminated": true,
+    "endReason": "teamEliminated",
+    "winner": "B",
+    "teamA": {
+      "dragonCount": 0,
+      "longestDragon": 0,
+      "totalLength": 0
+    },
+    "teamB": {
+      "dragonCount": 64,
+      "longestDragon": 5,
+      "totalLength": 159
+    }
+  },
+  "endReason": "teamEliminated",
+  "ledgerTurns": 663,
+  "finalKing": null,
+  "maxInstr": 27444697,
+  "faults": 0,
+  "over80M": 0,
+  "depths": {
+    "7": 626
+  }
+}

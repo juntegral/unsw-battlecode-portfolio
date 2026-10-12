@@ -1,0 +1,34 @@
+diff -ru exp/cand-portal4/bot/params.hpp exp/cand-portal6/bot/params.hpp
+--- exp/cand-portal4/bot/params.hpp	2026-09-30 00:31:55
++++ exp/cand-portal6/bot/params.hpp	2026-09-30 00:52:11
+@@ -44,8 +44,9 @@
+ // An edge whose partner we have never seen is a frontier: it is an attraction source, a leaf of the search, and after a
+ // clean probe (one ray cast from the entry tile through the portal hit no dragon) a first-step candidate.
+ constexpr double FRONTIER_VALUE = 4.0;       // expected value behind an unexplored portal when hungry
+-constexpr double FRONTIER_FED_FRAC = 0.25;   // share of FRONTIER_VALUE right after eating
+-constexpr int    HUNGER_ROUNDS = 25;         // rounds without eating until the frontier counts in full
++constexpr double FRONTIER_FED_FRAC = 0.0;    // cand-portal6: a dragon that eats does not explore at all (was 0.25)
++constexpr int    HUNGER_ROUNDS = 30;         // rounds without eating until the frontier counts in full (was 25)
++                                             // cand-portal6: also no frontier value and no trip back from GATHER_START (340)
+ constexpr double FRONTIER_UNSEEN_GAIN = 2.5; // value x min(1, gain * share of the map this dragon has never seen)
+ constexpr int    FRONTIER_FADE_ROUNDS = 120; // value fades to 0 between 30+this and 30 rounds before the end
+ constexpr int    FRONTIER_MAX_SOURCES = 4;   // nearest frontiers that pull (field = the best one, not the sum)
+diff -ru exp/cand-portal4/bot/plan.cpp exp/cand-portal6/bot/plan.cpp
+--- exp/cand-portal4/bot/plan.cpp	2026-09-30 00:31:55
++++ exp/cand-portal6/bot/plan.cpp	2026-09-30 00:52:11
+@@ -179,6 +179,7 @@
+ void Planner::computeFrontier() {
+     int left = 500 - w_.round;
+     double timeF = std::clamp((left - P::ENDGAME_ROUNDS) / (double)P::FRONTIER_FADE_ROUNDS, 0.0, 1.0);
++    if (w_.round >= P::GATHER_START) timeF = 0.0; // cand-portal6: from the gathering on, the team feeds its king instead
+     double hunger = std::clamp((w_.round - w_.lastAteRound) / (double)P::HUNGER_ROUNDS, 0.0, 1.0);
+     double unseen = 1.0 - (double)w_.tilesObserved / std::max(1, w_.geo.tiles());
+     double unseenF = std::clamp(P::FRONTIER_UNSEEN_GAIN * unseen, 0.0, 1.0);
+@@ -316,6 +317,7 @@
+     // cand-portal3: after a barren trip, path distance back to the tile where we last grew (or were born), like the
+     // gathering goal: every leaf pays RETURN_W per tile, so the way back wins over local wandering
+     returnOn_ = false;
++    if (w_.round >= P::GATHER_START) w_.returning = false; // cand-portal6: the gathering goal takes over
+     if (w_.returning && w_.lastEatT >= 0) {
+         returnDist_.assign(n, 9999);
+         queue_.clear(); queue_.push_back(w_.lastEatT); returnDist_[w_.lastEatT] = 0;

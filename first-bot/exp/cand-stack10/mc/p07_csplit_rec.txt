@@ -1,0 +1,2 @@
+        case 'csplit': { const mt10 = mapTags.get(d.id);                                                // stack5; stack10: " tab" and the process's last map tag
+          made.push({ k: 'csplit', ...base, units: t.units, target: t.target, view: t.view ? 1 : 0, kingTag: t.king ? 1 : 0, tab: t.tab ? 1 : 0, mt10: mt10 && mt10.length ? mt10[mt10.length - 1].tag : null }); break; }

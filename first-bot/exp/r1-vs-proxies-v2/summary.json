@@ -1,0 +1,46 @@
+{
+  "label": "r1-vs-proxies-v2",
+  "bot": "~/01. Project/개인 프로젝트/unsw-heuristic/bot",
+  "at": "2026-09-29T15:49:23.786Z",
+  "benchmark": {
+    "maps": 10,
+    "opps": [
+      "proxy_swarm",
+      "proxy_elim",
+      "proxy_king"
+    ],
+    "seeds": [
+      1,
+      2
+    ],
+    "sides": 2
+  },
+  "all": {
+    "n": 120,
+    "G": 16.35,
+    "alive": 0.6333333333333333,
+    "win": 0.26666666666666666
+  },
+  "byOpp": {
+    "proxy_swarm": {
+      "n": 40,
+      "G": 15.8,
+      "alive": 0.625,
+      "win": 0.325
+    },
+    "proxy_elim": {
+      "n": 40,
+      "G": 14.05,
+      "alive": 0.55,
+      "win": 0.175
+    },
+    "proxy_king": {
+      "n": 40,
+      "G": 19.2,
+      "alive": 0.725,
+      "win": 0.3
+    }
+  },
+  "problems": 0,
+  "errors": 0
+}

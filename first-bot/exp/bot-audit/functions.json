@@ -1,0 +1,786 @@
+[
+  {
+    "file": "plan.cpp",
+    "name": "nowPoints",
+    "start": 17,
+    "end": 21,
+    "raw_lines": 5,
+    "nonempty_code_lines": 4
+  },
+  {
+    "file": "plan.cpp",
+    "name": "initGpow",
+    "start": 26,
+    "end": 31,
+    "raw_lines": 6,
+    "nonempty_code_lines": 6
+  },
+  {
+    "file": "plan.cpp",
+    "name": "mix32",
+    "start": 32,
+    "end": 32,
+    "raw_lines": 1,
+    "nonempty_code_lines": 1
+  },
+  {
+    "file": "plan.cpp",
+    "name": "Planner::computeEnemyDistance",
+    "start": 42,
+    "end": 158,
+    "raw_lines": 117,
+    "nonempty_code_lines": 103
+  },
+  {
+    "file": "plan.cpp",
+    "name": "Planner::computeSoftPenalty",
+    "start": 160,
+    "end": 187,
+    "raw_lines": 28,
+    "nonempty_code_lines": 26
+  },
+  {
+    "file": "plan.cpp",
+    "name": "Planner::threatAt",
+    "start": 189,
+    "end": 194,
+    "raw_lines": 6,
+    "nonempty_code_lines": 6
+  },
+  {
+    "file": "plan.cpp",
+    "name": "Planner::ks2Threat",
+    "start": 197,
+    "end": 204,
+    "raw_lines": 8,
+    "nonempty_code_lines": 8
+  },
+  {
+    "file": "plan.cpp",
+    "name": "Planner::threatAtOld",
+    "start": 207,
+    "end": 212,
+    "raw_lines": 6,
+    "nonempty_code_lines": 6
+  },
+  {
+    "file": "plan.cpp",
+    "name": "Planner::threatCore",
+    "start": 215,
+    "end": 230,
+    "raw_lines": 16,
+    "nonempty_code_lines": 14
+  },
+  {
+    "file": "plan.cpp",
+    "name": "Planner::exploreValue",
+    "start": 233,
+    "end": 246,
+    "raw_lines": 14,
+    "nonempty_code_lines": 14
+  },
+  {
+    "file": "plan.cpp",
+    "name": "Planner::portalPenalty",
+    "start": 250,
+    "end": 265,
+    "raw_lines": 16,
+    "nonempty_code_lines": 15
+  },
+  {
+    "file": "plan.cpp",
+    "name": "Planner::pxPenalty",
+    "start": 271,
+    "end": 282,
+    "raw_lines": 12,
+    "nonempty_code_lines": 12
+  },
+  {
+    "file": "plan.cpp",
+    "name": "Planner::computeFrontier",
+    "start": 287,
+    "end": 311,
+    "raw_lines": 25,
+    "nonempty_code_lines": 24
+  },
+  {
+    "file": "plan.cpp",
+    "name": "Planner::frontierValue",
+    "start": 313,
+    "end": 319,
+    "raw_lines": 7,
+    "nonempty_code_lines": 7
+  },
+  {
+    "file": "plan.cpp",
+    "name": "Planner::blindRisk",
+    "start": 321,
+    "end": 321,
+    "raw_lines": 1,
+    "nonempty_code_lines": 1
+  },
+  {
+    "file": "plan.cpp",
+    "name": "Planner::computeAttract",
+    "start": 324,
+    "end": 461,
+    "raw_lines": 138,
+    "nonempty_code_lines": 126
+  },
+  {
+    "file": "plan.cpp",
+    "name": "Planner::tileEnterable",
+    "start": 466,
+    "end": 472,
+    "raw_lines": 7,
+    "nonempty_code_lines": 7
+  },
+  {
+    "file": "plan.cpp",
+    "name": "Planner::areaSafety",
+    "start": 475,
+    "end": 516,
+    "raw_lines": 42,
+    "nonempty_code_lines": 42
+  },
+  {
+    "file": "plan.cpp",
+    "name": "Planner::dfs",
+    "start": 520,
+    "end": 570,
+    "raw_lines": 51,
+    "nonempty_code_lines": 51
+  },
+  {
+    "file": "plan.cpp",
+    "name": "Planner::tradeValue",
+    "start": 573,
+    "end": 586,
+    "raw_lines": 14,
+    "nonempty_code_lines": 14
+  },
+  {
+    "file": "plan.cpp",
+    "name": "Planner::tradeValuePreVeto",
+    "start": 589,
+    "end": 596,
+    "raw_lines": 8,
+    "nonempty_code_lines": 8
+  },
+  {
+    "file": "plan.cpp",
+    "name": "Planner::lntD3",
+    "start": 600,
+    "end": 604,
+    "raw_lines": 5,
+    "nonempty_code_lines": 5
+  },
+  {
+    "file": "plan.cpp",
+    "name": "Planner::lntRam",
+    "start": 609,
+    "end": 619,
+    "raw_lines": 11,
+    "nonempty_code_lines": 11
+  },
+  {
+    "file": "plan.cpp",
+    "name": "Planner::lntKint",
+    "start": 622,
+    "end": 627,
+    "raw_lines": 6,
+    "nonempty_code_lines": 6
+  },
+  {
+    "file": "plan.cpp",
+    "name": "Planner::lntVeto",
+    "start": 630,
+    "end": 633,
+    "raw_lines": 4,
+    "nonempty_code_lines": 4
+  },
+  {
+    "file": "plan.cpp",
+    "name": "Planner::lntVetoNote",
+    "start": 636,
+    "end": 639,
+    "raw_lines": 4,
+    "nonempty_code_lines": 4
+  },
+  {
+    "file": "plan.cpp",
+    "name": "Planner::smallRam",
+    "start": 642,
+    "end": 657,
+    "raw_lines": 16,
+    "nonempty_code_lines": 16
+  },
+  {
+    "file": "plan.cpp",
+    "name": "Planner::tradeValueBase",
+    "start": 659,
+    "end": 679,
+    "raw_lines": 21,
+    "nonempty_code_lines": 20
+  },
+  {
+    "file": "plan.cpp",
+    "name": "Planner::wantSplit",
+    "start": 682,
+    "end": 710,
+    "raw_lines": 29,
+    "nonempty_code_lines": 26
+  },
+  {
+    "file": "plan.cpp",
+    "name": "Planner::childSafe",
+    "start": 713,
+    "end": 735,
+    "raw_lines": 23,
+    "nonempty_code_lines": 20
+  },
+  {
+    "file": "plan.cpp",
+    "name": "Planner::wantFrag",
+    "start": 740,
+    "end": 755,
+    "raw_lines": 16,
+    "nonempty_code_lines": 15
+  },
+  {
+    "file": "plan.cpp",
+    "name": "Planner::wantBSplit",
+    "start": 760,
+    "end": 767,
+    "raw_lines": 8,
+    "nonempty_code_lines": 8
+  },
+  {
+    "file": "plan.cpp",
+    "name": "Planner::longerAllyKnown",
+    "start": 774,
+    "end": 782,
+    "raw_lines": 9,
+    "nonempty_code_lines": 9
+  },
+  {
+    "file": "plan.cpp",
+    "name": "Planner::wantCsplit",
+    "start": 789,
+    "end": 803,
+    "raw_lines": 15,
+    "nonempty_code_lines": 14
+  },
+  {
+    "file": "plan.cpp",
+    "name": "Planner::utabTarget",
+    "start": 814,
+    "end": 818,
+    "raw_lines": 5,
+    "nonempty_code_lines": 5
+  },
+  {
+    "file": "plan.cpp",
+    "name": "Planner::csplitChildSafe",
+    "start": 825,
+    "end": 845,
+    "raw_lines": 21,
+    "nonempty_code_lines": 21
+  },
+  {
+    "file": "plan.cpp",
+    "name": "Planner::floorMapOn",
+    "start": 852,
+    "end": 856,
+    "raw_lines": 5,
+    "nonempty_code_lines": 5
+  },
+  {
+    "file": "plan.cpp",
+    "name": "Planner::kcapMapOn",
+    "start": 857,
+    "end": 857,
+    "raw_lines": 1,
+    "nonempty_code_lines": 1
+  },
+  {
+    "file": "plan.cpp",
+    "name": "Planner::wantKcap",
+    "start": 863,
+    "end": 871,
+    "raw_lines": 9,
+    "nonempty_code_lines": 9
+  },
+  {
+    "file": "plan.cpp",
+    "name": "Planner::wantFloor",
+    "start": 879,
+    "end": 888,
+    "raw_lines": 10,
+    "nonempty_code_lines": 10
+  },
+  {
+    "file": "plan.cpp",
+    "name": "Planner::wantLsplit",
+    "start": 895,
+    "end": 905,
+    "raw_lines": 11,
+    "nonempty_code_lines": 11
+  },
+  {
+    "file": "plan.cpp",
+    "name": "Planner::ourSide",
+    "start": 910,
+    "end": 914,
+    "raw_lines": 5,
+    "nonempty_code_lines": 5
+  },
+  {
+    "file": "plan.cpp",
+    "name": "Planner::covSide",
+    "start": 919,
+    "end": 923,
+    "raw_lines": 5,
+    "nonempty_code_lines": 5
+  },
+  {
+    "file": "plan.cpp",
+    "name": "Planner::computeFountainGoal",
+    "start": 930,
+    "end": 1003,
+    "raw_lines": 74,
+    "nonempty_code_lines": 68
+  },
+  {
+    "file": "plan.cpp",
+    "name": "Planner::freshDrop",
+    "start": 1006,
+    "end": 1009,
+    "raw_lines": 4,
+    "nonempty_code_lines": 4
+  },
+  {
+    "file": "plan.cpp",
+    "name": "Planner::pickSonarDir",
+    "start": 1014,
+    "end": 1031,
+    "raw_lines": 18,
+    "nonempty_code_lines": 18
+  },
+  {
+    "file": "plan.cpp",
+    "name": "Planner::setSonar",
+    "start": 1034,
+    "end": 1048,
+    "raw_lines": 15,
+    "nonempty_code_lines": 14
+  },
+  {
+    "file": "plan.cpp",
+    "name": "Planner::computeGoal",
+    "start": 1052,
+    "end": 1086,
+    "raw_lines": 35,
+    "nonempty_code_lines": 31
+  },
+  {
+    "file": "plan.cpp",
+    "name": "Planner::computeGhDrops",
+    "start": 1090,
+    "end": 1109,
+    "raw_lines": 20,
+    "nonempty_code_lines": 20
+  },
+  {
+    "file": "plan.cpp",
+    "name": "Planner::pearlValue",
+    "start": 1112,
+    "end": 1112,
+    "raw_lines": 1,
+    "nonempty_code_lines": 1
+  },
+  {
+    "file": "plan.cpp",
+    "name": "Planner::kingFresh",
+    "start": 1117,
+    "end": 1123,
+    "raw_lines": 7,
+    "nonempty_code_lines": 7
+  },
+  {
+    "file": "plan.cpp",
+    "name": "Planner::kxMapOn",
+    "start": 1127,
+    "end": 1131,
+    "raw_lines": 5,
+    "nonempty_code_lines": 5
+  },
+  {
+    "file": "plan.cpp",
+    "name": "Planner::computeKingAway",
+    "start": 1136,
+    "end": 1156,
+    "raw_lines": 21,
+    "nonempty_code_lines": 21
+  },
+  {
+    "file": "plan.cpp",
+    "name": "Planner::pickHotspot",
+    "start": 1158,
+    "end": 1162,
+    "raw_lines": 5,
+    "nonempty_code_lines": 5
+  },
+  {
+    "file": "plan.cpp",
+    "name": "Planner::exactlyExposed",
+    "start": 1167,
+    "end": 1190,
+    "raw_lines": 24,
+    "nonempty_code_lines": 23
+  },
+  {
+    "file": "plan.cpp",
+    "name": "Planner::decide",
+    "start": 1193,
+    "end": 1907,
+    "raw_lines": 715,
+    "nonempty_code_lines": 611
+  },
+  {
+    "file": "proto.cpp",
+    "name": "Reader::fill",
+    "start": 19,
+    "end": 33,
+    "raw_lines": 15,
+    "nonempty_code_lines": 15
+  },
+  {
+    "file": "proto.cpp",
+    "name": "Reader::nextLine",
+    "start": 35,
+    "end": 62,
+    "raw_lines": 28,
+    "nonempty_code_lines": 26
+  },
+  {
+    "file": "proto.cpp",
+    "name": "Reader::peekLine",
+    "start": 64,
+    "end": 67,
+    "raw_lines": 4,
+    "nonempty_code_lines": 4
+  },
+  {
+    "file": "proto.cpp",
+    "name": "toInt",
+    "start": 69,
+    "end": 74,
+    "raw_lines": 6,
+    "nonempty_code_lines": 6
+  },
+  {
+    "file": "proto.cpp",
+    "name": "toU64",
+    "start": 75,
+    "end": 80,
+    "raw_lines": 6,
+    "nonempty_code_lines": 6
+  },
+  {
+    "file": "proto.cpp",
+    "name": "edgeTok",
+    "start": 82,
+    "end": 87,
+    "raw_lines": 6,
+    "nonempty_code_lines": 6
+  },
+  {
+    "file": "proto.cpp",
+    "name": "Reader::readInit",
+    "start": 89,
+    "end": 107,
+    "raw_lines": 19,
+    "nonempty_code_lines": 19
+  },
+  {
+    "file": "proto.cpp",
+    "name": "Reader::readRound",
+    "start": 109,
+    "end": 174,
+    "raw_lines": 66,
+    "nonempty_code_lines": 65
+  },
+  {
+    "file": "proto.cpp",
+    "name": "Writer::endTurn",
+    "start": 176,
+    "end": 186,
+    "raw_lines": 11,
+    "nonempty_code_lines": 10
+  },
+  {
+    "file": "world.cpp",
+    "name": "World::init",
+    "start": 18,
+    "end": 32,
+    "raw_lines": 15,
+    "nonempty_code_lines": 15
+  },
+  {
+    "file": "world.cpp",
+    "name": "World::mirrorTile",
+    "start": 34,
+    "end": 41,
+    "raw_lines": 8,
+    "nonempty_code_lines": 8
+  },
+  {
+    "file": "world.cpp",
+    "name": "World::mirrorDir",
+    "start": 42,
+    "end": 48,
+    "raw_lines": 7,
+    "nonempty_code_lines": 7
+  },
+  {
+    "file": "world.cpp",
+    "name": "World::canonicalPortalEnd",
+    "start": 50,
+    "end": 55,
+    "raw_lines": 6,
+    "nonempty_code_lines": 6
+  },
+  {
+    "file": "world.cpp",
+    "name": "World::setEdge",
+    "start": 57,
+    "end": 69,
+    "raw_lines": 13,
+    "nonempty_code_lines": 13
+  },
+  {
+    "file": "world.cpp",
+    "name": "World::across",
+    "start": 71,
+    "end": 89,
+    "raw_lines": 19,
+    "nonempty_code_lines": 19
+  },
+  {
+    "file": "world.cpp",
+    "name": "World::ingest",
+    "start": 92,
+    "end": 123,
+    "raw_lines": 32,
+    "nonempty_code_lines": 30
+  },
+  {
+    "file": "world.cpp",
+    "name": "World::ingestTiles",
+    "start": 125,
+    "end": 160,
+    "raw_lines": 36,
+    "nonempty_code_lines": 33
+  },
+  {
+    "file": "world.cpp",
+    "name": "kindOf",
+    "start": 162,
+    "end": 162,
+    "raw_lines": 1,
+    "nonempty_code_lines": 1
+  },
+  {
+    "file": "world.cpp",
+    "name": "World::ingestEdges",
+    "start": 164,
+    "end": 173,
+    "raw_lines": 10,
+    "nonempty_code_lines": 10
+  },
+  {
+    "file": "world.cpp",
+    "name": "World::ingestDragons",
+    "start": 175,
+    "end": 231,
+    "raw_lines": 57,
+    "nonempty_code_lines": 53
+  },
+  {
+    "file": "world.cpp",
+    "name": "World::updateOwnBody",
+    "start": 233,
+    "end": 261,
+    "raw_lines": 29,
+    "nonempty_code_lines": 28
+  },
+  {
+    "file": "world.cpp",
+    "name": "World::buildOccupancy",
+    "start": 263,
+    "end": 290,
+    "raw_lines": 28,
+    "nonempty_code_lines": 27
+  },
+  {
+    "file": "world.cpp",
+    "name": "World::updateSymmetry",
+    "start": 292,
+    "end": 326,
+    "raw_lines": 35,
+    "nonempty_code_lines": 35
+  },
+  {
+    "file": "world.cpp",
+    "name": "World::applyMirror",
+    "start": 328,
+    "end": 368,
+    "raw_lines": 41,
+    "nonempty_code_lines": 40
+  },
+  {
+    "file": "world.cpp",
+    "name": "World::ingestSonar",
+    "start": 370,
+    "end": 398,
+    "raw_lines": 29,
+    "nonempty_code_lines": 28
+  },
+  {
+    "file": "world.cpp",
+    "name": "World::pearlProb",
+    "start": 400,
+    "end": 424,
+    "raw_lines": 25,
+    "nonempty_code_lines": 25
+  },
+  {
+    "file": "world.cpp",
+    "name": "World::teamLongestKnown",
+    "start": 426,
+    "end": 426,
+    "raw_lines": 1,
+    "nonempty_code_lines": 1
+  },
+  {
+    "file": "world.cpp",
+    "name": "World::encodeMsg",
+    "start": 428,
+    "end": 437,
+    "raw_lines": 10,
+    "nonempty_code_lines": 10
+  },
+  {
+    "file": "world.cpp",
+    "name": "World::encodeKingMsg",
+    "start": 439,
+    "end": 447,
+    "raw_lines": 9,
+    "nonempty_code_lines": 9
+  },
+  {
+    "file": "world.cpp",
+    "name": "World::decodeMsg",
+    "start": 449,
+    "end": 465,
+    "raw_lines": 17,
+    "nonempty_code_lines": 17
+  },
+  {
+    "file": "main.cpp",
+    "name": "main",
+    "start": 13,
+    "end": 62,
+    "raw_lines": 50,
+    "nonempty_code_lines": 46
+  },
+  {
+    "file": "mapid.cpp",
+    "name": "hexBit",
+    "start": 24,
+    "end": 24,
+    "raw_lines": 1,
+    "nonempty_code_lines": 1
+  },
+  {
+    "file": "mapid.cpp",
+    "name": "tableEdge",
+    "start": 25,
+    "end": 29,
+    "raw_lines": 5,
+    "nonempty_code_lines": 5
+  },
+  {
+    "file": "mapid.cpp",
+    "name": "tableRange",
+    "start": 30,
+    "end": 34,
+    "raw_lines": 5,
+    "nonempty_code_lines": 5
+  },
+  {
+    "file": "mapid.cpp",
+    "name": "tableFits",
+    "start": 35,
+    "end": 43,
+    "raw_lines": 9,
+    "nonempty_code_lines": 9
+  },
+  {
+    "file": "mapid.cpp",
+    "name": "World::initMapId",
+    "start": 45,
+    "end": 53,
+    "raw_lines": 9,
+    "nonempty_code_lines": 9
+  },
+  {
+    "file": "mapid.cpp",
+    "name": "World::updateMapId",
+    "start": 55,
+    "end": 78,
+    "raw_lines": 24,
+    "nonempty_code_lines": 24
+  },
+  {
+    "file": "mapid.cpp",
+    "name": "World::mapIs",
+    "start": 80,
+    "end": 82,
+    "raw_lines": 3,
+    "nonempty_code_lines": 3
+  },
+  {
+    "file": "mapid.cpp",
+    "name": "World::mapFamIs",
+    "start": 85,
+    "end": 87,
+    "raw_lines": 3,
+    "nonempty_code_lines": 3
+  },
+  {
+    "file": "mapid.cpp",
+    "name": "World::mapFountAt",
+    "start": 91,
+    "end": 100,
+    "raw_lines": 10,
+    "nonempty_code_lines": 10
+  },
+  {
+    "file": "mapid.cpp",
+    "name": "World::mapTerrAt",
+    "start": 102,
+    "end": 113,
+    "raw_lines": 12,
+    "nonempty_code_lines": 12
+  },
+  {
+    "file": "mapid.cpp",
+    "name": "World::mapTag",
+    "start": 115,
+    "end": 120,
+    "raw_lines": 6,
+    "nonempty_code_lines": 6
+  }
+]

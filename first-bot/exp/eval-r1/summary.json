@@ -1,0 +1,53 @@
+{
+  "label": "g5-r1-base",
+  "bot": "~/orca/workspaces/unsw-arena/g5/lineages/g5/bot",
+  "at": "2026-09-29T03:33:01.142Z",
+  "benchmark": {
+    "maps": 10,
+    "opps": [
+      "replay_rules_v8",
+      "archetype_swarm",
+      "archetype_hunter",
+      "h2"
+    ],
+    "seeds": [
+      1,
+      2
+    ],
+    "sides": 2
+  },
+  "all": {
+    "n": 160,
+    "G": 38.20625,
+    "alive": 0.95625,
+    "win": 0.86875
+  },
+  "byOpp": {
+    "replay_rules_v8": {
+      "n": 40,
+      "G": 36.15,
+      "alive": 0.95,
+      "win": 0.75
+    },
+    "archetype_swarm": {
+      "n": 40,
+      "G": 33.05,
+      "alive": 0.975,
+      "win": 0.9
+    },
+    "archetype_hunter": {
+      "n": 40,
+      "G": 28.45,
+      "alive": 0.9,
+      "win": 0.825
+    },
+    "h2": {
+      "n": 40,
+      "G": 55.175,
+      "alive": 1,
+      "win": 1
+    }
+  },
+  "problems": 0,
+  "errors": 0
+}

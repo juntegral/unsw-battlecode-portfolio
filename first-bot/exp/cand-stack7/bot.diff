@@ -1,0 +1,212 @@
+diff -u exp/cand-stack6/bot/mapid.cpp exp/cand-stack7/bot/mapid.cpp
+--- exp/cand-stack6/bot/mapid.cpp	2026-09-30 15:25:51
++++ exp/cand-stack7/bot/mapid.cpp	2026-09-30 17:01:31
+@@ -80,6 +80,11 @@
+     return !mapNone && mapIdx >= 0 && mapLayout == layout && std::strcmp(mapdb::MAPS[mapdb::MAPS[mapIdx].fam].name, famName) == 0;
+ }
+ 
++// stack7 (the floor / kcap map gate): the family is known once every map left belongs to it; the layout does not matter there
++bool World::mapFamIs(const char* famName) const {
++    return !mapNone && mapFam >= 0 && std::strcmp(mapdb::MAPS[mapFam].name, famName) == 0;
++}
++
+ std::string World::mapTag() const {
+     if (mapNone) return "map=none";
+     if (mapIdx >= 0) return std::string("map=") + mapdb::MAPS[mapdb::MAPS[mapIdx].fam].name + "/" + mapLayout;
+diff -u exp/cand-stack6/bot/params.hpp exp/cand-stack7/bot/params.hpp
+--- exp/cand-stack6/bot/params.hpp	2026-09-30 15:26:26
++++ exp/cand-stack7/bot/params.hpp	2026-09-30 17:01:14
+@@ -132,7 +132,7 @@
+ constexpr int    GATHER_FEED_MIN_LEN = 4;   // before the late window, only feeders at least this long (an L2 gives one pearl)
+ 
+ // --- stack1 (2026-09-30): hypotheses from top-vs-top replays, each with its own indicator tag for the per-wave check
+-// (research/experiments/mech-stack1.md). Toggles: CONV_ON (M1), RAM_SMALL_ON (M2), KS_ON (M3); stack2 below: FRAG_ON, GRAB_ON; stack3: KS2_ON; stack4: TG_ON, ESC_SPLIT_ON, PX_ON, GX_ON, SPLIT_TAIL_ON; stack5: CSPLIT_ON, FGUARD_ON, COV_ON. M1 conv (R3/K1, mass ledger H1): from CONV_START a small piece next to a big
++// (research/experiments/mech-stack1.md). Toggles: CONV_ON (M1), RAM_SMALL_ON (M2), KS_ON (M3); stack2 below: FRAG_ON, GRAB_ON; stack3: KS2_ON; stack4: TG_ON, ESC_SPLIT_ON, PX_ON, GX_ON, SPLIT_TAIL_ON; stack5: CSPLIT_ON, FGUARD_ON, COV_ON; stack7: FLOOR_ON, KCAP_ON. M1 conv (R3/K1, mass ledger H1): from CONV_START a small piece next to a big
+ // visible ally dies into its own neck so that ally eats the pearls. Tag "feed #<ally> d<dist> L<len> conv".
+ constexpr bool   CONV_ON = true;
+ constexpr int    CONV_START = 300;          // top winners start sacrificing about r300 (half done by r380)
+@@ -353,6 +353,46 @@
+ constexpr int    BSPLIT_MAX_LEN = 9;        // R2: length 5-9; longer ones (C3) split 0.7% on b and stay as they are
+ constexpr int    BSPLIT_CHILD = 2;          // C4: 93.6% of b children are length 2
+ constexpr int    BSPLIT_CAP = 16;           // elite b winners hold 16 [14, 19] dragons at r100
++
++// --- stack7 (2026-09-30): proposals 1 and 2 of the elimination study research/observations/our-eliminations.md (section 4; our
++// 1,050 elite-set games + 10,171 top-vs-top games), each with its own toggle and indicator tag (research/experiments/cand-stack7.md).
++// With FLOOR_ON and KCAP_ON both false the bot plays exactly as stack6 (checked by replay event hashes on two local games).
++// We are eliminated in 81% of our elimination-map games. Our units stay at 2-4 while the opponent's grow to 30-60, and our losses are
++// 1:1 head-on trades (study 1.2-1.4): with ten times the units the same trade erases only us. Top losers that survive, once down to
++// <= 3 dragons (enemy >= 8), split 2.0 times in the next 20 rounds and 23-26% are back to >= 4 dragons 20 rounds later; our
++// eliminated games split 0.5 times and 5% recover, although we hold the length to split (total 13.2, longest 7.1; study 2.6).
++// Precedence in decide(): policy split -> frag -> bsp -> csplit -> kcap -> floor. One split per turn and one tag per split: kcap and
++// floor fire only on turns the earlier rules leave (after csplit's window, a king csplit keeps whole, csplit's 8-round gap, its
++// 2-exit child spot), so their gates are measured on firings that do not overlap csplit or bsp (study 4, "stack5와의 관계").
++// Map gate (study 4, "지도 가르기"): both are off where our structure wins and early splits cost the elite too (E1, family length 10
++// rounds after a split: Autarky -0.83, PD6 -0.96, Portals -0.35), that is on Autarky, Prisoners Dilemma (6 and 10 dragons) and
++// Portals, and while this process has not recognised the map family (World::mapFamIs: off before recognition and on "map=none").
++// The family is enough (both layouts of a family are on or off). kcap is also off on Slithery Fight (the study keeps it to maps whose
++// start dragons are all of length <= 4; Slithery Fight starts each team with an L25).
++// floor (proposal 1): from FLOOR_START, while the team has <= FLOOR_UNITS dragons (UNIT_COUNT, exact), a dragon of length >=
++// FLOOR_MIN_LEN splits off a FLOOR_CHILD child, with enemy heads in view too; only the child's spot is checked (csplit's near-tail
++// rule: a known tail, no enemy head within FLOOR_TAIL_DIST of it, >= FLOOR_MIN_EXITS exits). The king is included before GATHER_START;
++// from then (the late gathering) only a dragon that knows a longer ally splits, and a lone dragon keeps the insurance split's length
++// (SPLIT_FIRST_LEN). It ends at SPLIT_LAST_ROUND like every policy split. The move gate of every split stays (no pearl on the best
++// first step, the best move unthreatened and safe, no enemy head within 2 of our head: the parent stands still on a split turn).
++// Tag "split2 u<units> L<len> floor".
++constexpr bool   FLOOR_ON = true;
++constexpr int    FLOOR_START = 30;          // the top LS - LX unit gap opens from r30 (study 2.3: r10 0.00, r30 +0.61, r50 +1.38)
++constexpr int    FLOOR_UNITS = 3;           // the study's low-unit state (<= 3 dragons)
++constexpr int    FLOOR_MIN_LEN = 4;         // the parent keeps >= 2
++constexpr int    FLOOR_CHILD = 2;           // top winners' children are length 2 in 76% / 90% (territory study)
++constexpr int    FLOOR_TAIL_DIST = 2;       // no enemy head within this path distance of the child's head (our tail)
++constexpr int    FLOOR_MIN_EXITS = 1;       // the study: one exit is enough for a 2-segment child
++// kcap (proposal 2): before KCAP_END, while the team has fewer than KCAP_UNITS dragons, a dragon that believes it is our longest
++// (World::iAmLongest) and is at least KCAP_LEN long splits off a KCAP_CHILD child (the child's spot as floor's). King kills are 16% of
++// our eliminations (top eliminated losers 6%); our 91 kings lost were L12.3 on average, 74% by a sprint ram of a 4.7-long enemy, with
++// 1.7 of our dragons left (study 1.3, 2.1). Our longest at r50 on elimination maps is 6.8 (top W 3.7, LS 3.8, LX 3.0; study 2.2).
++// Tag "split2 u<units> L<len> kcap".
++constexpr bool   KCAP_ON = true;
++constexpr int    KCAP_LEN = 7;
++constexpr int    KCAP_UNITS = 6;
++constexpr int    KCAP_END = 250;            // csplit's window; frag and the king's growth take over from r250
++constexpr int    KCAP_CHILD = 2;
+ 
+ // --- search / budget ---
+ constexpr int    DFS_DEPTH_MAX = 7;
+diff -u exp/cand-stack6/bot/plan.cpp exp/cand-stack7/bot/plan.cpp
+--- exp/cand-stack6/bot/plan.cpp	2026-09-30 15:26:26
++++ exp/cand-stack7/bot/plan.cpp	2026-09-30 17:02:45
+@@ -693,15 +693,15 @@
+     if (L >= P::KING_MIN_LEN && !longerAllyKnown(P::FRAG_KING_MEMORY)) return false;
+     size = P::CSPLIT_CHILD;
+     if (L - size < 2) return false;
+-    return csplitChildSafe();
++    return csplitChildSafe(P::CSPLIT_TAIL_DIST, P::SPLIT_MIN_CHILD_EXITS);
+ }
+ 
+ // stack5 csplit: childSafe() without its "no enemy head in view" rule. The child's head (our tail) must be known and open,
+-// with >= SPLIT_MIN_CHILD_EXITS exits, and no enemy head within CSPLIT_TAIL_DIST steps of it. childSafe()'s near-tail rule
+-// (enemyDist_[tail] <= 2) never fired: the enemy field gives no distance to an occupied tile such as our tail (failure study,
++// with >= minExits exits (csplit: SPLIT_MIN_CHILD_EXITS), and no enemy head within tailDist steps of it (csplit: CSPLIT_TAIL_DIST).
++// childSafe()'s near-tail rule (enemyDist_[tail] <= 2) never fired: the enemy field gives no distance to an occupied tile such as our tail (failure study,
+ // stack4 cand-stack4.md). SC.enemyFar (heads seen within 3 rounds) passes tiles once they are vacated; an enemy head beside the
+-// tail is seen through the neighbour it stands on.
+-bool Planner::csplitChildSafe() const {
++// tail is seen through the neighbour it stands on. stack7 floor and kcap use it with FLOOR_TAIL_DIST and FLOOR_MIN_EXITS.
++bool Planner::csplitChildSafe(int tailDist, int minExits) const {
+     int L = w_.myLen;
+     if (w_.body.empty() || (int)w_.body.size() < L) return false;
+     int tail = w_.body[L - 1], neck = w_.body[L - 2];
+@@ -711,7 +711,7 @@
+     for (int d = 0; d < 4; d++) if (tt.edge[d] == EDGE_UNKNOWN) return false;
+     int near = SC.enemyFar[tail];
+     for (int d = 0; d < 4; d++) { int u = w_.across(tail, d); if (u >= 0 && u != neck) near = std::min(near, SC.enemyFar[u] + 1); }
+-    if (near <= P::CSPLIT_TAIL_DIST) return false;
++    if (near <= tailDist) return false;
+     const std::vector<int16_t>& ed = P::TG_ON ? enemyDistOld_ : enemyDist_;  // as childSafe()
+     int exits = 0;
+     for (int d = 0; d < 4; d++) {
+@@ -720,9 +720,52 @@
+         if (w_.occNow[u] != 0 || ed[u] <= 1) continue;
+         exits++;
+     }
+-    return exits >= P::SPLIT_MIN_CHILD_EXITS;
++    return exits >= minExits;
+ }
+ 
++// stack7 map gate (elimination study 4, "지도 가르기"): floor and kcap only on the map families we lose (Trophy, Queen Of Spades,
++// Devil, Default, Schooltime, Trauma, Slithery Fight), as this process recognised them. Off on Autarky, Prisoners Dilemma (both
++// versions) and Portals, where our structure wins and early splits cost the elite family length too (E1: -0.83, -0.96, -0.35), and
++// off before the family is known or after a contradiction ("map=none"). kcap: not on Slithery Fight either (start L25; the study
++// keeps kcap to maps whose start dragons are all of length <= 4).
++bool Planner::floorMapOn() const {
++    for (const char* f : {"Trophy", "Queen_Of_Spades", "Devil", "Default", "Schooltime", "Trauma", "Slithery_Fight"})
++        if (w_.mapFamIs(f)) return true;
++    return false;
++}
++bool Planner::kcapMapOn() const { return floorMapOn() && !w_.mapFamIs("Slithery_Fight"); }
++
++// stack7 kcap (elimination study 4, proposal 2): before KCAP_END, while the team has fewer than KCAP_UNITS dragons, the dragon
++// that believes it is our longest and is >= KCAP_LEN long splits off a KCAP_CHILD child. King kills end 16% of our eliminations
++// (top eliminated losers 6%): our lost kings were L12.3 on average, rammed by 4.7-long sprinters with 1.7 of our dragons left.
++// csplit (tried first) keeps a king of length >= KING_MIN_LEN whole; kcap cuts it, and an L7 king in csplit's gap.
++bool Planner::wantKcap(int& size) const {
++    if (!P::KCAP_ON || w_.round >= P::KCAP_END) return false;
++    int L = w_.myLen;
++    if (L < P::KCAP_LEN || !w_.iAmLongest() || w_.unitCount >= std::min(w_.unitLimit, P::KCAP_UNITS)) return false;
++    if (!kcapMapOn()) return false;
++    size = P::KCAP_CHILD;
++    if (L - size < 2) return false;
++    return csplitChildSafe(P::FLOOR_TAIL_DIST, P::FLOOR_MIN_EXITS);
++}
++
++// stack7 floor (elimination study 4, proposal 1): from FLOOR_START, while the team has <= FLOOR_UNITS dragons, a dragon of length
++// >= FLOOR_MIN_LEN splits off a FLOOR_CHILD child even with enemy heads in view (the child's spot is checked). Top losers that
++// survive split 2.0 times in the 20 rounds after falling to <= 3 dragons and 23-26% recover to >= 4; our eliminated games 0.5 and
++// 5%, with the length to split (total 13.2, longest 7.1). The king is included before GATHER_START; from then the late gathering
++// concentrates length on the king, so only a dragon that knows a longer ally splits, and a lone dragon keeps the insurance split's
++// length rule (SPLIT_FIRST_LEN; the study leaves it to that split, now without the "no enemy head in view" rule).
++bool Planner::wantFloor(int& size) const {
++    if (!P::FLOOR_ON || w_.round < P::FLOOR_START || w_.round > P::SPLIT_LAST_ROUND) return false;
++    int L = w_.myLen;
++    if (L < P::FLOOR_MIN_LEN || w_.unitCount > P::FLOOR_UNITS || w_.unitCount >= w_.unitLimit) return false;
++    if (w_.round >= P::GATHER_START && (w_.unitCount == 1 ? L < P::SPLIT_FIRST_LEN : !longerAllyKnown(P::FRAG_KING_MEMORY))) return false;
++    if (!floorMapOn()) return false;
++    size = P::FLOOR_CHILD;
++    if (L - size < 2) return false;
++    return csplitChildSafe(P::FLOOR_TAIL_DIST, P::FLOOR_MIN_EXITS);
++}
++
+ // stack5 F / cov: our side = tiles nearer (torus Manhattan) to our first head tile than their mirror image is. The enemy starts
+ // on the mirror of our start, so near our start this is the study's territory (a tile belongs to the team whose starting
+ // bodies are nearer). Unknown until the symmetry is resolved.
+@@ -1430,8 +1473,10 @@
+     // (stack2 S1: or a fragment split when the policy says no, tagged " frag")
+     // (stack5 csplit: or a coverage split when neither says so, tagged "csplit<n> u<units> L<len> t<target>")
+     // (cand-mapid: or an early split on a recognised Schooltime b, tagged " bsp"; it is tried before csplit)
+-    int splitSize = 0; bool frag = false, csplit = false, bsplit = false;
+-    if (!cands[best].trade && !cands[best].blind && (wantSplit(splitSize) || (frag = wantFrag(splitSize)) || (bsplit = wantBSplit(splitSize)) || (csplit = wantCsplit(splitSize)))) {
++    // (stack7: or, when none of those says so, the king length cap " kcap", then the unit floor " floor")
++    int splitSize = 0; bool frag = false, csplit = false, bsplit = false, kcap = false, floorSp = false;
++    if (!cands[best].trade && !cands[best].blind && (wantSplit(splitSize) || (frag = wantFrag(splitSize)) || (bsplit = wantBSplit(splitSize)) || (csplit = wantCsplit(splitSize)) ||
++                                                     (kcap = wantKcap(splitSize)) || (floorSp = wantFloor(splitSize)))) {
+         double immediate = cands[best].tiles.empty() ? 0.0 : SC.pnow[cands[best].tiles[0]];
+         bool threatened = false; for (int t : cands[best].tiles) if (threatAt(t) > 0.0) threatened = true;
+         if (immediate < 0.5 && !threatened && safety[best] > -1.0 && enemyDist_[w_.headT] > 2) {
+@@ -1439,7 +1484,7 @@
+             if (frag) lastFragRound_ = w_.round;
+             if (csplit) lastCsplitRound_ = w_.round;
+             setSonar(act);
+-            char buf[64]; snprintf(buf, sizeof buf, "split%d u%d L%d%s", splitSize, w_.unitCount, w_.myLen, frag ? " frag" : bsplit ? " bsp" : "");
++            char buf[64]; snprintf(buf, sizeof buf, "split%d u%d L%d%s", splitSize, w_.unitCount, w_.myLen, frag ? " frag" : bsplit ? " bsp" : kcap ? " kcap" : floorSp ? " floor" : "");
+             if (csplit) snprintf(buf, sizeof buf, "csplit%d u%d L%d t%d%s%s", splitSize, w_.unitCount, w_.myLen, csplitTarget_,
+                                  w_.enemyHeadsNow.empty() ? "" : " v", w_.iAmLongest() ? " k" : ""); // stack5 csplit
+             act.indicator = buf;
+diff -u exp/cand-stack6/bot/plan.hpp exp/cand-stack7/bot/plan.hpp
+--- exp/cand-stack6/bot/plan.hpp	2026-09-30 15:26:26
++++ exp/cand-stack7/bot/plan.hpp	2026-09-30 17:01:49
+@@ -96,9 +96,13 @@
+     bool childSafe() const;                     // the child born at our tail can move (no enemy head in view)
+     bool wantFrag(int& size) const;             // stack2 S1
+     bool wantCsplit(int& size) const;           // stack5 csplit
+-    bool csplitChildSafe() const;               // stack5 csplit: childSafe() without its "no enemy head in view" rule
++    bool csplitChildSafe(int tailDist, int minExits) const; // stack5 csplit: childSafe() without its "no enemy head in view" rule
+     void computeFountainGoal();                 // stack5 F
+     bool wantBSplit(int& size) const;           // cand-mapid bsplit (Schooltime b early split)
++    bool wantKcap(int& size) const;             // stack7 kcap (king length cap before r250)
++    bool wantFloor(int& size) const;            // stack7 floor (unit-floor split)
++    bool floorMapOn() const;                    // stack7: this process recognised a map family where floor is on
++    bool kcapMapOn() const;                     // stack7: ... where kcap is on
+     bool longerAllyKnown(int maxAge) const;     // stack2 S1: an ally seen or heard within maxAge rounds is longer than us
+     bool freshDrop(int t) const;                // stack2 S2: t holds a death drop we first saw within GRAB_ROUNDS
+     int pickSonarDir(int fromT, int facing, bool* probe = nullptr) const;
+diff -u exp/cand-stack6/bot/world.hpp exp/cand-stack7/bot/world.hpp
+--- exp/cand-stack6/bot/world.hpp	2026-09-30 15:25:51
++++ exp/cand-stack7/bot/world.hpp	2026-09-30 17:01:31
+@@ -115,6 +115,7 @@
+     int mapDecidedRound = -1; // round of the decision
+     int mapTagState = -2;     // state last written to the indicator (mapStateCode()); -2 = never
+     bool mapIs(const char* famName, char layout) const;   // decided on this family (mapdb name) and layout
++    bool mapFamIs(const char* famName) const;              // stack7: this family known (layout decided or not), not "none"
+     int mapStateCode() const { return mapNone ? -1 : mapIdx >= 0 ? 1000 + mapIdx : mapFam >= 0 ? 100 + mapFam : 0; }
+     std::string mapTag() const;                            // "map=<Name>/<a|b|?>", "map=?", "map=none"
+ 

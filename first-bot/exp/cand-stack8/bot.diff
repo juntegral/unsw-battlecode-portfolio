@@ -1,0 +1,419 @@
+diff -ruN exp/cand-stack7/bot/main.cpp exp/cand-stack8/bot/main.cpp
+--- exp/cand-stack7/bot/main.cpp	2026-09-30 16:59:36
++++ exp/cand-stack8/bot/main.cpp	2026-09-30 18:12:50
+@@ -30,6 +30,7 @@
+             if (e.enemy > 0 || e.enemyHead > 0) world.enemyEchoDir[lastSonarDir] = world.round;
+             world.probeDir = lastSonarDir; world.probeRound = world.round;
+             world.probeClear = (e.ally + e.allyHead + e.enemy + e.enemyHead) == 0;
++            world.probeAlly = (e.ally + e.allyHead) > 0;   // stack8 px2
+             world.probeFromT = lastSonarFrom; // the ray left our head as it stood after last turn's action
+         }
+         Action a = planner.decide();
+diff -ruN exp/cand-stack7/bot/mapid.cpp exp/cand-stack8/bot/mapid.cpp
+--- exp/cand-stack7/bot/mapid.cpp	2026-09-30 17:01:31
++++ exp/cand-stack8/bot/mapid.cpp	2026-09-30 18:12:50
+@@ -14,6 +14,7 @@
+ #include <cstring>
+ 
+ #include "mapdb.hpp"
++#include "terrdb.hpp"
+ #include "world.hpp"
+ 
+ namespace seed0 {
+@@ -83,6 +84,32 @@
+ // stack7 (the floor / kcap map gate): the family is known once every map left belongs to it; the layout does not matter there
+ bool World::mapFamIs(const char* famName) const {
+     return !mapNone && mapFam >= 0 && std::strcmp(mapdb::MAPS[mapFam].name, famName) == 0;
++}
++
++// stack8 F2: the table's fountain (the ledger's definition: spawn gap mean (min + max) / 2 <= 12) and territory (terrdb.hpp) at tile t,
++// once the family is known (mapFam >= 0: every map left is of one family) and every table map left agrees on t; -1 otherwise
++int World::mapFountAt(int t) const {
++    if (mapNone || mapFam < 0 || nMapCand <= 0) return -1;
++    int v = -1;
++    for (int c = 0; c < nMapCand; c++) {
++        int lo, hi; tableRange(mapCand[c], t, lo, hi);
++        int f = hi > 0 && lo + hi <= 24 ? 1 : 0;
++        if (v < 0) v = f; else if (v != f) return -1;
++    }
++    return v;
++}
++
++int World::mapTerrAt(int t, int homeT) const {
++    if (mapNone || mapFam < 0 || nMapCand <= 0 || homeT < 0) return -1;
++    int v = -1;
++    for (int c = 0; c < nMapCand; c++) {
++        const char* T = terrdb::TERR[mapCand[c]];
++        char h = T[homeT], x = T[t];
++        if (h == '0') return -1;                       // a neutral home tile does not tell the side
++        int s = x == '0' ? 0 : x == h ? 1 : 2;
++        if (v < 0) v = s; else if (v != s) return -1;
++    }
++    return v;
+ }
+ 
+ std::string World::mapTag() const {
+diff -ruN exp/cand-stack7/bot/params.hpp exp/cand-stack8/bot/params.hpp
+--- exp/cand-stack7/bot/params.hpp	2026-09-30 17:01:14
++++ exp/cand-stack8/bot/params.hpp	2026-09-30 18:42:24
+@@ -132,7 +132,7 @@
+ constexpr int    GATHER_FEED_MIN_LEN = 4;   // before the late window, only feeders at least this long (an L2 gives one pearl)
+ 
+ // --- stack1 (2026-09-30): hypotheses from top-vs-top replays, each with its own indicator tag for the per-wave check
+-// (research/experiments/mech-stack1.md). Toggles: CONV_ON (M1), RAM_SMALL_ON (M2), KS_ON (M3); stack2 below: FRAG_ON, GRAB_ON; stack3: KS2_ON; stack4: TG_ON, ESC_SPLIT_ON, PX_ON, GX_ON, SPLIT_TAIL_ON; stack5: CSPLIT_ON, FGUARD_ON, COV_ON; stack7: FLOOR_ON, KCAP_ON. M1 conv (R3/K1, mass ledger H1): from CONV_START a small piece next to a big
++// (research/experiments/mech-stack1.md). Toggles: CONV_ON (M1), RAM_SMALL_ON (M2), KS_ON (M3); stack2 below: FRAG_ON, GRAB_ON; stack3: KS2_ON; stack4: TG_ON, ESC_SPLIT_ON, PX_ON, GX_ON, SPLIT_TAIL_ON; stack5: CSPLIT_ON, FGUARD_ON, COV_ON; stack7: FLOOR_ON, KCAP_ON; stack8: F2_ON, F2P_ON, PX2_ON, CLAIM_ALLY_ON, CLAIM_ENEMY_ON. M1 conv (R3/K1, mass ledger H1): from CONV_START a small piece next to a big
+ // visible ally dies into its own neck so that ally eats the pearls. Tag "feed #<ally> d<dist> L<len> conv".
+ constexpr bool   CONV_ON = true;
+ constexpr int    CONV_START = 300;          // top winners start sacrificing about r300 (half done by r380)
+@@ -393,6 +393,61 @@
+ constexpr int    KCAP_UNITS = 6;
+ constexpr int    KCAP_END = 250;            // csplit's window; frag and the king's growth take over from r250
+ constexpr int    KCAP_CHILD = 2;
++
++// --- stack8 (2026-09-30): refinements of two partially applied W5 pieces (F; the portal side effect of csplit), each with its own
++// toggle and indicator tag (research/experiments/cand-stack8.md; failure classes over every F target and every portal crossing of
++// the W5-W7 online sets, exp/cand-stack8/study.js + classify.js). With F2_ON, F2P_ON, PX2_ON, CLAIM_ALLY_ON and CLAIM_ENEMY_ON all false the bot
++// plays exactly as stack7 (checked by replay event hashes on two local games).
++// F2 (F target choice). W5+W6: 6,573 F targets (dragon x fountain), 72% in the designed situation; the misses are a tile outside our
++// territory (13%: Portals 522, Slithery Fight 204; the mirror-side rule measures Manhattan distance from this dragon's first head
++// tile, the territory is movement distance from the team's starting bodies through kelp and portals), another head of ours already
++// within 3 (13%: in 214 of them we were nearer, so the old rule took it) and not a true fountain (1%). Of the designed targets, those
++// 0-3 steps away when first tagged were reached in 94%, 4-6 in 27%, 7-10 in 7%, 11-20 in 5% (F's pull is FG_W a tile).
++// With F2_ON: fountains and territory come from the recognised map (mapdb.hpp palettes, terrdb.hpp; World::mapFountAt/mapTerrAt,
++// used once every table map left agrees on the tile, else the old rules; our side is the table side of our first head tile, since
++// the server swaps the file's team letters in about half of the online games); a new target is at most FG2_MAX_DIST away, has no fresh
++// ally head within FG_GUARD_DIST (any, not only a nearer one), and no fresh ally head of a non-king length nearer to it (Manhattan;
++// ties to the lower id: two heads do not chase one fountain); a held target is kept while it stays within FG2_KEEP_DIST and no nearer
++// ally head guards it (the old rule). Tag " F2" after the F tag when the target's fountain and side came from the table.
++constexpr bool   F2_ON = true;
++constexpr int    FG2_MAX_DIST = 6;          // new targets (designed targets 4-6 away were reached in 27%, 7+ in 6%)
++constexpr int    FG2_KEEP_DIST = 9;         // hysteresis for the held target (a pearl may pull us a few steps off)
++constexpr int    FG2_CLAIM_STALE = 5;       // a nearer ally claims a new target only if seen or heard this recently
++// F2p (coordinator 18:0x; supply-chain study: "the F hold should release while the piece holds a live claim"): F must not pull a
++// dragon away from a spawn it is the nearest head to. W5+W6: 26% of 49,287 F-tagged turns had a natural pearl within 7 (outside the
++// target group) with us as the unique nearest head, 15% moved away from one, and the enemy ate 13% of those pearls (Slithery Fight
++// 35%, Trauma 31%); on 500-round maps a child ate 29% of its claims on F-labelled turns, 43% without F (supply-chain). With F2P_ON the
++// F pull is off for the turn (target kept) while this dragon holds a live claim (below; any length) outside FG_HOLD of the group
++// that no known head is nearer to at this turn ([local v1, 18:38]: the claim's hysteresis is for cl / ce only).
++// Tag " Fp@<x>,<y>" (the claimed pearl) after the F tag, which stays on the paused turn (the target is held).
++constexpr bool   F2P_ON = true;
++// Claims (supply-chain proposal, 18:07; exp/supply-chain/child_forage.js): a pearl (pearlProb >= 0.15) within CLAIM_REACH of our head
++// (headDist_), seen within CLAIM_SEEN rounds, that no ally or enemy head is nearer to (SC.allyFar / SC.enemyFar, ties ours) is remembered as ours for CLAIM_ROUNDS
++// while it stays (hysteresis: others may come nearer later). Computed when F2P_ON, CLAIM_ALLY_ON or CLAIM_ENEMY_ON is on.
++// csplit children are rarely short of such claims (0.79 a child vs 0.85 for elite pieces on 500-round maps); the gap is who eats
++// them: the child 39% (elite 48%), our longer dragons 18% (7%), the opponent 8% (0%); on elimination maps the opponent 18% (4%).
++// cl (CLAIM_ALLY_ON): for a piece (length <= CLAIM_MAX_LEN) a claimed pearl is not ceded to a nearer LONGER ally (the contest cut
++// CONTEST_ALLY_CLOSER stays for nearer allies of length <= CLAIM_MAX_LEN, siblings) and is worth max(v, p * CLAIM_VALUE).
++// Tag " cl@<x>,<y>" when the move eats a claimed pearl or closes in on one (as grab).
++// ce (CLAIM_ENEMY_ON): for a piece, a claimed pearl keeps at least CONTEST_EQUAL while the nearest enemy head is at most one step
++// nearer than we are (SC.enemyFar >= headDist_ - 1); beyond that it is ceded as before. Tag " ce@<x>,<y>" when the move eats or
++// closes in on such a claim with an enemy head within headDist_ + 1 of it.
++constexpr bool   CLAIM_ALLY_ON = true;
++constexpr bool   CLAIM_ENEMY_ON = true;
++constexpr int    CLAIM_REACH = 6;
++constexpr int    CLAIM_ROUNDS = 8;
++constexpr int    CLAIM_SEEN = 2;            // [local v1, 18:38] a claim needs a pearl seen within this many rounds (not a predicted spawn)
++constexpr int    CLAIM_MAX_LEN = 4;
++constexpr double CLAIM_VALUE = 1.3;
++// px2 (portal exits): W5+W6, 4,859 crossings, 291 bodies lost within 3 rounds (94.0%, protection floor 95%). The largest class is our
++// own dragon on the exit tile (122: head 69, body 53); next come traps after the exit (93) and enemies at the exit (30). A known-portal
++// crossing (not desperate, label v > -20) after last turn's probe from that tile through that portal stopped on a dragon of ours lost
++// the body in 10% (echo ally, 410 crossings) and 19% (ally_head, 100) of cases, after a clean probe 3.6% (1,820); 97 of our 198
++// crossing-step deaths against our own dragons followed such a probe. The dirty-probe penalty (PORTAL_DIRTY_PENALTY 8) did not stop
++// them. With PX2_ON a crossing whose probe echoed our own dragon costs PX2_ALLY_PENALTY instead. Tag " px2" when some legal
++// candidate paid it and the chosen move crosses none, " px2x" when the chosen move crosses it anyway.
++constexpr bool   PX2_ON = true;
++constexpr double PX2_ALLY_PENALTY = 30.0;   // judgement value: cross only when every other move is worse by 30 (desperate)
+ 
+ // --- search / budget ---
+ constexpr int    DFS_DEPTH_MAX = 7;
+diff -ruN exp/cand-stack7/bot/plan.cpp exp/cand-stack8/bot/plan.cpp
+--- exp/cand-stack7/bot/plan.cpp	2026-09-30 17:02:45
++++ exp/cand-stack8/bot/plan.cpp	2026-09-30 18:42:00
+@@ -348,6 +348,24 @@
+         bool cov = P::COV_ON && w_.myLen <= P::COV_MAX_LEN && p < 0.15 && ourSide(t);
+         src.push_back({t, v, wait, grab, cov});
+     }
++    // stack8 claims (supply-chain proposal, params.hpp): a pearl within CLAIM_REACH that no ally or enemy head is nearer to is ours
++    // for CLAIM_ROUNDS while it stays, even if others come nearer later (hysteresis). F2p reads them for any length, cl / ce for a piece.
++    clTiles_.clear(); ceTiles_.clear();
++    if (P::F2P_ON || P::CLAIM_ALLY_ON || P::CLAIM_ENEMY_ON) {
++        size_t k = 0;
++        for (auto& c : claims_) if (w_.round - c.second <= P::CLAIM_ROUNDS && SC.pnow[c.first] >= 0.15) claims_[k++] = c;
++        claims_.resize(k);
++        for (int t = 0; t < n; t++) {
++            if (SC.pnow[t] < 0.15 || headDist_[t] < 0 || headDist_[t] > P::CLAIM_REACH || freshDrop(t)) continue;
++            // a pearl we have seen, not a predicted spawn (local check v1, 18:38: half the claimed tiles held no pearl)
++            if (!(w_.tiles[t].pearlSeen > w_.tiles[t].emptySeen && w_.round - w_.tiles[t].pearlSeen <= P::CLAIM_SEEN)) continue;
++            if (headDist_[t] > SC.allyFar[t] || headDist_[t] > SC.enemyFar[t]) continue;
++            bool have = false;
++            for (auto& c : claims_) if (c.first == t) { have = true; break; }
++            if (!have) claims_.push_back({t, w_.round});
++        }
++    }
++    const bool claimPiece = (P::CLAIM_ALLY_ON || P::CLAIM_ENEMY_ON) && w_.myLen <= P::CLAIM_MAX_LEN;
+     // hunting: short dragons value a much longer enemy head; any dragon values an enemy shadowing a longer teammate
+     if (w_.unitCount >= 2) {
+         for (int id : w_.enemyHeadsNow) {
+@@ -372,6 +390,21 @@
+         std::fill(distBuf_.begin(), distBuf_.end(), -1);
+         queue_.clear(); queue_.push_back(s.t); distBuf_[s.t] = 0;
+         int ef = SC.enemyFar[s.t], af = SC.allyFar[s.t];
++        // stack8 cl / ce: a piece's claimed pearl. cl: worth p * CLAIM_VALUE and ceded only to a nearer sibling (a known head of length
++        // <= CLAIM_MAX_LEN, Manhattan), not to a longer ally; ce: at least CONTEST_EQUAL while the enemy is at most one step nearer
++        bool ce = false;
++        if (claimPiece && !s.grab && headDist_[s.t] >= 0) {
++            bool claimed = false;
++            for (auto& c : claims_) if (c.first == s.t) { claimed = true; break; }
++            if (claimed && P::CLAIM_ALLY_ON) {
++                s.v = std::max(s.v, SC.pnow[s.t] * P::CLAIM_VALUE);
++                int sib = 9999;
++                for (auto& [id, d] : w_.dragons)
++                    if (id != w_.myId && d.team == w_.myTeam && d.headT >= 0 && w_.round - d.headSeen <= 3 && d.estLen <= P::CLAIM_MAX_LEN) sib = std::min(sib, w_.geo.manhattan(d.headT, s.t));
++                af = sib; clTiles_.push_back(s.t);
++            }
++            if (claimed && P::CLAIM_ENEMY_ON && ef >= headDist_[s.t] - 1) { ce = true; if (ef <= headDist_[s.t] + 1) ceTiles_.push_back(s.t); }
++        }
+         for (size_t qi = 0; qi < queue_.size(); qi++) {
+             int t = queue_[qi]; int dist = distBuf_[t];
+             // race outcomes from turn order: equal distance is ours; one closer needs their sprint
+@@ -381,6 +414,7 @@
+             else if (ef == dist - 1) contest = P::CONTEST_ENEMY_ONE_CLOSER;
+             else if (ef == dist) contest = P::CONTEST_EQUAL;
+             if (s.cov) contest = std::max(contest, P::COV_CONTEST); // stack5 cov
++            if (ce) contest = std::max(contest, P::CONTEST_EQUAL);  // stack8 ce
+             if (af < dist) contest *= P::CONTEST_ALLY_CLOSER;
+             attract_[t] += s.v * GPOW[std::min(63, dist)] * GWAIT[std::min(511, std::max(0, s.wait - dist))] * contest;
+             if (dist >= P::ATTRACT_RADIUS) continue;
+@@ -781,12 +815,15 @@
+ // as near with a lower id). The goal field (goalDist_) is the path distance to its group (our side's known fountains within
+ // FG_GROUP_DIST of it) and the leaf penalty spares FG_HOLD steps around it, so the dragon holds the group and eats there.
+ void Planner::computeFountainGoal() {
+-    fGoal_ = false;
++    fGoal_ = false; fTable_ = false; fPause_ = -1;                                       // stack8
+     if (!P::FGUARD_ON || goalOn_ || w_.round >= P::GATHER_START || w_.unitCount < P::FG_MIN_UNITS) { fTarget_ = -1; return; }
+     if (w_.iAmLongest() && w_.myLen >= P::KING_MIN_LEN) { fTarget_ = -1; return; } // the king feeds itself
+     if (w_.sym < 0 || homeT_ < 0) return;
+     int n = w_.geo.tiles();
+-    auto fount = [&](int t) { if (w_.isFountain(t)) return true; if (w_.tiles[t].seen >= 0) return false; int m = w_.mirrorTile(t, w_.sym); return m != t && w_.isFountain(m); };
++    auto fountOld = [&](int t) { if (w_.isFountain(t)) return true; if (w_.tiles[t].seen >= 0) return false; int m = w_.mirrorTile(t, w_.sym); return m != t && w_.isFountain(m); };
++    // stack8 F2: the recognised map's own fountains and territory (where the table maps left agree), else the old rules
++    auto fount = [&](int t) { if (P::F2_ON) { int f = w_.mapFountAt(t); if (f >= 0) return f == 1; } return fountOld(t); };
++    auto side = [&](int t) { if (P::F2_ON) { int v = w_.mapTerrAt(t, homeT_); if (v >= 0) return v == 1; } return ourSide(t); };
+     std::vector<std::pair<int, int>> allyHeads; // (tile, id)
+     for (auto& [id, d] : w_.dragons)
+         if (id != w_.myId && d.team == w_.myTeam && d.headT >= 0 && w_.round - d.headSeen <= P::FG_ALLY_STALE) allyHeads.push_back({d.headT, id});
+@@ -798,18 +835,42 @@
+         }
+         return false;
+     };
+-    auto usable = [&](int t) { return t >= 0 && fount(t) && ourSide(t) && headDist_[t] >= 0 && headDist_[t] <= P::FG_MAX_DIST && !guardedByOther(t); };
+-    int target = usable(fTarget_) ? fTarget_ : -1;   // keep the fountain we hold or head for
+-    if (target < 0) {
+-        int bd = 1 << 20;
+-        for (int t = 0; t < n; t++) if (headDist_[t] >= 0 && headDist_[t] < bd && usable(t)) { bd = headDist_[t]; target = t; }
++    auto usable = [&](int t) { return t >= 0 && fount(t) && side(t) && headDist_[t] >= 0 && headDist_[t] <= P::FG_MAX_DIST && !guardedByOther(t); };
++    int target = -1;
++    if (P::F2_ON) {
++        // stack8 F2: a new target is within FG2_MAX_DIST, no fresh ally head is within FG_GUARD_DIST of it (it is covered already),
++        // and no ally head of a non-king length seen or heard within FG2_CLAIM_STALE rounds is nearer to it (Manhattan; ties to the
++        // lower id), so two heads do not chase one fountain. The held target is kept within FG2_KEEP_DIST under the old guard rule.
++        auto takenByAlly = [&](int t) {
++            int mine = w_.geo.manhattan(w_.headT, t);
++            for (auto& [a, id] : allyHeads) {
++                int da = w_.geo.manhattan(a, t);
++                if (da <= P::FG_GUARD_DIST) return true;
++                const Dragon& o = w_.dragons.at(id);
++                if (w_.round - o.headSeen <= P::FG2_CLAIM_STALE && o.estLen < P::KING_MIN_LEN && (da < mine || (da == mine && id < w_.myId))) return true;
++            }
++            return false;
++        };
++        if (fTarget_ >= 0 && headDist_[fTarget_] >= 0 && headDist_[fTarget_] <= P::FG2_KEEP_DIST && fount(fTarget_) && side(fTarget_) && !guardedByOther(fTarget_)) target = fTarget_;
++        if (target < 0) {
++            int bd = 1 << 20;
++            for (int t = 0; t < n; t++)
++                if (headDist_[t] >= 0 && headDist_[t] <= P::FG2_MAX_DIST && headDist_[t] < bd && fount(t) && side(t) && !takenByAlly(t)) { bd = headDist_[t]; target = t; }
++        }
++        fTable_ = target >= 0 && w_.mapFountAt(target) >= 0 && w_.mapTerrAt(target, homeT_) >= 0;
++    } else {
++        target = usable(fTarget_) ? fTarget_ : -1;   // keep the fountain we hold or head for
++        if (target < 0) {
++            int bd = 1 << 20;
++            for (int t = 0; t < n; t++) if (headDist_[t] >= 0 && headDist_[t] < bd && usable(t)) { bd = headDist_[t]; target = t; }
++        }
+     }
+     fTarget_ = target;
+     if (target < 0) return;
+     goalDist_.assign(n, 9999);
+     queue_.clear();
+     for (int t = 0; t < n; t++)
+-        if (w_.geo.manhattan(t, target) <= P::FG_GROUP_DIST && (t == target || (fount(t) && ourSide(t)))) { goalDist_[t] = 0; queue_.push_back(t); }
++        if (w_.geo.manhattan(t, target) <= P::FG_GROUP_DIST && (t == target || (fount(t) && side(t)))) { goalDist_[t] = 0; queue_.push_back(t); }
+     for (size_t qi = 0; qi < queue_.size(); qi++) {
+         int t = queue_[qi];
+         for (int dir = 0; dir < 4; dir++) {
+@@ -819,6 +880,13 @@
+         }
+     }
+     goalOn_ = fGoal_ = goalDist_[w_.headT] < 9999;
++    // stack8 F2p: no pull while we hold a live claim outside the hold zone (the nearest one is named in the tag); the target stays
++    if (P::F2P_ON && fGoal_) {
++        int bd = 1 << 20;
++        // only while the claim is still ours now (no known head nearer, as when it was made): F2p's own gate is "no nearer head"
++        for (auto& c : claims_) { int t = c.first; if (goalDist_[t] > P::FG_HOLD && headDist_[t] >= 0 && headDist_[t] < bd && headDist_[t] <= SC.allyFar[t] && headDist_[t] <= SC.enemyFar[t]) { bd = headDist_[t]; fPause_ = t; } }
++        if (fPause_ >= 0) goalOn_ = fGoal_ = false;
++    }
+ }
+ 
+ // stack2 S2: tile t holds a death drop (World::ingestTiles) first seen within GRAB_ROUNDS, still there at our last sight
+@@ -1079,7 +1147,7 @@
+     }
+ 
+     // ---- candidates: first action = 1 step, a justified 2-step sprint, or a probed unknown portal
+-    struct Cand { std::vector<int> dirs; std::vector<int> tiles; int removed; int pearls; double base; bool legal; bool trade; bool blind; bool esc = false; bool voluntary = false; bool px = false; };  // esc: cand-avoid6, voluntary: cand-portal1, px: stack4 (a crossing that pays a px penalty)
++    struct Cand { std::vector<int> dirs; std::vector<int> tiles; int removed; int pearls; double base; bool legal; bool trade; bool blind; bool esc = false; bool voluntary = false; bool px = false; bool px2 = false; };  // esc: cand-avoid6, voluntary: cand-portal1, px: stack4 (a crossing that pays a px penalty), px2: stack8
+     std::vector<Cand> cands;
+     std::vector<int> path;
+     for (int d1 = 0; d1 < 4; d1++) {
+@@ -1104,7 +1172,7 @@
+         }
+         // cand-portal1: a known portal whose exit we cannot see: free right after a clean probe from here, dearer without
+         // one, dearest when that probe hit a dragon (it may stand on the exit)
+-        double portalExtra = 0.0; bool pxHere = false;
++        double portalExtra = 0.0; bool pxHere = false, px2Here = false;
+         if (w_.tiles[w_.headT].edge[d1] == EDGE_PORTAL && w_.tiles[u1].seen != w_.round) {
+             bool probedHere = w_.probeRound == w_.round && w_.probeFromT == w_.headT && w_.probeDir == d1;
+             portalExtra = !probedHere ? P::PORTAL_UNPROBED_PENALTY : (w_.probeClear ? 0.0 : P::PORTAL_DIRTY_PENALTY);
+@@ -1112,10 +1180,12 @@
+             // crossing costs what a dirty probe costs (failure study: a L74 king crossed a known portal unprobed onto a body)
+             if (P::PX_ON && !probedHere && (w_.round >= P::GATHER_BROADCAST || w_.myLen >= P::PX_LONG_LEN)) { portalExtra = P::PORTAL_DIRTY_PENALTY; pxHere = true; }
+             if (P::PX_ON && pxPenalty(w_.headT, d1, u1) > 0.0) pxHere = true;
++            // stack8 px2: last turn's probe from here through this portal stopped on a dragon of ours (it may stand on the exit)
++            if (P::PX2_ON && probedHere && !w_.probeClear && w_.probeAlly) { portalExtra = std::max(portalExtra, P::PX2_ALLY_PENALTY); px2Here = true; }
+         }
+         path.assign(1, w_.headT);
+         if (!tileEnterable(u1, 1, 0, path)) { cands.push_back(c); continue; }
+-        c.legal = true; c.tiles = {u1}; c.px = pxHere;
++        c.legal = true; c.tiles = {u1}; c.px = pxHere; c.px2 = px2Here;
+         double p1 = SC.pnow[u1];
+         c.pearls = p1 >= 0.5 ? 1 : 0; c.removed = c.pearls ? 0 : 1;
+         double th1 = threatAt(u1);
+@@ -1510,7 +1580,10 @@
+     snprintf(buf, sizeof buf, "%s v%.1f d%d L%d%s%s%s", act.dirs.c_str(), value[best], depthDone, w_.myLen, c.trade ? " TRADE" : "", c.blind ? " PORTAL?" : "", late_ ? " late" : "");
+     act.indicator = buf;
+     if (goalOn_ && !fGoal_) { snprintf(buf, sizeof buf, " %s%d", gatherKing_ ? "K" : "g", goalDist_[w_.headT]); act.indicator += buf; }
+-    if (fGoal_) { snprintf(buf, sizeof buf, " F%d@%d,%d", goalDist_[w_.headT], fTarget_ % w_.geo.W, fTarget_ / w_.geo.W); act.indicator += buf; } // stack5 F
++    // stack5 F; stack8: the F tag stays on a paused turn (the target is held) and " Fp@x,y" names the claim that paused the pull
++    if (fGoal_ || fPause_ >= 0) { snprintf(buf, sizeof buf, " F%d@%d,%d", goalDist_[w_.headT], fTarget_ % w_.geo.W, fTarget_ / w_.geo.W); act.indicator += buf; }
++    if ((fGoal_ || fPause_ >= 0) && P::F2_ON && fTable_) act.indicator += " F2";                                     // stack8 F2
++    if (fPause_ >= 0) { snprintf(buf, sizeof buf, " Fp@%d,%d", fPause_ % w_.geo.W, fPause_ / w_.geo.W); act.indicator += buf; } // stack8 F2p
+     // stack5 cov: the move ends on our side with no other ally head (seen within 3 rounds) within 6 of its last tile
+     if (P::COV_ON && w_.myLen <= P::COV_MAX_LEN && !c.trade && !c.tiles.empty() && ourSide(c.tiles.back())) {
+         bool ally6 = false;
+@@ -1549,6 +1622,27 @@
+         }
+         if (tgt >= 0) { snprintf(buf, sizeof buf, " grab@%d,%d", tgt % w_.geo.W, tgt / w_.geo.W); act.indicator += buf; }
+     }
++    // stack8 cl / ce: " cl@x,y" / " ce@x,y" when this move eats a claimed pearl or closes in on one (path distance over known
++    // edges, bodies ignored, as headDist_); the pearl named is the one eaten, else the nearest one we close in on (as grab)
++    auto claimTag = [&](const std::vector<int>& tiles, const char* word) {
++        if (tiles.empty() || c.trade || c.tiles.empty()) return;
++        int tgt = -1;
++        for (int t : c.tiles) for (int g : tiles) if (t == g && tgt < 0) tgt = g;
++        if (tgt < 0) {
++            std::fill(distBuf_.begin(), distBuf_.end(), -1);
++            queue_.clear(); queue_.push_back(c.tiles.back()); distBuf_[c.tiles.back()] = 0;
++            for (size_t qi = 0; qi < queue_.size(); qi++) {
++                int t = queue_[qi];
++                if (distBuf_[t] >= P::CLAIM_REACH) continue;
++                for (int dir = 0; dir < 4; dir++) { int u = w_.across(t, dir); if (u >= 0 && distBuf_[u] < 0) { distBuf_[u] = distBuf_[t] + 1; queue_.push_back(u); } }
++            }
++            int bd = 1 << 20;
++            for (int g : tiles) if (distBuf_[g] >= 0 && distBuf_[g] < headDist_[g] && distBuf_[g] < bd) { bd = distBuf_[g]; tgt = g; }
++        }
++        if (tgt >= 0) { snprintf(buf, sizeof buf, " %s@%d,%d", word, tgt % w_.geo.W, tgt / w_.geo.W); act.indicator += buf; }
++    };
++    if (P::CLAIM_ALLY_ON) claimTag(clTiles_, "cl");
++    if (P::CLAIM_ENEMY_ON) claimTag(ceTiles_, "ce");
+     if (kingSafe_) act.indicator += " ks"; // stack1 M3
+     if (kingSafe2_) act.indicator += " ks2"; // stack3 ks2
+     // stack4 tg: " tg" when some legal candidate's final tile (our head after the move, where a strike lands) carries threat
+@@ -1564,6 +1658,12 @@
+         bool inPlay = false;
+         for (const Cand& k : cands) if (k.legal && k.px) { inPlay = true; break; }
+         if (inPlay) act.indicator += c.px ? " pxx" : " px";
++    }
++    // stack8 px2: " px2" when some legal candidate's crossing paid the px2 penalty and the chosen move crosses none; " px2x" when it does
++    if (P::PX2_ON) {
++        bool inPlay = false;
++        for (const Cand& k : cands) if (k.legal && k.px2) { inPlay = true; break; }
++        if (inPlay) act.indicator += c.px2 ? " px2x" : " px2";
+     }
+     if (gxOff_) act.indicator += " gx";           // stack4 gx: the gathering goal is off for lack of rounds
+     if (splitTailStop) act.indicator += " sx";    // stack4 split tail
+diff -ruN exp/cand-stack7/bot/plan.hpp exp/cand-stack8/bot/plan.hpp
+--- exp/cand-stack7/bot/plan.hpp	2026-09-30 17:01:49
++++ exp/cand-stack8/bot/plan.hpp	2026-09-30 18:13:05
+@@ -71,6 +71,11 @@
+     int homeT_ = -1;                   // F / cov: our first head tile (our side = nearer to it than its mirror image is)
+     bool fGoal_ = false; int fTarget_ = -1; // F: the goal is a fountain group; the fountain chosen
+     bool ourSide(int t) const;         // F / cov
++    // stack8 F2 / F2p / cl / ce
++    bool fTable_ = false;              // F2: this turn's F target came from the recognised map's fountains and territory
++    int fPause_ = -1;                  // F2p: the claimed pearl for which the F pull is off this turn (-1 none)
++    std::vector<std::pair<int, int>> claims_; // claims: (tile, round claimed), kept CLAIM_ROUNDS while the pearl stays
++    std::vector<int> clTiles_, ceTiles_;      // cl / ce: this turn's claims whose rule changed the attraction (for the tags)
+ 
+     void computeEnemyDistance();
+     void computeAttract();
+diff -ruN exp/cand-stack7/bot/terrdb.hpp exp/cand-stack8/bot/terrdb.hpp
+--- exp/cand-stack7/bot/terrdb.hpp	1970-01-01 09:00:00
++++ exp/cand-stack8/bot/terrdb.hpp	2026-09-30 18:07:03
+@@ -0,0 +1,24 @@
++// terrdb.hpp — generated by exp/cand-stack8/genterrdb.js from one local replay per table map of mapdb.hpp (same order). Do not edit.
++// stack8 F2: the territory of each table map as the mass ledger defines it (tools/mass_ledger.js): a tile belongs to the team whose
++// starting bodies are nearer by movement distance (kelp, portals, wrap); equal or unreachable = neutral. One char per tile
++// (row-major): '0' neutral, '1' team A, '2' team B.
++#pragma once
++namespace seed0 { namespace terrdb {
++static const char* const TERR[] = {
++  "111111111111111111111111111222222222222222222222222222111111111111111111111111111022222222222222222222222222111111111111111111111111111122222222222222222222222222111222111111222111111111111111102222222111222222111222111222111111222111111111111111110222222111222222111222111222111111222111111111111111111222222111222222111222111111111111111111111100011111111022222222222222222222111111111111111111111022201111111122222222222222222222111111111111111111110222220111111122222222222222222222111111111111111111112222222011111022222222222222222222111111111111111111112222222201110222222222222222222222111111111111111111110222222220002222222222222222222222111222111111222111111222222222222222222111222222111222111222111111222111111022222222222222222111222222111222111222111111222111111102222222222222222111222222111222111111111111111111111111112222222222222222222222222222111111111111111111111111110222222222222222222222222222111111111111111111111111111222222222222222222222222222", // Autarky (autarky)
++  "1111111111111111022222222222222011111111111111110222222222222220112222211111111111110222222222201122222111111111111102222222222011222221111111111111022222222220112222211111111111110222222222201122222111111111111102222222222011111111111111111111022222222220111111111111111111110222222222201111111111111111111102222222222011111111111111111122222222222220111111111111111111222222222222201111111111111111112222222222222011111111111111111122222222222220111111111122221100111122222222201111111111222211001111222222222001111111112222002211112222222222011111111122220022111122222222220111111111111122222222222222222201111111111111222222222222222222011111111111112222222222222222220111111111111122222222222222222201111111111022222222222222222222011111111110222222222222222222220111111111102222222222222222222201111111111022222222222221111122011111111110222222222222211111220111111111102222222222222111112201111111111022222222222221111122011111111110222222222222211111220111111111111110222222222222222201111111111111102222222222222222", // Default (default)
++  "11111111111111112222222222222222111111111111111122222222222222221111111111111111222222222222222211111111111111112222222222222222111111111111111122222222222222221111111111111111222222222222222211111111111111112222222222222222111111111111111122222222222222221111111111111111222222222222222211111111111111112222222222222222111111111111111122222222222222221111111111111111222222222222222211111111111111112222222222222222111111111111111122222222222222221111111111111111222222222222222211111111111111112222222222222222", // Devil (devil)
++  "11111111221111112211222222112222111111112211111122112222221122221111221111110011222222002222222211110011111122112222220022222222111111110011111122002222220022221111111122111111220022222211222211112211111122112222221122222222111122111111221112222211222222221111111122111112221122222211222211111111221111112211222222112222111122111111001122222211222222221111001111110011222222002222222211111111001111112211222222002222111111110011111122002222221122221111221111112211222222112222222211112211111122112222221122222222", // Portals (portals)
++  "11111111111111112222222222222222111111111111111122222222222222221111111111111111222221112222222211111111222111112222211122222222111111112221111122222111222222221111111122211111222222222222222211111111111111112222222222222222111111111111111122222222222222221111111111111111222222222222222211111111111111112222222222222222111111111111111122222111222222221111111122211111222221112222222211111111222111112222211122222222111111112221111122222222222222221111111111111111222222222222222211111111111111112222222222222222", // Prisoners_Dilemma (prisoners_dilemma)
++  "11111111111112222222222001001111111111222222222111100111111111122222222111110011111111102222220111111111111111000000000001111111111111100010222000111111111111100011022220001111111111110001102222000011111111110001110222220001111111110000111022222000111111111000011102222000011111111100000110222000002111111111000001022000000222111111100011102200000222211111111001110222220222221111111111111022222222222111111111111022222222222111111111111022222222222211111111111022222222222211111111111022222222222221111101111102220022222222111100000110222000222222211100000011020000022222222210000011102200000222222222000011110222000022222222200011111022200002222222220001111102220002222222222000011110220002222222222220001111022000222222222222200011102000222222222222220000000000022222222222222201111110222222222002222211111111222222222200222211111111122222222220020011111111112222222222222", // Queen_Of_Spades (queen_of_spades)
++  "111111111111111111111111111111222222222222222222222222222222111111111111111111111111111111222222222222222222222222222222111111111110011111111111111111222222222222222220022222222222111111111110011111111111111111222222222222222220022222222222111110011111111111111111111100002222222222222222222220022222111110011111111111111111111000000222222222222222222220022222111111111111111111111111111000000222222222222222222222222222111111111111111111111111111000000222222222222222222222222222111111110011111111111111111000000222222222222222220022222222111111110011111110111111111100002222222222022222220022222222111111111111111111111111111111222222222222222222222222222222111111111111111111111111101111222202222222222222222222222222111111011111222111111111111111222222222222222111222220222222111111111112222211221111111111222222222211221111122222222222122111111002222222222111111111222222222111111111100222222112222222000222222222202211111001200222221101111111111000111111222222002222222222222211111001200222221111111111111100111111200222022202222222222222011111222220111111111111101110111001200222222222222200220200001111222200001011001111111111111001222222222222222200200000000111222000000001001111111111111111222222222222222222220200001110022200001011111111111111111111222222222222222222222200000110022000001111111111111111111111222222222222222222222011111111222222220111111111111111111111222220002222220002220111111111222222222011100011111100011111222200022222222000220111111122112222222011000111111110001111222000002222220000020111111222111222222010000011111100000111222000002222220000020111221222111211222010000011111100000111222000222222222200020112222222111111122010001111111111000111222002200000000220020112222222111111122010011000000001100111222200000000000000220122222222111111112011000000000000001111222220000000000022220122222222111111112011110000000000011111222200000000000002220122222222111111112011100000000000001111222200000000000000020112222222111111122010000000000000001111222220000000000000000111222222111111222000000000000000011111222222000000000000000111222222111111222000000000000000111111222222222222222000000112222222111111122000000111111111111111222222222222222000000122222222111111112000000111111111111111222222222222222000000122222222111111112000000111111111111111222222222222222000000112222222111111122000000111111111111111222222222222222000000111122222111112222000000111111111111111", // Schooltime (schooltime)
++  "111111111111111111111111111111111112222222222222222222222222222111111111111111111111111111111111112222222222222222222222222222111111111111111111111111111111111112222222222222222222222222222111111111111111111111111111111111112222222222222222222222222222111111111111111111111111111111111110222222222222222222222222222111111111111111111111111111222211120222222222222222222222222222111111111111111111111111112222222222222222222222222222222222222111111111111111111111111222211111222222222222222222222222222222111111111111111111111112222222111222220222222222222222222222222111111111111111111111111222221112222222222222222222222222222222111111111111111111111111122211112222222222222222222222222222222111111111111111111111111122111122222222222222222222222222222222111122111111111111111111121111022222222222222222222222222222222111122111111111111111111111111102222222222222222222222222112222111111111111111111111111111111110222212222222222222222222112222111111111111111111111111111111112222112222222222222222222222222111111111111111111111111111111122221112222222222222222222222222111111111111111111111111111111122211111222222222222222222222222111111111111111111111111011111222111111122222222222222222222222111111111111111111111111111111222221111222222222222222222222222111111111111111111111111111111111111122222222222222222222222222111111111111111111111111111012221111222222222222222222222222222111111111111111111111111111022222222222222222222222222222222222111111111111111111111111111122222222222222222222222222222222222111111111111111111111111111122222222222222222222222222222222222111111111111111111111111111122222222222222222222222222222222222111111111111111111111111111122222222222222222222222222222222222", // Slithery_Fight (slithery_fight)
++  "111111111111111111122222222222222222222222222222111111111111111111122222222222222222222222222222111111111111111111122222222222222222222222222222111111111111111111122222222222222222222222222222111111111111111111122222222222222222222222222222111111111111111111122222222222222222222222222222111111111111111111122222222222222222222222222222111111111111111111122222222222222222222222222222111111111111111111102222222222222222222222222222111111111111111111000222222222222222222222222222111111111111111111111122222222222222222222222222111111111111111111111110222222222222222222222222111111111111111111111111022222222222222222222222111111111111111111111111112222222222222222222222111111111111111111111111111000222222222222222222111111111111111111111111111102222222222222222222111111111111111111111111111112222222222222222222111111111111111111111111111112222222222222222222111111111111111111111111111112222222222222222222111111111111111111111111111112222222222222222222111111111111111111111111111112222222222222222222111111111111111111111111111112222222222222222222111111111111111111111111111112222222222222222222111111111111111111111111111112222222222222222222", // Trauma (trauma)
++  "1111111111110222222222222111111111111022222222222211111111111102222222222221111111111110222222222222111111100000000000222222211111100000000000002222221111110000000000000222222111111000000000000022222211111100000000000002222221111110000000000000222222111111111000000022222222211111111110000022222222221111111111100022222222222111111111111022222222222211111111111102222222222221111111111110222222222222111111111111022222222222211111111111102222222222221111111111110222222222222111111111111022222222222211111111111102222222222221111111111110222222222222111111111111022222222222211111111111102222222222221111111111110222222222222", // Trophy (trophy)
++  "11111111111111122221111222222222111111111111111222211112222222221111111111111112222111112222222211111111222111112221111122222222111111112221111122211111222222221111111122211111220111111222222211111111111111112201111110222222111111110000011122211111022222221111111022222111222000002222222211111102222220112222222222222222111111122222201122222111222222221111111122222111222221112222222211111111222221112222211122222222111111112222211112222222222222221111111112222111122222222222222211111111122221111222222222222222", // Prisoners_Dilemma (prisoners_dilemma_10)
++  "11111111111111112222222222222222111111111111111122222222222222221111111111111111222222222222222211111111111111112222222222222222111111111111111122222222222222221111111111111111222222222222222211111111111111112222222222222222111111111111111122222222222222221111111111111111222222222222222211111111111111112222222222222222111111111111111122222222222222221111111111111111222222222222222211111111111111112222222222222222111111111111111122222222222222221111111111111111222222222222222211111111111111112222222222222222", // Devil (devil_b)
++  "11111111111112222222222001001111111111222222222111100111111111122222222111110011111111102222220111111111111111000000000001111111111111100010222000111111111111100011022220001111111111110001102222000011111111110001110222220001111111110000111022222000111111111000011102222000011111111100000110222000002111111111000001022000000222111111100011102200000222211111111001110222220222221111111111111022222222222111111111111022222222222111111111111022222222222211111111111022222222222211111111111022222222222221111101111102220022222222111100000110222000222222211100000011020000022222222210000011102200000222222222000011110222000022222222200011111022200002222222220001111102220002222222222000011110220002222222222220001111022000222222222222200011102000222222222222220000000000022222222222222201111110222222222002222211111111222222222200222211111111122222222220020011111111112222222222222", // Queen_Of_Spades (queen_of_spades_b)
++  "111111111111111111111111111111222222222222222222222222222222111111111111111111111111111111222222222222222222222222222222111111111110011111111111111111222222222222222220022222222222111111111110011111111111111111222222222222222220022222222222111110011111111111111111111100002222222222222222222220022222111110011111111111111111111000000222222222222222222220022222111111111111111111111111111000000222222222222222222222222222111111111111111111111111111000000222222222222222222222222222111111110011111111111111111000000222222222222222220022222222111111110011111110111111111100002222222222022222220022222222111111111111111111111111111111222222222222222222222222222222111111111111111111111111101111222202222222222222222222222222111111011111222111111111111111222222222222222111222220222222111111111112222211221111111111222222222211221111122222222222122111111002222222222111111111222222222111111111100222222112222222000222222222202211111001200222221101111111111000111111222222002222222222222211111001200222221111111111111100111111200222022202222222222222011111222220111111111111101110111001200222222222222200220200001111222200001011001111111111111001222222222222222200200000000111222000000001001111111111111111222222222222222222220200001110022200001011111111111111111111222222222222222222222200000110022000001111111111111111111111222222222222222222222011111111222222220111111111111111111111222220002222220002220111111111222222222011100011111100011111222200022222222000220111111122112222222011000111111110001111222000002222220000020111111222111222222010000011111100000111222000002222220000020111221222111211222010000011111100000111222000222222222200020112222222111111122010001111111111000111222002200000000220020112222222111111122010011000000001100111222200000000000000220122222222111111112011000000000000001111222220000000000022220122222222111111112011110000000000011111222200000000000002220122222222111111112011100000000000001111222200000000000000020112222222111111122010000000000000001111222220000000000000000111222222111111222000000000000000011111222222000000000000000111222222111111222000000000000000111111222222222222222000000112222222111111122000000111111111111111222222222222222000000122222222111111112000000111111111111111222222222222222000000122222222111111112000000111111111111111222222222222222000000112222222111111122000000111111111111111222222222222222000000111122222111112222000000111111111111111", // Schooltime (schooltime_b)
++  "111111111111111111111111111111111112222222222222222222222222222111111111111111111111111111111111112222222222222222222222222222111111111111111111111111111111111112222222222222222222222222222111111111111111111111111111111111112222222222222222222222222222111111111111111111111111111111111110222222222222222222222222222111111111111111111111111111222211120222222222222222222222222222111111111111111111111111112222222222222222222222222222222222222111111111111111111111111222211111222222222222222222222222222222111111111111111111111112222222111222220222222222222222222222222111111111111111111111111222221112222222222222222222222222222222111111111111111111111111122211112222222222222222222222222222222111111111111111111111111122111122222222222222222222222222222222111122111111111111111111121111022222222222222222222222222222222111122111111111111111111111111102222222222222222222222222112222111111111111111111111111111111110222212222222222222222222112222111111111111111111111111111111112222112222222222222222222222222111111111111111111111111111111122221112222222222222222222222222111111111111111111111111111111122211111222222222222222222222222111111111111111111111111011111222111111122222222222222222222222111111111111111111111111111111222221111222222222222222222222222111111111111111111111111111111111111122222222222222222222222222111111111111111111111111111012221111222222222222222222222222222111111111111111111111111111022222222222222222222222222222222222111111111111111111111111111122222222222222222222222222222222222111111111111111111111111111122222222222222222222222222222222222111111111111111111111111111122222222222222222222222222222222222111111111111111111111111111122222222222222222222222222222222222", // Slithery_Fight (slithery_fight_b)
++};
++}} // namespace seed0::terrdb
+diff -ruN exp/cand-stack7/bot/world.hpp exp/cand-stack8/bot/world.hpp
+--- exp/cand-stack7/bot/world.hpp	2026-09-30 17:01:31
++++ exp/cand-stack8/bot/world.hpp	2026-09-30 18:12:50
+@@ -88,6 +88,7 @@
+     int prevHeadT = -1;
+     int probeDir = -1, probeRound = -1; bool probeClear = false;
+     int probeFromT = -1;
++    bool probeAlly = false;    // stack8 px2: that ray stopped on a dragon of ours (echo ally or ally_head)
+ 
+     // cand-portal1: hunger (rounds since our length last grew) and frontiers muted after a dirty probe
+     int lastAteRound = -1, prevLen = 0;
+@@ -118,6 +119,11 @@
+     bool mapFamIs(const char* famName) const;              // stack7: this family known (layout decided or not), not "none"
+     int mapStateCode() const { return mapNone ? -1 : mapIdx >= 0 ? 1000 + mapIdx : mapFam >= 0 ? 100 + mapFam : 0; }
+     std::string mapTag() const;                            // "map=<Name>/<a|b|?>", "map=?", "map=none"
++    // stack8 F2 (mapid.cpp, terrdb.hpp): the recognised map's own fountain (1/0; spawn gap mean <= 12) and territory at tile t once
++    // the family is known and every table map left agrees there, else -1. Territory: 1 = the side of homeT (the server swaps the file's
++    // team letters in about half of the online games, so the side comes from a tile we know is ours), 2 = the other, 0 = neutral.
++    int mapFountAt(int t) const;
++    int mapTerrAt(int t, int homeT) const;
+ 
+     void init(const InitBlock& ib);
+     void ingest(const RoundBlock& rb);  // updates everything for this turn

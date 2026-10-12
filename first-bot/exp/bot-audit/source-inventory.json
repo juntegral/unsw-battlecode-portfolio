@@ -1,0 +1,741 @@
+{
+  "current_files": {
+    "geom.hpp": 43,
+    "world.hpp": 166,
+    "mapdb.hpp": 133,
+    "plan.cpp": 1909,
+    "params.hpp": 595,
+    "proto.cpp": 188,
+    "terrdb.hpp": 24,
+    "proto.hpp": 88,
+    "world.cpp": 467,
+    "main.cpp": 62,
+    "mapid.cpp": 122,
+    "plan.hpp": 150
+  },
+  "functions": 98,
+  "constants": 246,
+  "booleans": [
+    {
+      "name": "POCKET_EAT",
+      "type": "bool",
+      "value": "true",
+      "line": 108,
+      "uses": [
+        "plan.cpp:1689"
+      ]
+    },
+    {
+      "name": "POCKET_EAT_MAP_DRAGONS",
+      "type": "bool",
+      "value": "false",
+      "line": 109,
+      "uses": [
+        "plan.cpp:1690"
+      ]
+    },
+    {
+      "name": "POCKET_MAP_LOW_YIELD",
+      "type": "bool",
+      "value": "true",
+      "line": 113,
+      "uses": [
+        "plan.cpp:1688"
+      ]
+    },
+    {
+      "name": "CONV_ON",
+      "type": "bool",
+      "value": "true",
+      "line": 137,
+      "uses": [
+        "plan.cpp:1254"
+      ]
+    },
+    {
+      "name": "RAM_SMALL_ON",
+      "type": "bool",
+      "value": "false",
+      "line": 147,
+      "uses": [
+        "plan.cpp:643"
+      ]
+    },
+    {
+      "name": "RAM_SMALL_NEED_COLLECTOR",
+      "type": "bool",
+      "value": "true",
+      "line": 152,
+      "uses": [
+        "plan.cpp:651"
+      ]
+    },
+    {
+      "name": "KS_ON",
+      "type": "bool",
+      "value": "false",
+      "line": 158,
+      "uses": [
+        "plan.cpp:1204"
+      ]
+    },
+    {
+      "name": "FRAG_ON",
+      "type": "bool",
+      "value": "true",
+      "line": 170,
+      "uses": [
+        "plan.cpp:742",
+        "plan.cpp:1253"
+      ]
+    },
+    {
+      "name": "GRAB_ON",
+      "type": "bool",
+      "value": "true",
+      "line": 196,
+      "uses": [
+        "plan.cpp:1207",
+        "world.cpp:134"
+      ]
+    },
+    {
+      "name": "KS2_ON",
+      "type": "bool",
+      "value": "false",
+      "line": 209,
+      "uses": [
+        "plan.cpp:1205"
+      ]
+    },
+    {
+      "name": "TG_ON",
+      "type": "bool",
+      "value": "true",
+      "line": 229,
+      "uses": [
+        "plan.cpp:45",
+        "plan.cpp:53",
+        "plan.cpp:92",
+        "plan.cpp:193",
+        "plan.cpp:725",
+        "plan.cpp:836",
+        "plan.cpp:1866"
+      ]
+    },
+    {
+      "name": "ESC_SPLIT_ON",
+      "type": "bool",
+      "value": "false",
+      "line": 237,
+      "uses": [
+        "plan.cpp:1444"
+      ]
+    },
+    {
+      "name": "PX_ON",
+      "type": "bool",
+      "value": "false",
+      "line": 246,
+      "uses": [
+        "plan.cpp:262",
+        "plan.cpp:1379",
+        "plan.cpp:1380",
+        "plan.cpp:1503",
+        "plan.cpp:1517",
+        "plan.cpp:1873"
+      ]
+    },
+    {
+      "name": "GX_ON",
+      "type": "bool",
+      "value": "true",
+      "line": 253,
+      "uses": [
+        "plan.cpp:1085"
+      ]
+    },
+    {
+      "name": "SPLIT_TAIL_ON",
+      "type": "bool",
+      "value": "false",
+      "line": 263,
+      "uses": [
+        "plan.cpp:701",
+        "plan.cpp:1767"
+      ]
+    },
+    {
+      "name": "CSPLIT_ON",
+      "type": "bool",
+      "value": "true",
+      "line": 282,
+      "uses": [
+        "plan.cpp:790"
+      ]
+    },
+    {
+      "name": "FGUARD_ON",
+      "type": "bool",
+      "value": "true",
+      "line": 314,
+      "uses": [
+        "plan.cpp:932"
+      ]
+    },
+    {
+      "name": "COV_ON",
+      "type": "bool",
+      "value": "true",
+      "line": 329,
+      "uses": [
+        "plan.cpp:351",
+        "plan.cpp:1794"
+      ]
+    },
+    {
+      "name": "NOEXIT_SPARE_ON",
+      "type": "bool",
+      "value": "true",
+      "line": 337,
+      "uses": [
+        "plan.cpp:1729"
+      ]
+    },
+    {
+      "name": "MAPID_TAG",
+      "type": "bool",
+      "value": "true",
+      "line": 342,
+      "uses": [
+        "main.cpp:54"
+      ]
+    },
+    {
+      "name": "BSPLIT_ON",
+      "type": "bool",
+      "value": "true",
+      "line": 353,
+      "uses": [
+        "plan.cpp:761"
+      ]
+    },
+    {
+      "name": "FLOOR_ON",
+      "type": "bool",
+      "value": "true",
+      "line": 382,
+      "uses": [
+        "plan.cpp:880"
+      ]
+    },
+    {
+      "name": "KCAP_ON",
+      "type": "bool",
+      "value": "true",
+      "line": 394,
+      "uses": [
+        "plan.cpp:864"
+      ]
+    },
+    {
+      "name": "F2_ON",
+      "type": "bool",
+      "value": "true",
+      "line": 415,
+      "uses": [
+        "plan.cpp:938",
+        "plan.cpp:939",
+        "plan.cpp:953",
+        "plan.cpp:1791"
+      ]
+    },
+    {
+      "name": "F2P_ON",
+      "type": "bool",
+      "value": "false",
+      "line": 426,
+      "uses": [
+        "plan.cpp:357",
+        "plan.cpp:997"
+      ]
+    },
+    {
+      "name": "CLAIM_ALLY_ON",
+      "type": "bool",
+      "value": "true",
+      "line": 438,
+      "uses": [
+        "plan.cpp:357",
+        "plan.cpp:371",
+        "plan.cpp:402",
+        "plan.cpp:1860"
+      ]
+    },
+    {
+      "name": "CLAIM_ENEMY_ON",
+      "type": "bool",
+      "value": "false",
+      "line": 439,
+      "uses": [
+        "plan.cpp:357",
+        "plan.cpp:371",
+        "plan.cpp:409",
+        "plan.cpp:1861"
+      ]
+    },
+    {
+      "name": "PX2_ON",
+      "type": "bool",
+      "value": "false",
+      "line": 452,
+      "uses": [
+        "plan.cpp:1382",
+        "plan.cpp:1879"
+      ]
+    },
+    {
+      "name": "LSPLIT_ON",
+      "type": "bool",
+      "value": "true",
+      "line": 479,
+      "uses": [
+        "plan.cpp:896"
+      ]
+    },
+    {
+      "name": "FRAG_CAP_CSPLIT_ON",
+      "type": "bool",
+      "value": "true",
+      "line": 491,
+      "uses": [
+        "plan.cpp:746"
+      ]
+    },
+    {
+      "name": "LNT_ON",
+      "type": "bool",
+      "value": "true",
+      "line": 511,
+      "uses": [
+        "plan.cpp:579",
+        "plan.cpp:610",
+        "plan.cpp:631",
+        "plan.cpp:1368",
+        "plan.cpp:1405",
+        "plan.cpp:1531",
+        "plan.cpp:1815"
+      ]
+    },
+    {
+      "name": "LNT_RAM_ON",
+      "type": "bool",
+      "value": "false",
+      "line": 514,
+      "uses": [
+        "plan.cpp:610"
+      ]
+    },
+    {
+      "name": "LNT_KINT_NEED_LONGEST",
+      "type": "bool",
+      "value": "false",
+      "line": 520,
+      "uses": [
+        "plan.cpp:626"
+      ]
+    },
+    {
+      "name": "UTAB_ON",
+      "type": "bool",
+      "value": "false",
+      "line": 531,
+      "uses": [
+        "plan.cpp:796"
+      ]
+    },
+    {
+      "name": "UTAB_PORTALS",
+      "type": "bool",
+      "value": "false",
+      "line": 534,
+      "uses": [
+        "plan.cpp:815"
+      ]
+    },
+    {
+      "name": "GH_ON",
+      "type": "bool",
+      "value": "true",
+      "line": 567,
+      "uses": [
+        "plan.cpp:532",
+        "plan.cpp:1093",
+        "plan.cpp:1888"
+      ]
+    },
+    {
+      "name": "KX_ON",
+      "type": "bool",
+      "value": "true",
+      "line": 571,
+      "uses": [
+        "plan.cpp:1138"
+      ]
+    },
+    {
+      "name": "LWK_ON",
+      "type": "bool",
+      "value": "false",
+      "line": 577,
+      "uses": [
+        "plan.cpp:1294"
+      ]
+    },
+    {
+      "name": "SEND_SONAR",
+      "type": "bool",
+      "value": "true",
+      "line": 591,
+      "uses": [
+        "main.cpp:47"
+      ]
+    },
+    {
+      "name": "INDICATOR",
+      "type": "bool",
+      "value": "true",
+      "line": 592,
+      "uses": [
+        "main.cpp:58"
+      ]
+    },
+    {
+      "name": "PROFILE",
+      "type": "bool",
+      "value": "false",
+      "line": 593,
+      "uses": [
+        "plan.cpp:1900"
+      ]
+    }
+  ],
+  "unreferenced": [
+    {
+      "name": "W_HUNT",
+      "type": "double",
+      "value": "0.6",
+      "line": 89,
+      "uses": []
+    }
+  ],
+  "history": [
+    {
+      "stack": 1,
+      "from": "bot",
+      "to": "exp/cand-stack1/bot",
+      "files": [
+        {
+          "name": "params.hpp",
+          "added": 28,
+          "removed": 0
+        },
+        {
+          "name": "plan.cpp",
+          "added": 80,
+          "removed": 2
+        },
+        {
+          "name": "plan.hpp",
+          "added": 4,
+          "removed": 0
+        }
+      ]
+    },
+    {
+      "stack": 2,
+      "from": "exp/cand-stack1/bot",
+      "to": "exp/cand-stack2/bot",
+      "files": [
+        {
+          "name": "params.hpp",
+          "added": 44,
+          "removed": 3
+        },
+        {
+          "name": "plan.cpp",
+          "added": 82,
+          "removed": 11
+        },
+        {
+          "name": "plan.hpp",
+          "added": 7,
+          "removed": 0
+        },
+        {
+          "name": "world.cpp",
+          "added": 6,
+          "removed": 0
+        },
+        {
+          "name": "world.hpp",
+          "added": 1,
+          "removed": 0
+        }
+      ]
+    },
+    {
+      "stack": 3,
+      "from": "exp/cand-stack2/bot",
+      "to": "exp/cand-stack3/bot",
+      "files": [
+        {
+          "name": "params.hpp",
+          "added": 11,
+          "removed": 0
+        },
+        {
+          "name": "plan.cpp",
+          "added": 43,
+          "removed": 2
+        },
+        {
+          "name": "plan.hpp",
+          "added": 3,
+          "removed": 0
+        }
+      ]
+    },
+    {
+      "stack": 4,
+      "from": "exp/cand-stack3/bot",
+      "to": "exp/cand-stack4/bot",
+      "files": [
+        {
+          "name": "params.hpp",
+          "added": 54,
+          "removed": 2
+        },
+        {
+          "name": "plan.cpp",
+          "added": 189,
+          "removed": 24
+        },
+        {
+          "name": "plan.hpp",
+          "added": 11,
+          "removed": 0
+        }
+      ]
+    },
+    {
+      "stack": 5,
+      "from": "exp/cand-stack4/bot",
+      "to": "exp/cand-stack5/bot",
+      "files": [
+        {
+          "name": "params.hpp",
+          "added": 73,
+          "removed": 3
+        },
+        {
+          "name": "plan.cpp",
+          "added": 150,
+          "removed": 8
+        },
+        {
+          "name": "plan.hpp",
+          "added": 10,
+          "removed": 0
+        }
+      ]
+    },
+    {
+      "stack": 6,
+      "from": "exp/cand-stack5/bot",
+      "to": "exp/cand-stack6/bot",
+      "files": [
+        {
+          "name": "main.cpp",
+          "added": 6,
+          "removed": 0
+        },
+        {
+          "name": "mapdb.hpp",
+          "added": 133,
+          "removed": 0
+        },
+        {
+          "name": "mapid.cpp",
+          "added": 90,
+          "removed": 0
+        },
+        {
+          "name": "params.hpp",
+          "added": 21,
+          "removed": 0
+        },
+        {
+          "name": "plan.cpp",
+          "added": 16,
+          "removed": 3
+        },
+        {
+          "name": "plan.hpp",
+          "added": 1,
+          "removed": 0
+        },
+        {
+          "name": "world.cpp",
+          "added": 2,
+          "removed": 0
+        },
+        {
+          "name": "world.hpp",
+          "added": 19,
+          "removed": 0
+        }
+      ]
+    },
+    {
+      "stack": 7,
+      "from": "exp/cand-stack6/bot",
+      "to": "exp/cand-stack7/bot",
+      "files": [
+        {
+          "name": "mapid.cpp",
+          "added": 5,
+          "removed": 0
+        },
+        {
+          "name": "params.hpp",
+          "added": 41,
+          "removed": 1
+        },
+        {
+          "name": "plan.cpp",
+          "added": 55,
+          "removed": 10
+        },
+        {
+          "name": "plan.hpp",
+          "added": 5,
+          "removed": 1
+        },
+        {
+          "name": "world.hpp",
+          "added": 1,
+          "removed": 0
+        }
+      ]
+    },
+    {
+      "stack": 8,
+      "from": "exp/cand-stack7/bot",
+      "to": "exp/cand-stack8/bot",
+      "files": [
+        {
+          "name": "main.cpp",
+          "added": 1,
+          "removed": 0
+        },
+        {
+          "name": "mapid.cpp",
+          "added": 27,
+          "removed": 0
+        },
+        {
+          "name": "params.hpp",
+          "added": 56,
+          "removed": 1
+        },
+        {
+          "name": "plan.cpp",
+          "added": 112,
+          "removed": 12
+        },
+        {
+          "name": "plan.hpp",
+          "added": 5,
+          "removed": 0
+        },
+        {
+          "name": "terrdb.hpp",
+          "added": 24,
+          "removed": 0
+        },
+        {
+          "name": "world.hpp",
+          "added": 6,
+          "removed": 0
+        }
+      ]
+    },
+    {
+      "stack": 9,
+      "from": "exp/cand-stack8/bot",
+      "to": "exp/cand-stack9/bot",
+      "files": [
+        {
+          "name": "params.hpp",
+          "added": 45,
+          "removed": 4
+        },
+        {
+          "name": "plan.cpp",
+          "added": 44,
+          "removed": 6
+        },
+        {
+          "name": "plan.hpp",
+          "added": 6,
+          "removed": 0
+        }
+      ]
+    },
+    {
+      "stack": 10,
+      "from": "exp/cand-stack9/bot",
+      "to": "exp/cand-stack10/bot",
+      "files": [
+        {
+          "name": "params.hpp",
+          "added": 43,
+          "removed": 1
+        },
+        {
+          "name": "plan.cpp",
+          "added": 93,
+          "removed": 2
+        },
+        {
+          "name": "plan.hpp",
+          "added": 11,
+          "removed": 0
+        }
+      ]
+    },
+    {
+      "stack": 11,
+      "from": "exp/cand-stack10/bot",
+      "to": "exp/cand-stack11/bot",
+      "files": [
+        {
+          "name": "params.hpp",
+          "added": 46,
+          "removed": 1
+        },
+        {
+          "name": "plan.cpp",
+          "added": 112,
+          "removed": 11
+        },
+        {
+          "name": "plan.hpp",
+          "added": 13,
+          "removed": 0
+        }
+      ]
+    }
+  ]
+}

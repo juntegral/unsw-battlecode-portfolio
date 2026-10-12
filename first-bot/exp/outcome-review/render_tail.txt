@@ -1,0 +1,99 @@
+
+table(['시대','결과','신호','경기 N','신호 경기 N','Wilson 95%'],signal)
+add('[해석] 적 머리 충돌·시간 초과·빈 이웃 자해는 관측 사실이다. 특히 자해는 의도적 공급일 수 있다. “상대가 실수해서만 이겼다”는 결론은 이 플래그로 내릴 수 없다. 선택 기보에서 왕의 회수율과 복구 여부를 확인한다.')
+
+add('## 6. 근소 패배와 선두 뒤 패배')
+add('근소 패배 = 우리 최종 최장 ≥ 상대의 0.8배, 상대 최종 최장 >0, 결과 L. 양쪽 최종 계보가 r300에 있을 때 최종 길이 차이 항등식의 가장 큰 양수 항으로 분류한다. 항을 합하면 최종 격차이며, 이는 결과의 회계 분해이고 인과 식별이 아니다.')
+table(['근소 패배 부류','전체 N','현재/과거 N','지도 N','상대 N'],[(k,z['n'],f"{z['wavesN']}/{z['historyN']}",str(z['mapCounts']),str(z['opponentCounts'])) for k,z in A['classes'].items() if k.startswith('near:')])
+near=[r for r in G if r.get('nearClass')]
+for era in ['waves','history']:
+ rr=[r for r in near if r['era']==era]
+ add(f"[사실] {era} 근소 패배 {len(rr)}판. 우리/상대 최종 길이 평균 {n(S.mean(r['ourFinal'] for r in rr)) if rr else '–'}/{n(S.mean(r['theirFinal'] for r in rr)) if rr else '–'}.")
+for era in ['waves','history']:
+ for t in [300,400]:
+  rr=[r for r in G if r['era']==era and r.get('led'+str(t))];lost=sum(r['outcome']=='L' for r in rr)
+  add(f"[사실] {era} r{t} 현재 왕 선두 {len(rr)}판 중 {lost}패; 선두 뒤 패배율 {pct(lost/len(rr)) if rr else '–'} [{ci(wilson(lost,len(rr)),True)}].")
+table(['선두 뒤 패배 부류','전체 N','현재/과거 N','지도 N','상대 N'],[(k,z['n'],f"{z['wavesN']}/{z['historyN']}",str(z['mapCounts']),str(z['opponentCounts'])) for k,z in A['classes'].items() if k.startswith('lead:')])
+add('[사실] 근소 패배와 선두 뒤 패배는 겹칠 수 있다. 이 두 N은 더하지 않는다. r300·r400 선두는 현재 최장, 분해의 L300은 최종 계보 조상이므로 서로 다른 드래곤일 수 있다.')
+
+add('## 7. 고정 규칙으로 선택한 리플레이 깊이 읽기')
+add(f"[사실] 각 승리/근소패배/선두뒤패배 부류의 최저 게임 ID 2판, 선택 승리마다 같은 지도·상대의 최저 ID 패배(같은 시대 우선)를 골랐다. 중복 제거 {len(D)}판. 읽은 뒤 사례를 바꾸지 않았다. 원 사건 로그는 `.cache/outcome-review/deep.jsonl`, 전체 선택 목록은 `selection.json`이다.")
+table(['게임','지도','상대','결과','선택 이유'],[(d['key'],d['map'],d['opponent'],d['outcome'],', '.join(d['selection'])) for d in D])
+for d in D:
+ r=bykey[d['key']];us=r['ourSide'];en='B' if us=='A' else 'A'
+ add('### '+d['key']+' · '+d['map']+' · 상대 '+str(d['opponent'])+' · '+d['outcome'])
+ add('[사실] 리플레이: `'+r['file']+'`; 아래 라운드는 0부터 시작한다.')
+ cps={q['r']:q for q in d['checkpoints']}
+ seq=[]
+ for t in [0,50,100,250,300,400]:
+  q=cps.get(t)
+  if q:seq.append(f"r{t}: 머리 {q[us]['heads']}/{q[en]['heads']}, 왕 #{q[us]['kid']} L{q[us]['king']}/#{q[en]['kid']} L{q[en]['king']}")
+ add('1. [사실] 성장 궤적(우리/상대): '+'; '.join(seq)+'.')
+ lines={tm:d['lines'][tm] for tm in [us,en]}
+ def line_at(tm,t):
+  z=[q for q in lines[tm] if q['born']<=t]
+  return z[-1]['id'] if z else None
+ add(f"2. [사실] 최종 왕: 우리 #{d['final'][us]['kid']} L{d['final'][us]['len']}, 상대 #{d['final'][en]['kid']} L{d['final'][en]['len']}. r300 최종 계보 조상: 우리 #{line_at(us,300)}, 상대 #{line_at(en,300)}. 계보 L300 {r['ourLineage300']}/{r['theirLineage300']}.")
+ # All actual king deaths are available in the raw log; show the decisive largest
+ # late death, or last elimination death for early-ending cases, by a fixed rule.
+ relevant=[x for x in d['significantDeaths'] if x['isKing'] and x['r']>=250]
+ if not relevant:relevant=[x for x in d['significantDeaths'] if x['r']>=d['rounds']-3]
+ relevant=sorted(relevant,key=lambda x:(-x['len'],x['r'],x['id']))[:2]
+ if relevant:
+  for i,x in enumerate(relevant,start=3):
+   turn=x['turn'];eat=collections.Counter(z['team'] for z in x['eaters']);pos=turn.get('head',{})
+   action=turn.get('action');paths=turn.get('free',[])
+   add(f"{i}. [사실] r{x['r']} {x['team']} #{x['id']} L{x['len']} 사망({x['cause']}), 턴 시작 ({pos.get('x')},{pos.get('y')}), 행동 {action}, 빈 이웃 {paths}, 접촉 #{x['otherId']} L{x['otherLength']}. 사망 진주 {x['drops']}개 중 자기 팀 {eat[x['team']]}개, 적 {sum(eat.values())-eat[x['team']]}개 회수. 먹은 드래곤/라운드: "+', '.join(f"#{z['id']}@r{z['r']}" for z in x['eaters'][:10])+'.')
+ else:add('3. [사실] 선택된 왕 손실 사건이 없다. 최종 길이 차이를 자연 섭취·희생 공급·분열의 누적으로 비교한다.')
+ add(f"5. [사실] r300 이후 최종 계보: 자연 {r['ourLineNatural300']}/{r['theirLineNatural300']}, 희생 {r['ourLineSac300']}/{r['theirLineSac300']}, 다른 우리 사망 {r['ourLineOwnOther300']}/{r['theirLineOwnOther300']}, 적 사망 {r['ourLineEnemy300']}/{r['theirLineEnemy300']}, 질주 {r['ourLineSprint300']}/{r['theirLineSprint300']}, 분열 손실 {r['ourLineSplit300']}/{r['theirLineSplit300']} (우리/상대). 끝 r{d['rounds']-1}, 최장 {r['ourFinal']}/{r['theirFinal']}.")
+ ev=[x for x in d['events'] if x['type']=='eat' and x['origin']=='own-sac']
+ if ev:
+  # Lowest event round pointers make the supply claim concretely inspectable.
+  add('6. [사실] 계보에 들어간 희생 진주의 첫 사건: '+', '.join(f"{x['team']} #{x['id']}@r{x['r']} ({x['tile']['x']},{x['tile']['y']})" for x in ev[:6])+'.')
+ if r.get('gapTerms'):add('[사실] 최종 격차 분해: '+str(r['gapTerms'])+f"; 가장 큰 항 {r['nearClass']}.")
+ if r['outcome']=='W':
+  add('[해석] 이 사례는 '+str(r.get('winClass'))+' 부류다. 왕 손실이 있었다면 그 사건과 이후 복구량을 함께 봐야 한다. 빈 이웃 자해만으로 상대의 의도를 판정할 수 없다.')
+ elif r.get('nearClass'):add('[해석] 근소 패배의 최대 회계 항은 '+r['nearClass']+'다. 한 항을 없애면 다른 행동이 달라질 수 있으므로 그대로 승리 전환량으로 간주하지 않는다.')
+ elif r.get('leadClass'):add('[해석] 선두를 지키지 못한 부류는 '+r['leadClass']+'다. 현재 왕 선두와 최종 계보의 성장 궤적을 구분해야 한다.')
+ else:add('[해석] 같은 지도·상대의 패배 대조다. 지도와 상대가 같아도 씨앗과 봇 버전이 달라 단일 행동의 인과 비교는 아니다.')
+
+add('## 8. 검출력: +3 / +5 / +10승을 확인하려면')
+add(power['assumptions'])
+table(['목표 추가 승/60','검출력','잡음 가정','팔당 경기 N','두 팔 총 N','팔당 60판 웨이브','총 웨이브'],[(z['plusWinsPer60'],pct(z['power']),z['noise'],z['gamesPerArm'],z['totalGames'],z['wavesPerArm'],z['totalWaves']) for z in power['table']])
+add('[사실] 팔당 경기 수를 60판 단위로 올림했다. DEV 10판은 검출력의 N에 넣지 않는다. 같은 웨이브 지도·상대 구성 유지, 양쪽 새 씨앗의 독립 평가를 가정한다. 고정된 기존 840판을 재사용하는 설계와는 필요한 신규 경기 수가 다르다.')
+add('[해석] 분산 상한 시나리오는 반복 5회의 불확실성을 드러내는 감도 분석이며 기본 목표가 아니다. +3승의 작은 개선은 한 웨이브의 증감만으로 판단하기 어렵다. 반복 시드·상대 버전·평가 종료 규칙을 미리 고정해야 한다.')
+
+add('## 9. 결론: 연관된 지렛대와 현재 위치')
+z=pop['top6']
+add(f"[사실] 현재 14회 실행 top-6는 {z['W']}/{z['n']}승 ({pct(z['W']/z['n'])}, Wilson 95% {ci(z['winCI'],True)}). DEV는 {pop['dev']['W']}/{pop['dev']['n']}승. 전체 승리 {pop['all']['W']}판 가운데 현재 웨이브 {pop['waves']['W']}판, 과거 {pop['history']['W']}판이다.")
+aut=A['byMap']['waves']['Autarky'];aw=aut['top6']['W']+aut['DEV']['W']
+add(f"[사실] Autarky는 현재 승리 {aw}/{pop['waves']['W']}판, 과거까지 합치면 {A['byMap']['all']['Autarky']['top6']['W']+A['byMap']['all']['Autarky']['DEV']['W']}/{pop['all']['W']}판이다. 지도에 편중된 승률을 경제 지표의 일반적 효과로 읽으면 안 된다.")
+latest=A['waveNames'][-1]
+lever=[('r100 머리 비율','headLogRatio100','ourHeads100'),('자연 섭취 비율','fullLogNaturalRatio','naturalRatio'),('r300 왕 격차','currentKingDifference300','ourLineage300'),('왕 계보 희생 공급','lineSacDifference','ourLineSac300'),('후기 조각 공급','birthLogRatio','ourLatePieces'),('왕 노출','exposureDifference','ourExposure')]
+rows=[]
+for label,f,rawf in lever:
+ model=A['models'].get('single-adjusted:'+f,{});q=(model.get('coefficients')or[None])[0]
+ effect=f"OR {n(q['OR'],3)} [{n(q['ORCI'][0],3)}–{n(q['ORCI'][1],3)}], 정보 N={model['informativeN']}" if q else '식별 불가'
+ rows.append([label,effect,summary(A['distributions'][latest][rawf])])
+table(['지렛대','지도×상대 보정 연관 크기 (단변수)','최신 '+latest+' 위치'],rows)
+add('[해석] 조작 후보는 경제 규모(초반 머리·자연 섭취·후기 조각)와 끝 왕 전환(희생 진주·왕 생존)이다. 이 연구에서 크기는 관측 연관 OR와 같은 지도·상대의 경기 차이다. 이를 “머리를 늘리면 몇 승 증가” 같은 인과 승수로 바꾸려면 새 봇의 고정 평가가 필요하다.')
+add('[해석] 전멸 감소와 극상위 승수 증가는 별개의 목표다. 전멸을 피한 뒤에도 최종 단일 왕 길이로 지므로, 생존 개선이 곧바로 승수 개선이 되는지 결과 장부로 확인해야 한다. 왕 노출은 보호의 후보이지만 지형·공급·상대 행동과 결합된 지표다.')
+add('### 전체 top-vs-top 캐시의 맥락')
+table(['지도형','캐시 전체 N','500까지 간 승자/패자 N','승자/패자 끝 왕','승자/패자 r100 머리','승자/패자 계보 희생(r300+)'],[(k,z['n'],f"{z['winFinal']['n']}/{z['loseFinal']['n']}",f"{n(z['winFinal']['mean'])}/{n(z['loseFinal']['mean'])}",f"{n(z['winHeads100']['mean'])}/{n(z['loseHeads100']['mean'])}",f"{n(z['winLineSac']['mean'])}/{n(z['loseLineSac']['mean'])}") for k,z in A['topVsTop'].items()])
+add('[사실] 이 표는 지정된 top-sample 캐시의 모든 행을 읽었다. 과거 관측 문서와 달리 비활성/timeout 팀을 제거하지 않았다. 우리 직접 상대 결과와 모집단·좌석·코드가 다르므로 검출력이나 승률 분모에 섞지 않는다.')
+
+add('## 10. 독립 재검산과 다시 실행하기')
+table(['핵심 수','1차 캐시·게임 JSON','독립 원 리플레이'],[(k,K['sums']['primary'][k],K['sums']['independent'][k]) for k in K['sums']['primary']])
+add(f"[사실] 모든 {M['n']}판 원 리플레이를 독립 스크립트로 다시 셌다. 최종 최장·머리·r10/50/100/250/300/400 상태·자연 섭취·희생·L300·계보 흐름·노출의 경기별 불일치 {K['mismatchCount']}건. 질량 장부 점검 {M['cacheCheck']}; 기존 왕 계보 점검 {M['egCheck']}. stack5 계보 캐시 누락 1판은 독립 추출값을 사용했다.")
+add('스크립트는 출력 파일을 `x`/`wx`로 생성하며 이미 있는 파일을 덮어쓰지 않는다. 새 출력 디렉터리로 경로를 바꾼 새 실행 스크립트를 만들거나 기존 산출물을 보존한 별도 실행을 준비해야 한다. 첫 실행 순서는 `prepare.js` → `recount.js` → `analyse.py` → `deep_read.js` → `render-v2.py` → `finish.py`다. 승인된 자원 예외 플래그는 `--allow-inherited-10`; 실행 접두어는 `nice -n 15`, 워커 1개다. 예외가 승인되지 않으면 스크립트는 무거운 작업을 실행하지 않는다.')
+
+add('## 부록 A. 웨이브 × 지도형 (top-6 / DEV)')
+table(['웨이브','집단','지도형','N','승/무/패','승률 [Wilson 95%]','우리/상대 전멸','끝 최장 우리/상대'],[(w,g,f,z['n'],outcome(z),ci(z['winCI'],True),f"{z['eliminated']}/{z['opponentEliminated']}",final(z)) for w,a in A['waveFamily'].items() for g,b in a.items() for f,z in b.items()])
+add('## 부록 B. 웨이브 × 지도 (top-6 / DEV)')
+table(['웨이브','지도','집단','N','승/무/패','승률 [Wilson 95%]','우리/상대 전멸','끝 최장 우리/상대'],[(w,m,g,z['n'],outcome(z),ci(z['winCI'],True),f"{z['eliminated']}/{z['opponentEliminated']}",final(z)) for w,a in A['waveMap'].items() for m,b in a.items() for g,z in b.items()])
+add('## 부록 C. 웨이브 × 상대')
+table(['웨이브','상대','N','승/무/패','승률 [Wilson 95%]','우리/상대 전멸','끝 최장 우리/상대'],[(w,o,z['n'],outcome(z),ci(z['winCI'],True),f"{z['eliminated']}/{z['opponentEliminated']}",final(z)) for w,a in A['waveOpponent'].items() for o,z in a.items()])
+add('[사실] 부록의 연속값·전멸률·무승부율·패배율·최장 우세 비율의 95% 구간은 `.cache/outcome-review/analysis.json` 각 셀에 전부 보존했다. N=1인 DEV 지도 셀은 연속값의 구간을 계산하지 않는다.')
+text='\n'.join(L)+'\n'
+with open(ROOT/'research/observations/outcome-review.md','x',encoding='utf-8') as f:f.write(text)
+print('report written:',len(text.splitlines()),'lines;',len(text.encode()),'bytes')

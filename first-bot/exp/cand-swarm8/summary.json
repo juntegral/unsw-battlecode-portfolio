@@ -1,0 +1,42 @@
+{
+  "label": "cand-swarm8",
+  "bot": "~/01. Project/개인 프로젝트/unsw-heuristic/exp/cand-swarm8/bot",
+  "at": "2026-09-29T20:29:37.044Z",
+  "benchmark": {
+    "maps": 10,
+    "opps": [
+      "h2"
+    ],
+    "seeds": [
+      1,
+      2
+    ],
+    "sides": 2
+  },
+  "all": {
+    "n": 44,
+    "G": 48.79545454545455,
+    "alive": 1,
+    "win": 1
+  },
+  "byOpp": {
+    "h2": {
+      "n": 40,
+      "G": 46.975,
+      "alive": 1,
+      "win": 1
+    }
+  },
+  "problems": 0,
+  "errors": 0,
+  "vsBaseline": {
+    "baseline": "cand-merge2",
+    "pairs": 44,
+    "dG": -23.09090909090909,
+    "ci95": [
+      -41.6,
+      -8.98076923076923
+    ],
+    "note": "map-cluster bootstrap"
+  }
+}

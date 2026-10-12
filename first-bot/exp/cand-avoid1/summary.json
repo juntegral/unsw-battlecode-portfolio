@@ -1,0 +1,42 @@
+{
+  "label": "cand-avoid1",
+  "bot": "~/01. Project/개인 프로젝트/unsw-heuristic/exp/cand-avoid1/bot",
+  "at": "2026-09-29T14:05:42.980Z",
+  "benchmark": {
+    "maps": 10,
+    "opps": [
+      "archetype_hunter"
+    ],
+    "seeds": [
+      1,
+      2
+    ],
+    "sides": 2
+  },
+  "all": {
+    "n": 40,
+    "G": 31.525,
+    "alive": 0.925,
+    "win": 0.85
+  },
+  "byOpp": {
+    "archetype_hunter": {
+      "n": 40,
+      "G": 31.525,
+      "alive": 0.925,
+      "win": 0.85
+    }
+  },
+  "problems": 0,
+  "errors": 0,
+  "vsBaseline": {
+    "baseline": "eval-r1",
+    "pairs": 40,
+    "dG": 3.075,
+    "ci95": [
+      -0.8,
+      7.425
+    ],
+    "note": "map-cluster bootstrap"
+  }
+}

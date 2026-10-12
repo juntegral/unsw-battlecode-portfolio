@@ -1,0 +1,45 @@
+{
+  "label": "stack10dev8-a-px4",
+  "bot": "~/01. Project/개인 프로젝트/unsw-heuristic/exp/cand-stack10/dev8",
+  "at": "2026-09-30T12:45:16.078Z",
+  "benchmark": {
+    "maps": 10,
+    "opps": [
+      "proxy4_king",
+      "proxy4_swarm",
+      "proxy4_elim"
+    ],
+    "seeds": [
+      1
+    ],
+    "sides": 2
+  },
+  "all": {
+    "n": 60,
+    "G": 16.8,
+    "alive": 0.8833333333333333,
+    "win": 0.18333333333333332
+  },
+  "byOpp": {
+    "proxy4_king": {
+      "n": 20,
+      "G": 15.85,
+      "alive": 0.9,
+      "win": 0.15
+    },
+    "proxy4_swarm": {
+      "n": 20,
+      "G": 15.45,
+      "alive": 0.85,
+      "win": 0.1
+    },
+    "proxy4_elim": {
+      "n": 20,
+      "G": 19.1,
+      "alive": 0.9,
+      "win": 0.3
+    }
+  },
+  "problems": 0,
+  "errors": 0
+}

@@ -1,0 +1,241 @@
+diff -ru cand-portal6/bot/main.cpp cand-portal7/bot/main.cpp
+--- cand-portal6/bot/main.cpp	2026-09-30 00:48:09
++++ cand-portal7/bot/main.cpp	2026-09-30 00:55:59
+@@ -45,6 +45,7 @@
+         lastSonarDir = -1; lastSonarFrom = -1;
+         if (P::SEND_SONAR && a.sonarDir >= 0) {
+             uint64_t msg = a.relayId >= 0 ? world.encodeKingMsg(a.relayId, a.relayRound, a.relayT, a.relayLen) : world.encodeMsg(a.hotT);
++            if (a.portalMsg && !a.sonarAll) msg = a.portalMsg; // cand-portal5
+             if (a.sonarAll) { for (int d = 0; d < 4; d++) writer.sonar(d, msg); lastSonarDir = -2; } // several rays: no attribution
+             else { writer.sonar(a.sonarDir, msg); lastSonarDir = a.sonarDir; lastSonarFrom = a.sonarFromT; }
+         }
+diff -ru cand-portal6/bot/params.hpp cand-portal7/bot/params.hpp
+--- cand-portal6/bot/params.hpp	2026-09-30 00:52:11
++++ cand-portal7/bot/params.hpp	2026-09-30 00:56:08
+@@ -74,6 +74,11 @@
+ constexpr int    FRUST_GRACE = 12;           // turns a pearl may stay in view uneaten before its pull fades
+ constexpr int    FRUST_SPAN = 24;            // turns over which the pull fades to FRUST_FLOOR
+ constexpr double FRUST_FLOOR = 0.1;
++
++// --- cand-portal7 (= cand-portal6 + shared portal knowledge, first written as cand-portal5 on cand-portal4). A child of a split starts with no memory, so a dragon that
++// learns a portal pair (or dies learning that an entry leads into a dead end) tells the team by sonar.
++constexpr double TRAP_PENALTY = 30.0;        // stepping through an entry known to lead into a dead end
++constexpr int    NEWS_EVERY = 2;             // before GATHER_BROADCAST, every n-th single ray carries portal news
+ constexpr double DOOM_VALUE = -200.0;        // below this the best move is death within the horizon
+ 
+ // --- threat from enemy heads (d = path distance from the enemy head to the tile) ---
+Only in cand-portal7/bot: params.hpp.orig
+diff -ru cand-portal6/bot/plan.cpp cand-portal7/bot/plan.cpp
+--- cand-portal6/bot/plan.cpp	2026-09-30 00:52:11
++++ cand-portal7/bot/plan.cpp	2026-09-30 00:55:59
+@@ -160,6 +160,7 @@
+ double Planner::portalPenalty(int from, int d, int to) const {
+     if (w_.tiles[from].edge[d] != EDGE_PORTAL) return 0.0;
+     double pen = w_.barren[(size_t)from * 4 + d] > w_.round ? P::BARREN_PENALTY : 0.0; // cand-portal3
++    if (w_.trapEntry[(size_t)from * 4 + d]) pen += P::TRAP_PENALTY;                     // cand-portal5
+     if (from == w_.headT && probeOk_ && w_.probeDir == d) return pen; // a ray through it just now hit no dragon
+     int seen = w_.tiles[to].seen;
+     if (seen != w_.round) {
+@@ -214,6 +215,7 @@
+     if (x.seen < 0 || x.edge[d] != EDGE_PORTAL || w_.across(t, d) != -2) return 0.0;
+     if (w_.frontierBlock[(size_t)t * 4 + d] > w_.round) return 0.0;
+     if (w_.barren[(size_t)t * 4 + d] > w_.round) return 0.0; // cand-portal3
++    if (w_.trapEntry[(size_t)t * 4 + d]) return 0.0;          // cand-portal5
+     return frontierBase_;
+ }
+ 
+@@ -536,6 +538,10 @@
+     act.sonarDir = pickSonarDir(fromT, facing, &probe); act.hotT = pickHotspot();
+     act.sonarFromT = fromT;
+     act.sonarAll = !probe && w_.round >= P::GATHER_BROADCAST;
++    if (!act.sonarAll && !w_.news.empty() && ((turnCounter_ + w_.myId) % P::NEWS_EVERY) == 0) { // cand-portal5
++        const auto& n = w_.news[(size_t)(w_.newsCursor++) % w_.news.size()];
++        act.portalMsg = w_.encodePortalMsg(n);
++    }
+     // every other turn a non-king passes on the king's last known head, so news of it spreads beyond its own rays
+     if (act.sonarAll && !gatherKing_ && goalId_ >= 0 && ((w_.round + w_.myId) & 1)) {
+         act.relayId = goalId_; act.relayRound = goalRound_; act.relayT = goalT_; act.relayLen = goalLen_;
+@@ -873,6 +879,15 @@
+         if (childCanMove) {
+             act.kind = Action::SPLIT; act.splitSize = w_.myLen - 2;
+             setSonar(act);
++            int wayOut = 0; // cand-portal5: a dead end = every step but back into our neck is kelp
++            for (int d = 0; d < 4; d++) if (d != opp(w_.myDir) && w_.across(w_.headT, d) != -1) wayOut++;
++            if (wayOut == 0 && w_.crossRound >= 0 && w_.round - w_.crossRound <= 2 && w_.crossT >= 0) { // we walked into a dead end
++                w_.markTrap(w_.crossT, w_.crossDir);
++                int side; int ct = -1;
++                { int t = w_.crossT, d = w_.crossDir; if (d == N || d == W) { ct = t; side = d; } else { ct = w_.geo.stepIdx(t, d); side = opp(d); } }
++                for (auto& nw : w_.news) if ((nw.t1 == ct && nw.s1 == side) || (nw.t2 == ct && nw.s2 == side)) { act.portalMsg = w_.encodePortalMsg(nw); break; }
++                if (act.portalMsg) { act.sonarDir = opp(w_.myDir); act.sonarAll = false; act.sonarFromT = -1; } // leaves from the tail, into the child
++            }
+             char buf[64]; snprintf(buf, sizeof buf, "escape-split%d L%d", act.splitSize, w_.myLen);
+             act.indicator = buf;
+             return act;
+Only in cand-portal7/bot: plan.cpp.orig
+diff -ru cand-portal6/bot/plan.hpp cand-portal7/bot/plan.hpp
+--- cand-portal6/bot/plan.hpp	2026-09-30 00:48:09
++++ cand-portal7/bot/plan.hpp	2026-09-30 00:55:59
+@@ -15,6 +15,7 @@
+     std::vector<int> path;      // tiles the head will occupy in order (for MOVE)
+     int sonarDir = -1;          // ray to send this turn (-1 none)
+     int sonarFromT = -1;        // our head after this action: where a single ray leaves from (probe bookkeeping)
++    uint64_t portalMsg = 0;     // cand-portal5: send this portal news instead of the usual message (single ray only)
+     bool sonarAll = false;      // send the message on all four rays (no echo attribution)
+     int relayId = -1, relayRound = -1, relayT = -1, relayLen = 0; // relay the king's position instead of our own (c10d)
+     int hotT = -1;              // hotspot tile to advertise
+diff -ru cand-portal6/bot/world.cpp cand-portal7/bot/world.cpp
+--- cand-portal6/bot/world.cpp	2026-09-30 00:48:09
++++ cand-portal7/bot/world.cpp	2026-09-30 01:00:06
+@@ -30,6 +30,7 @@
+     frontierBlock.assign((size_t)n * 4, 0);
+     barren.assign((size_t)n * 4, 0);
+     frustration.assign((size_t)n, 0);
++    trapEntry.assign((size_t)n * 4, 0);
+ }
+ 
+ int World::mirrorTile(int t, int hyp) const {
+@@ -57,6 +58,7 @@
+ 
+ void World::setEdge(int t, int d, uint8_t kind, int pid) {
+     Tile& a = tiles[t];
++    int oldId = a.edge[d] == EDGE_PORTAL ? a.portal[d] : -1;
+     a.edge[d] = kind; a.portal[d] = (int16_t)(kind == EDGE_PORTAL ? pid : -1);
+     int u = geo.stepIdx(t, d);
+     Tile& b = tiles[u];
+@@ -64,11 +66,72 @@
+     if (kind == EDGE_PORTAL && pid >= 0) {
+         int side; int ct = canonicalPortalEnd(t, d, side);
+         auto& ends = portals[pid];
+-        for (auto& e : ends) if (e.t == ct && e.side == side) return;
+-        if (ends.size() < 2) ends.push_back(PortalEnd{ct, side});
++        // cand-portal5: this edge carried a pair inferred by symmetry or heard by sonar under a stand-in id: keep it
++        if (oldId >= 1000 && oldId != pid) {
++            auto it = portals.find(oldId);
++            if (it != portals.end() && it->second.size() == 2)
++                for (auto& e : it->second) {
++                    bool have = false; for (auto& f : ends) if (f.t == e.t && f.side == e.side) have = true;
++                    if (!have && ends.size() < 2) ends.push_back(e);
++                }
++        }
++        bool have = false; for (auto& e : ends) if (e.t == ct && e.side == side) have = true;
++        if (!have && ends.size() < 2) {
++            ends.push_back(PortalEnd{ct, side});
++            if (ends.size() == 2 && pid < 1000) notePair(ends[0].t, ends[0].side, ends[1].t, ends[1].side, 0); // cand-portal5
++        }
+     }
+ }
+ 
++// ---- cand-portal5: shared portal knowledge ----
++void World::notePair(int t1, int s1, int t2, int s2, uint8_t trap) {
++    for (auto& n : news) {
++        if ((n.t1 == t1 && n.s1 == s1 && n.t2 == t2 && n.s2 == s2) || (n.t1 == t2 && n.s1 == s2 && n.t2 == t1 && n.s2 == s1)) {
++            if (n.t1 == t1) n.trap |= trap;
++            else n.trap |= (uint8_t)(((trap & 3) << 2) | ((trap >> 2) & 3));
++            return;
++        }
++    }
++    if (news.size() < 32) news.push_back(PortalNews{t1, s1, t2, s2, trap});
++}
++
++void World::markTrap(int t, int d) {
++    trapEntry[(size_t)t * 4 + d] = 1;
++    int side; int ct = canonicalPortalEnd(t, d, side);
++    int bit = (d == side) ? 0 : 1; // moving N/W from the canonical tile, or back across it from the neighbour
++    for (auto& n : news) {
++        if (n.t1 == ct && n.s1 == side) n.trap |= (uint8_t)(1 << bit);
++        else if (n.t2 == ct && n.s2 == side) n.trap |= (uint8_t)(1 << (bit + 2));
++    }
++}
++
++void World::learnPair(const PortalNews& n) {
++    auto edgeId = [&](int t, int s) -> int { const Tile& x = tiles[t]; return x.edge[s] == EDGE_PORTAL ? x.portal[s] : (x.edge[s] == EDGE_UNKNOWN ? -1 : -9); };
++    int p1 = edgeId(n.t1, n.s1), p2 = edgeId(n.t2, n.s2);
++    if (p1 == -9 || p2 == -9) return; // we saw open water or kelp there: not our map's pair
++    int pid = (p1 >= 0 && p1 < 1000) ? p1 : ((p2 >= 0 && p2 < 1000) ? p2 : 2000 + n.t1 * 2 + (n.s1 == W ? 1 : 0));
++    auto& ends = portals[pid];
++    auto addEnd = [&](int t, int s) {
++        for (auto& e : ends) if (e.t == t && e.side == s) return;
++        if (ends.size() < 2) ends.push_back(PortalEnd{t, s});
++    };
++    addEnd(n.t1, n.s1); addEnd(n.t2, n.s2);
++    { int have = 0; for (auto& e : ends) if ((e.t == n.t1 && e.side == n.s1) || (e.t == n.t2 && e.side == n.s2)) have++;
++      if (have < 2) return; } // it does not fit what we know: ignore it
++    auto mark = [&](int t, int s) {
++        Tile& a = tiles[t];
++        if (a.edge[s] == EDGE_PORTAL && a.portal[s] >= 0 && a.portal[s] < 1000) return; // seen with its real id
++        a.edge[s] = EDGE_PORTAL; a.portal[s] = (int16_t)pid;
++        int u = geo.stepIdx(t, s); tiles[u].edge[opp(s)] = EDGE_PORTAL; tiles[u].portal[opp(s)] = (int16_t)pid;
++    };
++    mark(n.t1, n.s1); mark(n.t2, n.s2);
++    if (n.trap & 1) trapEntry[(size_t)n.t1 * 4 + n.s1] = 1;
++    if (n.trap & 2) trapEntry[(size_t)geo.stepIdx(n.t1, n.s1) * 4 + opp(n.s1)] = 1;
++    if (n.trap & 4) trapEntry[(size_t)n.t2 * 4 + n.s2] = 1;
++    if (n.trap & 8) trapEntry[(size_t)geo.stepIdx(n.t2, n.s2) * 4 + opp(n.s2)] = 1;
++    notePair(n.t1, n.s1, n.t2, n.s2, n.trap); // pass it on
++}
++
+ int World::across(int t, int d) const {
+     const Tile& x = tiles[t];
+     switch (x.edge[d]) {
+@@ -358,6 +421,7 @@
+     lastEcho = rb.echoes; echoRound = rb.echoes.present ? round : echoRound;
+     for (uint64_t v : rb.msgs) {
+         AllyMsg m;
++        { PortalNews pn; if (decodePortalMsg(v, pn)) { learnPair(pn); continue; } } // cand-portal5
+         if (!decodeMsg(v, m)) continue;
+         if (m.id == (myId & 255)) continue;
+         if (m.relay) {
+@@ -431,6 +495,31 @@
+     uint64_t chk = (id * 131 + rnd * 7 + x * 17 + y * 31 + len * 3 + hx * 5 + hy * 13 + team * 101 + 0x7F) & 255;
+     uint64_t v = (MSG_MAGIC_KING << 58) | (id << 50) | (rnd << 41) | (x << 35) | (y << 29) | (len << 21) | (hx << 15) | (hy << 9) | (team << 8) | chk;
+     return v ^ MSG_WHITEN;
++}
++
++// cand-portal5: [magic 6][x1 6][y1 6][s1 1][x2 6][y2 6][s2 1][trap 4][team 1][check 8], whitened like the others
++static const uint64_t MSG_MAGIC_PORTAL = 0x15;
++static uint64_t portalCheck(uint64_t x1, uint64_t y1, uint64_t s1, uint64_t x2, uint64_t y2, uint64_t s2, uint64_t tr, uint64_t team) {
++    return (x1 * 7 + y1 * 13 + s1 * 29 + x2 * 37 + y2 * 41 + s2 * 53 + tr * 61 + team * 101 + 0x5C) & 255;
++}
++uint64_t World::encodePortalMsg(const PortalNews& n) const {
++    uint64_t x1 = (uint64_t)(n.t1 % geo.W) & 63, y1 = (uint64_t)(n.t1 / geo.W) & 63, s1 = n.s1 == W ? 1 : 0;
++    uint64_t x2 = (uint64_t)(n.t2 % geo.W) & 63, y2 = (uint64_t)(n.t2 / geo.W) & 63, s2 = n.s2 == W ? 1 : 0;
++    uint64_t tr = n.trap & 15, team = myTeam == 'B' ? 1 : 0;
++    uint64_t v = (MSG_MAGIC_PORTAL << 58) | (x1 << 52) | (y1 << 46) | (s1 << 45) | (x2 << 39) | (y2 << 33) | (s2 << 32) |
++                 (tr << 28) | (team << 27) | (portalCheck(x1, y1, s1, x2, y2, s2, tr, team) << 19);
++    return v ^ MSG_WHITEN;
++}
++bool World::decodePortalMsg(uint64_t v, PortalNews& out) const {
++    v ^= MSG_WHITEN;
++    if ((v >> 58) != MSG_MAGIC_PORTAL) return false;
++    uint64_t x1 = (v >> 52) & 63, y1 = (v >> 46) & 63, s1 = (v >> 45) & 1, x2 = (v >> 39) & 63, y2 = (v >> 33) & 63, s2 = (v >> 32) & 1;
++    uint64_t tr = (v >> 28) & 15, team = (v >> 27) & 1, chk = (v >> 19) & 255;
++    if (chk != portalCheck(x1, y1, s1, x2, y2, s2, tr, team) || (v & 0x7FFFF) != 0) return false;
++    if ((team == 1) != (myTeam == 'B')) return false;
++    if ((int)x1 >= geo.W || (int)y1 >= geo.H || (int)x2 >= geo.W || (int)y2 >= geo.H) return false;
++    out.t1 = geo.idx((int)x1, (int)y1); out.s1 = s1 ? W : N; out.t2 = geo.idx((int)x2, (int)y2); out.s2 = s2 ? W : N; out.trap = (uint8_t)tr;
++    return !(out.t1 == out.t2 && out.s1 == out.s2);
+ }
+ 
+ bool World::decodeMsg(uint64_t v, AllyMsg& out) const {
+diff -ru cand-portal6/bot/world.hpp cand-portal7/bot/world.hpp
+--- cand-portal6/bot/world.hpp	2026-09-30 00:48:09
++++ cand-portal7/bot/world.hpp	2026-09-30 00:55:59
+@@ -96,6 +96,18 @@
+     std::vector<int16_t> barren;          // tile*4+dir -> round until which that portal entry is considered barren
+     std::vector<uint8_t> frustration;     // cand-portal4: turns this pearl has been in view while we did not eat it
+ 
++    // cand-portal5: portal knowledge shared by sonar. A pair is two canonical ends (tile, side N|W); trap bit k marks an
++    // entry into a dead end: bit 0 from t1 moving s1, bit 1 from the tile across that edge moving back, bits 2-3 for t2.
++    struct PortalNews { int t1 = -1, s1 = 0, t2 = -1, s2 = 0; uint8_t trap = 0; };
++    std::vector<PortalNews> news;
++    std::vector<uint8_t> trapEntry;       // tile*4+dir: stepping from tile in dir through a portal lands in a dead end
++    int newsCursor = 0;
++    void notePair(int t1, int s1, int t2, int s2, uint8_t trap);
++    void markTrap(int t, int d);
++    void learnPair(const PortalNews& n);
++    uint64_t encodePortalMsg(const PortalNews& n) const;
++    bool decodePortalMsg(uint64_t v, PortalNews& out) const;
++
+     // map-level statistics
+     double pearlPriorUnseen = 0.05;
+     int tilesObserved = 0, pearlsAtFirstSight = 0;

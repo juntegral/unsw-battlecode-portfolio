@@ -1,0 +1,45 @@
+{
+  "label": "stack5-a-px4",
+  "bot": "~/01. Project/개인 프로젝트/unsw-heuristic/exp/cand-stack5/bot",
+  "at": "2026-09-30T05:57:37.441Z",
+  "benchmark": {
+    "maps": 10,
+    "opps": [
+      "proxy4_king",
+      "proxy4_swarm",
+      "proxy4_elim"
+    ],
+    "seeds": [
+      1
+    ],
+    "sides": 2
+  },
+  "all": {
+    "n": 60,
+    "G": 20.95,
+    "alive": 0.85,
+    "win": 0.2
+  },
+  "byOpp": {
+    "proxy4_king": {
+      "n": 20,
+      "G": 23.15,
+      "alive": 0.85,
+      "win": 0.15
+    },
+    "proxy4_swarm": {
+      "n": 20,
+      "G": 20.2,
+      "alive": 0.8,
+      "win": 0.2
+    },
+    "proxy4_elim": {
+      "n": 20,
+      "G": 19.5,
+      "alive": 0.9,
+      "win": 0.25
+    }
+  },
+  "problems": 0,
+  "errors": 0
+}

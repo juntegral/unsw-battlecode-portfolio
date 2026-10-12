@@ -1,0 +1,1308 @@
+{
+  "set": "cand-stack11-online",
+  "games": 70,
+  "turns": 256978,
+  "labelled": 256978,
+  "move": 243930,
+  "wins": 9,
+  "draws": 0,
+  "tags": {
+    "cov": 27491,
+    "map": 7173,
+    "csplit": 1232,
+    "tg": 5957,
+    "tgx": 5108,
+    "cl": 31478,
+    "grab": 8233,
+    "PORTAL?": 1210,
+    "bsplit": 35,
+    "kcap": 12,
+    "escsplit": 5032,
+    "noexit": 5473,
+    "lsplit": 348,
+    "floor": 23,
+    "ghd": 792,
+    "late": 4518,
+    "kxm": 534,
+    "kx": 761,
+    "noexit_spare": 213,
+    "F": 12006,
+    "F2": 12006,
+    "lasttrade": 60,
+    "g": 10009,
+    "gh": 2005,
+    "feed": 229,
+    "conv": 223,
+    "TRADE": 38,
+    "esc": 62,
+    "gx": 402,
+    "frag": 39,
+    "fc": 35,
+    "pocket": 341,
+    "kint": 4,
+    "lntv": 16,
+    "split": 1,
+    "T": 31
+  },
+  "kinds": {
+    "move": 243930,
+    "csplit": 1232,
+    "bsplit": 35,
+    "kcap": 12,
+    "escsplit": 5032,
+    "noexit": 5473,
+    "lsplit": 348,
+    "floor": 23,
+    "lasttrade": 60,
+    "feed": 229,
+    "conv": 223,
+    "frag": 39,
+    "pocket": 341,
+    "split": 1
+  },
+  "splits": {
+    "csplit": 1232,
+    "bsplit": 35,
+    "kcap": 12,
+    "escsplit": 5032,
+    "lsplit": 348,
+    "floor": 23,
+    "frag": 39,
+    "split": 1
+  },
+  "splitActual": {
+    "csplit": 1232,
+    "bsplit": 35,
+    "kcap": 12,
+    "escsplit": 5032,
+    "lsplit": 348,
+    "floor": 23,
+    "frag": 39,
+    "split": 1
+  },
+  "explicitGoals": {
+    "none": 221915,
+    "early_action": 13048,
+    "F": 12006,
+    "g": 10009
+  },
+  "goalModifiers": {
+    "cov": 27491,
+    "cl": 31478,
+    "grab": 8233,
+    "ghd": 792,
+    "kx": 761,
+    "F": 12006,
+    "F2": 12006,
+    "g": 10009,
+    "gh": 2005
+  },
+  "cooccurrence": {
+    "cl+cov": 4524,
+    "cov+grab": 311,
+    "cl+grab": 1793,
+    "F+F2": 12006,
+    "F+cl": 3273,
+    "F2+cl": 3273,
+    "F+cov": 1251,
+    "F2+cov": 1251,
+    "F+grab": 447,
+    "F2+grab": 447,
+    "cl+gh": 153,
+    "cl+g": 580,
+    "g+gh": 2005,
+    "g+grab": 845,
+    "cov+g": 225,
+    "grab+kx": 48,
+    "cov+gh": 48,
+    "gh+grab": 209,
+    "ghd+grab": 138,
+    "cl+ghd": 183,
+    "gh+ghd": 12,
+    "g+ghd": 36,
+    "F+ghd": 8,
+    "F2+ghd": 8,
+    "cov+ghd": 2
+  },
+  "gateChecks": {
+    "csplit_unit_limit": {
+      "n": 1232,
+      "pass": 1232
+    },
+    "csplit_clock": {
+      "n": 1232,
+      "pass": 1232
+    },
+    "csplit_length": {
+      "n": 1232,
+      "pass": 1232
+    },
+    "csplit_actual_units": {
+      "n": 1232,
+      "pass": 1232
+    },
+    "csplit_not_true_long_king": {
+      "n": 1232,
+      "pass": 1232
+    },
+    "bsplit_unit_limit": {
+      "n": 35,
+      "pass": 35
+    },
+    "kcap_unit_limit": {
+      "n": 12,
+      "pass": 12
+    },
+    "kcap_true_king": {
+      "n": 12,
+      "pass": 12
+    },
+    "escsplit_unit_limit": {
+      "n": 5032,
+      "pass": 5032
+    },
+    "lsplit_unit_limit": {
+      "n": 348,
+      "pass": 348
+    },
+    "lsplit_clock": {
+      "n": 348,
+      "pass": 348
+    },
+    "lsplit_length": {
+      "n": 348,
+      "pass": 348
+    },
+    "lsplit_actual_units": {
+      "n": 348,
+      "pass": 348
+    },
+    "floor_unit_limit": {
+      "n": 23,
+      "pass": 23
+    },
+    "floor_opponent_8plus": {
+      "n": 23,
+      "pass": 23
+    },
+    "frag_unit_limit": {
+      "n": 39,
+      "pass": 39
+    },
+    "frag_clock": {
+      "n": 39,
+      "pass": 39
+    },
+    "frag_not_true_king": {
+      "n": 39,
+      "pass": 36
+    },
+    "frag_enemy_not_in_view": {
+      "n": 39,
+      "pass": 39
+    },
+    "split_unit_limit": {
+      "n": 1,
+      "pass": 1
+    }
+  },
+  "checks": {
+    "sim": 0,
+    "splits": 0,
+    "drops": 0,
+    "eatTC": 0,
+    "ledger": 0,
+    "final": 0,
+    "lineage": 0,
+    "natBal": 0,
+    "dropBal": 0,
+    "unknownDeath": 0
+  },
+  "depths": {
+    "6": 153,
+    "7": 243777
+  },
+  "phases": {
+    "r0-99": {
+      "turns": 49992,
+      "tags": {
+        "cov": 8135,
+        "map": 1767,
+        "csplit": 515,
+        "tg": 1347,
+        "tgx": 953,
+        "cl": 7253,
+        "grab": 632,
+        "PORTAL?": 189,
+        "bsplit": 23,
+        "kcap": 4,
+        "escsplit": 908,
+        "noexit": 925,
+        "noexit_spare": 32,
+        "F": 3603,
+        "F2": 3603,
+        "TRADE": 3,
+        "kint": 1,
+        "lasttrade": 10,
+        "pocket": 71,
+        "lntv": 1,
+        "esc": 5,
+        "floor": 1
+      },
+      "goals": {
+        "none": 43932,
+        "early_action": 2457,
+        "F": 3603
+      },
+      "splits": {
+        "csplit": 515,
+        "bsplit": 23,
+        "kcap": 4,
+        "escsplit": 908,
+        "floor": 1
+      }
+    },
+    "r100-249": {
+      "turns": 96030,
+      "tags": {
+        "cov": 9826,
+        "tg": 2327,
+        "cl": 11726,
+        "tgx": 2319,
+        "csplit": 717,
+        "map": 2403,
+        "grab": 2886,
+        "bsplit": 12,
+        "PORTAL?": 452,
+        "kcap": 8,
+        "escsplit": 1583,
+        "noexit": 1882,
+        "noexit_spare": 97,
+        "F": 5283,
+        "F2": 5283,
+        "TRADE": 8,
+        "esc": 15,
+        "lasttrade": 32,
+        "lntv": 9,
+        "floor": 4,
+        "kint": 1,
+        "pocket": 100
+      },
+      "goals": {
+        "none": 86409,
+        "early_action": 4338,
+        "F": 5283
+      },
+      "splits": {
+        "csplit": 717,
+        "bsplit": 12,
+        "kcap": 8,
+        "escsplit": 1583,
+        "floor": 4
+      }
+    },
+    "r250-299": {
+      "turns": 32313,
+      "tags": {
+        "tg": 631,
+        "tgx": 504,
+        "grab": 1117,
+        "cov": 2637,
+        "cl": 3746,
+        "lsplit": 186,
+        "map": 798,
+        "PORTAL?": 195,
+        "escsplit": 581,
+        "noexit": 669,
+        "noexit_spare": 39,
+        "F": 1890,
+        "F2": 1890,
+        "lasttrade": 8,
+        "frag": 3,
+        "fc": 3,
+        "TRADE": 8,
+        "floor": 8,
+        "esc": 6,
+        "pocket": 34,
+        "lntv": 3
+      },
+      "goals": {
+        "none": 28934,
+        "early_action": 1489,
+        "F": 1890
+      },
+      "splits": {
+        "lsplit": 186,
+        "escsplit": 581,
+        "frag": 3,
+        "floor": 8
+      }
+    },
+    "r300-339": {
+      "turns": 25402,
+      "tags": {
+        "cl": 3058,
+        "cov": 1877,
+        "tg": 515,
+        "escsplit": 471,
+        "map": 667,
+        "tgx": 502,
+        "grab": 959,
+        "noexit": 542,
+        "floor": 7,
+        "lsplit": 162,
+        "PORTAL?": 139,
+        "F": 1230,
+        "F2": 1230,
+        "kxm": 113,
+        "kx": 163,
+        "ghd": 295,
+        "conv": 48,
+        "frag": 8,
+        "fc": 7,
+        "noexit_spare": 23,
+        "lasttrade": 2,
+        "TRADE": 6,
+        "kint": 1,
+        "esc": 4,
+        "pocket": 26,
+        "lntv": 2
+      },
+      "goals": {
+        "none": 22906,
+        "early_action": 1266,
+        "F": 1230
+      },
+      "splits": {
+        "escsplit": 471,
+        "floor": 7,
+        "lsplit": 162,
+        "frag": 8
+      }
+    },
+    "r340-429": {
+      "turns": 38938,
+      "tags": {
+        "tgx": 647,
+        "cov": 3355,
+        "cl": 4184,
+        "tg": 879,
+        "escsplit": 970,
+        "map": 1017,
+        "noexit": 958,
+        "ghd": 441,
+        "grab": 2047,
+        "PORTAL?": 212,
+        "g": 7776,
+        "noexit_spare": 20,
+        "lasttrade": 7,
+        "gh": 1598,
+        "feed": 115,
+        "kxm": 238,
+        "kx": 323,
+        "conv": 141,
+        "pocket": 62,
+        "frag": 28,
+        "fc": 25,
+        "esc": 14,
+        "lntv": 1,
+        "split": 1,
+        "TRADE": 8,
+        "floor": 2
+      },
+      "goals": {
+        "none": 28878,
+        "early_action": 2284,
+        "g": 7776
+      },
+      "splits": {
+        "escsplit": 970,
+        "frag": 28,
+        "split": 1,
+        "floor": 2
+      }
+    },
+    "r430-449": {
+      "turns": 5111,
+      "tags": {
+        "cl": 633,
+        "g": 1084,
+        "gh": 198,
+        "tgx": 68,
+        "cov": 513,
+        "TRADE": 2,
+        "kxm": 43,
+        "kx": 69,
+        "noexit": 150,
+        "feed": 44,
+        "grab": 299,
+        "escsplit": 157,
+        "map": 159,
+        "conv": 15,
+        "ghd": 22,
+        "tg": 109,
+        "esc": 3,
+        "PORTAL?": 11,
+        "kint": 1,
+        "floor": 1,
+        "lasttrade": 1,
+        "pocket": 14,
+        "noexit_spare": 1
+      },
+      "goals": {
+        "none": 3645,
+        "g": 1084,
+        "early_action": 382
+      },
+      "splits": {
+        "escsplit": 157,
+        "floor": 1
+      }
+    },
+    "r450-469": {
+      "turns": 4169,
+      "tags": {
+        "tg": 78,
+        "cov": 541,
+        "g": 756,
+        "kxm": 49,
+        "kx": 75,
+        "gh": 120,
+        "feed": 22,
+        "grab": 135,
+        "cl": 422,
+        "noexit": 141,
+        "escsplit": 142,
+        "map": 142,
+        "PORTAL?": 5,
+        "conv": 8,
+        "ghd": 28,
+        "tgx": 52,
+        "esc": 4,
+        "TRADE": 3,
+        "T": 4,
+        "pocket": 14,
+        "gx": 1
+      },
+      "goals": {
+        "none": 3086,
+        "g": 756,
+        "early_action": 327
+      },
+      "splits": {
+        "escsplit": 142
+      }
+    },
+    "r470-494": {
+      "turns": 4338,
+      "tags": {
+        "late": 3902,
+        "cov": 525,
+        "tg": 55,
+        "kxm": 70,
+        "kx": 101,
+        "cl": 404,
+        "tgx": 57,
+        "conv": 11,
+        "esc": 8,
+        "gx": 288,
+        "noexit": 176,
+        "escsplit": 191,
+        "map": 191,
+        "g": 393,
+        "PORTAL?": 7,
+        "gh": 89,
+        "grab": 148,
+        "feed": 42,
+        "ghd": 6,
+        "T": 25,
+        "pocket": 16,
+        "noexit_spare": 1
+      },
+      "goals": {
+        "none": 3509,
+        "early_action": 436,
+        "g": 393
+      },
+      "splits": {
+        "escsplit": 191
+      }
+    },
+    "r495-499": {
+      "turns": 685,
+      "tags": {
+        "late": 616,
+        "cov": 82,
+        "kx": 30,
+        "tgx": 6,
+        "tg": 16,
+        "kxm": 21,
+        "gx": 113,
+        "esc": 3,
+        "cl": 52,
+        "noexit": 30,
+        "escsplit": 29,
+        "map": 29,
+        "grab": 10,
+        "feed": 6,
+        "T": 2,
+        "pocket": 4
+      },
+      "goals": {
+        "none": 616,
+        "early_action": 69
+      },
+      "splits": {
+        "escsplit": 29
+      }
+    }
+  },
+  "lengths": {
+    "2": {
+      "turns": 135963,
+      "tags": {
+        "map": 2279,
+        "tg": 4108,
+        "tgx": 4644,
+        "cov": 16315,
+        "cl": 19439,
+        "grab": 3112,
+        "noexit": 1713,
+        "ghd": 472,
+        "F": 4968,
+        "F2": 4968,
+        "noexit_spare": 141,
+        "PORTAL?": 150,
+        "lasttrade": 43,
+        "conv": 101,
+        "TRADE": 16,
+        "late": 953,
+        "feed": 18,
+        "kint": 2,
+        "lntv": 4
+      }
+    },
+    "7": {
+      "turns": 3822,
+      "tags": {
+        "kcap": 3,
+        "F": 969,
+        "F2": 969,
+        "escsplit": 196,
+        "PORTAL?": 36,
+        "grab": 176,
+        "late": 203,
+        "g": 844,
+        "gh": 218,
+        "csplit": 62,
+        "map": 73,
+        "noexit": 6,
+        "tg": 31,
+        "frag": 20,
+        "fc": 17,
+        "tgx": 5,
+        "feed": 14,
+        "gx": 42,
+        "esc": 4,
+        "noexit_spare": 1
+      }
+    },
+    "3-4": {
+      "turns": 74779,
+      "tags": {
+        "cov": 11176,
+        "map": 617,
+        "csplit": 843,
+        "cl": 12039,
+        "grab": 2889,
+        "tgx": 405,
+        "PORTAL?": 702,
+        "tg": 1580,
+        "bsplit": 35,
+        "escsplit": 432,
+        "lsplit": 231,
+        "floor": 14,
+        "noexit": 3728,
+        "late": 776,
+        "noexit_spare": 68,
+        "F": 3152,
+        "F2": 3152,
+        "lasttrade": 17,
+        "g": 2151,
+        "gh": 474,
+        "conv": 122,
+        "feed": 108,
+        "gx": 40,
+        "ghd": 302,
+        "TRADE": 18,
+        "lntv": 11,
+        "kint": 1
+      }
+    },
+    "5-6": {
+      "turns": 11419,
+      "tags": {
+        "map": 316,
+        "grab": 650,
+        "csplit": 315,
+        "lsplit": 117,
+        "tg": 110,
+        "floor": 8,
+        "escsplit": 378,
+        "F": 1619,
+        "F2": 1619,
+        "g": 2881,
+        "gh": 652,
+        "feed": 66,
+        "late": 333,
+        "gx": 34,
+        "PORTAL?": 119,
+        "noexit": 7,
+        "tgx": 22,
+        "ghd": 16,
+        "pocket": 5,
+        "TRADE": 4,
+        "kint": 1,
+        "esc": 14,
+        "split": 1,
+        "lntv": 1,
+        "noexit_spare": 1
+      }
+    },
+    "8+": {
+      "turns": 30995,
+      "tags": {
+        "kcap": 9,
+        "escsplit": 4026,
+        "late": 2253,
+        "kxm": 534,
+        "kx": 761,
+        "tgx": 32,
+        "grab": 1406,
+        "tg": 128,
+        "esc": 44,
+        "map": 3888,
+        "g": 4133,
+        "feed": 23,
+        "F": 1298,
+        "F2": 1298,
+        "PORTAL?": 203,
+        "frag": 19,
+        "fc": 18,
+        "gh": 661,
+        "pocket": 336,
+        "noexit": 19,
+        "gx": 286,
+        "csplit": 12,
+        "floor": 1,
+        "T": 31,
+        "noexit_spare": 2,
+        "ghd": 2
+      }
+    }
+  },
+  "missingLabels": 0,
+  "duplicates": 0,
+  "labelActionMismatch": 0,
+  "unexpected": [],
+  "maxInstr": 32130991,
+  "faults": 0,
+  "over80M": 0,
+  "priorityValues": [
+    10
+  ],
+  "resourceMin": {
+    "freeMemoryPct": 64,
+    "freeDiskGB": 36
+  },
+  "maxDragonId": 1468,
+  "submissions": [
+    13393
+  ],
+  "nonEscapeSplits": 1690,
+  "tagSummary": [
+    {
+      "tag": "feed",
+      "n": 229,
+      "perGame": 3.2714285714285714,
+      "gamesWithTag": 35,
+      "median": 0.5,
+      "min": 0,
+      "max": 17,
+      "turnShare": 0.0008911268668913292,
+      "moveShare": 0.0009387939162874595
+    },
+    {
+      "tag": "conv",
+      "n": 223,
+      "perGame": 3.1857142857142855,
+      "gamesWithTag": 29,
+      "median": 0,
+      "min": 0,
+      "max": 27,
+      "turnShare": 0.0008677785647020368,
+      "moveShare": 0.0009141966957733776
+    },
+    {
+      "tag": "pocket",
+      "n": 341,
+      "perGame": 4.871428571428571,
+      "gamesWithTag": 8,
+      "median": 0,
+      "min": 0,
+      "max": 167,
+      "turnShare": 0.0013269618410914554,
+      "moveShare": 0.001397942032550322
+    },
+    {
+      "tag": "escsplit",
+      "n": 5032,
+      "perGame": 71.88571428571429,
+      "gamesWithTag": 59,
+      "median": 13,
+      "min": 0,
+      "max": 254,
+      "turnShare": 0.01958144276941995,
+      "moveShare": 0.02062886893781003
+    },
+    {
+      "tag": "escsplit2",
+      "n": 0,
+      "perGame": 0,
+      "gamesWithTag": 0,
+      "median": 0,
+      "min": 0,
+      "max": 0,
+      "turnShare": 0,
+      "moveShare": 0
+    },
+    {
+      "tag": "split",
+      "n": 1,
+      "perGame": 0.014285714285714285,
+      "gamesWithTag": 1,
+      "median": 0,
+      "min": 0,
+      "max": 1,
+      "turnShare": 0.000003891383698215411,
+      "moveShare": 0.000004099536752346985
+    },
+    {
+      "tag": "frag",
+      "n": 39,
+      "perGame": 0.5571428571428572,
+      "gamesWithTag": 14,
+      "median": 0,
+      "min": 0,
+      "max": 8,
+      "turnShare": 0.00015176396423040105,
+      "moveShare": 0.0001598819333415324
+    },
+    {
+      "tag": "bsplit",
+      "n": 35,
+      "perGame": 0.5,
+      "gamesWithTag": 4,
+      "median": 0,
+      "min": 0,
+      "max": 14,
+      "turnShare": 0.0001361984294375394,
+      "moveShare": 0.00014348378633214447
+    },
+    {
+      "tag": "csplit",
+      "n": 1232,
+      "perGame": 17.6,
+      "gamesWithTag": 69,
+      "median": 15,
+      "min": 0,
+      "max": 84,
+      "turnShare": 0.004794184716201387,
+      "moveShare": 0.0050506292788914855
+    },
+    {
+      "tag": "kcap",
+      "n": 12,
+      "perGame": 0.17142857142857143,
+      "gamesWithTag": 6,
+      "median": 0,
+      "min": 0,
+      "max": 3,
+      "turnShare": 0.00004669660437858494,
+      "moveShare": 0.000049194441028163815
+    },
+    {
+      "tag": "floor",
+      "n": 23,
+      "perGame": 0.32857142857142857,
+      "gamesWithTag": 11,
+      "median": 0,
+      "min": 0,
+      "max": 5,
+      "turnShare": 0.00008950182505895446,
+      "moveShare": 0.00009428934530398064
+    },
+    {
+      "tag": "lsplit",
+      "n": 348,
+      "perGame": 4.9714285714285715,
+      "gamesWithTag": 35,
+      "median": 0.5,
+      "min": 0,
+      "max": 34,
+      "turnShare": 0.0013542015269789633,
+      "moveShare": 0.0014266387898167507
+    },
+    {
+      "tag": "fc",
+      "n": 35,
+      "perGame": 0.5,
+      "gamesWithTag": 13,
+      "median": 0,
+      "min": 0,
+      "max": 7,
+      "turnShare": 0.0001361984294375394,
+      "moveShare": 0.00014348378633214447
+    },
+    {
+      "tag": "noexit",
+      "n": 5473,
+      "perGame": 78.18571428571428,
+      "gamesWithTag": 63,
+      "median": 20.5,
+      "min": 0,
+      "max": 268,
+      "turnShare": 0.021297542980332946,
+      "moveShare": 0.022436764645595048
+    },
+    {
+      "tag": "noexit_spare",
+      "n": 213,
+      "perGame": 3.0428571428571427,
+      "gamesWithTag": 45,
+      "median": 1.5,
+      "min": 0,
+      "max": 42,
+      "turnShare": 0.0008288647277198826,
+      "moveShare": 0.0008732013282499077
+    },
+    {
+      "tag": "lasttrade",
+      "n": 60,
+      "perGame": 0.8571428571428571,
+      "gamesWithTag": 29,
+      "median": 0,
+      "min": 0,
+      "max": 7,
+      "turnShare": 0.0002334830218929247,
+      "moveShare": 0.0002459722051408191
+    },
+    {
+      "tag": "degraded",
+      "n": 0,
+      "perGame": 0,
+      "gamesWithTag": 0,
+      "median": 0,
+      "min": 0,
+      "max": 0,
+      "turnShare": 0,
+      "moveShare": 0
+    },
+    {
+      "tag": "TRADE",
+      "n": 38,
+      "perGame": 0.5428571428571428,
+      "gamesWithTag": 18,
+      "median": 0,
+      "min": 0,
+      "max": 8,
+      "turnShare": 0.00014787258053218565,
+      "moveShare": 0.00015578239658918544
+    },
+    {
+      "tag": "PORTAL?",
+      "n": 1210,
+      "perGame": 17.285714285714285,
+      "gamesWithTag": 52,
+      "median": 6.5,
+      "min": 0,
+      "max": 126,
+      "turnShare": 0.004708574274840648,
+      "moveShare": 0.004960439470339852
+    },
+    {
+      "tag": "late",
+      "n": 4518,
+      "perGame": 64.54285714285714,
+      "gamesWithTag": 44,
+      "median": 60,
+      "min": 0,
+      "max": 264,
+      "turnShare": 0.01758127154853723,
+      "moveShare": 0.018521707047103677
+    },
+    {
+      "tag": "esc",
+      "n": 62,
+      "perGame": 0.8857142857142857,
+      "gamesWithTag": 21,
+      "median": 0,
+      "min": 0,
+      "max": 11,
+      "turnShare": 0.0002412657892893555,
+      "moveShare": 0.00025417127864551305
+    },
+    {
+      "tag": "T",
+      "n": 31,
+      "perGame": 0.44285714285714284,
+      "gamesWithTag": 1,
+      "median": 0,
+      "min": 0,
+      "max": 31,
+      "turnShare": 0.00012063289464467775,
+      "moveShare": 0.00012708563932275653
+    },
+    {
+      "tag": "g",
+      "n": 10009,
+      "perGame": 142.9857142857143,
+      "gamesWithTag": 35,
+      "median": 4.5,
+      "min": 0,
+      "max": 881,
+      "turnShare": 0.038948859435438056,
+      "moveShare": 0.04103226335424097
+    },
+    {
+      "tag": "K",
+      "n": 0,
+      "perGame": 0,
+      "gamesWithTag": 0,
+      "median": 0,
+      "min": 0,
+      "max": 0,
+      "turnShare": 0,
+      "moveShare": 0
+    },
+    {
+      "tag": "F",
+      "n": 12006,
+      "perGame": 171.5142857142857,
+      "gamesWithTag": 41,
+      "median": 18,
+      "min": 0,
+      "max": 1253,
+      "turnShare": 0.04671995268077423,
+      "moveShare": 0.0492190382486779
+    },
+    {
+      "tag": "F2",
+      "n": 12006,
+      "perGame": 171.5142857142857,
+      "gamesWithTag": 41,
+      "median": 18,
+      "min": 0,
+      "max": 1253,
+      "turnShare": 0.04671995268077423,
+      "moveShare": 0.0492190382486779
+    },
+    {
+      "tag": "Fp",
+      "n": 0,
+      "perGame": 0,
+      "gamesWithTag": 0,
+      "median": 0,
+      "min": 0,
+      "max": 0,
+      "turnShare": 0,
+      "moveShare": 0
+    },
+    {
+      "tag": "cov",
+      "n": 27491,
+      "perGame": 392.72857142857146,
+      "gamesWithTag": 70,
+      "median": 347.5,
+      "min": 43,
+      "max": 1095,
+      "turnShare": 0.10697802924763987,
+      "moveShare": 0.11270036485877095
+    },
+    {
+      "tag": "grab",
+      "n": 8233,
+      "perGame": 117.61428571428571,
+      "gamesWithTag": 69,
+      "median": 58.5,
+      "min": 0,
+      "max": 1198,
+      "turnShare": 0.03203776198740748,
+      "moveShare": 0.03375148608207273
+    },
+    {
+      "tag": "cl",
+      "n": 31478,
+      "perGame": 449.6857142857143,
+      "gamesWithTag": 70,
+      "median": 310,
+      "min": 5,
+      "max": 3661,
+      "turnShare": 0.12249297605242472,
+      "moveShare": 0.1290452178903784
+    },
+    {
+      "tag": "ce",
+      "n": 0,
+      "perGame": 0,
+      "gamesWithTag": 0,
+      "median": 0,
+      "min": 0,
+      "max": 0,
+      "turnShare": 0,
+      "moveShare": 0
+    },
+    {
+      "tag": "tg",
+      "n": 5957,
+      "perGame": 85.1,
+      "gamesWithTag": 65,
+      "median": 56.5,
+      "min": 0,
+      "max": 459,
+      "turnShare": 0.023180972690269207,
+      "moveShare": 0.024420940433730987
+    },
+    {
+      "tag": "tgx",
+      "n": 5108,
+      "perGame": 72.97142857142858,
+      "gamesWithTag": 62,
+      "median": 53.5,
+      "min": 0,
+      "max": 310,
+      "turnShare": 0.019877187930484323,
+      "moveShare": 0.0209404337309884
+    },
+    {
+      "tag": "gx",
+      "n": 402,
+      "perGame": 5.742857142857143,
+      "gamesWithTag": 15,
+      "median": 0,
+      "min": 0,
+      "max": 66,
+      "turnShare": 0.0015643362466825953,
+      "moveShare": 0.001648013774443488
+    },
+    {
+      "tag": "sx",
+      "n": 0,
+      "perGame": 0,
+      "gamesWithTag": 0,
+      "median": 0,
+      "min": 0,
+      "max": 0,
+      "turnShare": 0,
+      "moveShare": 0
+    },
+    {
+      "tag": "px",
+      "n": 0,
+      "perGame": 0,
+      "gamesWithTag": 0,
+      "median": 0,
+      "min": 0,
+      "max": 0,
+      "turnShare": 0,
+      "moveShare": 0
+    },
+    {
+      "tag": "pxx",
+      "n": 0,
+      "perGame": 0,
+      "gamesWithTag": 0,
+      "median": 0,
+      "min": 0,
+      "max": 0,
+      "turnShare": 0,
+      "moveShare": 0
+    },
+    {
+      "tag": "px2",
+      "n": 0,
+      "perGame": 0,
+      "gamesWithTag": 0,
+      "median": 0,
+      "min": 0,
+      "max": 0,
+      "turnShare": 0,
+      "moveShare": 0
+    },
+    {
+      "tag": "px2x",
+      "n": 0,
+      "perGame": 0,
+      "gamesWithTag": 0,
+      "median": 0,
+      "min": 0,
+      "max": 0,
+      "turnShare": 0,
+      "moveShare": 0
+    },
+    {
+      "tag": "ks",
+      "n": 0,
+      "perGame": 0,
+      "gamesWithTag": 0,
+      "median": 0,
+      "min": 0,
+      "max": 0,
+      "turnShare": 0,
+      "moveShare": 0
+    },
+    {
+      "tag": "ks2",
+      "n": 0,
+      "perGame": 0,
+      "gamesWithTag": 0,
+      "median": 0,
+      "min": 0,
+      "max": 0,
+      "turnShare": 0,
+      "moveShare": 0
+    },
+    {
+      "tag": "ram4",
+      "n": 0,
+      "perGame": 0,
+      "gamesWithTag": 0,
+      "median": 0,
+      "min": 0,
+      "max": 0,
+      "turnShare": 0,
+      "moveShare": 0
+    },
+    {
+      "tag": "ram4o",
+      "n": 0,
+      "perGame": 0,
+      "gamesWithTag": 0,
+      "median": 0,
+      "min": 0,
+      "max": 0,
+      "turnShare": 0,
+      "moveShare": 0
+    },
+    {
+      "tag": "lnt",
+      "n": 0,
+      "perGame": 0,
+      "gamesWithTag": 0,
+      "median": 0,
+      "min": 0,
+      "max": 0,
+      "turnShare": 0,
+      "moveShare": 0
+    },
+    {
+      "tag": "lntv",
+      "n": 16,
+      "perGame": 0.22857142857142856,
+      "gamesWithTag": 9,
+      "median": 0,
+      "min": 0,
+      "max": 3,
+      "turnShare": 0.00006226213917144658,
+      "moveShare": 0.00006559258803755176
+    },
+    {
+      "tag": "kint",
+      "n": 4,
+      "perGame": 0.05714285714285714,
+      "gamesWithTag": 3,
+      "median": 0,
+      "min": 0,
+      "max": 2,
+      "turnShare": 0.000015565534792861645,
+      "moveShare": 0.00001639814700938794
+    },
+    {
+      "tag": "tab",
+      "n": 0,
+      "perGame": 0,
+      "gamesWithTag": 0,
+      "median": 0,
+      "min": 0,
+      "max": 0,
+      "turnShare": 0,
+      "moveShare": 0
+    },
+    {
+      "tag": "gh",
+      "n": 2005,
+      "perGame": 28.642857142857142,
+      "gamesWithTag": 34,
+      "median": 0,
+      "min": 0,
+      "max": 233,
+      "turnShare": 0.0078022243149219,
+      "moveShare": 0.008219571188455704
+    },
+    {
+      "tag": "ghd",
+      "n": 792,
+      "perGame": 11.314285714285715,
+      "gamesWithTag": 37,
+      "median": 1,
+      "min": 0,
+      "max": 156,
+      "turnShare": 0.003081975888986606,
+      "moveShare": 0.003246833107858812
+    },
+    {
+      "tag": "kx",
+      "n": 761,
+      "perGame": 10.871428571428572,
+      "gamesWithTag": 22,
+      "median": 0,
+      "min": 0,
+      "max": 120,
+      "turnShare": 0.0029613429943419283,
+      "moveShare": 0.0031197474685360554
+    },
+    {
+      "tag": "kxm",
+      "n": 534,
+      "perGame": 7.628571428571429,
+      "gamesWithTag": 21,
+      "median": 0,
+      "min": 0,
+      "max": 66,
+      "turnShare": 0.0020779988948470295,
+      "moveShare": 0.00218915262575329
+    },
+    {
+      "tag": "lwk",
+      "n": 0,
+      "perGame": 0,
+      "gamesWithTag": 0,
+      "median": 0,
+      "min": 0,
+      "max": 0,
+      "turnShare": 0,
+      "moveShare": 0
+    },
+    {
+      "tag": "map",
+      "n": 7173,
+      "perGame": 102.47142857142858,
+      "gamesWithTag": 70,
+      "median": 55.5,
+      "min": 3,
+      "max": 374,
+      "turnShare": 0.027912895267299145,
+      "moveShare": 0.029405977124584922
+    }
+  ]
+}

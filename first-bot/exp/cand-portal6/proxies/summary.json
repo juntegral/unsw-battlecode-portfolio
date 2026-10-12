@@ -1,0 +1,46 @@
+{
+  "label": "proxies",
+  "bot": "~/01. Project/개인 프로젝트/unsw-heuristic/exp/cand-portal6/bot",
+  "at": "2026-09-29T16:12:31.687Z",
+  "benchmark": {
+    "maps": 2,
+    "opps": [
+      "proxy_swarm",
+      "proxy_elim",
+      "proxy_king"
+    ],
+    "seeds": [
+      1,
+      2
+    ],
+    "sides": 2
+  },
+  "all": {
+    "n": 24,
+    "G": 18.291666666666668,
+    "alive": 0.875,
+    "win": 0.20833333333333334
+  },
+  "byOpp": {
+    "proxy_swarm": {
+      "n": 8,
+      "G": 21.125,
+      "alive": 1,
+      "win": 0.25
+    },
+    "proxy_elim": {
+      "n": 8,
+      "G": 15.875,
+      "alive": 0.75,
+      "win": 0.125
+    },
+    "proxy_king": {
+      "n": 8,
+      "G": 17.875,
+      "alive": 0.875,
+      "win": 0.25
+    }
+  },
+  "problems": 0,
+  "errors": 0
+}

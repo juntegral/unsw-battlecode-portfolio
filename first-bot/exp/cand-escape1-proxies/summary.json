@@ -1,0 +1,56 @@
+{
+  "label": "cand-escape1-proxies",
+  "bot": "~/01. Project/개인 프로젝트/unsw-heuristic/exp/cand-escape1/bot",
+  "at": "2026-09-29T17:06:20.647Z",
+  "benchmark": {
+    "maps": 10,
+    "opps": [
+      "proxy_swarm",
+      "proxy_elim",
+      "proxy_king"
+    ],
+    "seeds": [
+      1,
+      2
+    ],
+    "sides": 2
+  },
+  "all": {
+    "n": 120,
+    "G": 12.608333333333333,
+    "alive": 0.5833333333333334,
+    "win": 0.24166666666666667
+  },
+  "byOpp": {
+    "proxy_swarm": {
+      "n": 40,
+      "G": 9.025,
+      "alive": 0.575,
+      "win": 0.15
+    },
+    "proxy_elim": {
+      "n": 40,
+      "G": 13.675,
+      "alive": 0.55,
+      "win": 0.3
+    },
+    "proxy_king": {
+      "n": 40,
+      "G": 15.125,
+      "alive": 0.625,
+      "win": 0.275
+    }
+  },
+  "problems": 0,
+  "errors": 0,
+  "vsBaseline": {
+    "baseline": "r1-vs-proxies-v1",
+    "pairs": 120,
+    "dG": -7.5,
+    "ci95": [
+      -17.583333333333332,
+      0.016666666666666666
+    ],
+    "note": "map-cluster bootstrap"
+  }
+}

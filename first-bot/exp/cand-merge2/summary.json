@@ -1,0 +1,63 @@
+{
+  "label": "cand-merge2",
+  "bot": "~/01. Project/개인 프로젝트/unsw-heuristic/exp/cand-merge2/bot",
+  "at": "2026-09-29T20:02:07.598Z",
+  "benchmark": {
+    "maps": 10,
+    "opps": [
+      "replay_rules_v8",
+      "archetype_swarm",
+      "archetype_hunter",
+      "h2"
+    ],
+    "seeds": [
+      1,
+      2
+    ],
+    "sides": 2
+  },
+  "all": {
+    "n": 160,
+    "G": 44.25,
+    "alive": 0.95,
+    "win": 0.8375
+  },
+  "byOpp": {
+    "replay_rules_v8": {
+      "n": 40,
+      "G": 38.15,
+      "alive": 0.975,
+      "win": 0.7
+    },
+    "archetype_swarm": {
+      "n": 40,
+      "G": 36.7,
+      "alive": 0.95,
+      "win": 0.875
+    },
+    "archetype_hunter": {
+      "n": 40,
+      "G": 30.05,
+      "alive": 0.875,
+      "win": 0.8
+    },
+    "h2": {
+      "n": 40,
+      "G": 72.1,
+      "alive": 1,
+      "win": 0.975
+    }
+  },
+  "problems": 0,
+  "errors": 0,
+  "vsBaseline": {
+    "baseline": "cand-merge1",
+    "pairs": 160,
+    "dG": 0.54375,
+    "ci95": [
+      0,
+      1.40625
+    ],
+    "note": "map-cluster bootstrap"
+  }
+}

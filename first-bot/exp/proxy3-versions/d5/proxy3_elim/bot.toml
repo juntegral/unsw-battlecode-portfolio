@@ -1,0 +1,5 @@
+# proxy3_elim: local stand-in (v3) for cheji bt (rank 2): eager small-piece trades and hunting, hard late consolidation.
+# Shared code: pxcore.cpp, pxproto.*, spawndb.hpp (copied from bots/proxy3_swarm); style: style.hpp. research/experiments/proxies-v3.md.
+[project]
+language = "c++"
+include = [ "*.cpp", "*.hpp" ]

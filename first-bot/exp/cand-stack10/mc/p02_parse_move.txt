@@ -1,0 +1,3 @@
+      else if ((g = /^lnt([+-]\d+)(o?)$/.exec(t))) f.lnt = { d3: +g[1], o: g[2] ? 1 : 0 }; // stack10 lnt
+      else if ((g = /^lntv([+-]\d+)$/.exec(t))) f.lntv = +g[1];                       // stack10 lnt veto
+      else if (t === 'kint') f.kint = true;                                            // stack10 kint (the veto's exception)

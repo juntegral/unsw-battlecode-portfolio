@@ -1,0 +1,12 @@
+  // stack10 (cand-stack10.md): this game's E4 rows (B3 opportunities, our trades) and E3 numbers for our team, tag-independent: the true
+  // layout, our units at r100 (0 if eliminated), our longest at r200, natural pearls we ate in r0-199, our territory's natural pearls
+  const s10o = (() => {
+    const FI10 = require('./mass_ledger.js').FI, T10 = g[us];
+    const lay = task.map === 'Prisoners Dilemma' ? (nInit === 10 ? 'b' : 'a') : LAYOUT_FILES[task.map] ? truthLay() : 'a';
+    const kEnd10 = fin.size ? Math.max(...fin.values()) : 0;
+    return { mapName: task.map, lay, u100: s7.u100, k200: 200 >= rounds || S7.k[200] === undefined ? kEnd10 : S7.k[200],
+      nat200: T10 && T10.fl ? T10.fl[FI10.eat_nat].slice(0, 20).reduce((s, v) => s + v, 0) : null, own: t5o.own, ownUs: t5o.ownUs, ownThem: t5o.ownThem,
+      b3: S10.opp.map(o => [o.r, o.L, o.Le, o.d3, o.d8, o.taken, o.u]),
+      xch: S10.xch.map(q => [q.r, q.LmD, q.LvD, q.d3, q.d8, q.adjS, q.steps, q.lnt, q.kint, q.drops, q.own20, q.opp20, q.net20, q.done, q.Lm, q.lab]) };
+  })();
+  return { s10: s10o, t5: t5o, key: task.key,

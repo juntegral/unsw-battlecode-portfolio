@@ -1,0 +1,15 @@
+      { // stack10: a B3 opportunity (extract.js O row): our piece (length <= 4) with an enemy head adjacent across an open edge at its turn start
+        const hk10 = K(d.body[0]); let adj10 = null;
+        for (let j = 0; j < 4; j++) {
+          const u = NB[hk10 * 4 + j]; if (u < 0) continue;
+          const oid = c.occ.get(u); if (oid === undefined) continue;
+          const od = c.drag.get(oid); if (!od || od.team === us || K(od.body[0]) !== u) continue;
+          if (!adj10 || od.body.length > adj10.body.length) adj10 = od;
+        }
+        S10.oppNow.delete(d.id);
+        if (adj10 && d.body.length <= 4) {
+          const lc = s10lc(c, hk10, K(adj10.body[0]), d.id, adj10.id);
+          const o10 = { r, L: d.body.length, Le: adj10.body.length, d3: lc.d3, d8: lc.d8, adj: adj10.id, taken: 0, u: S7.u[r] || 0 };
+          S10.opp.push(o10); S10.oppNow.set(d.id, o10);
+        }
+      }

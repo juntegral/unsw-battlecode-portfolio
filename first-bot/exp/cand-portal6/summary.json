@@ -1,0 +1,63 @@
+{
+  "label": "cand-portal6",
+  "bot": "~/01. Project/개인 프로젝트/unsw-heuristic/exp/cand-portal6/bot",
+  "at": "2026-09-29T16:03:18.068Z",
+  "benchmark": {
+    "maps": 10,
+    "opps": [
+      "replay_rules_v8",
+      "archetype_swarm",
+      "archetype_hunter",
+      "h2"
+    ],
+    "seeds": [
+      1,
+      2
+    ],
+    "sides": 2
+  },
+  "all": {
+    "n": 160,
+    "G": 42.7125,
+    "alive": 0.96875,
+    "win": 0.84375
+  },
+  "byOpp": {
+    "replay_rules_v8": {
+      "n": 40,
+      "G": 38.8,
+      "alive": 0.95,
+      "win": 0.675
+    },
+    "archetype_swarm": {
+      "n": 40,
+      "G": 35.425,
+      "alive": 1,
+      "win": 0.9
+    },
+    "archetype_hunter": {
+      "n": 40,
+      "G": 31.625,
+      "alive": 0.925,
+      "win": 0.8
+    },
+    "h2": {
+      "n": 40,
+      "G": 65,
+      "alive": 1,
+      "win": 1
+    }
+  },
+  "problems": 0,
+  "errors": 0,
+  "vsBaseline": {
+    "baseline": "eval-r1",
+    "pairs": 160,
+    "dG": 4.50625,
+    "ci95": [
+      -0.0625,
+      9.575
+    ],
+    "note": "map-cluster bootstrap"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "label": "conv2-a-px4",
+  "bot": "~/01. Project/개인 프로젝트/unsw-heuristic/exp/cand-conv2/bot",
+  "at": "2026-09-30T07:33:22.248Z",
+  "benchmark": {
+    "maps": 10,
+    "opps": [
+      "proxy4_king",
+      "proxy4_swarm",
+      "proxy4_elim"
+    ],
+    "seeds": [
+      1
+    ],
+    "sides": 2
+  },
+  "all": {
+    "n": 60,
+    "G": 16.4,
+    "alive": 0.7833333333333333,
+    "win": 0.13333333333333333
+  },
+  "byOpp": {
+    "proxy4_king": {
+      "n": 20,
+      "G": 19.7,
+      "alive": 0.85,
+      "win": 0.15
+    },
+    "proxy4_swarm": {
+      "n": 20,
+      "G": 13.2,
+      "alive": 0.8,
+      "win": 0.05
+    },
+    "proxy4_elim": {
+      "n": 20,
+      "G": 16.3,
+      "alive": 0.7,
+      "win": 0.2
+    }
+  },
+  "problems": 0,
+  "errors": 0
+}

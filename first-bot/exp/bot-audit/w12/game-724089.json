@@ -1,0 +1,250 @@
+{
+  "gameId": 724089,
+  "map": "Devil",
+  "opp": 20,
+  "us": "A",
+  "submission": 13393,
+  "winner": "B",
+  "rounds": 225,
+  "turns": 1064,
+  "labelled": 1064,
+  "move": 1044,
+  "tags": {
+    "map": 19,
+    "csplit": 7,
+    "cov": 139,
+    "cl": 64,
+    "tg": 46,
+    "F": 78,
+    "F2": 78,
+    "tgx": 45,
+    "escsplit": 5,
+    "noexit": 3,
+    "noexit_spare": 1,
+    "grab": 14,
+    "lasttrade": 4,
+    "floor": 1
+  },
+  "kinds": {
+    "move": 1044,
+    "csplit": 7,
+    "escsplit": 5,
+    "noexit": 3,
+    "lasttrade": 4,
+    "floor": 1
+  },
+  "explicitGoals": {
+    "none": 966,
+    "early_action": 20,
+    "F": 78
+  },
+  "goalModifiers": {
+    "cov": 139,
+    "cl": 64,
+    "F": 78,
+    "F2": 78,
+    "grab": 14
+  },
+  "splits": {
+    "csplit": 7,
+    "escsplit": 5,
+    "floor": 1
+  },
+  "splitActual": {
+    "csplit": 7,
+    "escsplit": 5,
+    "floor": 1
+  },
+  "phases": {
+    "r0-99": {
+      "turns": 588,
+      "tags": {
+        "map": 13,
+        "csplit": 6,
+        "cov": 56,
+        "cl": 43,
+        "tg": 14,
+        "F": 55,
+        "F2": 55,
+        "tgx": 12,
+        "escsplit": 1,
+        "noexit": 2,
+        "noexit_spare": 1,
+        "grab": 3,
+        "lasttrade": 2
+      },
+      "goals": {
+        "none": 522,
+        "early_action": 11,
+        "F": 55
+      },
+      "splits": {
+        "csplit": 6,
+        "escsplit": 1
+      }
+    },
+    "r100-249": {
+      "turns": 476,
+      "tags": {
+        "F": 23,
+        "F2": 23,
+        "tgx": 33,
+        "grab": 11,
+        "cov": 83,
+        "tg": 32,
+        "csplit": 1,
+        "map": 6,
+        "cl": 21,
+        "lasttrade": 2,
+        "escsplit": 4,
+        "noexit": 1,
+        "floor": 1
+      },
+      "goals": {
+        "none": 444,
+        "F": 23,
+        "early_action": 9
+      },
+      "splits": {
+        "csplit": 1,
+        "escsplit": 4,
+        "floor": 1
+      }
+    }
+  },
+  "lengths": {
+    "2": {
+      "turns": 799,
+      "tags": {
+        "map": 14,
+        "cov": 94,
+        "cl": 33,
+        "F": 41,
+        "F2": 41,
+        "tg": 33,
+        "noexit": 3,
+        "noexit_spare": 1,
+        "tgx": 40,
+        "lasttrade": 3,
+        "grab": 11
+      }
+    },
+    "3-4": {
+      "turns": 242,
+      "tags": {
+        "map": 5,
+        "csplit": 6,
+        "cov": 45,
+        "cl": 31,
+        "tg": 13,
+        "F": 35,
+        "F2": 35,
+        "tgx": 4,
+        "grab": 3,
+        "escsplit": 3,
+        "lasttrade": 1
+      }
+    },
+    "5-6": {
+      "turns": 23,
+      "tags": {
+        "F": 2,
+        "F2": 2,
+        "escsplit": 2,
+        "csplit": 1,
+        "tgx": 1,
+        "floor": 1
+      }
+    }
+  },
+  "cooccurrence": {
+    "cl+cov": 11,
+    "F+F2": 78,
+    "F+cl": 16,
+    "F2+cl": 16,
+    "cl+grab": 1,
+    "F+cov": 6,
+    "F2+cov": 6
+  },
+  "labelActionMismatch": 0,
+  "duplicates": 0,
+  "missingLabels": 0,
+  "unexpected": [],
+  "gateChecks": {
+    "csplit_unit_limit": {
+      "n": 7,
+      "pass": 7
+    },
+    "csplit_clock": {
+      "n": 7,
+      "pass": 7
+    },
+    "csplit_length": {
+      "n": 7,
+      "pass": 7
+    },
+    "csplit_actual_units": {
+      "n": 7,
+      "pass": 7
+    },
+    "csplit_not_true_long_king": {
+      "n": 7,
+      "pass": 7
+    },
+    "escsplit_unit_limit": {
+      "n": 5,
+      "pass": 5
+    },
+    "floor_unit_limit": {
+      "n": 1,
+      "pass": 1
+    },
+    "floor_opponent_8plus": {
+      "n": 1,
+      "pass": 1
+    }
+  },
+  "maxDragonId": 347,
+  "sonarFromIdOver255": 0,
+  "resources": {
+    "freeMemoryPct": 65,
+    "freeDiskGB": 36
+  },
+  "priority": 10,
+  "checks": {
+    "sim": 0,
+    "splits": 0,
+    "drops": 0,
+    "eatTC": 0,
+    "ledger": 0,
+    "final": 0,
+    "lineage": 0,
+    "natBal": 0,
+    "dropBal": 0,
+    "unknownDeath": 0
+  },
+  "result": {
+    "terminated": true,
+    "endReason": "teamEliminated",
+    "winner": "B",
+    "teamA": {
+      "dragonCount": 0,
+      "longestDragon": 0,
+      "totalLength": 0
+    },
+    "teamB": {
+      "dragonCount": 64,
+      "longestDragon": 11,
+      "totalLength": 179
+    }
+  },
+  "endReason": "teamEliminated",
+  "ledgerTurns": 1064,
+  "finalKing": null,
+  "maxInstr": 19009955,
+  "faults": 0,
+  "over80M": 0,
+  "depths": {
+    "7": 1044
+  }
+}

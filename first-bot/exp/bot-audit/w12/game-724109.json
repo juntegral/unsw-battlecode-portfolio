@@ -1,0 +1,178 @@
+{
+  "gameId": 724109,
+  "map": "Trophy",
+  "opp": 264,
+  "us": "A",
+  "submission": 13393,
+  "winner": "B",
+  "rounds": 121,
+  "turns": 595,
+  "labelled": 595,
+  "move": 588,
+  "tags": {
+    "cov": 104,
+    "map": 9,
+    "cl": 65,
+    "csplit": 7,
+    "tg": 57,
+    "tgx": 60,
+    "grab": 7
+  },
+  "kinds": {
+    "move": 588,
+    "csplit": 7
+  },
+  "explicitGoals": {
+    "none": 588,
+    "early_action": 7
+  },
+  "goalModifiers": {
+    "cov": 104,
+    "cl": 65,
+    "grab": 7
+  },
+  "splits": {
+    "csplit": 7
+  },
+  "splitActual": {
+    "csplit": 7
+  },
+  "phases": {
+    "r0-99": {
+      "turns": 541,
+      "tags": {
+        "cov": 102,
+        "map": 9,
+        "cl": 65,
+        "csplit": 7,
+        "tg": 48,
+        "tgx": 52,
+        "grab": 2
+      },
+      "goals": {
+        "none": 534,
+        "early_action": 7
+      },
+      "splits": {
+        "csplit": 7
+      }
+    },
+    "r100-249": {
+      "turns": 54,
+      "tags": {
+        "tg": 9,
+        "cov": 2,
+        "grab": 5,
+        "tgx": 8
+      },
+      "goals": {
+        "none": 54
+      },
+      "splits": {}
+    }
+  },
+  "lengths": {
+    "2": {
+      "turns": 462,
+      "tags": {
+        "cl": 35,
+        "map": 7,
+        "cov": 66,
+        "tgx": 58,
+        "tg": 50,
+        "grab": 7
+      }
+    },
+    "3-4": {
+      "turns": 132,
+      "tags": {
+        "cov": 38,
+        "map": 2,
+        "cl": 30,
+        "csplit": 6,
+        "tg": 7,
+        "tgx": 2
+      }
+    },
+    "5-6": {
+      "turns": 1,
+      "tags": {
+        "csplit": 1
+      }
+    }
+  },
+  "cooccurrence": {
+    "cl+cov": 12,
+    "cov+grab": 1
+  },
+  "labelActionMismatch": 0,
+  "duplicates": 0,
+  "missingLabels": 0,
+  "unexpected": [],
+  "gateChecks": {
+    "csplit_unit_limit": {
+      "n": 7,
+      "pass": 7
+    },
+    "csplit_clock": {
+      "n": 7,
+      "pass": 7
+    },
+    "csplit_length": {
+      "n": 7,
+      "pass": 7
+    },
+    "csplit_actual_units": {
+      "n": 7,
+      "pass": 7
+    },
+    "csplit_not_true_long_king": {
+      "n": 7,
+      "pass": 7
+    }
+  },
+  "maxDragonId": 81,
+  "sonarFromIdOver255": 0,
+  "resources": {
+    "freeMemoryPct": 66,
+    "freeDiskGB": 36
+  },
+  "priority": 10,
+  "checks": {
+    "sim": 0,
+    "splits": 0,
+    "drops": 0,
+    "eatTC": 0,
+    "ledger": 0,
+    "final": 0,
+    "lineage": 0,
+    "natBal": 0,
+    "dropBal": 0,
+    "unknownDeath": 0
+  },
+  "result": {
+    "terminated": true,
+    "endReason": "teamEliminated",
+    "winner": "B",
+    "teamA": {
+      "dragonCount": 0,
+      "longestDragon": 0,
+      "totalLength": 0
+    },
+    "teamB": {
+      "dragonCount": 53,
+      "longestDragon": 4,
+      "totalLength": 133
+    }
+  },
+  "endReason": "teamEliminated",
+  "ledgerTurns": 595,
+  "finalKing": null,
+  "maxInstr": 29946211,
+  "faults": 0,
+  "over80M": 0,
+  "depths": {
+    "6": 3,
+    "7": 585
+  }
+}

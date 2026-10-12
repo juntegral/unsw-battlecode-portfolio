@@ -1,0 +1,600 @@
+{
+  "gameId": 718399,
+  "map": "Autarky",
+  "opp": 306,
+  "us": "A",
+  "submission": 13313,
+  "winner": "B",
+  "rounds": 500,
+  "turns": 6582,
+  "labelled": 6582,
+  "move": 6025,
+  "tags": {
+    "map": 287,
+    "cov": 400,
+    "escsplit": 257,
+    "cl": 425,
+    "tg": 96,
+    "noexit": 258,
+    "grab": 122,
+    "PORTAL?": 35,
+    "tgx": 72,
+    "csplit": 19,
+    "TRADE": 1,
+    "lnt": 1,
+    "F": 36,
+    "F2": 36,
+    "lsplit": 5,
+    "conv": 5,
+    "g": 364,
+    "feed": 13,
+    "noexit_spare": 1,
+    "late": 105,
+    "gx": 35
+  },
+  "kinds": {
+    "move": 6025,
+    "escsplit": 257,
+    "noexit": 258,
+    "csplit": 19,
+    "lsplit": 5,
+    "conv": 5,
+    "feed": 13
+  },
+  "explicitGoals": {
+    "none": 5625,
+    "early_action": 557,
+    "F": 36,
+    "g": 364
+  },
+  "goalModifiers": {
+    "cov": 400,
+    "cl": 425,
+    "grab": 122,
+    "F": 36,
+    "F2": 36,
+    "g": 364
+  },
+  "splits": {
+    "escsplit": 257,
+    "csplit": 19,
+    "lsplit": 5
+  },
+  "splitActual": {
+    "escsplit": 257,
+    "csplit": 19,
+    "lsplit": 5
+  },
+  "phases": {
+    "r0-99": {
+      "turns": 1048,
+      "tags": {
+        "map": 64,
+        "cov": 114,
+        "escsplit": 49,
+        "cl": 97,
+        "tg": 36,
+        "noexit": 48,
+        "grab": 3,
+        "PORTAL?": 1,
+        "tgx": 11,
+        "csplit": 9,
+        "TRADE": 1,
+        "lnt": 1
+      },
+      "goals": {
+        "none": 942,
+        "early_action": 106
+      },
+      "splits": {
+        "escsplit": 49,
+        "csplit": 9
+      }
+    },
+    "r100-249": {
+      "turns": 2342,
+      "tags": {
+        "tg": 54,
+        "cl": 126,
+        "tgx": 46,
+        "PORTAL?": 17,
+        "noexit": 79,
+        "escsplit": 77,
+        "map": 87,
+        "cov": 159,
+        "csplit": 10,
+        "F": 32,
+        "F2": 32,
+        "grab": 18
+      },
+      "goals": {
+        "none": 2144,
+        "early_action": 166,
+        "F": 32
+      },
+      "splits": {
+        "escsplit": 77,
+        "csplit": 10
+      }
+    },
+    "r250-299": {
+      "turns": 1013,
+      "tags": {
+        "tgx": 15,
+        "noexit": 26,
+        "escsplit": 27,
+        "map": 30,
+        "tg": 6,
+        "cl": 52,
+        "cov": 62,
+        "PORTAL?": 7,
+        "lsplit": 3,
+        "grab": 3
+      },
+      "goals": {
+        "none": 957,
+        "early_action": 56
+      },
+      "splits": {
+        "escsplit": 27,
+        "lsplit": 3
+      }
+    },
+    "r300-339": {
+      "turns": 871,
+      "tags": {
+        "cov": 26,
+        "cl": 38,
+        "noexit": 23,
+        "escsplit": 23,
+        "map": 25,
+        "PORTAL?": 2,
+        "grab": 15,
+        "lsplit": 2,
+        "F": 4,
+        "F2": 4,
+        "conv": 2
+      },
+      "goals": {
+        "none": 817,
+        "early_action": 50,
+        "F": 4
+      },
+      "splits": {
+        "escsplit": 23,
+        "lsplit": 2
+      }
+    },
+    "r340-429": {
+      "turns": 993,
+      "tags": {
+        "g": 274,
+        "grab": 83,
+        "cl": 77,
+        "escsplit": 46,
+        "noexit": 47,
+        "map": 46,
+        "feed": 13,
+        "PORTAL?": 8,
+        "cov": 39,
+        "conv": 3,
+        "noexit_spare": 1
+      },
+      "goals": {
+        "none": 610,
+        "g": 274,
+        "early_action": 109
+      },
+      "splits": {
+        "escsplit": 46
+      }
+    },
+    "r430-449": {
+      "turns": 90,
+      "tags": {
+        "noexit": 10,
+        "escsplit": 10,
+        "g": 34,
+        "map": 10,
+        "cl": 10
+      },
+      "goals": {
+        "none": 36,
+        "early_action": 20,
+        "g": 34
+      },
+      "splits": {
+        "escsplit": 10
+      }
+    },
+    "r450-469": {
+      "turns": 90,
+      "tags": {
+        "noexit": 10,
+        "escsplit": 10,
+        "g": 33,
+        "map": 10,
+        "cl": 10
+      },
+      "goals": {
+        "none": 37,
+        "early_action": 20,
+        "g": 33
+      },
+      "splits": {
+        "escsplit": 10
+      }
+    },
+    "r470-494": {
+      "turns": 113,
+      "tags": {
+        "late": 87,
+        "g": 23,
+        "noexit": 13,
+        "escsplit": 13,
+        "map": 13,
+        "cl": 12,
+        "gx": 25
+      },
+      "goals": {
+        "none": 64,
+        "g": 23,
+        "early_action": 26
+      },
+      "splits": {
+        "escsplit": 13
+      }
+    },
+    "r495-499": {
+      "turns": 22,
+      "tags": {
+        "late": 18,
+        "gx": 10,
+        "cl": 3,
+        "noexit": 2,
+        "escsplit": 2,
+        "map": 2
+      },
+      "goals": {
+        "none": 18,
+        "early_action": 4
+      },
+      "splits": {
+        "escsplit": 2
+      }
+    }
+  },
+  "lengths": {
+    "2": {
+      "turns": 2773,
+      "tags": {
+        "cl": 317,
+        "cov": 95,
+        "tg": 69,
+        "map": 26,
+        "tgx": 65,
+        "TRADE": 1,
+        "lnt": 1,
+        "noexit": 8,
+        "grab": 53,
+        "F": 14,
+        "F2": 14,
+        "conv": 2,
+        "PORTAL?": 1,
+        "noexit_spare": 1,
+        "late": 15
+      }
+    },
+    "7": {
+      "turns": 69,
+      "tags": {
+        "csplit": 1,
+        "map": 1,
+        "PORTAL?": 2,
+        "escsplit": 2,
+        "grab": 5,
+        "g": 2
+      }
+    },
+    "8+": {
+      "turns": 1218,
+      "tags": {
+        "map": 252,
+        "escsplit": 252,
+        "PORTAL?": 2,
+        "g": 167,
+        "grab": 13,
+        "late": 90,
+        "gx": 35
+      }
+    },
+    "3-4": {
+      "turns": 2211,
+      "tags": {
+        "map": 6,
+        "cov": 305,
+        "tg": 27,
+        "cl": 108,
+        "noexit": 250,
+        "PORTAL?": 27,
+        "tgx": 7,
+        "csplit": 16,
+        "F": 18,
+        "F2": 18,
+        "grab": 37,
+        "lsplit": 3,
+        "escsplit": 2,
+        "conv": 3,
+        "g": 104,
+        "feed": 7
+      }
+    },
+    "5-6": {
+      "turns": 311,
+      "tags": {
+        "grab": 14,
+        "csplit": 2,
+        "map": 2,
+        "lsplit": 2,
+        "PORTAL?": 3,
+        "F": 4,
+        "F2": 4,
+        "g": 91,
+        "escsplit": 1,
+        "feed": 6
+      }
+    }
+  },
+  "cooccurrence": {
+    "cl+cov": 32,
+    "F+F2": 36,
+    "F+cov": 6,
+    "F2+cov": 6,
+    "cov+grab": 5,
+    "cl+g": 12,
+    "cl+grab": 3,
+    "g+grab": 16,
+    "cov+g": 16
+  },
+  "labelActionMismatch": 0,
+  "duplicates": 0,
+  "missingLabels": 0,
+  "unexpected": [],
+  "gateChecks": {
+    "escsplit_unit_limit": {
+      "n": 257,
+      "pass": 257
+    },
+    "csplit_unit_limit": {
+      "n": 19,
+      "pass": 19
+    },
+    "csplit_clock": {
+      "n": 19,
+      "pass": 19
+    },
+    "csplit_length": {
+      "n": 19,
+      "pass": 19
+    },
+    "csplit_actual_units": {
+      "n": 19,
+      "pass": 19
+    },
+    "csplit_not_true_long_king": {
+      "n": 19,
+      "pass": 19
+    },
+    "lnt_actual_d3_excluding_victim": {
+      "n": 1,
+      "pass": 1
+    },
+    "lnt_d3_1plus": {
+      "n": 1,
+      "pass": 1
+    },
+    "lsplit_unit_limit": {
+      "n": 5,
+      "pass": 5
+    },
+    "lsplit_clock": {
+      "n": 5,
+      "pass": 5
+    },
+    "lsplit_length": {
+      "n": 5,
+      "pass": 5
+    },
+    "lsplit_actual_units": {
+      "n": 5,
+      "pass": 5
+    }
+  },
+  "maxDragonId": 572,
+  "sonarFromIdOver255": 5539,
+  "resources": {
+    "freeMemoryPct": 66,
+    "freeDiskGB": 36
+  },
+  "priority": 10,
+  "checks": {
+    "sim": 0,
+    "splits": 0,
+    "drops": 0,
+    "eatTC": 0,
+    "ledger": 0,
+    "final": 0,
+    "lineage": 0,
+    "natBal": 0,
+    "dropBal": 0,
+    "unknownDeath": 0
+  },
+  "result": {
+    "terminated": true,
+    "endReason": "roundLimit",
+    "winner": "B",
+    "teamA": {
+      "dragonCount": 4,
+      "longestDragon": 31,
+      "totalLength": 77
+    },
+    "teamB": {
+      "dragonCount": 4,
+      "longestDragon": 54,
+      "totalLength": 80
+    }
+  },
+  "endReason": "roundLimit",
+  "ledgerTurns": 6582,
+  "finalKing": {
+    "len": 31,
+    "gen": 2,
+    "born": 58,
+    "cp": {
+      "300": {
+        "Lt": 4,
+        "eat": [
+          18,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "cost": 1,
+        "lossOff": 0,
+        "lossPath": 0,
+        "transfers": 0,
+        "wasKing": 0
+      },
+      "350": {
+        "Lt": 5,
+        "eat": [
+          17,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "cost": 1,
+        "lossOff": 0,
+        "lossPath": 0,
+        "transfers": 0,
+        "wasKing": 0
+      },
+      "400": {
+        "Lt": 12,
+        "eat": [
+          16,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "cost": 1,
+        "lossOff": 0,
+        "lossPath": 0,
+        "transfers": 0,
+        "wasKing": 0
+      },
+      "450": {
+        "Lt": 22,
+        "eat": [
+          8,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "cost": 0,
+        "lossOff": 0,
+        "lossPath": 0,
+        "transfers": 0,
+        "wasKing": 0
+      }
+    },
+    "win": [
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        4,
+        3,
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        1
+      ],
+      [
+        0,
+        0,
+        2,
+        3,
+        1,
+        2,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  "maxInstr": 30363045,
+  "faults": 0,
+  "over80M": 0,
+  "depths": {
+    "6": 6,
+    "7": 6019
+  }
+}

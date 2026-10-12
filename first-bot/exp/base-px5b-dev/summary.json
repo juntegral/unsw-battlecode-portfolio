@@ -1,0 +1,46 @@
+{
+  "label": "base-px5b-dev",
+  "bot": "~/01. Project/개인 프로젝트/unsw-heuristic/exp/base-px5b/bot",
+  "at": "2026-09-29T17:04:30.514Z",
+  "benchmark": {
+    "maps": 6,
+    "opps": [
+      "proxy_swarm",
+      "proxy_elim",
+      "proxy_king"
+    ],
+    "seeds": [
+      1,
+      2
+    ],
+    "sides": 2
+  },
+  "all": {
+    "n": 72,
+    "G": 26.88888888888889,
+    "alive": 0.9166666666666666,
+    "win": 0.6111111111111112
+  },
+  "byOpp": {
+    "proxy_swarm": {
+      "n": 24,
+      "G": 23.375,
+      "alive": 0.8333333333333334,
+      "win": 0.5416666666666666
+    },
+    "proxy_elim": {
+      "n": 24,
+      "G": 27,
+      "alive": 0.9583333333333334,
+      "win": 0.6666666666666666
+    },
+    "proxy_king": {
+      "n": 24,
+      "G": 30.291666666666668,
+      "alive": 0.9583333333333334,
+      "win": 0.625
+    }
+  },
+  "problems": 0,
+  "errors": 0
+}

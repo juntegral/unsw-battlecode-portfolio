@@ -1,0 +1,52 @@
+{
+  "label": "merge2-b-old4",
+  "bot": "~/01. Project/개인 프로젝트/unsw-heuristic/bot",
+  "at": "2026-09-30T01:21:06.890Z",
+  "benchmark": {
+    "maps": 10,
+    "opps": [
+      "replay_rules_v8",
+      "archetype_swarm",
+      "archetype_hunter",
+      "h2"
+    ],
+    "seeds": [
+      2
+    ],
+    "sides": 2
+  },
+  "all": {
+    "n": 80,
+    "G": 37.5875,
+    "alive": 0.95,
+    "win": 0.8125
+  },
+  "byOpp": {
+    "replay_rules_v8": {
+      "n": 20,
+      "G": 34.7,
+      "alive": 0.95,
+      "win": 0.7
+    },
+    "archetype_swarm": {
+      "n": 20,
+      "G": 29.95,
+      "alive": 0.95,
+      "win": 0.85
+    },
+    "archetype_hunter": {
+      "n": 20,
+      "G": 27.55,
+      "alive": 0.9,
+      "win": 0.75
+    },
+    "h2": {
+      "n": 20,
+      "G": 58.15,
+      "alive": 1,
+      "win": 0.95
+    }
+  },
+  "problems": 0,
+  "errors": 0
+}

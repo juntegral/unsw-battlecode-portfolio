@@ -1,0 +1,199 @@
+games 139; F episodes 6573; designed 4741 (72%); designed & arrived 3086 (65% of designed)
+
+F episode classes (N=6573)
+  OK arrived (designed situation)                                3086  47%
+  S2 not our territory (enemy tile; dragon born in our territory)    826  13%
+  N2 swapped target                                               653  10%
+  N3 goal off: other (guarded by an ally / beyond 20 / dropped)    346  5%
+  S3 other head ≤3 (it is nearer, out of view)                    332  5%
+  N1 died on the way (trap)                                       219  3%
+  S3 other head ≤3 (we are nearer, in our view)                   185  3%
+  S3 other head ≤3 (it is nearer, in our view)                    172  3%
+  N2 swapped target (alternating)                                 106  2%
+  S1 not a true fountain                                           81  1%
+  N3 goal off: other (guarded by an ally / beyond 20 / dropped) [alternating]     73  1%
+  S3 other head ≤3 (it is nearer, it F-tags the same fountain, out of view)     73  1%
+  N1 died on the way (rammed)                                      58  1%
+  S3 other head ≤3 (it is nearer, it F-tags the same fountain, in our view)     50  1%
+  N3 goal off: gathering (r>=340)                                  43  1%
+  S3 other head ≤3 (as near, in our view)                          39  1%
+  N1 died on the way (trap) [alternating]                          36  1%
+  S3 other head ≤3 (we are nearer, it F-tags the same fountain, in our view)     29  0%
+  N1 died on the way (ram)                                         26  0%
+  N3 goal off: became king                                         19  0%
+  S2 not our territory (neutral tile; dragon born in our territory)     18  0%
+  N1 died on the way (rammed) [alternating]                        15  0%
+  N1 died on the way (allyHead)                                    12  0%
+  N3 goal off: gathering (r>=340) [alternating]                    11  0%
+  S3 other head ≤3 (we are nearer, out of view)                     9  0%
+  S3 other head ≤3 (as near, it F-tags the same fountain, in our view)      7  0%
+  N4 other action next turn (escape-split)                          7  0%
+  N3 goal off: < 3 units                                            6  0%
+  N1 died on the way (sac)                                          6  0%
+  S2 not our territory (enemy tile; dragon born in enemy territory)      6  0%
+  N1 died on the way (allyHead) [alternating]                       4  0%
+  N1 died on the way (ram) [alternating]                            4  0%
+  N4 other action next turn (csplit)                                4  0%
+  S2 not our territory (enemy tile; dragon born neutral)            4  0%
+  N1 died on the way (sac) [alternating]                            3  0%
+  N3 goal off: < 3 units [alternating]                              2  0%
+  N3 goal off: became king [alternating]                            2  0%
+  S3 other head ≤3 (as near, out of view)                           1  0%
+
+F classes by map (S1..S3 = outside the designed situation, N* = designed but never arrived, OK)
+  map                           S1    S2    S3    N1    N2    N3    N4    N5    N6    OK     N
+  Autarky                        4    21    34     1     2     2     0     0     0   552   616
+  Default                        5     0     0     0     0     0     0     0     0     0     5
+  Devil                          4     2    37    63    82    75     0     0     0    48   311
+  Portals                       23   522   154   133   167   104     5     0     0   446  1554
+  Prisoners Dilemma (10)         2     6    17     0     1     7     0     0     0    31    64
+  Prisoners Dilemma              0    89   127     0     1     1     0     0     0  1610  1828
+  Queen Of Spades               17     0     0     0     0     0     0     0     0     0    17
+  Schooltime                     0    10     0     0     0     1     0     0     0     0    11
+  Slithery Fight                11   204   506   180   452   226     6     0     0   367  1952
+  Trauma                         2     0    22     6    54    86     0     0     0    32   202
+  Trophy                        13     0     0     0     0     0     0     0     0     0    13
+
+never arrived: first distance (bot label) (N=1655)
+  d0 7-10                                                         571  35%
+  d0 11+                                                          562  34%
+  d0 4-6                                                          343  21%
+  d0<=3                                                           179  11%
+
+never arrived: tagged turns (N=1655)
+  11+ turns                                                       555  34%
+  4-10 turns                                                      471  28%
+  1 tagged turn                                                   351  21%
+  2-3 turns                                                       278  17%
+
+never arrived: enemy head near target at first tag (N=1655)
+  no enemy head within 6                                         1122  68%
+  enemy head <=3 of target at first tag                           310  19%
+  enemy head 4-6                                                  223  13%
+
+portal crossings 4859; body dead within 3 rounds 291 (6%)
+
+portal failure classes (N=291)
+  C exit tile: own head                                            69  24%
+  L later (+0-1): trapped (room4 after crossing <=3)               53  18%
+  C exit tile: own body                                            53  18%
+  L later (+2-3): trapped (room4 after crossing <=3)               20  7%
+  C exit tile: enemy head                                          17  6%
+  C exit tile: enemy body                                          13  4%
+  L later (+2-3): allyHead                                          9  3%
+  L later (+2-3): sac (feed/conv label)                             9  3%
+  L later (+0-1): rammed by enemy (enemy head <=2 of exit at crossing)      8  3%
+  L later (+0-1): trapped (room4 after crossing 9+)                 6  2%
+  L later (+2-3): trapped (room4 after crossing 4-8)                6  2%
+  L later (+0-1): ram                                               5  2%
+  L later (+2-3): trapped (room4 after crossing 9+)                 5  2%
+  L later (+0-1): sac (feed/conv label)                             3  1%
+  C exit tile: none own body (self)                                 3  1%
+  L later (+0-1): trapped (room4 after crossing 4-8)                3  1%
+  L later (+2-3): rammed by enemy (enemy head 3-4 of exit at crossing)      2  1%
+  L later (+2-3): rammed by enemy (enemy head 5+ of exit at crossing)      1  0%
+  L later (+0-1): rammed by enemy (enemy head 3-4 of exit at crossing)      1  0%
+  C after exit, same move: enemy body                               1  0%
+  C after exit, same move: enemy head                               1  0%
+  L later (+2-3): rammed by enemy (enemy head <=2 of exit at crossing)      1  0%
+  L later (+2-3): ram                                               1  0%
+  C after exit, same move: none kelp                                1  0%
+
+portal failures by map
+  Autarky                   C exit tile 24 · L later (+0-1) 2 · L later (+2-3) 9
+  Default                   C exit tile 9 · L later (+0-1) 2 · C after exit, same move 1 · L later (+2-3) 5
+  Portals                   L later (+2-3) 29 · C exit tile 74 · L later (+0-1) 48 · C after exit, same move 1
+  Prisoners Dilemma         C exit tile 2
+  Queen Of Spades           C exit tile 3 · L later (+0-1) 13 · C after exit, same move 1 · L later (+2-3) 1
+  Schooltime                L later (+2-3) 3 · L later (+0-1) 4 · C exit tile 8
+  Slithery Fight            L later (+0-1) 5 · C exit tile 16 · L later (+2-3) 2
+  Trauma                    C exit tile 19 · L later (+0-1) 5 · L later (+2-3) 5
+
+own-blocked crossing deaths: context (N=125)
+  known portal; own head <=1 of exit; v > -20                      45  36%
+  PORTAL? (unexplored); own head <=1 of exit; v <=-20 (desperate)     28  22%
+  PORTAL? (unexplored); own head <=1 of exit; v > -20              20  16%
+  known portal; own head 2-3 of exit; v > -20                      16  13%
+  known portal; own head 4+ of exit; v > -20                       10  8%
+  PORTAL? (unexplored); own head 2-3 of exit; v <=-20 (desperate)      3  2%
+  known portal; own head <=1 of exit; v <=-20 (desperate)           2  2%
+  PORTAL? (unexplored); own head 4+ of exit; v <=-20 (desperate)      1  1%
+
+enemy-related failures: context (N=45)
+  PORTAL?; enemy head <=2 of exit; L <=3; eL >=ours                12  27%
+  PORTAL?; enemy head <=2 of exit; L 4-6; eL <ours                  5  11%
+  known; enemy head <=2 of exit; L <=3; eL >=ours                   5  11%
+  PORTAL?; enemy head <=2 of exit; L <=3; eL <ours                  4  9%
+  known; enemy head 5+ of exit; L <=3; eL >=ours                    3  7%
+  known; enemy head <=2 of exit; L 7+; eL <ours                     3  7%
+  known; enemy head <=2 of exit; L 4-6; eL >=ours                   2  4%
+  known; enemy head <=2 of exit; L <=3; eL <ours                    2  4%
+  PORTAL?; enemy head <=2 of exit; L 7+; eL >=ours                  1  2%
+  PORTAL?; enemy head 3-4 of exit; L 7+; eL <ours                   1  2%
+  PORTAL?; enemy head 3-4 of exit; L <=3; eL >=ours                 1  2%
+  known; enemy head 3-4 of exit; L 4-6; eL <ours                    1  2%
+  PORTAL?; enemy head <=2 of exit; L 7+; eL <ours                   1  2%
+  PORTAL?; enemy head 3-4 of exit; L <=3; eL <ours                  1  2%
+  known; enemy head 3-4 of exit; L <=3; eL >=ours                   1  2%
+  known; enemy head <=2 of exit; L 4-6; eL <ours                    1  2%
+  known; enemy head 5+ of exit; L 7+; eL <ours                      1  2%
+
+F pull-away: F-tagged turns 49287; with a uniquely-nearest natural pearl within 7 outside the group 13053 (26%); turns that moved away from one 7439 (15%); F episodes with >=1 such turn 1589 / 6573 (24%)
+
+pull-away pearls: first eater after the move (N=15226)
+  another of ours                                               10879  71%
+  enemy                                                          1930  13%
+  this dragon later                                              1449  10%
+  nobody (still there / game end)                                 968  6%
+  by map (pull-away pearls · eaten by the enemy): Devil 353·72 | Trauma 700·215 | Prisoners Dilemma 21·0 | Portals 9501·0 | Slithery Fight 4609·1631 | Prisoners Dilemma (10) 11·3 | Schooltime 13·2 | Queen Of Spades 1·1 | Autarky 16·5 | Trophy 1·1
+
+all crossings: probe of the previous round (from that tile, that direction) (N=4859)
+  clean                                                          4020  83%
+  dirty                                                           698  14%
+  none                                                            141  3%
+
+portal failures: class x exit kind x probe (N=291)
+  C exit tile: own body                    | known | probe dirty     36  12%
+  L later (+0-1): trapped (room4 after cro | PORTAL? | probe clean     35  12%
+  C exit tile: own head                    | PORTAL? | probe clean     25  9%
+  C exit tile: own head                    | known | probe clean     24  8%
+  L later (+2-3): trapped (room4 after cro | PORTAL? | probe clean     17  6%
+  L later (+0-1): trapped (room4 after cro | known | probe clean     12  4%
+  C exit tile: own body                    | PORTAL? | probe none     12  4%
+  C exit tile: enemy head                  | PORTAL? | probe clean     11  4%
+  C exit tile: own head                    | known | probe dirty     10  3%
+  L later (+0-1): trapped (room4 after cro | known | probe dirty      8  3%
+  C exit tile: enemy body                  | known | probe dirty      8  3%
+  C exit tile: own head                    | PORTAL? | probe dirty      7  2%
+  L later (+0-1): trapped (room4 after cro | PORTAL? | probe dirty      6  2%
+  L later (+2-3): sac (feed/conv label)    | known | probe clean      6  2%
+  C exit tile: enemy body                  | PORTAL? | probe dirty      5  2%
+  L later (+2-3): allyHead                 | known | probe clean      5  2%
+  C exit tile: own body                    | PORTAL? | probe dirty      5  2%
+  L later (+2-3): trapped (room4 after cro | known | probe dirty      5  2%
+  L later (+2-3): trapped (room4 after cro | known | probe clean      5  2%
+  L later (+2-3): allyHead                 | PORTAL? | probe clean      4  1%
+  L later (+0-1): rammed by enemy (enemy h | PORTAL? | probe clean      4  1%
+  L later (+0-1): sac (feed/conv label)    | known | probe clean      3  1%
+  C exit tile: none own body (self)        | known | probe none      3  1%
+  L later (+0-1): ram                      | PORTAL? | probe clean      3  1%
+  L later (+2-3): rammed by enemy (enemy h | known | probe clean      3  1%
+  C exit tile: enemy head                  | known | probe clean      3  1%
+  C exit tile: own head                    | PORTAL? | probe none      3  1%
+  L later (+2-3): sac (feed/conv label)    | known | probe dirty      2  1%
+  L later (+2-3): trapped (room4 after cro | PORTAL? | probe none      2  1%
+  L later (+2-3): trapped (room4 after cro | PORTAL? | probe dirty      2  1%
+  L later (+0-1): rammed by enemy (enemy h | known | probe clean      2  1%
+  L later (+0-1): rammed by enemy (enemy h | PORTAL? | probe dirty      2  1%
+  C exit tile: enemy head                  | PORTAL? | probe dirty      2  1%
+  L later (+0-1): ram                      | PORTAL? | probe dirty      1  0%
+  C exit tile: enemy head                  | known | probe dirty      1  0%
+  L later (+0-1): ram                      | known | probe clean      1  0%
+  C after exit, same move: enemy body      | known | probe clean      1  0%
+  C after exit, same move: enemy head      | known | probe clean      1  0%
+  L later (+0-1): rammed by enemy (enemy h | PORTAL? | probe none      1  0%
+  L later (+2-3): rammed by enemy (enemy h | PORTAL? | probe clean      1  0%
+  L later (+2-3): ram                      | PORTAL? | probe clean      1  0%
+  L later (+0-1): trapped (room4 after cro | PORTAL? | probe none      1  0%
+  C after exit, same move: none kelp       | known | probe clean      1  0%
+  L later (+2-3): sac (feed/conv label)    | PORTAL? | probe none      1  0%

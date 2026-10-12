@@ -1,0 +1,45 @@
+{
+  "label": "merge2-a-px4 (proxy4 d1, superseded)",
+  "bot": "~/01. Project/개인 프로젝트/unsw-heuristic/bot",
+  "at": "2026-09-30T01:14:06.660Z",
+  "benchmark": {
+    "maps": 10,
+    "opps": [
+      "proxy4_swarm",
+      "proxy4_elim",
+      "proxy4_king"
+    ],
+    "seeds": [
+      1
+    ],
+    "sides": 2
+  },
+  "all": {
+    "n": 60,
+    "G": 19.15,
+    "alive": 0.6333333333333333,
+    "win": 0.23333333333333334
+  },
+  "byOpp": {
+    "proxy4_swarm": {
+      "n": 20,
+      "G": 18.25,
+      "alive": 0.7,
+      "win": 0.2
+    },
+    "proxy4_elim": {
+      "n": 20,
+      "G": 18.7,
+      "alive": 0.6,
+      "win": 0.2
+    },
+    "proxy4_king": {
+      "n": 20,
+      "G": 20.5,
+      "alive": 0.6,
+      "win": 0.3
+    }
+  },
+  "problems": 0,
+  "errors": 0
+}

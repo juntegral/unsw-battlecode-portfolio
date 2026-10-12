@@ -1,0 +1,159 @@
+{
+  "gameId": 724107,
+  "map": "Queen Of Spades",
+  "opp": 264,
+  "us": "A",
+  "submission": 13393,
+  "winner": "B",
+  "rounds": 88,
+  "turns": 238,
+  "labelled": 238,
+  "move": 237,
+  "tags": {
+    "map": 3,
+    "cov": 133,
+    "cl": 5,
+    "csplit": 1,
+    "tg": 22,
+    "tgx": 17,
+    "grab": 1
+  },
+  "kinds": {
+    "move": 237,
+    "csplit": 1
+  },
+  "explicitGoals": {
+    "none": 237,
+    "early_action": 1
+  },
+  "goalModifiers": {
+    "cov": 133,
+    "cl": 5,
+    "grab": 1
+  },
+  "splits": {
+    "csplit": 1
+  },
+  "splitActual": {
+    "csplit": 1
+  },
+  "phases": {
+    "r0-99": {
+      "turns": 238,
+      "tags": {
+        "map": 3,
+        "cov": 133,
+        "cl": 5,
+        "csplit": 1,
+        "tg": 22,
+        "tgx": 17,
+        "grab": 1
+      },
+      "goals": {
+        "none": 237,
+        "early_action": 1
+      },
+      "splits": {
+        "csplit": 1
+      }
+    }
+  },
+  "lengths": {
+    "2": {
+      "turns": 131,
+      "tags": {
+        "map": 1,
+        "cl": 3,
+        "cov": 84,
+        "tgx": 15,
+        "tg": 8,
+        "grab": 1
+      }
+    },
+    "3-4": {
+      "turns": 107,
+      "tags": {
+        "map": 2,
+        "cov": 49,
+        "cl": 2,
+        "csplit": 1,
+        "tg": 14,
+        "tgx": 2
+      }
+    }
+  },
+  "cooccurrence": {
+    "cl+cov": 2,
+    "cov+grab": 1
+  },
+  "labelActionMismatch": 0,
+  "duplicates": 0,
+  "missingLabels": 0,
+  "unexpected": [],
+  "gateChecks": {
+    "csplit_unit_limit": {
+      "n": 1,
+      "pass": 1
+    },
+    "csplit_clock": {
+      "n": 1,
+      "pass": 1
+    },
+    "csplit_length": {
+      "n": 1,
+      "pass": 1
+    },
+    "csplit_actual_units": {
+      "n": 1,
+      "pass": 1
+    },
+    "csplit_not_true_long_king": {
+      "n": 1,
+      "pass": 1
+    }
+  },
+  "maxDragonId": 27,
+  "sonarFromIdOver255": 0,
+  "resources": {
+    "freeMemoryPct": 67,
+    "freeDiskGB": 36
+  },
+  "priority": 10,
+  "checks": {
+    "sim": 0,
+    "splits": 0,
+    "drops": 0,
+    "eatTC": 0,
+    "ledger": 0,
+    "final": 0,
+    "lineage": 0,
+    "natBal": 0,
+    "dropBal": 0,
+    "unknownDeath": 0
+  },
+  "result": {
+    "terminated": true,
+    "endReason": "teamEliminated",
+    "winner": "B",
+    "teamA": {
+      "dragonCount": 0,
+      "longestDragon": 0,
+      "totalLength": 0
+    },
+    "teamB": {
+      "dragonCount": 17,
+      "longestDragon": 3,
+      "totalLength": 41
+    }
+  },
+  "endReason": "teamEliminated",
+  "ledgerTurns": 238,
+  "finalKing": null,
+  "maxInstr": 29662215,
+  "faults": 0,
+  "over80M": 0,
+  "depths": {
+    "6": 1,
+    "7": 236
+  }
+}

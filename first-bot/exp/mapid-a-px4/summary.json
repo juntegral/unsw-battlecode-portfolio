@@ -1,0 +1,45 @@
+{
+  "label": "mapid-a-px4",
+  "bot": "~/01. Project/개인 프로젝트/unsw-heuristic/exp/cand-mapid/bot",
+  "at": "2026-09-30T05:41:28.958Z",
+  "benchmark": {
+    "maps": 10,
+    "opps": [
+      "proxy4_swarm",
+      "proxy4_elim",
+      "proxy4_king"
+    ],
+    "seeds": [
+      1
+    ],
+    "sides": 2
+  },
+  "all": {
+    "n": 60,
+    "G": 17.7,
+    "alive": 0.6166666666666667,
+    "win": 0.23333333333333334
+  },
+  "byOpp": {
+    "proxy4_swarm": {
+      "n": 20,
+      "G": 15.55,
+      "alive": 0.6,
+      "win": 0.15
+    },
+    "proxy4_elim": {
+      "n": 20,
+      "G": 17.5,
+      "alive": 0.6,
+      "win": 0.25
+    },
+    "proxy4_king": {
+      "n": 20,
+      "G": 20.05,
+      "alive": 0.65,
+      "win": 0.3
+    }
+  },
+  "problems": 0,
+  "errors": 0
+}

@@ -1,0 +1,294 @@
+{
+  "gameId": 718438,
+  "map": "Default",
+  "opp": 264,
+  "us": "A",
+  "submission": 13313,
+  "winner": "B",
+  "rounds": 339,
+  "turns": 1930,
+  "labelled": 1930,
+  "move": 1904,
+  "tags": {
+    "cov": 309,
+    "map": 27,
+    "csplit": 18,
+    "tg": 67,
+    "noexit": 2,
+    "tgx": 88,
+    "grab": 26,
+    "cl": 149,
+    "TRADE": 5,
+    "lnt": 5,
+    "escsplit": 1,
+    "lasttrade": 1,
+    "floor": 3,
+    "lsplit": 1
+  },
+  "kinds": {
+    "move": 1904,
+    "csplit": 18,
+    "noexit": 2,
+    "escsplit": 1,
+    "lasttrade": 1,
+    "floor": 3,
+    "lsplit": 1
+  },
+  "explicitGoals": {
+    "none": 1904,
+    "early_action": 26
+  },
+  "goalModifiers": {
+    "cov": 309,
+    "grab": 26,
+    "cl": 149
+  },
+  "splits": {
+    "csplit": 18,
+    "escsplit": 1,
+    "floor": 3,
+    "lsplit": 1
+  },
+  "splitActual": {
+    "csplit": 18,
+    "escsplit": 1,
+    "floor": 3,
+    "lsplit": 1
+  },
+  "phases": {
+    "r0-99": {
+      "turns": 618,
+      "tags": {
+        "cov": 166,
+        "map": 11,
+        "csplit": 7,
+        "tg": 34,
+        "noexit": 1,
+        "tgx": 29,
+        "grab": 3,
+        "cl": 25,
+        "TRADE": 1,
+        "lnt": 1
+      },
+      "goals": {
+        "none": 610,
+        "early_action": 8
+      },
+      "splits": {
+        "csplit": 7
+      }
+    },
+    "r100-249": {
+      "turns": 1042,
+      "tags": {
+        "cl": 93,
+        "tgx": 39,
+        "tg": 25,
+        "csplit": 11,
+        "map": 12,
+        "cov": 104,
+        "TRADE": 4,
+        "lnt": 4,
+        "grab": 14,
+        "escsplit": 1,
+        "lasttrade": 1
+      },
+      "goals": {
+        "none": 1029,
+        "early_action": 13
+      },
+      "splits": {
+        "csplit": 11,
+        "escsplit": 1
+      }
+    },
+    "r250-299": {
+      "turns": 150,
+      "tags": {
+        "cov": 12,
+        "cl": 21,
+        "tgx": 7,
+        "tg": 3,
+        "noexit": 1,
+        "grab": 5,
+        "floor": 3,
+        "map": 3
+      },
+      "goals": {
+        "none": 146,
+        "early_action": 4
+      },
+      "splits": {
+        "floor": 3
+      }
+    },
+    "r300-339": {
+      "turns": 120,
+      "tags": {
+        "cov": 27,
+        "lsplit": 1,
+        "cl": 10,
+        "map": 1,
+        "tgx": 13,
+        "tg": 5,
+        "grab": 4
+      },
+      "goals": {
+        "none": 119,
+        "early_action": 1
+      },
+      "splits": {
+        "lsplit": 1
+      }
+    }
+  },
+  "lengths": {
+    "2": {
+      "turns": 1201,
+      "tags": {
+        "map": 22,
+        "noexit": 2,
+        "tgx": 80,
+        "cov": 165,
+        "grab": 17,
+        "tg": 33,
+        "cl": 82,
+        "TRADE": 5,
+        "lnt": 5,
+        "lasttrade": 1
+      }
+    },
+    "3-4": {
+      "turns": 698,
+      "tags": {
+        "cov": 144,
+        "map": 5,
+        "csplit": 15,
+        "tg": 34,
+        "tgx": 8,
+        "cl": 67,
+        "grab": 9,
+        "floor": 2,
+        "lsplit": 1
+      }
+    },
+    "5-6": {
+      "turns": 31,
+      "tags": {
+        "csplit": 3,
+        "escsplit": 1,
+        "floor": 1
+      }
+    }
+  },
+  "cooccurrence": {
+    "cl+cov": 27,
+    "cl+grab": 7
+  },
+  "labelActionMismatch": 0,
+  "duplicates": 0,
+  "missingLabels": 0,
+  "unexpected": [],
+  "gateChecks": {
+    "csplit_unit_limit": {
+      "n": 18,
+      "pass": 18
+    },
+    "csplit_clock": {
+      "n": 18,
+      "pass": 18
+    },
+    "csplit_length": {
+      "n": 18,
+      "pass": 18
+    },
+    "csplit_actual_units": {
+      "n": 18,
+      "pass": 18
+    },
+    "csplit_not_true_long_king": {
+      "n": 18,
+      "pass": 18
+    },
+    "lnt_actual_d3_excluding_victim": {
+      "n": 5,
+      "pass": 5
+    },
+    "lnt_d3_1plus": {
+      "n": 5,
+      "pass": 5
+    },
+    "escsplit_unit_limit": {
+      "n": 1,
+      "pass": 1
+    },
+    "floor_unit_limit": {
+      "n": 3,
+      "pass": 3
+    },
+    "floor_opponent_8plus": {
+      "n": 3,
+      "pass": 3
+    },
+    "lsplit_unit_limit": {
+      "n": 1,
+      "pass": 1
+    },
+    "lsplit_clock": {
+      "n": 1,
+      "pass": 1
+    },
+    "lsplit_length": {
+      "n": 1,
+      "pass": 1
+    },
+    "lsplit_actual_units": {
+      "n": 1,
+      "pass": 1
+    }
+  },
+  "maxDragonId": 201,
+  "sonarFromIdOver255": 0,
+  "resources": {
+    "freeMemoryPct": 66,
+    "freeDiskGB": 36
+  },
+  "priority": 10,
+  "checks": {
+    "sim": 0,
+    "splits": 0,
+    "drops": 0,
+    "eatTC": 0,
+    "ledger": 0,
+    "final": 0,
+    "lineage": 0,
+    "natBal": 0,
+    "dropBal": 0,
+    "unknownDeath": 0
+  },
+  "result": {
+    "terminated": true,
+    "endReason": "teamEliminated",
+    "winner": "B",
+    "teamA": {
+      "dragonCount": 0,
+      "longestDragon": 0,
+      "totalLength": 0
+    },
+    "teamB": {
+      "dragonCount": 60,
+      "longestDragon": 16,
+      "totalLength": 175
+    }
+  },
+  "endReason": "teamEliminated",
+  "ledgerTurns": 1930,
+  "finalKing": null,
+  "maxInstr": 31049407,
+  "faults": 0,
+  "over80M": 0,
+  "depths": {
+    "6": 2,
+    "7": 1902
+  }
+}

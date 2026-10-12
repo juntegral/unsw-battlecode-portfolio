@@ -1,0 +1,104 @@
+// stack10 (research/experiments/cand-stack10.md; economy-principles study sections 4, 7 and 14): lnt / lntv / kint lines, the
+// pre-registered gates, the E4 tables for our team (B3 take rate and payoff by d3, every trade by d8) and utab's gates and E3 numbers by
+// layout. Shown when a pool carries lnt / lntv / kint / tab tags, or with --lnt (any set, for comparison).
+const S10_TAB = { 'Autarky/a': [17, 23], 'Default/a': [11, 19], 'Devil/a': [16, 30], 'Devil/b': [12, 24], 'Portals/a': [14, 26],
+  'Prisoners Dilemma/a': [9, 13], 'Prisoners Dilemma/b': [9, 15], 'Queen Of Spades/a': [7, 13], 'Queen Of Spades/b': [7, 12],
+  'Schooltime/a': [13, 44], 'Schooltime/b': [8, 16], 'Slithery Fight/a': [47, 62], 'Slithery Fight/b': [43, 55], 'Trauma/a': [7, 16], 'Trophy/a': [15, 31] };
+const S10_UP = ['Devil/a', 'Devil/b', 'Portals/a', 'Slithery Fight/a', 'Trophy/a'];   // the target rises >= 1.5x: gate 2's layouts
+const S10_UP4 = ['Devil/a', 'Devil/b', 'Slithery Fight/a', 'Trophy/a'];               // gate 2 from W11: Portals keeps the area target (UTAB_PORTALS false)
+const S10_UP2 = ['Slithery Fight/b', 'Autarky/a', 'Schooltime/a'];                   // smaller rises (reported, not judged)
+const S10_DOWN = ['Queen Of Spades/b', 'Schooltime/b', 'Trauma/a'];                  // the target falls to <= 2/3
+const S10_AREA = { Autarky: 21, Default: 22, Devil: 11, Portals: 11, 'Prisoners Dilemma': 11, 'Queen Of Spades': 19, Schooltime: 40, 'Slithery Fight': 37, Trauma: 25, Trophy: 13 };
+const s10b3 = d => d <= -2 ? '≤−2' : d === -1 ? '−1' : d === 0 ? '0' : d === 1 ? '+1' : '≥+2';
+const s10b8 = d => d <= -3 ? '≤−3' : d >= 3 ? '≥+3' : d > 0 ? '+' + d : d < 0 ? '−' + (-d) : '0';
+const s10f2 = v => v === null || v === undefined || Number.isNaN(v) ? '–' : (v >= 0 ? '+' : '') + v.toFixed(2);
+const s10med = xs => { const s = xs.filter(v => v !== null && v !== undefined).sort((a, b) => a - b); if (!s.length) return null; const i = (s.length - 1) / 2; return (s[Math.floor(i)] + s[Math.ceil(i)]) / 2; };
+function effectLine10(k, xs) {
+  if (k === 'lntv') return `거부 턴 ${xs.length} · 설계 상황(기보 d3 ≤ −1) ${pct(xs.filter(x => x.sit).length, xs.length)} · 표식 d3 = 기보 d3 ${pct(xs.filter(x => x.match).length, xs.length)} · 10라운드 뒤 몸 생존 ${pct(xs.filter(x => x.alive10).length, xs.length)} · 10라운드 안 박힘 ${pct(xs.filter(x => x.rammed10).length, xs.length)} · 우리 길이 평균 ${f1(avg(xs.map(x => x.L)))}`;
+  const ex = xs.filter(x => x.ex), sum = f => ex.reduce((s, x) => s + (x[f] || 0), 0), d = sum('drops');
+  const sitDef = k === 'lnt' ? '기보 d3 ≥ +1이고 표적이 차례 시작에 바로 옆' : '기보 d3 ≤ −1';
+  return `맞부딪힘 ${pct(ex.length, xs.length)} (${ex.length}) · 설계 상황(${sitDef}) ${pct(ex.filter(x => x.sit).length, ex.length)}${k === 'lnt' ? ` · 옛 규칙도 박았을 턴(o) ${pct(xs.filter(x => x.o).length, xs.length)}` : ''} · 두 몸 진주 ${d}개 중 20라운드 안 우리 ${pct(sum('own20'), d)} · 상대 ${pct(sum('opp20'), d)} · 건당 net20 ${s10f2(ex.length ? sum('net20') / ex.length : null)} · 적 길이 평균 ${f1(avg(ex.map(x => x.Lv)))} · 우리 길이 평균 ${f1(avg(ex.map(x => x.L)))}`;
+}
+function caseLine10(x, where, dd) {
+  if (x.k === 'lntv') return `${where}: 표식 d3 ${x.d3t} (기보 ${x.d3r === null ? '시야 안 적 머리 없음' : x.d3r}) → ${x.death10 ? `죽음 ${dd(x.death10)}` : '10라운드 생존'}`;
+  return `${where}: ${x.k === 'lnt' ? `표식 d3 ${x.d3t}${x.o ? ' (옛 규칙도 박음)' : ''}` : 'kint'} · 기보 d3 ${x.d3 ?? '?'} · d8 ${x.d8 ?? '?'}${x.adjS === 0 ? ' · 차례 시작에 옆이 아님' : ''} · 적 L${x.Lv ?? '?'} → ${x.ex ? `진주 ${x.drops}개 중 20라운드 안 우리 ${x.own20} · 상대 ${x.opp20}, net20 ${x.net20}` : x.death0 ? `맞부딪히지 않음(${dd(x.death0)})` : '맞부딪히지 않음'}`;
+}
+function stack10Section(A, B, opts) {
+  const L = [];
+  const has = S => ['lnt', 'lntv', 'kint'].some(k => (S.by[k] || []).length) || (S.by.csplit || []).some(x => x.tab);
+  if (!has(A) && !(B && has(B)) && !process.argv.includes('--lnt')) return L;
+  const P = [['이번', A]].concat(B ? [['비교', B]] : []);
+  const opp = S => S.s10.flatMap(g => g.b3.map(o => ({ r: o[0], L: o[1], Le: o[2], d3: o[3], d8: o[4], taken: o[5], u: o[6] })));
+  const xch = S => S.s10.flatMap(g => g.xch.map(q => ({ r: q[0], Lm: q[1], Lv: q[2], d3: q[3], d8: q[4], adjS: q[5], steps: q[6], lnt: q[7], kint: q[8], drops: q[9],
+    own20: q[10], opp20: q[11], net20: q[12], done: q[13], Lm0: q[14] })).filter(q => q.done));
+  const shTxt = xs => { let d = 0, o = 0, t = 0, n = 0; for (const q of xs) { d += q.drops; o += q.own20; t += q.opp20; n += q.net20; } return xs.length ? `${pct(o, d)} / ${pct(t, d)} · ${s10f2(n / xs.length)} (${xs.length})` : '–'; };
+  L.push('## stack10: 국지 수 교환 문(lnt)과 판본별 머릿수 목표(utab)', '');
+  L.push('- 기준값은 `research/experiments/cand-stack10.md`(21:12–21:14, 구현·로컬 확인 전)에서, 상위권·우리 값은 `research/observations/economy-principles.md`(4.1–4.3절, 7절)에서 왔다. 정의는 연구의 추출기(`exp/econ-principles/extract.js` O·C행)와 같다. d3 = 우리 드래곤의 차례 시작 머리에서 체비쇼프 3 안의 우리 머리 수 − 적 머리 수, d8 = 접촉 칸(표적 머리)에서 맨해튼 8 안의 같은 차이(두 드래곤 제외, 감싸기, 켈프·포털 무시). B3 기회 = 우리 길이 ≤4 드래곤의 차례 시작에 적 머리가 열린 변(포털 포함) 너머 바로 옆(둘 이상이면 가장 긴 것), 박음 = 그 머리로 한 걸음. 교환 = 우리 드래곤이 적 머리로 움직여 둘 다 죽음. 두 몸의 진주 = 두 사망 기록의 떨군 진주 합, net20 = (적 길이 − 우리 길이) + 20라운드 안 우리가 먹은 수 − 상대가 먹은 수.', '');
+  L.push('### lnt 게이트 (기능 적용)', '');
+  L.push(`| 기능 | 지표 | 기준 | ${P.map(p => p[0]).join(' | ')} |`, `|---|---|---|${P.map(() => '---|').join('')}`);
+  const row = (f, name, crit, fn) => L.push(`| ${f} | ${name} | ${crit} | ${P.map(p => fn(p[1])).join(' | ')} |`);
+  const ln = S => S.by.lnt || [], lx = S => ln(S).filter(x => x.ex), lv = S => S.by.lntv || [], ki = S => S.by.kint || [];
+  row('lnt', '박치기(맞부딪힘) 수 (판당) · 표식만 붙고 맞부딪히지 않음', '–', S => `${lx(S).length} (${f1(lx(S).length / Math.max(1, S.games))}) · ${ln(S).length - lx(S).length}`);
+  row('lnt', '1. 설계 상황: 기보 d3 ≥ +1이고 표적이 차례 시작에 바로 옆', '≥95%', S => pct(lx(S).filter(x => x.sit).length, lx(S).length));
+  row('lnt', '2. 즉시 효과: 두 몸 진주 20R 우리 몫 / 상대 몫 · 건당 net20 (건)', '≥70% / ≤30% · ≥+1.5', S => shTxt(lx(S)));
+  const take = (S, f) => { const o = opp(S).filter(f); return `${pct(o.filter(q => q.taken).length, o.length)} (${o.filter(q => q.taken).length}/${o.length})`; };
+  row('lnt', '3. 빈도: B3 기회 가운데 기보 d3 ≥ +1에서 박는 비율', '≥50% (승자 65–73%, 우리 18세트 25–29%)', S => take(S, q => q.d3 >= 1));
+  row('lnt', '3. 빈도: B3 기회 가운데 기보 d3 ≤ −1에서 박는 비율', '≤20% (승자 14–16%)', S => take(S, q => q.d3 <= -1));
+  row('lntv', '거부 턴 수 (판당) · 설계 상황(기보 d3 ≤ −1) · 표식 d3 = 기보 d3', '(관찰)', S => `${lv(S).length} (${f1(lv(S).length / Math.max(1, S.games))}) · ${pct(lv(S).filter(x => x.sit).length, lv(S).length)} · ${pct(lv(S).filter(x => x.match).length, lv(S).length)}`);
+  row('lntv', '거부 턴 뒤 10라운드 몸 생존 · 10라운드 안 박힘', '(관찰; 연구 4.2절: 박지 않은 기회 뒤 10라운드 사망 d3 ≤−2 우리 43%, 승자 50%)', S => `${pct(lv(S).filter(x => x.alive10).length, lv(S).length)} · ${pct(lv(S).filter(x => x.rammed10).length, lv(S).length)}`);
+  row('kint', '예외 교환 수 · 두 몸 진주 20R 우리 몫 / 상대 몫 · 건당 net20', '(관찰; 승자의 상대 최장(≥8) 박기, d8 열세 net20 +9.47)', S => `${ki(S).length} · ${shTxt(ki(S).filter(x => x.ex))}`);
+  L.push('');
+  L.push('### B3 기회: 기보 d3별 박는 비율과 그 박치기의 진주 (연구 4.2·4.3절 정의)', '');
+  L.push('| 묶음 | d3 | 기회 | 박음 | 한 걸음 박치기(길이 ≤4, 차례 시작에 옆): 20R 우리 / 상대 · net20 (건) |', '|---|---|---:|---:|---|');
+  for (const [name, S] of P) {
+    const O = opp(S), X = xch(S).filter(q => q.Lm0 <= 4 && q.steps === 1 && q.adjS);
+    for (const b of ['≤−2', '−1', '0', '+1', '≥+2']) {
+      const o = O.filter(q => s10b3(q.d3) === b), x = X.filter(q => s10b3(q.d3) === b);
+      L.push(`| ${name} | ${b} | ${o.length} | ${pct(o.filter(q => q.taken).length, o.length)} | ${shTxt(x)} |`);
+    }
+  }
+  L.push('', '- 상위권 승자(연구 4.2·4.3절): 박는 비율 d3 ≤−2 14%, −1 16%, 0 29%, +1 65%, ≥+2 73%; 그 박치기의 20R 우리/상대 · net20은 ≤−2 24%/72% −0.76, −1 35%/60% +0.07, 0 52%/40% +1.21, +1 71%/25% +1.70, ≥+2 80%/15% +2.20. 우리 18세트: 12%, 13%, 16%, 25%, 29%; 9%/81% −1.63, 21%/69% −0.81, 36%/54% −0.01, 55%/38% +1.08, 70%/26% +2.32.', '');
+  L.push('### 모든 교환 (우리가 박은 것; 가설 수준 지표, 관찰)', '');
+  L.push(`| 지표 | 기준 | 우리 18세트 · 상위권 승자 | ${P.map(p => p[0]).join(' | ')} |`, `|---|---|---|${P.map(() => '---|').join('')}`);
+  const hrow = (name, crit, ref, fn) => L.push(`| ${name} | ${crit} | ${ref} | ${P.map(p => fn(p[1])).join(' | ')} |`);
+  hrow('교환 수 (판당) · 그 가운데 lnt 표식 · kint 표식', '–', '–', S => { const X = xch(S); return `${X.length} (${f1(X.length / Math.max(1, S.games))}) · ${X.filter(q => q.lnt).length} · ${X.filter(q => q.kint).length}`; });
+  hrow('두 몸 진주 20R 우리 몫 / 상대 몫 · 건당 net20 (건)', '우리 몫 ≥50%', '38% / 52% · 66%', S => shTxt(xch(S)));
+  hrow('교환 가운데 d8 ≤ −3 비율', '≤25%', '38% · 11%', S => { const X = xch(S); return `${pct(X.filter(q => q.d8 <= -3).length, X.length)} (${X.filter(q => q.d8 <= -3).length}/${X.length})`; });
+  hrow('교환 가운데 d3 ≤ −1 비율', '(참고)', '36% · 8%', S => { const X = xch(S); return pct(X.filter(q => q.d3 <= -1).length, X.length); });
+  hrow('판당 교환 net20의 합 (판)', '≥0', '–', S => { const per = S.s10.map(g => g.xch.filter(q => q[13]).reduce((s, q) => s + q[12], 0)); return per.length ? `${s10f2(avg(per))} (${per.length}판)` : '–'; });
+  L.push('');
+  L.push('| 묶음 | d8 | 교환 | 20R 우리 / 상대 · net20 (건) |', '|---|---|---:|---|');
+  for (const [name, S] of P) { const X = xch(S); for (const b of ['≤−3', '−2', '−1', '0', '+1', '+2', '≥+3']) { const x = X.filter(q => s10b8(q.d8) === b); L.push(`| ${name} | ${b} | ${x.length} | ${shTxt(x)} |`); } }
+  L.push('', '- 상위권 승자(연구 4.1절, 모든 교환): d8 ≤−3 41%/56% −0.12, 0 58%/34% +1.35, ≥+3 77%/17% +2.20. 우리 18세트: ≤−3 21%/70% −1.27, 0 37%/42% +1.15, ≥+3 72%/23% +2.76.', '');
+  const cs = S => S.by.csplit || [], rec = S => cs(S).filter(x => x.mt10 && /\/[ab]$/.test(x.mt10));
+  const g10 = (S, lays) => S.s10.filter(g => lays.includes(g.mapName + '/' + g.lay));
+  const ratio = g => { const t = S10_TAB[g.mapName + '/' + g.lay]; return t ? g.u100 / t[1] : null; };
+  L.push('### utab 게이트 (기능 적용)', '');
+  L.push(`| 기능 | 지표 | 기준 | ${P.map(p => p[0]).join(' | ')} |`, `|---|---|---|${P.map(() => '---|').join('')}`);
+  row('utab', 'csplit 발동 · 인식 뒤(발동한 프로세스의 마지막 map 표식이 판본을 댐) · tab 표식', '–', S => `${cs(S).length} · ${rec(S).length} · ${cs(S).filter(x => x.tab).length}`);
+  row('utab', '1. 설계 상황: 인식 뒤 csplit 가운데 tab', '≥95%', S => pct(rec(S).filter(x => x.tab).length, rec(S).length));
+  row('utab', '2. 즉시 효과: 목표가 1.5배 이상 오르는 판본 가운데 utab이 켜진 넷(Devil a·b, Slithery Fight a, Trophy a; W11부터 Portals는 넓이 목표)의 r100 우리 수 ÷ 표 r100 목표, 판 중앙값 (판)', '≥0.6', S => { const G = g10(S, S10_UP4), m = s10med(G.map(ratio)); return m === null ? '–' : `${m.toFixed(2)} (${G.length}판)`; });
+  row('utab', '(사전 등록의 다섯 판본, Portals a 포함) r100 ÷ 표 r100 목표, 판 중앙값 (판)', '–', S => { const G = g10(S, S10_UP), m = s10med(G.map(ratio)); return m === null ? '–' : `${m.toFixed(2)} (${G.length}판)`; });
+  row('utab', '3. tab csplit 새끼 30라운드 생존', '≥30%', S => { const e = cs(S).filter(x => x.tab && x.ex); return `${pct(e.filter(x => x.childAlive30).length, e.length)} (${e.length}마리)`; });
+  row('utab', '(참고) 조금 오르는 판본(Slithery Fight b, Autarky a, Schooltime a): r100 ÷ 표 목표 중앙값 (판)', '–', S => { const G = g10(S, S10_UP2), m = s10med(G.map(ratio)); return m === null ? '–' : `${m.toFixed(2)} (${G.length}판)`; });
+  L.push('');
+  L.push('### 판본별 r100 우리 드래곤 수 (utab 표 대비; 전멸은 0)', '');
+  L.push('| 묶음 | 판본(정답) | 판 | 넓이 목표 | 표 r50 · r100 | r100 우리 수 중앙값 (평균) | ÷ 표 r100 (판 중앙값) | tab csplit (판당) |', '|---|---|---:|---:|---|---|---:|---:|');
+  for (const [name, S] of P) {
+    const m = new Map(); for (const g of S.s10) { const k = g.mapName + '/' + g.lay; if (!m.has(k)) m.set(k, []); m.get(k).push(g); }
+    for (const [k, G] of [...m.entries()].sort()) {
+      const t = S10_TAB[k], ids = new Set(G.map(g => g.game)), tabN = cs(S).filter(x => x.tab && ids.has(x.game)).length, rm = s10med(G.map(ratio));
+      L.push(`| ${name} | ${k}${S10_UP.includes(k) ? ' ↑' : S10_DOWN.includes(k) ? ' ↓' : ''} | ${G.length} | ${S10_AREA[G[0].mapName] ?? '–'} | ${t ? t[0] + ' · ' + t[1] : '–'} | ${f1(s10med(G.map(g => g.u100)))} (${f1(avg(G.map(g => g.u100)))}) | ${rm === null ? '–' : rm.toFixed(2)} | ${f1(tabN / G.length)} |`);
+    }
+  }
+  L.push('', '- ↑ = 목표가 1.5배 이상 오르는 판본(게이트 2), ↓ = 2/3 이하로 내려가는 판본. 정답 판본은 로컬이면 지도 파일 이름, 온라인이면 기보의 자연 생성(`layoutTruth`; ?·x는 가릴 수 없던 판). stack6 r100(연구 7절): Autarky 10, Default 11, Devil a 6, Portals 12, PD10 4, PD a 4, QoS a 9, QoS b 5, Schooltime a 16, Schooltime b 8, Slithery a 31, Slithery b 11, Trauma 6, Trophy 9.', '');
+  L.push('### utab 가설 수준 지표 (관찰; stack6(W6)과 비교)', '');
+  L.push(`| 지표 | ${P.map(p => p[0]).join(' | ')} |`, `|---|${P.map(() => '---|').join('')}`);
+  const ownTxt = G => { const o = G.reduce((s, g) => s + (g.own || 0), 0), t = G.reduce((s, g) => s + (g.ownThem || 0), 0); return `${pct(t, o)} (${o}개, ${G.length}판)`; };
+  L.push(`| 오르는 판본(utab이 켜진 넷: Devil a·b, Slithery Fight a, Trophy a): 우리 영토 자연 진주를 상대가 먹은 몫 | ${P.map(p => ownTxt(g10(p[1], S10_UP4))).join(' | ')} |`);
+  L.push(`| 오르는 판본(같은 넷): r0–199 우리가 먹은 자연 진주 (판당) | ${P.map(p => { const G = g10(p[1], S10_UP4); return G.length ? f1(avg(G.map(g => g.nat200 || 0))) : '–'; }).join(' | ')} |`);
+  L.push(`| 내려가는 판본(QoS b, Schooltime b, Trauma a): r200 우리 최장(전멸은 0; 평균 · 중앙값) | ${P.map(p => { const G = g10(p[1], S10_DOWN); return G.length ? `${f1(avg(G.map(g => g.k200)))} · ${f1(s10med(G.map(g => g.k200)))} (${G.length}판)` : '–'; }).join(' | ')} |`);
+  L.push(`| 내려가는 판본: r100 우리 수 (평균) | ${P.map(p => { const G = g10(p[1], S10_DOWN); return G.length ? f1(avg(G.map(g => g.u100))) : '–'; }).join(' | ')} |`);
+  L.push('');
+  return L;
+}

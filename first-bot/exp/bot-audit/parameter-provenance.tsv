@@ -1,0 +1,247 @@
+name	value	params_line	basis	first_candidate	first_wave	value_transitions	basis_note	uses
+GAMMA	0.88	8	J	merge2-before-W1	before W1	merge2-before-W1:0.88	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:28
+GAMMA_WAIT	0.97	9	J	merge2-before-W1	before W1	merge2-before-W1:0.97	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:29
+PEARL_DECAY	0.985	10	J	merge2-before-W1	before W1	merge2-before-W1:0.985	Design/budget/confidence/score choice; no calibration or optimum measurement established	world.cpp:412; world.cpp:416; world.cpp:418
+SPAWN_CONF	0.75	11	J	merge2-before-W1	before W1	merge2-before-W1:0.75	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:338; plan.cpp:557; world.cpp:418
+MIRROR_CONF	0.80	12	J	merge2-before-W1	before W1	merge2-before-W1:0.80	Design/budget/confidence/score choice; no calibration or optimum measurement established	world.cpp:406
+PRIOR_UNSEEN	0.05	13	J	merge2-before-W1	before W1	merge2-before-W1:0.05	Design/budget/confidence/score choice; no calibration or optimum measurement established	world.cpp:29
+FOUNTAIN_MAX_GAP	12	14	J	merge2-before-W1	before W1	merge2-before-W1:12	Design/budget/confidence/score choice; no calibration or optimum measurement established	world.cpp:419
+FOUNTAIN_VALUE	0.9	15	J	merge2-before-W1	before W1	merge2-before-W1:0.9	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:339
+MAX_SOURCES	20	16	J	merge2-before-W1	before W1	merge2-before-W1:20	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:381; plan.cpp:382; plan.cpp:389
+ATTRACT_RADIUS	16	17	J	merge2-before-W1	before W1	merge2-before-W1:16	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:147; plan.cpp:304; plan.cpp:343; plan.cpp:423; plan.cpp:451
+FUTURE_SPAWN_HORIZON	120	18	J	merge2-before-W1	before W1	merge2-before-W1:120	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:338
+CONTEST_ENEMY_CLOSER	0.15	19	J	merge2-before-W1	before W1	merge2-before-W1:0.15	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:416
+CONTEST_ENEMY_ONE_CLOSER	0.3	19	J	merge2-before-W1	before W1	merge2-before-W1:0.3	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:417
+CONTEST_EQUAL	0.9	19	J	merge2-before-W1	before W1	merge2-before-W1:0.9	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:418; plan.cpp:420
+CONTEST_ALLY_CLOSER	0.15	20	J	merge2-before-W1	before W1	merge2-before-W1:0.15	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:421; plan.cpp:449; plan.cpp:1112
+EXPLORE_W	0.35	21	J	merge2-before-W1	before W1	merge2-before-W1:0.35	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:243
+BLOCK_SPAWN_PENALTY	0.5	22	J	merge2-before-W1	before W1	merge2-before-W1:0.5	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:561; plan.cpp:1391
+AREA_TRAP_PENALTY	60.0	25	J	merge2-before-W1	before W1	merge2-before-W1:60.0	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:506
+AREA_MARGIN	2	26	J	merge2-before-W1	before W1	merge2-before-W1:2	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:506
+AREA_BONUS_PER_TILE	0.04	27	J	merge2-before-W1	before W1	merge2-before-W1:0.04	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:513
+AREA_CAP_EXTRA	16	28	J	merge2-before-W1	before W1	merge2-before-W1:16	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:477
+AREA_CAP_MIN	96	29	J	merge2-before-W1	before W1	merge2-before-W1:96	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:477
+AREA_DEADEND_PENALTY	8.0	30	J	merge2-before-W1	before W1	merge2-before-W1:8.0	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:508
+AREA_ROOM_PENALTY	0.5	31	J	merge2-before-W1	before W1	merge2-before-W1:0.5	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:509
+AREA_FILL_PENALTY	3.0	32	J	merge2-before-W1	before W1	merge2-before-W1:3.0	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:511
+AREA_FILL_RATIO	1.5	33	J	merge2-before-W1	before W1	merge2-before-W1:1.5	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:510
+AREA_FILL_MARGIN	4	34	J	merge2-before-W1	before W1	merge2-before-W1:4	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:510
+TAIL_REACH_BONUS	1.5	35	J	merge2-before-W1	before W1	merge2-before-W1:1.5	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:514
+HEAD_PATH_PENALTY	1.5	36	J	merge2-before-W1	before W1	merge2-before-W1:1.5	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:170
+PORTAL_STALE_PENALTY	1.0	39	J	merge2-before-W1	before W1	merge2-before-W1:1.0	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:256
+PORTAL_BLIND_PENALTY	0.5	40	J	merge2-before-W1	before W1	merge2-before-W1:0.5	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:256
+PORTAL_HEAD_NEAR_PENALTY	8.0	41	J	merge2-before-W1	before W1	merge2-before-W1:8.0	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:260; plan.cpp:281
+FRONTIER_VALUE	4.0	46	J	merge2-before-W1	before W1	merge2-before-W1:4.0	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:293
+FRONTIER_FED_FRAC	0.25	47	J	merge2-before-W1	before W1	merge2-before-W1:0.25	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:293
+HUNGER_ROUNDS	25	48	J	merge2-before-W1	before W1	merge2-before-W1:25	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:290
+FRONTIER_UNSEEN_GAIN	2.5	49	J	merge2-before-W1	before W1	merge2-before-W1:2.5	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:292
+FRONTIER_FADE_ROUNDS	120	50	J	merge2-before-W1	before W1	merge2-before-W1:120	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:289
+FRONTIER_MAX_SOURCES	4	51	J	merge2-before-W1	before W1	merge2-before-W1:4	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:442
+FRONTIER_COMMIT_MARGIN	0.5	52	J	merge2-before-W1	before W1	merge2-before-W1:0.5	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:1616
+BLIND_RISK	0.8	53	J	merge2-before-W1	before W1	merge2-before-W1:0.8	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:321
+BLIND_RISK_PER_LEN	0.05	54	J	merge2-before-W1	before W1	merge2-before-W1:0.05	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:321
+BLIND_MIN_LEN	3	55	J	merge2-before-W1	before W1	merge2-before-W1:3	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:543; plan.cpp:1357
+FRONTIER_BLOCK_ROUNDS	6	56	J	merge2-before-W1	before W1	merge2-before-W1:6	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:297
+BLIND_DESPERATE_PENALTY	25.0	57	J	merge2-before-W1	before W1	merge2-before-W1:25.0	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:1361
+PORTAL_UNPROBED_PENALTY	4.0	59	J	merge2-before-W1	before W1	merge2-before-W1:4.0	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:1376
+PORTAL_DIRTY_PENALTY	8.0	60	J	merge2-before-W1	before W1	merge2-before-W1:8.0	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:1376; plan.cpp:1379
+DOOM_VALUE	-200.0	61	J	merge2-before-W1	before W1	merge2-before-W1:-200.0	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:1640
+T1	30.0	64	J	merge2-before-W1	before W1	merge2-before-W1:30.0	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:221
+T2	24.0	65	J	merge2-before-W1	before W1	merge2-before-W1:24.0	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:222
+T3	15.0	65	J	merge2-before-W1	before W1	merge2-before-W1:15.0	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:223
+T4	9.0	65	J	merge2-before-W1	before W1	merge2-before-W1:9.0	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:224
+TRADE_BAD_FOR_THEM	0.45	66	J	merge2-before-W1	before W1	merge2-before-W1:0.45	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:221
+T_FAR_BAD_FOR_THEM	0.2	67	J	merge2-before-W1	before W1	merge2-before-W1:0.2	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:222; plan.cpp:223; plan.cpp:224
+PSEUDO_HEAD_MULT	0.5	68	J	merge2-before-W1	before W1	merge2-before-W1:0.5	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:225
+ENDGAME_THREAT_MULT	2.0	69	J	merge2-before-W1	before W1	merge2-before-W1:2.0	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:227; plan.cpp:228
+KING_THREAT_MULT	1.5	70	J	merge2-before-W1	before W1	merge2-before-W1:1.5	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:202; plan.cpp:226
+KING_MIN_LEN	8	71	J	merge2-before-W1	before W1	merge2-before-W1:8	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:202; plan.cpp:226; plan.cpp:611; plan.cpp:799; plan.cpp:901; plan.cpp:933; plan.cpp:963; plan.cpp:1138; plan.cpp:1204; plan.cpp:1205; plan.cpp:1207; plan.cpp:1223; plan.cpp:1225; plan.cpp:1230
+ENDGAME_ROUNDS	30	72	J	merge2-before-W1	before W1	merge2-before-W1:30	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:289; plan.cpp:1202
+ECHO_LINE_PENALTY	1.2	73	J	merge2-before-W1	before W1	merge2-before-W1:1.2	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:178
+ECHO_LINE_RANGE	6	74	J	merge2-before-W1	before W1	merge2-before-W1:6	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:180
+ENEMY_MEMORY_ROUNDS	8	75	J	merge2-before-W1	before W1	merge2-before-W1:8	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:87; plan.cpp:113
+ESCAPE_MIN_LEN	6	81	J	merge2-before-W1	before W1	merge2-before-W1:6	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:1426; plan.cpp:1780; plan.cpp:1801
+RAMMER_TRUST	4	82	J	merge2-before-W1	before W1	merge2-before-W1:4	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:1426; plan.cpp:1801
+W_KILL	4.0	85	J	merge2-before-W1	before W1	merge2-before-W1:4.0	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:577; plan.cpp:582; plan.cpp:593; plan.cpp:668; plan.cpp:669; plan.cpp:670
+KILL_MIN_DIFF	3	86	J	merge2-before-W1	before W1	merge2-before-W1:3	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:668
+KILL_MIN_RATIO	2.0	87	J	merge2-before-W1	before W1	merge2-before-W1:2.0	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:668
+HUNT_MAX_LEN	5	88	J	merge2-before-W1	before W1	merge2-before-W1:5	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:377
+W_HUNT	0.6	89	J	merge2-before-W1	before W1	merge2-before-W1:0.6	Design/budget/confidence/score choice; no calibration or optimum measurement established	
+W_ESCORT	0.08	90	J	merge2-before-W1	before W1	merge2-before-W1:0.08	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:675
+STRIKE_MAX_STEPS	4	91	J	merge2-before-W1	before W1	merge2-before-W1:4	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:1528
+ENDGAME_ANY_TRADE_ROUND	495	92	J	merge2-before-W1	before W1	merge2-before-W1:495	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:631; plan.cpp:670; plan.cpp:1820
+SPLIT_LAST_ROUND	450	95	J	merge2-before-W1	before W1	merge2-before-W1:450	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:683; plan.cpp:880
+SPLIT_FIRST_LEN	5	96	J	merge2-before-W1	before W1	merge2-before-W1:5	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:693; plan.cpp:883
+SPLIT_FIRST_CHILD	2	97	J	merge2-before-W1	before W1	merge2-before-W1:2	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:694
+SPLIT_LEN	8	98	J	merge2-before-W1	before W1	merge2-before-W1:8	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:692; plan.cpp:696
+SPLIT_CHILD	3	99	J	merge2-before-W1	before W1	merge2-before-W1:3	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:698
+SPLIT_CAP_BASE	3	100	J	merge2-before-W1	before W1	merge2-before-W1:3	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:687
+SPLIT_CAP_RICH	5	101	J	merge2-before-W1	before W1	merge2-before-W1:5	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:689
+SPLIT_SMALL_MAP_TILES	300	102	J	merge2-before-W1	before W1	merge2-before-W1:300	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:692
+SPLIT_MIN_CHILD_EXITS	2	103	J	merge2-before-W1	before W1	merge2-before-W1:2	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:734; plan.cpp:802; plan.cpp:904
+POCKET_EAT	true	108	CONFIG	merge2-before-W1	before W1	merge2-before-W1:true	Current build setting, not a fitted or measured parameter	plan.cpp:1689
+POCKET_EAT_MAP_DRAGONS	false	109	CONFIG	merge2-before-W1	before W1	merge2-before-W1:false	Current build setting, not a fitted or measured parameter	plan.cpp:1690
+POCKET_MAP_LOW_YIELD	true	113	CONFIG	merge2-before-W1	before W1	merge2-before-W1:true	Current build setting, not a fitted or measured parameter	plan.cpp:1688
+POCKET_LANE_YIELD	2	114	J	merge2-before-W1	before W1	merge2-before-W1:2	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:1688
+POCKET_MIN_LANE	3	116	J	merge2-before-W1	before W1	merge2-before-W1:3	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:1686
+POCKET_EXPOSED_BONUS	1	117	J	merge2-before-W1	before W1	merge2-before-W1:1	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:1692
+POCKET_ENEMY_DIST	4	118	J	merge2-before-W1	before W1	merge2-before-W1:4	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:1689
+FEED_FIRST_ROUND	430	121	J	merge2-before-W1	before W1	merge2-before-W1:430	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:1290; plan.cpp:1294; plan.cpp:1300; plan.cpp:1308; plan.cpp:1331
+FEED_MAX_DIST	5	122	J	merge2-before-W1	before W1	merge2-before-W1:5	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:1319
+FEED_SLACK	8	123	J	merge2-before-W1	before W1	merge2-before-W1:8	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:1331; plan.cpp:1335
+GATHER_BROADCAST	300	126	D/J	merge2-before-W1	before W1	merge2-before-W1:300	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:1043; plan.cpp:1054; plan.cpp:1379
+GATHER_START	340	127	D/J	merge2-before-W1	before W1	merge2-before-W1:340	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:684; plan.cpp:883; plan.cpp:932; plan.cpp:1069; plan.cpp:1288
+GATHER_STALE	20	128	D/J	merge2-before-W1	before W1	merge2-before-W1:20	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:1064
+GATHER_KING_MEMORY	100	129	D/J	merge2-before-W1	before W1	merge2-before-W1:100	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:1062; plan.cpp:1298
+GATHER_W	0.12	130	J	merge2-before-W1	before W1	merge2-before-W1:0.12	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:532; plan.cpp:533
+GATHER_FEED_UNITS	4	131	D/J	merge2-before-W1	before W1	merge2-before-W1:4	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:1070; plan.cpp:1332; plan.cpp:1335
+GATHER_FEED_MIN_LEN	4	132	D/J	merge2-before-W1	before W1	merge2-before-W1:4	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:1071; plan.cpp:1332; plan.cpp:1335
+CONV_ON	true	137	CONFIG	cand-stack1	W1	cand-stack1:true	Current build setting, not a fitted or measured parameter	plan.cpp:1254
+CONV_START	300	138	D/J	cand-stack1	W1	cand-stack1:300	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:1254
+CONV_MAX_LEN	4	139	D/J	cand-stack1	W1	cand-stack1:4;          // 79% of top sacrifices are length 2-3	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:1254
+CONV_ALLY_MIN	8	140	D/J	cand-stack1	W1	cand-stack1:8	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:1260
+CONV_ALLY_MARGIN	4	141	D/J	cand-stack1	W1	cand-stack1:4	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:1260
+CONV_MAX_DIST	3	142	D/J	cand-stack1	W1	cand-stack1:3	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:1267; plan.cpp:1276
+CONV_MIN_UNITS	3	143	D/J	cand-stack1	W1	cand-stack1:3	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:1254
+RAM_SMALL_ON	false	147	CONFIG	cand-stack1	W1	cand-stack1:true; cand-stack2:false	Current build setting, not a fitted or measured parameter	plan.cpp:643
+RAM_SMALL_MAX_LEN	4	148	J	cand-stack1	W1	cand-stack1:4	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:643
+RAM_SMALL_NEED_COLLECTOR	true	152	CONFIG	cand-stack1	W1	cand-stack1:true	Current build setting, not a fitted or measured parameter	plan.cpp:651
+RAM_COLLECTOR_DIST	3	153	J	cand-stack1	W1	cand-stack1:3	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:654
+RAM_SMALL_VALUE	12.0	154	J	cand-stack1	W1	cand-stack1:12.0	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:577; plan.cpp:582; plan.cpp:593
+KS_ON	false	158	CONFIG	cand-stack1	W1	cand-stack1:true; cand-stack2:false;              // W1 online: off. King loss after r450 2.2 > 1.0 a game	Current build setting, not a fitted or measured parameter	plan.cpp:1204
+KS_ROUNDS	50	159	D/J	cand-stack1	W1	cand-stack1:50	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:1204
+KS_DEADEND_MULT	2.0	160	J	cand-stack1	W1	cand-stack1:2.0	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:508
+FRAG_ON	true	170	CONFIG	cand-stack2	W2	cand-stack2:true	Current build setting, not a fitted or measured parameter	plan.cpp:742; plan.cpp:1253
+FRAG_START	250	171	D/J	cand-stack2	W2	cand-stack2:250;          // top winners' dragon count peaks about r230	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:742
+FRAG_END	420	172	D/J	cand-stack2	W2	cand-stack2:420	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:742
+FRAG_MIN_LEN	7	173	D/J	cand-stack2	W2	cand-stack2:7	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:743
+FRAG_CHILD	2	174	D/J	cand-stack2	W2	cand-stack2:2	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:752; plan.cpp:1253
+FRAG_GAP	15	175	D/J	cand-stack2	W2	cand-stack2:15	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:743
+FRAG_KING_MEMORY	40	176	D/J	cand-stack2	W2	cand-stack2:40	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:751; plan.cpp:799; plan.cpp:883; plan.cpp:901
+FRAG_FORAGE	20	179	D/J	cand-stack2	W2	cand-stack2:20	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:1253
+FRAG_TILES_PER_UNIT	130	185	D/J	cand-stack2	W2	cand-stack2:130	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:744
+FRAG_CAP_MIN	6	186	D/J	cand-stack2	W2	cand-stack2:6	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:744
+FRAG_CAP_MAX	16	187	D/J	cand-stack2	W2	cand-stack2:16	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:744
+GRAB_ON	true	196	CONFIG	cand-stack2	W2	cand-stack2:true	Current build setting, not a fitted or measured parameter	plan.cpp:1207; world.cpp:134
+GRAB_ROUNDS	6	197	D/J	cand-stack2	W2	cand-stack2:6	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:1008
+GRAB_SEEN_GAP	2	198	D/J	cand-stack2	W2	cand-stack2:2	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	world.cpp:134
+GRAB_REACH	6	199	D/J	cand-stack2	W2	cand-stack2:6	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:345; plan.cpp:1833
+GRAB_VALUE	1.5	200	J	cand-stack2	W2	cand-stack2:1.5	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:348
+GRAB_KING_ROUNDS	50	201	D/J	cand-stack2	W2	cand-stack2:50	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:1207
+KS2_ON	false	209	CONFIG	cand-stack3	W3	cand-stack3:true; cand-stack4:false;            // W3 online: off. ks2 fired (1,874 turns) but the late king was inside an enemy sprint reach on 27% of turns (gate <= 15%)	Current build setting, not a fitted or measured parameter	plan.cpp:1205
+KS2_ROUNDS	100	210	D/J	cand-stack3	W3	cand-stack3:100	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:1205
+KS2_REACH	7	211	D/J	cand-stack3	W3	cand-stack3:7	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:117; plan.cpp:124; plan.cpp:200
+KS2_T5	7.0	212	D/J	cand-stack3	W3	cand-stack3:7.0	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:201
+KS2_T6	5.0	212	D/J	cand-stack3	W3	cand-stack3:5.0	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:201
+KS2_T7	3.0	212	D/J	cand-stack3	W3	cand-stack3:3.0	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:201
+TG_ON	true	229	CONFIG	cand-stack4	W4	cand-stack4:true	Current build setting, not a fitted or measured parameter	plan.cpp:45; plan.cpp:53; plan.cpp:92; plan.cpp:193; plan.cpp:725; plan.cpp:836; plan.cpp:1866
+TG_UNSEEN_LEN	5	230	D/J	cand-stack4	W4	cand-stack4:5	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:102
+ESC_SPLIT_ON	false	237	CONFIG	cand-stack4	W4	cand-stack4:true; cand-stack5:false	Current build setting, not a fitted or measured parameter	plan.cpp:1444
+ESC_SPLIT_TAIL_DIST	5	238	D/J	cand-stack4	W4	cand-stack4:5	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:1474
+PX_ON	false	246	CONFIG	cand-stack4	W4	cand-stack4:true; cand-stack5:false;             // W4 online: off. Non-desperate crossing-step deaths against our own dragons 0.39 a game (gate <= 0.10; stack3 0.14)	Current build setting, not a fitted or measured parameter	plan.cpp:262; plan.cpp:1379; plan.cpp:1380; plan.cpp:1503; plan.cpp:1517; plan.cpp:1873
+PX_ALLY_ROUNDS	20	247	D/J	cand-stack4	W4	cand-stack4:20	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:279
+PX_ALLY_DIST	6	248	D/J	cand-stack4	W4	cand-stack4:6	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:279
+PX_LONG_LEN	15	249	D/J	cand-stack4	W4	cand-stack4:15	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:1379
+GX_ON	true	253	CONFIG	cand-stack4	W4	cand-stack4:true	Current build setting, not a fitted or measured parameter	plan.cpp:1085
+GX_SLACK	5	254	D/J	cand-stack4	W4	cand-stack4:5	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:1085
+SPLIT_TAIL_ON	false	263	CONFIG	cand-stack4	W4	cand-stack4:false	Current build setting, not a fitted or measured parameter	plan.cpp:701; plan.cpp:1767
+SPLIT_TAIL_DIST	5	264	D/J	cand-stack4	W4	cand-stack4:5	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:708
+CSPLIT_ON	true	282	CONFIG	cand-stack5	W5	cand-stack5:true	Current build setting, not a fitted or measured parameter	plan.cpp:790
+CSPLIT_START	1	283	D/J	cand-stack5	W5	cand-stack5:1	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:790
+CSPLIT_END	250	284	D/J	cand-stack5	W5	cand-stack5:250	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:790
+CSPLIT_MIN_LEN	4	285	D/J	cand-stack5	W5	cand-stack5:4	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:792
+CSPLIT_CHILD	2	286	D/J	cand-stack5	W5	cand-stack5:2	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:800
+CSPLIT_GAP	8	287	D/J	cand-stack5	W5	cand-stack5:8	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:792
+CSPLIT_TILES_PER_UNIT	45	293	D/J	cand-stack5	W5	cand-stack5:45	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:748; plan.cpp:794; plan.cpp:899
+CSPLIT_TARGET_MIN	8	294	D/J	cand-stack5	W5	cand-stack5:8	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:748; plan.cpp:794; plan.cpp:899
+CSPLIT_TARGET_MAX	40	295	D/J	cand-stack5	W5	cand-stack5:40	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:748; plan.cpp:794; plan.cpp:899
+CSPLIT_TAIL_DIST	2	296	D/J	cand-stack5	W5	cand-stack5:2	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:802; plan.cpp:904
+CSPLIT_SEED_UNITS	5	304	D/J	cand-stack5	W5	cand-stack5:5	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:1223
+CSPLIT_SEED_START	50	305	D/J	cand-stack5	W5	cand-stack5:50	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:793; plan.cpp:1230
+FGUARD_ON	true	314	CONFIG	cand-stack5	W5	cand-stack5:true	Current build setting, not a fitted or measured parameter	plan.cpp:932
+FG_MIN_UNITS	3	315	D/J	cand-stack5	W5	cand-stack5:3	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:932
+FG_ALLY_STALE	20	316	D/J	cand-stack5	W5	cand-stack5:20	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:942
+FG_GUARD_DIST	3	317	D/J	cand-stack5	W5	cand-stack5:3	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:947; plan.cpp:961
+FG_GROUP_DIST	3	318	D/J	cand-stack5	W5	cand-stack5:3	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:986
+FG_MAX_DIST	20	319	D/J	cand-stack5	W5	cand-stack5:20	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:951
+FG_HOLD	2	320	D/J	cand-stack5	W5	cand-stack5:2	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:531; plan.cpp:1000
+FG_W	0.12	321	J	cand-stack5	W5	cand-stack5:0.12	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:531
+COV_ON	true	329	CONFIG	cand-stack5	W5	cand-stack5:false; cand-stack9:true	Current build setting, not a fitted or measured parameter	plan.cpp:351; plan.cpp:1794
+COV_MAX_LEN	4	330	J	cand-stack5	W5	cand-stack5:4	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:351; plan.cpp:1794
+COV_CONTEST	0.6	331	J	cand-stack5	W5	cand-stack5:0.6	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:419
+NOEXIT_SPARE_ON	true	337	CONFIG	cand-stack5	W5	cand-stack5:true	Current build setting, not a fitted or measured parameter	plan.cpp:1729
+MAPID_TAG	true	342	CONFIG	cand-stack6	W6 (same upload repeated W7)	cand-stack6:true	Current build setting, not a fitted or measured parameter	main.cpp:54
+BSPLIT_ON	true	353	CONFIG	cand-stack6	W6 (same upload repeated W7)	cand-stack6:true	Current build setting, not a fitted or measured parameter	plan.cpp:761
+BSPLIT_END	166	354	D/J	cand-stack6	W6 (same upload repeated W7)	cand-stack6:166	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:762
+BSPLIT_MIN_LEN	4	355	D/J	cand-stack6	W6 (same upload repeated W7)	cand-stack6:4	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:762
+BSPLIT_MAX_LEN	9	356	D/J	cand-stack6	W6 (same upload repeated W7)	cand-stack6:9;        // R2: length 5-9	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:762
+BSPLIT_CHILD	2	357	D/J	cand-stack6	W6 (same upload repeated W7)	cand-stack6:2	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:764
+BSPLIT_CAP	16	358	D/J	cand-stack6	W6 (same upload repeated W7)	cand-stack6:16	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:763
+FLOOR_ON	true	382	CONFIG	cand-stack7	W8	cand-stack7:true	Current build setting, not a fitted or measured parameter	plan.cpp:880
+FLOOR_START	30	383	D/J	cand-stack7	W8	cand-stack7:30	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:880
+FLOOR_UNITS	3	384	D/J	cand-stack7	W8	cand-stack7:3	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:882
+FLOOR_MIN_LEN	4	385	D/J	cand-stack7	W8	cand-stack7:4	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:882
+FLOOR_CHILD	2	386	D/J	cand-stack7	W8	cand-stack7:2	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:885
+FLOOR_TAIL_DIST	2	387	D/J	cand-stack7	W8	cand-stack7:2	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:870; plan.cpp:887
+FLOOR_MIN_EXITS	1	388	D/J	cand-stack7	W8	cand-stack7:1	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:870; plan.cpp:887
+KCAP_ON	true	394	CONFIG	cand-stack7	W8	cand-stack7:true	Current build setting, not a fitted or measured parameter	plan.cpp:864
+KCAP_LEN	7	395	D/J	cand-stack7	W8	cand-stack7:7	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:866
+KCAP_UNITS	6	396	D/J	cand-stack7	W8	cand-stack7:6	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:866
+KCAP_END	250	397	D/J	cand-stack7	W8	cand-stack7:250;            // csplit's window	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:864
+KCAP_CHILD	2	398	D/J	cand-stack7	W8	cand-stack7:2	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:868
+F2_ON	true	415	CONFIG	cand-stack8	W9	cand-stack8:true	Current build setting, not a fitted or measured parameter	plan.cpp:938; plan.cpp:939; plan.cpp:953; plan.cpp:1791
+FG2_MAX_DIST	6	416	D/J	cand-stack8	W9	cand-stack8:6	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:971
+FG2_KEEP_DIST	9	417	D/J	cand-stack8	W9	cand-stack8:9	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:967
+FG2_CLAIM_STALE	5	418	D/J	cand-stack8	W9	cand-stack8:5	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:963
+F2P_ON	false	426	CONFIG	cand-stack8	W9	cand-stack8:true; cand-stack9:false	Current build setting, not a fitted or measured parameter	plan.cpp:357; plan.cpp:997
+CLAIM_ALLY_ON	true	438	CONFIG	cand-stack8	W9	cand-stack8:true	Current build setting, not a fitted or measured parameter	plan.cpp:357; plan.cpp:371; plan.cpp:402; plan.cpp:1860
+CLAIM_ENEMY_ON	false	439	CONFIG	cand-stack8	W9	cand-stack8:true; cand-stack9:false	Current build setting, not a fitted or measured parameter	plan.cpp:357; plan.cpp:371; plan.cpp:409; plan.cpp:1861
+CLAIM_REACH	6	440	D/J	cand-stack8	W9	cand-stack8:6	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:362; plan.cpp:1852
+CLAIM_ROUNDS	8	441	D/J	cand-stack8	W9	cand-stack8:8	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:359
+CLAIM_SEEN	2	442	D/J	cand-stack8	W9	cand-stack8:2	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:364
+CLAIM_MAX_LEN	4	443	D/J	cand-stack8	W9	cand-stack8:4	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:371; plan.cpp:406
+CLAIM_VALUE	1.3	444	J	cand-stack8	W9	cand-stack8:1.3	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:403
+PX2_ON	false	452	CONFIG	cand-stack8	W9	cand-stack8:false;  // W9 (2026-09-30 20:58): off	Current build setting, not a fitted or measured parameter	plan.cpp:1382; plan.cpp:1879
+PX2_ALLY_PENALTY	30.0	453	J	cand-stack8	W9	cand-stack8:30.0	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:1382
+LSPLIT_ON	true	479	CONFIG	cand-stack9	W10	cand-stack9:true	Current build setting, not a fitted or measured parameter	plan.cpp:896
+LSPLIT_START	250	480	D/J	cand-stack9	W10	cand-stack9:250	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:896
+LSPLIT_END	340	481	D/J	cand-stack9	W10	cand-stack9:340;          // GATHER_START (the study's end was 430	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:896
+LSPLIT_MIN_LEN	4	482	D/J	cand-stack9	W10	cand-stack9:4	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:898
+LSPLIT_MAX_LEN	6	483	D/J	cand-stack9	W10	cand-stack9:6;        // parents of 5-7 give 31	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:898
+LSPLIT_CHILD	2	484	D/J	cand-stack9	W10	cand-stack9:2	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:902
+LSPLIT_GAP	8	485	D/J	cand-stack9	W10	cand-stack9:8	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:898
+FRAG_CAP_CSPLIT_ON	true	491	CONFIG	cand-stack9	W10	cand-stack9:true	Current build setting, not a fitted or measured parameter	plan.cpp:746
+LNT_ON	true	511	CONFIG	cand-stack10	W11	cand-stack10:true	Current build setting, not a fitted or measured parameter	plan.cpp:579; plan.cpp:610; plan.cpp:631; plan.cpp:1368; plan.cpp:1405; plan.cpp:1531; plan.cpp:1815
+LNT_RAM_ON	false	514	CONFIG	cand-stack11	W12	cand-stack11:false;            // W11 (2026-09-30 23:50): ram part off; online 46/52% pearl share, net20 −0.06 per trade	Current build setting, not a fitted or measured parameter	plan.cpp:610
+LNT_MAX_LEN	4	515	D/J	cand-stack10	W11	cand-stack10:4	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:610
+LNT_MIN_D3	1	516	D/J	cand-stack10	W11	cand-stack10:1	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:618
+LNT_VETO_D3	-1	517	D/J	cand-stack10	W11	cand-stack10:-1	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:632; plan.cpp:1820
+LNT_MIN_UNITS	3	518	D/J	cand-stack10	W11	cand-stack10:3	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:610
+LNT_KINT_MIN_LEN	8	519	D/J	cand-stack10	W11	cand-stack10:8	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:626
+LNT_KINT_NEED_LONGEST	false	520	CONFIG	cand-stack10	W11	cand-stack10:false	Current build setting, not a fitted or measured parameter	plan.cpp:626
+UTAB_ON	false	531	CONFIG	cand-stack10	W11	cand-stack10:false	Current build setting, not a fitted or measured parameter	plan.cpp:796
+UTAB_EARLY_END	50	533	D/J	cand-stack10	W11	cand-stack10:50	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:816
+UTAB_PORTALS	false	534	CONFIG	cand-stack10	W11	cand-stack10:false	Current build setting, not a fitted or measured parameter	plan.cpp:815
+GH_ON	true	567	CONFIG	cand-stack11	W12	cand-stack11:true	Current build setting, not a fitted or measured parameter	plan.cpp:532; plan.cpp:1093; plan.cpp:1888
+GH_HOLD	3	568	D/J	cand-stack11	W12	cand-stack11:3	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:532; plan.cpp:1888
+GH_DROP_R	2	569	D/J	cand-stack11	W12	cand-stack11:2	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:1102; plan.cpp:1103
+GH_DROP_START	300	570	D/J	cand-stack11	W12	cand-stack11:300	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:1093
+KX_ON	true	571	CONFIG	cand-stack11	W12	cand-stack11:true	Current build setting, not a fitted or measured parameter	plan.cpp:1138
+KX_START	300	572	D/J	cand-stack11	W12	cand-stack11:300	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:1138
+KX_DIST	7	573	D/J	cand-stack11	W12	cand-stack11:7	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:534; plan.cpp:1148; plan.cpp:1155
+KX_W	0.4	574	J	cand-stack11	W12	cand-stack11:0.4	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:534
+KX_STALE	3	575	D/J	cand-stack11	W12	cand-stack11:3	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:1143
+KX_KING_FRESH	20	576	D/J	cand-stack11	W12	cand-stack11:20	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:1119
+LWK_ON	false	577	CONFIG	cand-stack11	W12	cand-stack11:false; // W12 (2026-10-01 00:03, coordinator): off before upload. Locally late-window feeds fell 3.0 -> 1.2/game and the line r450-499 sacrifice pearls 2.8 -> 2.0 (opposite of the hypothesis)	Current build setting, not a fitted or measured parameter	plan.cpp:1294
+LWK_KING_FRESH	20	578	D/J	cand-stack11	W12	cand-stack11:20	Observation-informed gate/class/time choice; exact threshold not an estimated optimum	plan.cpp:1298
+DFS_DEPTH_MAX	7	581	J	merge2-before-W1	before W1	merge2-before-W1:7	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:1590
+DFS_DEPTH_MIN	3	582	J	merge2-before-W1	before W1	merge2-before-W1:3	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:1590
+DFS_NODE_BUDGET	40000	583	J	merge2-before-W1	before W1	merge2-before-W1:40000	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:524; plan.cpp:1591; plan.cpp:1601
+POINTS_SOFT	16'000'000	584	J	merge2-before-W1	before W1	merge2-before-W1:16'000'000	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:1200
+POINTS_HARD	26'000'000	585	J	merge2-before-W1	before W1	merge2-before-W1:26'000'000	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:1200
+SPRINT_COST	1.6	586	J	merge2-before-W1	before W1	merge2-before-W1:1.6	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:1404; plan.cpp:1405; plan.cpp:1416; plan.cpp:1502; plan.cpp:1516; plan.cpp:1556; plan.cpp:1558
+UNKNOWN_EDGE_PENALTY	0.3	587	J	merge2-before-W1	before W1	merge2-before-W1:0.3	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:560; plan.cpp:1390; plan.cpp:1417; plan.cpp:1502; plan.cpp:1516
+JITTER	0.002	588	J	merge2-before-W1	before W1	merge2-before-W1:0.002	Design/budget/confidence/score choice; no calibration or optimum measurement established	plan.cpp:1622
+SEND_SONAR	true	591	CONFIG	merge2-before-W1	before W1	merge2-before-W1:true	Current build setting, not a fitted or measured parameter	main.cpp:47
+INDICATOR	true	592	CONFIG	merge2-before-W1	before W1	merge2-before-W1:true	Current build setting, not a fitted or measured parameter	main.cpp:58
+PROFILE	false	593	CONFIG	merge2-before-W1	before W1	merge2-before-W1:false	Current build setting, not a fitted or measured parameter	plan.cpp:1900

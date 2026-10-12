@@ -1,0 +1,56 @@
+{
+  "label": "cand-swarm1-proxies",
+  "bot": "~/01. Project/개인 프로젝트/unsw-heuristic/exp/cand-swarm1/bot",
+  "at": "2026-09-29T17:52:31.543Z",
+  "benchmark": {
+    "maps": 10,
+    "opps": [
+      "proxy_swarm",
+      "proxy_elim",
+      "proxy_king"
+    ],
+    "seeds": [
+      1,
+      2
+    ],
+    "sides": 2
+  },
+  "all": {
+    "n": 120,
+    "G": 22.191666666666666,
+    "alive": 0.8083333333333333,
+    "win": 0.5083333333333333
+  },
+  "byOpp": {
+    "proxy_swarm": {
+      "n": 40,
+      "G": 17.825,
+      "alive": 0.8,
+      "win": 0.525
+    },
+    "proxy_elim": {
+      "n": 40,
+      "G": 24.05,
+      "alive": 0.775,
+      "win": 0.5
+    },
+    "proxy_king": {
+      "n": 40,
+      "G": 24.7,
+      "alive": 0.85,
+      "win": 0.5
+    }
+  },
+  "problems": 0,
+  "errors": 0,
+  "vsBaseline": {
+    "baseline": "r1-vs-proxies-v1",
+    "pairs": 120,
+    "dG": 2.0833333333333335,
+    "ci95": [
+      -3.716666666666667,
+      8.216666666666667
+    ],
+    "note": "map-cluster bootstrap"
+  }
+}

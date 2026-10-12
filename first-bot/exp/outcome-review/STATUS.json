@@ -1,0 +1,36 @@
+{
+  "status": "waiting_for_resource_exception",
+  "reason": "Sandbox rejects nice -n 15; inherited niceness is 10. Explicit user acceptance is pending.",
+  "fullPopulationN": 1680,
+  "includedW12": true,
+  "metadataIndependentRecountN": 1680,
+  "metadataMismatches": 0,
+  "complete": [
+    "full outcome metadata census",
+    "second independent metadata script",
+    "replicate-noise and power arithmetic",
+    "frozen classes and replay-selection rule",
+    "analysis pipeline syntax checks"
+  ],
+  "pending": [
+    "full raw replay recount",
+    "feature inference and stratified models",
+    "class sizes and selected replay deep reading",
+    "final Korean report",
+    "20-line English completion marker"
+  ],
+  "scripts": {
+    "prepare": "prepare-v2.js",
+    "recount": "recount.js",
+    "analyse": "analyse-v2.py",
+    "deepRead": "deep_read.js",
+    "render": "render-v3.py",
+    "finish": "finish.py"
+  },
+  "completionMarkerWritten": false,
+  "power80GamesPerArm": [
+    638,
+    258,
+    80
+  ]
+}

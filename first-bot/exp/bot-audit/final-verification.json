@@ -1,0 +1,119 @@
+{
+  "resources": {
+    "freeMemoryPct": 57,
+    "freeDiskGB": 34
+  },
+  "inputSnapshot": {
+    "hashed": 198,
+    "replayMetadata": 140,
+    "changed": []
+  },
+  "scriptSyntax": [
+    {
+      "file": "inspect_counts.py",
+      "ok": true
+    },
+    {
+      "file": "parameter_provenance.py",
+      "ok": true
+    },
+    {
+      "file": "render_tables.py",
+      "ok": true
+    },
+    {
+      "file": "source_inventory.py",
+      "ok": true
+    },
+    {
+      "file": "summarise_populations.py",
+      "ok": true
+    },
+    {
+      "file": "validate_audit.py",
+      "ok": true
+    },
+    {
+      "file": "count_replays.js",
+      "ok": true,
+      "stderr": "nice: setpriority: Operation not permitted"
+    },
+    {
+      "file": "verify_replays.js",
+      "ok": true,
+      "stderr": "nice: setpriority: Operation not permitted"
+    }
+  ],
+  "report": {
+    "lines": 751,
+    "bytes": 111728,
+    "tableErrors": [],
+    "brokenLinks": [],
+    "badSourcePointers": [],
+    "bools": 41,
+    "constants": 246,
+    "sha256": "2238fa0ef60d1f600582b160c135cbf400223b7b4940e7cbe482097dc972cc68"
+  },
+  "counts": [
+    {
+      "wave": "W11",
+      "games": 70,
+      "turns": 256140,
+      "splits": 6063,
+      "nonEscapeSplits": 1596,
+      "wins": 8,
+      "maxInstructions": 31763610
+    },
+    {
+      "wave": "W12",
+      "games": 70,
+      "turns": 256978,
+      "splits": 6722,
+      "nonEscapeSplits": 1690,
+      "wins": 9,
+      "maxInstructions": 32130991
+    }
+  ],
+  "rawSummary": [
+    {
+      "set": "cand-stack10-online",
+      "games": 70,
+      "mismatches": 0,
+      "gamesWithOwnIdOver255": 38,
+      "maxOwnId": 1230,
+      "turns": 256140,
+      "indicators": 256140,
+      "actions": 256140,
+      "splits": 6063,
+      "sonars": 481464,
+      "ownSonarsFromIdOver255": 197017,
+      "turnsFromIdOver255": 71306,
+      "directMessages": 360464,
+      "directTruncatedId": 125061,
+      "directIdMismatchLow8": 0,
+      "missingSonar64": 0,
+      "ownHighIds": 2836
+    },
+    {
+      "set": "cand-stack11-online",
+      "games": 70,
+      "mismatches": 0,
+      "gamesWithOwnIdOver255": 35,
+      "maxOwnId": 1365,
+      "turns": 256978,
+      "indicators": 256978,
+      "actions": 256978,
+      "splits": 6722,
+      "sonars": 473361,
+      "ownSonarsFromIdOver255": 193613,
+      "turnsFromIdOver255": 74569,
+      "directMessages": 353309,
+      "directTruncatedId": 125797,
+      "directIdMismatchLow8": 0,
+      "missingSonar64": 0,
+      "ownHighIds": 3275
+    }
+  ],
+  "complete": true,
+  "errors": []
+}

@@ -1,0 +1,236 @@
+{
+  "gameId": 724075,
+  "map": "Default",
+  "opp": 70,
+  "us": "A",
+  "submission": 13393,
+  "winner": "B",
+  "rounds": 339,
+  "turns": 1571,
+  "labelled": 1571,
+  "move": 1552,
+  "tags": {
+    "cov": 363,
+    "map": 19,
+    "csplit": 11,
+    "tg": 119,
+    "tgx": 148,
+    "cl": 133,
+    "grab": 13,
+    "noexit": 4,
+    "PORTAL?": 1,
+    "floor": 4
+  },
+  "kinds": {
+    "move": 1552,
+    "csplit": 11,
+    "noexit": 4,
+    "floor": 4
+  },
+  "explicitGoals": {
+    "none": 1552,
+    "early_action": 19
+  },
+  "goalModifiers": {
+    "cov": 363,
+    "cl": 133,
+    "grab": 13
+  },
+  "splits": {
+    "csplit": 11,
+    "floor": 4
+  },
+  "splitActual": {
+    "csplit": 11,
+    "floor": 4
+  },
+  "phases": {
+    "r0-99": {
+      "turns": 819,
+      "tags": {
+        "cov": 182,
+        "map": 15,
+        "csplit": 11,
+        "tg": 43,
+        "tgx": 47,
+        "cl": 81,
+        "grab": 4,
+        "noexit": 2
+      },
+      "goals": {
+        "none": 806,
+        "early_action": 13
+      },
+      "splits": {
+        "csplit": 11
+      }
+    },
+    "r100-249": {
+      "turns": 533,
+      "tags": {
+        "tg": 55,
+        "cov": 127,
+        "grab": 4,
+        "tgx": 90,
+        "cl": 18,
+        "noexit": 1,
+        "PORTAL?": 1
+      },
+      "goals": {
+        "none": 532,
+        "early_action": 1
+      },
+      "splits": {}
+    },
+    "r250-299": {
+      "turns": 128,
+      "tags": {
+        "cov": 46,
+        "cl": 25,
+        "tgx": 11,
+        "tg": 7,
+        "floor": 4,
+        "map": 4,
+        "noexit": 1,
+        "grab": 1
+      },
+      "goals": {
+        "none": 123,
+        "early_action": 5
+      },
+      "splits": {
+        "floor": 4
+      }
+    },
+    "r300-339": {
+      "turns": 91,
+      "tags": {
+        "grab": 4,
+        "tg": 14,
+        "cov": 8,
+        "cl": 9
+      },
+      "goals": {
+        "none": 91
+      },
+      "splits": {}
+    }
+  },
+  "lengths": {
+    "2": {
+      "turns": 1287,
+      "tags": {
+        "tgx": 145,
+        "map": 15,
+        "tg": 100,
+        "cov": 309,
+        "cl": 88,
+        "grab": 7,
+        "noexit": 4
+      }
+    },
+    "3-4": {
+      "turns": 281,
+      "tags": {
+        "cov": 54,
+        "map": 4,
+        "csplit": 11,
+        "tg": 18,
+        "cl": 45,
+        "grab": 6,
+        "tgx": 3,
+        "PORTAL?": 1,
+        "floor": 2
+      }
+    },
+    "5-6": {
+      "turns": 3,
+      "tags": {
+        "tg": 1,
+        "floor": 2
+      }
+    }
+  },
+  "cooccurrence": {
+    "cl+cov": 27,
+    "cl+grab": 2,
+    "cov+grab": 3
+  },
+  "labelActionMismatch": 0,
+  "duplicates": 0,
+  "missingLabels": 0,
+  "unexpected": [],
+  "gateChecks": {
+    "csplit_unit_limit": {
+      "n": 11,
+      "pass": 11
+    },
+    "csplit_clock": {
+      "n": 11,
+      "pass": 11
+    },
+    "csplit_length": {
+      "n": 11,
+      "pass": 11
+    },
+    "csplit_actual_units": {
+      "n": 11,
+      "pass": 11
+    },
+    "csplit_not_true_long_king": {
+      "n": 11,
+      "pass": 11
+    },
+    "floor_unit_limit": {
+      "n": 4,
+      "pass": 4
+    },
+    "floor_opponent_8plus": {
+      "n": 4,
+      "pass": 4
+    }
+  },
+  "maxDragonId": 215,
+  "sonarFromIdOver255": 0,
+  "resources": {
+    "freeMemoryPct": 66,
+    "freeDiskGB": 36
+  },
+  "priority": 10,
+  "checks": {
+    "sim": 0,
+    "splits": 0,
+    "drops": 0,
+    "eatTC": 0,
+    "ledger": 0,
+    "final": 0,
+    "lineage": 0,
+    "natBal": 0,
+    "dropBal": 0,
+    "unknownDeath": 0
+  },
+  "result": {
+    "terminated": true,
+    "endReason": "teamEliminated",
+    "winner": "B",
+    "teamA": {
+      "dragonCount": 0,
+      "longestDragon": 0,
+      "totalLength": 0
+    },
+    "teamB": {
+      "dragonCount": 52,
+      "longestDragon": 9,
+      "totalLength": 168
+    }
+  },
+  "endReason": "teamEliminated",
+  "ledgerTurns": 1571,
+  "finalKing": null,
+  "maxInstr": 25798017,
+  "faults": 0,
+  "over80M": 0,
+  "depths": {
+    "7": 1552
+  }
+}

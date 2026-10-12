@@ -1,0 +1,122 @@
+diff -ru exp/cand-swarm8/bot/params.hpp exp/cand-swarm9b/bot/params.hpp
+--- exp/cand-swarm8/bot/params.hpp	2026-09-30 04:53:00
++++ exp/cand-swarm9b/bot/params.hpp	2026-09-30 06:20:04
+@@ -58,6 +58,11 @@
+                                                  // still a legal step, chosen only when every other step is doomed
+ constexpr double PORTAL_UNPROBED_PENALTY = 4.0;  // known portal, exit out of view, no probe from here last turn
+ constexpr double PORTAL_DIRTY_PENALTY = 8.0;     // known portal, exit out of view, last turn's probe hit a dragon
++// --- cand-swarm9: our own heads at unseen portal exits (a head-on kills both dragons) ---
++constexpr int    ALLY_EXIT_AGE = 2;              // ally head info (seen or heard) at most this old counts
++constexpr double ALLY_EXIT_PENALTY = 120.0;      // an ally head could be on the unseen exit now (within age+1 of it)
++constexpr double ALLY_EXIT_SURE_PENALTY = 400.0; // an ally head is known on the exit this very round
++constexpr double ALLY_BLIND_PENALTY = 120.0;     // unexplored portal: an ally head recently beside a tile we never saw
+ constexpr double DOOM_VALUE = -200.0;        // below this the best move is death within the horizon
+ 
+ // --- threat from enemy heads (d = path distance from the enemy head to the tile) ---
+diff -ru exp/cand-swarm8/bot/plan.cpp exp/cand-swarm9b/bot/plan.cpp
+--- exp/cand-swarm8/bot/plan.cpp	2026-09-30 04:53:00
++++ exp/cand-swarm9b/bot/plan.cpp	2026-09-30 06:20:04
+@@ -175,6 +175,47 @@
+     return pen;
+ }
+ 
++// cand-swarm9: a head-on kills both dragons, and vision does not cross portals. Our own heads crowd around portals once
++// the swarm is out, so an ally head that could stand on the exit tile when we step in makes the crossing dear. Info of
++// age a rounds (seen or heard over sonar): the ally may have moved up to a+1 tiles since. Allies in view now are exact.
++bool Planner::allyInViewNow(int id) const {
++    for (int a : w_.allyHeadsNow) if (a == id) return true;
++    return false;
++}
++
++double Planner::allyExitPenalty(int to) const {
++    double pen = 0.0;
++    for (auto& [id, dg] : w_.dragons) {
++        if (id == w_.myId || id == (w_.myId & 255) || dg.team != w_.myTeam || dg.headT < 0) continue;
++        int age = w_.round - dg.headSeen;
++        if (age < 0 || age > P::ALLY_EXIT_AGE || allyInViewNow(id)) continue;
++        int md = w_.geo.manhattan(dg.headT, to);
++        if (md == 0 && age == 0) return P::ALLY_EXIT_SURE_PENALTY;
++        if (md <= age + 1) pen = P::ALLY_EXIT_PENALTY;
++    }
++    return pen;
++}
++
++// cand-swarm9: an unexplored portal's exit lies on a tile we have never seen (had we seen it, we would know its portal id
++// and the pair). An ally head recently out of view on or near a never-seen tile may be standing on that exit.
++double Planner::allyBlindPenalty() const {
++    const int W = w_.geo.W;
++    for (auto& [id, dg] : w_.dragons) {
++        if (id == w_.myId || id == (w_.myId & 255) || dg.team != w_.myTeam || dg.headT < 0) continue;
++        int age = w_.round - dg.headSeen;
++        if (age < 0 || age > P::ALLY_EXIT_AGE || allyInViewNow(id)) continue;
++        int r = age + 1, hx = dg.headT % W, hy = dg.headT / W;
++        for (int dy = -r; dy <= r; dy++) {
++            int rx = r - (dy < 0 ? -dy : dy);
++            for (int dx = -rx; dx <= rx; dx++) {
++                int u = w_.geo.idx(w_.geo.wrapX(hx + dx), w_.geo.wrapY(hy + dy));
++                if (w_.tiles[u].seen < 0) return P::ALLY_BLIND_PENALTY;
++            }
++        }
++    }
++    return 0.0;
++}
++
+ // ---- unexplored portals (cand-portal1) ----
+ // The value of trying an unexplored portal grows with hunger (rounds since we last grew), with the share of the map we
+ // have never seen, and fades before the end. A probe that hit a dragon mutes that one edge for a few rounds.
+@@ -703,7 +744,7 @@
+     }
+ 
+     // ---- candidates: first action = 1 step, a justified 2-step sprint, or a probed unknown portal
+-    struct Cand { std::vector<int> dirs; std::vector<int> tiles; int removed; int pearls; double base; bool legal; bool trade; bool blind; bool esc = false; bool voluntary = false; };  // esc: cand-avoid6, voluntary: cand-portal1
++    struct Cand { std::vector<int> dirs; std::vector<int> tiles; int removed; int pearls; double base; bool legal; bool trade; bool blind; bool esc = false; bool voluntary = false; double allyPen = 0.0; };  // esc: cand-avoid6, voluntary: cand-portal1
+     std::vector<Cand> cands;
+     std::vector<int> path;
+     for (int d1 = 0; d1 < 4; d1++) {
+@@ -718,6 +759,7 @@
+             c.base = fv - blindRisk(w_.myLen); // + the best ordinary safety, added below
+             c.voluntary = clean && !late_ && fv > 0.0;
+             if (!c.voluntary) c.base -= P::BLIND_DESPERATE_PENALTY; // only when all else is doomed
++            c.allyPen = allyBlindPenalty(); c.base -= c.allyPen; // cand-swarm9
+             cands.push_back(c); continue;
+         }
+         int hid = w_.headOf[u1];
+@@ -732,6 +774,7 @@
+         if (w_.tiles[w_.headT].edge[d1] == EDGE_PORTAL && w_.tiles[u1].seen != w_.round) {
+             bool probedHere = w_.probeRound == w_.round && w_.probeFromT == w_.headT && w_.probeDir == d1;
+             portalExtra = !probedHere ? P::PORTAL_UNPROBED_PENALTY : (w_.probeClear ? 0.0 : P::PORTAL_DIRTY_PENALTY);
++            c.allyPen = allyExitPenalty(u1); portalExtra += c.allyPen; // cand-swarm9: even after a clean probe
+         }
+         path.assign(1, w_.headT);
+         if (!tileEnterable(u1, 1, 0, path)) { cands.push_back(c); continue; }
+@@ -798,7 +841,7 @@
+                     int rem2 = c.removed + (p2 >= 0.5 ? 0 : 1) + 1, pe2 = c.pearls + (p2 >= 0.5 ? 1 : 0);
+                     if (late_ && threatAt(u2) <= 0.0) { // 2-step sprints are otherwise off in the last rounds
+                         Cand s2 = c; s2.esc = true; s2.dirs = {d1, d2}; s2.tiles = {u1, u2}; s2.pearls = pe2; s2.removed = rem2;
+-                        s2.base = p1 + p2 - P::SPRINT_COST - softPenalty_[u2] - portalPenalty(u1, d2, u2) - (w_.edgeUnknown(u1, d2) ? P::UNKNOWN_EDGE_PENALTY : 0.0);
++                        s2.base = p1 + p2 - P::SPRINT_COST - softPenalty_[u2] - portalPenalty(u1, d2, u2) - (w_.edgeUnknown(u1, d2) ? P::UNKNOWN_EDGE_PENALTY : 0.0) - c.allyPen; // cand-swarm9: allyPen
+                         extra.push_back(s2);
+                     }
+                     if (w_.myLen + pe2 - 1 < 3) continue; // the third step must be payable
+@@ -811,7 +854,7 @@
+                         double p3 = SC.pnow[u3];
+                         Cand s3 = c; s3.esc = true; s3.dirs = {d1, d2, d3}; s3.tiles = {u1, u2, u3};
+                         s3.pearls = pe2 + (p3 >= 0.5 ? 1 : 0); s3.removed = rem2 + (p3 >= 0.5 ? 0 : 1) + 1;
+-                        s3.base = p1 + p2 + p3 - 2.0 * P::SPRINT_COST - softPenalty_[u3] - portalPenalty(u2, d3, u3) - (w_.edgeUnknown(u2, d3) ? P::UNKNOWN_EDGE_PENALTY : 0.0);
++                        s3.base = p1 + p2 + p3 - 2.0 * P::SPRINT_COST - softPenalty_[u3] - portalPenalty(u2, d3, u3) - (w_.edgeUnknown(u2, d3) ? P::UNKNOWN_EDGE_PENALTY : 0.0) - c.allyPen; // cand-swarm9: allyPen
+                         extra.push_back(s3);
+                     }
+                 }
+diff -ru exp/cand-swarm8/bot/plan.hpp exp/cand-swarm9b/bot/plan.hpp
+--- exp/cand-swarm8/bot/plan.hpp	2026-09-30 04:53:00
++++ exp/cand-swarm9b/bot/plan.hpp	2026-09-30 06:20:04
+@@ -60,6 +60,9 @@
+     double threatAt(int t) const;
+     double exploreValue(int t);
+     double portalPenalty(int from, int d, int to) const;
++    double allyExitPenalty(int to) const;     // cand-swarm9
++    double allyBlindPenalty() const;         // cand-swarm9
++    bool allyInViewNow(int id) const;        // cand-swarm9
+     double areaSafety(int startT, int startRemoved, const std::vector<int>& pathTiles);
+     double dfs(int t, int lastDir, int depth, int maxDepth, int removed, int lenNow, std::vector<int>& path, long long deadline);
+     bool tileEnterable(int t, int step, int removed, const std::vector<int>& path) const;

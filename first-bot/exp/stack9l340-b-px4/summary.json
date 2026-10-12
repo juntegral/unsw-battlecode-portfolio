@@ -1,0 +1,45 @@
+{
+  "label": "stack9l340-b-px4",
+  "bot": "~/01. Project/개인 프로젝트/unsw-heuristic/exp/cand-stack9/bot-l340",
+  "at": "2026-09-30T12:57:13.578Z",
+  "benchmark": {
+    "maps": 10,
+    "opps": [
+      "proxy4_king",
+      "proxy4_swarm",
+      "proxy4_elim"
+    ],
+    "seeds": [
+      2
+    ],
+    "sides": 2
+  },
+  "all": {
+    "n": 60,
+    "G": 16.233333333333334,
+    "alive": 0.8,
+    "win": 0.13333333333333333
+  },
+  "byOpp": {
+    "proxy4_king": {
+      "n": 20,
+      "G": 17.75,
+      "alive": 0.8,
+      "win": 0.2
+    },
+    "proxy4_swarm": {
+      "n": 20,
+      "G": 14.95,
+      "alive": 0.8,
+      "win": 0.05
+    },
+    "proxy4_elim": {
+      "n": 20,
+      "G": 16,
+      "alive": 0.8,
+      "win": 0.15
+    }
+  },
+  "problems": 0,
+  "errors": 0
+}

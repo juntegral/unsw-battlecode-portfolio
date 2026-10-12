@@ -1,0 +1,144 @@
+diff -ru exp/cand-portal1/bot/params.hpp exp/cand-portal3/bot/params.hpp
+--- exp/cand-portal1/bot/params.hpp	2026-09-30 00:20:41
++++ exp/cand-portal3/bot/params.hpp	2026-09-30 00:31:53
+@@ -58,6 +58,15 @@
+                                                  // still a legal step, chosen only when every other step is doomed
+ constexpr double PORTAL_UNPROBED_PENALTY = 4.0;  // known portal, exit out of view, no probe from here last turn
+ constexpr double PORTAL_DIRTY_PENALTY = 8.0;     // known portal, exit out of view, last turn's probe hit a dragon
++
++// --- cand-portal3: a portal trip that does not feed us is undone. If we have not grown for RETURN_HUNGER rounds since
++// stepping through a portal, that entry is marked barren (no frontier value, a penalty to cross it) for BARREN_ROUNDS,
++// and the tile where we last grew (or were born) pulls us back until we eat again.
++constexpr int    RETURN_HUNGER = 50;
++constexpr int    BARREN_ROUNDS = 200;
++constexpr double BARREN_PENALTY = 4.0;
++constexpr double RETURN_W = 0.15;            // leaf penalty per tile of path distance back to where we last grew
++constexpr int    RETURN_ARRIVED = 3;         // within this path distance the trip back is over
+ constexpr double DOOM_VALUE = -200.0;        // below this the best move is death within the horizon
+ 
+ // --- threat from enemy heads (d = path distance from the enemy head to the tile) ---
+diff -ru exp/cand-portal1/bot/plan.cpp exp/cand-portal3/bot/plan.cpp
+--- exp/cand-portal1/bot/plan.cpp	2026-09-30 00:21:07
++++ exp/cand-portal3/bot/plan.cpp	2026-09-30 00:31:53
+@@ -159,8 +159,8 @@
+ // something unseen stands on or beside the exit; a tight or dead-end exit is seen by the search and the flood fill.
+ double Planner::portalPenalty(int from, int d, int to) const {
+     if (w_.tiles[from].edge[d] != EDGE_PORTAL) return 0.0;
+-    if (from == w_.headT && probeOk_ && w_.probeDir == d) return 0.0; // a ray through it just now hit no dragon
+-    double pen = 0.0;
++    double pen = w_.barren[(size_t)from * 4 + d] > w_.round ? P::BARREN_PENALTY : 0.0; // cand-portal3
++    if (from == w_.headT && probeOk_ && w_.probeDir == d) return pen; // a ray through it just now hit no dragon
+     int seen = w_.tiles[to].seen;
+     if (seen != w_.round) {
+         pen += P::PORTAL_BLIND_PENALTY + P::PORTAL_STALE_PENALTY * std::min(1.0, (seen < 0 ? 20.0 : (double)(w_.round - seen)) / 20.0);
+@@ -187,6 +187,11 @@
+     if (w_.probeRound == w_.round && !w_.probeClear && w_.probeDir >= 0 && w_.probeFromT >= 0 &&
+         w_.across(w_.probeFromT, w_.probeDir) == -2)
+         w_.frontierBlock[(size_t)w_.probeFromT * 4 + w_.probeDir] = (int16_t)std::min(30000, w_.round + P::FRONTIER_BLOCK_ROUNDS);
++    // cand-portal3: a portal trip without growth for RETURN_HUNGER rounds: that entry is barren, and we head back
++    if (w_.crossRound >= 0 && w_.lastAteRound < w_.crossRound && w_.round - w_.crossRound >= P::RETURN_HUNGER && w_.crossT >= 0) {
++        w_.barren[(size_t)w_.crossT * 4 + w_.crossDir] = (int16_t)std::min(30000, w_.round + P::BARREN_ROUNDS);
++        w_.returning = true; w_.crossRound = -1;
++    }
+     // path distance from our head over known edges, bodies ignored (ranking of attraction sources through portals)
+     int n = w_.geo.tiles();
+     headDist_.assign(n, -1);
+@@ -207,6 +212,7 @@
+     const Tile& x = w_.tiles[t];
+     if (x.seen < 0 || x.edge[d] != EDGE_PORTAL || w_.across(t, d) != -2) return 0.0;
+     if (w_.frontierBlock[(size_t)t * 4 + d] > w_.round) return 0.0;
++    if (w_.barren[(size_t)t * 4 + d] > w_.round) return 0.0; // cand-portal3
+     return frontierBase_;
+ }
+ 
+@@ -305,6 +311,23 @@
+             }
+         }
+     }
++    // cand-portal3: after a barren trip, path distance back to the tile where we last grew (or were born), like the
++    // gathering goal: every leaf pays RETURN_W per tile, so the way back wins over local wandering
++    returnOn_ = false;
++    if (w_.returning && w_.lastEatT >= 0) {
++        returnDist_.assign(n, 9999);
++        queue_.clear(); queue_.push_back(w_.lastEatT); returnDist_[w_.lastEatT] = 0;
++        for (size_t qi = 0; qi < queue_.size(); qi++) {
++            int t = queue_[qi];
++            for (int dir = 0; dir < 4; dir++) {
++                int u = w_.across(t, dir);
++                if (u < 0 || returnDist_[u] <= returnDist_[t] + 1) continue;
++                returnDist_[u] = returnDist_[t] + 1; queue_.push_back(u);
++            }
++        }
++        if (returnDist_[w_.headT] <= P::RETURN_ARRIVED) w_.returning = false;  // back home
++        else returnOn_ = returnDist_[w_.headT] < 9999;
++    }
+ }
+ 
+ // ------------------------------------------------------------------------------------------------
+@@ -372,6 +395,7 @@
+     if (depth >= maxDepth || over) {
+         double v = attract_[t] * GPOW[std::min(63, turns + 1)] + exploreValue(t) * GPOW[std::min(63, turns + 1)];
+         if (frontierField_[t] > 0.0) v += frontierField_[t] * GPOW[std::min(63, turns + 1)]; // cand-portal1
++        if (returnOn_) v -= P::RETURN_W * std::min(returnDist_[t], 200);                          // cand-portal3
+         int freeN = 0;
+         for (int d = 0; d < 4; d++) { if (d == opp(lastDir)) continue; int u = w_.across(t, d); if (u >= 0 && tileEnterable(u, stepBase + 1, removed, path)) freeN++; }
+         v += freeN * 0.15;
+@@ -878,6 +902,13 @@
+     act.kind = Action::MOVE; act.dirs.clear();
+     for (int d : c.dirs) act.dirs += DIRCH[d];
+     act.path = c.tiles; act.score = value[best];
++    { // cand-portal3: remember the portal we step through now (entry tile and direction) to judge the trip later
++        int t = w_.headT;
++        for (size_t k = 0; k < c.dirs.size(); k++) {
++            if (w_.tiles[t].edge[c.dirs[k]] == EDGE_PORTAL) { w_.crossT = t; w_.crossDir = c.dirs[k]; w_.crossRound = w_.round; }
++            if (k < c.tiles.size()) t = c.tiles[k]; else break;
++        }
++    }
+     setSonar(act);
+     char buf[160];
+     snprintf(buf, sizeof buf, "%s v%.1f d%d L%d%s%s%s", act.dirs.c_str(), value[best], depthDone, w_.myLen, c.trade ? " TRADE" : "", c.blind ? " PORTAL?" : "", late_ ? " late" : "");
+diff -ru exp/cand-portal1/bot/plan.hpp exp/cand-portal3/bot/plan.hpp
+--- exp/cand-portal1/bot/plan.hpp	2026-09-30 00:20:41
++++ exp/cand-portal3/bot/plan.hpp	2026-09-30 00:31:53
+@@ -47,6 +47,8 @@
+     bool probeOk_ = false;             // last turn's single ray left our current head and hit no dragon
+     std::vector<int> headDist_;        // path distance from our head over known edges (bodies ignored), -1 unreached
+     std::vector<double> frontierField_;// best single unexplored-portal pull per tile (max, not sum)
++    std::vector<int> returnDist_;      // cand-portal3: path distance to where we last grew, while returning
++    bool returnOn_ = false;
+ 
+     void computeEnemyDistance();
+     void computeAttract();
+diff -ru exp/cand-portal1/bot/world.cpp exp/cand-portal3/bot/world.cpp
+--- exp/cand-portal1/bot/world.cpp	2026-09-30 00:00:03
++++ exp/cand-portal3/bot/world.cpp	2026-09-30 00:29:12
+@@ -28,6 +28,7 @@
+     portals.clear();
+     pearlPriorUnseen = P::PRIOR_UNSEEN;
+     frontierBlock.assign((size_t)n * 4, 0);
++    barren.assign((size_t)n * 4, 0);
+ }
+ 
+ int World::mirrorTile(int t, int hyp) const {
+@@ -98,6 +99,7 @@
+     for (int i = 0; i < 49; i++) winTile[i] = geo.idx(geo.wrapX(rb.tiles[i].x), geo.wrapY(rb.tiles[i].y));
+     headT = winTile[24]; // the window is centred on our head
+     for (auto& p : rb.parts) if (p.head && p.id == myId && p.team == myTeam) headT = geo.idx(geo.wrapX(p.x), geo.wrapY(p.y));
++    if (lastAteRound == round) { lastEatT = headT; returning = false; } // cand-portal3: born or grew here
+ 
+     ingestTiles(rb);
+     ingestEdges(rb, winTile);
+diff -ru exp/cand-portal1/bot/world.hpp exp/cand-portal3/bot/world.hpp
+--- exp/cand-portal1/bot/world.hpp	2026-09-29 23:59:48
++++ exp/cand-portal3/bot/world.hpp	2026-09-30 00:29:12
+@@ -90,6 +90,10 @@
+     // cand-portal1: hunger (rounds since our length last grew) and frontiers muted after a dirty probe
+     int lastAteRound = -1, prevLen = 0;
+     std::vector<int16_t> frontierBlock;   // tile*4+dir -> round until which that unexplored portal is ignored
++    // cand-portal3: the last portal we stepped through (entry tile, direction, round), where we last grew, barren entries
++    int crossT = -1, crossDir = -1, crossRound = -1, lastEatT = -1;
++    bool returning = false;
++    std::vector<int16_t> barren;          // tile*4+dir -> round until which that portal entry is considered barren
+ 
+     // map-level statistics
+     double pearlPriorUnseen = 0.05;

@@ -1,0 +1,63 @@
+{
+  "label": "cand-escape1",
+  "bot": "~/01. Project/개인 프로젝트/unsw-heuristic/exp/cand-escape1/bot",
+  "at": "2026-09-29T16:55:11.956Z",
+  "benchmark": {
+    "maps": 10,
+    "opps": [
+      "replay_rules_v8",
+      "archetype_swarm",
+      "archetype_hunter",
+      "h2"
+    ],
+    "seeds": [
+      1,
+      2
+    ],
+    "sides": 2
+  },
+  "all": {
+    "n": 160,
+    "G": 34.4,
+    "alive": 0.95625,
+    "win": 0.875
+  },
+  "byOpp": {
+    "replay_rules_v8": {
+      "n": 40,
+      "G": 29.825,
+      "alive": 0.95,
+      "win": 0.75
+    },
+    "archetype_swarm": {
+      "n": 40,
+      "G": 31.075,
+      "alive": 0.975,
+      "win": 0.9
+    },
+    "archetype_hunter": {
+      "n": 40,
+      "G": 21.225,
+      "alive": 0.9,
+      "win": 0.85
+    },
+    "h2": {
+      "n": 40,
+      "G": 55.475,
+      "alive": 1,
+      "win": 1
+    }
+  },
+  "problems": 0,
+  "errors": 0,
+  "vsBaseline": {
+    "baseline": "eval-r1",
+    "pairs": 160,
+    "dG": -3.80625,
+    "ci95": [
+      -9.2,
+      -0.1125
+    ],
+    "note": "map-cluster bootstrap"
+  }
+}

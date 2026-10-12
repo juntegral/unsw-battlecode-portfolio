@@ -1,0 +1,15 @@
+  // ---- stack10 (research/experiments/cand-stack10.md; economy-principles study exp/econ-principles/extract.js O and C rows): our B3
+  //   opportunities (a piece of length <= 4 with an enemy head adjacent across an open edge at its turn start; the longest if several)
+  //   with the replay d3 / d8 and whether it rammed that head in one step, and every trade we made (a move of ours into an enemy head) with
+  //   d3, d8, adjacency at the turn start and the two death records (their pearls' eaters are read after the game)
+  const S10 = { opp: [], xch: [], oppNow: new Map(), xPend: new Map() };
+  const s10lc = (c, headK, centerK, exA, exB) => { // our heads - enemy heads: v3 within Chebyshev 3 of headK, m8 within Manhattan 8 of centerK
+    let v3o = 0, v3e = 0, m8o = 0, m8e = 0;
+    for (const o of c.drag.values()) {
+      if (o.id === exA || o.id === exB) continue;
+      const h = K(o.body[0]), own = o.team === us;
+      if (headK >= 0 && chk(h, headK) <= 3) { if (own) v3o++; else v3e++; }
+      if (centerK >= 0 && tdk(h, centerK) <= 8) { if (own) m8o++; else m8e++; }
+    }
+    return { d3: v3o - v3e, d8: m8o - m8e, v3o, v3e };
+  };

@@ -1,0 +1,53 @@
+{
+  "label": "base-px9e",
+  "bot": "~/01. Project/개인 프로젝트/unsw-heuristic/exp/base-px9e/bot",
+  "at": "2026-09-29T21:34:21.989Z",
+  "benchmark": {
+    "maps": 10,
+    "opps": [
+      "proxy_swarm",
+      "proxy_elim",
+      "proxy_king",
+      "r1"
+    ],
+    "seeds": [
+      1,
+      2
+    ],
+    "sides": 2
+  },
+  "all": {
+    "n": 160,
+    "G": 19.825,
+    "alive": 0.94375,
+    "win": 0.6125
+  },
+  "byOpp": {
+    "proxy_swarm": {
+      "n": 40,
+      "G": 19.95,
+      "alive": 0.975,
+      "win": 0.6
+    },
+    "proxy_elim": {
+      "n": 40,
+      "G": 15.675,
+      "alive": 0.95,
+      "win": 0.675
+    },
+    "proxy_king": {
+      "n": 40,
+      "G": 18.475,
+      "alive": 0.85,
+      "win": 0.525
+    },
+    "r1": {
+      "n": 40,
+      "G": 25.2,
+      "alive": 1,
+      "win": 0.65
+    }
+  },
+  "problems": 0,
+  "errors": 0
+}

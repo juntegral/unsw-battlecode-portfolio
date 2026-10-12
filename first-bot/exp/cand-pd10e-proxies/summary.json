@@ -1,0 +1,56 @@
+{
+  "label": "cand-pd10e-proxies",
+  "bot": "~/01. Project/개인 프로젝트/unsw-heuristic/exp/cand-pd10e/bot",
+  "at": "2026-09-29T19:20:24.559Z",
+  "benchmark": {
+    "maps": 10,
+    "opps": [
+      "proxy_swarm",
+      "proxy_elim",
+      "proxy_king"
+    ],
+    "seeds": [
+      1,
+      2
+    ],
+    "sides": 2
+  },
+  "all": {
+    "n": 120,
+    "G": 20,
+    "alive": 0.7166666666666667,
+    "win": 0.4
+  },
+  "byOpp": {
+    "proxy_swarm": {
+      "n": 40,
+      "G": 18.25,
+      "alive": 0.75,
+      "win": 0.325
+    },
+    "proxy_elim": {
+      "n": 40,
+      "G": 21.3,
+      "alive": 0.675,
+      "win": 0.475
+    },
+    "proxy_king": {
+      "n": 40,
+      "G": 20.45,
+      "alive": 0.725,
+      "win": 0.4
+    }
+  },
+  "problems": 0,
+  "errors": 0,
+  "vsBaseline": {
+    "baseline": "r1-vs-proxies-v1",
+    "pairs": 120,
+    "dG": -0.10833333333333334,
+    "ci95": [
+      -0.35,
+      0.08333333333333333
+    ],
+    "note": "map-cluster bootstrap"
+  }
+}

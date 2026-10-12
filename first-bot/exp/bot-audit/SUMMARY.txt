@@ -1,0 +1,20 @@
+Architecture audit complete for W12 candidate exp/cand-stack11/bot/.
+Korean report: research/observations/bot-architecture-audit.md (751 lines).
+All audited existing source, tool, rule, and verdict inputs are unchanged.
+No network access, uploads, commits, or local games were used.
+W11: 70 games, submission 13313, 256140 own dragon turns.
+W12: 70 games, submission 13393, 256978 own dragon turns.
+All 513118 own turns have indicators and matching actions.
+Raw-event reconciliation and ten ledger checks found zero mismatches.
+Current C++ headers/sources total 3947 lines; params declares 246 constants.
+The source has 41 boolean settings: 25 true and 16 false.
+GH_ON and KX_ON remain true in this source despite the W12 OFF verdict.
+W11/W12 actual splits total 6063/6722.
+W12 escape splits: 5032 (74.86% of all splits).
+W12 csplit/lsplit: 1232/348 (93.49% of non-escape splits).
+W12 F/g label states cover 9.03% of move turns; causal effects are unobserved.
+IDs above 255 account for 29.02% of W12 own turns.
+125797 W12 direct-report sonar rays encode a truncated sender ID.
+King identity, memory, split clocks, goal interactions, and dead code are documented.
+nice 15 was requested but denied; actual nice was 10 and resource floors held.
+Counts, scripts, diffs, provenance, and final verification are in exp/bot-audit/.
