@@ -1,0 +1,22 @@
+{
+  "counts": {
+    "far_sends": 327,
+    "far_queen_hits": 16,
+    "far_queen_hits_before_her_turn": 0,
+    "queen_splits": 22,
+    "queen_keep2_splits": 6,
+    "queen_L4_nonsplits": 238,
+    "adjacent_pearl_eat_turns": 2803,
+    "adjacent_pearl_pass_no_eat_survive_move": 1133,
+    "adjacent_pearl_pass_no_enemy_head_manhattan8": 607,
+    "long_multi_step_near_head_candidate_turns": 1231,
+    "short_successful_portal_crossings": 601,
+    "long_rammed_count": 13,
+    "long_rammed_length": 144,
+    "no_action_deaths": 117,
+    "early_natural_us": 517,
+    "early_natural_them": 210
+  },
+  "checks": "Both sides: final state and queen match replay result via ladder_replay; all shared o1 checkpoints agree; length ledger residual zero; sonar SipHash test vector passed in analyze.py; parsed far report rounds match replay round.",
+  "limits": "Action signatures are not branch instrumentation. Portal unknown uses individual cumulative 7x7 view, not sonar or inferred map knowledge. Passed pearl is reachable over one open/portal edge into a currently empty cell; enemy-head exclusion is toroidal Manhattan <=8, not a verified safety test."
+}

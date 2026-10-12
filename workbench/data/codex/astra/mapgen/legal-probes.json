@@ -1,0 +1,69 @@
+[
+  {
+    "w": 6,
+    "h": 7,
+    "loaded": false,
+    "error": "map must be at least 7x7, got 6x7",
+    "notices": [],
+    "turns": 0
+  },
+  {
+    "w": 7,
+    "h": 6,
+    "loaded": false,
+    "error": "map must be at least 7x7, got 7x6",
+    "notices": [],
+    "turns": 0
+  },
+  {
+    "w": 7,
+    "h": 7,
+    "loaded": true,
+    "notices": [],
+    "turns": 0
+  },
+  {
+    "w": 256,
+    "h": 7,
+    "loaded": true,
+    "notices": [],
+    "turns": 0
+  },
+  {
+    "w": 7,
+    "h": 256,
+    "loaded": true,
+    "notices": [],
+    "turns": 0
+  },
+  {
+    "w": 256,
+    "h": 256,
+    "loaded": true,
+    "notices": [],
+    "turns": 0
+  },
+  {
+    "w": 257,
+    "h": 7,
+    "loaded": false,
+    "error": "map must be at most 256x256, got 257x7",
+    "notices": [],
+    "turns": 0
+  },
+  {
+    "w": 7,
+    "h": 257,
+    "loaded": false,
+    "error": "map must be at most 256x256, got 7x257",
+    "notices": [],
+    "turns": 0
+  },
+  {
+    "symmetry": "diagonal",
+    "loaded": false,
+    "error": "SYMMETRY must be x, y or xy: SYMMETRY diagonal",
+    "notices": [],
+    "turns": 0
+  }
+]

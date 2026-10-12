@@ -1,0 +1,199 @@
+game cand-stack6-online-r2 map Default/a us=A result {"winner":"B","end":"roundLimit"}
+tags(our turns): {"sx":0,"sr":0,"sd":0,"sf":0,"sq":0,"sc":0,"sk":0,"esc":2,"split":2}
+timeline r | our units / longest / total | their units / longest / total
+  r  0 |   4 /   4 /   16 |   4 /   4 /   16
+  r 25 |   8 /   2 /   16 |   8 /   2 /   16
+  r 50 |   7 /   3 /   16 |  11 /   3 /   27
+  r 75 |   8 /   3 /   20 |  14 /   4 /   36
+  r100 |   9 /   3 /   22 |  20 /   3 /   54
+  r125 |  10 /   3 /   25 |  29 /   5 /   75
+  r150 |  11 /   3 /   25 |  34 /  12 /   95
+  r175 |  10 /   3 /   23 |  42 /   4 /  100
+  r200 |   6 /   5 /   16 |  50 /   6 /  119
+  r225 |   5 /   3 /   12 |  61 /   6 /  150
+  r250 |   5 /   3 /   12 |  64 /   7 /  172
+  r275 |   4 /   5 /   13 |  64 /   7 /  189
+  r300 |   3 /   8 /   18 |  64 /  12 /  202
+  r325 |   2 /   3 /    5 |  61 /  14 /  205
+  r350 |   2 /   3 /    5 |  64 /  14 /  221
+  r375 |   2 /   7 /    9 |  42 /  15 /  206
+  r400 |   1 /   2 /    2 |  32 /  25 /  198
+  r425 |   2 /   7 /    9 |  28 /  32 /  186
+  r450 |   1 /  10 /   10 |  27 /  39 /  192
+  r475 |   1 /  13 /   13 |   7 /  50 /   92
+local feeds (sf) 0: first 12 → 
+--- r456: ours 1 dragons [12] total 12 | theirs 16 [40 13 13 12 12 10 8 6 …] total 151
++--------------------------------+
+|xxX                      % % % %|
+| x    xxxxX       xxxxX         |
+| x       xxxxx                 %|
+|Xx    oxxx o   oXxxxxx      % % |
+|   oo ox      % xxxxxx        K |
+|xx    oxxx      x         % % xx|
+| x    o %x    % x               |
+| xxxxxx% x  Kxxxx            %  |
+|      xxxxx                 %   |
+|      xxxxx                     |
+|      xxxxxx oxx          xxX   |
+|         Xxx  xx o              |
+|            %  xK o             |
+|                    %%          |
+|o         % %o#...    o         |
+|                ..              |
+|          % %   .               |
+|   X       %        oo         o|
+|   x               % %          |
+|   x         x..      x         |
+|   xx        x.      %x %       |
+|            xx..  o   X         |
+|   Kxxxxxxxxxx   %Kxxxxx        |
+|         %xx       %xxxx        |
+|          xX     % xx           |
+|       % %xxx                   |
+|                                |
+|         o                 oo   |
+| xxx                     o      |
+|xx                      %     xx|
+|xx                        xxxxx |
+|xxx                           Kx|
++--------------------------------+
+--- r457: ours 1 dragons [10] total 10 | theirs 15 [41 13 13 12 12 10 8 7 …] total 147
++--------------------------------+
+| %x                      % % %K%|
+|  X    xxxxX       xxxxX        |
+| %       xxxxx                 %|
+|%   o oxxx o   Xxxxxxx      % K |
+|   oo ox      % xxxxx         x |
+|xx    oxxx      x         % % xx|
+| x    o %x    % x               |
+| xxxxxx% x Kxxxxx            %  |
+|      xxxx                  %   |
+|      xxxxx                     |
+|      xxxxxx oxx           xxX  |
+|        Xxxx  xx o              |
+|            %  xxKo             |
+|                    %%          |
+|o         % %o....    o         |
+|              . ..              |
+|   X      % % . .               |
+|   x       %  #     oo         o|
+|   x               % %          |
+|   x                            |
+|   x         x       %x %       |
+|            xx    o   xX        |
+|  Kxxxxxxxxxx    %xxxxxx        |
+|         %xx      K%xxxx        |
+|          xxX    %  x           |
+|       % %xx                    |
+|                                |
+|         o                 oo   |
+| xx                      o o    |
+|xx                      %     xx|
+|xx                         xxxx |
+|xxx                           xx|
++--------------------------------+
+--- r458: ours 1 dragons [9] total 9 | theirs 15 [41 13 13 13 12 10 8 7 …] total 148
++--------------------------------+
+| %x                      % % Kx%|
+| Xx     xxxxX       xxxxX       |
+| %       xxxx                  %|
+|%   o oxxx o  Xxxxxxx       % xK|
+|   oo ox      % xxxx          x |
+|xx    oxxx      x         % % xx|
+| x    o %x    % x               |
+| xxxxxx% xKxxxxxx            %  |
+|      xxxx                  %   |
+|      xxxx                      |
+|      xxxxxx oxx    o       xxX |
+|       Xxxxx  xx o              |
+|            %  xxxo             |
+|                 K  %%          |
+|o         % %o....    o         |
+|   X          .                 |
+|   x      % % .                 |
+|   x       %  ..9   oo         o|
+|   x               % %          |
+|   x                            |
+|                     %  %       |
+|           oxx    o   xxX       |
+| Kxxxxxxxxxx     %xxxxxx        |
+|         %xx      x%xxxx        |
+|          xxx    %K             |
+|       % %x X                   |
+|                                |
+|         o                 oo   |
+| x                       o o    |
+|xx                      %     xx|
+|xx                         xxxx |
+|xxx                           xx|
++--------------------------------+
+--- r459: ours 1 dragons [9] total 9 | theirs 15 [42 13 13 13 12 10 9 7 …] total 150
++--------------------------------+
+| Xx                      % %Kxx%|
+| xx      xxxxX       xxxxX      |
+| %       xxxx                  %|
+|K   o oxxx o Xxxxxxx        % xx|
+|   oo ox      % xxx           x |
+|xx    oxxx      x         % % xx|
+| x    o %x    % x               |
+| xxxxxx% xxxxxxxx            %  |
+|      xxxxK                 %   |
+|      xxx                       |
+|      xxxxxx oxx    o        xxX|
+|      Xxxxxx  xx o              |
+|            %  xxxo             |
+|                Kx  %%          |
+|o  X      % %o...     o         |
+|   x          .                 |
+|   x      % % .                 |
+|   x       %  ...   oo         o|
+|   x           9   % %          |
+|                                |
+|                     %  %       |
+|           ox     o    xxX      |
+|Kxxxxxxxxxx      %xxxxxx        |
+|         %xx      x% xxx        |
+|          xxx    %x             |
+|       % %  x     K             |
+|            X                   |
+|         o                 oo   |
+| x                       o o    |
+|xx                      %     xx|
+|xx                          xxx |
+|xxx                           xx|
++--------------------------------+
+--- r460: ours 1 dragons [9] total 9 | theirs 14 [42 13 13 13 12 9 7 5 …] total 140
++--------------------------------+
+|Xxx                      % %xxx%|
+| xx       xxxxX       xxxxX K   |
+| %       xxx                   %|
+|xK  o oxxx oXxxxxxx         % xx|
+|  ooo ox      % xx            x |
+|xx    oxxx      x         % % xx|
+| x    o %x    % x               |
+| xxxxxx% xxxxxxxx            %  |
+|      xxxxx                 %   |
+|      xxx K                     |
+|X     xxx xx o %    o         xx|
+|     Xxxxxxx  %  o              |
+|            %  % %o             |
+|   X            %   %%          |
+|o  x      % %o..      o         |
+|   x          .                 |
+|   x      % % .                 |
+|   x       %  ...   oo         o|
+|               .9  % %          |
+|                                |
+|                     %  %       |
+|           o      o     xxX     |
+|xxxxxxxxxxx      %xxxxxx       K|
+|         %x       x%  xx        |
+|           xx    %x             |
+|       % %  x     x             |
+|            x     K             |
+|         o  X              ooo  |
+|                         o o    |
+|xx                      %     xx|
+|xx                           xx |
+|xxx                           xx|
++--------------------------------+

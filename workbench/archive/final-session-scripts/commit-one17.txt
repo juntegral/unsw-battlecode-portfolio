@@ -1,0 +1,10 @@
+A long queen no longer splits down to 2 when exposed (QS_SHED_MAX), profile = one17
+
+The queen's emergency rule (own cell in an enemy's reach, no escape: keep 2
+cells, the rest leaves as a child) threw away the first tiebreak for long
+queens: 21 such splits from 10 or longer in 474 games, 18 of them lost, 15
+while she led the queen race. QS_SHED_MAX limits the rule to queens of that
+length or shorter; 0 = off = the same program as before. The profile sets 9
+and matches the live bot one17 (submission 21693).
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>

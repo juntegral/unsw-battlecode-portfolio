@@ -1,0 +1,330 @@
+[
+  {
+    "name": "on-bundled",
+    "bot": "exp/bodymem/bot-on",
+    "out": "exp/bodymem/on",
+    "opps": [
+      "proxy4_king",
+      "exp/q2/bot-hunter"
+    ],
+    "maps": "maps/bundled",
+    "only": [
+      "arena",
+      "big_empty",
+      "Colosseum",
+      "default_small",
+      "stronghold"
+    ],
+    "sides": [
+      "A",
+      "B"
+    ],
+    "seeds": [
+      1
+    ],
+    "cpu": true
+  },
+  {
+    "name": "off-bundled",
+    "bot": "exp/bodymem/bot-off",
+    "out": "exp/bodymem/off",
+    "opps": [
+      "proxy4_king",
+      "exp/q2/bot-hunter"
+    ],
+    "maps": "maps/bundled",
+    "only": [
+      "arena",
+      "big_empty",
+      "Colosseum",
+      "default_small",
+      "stronghold"
+    ],
+    "sides": [
+      "A",
+      "B"
+    ],
+    "seeds": [
+      1
+    ],
+    "cpu": true
+  },
+  {
+    "name": "on-online",
+    "bot": "exp/bodymem/bot-on",
+    "out": "exp/bodymem/on",
+    "opps": [
+      "proxy4_king",
+      "exp/q2/bot-hunter"
+    ],
+    "maps": "maps/online-20260927",
+    "only": [
+      "default",
+      "schooltime",
+      "trophy",
+      "portals",
+      "slithery_fight",
+      "autarky",
+      "prisoners_dilemma"
+    ],
+    "sides": [
+      "A",
+      "B"
+    ],
+    "seeds": [
+      1
+    ],
+    "cpu": true
+  },
+  {
+    "name": "off-online",
+    "bot": "exp/bodymem/bot-off",
+    "out": "exp/bodymem/off",
+    "opps": [
+      "proxy4_king",
+      "exp/q2/bot-hunter"
+    ],
+    "maps": "maps/online-20260927",
+    "only": [
+      "default",
+      "schooltime",
+      "trophy",
+      "portals",
+      "slithery_fight",
+      "autarky",
+      "prisoners_dilemma"
+    ],
+    "sides": [
+      "A",
+      "B"
+    ],
+    "seeds": [
+      1
+    ],
+    "cpu": true
+  },
+  {
+    "name": "on-sprint",
+    "bot": "exp/bodymem/bot-on",
+    "out": "exp/bodymem/on",
+    "opps": [
+      "proxy4_king",
+      "exp/q2/bot-hunter"
+    ],
+    "maps": "maps/sprint",
+    "only": [
+      "around_unsw",
+      "australia",
+      "stripes"
+    ],
+    "sides": [
+      "A",
+      "B"
+    ],
+    "seeds": [
+      1
+    ],
+    "cpu": true
+  },
+  {
+    "name": "off-sprint",
+    "bot": "exp/bodymem/bot-off",
+    "out": "exp/bodymem/off",
+    "opps": [
+      "proxy4_king",
+      "exp/q2/bot-hunter"
+    ],
+    "maps": "maps/sprint",
+    "only": [
+      "around_unsw",
+      "australia",
+      "stripes"
+    ],
+    "sides": [
+      "A",
+      "B"
+    ],
+    "seeds": [
+      1
+    ],
+    "cpu": true
+  },
+  {
+    "name": "on-generated",
+    "bot": "exp/bodymem/bot-on",
+    "out": "exp/bodymem/on",
+    "opps": [
+      "proxy4_king",
+      "exp/q2/bot-hunter"
+    ],
+    "maps": "maps/generated",
+    "only": [
+      "gen_L_03",
+      "gen_X_07",
+      "gen_S_03",
+      "gen_M_07",
+      "gen_R_01",
+      "gen_L_02"
+    ],
+    "sides": [
+      "A",
+      "B"
+    ],
+    "seeds": [
+      1
+    ],
+    "cpu": true
+  },
+  {
+    "name": "off-generated",
+    "bot": "exp/bodymem/bot-off",
+    "out": "exp/bodymem/off",
+    "opps": [
+      "proxy4_king",
+      "exp/q2/bot-hunter"
+    ],
+    "maps": "maps/generated",
+    "only": [
+      "gen_L_03",
+      "gen_X_07",
+      "gen_S_03",
+      "gen_M_07",
+      "gen_R_01",
+      "gen_L_02"
+    ],
+    "sides": [
+      "A",
+      "B"
+    ],
+    "seeds": [
+      1
+    ],
+    "cpu": true
+  },
+  {
+    "name": "identity-off-online",
+    "bot": "exp/bodymem/bot-off",
+    "out": "exp/bodymem/id-off",
+    "opps": [
+      "proxy4_king",
+      "exp/q2/bot-hunter"
+    ],
+    "maps": "maps/online-20260927",
+    "only": [
+      "trophy"
+    ],
+    "sides": [
+      "A",
+      "B"
+    ],
+    "seeds": [
+      1
+    ],
+    "cpu": true
+  },
+  {
+    "name": "identity-base-online",
+    "bot": "exp/bodymem/bot-base",
+    "out": "exp/bodymem/id-base",
+    "opps": [
+      "proxy4_king",
+      "exp/q2/bot-hunter"
+    ],
+    "maps": "maps/online-20260927",
+    "only": [
+      "trophy"
+    ],
+    "sides": [
+      "A",
+      "B"
+    ],
+    "seeds": [
+      1
+    ],
+    "cpu": true
+  },
+  {
+    "name": "identity-off-sprint",
+    "bot": "exp/bodymem/bot-off",
+    "out": "exp/bodymem/id-off",
+    "opps": [
+      "proxy4_king",
+      "exp/q2/bot-hunter"
+    ],
+    "maps": "maps/sprint",
+    "only": [
+      "around_unsw"
+    ],
+    "sides": [
+      "A",
+      "B"
+    ],
+    "seeds": [
+      1
+    ],
+    "cpu": true
+  },
+  {
+    "name": "identity-base-sprint",
+    "bot": "exp/bodymem/bot-base",
+    "out": "exp/bodymem/id-base",
+    "opps": [
+      "proxy4_king",
+      "exp/q2/bot-hunter"
+    ],
+    "maps": "maps/sprint",
+    "only": [
+      "around_unsw"
+    ],
+    "sides": [
+      "A",
+      "B"
+    ],
+    "seeds": [
+      1
+    ],
+    "cpu": true
+  },
+  {
+    "name": "identity-off-generated",
+    "bot": "exp/bodymem/bot-off",
+    "out": "exp/bodymem/id-off",
+    "opps": [
+      "proxy4_king",
+      "exp/q2/bot-hunter"
+    ],
+    "maps": "maps/generated",
+    "only": [
+      "gen_M_07"
+    ],
+    "sides": [
+      "A",
+      "B"
+    ],
+    "seeds": [
+      1
+    ],
+    "cpu": true
+  },
+  {
+    "name": "identity-base-generated",
+    "bot": "exp/bodymem/bot-base",
+    "out": "exp/bodymem/id-base",
+    "opps": [
+      "proxy4_king",
+      "exp/q2/bot-hunter"
+    ],
+    "maps": "maps/generated",
+    "only": [
+      "gen_M_07"
+    ],
+    "sides": [
+      "A",
+      "B"
+    ],
+    "seeds": [
+      1
+    ],
+    "cpu": true
+  }
+]

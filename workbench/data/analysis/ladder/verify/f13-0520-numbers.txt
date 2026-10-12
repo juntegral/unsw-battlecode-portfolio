@@ -1,0 +1,136 @@
+=== the reach formula against what rammers did (every ram on a queen, all layouts, main and v31)
+  rams 555; rammer made more steps than ceil(L/4)+L-2: 17; more than ceil(L/4)+L-1: 6
+  rammer length 2: steps made [(1, 203), (2, 2), (3, 4)]; length 3: [(1, 84), (2, 146), (3, 6), (4, 2)]; length 4: [(1, 5), (2, 18), (3, 28), (4, 3)]
+  rammer made more steps than its free steps: 250 of 555
+
+=== main: 235 games, 201 on free layouts
+
+--- main, OUR lone queen (their queen dead): rams 31, no snapshot 0, rammer born later 3, with a board 28
+  safe from the full reach of every enemy head within 6 and the rammer: 5 of 28 = 0.179 (95% 0.08 to 0.36)
+  safe from the free reach of the same heads: 15 of 28 = 0.536 (95% 0.36 to 0.70)
+  rammer only: full 9 of 28 = 0.321 (95% 0.18 to 0.51); free 17 of 28 = 0.607 (95% 0.42 to 0.76)
+  [sensitivity] full reach with one more paid step (L-1): 2; heads within 4: 5; within 3: 5; within 2: 6
+  [what blocks] no safe step even from the rammer alone: 19; safe from the rammer but not from another head: 4; safe from all: 5
+  [legal steps] (number of legal steps, rams): [(0, 1), (1, 13), (2, 6), (3, 8)]
+  [heads considered] (heads, rams): [(1, 9), (2, 4), (3, 6), (4, 3), (5, 1), (6, 2), (7, 1), (9, 1), (10, 1)]; rammer within 6 at her last turn: 26 of 28
+  [rammer length at her last turn] (length, rams): [(2, 7), (3, 13), (4, 1), (5, 2), (6, 1), (8, 1), (9, 1), (12, 1), (14, 1)]
+  [rammer path distance to her at her last turn] (distance, rams): [(1, 1), (2, 13), (3, 7), (4, 3), (5, 3), (7, 1)]
+  [what the rammer did] steps made above its free steps (extra, rams): [(0, 12), (1, 10), (2, 4), (3, 2)]
+  [middle measure] a legal step farther from the rammer than max(free steps, the distance it really covered): 11 of 28 = 0.393 (95% 0.24 to 0.58)
+  [she moved on her last turn] 24 of 28; her length at that turn (length, rams): [(2, 17), (3, 5), (4, 3), (15, 1), (26, 1), (55, 1)]
+  [spread] opponents 18 (largest 4 rams), layouts 13, evenings [('10-06b', 16), ('10-07a', 12)], bands [('1700-1899', 8), ('1900-2099', 17), ('2100+', 3)]
+  [the rams with a safe step] [(1243701, 'Maze #1', '1900-2099', '10-06b'), (1249039, 'Prisoners Dilemma #2', '2100+', '10-06b'), (1256140, 'Default #1', '1900-2099', '10-07a'), (1261216, 'Default #1', '1700-1899', '10-07a'), (1265766, 'Trophy #1', '1700-1899', '10-07a')]
+  [by band] safe from full reach: <1700 0 of 0, 1700-1899 2 of 8, 1900-2099 2 of 17, 2100+ 1 of 3
+  [by evening] safe from full reach: 10-06b 2 of 16, 10-07a 3 of 12
+  [by layout] safe from full reach: Around UNSW #1 0 of 4, Australia #1 0 of 2, Autarky #1 0 of 1, Default #1 2 of 6, Islands #1 0 of 2, Maze #1 1 of 3, Prisoners Dilemma #2 1 of 1, Queen Of Spades #1 0 of 4, Stripes #1 0 of 1, Tower Defense #1 0 of 1, Trauma #1 0 of 1, Trophy #1 1 of 1, weakhold #1 0 of 1
+
+--- main, THEIR lone queen (our queen dead): rams 43, no snapshot 0, rammer born later 1, with a board 42
+  safe from the full reach of every enemy head within 6 and the rammer: 7 of 42 = 0.167 (95% 0.08 to 0.31)
+  safe from the free reach of the same heads: 22 of 42 = 0.524 (95% 0.38 to 0.67)
+  rammer only: full 13 of 42 = 0.310 (95% 0.19 to 0.46); free 25 of 42 = 0.595 (95% 0.44 to 0.73)
+  [sensitivity] full reach with one more paid step (L-1): 3; heads within 4: 7; within 3: 7; within 2: 8
+  [what blocks] no safe step even from the rammer alone: 29; safe from the rammer but not from another head: 6; safe from all: 7
+  [legal steps] (number of legal steps, rams): [(0, 2), (1, 24), (2, 11), (3, 5)]
+  [heads considered] (heads, rams): [(1, 12), (2, 17), (3, 5), (4, 2), (5, 2), (6, 2), (7, 1), (10, 1)]; rammer within 6 at her last turn: 42 of 42
+  [rammer length at her last turn] (length, rams): [(2, 17), (3, 23), (4, 1), (5, 1)]
+  [rammer path distance to her at her last turn] (distance, rams): [(1, 2), (2, 23), (3, 15), (5, 1), (6, 1)]
+  [what the rammer did] steps made above its free steps (extra, rams): [(0, 27), (1, 14), (3, 1)]
+  [middle measure] a legal step farther from the rammer than max(free steps, the distance it really covered): 13 of 42 = 0.310 (95% 0.19 to 0.46)
+  [she moved on her last turn] 40 of 42; her length at that turn (length, rams): [(2, 25), (3, 9), (4, 3), (5, 1), (8, 1), (19, 1), (33, 1), (39, 1)]
+
+--- main, OUR queen, their queen alive: rams 61, no snapshot 0, rammer born later 3, with a board 58
+  safe from the full reach of every enemy head within 6 and the rammer: 12 of 58 = 0.207 (95% 0.12 to 0.33)
+  safe from the free reach of the same heads: 36 of 58 = 0.621 (95% 0.49 to 0.73)
+  rammer only: full 20 of 58 = 0.345 (95% 0.24 to 0.47); free 40 of 58 = 0.690 (95% 0.56 to 0.79)
+  [sensitivity] full reach with one more paid step (L-1): 8; heads within 4: 12; within 3: 14; within 2: 14
+  [what blocks] no safe step even from the rammer alone: 38; safe from the rammer but not from another head: 8; safe from all: 12
+  [legal steps] (number of legal steps, rams): [(0, 1), (1, 24), (2, 20), (3, 13)]
+  [heads considered] (heads, rams): [(1, 14), (2, 19), (3, 10), (4, 7), (5, 4), (6, 2), (8, 2)]; rammer within 6 at her last turn: 56 of 58
+  [rammer length at her last turn] (length, rams): [(2, 24), (3, 18), (4, 4), (5, 5), (6, 1), (7, 2), (8, 1), (9, 1), (10, 1), (15, 1)]
+  [rammer path distance to her at her last turn] (distance, rams): [(1, 2), (2, 28), (3, 14), (4, 7), (5, 3), (6, 3), (8, 1)]
+  [what the rammer did] steps made above its free steps (extra, rams): [(0, 28), (1, 15), (2, 9), (3, 5), (4, 1)]
+  [middle measure] a legal step farther from the rammer than max(free steps, the distance it really covered): 21 of 58 = 0.362 (95% 0.25 to 0.49)
+  [she moved on her last turn] 56 of 58; her length at that turn (length, rams): [(2, 40), (3, 12), (4, 1), (8, 1), (11, 1), (16, 1), (21, 2)]
+
+--- main, THEIR queen, our queen alive: rams 51, no snapshot 0, rammer born later 2, with a board 49
+  safe from the full reach of every enemy head within 6 and the rammer: 19 of 49 = 0.388 (95% 0.26 to 0.53)
+  safe from the free reach of the same heads: 28 of 49 = 0.571 (95% 0.43 to 0.70)
+  rammer only: full 23 of 49 = 0.469 (95% 0.34 to 0.61); free 30 of 49 = 0.612 (95% 0.47 to 0.74)
+  [sensitivity] full reach with one more paid step (L-1): 14; heads within 4: 19; within 3: 19; within 2: 20
+  [what blocks] no safe step even from the rammer alone: 26; safe from the rammer but not from another head: 4; safe from all: 19
+  [legal steps] (number of legal steps, rams): [(1, 19), (2, 19), (3, 11)]
+  [heads considered] (heads, rams): [(1, 18), (2, 15), (3, 9), (4, 5), (5, 1), (7, 1)]; rammer within 6 at her last turn: 49 of 49
+  [rammer length at her last turn] (length, rams): [(2, 22), (3, 23), (4, 4)]
+  [rammer path distance to her at her last turn] (distance, rams): [(1, 1), (2, 35), (3, 12), (4, 1)]
+  [what the rammer did] steps made above its free steps (extra, rams): [(0, 35), (1, 12), (2, 2)]
+  [middle measure] a legal step farther from the rammer than max(free steps, the distance it really covered): 24 of 49 = 0.490 (95% 0.36 to 0.63)
+  [she moved on her last turn] 48 of 49; her length at that turn (length, rams): [(2, 30), (3, 14), (4, 3), (5, 1), (8, 1)]
+
+  [chance] main lone queen, ours 5 of 28 against theirs 7 of 42: Fisher p 1.000
+
+=== v31: 410 games, 362 on free layouts
+
+--- v31, OUR lone queen (their queen dead): rams 75, no snapshot 0, rammer born later 0, with a board 75
+  safe from the full reach of every enemy head within 6 and the rammer: 33 of 75 = 0.440 (95% 0.33 to 0.55)
+  safe from the free reach of the same heads: 57 of 75 = 0.760 (95% 0.65 to 0.84)
+  rammer only: full 38 of 75 = 0.507 (95% 0.40 to 0.62); free 59 of 75 = 0.787 (95% 0.68 to 0.86)
+  [sensitivity] full reach with one more paid step (L-1): 22; heads within 4: 33; within 3: 33; within 2: 35
+  [what blocks] no safe step even from the rammer alone: 37; safe from the rammer but not from another head: 5; safe from all: 33
+  [legal steps] (number of legal steps, rams): [(1, 20), (2, 27), (3, 28)]
+  [heads considered] (heads, rams): [(1, 18), (2, 25), (3, 19), (4, 6), (5, 2), (6, 4), (7, 1)]; rammer within 6 at her last turn: 74 of 75
+  [rammer length at her last turn] (length, rams): [(2, 25), (3, 29), (4, 8), (5, 4), (6, 3), (7, 2), (8, 3), (12, 1)]
+  [rammer path distance to her at her last turn] (distance, rams): [(1, 3), (2, 29), (3, 25), (4, 8), (5, 8), (6, 2)]
+  [what the rammer did] steps made above its free steps (extra, rams): [(0, 32), (1, 28), (2, 13), (3, 1), (4, 1)]
+  [middle measure] a legal step farther from the rammer than max(free steps, the distance it really covered): 43 of 75 = 0.573 (95% 0.46 to 0.68)
+  [she moved on her last turn] 73 of 75; her length at that turn (length, rams): [(2, 35), (3, 21), (4, 5), (5, 2), (6, 2), (8, 1), (10, 1), (16, 1), (26, 2), (36, 1), (45, 1), (54, 1), (69, 1), (72, 1)]
+  [spread] opponents 29 (largest 8 rams), layouts 14, evenings [('10-06a', 48), ('10-06b', 27)], bands [('1700-1899', 34), ('1900-2099', 25), ('2100+', 10), ('<1700', 6)]
+  [the rams with a safe step] [(1154786, 'Maze #1', '1700-1899', '10-06a'), (1157404, 'Queen Of Spades #1', '1900-2099', '10-06a'), (1158844, 'Stripes #1', '1700-1899', '10-06a'), (1158842, 'Australia #1', '1700-1899', '10-06a'), (1159567, 'Prisoners Dilemma #1', '1900-2099', '10-06a'), (1161058, 'Trophy #1', '1700-1899', '10-06a'), (1161059, 'Queen Of Spades #1', '1700-1899', '10-06a'), (1163234, 'Trauma #1', '1900-2099', '10-06a'), (1163507, 'Default #1', '1900-2099', '10-06a'), (1163506, 'Islands #1', '1900-2099', '10-06a'), (1163508, 'Australia #1', '1900-2099', '10-06a'), (1168701, 'Trophy #1', '1700-1899', '10-06a'), (1168702, 'Islands #1', '1700-1899', '10-06a'), (1171225, 'weakhold #1', '1900-2099', '10-06a'), (1172373, 'Around UNSW #1', '2100+', '10-06a'), (1173399, 'weakhold #1', '1700-1899', '10-06a'), (1176481, 'weakhold #1', '2100+', '10-06a'), (1178750, 'Tower Defense #1', '1700-1899', '10-06a'), (1182601, 'Islands #1', '1700-1899', '10-06a'), (1190064, 'Autarky #1', '<1700', '10-06a'), (1195908, 'Default #1', '1700-1899', '10-06a'), (1200898, 'Autarky #1', '1700-1899', '10-06a'), (1200917, 'Tower Defense #1', '2100+', '10-06a'), (1200919, 'Islands #1', '2100+', '10-06a'), (1205313, 'Default #1', '1900-2099', '10-06b'), (1205847, 'Autarky #1', '1900-2099', '10-06b'), (1210712, 'weakhold #1', '1900-2099', '10-06b'), (1219544, 'Autarky #1', '1700-1899', '10-06b'), (1219545, 'Australia #1', '1700-1899', '10-06b'), (1220111, 'Default #1', '2100+', '10-06b'), (1225021, 'Stripes #1', '1900-2099', '10-06b'), (1238882, 'Prisoners Dilemma #1', '2100+', '10-06b'), (1238879, 'Queen Of Spades #1', '2100+', '10-06b')]
+  [by band] safe from full reach: <1700 1 of 6, 1700-1899 14 of 34, 1900-2099 11 of 25, 2100+ 7 of 10
+  [by evening] safe from full reach: 10-06a 24 of 48, 10-06b 9 of 27
+  [by layout] safe from full reach: Around UNSW #1 1 of 10, Australia #1 3 of 11, Autarky #1 4 of 7, Default #1 4 of 7, Devil #1 0 of 1, Islands #1 4 of 7, Maze #1 1 of 3, Prisoners Dilemma #1 2 of 3, Queen Of Spades #1 3 of 11, Stripes #1 2 of 5, Tower Defense #1 2 of 3, Trauma #1 1 of 1, Trophy #1 2 of 2, weakhold #1 4 of 4
+
+--- v31, THEIR lone queen (our queen dead): rams 58, no snapshot 0, rammer born later 1, with a board 57
+  safe from the full reach of every enemy head within 6 and the rammer: 11 of 57 = 0.193 (95% 0.11 to 0.31)
+  safe from the free reach of the same heads: 31 of 57 = 0.544 (95% 0.42 to 0.67)
+  rammer only: full 14 of 57 = 0.246 (95% 0.15 to 0.37); free 33 of 57 = 0.579 (95% 0.45 to 0.70)
+  [sensitivity] full reach with one more paid step (L-1): 8; heads within 4: 11; within 3: 11; within 2: 11
+  [what blocks] no safe step even from the rammer alone: 43; safe from the rammer but not from another head: 3; safe from all: 11
+  [legal steps] (number of legal steps, rams): [(0, 1), (1, 30), (2, 21), (3, 5)]
+  [heads considered] (heads, rams): [(1, 18), (2, 18), (3, 9), (4, 5), (5, 3), (6, 2), (10, 1), (12, 1)]; rammer within 6 at her last turn: 57 of 57
+  [rammer length at her last turn] (length, rams): [(2, 19), (3, 31), (4, 4), (6, 1), (9, 1), (13, 1)]
+  [rammer path distance to her at her last turn] (distance, rams): [(1, 1), (2, 29), (3, 23), (5, 2), (6, 2)]
+  [what the rammer did] steps made above its free steps (extra, rams): [(0, 31), (1, 23), (2, 2), (4, 1)]
+  [middle measure] a legal step farther from the rammer than max(free steps, the distance it really covered): 16 of 57 = 0.281 (95% 0.18 to 0.41)
+  [she moved on her last turn] 56 of 57; her length at that turn (length, rams): [(2, 30), (3, 15), (5, 2), (6, 1), (8, 1), (10, 1), (15, 2), (23, 1), (26, 1), (33, 1), (41, 1), (49, 1)]
+
+--- v31, OUR queen, their queen alive: rams 96, no snapshot 0, rammer born later 1, with a board 95
+  safe from the full reach of every enemy head within 6 and the rammer: 43 of 95 = 0.453 (95% 0.36 to 0.55)
+  safe from the free reach of the same heads: 63 of 95 = 0.663 (95% 0.56 to 0.75)
+  rammer only: full 56 of 95 = 0.589 (95% 0.49 to 0.68); free 70 of 95 = 0.737 (95% 0.64 to 0.81)
+  [sensitivity] full reach with one more paid step (L-1): 29; heads within 4: 44; within 3: 45; within 2: 47
+  [what blocks] no safe step even from the rammer alone: 39; safe from the rammer but not from another head: 13; safe from all: 43
+  [legal steps] (number of legal steps, rams): [(1, 21), (2, 45), (3, 29)]
+  [heads considered] (heads, rams): [(1, 24), (2, 24), (3, 21), (4, 15), (5, 6), (6, 2), (7, 2), (9, 1)]; rammer within 6 at her last turn: 94 of 95
+  [rammer length at her last turn] (length, rams): [(2, 43), (3, 38), (4, 11), (6, 2), (16, 1)]
+  [rammer path distance to her at her last turn] (distance, rams): [(1, 2), (2, 58), (3, 27), (4, 7), (6, 1)]
+  [what the rammer did] steps made above its free steps (extra, rams): [(0, 53), (1, 31), (2, 9), (3, 2)]
+  [middle measure] a legal step farther from the rammer than max(free steps, the distance it really covered): 59 of 95 = 0.621 (95% 0.52 to 0.71)
+  [she moved on her last turn] 86 of 95; her length at that turn (length, rams): [(2, 44), (3, 40), (4, 9), (13, 1), (15, 1)]
+
+--- v31, THEIR queen, our queen alive: rams 106, no snapshot 0, rammer born later 1, with a board 105
+  safe from the full reach of every enemy head within 6 and the rammer: 30 of 105 = 0.286 (95% 0.21 to 0.38)
+  safe from the free reach of the same heads: 61 of 105 = 0.581 (95% 0.49 to 0.67)
+  rammer only: full 38 of 105 = 0.362 (95% 0.28 to 0.46); free 65 of 105 = 0.619 (95% 0.52 to 0.71)
+  [sensitivity] full reach with one more paid step (L-1): 16; heads within 4: 30; within 3: 30; within 2: 31
+  [what blocks] no safe step even from the rammer alone: 67; safe from the rammer but not from another head: 8; safe from all: 30
+  [legal steps] (number of legal steps, rams): [(0, 2), (1, 51), (2, 37), (3, 15)]
+  [heads considered] (heads, rams): [(1, 30), (2, 35), (3, 18), (4, 10), (5, 5), (6, 4), (7, 3)]; rammer within 6 at her last turn: 104 of 105
+  [rammer length at her last turn] (length, rams): [(2, 38), (3, 51), (4, 16)]
+  [rammer path distance to her at her last turn] (distance, rams): [(1, 5), (2, 54), (3, 37), (4, 9)]
+  [what the rammer did] steps made above its free steps (extra, rams): [(0, 58), (1, 39), (2, 8)]
+  [middle measure] a legal step farther from the rammer than max(free steps, the distance it really covered): 41 of 105 = 0.390 (95% 0.30 to 0.49)
+  [she moved on her last turn] 102 of 105; her length at that turn (length, rams): [(2, 53), (3, 39), (4, 5), (5, 4), (6, 1), (7, 1), (8, 1), (10, 1)]
+
+  [chance] v31 lone queen, ours 33 of 75 against theirs 11 of 57: Fisher p 0.003
+
+  [chance] our lone queen, main 5 of 28 against v31 33 of 75: Fisher p 0.021

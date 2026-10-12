@@ -1,0 +1,42 @@
+map-seed-side                      | OFF res q100/200/end pearls100 dragons100    | ON  res q100/200/end pearls100 dragons100 fires
+gx_corridors_24x12_911101-seed1-si | win    0/ 0/ 0  p 105  d 15                  | win    0/ 0/ 0  p 105  d 15 f 3             
+                                     off: r97 L2 rammed | on: r97 L2 rammed
+                                     identical games; cond2 steps (true board) off 3 on 3
+gx_islands_24x12_911201-seed1-side | loss   4/ 4/ 0  p 100  d 18                  | win    0/ 0/ 0  p 111  d 26 f 1             
+                                     off: r282 L2 rammed | on: r75 L3 rammed
+                                     first different action r39 dragon 0: off (0,) on (1,); cond2 steps (true board) off 5 on 1
+gx_open_24x12_910901-seed1-side0   | win    0/ 0/ 0  p 128  d 22                  | win    0/ 0/ 0  p 128  d 22 f 0             
+                                     off: r52 L2 rammed ONE-WAY | on: r52 L2 rammed ONE-WAY
+                                     identical games; cond2 steps (true board) off 0 on 0
+gx_poor_24x12_911501-seed1-side1   | draw   2/ 2/ 2  p   0  d  2                  | draw   2/ 2/ 2  p   0  d  2 f 0             
+                                     off: queen lives | on: queen lives
+                                     identical games; cond2 steps (true board) off 0 on 0
+gx_rich_24x12_911601-seed1-side0   | win    0/ 0/ 0  p 1753  d 28                 | win    0/ 0/ 0  p 1753  d 28 f 0            
+                                     off: r19 L3 rammed ONE-WAY | on: r19 L3 rammed ONE-WAY
+                                     identical games; cond2 steps (true board) off 0 on 0
+gx_ring_24x12_911301-seed1-side1   | loss   0/ 0/ 0  p  64  d  3                  | win    4/ 4/ 4  p  93  d 15 f 1             
+                                     off: r78 L2 rammed | on: queen lives
+                                     first different action r49 dragon 1: off (0,) on (3,); cond2 steps (true board) off 4 on 1
+gx_rooms_24x12_911001-seed1-side1  | loss   0/ 0/ 0  p  64  d 10                  | loss   0/ 0/ 0  p  60  d  9 f 2             
+                                     off: r24 L2 own move ONE-WAY | on: r53 L2 own move
+                                     first different action r19 dragon 1: off (0,) on (2,); cond2 steps (true board) off 2 on 2
+gx_rotation_24x12_911401-seed1-sid | loss   0/ 0/ 0  p  27  d  0                  | loss   0/ 0/ 0  p  13  d  0 f 0             
+                                     off: r41 L4 rammed | on: r43 L2 rammed
+                                     first different action r18 dragon 1: off (3,) on (0,); cond2 steps (true board) off 2 on 0
+ladder_australia_1-seed1-side1     | loss   3/ 4/ 0  p  64  d 18                  | win    3/ 4/ 0  p  64  d 18 f 0             
+                                     off: r361 L2 rammed | on: r239 L3 rammed
+                                     first different action r236 dragon 0: off (0,) on (3,); cond2 steps (true board) off 1 on 0
+ladder_islands_1-seed1-side1       | loss   2/ 0/ 0  p 203  d 37                  | loss   2/ 0/ 0  p 203  d 37 f 2             
+                                     off: r180 L2 rammed | on: r184 L2 rammed
+                                     first different action r126 dragon 0: off (1,) on (3,); cond2 steps (true board) off 3 on 2
+ladder_maze_1-seed1-side0          | loss   4/ 0/ 0  p  76  d 32                  | loss   4/ 0/ 0  p  76  d 32 f 0             
+                                     off: r197 L3 own move ONE-WAY | on: r197 L3 own move ONE-WAY
+                                     identical games; cond2 steps (true board) off 0 on 0
+ladder_portals_1-seed1-side0       | win    0/ 0/ 0  p 207  d 17                  | win    0/ 0/ 0  p 207  d 17 f 2             
+                                     off: r53 L2 own move ONE-WAY | on: r53 L2 own move ONE-WAY
+                                     identical games; cond2 steps (true board) off 2 on 2
+ladder_queen_of_spades_1-seed1-sid | loss   3/ 4/ 0  p  30  d  9                  | win    0/ 0/ 0  p  22  d 10 f 3             
+                                     off: r219 L2 rammed | on: r34 L2 rammed ONE-WAY
+                                     first different action r28 dragon 1: off (2,) on (1,); cond2 steps (true board) off 3 on 3
+qx_base_r {"n": 13, "win": 4, "qalive": 1, "qend": 2, "q100": 18, "q200": 14, "p100": 2821, "d100": 211, "oneway": 5, "qdeaths": 12, "fires": 25}
+qx_onew_r {"n": 13, "win": 8, "qalive": 2, "qend": 6, "q100": 15, "q200": 10, "p100": 2835, "d100": 231, "oneway": 5, "qdeaths": 11, "fires": 14}

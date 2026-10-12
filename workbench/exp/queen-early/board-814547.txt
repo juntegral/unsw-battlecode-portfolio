@@ -1,0 +1,153 @@
+game 814543 map Schooltime/a us=B result {"winner":"B","end":"roundLimit"}
+tags(our turns): {"sx":0,"sr":0,"sd":0,"sf":0,"sq":0,"sc":0,"sk":0,"esc":0,"split":0}
+timeline r | our units / longest / total | their units / longest / total
+  r  0 |   3 /   4 /   12 |   3 /   4 /   12
+  r 25 |   6 /   2 /   12 |   6 /   2 /   12
+  r 50 |   6 /   3 /   14 |  10 /   4 /   24
+  r 75 |   7 /   3 /   16 |  16 /   3 /   35
+  r100 |   9 /   3 /   20 |  20 /   3 /   44
+  r125 |  14 /   3 /   31 |  30 /   4 /   72
+  r150 |  13 /   4 /   33 |  38 /   4 /   91
+  r175 |  12 /   3 /   27 |  50 /   3 /  117
+  r200 |  12 /   4 /   28 |  57 /   3 /  132
+  r225 |  12 /   3 /   25 |  62 /   4 /  150
+  r250 |  14 /   3 /   31 |  62 /   4 /  162
+  r275 |  17 /   3 /   38 |  62 /  11 /  203
+  r300 |  14 /   3 /   34 |  62 /  11 /  209
+  r325 |  13 /   6 /   38 |  62 /  14 /  234
+  r350 |  13 /   7 /   38 |  62 /  18 /  243
+  r375 |  12 /  10 /   40 |  63 /  19 /  254
+  r400 |  10 /   4 /   29 |  60 /  21 /  244
+  r425 |   6 /  10 /   25 |  58 /  24 /  242
+  r450 |   4 /  11 /   27 |  45 /  25 /  213
+  r475 |   3 /  11 /   23 |  39 /  32 /  212
+local feeds (sf) 0: first 12 → 
+--- r300: ours 14 dragons [3 3 3 3 3 3 2 2 2 2 2 2 …] total 34 | theirs 62 [11 9 8 7 7 6 6 6 …] total 209
++------------------------------------------------------------+
+|                          xxxxxX                            |
+|                          x                                 |
+|                     X                                      |
+|          X      xxx x               xxX  X                 |
+|          x      X           oo           xxx xx            |
+|          x   o                                x  xX        |
+| X        x                             xX     xxX          |
+| x        x                                           xX    |
+|   X      x    2                               xXx          |
+|   xx  x       .   .                    xx xxX   x          |
+|  x  Xxx          3.                     x x  %  X          |
+|  X          xX 2.                       X     Xxx          |
+|  %     xx                                       x X        |
+|        xxx        2                xX        Xx   x   X    |
+|          x        .    xxx     xx                 x   x    |
+|    x   Xxx              Xx      xxX         Xx             |
+|x   X                                         x             |
+|X   o                   %          o     X   X              |
+|     %%      Xx     x   oo        xxxX   x   x              |
+|x   %  %            xX  o o      oxo                    xxxx|
+|X              Xxxx     oo        xx        xX              |
+|  xX        xx  xx X xxX                  x                 |
+|             X  xX x xx       xX          X      Xxx        |
+|                        xx    x        Xx     Xx            |
+|          x             X                                   |
+|         Xx         X         X      x            x         |
+|            Xx      x x       xx     X         xX xx        |
+|                      x    X            x          X        |
+|.       oooooo  %     X    x            X     oooooo       2|
+|        oooooo                                oooooo        |
+|        oooo                                    oooo        |
+| .2       oo                                    oo      2.  |
+|                                                            |
+|.  o%                     Kxx                          oo  3|
+|..                      %   x    X                    2     |
+| .3                         x    x                    .  .. |
+|    2.                      x    x                       3  |
+|..                        x x    x                          |
+|3                         xxx    x                      .   |
+|                 xxX  o        xxx   o                  .3  |
++------------------------------------------------------------+
+--- r400: ours 10 dragons [4 4 4 3 3 3 2 2 2 2] total 29 | theirs 60 [21 12 11 9 8 8 7 7 …] total 244
++------------------------------------------------------------+
+|               xX                                   X       |
+|                                                    x       |
+|        o                       xX                 ox       |
+|                                x                  X        |
+|                             oo     x        Xxx   x        |
+|         o                          xX                      |
+|                     Xx X           xx                      |
+|                    % x x        xxxxx          x           |
+|xxxxX          x     xx          X    x   Xx    X           |
+|               X     xx           Xxx X    Xx               |
+|        x Kx  xxx    xx               Xx                    |
+|        x Xxxxx xxx           x       xx xX  xX        x%   |
+|  %     x x Xxx   %xx         x       %  x             xx   |
+|    xK  x    xx    2X       x x     xxX              XXxx   |
+|    xxxxx  X       . xX     xxxxxX                  xx      |
+|    xxX    x                 xx                             |
+|    x                         X       X                     |
+|    x        xxxXxx     %          o xx      xx     %  o    |
+|    x          x             xxX       xxX   X              |
+|             X X  x   % ooo      oooX        %        %     |
+|         xXxxxx  Xx    % %         xx                       |
+|           xX  xxX                                          |
+|           xx      x          Xx       Xxx    Xx            |
+|        x          x      Xxx            X     x            |
+|        xxX        x          x       xX       x  x         |
+|           X       x        xxxX                 Xx         |
+|                   xX       xxxx      X                     |
+|                               Xx     x                     |
+|  %     oooooo  %               x             oooooo  %     |
+| x      oooooo                                oooooo        |
+| X%     oooo                                    oooo        |
+|%%        oo                                    oo          |
+|3                         xx                               %|
+|. 3 %                     x                            % .% |
+|. .                       xxx                            2  |
+|  .                   o   xxK       o xxx           .3  .4  |
+|                       oo xx       ooox x           .2  ..  |
+|  4.                   xxxxx        o x              .    ..|
+|  ..                 ooxxxxx        o x                .2  .|
+|                     o                X                    4|
++------------------------------------------------------------+
+--- r499: ours 2 dragons [17 2] total 19 | theirs 27 [42 32 26 19 8 7 7 6 …] total 208
++------------------------------------------------------------+
+|                                                            |
+|                                                            |
+|       xx                                          o        |
+|       xx                                    o              |
+|       xx   xxxxxxK          oo        o                    |
+|       xxo  x                                o    o         |
+|  Kxxxxxxxxxx                                               |
+|  xx% xx       Xxxxxx                                       |
+|  xx xxx        ooo                      ooo             X  |
+|    xxxx                  o      o                       x  |
+|xxxxx            oo                   x  o            xxXxX |
+|                oo          X             oo             xx |
+|  %    %                    x         %             %       |
+|        xx%                 x                               |
+|      xxxxXxx     .2        x    X                Xxx       |
+|   xxxxxxx                       xxx          xxxX          |
+|xxxx    xx     %                 xxx               o        |
+|x       xx        xxxxX %       xx o                %  o    |
+|x   xxxxxx   xx   xX %          Xx      xx           o      |
+|xxxxx    xK XxxX        o o      o o    X             %  %xx|
+|xx          xxxxX       o                X              % xx|
+| x          x o                  Xxxxxxxxx   o      xX      |
+|  xxxxX  xX x                                       x     % |
+|                                       X                    |
+|       %                               x                    |
+|                               X                            |
+|                          %    x                            |
+|                                                            |
+|        oooooo  %                             oooooo  %     |
+|        oooooo                                oooooo        |
+|        oooo                                    oooo        |
+|          oo                                    oo          |
+|  ..                                                    oo  |
+| ...#                                                  %oo  |
+| .                              xxx                       o |
+| .      %                  Kxxxxx xxx                       |
+| .   % %                     xxxxxxxxx                     .|
+| .  % % %                    x   xxoxx                     .|
+|..  % %               o      x    xxx                      .|
+|.      %              o     xx       oo                    .|
++------------------------------------------------------------+

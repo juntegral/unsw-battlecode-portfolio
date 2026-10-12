@@ -1,0 +1,23 @@
+# Smoke 도구 보고서
+- 구현: `tools/smoke.py`; API는 기존 `submit.js`·`online.js`만 호출한다. 변경은 미커밋이다.
+- 용법: `python3 tools/smoke.py plan versions/v1.8/bot --name smoketest --opp dev_test_1 --maps all`.
+- 실행: `start <botdir> --name <label> --opp <name-or-id> --confirm`; 확인 없으면 계획만 출력한다.
+- 조회: `status <label>`; 수집·보고: `report <label>` → `data/online/smoke/<label>-report.md`.
+- 복귀: `rollback <label> --confirm`; 활성 id를 다시 검증하며 다른 명령은 자동 복귀하지 않는다.
+- 상태는 업로드 전에 저장하고, 실패 시 중단하여 `node tools/submit.js activate <previous-id> --confirm`을 출력한다.
+- 신청 중 상태도 먼저 저장한다. 응답이 불확실하면 원장을 확인해야 하며, 같은 이름으로 재신청하지 않는다.
+- 지도별 W/L/D·합계, 제공된 게임 종료 결과, 이전 제출의 같은 상대 기보를 보고한다. 결정하지 않는다.
+- 두 번째 브리프의 DEV·60게임·baseline·기제 비교 규칙까지 최종 코드에 적용했다.
+- 검증: fake 기반 단위검사 13개, `python3 -m py_compile tools/smoke.py tools/test_smoke.py`.
+- 실제 온라인 명령과 실제 `--confirm` CLI 실행은 전혀 하지 않았다. API 키 파일도 읽지 않았다.
+- 요청한 plan은 fake active=61/v61, DEV 상대=7/dev_test_1, 공개 지도=1–10으로 실행했다.
+- 출력: `Active / rollback target: 61 v61` / `Opponent: 7 dev_test_1; DEV verified via team.dev (no DEV flag)`.
+- 출력: `Unranked: 60 games in 6 sequential requests; normal cost 0`.
+- 출력: `Ticket estimate: DEV 60/60 remaining; normal 60/60 (rolling hour, estimate only)`.
+- 업로드 계획: `node tools/submit.js upload versions/v1.8/bot --name smoketest --desc 'smoke test' --confirm`.
+- 신청 계획: `node tools/online.js request 7 --maps 1,2,3,4,5,6,7,8,9,10 --purpose 'smoke smoketest' --confirm --expect-active <new id>` ×6.
+- 출력: baseline-v61 없음 안내; `Rollback: node tools/submit.js activate 61 --confirm`; 계획만 실행했다고 표시.
+- 위험: 위 id·지도·티켓은 fixture 값이다. 실제 서버 응답·대기 시간·원격 요청 성공 여부는 미검증이다.
+- `docs/online.md`는 존재하지 않아 `online.js` 구현을 기준으로 삼았다.
+- 위험: leaderboard는 순위 없는 DEV 팀을 제외한다. 이름 조회가 실패하면 숫자 id를 지정해야 한다.
+- 위험: 활성 제출 변경은 자동 대전에 영향을 준다. 복귀도 진행 중 대전이 있으면 기존 submit 도구가 거부한다.

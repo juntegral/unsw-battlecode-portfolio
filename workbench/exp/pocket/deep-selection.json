@@ -1,0 +1,588 @@
+[
+  {
+    "map": "Slithery Fight/a",
+    "role": "eliteWinner",
+    "naturalClass": "2",
+    "best": {
+      "key": "588757:588760",
+      "eid": 142,
+      "entryRound": 204,
+      "endRound": 208,
+      "score": 0.0704792220871896
+    },
+    "score": 0.0704792220871896,
+    "candidateN": 42487,
+    "classN": 47057
+  },
+  {
+    "map": "Slithery Fight/b",
+    "role": "eliteWinner",
+    "naturalClass": "2",
+    "best": {
+      "key": "588753:588756",
+      "eid": 42,
+      "entryRound": 64,
+      "endRound": 68,
+      "score": 0.09294711077515952
+    },
+    "score": 0.09294711077515952,
+    "candidateN": 51263,
+    "classN": 56088
+  },
+  {
+    "map": "Prisoners Dilemma/6",
+    "role": "eliteWinner",
+    "naturalClass": "2",
+    "best": {
+      "key": "586366:586370",
+      "eid": 6,
+      "entryRound": 10,
+      "endRound": 15,
+      "score": 0.09729685491488238
+    },
+    "score": 0.09729685491488238,
+    "candidateN": 21624,
+    "classN": 25144
+  },
+  {
+    "map": "Prisoners Dilemma/10",
+    "role": "eliteWinner",
+    "naturalClass": "1",
+    "best": {
+      "key": "583443:583449",
+      "eid": 25,
+      "entryRound": 37,
+      "endRound": 42,
+      "score": 0.03917123872130342
+    },
+    "score": 0.03917123872130342,
+    "candidateN": 12503,
+    "classN": 14952
+  },
+  {
+    "map": "Trauma/a",
+    "role": "eliteWinner",
+    "naturalClass": "4+",
+    "best": {
+      "key": "588006:588011",
+      "eid": 145,
+      "entryRound": 303,
+      "endRound": 332,
+      "score": 0.1948709014559337
+    },
+    "score": 0.1948709014559337,
+    "candidateN": 9985,
+    "classN": 17881
+  },
+  {
+    "map": "Prisoners Dilemma/6",
+    "role": "ours:stack11",
+    "naturalClass": "1",
+    "best": {
+      "key": "cand-stack11-online:724071",
+      "eid": 4,
+      "entryRound": 3,
+      "endRound": 7,
+      "score": 0.011935745119160845
+    },
+    "score": 0.011935745119160845,
+    "candidateN": 1144,
+    "classN": 1144
+  },
+  {
+    "map": "Prisoners Dilemma/10",
+    "role": "ours:v0t",
+    "naturalClass": "1",
+    "best": {
+      "key": "v0t-b-px4:proxy4_elim_prisoners_dilemma_10_A_2",
+      "eid": 4,
+      "entryRound": 5,
+      "endRound": 9,
+      "score": 0.006060606060606061
+    },
+    "score": 0.006060606060606061,
+    "candidateN": 984,
+    "classN": 984
+  },
+  {
+    "map": "Slithery Fight/a",
+    "role": "ours:v0t",
+    "diagnostic": true,
+    "best": {
+      "key": "v0t-a-px4:proxy4_king_slithery_fight_A_1",
+      "score": null,
+      "diagnostics": {
+        "turns": 6661,
+        "targetPocket": 444,
+        "targetPresent": 212,
+        "adjacentOpen": 0,
+        "adjacentEntered": 0,
+        "adjacentAvoided": 0,
+        "mouthOpen": 7,
+        "mouthEntered": 2,
+        "mouthAvoided": 5,
+        "mouthPresent": 2,
+        "sd": 0,
+        "F": 789,
+        "examples": [
+          {
+            "tile": 1079,
+            "adjacent": false,
+            "mouth": true,
+            "round": 193,
+            "id": 125,
+            "head": 953,
+            "length": 2,
+            "tag": "E v6.6 d7 L2 F2@8,17 F2 E=S",
+            "action": {
+              "kind": "move",
+              "steps": [
+                "E"
+              ]
+            },
+            "after": 954
+          },
+          {
+            "tile": 1142,
+            "adjacent": false,
+            "mouth": true,
+            "round": 197,
+            "id": 235,
+            "head": 953,
+            "length": 2,
+            "tag": "W v7.2 d7 L2 F2@8,18 F2 E=S",
+            "action": {
+              "kind": "move",
+              "steps": [
+                "W"
+              ]
+            },
+            "after": 952
+          },
+          {
+            "tile": 1142,
+            "adjacent": false,
+            "mouth": true,
+            "round": 257,
+            "id": 236,
+            "head": 953,
+            "length": 2,
+            "tag": "W v6.9 d7 L2 F2@8,18 F2 E=S",
+            "action": {
+              "kind": "move",
+              "steps": [
+                "W"
+              ]
+            },
+            "after": 952
+          },
+          {
+            "tile": 1142,
+            "adjacent": false,
+            "mouth": true,
+            "round": 272,
+            "id": 423,
+            "head": 953,
+            "length": 3,
+            "tag": "E v6.4 d7 L3 F2@8,18 F2 E=S",
+            "action": {
+              "kind": "move",
+              "steps": [
+                "E"
+              ]
+            },
+            "after": 954
+          },
+          {
+            "tile": 1079,
+            "adjacent": false,
+            "mouth": true,
+            "round": 311,
+            "id": 550,
+            "head": 953,
+            "length": 2,
+            "tag": "N v6.4 d7 L2 F2@8,17 F2 E=S",
+            "action": {
+              "kind": "move",
+              "steps": [
+                "N"
+              ]
+            },
+            "after": 890
+          }
+        ]
+      }
+    },
+    "score": null,
+    "classN": null
+  },
+  {
+    "map": "Slithery Fight/a",
+    "role": "ours:v1",
+    "diagnostic": true,
+    "best": {
+      "key": "v1-a-px4:proxy4_elim_slithery_fight_B_1",
+      "score": null,
+      "diagnostics": {
+        "turns": 13837,
+        "targetPocket": 4567,
+        "targetPresent": 1757,
+        "adjacentOpen": 25,
+        "adjacentEntered": 3,
+        "adjacentAvoided": 22,
+        "mouthOpen": 46,
+        "mouthEntered": 11,
+        "mouthAvoided": 35,
+        "mouthPresent": 15,
+        "sd": 11854,
+        "F": 0,
+        "examples": [
+          {
+            "tile": 1241,
+            "adjacent": true,
+            "mouth": true,
+            "round": 16,
+            "id": 7,
+            "head": 1240,
+            "length": 2,
+            "tag": "W v8.5 d7 L2 cl@41,19 sd1@44,19o E=S",
+            "action": {
+              "kind": "move",
+              "steps": [
+                "W"
+              ]
+            },
+            "after": 1239
+          },
+          {
+            "tile": 1241,
+            "adjacent": true,
+            "mouth": true,
+            "round": 16,
+            "id": 7,
+            "head": 1240,
+            "length": 2,
+            "tag": "W v8.5 d7 L2 cl@41,19 sd1@44,19o E=S",
+            "action": {
+              "kind": "move",
+              "steps": [
+                "W"
+              ]
+            },
+            "after": 1239
+          },
+          {
+            "tile": 1241,
+            "adjacent": true,
+            "mouth": true,
+            "round": 38,
+            "id": 87,
+            "head": 1240,
+            "length": 2,
+            "tag": "W v7.7 d7 L2 cl@41,19 sd1@44,19o E=S",
+            "action": {
+              "kind": "move",
+              "steps": [
+                "W"
+              ]
+            },
+            "after": 1239
+          },
+          {
+            "tile": 1241,
+            "adjacent": true,
+            "mouth": true,
+            "round": 38,
+            "id": 87,
+            "head": 1240,
+            "length": 2,
+            "tag": "W v7.7 d7 L2 cl@41,19 sd1@44,19o E=S",
+            "action": {
+              "kind": "move",
+              "steps": [
+                "W"
+              ]
+            },
+            "after": 1239
+          },
+          {
+            "tile": 1241,
+            "adjacent": true,
+            "mouth": true,
+            "round": 46,
+            "id": 13,
+            "head": 1240,
+            "length": 2,
+            "tag": "N v7.9 d7 L2 sd1@44,19o E=S",
+            "action": {
+              "kind": "move",
+              "steps": [
+                "N"
+              ]
+            },
+            "after": 1177
+          },
+          {
+            "tile": 1241,
+            "adjacent": true,
+            "mouth": true,
+            "round": 46,
+            "id": 13,
+            "head": 1240,
+            "length": 2,
+            "tag": "N v7.9 d7 L2 sd1@44,19o E=S",
+            "action": {
+              "kind": "move",
+              "steps": [
+                "N"
+              ]
+            },
+            "after": 1177
+          },
+          {
+            "tile": 621,
+            "adjacent": false,
+            "mouth": true,
+            "round": 46,
+            "id": 111,
+            "head": 747,
+            "length": 2,
+            "tag": "W v7.0 d7 L2 sd2@54,9o E=S",
+            "action": {
+              "kind": "move",
+              "steps": [
+                "W"
+              ]
+            },
+            "after": 746
+          },
+          {
+            "tile": 1062,
+            "adjacent": true,
+            "mouth": true,
+            "round": 50,
+            "id": 36,
+            "head": 999,
+            "length": 2,
+            "tag": "N v7.4 d7 L2 sd1@54,16o bl8@58,4 k0 E=S",
+            "action": {
+              "kind": "move",
+              "steps": [
+                "N"
+              ]
+            },
+            "after": 936
+          },
+          {
+            "tile": 1062,
+            "adjacent": true,
+            "mouth": true,
+            "round": 50,
+            "id": 36,
+            "head": 999,
+            "length": 2,
+            "tag": "N v7.4 d7 L2 sd1@54,16o bl8@58,4 k0 E=S",
+            "action": {
+              "kind": "move",
+              "steps": [
+                "N"
+              ]
+            },
+            "after": 936
+          },
+          {
+            "tile": 1237,
+            "adjacent": false,
+            "mouth": true,
+            "round": 50,
+            "id": 47,
+            "head": 1239,
+            "length": 2,
+            "tag": "E v9.8 d7 L2 cl@44,19 sd2@40,19o bl10@56,4 k0 E=S",
+            "action": {
+              "kind": "move",
+              "steps": [
+                "E"
+              ]
+            },
+            "after": 1240
+          }
+        ]
+      }
+    },
+    "score": null,
+    "classN": null
+  },
+  {
+    "map": "Slithery Fight/a",
+    "role": "ours:v1final",
+    "diagnostic": true,
+    "best": {
+      "key": "v1final-a-px4:proxy4_king_slithery_fight_A_1",
+      "score": null,
+      "diagnostics": {
+        "turns": 9606,
+        "targetPocket": 0,
+        "targetPresent": 0,
+        "adjacentOpen": 0,
+        "adjacentEntered": 0,
+        "adjacentAvoided": 0,
+        "mouthOpen": 0,
+        "mouthEntered": 0,
+        "mouthAvoided": 0,
+        "mouthPresent": 0,
+        "sd": 1298,
+        "F": 0,
+        "examples": []
+      }
+    },
+    "score": null,
+    "classN": null
+  },
+  {
+    "map": "Slithery Fight/a",
+    "role": "ours:stack11",
+    "diagnostic": true,
+    "best": {
+      "key": "cand-stack11-online:724115",
+      "score": null,
+      "diagnostics": {
+        "turns": 14801,
+        "targetPocket": 348,
+        "targetPresent": 123,
+        "adjacentOpen": 2,
+        "adjacentEntered": 1,
+        "adjacentAvoided": 1,
+        "mouthOpen": 10,
+        "mouthEntered": 4,
+        "mouthAvoided": 6,
+        "mouthPresent": 1,
+        "sd": 0,
+        "F": 1153,
+        "examples": [
+          {
+            "tile": 1541,
+            "adjacent": true,
+            "mouth": true,
+            "round": 27,
+            "id": 81,
+            "head": 1478,
+            "length": 2,
+            "tag": "W v9.4 d7 L2 F1@29,24 F2",
+            "action": {
+              "kind": "move",
+              "steps": [
+                "W"
+              ]
+            },
+            "after": 1477
+          },
+          {
+            "tile": 1541,
+            "adjacent": true,
+            "mouth": true,
+            "round": 27,
+            "id": 81,
+            "head": 1478,
+            "length": 2,
+            "tag": "W v9.4 d7 L2 F1@29,24 F2",
+            "action": {
+              "kind": "move",
+              "steps": [
+                "W"
+              ]
+            },
+            "after": 1477
+          },
+          {
+            "tile": 1604,
+            "adjacent": false,
+            "mouth": true,
+            "round": 32,
+            "id": 92,
+            "head": 1478,
+            "length": 2,
+            "tag": "W v8.3 d7 L2 F1@29,25 F2",
+            "action": {
+              "kind": "move",
+              "steps": [
+                "W"
+              ]
+            },
+            "after": 1477
+          },
+          {
+            "tile": 1236,
+            "adjacent": false,
+            "mouth": true,
+            "round": 89,
+            "id": 81,
+            "head": 1239,
+            "length": 2,
+            "tag": "N v9.1 d7 L2 F2@39,19 F2",
+            "action": {
+              "kind": "move",
+              "steps": [
+                "N"
+              ]
+            },
+            "after": 1176
+          },
+          {
+            "tile": 1188,
+            "adjacent": false,
+            "mouth": true,
+            "round": 266,
+            "id": 814,
+            "head": 999,
+            "length": 2,
+            "tag": "E v7.9 d7 L2 F1@54,18 F2",
+            "action": {
+              "kind": "move",
+              "steps": [
+                "E"
+              ]
+            },
+            "after": 1000
+          },
+          {
+            "tile": 1667,
+            "adjacent": false,
+            "mouth": true,
+            "round": 268,
+            "id": 590,
+            "head": 1478,
+            "length": 2,
+            "tag": "E v8.0 d7 L2 F1@29,26 F2 cl@30,26 tgx",
+            "action": {
+              "kind": "move",
+              "steps": [
+                "E"
+              ]
+            },
+            "after": 1479
+          },
+          {
+            "tile": 1188,
+            "adjacent": false,
+            "mouth": true,
+            "round": 301,
+            "id": 747,
+            "head": 999,
+            "length": 15,
+            "tag": "N v6.6 d7 L15 F1@54,18 F2",
+            "action": {
+              "kind": "move",
+              "steps": [
+                "N"
+              ]
+            },
+            "after": 936
+          }
+        ]
+      }
+    },
+    "score": null,
+    "classN": null
+  }
+]

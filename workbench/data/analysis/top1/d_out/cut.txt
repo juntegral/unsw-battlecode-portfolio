@@ -1,0 +1,143 @@
+measure | meow | meow live | meow candidates | opp | forgot | SSS | Vibing++
+games | 401 | 275 | 126 | 401 | 632 | 503 | 502
+mother | 1045 | 738 | 307 | 1449 | 1913 | 1774 | 1014
+mother with no free cell | 25 | 17 | 8 | 60 | 85 | 15 | 54
+shed | 7 | 4 | 3 | 187 | 1714 | 771 | 294
+shed with no free cell | 0 | 0 | 0 | 109 | 1448 | 394 | 78
+cut | 40 | 28 | 12 | 85 | 0 | 0 | 105
+cut with no free cell | 39 | 28 | 11 | 61 | 0 | 0 | 104
+games with a cut | 37 | 26 | 11 | 63 | 0 | 0 | 86
+cut: 10+ long before | 36 | 25 | 11 | 50 | 0 | 0 | 79
+segments given away by cuts | 907 | 644 | 263 | 1238 | 0 | 0 | 1749
+cut: dead within 5 rounds | 17 | 14 | 3 | 24 | 0 | 0 | 11
+cut: dead within 20 rounds | 17 | 14 | 3 | 29 | 0 | 0 | 18
+other | 0 | 0 | 0 | 15 | 0 | 0 | 27
+
+cuts of meow: game, map, run, round, before -> keeps + child, free cells then, queen death (round, reason), result, end type, enemy queen final length
+   1045196 Default dl-20261004 347 15 2 13 0 348 body W longest 0
+   1023828 Maze dl-20261004 106 6 2 4 0 107 wall W longest 0
+   1063013 Maze qh31-test-old 127 6 2 4 0 128 wall W longest 0
+   1068682 Maze tc30-dev1-old 358 61 2 59 0 390 body L queen rule 109
+   1068682 Maze tc30-dev1-old 389 17 2 15 0 390 body L queen rule 109
+   1023830 Prisoners Dilemma dl-20261004 90 6 2 4 0 91 wall L wipe-out 2
+   990346 Slithery Fight dl-20261003 0 25 2 23 0 386 body L queen rule 3
+   1003143 Slithery Fight dl-20261004 0 25 2 23 0 256 headon L longest 0
+   1021858 Slithery Fight dl-20261004 0 25 2 23 0 169 headon W longest 0
+   1023833 Slithery Fight dl-20261004 0 25 2 23 0 235 headon L queen rule 57
+   1027815 Slithery Fight stride-old 0 25 2 23 0 51 wall L queen rule 70
+   1027972 Slithery Fight stride-old 0 25 2 23 0 238 headon L longest 0
+   1029017 Slithery Fight stride-new 0 25 2 23 0 77 headon L queen rule 49
+   1029032 Slithery Fight stride-new 0 25 2 23 0 3 body L longest 0
+   1044209 Slithery Fight dl-20261004 0 25 2 23 0 230 wall L queen rule 81
+   1044523 Slithery Fight dl-20261004 0 25 2 23 0 52 body L queen rule 104
+   1045203 Slithery Fight dl-20261004 0 25 2 23 0 211 self L queen rule 65
+   1045388 Slithery Fight dl-20261004 0 25 2 23 0 356 headon L queen rule 94
+   1051357 Slithery Fight dl-20261004 0 25 2 23 0 3 body L queen rule 17
+   1052768 Slithery Fight dl-20261004 0 25 2 23 0 3 body W longest 0
+   1053032 Slithery Fight dl-20261004 0 25 2 23 0 3 body W longest 0
+   1053391 Slithery Fight dl-20261004 0 25 2 23 0 3 body L queen rule 51
+   1053786 Slithery Fight dl-20261004 0 25 2 23 0 3 body L longest 0
+   1058157 Slithery Fight passage2-test-old 0 25 2 23 0 272 headon L queen rule 70
+   1058377 Slithery Fight passage2-test-old 0 25 2 23 0 262 headon L longest 0
+   1058859 Slithery Fight passage2-test-new 0 25 2 23 0 308 headon L longest 0
+   1059086 Slithery Fight passage2-test-new 0 25 2 23 0 3 body W longest 0
+   1063024 Slithery Fight qh31-test-old 0 25 2 23 0 3 body W longest 0
+   1063252 Slithery Fight qh31-test-old 0 25 2 23 0 3 body L longest 0
+   1063683 Slithery Fight qh31-test-new 0 25 2 23 0 62 headon L longest 0
+   1063776 Slithery Fight qh31-test-new 0 25 2 23 0 3 body L longest 0
+   1067917 Slithery Fight tc30-test-new 0 25 2 23 0 218 headon L queen rule 62
+   1068063 Slithery Fight tc30-test-new 0 25 2 23 0 144 self L longest 0
+   1068693 Slithery Fight tc30-dev1-old 0 25 2 23 0 393 headon L queen rule 40
+   1069661 Slithery Fight tc30-dev1b-new 0 25 2 23 0 308 headon L longest 0
+   1069661 Slithery Fight tc30-dev1b-new 286 36 2 34 0 308 headon L longest 0
+   990346 Slithery Fight dl-20261003 385 57 2 55 0 386 body L queen rule 3
+   1068054 Tower Defense tc30-test-new 287 9 2 7 1 364 headon L queen rule 32
+   1067915 Trauma tc30-test-new 377 17 2 15 0 None alive L queen rule 33
+   1044207 Trauma dl-20261004 457 32 2 30 0 458 body L queen rule 36
+
+cuts of opp: game, map, run, round, before -> keeps + child, free cells then, queen death (round, reason), result, end type, enemy queen final length
+   1063244 Around UNSW qh31-test-old 300 27 2 25 0 301 self W longest 0
+   1053778 Around UNSW dl-20261004 354 49 2 47 0 355 wall W longest 0
+   1027974 Australia stride-old 329 28 2 26 0 None alive W queen rule 0
+   1053019 Australia dl-20261004 330 44 2 42 0 331 body W longest 0
+   1021860 Australia dl-20261004 357 13 2 11 0 358 wall L longest 0
+   1006645 Australia dl-20261004 403 16 3 13 0 None alive W queen rule 0
+   1068680 Australia tc30-dev1-old 419 16 3 13 0 None alive W queen rule 0
+   980373 Autarky dl-20261003 193 6 2 4 2 252 headon L longest 0
+   1063769 Default qh31-test-new 448 41 2 39 0 449 body L longest 0
+   1051356 Devil dl-20261004 25 6 3 3 0 51 headon W wipe-out 0
+   1058847 Islands passage2-test-new 92 7 3 4 2 378 self W longest 0
+   1063671 Islands qh31-test-new 106 6 3 3 3 122 headon W wipe-out 0
+   1006643 Islands dl-20261004 116 12 3 9 0 None alive W wipe-out 0
+   1003142 Islands dl-20261004 140 9 2 7 0 263 headon W longest 0
+   1058145 Islands passage2-test-old 152 6 3 3 2 None alive W wipe-out 0
+   1067905 Islands tc30-test-new 182 6 3 3 3 258 self W longest 0
+   990349 Islands dl-20261003 198 6 2 4 1 241 wall W wipe-out 0
+   1067905 Islands tc30-test-new 207 6 3 3 2 258 self W longest 0
+   1063240 Islands qh31-test-old 226 6 2 4 0 None alive W wipe-out 0
+   1058365 Islands passage2-test-old 227 6 2 4 0 228 wall W wipe-out 0
+   1046736 Islands dl-20261004 239 19 3 16 0 240 wall W longest 0
+   1069649 Islands tc30-dev1b-new 239 10 3 7 0 None alive W queen rule 0
+   1053774 Islands dl-20261004 338 21 2 19 0 339 wall W longest 0
+   1027975 Islands stride-old 347 39 2 37 0 348 wall W longest 0
+   1069649 Islands tc30-dev1b-new 401 19 3 16 0 None alive W queen rule 0
+   1045191 Islands dl-20261004 423 20 3 17 0 None alive W queen rule 0
+   1029021 Maze stride-new 22 6 3 3 3 247 self L longest 0
+   1058146 Maze passage2-test-old 147 6 3 3 2 278 self W longest 0
+   1067906 Maze tc30-test-new 149 6 3 3 2 None alive W queen rule 0
+   1045192 Maze dl-20261004 165 8 3 5 2 None alive W queen rule 0
+   1063013 Maze qh31-test-old 191 6 3 3 3 235 self L longest 0
+   1029021 Maze stride-new 202 8 3 5 2 247 self L longest 0
+   1058848 Maze passage2-test-new 218 6 3 3 3 None alive W queen rule 0
+   1053380 Maze dl-20261004 235 6 3 3 3 None alive W queen rule 0
+   1027819 Maze stride-old 239 10 3 7 2 326 self W longest 0
+   1058146 Maze passage2-test-old 255 7 3 4 3 278 self W longest 0
+   1058848 Maze passage2-test-new 268 6 3 3 1 None alive W queen rule 0
+   1044198 Maze dl-20261004 273 6 3 3 2 None alive W queen rule 0
+   1027819 Maze stride-old 317 8 3 5 1 326 self W longest 0
+   1067906 Maze tc30-test-new 322 6 3 3 3 None alive W queen rule 0
+   1045377 Maze dl-20261004 324 22 2 20 0 325 wall W longest 0
+   1044198 Maze dl-20261004 345 10 3 7 1 None alive W queen rule 0
+   1058848 Maze passage2-test-new 352 7 3 4 0 None alive W queen rule 0
+   1045192 Maze dl-20261004 389 6 3 3 0 None alive W queen rule 0
+   1029036 Maze stride-new 467 111 2 109 0 468 body W longest 0
+   990348 Maze dl-20261003 488 12 2 10 0 489 wall L longest 0
+   1068692 Portals tc30-dev1-old 231 13 3 10 0 318 noaction W longest 0
+   1044208 Portals dl-20261004 292 6 3 3 1 320 self W longest 0
+   1068692 Portals tc30-dev1-old 317 20 2 18 0 318 noaction W longest 0
+   1063251 Portals qh31-test-old 341 15 2 13 0 342 wall W longest 0
+   1029031 Portals stride-new 342 10 2 8 0 491 wall W longest 0
+   1068062 Portals tc30-test-new 356 13 2 11 0 357 wall L longest 0
+   1063775 Portals qh31-test-new 368 13 2 11 0 369 wall L longest 0
+   1029031 Portals stride-new 490 37 2 35 0 491 wall W longest 0
+   1068687 Queen Of Spades tc30-dev1-old 52 11 3 8 0 70 body W wipe-out 0
+   1029024 Queen Of Spades stride-new 395 22 2 20 0 396 self W wipe-out 0
+   990346 Slithery Fight dl-20261003 0 25 3 22 0 None alive W queen rule 0
+   1003143 Slithery Fight dl-20261004 0 25 2 23 0 184 headon W longest 0
+   1027972 Slithery Fight stride-old 0 25 2 23 0 164 wall W longest 0
+   1029032 Slithery Fight stride-new 0 25 2 23 0 249 self W longest 0
+   1044523 Slithery Fight dl-20261004 0 25 2 23 0 None alive W queen rule 0
+   1045388 Slithery Fight dl-20261004 0 25 2 23 0 None alive W queen rule 0
+   1053032 Slithery Fight dl-20261004 0 25 2 23 0 278 headon L longest 0
+   1053786 Slithery Fight dl-20261004 0 25 2 23 0 202 wall W longest 0
+   1058377 Slithery Fight passage2-test-old 0 25 2 23 0 244 self W longest 0
+   1059086 Slithery Fight passage2-test-new 0 25 2 23 0 166 headon L longest 0
+   1063252 Slithery Fight qh31-test-old 0 25 2 23 0 213 wall W longest 0
+   1063776 Slithery Fight qh31-test-new 0 25 2 23 0 186 headon W longest 0
+   1068063 Slithery Fight tc30-test-new 0 25 2 23 0 203 headon W longest 0
+   1068693 Slithery Fight tc30-dev1-old 0 25 3 22 0 None alive W queen rule 0
+   1069661 Slithery Fight tc30-dev1b-new 0 25 3 22 0 333 noaction W longest 0
+   1044523 Slithery Fight dl-20261004 99 7 2 5 0 None alive W queen rule 0
+   1059086 Slithery Fight passage2-test-new 118 9 2 7 0 166 headon L longest 0
+   1059086 Slithery Fight passage2-test-new 158 15 2 13 0 166 headon L longest 0
+   1027972 Slithery Fight stride-old 163 9 2 7 0 164 wall W longest 0
+   1029032 Slithery Fight stride-new 180 8 2 6 0 249 self W longest 0
+   1053786 Slithery Fight dl-20261004 181 9 2 7 0 202 wall W longest 0
+   1029032 Slithery Fight stride-new 248 23 2 21 0 249 self W longest 0
+   1053032 Slithery Fight dl-20261004 271 10 2 8 0 278 headon L longest 0
+   1069661 Slithery Fight tc30-dev1b-new 279 17 3 14 0 333 noaction W longest 0
+   1068693 Slithery Fight tc30-dev1-old 410 47 3 44 0 None alive W queen rule 0
+   1046732 Stripes dl-20261004 126 7 3 4 0 127 wall W wipe-out 0
+   1058375 Trauma passage2-test-old 370 30 2 28 0 371 self L queen rule 25
+   1063238 weakhold qh31-test-old 227 6 2 4 2 227 headon W longest 0
+   1053018 weakhold dl-20261004 252 8 2 6 0 253 wall W longest 0

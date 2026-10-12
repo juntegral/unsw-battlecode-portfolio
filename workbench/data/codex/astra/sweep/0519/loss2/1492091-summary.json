@@ -1,0 +1,333 @@
+{
+  "gid": 1492091,
+  "map": "weakhold",
+  "bots": {
+    "A": "21200",
+    "B": ""
+  },
+  "queens": {
+    "us": 1,
+    "them": 0
+  },
+  "q_eats": {
+    "us": 4,
+    "them": 0
+  },
+  "q_splits": {
+    "us": 2,
+    "them": 0
+  },
+  "final": {
+    "us": {
+      "alive": 2,
+      "total": 8,
+      "longest": 4,
+      "pearls": 281,
+      "queen_alive": false,
+      "queen_length": 0
+    },
+    "them": {
+      "alive": 5,
+      "total": 76,
+      "longest": 37,
+      "pearls": 516,
+      "queen_alive": true,
+      "queen_length": 4
+    }
+  },
+  "last_round": 499,
+  "end_reason": 1,
+  "winner": "B",
+  "eats": {
+    "us": {
+      "drop": 134,
+      "spawn": 147
+    },
+    "them": {
+      "drop": 253,
+      "spawn": 263
+    }
+  },
+  "anomalies": {},
+  "queen_deaths": [
+    {
+      "death": "1492091:9646",
+      "gid": 1492091,
+      "map": "weakhold",
+      "folder": "data/online/smoke/one10-c1-old",
+      "ours": "A",
+      "id": 1,
+      "side": "us",
+      "round": 130,
+      "event": 9646,
+      "length": 3,
+      "dropped": 2,
+      "cause": "wall",
+      "reason": 0,
+      "actor": 1,
+      "hit": null,
+      "destination": [
+        31,
+        9
+      ],
+      "body": [
+        [
+          30,
+          9
+        ],
+        [
+          30,
+          10
+        ],
+        [
+          29,
+          10
+        ]
+      ],
+      "pearls": [
+        "1492091:9647",
+        "1492091:9648"
+      ],
+      "collision": null,
+      "other": null
+    }
+  ],
+  "close5": [],
+  "checkpoints": {
+    "0": {
+      "us": {
+        "alive": 4,
+        "total": 8,
+        "longest": 2,
+        "pearls": 0,
+        "queen_alive": true,
+        "queen_length": 2
+      },
+      "them": {
+        "alive": 3,
+        "total": 8,
+        "longest": 4,
+        "pearls": 0,
+        "queen_alive": true,
+        "queen_length": 4
+      }
+    },
+    "10": {
+      "us": {
+        "alive": 4,
+        "total": 8,
+        "longest": 2,
+        "pearls": 0,
+        "queen_alive": true,
+        "queen_length": 2
+      },
+      "them": {
+        "alive": 3,
+        "total": 8,
+        "longest": 4,
+        "pearls": 0,
+        "queen_alive": true,
+        "queen_length": 4
+      }
+    },
+    "25": {
+      "us": {
+        "alive": 4,
+        "total": 10,
+        "longest": 4,
+        "pearls": 6,
+        "queen_alive": true,
+        "queen_length": 2
+      },
+      "them": {
+        "alive": 3,
+        "total": 8,
+        "longest": 4,
+        "pearls": 0,
+        "queen_alive": true,
+        "queen_length": 4
+      }
+    },
+    "50": {
+      "us": {
+        "alive": 5,
+        "total": 13,
+        "longest": 4,
+        "pearls": 17,
+        "queen_alive": true,
+        "queen_length": 2
+      },
+      "them": {
+        "alive": 7,
+        "total": 17,
+        "longest": 4,
+        "pearls": 9,
+        "queen_alive": true,
+        "queen_length": 4
+      }
+    },
+    "100": {
+      "us": {
+        "alive": 6,
+        "total": 13,
+        "longest": 3,
+        "pearls": 40,
+        "queen_alive": true,
+        "queen_length": 2
+      },
+      "them": {
+        "alive": 17,
+        "total": 44,
+        "longest": 4,
+        "pearls": 49,
+        "queen_alive": true,
+        "queen_length": 4
+      }
+    },
+    "150": {
+      "us": {
+        "alive": 9,
+        "total": 20,
+        "longest": 4,
+        "pearls": 87,
+        "queen_alive": false,
+        "queen_length": 0
+      },
+      "them": {
+        "alive": 19,
+        "total": 50,
+        "longest": 4,
+        "pearls": 109,
+        "queen_alive": true,
+        "queen_length": 4
+      }
+    },
+    "200": {
+      "us": {
+        "alive": 13,
+        "total": 31,
+        "longest": 5,
+        "pearls": 134,
+        "queen_alive": false,
+        "queen_length": 0
+      },
+      "them": {
+        "alive": 22,
+        "total": 54,
+        "longest": 4,
+        "pearls": 169,
+        "queen_alive": true,
+        "queen_length": 4
+      }
+    },
+    "250": {
+      "us": {
+        "alive": 13,
+        "total": 30,
+        "longest": 5,
+        "pearls": 169,
+        "queen_alive": false,
+        "queen_length": 0
+      },
+      "them": {
+        "alive": 25,
+        "total": 65,
+        "longest": 4,
+        "pearls": 233,
+        "queen_alive": true,
+        "queen_length": 4
+      }
+    },
+    "300": {
+      "us": {
+        "alive": 14,
+        "total": 30,
+        "longest": 3,
+        "pearls": 222,
+        "queen_alive": false,
+        "queen_length": 0
+      },
+      "them": {
+        "alive": 24,
+        "total": 61,
+        "longest": 4,
+        "pearls": 295,
+        "queen_alive": true,
+        "queen_length": 4
+      }
+    },
+    "350": {
+      "us": {
+        "alive": 11,
+        "total": 24,
+        "longest": 3,
+        "pearls": 247,
+        "queen_alive": false,
+        "queen_length": 0
+      },
+      "them": {
+        "alive": 13,
+        "total": 55,
+        "longest": 20,
+        "pearls": 365,
+        "queen_alive": true,
+        "queen_length": 4
+      }
+    },
+    "400": {
+      "us": {
+        "alive": 5,
+        "total": 13,
+        "longest": 3,
+        "pearls": 258,
+        "queen_alive": false,
+        "queen_length": 0
+      },
+      "them": {
+        "alive": 9,
+        "total": 47,
+        "longest": 26,
+        "pearls": 434,
+        "queen_alive": true,
+        "queen_length": 4
+      }
+    },
+    "450": {
+      "us": {
+        "alive": 4,
+        "total": 11,
+        "longest": 3,
+        "pearls": 265,
+        "queen_alive": false,
+        "queen_length": 0
+      },
+      "them": {
+        "alive": 8,
+        "total": 55,
+        "longest": 34,
+        "pearls": 478,
+        "queen_alive": true,
+        "queen_length": 4
+      }
+    },
+    "499": {
+      "us": {
+        "alive": 2,
+        "total": 8,
+        "longest": 4,
+        "pearls": 281,
+        "queen_alive": false,
+        "queen_length": 0
+      },
+      "them": {
+        "alive": 5,
+        "total": 76,
+        "longest": 37,
+        "pearls": 516,
+        "queen_alive": true,
+        "queen_length": 4
+      }
+    }
+  },
+  "last_nonlosing": 110
+}

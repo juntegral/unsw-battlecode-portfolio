@@ -1,0 +1,256 @@
+== 1. Leader cuts per race (theirs, table C1: live small 2.3 / 3.8, 68% with a free cell; big 3.1 / 3.9, 67%;
+      opponents 2.6 / 2.3, 40%; 2.5 / 2.5, 37%; forgot 1.0 / 4.1, 15%; SSS 1.6 / 2.0, 93%; Vibing++ 3.4 / 2.6, 61%)
+ small maps: group | races | cuts per race in rounds 300-394 / 395-499 | of the cuts from 395: with a free cell | races with 0 / 1-2 / 3-5 / 6+ cuts from 395
+   meow live       53 | 2.6 / 3.9 | 137 of 208 = 66% | [12, 12, 16, 13]
+   meow test       25 | 4.0 / 4.4 | 66 of 111 = 59% | [4, 4, 10, 7]
+   meow all        78 | 3.0 / 4.1 | 203 of 319 = 64% | [16, 16, 26, 20]
+   opponents       78 | 2.9 / 2.6 | 83 of 201 = 41% | [14, 33, 22, 9]
+   test4 (vs us)   29 | 2.8 / 2.9 | 57 of 85 = 67% | [3, 14, 7, 5]
+   WHQ (vs us)     39 | 3.1 / 2.1 | 15 of 83 = 18% | [9, 16, 12, 2]
+   forgot          65 | 1.2 / 4.2 | 40 of 276 = 14% | [12, 13, 17, 23]
+   SSS             42 | 1.7 / 2.3 | 83 of 95 = 87% | [14, 19, 5, 4]
+   Vibing++        67 | 3.8 / 2.7 | 107 of 183 = 58% | [12, 24, 24, 7]
+ big maps: group | races | cuts per race in rounds 300-394 / 395-499 | of the cuts from 395: with a free cell | races with 0 / 1-2 / 3-5 / 6+ cuts from 395
+   meow live       43 | 3.4 / 4.0 | 114 of 172 = 66% | [5, 8, 17, 13]
+   meow test       22 | 4.0 / 4.5 | 68 of 98 = 69% | [4, 2, 8, 8]
+   meow all        65 | 3.6 / 4.2 | 182 of 270 = 67% | [9, 10, 25, 21]
+   opponents       65 | 2.9 / 2.7 | 70 of 173 = 40% | [16, 19, 22, 8]
+   test4 (vs us)   20 | 4.2 / 3.2 | 55 of 65 = 85% | [2, 5, 11, 2]
+   WHQ (vs us)     35 | 1.8 / 2.1 | 4 of 73 = 5% | [13, 12, 5, 5]
+   forgot          89 | 1.9 / 3.2 | 21 of 287 = 7% | [7, 27, 43, 12]
+   SSS             99 | 1.4 / 2.3 | 212 of 225 = 94% | [23, 43, 25, 8]
+   Vibing++        85 | 3.1 / 2.3 | 127 of 199 = 64% | [14, 40, 22, 9]
+
+   Final-lineage cuts from round 400 (theirs: meow 2.7 a race, 1.7 with a free cell; opponents 2.0 / 0.8; forgot 3.3 / 0.3; SSS 1.6 / 1.6; Vibing++ 2.0 / 1.2)
+   and lost races in which the segments left behind in those cuts exceed the losing margin (theirs: meow 10 of 102; top three 25 of 181)
+   meow live      races  96 | cuts 2.7 a race, with a free cell 1.8 | segments left 5.5 a race | lost 69, cuts exceed the margin in 9 (free-cell cuts alone 6)
+   meow test      races  47 | cuts 2.7 a race, with a free cell 1.6 | segments left 5.4 a race | lost 33, cuts exceed the margin in 1 (free-cell cuts alone 0)
+   meow all       races 143 | cuts 2.7 a race, with a free cell 1.7 | segments left 5.4 a race | lost 102, cuts exceed the margin in 10 (free-cell cuts alone 6)
+   opponents      races 143 | cuts 2.0 a race, with a free cell 0.8 | segments left 4.1 a race | lost 41, cuts exceed the margin in 1 (free-cell cuts alone 0)
+   test4 (vs us)  races  49 | cuts 2.1 a race, with a free cell 1.6 | segments left 4.2 a race | lost 17, cuts exceed the margin in 0 (free-cell cuts alone 0)
+   WHQ (vs us)    races  74 | cuts 1.7 a race, with a free cell 0.2 | segments left 3.4 a race | lost 13, cuts exceed the margin in 1 (free-cell cuts alone 0)
+   forgot         races 154 | cuts 3.3 a race, with a free cell 0.3 | segments left 6.5 a race | lost 69, cuts exceed the margin in 14 (free-cell cuts alone 5)
+   SSS            races 141 | cuts 1.6 a race, with a free cell 1.4 | segments left 3.1 a race | lost 59, cuts exceed the margin in 4 (free-cell cuts alone 3)
+   Vibing++       races 152 | cuts 1.9 a race, with a free cell 1.2 | segments left 3.9 a race | lost 53, cuts exceed the margin in 7 (free-cell cuts alone 3)
+
+== 2. Growth of the longest per 25-round window from round 400 (windows starting with 10+ other own dragons)
+   theirs: meow 5.0 (291 windows) with a cut in it or in the 25 rounds before, 10.8 (91) without; live 4.5 / 11.4; test 6.1 / 9.3;
+   vs test4 4.9 / 11.4; vs WHQ 5.5 / 10.9; others 3.7 / 9.6; small 6.0 / 12.4; big 4.3 / 8.7; opponents 6.0 (216) / 6.9 (156)
+   group            | with a cut (in it or 25 before) | without | cut INSIDE the window | cut only in the 25 rounds BEFORE | none in 50 rounds | inside, 2 per cut given back
+   meow all         | 5.0 (294)    | 11.1 (88)    | 3.0 (225)    | 11.4 (69)    | 11.1 (88)    | 7.0 (225)
+   meow live        | 4.4 (197)    | 11.9 (63)    | 2.5 (147)    | 10.0 (50)    | 11.9 (63)    | 6.6 (147)
+   meow test        | 6.1 (97)     | 9.3 (25)     | 3.9 (78)     | 14.9 (19)    | 9.3 (25)     | 7.8 (78)
+   meow vs test4    | 4.7 (106)    | 12.5 (28)    | 2.5 (80)     | 11.5 (26)    | 12.5 (28)    | 6.8 (80)
+   meow vs WHQ      | 5.5 (142)    | 10.9 (42)    | 3.9 (110)    | 11.2 (32)    | 10.9 (42)    | 7.9 (110)
+   meow vs others   | 3.7 (46)     | 9.6 (18)     | 1.2 (35)     | 11.6 (11)    | 9.6 (18)     | 4.7 (35)
+   meow small       | 6.0 (126)    | 12.6 (50)    | 3.5 (95)     | 13.5 (31)    | 12.6 (50)    | 8.1 (95)
+   meow big         | 4.2 (168)    | 9.2 (38)     | 2.6 (130)    | 9.6 (38)     | 9.2 (38)     | 6.2 (130)
+   meow live small  | 4.0 (84)     | 13.6 (37)    | 2.0 (62)     | 9.8 (22)     | 13.6 (37)    | 6.9 (62)
+   meow test small  | 9.9 (42)     | 9.7 (13)     | 6.4 (33)     | 22.7 (9)     | 9.7 (13)     | 10.5 (33)
+   opponents        | 5.9 (219)    | 7.0 (153)    | 4.2 (142)    | 8.9 (77)     | 7.0 (153)    | 7.5 (142)
+   opponents small  | 6.8 (80)     | 7.9 (54)     | 4.2 (50)     | 11.1 (30)    | 7.9 (54)     | 7.4 (50)
+   opponents big    | 5.4 (139)    | 6.5 (99)     | 4.3 (92)     | 7.6 (47)     | 6.5 (99)     | 7.6 (92)
+   test4 (vs us)    | 5.9 (81)     | 8.1 (43)     | 5.2 (55)     | 7.4 (26)     | 8.1 (43)     | 8.3 (55)
+   WHQ (vs us)      | 6.0 (101)    | 7.3 (95)     | 3.2 (60)     | 10.0 (41)    | 7.3 (95)     | 6.5 (60)
+   forgot small     | 8.8 (83)     | 5.3 (15)     | 8.2 (69)     | 11.6 (14)    | 5.3 (15)     | 12.2 (69)
+   forgot big       | 3.8 (235)    | 4.6 (72)     | 3.3 (169)    | 5.2 (66)     | 4.6 (72)     | 6.1 (169)
+   SSS small        | 2.4 (54)     | 6.3 (46)     | 1.4 (34)     | 4.1 (20)     | 6.3 (46)     | 5.9 (34)
+   SSS big          | 2.8 (200)    | 6.7 (183)    | 1.4 (127)    | 5.4 (73)     | 6.7 (183)    | 4.6 (127)
+   Vibing++ small   | 8.1 (117)    | 5.7 (67)     | 6.9 (82)     | 10.8 (35)    | 5.7 (67)     | 10.2 (82)
+   Vibing++ big     | 4.5 (200)    | 8.2 (114)    | 3.1 (131)    | 7.1 (69)     | 8.2 (114)    | 5.8 (131)
+
+   By run of ours (theirs, era.txt: ladder 4 Oct 4.3 / 11.9; stride 3.8 / 10.4; passage2 5.1 / 9.2; qh31 5.3 / 14.1)
+   dl-20261003          with 2.2 (9)     without 5.1 (7)     | inside -3.8 (6)    before-only 14.3 (3)   
+   dl-20261004          with 4.2 (116)   without 12.8 (27)   | inside 2.6 (87)    before-only 9.2 (29)   
+   passage2-test-new    with 5.4 (29)    without 11.4 (5)    | inside 4.3 (23)    before-only 9.5 (6)    
+   passage2-test-old    with 5.1 (20)    without 9.2 (6)     | inside 3.4 (17)    before-only 15.0 (3)   
+   qh31-test-new        with 6.5 (27)    without 9.1 (13)    | inside 3.8 (23)    before-only 21.8 (4)   
+   qh31-test-old        with 5.3 (26)    without 14.1 (14)   | inside 2.6 (19)    before-only 12.6 (7)   
+   stride-new           with 7.6 (17)    without 12.0 (3)    | inside 5.9 (14)    before-only 15.7 (3)   
+   stride-old           with 3.8 (24)    without 11.2 (8)    | inside 3.2 (17)    before-only 5.3 (7)    
+   tc30-dev1-old        with 15.0 (2)    without 23.0 (1)    | inside 10.0 (1)    before-only 20.0 (1)   
+   tc30-dev1b-new       with 4.1 (10)    without 3.0 (1)     | inside 2.3 (9)     before-only 20.0 (1)   
+   tc30-test-new        with 6.1 (14)    without 6.3 (3)     | inside 1.3 (9)     before-only 14.6 (5)   
+
+   What kind of window is which? means at the window start: longest / potential / units / what is left to feed (P - L); and growth as a share of what is left
+   meow all        cut inside       n=225 longest 28.1 potential 86.7 units 31.1 left 58.6 | growth 3.0 = 5% of what is left (12% with the cut segments given back)
+   meow all        cut before only  n= 69 longest 24.6 potential 81.9 units 31.2 left 57.3 | growth 11.4 = 20% of what is left (20% with the cut segments given back)
+   meow all        no cut           n= 88 longest 26.5 potential 78.9 units 30.4 left 52.5 | growth 11.1 = 21% of what is left (21% with the cut segments given back)
+   meow small      cut inside       n= 95 longest 23.0 potential 59.5 units 22.0 left 36.5 | growth 3.5 = 10% of what is left (22% with the cut segments given back)
+   meow small      cut before only  n= 31 longest 18.6 potential 59.5 units 24.4 left 40.9 | growth 13.5 = 33% of what is left (33% with the cut segments given back)
+   meow small      no cut           n= 50 longest 23.8 potential 67.7 units 29.3 left 43.9 | growth 12.6 = 29% of what is left (29% with the cut segments given back)
+   meow big        cut inside       n=130 longest 31.8 potential 106.5 units 37.7 left 74.8 | growth 2.6 = 4% of what is left (8% with the cut segments given back)
+   meow big        cut before only  n= 38 longest 29.4 potential 100.1 units 36.8 left 70.7 | growth 9.6 = 14% of what is left (14% with the cut segments given back)
+   meow big        no cut           n= 38 longest 29.9 potential 93.7 units 31.9 left 63.7 | growth 9.2 = 14% of what is left (14% with the cut segments given back)
+   opponents       cut inside       n=142 longest 42.1 potential 146.9 units 32.2 left 104.9 | growth 4.2 = 4% of what is left (7% with the cut segments given back)
+   opponents       cut before only  n= 77 longest 41.3 potential 152.4 units 32.1 left 111.1 | growth 8.9 = 8% of what is left (8% with the cut segments given back)
+   opponents       no cut           n=153 longest 48.1 potential 154.6 units 29.8 left 106.5 | growth 7.0 = 7% of what is left (7% with the cut segments given back)
+   SSS small       cut inside       n= 34 longest 28.6 potential 62.3 units 19.6 left 33.7 | growth 1.4 = 4% of what is left (17% with the cut segments given back)
+   SSS small       cut before only  n= 20 longest 28.5 potential 59.0 units 17.8 left 30.5 | growth 4.1 = 13% of what is left (13% with the cut segments given back)
+   SSS small       no cut           n= 46 longest 40.2 potential 86.7 units 28.3 left 46.5 | growth 6.3 = 14% of what is left (14% with the cut segments given back)
+   forgot small    cut inside       n= 69 longest 37.4 potential 76.8 units 18.8 left 39.3 | growth 8.2 = 21% of what is left (31% with the cut segments given back)
+   forgot small    cut before only  n= 14 longest 35.9 potential 83.0 units 21.9 left 47.1 | growth 11.6 = 25% of what is left (25% with the cut segments given back)
+   forgot small    no cut           n= 15 longest 33.5 potential 76.6 units 21.3 left 43.1 | growth 5.3 = 12% of what is left (12% with the cut segments given back)
+   Vibing++ small  cut inside       n= 82 longest 28.4 potential 74.9 units 27.5 left 46.6 | growth 6.9 = 15% of what is left (22% with the cut segments given back)
+   Vibing++ small  cut before only  n= 35 longest 27.5 potential 80.6 units 31.1 left 53.1 | growth 10.8 = 20% of what is left (20% with the cut segments given back)
+   Vibing++ small  no cut           n= 67 longest 20.1 potential 58.6 units 23.7 left 38.5 | growth 5.7 = 15% of what is left (15% with the cut segments given back)
+   SSS big         cut inside       n=127 longest 51.6 potential 142.9 units 42.7 left 91.3 | growth 1.4 = 1% of what is left (5% with the cut segments given back)
+   SSS big         cut before only  n= 73 longest 46.2 potential 140.3 units 44.7 left 94.0 | growth 5.4 = 6% of what is left (6% with the cut segments given back)
+   SSS big         no cut           n=183 longest 48.4 potential 137.1 units 41.7 left 88.8 | growth 6.7 = 7% of what is left (7% with the cut segments given back)
+   forgot big      cut inside       n=169 longest 51.6 potential 130.9 units 26.2 left 79.3 | growth 3.3 = 4% of what is left (8% with the cut segments given back)
+   forgot big      cut before only  n= 66 longest 47.7 potential 122.0 units 25.5 left 74.2 | growth 5.2 = 7% of what is left (7% with the cut segments given back)
+   forgot big      no cut           n= 72 longest 45.1 potential 110.1 units 23.3 left 64.9 | growth 4.6 = 7% of what is left (7% with the cut segments given back)
+   Vibing++ big    cut inside       n=131 longest 47.4 potential 143.9 units 33.9 left 96.5 | growth 3.1 = 3% of what is left (6% with the cut segments given back)
+   Vibing++ big    cut before only  n= 69 longest 44.6 potential 141.9 units 34.2 left 97.3 | growth 7.1 = 7% of what is left (7% with the cut segments given back)
+   Vibing++ big    no cut           n=114 longest 47.2 potential 141.4 units 34.3 left 94.2 | growth 8.2 = 9% of what is left (9% with the cut segments given back)
+
+   By the length of the longest at the window start (meow; a short leader cannot cut and is just starting): growth with a cut inside / before only / none
+   L  0-7   meow all        inside 7.2 (6)     before-only 21.0 (1)    none 3.8 (10)   
+   L  0-7   opponents       inside 11.0 (2)    before-only 4.0 (1)     none 4.2 (8)    
+   L  0-7   SSS small       inside 5.0 (2)     before-only 6.5 (2)     none 8.0 (1)    
+   L  0-7   SSS big         inside -           before-only -           none 12.0 (1)   
+   L  0-7   forgot small    inside 11.0 (1)    before-only -           none -          
+   L  0-7   Vibing++ small  inside 8.4 (9)     before-only 4.0 (1)     none 5.4 (19)   
+   L  8-14  meow all        inside 5.0 (56)    before-only 7.9 (25)    none 9.6 (21)   
+   L  8-14  opponents       inside 4.2 (19)    before-only 7.3 (7)     none 4.9 (7)    
+   L  8-14  SSS small       inside 4.0 (7)     before-only 2.7 (3)     none 9.2 (4)    
+   L  8-14  SSS big         inside 6.0 (5)     before-only 11.6 (5)    none 6.7 (3)    
+   L  8-14  forgot small    inside 7.2 (9)     before-only -1.0 (1)    none 0.8 (4)    
+   L  8-14  Vibing++ small  inside 5.5 (18)    before-only 15.0 (10)   none 7.4 (18)   
+   L 15-24  meow all        inside 3.1 (65)    before-only 11.4 (19)   none 7.7 (14)   
+   L 15-24  opponents       inside 3.9 (18)    before-only 9.1 (13)    none 8.4 (10)   
+   L 15-24  SSS small       inside -4.1 (7)    before-only 8.6 (5)     none 11.8 (4)   
+   L 15-24  SSS big         inside 3.5 (13)    before-only 10.5 (10)   none 5.1 (18)   
+   L 15-24  forgot small    inside 6.8 (15)    before-only 6.3 (3)     none 8.3 (3)    
+   L 15-24  Vibing++ small  inside 9.3 (16)    before-only 6.2 (8)     none 2.7 (11)   
+   L 25-39  meow all        inside 1.8 (39)    before-only 17.8 (12)   none 14.6 (20)  
+   L 25-39  opponents       inside 4.4 (33)    before-only 8.1 (17)    none 6.2 (36)   
+   L 25-39  SSS small       inside 1.0 (12)    before-only 7.3 (7)     none 6.9 (12)   
+   L 25-39  SSS big         inside 3.0 (15)    before-only 7.4 (15)    none 8.5 (47)   
+   L 25-39  forgot small    inside 7.4 (16)    before-only 17.6 (5)    none 9.5 (4)    
+   L 25-39  Vibing++ small  inside 3.8 (18)    before-only 12.6 (11)   none 11.2 (10)  
+   L 40-999 meow all        inside 1.3 (59)    before-only 11.3 (12)   none 14.9 (23)  
+   L 40-999 opponents       inside 4.0 (70)    before-only 9.7 (39)    none 7.5 (92)   
+   L 40-999 SSS small       inside 4.3 (6)     before-only -11.0 (3)   none 4.6 (25)   
+   L 40-999 SSS big         inside 0.6 (94)    before-only 2.8 (43)    none 6.1 (114)  
+   L 40-999 forgot small    inside 9.7 (28)    before-only 11.4 (5)    none 3.5 (4)    
+   L 40-999 Vibing++ small  inside 8.4 (21)    before-only 6.8 (5)     none 0.2 (9)    
+
+   Inside the same game: races that have both kinds of window (mean of per-game means)
+   meow all        no-cut minus any-cut +6.8 (se 1.2, 43 games) | minus cut-inside +9.7 (se 1.4, 38 games) | minus cut-before-only +0.8 (se 1.5, 30 games)
+   meow live       no-cut minus any-cut +8.0 (se 1.4, 32 games) | minus cut-inside +10.2 (se 1.6, 30 games) | minus cut-before-only +2.6 (se 1.6, 22 games)
+   meow test       no-cut minus any-cut +3.5 (se 2.6, 11 games) | minus cut-inside +7.9 (se 3.0, 8 games) | minus cut-before-only -4.3 (se 3.3, 8 games)
+   opponents       no-cut minus any-cut +1.5 (se 1.3, 49 games) | minus cut-inside +4.2 (se 2.6, 33 games) | minus cut-before-only -0.1 (se 1.4, 40 games)
+   SSS small       no-cut minus any-cut +5.5 (se 6.9, 6 games) | minus cut-inside +2.6 (se 2.8, 5 games) | minus cut-before-only +11.6 (se 18.7, 4 games)
+   SSS big         no-cut minus any-cut +0.7 (se 1.7, 60 games) | minus cut-inside +1.3 (se 1.9, 51 games) | minus cut-before-only +1.4 (se 3.0, 44 games)
+   forgot small    no-cut minus any-cut -1.7 (se 3.2, 9 games) | minus cut-inside -2.0 (se 3.1, 9 games) | minus cut-before-only +4.2 (se 4.5, 5 games)
+   forgot big      no-cut minus any-cut +1.5 (se 1.3, 34 games) | minus cut-inside +3.2 (se 1.4, 27 games) | minus cut-before-only +0.3 (se 1.2, 31 games)
+   Vibing++ small  no-cut minus any-cut -0.7 (se 2.8, 28 games) | minus cut-inside +1.2 (se 3.1, 26 games) | minus cut-before-only -4.2 (se 3.8, 20 games)
+   Vibing++ big    no-cut minus any-cut +2.9 (se 1.3, 46 games) | minus cut-inside +5.0 (se 1.5, 40 games) | minus cut-before-only -0.0 (se 1.6, 38 games)
+
+== 3. Deaths by choice in races, rounds 300-499 (theirs, 'the same test for every team': live small 33.2 a race: 42 / 16 / 17 / 26%, lineage eats 36%;
+      test 44 / 16 / 15 / 25%, 45%; live big 30 / 36 / 14 / 20%, 27%; opponents small 42 / 26 / 16 / 15%, 39%; forgot 51 / 25 / 17 / 8%; SSS 73 / 14 / 3 / 10%; Vibing++ 35 / 18 / 33 / 14%)
+ small maps: group | races | deaths by choice a race | next to the longest / another twice as long / such at 4-8 steps / nothing | of 'nothing': next to a stub of a cut in the last 26 rounds | pearls a race | final lineage / other own / enemy / nobody
+   meow live       53 | 33.2 | 41% / 15% / 17% / 27% | 44 of 470 = 9% | 46.8 | 36% / 52% / 4.7% / 7%
+                        lineage's share by where the death was (longest / another / 4-8 / nothing): 68% / 11% / 20% / 9%
+   meow test       25 | 37.0 | 43% / 15% / 16% / 26% | 30 of 239 = 13% | 54.9 | 45% / 46% / 2.8% / 7%
+                        lineage's share by where the death was (longest / another / 4-8 / nothing): 76% / 30% / 21% / 15%
+   meow all        78 | 34.4 | 42% / 15% / 17% / 26% | 74 of 709 = 10% | 49.4 | 39% / 50% / 4.0% / 7%
+                        lineage's share by where the death was (longest / another / 4-8 / nothing): 71% / 17% / 20% / 11%
+   opponents       78 | 45.6 | 43% / 25% / 16% / 15% | 8 of 530 = 2% | 84.5 | 38% / 56% / 2.3% / 4%
+                        lineage's share by where the death was (longest / another / 4-8 / nothing): 58% / 19% / 34% / 15%
+   test4 (vs us)   29 | 41.6 | 42% / 24% / 14% / 20% | 5 of 241 = 2% | 80.4 | 36% / 60% / 2.4% / 2%
+                        lineage's share by where the death was (longest / another / 4-8 / nothing): 58% / 16% / 14% / 14%
+   WHQ (vs us)     39 | 52.2 | 45% / 25% / 18% / 12% | 2 of 237 = 1% | 95.2 | 39% / 54% / 2.3% / 5%
+                        lineage's share by where the death was (longest / another / 4-8 / nothing): 58% / 20% / 41% / 15%
+   forgot          65 | 27.3 | 51% / 25% / 17% / 8% | 4 of 139 = 3% | 48.6 | 47% / 50% / 0.6% / 2%
+                        lineage's share by where the death was (longest / another / 4-8 / nothing): 62% / 29% / 44% / 30%
+   SSS             42 | 47.0 | 73% / 14% / 4% / 10% | 10 of 189 = 5% | 70.5 | 41% / 54% / 1.6% / 3%
+                        lineage's share by where the death was (longest / another / 4-8 / nothing): 56% / 14% / 10% / 7%
+   Vibing++        67 | 27.0 | 35% / 18% / 33% / 15% | 14 of 263 = 5% | 44.2 | 46% / 49% / 1.3% / 4%
+                        lineage's share by where the death was (longest / another / 4-8 / nothing): 67% / 22% / 50% / 19%
+ big maps: group | races | deaths by choice a race | next to the longest / another twice as long / such at 4-8 steps / nothing | of 'nothing': next to a stub of a cut in the last 26 rounds | pearls a race | final lineage / other own / enemy / nobody
+   meow live       43 | 46.9 | 30% / 36% / 14% / 20% | 52 of 399 = 13% | 70.6 | 26% / 58% / 10.5% / 5%
+                        lineage's share by where the death was (longest / another / 4-8 / nothing): 68% / 9% / 11% / 4%
+   meow test       22 | 51.7 | 28% / 40% / 15% / 16% | 41 of 185 = 22% | 79.0 | 24% / 64% / 7.5% / 5%
+                        lineage's share by where the death was (longest / another / 4-8 / nothing): 51% / 12% / 15% / 10%
+   meow all        65 | 48.5 | 29% / 38% / 15% / 19% | 93 of 584 = 16% | 73.4 | 25% / 60% / 9.4% / 5%
+                        lineage's share by where the death was (longest / another / 4-8 / nothing): 62% / 10% / 13% / 6%
+   opponents       65 | 113.6 | 15% / 57% / 17% / 11% | 8 of 785 = 1% | 260.0 | 15% / 76% / 5.3% / 4%
+                        lineage's share by where the death was (longest / another / 4-8 / nothing): 42% / 8% / 13% / 10%
+   test4 (vs us)   20 | 59.8 | 13% / 56% / 13% / 17% | 3 of 201 = 1% | 163.8 | 16% / 76% / 6.0% / 2%
+                        lineage's share by where the death was (longest / another / 4-8 / nothing): 45% / 9% / 8% / 10%
+   WHQ (vs us)     35 | 151.5 | 16% / 59% / 16% / 9% | 5 of 480 = 1% | 333.5 | 14% / 76% / 4.5% / 5%
+                        lineage's share by where the death was (longest / another / 4-8 / nothing): 43% / 7% / 14% / 9%
+   forgot          89 | 64.9 | 27% / 50% / 18% / 5% | 2 of 306 = 1% | 121.5 | 26% / 72% / 1.8% / 1%
+                        lineage's share by where the death was (longest / another / 4-8 / nothing): 54% / 13% / 25% / 17%
+   SSS             99 | 78.6 | 52% / 38% / 4% / 6% | 9 of 470 = 2% | 130.3 | 31% / 64% / 3.9% / 2%
+                        lineage's share by where the death was (longest / another / 4-8 / nothing): 50% / 11% / 9% / 4%
+   Vibing++        85 | 53.1 | 21% / 34% / 35% / 10% | 17 of 439 = 4% | 103.1 | 29% / 66% / 3.7% / 2%
+                        lineage's share by where the death was (longest / another / 4-8 / nothing): 60% / 13% / 28% / 8%
+
+== 4. The clock after a cut. Rounds 400-499 of races, sides with 10+ other own dragons at the round's 25-round mark.
+   Deaths by choice within 3 path steps of the side's longest dragon (which must be twice the dying dragon's length), per 100 side-rounds,
+   by rounds since the side's last leader cut. If a stale record holds our feeders back for 25 rounds, our rate is low until 25 and jumps after.
+   (each cell: deaths next to the longest / all deaths by choice, per 100 side-rounds)
+   rounds since cut         0-4         5-9       10-14       15-19       20-24       25-29       30-39       40-59         60+     no cut yet
+   meow all           5.9/ 37.3  11.6/ 44.9  15.8/ 46.4  20.7/ 47.3  23.8/ 51.0  24.9/ 52.0  25.2/ 45.8  29.9/ 50.1  22.0/ 44.1  15.9/ 34.1
+   meow live          5.6/ 35.3   9.0/ 41.3  10.4/ 39.3  18.8/ 41.3  22.5/ 45.8  22.4/ 48.3  29.1/ 48.0  32.6/ 54.8  21.5/ 44.2  18.1/ 37.2
+   meow test          6.6/ 41.3  16.6/ 51.8  25.9/ 59.4  24.3/ 58.0  26.6/ 62.5  31.0/ 61.3  16.8/ 41.2  23.8/ 39.9  23.3/ 44.0   6.2/ 20.6
+   meow vs test4      6.1/ 42.0  13.5/ 51.5  17.8/ 55.0  27.5/ 52.9  19.7/ 44.6  18.7/ 41.8  27.6/ 48.1  30.2/ 48.8  23.7/ 48.4  19.3/ 31.6
+   meow vs WHQ        6.4/ 35.0  10.7/ 41.2  13.3/ 39.3  17.2/ 42.8  23.7/ 52.5  27.6/ 59.4  24.8/ 47.3  30.4/ 47.1  20.3/ 38.0  19.2/ 34.0
+   meow vs others     3.8/ 32.2  10.1/ 40.7  18.4/ 46.1  16.3/ 48.1  32.3/ 59.4  31.5/ 53.4  19.8/ 34.7  28.0/ 58.2  23.4/ 52.3   6.6/ 35.3
+   meow small         7.0/ 38.8  17.9/ 51.8  23.5/ 52.6  28.9/ 61.2  28.6/ 48.0  33.2/ 53.6  30.1/ 49.2  31.3/ 53.4  28.8/ 51.2  19.0/ 39.7
+   meow big           5.0/ 36.0   7.2/ 40.1  10.7/ 42.2  14.8/ 37.1  20.2/ 53.3  18.7/ 50.9  21.3/ 43.1  28.6/ 47.2  15.9/ 37.8   1.1/  7.8
+   meow live small    6.5/ 35.7  11.9/ 45.0  15.9/ 46.3  26.3/ 54.5  25.7/ 45.8  25.8/ 46.5  37.2/ 54.3  33.5/ 57.1  28.7/ 52.3  21.8/ 44.0
+   meow test small    8.0/ 45.5  28.8/ 64.1  36.3/ 63.0  33.6/ 73.3  35.6/ 53.4  53.6/ 73.2  17.3/ 40.0  27.0/ 46.0  29.2/ 48.5   7.3/ 22.0
+   opponents          6.6/ 47.9   9.9/ 44.2   8.9/ 46.3  11.9/ 42.6   7.8/ 40.8  10.4/ 45.8   8.7/ 45.4   6.6/ 36.6   6.9/ 48.7   7.8/ 38.0
+   opponents small   12.8/ 42.1  16.1/ 34.3  15.2/ 41.9  15.4/ 35.2  12.2/ 34.1  14.8/ 50.0  13.8/ 33.8   9.9/ 28.7  10.2/ 39.6   8.5/ 34.2
+   opponents big      3.2/ 51.0   6.0/ 50.3   5.2/ 48.9   9.5/ 47.5   5.1/ 44.9   7.7/ 43.3   6.0/ 51.7   4.5/ 41.5   6.1/ 51.0   5.8/ 49.7
+   test4 (vs us)      3.6/ 45.3   6.2/ 36.3   7.4/ 33.9  10.0/ 29.9   7.8/ 34.3   6.5/ 31.4  10.0/ 39.0   7.1/ 27.3   6.7/ 28.5   7.3/ 30.6
+   WHQ (vs us)        8.8/ 53.0  11.2/ 53.0  12.1/ 62.5  14.4/ 59.3   9.3/ 48.2  13.2/ 57.6   8.8/ 53.5   6.1/ 44.7   6.2/ 53.5   9.6/ 44.7
+   forgot small      10.5/ 28.3  17.1/ 34.4  11.7/ 26.3  14.4/ 33.8  12.2/ 20.9  20.0/ 32.7  15.5/ 25.0  16.1/ 21.8  13.4/ 17.1  14.4/ 31.3
+   forgot big         6.0/ 29.1   7.7/ 31.2   4.6/ 29.5   5.0/ 30.5   4.6/ 31.9   4.8/ 27.7   6.8/ 28.4   5.2/ 24.0   5.0/ 28.0   5.2/ 41.9
+   SSS small          5.9/ 21.4   8.6/ 20.6  11.6/ 24.5  14.3/ 29.9  13.6/ 27.9  13.3/ 22.1  21.6/ 33.6  32.7/ 38.3  26.5/ 32.0  22.8/ 29.8
+   SSS big           15.7/ 41.5  24.1/ 52.1  16.7/ 40.8  14.8/ 32.7  19.5/ 49.8  20.8/ 49.7  14.4/ 33.5  16.2/ 31.1  19.6/ 33.0  18.7/ 29.7
+   Vibing++ small     9.5/ 28.7  10.4/ 27.0   9.8/ 26.3  14.1/ 32.5  12.9/ 39.5  14.0/ 36.2   9.6/ 33.2  11.3/ 25.6   8.0/ 22.7   7.3/ 25.1
+   Vibing++ big       5.2/ 27.9   4.6/ 32.0   3.2/ 28.2   4.7/ 30.4   5.2/ 23.2   4.0/ 21.0   8.1/ 29.6   6.5/ 28.8   6.7/ 25.3   3.5/ 21.6
+
+== 5. Event study: the side's longest dragon around a leader cut made in rounds 395-460 with 10+ other own dragons
+   (mean length of the side's longest at 5-round marks; 0 = the last mark at or before the cut; 'lone' = no other leader cut of the side from 25 rounds before to 30 after)
+   all cuts: group | cuts |   -25   -20   -15   -10    -5     0     5    10    15    20    25    30    35    40
+   meow all          295 |  19.4  20.0  20.7  21.5  22.4  22.9  21.5  21.9  22.9  23.8  25.0  26.6  28.0  29.2
+   meow live         186 |  19.6  20.1  21.0  21.8  22.6  23.0  21.8  22.3  23.0  23.7  25.1  26.4  27.5  28.5
+   meow test         109 |  19.0  19.7  20.1  21.0  22.0  22.8  21.0  21.3  22.8  24.0  25.0  27.1  28.8  30.4
+   meow vs test4     118 |  20.4  21.2  22.2  23.1  23.9  24.1  23.0  23.3  24.1  25.3  27.0  28.5  29.7  31.2
+   meow vs WHQ       140 |  16.7  17.2  18.1  18.8  19.7  20.6  19.2  19.7  20.8  21.6  22.5  24.2  25.7  26.8
+   meow vs others     37 |  26.1  26.4  25.9  26.8  27.4  27.9  25.2  26.0  27.1  27.5  28.3  29.7  30.9  32.0
+   meow small        147 |  14.0  14.9  15.8  16.5  17.3  17.7  16.5  17.1  18.1  19.2  20.7  22.4  24.1  25.4
+   meow big          148 |  24.6  25.0  25.6  26.5  27.4  28.1  26.5  26.7  27.6  28.5  29.4  30.9  31.8  33.0
+   meow live small    91 |  13.7  14.5  15.6  16.5  17.1  17.3  16.1  16.7  17.2  17.8  19.1  20.4  21.8  22.6
+   meow test small    56 |  14.6  15.6  16.1  16.5  17.6  18.4  17.1  17.8  19.6  21.4  23.3  25.6  27.9  30.0
+   opponents         165 |  33.4  34.3  35.0  36.1  37.0  37.6  36.8  37.9  39.5  41.3  42.6  44.1  45.2  46.7
+   opponents small    63 |  22.6  23.4  24.6  26.0  27.4  28.8  27.1  28.8  30.2  32.2  34.3  36.0  37.3  38.9
+   opponents big     102 |  40.0  41.1  41.5  42.4  42.9  43.1  42.7  43.6  45.3  46.9  47.7  49.0  50.1  51.5
+   test4 (vs us)      63 |  19.6  19.9  20.6  21.5  22.7  23.9  23.0  24.2  25.8  27.6  29.4  30.9  31.9  33.3
+   WHQ (vs us)        79 |  45.3  46.4  46.9  48.2  48.5  48.3  47.4  48.6  50.1  51.6  52.5  53.8  55.0  56.9
+   forgot small       74 |  25.8  27.4  28.6  30.3  32.1  34.1  34.2  35.6  37.9  39.7  40.8  42.1  43.5  45.3
+   forgot big        170 |  44.0  45.2  46.6  47.6  48.4  49.8  49.4  50.7  51.5  52.3  52.9  53.1  53.9  54.7
+   SSS small          56 |  20.1  20.8  20.9  21.2  21.3  21.6  20.0  20.2  20.5  21.2  21.7  22.4  23.4  24.1
+   SSS big           142 |  47.2  48.4  48.8  48.7  49.2  49.5  45.1  45.8  47.0  47.3  48.1  48.7  49.1  49.9
+   Vibing++ small     99 |  21.1  21.0  22.4  23.3  24.6  25.6  25.3  26.8  28.7  30.6  32.3  34.3  35.8  37.5
+   Vibing++ big      115 |  39.3  40.4  40.8  41.1  41.9  42.2  40.9  42.2  43.2  44.6  45.6  46.9  48.2  49.5
+   lone cuts: group | cuts |   -25   -20   -15   -10    -5     0     5    10    15    20    25    30    35    40
+   meow all           16 |  21.8  23.4  25.2  27.4  29.1  30.5  29.4  28.9  30.6  32.6  34.9  36.9  38.8  40.1
+   meow live          12 |  25.8  27.4  29.3  31.5  32.4  33.7  32.3  32.6  33.6  35.2  37.3  38.4  39.9  41.2
+   meow vs test4       8 |  24.0  25.6  27.9  30.2  32.9  33.1  32.1  30.6  31.9  33.1  34.6  37.0  37.8  38.9
+   meow big           10 |  29.5  31.5  33.7  36.2  39.0  41.1  40.2  38.4  39.4  41.2  43.0  45.3  46.7  47.8
+   opponents          29 |  38.6  39.7  41.4  43.6  44.5  46.0  44.4  45.9  47.6  49.6  51.4  52.9  54.7  56.1
+   opponents small    16 |  27.2  28.6  30.9  33.2  34.6  35.9  33.2  34.9  36.4  38.9  41.1  42.6  44.6  46.4
+   opponents big      13 |  52.7  53.4  54.4  56.3  56.7  58.4  58.2  59.5  61.3  62.8  64.1  65.5  67.2  68.0
+   WHQ (vs us)        22 |  46.0  47.2  48.7  50.9  51.8  53.0  51.2  52.9  54.7  56.7  58.1  59.7  61.7  63.9
+   forgot big         27 |  38.9  41.4  43.6  45.9  47.8  49.2  49.7  51.7  52.7  53.5  55.0  55.8  55.6  56.9
+   SSS small           9 |  24.8  26.3  27.4  29.2  30.9  32.7  32.1  33.9  34.8  36.4  37.9  39.4  40.4  42.0
+   SSS big            32 |  45.2  46.7  48.2  48.2  49.6  49.9  49.4  50.7  52.4  53.3  54.2  51.6  51.9  52.7
+   Vibing++ small     10 |  13.5  15.0  15.8  16.9  18.3  19.3  18.6  20.2  22.7  25.3  27.5  30.3  31.9  33.4
+   Vibing++ big       28 |  38.0  39.5  41.4  42.4  43.8  44.9  44.1  45.9  47.1  48.1  49.8  50.8  52.1  53.1

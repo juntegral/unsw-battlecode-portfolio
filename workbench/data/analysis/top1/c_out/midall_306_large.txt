@@ -1,0 +1,72 @@
+=== LENGTH CLASSES team 306, large, 50 games: means per game (a game counts in a block while it lasts)
+block side class | dragons alive (mean) | natural / corpse pearls per 100 dragon-rounds | ordinary splits / sheds (5+ parent keeps 2) per game | deaths per game: rammed / rammer / boxed / free-cell | segments lost per game in those four | enemy head in view % of dragon-rounds | turns of 2+ steps % | deaths per game in head-ons inside the own team (not counted as rams)
+r  0 team 306   L2    |   9.0 | nat  6.75 cor  2.48 |   0.0 /  0.0 |  0.6 /  0.8 / 17.9 /  0.4 |   1.2 /   1.6 /  35.8 /   0.8 | ev  12% | multi   0% | friend  0.3
+r  0 team 306   L3-4  |   5.6 | nat 11.96 cor  5.54 |  29.2 /  0.0 |  0.3 /  1.4 /  3.5 /  0.1 |   0.9 /   4.2 /  10.6 /   0.4 | ev  14% | multi   1% | friend  0.1
+r  0 team 306   L5-9  |   1.0 | nat 13.33 cor  6.28 |   3.2 /  9.8 |  0.0 /  0.1 /  0.0 /  0.0 |   0.0 /   0.5 /   0.0 /   0.0 | ev  11% | multi  22% | friend  0.0
+r  0 team 306   L10+  |   0.0 | nat 14.89 cor  6.38 |   0.4 /  0.2 |  0.0 /  0.0 /  0.0 /  0.3 |   0.0 /   0.0 /   0.0 /   5.7 | ev  17% | multi  22% | friend  0.0
+
+r  0 opponents  L2    |  13.2 | nat  4.88 cor  0.87 |   0.0 /  0.0 |  1.3 /  0.4 / 10.5 /  0.4 |   2.6 /   0.8 /  21.0 /   0.7 | ev   9% | multi   0% | friend  0.1
+r  0 opponents  L3-4  |   5.3 | nat 12.07 cor  2.30 |  28.5 /  0.0 |  1.0 /  0.5 /  2.1 /  0.0 |   3.3 /   1.5 /   6.4 /   0.1 | ev  12% | multi   0% | friend  0.0
+r  0 opponents  L5-9  |   0.4 | nat 13.99 cor 10.64 |   2.9 /  5.4 |  0.0 /  0.0 /  0.1 /  0.0 |   0.0 /   0.0 /   0.6 /   0.0 | ev   7% | multi   9% | friend  0.0
+r  0 opponents  L10+  |   0.1 | nat  0.00 cor  0.75 |   1.5 /  0.2 |  0.0 /  0.0 /  0.0 /  0.0 |   0.0 /   0.0 /   0.0 /   0.4 | ev  11% | multi  22% | friend  0.0
+
+r 50 team 306   L2    |  19.0 | nat  5.06 cor  3.29 |   0.0 /  0.0 |  3.5 /  2.2 / 31.2 /  1.0 |   7.0 /   4.3 /  62.3 /   2.0 | ev  20% | multi   0% | friend  0.4
+r 50 team 306   L3-4  |  12.3 | nat  8.59 cor  4.84 |  51.9 /  0.0 |  1.7 /  4.9 /  8.4 /  0.3 |   5.3 /  15.1 /  25.4 /   1.0 | ev  20% | multi   1% | friend  0.2
+r 50 team 306   L5-9  |   1.5 | nat 12.95 cor  6.97 |   1.0 / 16.3 |  0.2 /  0.0 /  0.1 /  0.0 |   0.9 /   0.2 /   0.6 /   0.0 | ev  24% | multi  28% | friend  0.1
+r 50 team 306   L10+  |   0.2 | nat  9.96 cor  7.23 |   0.1 /  0.7 |  0.1 /  0.0 /  0.0 /  0.0 |   0.7 /   0.0 /   0.0 /   0.0 | ev  28% | multi  52% | friend  0.0
+
+r 50 opponents  L2    |  25.1 | nat  3.84 cor  1.87 |   0.0 /  0.0 |  3.8 /  2.2 / 20.1 /  0.7 |   7.7 /   4.5 /  40.1 /   1.5 | ev  17% | multi   0% | friend  0.3
+r 50 opponents  L3-4  |  14.2 | nat  7.41 cor  3.35 |  47.5 /  0.0 |  3.1 /  3.1 /  5.8 /  0.5 |   9.9 /   9.6 /  18.4 /   1.7 | ev  17% | multi   1% | friend  0.1
+r 50 opponents  L5-9  |   0.9 | nat 15.26 cor 11.78 |   4.0 /  9.0 |  0.1 /  0.0 /  1.1 /  0.0 |   0.5 /   0.3 /   6.5 /   0.1 | ev  23% | multi  26% | friend  0.1
+r 50 opponents  L10+  |   0.1 | nat  9.77 cor  3.01 |   0.1 /  0.2 |  0.0 /  0.0 /  0.0 /  0.0 |   0.4 /   0.0 /   0.2 /   0.0 | ev  35% | multi  55% | friend  0.0
+
+r100 team 306   L2    |  24.5 | nat  3.74 cor  3.32 |   0.0 /  0.0 |  4.5 /  3.6 / 32.7 /  1.4 |   9.0 /   7.1 /  65.3 /   2.8 | ev  24% | multi   0% | friend  0.7
+r100 team 306   L3-4  |  17.1 | nat  6.27 cor  4.64 |  52.1 /  0.0 |  2.6 /  7.6 / 10.2 /  0.4 |   8.4 /  23.4 /  31.5 /   1.5 | ev  22% | multi   1% | friend  0.3
+r100 team 306   L5-9  |   2.6 | nat 13.71 cor  9.91 |   1.6 / 17.9 |  0.4 /  0.4 /  1.3 /  0.1 |   3.0 /   2.3 /   8.6 /   0.6 | ev  25% | multi  39% | friend  0.0
+r100 team 306   L10+  |   0.8 | nat  8.34 cor  8.77 |   0.1 /  3.0 |  0.2 /  0.0 /  0.4 /  0.0 |   2.9 /   0.0 /   4.7 /   0.2 | ev  30% | multi  52% | friend  0.0
+
+r100 opponents  L2    |  29.8 | nat  2.78 cor  1.93 |   0.0 /  0.0 |  6.2 /  3.1 / 20.8 /  0.7 |  12.5 /   6.2 /  41.5 /   1.4 | ev  20% | multi   0% | friend  0.4
+r100 opponents  L3-4  |  21.2 | nat  4.92 cor  3.12 |  41.7 /  0.0 |  4.5 /  4.5 /  6.8 /  0.6 |  14.1 /  13.7 /  21.6 /   2.0 | ev  19% | multi   1% | friend  0.2
+r100 opponents  L5-9  |   2.8 | nat  9.37 cor  8.36 |   5.4 / 11.0 |  0.8 /  0.2 /  3.2 /  0.0 |   5.0 /   1.0 /  20.0 /   0.1 | ev  21% | multi  45% | friend  0.0
+r100 opponents  L10+  |   0.2 | nat 10.20 cor  5.65 |   0.1 /  0.7 |  0.1 /  0.0 /  0.1 /  0.0 |   0.6 /   0.2 /   0.8 /   0.0 | ev  24% | multi  51% | friend  0.0
+
+r150 team 306   L2    |  25.6 | nat  3.34 cor  3.51 |   0.0 /  0.0 |  4.9 /  3.3 / 33.8 /  1.5 |   9.8 /   6.6 /  67.6 /   3.0 | ev  23% | multi   0% | friend  0.7
+r150 team 306   L3-4  |  19.5 | nat  5.74 cor  4.57 |  49.6 /  0.0 |  2.8 /  9.0 / 12.4 /  0.6 |   9.1 /  28.1 /  38.5 /   1.8 | ev  20% | multi   1% | friend  0.4
+r150 team 306   L5-9  |   4.3 | nat 12.23 cor  9.41 |   2.9 / 23.0 |  0.8 /  0.4 /  2.6 /  0.1 |   5.2 /   2.0 /  16.8 /   0.6 | ev  21% | multi  40% | friend  0.1
+r150 team 306   L10+  |   1.4 | nat  7.80 cor  7.97 |   0.2 /  3.7 |  0.6 /  0.0 /  0.6 /  0.0 |   7.8 /   0.0 /   7.9 /   0.0 | ev  28% | multi  57% | friend  0.0
+
+r150 opponents  L2    |  28.7 | nat  2.37 cor  2.00 |   0.0 /  0.0 |  5.5 /  3.0 / 18.1 /  0.8 |  11.1 /   6.0 /  36.3 /   1.5 | ev  21% | multi   0% | friend  0.2
+r150 opponents  L3-4  |  22.7 | nat  4.13 cor  3.37 |  35.1 /  0.0 |  5.6 /  5.5 /  6.5 /  1.0 |  18.1 /  17.2 /  21.1 /   3.6 | ev  20% | multi   1% | friend  0.2
+r150 opponents  L5-9  |   4.8 | nat  6.40 cor  6.47 |   7.5 / 11.3 |  1.2 /  0.5 /  3.6 /  0.4 |   7.2 /   3.0 /  21.8 /   2.3 | ev  19% | multi  44% | friend  0.2
+r150 opponents  L10+  |   0.9 | nat  6.52 cor  7.57 |   0.6 /  1.0 |  0.3 /  0.0 /  0.2 /  0.1 |   3.2 /   0.3 /   2.8 /   0.7 | ev  20% | multi  53% | friend  0.0
+
+r200 team 306   L2    |  25.5 | nat  2.91 cor  3.30 |   0.0 /  0.0 |  4.5 /  2.9 / 33.0 /  1.5 |   9.0 /   5.8 /  66.0 /   3.0 | ev  23% | multi   0% | friend  0.8
+r200 team 306   L3-4  |  20.0 | nat  5.30 cor  4.34 |  40.1 /  0.0 |  2.4 /  8.1 / 12.0 /  0.5 |   7.7 /  25.2 /  38.3 /   1.7 | ev  21% | multi   1% | friend  0.6
+r200 team 306   L5-9  |   5.7 | nat 10.41 cor  9.12 |   5.1 / 23.1 |  1.1 /  0.7 /  3.4 /  0.1 |   7.1 /   3.9 /  21.7 /   0.4 | ev  22% | multi  44% | friend  0.1
+r200 team 306   L10+  |   2.5 | nat  6.25 cor  7.53 |   0.4 /  5.7 |  0.5 /  0.1 /  0.9 /  0.0 |   7.6 /   2.5 /  11.9 /   0.0 | ev  26% | multi  57% | friend  0.0
+
+r200 opponents  L2    |  28.8 | nat  2.12 cor  1.94 |   0.0 /  0.0 |  5.5 /  2.6 / 19.8 /  1.2 |  10.9 /   5.2 /  39.5 /   2.4 | ev  22% | multi   0% | friend  0.1
+r200 opponents  L3-4  |  22.7 | nat  3.60 cor  3.32 |  32.7 /  0.0 |  4.5 /  5.5 /  7.4 /  1.5 |  14.4 /  17.2 /  23.7 /   5.2 | ev  22% | multi   1% | friend  0.2
+r200 opponents  L5-9  |   5.5 | nat  5.76 cor  6.55 |   7.4 / 12.4 |  1.5 /  0.5 /  3.7 /  0.6 |   9.0 /   2.8 /  23.0 /   3.5 | ev  21% | multi  41% | friend  0.0
+r200 opponents  L10+  |   1.3 | nat  4.84 cor  8.93 |   1.0 /  1.6 |  0.4 /  0.0 /  0.3 /  0.1 |   4.9 /   0.5 /   4.5 /   1.6 | ev  21% | multi  51% | friend  0.0
+
+r250 team 306   L2    |  25.1 | nat  2.90 cor  3.31 |   0.0 /  0.0 |  4.8 /  2.4 / 30.8 /  1.2 |   9.5 /   4.8 /  61.6 /   2.5 | ev  22% | multi   0% | friend  0.7
+r250 team 306   L3-4  |  20.0 | nat  5.19 cor  4.68 |  37.3 /  0.0 |  2.6 /  7.9 / 13.0 /  0.8 |   8.7 /  25.0 /  41.6 /   2.4 | ev  22% | multi   1% | friend  0.3
+r250 team 306   L5-9  |   6.4 | nat  9.97 cor  9.65 |   6.8 / 23.2 |  1.2 /  1.3 /  4.7 /  0.1 |   7.8 /   7.4 /  31.1 /   1.0 | ev  22% | multi  46% | friend  0.2
+r250 team 306   L10+  |   3.3 | nat  7.13 cor  7.11 |   0.9 /  6.8 |  0.7 /  0.1 /  1.6 /  0.1 |  11.0 /   0.8 /  18.6 /   1.4 | ev  25% | multi  55% | friend  0.0
+
+r250 opponents  L2    |  28.2 | nat  2.14 cor  2.05 |   0.0 /  0.0 |  5.3 /  3.2 / 19.2 /  1.4 |  10.6 /   6.4 /  38.4 /   2.7 | ev  22% | multi   0% | friend  0.2
+r250 opponents  L3-4  |  22.5 | nat  3.59 cor  3.33 |  33.2 /  0.0 |  4.6 /  5.7 /  7.3 /  1.7 |  14.8 /  18.0 /  23.4 /   5.6 | ev  22% | multi   1% | friend  0.2
+r250 opponents  L5-9  |   5.6 | nat  5.95 cor  6.64 |   6.5 / 11.4 |  1.4 /  0.4 /  3.3 /  0.3 |   8.8 /   2.2 /  20.3 /   2.0 | ev  21% | multi  41% | friend  0.1
+r250 opponents  L10+  |   1.6 | nat  5.73 cor  9.65 |   1.1 /  2.7 |  0.4 /  0.0 /  0.6 /  0.1 |   5.9 /   0.0 /   8.5 /   1.2 | ev  21% | multi  52% | friend  0.0
+
+r300 team 306   L2    |  26.5 | nat  2.63 cor  3.13 |   0.0 /  0.0 |  4.0 /  2.6 / 28.6 /  4.7 |   8.1 /   5.1 /  57.2 /   9.4 | ev  21% | multi   0% | friend  0.7
+r300 team 306   L3-4  |  19.1 | nat  5.01 cor  4.62 |  40.1 /  0.0 |  2.1 /  7.3 / 13.0 /  2.6 |   7.0 /  22.8 /  41.9 /   8.4 | ev  21% | multi   1% | friend  0.6
+r300 team 306   L5-9  |   5.4 | nat  9.99 cor 10.60 |   8.3 / 17.3 |  1.3 /  0.9 /  3.5 /  0.3 |   8.6 /   5.1 /  23.0 /   1.7 | ev  24% | multi  45% | friend  0.1
+r300 team 306   L10+  |   3.9 | nat  6.57 cor  9.57 |   1.7 /  7.6 |  0.7 /  0.0 /  2.2 /  0.0 |  10.6 /   0.3 /  26.2 /   0.2 | ev  23% | multi  56% | friend  0.0
+
+r300 opponents  L2    |  28.5 | nat  2.12 cor  2.14 |   0.0 /  0.0 |  4.9 /  2.6 / 19.3 / 10.5 |   9.8 /   5.2 /  38.6 /  21.0 | ev  24% | multi   0% | friend  0.2
+r300 opponents  L3-4  |  19.6 | nat  3.68 cor  3.40 |  39.1 /  0.0 |  4.5 /  5.2 /  6.4 /  5.8 |  14.2 /  16.1 /  20.2 /  18.5 | ev  23% | multi   1% | friend  0.2
+r300 opponents  L5-9  |   4.4 | nat  5.55 cor  8.03 |   6.4 /  9.3 |  0.9 /  0.3 /  1.7 /  1.3 |   6.0 /   1.8 /  10.3 /   7.8 | ev  23% | multi  39% | friend  0.1
+r300 opponents  L10+  |   2.2 | nat  6.57 cor 18.60 |   2.0 /  3.2 |  0.5 /  0.0 /  0.3 /  0.3 |   7.0 /   0.0 /   3.3 /   4.3 | ev  17% | multi  49% | friend  0.0
+

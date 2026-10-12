@@ -1,0 +1,65 @@
+[
+ {
+  "id": "F45",
+  "claim": "About four in five of the games in which we are wiped out after round 125 were already lost at round 100 (our total length under 0.8 of theirs), on main and on v31; the same is true of the opponents when we wipe them out.",
+  "how_to_count": "rows.jsonl or raw replays. Late wipe-out of ours = the game ended by elimination, none of our dragons alive at the end, last raw round 126 or more. Behind = total length of our living dragons after raw round 100 is strictly under 0.8 times theirs. Count by our_code main and v31; main halves split at 2026-10-06T14:48:15Z; layouts with width times height 1200 or fewer against larger; opponent bands 1700-1899, 1900-2099, 2100+. Mirror: the same with the sides exchanged (none of theirs alive). Scale line: of all main games that reached raw round 100, how many have us behind by this margin and how many of those we won; the same for them.",
+  "your_numbers": {
+   "main": "41 of 52",
+   "v31": "49 of 58",
+   "main_halves": "8 of 11 and 33 of 41",
+   "main_small_big": "32 of 40 and 9 of 12",
+   "main_bands": "9 of 13, 18 of 25, 13 of 13",
+   "mirror": "main 78 of 85, v31 56 of 64",
+   "main_same_52": "behind at r50 by the same margin 30; pearls by r50 under half 24; 6 or fewer alive at r100 31; 2-dragon-start layouts 31",
+   "main_not_behind_11": "under 0.8 at r200 in 10 of the 10 that reached it",
+   "scale_main": "454 games reached r100; we behind in 159, won 44; they behind in 168, they won 33; small layouts 31 of 105 against 11 of 128; big 13 of 54 against 22 of 40"
+  },
+  "slices": [
+   "main and v31",
+   "the two halves of main",
+   "layouts of 1200 cells or fewer and larger"
+  ]
+ },
+ {
+  "id": "F44",
+  "claim": "Run 1800 additions. (a) Against 1900+ on layouts of 1200 cells or fewer, early wipe-outs (none of ours left by raw round 125) are about five times as frequent where the queens start 10 tiles apart or less; 32 of all 38 are on Stripes, Trophy, Devil and the two Prisoners Dilemma layouts and none on Default, Portals, Tower Defense or weakhold. (b) In raw rounds 0-60 of the 34 early wipe-outs up to battle 1316833 their dragon is the mover in about three quarters of head-on meetings between the teams, against about 0.43 in the other games on the same layouts. (c) On small layouts in rounds 0-60 the 2100+ teams are the mover in 0.60 to 0.65 of such meetings, teams below 2100 in 0.43 to 0.51.",
+  "how_to_count": "Early wipe-out: ended by elimination, final alive of ours 0, last raw round 125 or lower. Layout size = width times height from the replay header; queen distance = maps.json queen_spawn_distance (wrapped Manhattan distance between the two queen heads at spawn). (a) main and v31 separately, opponent rating 1900 or more, cells 1200 or fewer: wipe-outs over games for distance 10 or less and for more; wipe-outs per layout. (b) and (c): raw replays, raw rounds 0 to 60 inclusive. A meeting = a dragonDeath with engine reason 3 (head-on) of a dragon that is not the one whose turn it is (the last turnStart actor), where that actor is alive and belongs to the other team; the mover is the actor; lengths are body lengths just before the death. Count meetings by mover side. (b) the 34 early wipe-outs with battle id 1316833 or lower against all other main (v31) games on the layouts that have such a wipe-out in that code. (c) every main (v31) game on a layout of 1200 cells or fewer, by opponent rating band; also per opponent in the 2100+ band.",
+  "your_numbers": {
+   "a_main": "near 13 of 89, far 3 of 105",
+   "a_v31": "near 12 of 65, far 2 of 59",
+   "a_layouts_all_bands": "main 22 early wipe-outs: Stripes 7, Trophy 5, Prisoners Dilemma #1 3, #2 1, Devil 2, Queen Of Spades 3, Autarky 1; v31 16: Stripes 7, Trophy 2, Prisoners Dilemma #1 3, #2 1, Devil 1, Queen Of Spades 2; five layouts main 18 of 94, v31 14 of 103",
+   "b_main": "83 of 115 (0.72); other games 242 of 576 (0.42) in 130 games",
+   "b_v31": "50 of 64 (0.78); other games 233 of 526 (0.44) in 113 games",
+   "b_lengths_main": "their movers 2 or 3 long in 77 of 83; our victims 2 or 3 long in 72 of 83; our queen the victim in 8 (v31 7)",
+   "c_main": "0.44 (242 meetings, 125 games), 0.46 (393, 151), 0.65 (114, 43)",
+   "c_v31": "0.43 (453, 156), 0.51 (253, 92), 0.60 (125, 32)",
+   "c_top_band_opponents": "their share above ours for 8 of 10 opponents on main, 7 of 8 on v31",
+   "pass": "work/h26_pass.py, 654 games, 0 errors"
+  },
+  "slices": [
+   "main and v31",
+   "the five layouts and the other small layouts",
+   "opponent rating bands"
+  ]
+ },
+ {
+  "id": "F42",
+  "claim": "In full games lost on the queen rule with only their queen alive (free layouts, Portals left out), counted by the bot's own sighting rule (her head within 3 columns and rows of a head of ours): we hold a sighting 20 rounds old or less in about half of her lone turns on main and a third on v31, and in those turns a head of ours is within 6 path steps of her head in about a fifth (main) and an eighth (v31); their dragons against our lone queen: a third. By layout size: above 1200 cells we seldom have the sighting but are near when we do; on 1200 cells or fewer we have it and are not near.",
+  "how_to_count": "Games: our_code main or v31, last raw round 499, ended on the queen rule, only their queen alive at the end, layouts with queen_spawn_dead_end false; Portals apart. Turn starts of their queen in raw round 100 or later after our queen died in an earlier event. Seen at a turn start = some living head of ours has wrapped column distance 3 or less and wrapped row distance 3 or less to her head; test this at every one of her turn starts from the start of the game. Age = current raw round minus the raw round of her last seen turn start (this one included); classes 0-20, 21-50, 51-100, over 100, never. Near = the smallest path distance from her head to any living head of ours (steps across open tile sides and through portals, dragons ignored) is 6 or less; also 7 to 12. Mirror: the same with the sides exchanged, in the full games we won on the queen rule with only our queen alive.",
+  "your_numbers": {
+   "main_without_portals": "40 games, 11,874 turns: age 0-20 0.505, 21-50 0.156, 51-100 0.111, over 100 0.090, never 0.137; near in 0.190 of the 0-20 turns, 0.019 of 21-50, 0.008 of 51-100; her head in view at that turn 0.130",
+   "v31_without_portals": "30 games, 10,321 turns: 0.341, 0.139, 0.096, 0.169, 0.255; near 0.120, 0.012, 0.015; in view 0.095",
+   "mirror": "main 16 games, 4,523 turns: 0-20 0.663, never 0.018, near when 0-20 0.343, in view 0.243; v31 8 games, 2,346 turns: 0.566, 0.110, 0.349, 0.205",
+   "big_layouts": "main 13 games: 0-20 0.411, never 0.216, near when 0-20 0.380; v31 14 games: 0.226, 0.290, 0.268",
+   "small_without_portals": "main 27 games: 0-20 0.563, near when 0-20 0.105; v31 16 games: 0.460, 0.046",
+   "portals": "main 8 games, v31 6: 0-20 0.97 and 0.96; no head of ours within 12 path steps in any turn",
+   "by_body_instead_of_head": "fresh 0.693 main (0.621 without Portals), 0.517 v31 (0.41)",
+   "pass": "work/h27_pass.py, 108 games, 0 errors; the size split was seen after the count, not predicted"
+  },
+  "slices": [
+   "main and v31",
+   "layouts above 1200 cells and layouts of 1200 cells or fewer",
+   "the two halves of main (0.413 and 0.537 fresh; near when fresh 0.272 and 0.168)"
+  ]
+ }
+]

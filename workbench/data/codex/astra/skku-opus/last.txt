@@ -1,0 +1,83 @@
+replays 5 json 5 waited 20
+== 1536232 Slithery Fight 1701 seat A bot 21761 loss queen last r 499 ends us/them N,T,L,Q [[12, 92, 27, 0], [41, 285, 41, 18]] | p100 407 411 n100 62 63 n50 48 49 | queen ids [0, 1] | their queen died r None
+   OUR queen died r 170 L 4 reason 3 at (17, 19) their queen alive then True our units 60
+   rammed by id 520 L 11 from (20, 20) gap 4 steps 4 paid 1 portal [False, False, False, False] seen at her last turn True | gap at her last turn start 3 rammer reach 12 her last step (17, 20) -> (17, 19)
+     turn 166 L 4 path [(15, 20), (16, 20)] eat 0 split False
+     turn 167 L 4 path [(16, 20), (16, 21)] eat 0 split False
+     turn 168 L 4 path [(16, 21), (17, 21)] eat 0 split False
+     turn 169 L 4 path [(17, 21), (17, 20)] eat 0 split False
+     turn 170 L 4 path [(17, 20), (17, 19)] eat 0 split False
+     view r 167 h (16, 20) L 4 foes(id,L,head,gap) [] pearls 0 units 59
+     view r 168 h (16, 21) L 4 foes(id,L,head,gap) [] pearls 0 units 60
+     view r 169 h (17, 21) L 4 foes(id,L,head,gap) [(532, 2, (20, 23), 5)] pearls 1 units 60
+     view r 170 h (17, 20) L 4 foes(id,L,head,gap) [(520, 11, (20, 20), 3), (532, 2, (19, 23), 5)] pearls 0 units 60
+     board at her last turn start (Q queen, E foe head whose head is in view, A/a other bodies in view incl. foes with head out of view, * pearl):
+       .A.....
+       .a.....
+       .......
+       ..qQ..E
+       ..qq...
+       ......a
+       .....Ee
+== 1536233 Queen Of Spades 875 seat A bot 21761 win elim last r 268 ends us/them N,T,L,Q [[25, 64, 4, 3], [0, 0, 0, 0]] | p100 68 70 n100 8 7 n50 9 7 | queen ids [1, 0] | their queen died r 94
+   our queen alive at end
+== 1536234 Islands 2240 seat A bot 21761 loss total last r 499 ends us/them N,T,L,Q [[19, 104, 32, 0], [20, 119, 32, 0]] | p100 166 253 n100 34 50 n50 20 32 | queen ids [0, 1] | their queen died r 250
+   OUR queen died r 175 L 3 reason 3 at (55, 13) their queen alive then True our units 55
+   rammed by id 289 L 3 from (53, 13) gap 2 steps 2 paid 1 portal [False, False] seen at her last turn True | gap at her last turn start 3 rammer reach 2 her last step (0, 13) -> (55, 13)
+     turn 171 L 3 path [(1, 12), (2, 12)] eat 0 split False
+     turn 172 L 3 path [(2, 12), (2, 13)] eat 0 split False
+     turn 173 L 3 path [(2, 13), (1, 13)] eat 0 split False
+     turn 174 L 3 path [(1, 13), (0, 13)] eat 0 split False
+     turn 175 L 3 path [(0, 13), (55, 13)] eat 0 split False
+     view r 172 h (2, 12) L 3 foes(id,L,head,gap) [(195, 2, (3, 9), 4)] pearls 0 units 53
+     view r 173 h (2, 13) L 3 foes(id,L,head,gap) [] pearls 0 units 54
+     view r 174 h (1, 13) L 3 foes(id,L,head,gap) [(195, 2, (2, 10), 4)] pearls 0 units 52
+     view r 175 h (0, 13) L 3 foes(id,L,head,gap) [(195, 2, (2, 11), 4), (289, 3, (53, 13), 3)] pearls 0 units 55
+     board at her last turn start (Q queen, E foe head whose head is in view, A/a other bodies in view incl. foes with head out of view, * pearl):
+       .....eA
+       e....E.
+       e......
+       E..Qqq.
+       .......
+       .......
+       .......
+== 1536235 Default 1024 seat A bot 21761 loss elim last r 364 ends us/them N,T,L,Q [[0, 0, 0, 0], [54, 139, 6, 6]] | p100 33 85 n100 11 26 n50 11 14 | queen ids [1, 0] | their queen died r None
+   OUR queen died r 61 L 2 reason 3 at (28, 18) their queen alive then True our units 11
+   rammed by id 6 L 3 from (28, 16) gap 2 steps 2 paid 1 portal [False, False] seen at her last turn True | gap at her last turn start 3 rammer reach 2 her last step (28, 19) -> (28, 18)
+     turn 57 L 4 path [(27, 21), (27, 20)] eat 0 split False
+     turn 58 L 4 path [(27, 20), (27, 19)] eat 0 split False
+     turn 59 L 4 path [(27, 19), (28, 19)] eat 0 split False
+     turn 60 L 4 path [(28, 19)] eat 0 split True
+     turn 61 L 2 path [(28, 19), (28, 18)] eat 0 split False
+     view r 58 h (27, 20) L 4 foes(id,L,head,gap) [(2, 3, (29, 23), 5)] pearls 0 units 11
+     view r 59 h (27, 19) L 4 foes(id,L,head,gap) [(2, 3, (29, 22), 5), (6, 3, (26, 16), 4)] pearls 0 units 11
+     view r 60 h (28, 19) L 4 foes(id,L,head,gap) [(2, 3, (29, 21), 3), (6, 3, (27, 16), 4)] pearls 0 units 11
+     view r 61 h (28, 19) L 2 foes(id,L,head,gap) [(2, 3, (29, 20), 2), (6, 3, (28, 16), 3)] pearls 0 units 11
+     board at her last turn start (Q queen, E foe head whose head is in view, A/a other bodies in view incl. foes with head out of view, * pearl):
+       .eeE...
+       .......
+       .......
+       ..qQ...
+       ....E..
+       ..aAe..
+       ....e..
+== 1536236 Tower Defense 512 seat A bot 21761 loss elim last r 233 ends us/them N,T,L,Q [[0, 0, 0, 0], [31, 77, 3, 2]] | p100 12 55 n100 3 14 n50 2 3 | queen ids [0, 1] | their queen died r None
+   OUR queen died r 97 L 2 reason 3 at (14, 0) their queen alive then True our units 4
+   rammed by id 10 L 3 from (12, 0) gap 2 steps 2 paid 1 portal [False, False] seen at her last turn True | gap at her last turn start 3 rammer reach 2 her last step (14, 1) -> (14, 0)
+     turn 93 L 4 path [(17, 14), (17, 15)] eat 0 split False
+     turn 94 L 4 path [(17, 15), (17, 0), (16, 0), (15, 0)] eat 0 split False
+     turn 95 L 2 path [(15, 0), (15, 1)] eat 0 split False
+     turn 96 L 2 path [(15, 1), (14, 1)] eat 0 split False
+     turn 97 L 2 path [(14, 1), (14, 0)] eat 0 split False
+     view r 94 h (17, 15) L 4 foes(id,L,head,gap) [(3, 3, (18, 0), 2), (19, 2, (18, 2), 4)] pearls 9 units 4
+     view r 95 h (15, 0) L 2 foes(id,L,head,gap) [(3, 3, (17, 0), 2), (19, 2, (17, 2), 4)] pearls 11 units 4
+     view r 96 h (15, 1) L 2 foes(id,L,head,gap) [(3, 3, (16, 0), 2), (6, 2, (12, 3), 5), (19, 2, (17, 1), 2)] pearls 9 units 4
+     view r 97 h (14, 1) L 2 foes(id,L,head,gap) [(3, 3, (16, 15), 4), (6, 2, (12, 2), 3), (10, 3, (12, 0), 3)] pearls 8 units 4
+     board at her last turn start (Q queen, E foe head whose head is in view, A/a other bodies in view incl. foes with head out of view, * pearl):
+       ....*..
+       .....E.
+       eE...ee
+       e.*Qq*a
+       .E.***.
+       .e..*..
+       ....a.*

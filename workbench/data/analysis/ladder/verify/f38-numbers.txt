@@ -1,0 +1,277 @@
+games loaded 765 errors 0
+codes: {'v31': 410, 'other': 40, 'main': 315} | bot ids: {'v31 17790': 410, 'other 17997': 10, 'main 18066': 5, 'other 18355': 15, 'other 18425': 5, 'other 18467': 5, 'main 18504': 175, 'other 18537': 5, 'main 18570': 135}
+rebuild checks: final state differs from result block in 0 | owner map differs in 0 | anomalies {} | unfollowable portals 0
+free main games 273 (before the cut 84 , from the cut 189 ) free v31 games 362
+layouts not free: ['Schooltime #1', 'Schooltime #2', 'Slithery Fight #1']
+
+== (1) share of queen turn starts on a narrow tile (2 or fewer open sides), r0-200 ==
+main Maze #1                                   games  24 | ours 0.138 of 4035 | theirs 0.032 of 4209 | ratio 4.30 | games ours higher 16, theirs higher 8
+     game bootstrap of the ratio, 95 percent: 2.16 to 9.94
+main weakhold #1                               games  20 | ours 0.337 of 2437 | theirs 0.138 of 2511 | ratio 2.44 | games ours higher 17, theirs higher 3
+     game bootstrap of the ratio, 95 percent: 1.62 to 3.97
+v31 Maze #1                                    games  24 | ours 0.187 of 3704 | theirs 0.088 of 3874 | ratio 2.12 | games ours higher 17, theirs higher 7
+     game bootstrap of the ratio, 95 percent: 1.08 to 5.56
+v31 weakhold #1                                games  29 | ours 0.294 of 3270 | theirs 0.080 of 4104 | ratio 3.67 | games ours higher 22, theirs higher 7
+     game bootstrap of the ratio, 95 percent: 2.43 to 6.01
+Tower Defense, Trauma, Devil, both codes       games 131 | ours 0.045 of 19065 | theirs 0.061 of 20318 | ratio 0.74 | games ours higher 70, theirs higher 53
+  of which main                                games  64 | ours 0.043 of 10160 | theirs 0.053 of 10741 | ratio 0.81 | games ours higher 33, theirs higher 29
+  of which v31                                 games  67 | ours 0.047 of 8905 | theirs 0.070 of 9577 | ratio 0.67 | games ours higher 37, theirs higher 24
+all free main                                  games 273 | ours 0.076 of 36701 | theirs 0.053 of 37147 | ratio 1.44 | games ours higher 137, theirs higher 129
+all free v31                                   games 362 | ours 0.083 of 43792 | theirs 0.055 of 46697 | ratio 1.52 | games ours higher 190, theirs higher 153
+
+per layout, both codes (corridor share from maps.json; narrow tiles of the layout = tiles with 1 or 2 open sides / tiles with any):
+  corridor 0.40, narrow tiles 0.42 (dead-end tiles 24):
+    Maze #1                                    games  48 | ours 0.161 of 7739 | theirs 0.059 of 8083 | ratio 2.73 | games ours higher 33, theirs higher 15
+      main                                     games  24 | ours 0.138 of 4035 | theirs 0.032 of 4209 | ratio 4.30 | games ours higher 16, theirs higher 8
+      v31                                      games  24 | ours 0.187 of 3704 | theirs 0.088 of 3874 | ratio 2.12 | games ours higher 17, theirs higher 7
+  corridor 0.35, narrow tiles 0.37 (dead-end tiles 12):
+    Tower Defense #1                           games  45 | ours 0.046 of 8473 | theirs 0.081 of 8316 | ratio 0.57 | games ours higher 19, theirs higher 24
+      main                                     games  23 | ours 0.059 of 4476 | theirs 0.076 of 4393 | ratio 0.78 | games ours higher 10, theirs higher 13
+      v31                                      games  22 | ours 0.031 of 3997 | theirs 0.087 of 3923 | ratio 0.36 | games ours higher 9, theirs higher 11
+  corridor 0.30, narrow tiles 0.33 (dead-end tiles 38):
+    Trauma #1                                  games  42 | ours 0.014 of 8442 | theirs 0.016 of 8184 | ratio 0.87 | games ours higher 28, theirs higher 10
+      main                                     games  25 | ours 0.013 of 5025 | theirs 0.018 of 4942 | ratio 0.72 | games ours higher 15, theirs higher 8
+      v31                                      games  17 | ours 0.016 of 3417 | theirs 0.014 of 3242 | ratio 1.19 | games ours higher 13, theirs higher 2
+  corridor 0.29, narrow tiles 0.34 (dead-end tiles 28):
+    weakhold #1                                games  49 | ours 0.312 of 5707 | theirs 0.102 of 6615 | ratio 3.06 | games ours higher 39, theirs higher 10
+      main                                     games  20 | ours 0.337 of 2437 | theirs 0.138 of 2511 | ratio 2.44 | games ours higher 17, theirs higher 3
+      v31                                      games  29 | ours 0.294 of 3270 | theirs 0.080 of 4104 | ratio 3.67 | games ours higher 22, theirs higher 7
+  corridor 0.27, narrow tiles 0.27 (dead-end tiles 0):
+    Devil #1                                   games  44 | ours 0.161 of 2150 | theirs 0.113 of 3818 | ratio 1.43 | games ours higher 23, theirs higher 19
+      main                                     games  16 | ours 0.167 of 659 | theirs 0.106 of 1406 | ratio 1.58 | games ours higher 8, theirs higher 8
+      v31                                      games  28 | ours 0.158 of 1491 | theirs 0.117 of 2412 | ratio 1.36 | games ours higher 15, theirs higher 11
+  corridor 0.21, narrow tiles 0.28 (dead-end tiles 156):
+    Islands #1                                 games  30 | ours 0.090 of 3545 | theirs 0.075 of 3326 | ratio 1.21 | games ours higher 13, theirs higher 17
+      main                                     games  13 | ours 0.092 of 1377 | theirs 0.070 of 1279 | ratio 1.31 | games ours higher 6, theirs higher 7
+      v31                                      games  17 | ours 0.089 of 2168 | theirs 0.078 of 2047 | ratio 1.14 | games ours higher 7, theirs higher 10
+  corridor 0.21, narrow tiles 0.25 (dead-end tiles 12):
+    Stripes #1                                 games  40 | ours 0.122 of 3488 | theirs 0.136 of 3327 | ratio 0.90 | games ours higher 15, theirs higher 25
+      main                                     games  14 | ours 0.113 of 1312 | theirs 0.115 of 1420 | ratio 0.98 | games ours higher 7, theirs higher 7
+      v31                                      games  26 | ours 0.127 of 2176 | theirs 0.152 of 1907 | ratio 0.84 | games ours higher 8, theirs higher 18
+  corridor 0.18, narrow tiles 0.28 (dead-end tiles 50):
+    Portals #1                                 games  39 | ours 0.122 of 2654 | theirs 0.026 of 6654 | ratio 4.63 | games ours higher 37, theirs higher 2
+      main                                     games  12 | ours 0.125 of 1018 | theirs 0.024 of 2027 | ratio 5.16 | games ours higher 11, theirs higher 1
+      v31                                      games  27 | ours 0.120 of 1636 | theirs 0.027 of 4627 | ratio 4.40 | games ours higher 26, theirs higher 1
+  corridor 0.15, narrow tiles 0.17 (dead-end tiles 16):
+    Queen Of Spades #1                         games  48 | ours 0.014 of 6745 | theirs 0.047 of 4953 | ratio 0.30 | games ours higher 12, theirs higher 35
+      main                                     games  22 | ours 0.015 of 3069 | theirs 0.056 of 2143 | ratio 0.26 | games ours higher 4, theirs higher 17
+      v31                                      games  26 | ours 0.013 of 3676 | theirs 0.040 of 2810 | ratio 0.33 | games ours higher 8, theirs higher 18
+  corridor 0.09, narrow tiles 0.10 (dead-end tiles 52):
+    Around UNSW #1                             games  48 | ours 0.039 of 6989 | theirs 0.061 of 7577 | ratio 0.64 | games ours higher 16, theirs higher 30
+      main                                     games  22 | ours 0.032 of 3482 | theirs 0.064 of 3530 | ratio 0.50 | games ours higher 8, theirs higher 14
+      v31                                      games  26 | ours 0.046 of 3507 | theirs 0.058 of 4047 | ratio 0.79 | games ours higher 8, theirs higher 16
+  corridor 0.08, narrow tiles 0.09 (dead-end tiles 4):
+    Prisoners Dilemma #1                       games  23 | ours 0.180 of 2186 | theirs 0.025 of 1873 | ratio 7.32 | games ours higher 22, theirs higher 1
+      main                                     games   5 | ours 0.188 of 516 | theirs 0.034 of 504 | ratio 5.57 | games ours higher 5, theirs higher 0
+      v31                                      games  18 | ours 0.177 of 1670 | theirs 0.021 of 1369 | ratio 8.37 | games ours higher 17, theirs higher 1
+  corridor 0.08, narrow tiles 0.09 (dead-end tiles 4):
+    Prisoners Dilemma #2                       games  14 | ours 0.205 of 1337 | theirs 0.005 of 1350 | ratio 39.52 | games ours higher 14, theirs higher 0
+      main                                     games   7 | ours 0.220 of 590 | theirs 0.004 of 561 | ratio 61.81 | games ours higher 7, theirs higher 0
+      v31                                      games   7 | ours 0.193 of 747 | theirs 0.006 of 789 | ratio 30.42 | games ours higher 7, theirs higher 0
+  corridor 0.08, narrow tiles 0.08 (dead-end tiles 3):
+    Trophy #1                                  games  38 | ours 0.040 of 3694 | theirs 0.054 of 2657 | ratio 0.74 | games ours higher 16, theirs higher 21
+      main                                     games  14 | ours 0.036 of 1500 | theirs 0.064 of 858 | ratio 0.56 | games ours higher 5, theirs higher 9
+      v31                                      games  24 | ours 0.043 of 2194 | theirs 0.049 of 1799 | ratio 0.88 | games ours higher 11, theirs higher 12
+  corridor 0.07, narrow tiles 0.08 (dead-end tiles 30):
+    Australia #1                               games  48 | ours 0.030 of 6876 | theirs 0.025 of 7653 | ratio 1.19 | games ours higher 23, theirs higher 23
+      main                                     games  20 | ours 0.030 of 2577 | theirs 0.030 of 3491 | ratio 1.01 | games ours higher 8, theirs higher 11
+      v31                                      games  28 | ours 0.030 of 4299 | theirs 0.021 of 4162 | ratio 1.40 | games ours higher 15, theirs higher 12
+  corridor 0.07, narrow tiles 0.07 (dead-end tiles 4):
+    Autarky #1                                 games  45 | ours 0.009 of 6059 | theirs 0.017 of 6443 | ratio 0.55 | games ours higher 11, theirs higher 23
+      main                                     games  17 | ours 0.014 of 2282 | theirs 0.023 of 2257 | ratio 0.59 | games ours higher 5, theirs higher 9
+      v31                                      games  28 | ours 0.006 of 3777 | theirs 0.013 of 4186 | ratio 0.48 | games ours higher 6, theirs higher 14
+  corridor 0.05, narrow tiles 0.05 (dead-end tiles 0):
+    Default #1                                 games  34 | ours 0.009 of 4409 | theirs 0.020 of 3015 | ratio 0.44 | games ours higher 6, theirs higher 27
+      main                                     games  19 | ours 0.009 of 2346 | theirs 0.020 of 1616 | ratio 0.46 | games ours higher 5, theirs higher 14
+      v31                                      games  15 | ours 0.008 of 2063 | theirs 0.019 of 1399 | ratio 0.43 | games ours higher 1, theirs higher 13
+
+Maze and weakhold by opponent band, both codes pooled:
+  Maze #1 <1700                                games   3 | ours 0.222 of 495 | theirs 0.461 of 178 | ratio 0.48 | games ours higher 1, theirs higher 2
+  Maze #1 1700-1899                            games  19 | ours 0.196 of 2957 | theirs 0.030 of 3349 | ratio 6.50 | games ours higher 17, theirs higher 2
+  Maze #1 1900-2099                            games  23 | ours 0.140 of 3783 | theirs 0.054 of 3999 | ratio 2.61 | games ours higher 14, theirs higher 9
+  Maze #1 2100+                                games   3 | ours 0.060 of 504 | theirs 0.144 of 557 | ratio 0.41 | games ours higher 1, theirs higher 2
+  weakhold #1 1700-1899                        games  26 | ours 0.298 of 3488 | theirs 0.077 of 3903 | ratio 3.88 | games ours higher 21, theirs higher 5
+  weakhold #1 1900-2099                        games  17 | ours 0.351 of 1649 | theirs 0.144 of 2067 | ratio 2.43 | games ours higher 14, theirs higher 3
+  weakhold #1 2100+                            games   6 | ours 0.288 of 570 | theirs 0.121 of 645 | ratio 2.38 | games ours higher 4, theirs higher 2
+Maze and weakhold, the three games with most of our narrow turns removed, per code:
+   removed [(1274528, 98), (1279534, 44), (1275419, 38)]
+  main Maze #1 without them                    games  21 | ours 0.105 of 3571 | theirs 0.027 of 3684 | ratio 3.92 | games ours higher 13, theirs higher 8
+   removed [(1256142, 106), (1285563, 86), (1283196, 62)]
+  main weakhold #1 without them                games  17 | ours 0.302 of 1878 | theirs 0.135 of 2327 | ratio 2.23 | games ours higher 15, theirs higher 2
+   removed [(1161767, 75), (1190065, 73), (1173391, 48)]
+  v31 Maze #1 without them                     games  21 | ours 0.155 of 3207 | theirs 0.097 of 3449 | ratio 1.60 | games ours higher 14, theirs higher 7
+   removed [(1221348, 59), (1201317, 57), (1202050, 52)]
+  v31 weakhold #1 without them                 games  26 | ours 0.292 of 2721 | theirs 0.082 of 3647 | ratio 3.55 | games ours higher 20, theirs higher 6
+Maze and weakhold by window, both codes: share narrow ours / theirs
+   Maze #1 r0-100 0.109 of 4754 / 0.065 of 4499 | r101-200 0.244 of 2985 / 0.052 of 3584 | r201-300 0.208 of 1012 / 0.048 of 2388 | r301 on 0.215 of 810 / 0.055 of 3598
+   weakhold #1 r0-100 0.327 of 4379 / 0.107 of 4152 | r101-200 0.264 of 1328 / 0.093 of 2463 | r201-300 0.211 of 454 / 0.060 of 1476 | r301 on 0.034 of 118 / 0.083 of 1780
+Maze and weakhold: one opponent left out at a time, both codes, range of the ratio
+   Maze #1 opponents 34 lowest 2.44 (without 262, 4 games) highest 3.37 (without 733, 2 games)
+   weakhold #1 opponents 34 lowest 2.75 (without 791, 4 games) highest 3.32 (without 262, 4 games)
+
+== (2) queen deaths by wall (0) or own body (1) in r101-200, by the open sides of her head tile at the start of her last turn ==
+main                               ours   deaths 24 (wall 14, own body 10; as the mover 24) | from a narrow tile 23 in 1068 (21.5 per 1,000) | from an open tile 1 in 11778 (0.1 per 1,000) | open sides at start {1: 8, 2: 15, 3: 1}
+main                               theirs deaths  2 (wall 2, own body 0; as the mover 2) | from a narrow tile 2 in 615 (3.3 per 1,000) | from an open tile 0 in 12719 (0.0 per 1,000) | open sides at start {1: 1, 2: 1}
+main                               ratio of the per-narrow-turn rates 6.62
+v31                                ours   deaths 37 (wall 25, own body 12; as the mover 37) | from a narrow tile 35 in 966 (36.2 per 1,000) | from an open tile 2 in 12918 (0.2 per 1,000) | open sides at start {1: 17, 2: 18, 3: 2}
+v31                                theirs deaths 14 (wall 8, own body 6; as the mover 14) | from a narrow tile 11 in 712 (15.4 per 1,000) | from an open tile 3 in 16027 (0.2 per 1,000) | open sides at start {1: 8, 2: 3, 3: 3}
+v31                                ratio of the per-narrow-turn rates 2.35
+pooled                             ours   deaths 61 (wall 39, own body 22; as the mover 61) | from a narrow tile 58 in 2034 (28.5 per 1,000) | from an open tile 3 in 24696 (0.1 per 1,000) | open sides at start {1: 25, 2: 33, 3: 3}
+pooled                             theirs deaths 16 (wall 10, own body 6; as the mover 16) | from a narrow tile 13 in 1327 (9.8 per 1,000) | from an open tile 3 in 28746 (0.1 per 1,000) | open sides at start {1: 9, 2: 4, 3: 3}
+pooled                             ratio of the per-narrow-turn rates 2.91
+main before 10-06T14:48:15Z        ours   deaths  7 (wall 6, own body 1; as the mover 7) | from a narrow tile 6 in 294 (20.4 per 1,000) | from an open tile 1 in 4081 (0.2 per 1,000) | open sides at start {1: 3, 2: 3, 3: 1}
+main before 10-06T14:48:15Z        theirs deaths  1 (wall 1, own body 0; as the mover 1) | from a narrow tile 1 in 125 (8.0 per 1,000) | from an open tile 0 in 3906 (0.0 per 1,000) | open sides at start {2: 1}
+main before 10-06T14:48:15Z        ratio of the per-narrow-turn rates 2.55
+main from 10-06T14:48:15Z          ours   deaths 17 (wall 8, own body 9; as the mover 17) | from a narrow tile 17 in 774 (22.0 per 1,000) | from an open tile 0 in 7697 (0.0 per 1,000) | open sides at start {1: 5, 2: 12}
+main from 10-06T14:48:15Z          theirs deaths  1 (wall 1, own body 0; as the mover 1) | from a narrow tile 1 in 490 (2.0 per 1,000) | from an open tile 0 in 8813 (0.0 per 1,000) | open sides at start {1: 1}
+main from 10-06T14:48:15Z          ratio of the per-narrow-turn rates 10.76
+pooled without Portals             ours   deaths 52 (wall 32, own body 20; as the mover 52) | from a narrow tile 50 in 1990 (25.1 per 1,000) | from an open tile 2 in 24187 (0.1 per 1,000) | open sides at start {1: 18, 2: 32, 3: 2}
+pooled without Portals             theirs deaths 12 (wall 9, own body 3; as the mover 12) | from a narrow tile 10 in 1253 (8.0 per 1,000) | from an open tile 2 in 25731 (0.1 per 1,000) | open sides at start {1: 6, 2: 4, 3: 2}
+pooled without Portals             ratio of the per-narrow-turn rates 3.15
+main without Portals               ours   deaths 21 (wall 12, own body 9; as the mover 21) | from a narrow tile 20 in 1035 (19.3 per 1,000) | from an open tile 1 in 11531 (0.1 per 1,000) | open sides at start {1: 6, 2: 14, 3: 1}
+main without Portals               theirs deaths  2 (wall 2, own body 0; as the mover 2) | from a narrow tile 2 in 590 (3.4 per 1,000) | from an open tile 0 in 11752 (0.0 per 1,000) | open sides at start {1: 1, 2: 1}
+main without Portals               ratio of the per-narrow-turn rates 5.70
+v31 without Portals                ours   deaths 31 (wall 20, own body 11; as the mover 31) | from a narrow tile 30 in 955 (31.4 per 1,000) | from an open tile 1 in 12656 (0.1 per 1,000) | open sides at start {1: 12, 2: 18, 3: 1}
+v31 without Portals                theirs deaths 10 (wall 7, own body 3; as the mover 10) | from a narrow tile 8 in 663 (12.1 per 1,000) | from an open tile 2 in 13979 (0.1 per 1,000) | open sides at start {1: 5, 2: 3, 3: 2}
+v31 without Portals                ratio of the per-narrow-turn rates 2.60
+pooled without Maze                ours   deaths 42 (wall 27, own body 15; as the mover 42) | from a narrow tile 39 in 1305 (29.9 per 1,000) | from an open tile 3 in 22440 (0.1 per 1,000) | open sides at start {1: 19, 2: 20, 3: 3}
+pooled without Maze                theirs deaths 14 (wall 8, own body 6; as the mover 14) | from a narrow tile 11 in 1141 (9.6 per 1,000) | from an open tile 3 in 25348 (0.1 per 1,000) | open sides at start {1: 8, 2: 3, 3: 3}
+pooled without Maze                ratio of the per-narrow-turn rates 3.10
+pooled without Maze, Portals, weakhold ours   deaths 24 (wall 15, own body 9; as the mover 24) | from a narrow tile 23 in 911 (25.2 per 1,000) | from an open tile 1 in 20953 (0.0 per 1,000) | open sides at start {1: 10, 2: 13, 3: 1}
+pooled without Maze, Portals, weakhold theirs deaths  7 (wall 4, own body 3; as the mover 7) | from a narrow tile 5 in 837 (6.0 per 1,000) | from an open tile 2 in 20100 (0.1 per 1,000) | open sides at start {1: 2, 2: 3, 3: 2}
+pooled without Maze, Portals, weakhold ratio of the per-narrow-turn rates 4.23
+
+where the fatal step went (head at the fatal step differs from the head at the turn start in 0 of 77 deaths)
+legal first steps at the start of the fatal turn, ours: {0: 61} theirs: {0: 16}
+
+chance:
+  main                     side-swap permutation: observed difference 0.0183 per narrow turn, 30 of 20000 permutations at least as large | battle bootstrap of the ratio: 1.81 to inf (median 7.09)
+  v31                      side-swap permutation: observed difference 0.0208 per narrow turn, 58 of 20000 permutations at least as large | battle bootstrap of the ratio: 1.28 to 5.18 (median 2.36)
+  pooled                   side-swap permutation: observed difference 0.0187 per narrow turn, 0 of 20000 permutations at least as large | battle bootstrap of the ratio: 1.63 to 6.11 (median 2.94)
+  pooled without Portals   side-swap permutation: observed difference 0.0171 per narrow turn, 2 of 20000 permutations at least as large | battle bootstrap of the ratio: 1.67 to 7.57 (median 3.23)
+
+per layout, pooled codes: deaths from a narrow tile / narrow turn starts r101-200 (ours ; theirs)
+  Around UNSW #1         games  48 | ours 4 in 129 (31.0 per 1,000) ; theirs 1 in 194 (5.2 per 1,000)
+  Australia #1           games  48 | ours 0 in 83 (0.0 per 1,000) ; theirs 0 in 84 (0.0 per 1,000)
+  Autarky #1             games  45 | ours 0 in 27 (0.0 per 1,000) ; theirs 0 in 56 (0.0 per 1,000)
+  Default #1             games  34 | ours 1 in 5 (200.0 per 1,000) ; theirs 0 in 0
+  Devil #1               games  44 | ours 4 in 48 (83.3 per 1,000) ; theirs 1 in 37 (27.0 per 1,000)
+  Islands #1             games  30 | ours 4 in 149 (26.8 per 1,000) ; theirs 1 in 81 (12.3 per 1,000)
+  Maze #1                games  48 | ours 19 in 729 (26.1 per 1,000) ; theirs 2 in 186 (10.8 per 1,000)
+  Portals #1             games  39 | ours 8 in 44 (181.8 per 1,000) ; theirs 3 in 74 (40.5 per 1,000)
+  Prisoners Dilemma #1   games  23 | ours 2 in 11 (181.8 per 1,000) ; theirs 1 in 3 (333.3 per 1,000)
+  Prisoners Dilemma #2   games  14 | ours 2 in 11 (181.8 per 1,000) ; theirs 0 in 3 (0.0 per 1,000)
+  Queen Of Spades #1     games  48 | ours 0 in 62 (0.0 per 1,000) ; theirs 0 in 77 (0.0 per 1,000)
+  Stripes #1             games  40 | ours 4 in 63 (63.5 per 1,000) ; theirs 0 in 24 (0.0 per 1,000)
+  Tower Defense #1       games  45 | ours 2 in 221 (9.0 per 1,000) ; theirs 1 in 217 (4.6 per 1,000)
+  Trauma #1              games  42 | ours 0 in 77 (0.0 per 1,000) ; theirs 0 in 50 (0.0 per 1,000)
+  Trophy #1              games  38 | ours 0 in 25 (0.0 per 1,000) ; theirs 0 in 11 (0.0 per 1,000)
+  weakhold #1            games  49 | ours 8 in 350 (22.9 per 1,000) ; theirs 3 in 230 (13.0 per 1,000)
+one layout left out at a time, pooled: range of the ratio
+   lowest 2.68 (without Around UNSW #1), highest 3.26 (without weakhold #1)
+per opponent with at least one such death of ours or theirs, pooled codes:
+   791 中国人不准飞😡😡😡😡😡😡😡            games  54 | ours 8 in 185 (43.2 per 1,000) ; theirs 1 in 56 (17.9 per 1,000)
+   262 NUSW Battlecode          games  33 | ours 5 in 283 (17.7 per 1,000) ; theirs 0 in 47 (0.0 per 1,000)
+   231 1                        games  22 | ours 4 in 66 (60.6 per 1,000) ; theirs 1 in 27 (37.0 per 1,000)
+   82 free trip to sydne        games  19 | ours 3 in 65 (46.2 per 1,000) ; theirs 0 in 29 (0.0 per 1,000)
+   71 y                         games  14 | ours 3 in 28 (107.1 per 1,000) ; theirs 0 in 36 (0.0 per 1,000)
+   485 err404                   games  25 | ours 2 in 88 (22.7 per 1,000) ; theirs 2 in 63 (31.7 per 1,000)
+   375 Delusion Tax             games  18 | ours 2 in 12 (166.7 per 1,000) ; theirs 1 in 27 (37.0 per 1,000)
+   608 f2p                      games  12 | ours 2 in 40 (50.0 per 1,000) ; theirs 1 in 31 (32.3 per 1,000)
+   899 the uncancelables        games   9 | ours 2 in 11 (181.8 per 1,000) ; theirs 0 in 2 (0.0 per 1,000)
+   127 Stochastic Parrots       games  10 | ours 2 in 17 (117.6 per 1,000) ; theirs 0 in 3 (0.0 per 1,000)
+   64 gdggs                     games  14 | ours 2 in 21 (95.2 per 1,000) ; theirs 0 in 13 (0.0 per 1,000)
+   213 Sponge(Albert and        games   4 | ours 2 in 2 (1000.0 per 1,000) ; theirs 0 in 14 (0.0 per 1,000)
+   919 1234                     games  13 | ours 2 in 57 (35.1 per 1,000) ; theirs 0 in 64 (0.0 per 1,000)
+   280 SHINK AI 6500            games  14 | ours 1 in 21 (47.6 per 1,000) ; theirs 1 in 7 (142.9 per 1,000)
+   112 Computers                games  13 | ours 1 in 32 (31.2 per 1,000) ; theirs 1 in 94 (10.6 per 1,000)
+   552 fandagong                games  15 | ours 1 in 22 (45.5 per 1,000) ; theirs 1 in 25 (40.0 per 1,000)
+   762 Maccas                   games   4 | ours 1 in 5 (200.0 per 1,000) ; theirs 0 in 25 (0.0 per 1,000)
+   70 chad gdp                  games  14 | ours 1 in 14 (71.4 per 1,000) ; theirs 0 in 51 (0.0 per 1,000)
+   998 we love gru              games   9 | ours 1 in 11 (90.9 per 1,000) ; theirs 0 in 40 (0.0 per 1,000)
+   465 Proof by Intimidat       games  14 | ours 1 in 45 (22.2 per 1,000) ; theirs 0 in 51 (0.0 per 1,000)
+   928 Ron Squad                games   4 | ours 1 in 20 (50.0 per 1,000) ; theirs 0 in 52 (0.0 per 1,000)
+   716 CookAgent                games   8 | ours 1 in 72 (13.9 per 1,000) ; theirs 0 in 0
+   1132 TheActualPlayer         games   6 | ours 1 in 77 (13.0 per 1,000) ; theirs 0 in 4 (0.0 per 1,000)
+   1015 doofenshmirtz good      games  23 | ours 1 in 88 (11.4 per 1,000) ; theirs 0 in 31 (0.0 per 1,000)
+   733 Goated                   games  13 | ours 1 in 45 (22.2 per 1,000) ; theirs 0 in 63 (0.0 per 1,000)
+   34 Codehammer 40K            games   4 | ours 1 in 4 (250.0 per 1,000) ; theirs 0 in 1 (0.0 per 1,000)
+   948 DESTINY 3                games   4 | ours 1 in 10 (100.0 per 1,000) ; theirs 0 in 0
+   258 Settlers of Battle       games  12 | ours 1 in 15 (66.7 per 1,000) ; theirs 0 in 17 (0.0 per 1,000)
+   217 :3                       games  12 | ours 1 in 116 (8.6 per 1,000) ; theirs 0 in 18 (0.0 per 1,000)
+   226 Knight Capital           games   8 | ours 1 in 9 (111.1 per 1,000) ; theirs 0 in 27 (0.0 per 1,000)
+   193 ComTamSuonNuong          games  26 | ours 1 in 33 (30.3 per 1,000) ; theirs 0 in 116 (0.0 per 1,000)
+   328 UnderTheC                games   3 | ours 1 in 3 (333.3 per 1,000) ; theirs 0 in 1 (0.0 per 1,000)
+   152 Check Raise              games   4 | ours 0 in 2 (0.0 per 1,000) ; theirs 1 in 4 (250.0 per 1,000)
+   20 calc                      games  14 | ours 0 in 105 (0.0 per 1,000) ; theirs 1 in 20 (50.0 per 1,000)
+   52 Manny                     games   5 | ours 0 in 13 (0.0 per 1,000) ; theirs 1 in 22 (45.5 per 1,000)
+   837 Nitronics                games   4 | ours 0 in 112 (0.0 per 1,000) ; theirs 1 in 7 (142.9 per 1,000)
+opponents: 62 | with a death of ours: 32 | largest share of our deaths from one opponent: 8 of 58
+one opponent left out at a time, pooled: ratio lowest 2.65 (without 193), highest 3.32 (without 837)
+   main alone: lowest 5.30 (without 193), highest 14.63 (without 837)
+   v31 alone: lowest 2.15 (without 70), highest 2.71 (without 485)
+by opponent band, pooled codes:
+   <1700      games  13 | ours 2 in 98 (20.4 per 1,000) ; theirs 0 in 18 (0.0 per 1,000) | ratio inf
+   1700-1899  games 291 | ours 24 in 1059 (22.7 per 1,000) ; theirs 5 in 540 (9.3 per 1,000) | ratio 2.45
+   1900-2099  games 268 | ours 26 in 796 (32.7 per 1,000) ; theirs 7 in 606 (11.6 per 1,000) | ratio 2.83
+   2100+      games  63 | ours 6 in 81 (74.1 per 1,000) ; theirs 1 in 163 (6.1 per 1,000) | ratio 12.07
+by evening (KST day, a = 18h to 06h, b = 06h to 18h), pooled codes:
+   10-05a   games 142 (main 0) | ours 12 in 341 (35.2 per 1,000) ; theirs 5 in 276 (18.1 per 1,000) | ratio 1.94
+   10-06a   games 247 (main 212) | ours 19 in 872 (21.8 per 1,000) ; theirs 4 in 543 (7.4 per 1,000) | ratio 2.96
+   10-06b   games 190 (main 5) | ours 20 in 565 (35.4 per 1,000) ; theirs 4 in 382 (10.5 per 1,000) | ratio 3.38
+   10-07b   games  56 (main 56) | ours 7 in 256 (27.3 per 1,000) ; theirs 0 in 126 (0.0 per 1,000) | ratio inf
+
+plainer counts of the same deaths:
+   main | ours: 23 deaths; queens alive at r101 177 (0.130); games with a narrow turn in the window 130 (0.177); narrow episodes 522 (44.1 per 1,000 episodes); narrow turns per episode 2.0 || theirs: 2 deaths; queens alive at r101 169 (0.012); games with a narrow turn in the window 98 (0.020); narrow episodes 479 (4.2 per 1,000 episodes); narrow turns per episode 1.3
+   v31 | ours: 35 deaths; queens alive at r101 212 (0.165); games with a narrow turn in the window 151 (0.232); narrow episodes 550 (63.6 per 1,000 episodes); narrow turns per episode 1.8 || theirs: 11 deaths; queens alive at r101 215 (0.051); games with a narrow turn in the window 113 (0.097); narrow episodes 475 (23.2 per 1,000 episodes); narrow turns per episode 1.5
+   pooled | ours: 58 deaths; queens alive at r101 389 (0.149); games with a narrow turn in the window 281 (0.206); narrow episodes 1072 (54.1 per 1,000 episodes); narrow turns per episode 1.9 || theirs: 13 deaths; queens alive at r101 384 (0.034); games with a narrow turn in the window 211 (0.062); narrow episodes 954 (13.6 per 1,000 episodes); narrow turns per episode 1.4
+every queen death as the mover from a narrow tile in r101-200, whatever the engine reason (0 wall, 1 own body, 2 other body, 3 head-on, 4 no action):
+   main | ours 25 in 1068 (23.4 per 1,000), reasons {0: 14, 1: 9, 2: 2}, hit side for reason 2 {'own': 2} || theirs 8 in 615 (13.0 per 1,000), reasons {0: 2, 3: 6}, hit side for reason 2 {} | ratio 1.80
+   v31 | ours 40 in 966 (41.4 per 1,000), reasons {0: 24, 1: 11, 2: 3, 3: 2}, hit side for reason 2 {'own': 3} || theirs 17 in 712 (23.9 per 1,000), reasons {0: 7, 1: 4, 2: 1, 3: 4, 4: 1}, hit side for reason 2 {'own': 1} | ratio 1.73
+   pooled | ours 65 in 2034 (32.0 per 1,000), reasons {0: 38, 1: 20, 2: 5, 3: 2}, hit side for reason 2 {'own': 5} || theirs 25 in 1327 (18.8 per 1,000), reasons {0: 9, 1: 4, 2: 1, 3: 10, 4: 1}, hit side for reason 2 {'own': 1} | ratio 1.70
+narrow turn starts r101-200 with no legal first step (no free neighbour tile):
+   main | ours 31 of 1068 narrow turns (0.029) ; theirs 10 of 615 narrow turns (0.016)
+   v31 | ours 50 of 966 narrow turns (0.052) ; theirs 27 of 712 narrow turns (0.038)
+   pooled | ours 81 of 2034 narrow turns (0.040) ; theirs 37 of 1327 narrow turns (0.028)
+turn starts on a dead-end tile (one open side) r101-200, and wall / own-body deaths from one:
+   main | ours 10 turn starts, 8 deaths ; theirs 1 turn starts, 1 deaths
+   v31 | ours 23 turn starts, 17 deaths ; theirs 14 turn starts, 8 deaths
+   pooled | ours 33 turn starts, 25 deaths ; theirs 15 turn starts, 9 deaths
+
+== (3) an own dragon beside her (a body tile of another dragon of her team across an open side) ==
+   main | ours: narrow turn starts with an own dragon beside 17 of 1068; deaths from a narrow tile 23: own dragon beside 14, dead-end tile 8, both 0, neither 1 || theirs: narrow turn starts with an own dragon beside 1 of 615; deaths from a narrow tile 2: own dragon beside 0, dead-end tile 1, both 0, neither 1
+   v31 | ours: narrow turn starts with an own dragon beside 24 of 966; deaths from a narrow tile 35: own dragon beside 17, dead-end tile 17, both 0, neither 1 || theirs: narrow turn starts with an own dragon beside 7 of 712; deaths from a narrow tile 11: own dragon beside 2, dead-end tile 8, both 0, neither 1
+   pooled | ours: narrow turn starts with an own dragon beside 41 of 2034; deaths from a narrow tile 58: own dragon beside 31, dead-end tile 25, both 0, neither 2 || theirs: narrow turn starts with an own dragon beside 8 of 1327; deaths from a narrow tile 13: own dragon beside 2, dead-end tile 9, both 0, neither 2
+   pooled without Portals | ours: narrow turn starts with an own dragon beside 39 of 1990; deaths from a narrow tile 50: own dragon beside 30, dead-end tile 18, both 0, neither 2 || theirs: narrow turn starts with an own dragon beside 6 of 1253; deaths from a narrow tile 10: own dragon beside 2, dead-end tile 6, both 0, neither 2
+open-tile turn starts r101-200 with an own dragon beside her, for scale:
+   main | ours 539 of 11778 (0.0458) ; theirs 924 of 12719 (0.0726)
+   v31 | ours 634 of 12918 (0.0491) ; theirs 1343 of 16027 (0.0838)
+the fatal turns of ours from a narrow tile, what stood on each open side at the turn start (K kelp, F free, T own tail, S own body, C child, M team mate, H enemy head, E enemy body; h = that dragon head, p = through a portal):
+   ours: {'Mh T': 10, 'S': 10, 'Sp': 7, 'M S': 7, 'T': 6, 'M T': 5, 'Mh S': 5, 'Tp': 2, 'C S': 2, 'E S': 1, 'Ch S': 1, 'C T': 1, 'E T': 1}
+   theirs: {'S': 5, 'Tp': 2, 'T': 1, 'Sp': 1, 'M S': 1, 'H S': 1, 'C T': 1, 'H T': 1}
+own dragon beside her at the fatal turn start: is it her own child?
+   ours: 31 deaths, a direct child of hers beside in 4, another team mate only in 27
+   theirs: 2 deaths, a direct child of hers beside in 1, another team mate only in 1
+
+== other numbers in the queue ==
+all rounds, main, wall or own-body queen deaths ours: 65, from a narrow tile 60, from a dead-end tile 19
+all rounds, main, wall or own-body queen deaths theirs: 32, from a narrow tile 30, from a dead-end tile 15
+all rounds, v31, wall or own-body queen deaths ours: 77, from a narrow tile 75
+all rounds, v31, wall or own-body queen deaths theirs: 53, from a narrow tile 43
+games with such a death of ours (narrow tile, r101-200) main: 23, won 12 | other games that reached r101: 233, won 131
+   counting every wall or own-body death in the window: 24 games, won 12
+games with such a death of ours (narrow tile, r101-200) v31: 35, won 20 | other games that reached r101: 302, won 143
+   counting every wall or own-body death in the window: 37 games, won 22
+by window, pooled codes: wall or own-body deaths from a narrow tile / narrow turn starts (ours ; theirs)
+   r0-100    main  25 in 1719 (14.5 per 1,000) ; 14 in 1349 (10.4 per 1,000)
+   r0-100    v31   30 in 2687 (11.2 per 1,000) ; 18 in 1844 (9.8 per 1,000)
+   r101-200  main  23 in 1068 (21.5 per 1,000) ; 2 in 615 (3.3 per 1,000)
+   r101-200  v31   35 in 966 (36.2 per 1,000) ; 11 in 712 (15.4 per 1,000)
+   r201-300  main  9 in 510 (17.6 per 1,000) ; 5 in 445 (11.2 per 1,000)
+   r201-300  v31   9 in 263 (34.2 per 1,000) ; 6 in 556 (10.8 per 1,000)
+   r301 on   main  3 in 431 (7.0 per 1,000) ; 9 in 597 (15.1 per 1,000)
+   r301 on   v31   1 in 185 (5.4 per 1,000) ; 8 in 672 (11.9 per 1,000)
+
+== comparison with rows.jsonl (read only here) ==
+games: mine 765, rows.jsonl 765, in both 765
+differences: none

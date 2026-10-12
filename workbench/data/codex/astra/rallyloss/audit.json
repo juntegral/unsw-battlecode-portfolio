@@ -1,0 +1,1468 @@
+{
+  "games": 60,
+  "all_round_ledgers": 120,
+  "official_final_checks": 120,
+  "official_queen_checks": 120,
+  "residuals": 0,
+  "sets": {
+    "one5-c1": {
+      "age": {
+        "0-5": {
+          "n": 163,
+          "mass": 614,
+          "wrong_top": 88,
+          "dead_leader": 31,
+          "overstated": 99,
+          "bad_ratio": 47,
+          "retained": 43,
+          "arrived": 39
+        },
+        "6-15": {
+          "n": 194,
+          "mass": 556,
+          "wrong_top": 114,
+          "dead_leader": 74,
+          "overstated": 156,
+          "bad_ratio": 103,
+          "retained": 45,
+          "arrived": 46
+        },
+        "16-25": {
+          "n": 202,
+          "mass": 621,
+          "wrong_top": 126,
+          "dead_leader": 81,
+          "overstated": 175,
+          "bad_ratio": 122,
+          "retained": 45,
+          "arrived": 40
+        }
+      },
+      "stop_distance_global": {
+        "0-1": {
+          "n": 2,
+          "drop": 9,
+          "to_global": 4,
+          "mates": 5,
+          "foes": 4,
+          "uneaten": 0
+        },
+        "2-3": {
+          "n": 82,
+          "drop": 143,
+          "to_global": 84,
+          "mates": 131,
+          "foes": 5,
+          "uneaten": 7
+        },
+        "4-999": {
+          "n": 85,
+          "drop": 125,
+          "to_global": 3,
+          "mates": 115,
+          "foes": 5,
+          "uneaten": 5
+        }
+      },
+      "fold": {
+        "n": 166,
+        "mass": 466,
+        "drop": 264,
+        "to_longest": 152,
+        "to_mates": 236,
+        "to_enemy": 11,
+        "uneaten": 17,
+        "distance": {
+          "3": 78,
+          "2": 62,
+          "1": 26
+        },
+        "wait": {
+          "8": 1,
+          "2": 41,
+          "1": 45,
+          "0": 34,
+          "4": 5,
+          "3": 12,
+          "6": 2,
+          "10": 1,
+          "5": 4,
+          "7": 1,
+          "33": 1,
+          "9": 2,
+          "11": 1,
+          "12": 1,
+          "14": 1
+        },
+        "cause": {
+          "own body": 166
+        }
+      },
+      "fed_our_leaders": {
+        "n": 26,
+        "alive": 11,
+        "final_top": 8,
+        "causes": {
+          "stop": 5,
+          "wall": 3,
+          "rammed": 5,
+          "own body": 2
+        },
+        "ids": [
+          {
+            "label": "one5-c1",
+            "gid": 1472752,
+            "id": 268,
+            "side": 0,
+            "death": {
+              "round": 436,
+              "cause": "stop",
+              "length": 2,
+              "actor": 268
+            },
+            "alive": false,
+            "stop_pearls": 4,
+            "final_top": false
+          },
+          {
+            "label": "one5-c1",
+            "gid": 1472752,
+            "id": 318,
+            "side": 0,
+            "death": {
+              "round": 484,
+              "cause": "wall",
+              "length": 3,
+              "actor": 318
+            },
+            "alive": false,
+            "stop_pearls": 5,
+            "final_top": false
+          },
+          {
+            "label": "one5-c1",
+            "gid": 1472753,
+            "id": 435,
+            "side": 0,
+            "death": null,
+            "alive": true,
+            "stop_pearls": 21,
+            "final_top": true
+          },
+          {
+            "label": "one5-c1",
+            "gid": 1472753,
+            "id": 573,
+            "side": 0,
+            "death": {
+              "round": 359,
+              "cause": "wall",
+              "length": 2,
+              "actor": 573
+            },
+            "alive": false,
+            "stop_pearls": 1,
+            "final_top": false
+          },
+          {
+            "label": "one5-c1",
+            "gid": 1472754,
+            "id": 1240,
+            "side": 0,
+            "death": null,
+            "alive": true,
+            "stop_pearls": 7,
+            "final_top": false
+          },
+          {
+            "label": "one5-c1",
+            "gid": 1472754,
+            "id": 1197,
+            "side": 0,
+            "death": {
+              "round": 467,
+              "cause": "rammed",
+              "length": 2,
+              "actor": 1068
+            },
+            "alive": false,
+            "stop_pearls": 1,
+            "final_top": false
+          },
+          {
+            "label": "one5-c1",
+            "gid": 1472754,
+            "id": 950,
+            "side": 0,
+            "death": {
+              "round": 444,
+              "cause": "stop",
+              "length": 2,
+              "actor": 950
+            },
+            "alive": false,
+            "stop_pearls": 15,
+            "final_top": false
+          },
+          {
+            "label": "one5-c1",
+            "gid": 1472755,
+            "id": 922,
+            "side": 0,
+            "death": null,
+            "alive": true,
+            "stop_pearls": 30,
+            "final_top": true
+          },
+          {
+            "label": "one5-c1",
+            "gid": 1472755,
+            "id": 822,
+            "side": 0,
+            "death": {
+              "round": 420,
+              "cause": "stop",
+              "length": 2,
+              "actor": 822
+            },
+            "alive": false,
+            "stop_pearls": 6,
+            "final_top": false
+          },
+          {
+            "label": "one5-c1",
+            "gid": 1472757,
+            "id": 5,
+            "side": 0,
+            "death": null,
+            "alive": true,
+            "stop_pearls": 1,
+            "final_top": true
+          },
+          {
+            "label": "one5-c1",
+            "gid": 1472758,
+            "id": 376,
+            "side": 0,
+            "death": {
+              "round": 373,
+              "cause": "rammed",
+              "length": 2,
+              "actor": 683
+            },
+            "alive": false,
+            "stop_pearls": 1,
+            "final_top": false
+          },
+          {
+            "label": "one5-c1",
+            "gid": 1472758,
+            "id": 955,
+            "side": 0,
+            "death": null,
+            "alive": true,
+            "stop_pearls": 28,
+            "final_top": true
+          },
+          {
+            "label": "one5-c1",
+            "gid": 1472760,
+            "id": 272,
+            "side": 0,
+            "death": null,
+            "alive": true,
+            "stop_pearls": 1,
+            "final_top": true
+          },
+          {
+            "label": "one5-c1",
+            "gid": 1472760,
+            "id": 199,
+            "side": 0,
+            "death": {
+              "round": 462,
+              "cause": "rammed",
+              "length": 3,
+              "actor": 257
+            },
+            "alive": false,
+            "stop_pearls": 6,
+            "final_top": false
+          },
+          {
+            "label": "one5-c1",
+            "gid": 1472761,
+            "id": 840,
+            "side": 0,
+            "death": {
+              "round": 390,
+              "cause": "rammed",
+              "length": 4,
+              "actor": 927
+            },
+            "alive": false,
+            "stop_pearls": 4,
+            "final_top": false
+          },
+          {
+            "label": "one5-c1",
+            "gid": 1472761,
+            "id": 1105,
+            "side": 0,
+            "death": {
+              "round": 437,
+              "cause": "own body",
+              "length": 2,
+              "actor": 1105
+            },
+            "alive": false,
+            "stop_pearls": 1,
+            "final_top": false
+          },
+          {
+            "label": "one5-c1",
+            "gid": 1472761,
+            "id": 514,
+            "side": 0,
+            "death": {
+              "round": 484,
+              "cause": "rammed",
+              "length": 2,
+              "actor": 1177
+            },
+            "alive": false,
+            "stop_pearls": 4,
+            "final_top": false
+          },
+          {
+            "label": "one5-c1",
+            "gid": 1472761,
+            "id": 1089,
+            "side": 0,
+            "death": null,
+            "alive": true,
+            "stop_pearls": 11,
+            "final_top": false
+          },
+          {
+            "label": "one5-c1",
+            "gid": 1472764,
+            "id": 0,
+            "side": 0,
+            "death": null,
+            "alive": true,
+            "stop_pearls": 33,
+            "final_top": true
+          },
+          {
+            "label": "one5-c1",
+            "gid": 1472765,
+            "id": 1091,
+            "side": 0,
+            "death": null,
+            "alive": true,
+            "stop_pearls": 9,
+            "final_top": true
+          },
+          {
+            "label": "one5-c1",
+            "gid": 1472765,
+            "id": 1014,
+            "side": 0,
+            "death": {
+              "round": 466,
+              "cause": "stop",
+              "length": 2,
+              "actor": 1014
+            },
+            "alive": false,
+            "stop_pearls": 25,
+            "final_top": false
+          },
+          {
+            "label": "one5-c1",
+            "gid": 1472766,
+            "id": 1600,
+            "side": 0,
+            "death": {
+              "round": 429,
+              "cause": "own body",
+              "length": 2,
+              "actor": 1600
+            },
+            "alive": false,
+            "stop_pearls": 5,
+            "final_top": false
+          },
+          {
+            "label": "one5-c1",
+            "gid": 1472766,
+            "id": 2051,
+            "side": 0,
+            "death": null,
+            "alive": true,
+            "stop_pearls": 1,
+            "final_top": false
+          },
+          {
+            "label": "one5-c1",
+            "gid": 1472766,
+            "id": 2057,
+            "side": 0,
+            "death": null,
+            "alive": true,
+            "stop_pearls": 4,
+            "final_top": true
+          },
+          {
+            "label": "one5-c1",
+            "gid": 1472766,
+            "id": 2001,
+            "side": 0,
+            "death": {
+              "round": 475,
+              "cause": "wall",
+              "length": 2,
+              "actor": 2001
+            },
+            "alive": false,
+            "stop_pearls": 1,
+            "final_top": false
+          },
+          {
+            "label": "one5-c1",
+            "gid": 1472766,
+            "id": 1910,
+            "side": 0,
+            "death": {
+              "round": 468,
+              "cause": "stop",
+              "length": 2,
+              "actor": 1910
+            },
+            "alive": false,
+            "stop_pearls": 1,
+            "final_top": false
+          }
+        ]
+      }
+    },
+    "one5-w1": {
+      "age": {
+        "0-5": {
+          "n": 98,
+          "mass": 393,
+          "wrong_top": 40,
+          "dead_leader": 9,
+          "overstated": 92,
+          "bad_ratio": 23,
+          "retained": 24,
+          "arrived": 32
+        },
+        "6-15": {
+          "n": 154,
+          "mass": 629,
+          "wrong_top": 72,
+          "dead_leader": 22,
+          "overstated": 151,
+          "bad_ratio": 49,
+          "retained": 17,
+          "arrived": 24
+        },
+        "16-25": {
+          "n": 159,
+          "mass": 529,
+          "wrong_top": 122,
+          "dead_leader": 39,
+          "overstated": 159,
+          "bad_ratio": 98,
+          "retained": 14,
+          "arrived": 11
+        }
+      },
+      "stop_distance_global": {
+        "0-1": {
+          "n": 0,
+          "drop": 0,
+          "to_global": 0,
+          "mates": 0,
+          "foes": 0,
+          "uneaten": 0
+        },
+        "2-3": {
+          "n": 22,
+          "drop": 48,
+          "to_global": 33,
+          "mates": 46,
+          "foes": 1,
+          "uneaten": 1
+        },
+        "4-999": {
+          "n": 58,
+          "drop": 70,
+          "to_global": 0,
+          "mates": 68,
+          "foes": 1,
+          "uneaten": 1
+        }
+      },
+      "fold": {
+        "n": 187,
+        "mass": 532,
+        "drop": 302,
+        "to_longest": 218,
+        "to_mates": 286,
+        "to_enemy": 6,
+        "uneaten": 10,
+        "distance": {
+          "2": 54,
+          "3": 98,
+          "1": 35
+        },
+        "wait": {
+          "2": 60,
+          "1": 68,
+          "11": 1,
+          "0": 31,
+          "3": 34,
+          "5": 10,
+          "4": 7,
+          "10": 1,
+          "16": 1,
+          "6": 2,
+          "8": 1,
+          "7": 1,
+          "21": 1
+        },
+        "cause": {
+          "own body": 3,
+          "stop": 184
+        }
+      },
+      "fed_our_leaders": {
+        "n": 14,
+        "alive": 4,
+        "final_top": 3,
+        "causes": {
+          "stop": 5,
+          "rammed": 2,
+          "wall": 2,
+          "mate body": 1
+        },
+        "ids": [
+          {
+            "label": "one5-w1",
+            "gid": 1472004,
+            "id": 644,
+            "side": 0,
+            "death": {
+              "round": 451,
+              "cause": "stop",
+              "length": 3,
+              "actor": 644
+            },
+            "alive": false,
+            "stop_pearls": 14,
+            "final_top": false
+          },
+          {
+            "label": "one5-w1",
+            "gid": 1472004,
+            "id": 859,
+            "side": 0,
+            "death": {
+              "round": 497,
+              "cause": "stop",
+              "length": 2,
+              "actor": 859
+            },
+            "alive": false,
+            "stop_pearls": 4,
+            "final_top": false
+          },
+          {
+            "label": "one5-w1",
+            "gid": 1472005,
+            "id": 888,
+            "side": 0,
+            "death": {
+              "round": 480,
+              "cause": "stop",
+              "length": 2,
+              "actor": 888
+            },
+            "alive": false,
+            "stop_pearls": 11,
+            "final_top": false
+          },
+          {
+            "label": "one5-w1",
+            "gid": 1472005,
+            "id": 1052,
+            "side": 0,
+            "death": {
+              "round": 482,
+              "cause": "rammed",
+              "length": 17,
+              "actor": 1059
+            },
+            "alive": false,
+            "stop_pearls": 1,
+            "final_top": false
+          },
+          {
+            "label": "one5-w1",
+            "gid": 1472005,
+            "id": 863,
+            "side": 0,
+            "death": null,
+            "alive": true,
+            "stop_pearls": 6,
+            "final_top": true
+          },
+          {
+            "label": "one5-w1",
+            "gid": 1472006,
+            "id": 514,
+            "side": 0,
+            "death": {
+              "round": 488,
+              "cause": "wall",
+              "length": 3,
+              "actor": 514
+            },
+            "alive": false,
+            "stop_pearls": 5,
+            "final_top": false
+          },
+          {
+            "label": "one5-w1",
+            "gid": 1472009,
+            "id": 963,
+            "side": 0,
+            "death": null,
+            "alive": true,
+            "stop_pearls": 20,
+            "final_top": true
+          },
+          {
+            "label": "one5-w1",
+            "gid": 1472009,
+            "id": 734,
+            "side": 0,
+            "death": {
+              "round": 424,
+              "cause": "rammed",
+              "length": 2,
+              "actor": 862
+            },
+            "alive": false,
+            "stop_pearls": 13,
+            "final_top": false
+          },
+          {
+            "label": "one5-w1",
+            "gid": 1472015,
+            "id": 1,
+            "side": 0,
+            "death": null,
+            "alive": true,
+            "stop_pearls": 21,
+            "final_top": true
+          },
+          {
+            "label": "one5-w1",
+            "gid": 1472016,
+            "id": 1186,
+            "side": 0,
+            "death": {
+              "round": 493,
+              "cause": "wall",
+              "length": 2,
+              "actor": 1186
+            },
+            "alive": false,
+            "stop_pearls": 6,
+            "final_top": false
+          },
+          {
+            "label": "one5-w1",
+            "gid": 1472016,
+            "id": 1134,
+            "side": 0,
+            "death": {
+              "round": 429,
+              "cause": "stop",
+              "length": 3,
+              "actor": 1134
+            },
+            "alive": false,
+            "stop_pearls": 3,
+            "final_top": false
+          },
+          {
+            "label": "one5-w1",
+            "gid": 1472017,
+            "id": 1355,
+            "side": 0,
+            "death": null,
+            "alive": true,
+            "stop_pearls": 10,
+            "final_top": false
+          },
+          {
+            "label": "one5-w1",
+            "gid": 1472017,
+            "id": 1689,
+            "side": 0,
+            "death": {
+              "round": 478,
+              "cause": "mate body",
+              "length": 2,
+              "actor": 1689
+            },
+            "alive": false,
+            "stop_pearls": 1,
+            "final_top": false
+          },
+          {
+            "label": "one5-w1",
+            "gid": 1472017,
+            "id": 921,
+            "side": 0,
+            "death": {
+              "round": 373,
+              "cause": "stop",
+              "length": 2,
+              "actor": 921
+            },
+            "alive": false,
+            "stop_pearls": 3,
+            "final_top": false
+          }
+        ]
+      }
+    },
+    "one6-c1": {
+      "age": {
+        "0-5": {
+          "n": 151,
+          "mass": 542,
+          "wrong_top": 106,
+          "dead_leader": 9,
+          "overstated": 58,
+          "bad_ratio": 31,
+          "retained": 43,
+          "arrived": 51
+        },
+        "6-15": {
+          "n": 109,
+          "mass": 276,
+          "wrong_top": 81,
+          "dead_leader": 25,
+          "overstated": 62,
+          "bad_ratio": 44,
+          "retained": 14,
+          "arrived": 23
+        },
+        "16-25": {
+          "n": 153,
+          "mass": 474,
+          "wrong_top": 90,
+          "dead_leader": 54,
+          "overstated": 133,
+          "bad_ratio": 79,
+          "retained": 36,
+          "arrived": 36
+        }
+      },
+      "stop_distance_global": {
+        "0-1": {
+          "n": 3,
+          "drop": 9,
+          "to_global": 5,
+          "mates": 9,
+          "foes": 0,
+          "uneaten": 0
+        },
+        "2-3": {
+          "n": 64,
+          "drop": 107,
+          "to_global": 57,
+          "mates": 93,
+          "foes": 3,
+          "uneaten": 11
+        },
+        "4-999": {
+          "n": 98,
+          "drop": 132,
+          "to_global": 2,
+          "mates": 127,
+          "foes": 4,
+          "uneaten": 1
+        }
+      },
+      "fold": {
+        "n": 121,
+        "mass": 364,
+        "drop": 200,
+        "to_longest": 127,
+        "to_mates": 183,
+        "to_enemy": 6,
+        "uneaten": 11,
+        "distance": {
+          "2": 54,
+          "3": 53,
+          "1": 14
+        },
+        "wait": {
+          "0": 18,
+          "1": 46,
+          "2": 31,
+          "3": 17,
+          "4": 7,
+          "5": 4,
+          "12": 2,
+          "86": 1,
+          "15": 1
+        },
+        "cause": {
+          "own body": 121
+        }
+      },
+      "fed_our_leaders": {
+        "n": 19,
+        "alive": 7,
+        "final_top": 3,
+        "causes": {
+          "stop": 3,
+          "foe body": 2,
+          "wall": 2,
+          "rammed": 2,
+          "mate body": 1,
+          "own body": 2
+        },
+        "ids": [
+          {
+            "label": "one6-c1",
+            "gid": 1477038,
+            "id": 273,
+            "side": 0,
+            "death": {
+              "round": 426,
+              "cause": "stop",
+              "length": 2,
+              "actor": 273
+            },
+            "alive": false,
+            "stop_pearls": 4,
+            "final_top": false
+          },
+          {
+            "label": "one6-c1",
+            "gid": 1477038,
+            "id": 309,
+            "side": 0,
+            "death": {
+              "round": 481,
+              "cause": "foe body",
+              "length": 2,
+              "actor": 309
+            },
+            "alive": false,
+            "stop_pearls": 2,
+            "final_top": false
+          },
+          {
+            "label": "one6-c1",
+            "gid": 1477038,
+            "id": 297,
+            "side": 0,
+            "death": {
+              "round": 437,
+              "cause": "wall",
+              "length": 2,
+              "actor": 297
+            },
+            "alive": false,
+            "stop_pearls": 2,
+            "final_top": false
+          },
+          {
+            "label": "one6-c1",
+            "gid": 1477039,
+            "id": 683,
+            "side": 0,
+            "death": {
+              "round": 499,
+              "cause": "foe body",
+              "length": 2,
+              "actor": 683
+            },
+            "alive": false,
+            "stop_pearls": 11,
+            "final_top": false
+          },
+          {
+            "label": "one6-c1",
+            "gid": 1477039,
+            "id": 119,
+            "side": 0,
+            "death": {
+              "round": 377,
+              "cause": "rammed",
+              "length": 7,
+              "actor": 614
+            },
+            "alive": false,
+            "stop_pearls": 1,
+            "final_top": false
+          },
+          {
+            "label": "one6-c1",
+            "gid": 1477040,
+            "id": 709,
+            "side": 0,
+            "death": null,
+            "alive": true,
+            "stop_pearls": 7,
+            "final_top": false
+          },
+          {
+            "label": "one6-c1",
+            "gid": 1477040,
+            "id": 903,
+            "side": 0,
+            "death": {
+              "round": 444,
+              "cause": "rammed",
+              "length": 13,
+              "actor": 992
+            },
+            "alive": false,
+            "stop_pearls": 8,
+            "final_top": false
+          },
+          {
+            "label": "one6-c1",
+            "gid": 1477041,
+            "id": 529,
+            "side": 0,
+            "death": {
+              "round": 499,
+              "cause": "wall",
+              "length": 2,
+              "actor": 529
+            },
+            "alive": false,
+            "stop_pearls": 3,
+            "final_top": false
+          },
+          {
+            "label": "one6-c1",
+            "gid": 1477041,
+            "id": 794,
+            "side": 0,
+            "death": null,
+            "alive": true,
+            "stop_pearls": 39,
+            "final_top": true
+          },
+          {
+            "label": "one6-c1",
+            "gid": 1477044,
+            "id": 809,
+            "side": 0,
+            "death": null,
+            "alive": true,
+            "stop_pearls": 5,
+            "final_top": false
+          },
+          {
+            "label": "one6-c1",
+            "gid": 1477044,
+            "id": 835,
+            "side": 0,
+            "death": null,
+            "alive": true,
+            "stop_pearls": 33,
+            "final_top": false
+          },
+          {
+            "label": "one6-c1",
+            "gid": 1477047,
+            "id": 294,
+            "side": 0,
+            "death": null,
+            "alive": true,
+            "stop_pearls": 22,
+            "final_top": false
+          },
+          {
+            "label": "one6-c1",
+            "gid": 1477050,
+            "id": 0,
+            "side": 0,
+            "death": null,
+            "alive": true,
+            "stop_pearls": 16,
+            "final_top": true
+          },
+          {
+            "label": "one6-c1",
+            "gid": 1477051,
+            "id": 794,
+            "side": 0,
+            "death": {
+              "round": 493,
+              "cause": "mate body",
+              "length": 2,
+              "actor": 794
+            },
+            "alive": false,
+            "stop_pearls": 15,
+            "final_top": false
+          },
+          {
+            "label": "one6-c1",
+            "gid": 1477052,
+            "id": 1863,
+            "side": 0,
+            "death": {
+              "round": 462,
+              "cause": "own body",
+              "length": 2,
+              "actor": 1863
+            },
+            "alive": false,
+            "stop_pearls": 1,
+            "final_top": false
+          },
+          {
+            "label": "one6-c1",
+            "gid": 1477052,
+            "id": 1575,
+            "side": 0,
+            "death": {
+              "round": 402,
+              "cause": "stop",
+              "length": 2,
+              "actor": 1575
+            },
+            "alive": false,
+            "stop_pearls": 2,
+            "final_top": false
+          },
+          {
+            "label": "one6-c1",
+            "gid": 1477052,
+            "id": 1674,
+            "side": 0,
+            "death": null,
+            "alive": true,
+            "stop_pearls": 31,
+            "final_top": true
+          },
+          {
+            "label": "one6-c1",
+            "gid": 1477052,
+            "id": 1099,
+            "side": 0,
+            "death": {
+              "round": 433,
+              "cause": "stop",
+              "length": 2,
+              "actor": 1099
+            },
+            "alive": false,
+            "stop_pearls": 6,
+            "final_top": false
+          },
+          {
+            "label": "one6-c1",
+            "gid": 1477052,
+            "id": 1371,
+            "side": 0,
+            "death": {
+              "round": 389,
+              "cause": "own body",
+              "length": 3,
+              "actor": 1371
+            },
+            "alive": false,
+            "stop_pearls": 4,
+            "final_top": false
+          }
+        ]
+      }
+    },
+    "one6-w1": {
+      "age": {
+        "0-5": {
+          "n": 251,
+          "mass": 740,
+          "wrong_top": 158,
+          "dead_leader": 4,
+          "overstated": 83,
+          "bad_ratio": 31,
+          "retained": 55,
+          "arrived": 91
+        },
+        "6-15": {
+          "n": 136,
+          "mass": 426,
+          "wrong_top": 92,
+          "dead_leader": 9,
+          "overstated": 97,
+          "bad_ratio": 52,
+          "retained": 17,
+          "arrived": 29
+        },
+        "16-25": {
+          "n": 93,
+          "mass": 290,
+          "wrong_top": 83,
+          "dead_leader": 10,
+          "overstated": 85,
+          "bad_ratio": 72,
+          "retained": 28,
+          "arrived": 30
+        }
+      },
+      "stop_distance_global": {
+        "0-1": {
+          "n": 3,
+          "drop": 4,
+          "to_global": 2,
+          "mates": 4,
+          "foes": 0,
+          "uneaten": 0
+        },
+        "2-3": {
+          "n": 80,
+          "drop": 124,
+          "to_global": 69,
+          "mates": 111,
+          "foes": 8,
+          "uneaten": 5
+        },
+        "4-999": {
+          "n": 96,
+          "drop": 133,
+          "to_global": 3,
+          "mates": 124,
+          "foes": 7,
+          "uneaten": 2
+        }
+      },
+      "fold": {
+        "n": 191,
+        "mass": 514,
+        "drop": 290,
+        "to_longest": 219,
+        "to_mates": 285,
+        "to_enemy": 1,
+        "uneaten": 4,
+        "distance": {
+          "1": 36,
+          "2": 54,
+          "3": 101
+        },
+        "wait": {
+          "1": 62,
+          "4": 16,
+          "2": 65,
+          "3": 29,
+          "0": 20,
+          "6": 6,
+          "5": 10,
+          "8": 2,
+          "22": 1,
+          "23": 1,
+          "68": 1,
+          "7": 3,
+          "9": 1,
+          "11": 1,
+          "17": 1
+        },
+        "cause": {
+          "stop": 189,
+          "own body": 2
+        }
+      },
+      "fed_our_leaders": {
+        "n": 20,
+        "alive": 8,
+        "final_top": 5,
+        "causes": {
+          "stop": 5,
+          "rammed": 4,
+          "own body": 2,
+          "foe body": 1
+        },
+        "ids": [
+          {
+            "label": "one6-w1",
+            "gid": 1474982,
+            "id": 415,
+            "side": 0,
+            "death": null,
+            "alive": true,
+            "stop_pearls": 2,
+            "final_top": true
+          },
+          {
+            "label": "one6-w1",
+            "gid": 1474983,
+            "id": 621,
+            "side": 0,
+            "death": {
+              "round": 436,
+              "cause": "stop",
+              "length": 3,
+              "actor": 621
+            },
+            "alive": false,
+            "stop_pearls": 5,
+            "final_top": false
+          },
+          {
+            "label": "one6-w1",
+            "gid": 1474983,
+            "id": 603,
+            "side": 0,
+            "death": null,
+            "alive": true,
+            "stop_pearls": 17,
+            "final_top": true
+          },
+          {
+            "label": "one6-w1",
+            "gid": 1474983,
+            "id": 670,
+            "side": 0,
+            "death": {
+              "round": 441,
+              "cause": "rammed",
+              "length": 35,
+              "actor": 596
+            },
+            "alive": false,
+            "stop_pearls": 13,
+            "final_top": false
+          },
+          {
+            "label": "one6-w1",
+            "gid": 1474984,
+            "id": 652,
+            "side": 0,
+            "death": null,
+            "alive": true,
+            "stop_pearls": 16,
+            "final_top": false
+          },
+          {
+            "label": "one6-w1",
+            "gid": 1474984,
+            "id": 813,
+            "side": 0,
+            "death": {
+              "round": 428,
+              "cause": "rammed",
+              "length": 11,
+              "actor": 741
+            },
+            "alive": false,
+            "stop_pearls": 8,
+            "final_top": false
+          },
+          {
+            "label": "one6-w1",
+            "gid": 1474984,
+            "id": 1008,
+            "side": 0,
+            "death": null,
+            "alive": true,
+            "stop_pearls": 8,
+            "final_top": true
+          },
+          {
+            "label": "one6-w1",
+            "gid": 1474984,
+            "id": 787,
+            "side": 0,
+            "death": {
+              "round": 397,
+              "cause": "stop",
+              "length": 3,
+              "actor": 787
+            },
+            "alive": false,
+            "stop_pearls": 1,
+            "final_top": false
+          },
+          {
+            "label": "one6-w1",
+            "gid": 1474984,
+            "id": 991,
+            "side": 0,
+            "death": {
+              "round": 475,
+              "cause": "stop",
+              "length": 3,
+              "actor": 991
+            },
+            "alive": false,
+            "stop_pearls": 4,
+            "final_top": false
+          },
+          {
+            "label": "one6-w1",
+            "gid": 1474985,
+            "id": 1095,
+            "side": 0,
+            "death": {
+              "round": 482,
+              "cause": "stop",
+              "length": 2,
+              "actor": 1095
+            },
+            "alive": false,
+            "stop_pearls": 1,
+            "final_top": false
+          },
+          {
+            "label": "one6-w1",
+            "gid": 1474985,
+            "id": 714,
+            "side": 0,
+            "death": {
+              "round": 412,
+              "cause": "stop",
+              "length": 2,
+              "actor": 714
+            },
+            "alive": false,
+            "stop_pearls": 8,
+            "final_top": false
+          },
+          {
+            "label": "one6-w1",
+            "gid": 1474985,
+            "id": 1107,
+            "side": 0,
+            "death": null,
+            "alive": true,
+            "stop_pearls": 7,
+            "final_top": true
+          },
+          {
+            "label": "one6-w1",
+            "gid": 1474985,
+            "id": 951,
+            "side": 0,
+            "death": {
+              "round": 497,
+              "cause": "rammed",
+              "length": 3,
+              "actor": 1108
+            },
+            "alive": false,
+            "stop_pearls": 21,
+            "final_top": false
+          },
+          {
+            "label": "one6-w1",
+            "gid": 1474988,
+            "id": 962,
+            "side": 0,
+            "death": {
+              "round": 480,
+              "cause": "own body",
+              "length": 2,
+              "actor": 962
+            },
+            "alive": false,
+            "stop_pearls": 16,
+            "final_top": false
+          },
+          {
+            "label": "one6-w1",
+            "gid": 1474988,
+            "id": 691,
+            "side": 0,
+            "death": {
+              "round": 463,
+              "cause": "foe body",
+              "length": 3,
+              "actor": 691
+            },
+            "alive": false,
+            "stop_pearls": 15,
+            "final_top": false
+          },
+          {
+            "label": "one6-w1",
+            "gid": 1474989,
+            "id": 120,
+            "side": 0,
+            "death": null,
+            "alive": true,
+            "stop_pearls": 12,
+            "final_top": false
+          },
+          {
+            "label": "one6-w1",
+            "gid": 1474989,
+            "id": 1,
+            "side": 0,
+            "death": {
+              "round": 425,
+              "cause": "rammed",
+              "length": 25,
+              "actor": 292
+            },
+            "alive": false,
+            "stop_pearls": 18,
+            "final_top": false
+          },
+          {
+            "label": "one6-w1",
+            "gid": 1474991,
+            "id": 293,
+            "side": 0,
+            "death": null,
+            "alive": true,
+            "stop_pearls": 2,
+            "final_top": false
+          },
+          {
+            "label": "one6-w1",
+            "gid": 1474994,
+            "id": 0,
+            "side": 0,
+            "death": null,
+            "alive": true,
+            "stop_pearls": 29,
+            "final_top": true
+          },
+          {
+            "label": "one6-w1",
+            "gid": 1474995,
+            "id": 1036,
+            "side": 0,
+            "death": {
+              "round": 498,
+              "cause": "own body",
+              "length": 3,
+              "actor": 1036
+            },
+            "alive": false,
+            "stop_pearls": 4,
+            "final_top": false
+          }
+        ]
+      }
+    }
+  }
+}

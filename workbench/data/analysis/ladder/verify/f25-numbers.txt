@@ -1,0 +1,296 @@
+games loaded 705 errors 0 []
+codes {'v31': 410, 'other': 40, 'main': 255}
+large layouts ['Around UNSW #1', 'Australia #1', 'Islands #1', 'Schooltime #1', 'Schooltime #2']
+
+===== main games 255 reached r100 244 qualify (ours >= 0.95 theirs at r100) 123
+  large qualifying 27 reach r200 27 reach r300 27
+    fall by r300 17 of 27 (0.630) | fall by r200 8 of 27 (0.296) | rise by r200 2 of 27 (0.074) | rise by r300 1 of 27 (0.037)
+    wins: all qualifying 13 of 27 (0.481) | reaching r200 13 of 27 (0.481) | reaching r300 13 of 27 (0.481)
+    share change to r300: mean -0.134 median -0.125, below zero 22 of 27 (0.815) | to r200: mean -0.065 median -0.054, below zero 20 of 27 (0.741)
+    total length of both sides at r100: median 209, lowest quarter 146, min 43 | our share at r100: median 0.566 mean 0.579
+  other qualifying 96 reach r200 73 reach r300 55
+    fall by r300 12 of 55 (0.218) | fall by r200 8 of 73 (0.110) | rise by r200 30 of 73 (0.411) | rise by r300 19 of 55 (0.345)
+    wins: all qualifying 79 of 96 (0.823) | reaching r200 56 of 73 (0.767) | reaching r300 38 of 55 (0.691)
+    share change to r300: mean 0.018 median 0.006, below zero 25 of 55 (0.455) | to r200: mean 0.061 median 0.049, below zero 22 of 73 (0.301)
+    total length of both sides at r100: median 75, lowest quarter 51, min 10 | our share at r100: median 0.652 mean 0.675
+  -- chance (Fisher, games as units), large against other
+    fall by r300: large 17 of 27 (0.630), other 12 of 55 (0.218), p 0.0004598
+       Wilson large (0.442, 0.785) other (0.129, 0.344) | large without its three strongest games 14 of 24 (0.583)
+    fall by r200: large 8 of 27 (0.296), other 8 of 73 (0.110), p 0.03299
+       Wilson large (0.159, 0.485) other (0.057, 0.202) | large without its three strongest games 5 of 24 (0.208)
+    rise by r200: large 2 of 27 (0.074), other 30 of 73 (0.411), p 0.001341
+       Wilson large (0.021, 0.234) other (0.305, 0.526) | large without its three strongest games 2 of 24 (0.083)
+  -- per layout: fall by r300 | fall by r200 | rise by r200 | r100 total median
+    Around UNSW #1         5 of 10 (0.500) | 3 of 10 (0.300) | 1 of 10 (0.100) | 311 LARGE
+    Australia #1           5 of 5 (1.000) | 2 of 5 (0.400) | 0 of 5 (0.000) | 171 LARGE
+    Autarky #1             0 of 4 (0.000) | 0 of 8 (0.000) | 7 of 8 (0.875) | 80 
+    Default #1             0 of 3 (0.000) | 0 of 9 (0.000) | 4 of 9 (0.444) | 76 
+    Devil #1               0 of 0 (-) | 0 of 4 (0.000) | 4 of 4 (1.000) | 89 
+    Islands #1             2 of 3 (0.667) | 2 of 3 (0.667) | 0 of 3 (0.000) | 206 LARGE
+    Maze #1                0 of 6 (0.000) | 0 of 6 (0.000) | 3 of 6 (0.500) | 111 
+    Portals #1             3 of 6 (0.500) | 1 of 6 (0.167) | 0 of 6 (0.000) | 89 
+    Prisoners Dilemma #1   0 of 0 (-) | 0 of 0 (-) | 0 of 0 (-) | 42 
+    Prisoners Dilemma #2   0 of 0 (-) | 0 of 1 (0.000) | 1 of 1 (1.000) | 25 
+    Queen Of Spades #1     1 of 4 (0.250) | 1 of 6 (0.167) | 4 of 6 (0.667) | 42 
+    Schooltime #1          3 of 6 (0.500) | 1 of 6 (0.167) | 0 of 6 (0.000) | 61 LARGE
+    Schooltime #2          2 of 3 (0.667) | 0 of 3 (0.000) | 1 of 3 (0.333) | 210 LARGE
+    Slithery Fight #1      2 of 12 (0.167) | 1 of 12 (0.083) | 0 of 12 (0.000) | 313 
+    Stripes #1             1 of 1 (1.000) | 1 of 1 (1.000) | 0 of 1 (0.000) | 13 
+    Tower Defense #1       1 of 1 (1.000) | 1 of 1 (1.000) | 0 of 1 (0.000) | 11 
+    Trauma #1              4 of 8 (0.500) | 3 of 8 (0.375) | 2 of 8 (0.250) | 43 
+    Trophy #1              0 of 0 (-) | 0 of 1 (0.000) | 0 of 1 (0.000) | 105 
+    weakhold #1            0 of 10 (0.000) | 0 of 10 (0.000) | 5 of 10 (0.500) | 68 
+  -- large, one layout name left out: fall by r300 | fall by r200 | rise by r200
+    without Around UNSW  12 of 17 (0.706) | 5 of 17 (0.294) | 1 of 17 (0.059)
+    without Australia    12 of 22 (0.545) | 6 of 22 (0.273) | 2 of 22 (0.091)
+    without Islands      15 of 24 (0.625) | 6 of 24 (0.250) | 2 of 24 (0.083)
+    without Schooltime   12 of 18 (0.667) | 7 of 18 (0.389) | 1 of 18 (0.056)
+  -- large, one opponent left out (opponents in the large slice: 18, battles 22)
+    fall by r200 runs from 0.261 to 0.320; fall by r300 from 0.565 to 0.680
+    opponent free trip to sydney pls (82)       own games: fall by r200 2 of 4 (0.500), by r300 4 of 4 (1.000)
+    opponent 1 (231)                            own games: fall by r200 1 of 1 (1.000), by r300 1 of 1 (1.000)
+    opponent 1234 (919)                         own games: fall by r200 1 of 1 (1.000), by r300 1 of 1 (1.000)
+    opponent ComTamSuonNuong (193)              own games: fall by r200 1 of 1 (1.000), by r300 1 of 1 (1.000)
+    opponent Computers (112)                    own games: fall by r200 1 of 1 (1.000), by r300 1 of 1 (1.000)
+    opponent byte_force (959)                   own games: fall by r200 1 of 3 (0.333), by r300 1 of 3 (0.333)
+  -- by evening (KST day starting 06:00), large: fall by r300 | fall by r200
+    10-06 17 of 27 (0.630) | 8 of 27 (0.296)
+  -- by rating band, large then other: fall by r300 | fall by r200 | rise by r200
+    1700-1899  large 7 of 12 (0.583) | 2 of 12 (0.167) | 2 of 12 (0.167)
+    1700-1899  other 4 of 25 (0.160) | 3 of 33 (0.091) | 16 of 33 (0.485)
+    1900-2099  large 10 of 13 (0.769) | 6 of 13 (0.462) | 0 of 13 (0.000)
+    1900-2099  other 7 of 27 (0.259) | 5 of 37 (0.135) | 14 of 37 (0.378)
+    2100+      large 0 of 2 (0.000) | 0 of 2 (0.000) | 0 of 2 (0.000)
+    2100+      other 1 of 3 (0.333) | 0 of 3 (0.000) | 0 of 3 (0.000)
+  -- by our share at r100, large then other: fall by r300 | fall by r200 | rise by r200
+    share 0.00-0.55 large 6 of 10 (0.600) | 4 of 10 (0.400) | 1 of 10 (0.100)
+    share 0.00-0.55 other 7 of 23 (0.304) | 7 of 23 (0.304) | 2 of 23 (0.087)
+    share 0.55-0.70 large 10 of 16 (0.625) | 3 of 16 (0.188) | 1 of 16 (0.062)
+    share 0.55-0.70 other 4 of 25 (0.160) | 1 of 31 (0.032) | 18 of 31 (0.581)
+    share 0.70-1.01 large 1 of 1 (1.000) | 1 of 1 (1.000) | 0 of 1 (0.000)
+    share 0.70-1.01 other 1 of 7 (0.143) | 0 of 19 (0.000) | 10 of 19 (0.526)
+  -- only games with 40 or more total length (both sides) at r100, large then other
+    large 17 of 27 (0.630) | 8 of 27 (0.296) | 2 of 27 (0.074)
+    other 8 of 47 (0.170) | 6 of 62 (0.097) | 24 of 62 (0.387)
+  -- only games under 40 total at r100, large then other
+    large 0 of 0 (-) | 0 of 0 (-) | 0 of 0 (-)
+    other 4 of 8 (0.500) | 2 of 11 (0.182) | 6 of 11 (0.545)
+  -- no selection at r100 (all games of the code that reached the round), large then other
+    large 38 of 65 (0.585) | 20 of 65 (0.308) | 6 of 65 (0.092)
+    other 26 of 121 (0.215) | 22 of 143 (0.154) | 43 of 143 (0.301)
+  -- our own deaths in the qualifying games, per game (count, length), by window and engine reason
+    large r0-100    games 27 | ours: wall 12.1, 26.4; own body 4.7, 10.1; other body 3.9, 9.2; head-on 6.5, 18.7; other 0.0, 0.0
+    large r0-100               | theirs: wall 12.0, 26.4; own body 3.7, 8.7; other body 3.0, 7.0; head-on 7.0, 18.3; other 5.3, 12.0
+    large r101-200  games 27 | ours: wall 14.3, 34.0; own body 6.3, 15.0; other body 11.4, 28.6; head-on 26.1, 87.3; other 0.0, 0.0
+    large r101-200             | theirs: wall 19.7, 49.4; own body 8.8, 23.8; other body 8.4, 21.4; head-on 26.8, 82.6; other 9.0, 23.9
+    large r201-300  games 27 | ours: wall 10.6, 24.4; own body 6.3, 15.1; other body 9.4, 23.1; head-on 25.0, 100.7; other 12.6, 35.9
+    large r201-300             | theirs: wall 24.0, 78.9; own body 9.7, 30.4; other body 11.0, 33.0; head-on 26.1, 101.8; other 8.2, 27.4
+    large games with a reason-4 (no action) death of ours at r200 or before: 0 of 27; first such round over games: min 201, median 205; games with none at all 1
+    other r0-100    games 96 | ours: wall 20.3, 43.5; own body 7.8, 17.2; other body 5.7, 12.7; head-on 7.0, 17.9; other 0.0, 0.0
+    other r0-100               | theirs: wall 10.7, 24.3; own body 4.8, 12.3; other body 2.7, 6.2; head-on 7.4, 19.4; other 3.7, 8.1
+    other r101-200  games 73 | ours: wall 31.8, 73.6; own body 14.8, 35.3; other body 10.6, 25.5; head-on 11.1, 31.1; other 0.0, 0.0
+    other r101-200             | theirs: wall 18.2, 43.9; own body 8.6, 24.2; other body 5.3, 12.6; head-on 12.3, 34.1; other 8.6, 18.2
+    other r201-300  games 55 | ours: wall 42.0, 95.6; own body 21.2, 49.3; other body 12.8, 30.3; head-on 10.8, 33.0; other 11.0, 26.3
+    other r201-300             | theirs: wall 25.6, 67.9; own body 14.0, 44.3; other body 8.4, 22.0; head-on 12.8, 40.4; other 13.0, 28.2
+    other games with a reason-4 (no action) death of ours at r200 or before: 0 of 96; first such round over games: min 201, median 304; games with none at all 36
+  -- flows between r100 and r200, and r200 and r300, per game, large qualifying games (fell by r300 against not)
+    large fell by r300  n 17 r101-200 | ours start 120.5, eaten 226.4, lost to wall/own body/no action 54.2, lost to enemy or ally bodies and head-on 123.1, net +48.6, rest (paid steps) -0.5 | theirs start 82.8, eaten 298.9, lost to wall/own body/no action 77.2, lost to enemy or ally bodies and head-on 107.4, net +106.9, rest (paid steps) -7.4
+    large fell by r300  n 17 r201-300 | ours start 169.2, eaten 187.4, lost to wall/own body/no action 66.8, lost to enemy or ally bodies and head-on 131.9, net -12.4, rest (paid steps) -1.0 | theirs start 189.8, eaten 366.4, lost to wall/own body/no action 130.5, lost to enemy or ally bodies and head-on 148.5, net +74.1, rest (paid steps) -13.2
+    large did not fall  n 10 r101-200 | ours start 123.6, eaten 221.8, lost to wall/own body/no action 40.1, lost to enemy or ally bodies and head-on 103.7, net +77.5, rest (paid steps) -0.5 | theirs start 96.8, eaten 280.7, lost to wall/own body/no action 130.7, lost to enemy or ally bodies and head-on 98.3, net +40.7, rest (paid steps) -11.0
+    large did not fall  n 10 r201-300 | ours start 201.1, eaten 240.2, lost to wall/own body/no action 90.4, lost to enemy or ally bodies and head-on 109.9, net +38.4, rest (paid steps) -1.5 | theirs start 137.5, eaten 302.4, lost to wall/own body/no action 147.3, lost to enemy or ally bodies and head-on 111.4, net +31.3, rest (paid steps) -12.4
+    other fell by r300  n 12 r101-200 | ours start 48.8, eaten 182.2, lost to wall/own body/no action 111.8, lost to enemy or ally bodies and head-on 46.9, net +23.2, rest (paid steps) -0.3 | theirs start 38.6, eaten 170.3, lost to wall/own body/no action 77.2, lost to enemy or ally bodies and head-on 39.2, net +40.7, rest (paid steps) -13.3
+    other fell by r300  n 12 r201-300 | ours start 72.0, eaten 188.0, lost to wall/own body/no action 139.3, lost to enemy or ally bodies and head-on 55.9, net -7.2, rest (paid steps) +0.0 | theirs start 79.2, eaten 257.4, lost to wall/own body/no action 139.5, lost to enemy or ally bodies and head-on 70.0, net +36.3, rest (paid steps) -11.6
+    other did not fall  n 43 r101-200 | ours start 71.4, eaten 220.7, lost to wall/own body/no action 122.5, lost to enemy or ally bodies and head-on 58.8, net +39.4, rest (paid steps) -0.0 | theirs start 55.0, eaten 198.2, lost to wall/own body/no action 121.1, lost to enemy or ally bodies and head-on 52.7, net +19.3, rest (paid steps) -5.1
+    other did not fall  n 43 r201-300 | ours start 110.8, eaten 259.9, lost to wall/own body/no action 180.1, lost to enemy or ally bodies and head-on 65.3, net +14.3, rest (paid steps) -0.3 | theirs start 74.3, eaten 210.7, lost to wall/own body/no action 140.6, lost to enemy or ally bodies and head-on 60.2, net +4.5, rest (paid steps) -5.3
+  -- had our wall / own body / no action deaths after r100 not happened (their full length added back at the later round)
+    large fall by r300 17 of 27 (0.630) -> full add-back 6 of 27 (0.222), half add-back 12 of 27 (0.444) | fall by r200 8 of 27 (0.296) -> 5 of 27 (0.185), 7 of 27 (0.259) | rise by r200 2 of 27 (0.074) -> 2 of 27 (0.074)
+    other fall by r300 12 of 55 (0.218) -> full add-back 3 of 55 (0.055), half add-back 3 of 55 (0.055) | fall by r200 8 of 73 (0.110) -> 2 of 73 (0.027), 3 of 73 (0.041) | rise by r200 30 of 73 (0.411) -> 56 of 73 (0.767)
+  -- growth multiple r100 to r300 (total at r300 / total at r100), medians, qualifying games reaching r300
+    large n 27 ours x1.58 theirs x2.86 ; games where their multiple is the larger 22 of 27 (0.815)
+    other n 55 ours x1.82 theirs x1.53 ; games where their multiple is the larger 25 of 55 (0.455)
+  -- list of large qualifying games: game, layout, opponent, rating, r100 ours-theirs, r200, r300, change200, change300, win
+    1240863 Around UNSW #1   Heartbreaker (62)            1814  (168, 143)  (294, 135)  (378, 52)  +0.145 +0.339 W
+    1243329 Around UNSW #1   1 (231)                      1982  (156, 140)  (227, 310)  (246, 366)  -0.104 -0.125 W
+    1255597 Around UNSW #1   we love gru (998)            2020  (194, 147)  (254, 267)  (191, 356)  -0.081 -0.220 L
+    1255623 Around UNSW #1   :3 (217)                     1934  (207, 160)  (240, 231)  (280, 295)  -0.054 -0.077 W
+    1257762 Around UNSW #1   free trip to sydney pls (82) 2054  (217, 82)  (256, 267)  (255, 272)  -0.236 -0.242 W
+    1261220 Around UNSW #1   天天开心 :( (835)                1806  (191, 106)  (312, 143)  (342, 173)  +0.043 +0.021 W
+    1265767 Around UNSW #1   😹 (456)                      1756  (200, 104)  (272, 204)  (315, 273)  -0.086 -0.122 W
+    1270028 Around UNSW #1   Proof by Intimidation (465)  1851  (160, 165)  (200, 209)  (197, 205)  -0.003 -0.002 L
+    1275420 Around UNSW #1   1234 (919)                   1885  (194, 114)  (173, 211)  (189, 244)  -0.179 -0.193 W
+    1276407 Around UNSW #1   SilverSamurai (28)           2111  (162, 166)  (232, 241)  (278, 302)  -0.003 -0.015 L
+    1240023 Australia #1     Computers (112)              2080  (83, 71)  (124, 219)  (97, 360)  -0.177 -0.327 L
+    1255362 Australia #1     byte_force (959)             1873  (105, 104)  (105, 245)  (102, 317)  -0.202 -0.259 L
+    1256188 Australia #1     free trip to sydney pls (82) 2053  (126, 65)  (219, 122)  (160, 266)  -0.017 -0.284 W
+    1270031 Australia #1     Proof by Intimidation (465)  1851  (97, 49)  (223, 132)  (178, 193)  -0.036 -0.185 L
+    1271166 Australia #1     Um_nik da real goat (538)    1785  (100, 71)  (150, 159)  (171, 203)  -0.099 -0.128 L
+    1255595 Islands #1       we love gru (998)            2020  (132, 74)  (165, 90)  (169, 124)  +0.006 -0.064 L
+    1257760 Islands #1       free trip to sydney pls (82) 2054  (124, 117)  (108, 257)  (65, 296)  -0.219 -0.334 L
+    1275535 Islands #1       y (71)                       1954  (112, 63)  (76, 186)  (34, 308)  -0.350 -0.541 L
+    1241404 Schooltime #1    :3 (217)                     1934  (26, 17)  (112, 72)  (173, 110)  +0.004 +0.007 W
+    1241493 Schooltime #1    python.io (147)              1798  (34, 33)  (69, 78)  (87, 134)  -0.038 -0.114 W
+    1244940 Schooltime #1    ComTamSuonNuong (193)        1974  (34, 27)  (72, 100)  (57, 191)  -0.139 -0.328 L
+    1248528 Schooltime #1    Knight Capital (226)         1946  (34, 27)  (85, 75)  (108, 160)  -0.026 -0.154 L
+    1255364 Schooltime #1    byte_force (959)             1873  (35, 33)  (88, 59)  (134, 116)  +0.084 +0.021 L
+    1276411 Schooltime #1    SilverSamurai (28)           2111  (29, 20)  (91, 84)  (155, 130)  -0.072 -0.048 L
+    1252501 Schooltime #2    中国人不准飞😡😡😡😡😡😡😡 (791)          1817  (128, 109)  (202, 216)  (193, 258)  -0.057 -0.112 W
+    1254718 Schooltime #2    byte_force (959)             1868  (126, 84)  (277, 111)  (289, 181)  +0.114 +0.015 W
+    1256640 Schooltime #2    free trip to sydney pls (82) 2025  (111, 85)  (261, 178)  (218, 289)  +0.028 -0.136 W
+
+===== v31 games 410 reached r100 385 qualify (ours >= 0.95 theirs at r100) 210
+  large qualifying 45 reach r200 45 reach r300 45
+    fall by r300 35 of 45 (0.778) | fall by r200 20 of 45 (0.444) | rise by r200 0 of 45 (0.000) | rise by r300 0 of 45 (0.000)
+    wins: all qualifying 25 of 45 (0.556) | reaching r200 25 of 45 (0.556) | reaching r300 25 of 45 (0.556)
+    share change to r300: mean -0.201 median -0.175, below zero 41 of 45 (0.911) | to r200: mean -0.096 median -0.092, below zero 34 of 45 (0.756)
+    total length of both sides at r100: median 202, lowest quarter 177, min 71 | our share at r100: median 0.580 mean 0.590
+  other qualifying 165 reach r200 121 reach r300 95
+    fall by r300 28 of 95 (0.295) | fall by r200 19 of 121 (0.157) | rise by r200 39 of 121 (0.322) | rise by r300 25 of 95 (0.263)
+    wins: all qualifying 121 of 165 (0.733) | reaching r200 77 of 121 (0.636) | reaching r300 52 of 95 (0.547)
+    share change to r300: mean -0.012 median -0.018, below zero 53 of 95 (0.558) | to r200: mean 0.031 median 0.033, below zero 46 of 121 (0.380)
+    total length of both sides at r100: median 76, lowest quarter 50, min 15 | our share at r100: median 0.649 mean 0.678
+  -- chance (Fisher, games as units), large against other
+    fall by r300: large 35 of 45 (0.778), other 28 of 95 (0.295), p 8.038e-08
+       Wilson large (0.637, 0.875) other (0.212, 0.393) | large without its three strongest games 32 of 42 (0.762)
+    fall by r200: large 20 of 45 (0.444), other 19 of 121 (0.157), p 0.0003225
+       Wilson large (0.309, 0.588) other (0.103, 0.232) | large without its three strongest games 17 of 42 (0.405)
+    rise by r200: large 0 of 45 (0.000), other 39 of 121 (0.322), p 7.27e-07
+       Wilson large (0.0, 0.079) other (0.246, 0.41) | large without its three strongest games 0 of 42 (0.000)
+  -- per layout: fall by r300 | fall by r200 | rise by r200 | r100 total median
+    Around UNSW #1         5 of 9 (0.556) | 2 of 9 (0.222) | 0 of 9 (0.000) | 306 LARGE
+    Australia #1           14 of 17 (0.824) | 9 of 17 (0.529) | 0 of 17 (0.000) | 178 LARGE
+    Autarky #1             4 of 13 (0.308) | 2 of 21 (0.095) | 10 of 21 (0.476) | 80 
+    Default #1             2 of 5 (0.400) | 1 of 9 (0.111) | 6 of 9 (0.667) | 83 
+    Devil #1               1 of 1 (1.000) | 1 of 4 (0.250) | 2 of 4 (0.500) | 88 
+    Islands #1             11 of 11 (1.000) | 7 of 11 (0.636) | 0 of 11 (0.000) | 227 LARGE
+    Maze #1                0 of 12 (0.000) | 0 of 12 (0.000) | 4 of 12 (0.333) | 121 
+    Portals #1             5 of 9 (0.556) | 3 of 9 (0.333) | 0 of 9 (0.000) | 91 
+    Prisoners Dilemma #1   0 of 1 (0.000) | 0 of 1 (0.000) | 0 of 1 (0.000) | 41 
+    Prisoners Dilemma #2   0 of 1 (0.000) | 1 of 3 (0.333) | 1 of 3 (0.333) | 21 
+    Queen Of Spades #1     2 of 4 (0.500) | 2 of 7 (0.286) | 4 of 7 (0.571) | 48 
+    Schooltime #1          1 of 2 (0.500) | 1 of 2 (0.500) | 0 of 2 (0.000) | 78 LARGE
+    Schooltime #2          4 of 6 (0.667) | 1 of 6 (0.167) | 0 of 6 (0.000) | 198 LARGE
+    Slithery Fight #1      3 of 16 (0.188) | 1 of 16 (0.062) | 0 of 16 (0.000) | 305 
+    Stripes #1             0 of 0 (-) | 1 of 2 (0.500) | 0 of 2 (0.000) | 31 
+    Tower Defense #1       4 of 4 (1.000) | 4 of 4 (1.000) | 0 of 4 (0.000) | 18 
+    Trauma #1              4 of 9 (0.444) | 3 of 9 (0.333) | 2 of 9 (0.222) | 42 
+    Trophy #1              0 of 0 (-) | 0 of 0 (-) | 0 of 0 (-) | 102 
+    weakhold #1            3 of 20 (0.150) | 0 of 24 (0.000) | 10 of 24 (0.417) | 55 
+  -- large, one layout name left out: fall by r300 | fall by r200 | rise by r200
+    without Around UNSW  30 of 36 (0.833) | 18 of 36 (0.500) | 0 of 36 (0.000)
+    without Australia    21 of 28 (0.750) | 11 of 28 (0.393) | 0 of 28 (0.000)
+    without Islands      24 of 34 (0.706) | 13 of 34 (0.382) | 0 of 34 (0.000)
+    without Schooltime   30 of 37 (0.811) | 18 of 37 (0.486) | 0 of 37 (0.000)
+  -- large, one opponent left out (opponents in the large slice: 22, battles 35)
+    fall by r200 runs from 0.390 to 0.465; fall by r300 from 0.744 to 0.805
+    opponent Goated (733)                       own games: fall by r200 4 of 4 (1.000), by r300 4 of 4 (1.000)
+    opponent 中国人不准飞😡😡😡😡😡😡😡 (791)                own games: fall by r200 4 of 6 (0.667), by r300 6 of 6 (1.000)
+    opponent Computers (112)                    own games: fall by r200 2 of 2 (1.000), by r300 2 of 2 (1.000)
+    opponent Delusion Tax (375)                 own games: fall by r200 2 of 2 (1.000), by r300 2 of 2 (1.000)
+    opponent Peanut Butter (104)                own games: fall by r200 1 of 2 (0.500), by r300 1 of 2 (0.500)
+    opponent Ron Squad (928)                    own games: fall by r200 1 of 1 (1.000), by r300 1 of 1 (1.000)
+  -- by evening (KST day starting 06:00), large: fall by r300 | fall by r200
+    10-05 11 of 15 (0.733) | 4 of 15 (0.267)
+    10-06 24 of 30 (0.800) | 16 of 30 (0.533)
+  -- by rating band, large then other: fall by r300 | fall by r200 | rise by r200
+    <1700      large 1 of 2 (0.500) | 0 of 2 (0.000) | 0 of 2 (0.000)
+    <1700      other 0 of 5 (0.000) | 0 of 6 (0.000) | 1 of 6 (0.167)
+    1700-1899  large 18 of 23 (0.783) | 8 of 23 (0.348) | 0 of 23 (0.000)
+    1700-1899  other 14 of 51 (0.275) | 11 of 70 (0.157) | 28 of 70 (0.400)
+    1900-2099  large 14 of 18 (0.778) | 11 of 18 (0.611) | 0 of 18 (0.000)
+    1900-2099  other 10 of 30 (0.333) | 8 of 35 (0.229) | 9 of 35 (0.257)
+    2100+      large 2 of 2 (1.000) | 1 of 2 (0.500) | 0 of 2 (0.000)
+    2100+      other 4 of 9 (0.444) | 0 of 10 (0.000) | 1 of 10 (0.100)
+  -- by our share at r100, large then other: fall by r300 | fall by r200 | rise by r200
+    share 0.00-0.55 large 11 of 15 (0.733) | 8 of 15 (0.533) | 0 of 15 (0.000)
+    share 0.00-0.55 other 15 of 47 (0.319) | 13 of 51 (0.255) | 14 of 51 (0.275)
+    share 0.55-0.70 large 21 of 27 (0.778) | 10 of 27 (0.370) | 0 of 27 (0.000)
+    share 0.55-0.70 other 11 of 37 (0.297) | 4 of 46 (0.087) | 16 of 46 (0.348)
+    share 0.70-1.01 large 3 of 3 (1.000) | 2 of 3 (0.667) | 0 of 3 (0.000)
+    share 0.70-1.01 other 2 of 11 (0.182) | 2 of 24 (0.083) | 9 of 24 (0.375)
+  -- only games with 40 or more total length (both sides) at r100, large then other
+    large 35 of 45 (0.778) | 20 of 45 (0.444) | 0 of 45 (0.000)
+    other 21 of 86 (0.244) | 12 of 108 (0.111) | 38 of 108 (0.352)
+  -- only games under 40 total at r100, large then other
+    large 0 of 0 (-) | 0 of 0 (-) | 0 of 0 (-)
+    other 7 of 9 (0.778) | 7 of 13 (0.538) | 1 of 13 (0.077)
+  -- no selection at r100 (all games of the code that reached the round), large then other
+    large 58 of 94 (0.617) | 39 of 95 (0.411) | 3 of 95 (0.032)
+    other 46 of 179 (0.257) | 46 of 223 (0.206) | 48 of 223 (0.215)
+  -- our own deaths in the qualifying games, per game (count, length), by window and engine reason
+    large r0-100    games 45 | ours: wall 9.9, 21.7; own body 4.4, 9.6; other body 6.4, 15.0; head-on 7.3, 19.8; other 0.0, 0.0
+    large r0-100               | theirs: wall 9.1, 20.2; own body 3.0, 6.9; other body 2.9, 6.6; head-on 7.8, 20.8; other 6.8, 15.4
+    large r101-200  games 45 | ours: wall 18.1, 41.5; own body 10.0, 23.8; other body 18.4, 47.3; head-on 33.2, 101.0; other 0.0, 0.0
+    large r101-200             | theirs: wall 15.8, 43.0; own body 7.8, 21.4; other body 7.4, 18.7; head-on 33.7, 99.3; other 13.0, 30.0
+    large r201-300  games 45 | ours: wall 12.7, 29.1; own body 6.5, 15.0; other body 13.2, 33.5; head-on 28.5, 105.6; other 11.2, 29.2
+    large r201-300             | theirs: wall 17.7, 56.0; own body 10.6, 38.0; other body 9.8, 29.1; head-on 30.4, 113.4; other 21.0, 59.0
+    large games with a reason-4 (no action) death of ours at r200 or before: 0 of 45; first such round over games: min 201, median 210; games with none at all 4
+    other r0-100    games 165 | ours: wall 18.8, 40.2; own body 7.4, 16.2; other body 5.2, 12.2; head-on 7.1, 18.3; other 0.0, 0.0
+    other r0-100               | theirs: wall 10.7, 23.6; own body 4.3, 9.9; other body 3.0, 6.9; head-on 7.3, 19.4; other 4.8, 10.5
+    other r101-200  games 121 | ours: wall 31.9, 72.6; own body 14.6, 34.3; other body 9.5, 23.0; head-on 10.8, 29.3; other 0.0, 0.0
+    other r101-200             | theirs: wall 18.0, 43.5; own body 11.0, 29.7; other body 5.9, 13.9; head-on 11.6, 31.9; other 8.2, 18.5
+    other r201-300  games 95 | ours: wall 37.3, 84.4; own body 17.9, 40.8; other body 11.9, 28.7; head-on 12.5, 36.2; other 9.0, 21.7
+    other r201-300             | theirs: wall 22.3, 55.3; own body 16.3, 46.7; other body 8.7, 20.7; head-on 13.3, 39.5; other 10.9, 26.3
+    other games with a reason-4 (no action) death of ours at r200 or before: 0 of 165; first such round over games: min 201, median 308; games with none at all 74
+  -- flows between r100 and r200, and r200 and r300, per game, large qualifying games (fell by r300 against not)
+    large fell by r300  n 35 r101-200 | ours start 126.4, eaten 268.3, lost to wall/own body/no action 66.9, lost to enemy or ally bodies and head-on 158.1, net +43.2, rest (paid steps) -0.2 | theirs start 85.7, eaten 310.7, lost to wall/own body/no action 84.8, lost to enemy or ally bodies and head-on 121.1, net +97.2, rest (paid steps) -7.5
+    large fell by r300  n 35 r201-300 | ours start 169.6, eaten 191.2, lost to wall/own body/no action 70.4, lost to enemy or ally bodies and head-on 144.8, net -25.0, rest (paid steps) -1.1 | theirs start 182.9, eaten 373.8, lost to wall/own body/no action 137.7, lost to enemy or ally bodies and head-on 144.1, net +80.9, rest (paid steps) -11.1
+    large did not fall  n 10 r101-200 | ours start 125.4, eaten 264.1, lost to wall/own body/no action 59.7, lost to enemy or ally bodies and head-on 113.9, net +90.1, rest (paid steps) -0.4 | theirs start 91.2, eaten 305.1, lost to wall/own body/no action 128.2, lost to enemy or ally bodies and head-on 106.9, net +68.0, rest (paid steps) -2.0
+    large did not fall  n 10 r201-300 | ours start 215.5, eaten 225.5, lost to wall/own body/no action 83.8, lost to enemy or ally bodies and head-on 119.4, net +21.7, rest (paid steps) -0.6 | theirs start 159.2, eaten 382.0, lost to wall/own body/no action 206.6, lost to enemy or ally bodies and head-on 137.1, net +34.7, rest (paid steps) -3.6
+    other fell by r300  n 28 r101-200 | ours start 49.1, eaten 162.8, lost to wall/own body/no action 94.8, lost to enemy or ally bodies and head-on 54.3, net +13.5, rest (paid steps) -0.2 | theirs start 37.2, eaten 168.0, lost to wall/own body/no action 80.9, lost to enemy or ally bodies and head-on 43.9, net +37.7, rest (paid steps) -5.5
+    other fell by r300  n 28 r201-300 | ours start 62.6, eaten 156.4, lost to wall/own body/no action 103.1, lost to enemy or ally bodies and head-on 59.3, net -6.1, rest (paid steps) -0.0 | theirs start 74.9, eaten 207.6, lost to wall/own body/no action 112.8, lost to enemy or ally bodies and head-on 61.1, net +26.6, rest (paid steps) -7.1
+    other did not fall  n 67 r101-200 | ours start 68.5, eaten 213.9, lost to wall/own body/no action 120.1, lost to enemy or ally bodies and head-on 54.2, net +39.5, rest (paid steps) -0.1 | theirs start 53.3, eaten 204.4, lost to wall/own body/no action 128.1, lost to enemy or ally bodies and head-on 51.2, net +20.9, rest (paid steps) -4.3
+    other did not fall  n 67 r201-300 | ours start 108.0, eaten 240.9, lost to wall/own body/no action 165.2, lost to enemy or ally bodies and head-on 67.3, net +8.4, rest (paid steps) -0.0 | theirs start 74.2, eaten 203.3, lost to wall/own body/no action 134.7, lost to enemy or ally bodies and head-on 59.9, net +4.3, rest (paid steps) -4.4
+  -- had our wall / own body / no action deaths after r100 not happened (their full length added back at the later round)
+    large fall by r300 35 of 45 (0.778) -> full add-back 14 of 45 (0.311), half add-back 22 of 45 (0.489) | fall by r200 20 of 45 (0.444) -> 10 of 45 (0.222), 14 of 45 (0.311) | rise by r200 0 of 45 (0.000) -> 5 of 45 (0.111)
+    other fall by r300 28 of 95 (0.295) -> full add-back 9 of 95 (0.095), half add-back 10 of 95 (0.105) | fall by r200 19 of 121 (0.157) -> 7 of 121 (0.058), 10 of 121 (0.083) | rise by r200 39 of 121 (0.322) -> 93 of 121 (0.769)
+  -- growth multiple r100 to r300 (total at r300 / total at r100), medians, qualifying games reaching r300
+    large n 45 ours x1.36 theirs x3.07 ; games where their multiple is the larger 41 of 45 (0.911)
+    other n 95 ours x1.66 theirs x1.65 ; games where their multiple is the larger 53 of 95 (0.558)
+  -- list of large qualifying games: game, layout, opponent, rating, r100 ours-theirs, r200, r300, change200, change300, win
+    1158840 Around UNSW #1   Maccas (762)                 1737  (197, 103)  (292, 169)  (280, 194)  -0.023 -0.066 W
+    1161061 Around UNSW #1   err404 (485)                 1767  (203, 135)  (289, 190)  (332, 199)  +0.003 +0.025 W
+    1179105 Around UNSW #1   ouroboros (1022)             1887  (174, 141)  (254, 201)  (201, 277)  +0.006 -0.132 W
+    1196500 Around UNSW #1   Peanut Butter (104)          1946  (155, 123)  (222, 233)  (236, 258)  -0.070 -0.080 W
+    1205846 Around UNSW #1   Goated (733)                 1905  (224, 82)  (297, 223)  (244, 315)  -0.161 -0.296 W
+    1207762 Around UNSW #1   Goated (733)                 1962  (239, 92)  (297, 208)  (263, 306)  -0.134 -0.260 W
+    1211466 Around UNSW #1   doofenshmirtz good incorpora 1875  (163, 143)  (229, 241)  (232, 340)  -0.045 -0.127 W
+    1213835 Around UNSW #1   Team SKKU (249)              2108  (152, 156)  (168, 239)  (185, 348)  -0.081 -0.146 L
+    1215200 Around UNSW #1   the uncancelables (899)      1973  (165, 122)  (249, 205)  (264, 213)  -0.026 -0.021 W
+    1157401 Australia #1     the uncancelables (899)      1947  (86, 63)  (146, 186)  (166, 217)  -0.137 -0.144 W
+    1157624 Australia #1     SHINK AI 6500 (280)          1924  (117, 59)  (246, 90)  (271, 136)  +0.067 +0.001 W
+    1158842 Australia #1     Maccas (762)                 1737  (94, 68)  (150, 143)  (50, 275)  -0.068 -0.426 L
+    1173273 Australia #1     Delusion Tax (375)           2035  (97, 101)  (120, 236)  (94, 338)  -0.153 -0.272 L
+    1186623 Australia #1     中国人不准飞😡😡😡😡😡😡😡 (791)          1808  (119, 64)  (210, 144)  (182, 267)  -0.057 -0.245 W
+    1196501 Australia #1     Peanut Butter (104)          1946  (81, 78)  (107, 210)  (80, 291)  -0.172 -0.294 L
+    1200581 Australia #1     中国人不准飞😡😡😡😡😡😡😡 (791)          1800  (103, 74)  (127, 245)  (98, 338)  -0.241 -0.357 L
+    1202049 Australia #1     doofenshmirtz good incorpora 1869  (92, 80)  (177, 143)  (213, 200)  +0.018 -0.019 W
+    1207610 Australia #1     dev test 1 :P (545)          2432  (94, 80)  (103, 189)  (74, 338)  -0.187 -0.361 L
+    1207763 Australia #1     Goated (733)                 1962  (108, 70)  (180, 180)  (161, 171)  -0.107 -0.122 W
+    1214741 Australia #1     Computers (112)              2091  (121, 77)  (146, 203)  (103, 384)  -0.193 -0.400 L
+    1215201 Australia #1     the uncancelables (899)      1973  (112, 58)  (205, 95)  (208, 178)  +0.025 -0.120 L
+    1216045 Australia #1     中国人不准飞😡😡😡😡😡😡😡 (791)          1822  (108, 75)  (131, 200)  (166, 234)  -0.194 -0.175 W
+    1217797 Australia #1     CookAgent (716)              1660  (121, 58)  (223, 93)  (187, 181)  +0.030 -0.168 W
+    1222116 Australia #1     err404 (485)                 1686  (98, 86)  (148, 188)  (182, 238)  -0.092 -0.099 W
+    1226071 Australia #1     中国人不准飞😡😡😡😡😡😡😡 (791)          1822  (113, 74)  (169, 208)  (177, 271)  -0.156 -0.209 W
+    1234153 Australia #1     fandagong (552)              2077  (144, 58)  (233, 147)  (176, 240)  -0.100 -0.290 L
+    1156530 Islands #1       err404 (485)                 1784  (125, 114)  (161, 165)  (129, 207)  -0.029 -0.139 W
+    1157940 Islands #1       Stochastic Parrots (127)     1782  (156, 70)  (213, 108)  (213, 163)  -0.027 -0.124 L
+    1161769 Islands #1       NUSW Battlecode (262)        1879  (130, 83)  (141, 126)  (85, 175)  -0.082 -0.283 L
+    1168702 Islands #1       err404 (485)                 1766  (146, 92)  (184, 179)  (164, 181)  -0.107 -0.138 L
+    1173272 Islands #1       Delusion Tax (375)           2035  (110, 110)  (56, 236)  (2, 315)  -0.308 -0.494 L
+    1173402 Islands #1       Proof by Intimidation (465)  1863  (120, 94)  (152, 121)  (109, 195)  -0.004 -0.202 L
+    1178746 Islands #1       中国人不准飞😡😡😡😡😡😡😡 (791)          1808  (128, 120)  (74, 198)  (26, 296)  -0.244 -0.435 L
+    1182601 Islands #1       Weneedmoretokens (135)       1853  (124, 94)  (91, 210)  (72, 251)  -0.266 -0.346 L
+    1192911 Islands #1       free trip to sydney pls (82) 2062  (154, 76)  (141, 181)  (151, 254)  -0.232 -0.297 L
+    1206771 Islands #1       doofenshmirtz good incorpora 1896  (128, 103)  (95, 211)  (68, 283)  -0.244 -0.360 L
+    1214745 Islands #1       Computers (112)              2091  (118, 109)  (79, 240)  (53, 354)  -0.272 -0.390 L
+    1183991 Schooltime #1    Ron Squad (928)              1739  (39, 39)  (59, 107)  (53, 171)  -0.145 -0.263 L
+    1192915 Schooltime #1    free trip to sydney pls (82) 2062  (44, 27)  (139, 77)  (164, 147)  +0.024 -0.092 W
+    1157403 Schooltime #2    the uncancelables (899)      1947  (116, 55)  (361, 115)  (279, 225)  +0.080 -0.125 W
+    1163283 Schooltime #2    Proof by Intimidation (465)  1864  (145, 65)  (273, 113)  (278, 221)  +0.017 -0.133 W
+    1163726 Schooltime #2    f2p (608)                    1843  (103, 95)  (206, 152)  (192, 159)  +0.055 +0.027 W
+    1200896 Schooltime #2    Weneedmoretokens (135)       1877  (80, 82)  (187, 145)  (238, 195)  +0.069 +0.056 W
+    1207765 Schooltime #2    Goated (733)                 1962  (109, 96)  (125, 308)  (124, 368)  -0.243 -0.280 W
+    1226073 Schooltime #2    中国人不准飞😡😡😡😡😡😡😡 (791)          1822  (123, 67)  (236, 192)  (207, 263)  -0.096 -0.207 W
+
+float against exact threshold disagreements 0

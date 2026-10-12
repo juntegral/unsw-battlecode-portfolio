@@ -1,0 +1,55 @@
+=== A. parking: share of 25-round windows with few distinct queen cells (sealed map excluded)
+Vibing++  small  windows=  697 <=6 cells: 0.055  <=10 cells: 0.136  | r150-300: 0.16 (n178) r25-150: 0.13 (n375) r300+: 0.12 (n144)
+Vibing++  medium windows= 1024 <=6 cells: 0.016  <=10 cells: 0.066  | r150-300: 0.13 (n331) r25-150: 0.04 (n411) r300+: 0.03 (n282)
+Vibing++  large  windows= 1027 <=6 cells: 0.018  <=10 cells: 0.081  | r150-300: 0.10 (n337) r25-150: 0.07 (n447) r300+: 0.06 (n243)
+SSS       small  windows= 1134 <=6 cells: 0.217  <=10 cells: 0.293  | r150-300: 0.31 (n360) r25-150: 0.25 (n535) r300+: 0.36 (n239)
+SSS       medium windows= 1277 <=6 cells: 0.002  <=10 cells: 0.016  | r150-300: 0.01 (n426) r25-150: 0.01 (n487) r300+: 0.03 (n364)
+SSS       large  windows= 1308 <=6 cells: 0.005  <=10 cells: 0.022  | r150-300: 0.02 (n449) r25-150: 0.01 (n518) r300+: 0.05 (n341)
+forgot    small  windows= 1062 <=6 cells: 0.017  <=10 cells: 0.065  | r150-300: 0.07 (n308) r25-150: 0.08 (n505) r300+: 0.02 (n249)
+forgot    medium windows= 1161 <=6 cells: 0.042  <=10 cells: 0.070  | r150-300: 0.08 (n384) r25-150: 0.10 (n490) r300+: 0.01 (n287)
+forgot    large  windows=  970 <=6 cells: 0.013  <=10 cells: 0.045  | r150-300: 0.09 (n321) r25-150: 0.03 (n375) r300+: 0.02 (n274)
+meow      small  windows=  277 <=6 cells: 0.101  <=10 cells: 0.209  | r150-300: 0.32 (n37) r25-150: 0.19 (n237) r300+: 0.00 (n3)
+meow      medium windows=  606 <=6 cells: 0.002  <=10 cells: 0.012  | r150-300: 0.00 (n184) r25-150: 0.02 (n310) r300+: 0.02 (n112)
+meow      large  windows=  307 <=6 cells: 0.003  <=10 cells: 0.029  | r150-300: 0.02 (n60) r25-150: 0.03 (n242) r300+: 0.00 (n5)
+
+=== E. round of the ram that killed the ENEMY queen (kills by this team), share of games with a kill by round R
+Vibing++  small  games=170 killed their queen in 0.54; by r100/200/300/400/500: 0.29 0.44 0.49 0.51 0.54  median round 90.5
+Vibing++  medium games=106 killed their queen in 0.65; by r100/200/300/400/500: 0.13 0.36 0.46 0.56 0.65  median round 170
+Vibing++  large  games=103 killed their queen in 0.71; by r100/200/300/400/500: 0.15 0.33 0.57 0.62 0.71  median round 205
+SSS       small  games=156 killed their queen in 0.53; by r100/200/300/400/500: 0.27 0.44 0.50 0.52 0.53  median round 98
+SSS       medium games=108 killed their queen in 0.56; by r100/200/300/400/500: 0.16 0.40 0.49 0.53 0.56  median round 131
+SSS       large  games=115 killed their queen in 0.80; by r100/200/300/400/500: 0.12 0.53 0.65 0.72 0.80  median round 158.5
+forgot    small  games=175 killed their queen in 0.43; by r100/200/300/400/500: 0.25 0.39 0.41 0.43 0.43  median round 78.0
+forgot    medium games=120 killed their queen in 0.36; by r100/200/300/400/500: 0.07 0.24 0.30 0.34 0.36  median round 142
+forgot    large  games=106 killed their queen in 0.58; by r100/200/300/400/500: 0.10 0.42 0.48 0.51 0.58  median round 151
+meow      small  games=125 killed their queen in 0.32; by r100/200/300/400/500: 0.20 0.29 0.30 0.31 0.32  median round 79.0
+meow      medium games= 85 killed their queen in 0.24; by r100/200/300/400/500: 0.01 0.09 0.20 0.22 0.24  median round 245.0
+meow      large  games= 79 killed their queen in 0.18; by r100/200/300/400/500: 0.01 0.04 0.08 0.09 0.18  median round 403.0
+
+=== F. missed chances in OUR round-500 losses with their queen alive and ours dead (sealed map excluded)
+games: 51
+  rounds their queen was inside one of our heads' one-turn reach: median 0, mean 8.6, games with zero: 28, games with >= 5: 19
+  rounds one of our small (<=4) heads was within 3 steps of her: median 0, mean 6.1, games with zero: 37, games with >= 5: 9
+  ... within 6 steps: median 0, mean 30.3, games with zero: 28, games with >= 5: 22
+  rounds one of our heads could SEE her: median 80, mean 111.0, games with zero: 3, games with >= 5: 48
+  reach-rounds after our own queen had died: median 0, mean 8.2, games with zero: 29, games with >= 5: 19
+  per map: {'Trauma': 8, 'Slithery Fight': 11, 'Maze': 5, 'Australia': 10, 'Autarky': 1, 'Islands': 2, 'weakhold': 4, 'Portals': 6, 'Prisoners Dilemma': 2, 'Queen Of Spades': 1, 'Default': 1}
+
+=== G. own queen alive at the end, by map (games vs >= 2000): top three pooled | meow
+  Around UNSW        top3  15/ 70 = 0.21   meow  0/16 = 0.00
+  Australia          top3  23/ 85 = 0.27   meow  0/20 = 0.00
+  Autarky            top3  35/ 68 = 0.51   meow  1/ 8 = 0.12
+  Default            top3  14/ 65 = 0.22   meow  3/19 = 0.16
+  Devil              top3  12/ 65 = 0.18   meow  0/22 = 0.00
+  Islands            top3   7/ 83 = 0.08   meow  0/22 = 0.00
+  Maze               top3  28/ 69 = 0.41   meow  0/19 = 0.00
+  Portals            top3  38/ 79 = 0.48   meow  0/19 = 0.00
+  Prisoners Dilemma  top3  25/ 75 = 0.33   meow  3/ 8 = 0.38
+  Queen Of Spades    top3   6/ 59 = 0.10   meow  1/20 = 0.05
+  Schooltime         top3  71/ 71 = 1.00   meow 18/18 = 1.00
+  Slithery Fight     top3  34/ 86 = 0.40   meow  0/21 = 0.00
+  Stripes            top3  24/ 68 = 0.35   meow  0/21 = 0.00
+  Tower Defense      top3  35/ 72 = 0.49   meow  0/16 = 0.00
+  Trauma             top3  68/ 73 = 0.93   meow 11/19 = 0.58
+  Trophy             top3  16/ 71 = 0.23   meow 10/20 = 0.50
+  weakhold           top3  27/ 71 = 0.38   meow  0/19 = 0.00

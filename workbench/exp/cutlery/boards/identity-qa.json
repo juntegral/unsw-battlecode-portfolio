@@ -1,0 +1,54 @@
+{
+  "status": "complete",
+  "definition": "Three reported ID discrepancies checked against frozen population, battle.games per-game rows, selected replay filenames and exact ASCII snapshot labels. No games or scans run.",
+  "cases": [
+    {
+      "gameId": 592400,
+      "battleId": 592391,
+      "metadataGame": {
+        "id": 592400,
+        "status": "completed",
+        "winner": "b",
+        "hasReplay": true,
+        "mapName": "Trophy"
+      },
+      "actualSnapshotRounds": [
+        25,
+        50,
+        100
+      ],
+      "headerId": 592391
+    },
+    {
+      "gameId": 752457,
+      "battleId": 752448,
+      "metadataGame": {
+        "id": 752457,
+        "status": "completed",
+        "winner": "b",
+        "hasReplay": true,
+        "mapName": "Trophy"
+      },
+      "actualSnapshotRounds": [
+        50,
+        100
+      ],
+      "headerId": 752448
+    },
+    {
+      "gameId": 687911,
+      "battleId": 687908,
+      "metadataGame": {
+        "id": 687911,
+        "status": "completed",
+        "winner": "b",
+        "hasReplay": true,
+        "mapName": "Trophy"
+      },
+      "actualSnapshotRounds": [
+        50
+      ],
+      "headerId": 687908
+    }
+  ]
+}

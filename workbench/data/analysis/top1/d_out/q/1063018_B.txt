@@ -1,0 +1,74 @@
+=== 1063018 Queen Of Spades 25x35 (875 cells) run qh31-test-old | B = test4 (2131) vs meow (1843) | winner A by longest after 500 rounds
+queen #1 start (19, 23); enemy queen #0 start (5, 11); path between the starts 26
+DEATH r146 headon L2 at (13, 24)
+splits (round, before -> keeps + child, child id): r72:4->2+2(#25)
+block | head | from start | len | ate nat/corpse | splits | rounds enemy in view | nearest enemy | cells used | own heads<=4 | units own/enemy
+r  0 | (19, 23)  |   0 |  3 | 0/0 | 0 |  3 | 3 | 21 | 0.0 | 2/2
+r 25 | (11, 22)  |  15 |  3 | 0/0 | 0 |  0 | 7 |  6 | 0.0 | 4/3
+r 50 | (10, 22)  |  16 |  3 | 1/0 | 1 |  0 | 9 | 12 | 0.1 | 6/4
+r 75 | (8, 24)   |  20 |  2 | 0/0 | 0 |  0 | 4 |  7 | 0.4 | 7/10
+r100 | (8, 23)   |  19 |  2 | 0/0 | 0 |  3 | 3 | 16 | 0.0 | 6/13
+r125 | (12, 26)  |  20 |  2 | 0/0 | 0 | 19 | 1 | 14 | 0.0 | 5/16
+moves from round 116:
+   116:N  117:E  118:S  119:W  120:N  121:E  122:S  123:S  124:W  125:N  126:N  127:E!3
+   128:S!3  129:S!3  130:W!3  131:S!1  132:S!3  133:W  134:S!3  135:W!5  136:W!3  137:N!3  138:E!1  139:E!3
+   140:E!3  141:N!3  142:N!3  143:E!3  144:N!3  145:N!1  146:W!1
+death record: {"round": 146, "reason": "headon", "len": 2, "pos": [13, 24], "own": 1, "step": 1, "nsteps": 1, "dir": "W", "portal": 0, "hit": ["E", 44, 2, 0, 12, 24]}
+  r139 L2 at (10, 28) move E -> [11, 28] ate 0 | free 3 safe 3 | in reach at start 0, at end 0 | froom 40 tree 0 | N=F(10,27) reach0 room40 E=F(11,28) reach0 room40 S=F(10,29) reach0 room40 W=o(9,28) #1L2s1 | enemies #31L3@(7,32)c4p-1 #32L2@(8,29)c2p3V #44L2@(8,27)c2p3V #51L3@(11,31)c3p-1V
+  r140 L2 at (11, 28) move E -> [12, 28] ate 0 | free 3 safe 3 | in reach at start 0, at end 0 | froom 40 tree 0 | N=F(11,27) reach0 room40 E=F(12,28) reach0 room40 S=F(11,29) reach0 room40 W=o(10,28) #1L2s1 | enemies #21L3@(11,23)c5p5 #32L2@(9,29)c2p3V #44L2@(9,27)c2p3V #51L3@(10,31)c3p-1V
+  r141 L2 at (12, 28) move N -> [12, 27] ate 0 | free 1 safe 1 | in reach at start 0, at end 0 | froom 40 tree 0 | N=F(12,27) reach0 room40 E=K S=K W=o(11,28) #1L2s1 | enemies #21L3@(11,24)c4p5 #32L2@(10,29)c2p3V #44L2@(9,26)c3p5V #51L3@(10,32)c4p-1
+  r142 L2 at (12, 27) move N -> [12, 26] ate 0 | free 1 safe 0 | in reach at start 0, at end 2 | froom 40 tree 0 | N=F(12,26) reach2 room40 E=K S=o(12,28) #1L2s1 W=K | enemies #21L3@(12,24)c3p3V #32L2@(10,28)c2p3V #44L2@(9,25)c3p5V
+  r143 L2 at (12, 26) move E -> [13, 26] ate 0 | free 2 safe 2 | in reach at start 0, at end 0 | froom 40 tree 0 | N=F(12,25) reach0 room40 E=F(13,26) reach0 room40 S=o(12,27) #1L2s1 W=K | enemies #21L3@(12,23)c3p3V #32L2@(10,27)c2p5V #44L2@(10,25)c2p3V
+  r144 L2 at (13, 26) move N -> [13, 25] ate 0 | free 1 safe 1 | in reach at start 0, at end 0 | froom 3 tree 0 | N=F(13,25) reach0 room40 E=K S=K W=o(12,26) #1L2s1 | enemies #21L3@(11,23)c3p5V #32L2@(11,27)c2p5V #44L2@(11,25)c2p3V
+  r145 L2 at (13, 25) move N -> [13, 24] ate 0 | free 1 safe 1 | in reach at start 1, at end 0 | froom 3 tree 0 | N=F(13,24) reach0 room2 E=K S=o(13,26) #1L2s1 W=E(12,25) #44L2s0 | enemies #21L3@(10,23)c3p5V #32L2@(11,28)c3p5V #44L2@(12,25)c1p1V
+  r146 L2 at (13, 24) move W -> None ate 0 | free 0 safe 0 | in reach at start 1, at end 1 | froom 0 tree 0 | N=K E=K S=o(13,25) #1L2s1 W=E(12,24) #44L2s0 | enemies #21L3@(9,23)c4p5 #44L2@(12,24)c1p1V
+--- board at the start of her turn, round 143
+      7 8 91011121314151617
+     +-+ + + + + + + + +-+ 
+ 21   .|. . . . . .|. . *|.
+     + + + + + +-+-+ + + + 
+ 22   .|. . . .|. . * . .|.
+     +-+ + + + +-+ + + + +-
+ 23  |. . . . . A|* . . . .
+     + + +-+-+ + +-+ + + + 
+ 24   . .|. .|a a .|. * . .
+     + + + + + + + + + + + 
+ 25   . . a A . . .|. . . .
+     + + + + + + + + + + +-
+ 26   .|. . . .|& .|. . .|.
+     + + + + + + +-+ + +-+ 
+ 27   .|. . A .|b|. . .|. .
+     + + + + + + + + + + + 
+ 28   . . . a . .|. . .|. .
+     + + + + + +-+ + +-+ + 
+ 29  |. . . . .|. . .|. . .
+     +-+-+-+-+-+ + + + + + 
+ 30   . . . . . * . .|. . .
+     +-+-+-+-+-+ +-+-+ + + 
+ 31   a . A . .|.|. . . . .
+heads: #1B L2 (12, 26); #21A L3 (12, 23); #32A L2 (10, 27); #44A L2 (10, 25); #51A L3 (9, 31)
+--- board at the start of her turn, round 146
+      8 9101112131415161718
+     + + + + + + + + + + + 
+ 19   . . . . . a . . . . .
+     + + + + + + +-+-+ + + 
+ 20   . . . . . A|. .|. . .
+     + + + + + + + + +-+ + 
+ 21  |. . . . . .|. . *|. .
+     + + + + +-+-+ + + + + 
+ 22  |. . . .|. . * . .|. .
+     + + + + +-+ + + + +-+ 
+ 23   . A a a .|* . . . .|.
+     + +-+-+ + +-+ + + + + 
+ 24   .|. .|. A &|. * . .|@
+     + + + + + + + + + + + 
+ 25   . . . . a b|. . . .|a
+     + + + + + + + + + +-+ 
+ 26  |. . . .|. .|. . .|. .
+     + + + + + +-+ + +-+ + 
+ 27  |. . . .|.|. . .|. . .
+     + + + + + + + + + + + 
+ 28   . . A a .|. . .|. . .
+     + + + + +-+ + +-+ + + 
+ 29   . . . .|. . .|. . . .
+heads: #0A L2 (18, 24); #1B L2 (13, 24); #14A L2 (13, 20); #21A L3 (9, 23); #32A L2 (10, 28); #44A L2 (12, 24)

@@ -1,0 +1,300 @@
+{
+  "EAT_FIRST_adjacent_eat": {
+    "count": 3049,
+    "games": 8,
+    "examples": [
+      {
+        "game": 1496853,
+        "round": 10,
+        "dragon": 3
+      },
+      {
+        "game": 1496853,
+        "round": 12,
+        "dragon": 3
+      },
+      {
+        "game": 1496853,
+        "round": 14,
+        "dragon": 3
+      }
+    ],
+    "definition": "First successful step enters a currently empty adjacent pearl tile, including portal adjacency; safety predicates and competing scores not reproduced."
+  },
+  "adjacent_pearl_passed": {
+    "count": 1383,
+    "games": 8,
+    "examples": [
+      {
+        "game": 1496853,
+        "round": 18,
+        "dragon": 3
+      },
+      {
+        "game": 1496853,
+        "round": 25,
+        "dragon": 9
+      },
+      {
+        "game": 1496853,
+        "round": 27,
+        "dragon": 3
+      }
+    ],
+    "definition": "Survives turn, first step does not enter any currently unoccupied adjacent pearl tile; may be unsafe, ineligible or eaten later this turn."
+  },
+  "HEADING_TIE_forward": {
+    "count": 201,
+    "games": 8,
+    "examples": [
+      {
+        "game": 1496853,
+        "round": 0,
+        "dragon": 3
+      },
+      {
+        "game": 1496853,
+        "round": 1,
+        "dragon": 3
+      },
+      {
+        "game": 1496853,
+        "round": 2,
+        "dragon": 1
+      }
+    ],
+    "definition": "First requested move at r0-11 faces away from current neck, using actual canonical adjacency; no score tie verified."
+  },
+  "SPLIT_PORTAL_OK_candidate": {
+    "count": 13,
+    "games": 5,
+    "examples": [
+      {
+        "game": 1496854,
+        "round": 85,
+        "dragon": 18
+      },
+      {
+        "game": 1497631,
+        "round": 31,
+        "dragon": 10
+      },
+      {
+        "game": 1497632,
+        "round": 23,
+        "dragon": 3
+      }
+    ],
+    "definition": "Non-queen splits at L4 by r100, actual tail touches a portal. Escape split and sonar-dependent predicates not distinguished."
+  },
+  "QS_KEEP_MIN_UNITS_below6_to2": {
+    "count": 7,
+    "games": 7,
+    "examples": [
+      {
+        "game": 1496854,
+        "round": 0,
+        "dragon": 0
+      },
+      {
+        "game": 1496855,
+        "round": 16,
+        "dragon": 1
+      },
+      {
+        "game": 1496856,
+        "round": 0,
+        "dragon": 0
+      }
+    ],
+    "definition": "Queen splits L4 to L2 with team count below6; primary/escape split branch not established."
+  },
+  "SMALL_SPRINT_THREAT_exposure": {
+    "count": 4110,
+    "games": 8,
+    "examples": [
+      {
+        "game": 1496853,
+        "round": 37,
+        "dragon": 5
+      },
+      {
+        "game": 1496853,
+        "round": 38,
+        "dragon": 5
+      },
+      {
+        "game": 1496853,
+        "round": 42,
+        "dragon": 14
+      }
+    ],
+    "definition": "An enemy head in actor view has3 or4 actual segments in view; no chosen-move effect asserted."
+  },
+  "CUT_BODY_exposure": {
+    "count": 211,
+    "games": 7,
+    "examples": [
+      {
+        "game": 1496853,
+        "round": 46,
+        "dragon": 1
+      },
+      {
+        "game": 1496853,
+        "round": 47,
+        "dragon": 1
+      },
+      {
+        "game": 1496853,
+        "round": 48,
+        "dragon": 1
+      }
+    ],
+    "definition": "Queen sees enemy head with fewer than4 body cells in view, at least one visible enemy cell on her view edge. Includes enemy queen; does not reproduce memory."
+  },
+  "QUEEN_PORTAL_LAST_crossing": {
+    "count": 4,
+    "games": 1,
+    "examples": [
+      {
+        "game": 1497388,
+        "round": 9,
+        "dragon": 0
+      },
+      {
+        "game": 1497388,
+        "round": 14,
+        "dragon": 0
+      },
+      {
+        "game": 1497388,
+        "round": 27,
+        "dragon": 0
+      }
+    ],
+    "definition": "Queen first move crosses an actual portal; no claim that the unseen emergency fallback ran."
+  },
+  "QUEEN_SURE_compatible": {
+    "count": 4,
+    "games": 4,
+    "examples": [
+      {
+        "game": 1496856,
+        "round": 23,
+        "dragon": 4
+      },
+      {
+        "game": 1497631,
+        "round": 185,
+        "dragon": 69
+      },
+      {
+        "game": 1497632,
+        "round": 72,
+        "dragon": 38
+      }
+    ],
+    "definition": "Our non-queen initiates head ram killing their queen. Leader state and overlapping trade/hunt branches not reconstructed."
+  },
+  "QUEEN_DEFEND_compatible": {
+    "count": 0,
+    "games": 0,
+    "examples": [],
+    "definition": "Our ram victim is a non-queen within3 topology steps of our queen, actor sees both queen and victim at turn start; does not establish unique guard branch."
+  },
+  "no_action_death": {
+    "count": 146,
+    "games": 2,
+    "examples": [
+      {
+        "game": 1496854,
+        "round": 351,
+        "dragon": 151
+      },
+      {
+        "game": 1496854,
+        "round": 351,
+        "dragon": 164
+      },
+      {
+        "game": 1496854,
+        "round": 352,
+        "dragon": 156
+      }
+    ],
+    "definition": "Action discriminant2: no-action suicide, not a surviving idle turn."
+  },
+  "QUEEN_HERD_compatible": {
+    "count": 157,
+    "games": 4,
+    "examples": [
+      {
+        "game": 1496853,
+        "round": 103,
+        "dragon": 1
+      },
+      {
+        "game": 1496854,
+        "round": 76,
+        "dragon": 0
+      },
+      {
+        "game": 1497631,
+        "round": 51,
+        "dragon": 0
+      },
+      {
+        "game": 1497632,
+        "round": 27,
+        "dragon": 1
+      }
+    ],
+    "definition": "Queen has >=12 teammates, exactly one visible mate, moves closer to it from Manhattan distance>3; topology, remembered mates, leader status and score cause not reproduced."
+  },
+  "QUEEN_BOOT_LEN_compatible": {
+    "count": 2,
+    "games": 1,
+    "examples": [
+      {
+        "game": 1496854,
+        "round": 435,
+        "dragon": 369
+      },
+      {
+        "game": 1496854,
+        "round": 482,
+        "dragon": 384
+      }
+    ],
+    "definition": "After r400, L2/3 ally with short living queen within torus Manhattan3 chooses suicide; leader sonar target unknown."
+  },
+  "FEED_CAP_ROUND_compatible": {
+    "count": 1,
+    "games": 1,
+    "examples": [
+      {
+        "game": 1496854,
+        "round": 351
+      }
+    ],
+    "definition": "Schooltime first no-action death at351, team61 at end350; Islands first stop327 under other feeding trigger, so not credited to cap."
+  },
+  "PORTAL_ID_GUARD_high_id_exposure": {
+    "count": 0,
+    "games": 0,
+    "definition": "Distinct actual portal ids>=2*cells. Does not check whether queen/mates observed every edge."
+  },
+  "unknown_attribution": [
+    "QUEEN_DEAD_ALL",
+    "QUEEN_EXIT_KEEP",
+    "QUEEN_AVENGE",
+    "MATE_UNPIN",
+    "POCKET_KEEP_OUT",
+    "TARGET_REACHABLE",
+    "REACH_EATS",
+    "QUEEN_EXIT_STRICT"
+  ],
+  "code_reference": "data/online/smoke/one11-bot/main.cpp",
+  "note": "All are measured signatures/exposures, not isolated switch activation counts. All8 own bot ids21269; engine and dragon log event counts0. No games or bot executions."
+}

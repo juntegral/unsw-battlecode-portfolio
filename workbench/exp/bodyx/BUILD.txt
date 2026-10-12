@@ -1,0 +1,5 @@
+스위치: BODYX_ON (constexpr bool, 기본 false; FREECOST_ON=false 유지)
+변경 파일: versions/v1.8/bot/{params.hpp,bodyx.hpp,plan.hpp,plan.cpp}; versions/v1.8/VERSION.md; exp/bodyx/**
+명세: exp/bodyx/spec.json — 192판 (on/off 168 + off/base 동일성 24)
+조정자 실행: node exp/bodyx/runq.js exp/bodyx/spec.json --jobs 3 --cap 6 → UNSW_RULES=123 node exp/bodyx/analyze.js
+리스크: 기존 몸 기억·창 밖 진주 추정은 보존; 실제 drift·다른 사망 원인·CPU는 외부 판 뒤 검증. BUILD는 게임·커밋·네트워크 0.

@@ -1,0 +1,1551 @@
+[
+  {
+    "gid": 1486055,
+    "bot": 21126,
+    "map": "Prisoners Dilemma",
+    "how": "elim",
+    "last": 44,
+    "ends": [
+      [
+        5,
+        13,
+        3,
+        3,
+        2,
+        3,
+        0,
+        0,
+        0,
+        0,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "ahead": 18,
+    "queenDeaths": [
+      {
+        "round": 21,
+        "event": 1723,
+        "id": 0,
+        "side": 1,
+        "reason": 3,
+        "L": 3,
+        "head": [
+          13,
+          4
+        ],
+        "actor": 13,
+        "actorSide": 0,
+        "actorL0": 4,
+        "stepsTaken": 1,
+        "queen": true,
+        "state": [
+          [
+            5,
+            14,
+            4,
+            3
+          ],
+          [
+            3,
+            9,
+            4,
+            3
+          ]
+        ],
+        "actorHead": [
+          15,
+          4
+        ],
+        "queenLast": {
+          "r": 21,
+          "event": 1691,
+          "id": 0,
+          "s": 1,
+          "L": 3,
+          "head": [
+            12,
+            4
+          ],
+          "adjp": [],
+          "free": 3,
+          "directions": [],
+          "steps": [
+            [
+              13,
+              4
+            ]
+          ],
+          "eaten": [],
+          "split": false,
+          "death": null,
+          "prior_dir": 0,
+          "mate": [
+            3,
+            24,
+            [
+              12,
+              7
+            ]
+          ],
+          "ownN": 3,
+          "queenAlive": true,
+          "last_exit_choices": [],
+          "pocket_pearl_choices": []
+        }
+      }
+    ],
+    "risks": [],
+    "logs": [],
+    "signatures": {
+      "eat_adj": 34,
+      "miss_adj": 6,
+      "heading": 17,
+      "queen_split": 1,
+      "idle": 11,
+      "sure_queen": 1,
+      "stops": 0,
+      "queen_exit_kept": 0,
+      "mate_exit_kept": 0,
+      "pocket_pearl_avoided": 0,
+      "herd_nearer": 26
+    }
+  },
+  {
+    "gid": 1487475,
+    "bot": 21165,
+    "map": "Islands",
+    "how": "longest",
+    "last": 499,
+    "ends": [
+      [
+        22,
+        231,
+        41,
+        0,
+        6,
+        2,
+        1,
+        4,
+        9,
+        186,
+        30
+      ],
+      [
+        7,
+        83,
+        25,
+        0,
+        1,
+        0,
+        0,
+        2,
+        4,
+        65,
+        16
+      ]
+    ],
+    "ahead": 288,
+    "queenDeaths": [
+      {
+        "round": 19,
+        "event": 2004,
+        "id": 1,
+        "side": 0,
+        "reason": 3,
+        "L": 4,
+        "head": [
+          47,
+          9
+        ],
+        "actor": 4,
+        "actorSide": 1,
+        "actorL0": 3,
+        "stepsTaken": 1,
+        "queen": true,
+        "state": [
+          [
+            11,
+            31,
+            4,
+            4
+          ],
+          [
+            7,
+            20,
+            6,
+            6
+          ]
+        ],
+        "actorHead": [
+          46,
+          10
+        ],
+        "queenLast": {
+          "r": 19,
+          "event": 1993,
+          "id": 1,
+          "s": 0,
+          "L": 3,
+          "head": [
+            47,
+            8
+          ],
+          "adjp": [
+            [
+              47,
+              9
+            ]
+          ],
+          "free": 3,
+          "directions": [],
+          "steps": [
+            [
+              47,
+              9
+            ]
+          ],
+          "eaten": [
+            [
+              47,
+              9
+            ]
+          ],
+          "split": false,
+          "death": null,
+          "prior_dir": 1,
+          "mate": [
+            3,
+            18,
+            [
+              46,
+              6
+            ]
+          ],
+          "ownN": 11,
+          "queenAlive": true,
+          "last_exit_choices": [],
+          "pocket_pearl_choices": []
+        }
+      },
+      {
+        "round": 288,
+        "event": 172480,
+        "id": 0,
+        "side": 1,
+        "reason": 2,
+        "L": 2,
+        "head": [
+          12,
+          8
+        ],
+        "actor": 0,
+        "actorSide": 1,
+        "actorL0": 2,
+        "stepsTaken": 0,
+        "queen": true,
+        "state": [
+          [
+            57,
+            208,
+            14,
+            0
+          ],
+          [
+            51,
+            132,
+            6,
+            2
+          ]
+        ],
+        "actorHead": [
+          12,
+          8
+        ],
+        "queenLast": {
+          "r": 288,
+          "event": 172478,
+          "id": 0,
+          "s": 1,
+          "L": 2,
+          "head": [
+            12,
+            8
+          ],
+          "adjp": [],
+          "free": 0,
+          "directions": [],
+          "steps": [],
+          "eaten": [],
+          "split": false,
+          "death": null,
+          "prior_dir": 0,
+          "mate": [
+            2,
+            536,
+            [
+              11,
+              7
+            ]
+          ],
+          "ownN": 51,
+          "queenAlive": true,
+          "last_exit_choices": [],
+          "pocket_pearl_choices": []
+        }
+      }
+    ],
+    "risks": [
+      {
+        "round": 19,
+        "queenL": 4,
+        "head": [
+          47,
+          9
+        ],
+        "attackers": [
+          {
+            "id": 4,
+            "L": 3,
+            "head": [
+              46,
+              10
+            ],
+            "steps": 2,
+            "path": [
+              1,
+              0
+            ],
+            "paid": 1,
+            "pearls": 0
+          }
+        ]
+      }
+    ],
+    "logs": [],
+    "signatures": {
+      "eat_adj": 1276,
+      "miss_adj": 527,
+      "heading": 19,
+      "queen_split": 2,
+      "idle": 291,
+      "sure_queen": 0,
+      "stops": 82,
+      "queen_exit_kept": 0,
+      "mate_exit_kept": 145,
+      "pocket_pearl_avoided": 317,
+      "herd_nearer": 8
+    }
+  },
+  {
+    "gid": 1487476,
+    "bot": 21165,
+    "map": "Maze",
+    "how": "longest",
+    "last": 499,
+    "ends": [
+      [
+        15,
+        141,
+        58,
+        0,
+        4,
+        6,
+        1,
+        1,
+        3,
+        104,
+        28
+      ],
+      [
+        8,
+        88,
+        31,
+        0,
+        2,
+        1,
+        1,
+        0,
+        4,
+        77,
+        22
+      ]
+    ],
+    "ahead": 326,
+    "queenDeaths": [
+      {
+        "round": 185,
+        "event": 67616,
+        "id": 1,
+        "side": 1,
+        "reason": 0,
+        "L": 2,
+        "head": [
+          34,
+          13
+        ],
+        "actor": 1,
+        "actorSide": 1,
+        "actorL0": 2,
+        "stepsTaken": 0,
+        "queen": true,
+        "state": [
+          [
+            60,
+            150,
+            5,
+            2
+          ],
+          [
+            45,
+            104,
+            4,
+            2
+          ]
+        ],
+        "actorHead": [
+          34,
+          13
+        ],
+        "queenLast": {
+          "r": 185,
+          "event": 67614,
+          "id": 1,
+          "s": 1,
+          "L": 2,
+          "head": [
+            34,
+            13
+          ],
+          "adjp": [],
+          "free": 0,
+          "directions": [],
+          "steps": [],
+          "eaten": [],
+          "split": false,
+          "death": null,
+          "prior_dir": 3,
+          "mate": [
+            2,
+            222,
+            [
+              35,
+              12
+            ]
+          ],
+          "ownN": 45,
+          "queenAlive": true,
+          "last_exit_choices": [],
+          "pocket_pearl_choices": []
+        }
+      },
+      {
+        "round": 196,
+        "event": 75830,
+        "id": 0,
+        "side": 0,
+        "reason": 0,
+        "L": 2,
+        "head": [
+          25,
+          4
+        ],
+        "actor": 0,
+        "actorSide": 0,
+        "actorL0": 2,
+        "stepsTaken": 0,
+        "queen": true,
+        "state": [
+          [
+            60,
+            156,
+            6,
+            2
+          ],
+          [
+            45,
+            107,
+            4,
+            0
+          ]
+        ],
+        "actorHead": [
+          25,
+          4
+        ],
+        "queenLast": {
+          "r": 196,
+          "event": 75828,
+          "id": 0,
+          "s": 0,
+          "L": 2,
+          "head": [
+            25,
+            4
+          ],
+          "adjp": [],
+          "free": 0,
+          "directions": [],
+          "steps": [],
+          "eaten": [],
+          "split": false,
+          "death": null,
+          "prior_dir": 0,
+          "mate": [
+            4,
+            176,
+            [
+              24,
+              1
+            ]
+          ],
+          "ownN": 60,
+          "queenAlive": true,
+          "last_exit_choices": [],
+          "pocket_pearl_choices": []
+        }
+      }
+    ],
+    "risks": [],
+    "logs": [],
+    "signatures": {
+      "eat_adj": 1217,
+      "miss_adj": 233,
+      "heading": 23,
+      "queen_split": 7,
+      "idle": 444,
+      "sure_queen": 0,
+      "stops": 98,
+      "queen_exit_kept": 2,
+      "mate_exit_kept": 189,
+      "pocket_pearl_avoided": 44,
+      "herd_nearer": 68
+    }
+  },
+  {
+    "gid": 1487477,
+    "bot": 21165,
+    "map": "Stripes",
+    "how": "elim",
+    "last": 84,
+    "ends": [
+      [
+        15,
+        42,
+        5,
+        0,
+        7,
+        5,
+        2,
+        1,
+        0,
+        0,
+        4
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "ahead": 84,
+    "queenDeaths": [
+      {
+        "round": 17,
+        "event": 643,
+        "id": 1,
+        "side": 0,
+        "reason": 0,
+        "L": 2,
+        "head": [
+          11,
+          11
+        ],
+        "actor": 1,
+        "actorSide": 0,
+        "actorL0": 2,
+        "stepsTaken": 0,
+        "queen": true,
+        "state": [
+          [
+            4,
+            9,
+            3,
+            2
+          ],
+          [
+            2,
+            4,
+            2,
+            2
+          ]
+        ],
+        "actorHead": [
+          11,
+          11
+        ],
+        "queenLast": {
+          "r": 17,
+          "event": 641,
+          "id": 1,
+          "s": 0,
+          "L": 2,
+          "head": [
+            11,
+            11
+          ],
+          "adjp": [],
+          "free": 0,
+          "directions": [],
+          "steps": [],
+          "eaten": [],
+          "split": false,
+          "death": null,
+          "prior_dir": 3,
+          "mate": [
+            3,
+            5,
+            [
+              10,
+              9
+            ]
+          ],
+          "ownN": 4,
+          "queenAlive": true,
+          "last_exit_choices": [],
+          "pocket_pearl_choices": []
+        }
+      },
+      {
+        "round": 84,
+        "event": 5439,
+        "id": 0,
+        "side": 1,
+        "reason": 3,
+        "L": 2,
+        "head": [
+          0,
+          7
+        ],
+        "actor": 24,
+        "actorSide": 0,
+        "actorL0": 2,
+        "stepsTaken": 0,
+        "queen": true,
+        "state": [
+          [
+            17,
+            45,
+            4,
+            0
+          ],
+          [
+            1,
+            2,
+            2,
+            2
+          ]
+        ],
+        "actorHead": [
+          0,
+          8
+        ],
+        "queenLast": {
+          "r": 84,
+          "event": 5372,
+          "id": 0,
+          "s": 1,
+          "L": 2,
+          "head": [
+            23,
+            7
+          ],
+          "adjp": [],
+          "free": 2,
+          "directions": [],
+          "steps": [
+            [
+              0,
+              7
+            ]
+          ],
+          "eaten": [],
+          "split": false,
+          "death": null,
+          "prior_dir": 2,
+          "mate": null,
+          "ownN": 1,
+          "queenAlive": true,
+          "last_exit_choices": [],
+          "pocket_pearl_choices": []
+        }
+      }
+    ],
+    "risks": [],
+    "logs": [],
+    "signatures": {
+      "eat_adj": 76,
+      "miss_adj": 3,
+      "heading": 7,
+      "queen_split": 2,
+      "idle": 18,
+      "sure_queen": 1,
+      "stops": 0,
+      "queen_exit_kept": 0,
+      "mate_exit_kept": 7,
+      "pocket_pearl_avoided": 1,
+      "herd_nearer": 2
+    }
+  },
+  {
+    "gid": 1487480,
+    "bot": 21165,
+    "map": "Default",
+    "how": "elim",
+    "last": 118,
+    "ends": [
+      [
+        38,
+        83,
+        4,
+        3,
+        32,
+        5,
+        1,
+        0,
+        0,
+        0,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "ahead": 82,
+    "queenDeaths": [
+      {
+        "round": 118,
+        "event": 19151,
+        "id": 1,
+        "side": 1,
+        "reason": 3,
+        "L": 3,
+        "head": [
+          0,
+          26
+        ],
+        "actor": 29,
+        "actorSide": 0,
+        "actorL0": 3,
+        "stepsTaken": 0,
+        "queen": true,
+        "state": [
+          [
+            39,
+            87,
+            4,
+            3
+          ],
+          [
+            1,
+            3,
+            3,
+            3
+          ]
+        ],
+        "actorHead": [
+          0,
+          25
+        ],
+        "queenLast": {
+          "r": 118,
+          "event": 19058,
+          "id": 1,
+          "s": 1,
+          "L": 3,
+          "head": [
+            1,
+            26
+          ],
+          "adjp": [],
+          "free": 2,
+          "directions": [],
+          "steps": [
+            [
+              0,
+              26
+            ]
+          ],
+          "eaten": [],
+          "split": false,
+          "death": null,
+          "prior_dir": 2,
+          "mate": null,
+          "ownN": 1,
+          "queenAlive": true,
+          "last_exit_choices": [],
+          "pocket_pearl_choices": []
+        }
+      }
+    ],
+    "risks": [],
+    "logs": [],
+    "signatures": {
+      "eat_adj": 95,
+      "miss_adj": 14,
+      "heading": 34,
+      "queen_split": 2,
+      "idle": 10,
+      "sure_queen": 1,
+      "stops": 0,
+      "queen_exit_kept": 1,
+      "mate_exit_kept": 3,
+      "pocket_pearl_avoided": 0,
+      "herd_nearer": 53
+    }
+  },
+  {
+    "gid": 1487481,
+    "bot": 21165,
+    "map": "Queen Of Spades",
+    "how": "elim",
+    "last": 170,
+    "ends": [
+      [
+        23,
+        58,
+        4,
+        3,
+        12,
+        10,
+        1,
+        0,
+        0,
+        0,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "ahead": 153,
+    "queenDeaths": [
+      {
+        "round": 163,
+        "event": 18552,
+        "id": 0,
+        "side": 1,
+        "reason": 3,
+        "L": 3,
+        "head": [
+          9,
+          21
+        ],
+        "actor": 15,
+        "actorSide": 0,
+        "actorL0": 2,
+        "stepsTaken": 0,
+        "queen": true,
+        "state": [
+          [
+            24,
+            60,
+            4,
+            3
+          ],
+          [
+            2,
+            5,
+            3,
+            3
+          ]
+        ],
+        "actorHead": [
+          9,
+          22
+        ],
+        "queenLast": {
+          "r": 163,
+          "event": 18522,
+          "id": 0,
+          "s": 1,
+          "L": 3,
+          "head": [
+            8,
+            21
+          ],
+          "adjp": [],
+          "free": 2,
+          "directions": [],
+          "steps": [
+            [
+              9,
+              21
+            ]
+          ],
+          "eaten": [],
+          "split": false,
+          "death": null,
+          "prior_dir": 2,
+          "mate": [
+            6,
+            47,
+            [
+              11,
+              18
+            ]
+          ],
+          "ownN": 2,
+          "queenAlive": true,
+          "last_exit_choices": [],
+          "pocket_pearl_choices": []
+        }
+      }
+    ],
+    "risks": [],
+    "logs": [],
+    "signatures": {
+      "eat_adj": 131,
+      "miss_adj": 66,
+      "heading": 7,
+      "queen_split": 1,
+      "idle": 29,
+      "sure_queen": 1,
+      "stops": 0,
+      "queen_exit_kept": 0,
+      "mate_exit_kept": 19,
+      "pocket_pearl_avoided": 48,
+      "herd_nearer": 63
+    }
+  },
+  {
+    "gid": 1487482,
+    "bot": 21165,
+    "map": "Schooltime",
+    "how": "longest",
+    "last": 499,
+    "ends": [
+      [
+        41,
+        205,
+        41,
+        3,
+        15,
+        14,
+        5,
+        2,
+        5,
+        102,
+        22
+      ],
+      [
+        10,
+        74,
+        15,
+        3,
+        2,
+        1,
+        1,
+        3,
+        3,
+        42,
+        14
+      ]
+    ],
+    "ahead": 222,
+    "queenDeaths": [],
+    "risks": [],
+    "logs": [],
+    "signatures": {
+      "eat_adj": 667,
+      "miss_adj": 162,
+      "heading": 29,
+      "queen_split": 1,
+      "idle": 174,
+      "sure_queen": 0,
+      "stops": 56,
+      "queen_exit_kept": 0,
+      "mate_exit_kept": 54,
+      "pocket_pearl_avoided": 75,
+      "herd_nearer": 201
+    }
+  },
+  {
+    "gid": 1487483,
+    "bot": 21165,
+    "map": "Trophy",
+    "how": "elim",
+    "last": 78,
+    "ends": [
+      [
+        43,
+        109,
+        4,
+        3,
+        22,
+        19,
+        2,
+        0,
+        0,
+        0,
+        4
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "ahead": 57,
+    "queenDeaths": [
+      {
+        "round": 78,
+        "event": 10411,
+        "id": 0,
+        "side": 1,
+        "reason": 3,
+        "L": 3,
+        "head": [
+          4,
+          8
+        ],
+        "actor": 4,
+        "actorSide": 0,
+        "actorL0": 3,
+        "stepsTaken": 0,
+        "queen": true,
+        "state": [
+          [
+            43,
+            108,
+            4,
+            3
+          ],
+          [
+            1,
+            3,
+            3,
+            3
+          ]
+        ],
+        "actorHead": [
+          5,
+          8
+        ],
+        "queenLast": {
+          "r": 78,
+          "event": 10395,
+          "id": 0,
+          "s": 1,
+          "L": 3,
+          "head": [
+            4,
+            7
+          ],
+          "adjp": [
+            [
+              5,
+              7
+            ]
+          ],
+          "free": 2,
+          "directions": [],
+          "steps": [
+            [
+              4,
+              8
+            ]
+          ],
+          "eaten": [],
+          "split": false,
+          "death": null,
+          "prior_dir": 1,
+          "mate": null,
+          "ownN": 1,
+          "queenAlive": true,
+          "last_exit_choices": [],
+          "pocket_pearl_choices": []
+        }
+      }
+    ],
+    "risks": [],
+    "logs": [],
+    "signatures": {
+      "eat_adj": 125,
+      "miss_adj": 17,
+      "heading": 12,
+      "queen_split": 2,
+      "idle": 8,
+      "sure_queen": 1,
+      "stops": 0,
+      "queen_exit_kept": 0,
+      "mate_exit_kept": 7,
+      "pocket_pearl_avoided": 0,
+      "herd_nearer": 32
+    }
+  },
+  {
+    "gid": 1487484,
+    "bot": 21165,
+    "map": "Devil",
+    "how": "elim",
+    "last": 117,
+    "ends": [
+      [
+        53,
+        130,
+        5,
+        0,
+        34,
+        15,
+        3,
+        1,
+        0,
+        0,
+        4
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "ahead": 117,
+    "queenDeaths": [
+      {
+        "round": 106,
+        "event": 20336,
+        "id": 0,
+        "side": 0,
+        "reason": 0,
+        "L": 3,
+        "head": [
+          11,
+          1
+        ],
+        "actor": 0,
+        "actorSide": 0,
+        "actorL0": 3,
+        "stepsTaken": 0,
+        "queen": true,
+        "state": [
+          [
+            50,
+            125,
+            5,
+            3
+          ],
+          [
+            1,
+            3,
+            3,
+            3
+          ]
+        ],
+        "actorHead": [
+          11,
+          1
+        ],
+        "queenLast": {
+          "r": 106,
+          "event": 20334,
+          "id": 0,
+          "s": 0,
+          "L": 3,
+          "head": [
+            11,
+            1
+          ],
+          "adjp": [],
+          "free": 0,
+          "directions": [],
+          "steps": [],
+          "eaten": [],
+          "split": false,
+          "death": null,
+          "prior_dir": 2,
+          "mate": [
+            1,
+            55,
+            [
+              11,
+              2
+            ]
+          ],
+          "ownN": 50,
+          "queenAlive": true,
+          "last_exit_choices": [],
+          "pocket_pearl_choices": []
+        }
+      },
+      {
+        "round": 117,
+        "event": 24958,
+        "id": 1,
+        "side": 1,
+        "reason": 3,
+        "L": 3,
+        "head": [
+          28,
+          14
+        ],
+        "actor": 137,
+        "actorSide": 0,
+        "actorL0": 3,
+        "stepsTaken": 1,
+        "queen": true,
+        "state": [
+          [
+            55,
+            137,
+            5,
+            0
+          ],
+          [
+            1,
+            3,
+            3,
+            3
+          ]
+        ],
+        "actorHead": [
+          29,
+          13
+        ],
+        "queenLast": {
+          "r": 117,
+          "event": 24619,
+          "id": 1,
+          "s": 1,
+          "L": 3,
+          "head": [
+            27,
+            14
+          ],
+          "adjp": [],
+          "free": 2,
+          "directions": [],
+          "steps": [
+            [
+              28,
+              14
+            ]
+          ],
+          "eaten": [],
+          "split": false,
+          "death": null,
+          "prior_dir": 0,
+          "mate": null,
+          "ownN": 1,
+          "queenAlive": true,
+          "last_exit_choices": [],
+          "pocket_pearl_choices": []
+        }
+      }
+    ],
+    "risks": [],
+    "logs": [],
+    "signatures": {
+      "eat_adj": 317,
+      "miss_adj": 46,
+      "heading": 31,
+      "queen_split": 10,
+      "idle": 76,
+      "sure_queen": 1,
+      "stops": 0,
+      "queen_exit_kept": 2,
+      "mate_exit_kept": 96,
+      "pocket_pearl_avoided": 0,
+      "herd_nearer": 32
+    }
+  },
+  {
+    "gid": 1487485,
+    "bot": 21165,
+    "map": "Trauma",
+    "how": "queen",
+    "last": 499,
+    "ends": [
+      [
+        4,
+        43,
+        31,
+        31,
+        1,
+        1,
+        0,
+        1,
+        1,
+        31,
+        7
+      ],
+      [
+        8,
+        69,
+        25,
+        25,
+        1,
+        1,
+        0,
+        3,
+        3,
+        48,
+        12
+      ]
+    ],
+    "ahead": 279,
+    "queenDeaths": [],
+    "risks": [],
+    "logs": [],
+    "signatures": {
+      "eat_adj": 247,
+      "miss_adj": 43,
+      "heading": 28,
+      "queen_split": 16,
+      "idle": 93,
+      "sure_queen": 0,
+      "stops": 50,
+      "queen_exit_kept": 0,
+      "mate_exit_kept": 15,
+      "pocket_pearl_avoided": 0,
+      "herd_nearer": 204
+    }
+  },
+  {
+    "gid": 1487487,
+    "bot": 21165,
+    "map": "Slithery Fight",
+    "how": "queen",
+    "last": 499,
+    "ends": [
+      [
+        13,
+        168,
+        94,
+        94,
+        5,
+        2,
+        0,
+        3,
+        3,
+        130,
+        18
+      ],
+      [
+        8,
+        136,
+        28,
+        28,
+        0,
+        1,
+        0,
+        0,
+        7,
+        133,
+        24
+      ]
+    ],
+    "ahead": 308,
+    "queenDeaths": [],
+    "risks": [],
+    "logs": [],
+    "signatures": {
+      "eat_adj": 1743,
+      "miss_adj": 451,
+      "heading": 67,
+      "queen_split": 19,
+      "idle": 573,
+      "sure_queen": 0,
+      "stops": 88,
+      "queen_exit_kept": 3,
+      "mate_exit_kept": 163,
+      "pocket_pearl_avoided": 106,
+      "herd_nearer": 149
+    }
+  },
+  {
+    "gid": 1488287,
+    "bot": 21165,
+    "map": "Default",
+    "how": "elim",
+    "last": 115,
+    "ends": [
+      [
+        50,
+        119,
+        3,
+        3,
+        31,
+        19,
+        0,
+        0,
+        0,
+        0,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "ahead": 36,
+    "queenDeaths": [
+      {
+        "round": 70,
+        "event": 9164,
+        "id": 0,
+        "side": 1,
+        "reason": 3,
+        "L": 2,
+        "head": [
+          14,
+          24
+        ],
+        "actor": 29,
+        "actorSide": 0,
+        "actorL0": 4,
+        "stepsTaken": 2,
+        "queen": true,
+        "state": [
+          [
+            26,
+            62,
+            4,
+            3
+          ],
+          [
+            2,
+            4,
+            2,
+            2
+          ]
+        ],
+        "actorHead": [
+          13,
+          22
+        ],
+        "queenLast": {
+          "r": 70,
+          "event": 9032,
+          "id": 0,
+          "s": 1,
+          "L": 2,
+          "head": [
+            14,
+            23
+          ],
+          "adjp": [
+            [
+              13,
+              23
+            ]
+          ],
+          "free": 3,
+          "directions": [],
+          "steps": [
+            [
+              14,
+              24
+            ]
+          ],
+          "eaten": [],
+          "split": false,
+          "death": null,
+          "prior_dir": 2,
+          "mate": [
+            18,
+            24,
+            [
+              9,
+              10
+            ]
+          ],
+          "ownN": 2,
+          "queenAlive": true,
+          "last_exit_choices": [],
+          "pocket_pearl_choices": []
+        }
+      }
+    ],
+    "risks": [],
+    "logs": [],
+    "signatures": {
+      "eat_adj": 151,
+      "miss_adj": 9,
+      "heading": 36,
+      "queen_split": 3,
+      "idle": 17,
+      "sure_queen": 1,
+      "stops": 0,
+      "queen_exit_kept": 0,
+      "mate_exit_kept": 12,
+      "pocket_pearl_avoided": 0,
+      "herd_nearer": 45
+    }
+  }
+]

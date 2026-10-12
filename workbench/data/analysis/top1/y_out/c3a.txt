@@ -1,0 +1,281 @@
+== 1. The free-pearl rate around our switch round
+   theirs: maps over 1,200 cells: live 83% (rounds 0-149) -> 58% (150-399); 10-round blocks 130-139 ... 170-179: 84, 84, 64, 60, 58%;
+   other maps: 88% (0-299) -> 53% (300-399); blocks 280-289 ... 310-319: 85, 83, 64, 51%; opponents 84-85% and 84 -> 78%; top three 80-94%
+ maps over 1,200 cells: rounds 50-99 | 100-129 | 130-139 | 140-149 | 150-159 | 160-169 | 170-199 | 200-299 | 300-399 | 400-499
+   meow live      84% | 84% | 84% | 84% | 64% | 60% | 60% | 58% | 57% | 57%
+   meow test      84% | 81% | 82% | 79% | 62% | 54% | 60% | 56% | 60% | 56%
+   meow readable  83% | 83% | 84% | 83% | 59% | 55% | 58% | 55% | 60% | 59%
+   opponents      85% | 86% | 86% | 86% | 85% | 85% | 84% | 85% | 84% | 79%
+   test4 (vs us)  80% | 82% | 80% | 81% | 80% | 77% | 76% | 79% | 77% | 73%
+   WHQ (vs us)    89% | 88% | 91% | 90% | 90% | 90% | 90% | 88% | 89% | 89%
+   forgot         94% | 93% | 93% | 93% | 93% | 93% | 93% | 93% | 94% | 94%
+   SSS            80% | 82% | 84% | 84% | 82% | 83% | 83% | 83% | 82% | 79%
+   Vibing++       89% | 89% | 90% | 90% | 89% | 89% | 90% | 89% | 82% | 72%
+     run dl-20261003        84% | 79% | 72% | 77% | 55% | 47% | 45% | 51% | 57% | 64%
+     run dl-20261004        82% | 82% | 83% | 83% | 61% | 58% | 59% | 57% | 55% | 56%
+     run passage2-test-new  80% | 70% | 68% | 78% | 50% | 48% | 48% | 53% | 54% | 52%
+     run passage2-test-old  87% | 87% | 87% | 87% | 81% | 68% | 64% | 63% | 65% | 66%
+     run qh31-test-new      81% | 82% | 79% | 73% | 58% | 59% | 57% | 49% | 56% | 55%
+     run qh31-test-old      87% | 90% | 86% | 92% | 67% | 70% | 73% | 57% | 57% | 59%
+     run stride-new         89% | 84% | 84% | 78% | 68% | 44% | 57% | 61% | 64% | 61%
+     run stride-old         86% | 87% | 91% | 86% | 69% | 57% | 61% | 64% | 65% | 56%
+     run tc30-dev1-old      87% | 82% | 91% | 89% | 68% | 73% | 58% | 63% | 51% | 40%
+     run tc30-dev1b-new     89% | 88% | 92% | 84% | 75% | 68% | 79% | 57% | 56% | 63%
+     run tc30-test-new      83% | 84% | 84% | 83% | 65% | 54% | 62% | 60% | 66% | 56%
+ maps of 1,200 cells or fewer: rounds 100-199 | 200-279 | 280-289 | 290-299 | 300-309 | 310-319 | 320-349 | 350-399 | 400-449 | 450-499
+   meow live      88% | 85% | 85% | 83% | 64% | 51% | 51% | 53% | 45% | 52%
+   meow test      87% | 87% | 86% | 85% | 60% | 50% | 55% | 55% | 48% | 52%
+   meow readable  89% | 85% | 87% | 82% | 65% | 53% | 52% | 50% | 46% | 50%
+   opponents      84% | 82% | 81% | 81% | 82% | 80% | 79% | 76% | 71% | 61%
+   test4 (vs us)  80% | 78% | 77% | 77% | 79% | 75% | 73% | 71% | 62% | 51%
+   WHQ (vs us)    87% | 83% | 82% | 81% | 84% | 82% | 82% | 82% | 82% | 94%
+   forgot         92% | 91% | 91% | 91% | 92% | 92% | 91% | 91% | 92% | 90%
+   SSS            85% | 84% | 82% | 82% | 81% | 81% | 79% | 80% | 77% | 77%
+   Vibing++       87% | 89% | 89% | 89% | 90% | 89% | 89% | 87% | 79% | 78%
+     run dl-20261003        91% | 86% | 87% | 81% | 65% | 54% | 56% | 55% | 50% | 59%
+     run dl-20261004        88% | 85% | 85% | 81% | 64% | 52% | 50% | 53% | 43% | 47%
+     run passage2-test-new  88% | 87% | 85% | 87% | 64% | 49% | 53% | 51% | 42% | 55%
+     run passage2-test-old  85% | 82% | 90% | 83% | 65% | 45% | 54% | 55% | 45% | 53%
+     run qh31-test-new      84% | 83% | 82% | 82% | 60% | 57% | 62% | 55% | 55% | 46%
+     run qh31-test-old      84% | 87% | 77% | 88% | 73% | 53% | 53% | 51% | 44% | 63%
+     run stride-new         86% | 88% | 90% | 86% | 63% | 45% | 51% | 57% | 51% | 54%
+     run stride-old         88% | 83% | 87% | 89% | 59% | 44% | 48% | 45% | 45% | 50%
+     run tc30-dev1-old      92% | 88% | 91% | 86% | 56% | 49% | 51% | 68% | 48% | 42%
+     run tc30-dev1b-new     89% | 89% | 92% | 94% | 56% | 64% | 62% | 54% | 40% | 43%
+     run tc30-test-new      89% | 85% | 80% | 80% | 56% | 44% | 57% | 57% | 48% | 58%
+
+== 2. Inside against outside the zone (9 cells), natural pearls only unless said
+   theirs (deep-read-5 2d, by the dragon's own belief): small maps rounds 300-349 / 350-399: inside 26% / 22%, outside 87% / 87%, names itself 78% / 72%;
+   before the switch (200-249 / 250-299): 84 / 85% inside, 86 / 86% outside; big maps 150-199 / 200-249: inside 24% / 19%, outside 77% / 77%; before (100-149): 83% / 81%
+ small maps, rounds 200-249 | 250-299 | 300-349 | 350-399 | 400-449 | 450-499
+   by the dragon's own named leader (readable games: 60)
+     inside the named leader's zone     90% of 448 | 88% of 335 | 21% of 389 | 20% of 423 | 26% of 234 | 22% of 150
+     outside it                         90% of 239 | 90% of 174 | 89% of 243 | 86% of 247 | 73% of 252 | 85% of 184
+     it names itself                    87% of 71 | 90% of 83 | 70% of 67 | 66% of 58 | 66% of 59 | 58% of 77
+     it sent no leader message          27% of 41 | 17% of 29 | 29% of 17 | 43% of 14 | 59% of 17 | 70% of 10
+     all natural                        87% of 799 | 85% of 621 | 49% of 716 | 46% of 742 | 52% of 562 | 57% of 421
+     corpse pearls, inside the zone     78% of 413 | 88% of 197 | 38% of 272 | 34% of 323 | 23% of 452 | 21% of 242
+     corpse pearls, outside             83% of 236 | 83% of 178 | 82% of 233 | 83% of 206 | 76% of 192 | 80% of 93
+     by cells from the pearl to the named zone head, natural pearls: 0-3 / 4-6 / 7-9 / 10-12 / 13-16 / 17+
+       rounds 200-249: 91% / 91% / 89% / 88% / 86% / 99%
+       rounds 250-299: 90% / 85% / 86% / 84% / 91% / 93%
+       rounds 300-349: 35% / 16% / 19% / 81% / 92% / 96%
+       rounds 350-399: 29% / 18% / 20% / 74% / 95% / 96%
+       rounds 400-449: 27% / 27% / 23% / 66% / 71% / 83%
+       rounds 450-499:   - / 32% / 16% / 82% / 72% / 91%
+   meow live, by the true longest dragon at the round's start
+     pearl within 9 cells of the longest 84% of 855 | 83% of 588 | 34% of 709 | 35% of 708 | 41% of 425 | 46% of 237
+     farther                            87% of 1370 | 86% of 1133 | 55% of 1423 | 57% of 1462 | 51% of 1139 | 64% of 869
+     the dragon is itself the longest   92% of 490 | 94% of 376 | 69% of 109 | 94% of 33 | 82% of 33 | 95% of 19
+     within 9 cells, the longest is 10+ 33% of 3 | - | 21% of 160 | 31% of 449 | 40% of 356 | 44% of 199
+     corpse pearls within 9 cells       84% of 765 | 84% of 506 | 45% of 603 | 45% of 636 | 31% of 881 | 32% of 479
+     corpse pearls farther              82% of 1342 | 82% of 1171 | 65% of 1194 | 62% of 1221 | 49% of 1404 | 52% of 680
+   meow test, by the true longest dragon at the round's start
+     pearl within 9 cells of the longest 88% of 381 | 84% of 320 | 37% of 302 | 35% of 349 | 40% of 169 | 57% of 120
+     farther                            89% of 676 | 87% of 681 | 59% of 825 | 59% of 813 | 60% of 644 | 58% of 517
+     the dragon is itself the longest   94% of 229 | 95% of 207 | 73% of 60 | 80% of 10 | 100% of 10 | 100% of 8
+     within 9 cells, the longest is 10+ - | - | 40% of 73 | 29% of 214 | 37% of 157 | 57% of 119
+     corpse pearls within 9 cells       85% of 303 | 84% of 368 | 39% of 280 | 44% of 323 | 29% of 494 | 32% of 206
+     corpse pearls farther              85% of 589 | 82% of 706 | 64% of 607 | 65% of 676 | 52% of 620 | 53% of 376
+   opponents, by the true longest dragon at the round's start
+     pearl within 9 cells of the longest 79% of 1636 | 77% of 1633 | 79% of 1427 | 76% of 1055 | 76% of 431 | 71% of 171
+     farther                            82% of 3541 | 79% of 3573 | 78% of 3423 | 74% of 3118 | 62% of 2255 | 50% of 1600
+     the dragon is itself the longest   83% of 492 | 79% of 396 | 82% of 231 | 77% of 112 | 92% of 25 | 100% of 5
+     within 9 cells, the longest is 10+ 88% of 106 | 93% of 254 | 90% of 519 | 85% of 529 | 79% of 317 | 71% of 164
+     corpse pearls within 9 cells       84% of 1338 | 82% of 1306 | 78% of 1378 | 78% of 1188 | 75% of 950 | 68% of 292
+     corpse pearls farther              86% of 2751 | 85% of 2807 | 83% of 2779 | 79% of 2547 | 79% of 1746 | 75% of 846
+   test4 (vs us), by the true longest dragon at the round's start
+     pearl within 9 cells of the longest 71% of 680 | 70% of 733 | 69% of 651 | 65% of 503 | 65% of 203 | 61% of 100
+     farther                            74% of 1395 | 71% of 1583 | 68% of 1521 | 63% of 1623 | 48% of 1287 | 37% of 1162
+     the dragon is itself the longest   86% of 272 | 80% of 245 | 84% of 170 | 84% of 95 | 87% of 15 | 100% of 3
+     within 9 cells, the longest is 10+ 87% of 15 | 79% of 53 | 80% of 71 | 76% of 78 | 66% of 119 | 61% of 99
+     corpse pearls within 9 cells       81% of 585 | 83% of 528 | 79% of 591 | 78% of 632 | 66% of 544 | 70% of 173
+     corpse pearls farther              85% of 1175 | 84% of 1276 | 79% of 1379 | 76% of 1477 | 75% of 1089 | 72% of 558
+   WHQ (vs us), by the true longest dragon at the round's start
+     pearl within 9 cells of the longest 84% of 608 | 81% of 606 | 87% of 466 | 83% of 371 | 83% of 156 | 100% of 32
+     farther                            84% of 1311 | 83% of 1099 | 81% of 1138 | 83% of 1001 | 77% of 637 | 90% of 123
+     the dragon is itself the longest   77% of 120 | 78% of 100 | 65% of 20 | - | - | -
+     within 9 cells, the longest is 10+ 84% of 68 | 96% of 137 | 91% of 326 | 84% of 352 | 87% of 145 | 100% of 30
+     corpse pearls within 9 cells       86% of 470 | 79% of 528 | 77% of 555 | 79% of 403 | 90% of 275 | 100% of 27
+     corpse pearls farther              84% of 927 | 82% of 914 | 86% of 791 | 82% of 661 | 84% of 394 | 94% of 88
+   forgot, by the true longest dragon at the round's start
+     pearl within 9 cells of the longest 92% of 2308 | 94% of 1763 | 95% of 1571 | 93% of 1030 | 95% of 667 | 93% of 494
+     farther                            93% of 5332 | 94% of 5466 | 93% of 5317 | 92% of 3394 | 93% of 2281 | 90% of 1499
+     the dragon is itself the longest   95% of 672 | 97% of 290 | 95% of 259 | 94% of 49 | 53% of 15 | 60% of 30
+     within 9 cells, the longest is 10+ 95% of 426 | 96% of 875 | 97% of 880 | 94% of 738 | 95% of 637 | 95% of 458
+     corpse pearls within 9 cells       89% of 2373 | 90% of 1761 | 89% of 1630 | 90% of 1092 | 93% of 651 | 91% of 364
+     corpse pearls farther              89% of 4994 | 88% of 4409 | 89% of 4146 | 90% of 2532 | 89% of 1207 | 90% of 889
+   SSS, by the true longest dragon at the round's start
+     pearl within 9 cells of the longest 82% of 2286 | 84% of 1631 | 80% of 1445 | 80% of 1222 | 80% of 665 | 78% of 421
+     farther                            84% of 4523 | 82% of 4199 | 78% of 4130 | 78% of 3883 | 73% of 2676 | 72% of 1660
+     the dragon is itself the longest   87% of 1057 | 84% of 328 | 86% of 84 | 93% of 28 | 50% of 2 | 100% of 2
+     within 9 cells, the longest is 10+ 89% of 28 | 91% of 56 | 80% of 765 | 80% of 1002 | 79% of 569 | 78% of 403
+     corpse pearls within 9 cells       82% of 1368 | 80% of 1462 | 83% of 1708 | 84% of 1332 | 84% of 881 | 83% of 603
+     corpse pearls farther              86% of 2832 | 83% of 3118 | 81% of 2977 | 80% of 2439 | 79% of 1607 | 81% of 1059
+   Vibing++, by the true longest dragon at the round's start
+     pearl within 9 cells of the longest 92% of 2463 | 94% of 2309 | 94% of 2179 | 92% of 1878 | 80% of 1226 | 79% of 715
+     farther                            87% of 5590 | 88% of 5547 | 88% of 5479 | 87% of 5314 | 82% of 3958 | 81% of 2703
+     the dragon is itself the longest   96% of 675 | 93% of 450 | 95% of 370 | 95% of 217 | 100% of 27 | 100% of 21
+     within 9 cells, the longest is 10+ 91% of 401 | 94% of 579 | 90% of 708 | 85% of 600 | 76% of 904 | 78% of 681
+     corpse pearls within 9 cells       88% of 1793 | 87% of 1702 | 87% of 1545 | 83% of 1416 | 67% of 1353 | 64% of 756
+     corpse pearls farther              88% of 3882 | 88% of 3788 | 88% of 3736 | 86% of 3626 | 81% of 3312 | 79% of 2095
+ big maps, rounds 100-149 | 150-199 | 200-249 | 250-299 | 300-349 | 350-399 | 400-449 | 450-499
+   by the dragon's own named leader (readable games: 22)
+     inside the named leader's zone     85% of 392 | 25% of 320 | 22% of 143 | 19% of 157 | 24% of 136 | 28% of 139 | 19% of 84 | 21% of 77
+     outside it                         78% of 390 | 75% of 366 | 77% of 300 | 77% of 326 | 78% of 287 | 84% of 308 | 74% of 334 | 80% of 284
+     it names itself                    92% of 120 | 83% of 69 | 63% of 49 | 75% of 52 | 61% of 56 | 66% of 41 | 71% of 58 | 84% of 38
+     it sent no leader message          91% of 132 | 79% of 39 | 76% of 38 | 67% of 51 | 79% of 42 | 77% of 56 | 58% of 26 | 43% of 14
+     all natural                        84% of 1034 | 56% of 794 | 61% of 530 | 60% of 586 | 62% of 521 | 68% of 544 | 64% of 502 | 68% of 413
+     corpse pearls, inside the zone     79% of 175 | 33% of 93 | 19% of 175 | 19% of 211 | 23% of 188 | 25% of 173 | 20% of 230 | 24% of 168
+     corpse pearls, outside             84% of 206 | 77% of 187 | 79% of 138 | 82% of 146 | 77% of 167 | 81% of 226 | 81% of 211 | 79% of 182
+     by cells from the pearl to the named zone head, natural pearls: 0-3 / 4-6 / 7-9 / 10-12 / 13-16 / 17+
+       rounds 100-149: 90% / 85% / 79% / 84% / 83% / 72%
+       rounds 150-199: 24% / 21% / 31% / 70% / 76% / 79%
+       rounds 200-249: 25% / 22% / 21% / 76% / 71% / 79%
+       rounds 250-299: 19% / 16% / 23% / 67% / 67% / 85%
+       rounds 300-349: 38% / 24% / 19% / 73% / 73% / 82%
+       rounds 350-399: 60% / 21% / 24% / 76% / 79% / 88%
+       rounds 400-449:   - / 22% / 18% / 54% / 56% / 84%
+       rounds 450-499:   - / 42% / 12% / 75% / 63% / 84%
+   meow live, by the true longest dragon at the round's start
+     pearl within 9 cells of the longest 86% of 758 | 42% of 431 | 49% of 295 | 48% of 258 | 47% of 210 | 45% of 220 | 43% of 152 | 54% of 160
+     farther                            81% of 2553 | 63% of 2370 | 63% of 1908 | 65% of 1824 | 63% of 1634 | 65% of 1650 | 64% of 1589 | 65% of 1493
+     the dragon is itself the longest   93% of 387 | 82% of 40 | 100% of 6 | 80% of 5 | 40% of 5 | 100% of 3 | 100% of 6 | 100% of 1
+     within 9 cells, the longest is 10+ 54% of 35 | 50% of 116 | 50% of 203 | 45% of 206 | 45% of 184 | 45% of 212 | 44% of 146 | 53% of 156
+     corpse pearls within 9 cells       84% of 342 | 45% of 187 | 36% of 212 | 37% of 268 | 33% of 281 | 36% of 261 | 34% of 331 | 39% of 189
+     corpse pearls farther              85% of 1044 | 65% of 1060 | 55% of 1253 | 54% of 1270 | 58% of 1202 | 51% of 1416 | 52% of 1440 | 57% of 1182
+   meow test, by the true longest dragon at the round's start
+     pearl within 9 cells of the longest 81% of 284 | 46% of 165 | 42% of 152 | 36% of 169 | 48% of 113 | 45% of 80 | 56% of 62 | 47% of 58
+     farther                            78% of 1230 | 58% of 1067 | 59% of 880 | 62% of 865 | 66% of 761 | 68% of 845 | 62% of 707 | 60% of 565
+     the dragon is itself the longest   89% of 185 | 75% of 20 | 100% of 1 | - | 67% of 3 | 100% of 3 | 17% of 6 | 83% of 6
+     within 9 cells, the longest is 10+ 100% of 3 | 40% of 15 | 34% of 70 | 31% of 147 | 48% of 112 | 44% of 77 | 52% of 56 | 44% of 54
+     corpse pearls within 9 cells       77% of 127 | 51% of 90 | 36% of 103 | 34% of 154 | 50% of 151 | 32% of 187 | 34% of 179 | 36% of 80
+     corpse pearls farther              85% of 546 | 66% of 485 | 62% of 633 | 54% of 728 | 56% of 722 | 63% of 589 | 58% of 685 | 53% of 513
+   opponents, by the true longest dragon at the round's start
+     pearl within 9 cells of the longest 86% of 1258 | 82% of 872 | 85% of 652 | 84% of 574 | 81% of 528 | 83% of 444 | 84% of 279 | 79% of 175
+     farther                            85% of 7453 | 84% of 6334 | 85% of 5359 | 84% of 5067 | 86% of 5327 | 84% of 5008 | 80% of 3980 | 77% of 1934
+     the dragon is itself the longest   93% of 146 | 89% of 19 | - | - | - | - | - | -
+     within 9 cells, the longest is 10+ 80% of 354 | 81% of 555 | 83% of 565 | 85% of 565 | 81% of 526 | 83% of 443 | 84% of 277 | 79% of 175
+     corpse pearls within 9 cells       86% of 657 | 86% of 534 | 83% of 489 | 79% of 527 | 81% of 716 | 81% of 529 | 73% of 510 | 72% of 244
+     corpse pearls farther              87% of 3818 | 86% of 3764 | 86% of 3724 | 85% of 3746 | 85% of 3669 | 82% of 3529 | 80% of 2897 | 81% of 1572
+   test4 (vs us), by the true longest dragon at the round's start
+     pearl within 9 cells of the longest 79% of 457 | 70% of 306 | 74% of 198 | 78% of 137 | 73% of 142 | 72% of 119 | 79% of 94 | 66% of 93
+     farther                            81% of 2923 | 77% of 2247 | 78% of 1734 | 76% of 1492 | 75% of 1175 | 76% of 1171 | 67% of 1111 | 68% of 951
+     the dragon is itself the longest   94% of 48 | 100% of 1 | - | - | - | - | - | -
+     within 9 cells, the longest is 10+ 73% of 124 | 67% of 217 | 74% of 192 | 78% of 135 | 72% of 140 | 72% of 118 | 78% of 92 | 66% of 93
+     corpse pearls within 9 cells       79% of 219 | 74% of 150 | 81% of 136 | 75% of 108 | 83% of 133 | 79% of 134 | 69% of 228 | 71% of 191
+     corpse pearls farther              85% of 1310 | 80% of 1047 | 81% of 939 | 83% of 795 | 81% of 772 | 79% of 893 | 79% of 843 | 84% of 801
+   WHQ (vs us), by the true longest dragon at the round's start
+     pearl within 9 cells of the longest 91% of 490 | 89% of 350 | 93% of 281 | 89% of 281 | 86% of 249 | 92% of 219 | 93% of 120 | 93% of 15
+     farther                            89% of 2665 | 90% of 2433 | 89% of 2085 | 87% of 2087 | 90% of 2716 | 90% of 2644 | 89% of 1852 | 89% of 275
+     the dragon is itself the longest   93% of 83 | 92% of 12 | - | - | - | - | - | -
+     within 9 cells, the longest is 10+ 82% of 137 | 90% of 222 | 93% of 227 | 90% of 279 | 86% of 249 | 92% of 219 | 93% of 120 | 93% of 15
+     corpse pearls within 9 cells       89% of 281 | 93% of 236 | 89% of 202 | 81% of 288 | 84% of 412 | 87% of 264 | 91% of 198 | 82% of 11
+     corpse pearls farther              89% of 1360 | 89% of 1527 | 92% of 1591 | 86% of 1691 | 87% of 1719 | 88% of 1672 | 88% of 1281 | 85% of 179
+   forgot, by the true longest dragon at the round's start
+     pearl within 9 cells of the longest 94% of 2351 | 94% of 2053 | 94% of 1625 | 95% of 1239 | 96% of 1288 | 94% of 802 | 94% of 429 | 92% of 227
+     farther                            95% of 11269 | 94% of 10487 | 94% of 9985 | 95% of 10142 | 96% of 10544 | 95% of 7443 | 95% of 4475 | 93% of 2682
+     the dragon is itself the longest   95% of 799 | 91% of 414 | 92% of 229 | 93% of 138 | 95% of 120 | 80% of 15 | - | -
+     within 9 cells, the longest is 10+ 99% of 76 | 95% of 298 | 95% of 568 | 95% of 828 | 96% of 1043 | 94% of 748 | 94% of 428 | 92% of 219
+     corpse pearls within 9 cells       93% of 1444 | 92% of 1536 | 92% of 1302 | 89% of 911 | 92% of 982 | 91% of 596 | 93% of 349 | 94% of 194
+     corpse pearls farther              90% of 7215 | 91% of 7740 | 92% of 7931 | 92% of 8182 | 92% of 7527 | 92% of 3989 | 93% of 2534 | 94% of 1444
+   SSS, by the true longest dragon at the round's start
+     pearl within 9 cells of the longest 82% of 1717 | 82% of 1301 | 83% of 978 | 84% of 940 | 79% of 1027 | 77% of 954 | 75% of 750 | 76% of 598
+     farther                            84% of 9494 | 83% of 9321 | 83% of 9034 | 84% of 8689 | 82% of 8315 | 82% of 8609 | 79% of 6873 | 78% of 5677
+     the dragon is itself the longest   92% of 416 | 96% of 205 | 90% of 77 | 93% of 15 | 100% of 1 | - | - | -
+     within 9 cells, the longest is 10+ 82% of 362 | 81% of 691 | 81% of 675 | 82% of 783 | 79% of 975 | 76% of 902 | 74% of 740 | 76% of 598
+     corpse pearls within 9 cells       79% of 839 | 82% of 897 | 84% of 883 | 87% of 929 | 86% of 1005 | 85% of 881 | 83% of 999 | 79% of 783
+     corpse pearls farther              80% of 4029 | 83% of 4635 | 82% of 4869 | 82% of 5151 | 82% of 4988 | 83% of 4805 | 79% of 4015 | 77% of 3458
+   Vibing++, by the true longest dragon at the round's start
+     pearl within 9 cells of the longest 89% of 1345 | 89% of 1188 | 89% of 1074 | 90% of 843 | 88% of 1013 | 71% of 626 | 64% of 438 | 66% of 291
+     farther                            89% of 8303 | 89% of 8288 | 88% of 7524 | 87% of 7537 | 87% of 6937 | 77% of 5382 | 73% of 4262 | 79% of 3430
+     the dragon is itself the longest   95% of 73 | 90% of 116 | 92% of 72 | 93% of 57 | 88% of 48 | 83% of 12 | - | 100% of 1
+     within 9 cells, the longest is 10+ 89% of 674 | 89% of 673 | 87% of 716 | 89% of 623 | 88% of 845 | 70% of 599 | 64% of 437 | 66% of 291
+     corpse pearls within 9 cells       89% of 842 | 87% of 790 | 89% of 733 | 88% of 649 | 81% of 855 | 64% of 1014 | 55% of 685 | 58% of 308
+     corpse pearls farther              91% of 4730 | 91% of 5857 | 91% of 5691 | 91% of 5960 | 88% of 6302 | 75% of 5084 | 69% of 3911 | 76% of 2382
+
+== 3. How much of the fall comes back if an in-zone turn were taken like an out-of-zone turn of the same rounds
+   small maps readable games, the dragon's own named zone    rounds 300-349: before the switch 85%, now 54% (in zone 28% of 661 turns, outside 86% of 476), with the zone off 83% -> 94% of the fall comes back; in-zone turns are 51% of all pearl turns
+   small maps readable games, the dragon's own named zone    rounds 350-399: before the switch 85%, now 50% (in zone 26% of 746 turns, outside 85% of 453), with the zone off 82% -> 92% of the fall comes back; in-zone turns are 56% of all pearl turns
+   small maps readable games, the dragon's own named zone    rounds 400-449: before the switch 85%, now 46% (in zone 24% of 686 turns, outside 74% of 444), with the zone off 73% -> 69% of the fall comes back; in-zone turns are 53% of all pearl turns
+   small maps readable games, the dragon's own named zone    rounds 450-499: before the switch 85%, now 50% (in zone 21% of 392 turns, outside 83% of 277), with the zone off 80% -> 85% of the fall comes back; in-zone turns are 48% of all pearl turns
+   small maps live bot, zone of the true longest             rounds 300-349: before the switch 85%, now 54% (in zone 39% of 1312 turns, outside 60% of 2617), with the zone off 60% -> 21% of the fall comes back; in-zone turns are 32% of all pearl turns
+   small maps live bot, zone of the true longest             rounds 350-399: before the switch 85%, now 53% (in zone 40% of 1344 turns, outside 60% of 2683), with the zone off 60% -> 20% of the fall comes back; in-zone turns are 33% of all pearl turns
+   small maps live bot, zone of the true longest             rounds 400-449: before the switch 85%, now 45% (in zone 35% of 1306 turns, outside 50% of 2543), with the zone off 50% -> 12% of the fall comes back; in-zone turns are 33% of all pearl turns
+   small maps live bot, zone of the true longest             rounds 450-499: before the switch 85%, now 52% (in zone 36% of 716 turns, outside 58% of 1549), with the zone off 59% -> 20% of the fall comes back; in-zone turns are 31% of all pearl turns
+   small maps test builds, zone of the true longest          rounds 300-349: before the switch 85%, now 55% (in zone 38% of 582 turns, outside 61% of 1432), with the zone off 62% -> 21% of the fall comes back; in-zone turns are 28% of all pearl turns
+   small maps test builds, zone of the true longest          rounds 350-399: before the switch 85%, now 55% (in zone 39% of 672 turns, outside 62% of 1489), with the zone off 62% -> 23% of the fall comes back; in-zone turns are 31% of all pearl turns
+   small maps test builds, zone of the true longest          rounds 400-449: before the switch 85%, now 48% (in zone 32% of 663 turns, outside 56% of 1264), with the zone off 57% -> 22% of the fall comes back; in-zone turns are 34% of all pearl turns
+   small maps test builds, zone of the true longest          rounds 450-499: before the switch 85%, now 52% (in zone 41% of 326 turns, outside 56% of 893), with the zone off 56% -> 12% of the fall comes back; in-zone turns are 26% of all pearl turns
+   big maps   readable games, the dragon's own named zone    rounds 150-199: before the switch 83%, now 58% (in zone 27% of 413 turns, outside 76% of 553), with the zone off 76% -> 72% of the fall comes back; in-zone turns are 38% of all pearl turns
+   big maps   readable games, the dragon's own named zone    rounds 200-249: before the switch 83%, now 56% (in zone 20% of 318 turns, outside 77% of 438), with the zone off 77% -> 76% of the fall comes back; in-zone turns are 36% of all pearl turns
+   big maps   readable games, the dragon's own named zone    rounds 250-299: before the switch 83%, now 55% (in zone 19% of 368 turns, outside 79% of 472), with the zone off 77% -> 79% of the fall comes back; in-zone turns are 37% of all pearl turns
+   big maps   readable games, the dragon's own named zone    rounds 300-399: before the switch 83%, now 60% (in zone 25% of 636 turns, outside 80% of 988), with the zone off 78% -> 79% of the fall comes back; in-zone turns are 33% of all pearl turns
+   big maps   live bot, zone of the true longest             rounds 150-199: before the switch 84%, now 61% (in zone 43% of 618 turns, outside 64% of 3430), with the zone off 64% -> 13% of the fall comes back; in-zone turns are 15% of all pearl turns
+   big maps   live bot, zone of the true longest             rounds 200-249: before the switch 84%, now 58% (in zone 44% of 507 turns, outside 60% of 3161), with the zone off 60% -> 8% of the fall comes back; in-zone turns are 14% of all pearl turns
+   big maps   live bot, zone of the true longest             rounds 250-299: before the switch 84%, now 58% (in zone 42% of 526 turns, outside 61% of 3094), with the zone off 61% -> 11% of the fall comes back; in-zone turns are 14% of all pearl turns
+   big maps   live bot, zone of the true longest             rounds 300-399: before the switch 84%, now 57% (in zone 40% of 972 turns, outside 60% of 5902), with the zone off 60% -> 11% of the fall comes back; in-zone turns are 14% of all pearl turns
+   big maps   test builds, zone of the true longest          rounds 150-199: before the switch 81%, now 59% (in zone 48% of 255 turns, outside 61% of 1552), with the zone off 61% -> 8% of the fall comes back; in-zone turns are 14% of all pearl turns
+   big maps   test builds, zone of the true longest          rounds 200-249: before the switch 81%, now 57% (in zone 40% of 255 turns, outside 60% of 1513), with the zone off 60% -> 12% of the fall comes back; in-zone turns are 14% of all pearl turns
+   big maps   test builds, zone of the true longest          rounds 250-299: before the switch 81%, now 54% (in zone 35% of 323 turns, outside 58% of 1593), with the zone off 58% -> 15% of the fall comes back; in-zone turns are 17% of all pearl turns
+   big maps   test builds, zone of the true longest          rounds 300-399: before the switch 81%, now 60% (in zone 42% of 531 turns, outside 63% of 2917), with the zone off 63% -> 16% of the fall comes back; in-zone turns are 15% of all pearl turns
+
+== 4. By map: the zone (181 cells) as a share of the board; our live bot's free-pearl rate 50 rounds before / after the switch; in-zone share of pearl turns after it
+   Stripes              288 cells, zone  63% of the board | before 65% | after (100 rounds) 59% | within 9 cells of the longest   -, farther   - | share of pearl turns within 9 cells 48%
+   Portals              512 cells, zone  35% of the board | before 74% | after (100 rounds) 64% | within 9 cells of the longest 51%, farther 71% | share of pearl turns within 9 cells 35%
+   Devil                512 cells, zone  35% of the board | before 93% | after (100 rounds) 67% | within 9 cells of the longest 54%, farther 74% | share of pearl turns within 9 cells 37%
+   Tower Defense        512 cells, zone  35% of the board | before 93% | after (100 rounds) 33% | within 9 cells of the longest 29%, farther 20% | share of pearl turns within 9 cells 32%
+   Prisoners Dilemma    512 cells, zone  35% of the board | before   - | after (100 rounds) 28% | within 9 cells of the longest  7%, farther   - | share of pearl turns within 9 cells 62%
+   weakhold             600 cells, zone  30% of the board | before 93% | after (100 rounds) 51% | within 9 cells of the longest 45%, farther 53% | share of pearl turns within 9 cells 43%
+   Trophy               625 cells, zone  29% of the board | before   - | after (100 rounds)   - | within 9 cells of the longest   -, farther   - | share of pearl turns within 9 cells 0%
+   Queen Of Spades      875 cells, zone  21% of the board | before 82% | after (100 rounds) 59% | within 9 cells of the longest 61%, farther 59% | share of pearl turns within 9 cells 16%
+   Autarky              972 cells, zone  19% of the board | before 95% | after (100 rounds) 80% | within 9 cells of the longest 58%, farther 84% | share of pearl turns within 9 cells 18%
+   Default             1024 cells, zone  18% of the board | before 92% | after (100 rounds) 61% | within 9 cells of the longest 26%, farther 73% | share of pearl turns within 9 cells 26%
+   Maze                1152 cells, zone  16% of the board | before 85% | after (100 rounds) 46% | within 9 cells of the longest 29%, farther 53% | share of pearl turns within 9 cells 30%
+   Trauma              1152 cells, zone  16% of the board | before 81% | after (100 rounds) 62% | within 9 cells of the longest 55%, farther 64% | share of pearl turns within 9 cells 24%
+   Slithery Fight      1701 cells, zone  11% of the board | before 78% | after (100 rounds) 51% | within 9 cells of the longest 43%, farther 53% | share of pearl turns within 9 cells 19%
+   Islands             2240 cells, zone   8% of the board | before 86% | after (100 rounds) 65% | within 9 cells of the longest 44%, farther 67% | share of pearl turns within 9 cells 12%
+   Australia           4096 cells, zone   4% of the board | before 85% | after (100 rounds) 70% | within 9 cells of the longest 42%, farther 73% | share of pearl turns within 9 cells 9%
+   Around UNSW         4096 cells, zone   4% of the board | before 85% | after (100 rounds) 63% | within 9 cells of the longest 46%, farther 65% | share of pearl turns within 9 cells 10%
+
+== 5. Does anybody else leave pearls near its own longest dragon? Natural pearls, pearl within 9 cells of the side's longest (5+ long) / farther
+ small maps: rounds 150-299 | 300-399 | 400-499 ; then the same with the longest 10+ long
+   meow live      82% / 85% | 33% / 56% | 42% / 55% ||   - /   - | 29% / 59% | 41% / 57%
+   meow test      85% / 88% | 35% / 59% | 47% / 59% ||   - /   - | 32% / 69% | 46% / 60%
+   meow readable  81% / 85% | 29% / 51% | 40% / 56% ||   - /   - | 23% / 53% | 39% / 58%
+   opponents      81% / 82% | 80% / 78% | 74% / 57% || 90% / 89% | 87% / 87% | 76% / 57%
+   test4 (vs us)  70% / 71% | 66% / 66% | 63% / 42% || 81% / 73% | 78% / 70% | 63% / 41%
+   WHQ (vs us)    86% / 87% | 86% / 83% | 87% / 80% || 91% / 91% | 88% / 89% | 89% / 82%
+   forgot         93% / 93% | 94% / 93% | 95% / 92% || 95% / 94% | 96% / 94% | 95% / 92%
+   SSS            84% / 83% | 81% / 78% | 80% / 72% || 90% / 88% | 80% / 78% | 79% / 72%
+   Vibing++       91% / 84% | 92% / 87% | 80% / 82% || 91% / 84% | 88% / 83% | 77% / 81%
+   ... corpse pearls (feeder pearls are among them), within 9 cells of the longest 10+ / farther, rounds 300-399 | 400-499
+   meow live      38% of 496 / 62% of 977 | 31% of 1194 / 49% of 1757
+   meow test      44% of 257 / 69% of 522 | 32% of 613 / 53% of 908
+   meow readable  38% of 133 / 57% of 289 | 27% of 441 / 51% of 496
+   opponents      77% of 1228 / 86% of 2416 | 75% of 974 / 78% of 2203
+   test4 (vs us)  76% of 293 / 82% of 573 | 69% of 521 / 74% of 1341
+   WHQ (vs us)    78% of 780 / 87% of 1189 | 91% of 281 / 86% of 471
+   forgot         90% of 1729 / 89% of 4758 | 93% of 950 / 90% of 2032
+   SSS            85% of 1996 / 82% of 3334 | 83% of 1293 / 80% of 2345
+   Vibing++       77% of 1232 / 85% of 4036 | 64% of 1786 / 80% of 4871
+ big maps: rounds 150-299 | 300-399 | 400-499 ; then the same with the longest 10+ long
+   meow live      45% / 63% | 46% / 64% | 49% / 64% || 48% / 64% | 45% / 64% | 49% / 65%
+   meow test      41% / 60% | 47% / 67% | 50% / 62% || 33% / 62% | 47% / 67% | 48% / 62%
+   meow readable  40% / 62% | 40% / 67% | 53% / 67% || 41% / 65% | 41% / 67% | 53% / 67%
+   opponents      84% / 84% | 82% / 85% | 82% / 79% || 83% / 84% | 82% / 85% | 82% / 79%
+   test4 (vs us)  73% / 77% | 72% / 75% | 72% / 67% || 72% / 77% | 72% / 76% | 72% / 67%
+   WHQ (vs us)    91% / 89% | 89% / 90% | 93% / 89% || 91% / 89% | 89% / 90% | 93% / 89%
+   forgot         95% / 94% | 95% / 95% | 93% / 94% || 95% / 95% | 95% / 95% | 94% / 94%
+   SSS            82% / 83% | 78% / 82% | 75% / 79% || 82% / 82% | 78% / 82% | 75% / 79%
+   Vibing++       89% / 88% | 81% / 82% | 65% / 75% || 88% / 87% | 80% / 82% | 65% / 75%
+   ... corpse pearls (feeder pearls are among them), within 9 cells of the longest 10+ / farther, rounds 300-399 | 400-499
+   meow live      35% of 521 / 54% of 2431 | 36% of 512 / 55% of 2551
+   meow test      40% of 331 / 58% of 1247 | 35% of 254 / 56% of 1157
+   meow readable  33% of 157 / 58% of 684 | 38% of 185 / 56% of 668
+   opponents      81% of 1241 / 83% of 7183 | 72% of 746 / 81% of 4459
+   test4 (vs us)  82% of 263 / 80% of 1650 | 69% of 411 / 81% of 1634
+   WHQ (vs us)    85% of 676 / 87% of 3391 | 91% of 209 / 88% of 1460
+   forgot         92% of 1359 / 92% of 10320 | 94% of 539 / 94% of 3971
+   SSS            85% of 1814 / 82% of 9186 | 81% of 1768 / 78% of 7404
+   Vibing++       70% of 1747 / 82% of 10744 | 56% of 993 / 72% of 6278

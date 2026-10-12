@@ -1,0 +1,66 @@
+{
+  "stripes": {
+    "route": [
+      {
+        "head": [
+          14,
+          10
+        ],
+        "length": 3
+      },
+      {
+        "head": [
+          15,
+          10
+        ],
+        "length": 3
+      },
+      {
+        "head": [
+          15,
+          11
+        ],
+        "length": 2
+      }
+    ],
+    "frozen_enemy_reachers": []
+  },
+  "maze": [
+    {
+      "mate_direction": "N",
+      "queen_paths": [
+        {
+          "first": [
+            11,
+            13
+          ],
+          "onward": 1
+        }
+      ]
+    },
+    {
+      "mate_direction": "E",
+      "queen_paths": [
+        {
+          "first": [
+            11,
+            13
+          ],
+          "onward": 0
+        }
+      ]
+    },
+    {
+      "mate_direction": "W",
+      "queen_paths": [
+        {
+          "first": [
+            11,
+            13
+          ],
+          "onward": 1
+        }
+      ]
+    }
+  ]
+}

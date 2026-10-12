@@ -1,0 +1,88 @@
+game sprint-bracket map Stripes/? us=A result {"winner":"B","end":"teamEliminated"}
+tags(our turns): {"sx":0,"sr":0,"sd":0,"sf":0,"sq":0,"sc":0,"sk":0,"esc":0,"split":0}
+timeline r | our units / longest / total | their units / longest / total
+  r  0 |   2 /   2 /    4 |   2 /   2 /    4
+  r 25 |   4 /   3 /   10 |   5 /   3 /   12
+  r 50 |   5 /   3 /   12 |   7 /   3 /   17
+  r 75 |   3 /   5 /   10 |   9 /   5 /   22
+  r100 |   5 /   4 /   12 |   8 /   3 /   20
+  r125 |   5 /   3 /   12 |  10 /   6 /   28
+  r150 |   4 /   6 /   13 |  16 /   4 /   38
+  r175 |   2 /   4 /    7 |  17 /   3 /   39
+  r200 |   1 /   2 /    2 |  19 /   3 /   41
+local feeds (sf) 0: first 12 → 
+--- r69: ours 4 dragons [4 3 2 2] total 11 | theirs 10 [3 3 2 2 2 2 2 2 …] total 22
++------------------------+
+|  oo        x   xX      |
+|  oo  oo   xXX          |
+|      oo                |
+|     2.                 |
+|               oo       |
+|   .3          oo   xx  |
+|   .   oo    x      X   |
+|       oo    X X   X    |
+|               x   x    |
+|          Xx X  oo      |
+|       .2 %4%x  o%xx%%  |
+|        ... %       Xo  |
++------------------------+
+--- r70: ours 4 dragons [5 3 2 2] total 12 | theirs 10 [4 3 3 2 2 2 2 2 …] total 24
++------------------------+
+|  oo         X   x      |
+|  oo  oo   oxxX  X      |
+|      oo                |
+|     .                  |
+|    32         oo       |
+|   ..          oo   x   |
+|       oo      X   Xx   |
+|       oo    xXx  Xx    |
+|                        |
+|          xxXx  oo      |
+|        .2X.5   o%xx%%  |
+|        ... %       xX  |
++------------------------+
+--- r71: ours 3 dragons [6 3 2] total 11 | theirs 9 [5 3 3 2 2 2 2 2 …] total 23
++------------------------+
+|  oo         x          |
+|  oo  oo   o  x Xx      |
+|      oo      X         |
+|    3                   |
+|    ..2        oo       |
+|    .          oo       |
+|       oo     XxX Xxx   |
+|       oo     x   x     |
+|                  X     |
+|           Xxx  oo      |
+|         %%..   o%xx%X  |
+|        ... 6X      xx  |
++------------------------+
+--- r72: ours 3 dragons [6 3 2] total 11 | theirs 10 [3 3 3 2 2 2 2 2 …] total 23
++------------------------+
+|  oo                    |
+|  oo  oo   o    x       |
+|      oo     Xx X       |
+|   3. 2                 |
+|    . .        oo       |
+|               oo       |
+|       oo    Xx xXxx    |
+|       oo       X       |
+|                 Xx     |
+|          Xxx   oo      |
+|         %%..   o%xx%X  |
+|         ..6.xX   X ox  |
++------------------------+
+--- r73: ours 3 dragons [3 3 2] total 8 | theirs 8 [3 3 3 2 2 2 2 2] total 19
++------------------------+
+|  oo                    |
+|  oo  oo   o X          |
+|      oo     x  xX      |
+|  3..2.                 |
+|               oo       |
+|               oo       |
+|       oo    x   xx     |
+|       oo    X  xX      |
+|                Xxx     |
+|           %    Xo      |
+|         %% .   o%x %%  |
+|          %3. xX  xXoo  |
++------------------------+

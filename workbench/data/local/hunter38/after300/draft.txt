@@ -1,0 +1,25 @@
+Zhe, short answer, after r300 she doesn't die on walls or her own body in either version. she gets rammed head-on by an enemy head. #38 doesn't change how, it just has more queens alive by then.
+
+measured, hunter test, 68 games each
+```
+after r300            main (switch off)  #38 (switch on)
+alive at r300         14                 16
+died after r300       6                  8
+ head-on, enemy rams  3                  5
+ no action at r403    2                  2
+ boxed by own dragons 1                  1
+ wall / own body      0                  0
+length at head-on     2, 4, 30           4, 6, 22, 27, 85
+```
+- 4 deaths per version are tower_defense, same death in both. off that map it's 2 vs 4, all head-on
+- those 4 in #38 are games where main's queen was dead before r300. with the switch on she lived past r300, then got rammed
+- every head-on was on the enemy's move. she moves first, then a hunter sprints into her head (up to 11 steps, up to 4 paid)
+- in 4 of 8 its head was in her 7x7 view with only 1 to 4 of its segments. in 3 it was outside her view. once she was cornered at 2 long
+- worst is maze r483, 85 long, a 26 long hunter 3 tiles up took 3 free steps into her
+
+read from code, not tested
+- the loop is off from r300 (QL_UNTIL) so both versions run the same queen code
+- she sizes an enemy by the segments she sees and caps its paid reach at 3 (QS_PAY_REACH), so a long body out of view reads short
+- r403 on tower_defense looks like she feeds herself to our leader (maps of 600 cells or less)
+
+limit, 14 and 16 queens is too few to call a difference, nearly all vs the hunter, and the 400 pair run kept no replays. traces are in hunter38/after300/evidence.md

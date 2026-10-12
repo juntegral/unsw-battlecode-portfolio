@@ -1,0 +1,26 @@
+== 1. A boxed-in queen of 6 or more: first such split of an episode (no boxed split in the 3 rounds before), by what she did
+   meow           cut (keeps 2-3)  n=39   mean length 25.1 | dead within 5 rounds 44%  within 20 44%  alive at the end 3%   game won 21%  | 15 or longer: n=36, dead within 20 39%, game won 17%
+   our opponents  cut (keeps 2-3)  n=59   mean length 21.5 | dead within 5 rounds 39%  within 20 42%  alive at the end 27%  game won 81%  | 15 or longer: n=38, dead within 20 42%, game won 87%
+   our opponents  shed 2           n=33   mean length 22.2 | dead within 5 rounds 18%  within 20 24%  alive at the end 42%  game won 88%  | 15 or longer: n=19, dead within 20 16%, game won 95%
+   our opponents  other            n=15   mean length 22.9 | dead within 5 rounds 7%   within 20 7%   alive at the end 67%  game won 80%  | 15 or longer: n=14, dead within 20 7%, game won 79%
+   Vibing++       cut (keeps 2-3)  n=106  mean length 19.4 | dead within 5 rounds 10%  within 20 17%  alive at the end 34%  game won 64%  | 15 or longer: n=61, dead within 20 13%, game won 62%
+   Vibing++       shed 2           n=45   mean length 19.6 | dead within 5 rounds 16%  within 20 20%  alive at the end 56%  game won 84%  | 15 or longer: n=23, dead within 20 17%, game won 87%
+   Vibing++       other            n=32   mean length 20.1 | dead within 5 rounds 3%   within 20 6%   alive at the end 56%  game won 81%  | 15 or longer: n=18, dead within 20 0%, game won 78%
+   SSS            shed 2           n=48   mean length 24.5 | dead within 5 rounds 6%   within 20 6%   alive at the end 38%  game won 62%  | 15 or longer: n=46, dead within 20 4%, game won 65%
+   forgot         shed 2           n=246  mean length 31.0 | dead within 5 rounds 5%   within 20 9%   alive at the end 60%  game won 65%  | 15 or longer: n=201, dead within 20 7%, game won 66%
+
+== 2. Turns with an enemy head in her view: rammed that round, by the number of other own heads within 6 steps of her
+   meow           (queen 2-3 long) own heads within 6 steps 0 / 1 / 2 / 3+: rammed that round 2.2% of 3332 / 1.9% of 2602 / 1.9% of 1642 / 2.2% of 2253 | with an enemy head within 3 steps: 10% of 564 / 12% of 370 / 13% of 183 / 19% of 228
+   our opponents  (queen 2-3 long) own heads within 6 steps 0 / 1 / 2 / 3+: rammed that round 1.0% of 3840 / 0.5% of 2708 / 0.5% of 2015 / 0.2% of 5856 | with an enemy head within 3 steps: 5% of 737 / 4% of 385 / 5% of 220 / 3% of 267
+   Vibing++       (queen 2-3 long) own heads within 6 steps 0 / 1 / 2 / 3+: rammed that round 1.2% of 3194 / 1.7% of 2395 / 1.5% of 1825 / 0.6% of 4577 | with an enemy head within 3 steps: 6% of 450 / 9% of 404 / 9% of 239 / 8% of 279
+   SSS            (queen 2-3 long) own heads within 6 steps 0 / 1 / 2 / 3+: rammed that round 1.4% of 3778 / 1.2% of 3394 / 1.0% of 2992 / 0.4% of 12810 | with an enemy head within 3 steps: 10% of 492 / 10% of 337 / 10% of 234 / 10% of 406
+   forgot         (queen 2-3 long) own heads within 6 steps 0 / 1 / 2 / 3+: rammed that round 1.8% of 4809 / 1.2% of 4308 / 1.4% of 2934 / 0.7% of 7193 | with an enemy head within 3 steps: 9% of 866 / 10% of 489 / 11% of 315 / 12% of 332
+
+== 3. The mirror in our 401 games (pearl-paid reach, real board after her move): turns that end inside a visible reach, per 1,000 queen-rounds, and how often they are punished
+   our queen                      ends in reach 5.17 per 1,000 queen-rounds (291 turns), rammed on 76% | plain reach (no pearl-paid steps): 4.18 per 1,000, rammed on 76%
+   their queen (our opponents)    ends in reach 4.53 per 1,000 queen-rounds (506 turns), rammed on 19% | plain reach (no pearl-paid steps): 3.82 per 1,000, rammed on 22%
+   our queen vs test4             ends in reach 4.48 per 1,000 queen-rounds (104 turns), rammed on 84% | plain reach (no pearl-paid steps): 3.58 per 1,000, rammed on 81%
+   test4's queen vs us            ends in reach 3.04 per 1,000 queen-rounds (140 turns), rammed on 23% | plain reach (no pearl-paid steps): 2.58 per 1,000, rammed on 27%
+   our queen vs WeHaveQuizzes     ends in reach 5.20 per 1,000 queen-rounds (107 turns), rammed on 81% | plain reach (no pearl-paid steps): 4.22 per 1,000, rammed on 82%
+   WeHaveQuizzes's queen vs us    ends in reach 7.09 per 1,000 queen-rounds (271 turns), rammed on 17% | plain reach (no pearl-paid steps): 5.89 per 1,000, rammed on 21%
+   top three's queens             ends in reach 3.01 per 1,000 queen-rounds (1205 turns), rammed on 49% | plain reach (no pearl-paid steps): 2.44 per 1,000, rammed on 55%

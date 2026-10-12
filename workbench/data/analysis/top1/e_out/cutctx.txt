@@ -1,0 +1,29 @@
+THE SITUATION AT EVERY LEADER CUT FROM ROUND 250 (all study games of the group; a leader cut = the team's longest dragon of
+8+, or a dragon born in the same round out of such a cut, keeps 2-3 and gives the rest to a new id)
+free = free cells next to the head at the start of its turn; room = cells reachable from them without crossing a body (capped 40)
+
+SMALL MAPS (<= 1,200 cells)
+group           games   cuts | with a free cell (voluntary): n, share | of the voluntary ones: room <=4 / 5-8 / 9-20 / more | enemy head within 3 / 4-6 / farther | own heads within 2 cells: 0 / 1 / 2+ | heir born with no free cell | the stub afterwards: dies within 3 rounds / in 4-10 / alive after 10 (moved 5+ cells away) | how the stubs that died within 10 rounds died: boxed in / by choice / rammed
+meow live         198    528 |   301  57% | 76% /  5% /  3% / 15% | 26% / 29% / 45% | 62% / 28% / 10% |  0% (forced cuts: 11% of 227) | 28% / 20% / 48% (29%) | 94 / 38 / 11
+meow test          92    290 |   179  62% | 81% /  8% /  3% /  8% | 25% / 26% / 50% | 61% / 33% /  6% |  2% (forced cuts: 12% of 111) | 23% / 31% / 42% (27%) | 66 / 22 / 9
+meow              290    818 |   480  59% | 78% /  6% /  3% / 12% | 25% / 28% / 47% | 62% / 30% /  8% |  1% (forced cuts: 12% of 338) | 26% / 24% / 46% (28%) | 160 / 60 / 20
+opp               290    728 |   252  35% | 60% /  8% /  3% / 29% | 27% / 30% / 42% | 63% / 28% /  9% |  6% (forced cuts:  4% of 476) | 34% / 18% / 47% (29%) | 86 / 31 / 14
+test4 (vs us)     112    271 |   144  53% | 75% /  1% /  1% / 23% | 25% / 28% / 47% | 58% / 31% / 12% |  6% (forced cuts: 10% of 127) | 39% / 14% / 47% (24%) | 51 / 21 / 4
+WHQ (vs us)       115    276 |    82  30% | 33% / 17% /  4% / 46% | 32% / 30% / 38% | 70% / 27% /  4% |  6% (forced cuts:  1% of 194) | 24% / 24% / 51% (39%) | 28 / 5 / 7
+forgot            471    681 |   138  20% | 59% / 10% /  4% / 28% | 23% / 32% / 45% | 70% / 20% / 10% |  1% (forced cuts:  5% of 543) | 48% / 19% / 30% (17%) | 55 / 29 / 8
+SSS               364    725 |   628  87% | 78% /  5% /  3% / 14% | 28% / 24% / 48% | 59% / 30% / 11% |  3% (forced cuts: 25% of 97) | 25% / 29% / 44% (26%) | 261 / 38 / 41
+Vibing++          375    971 |   594  61% | 62% / 16% / 10% / 12% | 21% / 29% / 51% | 65% / 27% /  8% |  1% (forced cuts:  6% of 377) | 37% / 21% / 42% (26%) | 265 / 48 / 27
+top3             1210   2377 |  1360  57% | 69% / 11% /  6% / 15% | 24% / 27% / 49% | 63% / 28% /  9% |  2% (forced cuts:  7% of 1017) | 33% / 24% / 42% (25%) | 581 / 115 / 76
+
+BIG MAPS (> 1,200 cells)
+group           games   cuts | with a free cell (voluntary): n, share | of the voluntary ones: room <=4 / 5-8 / 9-20 / more | enemy head within 3 / 4-6 / farther | own heads within 2 cells: 0 / 1 / 2+ | heir born with no free cell | the stub afterwards: dies within 3 rounds / in 4-10 / alive after 10 (moved 5+ cells away) | how the stubs that died within 10 rounds died: boxed in / by choice / rammed
+meow live          77    627 |   383  61% | 65% /  2% /  2% / 31% | 36% / 36% / 28% | 83% / 15% /  2% |  0% (forced cuts:  6% of 244) | 21% / 17% / 60% (34%) | 82 / 35 / 27
+meow test          34    292 |   189  65% | 66% /  3% /  2% / 29% | 26% / 30% / 44% | 74% / 20% /  6% |  0% (forced cuts:  6% of 103) | 14% / 15% / 66% (34%) | 24 / 21 / 10
+meow              111    919 |   572  62% | 65% /  3% /  2% / 31% | 32% / 34% / 34% | 80% / 16% /  4% |  0% (forced cuts:  6% of 347) | 19% / 16% / 62% (34%) | 106 / 56 / 37
+opp               111    771 |   307  40% | 70% /  5% /  4% / 21% | 29% / 24% / 47% | 76% / 21% /  4% |  2% (forced cuts:  4% of 464) | 29% / 14% / 55% (36%) | 88 / 22 / 22
+test4 (vs us)      42    362 |   212  59% | 75% /  2% /  2% / 21% | 33% / 25% / 41% | 75% / 22% /  3% |  2% (forced cuts:  2% of 150) | 32% / 11% / 56% (36%) | 66 / 9 / 15
+WHQ (vs us)        44    227 |    33  15% | 45% /  3% / 12% / 39% | 24% / 24% / 52% | 64% / 33% /  3% |  3% (forced cuts:  6% of 194) | 21% / 18% / 61% (36%) | 5 / 2 / 6
+forgot            161    894 |    62   7% | 77% /  2% /  0% / 21% | 23% / 23% / 55% | 79% / 21% /  0% |  0% (forced cuts:  2% of 832) | 60% /  8% / 29% (15%) | 24 / 11 / 7
+SSS               139    669 |   614  92% | 73% /  2% /  3% / 23% | 25% / 28% / 47% | 71% / 23% /  7% |  3% (forced cuts: 15% of 55) | 30% / 20% / 46% (22%) | 211 / 33 / 63
+Vibing++          127    975 |   515  53% | 56% / 10% / 11% / 23% | 27% / 30% / 43% | 76% / 19% /  5% |  1% (forced cuts: 16% of 460) | 33% / 20% / 45% (25%) | 164 / 44 / 67
+top3              427   2538 |  1191  47% | 66% /  6% /  6% / 23% | 26% / 29% / 46% | 73% / 21% /  5% |  2% (forced cuts:  7% of 1347) | 33% / 19% / 45% (23%) | 399 / 88 / 137

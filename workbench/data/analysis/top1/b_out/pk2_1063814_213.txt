@@ -1,0 +1,191 @@
+=== PACK2 1063814 Around UNSW 64x64 | protagonist side B (team 213 Sponge(Albert and Bob)) vs forgot to mention (2288.0) | winner B by queen rule | rounds 500
+final: {'A': {'units': 9, 'total': 152, 'longest': 57, 'queen': 0}, 'B': {'units': 29, 'total': 354, 'longest': 49, 'queen': 33}} | queens: {'A': 0, 'B': 1} | spawns: {'A': (20, 42), 'B': (43, 21)}
+
+[1] OPENING: units/total/longest every 10 rounds (own | opp)
+  r  0 own (10, 36, 10) | opp (10, 36, 10) | ownQ ((43, 21), 4) oppQ ((20, 42), 4)
+  r 10 own (13, 33, 5) | opp (15, 35, 3) | ownQ ((43, 19), 5) oppQ ((15, 38), 2)
+  r 20 own (16, 41, 4) | opp (18, 41, 3) | ownQ ((42, 17), 4) oppQ ((25, 38), 2)
+  r 30 own (25, 60, 4) | opp (18, 44, 3) | ownQ ((39, 17), 4) oppQ ((30, 33), 3)
+  r 40 own (33, 81, 4) | opp (22, 51, 5) | ownQ ((42, 18), 4) oppQ ('dead', 0)
+  r 50 own (40, 99, 4) | opp (27, 65, 5) | ownQ ((44, 18), 4) oppQ ('dead', 0)
+  r 60 own (47, 119, 5) | opp (33, 83, 4) | ownQ ((40, 12), 5) oppQ ('dead', 0)
+  r 70 own (53, 131, 5) | opp (38, 91, 3) | ownQ ((35, 17), 5) oppQ ('dead', 0)
+  r 80 own (53, 133, 5) | opp (46, 110, 4) | ownQ ((36, 24), 5) oppQ ('dead', 0)
+  r 90 own (59, 144, 5) | opp (51, 128, 5) | ownQ ((33, 27), 5) oppQ ('dead', 0)
+  r100 own (62, 146, 4) | opp (62, 153, 5) | ownQ ((34, 23), 3) oppQ ('dead', 0)
+  r120 own (61, 154, 4) | opp (60, 163, 8) | ownQ ((43, 16), 3) oppQ ('dead', 0)
+  r150 own (62, 173, 7) | opp (62, 187, 7) | ownQ ((49, 16), 6) oppQ ('dead', 0)
+  own r0-60 splits (before,parent,child):n [((4, 2, 2), 45), ((5, 3, 2), 5), ((6, 2, 4), 1), ((6, 4, 2), 3), ((8, 6, 2), 1), ((10, 8, 2), 1)] | own deaths by reason {'wall': 9, 'body': 2, 'self': 2, 'headon': 5} | rams made 3
+  own r61-120 splits (before,parent,child):n [((4, 2, 2), 57), ((5, 2, 3), 4), ((5, 3, 2), 6), ((6, 2, 4), 1), ((6, 4, 2), 5)] | own deaths by reason {'headon': 34, 'wall': 16, 'self': 7, 'body': 1, 'noaction': 1} | rams made 19
+  own queen first 40 actions: 0:mv S 1:mv E 2:mv S 3:mv E 4:mv N 5:mv N 6:mv N 7:mv W 8:mv W 9:mv N 10:mv N 11:mv N 12:mv N 13:SPLIT 14:mv N 15:mv E 16:mv S 17:mv S 18:mv W 19:mv W 20:mv W 21:mv W 22:mv S 23:mv S 24:SPLIT 25:mv S 26:mv W 27:mv N 28:mv N 29:mv N 30:mv E 31:mv E 32:mv E 33:mv S 34:mv S 35:mv E 36:mv N 37:mv N 38:mv W 39:mv S
+  opp r0-60 splits (before,parent,child):n [((4, 2, 2), 41), ((5, 2, 3), 4), ((5, 3, 2), 1), ((6, 4, 2), 1), ((8, 6, 2), 1), ((10, 8, 2), 1)] | own deaths by reason {'noaction': 20, 'headon': 5} | rams made 2
+  opp r61-120 splits (before,parent,child):n [((4, 2, 2), 90), ((5, 2, 3), 8), ((5, 3, 2), 5), ((6, 4, 2), 2)] | own deaths by reason {'headon': 34, 'noaction': 43} | rams made 15
+  opp queen first 40 actions: 0:SPLIT 1:mv N 2:mv W 3:mv N 4:mv W 5:mv W 6:mv N 7:mv W 8:mv W 9:mv N 10:mv E 11:mv E 12:mv E 13:mv E 14:mv E 15:mv E 16:mv E 17:mv E 18:mv E 19:mv E 20:mv E 21:mv E 22:mv N 23:mv N 24:mv E 25:mv E 26:mv N 27:mv N 28:mv N 29:mv E 30:mv S 31:mv W 32:mv W 33:mv W 34:mv N 35:- 36:- 37:- 38:- 39:-
+
+[2] OWN QUEEN #1
+   every split / suicide order and the four neighbour cells:
+     r13 L6 at (43, 16) orders SPLIT; free neighbours 3; ball4 35; N:FREE, E:FREE, S:own segment 2, W:FREE; nearest enemy head none within 6 -> split 6 -> 4+2
+     r24 L6 at (40, 19) orders SPLIT; free neighbours 2; ball4 28; N:own segment 2, E:kelp, S:FREE, W:FREE; nearest enemy head none within 6 -> split 6 -> 4+2
+     r91 L5 at (33, 28) orders SPLIT; free neighbours 3; ball4 24; N:own segment 2, E:FREE, S:FREE, W:FREE; nearest enemy head d6 L2 -> split 5 -> 3+2
+     r253 L23 at (47, 17) orders SPLIT; free neighbours 2; ball4 37; N:own segment 2, E:FREE, S:FREE, W:ally #412 L2 head; nearest enemy head none within 6 -> split 23 -> 21+2
+     r254 L21 at (47, 17) orders SPLIT; free neighbours 2; ball4 37; N:own segment 2, E:FREE, S:FREE, W:ally #412 L2 tail; nearest enemy head none within 6 -> split 21 -> 19+2
+     r255 L19 at (47, 17) orders SPLIT; free neighbours 2; ball4 37; N:own segment 2, E:FREE, S:FREE, W:ally #412 L3 tail; nearest enemy head none within 6 -> split 19 -> 17+2
+   eats per 50 rounds: {0: {'natural': 4}, 50: {'natural': 1}, 100: {'own_noaction': 1, 'natural': 2}, 150: {'own_noaction': 6}, 200: {'own_noaction': 12, 'natural': 1}, 250: {'natural': 4, 'own_self': 1, 'own_noaction': 2}, 400: {'natural': 2, 'own_noaction': 4, 'own_self': 1}, 450: {'own_self': 4}}
+   steps per move order: {1: 290, 2: 1, 3: 3, 4: 1, 5: 2, 6: 134, 7: 21, 8: 22, 9: 20}
+   every 20 rounds (head, len, ball4, manh from spawn, nearest enemy d/L within 6, allies<=6, different cells in the last 20 rounds):
+     r  0 (43, 21) L4 ball26 home0 (other own heads: mean 9.9 from her spawn) e- a3 cells1 | nearest enemy head manh 15, enemy heads within manh 8: 0, own heads within manh 8: 5
+     r 20 (42, 17) L4 ball35 home5 (other own heads: mean 15.2 from her spawn) e- a1 cells18 | nearest enemy head manh 23, enemy heads within manh 8: 0, own heads within manh 8: 1
+     r 40 (42, 18) L4 ball25 home4 (other own heads: mean 18.4 from her spawn) e- a1 cells15 | nearest enemy head manh 14, enemy heads within manh 8: 0, own heads within manh 8: 2
+     r 60 (40, 12) L5 ball35 home12 (other own heads: mean 20.8 from her spawn) e- a0 cells17 | nearest enemy head manh 12, enemy heads within manh 8: 0, own heads within manh 8: 5
+     r 80 (36, 24) L5 ball37 home10 (other own heads: mean 19.5 from her spawn) e- a2 cells20 | nearest enemy head manh 8, enemy heads within manh 8: 1, own heads within manh 8: 10
+     r100 (34, 23) L3 ball23 home11 (other own heads: mean 20.5 from her spawn) e(4, 2) a1 cells16 | nearest enemy head manh 4, enemy heads within manh 8: 3, own heads within manh 8: 5
+     r120 (43, 16) L3 ball35 home5 (other own heads: mean 20.6 from her spawn) e- a3 cells20 | nearest enemy head manh 19, enemy heads within manh 8: 0, own heads within manh 8: 7
+     r140 (45, 20) L6 ball34 home3 (other own heads: mean 21.8 from her spawn) e- a4 cells14 | nearest enemy head manh 13, enemy heads within manh 8: 0, own heads within manh 8: 7
+     r160 (51, 16) L6 ball30 home13 (other own heads: mean 21.1 from her spawn) e- a3 cells19 | nearest enemy head manh 15, enemy heads within manh 8: 0, own heads within manh 8: 10
+     r180 (54, 23) L7 ball35 home13 (other own heads: mean 21.7 from her spawn) e- a1 cells20 | nearest enemy head manh 12, enemy heads within manh 8: 0, own heads within manh 8: 6
+     r200 (48, 15) L12 ball32 home11 (other own heads: mean 20.9 from her spawn) e- a3 cells20 | nearest enemy head manh 16, enemy heads within manh 8: 0, own heads within manh 8: 9
+     r220 (47, 16) L19 ball37 home9 (other own heads: mean 21.8 from her spawn) e- a4 cells20 | nearest enemy head manh 14, enemy heads within manh 8: 0, own heads within manh 8: 7
+     r240 (50, 21) L20 ball30 home7 (other own heads: mean 23.2 from her spawn) e- a3 cells20 | nearest enemy head manh 19, enemy heads within manh 8: 0, own heads within manh 8: 8
+     r260 (43, 17) L17 ball36 home4 (other own heads: mean 23.6 from her spawn) e- a2 cells17 | nearest enemy head manh 17, enemy heads within manh 8: 0, own heads within manh 8: 5
+     r280 (46, 21) L23 ball38 home3 (other own heads: mean 23.6 from her spawn) e- a2 cells20 | nearest enemy head manh 15, enemy heads within manh 8: 0, own heads within manh 8: 2
+     r300 (46, 21) L23 ball38 home3 (other own heads: mean 23.8 from her spawn) e- a4 cells4 | nearest enemy head manh 14, enemy heads within manh 8: 0, own heads within manh 8: 4
+     r320 (43, 22) L23 ball25 home1 (other own heads: mean 25.7 from her spawn) e- a1 cells10 | nearest enemy head manh 10, enemy heads within manh 8: 0, own heads within manh 8: 2
+     r340 (46, 23) L23 ball32 home5 (other own heads: mean 23.4 from her spawn) e- a2 cells8 | nearest enemy head manh 11, enemy heads within manh 8: 0, own heads within manh 8: 4
+     r360 (46, 23) L23 ball32 home5 (other own heads: mean 23.7 from her spawn) e- a2 cells4 | nearest enemy head manh 16, enemy heads within manh 8: 0, own heads within manh 8: 5
+     r380 (46, 23) L23 ball32 home5 (other own heads: mean 24.4 from her spawn) e- a1 cells4 | nearest enemy head manh 22, enemy heads within manh 8: 0, own heads within manh 8: 3
+     r400 (44, 20) L23 ball36 home2 (other own heads: mean 22.6 from her spawn) e- a2 cells7 | nearest enemy head manh 29, enemy heads within manh 8: 0, own heads within manh 8: 5
+     r420 (42, 14) L25 ball36 home8 (other own heads: mean 20.5 from her spawn) e- a1 cells13 | nearest enemy head manh 44, enemy heads within manh 8: 0, own heads within manh 8: 5
+     r440 (42, 14) L25 ball36 home8 (other own heads: mean 20.9 from her spawn) e- a1 cells4 | nearest enemy head manh 37, enemy heads within manh 8: 0, own heads within manh 8: 6
+     r460 (44, 14) L33 ball40 home8 (other own heads: mean 22.2 from her spawn) e- a4 cells18 | nearest enemy head manh 29, enemy heads within manh 8: 0, own heads within manh 8: 6
+     r480 (44, 14) L33 ball40 home8 (other own heads: mean 24.4 from her spawn) e- a0 cells4 | nearest enemy head manh 39, enemy heads within manh 8: 0, own heads within manh 8: 2
+   first round (after r30) at which she was at least 6 / 10 / 20 / 40 long: {6: 'r138 (other queen then: dead)', 10: 'r188 (other queen then: dead)', 20: 'r240 (other queen then: dead)'}
+
+[2] OPP QUEEN #0
+   every split / suicide order and the four neighbour cells:
+     r0 L4 at (20, 42) orders SPLIT; free neighbours 2; ball4 26; N:FREE, E:FREE, S:kelp, W:own segment 2; nearest enemy head none within 6 -> split 4 -> 2+2
+   eats per 50 rounds: {0: {'natural': 1}}
+   steps per move order: {1: 34}
+   every 20 rounds (head, len, ball4, manh from spawn, nearest enemy d/L within 6, allies<=6, different cells in the last 20 rounds):
+     r  0 (20, 42) L4 ball26 home0 (other own heads: mean 9.9 from her spawn) e- a3 cells1 | nearest enemy head manh 15, enemy heads within manh 8: 0, own heads within manh 8: 5
+     r 20 (25, 38) L2 ball41 home9 (other own heads: mean 11.7 from her spawn) e- a0 cells20 | nearest enemy head manh 13, enemy heads within manh 8: 0, own heads within manh 8: 1
+   first round (after r30) at which she was at least 6 / 10 / 20 / 40 long: {}
+
+[2b] OWN queen: 1 rounds / 1 episodes with an enemy head within 3 steps at round start; her orders {'move 1': 1}; distance to the nearest enemy head after her own move {'grew': 1}; {'0 allies': 1}; nearest intruder length {'2': 1}
+     in those rounds, own dragons within 6 steps of her moved (relative to the intruder's cell / to her cell at round start): {}
+     enemy heads rammed by an own dragon while within 6 steps of her: 0 []
+     episodes: [(103, 103)]
+  episode r103-103:
+    r101 Q(34, 22) L3 ball22 mv N (after her move nearest enemy d5) | en: d4 L2 #228(mv N) | al: -
+    r102 Q(34, 21) L3 ball21 mv E (after her move nearest enemy d3) | en: d4 L2 #228(mv N) | al: -
+    r103 Q(35, 21) L3 ball29 mv N (after her move nearest enemy d3) | en: d2 L2 #228(mv E) | al: -
+    r104 Q(35, 20) L3 ball28 mv N (after her move nearest enemy d5) | en: d4 L2 #228(mv N) | al: d5 L3 #193(mv S)
+
+[2b] OPP queen: 0 rounds / 0 episodes with an enemy head within 3 steps at round start; her orders {}; distance to the nearest enemy head after her own move {}; {}; nearest intruder length {}
+     in those rounds, own dragons within 6 steps of her moved (relative to the intruder's cell / to her cell at round start): {}
+     enemy heads rammed by an own dragon while within 6 steps of her: 0 []
+     episodes: []
+
+[3] QUEEN DEATHS
+  OWN queen alive at the end, len 33
+  ENEMY queen died r34 headon len 3 at [27, 33]
+   her last 12 rounds:
+    r 23 Q(27, 37) L2 ball38 mv N (after her move nearest enemy dNone) | en: - | al: -
+    r 24 Q(27, 36) L2 ball39 mv E (after her move nearest enemy dNone) | en: - | al: -
+    r 25 Q(28, 36) L2 ball36 mv E (after her move nearest enemy dNone) | en: - | al: -
+    r 26 Q(29, 36) L2 ball33 mv N (after her move nearest enemy d7) | en: - | al: - | deaths: #42A L2 headon by #17B L3 from (32, 31) step 3/4; #17B L3 headon
+    r 27 Q(29, 35) L2 ball32 mv N (after her move nearest enemy d8) | en: - | al: -
+    r 28 Q(29, 34) L2 ball31 mv N (after her move nearest enemy d7) | en: - | al: -
+    r 29 Q(29, 33) L2 ball29 mv E (after her move nearest enemy d7) | en: d6 L3 #22(mv S) | al: -
+    r 30 Q(30, 33) L3 ball20 mv S (after her move nearest enemy d7) | en: d6 L3 #22(mv W) | al: -
+    r 31 Q(30, 34) L3 ball23 mv W (after her move nearest enemy d5) | en: d6 L4 #22(SPLIT) | al: -
+    r 32 Q(29, 34) L3 ball31 mv W (after her move nearest enemy d6) | en: d5 L2 #22(mv W), d6 L4 #50(SPLIT) | al: -
+    r 33 Q(28, 34) L3 ball32 mv W (after her move nearest enemy d6) | en: d5 L3 #22(mv S) | al: -
+    r 34 Q(27, 34) L3 ball37 mv N (after her move nearest enemy d6) | en: - | al: - | deaths: #0A L3 headon by #50B L3 from (30, 30) step 5/6; #50B L3 headon
+   killer #50 team B born (24, 17, 2) (round, parent, length at birth); its own splits: [(32, 4, 2, 2)]
+   killer track (round: head, len, path distance to her head, its action): r26:(30, 27) L2 d10 [mv E] r28:(31, 26) L3 d10 [mv W] r29:(30, 26) L3 d8 [mv S] r30:(30, 27) L3 d8 [mv S] r31:(30, 28) L3 d8 [mv S] r32:(30, 29) L4 d6 [SPLIT] r33:(30, 29) L2 d7 [mv S] r34:(30, 30) L3 d7 [mv SSWWSW]
+   killer ate (round:source), last 40 rounds: [(26, 'natural'), (31, 'natural'), (33, 'natural'), (34, 'natural'), (34, 'natural'), (34, 'natural'), (34, 'natural')]
+   rounds (of the 40 before) in which the killer's head had her (any segment) inside its 7x7 square: []
+   number of the killer's team-mates with her inside their 7x7 square, per round: 0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0 8:0 9:0 10:0 11:0 12:0 13:0 14:0 15:0 16:0 17:0 18:0 19:0 20:0 21:0 22:0 23:0 24:0 25:0 26:0 27:0 28:0 29:0 30:1 31:1 32:1 33:1 34:1
+   sonar rays that ended on the killer, per round: (n rays, n from a dragon that had her in view in the last 3 rounds): 
+
+[4] FOLLOWERS: dragons that had the other queen's HEAD inside their 7x7 square (streaks of >= 6 rounds, gaps of <= 2 rounds allowed)
+  own dragons on the ENEMY queen: queen alive 35 rounds; rounds with at least one seer 4; with 2+ seers 0
+  enemy dragons on the OWN queen: queen alive 500 rounds; rounds with at least one seer 17; with 2+ seers 7
+    #190 r91-97 (6 rounds in view) L2->3 path dist min 4 median 5 max 6; next to her head at round start 0x; ate {'enemy_headon': 3}; born (82, 85, 2); end: lost sight / queen died
+    #228 r96-106 (11 rounds in view) L2->2 path dist min 2 median 4 max 4; next to her head at round start 0x; ate nothing; born (93, 190, 2); end: lost sight / queen died
+
+[5] RAM CHANCES on the enemy queen (q3v2): [round, side, id, len, steps, taken, her len, is longest, own queen alive, in view]
+  own side: total 0; in view 0 (taken 0); not in view 0 (taken 0)
+  opp side: total 0; in view 0 (taken 0); not in view 0 (taken 0)
+
+[6] DEATHS OF DRAGONS >= 15 (both teams)
+  r251 opp #514 L18 headon at (30, 32) (team longest then 18) born (234, 506, 3)
+      killer #512 L4 from (32, 32) step 2/2 born (234, 485, 4); its length / path distance before: r241:L2 d5 r246:L3 d12 r248:L3 d4 r249:L4 d4 r250:L4 d5 r251:L4 d2
+      pearls eaten by: #524Ax3(leader), #556Ax2, #524Ax1, #380Bx1, #422Bx1
+  r255 opp #524 L25 headon at (36, 29) (team longest then 25) born (240, 515, 16)
+      killer #380 L4 from (37, 28) step 2/2 born (168, 47, 3); its length / path distance before: r245:L3 d20 r250:L3 d18 r252:L3 d13 r253:L3 d11 r254:L4 d6 r255:L4 d2
+      pearls eaten by: #422Bx2, #415Ax2, #563Ax2, #511Ax2, #543Ax2
+  r269 opp #397 L17 headon at (20, 55) (team longest then 17) born (174, 344, 2)
+      killer #425 L5 from (18, 57) step 4/4 born (189, 207, 2); its length / path distance before: r249:L2 d19 r259:L2 d13 r264:L5 d4 r266:L5 d3 r267:L5 d2 r268:L5 d5 r269:L5 d5
+      pearls eaten by: #516Bx5, #585Bx3, #602Bx1
+  r380 opp #757 L31 noaction at (7, 44) (team longest then 43) born (344, 703, 25) | own queen then: dead
+      pearls eaten by: #832Ax5, #755Ax4, #755Ax3(leader), #876Ax3, #252Ax1
+  r414 opp #862 L46 headon at (12, 28) (team longest then 48) born (409, 755, 46)
+      killer #812 L5 from (10, 30) step 4/4 born (374, 747, 2); its length / path distance before: r411:L5 d5 r412:L5 d4 r413:L5 d4 r414:L5 d4
+      pearls eaten by: #691Bx11, #749Bx8, #252Ax4
+  r430 opp #864 L21 noaction at (11, 52) (team longest then 49) born (409, 849, 16) | own queen then: dead
+      pearls eaten by: #848Ax11
+  r451 opp #896 L47 headon at (28, 59) (team longest then 53) born (443, 848, 46)
+      killer #784 L3 from (26, 59) step 2/2 born (356, 530, 2); its length / path distance before: r446:L3 d6 r448:L3 d6 r449:L3 d6 r450:L3 d2 r451:L3 d2
+      pearls eaten by: #808Bx9, #899Ax8, #923Bx7
+
+[7] FEEDING
+  own: every 25 rounds: leader id, leader len, share of team total, units, queen len
+    r100:#103 L4 2% u62 q3 | r125:#1(Q) L4 2% u61 q4 | r150:#37 L7 4% u62 q6 | r175:#137 L9 5% u62 q7 | r200:#1(Q) L12 6% u62 q12 | r225:#1(Q) L19 10% u61 q19 | r250:#1(Q) L23 11% u62 q23 | r275:#1(Q) L23 12% u60 q23 | r300:#1(Q) L23 11% u62 q23 | r325:#1(Q) L23 11% u60 q23 | r350:#1(Q) L23 12% u53 q23 | r375:#1(Q) L23 10% u59 q23 | r400:#833 L29 12% u57 q23 | r425:#860 L32 11% u60 q25 | r450:#749 L35 12% u55 q29 | r475:#900 L40 11% u47 q33
+    leader (longest non-queen at that moment) eats per 50 rounds: {50: {'natural': 1, 'own_wall': 1}, 100: {'natural': 1, 'own_wall': 1, 'own_self': 3}, 150: {'natural': 2}, 350: {'natural': 2, 'own_wall': 2}, 400: {'own_noaction': 4, 'natural': 5, 'own_wall': 1}, 450: {'own_noaction': 16, 'own_wall': 1}}
+    own non-ram deaths (per 100 rounds, reason, length class): {(0, 'body', '2'): 1, (0, 'body', '3-4'): 2, (0, 'self', '2'): 3, (0, 'self', '3-4'): 4, (0, 'wall', '2'): 7, (0, 'wall', '3-4'): 12, (0, 'wall', '5-9'): 1, (100, 'body', '3-4'): 1, (100, 'noaction', '2'): 3, (100, 'noaction', '3-4'): 3, (100, 'self', '2'): 2, (100, 'self', '3-4'): 5, (100, 'self', '5-9'): 1, (100, 'wall', '2'): 9, (100, 'wall', '3-4'): 11, (100, 'wall', '5-9'): 12, (200, 'body', '2'): 1, (200, 'body', '3-4'): 1, (200, 'noaction', '2'): 3, (200, 'noaction', '3-4'): 6, (200, 'noaction', '5-9'): 2, (200, 'self', '2'): 3, (200, 'self', '3-4'): 7, (200, 'wall', '10-19'): 2, (200, 'wall', '2'): 9, (200, 'wall', '3-4'): 6, (200, 'wall', '5-9'): 16, (300, 'body', '2'): 3, (300, 'body', '3-4'): 6, (300, 'body', '5-9'): 1, (300, 'noaction', '10-19'): 1, (300, 'noaction', '3-4'): 4, (300, 'noaction', '5-9'): 3, (300, 'self', '2'): 3, (300, 'self', '3-4'): 1, (300, 'self', '5-9'): 3, (300, 'wall', '2'): 12, (300, 'wall', '3-4'): 6, (300, 'wall', '5-9'): 4, (400, 'body', '2'): 6, (400, 'body', '3-4'): 1, (400, 'noaction', '10-19'): 2, (400, 'noaction', '2'): 17, (400, 'noaction', '3-4'): 32, (400, 'noaction', '5-9'): 3, (400, 'self', '10-19'): 2, (400, 'self', '2'): 15, (400, 'self', '3-4'): 4, (400, 'wall', '10-19'): 1, (400, 'wall', '2'): 19, (400, 'wall', '3-4'): 7, (400, 'wall', '5-9'): 3}
+    own dragons that died without a ram (per 100 rounds; where; did the head have a free neighbour cell): count, segments, pearls dropped, who ate them
+    r0 elsewhere, no free cell: {'n': 29, 'segments': 80, 'pearls': 49, 'eaten by other own': 44, 'eaten by enemy': 4, 'eaten by leader': 1}
+    r0 nearQ, no free cell: {'n': 1, 'segments': 2, 'pearls': 1, 'eaten by other own': 1}
+    r100 elsewhere, no free cell: {'n': 37, 'segments': 145, 'pearls': 79, 'eaten by other own': 76, 'eaten by leader': 2, 'eaten by enemy': 1}
+    r100 nearLeader, no free cell: {'n': 3, 'segments': 8, 'pearls': 5, 'eaten by leader': 2, 'eaten by other own': 3}
+    r100 nearQ, HAD A FREE CELL: {'n': 6, 'segments': 16, 'pearls': 9, 'eaten by queen': 8, 'eaten by other own': 1}
+    r100 nearQ, no free cell: {'n': 1, 'segments': 3, 'pearls': 2, 'eaten by other own': 2}
+    r200 elsewhere, HAD A FREE CELL: {'n': 2, 'segments': 5, 'pearls': 3, 'eaten by other own': 3}
+    r200 elsewhere, no free cell: {'n': 44, 'segments': 204, 'pearls': 108, 'eaten by other own': 101, 'eaten by queen': 1, 'eaten by enemy': 5}
+    r200 nearQ, HAD A FREE CELL: {'n': 10, 'segments': 33, 'pearls': 20, 'eaten by queen': 13, 'eaten by other own': 7}
+    r300 elsewhere, HAD A FREE CELL: {'n': 4, 'segments': 29, 'pearls': 15, 'eaten by other own': 15}
+    r300 elsewhere, no free cell: {'n': 37, 'segments': 116, 'pearls': 64, 'eaten by other own': 62, 'eaten by enemy': 1}
+    r300 nearLeader, no free cell: {'n': 1, 'segments': 8, 'pearls': 4, 'eaten by leader': 2, 'eaten by other own': 2}
+    r300 nearQ, HAD A FREE CELL: {'n': 4, 'segments': 15, 'pearls': 9, 'eaten by other own': 9}
+    r300 nearQ, no free cell: {'n': 1, 'segments': 3, 'pearls': 2, 'eaten by other own': 2}
+    r400 elsewhere, HAD A FREE CELL: {'n': 39, 'segments': 117, 'pearls': 68, 'eaten by other own': 61, 'eaten by leader': 1}
+    r400 elsewhere, no free cell: {'n': 48, 'segments': 141, 'pearls': 74, 'eaten by other own': 60, 'eaten by leader': 2}
+    r400 nearLeader, HAD A FREE CELL: {'n': 12, 'segments': 47, 'pearls': 28, 'eaten by leader': 19, 'eaten by other own': 7}
+    r400 nearLeader, no free cell: {'n': 2, 'segments': 5, 'pearls': 3, 'eaten by other own': 3}
+    r400 nearQ, HAD A FREE CELL: {'n': 8, 'segments': 22, 'pearls': 14, 'eaten by queen': 4, 'eaten by other own': 9}
+    r400 nearQ, no free cell: {'n': 3, 'segments': 18, 'pearls': 10, 'eaten by other own': 4, 'eaten by queen': 5}
+    reverse splits (before >= 12, parent keeps <= 3): 32; of 20+: [(375, 765, '20->2+18'), (389, 816, '28->2+26'), (408, 833, '31->2+29'), (438, 860, '32->2+30'), (458, 690, '26->2+24'), (460, 749, '35->2+33'), (468, 772, '33->2+31'), (470, 908, '22->2+20'), (471, 935, '21->2+19'), (480, 919, '36->2+34'), (480, 938, '21->2+19'), (484, 900, '51->2+49'), (484, 949, '22->2+20'), (485, 952, '21->2+19'), (486, 948, '41->2+39'), (487, 953, '20->2+18'), (490, 956, '20->2+18'), (493, 955, '41->2+39'), (493, 958, '20->2+18'), (496, 961, '20->2+18'), (499, 964, '20->2+18')]
+    at those reverse splits: {'head had no free cell': 30, 'head had a free cell': 2}; the 2-3-long front part died without a ram within 3 rounds in 26, died in a ram within 5 rounds in 0; the big child died within 1 round in 0
+    other splits of 12+ (parent keeps > 3): [(253, 1, '23->21+2'), (254, 1, '21->19+2'), (255, 1, '19->17+2'), (363, 772, '12->10+2'), (406, 690, '12->10+2'), (450, 891, '35->14+21'), (452, 901, '12->10+2'), (467, 915, '25->12+13'), (469, 928, '15->6+9')]
+  opp: every 25 rounds: leader id, leader len, share of team total, units, queen len
+    r100:#218 L5 3% u62 q0 | r125:#302 L5 3% u62 q0 | r150:#131 L7 3% u62 q0 | r175:#123 L13 6% u62 q0 | r200:#447 L14 7% u62 q0 | r225:#475 L26 12% u62 q0 | r250:#514 L15 7% u62 q0 | r275:#543 L17 8% u61 q0 | r300:#621 L18 8% u62 q0 | r325:#393 L31 13% u62 q0 | r350:#760 L40 16% u55 q0 | r375:#760 L42 16% u36 q0 | r400:#755 L48 21% u19 q0 | r425:#832 L48 25% u14 q0 | r450:#876 L53 28% u7 q0 | r475:#914 L59 44% u5 q0
+    leader (longest non-queen at that moment) eats per 50 rounds: {0: {'own_noaction': 1, 'natural': 2}, 50: {'natural': 5, 'own_headon': 1, 'own_noaction': 1}, 100: {'own_noaction': 6, 'own_headon': 1, 'enemy_headon': 1, 'natural': 5}, 150: {'own_noaction': 6, 'natural': 6, 'enemy_headon': 1, 'own_headon': 1}, 200: {'natural': 9, 'own_noaction': 12, 'own_headon': 3, 'enemy_headon': 1}, 250: {'natural': 15, 'own_noaction': 5, 'enemy_headon': 3, 'own_headon': 4, 'enemy_self': 2}, 300: {'natural': 4, 'own_noaction': 21}, 350: {'own_noaction': 5, 'natural': 2}, 400: {'natural': 4, 'own_noaction': 2}, 450: {'own_noaction': 9, 'natural': 1}}
+    own non-ram deaths (per 100 rounds, reason, length class): {(0, 'noaction', '2'): 35, (0, 'noaction', '3-4'): 4, (100, 'noaction', '10-19'): 1, (100, 'noaction', '2'): 25, (100, 'noaction', '3-4'): 28, (100, 'noaction', '5-9'): 29, (200, 'noaction', '10-19'): 1, (200, 'noaction', '2'): 21, (200, 'noaction', '3-4'): 23, (200, 'noaction', '5-9'): 19, (300, 'noaction', '2'): 77, (300, 'noaction', '20+'): 1, (300, 'noaction', '3-4'): 49, (300, 'noaction', '5-9'): 4, (400, 'noaction', '10-19'): 1, (400, 'noaction', '2'): 18, (400, 'noaction', '20+'): 1, (400, 'noaction', '3-4'): 10, (400, 'noaction', '5-9'): 5}
+    own dragons that died without a ram (per 100 rounds; where; did the head have a free neighbour cell): count, segments, pearls dropped, who ate them
+    r0 elsewhere, no free cell: {'n': 35, 'segments': 73, 'pearls': 38, 'eaten by other own': 36, 'eaten by leader': 2}
+    r0 nearLeader, no free cell: {'n': 4, 'segments': 9, 'pearls': 5, 'eaten by other own': 5}
+    r100 elsewhere, no free cell: {'n': 74, 'segments': 318, 'pearls': 175, 'eaten by other own': 150, 'eaten by leader': 17, 'eaten by enemy': 6}
+    r100 nearLeader, no free cell: {'n': 9, 'segments': 29, 'pearls': 15, 'eaten by other own': 13, 'eaten by enemy': 2}
+    r200 elsewhere, no free cell: {'n': 54, 'segments': 221, 'pearls': 120, 'eaten by other own': 111, 'eaten by enemy': 3, 'eaten by leader': 4}
+    r200 nearLeader, no free cell: {'n': 10, 'segments': 39, 'pearls': 21, 'eaten by leader': 8, 'eaten by other own': 13}
+    r300 elsewhere, HAD A FREE CELL: {'n': 46, 'segments': 154, 'pearls': 87, 'eaten by other own': 80, 'eaten by leader': 5, 'eaten by enemy': 1}
+    r300 elsewhere, no free cell: {'n': 65, 'segments': 164, 'pearls': 90, 'eaten by other own': 81, 'eaten by enemy': 7}
+    r300 nearLeader, HAD A FREE CELL: {'n': 15, 'segments': 37, 'pearls': 22, 'eaten by leader': 19, 'eaten by other own': 3}
+    r300 nearLeader, no free cell: {'n': 5, 'segments': 10, 'pearls': 5, 'eaten by other own': 3, 'eaten by leader': 2}
+    r400 elsewhere, HAD A FREE CELL: {'n': 14, 'segments': 48, 'pearls': 27, 'eaten by other own': 27}
+    r400 elsewhere, no free cell: {'n': 16, 'segments': 35, 'pearls': 19, 'eaten by other own': 11, 'eaten by enemy': 2, 'eaten by leader': 3}
+    r400 nearLeader, HAD A FREE CELL: {'n': 5, 'segments': 45, 'pearls': 24, 'eaten by leader': 8, 'eaten by other own': 16}
+    reverse splits (before >= 12, parent keeps <= 3): 33; of 20+: [(229, 475, '22->2+20'), (286, 543, '25->2+23'), (290, 608, '20->2+18'), (323, 261, '22->2+20'), (326, 393, '31->2+29'), (343, 649, '30->2+28'), (344, 703, '27->2+25'), (345, 707, '38->2+36'), (389, 760, '43->2+41'), (389, 827, '20->2+18'), (400, 834, '22->2+20'), (409, 755, '48->2+46'), (425, 832, '48->2+46'), (434, 689, '49->2+47'), (443, 848, '48->2+46'), (453, 876, '53->2+51'), (457, 907, '52->2+50'), (470, 733, '24->2+22'), (470, 885, '47->2+45'), (480, 914, '59->2+57')]
+    at those reverse splits: {'head had no free cell': 31, 'head had a free cell': 2}; the 2-3-long front part died without a ram within 3 rounds in 27, died in a ram within 5 rounds in 0; the big child died within 1 round in 1
+    other splits of 12+ (parent keeps > 3): [(172, 123, '13->11+2'), (179, 123, '15->13+2'), (181, 123, '13->11+2'), (182, 345, '13->11+2'), (206, 447, '20->18+2'), (208, 447, '19->16+3'), (218, 475, '24->22+2'), (225, 475, '26->24+2'), (226, 475, '24->22+2'), (234, 506, '22->19+3'), (239, 515, '21->18+3'), (248, 524, '17->15+2'), (289, 608, '23->20+3'), (299, 621, '21->18+3'), (302, 642, '16->13+3'), (471, 899, '21->11+10')]

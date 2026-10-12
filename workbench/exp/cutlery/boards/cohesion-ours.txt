@@ -1,0 +1,94 @@
+game cand-merge2-online-r3 map Trophy/a us=A result {"winner":"B","end":"teamEliminated"}
+tags(our turns): {"sx":0,"sr":0,"sd":0,"sf":0,"sq":0,"sc":0,"sk":0,"esc":1,"split":1}
+timeline r | our units / longest / total | their units / longest / total
+  r  0 |   2 /   3 /    6 |   2 /   3 /    6
+  r 25 |   2 /   3 /    6 |   8 /   4 /   19
+  r 50 |   2 /  10 /   15 |  18 /   3 /   42
+  r 75 |   3 /  13 /   24 |  25 /   4 /   63
+  r100 |   7 /   5 /   22 |  42 /   3 /  101
+  r125 |   4 /   3 /    9 |  53 /   4 /  127
+local feeds (sf) 0: first 12 → 
+--- r25: ours 2 dragons [3 3] total 6 | theirs 8 [4 3 2 2 2 2 2 2] total 19
++-------------------------+
+|          x   X          |
+|          X   o          |
+|                         |
+|                         |
+|    .3                   |
+|    .  o    x    o       |
+|              Xx         |
+|         X x             |
+|         x Xo            |
+|           xxx           |
+| o         X X         o |
+|                         |
+|  o                   o  |
+|   o                 o   |
+|                         |
+|                         |
+|                         |
+|                         |
+|                         |
+|           o o           |
+|                         |
+|                         |
+|.           X           .|
+|3         x              |
+|          x   x          |
++-------------------------+
+--- r50: ours 2 dragons [10 5] total 15 | theirs 18 [3 3 3 3 3 3 2 2 …] total 42
++-------------------------+
+|                         |
+|                         |
+|      o           o      |
+|                         |
+|                         |
+|           xX            |
+|        Xx            o  |
+| o.        XX        o o |
+| ..       xxx            |
+| . o    xXx xxx      o o |
+| .      X Xx xXx       o |
+| ..         XX X       o |
+|  ..        xx        o  |
+|   #     X   X       o   |
+|   o     x  xX       o   |
+|                         |
+|                         |
+|                         |
+|         X X             |
+|         x xx            |
+|  o      x            ...|
+|           xX         . 5|
+|             x           |
+|             x           |
+|  o          X           |
++-------------------------+
+--- r100: ours 7 dragons [5 4 4 3 2 2 2] total 22 | theirs 42 [3 3 3 3 3 3 3 3 …] total 101
++-------------------------+
+|   X            X        |
+|   x                     |
+|    xX               xX  |
+|x                        |
+|x        x               |
+|X  Xx    X               |
+|    x     XxX xX   X     |
+|    o     xx x     xx    |
+|   ..        X xX    x   |
+|   5..  X   oxX  xX  x   |
+|  ..42  x  x Xxx   xXXxX |
+| .. 23    Xx          x  |
+|    ...  xX        xX    |
+|   ..2.            X     |
+|    .4             x  xx |
+| x  X                 X  |
+| X  xXx x      x xX    X |
+|        xX     xX  x   xx|
+|x                x x     |
+|x       xx       X X    X|
+|        X            xX  |
+|X             x   x      |
+|x             xX  X      |
+|x                      x |
+|              xXx      X |
++-------------------------+

@@ -1,0 +1,75 @@
+{
+  "keys": 68,
+  "status": {
+    "matched": 48,
+    "no_divergence": 20
+  },
+  "tables": {
+    "changed": {
+      "1": {
+        "harm": 0,
+        "help": 0,
+        "both": 0,
+        "neither": 48,
+        "censored": 0
+      },
+      "3": {
+        "harm": 0,
+        "help": 0,
+        "both": 0,
+        "neither": 48,
+        "censored": 0
+      },
+      "10": {
+        "harm": 0,
+        "help": 0,
+        "both": 4,
+        "neither": 44,
+        "censored": 0
+      }
+    },
+    "queen": {
+      "10": {
+        "harm": 0,
+        "help": 0,
+        "both": 9,
+        "neither": 39,
+        "censored": 0
+      },
+      "50": {
+        "harm": 1,
+        "help": 6,
+        "both": 12,
+        "neither": 28,
+        "censored": 1
+      }
+    }
+  },
+  "stateMismatches": [],
+  "errors": [],
+  "noDivergence": [
+    "bot-hunter:gen_L_02:A:1",
+    "bot-hunter:gen_L_02:B:1",
+    "bot-hunter:gen_R_01:A:1",
+    "bot-hunter:gen_R_01:B:1",
+    "bot-hunter:gen_S_03:A:1",
+    "bot-hunter:gen_S_03:B:1",
+    "proxy4_king:Colosseum:B:1",
+    "proxy4_king:arena:A:1",
+    "proxy4_king:gen_L_02:A:1",
+    "proxy4_king:gen_L_02:B:1",
+    "proxy4_king:gen_M_03:A:1",
+    "proxy4_king:gen_M_07:A:1",
+    "proxy4_king:gen_M_07:B:1",
+    "proxy4_king:gen_R_01:A:1",
+    "proxy4_king:gen_R_01:B:1",
+    "proxy4_king:gen_S_03:A:1",
+    "proxy4_king:gen_S_03:B:1",
+    "proxy4_king:stripes:A:1",
+    "proxy4_king:stripes:B:1",
+    "proxy4_king:trophy:A:1"
+  ],
+  "firstTurnMismatches": [],
+  "priorInfoDifferences": [],
+  "queenDeadBeforeFork": 7
+}

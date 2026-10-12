@@ -1,0 +1,9 @@
+2026-10-09T01:34:15.273152+09:00
+64 maps: 8 families × 8; 32 inside the measured numeric ladder envelope, 32 outside but legal.
+Static checks: declared tile/edge/body symmetry, portal pairing and orientation, contiguous nonoverlapping starting bodies, pearl reachability for every start, at least one immediately free first step for every start.
+Loader: 64/64 accepted by installed engine 1.2.7, no correction notices. Abort on first spawn; 0 bot processes and 0 turns.
+Deterministic rerun: PYTHONDONTWRITEBYTECODE=1 ~/meow-redteam/engine/venv/bin/python data/codex/astra/mapgen/gen.py --seed 910900
+Could not validate: actual gameplay, bot CPU, competitive balance, or eventual survival (no games authorized). Reachability is topological, not a strategy guaranteeing survival. Current server pearl timers are not independently verified; ladder reconstructions can contain estimates. The requested nice -n 10 command was attempted; this sandbox reports setpriority Operation not permitted. Diagonal symmetry is not legal; rotation family uses engine-supported xy (180°). All generated maps use xy.
+Roster discrepancy resolved from offline one5-w1.json: 15 current names vs 19 historical maps.json records; table uses actual local files and labels provenance. Lone length-4 queen is requested by the brief but absent from the 15 local configurations; included as legal outside-range coverage.
+Output only under data/codex/astra/mapgen/. No analysis report, no card, no network, no games.
+Determinism checked: a second complete generation and loader validation at seed 910900 produced byte-identical SHA-256 hashes for all 64 maps (determinism.json).

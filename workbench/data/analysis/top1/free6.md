@@ -1,0 +1,1 @@
+Sub-session subC.md has finished (ran 11:39-12:56 KST, exit code 0). What it printed is in subC.out (3123 bytes). The .md files in this directory written while it ran: redteam.md x_p0_head.md x_p1_c1.md x_p2_c2.md x_p3_c3.md x_p4_c4.md x_p4b_foot.md x_p5_pair.md x_p6_pick.md x_p7_corr.md x_p8_unknown.md x_p9_counts.md.

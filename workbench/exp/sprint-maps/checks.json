@@ -1,0 +1,227 @@
+{
+  "at": "2026-10-01T11:42:49.324Z",
+  "tests": [
+    {
+      "name": "official viewer map parser round-trip retains gap support, wrap edges, nonconsecutive portal id and dragon order",
+      "pass": true
+    },
+    {
+      "name": "south/east boundary aliases normalize to north/west without losing kelp",
+      "pass": true
+    },
+    {
+      "name": "twenty actual unredacted replays exactly match all ten known a-layout tile gaps and geometry",
+      "pass": true
+    },
+    {
+      "name": "all ten known names and all fifteen layouts have >=2 distinct replay games and exact geometry",
+      "pass": true
+    },
+    {
+      "name": "224 sprint metadata games each included once; all seven map ids agree with brief",
+      "pass": true
+    },
+    {
+      "name": "all seven graphs agree with independent directional portal-aware graph",
+      "pass": true
+    },
+    {
+      "name": "all saved hashes and histogram/core/chain accounting match census",
+      "pass": true
+    },
+    {
+      "name": "20 existing maps plus 35 generated maps and S/M/L/R/X family counts",
+      "pass": true
+    }
+  ],
+  "graphs": [
+    {
+      "name": "Australia",
+      "tiles": 4096,
+      "mismatches": 0
+    },
+    {
+      "name": "Islands",
+      "tiles": 2240,
+      "mismatches": 0
+    },
+    {
+      "name": "Maze",
+      "tiles": 1152,
+      "mismatches": 0
+    },
+    {
+      "name": "Stripes",
+      "tiles": 288,
+      "mismatches": 0
+    },
+    {
+      "name": "Tower Defense",
+      "tiles": 512,
+      "mismatches": 0
+    },
+    {
+      "name": "Around UNSW",
+      "tiles": 4096,
+      "mismatches": 0
+    },
+    {
+      "name": "weakhold",
+      "tiles": 600,
+      "mismatches": 0
+    }
+  ],
+  "gapEstimatorKnownMapQA": [
+    {
+      "name": "Autarky",
+      "layout": "a",
+      "games": 4,
+      "exactTileShare": 0.8148148148148149,
+      "minGapMAE": 18.746913580246915,
+      "maxGapMAE": 28.85185185185185,
+      "spawnClassificationErrors": 0,
+      "fountainClassificationErrors": 0
+    },
+    {
+      "name": "Default",
+      "layout": "a",
+      "games": 4,
+      "exactTileShare": 0,
+      "minGapMAE": 54.41796875,
+      "maxGapMAE": 2791.927734375,
+      "spawnClassificationErrors": 540,
+      "fountainClassificationErrors": 0
+    },
+    {
+      "name": "Devil",
+      "layout": "a",
+      "games": 4,
+      "exactTileShare": 0.6953125,
+      "minGapMAE": 29.04296875,
+      "maxGapMAE": 53.84765625,
+      "spawnClassificationErrors": 4,
+      "fountainClassificationErrors": 0
+    },
+    {
+      "name": "Portals",
+      "layout": "a",
+      "games": 4,
+      "exactTileShare": 0.8671875,
+      "minGapMAE": 0.1875,
+      "maxGapMAE": 0.26171875,
+      "spawnClassificationErrors": 0,
+      "fountainClassificationErrors": 0
+    },
+    {
+      "name": "Prisoners Dilemma",
+      "layout": "a",
+      "games": 4,
+      "exactTileShare": 0.8515625,
+      "minGapMAE": 42.890625,
+      "maxGapMAE": 52.109375,
+      "spawnClassificationErrors": 76,
+      "fountainClassificationErrors": 0
+    },
+    {
+      "name": "Queen Of Spades",
+      "layout": "a",
+      "games": 4,
+      "exactTileShare": 0.4948571428571429,
+      "minGapMAE": 31.856,
+      "maxGapMAE": 316.60571428571427,
+      "spawnClassificationErrors": 136,
+      "fountainClassificationErrors": 0
+    },
+    {
+      "name": "Schooltime",
+      "layout": "a",
+      "games": 4,
+      "exactTileShare": 0.8783333333333333,
+      "minGapMAE": 0.8941666666666667,
+      "maxGapMAE": 2.033333333333333,
+      "spawnClassificationErrors": 0,
+      "fountainClassificationErrors": 0
+    },
+    {
+      "name": "Slithery Fight",
+      "layout": "a",
+      "games": 4,
+      "exactTileShare": 0.8459729570840682,
+      "minGapMAE": 11.305114638447971,
+      "maxGapMAE": 191.47325102880657,
+      "spawnClassificationErrors": 70,
+      "fountainClassificationErrors": 0
+    },
+    {
+      "name": "Trauma",
+      "layout": "a",
+      "games": 4,
+      "exactTileShare": 0.8871527777777778,
+      "minGapMAE": 2.064236111111111,
+      "maxGapMAE": 3.220486111111111,
+      "spawnClassificationErrors": 0,
+      "fountainClassificationErrors": 0
+    },
+    {
+      "name": "Trophy",
+      "layout": "a",
+      "games": 4,
+      "exactTileShare": 0,
+      "minGapMAE": 30.4272,
+      "maxGapMAE": 844.3888,
+      "spawnClassificationErrors": 348,
+      "fountainClassificationErrors": 1
+    },
+    {
+      "name": "Devil",
+      "layout": "b",
+      "games": 4,
+      "exactTileShare": 0.890625,
+      "minGapMAE": 2.2265625,
+      "maxGapMAE": 17.94921875,
+      "spawnClassificationErrors": 16,
+      "fountainClassificationErrors": 0
+    },
+    {
+      "name": "Prisoners Dilemma",
+      "layout": "10",
+      "games": 4,
+      "exactTileShare": 0.8671875,
+      "minGapMAE": 6.19140625,
+      "maxGapMAE": 5.75390625,
+      "spawnClassificationErrors": 2,
+      "fountainClassificationErrors": 2
+    },
+    {
+      "name": "Queen Of Spades",
+      "layout": "b",
+      "games": 4,
+      "exactTileShare": 0.5862857142857143,
+      "minGapMAE": 16.016,
+      "maxGapMAE": 291.23885714285717,
+      "spawnClassificationErrors": 164,
+      "fountainClassificationErrors": 0
+    },
+    {
+      "name": "Schooltime",
+      "layout": "b",
+      "games": 4,
+      "exactTileShare": 0.9283333333333333,
+      "minGapMAE": 1.6741666666666666,
+      "maxGapMAE": 2.1191666666666666,
+      "spawnClassificationErrors": 0,
+      "fountainClassificationErrors": 0
+    },
+    {
+      "name": "Slithery Fight",
+      "layout": "b",
+      "games": 4,
+      "exactTileShare": 0.8342151675485009,
+      "minGapMAE": 5.164021164021164,
+      "maxGapMAE": 37.24867724867725,
+      "spawnClassificationErrors": 10,
+      "fountainClassificationErrors": 0
+    }
+  ],
+  "allPassed": true
+}

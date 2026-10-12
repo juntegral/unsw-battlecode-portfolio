@@ -1,0 +1,117 @@
+games loaded 660 errors 0 []
+codes: {'v31': 410, 'other': 40, 'main': 210} | unranked: 0 | no battle record: 0
+rebuild checks over main and v31 games: final state differs from result block in 0, drop count mismatches 0, anomalies {}
+
+F11 recount from raw replays. Share = our pearls / both sides, raw rounds 101-300, pooled (sum then divide).
+layouts (W, H, open tiles by my own count, dragons per side at start, games):
+   Around UNSW #1         [64, 64, 4096, 10, 41]  LARGE
+   Australia #1           [64, 64, 4096, 9, 38]  LARGE
+   Schooltime #1          [60, 40, 2376, 3, 22]  LARGE
+   Schooltime #2          [60, 40, 2376, 3, 19]  LARGE
+   Islands #1             [56, 40, 2226, 5, 26]  LARGE
+   Slithery Fight #1      [63, 27, 1699, 7, 37]
+   Trauma #1              [48, 24, 1152, 2, 36]
+   Maze #1                [48, 24, 1152, 2, 40]
+   Default #1             [32, 32, 1024, 4, 30]
+   Autarky #1             [54, 18, 972, 6, 37]
+   Queen Of Spades #1     [25, 35, 875, 2, 43]
+   Trophy #1              [25, 25, 625, 2, 31]
+   weakhold #1            [40, 15, 600, 2, 39]
+   Prisoners Dilemma #1   [32, 16, 512, 5, 21]
+   Devil #1               [32, 16, 512, 3, 42]
+   Portals #1             [32, 16, 512, 3, 34]
+   Tower Defense #1       [32, 16, 512, 2, 37]
+   Prisoners Dilemma #2   [32, 16, 512, 3, 13]
+   Stripes #1             [24, 12, 288, 2, 34]
+[main large] games 51, wins 20, pearls r101-300 ours 17729 theirs 35349, share 0.334 (game bootstrap 95% 0.300 to 0.368); games that never reached r101: 0
+[main other] games 159, wins 98, pearls r101-300 ours 40066 theirs 45031, share 0.471 (game bootstrap 95% 0.438 to 0.504); games that never reached r101: 9
+[main] large minus other = -0.137; game-label permutation: 0 of 2000 shuffles give a gap this large
+[main] wins: large 20 of 51 = 0.392 (95% 0.27 to 0.53), other 98 of 159 = 0.616 (95% 0.54 to 0.69), Fisher p = 0.0059
+[main] per layout, lowest share first (games, wins, ours, theirs, share):
+    1 Tower Defense #1        15   5    363   3836 0.086
+    2 Stripes #1               8   2     80    442 0.153
+    3 Islands #1               9   0   2374   7429 0.242  LARGE
+    4 Australia #1            10   2   2536   6720 0.274  LARGE
+    5 Prisoners Dilemma #1     3   2      6     14 0.300
+    6 Schooltime #1           11   3   1304   2921 0.309  LARGE
+    7 Trauma #1               19  10   3247   5820 0.358
+    8 Prisoners Dilemma #2     6   4     98    171 0.364
+    9 Around UNSW #1          15  10   7749  13253 0.369  LARGE
+   10 Slithery Fight #1       13   7  10308  15481 0.400
+   11 Schooltime #2            6   5   3766   5026 0.428  LARGE
+   12 Maze #1                 16  12   7293   8729 0.455
+   13 weakhold #1             10   6   2743   2036 0.574
+   14 Portals #1               7   4   5245   3726 0.585
+   15 Default #1              15  11   2700   1771 0.604
+   16 Queen Of Spades #1      17  11   1668   1029 0.618
+   17 Trophy #1                7   4    544    232 0.701
+   18 Autarky #1               9   8   2258    747 0.751
+   19 Devil #1                14  12   3513    997 0.779
+[main] layout-level check: of 11628 ways to pick 5 of 19 layouts, 606 give a pooled share as low as the large set (0.334)
+[main band <1700 large] games 0, ours 0 theirs 0, share no games
+[main band <1700 other] games 0, ours 0 theirs 0, share no games
+[main band 1700-1899 large] games 18, ours 7211 theirs 11603, share 0.383 (game bootstrap 95% 0.319 to 0.442)
+[main band 1700-1899 other] games 52, ours 14071 theirs 14594, share 0.491 (game bootstrap 95% 0.438 to 0.565)
+[main band 1900-2099 large] games 30, ours 9634 theirs 21166, share 0.313 (game bootstrap 95% 0.274 to 0.349)
+[main band 1900-2099 other] games 100, ours 24242 theirs 27313, share 0.470 (game bootstrap 95% 0.428 to 0.522)
+[main band 2100+ large] games 3, ours 884 theirs 2580, share 0.255 (game bootstrap 95% 0.216 to 0.300)
+[main band 2100+ other] games 7, ours 1753 theirs 3124, share 0.359 (game bootstrap 95% 0.089 to 0.423)
+[main] other windows, r0-100: large 0.430 (game bootstrap 95% 0.393 to 0.466), other 0.516 (game bootstrap 95% 0.490 to 0.540)
+[main] other windows, r301-499: large 0.329 (game bootstrap 95% 0.284 to 0.376), other 0.403 (game bootstrap 95% 0.365 to 0.437)
+[main] our share of dragons alive after r100 (pooled): large 0.476, other 0.507
+[main] our share of dragons alive after r200 (pooled): large 0.426, other 0.510
+[main] our share of total length after r100 (pooled): large 0.463, other 0.507
+[main] large without Schooltime (the sealed-queen layouts): games 34, share 0.316 (game bootstrap 95% 0.280 to 0.354)
+[main] large without the three games with the biggest deficit [(1248527, 'Australia', (155, 957)), (1251727, 'Around UNSW', (340, 1129)), (1255622, 'Islands', (144, 895))]: share 0.346
+[main] large, leave one opp out: share 0.326 to 0.343 (21 groups)
+[main] opponents with 3+ large games: 8; of them with share under 0.45: 8; under 0.40: 8
+[main] large, leave one evening out: share 0.328 to 0.340 (3 groups)
+[main] large by evening (games, share): 10-06a 1 0.356; 10-06b 25 0.327; 10-07a 25 0.340
+[main] per-game share median: large 0.330 (51 games with pearls), other 0.501 (150); large games with share under 0.5: 46
+
+[v31 large] games 95, wins 37, pearls r101-300 ours 36495 theirs 70533, share 0.341 (game bootstrap 95% 0.317 to 0.366); games that never reached r101: 0
+[v31 other] games 315, wins 166, pearls r101-300 ours 78842 theirs 87983, share 0.473 (game bootstrap 95% 0.446 to 0.500); games that never reached r101: 25
+[v31] large minus other = -0.132; game-label permutation: 0 of 2000 shuffles give a gap this large
+[v31] wins: large 37 of 95 = 0.389 (95% 0.30 to 0.49), other 166 of 315 = 0.527 (95% 0.47 to 0.58), Fisher p = 0.0196
+[v31] per layout, lowest share first (games, wins, ours, theirs, share):
+    1 Tower Defense #1        22   2    422   5110 0.076
+    2 Schooltime #1           11   1   1252   3512 0.263  LARGE
+    3 Islands #1              17   1   5749  13381 0.301  LARGE
+    4 Stripes #1              26   9    575   1206 0.323
+    5 Trophy #1               24  14    779   1590 0.329
+    6 Around UNSW #1          26  14  12374  24890 0.332  LARGE
+    7 Australia #1            28   9   9642  17332 0.357  LARGE
+    8 Queen Of Spades #1      26  12   2004   3447 0.368
+    9 Slithery Fight #1       24  11  18132  29744 0.379
+   10 Schooltime #2           13  12   7478  11418 0.396  LARGE
+   11 Prisoners Dilemma #2     7   4    155    220 0.413
+   12 Trauma #1               17  11   3518   4583 0.434
+   13 Devil #1                28  19   4049   4390 0.480
+   14 Maze #1                 24  14  11924  11954 0.499
+   15 Prisoners Dilemma #1    18  14    307    268 0.534
+   16 Default #1              15   8   2641   2081 0.559
+   17 Portals #1              27  13  19526  15111 0.564
+   18 Autarky #1              28  17   6886   3983 0.634
+   19 weakhold #1             29  18   7924   4296 0.648
+[v31] layout-level check: of 11628 ways to pick 5 of 19 layouts, 687 give a pooled share as low as the large set (0.341)
+[v31 band <1700 large] games 2, ours 1000 theirs 801, share 0.555 (game bootstrap 95% 0.482 to 0.615)
+[v31 band <1700 other] games 13, ours 4100 theirs 5035, share 0.449 (game bootstrap 95% 0.354 to 0.608)
+[v31 band 1700-1899 large] games 43, ours 18055 theirs 29978, share 0.376 (game bootstrap 95% 0.344 to 0.409)
+[v31 band 1700-1899 other] games 167, ours 41259 theirs 41555, share 0.498 (game bootstrap 95% 0.459 to 0.540)
+[v31 band 1900-2099 large] games 37, ours 14404 theirs 28142, share 0.339 (game bootstrap 95% 0.303 to 0.372)
+[v31 band 1900-2099 other] games 98, ours 23305 theirs 25960, share 0.473 (game bootstrap 95% 0.428 to 0.524)
+[v31 band 2100+ large] games 13, ours 3036 theirs 11612, share 0.207 (game bootstrap 95% 0.140 to 0.257)
+[v31 band 2100+ other] games 37, ours 10178 theirs 15433, share 0.397 (game bootstrap 95% 0.331 to 0.460)
+[v31] other windows, r0-100: large 0.442 (game bootstrap 95% 0.413 to 0.470), other 0.520 (game bootstrap 95% 0.498 to 0.540)
+[v31] other windows, r301-499: large 0.313 (game bootstrap 95% 0.283 to 0.348), other 0.428 (game bootstrap 95% 0.402 to 0.455)
+[v31] our share of dragons alive after r100 (pooled): large 0.493, other 0.515
+[v31] our share of dragons alive after r200 (pooled): large 0.425, other 0.488
+[v31] our share of total length after r100 (pooled): large 0.485, other 0.515
+[v31] large without Schooltime (the sealed-queen layouts): games 71, share 0.333 (game bootstrap 95% 0.308 to 0.361)
+[v31] large without the three games with the biggest deficit [(1163745, 'Australia', (78, 1056)), (1200919, 'Islands', (112, 1027)), (1188177, 'Schooltime', (368, 1243))]: share 0.348
+[v31] large, leave one opp out: share 0.336 to 0.348 (38 groups)
+[v31] opponents with 3+ large games: 15; of them with share under 0.45: 14; under 0.40: 12
+[v31] large, leave one evening out: share 0.336 to 0.348 (2 groups)
+[v31] large by evening (games, share): 10-06a 57 0.336; 10-06b 38 0.348
+[v31] per-game share median: large 0.333 (95 games with pearls), other 0.496 (289); large games with share under 0.5: 87
+

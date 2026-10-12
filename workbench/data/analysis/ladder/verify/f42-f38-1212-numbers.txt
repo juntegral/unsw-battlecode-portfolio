@@ -1,0 +1,285 @@
+games read 825 errors 0 []
+final state equals the result block in 825 of 825 ; body tiles consistent in 825 ; anomalies {} ; portals that cannot be followed 0
+codes {'v31': 410, 'other': 40, 'main': 375}  ranked {'True': 825}
+dead-end layouts in maps.json: ['Schooltime #1', 'Schooltime #2', 'Slithery Fight #1']
+============================== F42
+
+-- main games 375 ranked 375 full length (raw round 499) 228 full length on free layouts 176
+   full games on free layouts by queens at end and result: {'both alive / loss': 6, 'both alive / win': 15, 'both dead / loss': 44, 'both dead / win': 57, 'only ours / win': 13, 'only theirs / loss': 41}
+main                                         15 of 41 (0.366)   interval 0.24 to 0.52
+   kept games that are not losses: 0
+   equal longest in kept: 0   ours shorter: 26
+main half 1                                  6 of 13 (0.462)   interval 0.23 to 0.71
+main half 2                                  9 of 28 (0.321)   interval 0.18 to 0.51
+main under 1700                              0 of 0 (n/a)   interval n/a
+main 1700-1899                               6 of 12 (0.500)   interval 0.25 to 0.75
+main 1900-2099                               7 of 21 (0.333)   interval 0.17 to 0.55
+main 2100 on                                 2 of 8 (0.250)   interval 0.07 to 0.59
+   by layout (flagged of kept): Tower Defense #1 2 of 8, Around UNSW #1 2 of 7, Portals #1 4 of 6, Maze #1 3 of 6, Trauma #1 1 of 4, Australia #1 1 of 3, weakhold #1 1 of 3, Prisoners Dilemma #2 1 of 1, Autarky #1 0 of 1, Islands #1 0 of 1, Stripes #1 0 of 1
+   flagged by layout: Portals #1 4, Maze #1 3, Tower Defense #1 2, Around UNSW #1 2, Trauma #1 1, Prisoners Dilemma #2 1, weakhold #1 1, Australia #1 1
+   by opponent (flagged of kept): ComTamSuonNuong (193) 0 of 4, Settlers of Battlecode (258) 1 of 4, byte_force (959) 2 of 3, Goated (733) 2 of 3, Computers (112) 1 of 2, :3 (217) 2 of 2, dev test 1 :P (545) 0 of 2, Proof by Intimidation (465) 0 of 2, y (71) 0 of 2, 中国人不准飞😡😡😡😡😡😡😡 (791) 1 of 1, doofenshmirtz good incorporated (1015) 1 of 1, Knight Capital (226) 0 of 1, 1 (231) 0 of 1, Memory? (1097) 1 of 1, Nitronics (837) 0 of 1, Um_nik da real goat (538) 0 of 1, TheActualPlayer (1132) 0 of 1, SilverSamurai (28) 0 of 1, gdggs (64) 0 of 1, Bot (11) 1 of 1, Adrak vali chai (977) 0 of 1, AllRed (40) 1 of 1, UnderTheC (328) 1 of 1, Kamikaze (63) 0 of 1, Maccas (762) 1 of 1, Wapowpow (879) 0 of 1
+   by KST date: 2026-10-06 6 of 13, 2026-10-07 9 of 28
+   battles with a kept game: 33  battle bootstrap of the share: 0.22 to 0.51
+   one opponent left out: 0.333 (:3 (217), 13 of 39) to 0.405 (ComTamSuonNuong (193), 15 of 37)
+   one layout left out: 0.314 (Portals #1, 11 of 35) to 0.394 (Tower Defense #1, 13 of 33)
+   three flagged games removed: 12 of 38 (0.316)
+   flagged games:
+   game battle layout | opponent rating | our longest, their longest (margin) | their queen | our total, their total | alive ours, theirs | our queen died r, cause, length, killer side | kst
+   1182279 1182278 Portals #1 | 中国人不准飞😡😡😡😡😡😡😡 (791) 1810 | 43, 13 (+30) | 3 | 48, 107 | 3, 29 | r78, own body, 2, by 0, their longest then 3, ours 4 | 2026-10-06T07
+   1233594 1233593 Maze #1 | doofenshmirtz good incorporated (1015) 1783 | 36, 34 (+2) | 32 | 172, 123 | 41, 9 | r172, wall, 2, by 0, their longest then 8, ours 4 | 2026-10-06T19
+   1240022 1240020 Trauma #1 | Computers (112) 2080 | 28, 25 (+3) | 25 (their longest) | 30, 110 | 2, 28 | r381, head-on, 21, by 2, their longest then 6, ours 7 | 2026-10-06T20
+   1240738 1240735 Prisoners Dilemma #2 | :3 (217) 1936 | 33, 14 (+19) | 14 (their longest) | 35, 43 | 2, 11 | r90, other dragon body, 3, by 1, their longest then 11, ours 3 | 2026-10-06T20
+   1241402 1241400 Tower Defense #1 | :3 (217) 1934 | 21, 18 (+3) | 7 | 21, 113 | 1, 13 | r257, head-on, 2, by 2, their longest then 4, ours 3 | 2026-10-06T21
+   1251727 1251723 Around UNSW #1 | byte_force (959) 1883 | 83, 28 (+55) | 11 | 280, 230 | 46, 22 | r82, head-on, 2, by 2, their longest then 4, ours 4 | 2026-10-06T23
+   1254719 1254718 weakhold #1 | byte_force (959) 1868 | 27, 9 (+18) | 9 (their longest) | 61, 9 | 7, 1 | r210, wall, 2, by 0, their longest then 4, ours 4 | 2026-10-07T00
+   1255604 1255604 Maze #1 | Memory? (1097) 1969 | 66, 13 (+53) | 11 | 138, 80 | 13, 11 | r97, wall, 3, by 0, their longest then 5, ours 5 | 2026-10-07T00
+   1271875 1271874 Portals #1 | Settlers of Battlecode (258) 2140 | 32, 9 (+23) | 9 (their longest) | 42, 9 | 2, 1 | r187, wall, 3, by 0, their longest then 4, ours 4 | 2026-10-07T04
+   1285561 1285561 Australia #1 | Bot (11) 1791 | 29, 18 (+11) | 18 (their longest) | 193, 210 | 43, 54 | r222, head-on, 2, by 2, their longest then 13, ours 12 | 2026-10-07T07
+   1289270 1289266 Tower Defense #1 | AllRed (40) 1915 | 16, 15 (+1) | 15 (their longest) | 19, 108 | 2, 29 | r469, own body, 2, by 0, their longest then 14, ours 15 | 2026-10-07T08
+   1289720 1289717 Portals #1 | UnderTheC (328) 2105 | 19, 11 (+8) | 4 | 51, 84 | 11, 18 | r60, other dragon body, 3, by 1, their longest then 4, ours 4 | 2026-10-07T08
+   1295910 1295909 Portals #1 | Maccas (762) 1867 | 48, 43 (+5) | 43 (their longest) | 54, 43 | 4, 1 | r10, other dragon body, 3, by 1, their longest then 6, ours 4 | 2026-10-07T10
+   1301813 1301812 Maze #1 | Goated (733) 1995 | 71, 57 (+14) | 57 (their longest) | 143, 103 | 19, 6 | r137, wall, 3, by 0, their longest then 3, ours 3 | 2026-10-07T11
+   1301815 1301812 Around UNSW #1 | Goated (733) 1995 | 77, 64 (+13) | 64 (their longest) | 353, 160 | 47, 9 | r44, head-on, 3, by 2, their longest then 5, ours 4 | 2026-10-07T11
+   their queen length in flagged, sorted: [3, 4, 7, 9, 9, 11, 11, 14, 15, 18, 25, 32, 43, 57, 64]
+   their queen is their longest: 9 of 15 (0.600)
+   their queen 4 or less: 2 of 15 (0.133)  6 or less: 2  10 or more: 10
+   their queen length in the kept games not flagged, sorted: [2, 2, 2, 3, 4, 6, 8, 14, 14, 17, 18, 18, 20, 23, 24, 27, 33, 46, 47, 47, 54, 55, 57, 62, 83, 94]
+   their queen 4 or less in not flagged: 5 of 26 (0.192)
+   our queen death round in flagged, sorted: [10, 44, 60, 78, 82, 90, 97, 137, 172, 187, 210, 222, 257, 381, 469]
+   our queen death cause in flagged: {'own body': 2, 'wall': 5, 'head-on': 5, 'other dragon body': 3}
+   our queen death round in not flagged, sorted: [10, 57, 81, 84, 85, 87, 103, 112, 118, 132, 143, 155, 169, 170, 172, 182, 197, 231, 271, 301, 316, 340, 343, 395, 408, 446]
+   our queen death cause in not flagged: {'head-on': 18, 'other dragon body': 1, 'own body': 4, 'wall': 3}
+   our total larger in flagged: 8 of 15 (0.533)  equal: 0
+   our total larger in not flagged: 4 of 26 (0.154)
+   margin of the longest in flagged, sorted: [1, 2, 3, 3, 5, 8, 11, 13, 14, 18, 19, 23, 30, 53, 55]
+   margin 1 or 2: 2   margin 5 or more: 11
+   our longest over their queen length in flagged: 15 of 15
+   flagged with our queen dead before raw round 100: 7  not flagged: 6 of 26
+   at the round our queen died, in flagged: our longest other dragon longer than their longest: 3 of 15
+   Slithery Fight #1 (dead end at spawn): flagged 5 of 8 (0.625); their queen there: [7, 28, 33, 36, 42]
+   all dead-end layouts: flagged of kept by layout: Slithery Fight #1 5 of 8
+   mirror: full games with only our queen alive on free layouts: 13, not wins 0, our longest strictly shorter 4 of 13 (0.308), equal 0
+   flagged share against mirror share, label shuffles with a gap at least as large: 15178 of 20000
+
+-- v31 games 410 ranked 410 full length (raw round 499) 239 full length on free layouts 191
+   full games on free layouts by queens at end and result: {'both alive / loss': 4, 'both alive / win': 11, 'both dead / loss': 69, 'both dead / win': 63, 'only ours / win': 8, 'only theirs / loss': 36}
+v31                                          13 of 36 (0.361)   interval 0.22 to 0.52
+   kept games that are not losses: 0
+   equal longest in kept: 3   ours shorter: 20
+v31 under 1700                               0 of 0 (n/a)   interval n/a
+v31 1700-1899                                8 of 16 (0.500)   interval 0.28 to 0.72
+v31 1900-2099                                5 of 14 (0.357)   interval 0.16 to 0.61
+v31 2100 on                                  0 of 6 (0.000)   interval 0.00 to 0.39
+   by layout (flagged of kept): Around UNSW #1 4 of 7, Tower Defense #1 1 of 6, Portals #1 4 of 6, Maze #1 2 of 6, Australia #1 0 of 4, Islands #1 0 of 3, weakhold #1 1 of 2, Prisoners Dilemma #2 0 of 1, Autarky #1 1 of 1
+   flagged by layout: Around UNSW #1 4, Portals #1 4, Maze #1 2, Tower Defense #1 1, Autarky #1 1, weakhold #1 1
+   by opponent (flagged of kept): NUSW Battlecode (262) 2 of 4, Vodyanitsa (1052) 2 of 3, Proof by Intimidation (465) 0 of 3, SHINK AI 6500 (280) 1 of 2, free trip to sydney pls (82) 1 of 2, doofenshmirtz good incorporated (1015) 2 of 2, Goated (733) 0 of 2, Team SKKU (249) 0 of 2, Computers (112) 1 of 2, Sponge(Albert and Bob) (213) 0 of 2, fandagong (552) 0 of 2, Stochastic Parrots (127) 0 of 1, Maccas (762) 1 of 1, Memory? (1097) 1 of 1, dev test 1 :P (545) 0 of 1, ouroboros (1022) 0 of 1, gdggs (64) 1 of 1, Codehammer 40K (34) 0 of 1, the uncancelables (899) 0 of 1, 中国人不准飞😡😡😡😡😡😡😡 (791) 1 of 1, Manny (52) 0 of 1
+   by KST date: 2026-10-06 13 of 36
+   battles with a kept game: 26  battle bootstrap of the share: 0.22 to 0.53
+   one opponent left out: 0.324 (doofenshmirtz good incorporated (1015), 11 of 34) to 0.394 (Proof by Intimidation (465), 13 of 33)
+   one layout left out: 0.300 (Portals #1, 9 of 30) to 0.406 (Australia #1, 13 of 32)
+   three flagged games removed: 10 of 33 (0.303)
+   flagged games:
+   game battle layout | opponent rating | our longest, their longest (margin) | their queen | our total, their total | alive ours, theirs | our queen died r, cause, length, killer side | kst
+   1157625 1157621 Around UNSW #1 | SHINK AI 6500 (280) 1924 | 108, 23 (+85) | 21 | 285, 213 | 27, 57 | r152, head-on, 2, by 2, their longest then 12, ours 7 | 2026-10-06T01
+   1158841 1158840 Tower Defense #1 | Maccas (762) 1737 | 32, 21 (+11) | 21 (their longest) | 53, 25 | 5, 2 | r111, wall, 2, by 0, their longest then 3, ours 3 | 2026-10-06T01
+   1159940 1159939 Portals #1 | Memory? (1097) 1868 | 19, 13 (+6) | 2 | 47, 56 | 9, 8 | r98, own body, 3, by 0, their longest then 4, ours 4 | 2026-10-06T01
+   1161767 1161766 Maze #1 | NUSW Battlecode (262) 1879 | 57, 36 (+21) | 36 (their longest) | 122, 66 | 17, 12 | r215, wall, 3, by 0, their longest then 4, ours 5 | 2026-10-06T01
+   1167651 1167648 Portals #1 | Vodyanitsa (1052) 1741 | 35, 3 (+32) | 3 (their longest) | 51, 30 | 4, 13 | r9, other dragon body, 5, by 1, their longest then 4, ours 4 | 2026-10-06T03
+   1171423 1171421 Around UNSW #1 | Vodyanitsa (1052) 1766 | 45, 21 (+24) | 8 | 280, 453 | 44, 58 | r332, head-on, 13, by 2, their longest then 22, ours 26 | 2026-10-06T04
+   1188178 1188174 Maze #1 | free trip to sydney pls (82) 2083 | 36, 24 (+12) | 24 (their longest) | 85, 147 | 15, 19 | r183, wall, 3, by 0, their longest then 5, ours 4 | 2026-10-06T09
+   1202048 1202048 Portals #1 | doofenshmirtz good incorporated (1015) 1869 | 50, 28 (+22) | 28 (their longest) | 54, 65 | 3, 16 | r9, other dragon body, 4, by 1, their longest then 3, ours 3 | 2026-10-06T12
+   1207220 1207218 Around UNSW #1 | NUSW Battlecode (262) 1927 | 43, 28 (+15) | 28 (their longest) | 300, 102 | 52, 17 | r54, head-on, 2, by 2, their longest then 4, ours 5 | 2026-10-06T13
+   1207389 1207388 Autarky #1 | gdggs (64) 1902 | 63, 24 (+39) | 24 (their longest) | 109, 29 | 18, 3 | r21, head-on, 3, by 2, their longest then 17, ours 4 | 2026-10-06T13
+   1211465 1211465 Portals #1 | doofenshmirtz good incorporated (1015) 1875 | 26, 15 (+11) | 15 (their longest) | 52, 72 | 7, 26 | r100, wall, 2, by 0, their longest then 4, ours 5 | 2026-10-06T14
+   1214743 1214741 Around UNSW #1 | Computers (112) 2091 | 89, 53 (+36) | 53 (their longest) | 198, 236 | 30, 36 | r110, head-on, 3, by 2, their longest then 8, ours 6 | 2026-10-06T15
+   1221348 1221346 weakhold #1 | 中国人不准飞😡😡😡😡😡😡😡 (791) 1815 | 18, 8 (+10) | 2 | 52, 25 | 7, 5 | r193, wall, 3, by 0, their longest then 6, ours 5 | 2026-10-06T16
+   their queen length in flagged, sorted: [2, 2, 3, 8, 15, 21, 21, 24, 24, 28, 28, 36, 53]
+   their queen is their longest: 9 of 13 (0.692)
+   their queen 4 or less: 3 of 13 (0.231)  6 or less: 3  10 or more: 9
+   their queen length in the kept games not flagged, sorted: [2, 2, 3, 4, 4, 5, 12, 13, 15, 20, 21, 22, 22, 24, 25, 28, 35, 46, 49, 57, 67, 86, 96]
+   their queen 4 or less in not flagged: 5 of 23 (0.217)
+   our queen death round in flagged, sorted: [9, 9, 21, 54, 98, 100, 110, 111, 152, 183, 193, 215, 332]
+   our queen death cause in flagged: {'head-on': 5, 'wall': 5, 'own body': 1, 'other dragon body': 2}
+   our queen death round in not flagged, sorted: [42, 48, 53, 55, 67, 71, 75, 88, 88, 97, 101, 107, 114, 119, 150, 160, 181, 185, 197, 205, 205, 259, 401]
+   our queen death cause in not flagged: {'head-on': 16, 'other': 1, 'wall': 4, 'own body': 2}
+   our total larger in flagged: 7 of 13 (0.538)  equal: 0
+   our total larger in not flagged: 4 of 23 (0.174)
+   margin of the longest in flagged, sorted: [6, 10, 11, 11, 12, 15, 21, 22, 24, 32, 36, 39, 85]
+   margin 1 or 2: 0   margin 5 or more: 13
+   our longest over their queen length in flagged: 13 of 13
+   flagged with our queen dead before raw round 100: 5  not flagged: 10 of 23
+   at the round our queen died, in flagged: our longest other dragon longer than their longest: 4 of 13
+   Slithery Fight #1 (dead end at spawn): flagged 5 of 10 (0.500); their queen there: [6, 6, 23, 35, 61]
+   all dead-end layouts: flagged of kept by layout: Slithery Fight #1 5 of 10
+   mirror: full games with only our queen alive on free layouts: 8, not wins 0, our longest strictly shorter 4 of 8 (0.500), equal 0
+   flagged share against mirror share, label shuffles with a gap at least as large: 13809 of 20000
+
+main against v31 share, label shuffles with a gap at least as large: 20000 of 20000
+both codes: 28 of 77 (0.364)  interval 0.27 to 0.48
+other codes (test builds): 3 of 5 (0.600)
+
+============================== F38
+
+-- main games 308  half 1: 79  half 2: 229
+main ours: stays begun in r101-200: 562, long 122, short 440
+main ours long                                       another way 45 of 122 (0.369) [0.29 to 0.46], enemy near 32 of 122 (0.262) [0.19 to 0.35]
+main ours short (1 or 2 turn starts)                 another way 286 of 440 (0.650) [0.60 to 0.69], enemy near 195 of 440 (0.443) [0.40 to 0.49]
+   long: games holding them 36; game bootstrap another way 0.28 to 0.48, enemy near 0.16 to 0.38
+   main ours long (122): a free wider neighbour 45; no wider neighbour tile at all (every neighbour narrow) 34; wider neighbours all under her own body 22; wider neighbours under bodies, another dragon among them (own other 1, foe 0) 21
+      free neighbour tiles at the mouth: free neighbours 1 (wider 0, narrow 1): 21; free neighbours 2 (wider 0, narrow 2): 56; free neighbours 2 (wider 1, narrow 1): 27; free neighbours 3 (wider 1, narrow 2): 11; free neighbours 3 (wider 2, narrow 1): 7
+      mouth tile open sides: {4: 18, 3: 104}  first narrow tile next to the mouth tile: 121  steps in the mouth turn: {1: 121, 2: 1}  three open sides and every neighbour narrow: 34  only one free neighbour: 21
+   main ours short (440): a free wider neighbour 286; no wider neighbour tile at all (every neighbour narrow) 75; wider neighbours all under her own body 66; wider neighbours under bodies, another dragon among them (own other 1, foe 0) 10; wider neighbours under bodies, another dragon among them (own other 0, foe 1) 2; wider neighbours under bodies, another dragon among them (own other 0, foe 0) 1
+      free neighbour tiles at the mouth: free neighbours 1 (wider 0, narrow 1): 14; free neighbours 1 (wider 1, narrow 0): 1; free neighbours 2 (wider 0, narrow 2): 133; free neighbours 2 (wider 1, narrow 1): 174; free neighbours 2 (wider 2, narrow 0): 2; free neighbours 3 (wider 0, narrow 3): 7; free neighbours 3 (wider 1, narrow 2): 40; free neighbours 3 (wider 2, narrow 1): 66; free neighbours 3 (wider 3, narrow 0): 3
+      mouth tile open sides: {3: 315, 4: 125}  first narrow tile next to the mouth tile: 434  steps in the mouth turn: {1: 434, 2: 6}  three open sides and every neighbour narrow: 75  only one free neighbour: 15
+   long against short, another way: label shuffles with a gap at least as large: 0 of 20000  enemy near: 6 of 20000
+main ours long half 1                                another way 7 of 16 (0.438) [0.23 to 0.67], enemy near 1 of 16 (0.062) [0.01 to 0.28]
+main ours long half 2                                another way 38 of 106 (0.358) [0.27 to 0.45], enemy near 31 of 106 (0.292) [0.21 to 0.39]
+main ours long under 1700                            another way 0 of 0 (n/a) [n/a], enemy near 0 of 0 (n/a) [n/a]
+main ours long 1700-1899                             another way 24 of 64 (0.375) [0.27 to 0.50], enemy near 9 of 64 (0.141) [0.08 to 0.25]
+main ours long 1900-2099                             another way 21 of 56 (0.375) [0.26 to 0.51], enemy near 21 of 56 (0.375) [0.26 to 0.51]
+main ours long 2100 on                               another way 0 of 2 (0.000) [0.00 to 0.66], enemy near 2 of 2 (1.000) [0.34 to 1.00]
+main ours long Maze #1                               another way 15 of 50 (0.300) [0.19 to 0.44], enemy near 9 of 50 (0.180) [0.10 to 0.31]
+main ours long Tower Defense #1                      another way 15 of 37 (0.405) [0.26 to 0.57], enemy near 8 of 37 (0.216) [0.11 to 0.37]
+main ours long weakhold #1                           another way 6 of 25 (0.240) [0.11 to 0.43], enemy near 9 of 25 (0.360) [0.20 to 0.55]
+main ours long Autarky #1                            another way 4 of 4 (1.000) [0.51 to 1.00], enemy near 1 of 4 (0.250) [0.05 to 0.70]
+main ours long Stripes #1                            another way 2 of 2 (1.000) [0.34 to 1.00], enemy near 2 of 2 (1.000) [0.34 to 1.00]
+main ours long Islands #1                            another way 0 of 1 (0.000) [0.00 to 0.79], enemy near 1 of 1 (1.000) [0.21 to 1.00]
+main ours long Devil #1                              another way 1 of 1 (1.000) [0.21 to 1.00], enemy near 0 of 1 (0.000) [0.00 to 0.79]
+main ours long Prisoners Dilemma #2                  another way 1 of 1 (1.000) [0.21 to 1.00], enemy near 1 of 1 (1.000) [0.21 to 1.00]
+main ours long Trophy #1                             another way 1 of 1 (1.000) [0.21 to 1.00], enemy near 1 of 1 (1.000) [0.21 to 1.00]
+main ours long KST 2026-10-06                        another way 7 of 16 (0.438) [0.23 to 0.67], enemy near 1 of 16 (0.062) [0.01 to 0.28]
+main ours long KST 2026-10-07                        another way 38 of 106 (0.358) [0.27 to 0.45], enemy near 31 of 106 (0.292) [0.21 to 0.39]
+   by opponent: NUSW Battlecode (262) 15 of 42, Nitronics (837) 4 of 15, TheActualPlayer (1132) 0 of 9, :3 (217) 3 of 8, 1234 (919) 2 of 6, doofenshmirtz good incorporated (1015) 3 of 5, free trip to sydney pls (82) 1 of 5, 1 (231) 1 of 4, y (71) 3 of 4, calc (20) 1 of 3, byte_force (959) 2 of 3, Bot (11) 2 of 3, ouroboros (1022) 2 of 3, Goated (733) 2 of 3, POFPOF (1055) 1 of 2, Maccas (762) 2 of 2, chad gdp (70) 0 of 2, ComTamSuonNuong (193) 0 of 1, gdggs (64) 0 of 1, AllRed (40) 1 of 1
+   one opponent left out: 0.356 (y (71), 42 of 118) to 0.398 (TheActualPlayer (1132), 45 of 113)
+   one layout left out: 0.347 (Autarky #1, 41 of 118) to 0.417 (Maze #1, 30 of 72)
+   three games with the most long stays without another way: 1278846 (4 of 16 with another way), 1256142 (2 of 12 with another way), 1274528 (0 of 6 with another way)
+main ours long without those three games             another way 39 of 88 (0.443) [0.34 to 0.55], enemy near 22 of 88 (0.250) [0.17 to 0.35]
+   three games with the most long stays: 1278846 (4 of 16), 1283195 (8 of 14), 1256142 (2 of 12)
+main ours long without those three                   another way 31 of 80 (0.388) [0.29 to 0.50], enemy near 24 of 80 (0.300) [0.21 to 0.41]
+   games by share: games with long stays 36; with none having another way 7; with all having 11
+main ours long, any round, ending in her death       another way 19 of 48 (0.396) [0.27 to 0.54], enemy near 23 of 48 (0.479) [0.34 to 0.62]
+main ours long, any round, all                       another way 138 of 387 (0.357) [0.31 to 0.41], enemy near 107 of 387 (0.276) [0.23 to 0.32]
+main ours long r101-200 ending in her death          another way 6 of 18 (0.333) [0.16 to 0.56], enemy near 8 of 18 (0.444) [0.25 to 0.66]
+main ours long r101-200 she leaves alive             another way 39 of 104 (0.375) [0.29 to 0.47], enemy near 24 of 104 (0.231) [0.16 to 0.32]
+main theirs: stays begun in r101-200: 536, long 28, short 508
+main theirs long                                     another way 10 of 28 (0.357) [0.21 to 0.54], enemy near 7 of 28 (0.250) [0.13 to 0.43]
+main theirs short (1 or 2 turn starts)               another way 387 of 508 (0.762) [0.72 to 0.80], enemy near 171 of 508 (0.337) [0.30 to 0.38]
+   long: games holding them 13; game bootstrap another way 0.17 to 0.61, enemy near 0.07 to 0.50
+   main theirs long (28): no wider neighbour tile at all (every neighbour narrow) 11; a free wider neighbour 10; wider neighbours all under her own body 4; wider neighbours under bodies, another dragon among them (own other 1, foe 0) 2; wider neighbours under bodies, another dragon among them (own other 0, foe 1) 1
+      free neighbour tiles at the mouth: free neighbours 1 (wider 0, narrow 1): 4; free neighbours 2 (wider 0, narrow 2): 13; free neighbours 2 (wider 1, narrow 1): 7; free neighbours 3 (wider 0, narrow 3): 1; free neighbours 3 (wider 1, narrow 2): 2; free neighbours 3 (wider 2, narrow 1): 1
+      mouth tile open sides: {3: 23, 4: 5}  first narrow tile next to the mouth tile: 28  steps in the mouth turn: {1: 28}  three open sides and every neighbour narrow: 11  only one free neighbour: 4
+   main theirs short (508): a free wider neighbour 387; wider neighbours all under her own body 64; no wider neighbour tile at all (every neighbour narrow) 22; wider neighbours under bodies, another dragon among them (own other 0, foe 1) 18; wider neighbours under bodies, another dragon among them (own other 1, foe 0) 12; wider neighbours under bodies, another dragon among them (own other 0, foe 0) 5
+      free neighbour tiles at the mouth: free neighbours 1 (wider 0, narrow 1): 30; free neighbours 1 (wider 1, narrow 0): 4; free neighbours 2 (wider 0, narrow 2): 90; free neighbours 2 (wider 1, narrow 1): 277; free neighbours 2 (wider 2, narrow 0): 6; free neighbours 3 (wider 0, narrow 3): 1; free neighbours 3 (wider 1, narrow 2): 43; free neighbours 3 (wider 2, narrow 1): 55; free neighbours 3 (wider 3, narrow 0): 2
+      mouth tile open sides: {3: 380, 4: 128}  first narrow tile next to the mouth tile: 488  steps in the mouth turn: {1: 488, 2: 16, 3: 3, 5: 1}  three open sides and every neighbour narrow: 22  only one free neighbour: 34
+   long against short, another way: label shuffles with a gap at least as large: 1 of 20000  enemy near: 8169 of 20000
+main theirs long, any round, ending in her death     another way 10 of 26 (0.385) [0.22 to 0.57], enemy near 12 of 26 (0.462) [0.29 to 0.65]
+main theirs long, any round, all                     another way 95 of 191 (0.497) [0.43 to 0.57], enemy near 40 of 191 (0.209) [0.16 to 0.27]
+main theirs long r101-200 ending in her death        another way 1 of 3 (0.333) [0.06 to 0.79], enemy near 2 of 3 (0.667) [0.21 to 0.94]
+main theirs long r101-200 she leaves alive           another way 9 of 25 (0.360) [0.20 to 0.55], enemy near 5 of 25 (0.200) [0.09 to 0.39]
+   ours against theirs, long, another way: label shuffles with a gap at least as large: 20000 of 20000  enemy near: 20000 of 20000
+main ours: turn starts on a wider tile in r100-199: 13668; with a free wider neighbour 13423 of 13668 (0.982); enemy head within 3 3513 of 13668 (0.257)
+      free wider neighbour 1, free narrow neighbour 1: 1345 turn starts, next turn start on a narrow tile 325 of 1345 (0.242), died before it 5
+      free wider neighbour 1, free narrow neighbour 0: 12078 turn starts, next turn start on a narrow tile 6 of 12078 (0.000), died before it 26
+      free wider neighbour 0, free narrow neighbour 1: 242 turn starts, next turn start on a narrow tile 231 of 242 (0.955), died before it 0
+      free wider neighbour 0, free narrow neighbour 0: 3 turn starts, next turn start on a narrow tile 0 of 3 (0.000), died before it 2
+      enemy near 1: 3513 turn starts, next on a narrow tile 227 of 3513 (0.065)
+      enemy near 0: 10155 turn starts, next on a narrow tile 335 of 10155 (0.033)
+      check: next-on-narrow total 562 equals stays begun in r101-200 562
+main theirs: turn starts on a wider tile in r100-199: 13828; with a free wider neighbour 13676 of 13828 (0.989); enemy head within 3 2349 of 13828 (0.170)
+      free wider neighbour 1, free narrow neighbour 1: 1405 turn starts, next turn start on a narrow tile 385 of 1405 (0.274), died before it 4
+      free wider neighbour 1, free narrow neighbour 0: 12271 turn starts, next turn start on a narrow tile 12 of 12271 (0.001), died before it 26
+      free wider neighbour 0, free narrow neighbour 1: 147 turn starts, next turn start on a narrow tile 139 of 147 (0.946), died before it 1
+      free wider neighbour 0, free narrow neighbour 0: 5 turn starts, next turn start on a narrow tile 0 of 5 (0.000), died before it 3
+      enemy near 1: 2349 turn starts, next on a narrow tile 178 of 2349 (0.076)
+      enemy near 0: 11479 turn starts, next on a narrow tile 358 of 11479 (0.031)
+      check: next-on-narrow total 536 equals stays begun in r101-200 536
+
+-- v31 games 335  half 1: 335  half 2: 0
+v31 ours: stays begun in r101-200: 533, long 75, short 458
+v31 ours long                                        another way 33 of 75 (0.440) [0.33 to 0.55], enemy near 22 of 75 (0.293) [0.20 to 0.40]
+v31 ours short (1 or 2 turn starts)                  another way 292 of 458 (0.638) [0.59 to 0.68], enemy near 177 of 458 (0.386) [0.34 to 0.43]
+   long: games holding them 40; game bootstrap another way 0.34 to 0.56, enemy near 0.17 to 0.43
+   v31 ours long (75): a free wider neighbour 33; no wider neighbour tile at all (every neighbour narrow) 21; wider neighbours all under her own body 13; wider neighbours under bodies, another dragon among them (own other 1, foe 0) 7; wider neighbours under bodies, another dragon among them (own other 0, foe 1) 1
+      free neighbour tiles at the mouth: free neighbours 1 (wider 0, narrow 1): 7; free neighbours 2 (wider 0, narrow 2): 34; free neighbours 2 (wider 1, narrow 1): 14; free neighbours 3 (wider 0, narrow 3): 1; free neighbours 3 (wider 1, narrow 2): 9; free neighbours 3 (wider 2, narrow 1): 10
+      mouth tile open sides: {4: 25, 3: 50}  first narrow tile next to the mouth tile: 74  steps in the mouth turn: {1: 74, 2: 1}  three open sides and every neighbour narrow: 21  only one free neighbour: 7
+   v31 ours short (458): a free wider neighbour 292; wider neighbours all under her own body 84; no wider neighbour tile at all (every neighbour narrow) 57; wider neighbours under bodies, another dragon among them (own other 1, foe 0) 22; wider neighbours under bodies, another dragon among them (own other 0, foe 1) 3
+      free neighbour tiles at the mouth: free neighbours 1 (wider 0, narrow 1): 26; free neighbours 1 (wider 1, narrow 0): 1; free neighbours 2 (wider 0, narrow 2): 132; free neighbours 2 (wider 1, narrow 1): 172; free neighbours 2 (wider 2, narrow 0): 4; free neighbours 3 (wider 0, narrow 3): 8; free neighbours 3 (wider 1, narrow 2): 45; free neighbours 3 (wider 2, narrow 1): 68; free neighbours 3 (wider 3, narrow 0): 2
+      mouth tile open sides: {3: 323, 4: 135}  first narrow tile next to the mouth tile: 449  steps in the mouth turn: {1: 449, 4: 1, 3: 4, 2: 4}  three open sides and every neighbour narrow: 57  only one free neighbour: 27
+   long against short, another way: label shuffles with a gap at least as large: 16 of 20000  enemy near: 2489 of 20000
+v31 ours long half 1                                 another way 33 of 75 (0.440) [0.33 to 0.55], enemy near 22 of 75 (0.293) [0.20 to 0.40]
+v31 ours long half 2                                 another way 0 of 0 (n/a) [n/a], enemy near 0 of 0 (n/a) [n/a]
+v31 ours long under 1700                             another way 4 of 12 (0.333) [0.14 to 0.61], enemy near 2 of 12 (0.167) [0.05 to 0.45]
+v31 ours long 1700-1899                              another way 20 of 42 (0.476) [0.33 to 0.62], enemy near 12 of 42 (0.286) [0.17 to 0.44]
+v31 ours long 1900-2099                              another way 7 of 19 (0.368) [0.19 to 0.59], enemy near 7 of 19 (0.368) [0.19 to 0.59]
+v31 ours long 2100 on                                another way 2 of 2 (1.000) [0.34 to 1.00], enemy near 1 of 2 (0.500) [0.09 to 0.91]
+v31 ours long Maze #1                                another way 14 of 41 (0.341) [0.22 to 0.49], enemy near 7 of 41 (0.171) [0.09 to 0.31]
+v31 ours long weakhold #1                            another way 4 of 14 (0.286) [0.12 to 0.55], enemy near 7 of 14 (0.500) [0.27 to 0.73]
+v31 ours long Devil #1                               another way 4 of 4 (1.000) [0.51 to 1.00], enemy near 1 of 4 (0.250) [0.05 to 0.70]
+v31 ours long Stripes #1                             another way 3 of 4 (0.750) [0.30 to 0.95], enemy near 3 of 4 (0.750) [0.30 to 0.95]
+v31 ours long Autarky #1                             another way 2 of 2 (1.000) [0.34 to 1.00], enemy near 0 of 2 (0.000) [0.00 to 0.66]
+v31 ours long Islands #1                             another way 0 of 2 (0.000) [0.00 to 0.66], enemy near 1 of 2 (0.500) [0.09 to 0.91]
+v31 ours long Tower Defense #1                       another way 2 of 2 (1.000) [0.34 to 1.00], enemy near 1 of 2 (0.500) [0.09 to 0.91]
+v31 ours long Prisoners Dilemma #2                   another way 1 of 1 (1.000) [0.21 to 1.00], enemy near 0 of 1 (0.000) [0.00 to 0.79]
+v31 ours long Prisoners Dilemma #1                   another way 1 of 1 (1.000) [0.21 to 1.00], enemy near 0 of 1 (0.000) [0.00 to 0.79]
+v31 ours long Trophy #1                              another way 1 of 1 (1.000) [0.21 to 1.00], enemy near 1 of 1 (1.000) [0.21 to 1.00]
+v31 ours long Australia #1                           another way 0 of 1 (0.000) [0.00 to 0.79], enemy near 1 of 1 (1.000) [0.21 to 1.00]
+v31 ours long Around UNSW #1                         another way 0 of 1 (0.000) [0.00 to 0.79], enemy near 0 of 1 (0.000) [0.00 to 0.79]
+v31 ours long Queen Of Spades #1                     another way 1 of 1 (1.000) [0.21 to 1.00], enemy near 0 of 1 (0.000) [0.00 to 0.79]
+v31 ours long KST 2026-10-06                         another way 33 of 75 (0.440) [0.33 to 0.55], enemy near 22 of 75 (0.293) [0.20 to 0.40]
+   by opponent: 中国人不准飞😡😡😡😡😡😡😡 (791) 5 of 14, err404 (485) 4 of 11, CookAgent (716) 3 of 9, free trip to sydney pls (82) 1 of 4, Goated (733) 2 of 4, python.io (147) 2 of 4, NUSW Battlecode (262) 2 of 3, Proof by Intimidation (465) 3 of 3, SHINK AI 6500 (280) 1 of 2, Stochastic Parrots (127) 1 of 2, f2p (608) 0 of 2, calc (20) 0 of 2, gdggs (64) 1 of 2, Computers (112) 1 of 2, fandagong (552) 1 of 2, Manny (52) 1 of 2, chad gdp (70) 1 of 1, ouroboros (1022) 1 of 1, Ron Squad (928) 0 of 1, doofenshmirtz good incorporated (1015) 1 of 1, the uncancelables (899) 0 of 1, chaoliangUNSW (1016) 1 of 1, 1 (231) 1 of 1
+   one opponent left out: 0.417 (Proof by Intimidation (465), 30 of 72) to 0.459 (中国人不准飞😡😡😡😡😡😡😡 (791), 28 of 61)
+   one layout left out: 0.408 (Devil #1, 29 of 71) to 0.559 (Maze #1, 19 of 34)
+   three games with the most long stays without another way: 1221348 (0 of 5 with another way), 1190065 (1 of 5 with another way), 1188178 (1 of 4 with another way)
+v31 ours long without those three games              another way 31 of 61 (0.508) [0.39 to 0.63], enemy near 17 of 61 (0.279) [0.18 to 0.40]
+   three games with the most long stays: 1190065 (1 of 5), 1221348 (0 of 5), 1188178 (1 of 4)
+v31 ours long without those three                    another way 31 of 61 (0.508) [0.39 to 0.63], enemy near 17 of 61 (0.279) [0.18 to 0.40]
+   games by share: games with long stays 40; with none having another way 10; with all having 16
+v31 ours long, any round, ending in her death        another way 24 of 45 (0.533) [0.39 to 0.67], enemy near 19 of 45 (0.422) [0.29 to 0.57]
+v31 ours long, any round, all                        another way 141 of 318 (0.443) [0.39 to 0.50], enemy near 64 of 318 (0.201) [0.16 to 0.25]
+v31 ours long r101-200 ending in her death           another way 8 of 22 (0.364) [0.20 to 0.57], enemy near 9 of 22 (0.409) [0.23 to 0.61]
+v31 ours long r101-200 she leaves alive              another way 25 of 53 (0.472) [0.34 to 0.60], enemy near 13 of 53 (0.245) [0.15 to 0.38]
+v31 theirs: stays begun in r101-200: 432, long 37, short 395
+v31 theirs long                                      another way 10 of 37 (0.270) [0.15 to 0.43], enemy near 7 of 37 (0.189) [0.09 to 0.34]
+v31 theirs short (1 or 2 turn starts)                another way 297 of 395 (0.752) [0.71 to 0.79], enemy near 123 of 395 (0.311) [0.27 to 0.36]
+   long: games holding them 16; game bootstrap another way 0.12 to 0.46, enemy near 0.09 to 0.39
+   v31 theirs long (37): no wider neighbour tile at all (every neighbour narrow) 16; a free wider neighbour 10; wider neighbours all under her own body 5; wider neighbours under bodies, another dragon among them (own other 1, foe 0) 5; wider neighbours under bodies, another dragon among them (own other 0, foe 1) 1
+      free neighbour tiles at the mouth: free neighbours 1 (wider 0, narrow 1): 6; free neighbours 2 (wider 0, narrow 2): 20; free neighbours 2 (wider 1, narrow 1): 9; free neighbours 2 (wider 2, narrow 0): 1; free neighbours 3 (wider 0, narrow 3): 1
+      mouth tile open sides: {3: 33, 4: 4}  first narrow tile next to the mouth tile: 36  steps in the mouth turn: {1: 36, 4: 1}  three open sides and every neighbour narrow: 16  only one free neighbour: 6
+   v31 theirs short (395): a free wider neighbour 297; wider neighbours all under her own body 51; no wider neighbour tile at all (every neighbour narrow) 21; wider neighbours under bodies, another dragon among them (own other 1, foe 0) 17; wider neighbours under bodies, another dragon among them (own other 0, foe 0) 6; wider neighbours under bodies, another dragon among them (own other 0, foe 1) 3
+      free neighbour tiles at the mouth: free neighbours 1 (wider 0, narrow 1): 33; free neighbours 1 (wider 1, narrow 0): 3; free neighbours 2 (wider 0, narrow 2): 62; free neighbours 2 (wider 1, narrow 1): 180; free neighbours 2 (wider 2, narrow 0): 5; free neighbours 3 (wider 0, narrow 3): 3; free neighbours 3 (wider 1, narrow 2): 26; free neighbours 3 (wider 2, narrow 1): 78; free neighbours 3 (wider 3, narrow 0): 5
+      mouth tile open sides: {3: 245, 4: 150}  first narrow tile next to the mouth tile: 377  steps in the mouth turn: {1: 377, 2: 13, 3: 5}  three open sides and every neighbour narrow: 21  only one free neighbour: 36
+   long against short, another way: label shuffles with a gap at least as large: 0 of 20000  enemy near: 2692 of 20000
+v31 theirs long, any round, ending in her death      another way 18 of 38 (0.474) [0.32 to 0.63], enemy near 13 of 38 (0.342) [0.21 to 0.50]
+v31 theirs long, any round, all                      another way 135 of 248 (0.544) [0.48 to 0.61], enemy near 45 of 248 (0.181) [0.14 to 0.23]
+v31 theirs long r101-200 ending in her death         another way 0 of 5 (0.000) [-0.00 to 0.43], enemy near 3 of 5 (0.600) [0.23 to 0.88]
+v31 theirs long r101-200 she leaves alive            another way 10 of 32 (0.312) [0.18 to 0.49], enemy near 4 of 32 (0.125) [0.05 to 0.28]
+   ours against theirs, long, another way: label shuffles with a gap at least as large: 2034 of 20000  enemy near: 5323 of 20000
+v31 ours: turn starts on a wider tile in r100-199: 12766; with a free wider neighbour 12540 of 12766 (0.982); enemy head within 3 3383 of 12766 (0.265)
+      free wider neighbour 1, free narrow neighbour 1: 1313 turn starts, next turn start on a narrow tile 318 of 1313 (0.242), died before it 5
+      free wider neighbour 1, free narrow neighbour 0: 11227 turn starts, next turn start on a narrow tile 7 of 11227 (0.001), died before it 39
+      free wider neighbour 0, free narrow neighbour 1: 221 turn starts, next turn start on a narrow tile 208 of 221 (0.941), died before it 1
+      free wider neighbour 0, free narrow neighbour 0: 5 turn starts, next turn start on a narrow tile 0 of 5 (0.000), died before it 4
+      enemy near 1: 3383 turn starts, next on a narrow tile 199 of 3383 (0.059)
+      enemy near 0: 9383 turn starts, next on a narrow tile 334 of 9383 (0.036)
+      check: next-on-narrow total 533 equals stays begun in r101-200 533
+v31 theirs: turn starts on a wider tile in r100-199: 14055; with a free wider neighbour 13912 of 14055 (0.990); enemy head within 3 2629 of 14055 (0.187)
+      free wider neighbour 1, free narrow neighbour 1: 1427 turn starts, next turn start on a narrow tile 293 of 1427 (0.205), died before it 1
+      free wider neighbour 1, free narrow neighbour 0: 12485 turn starts, next turn start on a narrow tile 14 of 12485 (0.001), died before it 27
+      free wider neighbour 0, free narrow neighbour 1: 132 turn starts, next turn start on a narrow tile 125 of 132 (0.947), died before it 0
+      free wider neighbour 0, free narrow neighbour 0: 11 turn starts, next turn start on a narrow tile 0 of 11 (0.000), died before it 4
+      enemy near 1: 2629 turn starts, next on a narrow tile 130 of 2629 (0.049)
+      enemy near 0: 11426 turn starts, next on a narrow tile 302 of 11426 (0.026)
+      check: next-on-narrow total 432 equals stays begun in r101-200 432
+main games of battles after 1298211: 15  long share r101-200: ours 5 of 24 (0.208), theirs 10 of 51 (0.196)
+   main ours long in those                           another way 2 of 5 (0.400) [0.12 to 0.77], enemy near 3 of 5 (0.600) [0.23 to 0.88]
+v31 games of battles after 1298211: 0  long share r101-200: ours 0 of 0 (n/a), theirs 0 of 0 (n/a)
+main, long share r101-200: ours 122 of 562 (0.217), theirs 28 of 536 (0.052)
+v31, long share r101-200: ours 75 of 533 (0.141), theirs 37 of 432 (0.086)
+main against v31, ours long, another way: label shuffles with a gap at least as large: 7480 of 20000
+both codes ours long                                 another way 78 of 197 (0.396) [0.33 to 0.47], enemy near 54 of 197 (0.274) [0.22 to 0.34]
+both codes theirs long                               another way 20 of 65 (0.308) [0.21 to 0.43], enemy near 14 of 65 (0.215) [0.13 to 0.33]
+
+============================== rows.jsonl, read last, to compare
+games compared 825 of 825  rows in file 825  differences: {}
+rows: main full games ended by queen rule with only their queen alive: 49, lost 49
+rows: v31 full games ended by queen rule with only their queen alive: 46, lost 46

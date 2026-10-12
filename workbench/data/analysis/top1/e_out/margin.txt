@@ -1,0 +1,69 @@
+
+--- meow, all 401 games: round-500 games with both queens dead: 143 games, won 41, lost 102
+    losses that turn if our final longest were longer by | +2: 2 | +5: 4 | +10: 11 | +15: 20 | +20: 29 | +30: 44
+    losses that turn if our leader's growth after round 400 were multiplied by | x1.25: 7 | x1.50: 17 | x2.00: 27 | x3.00: 41
+    the same, but our final longest never above 0.9 of our own final potential | x1.25: 6 | x1.50: 12 | x2.00: 18 | x3.00: 25
+    ... and counted only where a leader cut happened from round 395 on (the games the rule can touch) | x1.25: 6 | x1.50: 12 | x2.00: 18 | x3.00: 24
+    median margin of the losses: 32.5 segments; of the wins: 14; losses by 5 or fewer: 5, by 6-10: 6, by 11-20: 19, by more: 72
+
+--- live bot: 96 games, won 27, lost 69
+    losses that turn if our final longest were longer by | +2: 2 | +5: 4 | +10: 10 | +15: 17 | +20: 22 | +30: 28
+    losses that turn if our leader's growth after round 400 were multiplied by | x1.25: 6 | x1.50: 13 | x2.00: 20 | x3.00: 30
+    the same, but our final longest never above 0.9 of our own final potential | x1.25: 5 | x1.50: 10 | x2.00: 14 | x3.00: 19
+    ... and counted only where a leader cut happened from round 395 on (the games the rule can touch) | x1.25: 5 | x1.50: 10 | x2.00: 14 | x3.00: 19
+    median margin of the losses: 33 segments; of the wins: 19; losses by 5 or fewer: 5, by 6-10: 5, by 11-20: 12, by more: 47
+
+--- test builds: 47 games, won 14, lost 33
+    losses that turn if our final longest were longer by | +2: 0 | +5: 0 | +10: 1 | +15: 3 | +20: 7 | +30: 16
+    losses that turn if our leader's growth after round 400 were multiplied by | x1.25: 1 | x1.50: 4 | x2.00: 7 | x3.00: 11
+    the same, but our final longest never above 0.9 of our own final potential | x1.25: 1 | x1.50: 2 | x2.00: 4 | x3.00: 6
+    ... and counted only where a leader cut happened from round 395 on (the games the rule can touch) | x1.25: 1 | x1.50: 2 | x2.00: 4 | x3.00: 5
+    median margin of the losses: 31 segments; of the wins: 13; losses by 5 or fewer: 0, by 6-10: 1, by 11-20: 7, by more: 25
+
+--- maps of 1,200 cells or fewer: 78 games, won 29, lost 49
+    losses that turn if our final longest were longer by | +2: 1 | +5: 2 | +10: 8 | +15: 14 | +20: 19 | +30: 27
+    losses that turn if our leader's growth after round 400 were multiplied by | x1.25: 5 | x1.50: 11 | x2.00: 17 | x3.00: 21
+    the same, but our final longest never above 0.9 of our own final potential | x1.25: 4 | x1.50: 6 | x2.00: 8 | x3.00: 10
+    ... and counted only where a leader cut happened from round 395 on (the games the rule can touch) | x1.25: 4 | x1.50: 6 | x2.00: 8 | x3.00: 10
+    median margin of the losses: 28 segments; of the wins: 9; losses by 5 or fewer: 2, by 6-10: 6, by 11-20: 11, by more: 30
+
+--- maps over 1,200 cells: 65 games, won 12, lost 53
+    losses that turn if our final longest were longer by | +2: 1 | +5: 2 | +10: 3 | +15: 6 | +20: 10 | +30: 17
+    losses that turn if our leader's growth after round 400 were multiplied by | x1.25: 2 | x1.50: 6 | x2.00: 10 | x3.00: 20
+    the same, but our final longest never above 0.9 of our own final potential | x1.25: 2 | x1.50: 6 | x2.00: 10 | x3.00: 15
+    ... and counted only where a leader cut happened from round 395 on (the games the rule can touch) | x1.25: 2 | x1.50: 6 | x2.00: 10 | x3.00: 14
+    median margin of the losses: 44 segments; of the wins: 32; losses by 5 or fewer: 3, by 6-10: 0, by 11-20: 8, by more: 42
+
+--- against test4: 49 games, won 17, lost 32
+    losses that turn if our final longest were longer by | +2: 2 | +5: 3 | +10: 4 | +15: 7 | +20: 13 | +30: 22
+    losses that turn if our leader's growth after round 400 were multiplied by | x1.25: 3 | x1.50: 5 | x2.00: 8 | x3.00: 15
+    the same, but our final longest never above 0.9 of our own final potential | x1.25: 2 | x1.50: 3 | x2.00: 5 | x3.00: 10
+    ... and counted only where a leader cut happened from round 395 on (the games the rule can touch) | x1.25: 2 | x1.50: 3 | x2.00: 5 | x3.00: 9
+    median margin of the losses: 24 segments; of the wins: 24; losses by 5 or fewer: 3, by 6-10: 1, by 11-20: 9, by more: 19
+
+--- against WeHaveQuizzes: 74 games, won 13, lost 61
+    losses that turn if our final longest were longer by | +2: 0 | +5: 1 | +10: 6 | +15: 10 | +20: 11 | +30: 17
+    losses that turn if our leader's growth after round 400 were multiplied by | x1.25: 3 | x1.50: 10 | x2.00: 17 | x3.00: 23
+    the same, but our final longest never above 0.9 of our own final potential | x1.25: 3 | x1.50: 7 | x2.00: 11 | x3.00: 13
+    ... and counted only where a leader cut happened from round 395 on (the games the rule can touch) | x1.25: 3 | x1.50: 7 | x2.00: 11 | x3.00: 13
+    median margin of the losses: 44 segments; of the wins: 9; losses by 5 or fewer: 1, by 6-10: 5, by 11-20: 6, by more: 49
+
+--- against everybody else: 20 games, won 11, lost 9
+    losses that turn if our final longest were longer by | +2: 0 | +5: 0 | +10: 1 | +15: 3 | +20: 5 | +30: 5
+    losses that turn if our leader's growth after round 400 were multiplied by | x1.25: 1 | x1.50: 2 | x2.00: 2 | x3.00: 3
+    the same, but our final longest never above 0.9 of our own final potential | x1.25: 1 | x1.50: 2 | x2.00: 2 | x3.00: 2
+    ... and counted only where a leader cut happened from round 395 on (the games the rule can touch) | x1.25: 1 | x1.50: 2 | x2.00: 2 | x3.00: 2
+    median margin of the losses: 17 segments; of the wins: 14; losses by 5 or fewer: 1, by 6-10: 0, by 11-20: 4, by more: 4
+
+the losses by 10 or fewer, one per line: game, map, run, opponent, final longest own:enemy, longest at round 400 own:enemy, leader cuts from round 395
+   1044201 | Around UNSW | dl-20261004 | test4 | 51:52 | 48:26 | 5 cuts
+   1044208 | Portals | dl-20261004 | test4 | 42:43 | 14:6 | 6 cuts
+   1058363 | weakhold | passage2-test-old | WeHaveQuizzes | 16:18 | 13:14 | 5 cuts
+   1058149 | Around UNSW | passage2-test-old | test4 | 45:50 | 32:38 | 6 cuts
+   993428 | Around UNSW | dl-20261003 | 842 | 66:71 | 41:42 | 2 cuts
+   1044522 | Portals | dl-20261004 | WeHaveQuizzes | 33:39 | 12:12 | 10 cuts
+   1045374 | weakhold | dl-20261004 | WeHaveQuizzes | 25:31 | 14:17 | 7 cuts
+   1063241 | Maze | qh31-test-old | WeHaveQuizzes | 81:87 | 16:38 | 2 cuts
+   1029031 | Portals | stride-new | WeHaveQuizzes | 28:35 | 7:9 | 5 cuts
+   1058146 | Maze | passage2-test-old | test4 | 49:56 | 13:36 | 6 cuts
+   1053785 | Portals | dl-20261004 | WeHaveQuizzes | 36:45 | 9:17 | 2 cuts

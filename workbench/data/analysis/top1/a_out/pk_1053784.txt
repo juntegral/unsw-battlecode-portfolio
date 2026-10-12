@@ -1,0 +1,61 @@
+=== PACK 1053784 Trauma 48x24 | protagonist side A (team 1119) vs WeHaveQuizzes (2157.0) | winner B by queen rule | rounds 500
+final: {'A': {'units': 5, 'total': 68, 'longest': 31, 'queen': 31}, 'B': {'units': 2, 'total': 65, 'longest': 39, 'queen': 39}} | queens: {'A': 0, 'B': 1}
+
+-- opening: units/total/longest every 10 rounds (own | opp)
+  r  0 own (2, 8, 4) | opp (2, 8, 4) | ownQ ((4, 15), 4) oppQ ((43, 8), 4)
+  r 10 own (4, 8, 2) | opp (4, 8, 2) | ownQ ((6, 20), 2) oppQ ((39, 13), 2)
+  r 20 own (5, 10, 2) | opp (4, 8, 2) | ownQ ((4, 18), 2) oppQ ((37, 19), 2)
+  r 30 own (5, 13, 5) | opp (4, 9, 3) | ownQ ((6, 10), 2) oppQ ((37, 9), 2)
+  r 40 own (6, 12, 2) | opp (5, 12, 3) | ownQ ((6, 2), 2) oppQ ((39, 5), 2)
+  r 50 own (7, 16, 4) | opp (7, 18, 4) | ownQ ((2, 0), 2) oppQ ((45, 7), 2)
+  r 60 own (8, 19, 4) | opp (9, 22, 4) | ownQ ((0, 8), 2) oppQ ((45, 17), 2)
+  r 80 own (9, 22, 3) | opp (14, 34, 4) | ownQ ((3, 21), 3) oppQ ((46, 21), 3)
+  r100 own (11, 26, 4) | opp (21, 50, 4) | ownQ ((0, 19), 2) oppQ ((46, 11), 3)
+  own splits r0-60 (before,parent,child):n [((4, 2, 2), 6), ((6, 4, 2), 3), ((8, 2, 6), 3)] | self-kills 0 | rams made 0
+  own queen first 30 actions: 0:mv S 1:SPLIT 2:mv E 3:mv E 4:mv E 5:mv S 6:mv S 7:mv S 8:mv S 9:mv W 10:mv S 11:mv W 12:mv W 13:mv N 14:mv W 15:mv W 16:mv N 17:mv N 18:mv E 19:mv E 20:mv N 21:mv N 22:mv N 23:mv N 24:mv N 25:mv N 26:mv E 27:mv N 28:mv E 29:mv N
+  opp splits r0-60 (before,parent,child):n [((4, 2, 2), 8), ((5, 2, 3), 1)] | self-kills 0 | rams made 0
+  opp queen first 30 actions: 0:SPLIT 1:mv W 2:mv S 3:mv W 4:mv W 5:mv W 6:mv S 7:mv S 8:mv S 9:mv S 10:mv S 11:mv W 12:mv S 13:mv S 14:mv S 15:mv S 16:mv S 17:mv S 18:mv W 19:mv N 20:mv N 21:mv N 22:mv N 23:mv N 24:mv N 25:mv N 26:mv N 27:mv N 28:mv N 29:mv N
+
+-- own queen splits: [(1, '4->2+2', (4, 16)), (91, '4->2+2', (4, 23)), (175, '4->2+2', (3, 23))]
+   own queen eats per 50 rounds: {50: {'natural': 2}, 150: {'natural': 2}, 200: {'natural': 1}, 300: {'natural': 2, 'own_noaction': 6}, 350: {'own_noaction': 12}, 400: {'natural': 4, 'own_noaction': 2}, 450: {'natural': 2}}
+   own queen every 20 rounds (round: head, len, ball, nearest enemy d/L, allies<=6): 0:(4, 15) L4 b41 e- a0 | 20:(4, 18) L2 b41 e- a2 | 40:(6, 2) L2 b37 e- a1 | 60:(0, 8) L2 b25 e- a0 | 80:(3, 21) L3 b36 e- a1 | 100:(0, 19) L2 b25 e- a0 | 120:(3, 20) L2 b39 e- a2 | 140:(0, 23) L2 b15 e- a2 | 160:(2, 19) L3 b37 e- a2 | 180:(3, 21) L2 b36 e- a2 | 200:(3, 19) L2 b40 e- a1 | 220:(3, 19) L2 b40 e- a2 | 240:(5, 21) L3 b37 e- a1 | 260:(3, 17) L3 b40 e- a4 | 280:(4, 14) L3 b41 e- a3 | 300:(1, 9) L3 b32 e- a2 | 320:(2, 22) L3 b28 e- a0 | 340:(5, 21) L5 b37 e- a1 | 360:(6, 9) L14 b41 e- a3 | 380:(5, 0) L22 b25 e- a0 | 400:(4, 18) L23 b41 e- a0 | 420:(0, 8) L25 b25 e- a0 | 440:(5, 1) L28 b32 e- a0 | 460:(1, 0) L30 b19 e- a0 | 480:(2, 20) L30 b36 e- a0
+
+-- opp queen splits: [(0, '4->2+2', (43, 8)), (71, '4->2+2', (46, 23)), (134, '4->2+2', (43, 0)), (161, '4->2+2', (47, 0))]
+   opp queen eats per 50 rounds: {50: {'natural': 3}, 100: {'natural': 2}, 150: {'natural': 1, 'own_noaction': 1}, 250: {'own_noaction': 6}, 300: {'own_noaction': 24, 'natural': 1}, 350: {'own_noaction': 3}, 400: {'own_self': 2}}
+   opp queen every 20 rounds (round: head, len, ball, nearest enemy d/L, allies<=6): 0:(43, 8) L4 b41 e- a0 | 20:(37, 19) L2 b25 e- a2 | 40:(39, 5) L2 b37 e- a1 | 60:(45, 17) L2 b37 e- a1 | 80:(46, 21) L3 b28 e- a3 | 100:(46, 11) L3 b32 e- a2 | 120:(46, 3) L3 b31 e- a3 | 140:(46, 0) L3 b19 e- a2 | 160:(47, 1) L3 b19 e- a5 | 180:(44, 11) L2 b40 e- a10 | 200:(38, 7) L3 b32 e- a8 | 220:(44, 19) L3 b40 e- a11 | 240:(47, 10) L3 b25 e- a6 | 260:(40, 5) L3 b40 e- a11 | 280:(40, 7) L3 b40 e- a16 | 300:(44, 21) L9 b36 e- a6 | 320:(42, 23) L16 b25 e- a6 | 340:(46, 16) L31 b32 e- a1 | 360:(43, 14) L35 b41 e- a0 | 380:(45, 1) L37 b28 e- a0 | 400:(47, 17) L37 b25 e- a0 | 420:(45, 6) L39 b37 e- a0 | 440:(46, 7) L39 b32 e- a0 | 460:(40, 17) L39 b40 e(6, 9) a0 | 480:(47, 21) L39 b22 e- a0
+
+-- own queen: 0 episodes with an enemy head within 3 steps; rounds []
+
+-- queen deaths
+  OWN queen alive at the end, len 31
+  ENEMY queen alive at the end, len 39
+
+-- deaths of dragons >= 15 long (both teams)
+
+-- own self-kills (noaction) by length class per 100 rounds, and top eaters of own self-kill pearls
+   {(300, '2'): 7, (300, '3-4'): 4, (300, '5-9'): 1, (400, '2'): 6, (400, '3-4'): 8}
+
+-- reverse splits (before >= 12, parent keeps <= 3) own: 0 opp: 3
+   own reverse splits of 20+ (round, id, before->p+c, at): []
+
+-- ram chances on the enemy queen (q3): own side
+   total 18, taken 0, not taken 18
+   r447 #361 L8 at (47, 20) needs 6 steps (free 2, cost 4); view-dist(cheb) to her head at round start 6, after her move 5; her L39 at (46, 14); longest 0; own queen alive 1; it did: mv NN
+   r448 #361 L8 at (47, 18) needs 5 steps (free 2, cost 3); view-dist(cheb) to her head at round start 3, after her move 3; her L39 at (46, 15); longest 0; own queen alive 1; it did: mv WS
+   r449 #361 L8 at (46, 19) needs 4 steps (free 2, cost 2); view-dist(cheb) to her head at round start 4, after her move 3; her L39 at (45, 15); longest 0; own queen alive 1; it did: mv SS
+   r450 #361 L8 at (46, 21) needs 5 steps (free 2, cost 3); view-dist(cheb) to her head at round start 5, after her move 4; her L39 at (45, 16); longest 0; own queen alive 1; it did: mv SS
+   r451 #361 L9 at (46, 23) needs 6 steps (free 3, cost 3); view-dist(cheb) to her head at round start 6, after her move 5; her L39 at (45, 17); longest 0; own queen alive 1; it did: mv WNN
+   r452 #361 L9 at (45, 21) needs 7 steps (free 3, cost 4); view-dist(cheb) to her head at round start 3, after her move 4; her L39 at (45, 18); longest 0; own queen alive 1; it did: mv WSW
+   r453 #361 L9 at (43, 22) needs 5 steps (free 3, cost 2); view-dist(cheb) to her head at round start 5, after her move 5; her L39 at (44, 17); longest 0; own queen alive 1; it did: mv WWS
+   r454 #361 L9 at (41, 23) needs 9 steps (free 3, cost 6); view-dist(cheb) to her head at round start 6, after her move 5; her L39 at (43, 17); longest 0; own queen alive 1; it did: mv EE
+   r455 #361 L9 at (43, 23) needs 8 steps (free 3, cost 5); view-dist(cheb) to her head at round start 5, after her move 4; her L39 at (43, 18); longest 0; own queen alive 1; it did: mv E
+   r456 #361 L9 at (44, 23) needs 8 steps (free 3, cost 5); view-dist(cheb) to her head at round start 4, after her move 4; her L39 at (43, 19); longest 0; own queen alive 1; it did: mv ENN
+   r457 #361 L9 at (45, 21) needs 6 steps (free 3, cost 3); view-dist(cheb) to her head at round start 3, after her move 4; her L39 at (42, 19); longest 0; own queen alive 1; it did: mv WSW
+   r458 #361 L9 at (43, 22) needs 8 steps (free 3, cost 5); view-dist(cheb) to her head at round start 3, after her move 4; her L39 at (41, 19); longest 0; own queen alive 1; it did: mv WNN
+   r459 #361 L9 at (42, 20) needs 5 steps (free 3, cost 2); view-dist(cheb) to her head at round start 2, after her move 3; her L39 at (41, 18); longest 0; own queen alive 1; it did: mv WSS
+   r460 #361 L9 at (41, 22) needs 5 steps (free 3, cost 2); view-dist(cheb) to her head at round start 5, after her move 4; her L39 at (40, 17); longest 0; own queen alive 1; it did: mv WNN
+   r461 #361 L9 at (40, 20) needs 7 steps (free 3, cost 4); view-dist(cheb) to her head at round start 2, after her move 4; her L39 at (40, 18); longest 0; own queen alive 1; it did: mv WWN
+   r462 #361 L9 at (38, 19) needs 5 steps (free 3, cost 2); view-dist(cheb) to her head at round start 3, after her move 4; her L39 at (39, 16); longest 0; own queen alive 1; it did: mv NN
+   r463 #361 L9 at (38, 17) needs 5 steps (free 3, cost 2); view-dist(cheb) to her head at round start 2, after her move 3; her L39 at (39, 15); longest 0; own queen alive 1; it did: mv WS
+   r469 #361 L9 at (38, 14) needs 10 steps (free 3, cost 7); view-dist(cheb) to her head at round start 4, after her move 5; her L39 at (42, 11); longest 0; own queen alive 1; it did: mv NN
+   (opponent's chances on the own queen: total 0, taken 0)

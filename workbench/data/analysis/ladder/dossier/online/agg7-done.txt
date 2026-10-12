@@ -1,0 +1,12 @@
+nice -n 10 python3 -B data/analysis/ladder/dossier/online/agg7_report.py
+Completed: 2026-10-08 15:27:06 KST
+Labels found: agg7-m1, agg7-m2, agg7-m3, agg7-b1, agg7-b2, agg8-q1, sr51-bob1
+195 unique games counted once; all per-opponent report logs passed.
+agg7-m3: 7/30 wins (6/15 + 1/15).
+agg8-q2: not yet present.
+Crash game M1426896: missing eaten/splits treated as 0; mismatch assertion verified.
+2026-10-08T18:36:30+09:00: B10 (agg9-a*) 추가, 모든 arm 표·B10–q1/m1/m2/m3/합산 짝 비교 추가; 195판 중복 없음, MAIN 90/21·B7 60/23·B7Q 30/14 보존, 재실행 캐시 195/195.
+TRADE_SHORT_BY: 비여왕 아군이 시작한 적 머리 충돌에서 충돌 길이 3/4/5+별 정확히 1 짧은 머리, 동길이 및 2 이상 짧은 머리도 집계.
+LUNGE_PEARL: ceil(차례 시작 L/4)를 넘는 걸음의 적 머리 충돌 중 그 차례 유료 이동 걸음에 진주 섭취가 있었던 건수 / 모든 유료 적 머리 충돌.
+FEEDER_EAT: 섭취 차례 시작 비여왕·비최장 아군의 사망 전 0–3라운드 진주 섭취 중 사망 낙하 진주를 이후 0–3라운드 내 차례 시작 최장 아군이 먹은 경우; 진주별 1회.
+agg9-a1은 미도착: B10 실측은 NA. 내부 feed_index와 흡수 의도는 기보에 없어 직접 발동 집계 불가; 낙하 진주 회수로 근사. 미완성 상태·메타·기보·로그 및 완료 입력 시험 통과.

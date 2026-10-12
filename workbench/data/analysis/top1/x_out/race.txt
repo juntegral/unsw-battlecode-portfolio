@@ -1,0 +1,49 @@
+
+== meow all: round-500 games with both queens dead, by own / enemy total length at round 400
+   ratio      won                longest r300 own:enemy     longest r400 own:enemy     longest end own:enemy      units r400 own:enemy  
+   under 0.5  1 of 55 = 2%       6 : 22                     8 : 37                     14 : 67                    12 : 41               
+   0.5-0.8    11 of 33 = 33%     16 : 19                    21 : 32                    53 : 64                    53 : 40               
+   0.8-1      5 of 17 = 29%      5 : 9                      13 : 17                    30 : 39                    21 : 25               
+   1-1.25     8 of 19 = 42%      5 : 7                      13 : 23                    42 : 37                    27 : 20               
+   1.25-2     6 of 7 = 86%       5 : 7                      15 : 22                    49 : 33                    47 : 17               
+   over 2     10 of 12 = 83%     4 : 4                      12 : 12                    32 : 10                    34 : 3                
+   all: 41 of 143 = 29% of this group's 401 games are such games; with total length at least level at round 400: 24 of 38 = 63%; at least 0.8: 29 of 55 = 53%
+   our losses with total length at least level at round 400 (lost on the longest dragon alone):
+      game 1027819 Maze             total r400 136 vs 131, longest r300 4 vs 8, r400 13 vs 58, end 32 vs 77; total at end 156 vs 154
+      game 1027971 Portals          total r400 62 vs 51, longest r300 4 vs 5, r400 13 vs 10, end 19 vs 30; total at end 56 vs 30
+      game 1029032 Slithery Fight   total r400 236 vs 209, longest r300 47 vs 37, r400 49 vs 93, end 82 vs 113; total at end 189 vs 131
+      game 1029033 weakhold         total r400 44 vs 39, longest r300 5 vs 5, r400 14 vs 16, end 4 vs 26; total at end 12 vs 65
+      game 1044512 Maze             total r400 133 vs 130, longest r300 4 vs 9, r400 10 vs 52, end 74 vs 87; total at end 127 vs 137
+      game 1045202 Portals          total r400 71 vs 65, longest r300 4 vs 7, r400 10 vs 20, end 28 vs 41; total at end 37 vs 66
+      game 1058858 Portals          total r400 75 vs 75, longest r300 5 vs 12, r400 15 vs 23, end 22 vs 37; total at end 33 vs 37
+      game 1063241 Maze             total r400 157 vs 143, longest r300 4 vs 14, r400 16 vs 38, end 81 vs 87; total at end 133 vs 130
+      game 1063251 Portals          total r400 72 vs 60, longest r300 5 vs 4, r400 10 vs 11, end 9 vs 37; total at end 58 vs 40
+      game 1063682 Portals          total r400 86 vs 84, longest r300 5 vs 10, r400 9 vs 11, end 16 vs 33; total at end 53 vs 46
+      game 1068052 Maze             total r400 153 vs 136, longest r300 4 vs 22, r400 10 vs 30, end 66 vs 94; total at end 131 vs 121
+      game 1058146 Maze             total r400 137 vs 105, longest r300 4 vs 6, r400 13 vs 36, end 49 vs 56; total at end 118 vs 145
+      game 1045374 weakhold         total r400 59 vs 24, longest r300 4 vs 4, r400 14 vs 17, end 25 vs 31; total at end 49 vs 33
+      game 1058363 weakhold         total r400 64 vs 30, longest r300 4 vs 4, r400 13 vs 14, end 16 vs 18; total at end 44 vs 47
+
+== meow live: round-500 games with both queens dead, by own / enemy total length at round 400
+   ratio      won                longest r300 own:enemy     longest r400 own:enemy     longest end own:enemy      units r400 own:enemy  
+   under 0.5  0 of 38 = 0%       5 : 22                     8 : 36                     15 : 67                    9 : 42                
+   0.5-0.8    7 of 21 = 33%      15 : 20                    22 : 33                    64 : 64                    54 : 38               
+   0.8-1      5 of 13 = 38%      5 : 9                      13 : 17                    30 : 39                    21 : 25               
+   1-1.25     5 of 11 = 45%      4 : 7                      10 : 20                    32 : 37                    43 : 22               
+   1.25-2     3 of 4 = 75%       8 : 9                      17 : 36                    58 : 35                    53 : 17               
+   over 2     7 of 9 = 78%       5 : 4                      13 : 13                    25 : 13                    34 : 3                
+   all: 27 of 96 = 28% of this group's 275 games are such games; with total length at least level at round 400: 15 of 24 = 62%; at least 0.8: 20 of 37 = 54%
+
+== top three: round-500 games with both queens dead, by own / enemy total length at round 400
+   ratio      won                longest r300 own:enemy     longest r400 own:enemy     longest end own:enemy      units r400 own:enemy  
+   under 0.5  7 of 55 = 13%      4 : 7                      10 : 18                    15 : 46                    6 : 42                
+   0.5-0.8    20 of 61 = 33%     11 : 15                    34 : 33                    39 : 53                    28 : 52               
+   0.8-1      45 of 70 = 64%     14 : 13                    40 : 29                    57 : 52                    36 : 49               
+   1-1.25     50 of 86 = 58%     13 : 12                    37 : 24                    55 : 46                    40 : 43               
+   1.25-2     63 of 89 = 71%     16 : 8                     40 : 21                    64 : 36                    46 : 36               
+   over 2     81 of 86 = 94%     7 : 4                      22 : 5                     48 : 13                    29 : 8                
+   all: 266 of 447 = 60% of this group's 1637 games are such games; with total length at least level at round 400: 194 of 261 = 74%; at least 0.8: 239 of 331 = 72%
+
+== our opponents: round-500 games with both queens dead, by own / enemy total length at round 400
+   ratio      won                longest r300 own:enemy     longest r400 own:enemy     longest end own:enemy      units r400 own:enemy  
+   all: 0 of 0 of this group's 0 games are such games; with total length at least level at round 400: 0 of 0; at least 0.8: 0 of 0

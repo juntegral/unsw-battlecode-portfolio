@@ -1,0 +1,45 @@
+{
+  "label": "v0t-b-px4",
+  "bot": "~/01. Project/개인 프로젝트/unsw-swarm/exp/v1/bot-fixoff-swf",
+  "at": "2026-09-30T18:14:24.885Z",
+  "benchmark": {
+    "maps": 10,
+    "opps": [
+      "proxy4_king",
+      "proxy4_swarm",
+      "proxy4_elim"
+    ],
+    "seeds": [
+      2
+    ],
+    "sides": 2
+  },
+  "all": {
+    "n": 60,
+    "G": 15.916666666666666,
+    "alive": 0.8166666666666667,
+    "win": 0.16666666666666666
+  },
+  "byOpp": {
+    "proxy4_king": {
+      "n": 20,
+      "G": 17.65,
+      "alive": 0.85,
+      "win": 0.25
+    },
+    "proxy4_swarm": {
+      "n": 20,
+      "G": 15,
+      "alive": 0.85,
+      "win": 0.1
+    },
+    "proxy4_elim": {
+      "n": 20,
+      "G": 15.1,
+      "alive": 0.75,
+      "win": 0.15
+    }
+  },
+  "problems": 0,
+  "errors": 0
+}

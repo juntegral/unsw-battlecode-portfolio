@@ -1,0 +1,130 @@
+
+=== main: 9 games named Portals, 9 on Portals #1
+  board 32x16, open tiles 512, portal pairs 20; rooms of 6 or fewer (size, how many): [[1, 16], [2, 16], [4, 12]]; largest rooms: [[208, 2], [4, 12], [2, 16], [1, 16]]
+  queen start length [(3, 9)], room of her start tile [(208, 9)]
+  --- OUR queen
+    died 9 of 9; alive at the end 0
+    room size at death (size, deaths): [(1, 5), (4, 4)]; in a room of 6 or fewer: 9 of 9 = 1.000 (95% 0.70 to 1.00)
+    games with a portal step before death: 9 of 9
+    first raw round with a turn start in a room of 6 or fewer (round, games): [('5', 9)]
+    causes: [('body of own dragon', 2), ('own body', 4), ('wall', 3)]
+    death rounds: [10, 10, 38, 52, 68, 78, 182, 187, 231]; at round 9 or 10: 2
+    turn starts in rooms of 6 or fewer: 104 of 865 = 0.120
+    ever started a turn in a small room: 9 games; of those died in a small room: 9
+    of the 9 with a portal step: died in a small room 9, died elsewhere 0, alive at the end 0; first portal step rounds [(4, 9)]
+    queen length at death (length, deaths): [(2, 4), (3, 4), (5, 1)]
+    tile of death (x,y: deaths): [('18,12', 1), ('22,10', 2), ('26,9', 1), ('27,8', 1), ('4,10', 1), ('4,14', 1), ('4,7', 1), ('8,5', 1)]
+  --- THEIR queen
+    died 5 of 9; alive at the end 4
+    room size at death (size, deaths): [(1, 1), (208, 4)]; in a room of 6 or fewer: 1 of 9 = 0.111 (95% 0.02 to 0.44)
+    games with a portal step before death: 2 of 9
+    first raw round with a turn start in a room of 6 or fewer (round, games): [('9', 2), ('None', 7)]
+    causes: [('body of own dragon', 1), ('head-on as mover', 1), ('no valid action', 1), ('wall', 2)]
+    death rounds: [10, 208, 250, 334, 419]; at round 9 or 10: 1
+    turn starts in rooms of 6 or fewer: 8 of 3226 = 0.002
+    ever started a turn in a small room: 2 games; of those died in a small room: 1
+    of the 2 with a portal step: died in a small room 1, died elsewhere 1, alive at the end 0; first portal step rounds [(8, 2)]
+    queen length at death (length, deaths): [(2, 4), (3, 1)]
+    tile of death (x,y: deaths): [('16,7', 1), ('21,13', 1), ('28,0', 1), ('31,15', 1), ('4,2', 1)]
+  won 4 of 9; lost with only their queen alive 4; lost otherwise 1; drawn 0
+  end reason (0 elimination, 1 rounds used up): [(1, 9)]
+  [chance] died in a small room, ours 9 against theirs 1 of 9: Fisher p 0.00041
+  [chance] portal step, ours 9 against theirs 2 of 9: Fisher p 0.00226
+  [spread] opponents: [('中国人不准飞😡😡😡😡😡😡😡 (791)', 1), ('1 (231)', 1), ('DeepSeek-V4.1-Flash (776)', 1), ('dev test 1 :P (545)', 1), ('ComTamSuonNuong (193)', 1), ('we love gru (998)', 1), ('😹 (456)', 1), ('Proof by Intimidation (465)', 1), ('Settlers of Battlecode (258)', 1)]
+  [spread] evenings: [('10-06a', 1), ('10-06b', 4), ('10-07a', 4)]; bands: [('1700-1899', 4), ('1900-2099', 3), ('2100+', 2)]; our side: [('A', 6), ('B', 3)]
+  [result] our queen dead by round 10: won 1 of 2; later or never: won 3 of 7
+  [result] their queen died in a small room: we won 1 of 1; otherwise 3 of 8
+  [per game] game, opponent rating, result, then per queen: room changes at her turn starts (round:room size:length), death
+    1182279 1810 L 10-06a | us [0:208:3 5:4:3 9:208:5 77:1:4] died r78 room 1 len 2 own body | them [0:208:3] alive
+    1243331 1982 W 10-06b | us [0:208:3 5:4:3 9:208:4 124:4:3 129:208:4 134:4:3 138:208:5] ... died r182 room 1 len 3 wall | them [0:208:3] died r419 room 208 len 2 wall
+    1246506 1776 W 10-06b | us [0:208:3 5:4:3] died r10 room 4 len 2 body of own dragon | them [0:208:3] died r250 room 208 len 2 head-on as mover
+    1249038 2382 L 10-06b | us [0:208:3 5:4:3 9:208:5 63:4:4 68:208:5 108:4:4 113:208:5] ... died r231 room 4 len 5 body of own dragon | them [0:208:3] alive
+    1250322 1971 L 10-06b | us [0:208:3 5:4:4] died r10 room 4 len 3 own body | them [0:208:3] alive
+    1255596 2020 W 10-07a | us [0:208:3 5:4:4 10:208:4 37:1:4] died r38 room 1 len 2 own body | them [0:208:3] died r208 room 208 len 2 body of own dragon
+    1265770 1756 W 10-07a | us [0:208:3 5:4:4 10:208:4 25:4:3 30:208:4 55:4:3 60:208:4] ... died r68 room 4 len 2 own body | them [0:208:3 9:1:4] died r10 room 1 len 2 wall
+    1270030 1851 L 10-07a | us [0:208:3 5:4:3 10:208:3 38:4:4 43:208:5 52:1:3] died r52 room 1 len 3 wall | them [0:208:3 9:4:4 15:208:3] died r334 room 208 len 3 no valid action
+    1271875 2140 L 10-07a | us [0:208:3 5:4:3 10:208:4 187:1:3] died r187 room 1 len 3 wall | them [0:208:3] alive
+
+=== v31: 27 games named Portals, 27 on Portals #1
+  board 32x16, open tiles 512, portal pairs 20; rooms of 6 or fewer (size, how many): [[1, 16], [2, 16], [4, 12]]; largest rooms: [[208, 2], [4, 12], [2, 16], [1, 16]]
+  queen start length [(3, 27)], room of her start tile [(208, 27)]
+  --- OUR queen
+    died 27 of 27; alive at the end 0
+    room size at death (size, deaths): [(1, 11), (4, 15), (208, 1)]; in a room of 6 or fewer: 26 of 27 = 0.963 (95% 0.82 to 0.99)
+    games with a portal step before death: 27 of 27
+    first raw round with a turn start in a room of 6 or fewer (round, games): [('5', 27)]
+    causes: [('body of own dragon', 13), ('own body', 3), ('wall', 11)]
+    death rounds: [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 10, 10, 42, 45, 56, 60, 64, 66, 95, 98, 100, 109, 114, 136, 157, 170, 187]; at round 9 or 10: 12
+    turn starts in rooms of 6 or fewer: 196 of 1636 = 0.120
+    ever started a turn in a small room: 27 games; of those died in a small room: 26
+    of the 27 with a portal step: died in a small room 26, died elsewhere 1, alive at the end 0; first portal step rounds [(4, 27)]
+    queen length at death (length, deaths): [(2, 10), (3, 7), (4, 7), (5, 3)]
+    tile of death (x,y: deaths): [('18,12', 1), ('18,9', 1), ('22,10', 1), ('22,6', 1), ('26,5', 1), ('27,13', 2), ('27,8', 6), ('4,7', 6), ('5,10', 2), ('5,8', 1), ('8,8', 1), ('9,5', 4)]
+  --- THEIR queen
+    died 21 of 27; alive at the end 6
+    room size at death (size, deaths): [(1, 8), (4, 2), (208, 11)]; in a room of 6 or fewer: 10 of 27 = 0.370 (95% 0.22 to 0.56)
+    games with a portal step before death: 12 of 27
+    first raw round with a turn start in a room of 6 or fewer (round, games): [('13', 1), ('130', 1), ('159', 1), ('174', 1), ('203', 1), ('274', 1), ('282', 1), ('323', 1), ('5', 2), ('55', 1), ('59', 1), ('None', 15)]
+    causes: [('body of own dragon', 1), ('head-on as mover', 1), ('head-on as standing victim', 2), ('no valid action', 4), ('own body', 10), ('wall', 3)]
+    death rounds: [22, 51, 54, 76, 131, 137, 162, 175, 192, 203, 223, 248, 279, 301, 311, 324, 332, 346, 356, 379, 431]; at round 9 or 10: 0
+    turn starts in rooms of 6 or fewer: 129 of 7754 = 0.017
+    ever started a turn in a small room: 12 games; of those died in a small room: 10
+    of the 12 with a portal step: died in a small room 10, died elsewhere 1, alive at the end 1; first portal step rounds [(4, 2), (12, 1), (54, 1), (58, 1), (129, 1), (158, 1), (173, 1), (202, 1), (273, 1), (281, 1), (322, 1)]
+    queen length at death (length, deaths): [(2, 16), (3, 5)]
+    tile of death (x,y: deaths): [('12,5', 1), ('13,3', 2), ('15,8', 1), ('18,0', 1), ('19,12', 1), ('21,3', 1), ('22,12', 1), ('23,10', 1), ('25,8', 1), ('26,13', 1), ('26,3', 1), ('26,5', 1), ('28,3', 1), ('3,7', 1), ('30,15', 1), ('4,10', 1), ('5,2', 1), ('7,0', 1), ('7,1', 1), ('9,1', 1)]
+  won 13 of 27; lost with only their queen alive 6; lost otherwise 8; drawn 0
+  end reason (0 elimination, 1 rounds used up): [(1, 27)]
+  [chance] died in a small room, ours 26 against theirs 10 of 27: Fisher p 0.00000
+  [chance] portal step, ours 27 against theirs 12 of 27: Fisher p 0.00000
+  [spread] opponents: [('中国人不准飞😡😡😡😡😡😡😡 (791)', 3), ('Delusion Tax (375)', 3), ('the uncancelables (899)', 2), ('chad gdp (70)', 2), ('doofenshmirtz good incorporated (1015)', 2), ('Memory? (1097)', 1), ('we love gru (998)', 1), ('dev test 1 :P (545)', 1), ('test4 (19)', 1), ('Vodyanitsa (1052)', 1), ('err404 (485)', 1), ('SHINK AI 6500 (280)', 1), ('Check Raise (152)', 1), ('Weneedmoretokens (135)', 1), ('gdggs (64)', 1), ('Codehammer 40K (34)', 1), ('Sponge(Albert and Bob) (213)', 1), ('DESTINY 3 (948)', 1), ('python.io (147)', 1), ('life is NP hard (30)', 1)]
+  [spread] evenings: [('10-06a', 17), ('10-06b', 10)]; bands: [('1700-1899', 13), ('1900-2099', 10), ('2100+', 4)]; our side: [('A', 19), ('B', 8)]
+  [result] our queen dead by round 10: won 7 of 12; later or never: won 6 of 15
+  [result] their queen died in a small room: we won 4 of 10; otherwise 9 of 17
+  [per game] game, opponent rating, result, then per queen: room changes at her turn starts (round:room size:length), death
+    1156172 1828 W 10-06a | us [0:208:3 5:4:3 10:208:3] died r109 room 208 len 3 own body | them [0:208:3] died r379 room 208 len 2 own body
+    1157402 1947 W 10-06a | us [0:208:3 5:4:3] died r10 room 4 len 2 body of own dragon | them [0:208:3] died r311 room 208 len 2 body of own dragon
+    1159563 2087 L 10-06a | us [0:208:3 5:4:4 10:208:4 35:4:4 40:208:5 65:1:4] died r66 room 1 len 2 wall | them [0:208:3 5:4:4 11:208:3 29:4:2 34:208:3 48:4:4 53:208:5] ... died r76 room 1 len 2 no valid action
+    1159940 1868 L 10-06a | us [0:208:3 5:4:3 9:208:5 55:4:4 60:208:5 95:4:4] died r98 room 4 len 3 own body | them [0:208:3] alive
+    1163237 1904 L 10-06a | us [0:208:3 5:4:3 10:208:4 187:1:3] died r187 room 1 len 3 wall | them [0:208:3 203:1:3] died r203 room 1 len 3 own body
+    1163537 2092 W 10-06a | us [0:208:3 5:4:4] died r9 room 4 len 4 body of own dragon | them [0:208:3] died r54 room 208 len 2 head-on as standing victim
+    1163748 2451 W 10-06a | us [0:208:3 5:4:3] died r9 room 4 len 4 body of own dragon | them [0:208:3] died r356 room 208 len 3 no valid action
+    1163906 2202 W 10-06a | us [0:208:3 5:4:3] died r9 room 4 len 4 body of own dragon | them [0:208:3] died r137 room 208 len 2 own body
+    1167366 2072 W 10-06a | us [0:208:3 5:4:3 10:208:3 45:1:3] died r45 room 1 len 3 wall | them [0:208:3 59:4:4 63:208:4 191:1:4] died r192 room 1 len 2 own body
+    1167651 1741 L 10-06a | us [0:208:3 5:4:4] died r9 room 4 len 5 body of own dragon | them [0:208:3] alive
+    1168704 1766 W 10-06a | us [0:208:3 5:4:4] died r9 room 4 len 4 body of own dragon | them [0:208:3 174:1:4] died r175 room 1 len 2 wall
+    1171227 2068 W 10-06a | us [0:208:3 5:4:4] died r9 room 4 len 5 body of own dragon | them [0:208:3 55:4:3 57:208:4] died r162 room 208 len 2 head-on as standing victim
+    1176478 2121 L 10-06a | us [0:208:3 5:4:4] died r9 room 4 len 5 body of own dragon | them [0:208:3 5:4:4 9:208:3 22:1:3] died r22 room 1 len 3 no valid action
+    1180217 1898 L 10-06a | us [0:208:3 5:4:3 9:208:4 55:1:4] died r56 room 1 len 2 own body | them [0:208:3] died r332 room 208 len 2 own body
+    1187034 1938 L 10-06a | us [0:208:3 5:4:3 9:208:3 32:4:3 37:208:4 44:4:3 49:208:4] ... died r60 room 1 len 2 wall | them [0:208:3 130:1:5] died r131 room 1 len 3 own body
+    1191477 1797 W 10-06a | us [0:208:3 5:4:3 10:208:4 170:1:3] died r170 room 1 len 3 wall | them [0:208:3] died r223 room 208 len 2 own body
+    1200895 1877 W 10-06a | us [0:208:3 5:4:3 9:208:5 59:4:3] died r64 room 4 len 2 body of own dragon | them [0:208:3 159:4:5 163:208:8 242:1:14] died r248 room 1 len 2 own body
+    1202048 1869 L 10-06b | us [0:208:3 5:4:4] died r9 room 4 len 4 body of own dragon | them [0:208:3] alive
+    1207391 1902 W 10-06b | us [0:208:3 5:4:4] died r9 room 4 len 4 body of own dragon | them [0:208:3] died r346 room 208 len 2 no valid action
+    1207464 1936 W 10-06b | us [0:208:3 5:4:4 10:208:3 60:4:4 65:208:5 136:1:3] died r136 room 1 len 3 wall | them [0:208:3] died r431 room 208 len 2 own body
+    1211465 1875 L 10-06b | us [0:208:3 5:4:3 9:208:4 99:1:4] died r100 room 1 len 2 wall | them [0:208:3] alive
+    1215203 1973 L 10-06b | us [0:208:3 5:4:4 10:208:4 41:1:4] died r42 room 1 len 2 wall | them [0:208:3 282:4:33 286:208:36 295:4:37 299:208:40 305:4:41 309:208:44] ... alive
+    1220108 2269 L 10-06b | us [0:208:3 5:4:3 10:208:4 37:4:3 42:208:4 114:1:3] died r114 room 1 len 3 wall | them [0:208:3] alive
+    1221347 1815 L 10-06b | us [0:208:3 5:4:3 9:208:3 145:4:4 150:208:5 156:1:4] died r157 room 1 len 2 wall | them [0:208:3] died r301 room 208 len 2 wall
+    1228882 1880 L 10-06b | us [0:208:3 5:4:3] died r9 room 4 len 4 body of own dragon | them [0:208:3 13:4:4 19:208:3 46:4:4] died r51 room 4 len 3 own body
+    1229944 1749 W 10-06b | us [0:208:3 5:4:3 10:208:4 93:4:3] died r95 room 4 len 2 wall | them [0:208:3 274:4:3] died r279 room 4 len 2 head-on as mover
+    1235757 1725 L 10-06b | us [0:208:3 5:4:3] died r10 room 4 len 2 body of own dragon | them [0:208:3 323:1:4] died r324 room 1 len 2 wall
+
+=== contrast: Stripes
+  main us queen: 10 games ([('Stripes #1', 10)]), died 9, in a room of 6 or fewer 4; rooms at death [(1, 2), (4, 2), (248, 5)]; portal step in 8; small-room turn starts 44 of 940
+  main them queen: 10 games ([('Stripes #1', 10)]), died 7, in a room of 6 or fewer 2; rooms at death [(4, 2), (248, 5)]; portal step in 4; small-room turn starts 38 of 1059
+  v31 us queen: 26 games ([('Stripes #1', 26)]), died 23, in a room of 6 or fewer 5; rooms at death [(1, 3), (3, 1), (4, 1), (248, 18)]; portal step in 22; small-room turn starts 131 of 2176
+  v31 them queen: 26 games ([('Stripes #1', 26)]), died 22, in a room of 6 or fewer 7; rooms at death [(3, 3), (4, 4), (248, 15)]; portal step in 16; small-room turn starts 172 of 1907
+
+=== queen portal steps in raw rounds 0-100, portal layouts other than Portals and Stripes
+  main us: 20 steps in 16120 queen turns (173 games)
+     by layout (games, steps, turns): [('Around UNSW #1', [18, 0, 1765]), ('Australia #1', [12, 0, 968]), ('Autarky #1', [11, 0, 1017]), ('Default #1', [15, 0, 1202]), ('Islands #1', [9, 0, 735]), ('Maze #1', [18, 0, 1789]), ('Prisoners Dilemma #1', [3, 7, 297]), ('Prisoners Dilemma #2', [6, 13, 455]), ('Queen Of Spades #1', [17, 0, 1609]), ('Schooltime #1', [13, 0, 1313]), ('Schooltime #2', [7, 0, 707]), ('Slithery Fight #1', [14, 0, 1414]), ('Trauma #1', [23, 0, 2323]), ('Trophy #1', [7, 0, 526])]
+  main them: 9 steps in 15573 queen turns (173 games)
+     by layout (games, steps, turns): [('Around UNSW #1', [18, 0, 1708]), ('Australia #1', [12, 0, 1212]), ('Autarky #1', [11, 2, 1071]), ('Default #1', [15, 0, 1074]), ('Islands #1', [9, 1, 671]), ('Maze #1', [18, 0, 1694]), ('Prisoners Dilemma #1', [3, 0, 297]), ('Prisoners Dilemma #2', [6, 0, 380]), ('Queen Of Spades #1', [17, 2, 1495]), ('Schooltime #1', [13, 0, 1313]), ('Schooltime #2', [7, 0, 707]), ('Slithery Fight #1', [14, 0, 1216]), ('Trauma #1', [23, 4, 2323]), ('Trophy #1', [7, 0, 412])]
+  v31 us: 65 steps in 25404 queen turns (278 games)
+     by layout (games, steps, turns): [('Around UNSW #1', [26, 0, 2220]), ('Australia #1', [28, 0, 2557]), ('Autarky #1', [28, 0, 2497]), ('Default #1', [15, 0, 1301]), ('Islands #1', [17, 0, 1525]), ('Maze #1', [24, 1, 2371]), ('Prisoners Dilemma #1', [18, 48, 1539]), ('Prisoners Dilemma #2', [7, 16, 620]), ('Queen Of Spades #1', [26, 0, 2351]), ('Schooltime #1', [11, 0, 1111]), ('Schooltime #2', [13, 0, 1313]), ('Slithery Fight #1', [24, 0, 2424]), ('Trauma #1', [17, 0, 1717]), ('Trophy #1', [24, 0, 1858])]
+  v31 them: 40 steps in 23919 queen turns (278 games)
+     by layout (games, steps, turns): [('Around UNSW #1', [26, 0, 2425]), ('Australia #1', [28, 3, 2447]), ('Autarky #1', [28, 9, 2587]), ('Default #1', [15, 7, 1075]), ('Islands #1', [17, 1, 1517]), ('Maze #1', [24, 5, 2199]), ('Prisoners Dilemma #1', [18, 6, 1294]), ('Prisoners Dilemma #2', [7, 0, 571]), ('Queen Of Spades #1', [26, 4, 1919]), ('Schooltime #1', [11, 0, 1111]), ('Schooltime #2', [13, 0, 1313]), ('Slithery Fight #1', [24, 2, 2207]), ('Trauma #1', [17, 3, 1648]), ('Trophy #1', [24, 0, 1606])]
+
+=== all layouts: games in which a queen starts a turn in a room of 6 or fewer, and dies in one
+  main (layout: games, ours ever in, ours died in, theirs ever in, theirs died in): [('Maze #1', [18, 5, 1, 0, 0]), ('Portals #1', [9, 9, 9, 2, 1]), ('Schooltime #1', [13, 13, 0, 13, 0]), ('Schooltime #2', [7, 7, 0, 7, 1]), ('Stripes #1', [10, 8, 4, 4, 2])]
+  v31 (layout: games, ours ever in, ours died in, theirs ever in, theirs died in): [('Maze #1', [24, 6, 3, 2, 0]), ('Portals #1', [27, 27, 26, 12, 10]), ('Schooltime #1', [11, 11, 0, 11, 0]), ('Schooltime #2', [13, 13, 0, 13, 5]), ('Slithery Fight #1', [24, 0, 0, 5, 3]), ('Stripes #1', [26, 22, 5, 16, 7])]

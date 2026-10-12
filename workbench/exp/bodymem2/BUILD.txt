@@ -1,0 +1,5 @@
+switch: BODYMEM2_ON=false (bot-on만 true; BODYMEM_ON=false 및 다른 기본값 유지)
+files: versions/v1.8/bot/{params.hpp,world.hpp,world.cpp,plan.cpp,main.cpp}, versions/v1.8/VERSION.md, exp/bodymem2/**
+spec: exp/bodymem2/spec.json — 192 games (84 on/off pairs + 12 off/base identity keys)
+run: node exp/bodymem2/runq.js exp/bodymem2/spec.json --jobs 3 --cap 6; 이후 UNSW_RULES=123 node exp/bodymem2/analyze.js 및 ANALYZE.md의 firstdiv/판면/CPU 절차
+risk: 초기 미관측 긴 몸·기존 자기 portal chain 한계; 실제 drift/지급 사망/firstdiv harm 설명/사건 identity/CPU 미측정; BUILD 게임·커밋·네트워크0

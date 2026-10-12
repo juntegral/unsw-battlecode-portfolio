@@ -1,0 +1,57 @@
+opponent mD15; cell = res q100/q200/qend p100 d100 | queen turns with an enemy head in view / her turns (gap<=3) mean gap | queen
+gx_islands_64x16_911202-seed1-side1
+  qa_L  loss   3/ 3/88 p 248 d 61 | seen  62/500 (<=3: 23) mean 3.90 | lives | vs qa_L: -
+  qa_7  loss   3/ 3/88 p 248 d 61 | seen  62/500 (<=3: 23) mean 3.90 | lives | vs qa_L: identical
+gx_rooms_24x64_911003-seed1-side0
+  qa_L  win    4/ 0/ 0 p 454 d 60 | seen   0/151 (<=3:  0) mean 0.00 | r150 L4 rammed | vs qa_L: -
+  qa_7  win    4/ 0/ 0 p 454 d 60 | seen   0/151 (<=3:  0) mean 0.00 | r150 L4 rammed | vs qa_L: identical
+ladder_around_unsw_1-seed1-side1
+  qa_L  loss   0/ 0/ 0 p 235 d 60 | seen  20/ 75 (<=3:  8) mean 4.05 | r74 L2 rammed | vs qa_L: -
+  qa_7  loss   0/ 0/ 0 p 235 d 60 | seen  20/ 75 (<=3:  8) mean 4.05 | r74 L2 rammed | vs qa_L: identical
+ladder_australia_1-seed1-side0
+  qa_L  win    4/ 4/ 0 p  70 d 33 | seen   7/222 (<=3:  1) mean 4.71 | r221 L5 rammed | vs qa_L: -
+  qa_7  win    4/ 4/ 0 p  70 d 33 | seen  22/244 (<=3: 13) mean 3.50 | r243 L2 rammed | vs qa_L: r184 QUEEN
+ladder_default_1-seed1-side0
+  qa_L  win    4/ 4/33 p 137 d 39 | seen  48/394 (<=3:  8) mean 4.40 | lives | vs qa_L: -
+  qa_7  win    4/ 4/20 p 109 d 43 | seen  58/500 (<=3: 11) mean 4.14 | lives | vs qa_L: r3 QUEEN
+ladder_devil_1-seed1-side0
+  qa_L  win    4/ 4/ 8 p 247 d 35 | seen  20/448 (<=3:  5) mean 4.35 | lives | vs qa_L: -
+  qa_7  win    4/ 4/ 8 p 247 d 35 | seen  20/448 (<=3:  5) mean 4.35 | lives | vs qa_L: identical
+ladder_islands_1-seed1-side1
+  qa_L  win    4/ 4/ 0 p 253 d 59 | seen  62/239 (<=3: 17) mean 3.90 | r238 L4 rammed | vs qa_L: -
+  qa_7  loss   4/ 4/ 0 p 253 d 59 | seen  43/236 (<=3: 16) mean 4.12 | r235 L2 own | vs qa_L: r129 QUEEN
+ladder_maze_1-seed1-side0
+  qa_L  win    4/ 0/ 0 p  80 d 35 | seen  22/146 (<=3: 14) mean 3.00 | r145 L2 own | vs qa_L: -
+  qa_7  win    4/ 0/ 0 p  80 d 35 | seen  22/146 (<=3: 14) mean 3.00 | r145 L2 own | vs qa_L: identical
+ladder_portals_1-seed1-side0
+  qa_L  loss   0/ 0/ 0 p 211 d 16 | seen  19/ 34 (<=3: 12) mean 3.00 | r33 L3 own | vs qa_L: -
+  qa_7  loss   0/ 0/ 0 p 211 d 16 | seen  19/ 34 (<=3: 12) mean 3.00 | r33 L3 own | vs qa_L: identical
+ladder_queen_of_spades_1-seed1-side1
+  qa_L  loss   4/ 3/ 0 p  60 d 14 | seen  69/368 (<=3: 25) mean 4.13 | r367 L17 rammed | vs qa_L: -
+  qa_7  win    2/ 4/ 4 p  58 d 17 | seen  84/267 (<=3: 26) mean 3.80 | lives | vs qa_L: r40 QUEEN
+ladder_schooltime_1-seed1-side1
+  qa_L  win    3/ 3/ 3 p  10 d  6 | seen 145/500 (<=3: 90) mean 3.32 | lives | vs qa_L: -
+  qa_7  win    3/ 3/ 3 p  10 d  6 | seen 145/500 (<=3: 90) mean 3.32 | lives | vs qa_L: identical
+ladder_schooltime_2-seed1-side0
+  qa_L  win    3/ 3/ 0 p  92 d 24 | seen 156/317 (<=3: 109) mean 3.02 | r316 L4 own | vs qa_L: -
+  qa_7  win    3/ 3/ 0 p  92 d 24 | seen 156/317 (<=3: 109) mean 3.02 | r316 L4 own | vs qa_L: identical
+ladder_slithery_fight_1-seed1-side1
+  qa_L  win    3/ 3/ 0 p 462 d 59 | seen  29/351 (<=3: 11) mean 3.86 | r350 L17 rammed | vs qa_L: -
+  qa_7  loss   3/ 3/ 0 p 462 d 59 | seen  29/351 (<=3: 11) mean 3.86 | r350 L16 rammed | vs qa_L: r350 QUEEN
+ladder_stripes_1-seed1-side0
+  qa_L  loss   0/ 0/ 0 p  45 d  6 | seen  31/ 68 (<=3: 13) mean 3.97 | r67 L2 rammed | vs qa_L: -
+  qa_7  loss   0/ 0/ 0 p  59 d  9 | seen  22/ 52 (<=3:  5) mean 4.27 | r51 L4 rammed | vs qa_L: r41 QUEEN
+ladder_tower_defense_1-seed1-side1
+  qa_L  loss   0/ 0/ 0 p  48 d 14 | seen  12/ 86 (<=3:  4) mean 3.92 | r85 L2 rammed | vs qa_L: -
+  qa_7  win    3/ 0/ 0 p  53 d 16 | seen  38/121 (<=3: 10) mean 4.13 | r120 L3 own | vs qa_L: r85 QUEEN
+ladder_trauma_1-seed1-side1
+  qa_L  win    4/ 4/41 p  15 d  8 | seen  38/500 (<=3: 15) mean 3.89 | lives | vs qa_L: -
+  qa_7  win    4/ 4/41 p  15 d  8 | seen  38/500 (<=3: 15) mean 3.89 | lives | vs qa_L: identical
+ladder_trophy_1-seed1-side1
+  qa_L  win    3/ 3/ 3 p 207 d 58 | seen  11/ 82 (<=3:  5) mean 3.82 | lives | vs qa_L: -
+  qa_7  win    3/ 3/ 3 p 207 d 58 | seen  11/ 82 (<=3:  5) mean 3.82 | lives | vs qa_L: identical
+ladder_weakhold_1-seed1-side1
+  qa_L  loss   4/ 4/ 0 p  46 d 11 | seen 146/239 (<=3: 65) mean 3.68 | r238 L3 own | vs qa_L: -
+  qa_7  win    3/ 5/ 0 p  54 d  8 | seen 108/290 (<=3: 29) mean 4.05 | r289 L2 own | vs qa_L: r50 QUEEN
+qa_L {"n": 18, "win": 11, "qalive": 6, "qend": 176, "q100": 51, "q200": 42, "p100": 2920, "d100": 598, "near": 897, "nearsum": 3265, "turns": 4720, "deathsum": 4702, "near3": 425, "meanNear": 3.64}
+qa_7 {"n": 18, "win": 12, "qalive": 7, "qend": 167, "q100": 51, "q200": 44, "p100": 2917, "d100": 607, "near": 897, "nearsum": 3288, "turns": 4814, "deathsum": 4796, "near3": 402, "meanNear": 3.67}

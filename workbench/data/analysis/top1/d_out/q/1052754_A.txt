@@ -1,0 +1,72 @@
+=== 1052754 weakhold 40x15 (600 cells) run dl-20261004 | A = meow (1853) vs test4 (2233) | winner B by longest after 500 rounds
+queen #0 start (2, 3); enemy queen #1 start (37, 11); path between the starts 73
+DEATH r80 headon L3 at (26, 5) by #22B L3 from (25, 6) with NE
+splits (round, before -> keeps + child, child id): r1:4->2+2(#6)
+block | head | from start | len | ate nat/corpse | splits | rounds enemy in view | nearest enemy | cells used | own heads<=4 | units own/enemy
+r  0 | (2, 3)    |   0 |  4 | 0/0 | 1 |  0 | 9 | 22 | 1.2 | 2/2
+r 25 | (7, 12)   |  14 |  2 | 0/0 | 0 |  0 | 9 | 14 | 1.3 | 4/4
+r 50 | (7, 7)    |   9 |  2 | 0/0 | 0 |  3 | 5 | 25 | 0.4 | 5/3
+r 75 | (22, 3)   |  34 |  2 | 1/0 | 0 |  5 | 1 |  6 | 0.0 | 6/2
+moves from round 50:
+   50:N  51:W  52:N  53:N  54:E  55:N  56:E  57:E  58:N  59:E  60:E  61:N
+   62:E  63:E  64:S  65:S  66:E  67:E  68:E  69:E  70:E  71:E  72:E!5  73:E!5
+   74:E!5  75:E  76:E!1  77:E!1  78:E!3  79:S!5  80:S+!3
+death record: {"round": 80, "reason": "headon", "len": 3, "pos": [26, 5], "own": 0, "killer": {"id": 22, "team": "B", "len": 3, "steps": 2, "nsteps": 2, "start": [25, 6], "born": 0, "dirs": "NE", "parent": [1, 75], "cheb_now": 1, "seen_last": 1, "seen_last3": 1}}
+  r73 L2 at (20, 3) move E -> [21, 3] ate 0 | free 3 safe 3 | in reach at start 0, at end 0 | froom 40 tree 0 | N=F(20,2) reach0 room20 E=F(21,3) reach0 room40 S=F(20,4) reach0 room40 W=o(19,3) #0L2s1 | enemies #1L3@(21,5)c2p5V
+  r74 L2 at (21, 3) move E -> [22, 3] ate 0 | free 1 safe 1 | in reach at start 0, at end 0 | froom 40 tree 0 | N=K E=F(22,3) reach0 room40 S=K W=o(20,3) #0L2s1 | enemies #1L4@(21,6)c3p5V
+  r75 L2 at (22, 3) move E -> [23, 3] ate 0 | free 2 safe 2 | in reach at start 0, at end 0 | froom 40 tree 0 | N=F(22,2) reach0 room40 E=F(23,3) reach0 room40 S=e(22,4) #1L5s4 W=o(21,3) #0L2s1 | enemies #1L5@(21,7)c4p5
+  r76 L2 at (23, 3) move E -> [24, 3] ate 0 | free 2 safe 2 | in reach at start 1, at end 0 | froom 40 tree 0 | N=F(23,2) reach0 room40 E=F(24,3) reach0 room40 S=E(23,4) #22L2s0 W=o(22,3) #0L2s1 | enemies #1L3@(21,7)c4p6 #22L2@(23,4)c1p1V
+  r77 L2 at (24, 3) move E -> [25, 3] ate 0 | free 2 safe 2 | in reach at start 1, at end 0 | froom 40 tree 0 | N=F(24,2) reach0 room40 E=F(25,3) reach0 room40 S=E(24,4) #22L2s0 W=o(23,3) #0L2s1 | enemies #22L2@(24,4)c1p1V
+  r78 L2 at (25, 3) move E -> [26, 3] ate 0 | free 3 safe 3 | in reach at start 0, at end 0 | froom 40 tree 0 | N=F(25,2) reach0 room40 E=F(26,3) reach0 room40 S=F(25,4) reach0 room40 W=o(24,3) #0L2s1 | enemies #22L2@(24,5)c2p3V
+  r79 L2 at (26, 3) move S -> [26, 4] ate 0 | free 3 safe 3 | in reach at start 0, at end 0 | froom 40 tree 0 | N=F(26,2) reach0 room40 E=F(27,3) reach0 room40 S=F(26,4) reach0 room40 W=o(25,3) #0L2s1 | enemies #4L2@(30,14)c4p-1 #22L3@(24,6)c3p5V
+  r80 L2 at (26, 4) move S -> [26, 5] ate 1 | free 3 safe 1 | in reach at start 3, at end 2 | froom 40 tree 0 | N=o(26,3) #0L2s1 E=F(27,4) reach0 room40 S=P(26,5) reach2 room40 W=F(25,4) reach2 room40 | enemies #22L3@(25,6)c2p3V
+--- board at the start of her turn, round 77
+     1920212223242526272829
+     + + + + + + + + + + +-
+ 13  |* * * . * * *|. . .|.
+     + + + + + + + +-+-+-+ 
+ 14  |. * * . * . *|* * * .
+     +-+-+-+-+-+-+-+-+-+-+-
+  0   * .|. . .|* * * . . .
+     + + + + + +-+-+-+-+ + 
+  1   * *|. . . . . . .|. .
+     + + + + + + + + + +-+-
+  2   . .|. . . . . . .|. .
+     +-+ +-+ + + + + + + + 
+  3   . . . . a @ . . .|.|.
+     +-+ +-+ + + + + + + +-
+  4   . .|. . b B . . .|. .
+     +-+-+ + + + + + + +-+ 
+  5   . . . . . . . * . .|.
+     + + + + + + + + + + + 
+  6   . * b . . * . . . .|.
+     + + + + + + + + + + + 
+  7   . & b . . . . . . .|.
+     + + + + + + + + + + +-
+  8   * . . . . . . . . .|.
+heads: #0A L2 (24, 3); #1B L3 (20, 7); #22B L2 (24, 4)
+--- board at the start of her turn, round 80
+     2122232425262728293031
+     + + + + + +-+-+-+ + + 
+ 14   * . * . *|* * * . b B
+     +-+-+-+-+-+-+-+-+-+-+-
+  0  |. . .|* * * . . . . .
+     + + + +-+-+-+-+ + + + 
+  1  |. . . . . . .|. . . .
+     + + + + + + + +-+-+ + 
+  2  |. . . . . . .|. .|.|.
+     +-+ + + + + + + + +-+-
+  3   . . . . . a .|.|. . .
+     +-+ + + + + + + +-+-+-
+  4  |. . . . . @ .|. . . .
+     + + + + + + + +-+ +-+-
+  5   . . . b . * . .|.|. *
+     + + + + + + + + + +-+ 
+  6   B . . b B . . .|. * .
+     + + + + + + + + + +-+ 
+  7   b . . . . . . .|. .|*
+     + + + + + + + + +-+ + 
+  8   . . . . . . . .|. .|*
+     + + +-+ +-+-+-+-+ +-+ 
+  9   .|. .|.|. . . . .|.|*
+heads: #0A L2 (26, 4); #4B L2 (31, 14); #22B L3 (25, 6); #24B L2 (21, 6)

@@ -1,0 +1,10 @@
+Final bot one21: trapped queen no longer pulled toward heads, long exposed queen waits
+
+Code (off by default; off = the same program as before): under QUEEN_NO_RAM
+the trapped queen no longer marks trade or hunt targets; QUEEN_BLIND_STALL
+acts only between its round and five times its round; QS_LONG_WAIT (new):
+an exposed queen longer than QS_SHED_MAX with no escape stays and splits off
+2 cells instead of stepping into a tile an enemy can reach. The profile turns
+QS_LONG_WAIT on and matches the live bot one21 (submission 21857).
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>

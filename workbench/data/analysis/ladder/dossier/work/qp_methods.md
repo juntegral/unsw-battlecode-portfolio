@@ -1,0 +1,19 @@
+# Queen-path counting details
+- Source rows: relation=us only, exactly 500 O and 597 R; original dossier side and queen id checked against replay starts.
+- Checkpoint 0: initial board, before any actions; checkpoints 10–150: end of that round.
+- Positions are reconstructed from dragonUpdate, dragonSplit, dragonDeath events using the shared replay reader; r100 lengths agree with all 1,033 nonmissing source values and deaths agree with source events.
+- Dead queens remain known dead after game end; queens alive when a game ends are censored afterward, with no position extrapolation.
+- Centre tile uses floor(width/2), floor(height/2); maximal torus Manhattan distance uses floor(width/2)+floor(height/2).
+- Path displacement: shortest directed terrain graph distance, with walls and portal mappings; cumulative actual movement steps also retained as walk in per-game scratch.
+- Heads within a radius include the radius boundary, exclude the subject, and include all teammates regardless of length.
+- No teammate: radius counts zero, none5=1, nearest-mate distance missing; no enemy: screening percentage missing.
+- Screening: any teammate is strictly closer than the queen to any enemy tied as her nearest enemy; an empty teammate set yields false.
+- Snapshot D controls have exactly the queen length in the same snapshot; their individual proximity values average within snapshot, then pool queen snapshots within layout.
+- Turn D controls match the living queen current length at their own turn start; all subject turns ending alive enter centreward denominators, including stays and surviving splits; dead-ending turns are excluded.
+- Away denominator: a preturn teammate within 8; compare nearest distance before/after to the frozen set of preturn teammates, excluding split newborns.
+- Movement windows are inclusive 0–30, 31–60, 61–150; grouped snapshots use 0/10/20/30, 40/60, 80/100/150 respectively.
+- For each statistic, common layouts with a nonzero denominator for both O and R are equally weighted; qp_detail.json lists every numerator, denominator and valid layout.
+- Death incidence denominators are all original games in each layout, counting observed deaths only; mean death rounds use layouts with deaths in both O and R.
+- Death causes distinguish head-on hit and head-on mover, following existing dossier classifications; death counts and window counts are pooled, not weighted.
+- qp_games_*.jsonl queen screening values are corrected by the independent head-only qp_screen_*.jsonl pass; qp_scan.py also implements that definition for reruns.
+- Heavy scans invoked through nice -n 10; sandbox reported setpriority: Operation not permitted, so actual priority reduction could not be applied.

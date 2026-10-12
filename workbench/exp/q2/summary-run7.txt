@@ -1,0 +1,8 @@
+== exp/q2/cand4-hunter: games 38, won 25
+   our queen:   alive at the end 12/38; deaths rammed 18, trap 5, sac 3 (median round 143); median length r50/100/250/end 4/4/2/0
+   their queen: alive at the end 3/38; deaths rammed 15, trap 12, sac 6, allyHead 2 (median round 164); median length r50/100/250/end 4/4/0/0; killed: rammed by us 15, trap by them 12, sac by them 6, allyHead by them 2
+   our tags (turns): qk 15, qs 1979, escape-split 2228, qd 272
+cand4-hunter: rammed while L>=4 16, trap after escape-split 3, sac while L>=4 2, trap while L<=3 2, rammed after escape-split 1, sac after escape-split 1, rammed while L<=3 1
+cand4-hunter: rammed queens 18; rammer in her 7x7 window at her last turn 10; her last move valued <= -100 (doomed) 1; rammer within its free steps 5; her last move a sprint 2; enemy heads within path 4 (median) 1
+== identical 20/20; games without a tag: 20/20 identical; diverged after a tag: 0; tags {"ds":0,"dk":0,"et":0}
+   UNEXPLAINED proxy4_king:big_empty:B:1 diverges r61 without a tag

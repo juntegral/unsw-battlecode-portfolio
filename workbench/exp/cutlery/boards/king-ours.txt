@@ -1,0 +1,70 @@
+game cand-stack11-online map Trophy/a us=A result {"winner":"B","end":"teamEliminated"}
+tags(our turns): {"sx":0,"sr":0,"sd":0,"sf":0,"sq":0,"sc":0,"sk":0,"esc":0,"split":0}
+timeline r | our units / longest / total | their units / longest / total
+  r  0 |   2 /   3 /    6 |   2 /   3 /    6
+  r 25 |   3 /   3 /    9 |   3 /   4 /    9
+  r 50 |  10 /   3 /   26 |  15 /   3 /   37
+  r 75 |  12 /   4 /   28 |  26 /   3 /   61
+  r100 |  10 /   5 /   24 |  37 /   3 /   83
+  r125 |   9 /   4 /   23 |  39 /   4 /  101
+  r150 |   8 /   3 /   19 |  47 /   3 /  115
+  r175 |   6 /   4 /   14 |  56 /   4 /  142
+  r200 |   3 /   2 /    6 |  56 /   8 /  162
+  r225 |   1 /   2 /    2 |  55 /  10 /  173
+local feeds (sf) 0: first 12 → 
+--- r50: ours 10 dragons [3 3 3 3 3 3 2 2 2 2] total 26 | theirs 15 [3 3 3 3 3 3 3 2 …] total 37
++-------------------------+
+|                         |
+|                         |
+|   3                     |
+|   .        2.           |
+|   .                     |
+|     X     Xx       2. 3 |
+|  o  xo     X     o  ....|
+|      X    Xx     o   3  |
+| Xx   x xX xx     o  ..3 |
+|  x        x        . 3. |
+|         xx         2  . |
+| xX      X  X            |
+|            x            |
+|                         |
+|            X            |
+|            x       Xx   |
+|            x  xX        |
+|                         |
+|                         |
+| 2.                      |
+|      Xxx                |
+|           x             |
+|          Xx             |
+|         3.              |
+|          .              |
++-------------------------+
+--- r100: ours 10 dragons [5 3 2 2 2 2 2 2 2 2] total 24 | theirs 37 [3 3 3 3 3 3 3 3 …] total 83
++-------------------------+
+|        2.x              |
+|       X  X              |
+|       x          2.     |
+|  X                      |
+|  xx       xX         xxX|
+|           x             |
+|         x  X         2  |
+|    xX   Xxxx      .5 .  |
+|          X   X    ... 2 |
+|  xX        xxx    2   . |
+|             X x   ..2   |
+|    xx    X    X     .   |
+|2   XX    x  X       .  .|
+|   oX        x       3   |
+|    x                    |
+|  x            x    xxX  |
+|X XxX  xxxX    X        x|
+|    x   X      x   xX    |
+|    X   x      X   xX    |
+|        X          x     |
+|                         |
+|2  x       Xx            |
+|.  X      xX  xX         |
+| oX   xX               x |
+|  x                    xX|
++-------------------------+

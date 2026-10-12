@@ -1,0 +1,7 @@
+Implemented the six-bot pool, harness, and tests. All seven builds compile; four tests pass.
+
+Completion is blocked:
+- Style checks are queued behind card-31’s batch lock; passage validation has not run.
+- The sandbox prevents writing Git metadata, so I couldn’t commit.
+
+Details are in [report-pool.md](<~/01. Project/개인 프로젝트/unsw-swarm/data/codex/report-pool.md>).

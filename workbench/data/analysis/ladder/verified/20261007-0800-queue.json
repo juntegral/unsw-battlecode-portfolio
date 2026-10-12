@@ -1,0 +1,53 @@
+[
+ {
+  "id": "F35",
+  "claim": "In games that reach round 500 on layouts where the queen can leave spawn, a lone queen of ours (their queen died in an earlier round) is alive at the end less than 0.7 times as often as a lone queen of theirs, on main and on v31; and per turn spent as the only queen, with all games counted, ours dies faster than theirs.",
+  "how_to_count": "Games: our_code main or v31 counted apart; map_key with queen_spawn_dead_end false; for the first part only games whose last raw round is 499. Queens are dragons 0 and 1; each side has one. Lone queen of a side = the other side queen died in a strictly earlier raw round (or died while this one never died). Survival = that lone queen is alive in the final state. Report survivors / lone queens for each side; then the same for main opponents rated 1700-1899 and 1900-2099, for layouts with width times height above 1200 and the rest (both codes pooled), and for main games before and from 2026-10-06T14:48:15Z. Second part, all games on those layouts including eliminations: for every turn start of a queen at which the other queen is already dead, count one lone turn for her side; deaths = lone queens that died; report deaths per 1,000 lone turns per side and code (my turn counts come from games up to battle 1276407 only, 665 games; a recount over all 705 main and v31 games is better). Please also judge: whether restricting to full games biases the first part (our 76 elimination wins and their 36 are left out), whether one or two opponents or layouts carry their surviving lone queens, and whether the gap is still there when only games level in total length at r100 (within 20 percent) are used.",
+  "your_numbers": {
+   "main_full_free_games": 143,
+   "v31_full_free_games": 191,
+   "main": "ours 8 of 43, theirs 32 of 80",
+   "v31": "ours 8 of 67, theirs 36 of 107",
+   "main_1700_1899": "ours 4 of 18, theirs 10 of 31",
+   "main_1900_2099": "ours 4 of 23, theirs 15 of 41",
+   "big_layouts_both_codes": "ours 5 of 44, theirs 24 of 69",
+   "other_layouts_both_codes": "ours 11 of 66, theirs 44 of 118",
+   "main_halves": "earlier ours 4 of 15, theirs 13 of 25; later ours 4 of 28, theirs 19 of 55",
+   "endings_main_full": "both dead 83 (49 won), only theirs 32, only ours 8, both alive 20 (14 won)",
+   "alive_100_rounds_after": "main ours 22 of 40, theirs 59 of 79; v31 39 of 65, 74 of 106",
+   "per_1000_lone_turns_all_games_665": "main ours 5.51 (54 deaths, 9809 turns), theirs 4.13 (73, 17680); v31 ours 7.87 (112, 14233), theirs 4.11 (121, 29474)",
+   "per_1000_lone_turns_full_games": "main 5.88 against 2.68; v31 6.43 against 2.97",
+   "queen_dead_by_r200_full_games": "main ours 79 theirs 49 of 143; v31 ours 121 theirs 85 of 191"
+  },
+  "slices": [
+   "main games (143 full games on free layouts)",
+   "v31 games (191 full games on free layouts)",
+   "main 1700-1899 and main 1900-2099",
+   "layouts above 1200 cells and the rest"
+  ]
+ },
+ {
+  "id": "F37",
+  "claim": "Between raw rounds 101 and 200 our queen dies by wall or own body many times as often as their queens do, on main and on v31, while in the other windows the two sides are level; Maze carries nearly half of it.",
+  "how_to_count": "Games: our_code main or v31 counted apart; map_key with queen_spawn_dead_end false; the game reached raw round 200. For each side, queens alive after raw round 100; count those whose dragonDeath is in raw rounds 101 to 200 with engine reason 0 (wall) or 1 (own body). Report deaths / queens alive at r100 per side and code, and per layout. Second table, games with last raw round 499 only: queen deaths by wall or own body per side in raw rounds 0-100, 101-200, 201-300, 301-499, and beside it deaths as the standing victim of an enemy head-on in the same windows. Please also count what I have not: for each of our 51 such deaths in r101-200 (21 main, 30 v31) and their 12, at the start of her last turn, what is on each of the four tiles next to her head (kelp edge in between, her own body, a body of her own team, an enemy body, free), how many legal steps she had, and whether she made a split in the 10 rounds before; and judge whether Maze, Portals and weakhold are all of it.",
+  "your_numbers": {
+   "main_r101_200": "ours 21 of 145 (13 wall, 8 own body), theirs 1 of 142",
+   "v31_r101_200": "ours 30 of 175 (22 wall, 8 own body), theirs 11 of 191",
+   "maze": "main ours 8 of 20, theirs 0 of 21; v31 ours 11 of 22, theirs 2 of 20",
+   "portals": "main ours 3 of 4, theirs 0 of 8; v31 ours 6 of 6, theirs 4 of 23",
+   "weakhold": "main ours 2 of 9, theirs 1 of 10; v31 ours 5 of 16, theirs 1 of 19",
+   "corridor_heavy_without_maze_and_portals_both_codes": "ours 15 of 129; other layouts ours 8 of 139 (corridor-heavy = corridor_share at or above 0.165, the median of the 16 free layouts)",
+   "full_games_wall_or_own_body_by_window_main": "r0-100 12 against 8; r101-200 17 against 1; r201-300 9 against 5; r301-499 4 against 9",
+   "full_games_wall_or_own_body_by_window_v31": "r0-100 14 against 10; r101-200 23 against 9; r201-300 9 against 8; r301-499 1 against 10",
+   "full_games_rammed_r101_200": "main 26 against 17; v31 27 against 22",
+   "full_games_all_queen_deaths_r101_200": "main 46 against 21; v31 55 against 39",
+   "won": "main 10 of the 21 games, v31 18 of the 30",
+   "board_at_fatal_turn_own_count": "work/h17_pass.py: no free neighbour tile in 60 of 60 of our deaths; without Portals 51 deaths (20 main, 31 v31): kelp on 2 or more sides 49; another dragon of ours on a neighbour tile 31 (13 main, 18 v31; her own child in 4); an enemy 2; dead-end tile (three kelp sides and her own body) 18; she split in the 10 rounds before in 25. Maze 19 deaths: dragon of ours 13, dead end 6. Their queens 16 deaths: own dragon 5, enemy 3, dead end 8. Portal edges were followed to the exit tile; the board is taken at the turnStart of her fatal turn."
+  },
+  "slices": [
+   "main games (145 queens of ours alive at r100)",
+   "v31 games (175)",
+   "Maze and the other layouts apart"
+  ]
+ }
+]

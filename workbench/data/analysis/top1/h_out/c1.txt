@@ -1,0 +1,331 @@
+== A. In-view chances on the enemy queen: taken / all ==
+
+-- by attacker length: 2-3 | 4 | 5-9 | 10-12
+   meow                       87/231 38% |       5/39 13% |       5/137 4% |        2/39 5%
+   meow live                  61/164 37% |        1/26 4% |       4/100 4% |        1/28 4%
+   meow cand                   26/67 39% |       4/13 31% |        1/37 3% |        1/11 9%
+   meow qh31 build               8/9 89% |       1/1 100% |       1/10 10% |            0/0
+   meow live, qh31 pair         8/20 40% |         0/1 0% |         0/5 0% |         0/3 0%
+   opp_of_meow               139/146 95% |      29/31 94% |      28/49 57% |        1/4 25%
+   Vibing++                 186/186 100% |     25/25 100% |     38/38 100% |      17/18 94%
+   SSS                      155/155 100% |     26/26 100% |      59/61 97% |      10/12 83%
+   forgot                    221/317 70% |      12/53 23% |      21/65 32% |        0/22 0%
+   top3                      562/658 85% |     63/104 61% |    118/164 72% |      27/52 52%
+
+-- by round: r0-99 | r100-299 | r300+
+   meow                       36/107 34% |     46/223 21% |     17/116 15%
+   meow live                   24/68 35% |     31/165 19% |      12/85 14%
+   meow cand                   12/39 31% |      15/58 26% |       5/31 16%
+   meow qh31 build              4/4 100% |        3/4 75% |       3/12 25%
+   meow live, qh31 pair          3/5 60% |       4/14 29% |       1/10 10%
+   opp_of_meow                 85/91 93% |     94/105 90% |      18/34 53%
+   Vibing++                   99/99 100% |   127/127 100% |      40/41 98%
+   SSS                        69/69 100% |    159/160 99% |      22/25 88%
+   forgot                     85/212 40% |    138/181 76% |      31/64 48%
+   top3                      253/380 67% |    424/468 91% |     93/130 72%
+
+-- by own queen: own queen alive | own queen dead
+   meow                       30/116 26% |     69/330 21%
+   meow live                   22/85 26% |     45/233 19%
+   meow cand                    8/31 26% |      24/97 25%
+   meow qh31 build              2/2 100% |       8/18 44%
+   meow live, qh31 pair          2/5 40% |       6/24 25%
+   opp_of_meow               180/213 85% |     17/17 100%
+   Vibing++                 152/152 100% |    114/115 99%
+   SSS                       192/193 99% |      58/61 95%
+   forgot                    163/316 52% |     91/141 65%
+   top3                      507/661 77% |    263/317 83%
+
+-- by attacker role: attacker is own longest | attacker not own longest
+   meow                         8/117 7% |     91/329 28%
+   meow live                     2/78 3% |     65/240 27%
+   meow cand                    6/39 15% |      26/89 29%
+   meow qh31 build              3/3 100% |       7/17 41%
+   meow live, qh31 pair          0/10 0% |       8/19 42%
+   opp_of_meow                 17/22 77% |    180/208 87%
+   Vibing++                   30/30 100% |   236/237 100%
+   SSS                        28/28 100% |    222/226 98%
+   forgot                        4/47 9% |    250/410 61%
+   top3                       62/105 59% |    708/873 81%
+
+-- by paid steps (0, 1, 2, 3+): 0 | 1 | 2 | 3
+   meow                       69/129 53% |     20/149 13% |       8/71 11% |        2/97 2%
+   meow live                   46/88 52% |     16/110 15% |        3/47 6% |        2/73 3%
+   meow cand                   23/41 56% |       4/39 10% |       5/24 21% |        0/24 0%
+   meow qh31 build               6/7 86% |       2/2 100% |        2/6 33% |         0/5 0%
+   meow live, qh31 pair         7/10 70% |        1/13 8% |         0/3 0% |         0/3 0%
+   opp_of_meow                 82/88 93% |      68/78 87% |      37/41 90% |      10/23 43%
+   Vibing++                 118/118 100% |     92/92 100% |     33/33 100% |      23/24 96%
+   SSS                        94/94 100% |     88/88 100% |     36/36 100% |      32/36 89%
+   forgot                    146/207 71% |     83/149 56% |      16/63 25% |       9/38 24%
+   top3                      358/419 85% |    263/329 80% |     85/132 64% |      64/98 65%
+
+-- all: all
+   meow                       99/446 22%
+   meow live                  67/318 21%
+   meow cand                  32/128 25%
+   meow qh31 build             10/20 50%
+   meow live, qh31 pair         8/29 28%
+   opp_of_meow               197/230 86%
+   Vibing++                 266/267 100%
+   SSS                       250/254 98%
+   forgot                    254/457 56%
+   top3                      770/978 79%
+
+== B. Games by chance and kill ==
+
+meow: 401 games
+   we rammed her                                     102 (25.4%)  won   67 (66%)  {'r500 W her dead': 15, 'wipe W': 52, 'r500 L her dead': 27, 'wipe L': 8}
+   in-view chance, never rammed her                   76 (19.0%)  won   14 (18%)  {'wipe W': 8, 'r500 L her alive': 25, 'wipe L': 20, 'r500 W her dead': 6, 'r500 L her dead': 17}
+   no in-view chance, her queen dead another way     101 (25.2%)  won   28 (28%)  {'r500 W her dead': 21, 'wipe L': 15, 'r500 L her dead': 58, 'wipe W': 7}
+   no in-view chance, her queen alive at the end     122 (30.4%)  won    3 (2%)  {'r500 L her alive': 59, 'wipe L': 60, 'r500 W her alive': 3}
+
+meow live: 275 games
+   we rammed her                                      69 (25.1%)  won   51 (74%)  {'r500 W her dead': 12, 'wipe W': 39, 'r500 L her dead': 15, 'wipe L': 3}
+   in-view chance, never rammed her                   49 (17.8%)  won    8 (16%)  {'wipe W': 4, 'r500 L her alive': 15, 'wipe L': 16, 'r500 W her dead': 4, 'r500 L her dead': 10}
+   no in-view chance, her queen dead another way      70 (25.5%)  won   16 (23%)  {'r500 W her dead': 12, 'wipe L': 10, 'r500 L her dead': 44, 'wipe W': 4}
+   no in-view chance, her queen alive at the end      87 (31.6%)  won    2 (2%)  {'r500 L her alive': 44, 'wipe L': 41, 'r500 W her alive': 2}
+
+meow cand: 126 games
+   we rammed her                                      33 (26.2%)  won   16 (48%)  {'r500 L her dead': 12, 'wipe W': 13, 'r500 W her dead': 3, 'wipe L': 5}
+   in-view chance, never rammed her                   27 (21.4%)  won    6 (22%)  {'r500 L her alive': 10, 'wipe L': 4, 'r500 L her dead': 7, 'r500 W her dead': 2, 'wipe W': 4}
+   no in-view chance, her queen dead another way      31 (24.6%)  won   12 (39%)  {'r500 L her dead': 14, 'wipe L': 5, 'r500 W her dead': 9, 'wipe W': 3}
+   no in-view chance, her queen alive at the end      35 (27.8%)  won    1 (3%)  {'wipe L': 19, 'r500 L her alive': 15, 'r500 W her alive': 1}
+
+meow qh31 build: 28 games
+   we rammed her                                      11 (39.3%)  won    3 (27%)  {'wipe W': 2, 'wipe L': 3, 'r500 W her dead': 1, 'r500 L her dead': 5}
+   in-view chance, never rammed her                    1 ( 3.6%)  won    1 (100%)  {'r500 W her dead': 1}
+   no in-view chance, her queen dead another way       9 (32.1%)  won    4 (44%)  {'r500 L her dead': 4, 'r500 W her dead': 3, 'wipe L': 1, 'wipe W': 1}
+   no in-view chance, her queen alive at the end       7 (25.0%)  won    1 (14%)  {'r500 L her alive': 2, 'wipe L': 4, 'r500 W her alive': 1}
+
+meow live, qh31 pair: 28 games
+   we rammed her                                       8 (28.6%)  won    6 (75%)  {'r500 W her dead': 2, 'wipe W': 4, 'r500 L her dead': 1, 'wipe L': 1}
+   in-view chance, never rammed her                    7 (25.0%)  won    1 (14%)  {'r500 L her alive': 2, 'r500 W her dead': 1, 'r500 L her dead': 2, 'wipe L': 2}
+   no in-view chance, her queen dead another way       8 (28.6%)  won    1 (12%)  {'r500 L her dead': 7, 'r500 W her dead': 1}
+   no in-view chance, her queen alive at the end       5 (17.9%)  won    0 (0%)  {'wipe L': 3, 'r500 L her alive': 2}
+
+opp_of_meow: 401 games
+   we rammed her                                     251 (62.6%)  won  201 (80%)  {'r500 W her dead': 116, 'wipe W': 85, 'r500 L her dead': 18, 'wipe L': 32}
+   in-view chance, never rammed her                    2 ( 0.5%)  won    2 (100%)  {'r500 W her dead': 1, 'r500 W her alive': 1}
+   no in-view chance, her queen dead another way     110 (27.4%)  won   76 (69%)  {'wipe L': 11, 'r500 W her dead': 58, 'wipe W': 18, 'r500 L her dead': 23}
+   no in-view chance, her queen alive at the end      38 ( 9.5%)  won   10 (26%)  {'wipe L': 24, 'r500 W her alive': 10, 'r500 L her alive': 4}
+
+Vibing++: 502 games
+   we rammed her                                     318 (63.3%)  won  247 (78%)  {'r500 W her dead': 119, 'wipe W': 128, 'r500 L her dead': 38, 'wipe L': 33}
+   in-view chance, never rammed her                    0 ( 0.0%)  won    0 (0%)  {}
+   no in-view chance, her queen dead another way      69 (13.7%)  won   45 (65%)  {'r500 W her dead': 27, 'wipe W': 18, 'r500 L her dead': 15, 'wipe L': 9}
+   no in-view chance, her queen alive at the end     115 (22.9%)  won   24 (21%)  {'r500 L her alive': 54, 'wipe L': 37, 'r500 W her alive': 24}
+
+SSS: 503 games
+   we rammed her                                     320 (63.6%)  won  237 (74%)  {'wipe W': 126, 'r500 W her dead': 111, 'r500 L her dead': 43, 'wipe L': 40}
+   in-view chance, never rammed her                    2 ( 0.4%)  won    1 (50%)  {'r500 W her dead': 1, 'r500 L her alive': 1}
+   no in-view chance, her queen dead another way      86 (17.1%)  won   61 (71%)  {'r500 W her dead': 44, 'wipe L': 9, 'wipe W': 17, 'r500 L her dead': 16}
+   no in-view chance, her queen alive at the end      95 (18.9%)  won   27 (28%)  {'r500 W her alive': 27, 'r500 L her alive': 48, 'wipe L': 20}
+
+forgot: 632 games
+   we rammed her                                     303 (47.9%)  won  224 (74%)  {'r500 L her dead': 48, 'wipe W': 133, 'r500 W her dead': 91, 'wipe L': 31}
+   in-view chance, never rammed her                   43 ( 6.8%)  won   15 (35%)  {'wipe L': 19, 'r500 L her dead': 3, 'r500 W her dead': 3, 'r500 L her alive': 6, 'r500 W her alive': 5, 'wipe W': 7}
+   no in-view chance, her queen dead another way     111 (17.6%)  won   73 (66%)  {'r500 W her dead': 47, 'wipe W': 26, 'wipe L': 20, 'r500 L her dead': 18}
+   no in-view chance, her queen alive at the end     175 (27.7%)  won   47 (27%)  {'r500 L her alive': 79, 'wipe L': 49, 'r500 W her alive': 47}
+
+top3: 1637 games
+   we rammed her                                     941 (57.5%)  won  708 (75%)  {'wipe W': 387, 'r500 W her dead': 321, 'r500 L her dead': 129, 'wipe L': 104}
+   in-view chance, never rammed her                   45 ( 2.7%)  won   16 (36%)  {'wipe L': 19, 'r500 L her dead': 3, 'r500 W her dead': 4, 'r500 L her alive': 7, 'r500 W her alive': 5, 'wipe W': 7}
+   no in-view chance, her queen dead another way     266 (16.2%)  won  179 (67%)  {'r500 W her dead': 118, 'wipe L': 38, 'wipe W': 61, 'r500 L her dead': 49}
+   no in-view chance, her queen alive at the end     385 (23.5%)  won   98 (25%)  {'r500 W her alive': 98, 'r500 L her alive': 181, 'wipe L': 106}
+
+== C. What-if: her queen dies on our first untaken in-view chance (meow) ==
+our win rate, round-500 games with both queens dead at the end, by band at round 300: 1-1.5: 6/7, all: 41/143, >1.5: 10/13, <0.67: 10/86, 0.67-1: 15/37; of those in which we rammed her: 15/42
+
+-- meow (401 games), attackers 2-12 long
+   games with such a chance: 176
+   first such chance taken (no change): 54
+   she died later anyway (kill only earlier): 80
+   ... rounds earlier, sum: 5603
+   ... later rammed by us: 44
+     wipe-out W (earlier): 26
+   she was alive at the end (kill gained): 40
+     round-500 LOSS with her alive: can flip: 25
+       strict, lenient (our longest > her best non-queen dragon): 13
+       strict, hard (our longest > her longest incl. the queen's length): 6
+       strict lenient, and the rammer was not our longest then: 13
+       of the lenient flips: our queen alive at the end: 1
+     round 500, she died later anyway: L: 31
+     wipe-out L (kill gained): 15
+     round 500, she died later anyway: W: 16
+     DAMAGE? round-500 win, first chance was by our longest: 4
+     wipe-out L (earlier): 7
+   realistic: expected wins among the round-500 losses with her alive: at our own both-dead rate of the band 8.5 (+2.1 points); at our flat both-dead rate 7.9; at our rate when we did ram her 9.6
+
+-- meow (401 games), attackers 2-4 long
+   games with such a chance: 143
+   first such chance taken (no change): 56
+   she died later anyway (kill only earlier): 63
+   ... rounds earlier, sum: 3923
+   ... later rammed by us: 38
+     wipe-out W (earlier): 26
+   she was alive at the end (kill gained): 22
+     round-500 LOSS with her alive: can flip: 8
+       strict, lenient (our longest > her best non-queen dragon): 6
+       strict, hard (our longest > her longest incl. the queen's length): 4
+       strict lenient, and the rammer was not our longest then: 6
+       of the lenient flips: our queen alive at the end: 0
+     round 500, she died later anyway: L: 18
+     wipe-out L (kill gained): 14
+     round 500, she died later anyway: W: 12
+     wipe-out L (earlier): 7
+     DAMAGE? round-500 win, first chance was by our longest: 1
+   realistic: expected wins among the round-500 losses with her alive: at our own both-dead rate of the band 4.2 (+1.0 points); at our flat both-dead rate 2.3; at our rate when we did ram her 2.9
+
+-- meow (401 games), attackers 2-3 long
+   games with such a chance: 133
+   first such chance taken (no change): 57
+   she died later anyway (kill only earlier): 54
+   ... rounds earlier, sum: 3168
+     wipe-out W (earlier): 22
+   she was alive at the end (kill gained): 20
+     round-500 LOSS with her alive: can flip: 7
+       strict, lenient (our longest > her best non-queen dragon): 6
+       strict, hard (our longest > her longest incl. the queen's length): 4
+       strict lenient, and the rammer was not our longest then: 6
+       of the lenient flips: our queen alive at the end: 0
+   ... later rammed by us: 31
+     wipe-out L (kill gained): 13
+     round 500, she died later anyway: W: 11
+     wipe-out L (earlier): 7
+     round 500, she died later anyway: L: 14
+   realistic: expected wins among the round-500 losses with her alive: at our own both-dead rate of the band 3.8 (+0.9 points); at our flat both-dead rate 2.0; at our rate when we did ram her 2.5
+
+-- meow (401 games), attackers 5-12 long
+   games with such a chance: 50
+   she was alive at the end (kill gained): 25
+     round-500 LOSS with her alive: can flip: 22
+       strict, lenient (our longest > her best non-queen dragon): 10
+       strict, hard (our longest > her longest incl. the queen's length): 3
+       strict lenient, and the rammer was not our longest then: 8
+       of the lenient flips: our queen alive at the end: 1
+   she died later anyway (kill only earlier): 25
+   ... rounds earlier, sum: 2332
+   ... later rammed by us: 13
+     round 500, she died later anyway: W: 7
+     DAMAGE? round-500 win, first chance was by our longest: 4
+     round 500, she died later anyway: L: 17
+     wipe-out L (kill gained): 3
+     wipe-out L (earlier): 1
+   realistic: expected wins among the round-500 losses with her alive: at our own both-dead rate of the band 6.5 (+1.6 points); at our flat both-dead rate 7.0; at our rate when we did ram her 8.5
+
+   the round-500 losses with her alive and an untaken in-view chance (any length):
+      990232 Prisoners Dilemma tungtung67 13 4 3  ours 23 q0 / hers 9 q9 second 0 LEN HARD 1-1.5 live dl-20261003
+      1006645 Australia Vibing++ 330 5 4  ours 17 q0 / hers 73 q40 second 66   <0.67 live dl-20261004
+      1027974 Australia WeHaveQuiz 371 6 5  ours 11 q0 / hers 92 q92 second 68   <0.67 live stride-old
+      1029017 Slithery Fight test4 401 6 4  ours 60 q0 / hers 49 q49 second 28 LEN HARD <0.67 cand stride-new
+      1029019 Australia test4 484 11 6  ours 13 q0 / hers 31 q12 second 25   <0.67 cand stride-new
+      1029030 Autarky WeHaveQuiz 228 4 3  ours 93 q0 / hers 2 q2 second 0 LEN HARD >1.5 cand stride-new
+      1044523 Slithery Fight WeHaveQuiz 164 5 5  ours 65 q0 / hers 104 q104 second 28 LEN  <0.67 live dl-20261004
+      1045190 Australia test4 224 5 5  ours 10 q0 / hers 59 q59 second 28   <0.67 live dl-20261004
+      1045197 Queen Of Spades test4 241 3 2  ours 9 q0 / hers 23 q23 second 4 LEN  >1.5 live dl-20261004
+      1052755 Australia test4 320 7 6 longest ours 11 q0 / hers 65 q65 second 29   <0.67 live dl-20261004
+      1053380 Maze test4 438 5 5  ours 26 q0 / hers 56 q56 second 16 LEN  1-1.5 live dl-20261004
+      1053773 Australia WeHaveQuiz 185 5 5 longest ours 26 q0 / hers 127 q127 second 52   <0.67 live dl-20261004
+      1053784 Trauma WeHaveQuiz 448 8 5  ours 31 q31 / hers 39 q39 second 26 LEN HARD 0.67-1 live dl-20261004
+      1059074 Islands WeHaveQuiz 61 8 5 longest ours 2 q0 / hers 138 q138 second 37   <0.67 cand passage2-test-new
+      1063010 weakhold test4 479 6 3  ours 9 q0 / hers 27 q27 second 4 LEN  <0.67 live qh31-test-old
+      1063011 Australia test4 482 8 3 longest ours 9 q0 / hers 39 q39 second 28   <0.67 live qh31-test-old
+      1067904 Australia test4 380 5 5  ours 18 q0 / hers 42 q42 second 15 LEN  <0.67 cand tc30-test-new
+      1067909 Around UNSW test4 63 3 2  ours 47 q0 / hers 45 q45 second 32 LEN HARD 0.67-1 cand tc30-test-new
+      1067913 Trophy test4 174 3 2  ours 13 q0 / hers 57 q57 second 11 LEN  <0.67 cand tc30-test-new
+      1068050 Australia WeHaveQuiz 140 4 3  ours 29 q0 / hers 70 q70 second 66   0.67-1 cand tc30-test-new
+      1068054 Tower Defense WeHaveQuiz 369 8 4  ours 28 q0 / hers 32 q32 second 14 LEN  >1.5 cand tc30-test-new
+      1068679 weakhold dev test 1 461 3 1  ours 32 q0 / hers 4 q4 second 0 LEN HARD >1.5 live tc30-dev1-old
+      1068680 Australia dev test 1 222 8 6  ours 13 q0 / hers 36 q36 second 36   <0.67 live tc30-dev1-old
+      1068685 Around UNSW dev test 1 448 5 4  ours 13 q0 / hers 85 q17 second 49   <0.67 live tc30-dev1-old
+      1069649 Islands dev test 1 265 8 6 longest ours 15 q0 / hers 46 q34 second 36   <0.67 cand tc30-dev1b-new
+
+-- meow live (275 games), attackers 2-12 long
+   games with such a chance: 117
+   first such chance taken (no change): 34
+   she died later anyway (kill only earlier): 54
+   ... rounds earlier, sum: 3718
+   ... later rammed by us: 34
+     wipe-out W (earlier): 18
+   she was alive at the end (kill gained): 29
+     round-500 LOSS with her alive: can flip: 15
+       strict, lenient (our longest > her best non-queen dragon): 7
+       strict, hard (our longest > her longest incl. the queen's length): 3
+       strict lenient, and the rammer was not our longest then: 7
+       of the lenient flips: our queen alive at the end: 1
+     round 500, she died later anyway: L: 21
+     wipe-out L (kill gained): 14
+     round 500, she died later anyway: W: 12
+     DAMAGE? round-500 win, first chance was by our longest: 2
+     wipe-out L (earlier): 3
+   realistic: expected wins among the round-500 losses with her alive: at our own both-dead rate of the band 5.4 (+2.0 points); at our flat both-dead rate 5.0; at our rate when we did ram her 6.0
+
+-- meow live (275 games), attackers 2-4 long
+   games with such a chance: 96
+   first such chance taken (no change): 35
+   she died later anyway (kill only earlier): 45
+   ... rounds earlier, sum: 2743
+   ... later rammed by us: 31
+     wipe-out W (earlier): 18
+   she was alive at the end (kill gained): 16
+     round-500 LOSS with her alive: can flip: 3
+       strict, lenient (our longest > her best non-queen dragon): 3
+       strict, hard (our longest > her longest incl. the queen's length): 2
+       strict lenient, and the rammer was not our longest then: 3
+       of the lenient flips: our queen alive at the end: 0
+     round 500, she died later anyway: L: 13
+     wipe-out L (kill gained): 13
+     round 500, she died later anyway: W: 11
+     wipe-out L (earlier): 3
+     DAMAGE? round-500 win, first chance was by our longest: 1
+   realistic: expected wins among the round-500 losses with her alive: at our own both-dead rate of the band 2.4 (+0.9 points); at our flat both-dead rate 0.9; at our rate when we did ram her 1.1
+
+-- meow live (275 games), attackers 2-3 long
+   games with such a chance: 91
+   first such chance taken (no change): 39
+   she died later anyway (kill only earlier): 37
+   ... rounds earlier, sum: 2133
+     wipe-out W (earlier): 15
+   she was alive at the end (kill gained): 15
+     round-500 LOSS with her alive: can flip: 3
+       strict, lenient (our longest > her best non-queen dragon): 3
+       strict, hard (our longest > her longest incl. the queen's length): 2
+       strict lenient, and the rammer was not our longest then: 3
+       of the lenient flips: our queen alive at the end: 0
+   ... later rammed by us: 24
+     wipe-out L (kill gained): 12
+     round 500, she died later anyway: W: 10
+     wipe-out L (earlier): 3
+     round 500, she died later anyway: L: 9
+   realistic: expected wins among the round-500 losses with her alive: at our own both-dead rate of the band 2.4 (+0.9 points); at our flat both-dead rate 0.9; at our rate when we did ram her 1.1
+
+-- meow live (275 games), attackers 5-12 long
+   games with such a chance: 33
+   she was alive at the end (kill gained): 17
+     round-500 LOSS with her alive: can flip: 14
+       strict, lenient (our longest > her best non-queen dragon): 6
+       strict, hard (our longest > her longest incl. the queen's length): 2
+       strict lenient, and the rammer was not our longest then: 5
+       of the lenient flips: our queen alive at the end: 1
+   she died later anyway (kill only earlier): 16
+   ... rounds earlier, sum: 1535
+   ... later rammed by us: 9
+     round 500, she died later anyway: W: 4
+     DAMAGE? round-500 win, first chance was by our longest: 2
+     round 500, she died later anyway: L: 11
+     wipe-out L (kill gained): 3
+     wipe-out L (earlier): 1
+   realistic: expected wins among the round-500 losses with her alive: at our own both-dead rate of the band 4.6 (+1.7 points); at our flat both-dead rate 4.7; at our rate when we did ram her 5.6
+
+== E. Top teams: games with and without a ram on the enemy queen ==
+Vibing++ did not: 69/184 = 38%; r500, own queen dead: she died another way: 13/28 = 46%; r500, own queen dead: she lived: 0/38 = 0%; r500, own queen dead: she was rammed by us: 86/124 = 69%; rammed her at round 150 or later: 115/133 = 86%; rammed her before round 150: 132/185 = 71%; rammed her queen: 247/318 = 78%
+    wins with a ram on her queen 247/316 = 78%, losses 71/186 = 38%; wins with an in-view chance 210/316 = 66%, losses 56/186 = 30%
+SSS did not: 89/183 = 49%; r500, own queen dead: she died another way: 21/37 = 57%; r500, own queen dead: she lived: 0/28 = 0%; r500, own queen dead: she was rammed by us: 61/104 = 59%; rammed her at round 150 or later: 100/130 = 77%; rammed her before round 150: 137/190 = 72%; rammed her queen: 237/320 = 74%
+    wins with a ram on her queen 237/326 = 73%, losses 83/177 = 47%; wins with an in-view chance 188/326 = 58%, losses 65/177 = 37%
+forgot did not: 135/329 = 41%; r500, own queen dead: she died another way: 23/44 = 52%; r500, own queen dead: she lived: 0/66 = 0%; r500, own queen dead: she was rammed by us: 62/110 = 56%; rammed her at round 150 or later: 79/112 = 71%; rammed her before round 150: 145/191 = 76%; rammed her queen: 224/303 = 74%
+    wins with a ram on her queen 224/359 = 62%, losses 79/273 = 29%; wins with an in-view chance 216/359 = 60%, losses 92/273 = 34%
+opp_of_meow did not: 88/150 = 59%; r500, own queen dead: she died another way: 33/56 = 59%; r500, own queen dead: she lived: 0/1 = 0%; r500, own queen dead: she was rammed by us: 69/87 = 79%; rammed her at round 150 or later: 75/84 = 89%; rammed her before round 150: 126/167 = 75%; rammed her queen: 201/251 = 80%
+    wins with a ram on her queen 201/289 = 70%, losses 50/112 = 45%; wins with an in-view chance 157/289 = 54%, losses 42/112 = 38%
+meow did not: 45/299 = 15%; r500, own queen dead: she died another way: 26/101 = 26%; r500, own queen dead: she lived: 0/73 = 0%; r500, own queen dead: she was rammed by us: 15/42 = 36%; rammed her at round 150 or later: 31/54 = 57%; rammed her before round 150: 36/48 = 75%; rammed her queen: 67/102 = 66%
+    wins with a ram on her queen 67/112 = 60%, losses 35/289 = 12%; wins with an in-view chance 81/112 = 72%, losses 95/289 = 33%

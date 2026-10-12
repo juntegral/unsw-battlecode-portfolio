@@ -1,0 +1,100 @@
+
+GAME 1502776
+q200 (56, 1) [(1, (56, 0)), (0, (57, 1)), (0, (56, 2)), (1, (55, 1))]
+final long ids [(30, '194', (46, 3)), (17, '183', (20, 29)), (16, '309', (54, 36)), (16, '220', (15, 8)), (13, '355', (43, 11)), (13, '348', (23, 24))]
+window 0 100 A turns 809 eats 30 zero 780 splits 14
+window 0 100 B turns 669 eats 20 zero 649 splits 9
+window 101 300 A turns 7054 eats 271 zero 6785 splits 105
+window 101 300 B turns 3366 eats 156 zero 3210 splits 64
+window 400 499 A turns 2969 eats 168 zero 2812 splits 15
+window 400 499 B turns 2453 eats 139 zero 2317 splits 27
+
+GAME 1502778
+attacker 581 A
+attacker turns {'round': 274, 'id': 581, 'body': [264, 263, 262, 214, 166], 'length': 5, 'steps': [265], 'action': {'kind': 0, 'dirs': [1], 'split': 0}, 'eats': 0}
+attacker turns {'round': 275, 'id': 581, 'body': [265, 264, 263, 262, 214], 'length': 5, 'steps': [313, 314], 'action': {'kind': 0, 'dirs': [2, 1], 'split': 0}, 'eats': 0}
+attacker turns {'round': 276, 'id': 581, 'body': [314, 313, 265, 264, 263], 'length': 5, 'steps': [362, 410], 'action': {'kind': 0, 'dirs': [2, 2, 1], 'split': 0}, 'eats': 0}
+queen 274 (27, 9) foe body [(24, 5), (23, 5), (22, 5), (22, 4), (22, 3)]
+exits [(0, 1, (27, 8), None), (1, 0, (28, 9), None), (2, 0, (27, 10), None), (3, 0, (26, 9), (1, 1))]
+queen 275 (28, 9) foe body [(25, 5), (24, 5), (23, 5), (22, 5), (22, 4)]
+exits [(0, 0, (28, 8), None), (1, 1, (29, 9), None), (2, 1, (28, 10), None), (3, 0, (27, 9), (1, 1))]
+queen 276 (28, 8) foe body [(26, 6), (25, 6), (25, 5), (24, 5), (23, 5)]
+exits [(0, 0, (28, 7), None), (1, 1, (29, 8), None), (2, 0, (28, 9), (1, 1)), (3, 0, (27, 8), None)]
+r274 head=(27, 9) L=3 action={'kind': 0, 'dirs': [1], 'split': 0}
+.......
+.....Ee
+.......
+..qQ...
+..q....
+....E..
+.......
+
+r275 head=(28, 9) L=3 action={'kind': 0, 'dirs': [0], 'split': 0}
+....E..
+....e..
+.......
+.qqQ...
+......A
+...eE..
+.......
+
+r276 head=(28, 8) L=3 action={'kind': 0, 'dirs': [3], 'split': 0}
+x......
+xX..eE.
+.......
+...Q...
+..qq...
+.....Aa
+...eE..
+final long ids [(56, '1044', (3, 22)), (51, '1028', (39, 21)), (20, '1050', (16, 2)), (15, '1049', (29, 5)), (12, '994', (34, 14)), (10, '1045', (13, 18))]
+window 0 100 A turns 2259 eats 213 zero 2046 splits 92
+window 0 100 B turns 1719 eats 95 zero 1624 splits 42
+window 101 300 A turns 11551 eats 744 zero 10808 splits 303
+window 101 300 B turns 11198 eats 555 zero 10648 splits 223
+window 400 499 A turns 2390 eats 291 zero 2112 splits 65
+window 400 499 B turns 3211 eats 268 zero 2957 splits 92
+
+GAME 1507592
+attacker 87 B
+attacker turns {'round': 429, 'id': 87, 'body': [1011, 963, 962], 'length': 3, 'steps': [1059], 'action': {'kind': 0, 'dirs': [2], 'split': 0}, 'eats': 0}
+attacker turns {'round': 430, 'id': 87, 'body': [1059, 1011, 963], 'length': 3, 'steps': [1107], 'action': {'kind': 0, 'dirs': [2], 'split': 0}, 'eats': 1}
+attacker turns {'round': 431, 'id': 87, 'body': [1107, 1059, 1011, 963], 'length': 4, 'steps': [1108, 1060], 'action': {'kind': 0, 'dirs': [1, 0, 1], 'split': 0}, 'eats': 0}
+queen 429 (6, 23) foe body [(3, 21), (3, 20), (2, 20)]
+exits [(0, 0, (6, 22), None), (1, 0, (7, 23), (0, 1)), (2, 1, (6, 0), None), (3, 0, (5, 23), None)]
+queen 430 (5, 23) foe body [(3, 22), (3, 21), (3, 20)]
+exits [(0, 0, (5, 22), None), (1, 0, (6, 23), (0, 1)), (2, 1, (5, 0), None), (3, 0, (4, 23), None)]
+queen 431 (5, 23) foe body [(3, 23), (3, 22), (3, 21), (3, 20)]
+exits [(0, 0, (5, 22), None), (1, 0, (6, 23), (0, 1)), (2, 1, (5, 0), None), (3, 0, (4, 23), None)]
+r429 head=(6, 23) L=16 action={'kind': 0, 'dirs': [3], 'split': 0}
+x....eq
+X....Eq
+......q
+*..Qqqq
+.*.....
+.......
+.......
+
+r430 head=(5, 23) L=16 action={'kind': 1, 'dirs': [], 'split': 14}
+.x.....
+.x...Ee
+.X.....
+.*.Qqqq
+..*....
+.......
+.......
+
+r431 head=(5, 23) L=2 action={'kind': 0, 'dirs': [0], 'split': 0}
+.x.....
+.x..Ee.
+.x.....
+.X.Qq..
+..*....
+.......
+.......
+final long ids [(34, '1', (39, 0)), (33, '263', (26, 8)), (19, '261', (16, 16)), (17, '245', (5, 22)), (7, '223', (1, 17)), (3, '262', (18, 16))]
+window 0 100 A turns 444 eats 6 zero 438 splits 4
+window 0 100 B turns 510 eats 27 zero 485 splits 11
+window 101 300 A turns 2173 eats 25 zero 2148 splits 10
+window 101 300 B turns 7067 eats 309 zero 6760 splits 129
+window 400 499 A turns 102 eats 3 zero 99 splits 1
+window 400 499 B turns 1958 eats 175 zero 1803 splits 26

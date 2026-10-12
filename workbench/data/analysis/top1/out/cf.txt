@@ -1,0 +1,40 @@
+=== 1. our round-500 games (sealed-queen map Schooltime excluded)
+games vs >=2000: 307
+  r500 ownQ=alive theirQ=alive L                8
+  r500 ownQ=alive theirQ=alive W                2
+  r500 ownQ=alive theirQ=dead W                 1
+  r500 ownQ=dead theirQ=alive L                 51
+  r500 ownQ=dead theirQ=dead L                  73
+  r500 ownQ=dead theirQ=dead W                  28
+  sealed map                                    18
+  wipe-out L                                    72
+  wipe-out W                                    54
+what-if flips among our round-500 losses:
+  (b) their longest dies at the end -> we win on longest         28
+  (b) base                                                       73
+  (c) our queen lives -> we win                                  73
+  (a) their queen dies -> we win on longest                      22
+  (a) base                                                       51
+  (a+b) their queen AND their longest non-queen die -> we win    24
+  (d) both alive: our queen shorter                              8
+  by map size for (b): {'small': 23, 'medium': 14, 'large': 36}
+
+=== 2. leader kills: a team's longest dragon (>= 15) killed by an ENEMY ram; per game, by phase
+Vibing++  small  n=170 we kill r<300=0.00 we kill r300-399=0.00 we kill r400-449=0.02 we kill r450+=0.02 we lose r<300=0.00 we lose r300-399=0.00 we lose r400-449=0.01 we lose r450+=0.01 | killer len {'3-4': 2, '5-9': 6}
+Vibing++  medium n=106 we kill r<300=0.01 we kill r300-399=0.06 we kill r400-449=0.06 we kill r450+=0.08 we lose r<300=0.00 we lose r300-399=0.02 we lose r400-449=0.01 we lose r450+=0.02 | killer len {'10+': 3, '2': 3, '3-4': 5, '5-9': 10}
+Vibing++  large  n=129 we kill r<300=0.16 we kill r300-399=0.17 we kill r400-449=0.13 we kill r450+=0.15 we lose r<300=0.40 we lose r300-399=0.15 we lose r400-449=0.14 we lose r450+=0.09 | killer len {'10+': 11, '2': 7, '3-4': 40, '5-9': 20}
+SSS       small  n=156 we kill r<300=0.00 we kill r300-399=0.00 we kill r400-449=0.00 we kill r450+=0.00 we lose r<300=0.00 we lose r300-399=0.00 we lose r400-449=0.01 we lose r450+=0.01 | killer len {}
+SSS       medium n=108 we kill r<300=0.00 we kill r300-399=0.02 we kill r400-449=0.02 we kill r450+=0.01 we lose r<300=0.00 we lose r300-399=0.06 we lose r400-449=0.04 we lose r450+=0.04 | killer len {'10+': 1, '3-4': 3, '5-9': 1}
+SSS       large  n=135 we kill r<300=0.28 we kill r300-399=0.20 we kill r400-449=0.11 we kill r450+=0.10 we lose r<300=0.33 we lose r300-399=0.20 we lose r400-449=0.09 we lose r450+=0.14 | killer len {'10+': 4, '2': 18, '3-4': 59, '5-9': 12}
+forgot    small  n=175 we kill r<300=0.00 we kill r300-399=0.00 we kill r400-449=0.00 we kill r450+=0.02 we lose r<300=0.01 we lose r300-399=0.00 we lose r400-449=0.03 we lose r450+=0.02 | killer len {'3-4': 2, '5-9': 2}
+forgot    medium n=120 we kill r<300=0.00 we kill r300-399=0.02 we kill r400-449=0.01 we kill r450+=0.01 we lose r<300=0.00 we lose r300-399=0.03 we lose r400-449=0.03 we lose r450+=0.02 | killer len {'3-4': 3, '5-9': 1}
+forgot    large  n=131 we kill r<300=0.20 we kill r300-399=0.15 we kill r400-449=0.18 we kill r450+=0.11 we lose r<300=0.31 we lose r300-399=0.09 we lose r400-449=0.10 we lose r450+=0.19 | killer len {'2': 18, '3-4': 42, '5-9': 23}
+meow      small  n=125 we kill r<300=0.00 we kill r300-399=0.00 we kill r400-449=0.01 we kill r450+=0.00 we lose r<300=0.00 we lose r300-399=0.00 we lose r400-449=0.01 we lose r450+=0.00 | killer len {'5-9': 1}
+meow      medium n= 85 we kill r<300=0.00 we kill r300-399=0.00 we kill r400-449=0.00 we kill r450+=0.00 we lose r<300=0.00 we lose r300-399=0.00 we lose r400-449=0.07 we lose r450+=0.06 | killer len {}
+meow      large  n= 97 we kill r<300=0.14 we kill r300-399=0.07 we kill r400-449=0.06 we kill r450+=0.09 we lose r<300=0.18 we lose r300-399=0.15 we lose r400-449=0.07 we lose r450+=0.07 | killer len {'10+': 8, '2': 3, '3-4': 11, '5-9': 14}
+
+=== 3. does a late leader kill decide round-500 'longest' games? (top-team games, both queens dead at the end)
+Vibing++  both L: 2 | both W: 3 | neither L: 28 | neither W: 49 | only they killed ours L: 9 | only they killed ours W: 5 | only we killed their leader W: 20
+SSS       both W: 1 | neither L: 25 | neither W: 44 | only they killed ours L: 23 | only they killed ours W: 2 | only we killed their leader L: 2 | only we killed their leader W: 16
+forgot    both L: 1 | both W: 3 | neither L: 24 | neither W: 36 | only they killed ours L: 12 | only they killed ours W: 2 | only we killed their leader L: 2 | only we killed their leader W: 15
+meow      both L: 1 | neither L: 63 | neither W: 17 | only they killed ours L: 3 | only they killed ours W: 3 | only we killed their leader L: 6 | only we killed their leader W: 6

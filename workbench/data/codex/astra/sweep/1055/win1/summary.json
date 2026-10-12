@@ -1,0 +1,1059 @@
+[
+  {
+    "gid": 1501017,
+    "map": "Prisoners Dilemma",
+    "bot": 21269,
+    "side": "B",
+    "last": 291,
+    "final": {
+      "us": {
+        "alive": 17,
+        "total": 38,
+        "longest": 3,
+        "pearls": 121,
+        "queen_alive": false,
+        "queen_length": 0
+      },
+      "them": {
+        "alive": 0,
+        "total": 0,
+        "longest": 0,
+        "pearls": 23,
+        "queen_alive": false,
+        "queen_length": 0
+      }
+    },
+    "decided": "elimination",
+    "lead_forever_round_end": 291,
+    "last_nonleading": {
+      "us": {
+        "alive": 19,
+        "total": 41,
+        "longest": 3,
+        "pearls": 120,
+        "queen_alive": false,
+        "queen_length": 0
+      },
+      "them": {
+        "alive": 1,
+        "total": 3,
+        "longest": 3,
+        "pearls": 23,
+        "queen_alive": true,
+        "queen_length": 3
+      }
+    },
+    "qdeaths": [
+      {
+        "death": "1501017:18067",
+        "gid": 1501017,
+        "map": "Prisoners Dilemma",
+        "folder": "data/online/live-one1/b1501017",
+        "ours": "B",
+        "id": 0,
+        "side": "us",
+        "round": 214,
+        "event": 18067,
+        "length": 2,
+        "dropped": 1,
+        "cause": "wall",
+        "reason": 0,
+        "actor": 0,
+        "hit": null,
+        "destination": [
+          16,
+          15
+        ],
+        "body": [
+          [
+            17,
+            15
+          ],
+          [
+            17,
+            14
+          ]
+        ],
+        "pearls": [
+          "1501017:18068"
+        ],
+        "collision": null,
+        "other": null
+      },
+      {
+        "death": "1501017:27716",
+        "gid": 1501017,
+        "map": "Prisoners Dilemma",
+        "folder": "data/online/live-one1/b1501017",
+        "ours": "B",
+        "id": 1,
+        "side": "them",
+        "round": 291,
+        "event": 27716,
+        "length": 3,
+        "dropped": 2,
+        "cause": "head-on hit",
+        "reason": 3,
+        "actor": 64,
+        "hit": null,
+        "destination": null,
+        "body": [
+          [
+            29,
+            2
+          ],
+          [
+            29,
+            1
+          ],
+          [
+            30,
+            1
+          ]
+        ],
+        "pearls": [
+          "1501017:27717",
+          "1501017:27718"
+        ],
+        "collision": "1501017:27716",
+        "other": null
+      }
+    ],
+    "anomalies": {},
+    "event_counts": {
+      "dragonUpdate": 4042,
+      "roundStart": 292,
+      "tileChange": 299,
+      "turnStart": 4145,
+      "dragonAction": 4145,
+      "sonarPing": 14736,
+      "dragonSplit": 70,
+      "dragonDeath": 59
+    }
+  },
+  {
+    "gid": 1501018,
+    "map": "Schooltime",
+    "bot": 21269,
+    "side": "B",
+    "last": 499,
+    "final": {
+      "us": {
+        "alive": 50,
+        "total": 495,
+        "longest": 48,
+        "pearls": 2140,
+        "queen_alive": true,
+        "queen_length": 3
+      },
+      "them": {
+        "alive": 15,
+        "total": 137,
+        "longest": 33,
+        "pearls": 1546,
+        "queen_alive": true,
+        "queen_length": 3
+      }
+    },
+    "decided": "longest",
+    "lead_forever_round_end": 351,
+    "last_nonleading": {
+      "us": {
+        "alive": 62,
+        "total": 450,
+        "longest": 17,
+        "pearls": 1322,
+        "queen_alive": true,
+        "queen_length": 3
+      },
+      "them": {
+        "alive": 34,
+        "total": 125,
+        "longest": 19,
+        "pearls": 1195,
+        "queen_alive": true,
+        "queen_length": 3
+      }
+    },
+    "qdeaths": [],
+    "anomalies": {},
+    "event_counts": {
+      "dragonUpdate": 52232,
+      "roundStart": 500,
+      "turnStart": 42700,
+      "dragonAction": 42700,
+      "dragonSplit": 1076,
+      "sonarPing": 129645,
+      "dragonDeath": 1017,
+      "tileChange": 7449
+    }
+  },
+  {
+    "gid": 1501021,
+    "map": "Default",
+    "bot": 21269,
+    "side": "B",
+    "last": 499,
+    "final": {
+      "us": {
+        "alive": 16,
+        "total": 150,
+        "longest": 65,
+        "pearls": 667,
+        "queen_alive": true,
+        "queen_length": 65
+      },
+      "them": {
+        "alive": 2,
+        "total": 21,
+        "longest": 12,
+        "pearls": 243,
+        "queen_alive": false,
+        "queen_length": 0
+      }
+    },
+    "decided": "queen",
+    "lead_forever_round_end": 188,
+    "last_nonleading": {
+      "us": {
+        "alive": 33,
+        "total": 75,
+        "longest": 3,
+        "pearls": 142,
+        "queen_alive": true,
+        "queen_length": 2
+      },
+      "them": {
+        "alive": 14,
+        "total": 41,
+        "longest": 5,
+        "pearls": 100,
+        "queen_alive": true,
+        "queen_length": 5
+      }
+    },
+    "qdeaths": [
+      {
+        "death": "1501021:35472",
+        "gid": 1501021,
+        "map": "Default",
+        "folder": "data/online/live-one1/b1501017",
+        "ours": "B",
+        "id": 1,
+        "side": "them",
+        "round": 188,
+        "event": 35472,
+        "length": 5,
+        "dropped": 3,
+        "cause": "head-on hit",
+        "reason": 3,
+        "actor": 80,
+        "hit": null,
+        "destination": null,
+        "body": [
+          [
+            27,
+            23
+          ],
+          [
+            27,
+            24
+          ],
+          [
+            28,
+            24
+          ],
+          [
+            29,
+            24
+          ],
+          [
+            29,
+            23
+          ]
+        ],
+        "pearls": [
+          "1501021:35473",
+          "1501021:35474",
+          "1501021:35475"
+        ],
+        "collision": "1501021:35472",
+        "other": null
+      }
+    ],
+    "anomalies": {},
+    "event_counts": {
+      "dragonUpdate": 19483,
+      "roundStart": 500,
+      "tileChange": 1842,
+      "turnStart": 18840,
+      "dragonAction": 18840,
+      "dragonSplit": 301,
+      "sonarPing": 66824,
+      "dragonDeath": 291
+    }
+  },
+  {
+    "gid": 1501671,
+    "map": "Around UNSW",
+    "bot": 21330,
+    "side": "A",
+    "last": 499,
+    "final": {
+      "us": {
+        "alive": 57,
+        "total": 322,
+        "longest": 42,
+        "pearls": 1264,
+        "queen_alive": true,
+        "queen_length": 17
+      },
+      "them": {
+        "alive": 29,
+        "total": 277,
+        "longest": 70,
+        "pearls": 2810,
+        "queen_alive": false,
+        "queen_length": 0
+      }
+    },
+    "decided": "queen",
+    "lead_forever_round_end": 338,
+    "last_nonleading": {
+      "us": {
+        "alive": 58,
+        "total": 339,
+        "longest": 17,
+        "pearls": 810,
+        "queen_alive": true,
+        "queen_length": 5
+      },
+      "them": {
+        "alive": 56,
+        "total": 245,
+        "longest": 25,
+        "pearls": 1728,
+        "queen_alive": true,
+        "queen_length": 5
+      }
+    },
+    "qdeaths": [
+      {
+        "death": "1501671:220148",
+        "gid": 1501671,
+        "map": "Around UNSW",
+        "folder": "data/online/smoke/one12-c1-old",
+        "ours": "A",
+        "id": 0,
+        "side": "them",
+        "round": 353,
+        "event": 220148,
+        "length": 2,
+        "dropped": 1,
+        "cause": "own body",
+        "reason": 1,
+        "actor": 0,
+        "hit": null,
+        "destination": [
+          3,
+          29
+        ],
+        "body": [
+          [
+            2,
+            29
+          ],
+          [
+            3,
+            29
+          ]
+        ],
+        "pearls": [
+          "1501671:220149"
+        ],
+        "collision": null,
+        "other": null
+      }
+    ],
+    "anomalies": {},
+    "event_counts": {
+      "dragonUpdate": 63749,
+      "roundStart": 500,
+      "tileChange": 8220,
+      "turnStart": 55732,
+      "dragonAction": 55732,
+      "sonarPing": 130568,
+      "dragonSplit": 1237,
+      "dragonDeath": 1171
+    }
+  },
+  {
+    "gid": 1501673,
+    "map": "Queen Of Spades",
+    "bot": 21330,
+    "side": "A",
+    "last": 303,
+    "final": {
+      "us": {
+        "alive": 40,
+        "total": 99,
+        "longest": 3,
+        "pearls": 257,
+        "queen_alive": true,
+        "queen_length": 3
+      },
+      "them": {
+        "alive": 0,
+        "total": 0,
+        "longest": 0,
+        "pearls": 105,
+        "queen_alive": false,
+        "queen_length": 0
+      }
+    },
+    "decided": "elimination",
+    "lead_forever_round_end": 52,
+    "last_nonleading": {
+      "us": {
+        "alive": 3,
+        "total": 8,
+        "longest": 3,
+        "pearls": 2,
+        "queen_alive": true,
+        "queen_length": 3
+      },
+      "them": {
+        "alive": 5,
+        "total": 13,
+        "longest": 4,
+        "pearls": 13,
+        "queen_alive": true,
+        "queen_length": 4
+      }
+    },
+    "qdeaths": [
+      {
+        "death": "1501673:1720",
+        "gid": 1501673,
+        "map": "Queen Of Spades",
+        "folder": "data/online/smoke/one12-c1-old",
+        "ours": "A",
+        "id": 0,
+        "side": "them",
+        "round": 53,
+        "event": 1720,
+        "length": 2,
+        "dropped": 1,
+        "cause": "own body",
+        "reason": 1,
+        "actor": 0,
+        "hit": null,
+        "destination": [
+          11,
+          32
+        ],
+        "body": [
+          [
+            11,
+            33
+          ],
+          [
+            11,
+            32
+          ]
+        ],
+        "pearls": [
+          "1501673:1721"
+        ],
+        "collision": null,
+        "other": null
+      }
+    ],
+    "anomalies": {},
+    "event_counts": {
+      "dragonUpdate": 6976,
+      "roundStart": 304,
+      "turnStart": 7184,
+      "dragonAction": 7184,
+      "sonarPing": 21421,
+      "tileChange": 799,
+      "dragonSplit": 146,
+      "dragonDeath": 110
+    }
+  },
+  {
+    "gid": 1503501,
+    "map": "weakhold",
+    "bot": 21330,
+    "side": "A",
+    "last": 499,
+    "final": {
+      "us": {
+        "alive": 16,
+        "total": 63,
+        "longest": 19,
+        "pearls": 736,
+        "queen_alive": false,
+        "queen_length": 0
+      },
+      "them": {
+        "alive": 4,
+        "total": 25,
+        "longest": 11,
+        "pearls": 450,
+        "queen_alive": false,
+        "queen_length": 0
+      }
+    },
+    "decided": "longest",
+    "lead_forever_round_end": 474,
+    "last_nonleading": {
+      "us": {
+        "alive": 19,
+        "total": 63,
+        "longest": 11,
+        "pearls": 719,
+        "queen_alive": false,
+        "queen_length": 0
+      },
+      "them": {
+        "alive": 3,
+        "total": 23,
+        "longest": 12,
+        "pearls": 436,
+        "queen_alive": false,
+        "queen_length": 0
+      }
+    },
+    "qdeaths": [
+      {
+        "death": "1503501:9135",
+        "gid": 1503501,
+        "map": "weakhold",
+        "folder": "data/online/smoke/one12-p1-old",
+        "ours": "A",
+        "id": 1,
+        "side": "us",
+        "round": 101,
+        "event": 9135,
+        "length": 3,
+        "dropped": 2,
+        "cause": "head-on hit",
+        "reason": 3,
+        "actor": 48,
+        "hit": null,
+        "destination": null,
+        "body": [
+          [
+            15,
+            3
+          ],
+          [
+            16,
+            3
+          ],
+          [
+            17,
+            3
+          ]
+        ],
+        "pearls": [
+          "1503501:9136",
+          "1503501:9137"
+        ],
+        "collision": "1503501:9135",
+        "other": null
+      },
+      {
+        "death": "1503501:25183",
+        "gid": 1503501,
+        "map": "weakhold",
+        "folder": "data/online/smoke/one12-p1-old",
+        "ours": "A",
+        "id": 0,
+        "side": "them",
+        "round": 167,
+        "event": 25183,
+        "length": 2,
+        "dropped": 1,
+        "cause": "head-on mover",
+        "reason": 3,
+        "actor": 0,
+        "hit": null,
+        "destination": [
+          17,
+          5
+        ],
+        "body": [
+          [
+            16,
+            5
+          ],
+          [
+            16,
+            4
+          ]
+        ],
+        "pearls": [
+          "1503501:25184"
+        ],
+        "collision": "1503501:25181",
+        "other": null
+      }
+    ],
+    "anomalies": {},
+    "event_counts": {
+      "dragonUpdate": 18478,
+      "roundStart": 500,
+      "tileChange": 2409,
+      "turnStart": 18963,
+      "dragonAction": 18963,
+      "dragonSplit": 505,
+      "sonarPing": 55652,
+      "dragonDeath": 489
+    }
+  },
+  {
+    "gid": 1503505,
+    "map": "Stripes",
+    "bot": 21330,
+    "side": "A",
+    "last": 178,
+    "final": {
+      "us": {
+        "alive": 29,
+        "total": 71,
+        "longest": 4,
+        "pearls": 261,
+        "queen_alive": false,
+        "queen_length": 0
+      },
+      "them": {
+        "alive": 0,
+        "total": 0,
+        "longest": 0,
+        "pearls": 104,
+        "queen_alive": false,
+        "queen_length": 0
+      }
+    },
+    "decided": "elimination",
+    "lead_forever_round_end": 161,
+    "last_nonleading": {
+      "us": {
+        "alive": 28,
+        "total": 60,
+        "longest": 3,
+        "pearls": 213,
+        "queen_alive": false,
+        "queen_length": 0
+      },
+      "them": {
+        "alive": 3,
+        "total": 10,
+        "longest": 5,
+        "pearls": 100,
+        "queen_alive": false,
+        "queen_length": 0
+      }
+    },
+    "qdeaths": [
+      {
+        "death": "1503505:4318",
+        "gid": 1503505,
+        "map": "Stripes",
+        "folder": "data/online/smoke/one12-p1-old",
+        "ours": "A",
+        "id": 0,
+        "side": "them",
+        "round": 71,
+        "event": 4318,
+        "length": 2,
+        "dropped": 1,
+        "cause": "head-on mover",
+        "reason": 3,
+        "actor": 0,
+        "hit": null,
+        "destination": [
+          8,
+          0
+        ],
+        "body": [
+          [
+            7,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "pearls": [
+          "1503505:4319"
+        ],
+        "collision": "1503505:4316",
+        "other": null
+      },
+      {
+        "death": "1503505:4449",
+        "gid": 1503505,
+        "map": "Stripes",
+        "folder": "data/online/smoke/one12-p1-old",
+        "ours": "A",
+        "id": 1,
+        "side": "us",
+        "round": 72,
+        "event": 4449,
+        "length": 3,
+        "dropped": 2,
+        "cause": "head-on hit",
+        "reason": 3,
+        "actor": 40,
+        "hit": null,
+        "destination": null,
+        "body": [
+          [
+            18,
+            11
+          ],
+          [
+            17,
+            11
+          ],
+          [
+            16,
+            11
+          ]
+        ],
+        "pearls": [
+          "1503505:4450",
+          "1503505:4451"
+        ],
+        "collision": "1503505:4449",
+        "other": null
+      }
+    ],
+    "anomalies": {},
+    "event_counts": {
+      "dragonUpdate": 3040,
+      "roundStart": 179,
+      "tileChange": 753,
+      "turnStart": 3291,
+      "dragonAction": 3291,
+      "sonarPing": 10184,
+      "dragonSplit": 157,
+      "dragonDeath": 132
+    }
+  },
+  {
+    "gid": 1503507,
+    "map": "Around UNSW",
+    "bot": 21330,
+    "side": "A",
+    "last": 499,
+    "final": {
+      "us": {
+        "alive": 30,
+        "total": 206,
+        "longest": 54,
+        "pearls": 1470,
+        "queen_alive": false,
+        "queen_length": 0
+      },
+      "them": {
+        "alive": 35,
+        "total": 484,
+        "longest": 43,
+        "pearls": 2214,
+        "queen_alive": false,
+        "queen_length": 0
+      }
+    },
+    "decided": "longest",
+    "lead_forever_round_end": 466,
+    "last_nonleading": {
+      "us": {
+        "alive": 34,
+        "total": 223,
+        "longest": 45,
+        "pearls": 1397,
+        "queen_alive": false,
+        "queen_length": 0
+      },
+      "them": {
+        "alive": 35,
+        "total": 424,
+        "longest": 45,
+        "pearls": 2045,
+        "queen_alive": false,
+        "queen_length": 0
+      }
+    },
+    "qdeaths": [
+      {
+        "death": "1503507:54650",
+        "gid": 1503507,
+        "map": "Around UNSW",
+        "folder": "data/online/smoke/one12-p1-old",
+        "ours": "A",
+        "id": 0,
+        "side": "them",
+        "round": 122,
+        "event": 54650,
+        "length": 2,
+        "dropped": 1,
+        "cause": "head-on hit",
+        "reason": 3,
+        "actor": 273,
+        "hit": null,
+        "destination": null,
+        "body": [
+          [
+            12,
+            26
+          ],
+          [
+            13,
+            26
+          ]
+        ],
+        "pearls": [
+          "1503507:54651"
+        ],
+        "collision": "1503507:54650",
+        "other": null
+      },
+      {
+        "death": "1503507:213179",
+        "gid": 1503507,
+        "map": "Around UNSW",
+        "folder": "data/online/smoke/one12-p1-old",
+        "ours": "A",
+        "id": 1,
+        "side": "us",
+        "round": 359,
+        "event": 213179,
+        "length": 2,
+        "dropped": 1,
+        "cause": "head-on hit",
+        "reason": 3,
+        "actor": 715,
+        "hit": null,
+        "destination": null,
+        "body": [
+          [
+            51,
+            11
+          ],
+          [
+            51,
+            12
+          ]
+        ],
+        "pearls": [
+          "1503507:213180"
+        ],
+        "collision": "1503507:213179",
+        "other": null
+      }
+    ],
+    "anomalies": {},
+    "event_counts": {
+      "dragonUpdate": 63825,
+      "roundStart": 500,
+      "tileChange": 7430,
+      "turnStart": 51637,
+      "dragonAction": 51637,
+      "dragonSplit": 1002,
+      "sonarPing": 104300,
+      "dragonDeath": 957
+    }
+  },
+  {
+    "gid": 1503511,
+    "map": "Trophy",
+    "bot": 21330,
+    "side": "A",
+    "last": 113,
+    "final": {
+      "us": {
+        "alive": 57,
+        "total": 135,
+        "longest": 4,
+        "pearls": 177,
+        "queen_alive": true,
+        "queen_length": 4
+      },
+      "them": {
+        "alive": 0,
+        "total": 0,
+        "longest": 0,
+        "pearls": 49,
+        "queen_alive": false,
+        "queen_length": 0
+      }
+    },
+    "decided": "elimination",
+    "lead_forever_round_end": 48,
+    "last_nonleading": {
+      "us": {
+        "alive": 12,
+        "total": 30,
+        "longest": 4,
+        "pearls": 35,
+        "queen_alive": true,
+        "queen_length": 3
+      },
+      "them": {
+        "alive": 4,
+        "total": 11,
+        "longest": 4,
+        "pearls": 21,
+        "queen_alive": true,
+        "queen_length": 4
+      }
+    },
+    "qdeaths": [
+      {
+        "death": "1503511:14633",
+        "gid": 1503511,
+        "map": "Trophy",
+        "folder": "data/online/smoke/one12-p1-old",
+        "ours": "A",
+        "id": 0,
+        "side": "them",
+        "round": 101,
+        "event": 14633,
+        "length": 2,
+        "dropped": 1,
+        "cause": "head-on hit",
+        "reason": 3,
+        "actor": 29,
+        "hit": null,
+        "destination": null,
+        "body": [
+          [
+            5,
+            8
+          ],
+          [
+            5,
+            7
+          ]
+        ],
+        "pearls": [
+          "1503511:14634"
+        ],
+        "collision": "1503511:14633",
+        "other": null
+      }
+    ],
+    "anomalies": {},
+    "event_counts": {
+      "dragonUpdate": 2867,
+      "roundStart": 114,
+      "turnStart": 2948,
+      "dragonAction": 2948,
+      "sonarPing": 9976,
+      "tileChange": 460,
+      "dragonSplit": 87,
+      "dragonDeath": 34
+    }
+  },
+  {
+    "gid": 1503361,
+    "map": "Autarky",
+    "bot": 21330,
+    "side": "B",
+    "last": 156,
+    "final": {
+      "us": {
+        "alive": 60,
+        "total": 155,
+        "longest": 5,
+        "pearls": 293,
+        "queen_alive": true,
+        "queen_length": 4
+      },
+      "them": {
+        "alive": 0,
+        "total": 0,
+        "longest": 0,
+        "pearls": 35,
+        "queen_alive": false,
+        "queen_length": 0
+      }
+    },
+    "decided": "elimination",
+    "lead_forever_round_end": 22,
+    "last_nonleading": {
+      "us": {
+        "alive": 17,
+        "total": 42,
+        "longest": 3,
+        "pearls": 26,
+        "queen_alive": true,
+        "queen_length": 3
+      },
+      "them": {
+        "alive": 10,
+        "total": 28,
+        "longest": 4,
+        "pearls": 12,
+        "queen_alive": true,
+        "queen_length": 3
+      }
+    },
+    "qdeaths": [
+      {
+        "death": "1503361:24709",
+        "gid": 1503361,
+        "map": "Autarky",
+        "folder": "data/online/live-one1/b1503361",
+        "ours": "B",
+        "id": 1,
+        "side": "them",
+        "round": 107,
+        "event": 24709,
+        "length": 3,
+        "dropped": 2,
+        "cause": "head-on hit",
+        "reason": 3,
+        "actor": 41,
+        "hit": null,
+        "destination": null,
+        "body": [
+          [
+            37,
+            13
+          ],
+          [
+            38,
+            13
+          ],
+          [
+            38,
+            14
+          ]
+        ],
+        "pearls": [
+          "1503361:24710",
+          "1503361:24711"
+        ],
+        "collision": "1503361:24709",
+        "other": null
+      }
+    ],
+    "anomalies": {},
+    "event_counts": {
+      "dragonUpdate": 6330,
+      "roundStart": 157,
+      "tileChange": 669,
+      "turnStart": 6538,
+      "dragonAction": 6538,
+      "sonarPing": 24284,
+      "dragonSplit": 151,
+      "dragonDeath": 103
+    }
+  }
+]

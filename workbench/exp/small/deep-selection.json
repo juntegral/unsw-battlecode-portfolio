@@ -1,0 +1,170 @@
+[
+  {
+    "group": "local/arena/F",
+    "class": "머리 교환 우세(≥75%)",
+    "classN": 7,
+    "groupN": 8,
+    "means": [
+      3,
+      34.57142857142857,
+      2.7142857142857144,
+      2.142857142857143,
+      0
+    ],
+    "features": [
+      "totalSplits",
+      "rounds",
+      "maxHeads",
+      "heads25",
+      "heads100"
+    ],
+    "chosen": "v12-F-H:proxy4_king:arena:A:1",
+    "team": "A",
+    "score": 0.3071165782009154
+  },
+  {
+    "group": "local/Colosseum/F",
+    "class": "머리 교환 우세(≥75%)",
+    "classN": 8,
+    "groupN": 8,
+    "means": [
+      7.125,
+      102.25,
+      7.25,
+      5,
+      1.25
+    ],
+    "features": [
+      "totalSplits",
+      "rounds",
+      "maxHeads",
+      "heads25",
+      "heads100"
+    ],
+    "chosen": "v12-F-H:proxy4_king:Colosseum:B:1",
+    "team": "B",
+    "score": 0.5876248045739572
+  },
+  {
+    "group": "local/default_small/F",
+    "class": "막힘 우세(≥50%)",
+    "classN": 2,
+    "groupN": 8,
+    "means": [
+      11,
+      211,
+      9.5,
+      6,
+      4.5
+    ],
+    "features": [
+      "totalSplits",
+      "rounds",
+      "maxHeads",
+      "heads25",
+      "heads100"
+    ],
+    "chosen": "v12-F-H:proxy4_king:default_small:A:1",
+    "team": "A",
+    "score": 0.4194029241199052
+  },
+  {
+    "group": "online/v1",
+    "class": "혼합 붕괴",
+    "classN": 9,
+    "groupN": 21,
+    "means": [
+      17.444444444444443,
+      154.11111111111111,
+      12.555555555555555,
+      3.7777777777777777,
+      8.333333333333334
+    ],
+    "features": [
+      "totalSplits",
+      "rounds",
+      "maxHeads",
+      "heads25",
+      "heads100"
+    ],
+    "chosen": "v1-w3:753212",
+    "team": "A",
+    "score": 0.525811680365778
+  },
+  {
+    "group": "top/bothTop10/winner",
+    "class": "r25 5–8머리",
+    "classN": 263,
+    "groupN": 466,
+    "means": [
+      111.30798479087453,
+      182.60076045627378,
+      51.71102661596958,
+      6.186311787072244,
+      28.163498098859314
+    ],
+    "features": [
+      "totalSplits",
+      "rounds",
+      "maxHeads",
+      "heads25",
+      "heads100"
+    ],
+    "chosen": "top:637160:637169",
+    "team": "A",
+    "score": 0.18849620504116935
+  },
+  {
+    "group": "top/bothTop10/loser",
+    "class": "머리 교환 우세(≥75%)",
+    "classN": 444,
+    "groupN": 466,
+    "means": [
+      46.5518018018018,
+      183.25675675675674,
+      12.797297297297296,
+      4.25,
+      8.682432432432432
+    ],
+    "features": [
+      "totalSplits",
+      "rounds",
+      "maxHeads",
+      "heads25",
+      "heads100"
+    ],
+    "chosen": "top:671682:671691",
+    "team": "A",
+    "score": 0.4130175764769699
+  },
+  {
+    "group": "local/arena/F",
+    "class": "무분열 소멸",
+    "classN": 1,
+    "groupN": 8,
+    "means": [
+      0,
+      26,
+      1,
+      1,
+      0
+    ],
+    "features": [
+      "totalSplits",
+      "rounds",
+      "maxHeads",
+      "heads25",
+      "heads100"
+    ],
+    "chosen": "v12-F-H:proxy4_king:arena:B:1",
+    "team": "B",
+    "score": 0
+  },
+  {
+    "group": "local/Colosseum/F",
+    "class": "사용자 지정 앵커",
+    "classN": 1,
+    "chosen": "v12-F-H:proxy4_king:Colosseum:A:1",
+    "team": "A"
+  }
+]

@@ -1,0 +1,86 @@
+=== 1054798 Around UNSW 64x64 (4096 cells) run 1054787 | B = Vibing++ (2308) vs test4 (2189) | winner A by longest after 500 rounds
+queen #1 start (43, 21); enemy queen #0 start (20, 42); path between the starts 62
+DEATH r438 headon L40 at (55, 9) by #947A L6 from (52, 6) with SESEES
+splits (round, before -> keeps + child, child id): r163:14->3+11(#374) r355:5->3+2(#822)
+block | head | from start | len | ate nat/corpse | splits | rounds enemy in view | nearest enemy | cells used | own heads<=4 | units own/enemy
+r  0 | (43, 21)  |   0 |  4 | 0/1 | 0 |  0 | 9 |  7 | 1.5 | 10/10
+r 25 | (44, 23)  |   3 |  5 | 0/0 | 0 |  0 | 5 | 25 | 0.2 | 18/16
+r 50 | (47, 31)  |  16 |  5 | 1/3 | 0 |  0 | 9 | 25 | 0.8 | 32/17
+r 75 | (41, 38)  |  37 |  9 | 0/2 | 0 | 10 | 2 | 25 | 0.0 | 45/27
+r100 | (55, 27)  |  18 | 11 | 0/0 | 0 | 12 | 3 | 25 | 0.3 | 50/31
+r125 | (51, 39)  |  30 | 11 | 0/2 | 0 |  7 | 4 | 21 | 0.1 | 60/50
+r150 | (56, 28)  |  20 | 13 | 1/0 | 1 | 19 | 8 | 16 | 1.2 | 62/54
+r175 | (57, 17)  |  20 |  3 | 0/0 | 0 | 17 | 3 |  6 | 0.5 | 61/63
+r200 | (56, 17)  |  19 |  3 | 0/0 | 0 | 11 | 5 |  5 | 1.5 | 60/63
+r225 | (56, 18)  |  18 |  3 | 0/0 | 0 | 10 | 8 | 22 | 0.9 | 62/63
+r250 | (55, 30)  |  21 |  3 | 0/0 | 0 |  0 | 6 | 21 | 0.7 | 58/63
+r275 | (54, 32)  |  22 |  3 | 0/0 | 0 |  0 | 9 | 21 | 2.0 | 61/62
+r300 | (55, 22)  |  13 |  3 | 0/0 | 0 |  0 | 9 | 15 | 0.9 | 56/62
+r325 | (54, 18)  |  16 |  3 | 1/0 | 0 |  0 | 9 | 25 | 1.2 | 61/58
+r350 | (53, 8)   |  23 |  4 | 2/0 | 1 |  0 | 5 | 14 | 2.0 | 62/63
+r375 | (56, 7)   |  27 |  4 | 5/12 | 0 |  2 | 2 | 24 | 0.9 | 59/61
+r400 | (58, 13)  |  23 | 21 | 0/5 | 0 |  0 | 9 | 25 | 0.5 | 50/28
+r425 | (61, 23)  |  36 | 26 | 0/14 | 0 |  2 | 9 | 14 | 0.6 | 45/20
+moves from round 408:
+   408:S  409:W  410:S  411:S  412:W  413:WW  414:NNN  415:W  416:S  417:S  418:S  419:S
+   420:SSEN+  421:NESS+  422:S+  423:SENN++  424:N  425:N  426:ENWW  427:NW  428:N  429:EENW+  430:NW++  431:NNWS++
+   432:W+  433:N  434:NEEN++  435:NW  436:SWNN+++  437:WWNE++!9  438:NW+!9
+death record: {"round": 438, "reason": "headon", "len": 40, "pos": [55, 9], "own": 0, "killer": {"id": 947, "team": "A", "len": 6, "steps": 6, "nsteps": 6, "start": [52, 6], "born": 1, "dirs": "SESEES", "parent": [209, 438], "cheb_now": 3, "seen_last": 0, "seen_last3": 0}}
+  r431 L29 at (59, 17) move NNWS -> [58, 16] ate 2 | free 2 safe 2 | in reach at start 0, at end 0 | froom 17 tree 0 | N=F(59,16) reach0 room16 E=o(60,17) #1L29s1 S=K W=F(58,17) reach0 room16 | enemies 
+  r432 L31 at (58, 16) move W -> [57, 16] ate 1 | free 2 safe 2 | in reach at start 0, at end 0 | froom 7 tree 0 | N=o(58,15) #1L31s1 E=o(59,16) #1L31s3 S=F(58,17) reach0 room0 W=P(57,16) reach0 room5 | enemies 
+  r433 L32 at (57, 16) move N -> [57, 15] ate 0 | free 2 safe 2 | in reach at start 0, at end 0 | froom 40 tree 0 | N=F(57,15) reach0 room40 E=o(58,16) #1L32s1 S=K W=F(56,16) reach0 room40 | enemies 
+  r434 L32 at (57, 15) move NEEN -> [59, 13] ate 2 | free 2 safe 2 | in reach at start 0, at end 0 | froom 40 tree 0 | N=F(57,14) reach0 room40 E=o(58,15) #1L32s3 S=o(57,16) #1L32s1 W=P(56,15) reach0 room1 | enemies 
+  r435 L34 at (59, 13) move NW -> [58, 12] ate 0 | free 2 safe 2 | in reach at start 0, at end 0 | froom 40 tree 0 | N=F(59,12) reach0 room40 E=K S=o(59,14) #1L34s1 W=P(58,13) reach0 room40 | enemies 
+  r436 L34 at (58, 12) move SWNN -> [57, 11] ate 3 | free 2 safe 2 | in reach at start 0, at end 0 | froom 40 tree 0 | N=K E=o(59,12) #1L34s1 S=P(58,13) reach0 room40 W=P(57,12) reach0 room40 | enemies 
+  r437 L37 at (57, 11) move WWNE -> [56, 10] ate 2 | free 3 safe 3 | in reach at start 0, at end 0 | froom 40 tree 0 | N=F(57,10) reach0 room40 E=P(58,11) reach0 room3 S=o(57,12) #1L37s1 W=P(56,11) reach0 room40 | enemies #209L9@(57,8)c3p-1V
+  r438 L39 at (56, 10) move NW -> [55, 9] ate 1 | free 2 safe 2 | in reach at start 0, at end 0 | froom 40 tree 0 | N=P(56,9) reach0 room40 E=F(57,10) reach0 room0 S=o(56,11) #1L39s3 W=o(55,10) #1L39s1 | enemies #209L9@(56,8)c2p-1V
+--- board at the start of her turn, round 435
+     54555657585960616263 0
+     +-+-+ + +-+ + + + + + 
+  8   . *|. . . . . . . . .
+     + + +-+ + +-+ + + + + 
+  9   . . *|. . *|. . B . .
+     + + + +-+-+-+ + + + + 
+ 10   . . . .|* . . . b . .
+     + + + + +-+-+-+-+ + + 
+ 11   B . * . * * * *|b . .
+     + + + + +-+-+-+-+ + + 
+ 12   . . . * . .|. . b . .
+     + + + + + + + + + + + 
+ 13   b b b B * &|. . b . .
+     + + + + + + + + + + + 
+ 14   b . . b b b|. . b . .
+     + + + + + + + + + + + 
+ 15  |b b * b b b|. . b b b
+     +-+-+ + + + +-+-+ + + 
+ 16   . .|. b b b|. .|. . .
+     + + +-+-+ + + + +-+-+ 
+ 17   . .|. .|. b b . . .|.
+     + + + + +-+-+ + + + + 
+ 18   . .|. .|. . b b . .|.
+heads: #1B L34 (59, 13); #673B L4 (54, 11); #870B L15 (62, 9); #920B L9 (57, 13)
+--- board at the start of her turn, round 438
+     5152535455565758596061
+     +-+ + + + +-+ + + + + 
+  5   .|. . . . .|. . B . .
+     + +-+-+-+ + +-+ + + + 
+  6   . a a a|. . .|. b . .
+     + + + + +-+ + + + + + 
+  7   * . * a a a a|. b . .
+     + + + +-+-+ + +-+ + + 
+  8   * * . . *|A a . b b b
+     + + + + + +-+ + +-+ + 
+  9   . .|. . . *|. . *|. .
+     + + + + + + +-+-+-+ + 
+ 10   . .|. . b & .|* . . .
+     + + + + + + + +-+-+-+-
+ 11  |. . * . b b b * * * *
+     + + + + + + + +-+-+-+-
+ 12  |. .|. . . . b b b|. .
+     +-+-+ + + + + + + + + 
+ 13   . . * . * . b b b|. .
+     + + + + + + + + + + + 
+ 14   . .|. * . . b b b|. .
+     +-+-+-+ + + + + + + + 
+ 15   b b b|. * * b b b|. .
+heads: #1B L39 (56, 10); #209A L9 (56, 8); #870B L15 (59, 5)

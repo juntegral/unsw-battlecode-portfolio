@@ -1,0 +1,143 @@
+games read 805 errors 0 ; final state equals the result block in 805 ; games with anomalies 0
+games in the set (main or v31, free layout, not Portals #1): 628 {'v31': 335, 'main': 293}
+
+=== 1. the claim as defined (lone turn = round after their queen died; fresh = seen within 20 rounds) ===
+all pairs: 83 pairs (main 40, v31 43): 144 deaths in 23110 lone turns, 6.23 per 1,000 ; fresh turns 15726
+kind A (bring 3.0 or more): 8 pairs (main 4, v31 4): 30 deaths in 4839 lone turns, 6.20 per 1,000
+kind B (bring under 1.5):  17 pairs (main 12, v31 5): 23 deaths in 7031 lone turns, 3.27 per 1,000
+between:                   6 pairs (main 2, v31 4): 34 deaths in 7147 lone turns, 4.76 per 1,000
+under 150 fresh turns:     52 pairs (main 22, v31 30): 57 deaths in 4093 lone turns, 13.93 per 1,000
+rate ratio A over B: 1.90 (95 percent by death counts alone 1.10 to 3.26)
+main: A 4 pairs (main 4, v31 0): 13 deaths in 2878 lone turns, 4.52 per 1,000 | B 12 pairs (main 12, v31 0): 15 deaths in 5408 lone turns, 2.77 per 1,000 | between 2 pairs (main 2, v31 0): 14 deaths in 2758 lone turns, 5.08 per 1,000 | ratio 1.63 (0.77 to 3.42)
+v31: A 4 pairs (main 0, v31 4): 17 deaths in 1961 lone turns, 8.67 per 1,000 | B 5 pairs (main 0, v31 5): 8 deaths in 1623 lone turns, 4.93 per 1,000 | between 4 pairs (main 0, v31 4): 20 deaths in 4389 lone turns, 4.56 per 1,000 | ratio 1.76 (0.76 to 4.08)
+
+--- every pair with 150 or more fresh turns, by bring ---
+    CookAgent (716)                    main rating 1665  games  7 (lone  4)  fresh  456  bring 5.75  lone turns  539  deaths  2  rate   3.7  kind A  causes {'head-on': 2} by {'other side': 2}
+    err404 (485)                       v31  rating 1753  games 24 (lone  5)  fresh  325  bring 5.50  lone turns  368  deaths  5  rate  13.6  kind A  causes {'head-on': 4, 'wall': 1} by {'other side': 4, 'nobody': 1}
+    :3 (217)                           main rating 1935  games 12 (lone  4)  fresh  923  bring 5.46  lone turns  977  deaths  3  rate   3.1  kind A  causes {'head-on': 1, 'wall': 2} by {'other side': 1, 'nobody': 2}
+    doofenshmirtz good incorporated (1 v31  rating 1869  games 16 (lone 12)  fresh  380  bring 4.68  lone turns  753  deaths  6  rate   8.0  kind A  causes {'head-on': 4, 'own body': 1, 'wall': 1} by {'other side': 4, 'nobody': 2}
+    calc (20)                          main rating 1951  games  9 (lone  9)  fresh  766  bring 4.41  lone turns 1031  deaths  5  rate   4.8  kind A  causes {'head-on': 5} by {'other side': 5}
+    ddabap (457)                       v31  rating 1900  games  5 (lone  3)  fresh  296  bring 4.29  lone turns  349  deaths  3  rate   8.6  kind A  causes {'head-on': 3} by {'other side': 3}
+    Settlers of Battlecode (258)       main rating 2072  games 11 (lone  3)  fresh  294  bring 3.98  lone turns  331  deaths  3  rate   9.1  kind A  causes {'head-on': 3} by {'other side': 3}
+    the uncancelables (899)            v31  rating 1962  games  7 (lone  4)  fresh  317  bring 3.60  lone turns  491  deaths  3  rate   6.1  kind A  causes {'head-on': 2, 'own body': 1} by {'other side': 2, 'nobody': 1}
+    NUSW Battlecode (262)              v31  rating 1903  games  8 (lone  3)  fresh  191  bring 2.69  lone turns  359  deaths  3  rate   8.4  kind mid  causes {'wall': 1, 'head-on': 2} by {'nobody': 1, 'other side': 2}
+    CookAgent (716)                    v31  rating 1660  games  8 (lone  5)  fresh  379  bring 2.64  lone turns  765  deaths  4  rate   5.2  kind mid  causes {'head-on': 3, 'wall': 1} by {'other side': 3, 'nobody': 1}
+    byte_force (959)                   main rating 1876  games 12 (lone  3)  fresh  198  bring 2.47  lone turns  431  deaths  2  rate   4.6  kind mid  causes {'head-on': 2} by {'other side': 2}
+    calc (20)                          v31  rating 1940  games  5 (lone  4)  fresh  210  bring 2.37  lone turns  256  deaths  3  rate  11.7  kind mid  causes {'head-on': 3} by {'other side': 3}
+    NUSW Battlecode (262)              main rating 1855  games 25 (lone 19)  fresh 1711  bring 2.31  lone turns 2327  deaths 12  rate   5.2  kind mid  causes {'own body': 4, 'wall': 1, 'head-on': 7} by {'nobody': 5, 'other side': 7}
+    中国人不准飞😡😡😡😡😡😡😡 (791)                v31  rating 1815  games 42 (lone 19)  fresh 2088  bring 2.29  lone turns 3009  deaths 10  rate   3.3  kind mid  causes {'head-on': 8, 'wall': 2} by {'other side': 8, 'nobody': 2}
+    Maccas (762)                       main rating 1872  games  7 (lone  2)  fresh  257  bring 1.46  lone turns  291  deaths  1  rate   3.4  kind B  causes {'wall': 1} by {'nobody': 1}
+    dev test 1 :P (545)                main rating 2382  games  4 (lone  1)  fresh  228  bring 1.46  lone turns  328  deaths  1  rate   3.0  kind B  causes {'head-on': 1} by {'other side': 1}
+    we love gru (998)                  main rating 2020  games  4 (lone  3)  fresh  196  bring 1.41  lone turns  541  deaths  2  rate   3.7  kind B  causes {'head-on': 2} by {'other side': 2}
+    Cache me outside (952)             v31  rating 2167  games  5 (lone  3)  fresh  179  bring 1.18  lone turns  325  deaths  3  rate   9.2  kind B  causes {'head-on': 3} by {'other side': 3}
+    AllRed (40)                        main rating 1915  games  4 (lone  3)  fresh  824  bring 1.09  lone turns 1073  deaths  0  rate   0.0  kind B  causes {} by {}
+    Nitronics (837)                    main rating 2021  games  4 (lone  2)  fresh  219  bring 0.98  lone turns  252  deaths  1  rate   4.0  kind B  causes {'own body': 1} by {'nobody': 1}
+    doofenshmirtz good incorporated (1 main rating 1783  games  5 (lone  2)  fresh  405  bring 0.95  lone turns  513  deaths  1  rate   1.9  kind B  causes {'head-on': 1} by {'other side': 1}
+    food (871)                         v31  rating 1848  games  4 (lone  2)  fresh  167  bring 0.68  lone turns  235  deaths  2  rate   8.5  kind B  causes {'head-on': 2} by {'other side': 2}
+    TheActualPlayer (1132)             main rating 1799  games  3 (lone  1)  fresh  164  bring 0.66  lone turns  182  deaths  1  rate   5.5  kind B  causes {'head-on': 1} by {'other side': 1}
+    Bot (11)                           main rating 1791  games  4 (lone  2)  fresh  217  bring 0.65  lone turns  347  deaths  1  rate   2.9  kind B  causes {'other': 1} by {'nobody': 1}
+    中国人不准飞😡😡😡😡😡😡😡 (791)                main rating 1814  games  8 (lone  5)  fresh  454  bring 0.63  lone turns  748  deaths  1  rate   1.3  kind B  causes {'wall': 1} by {'nobody': 1}
+    y (71)                             main rating 1975  games 14 (lone  4)  fresh  201  bring 0.45  lone turns  302  deaths  3  rate   9.9  kind B  causes {'wall': 2, 'own body': 1} by {'nobody': 3}
+    Proof by Intimidation (465)        v31  rating 1863  games  9 (lone  2)  fresh  222  bring 0.18  lone turns  323  deaths  2  rate   6.2  kind B  causes {'head-on': 1, 'other': 1} by {'other side': 1, 'nobody': 1}
+    food (871)                         main rating 1950  games  4 (lone  3)  fresh  300  bring 0.16  lone turns  406  deaths  2  rate   4.9  kind B  causes {'head-on': 1, 'other dragon body': 1} by {'other side': 2}
+    Peanut Butter (104)                v31  rating 1946  games  5 (lone  2)  fresh  260  bring 0.12  lone turns  321  deaths  1  rate   3.1  kind B  causes {'head-on': 1} by {'other side': 1}
+    Vodyanitsa (1052)                  v31  rating 1755  games  9 (lone  3)  fresh  361  bring 0.03  lone turns  419  deaths  0  rate   0.0  kind B  causes {} by {}
+    Wapowpow (879)                     main rating 1790  games  5 (lone  2)  fresh  270  bring 0.01  lone turns  425  deaths  1  rate   2.4  kind B  causes {'head-on': 1} by {'other side': 1}
+
+--- one opponent ---
+kind A, the pair with the most deaths: doofenshmirtz good incorporated (1015) v31, 6 deaths in 753 turns; without it: 7 pairs (main 4, v31 3): 24 deaths in 4086 lone turns, 5.87 per 1,000; ratio to B 1.80
+kind A, the opponent (both codes) with the most deaths: 1015, 6 deaths; without it: 7 pairs (main 4, v31 3): 24 deaths in 4086 lone turns, 5.87 per 1,000; ratio to B 1.80
+one pair left out at a time (A and B): ratio 1.61 (without AllRed (40) main) to 2.14 (without :3 (217) main)
+without the three A pairs with the most deaths: 5 pairs (main 3, v31 2): 14 deaths in 2687 lone turns, 5.21 per 1,000; ratio 1.59
+without the three pairs whose removal lowers the ratio most (AllRed (40) main; err404 (485) v31; doofenshmirtz good incorporated (1015) v31): A 6 pairs (main 4, v31 2): 19 deaths in 3718 lone turns, 5.11 per 1,000 | B 16 pairs (main 11, v31 5): 23 deaths in 5958 lone turns, 3.86 per 1,000 | ratio 1.32
+
+--- chance, with the pair as the unit ---
+kind labels shuffled among the 25 A and B pairs: ratio 1.90, 199 of 10000 shuffles at least as large
+the same with labels shuffled inside each code: 384 of 10000 at least as large
+pairs resampled inside each kind, ratio 95 percent: 1.13 to 3.43 (4000 resamples with a ratio)
+rank correlation of bring and death rate over the 31 pairs with 150 or more fresh turns: 0.39; 167 of 10,000 shuffles at least as large
+    main: 18 pairs, rank correlation 0.18
+    v31: 13 pairs, rank correlation 0.53
+
+--- the cuts (3.0, 1.5, 150) ---
+    fresh 100 or more, A from 3.0, B under 1.5: A 8 pairs 30 in 4839 (6.20) | B 20 pairs 27 in 7702 (3.51) | ratio 1.77
+    fresh 100 or more, A from 2.5, B under 1.5: A 10 pairs 37 in 5963 (6.20) | B 20 pairs 27 in 7702 (3.51) | ratio 1.77
+    fresh 100 or more, A from 3.5, B under 1.5: A 8 pairs 30 in 4839 (6.20) | B 20 pairs 27 in 7702 (3.51) | ratio 1.77
+    fresh 100 or more, A from 3.0, B under 2.0: A 8 pairs 30 in 4839 (6.20) | B 20 pairs 27 in 7702 (3.51) | ratio 1.77
+    fresh 100 or more, A from 3.0, B under 1.0: A 8 pairs 30 in 4839 (6.20) | B 14 pairs 18 in 4939 (3.64) | ratio 1.70
+    fresh 100 or more, A from 2.5, B under 2.5: A 10 pairs 37 in 5963 (6.20) | B 27 pairs 58 in 14218 (4.08) | ratio 1.52
+    fresh 100 or more, A from 2.0, B under 2.0: A 17 pairs 68 in 12479 (5.45) | B 20 pairs 27 in 7702 (3.51) | ratio 1.55
+    fresh 150 or more, A from 3.0, B under 1.5: A 8 pairs 30 in 4839 (6.20) | B 17 pairs 23 in 7031 (3.27) | ratio 1.90
+    fresh 150 or more, A from 2.5, B under 1.5: A 10 pairs 37 in 5963 (6.20) | B 17 pairs 23 in 7031 (3.27) | ratio 1.90
+    fresh 150 or more, A from 3.5, B under 1.5: A 8 pairs 30 in 4839 (6.20) | B 17 pairs 23 in 7031 (3.27) | ratio 1.90
+    fresh 150 or more, A from 3.0, B under 2.0: A 8 pairs 30 in 4839 (6.20) | B 17 pairs 23 in 7031 (3.27) | ratio 1.90
+    fresh 150 or more, A from 3.0, B under 1.0: A 8 pairs 30 in 4839 (6.20) | B 12 pairs 16 in 4473 (3.58) | ratio 1.73
+    fresh 150 or more, A from 2.5, B under 2.5: A 10 pairs 37 in 5963 (6.20) | B 21 pairs 50 in 13054 (3.83) | ratio 1.62
+    fresh 150 or more, A from 2.0, B under 2.0: A 14 pairs 64 in 11986 (5.34) | B 17 pairs 23 in 7031 (3.27) | ratio 1.63
+    fresh 200 or more, A from 3.0, B under 1.5: A 8 pairs 30 in 4839 (6.20) | B 13 pairs 15 in 5748 (2.61) | ratio 2.38
+    fresh 200 or more, A from 2.5, B under 1.5: A 9 pairs 34 in 5604 (6.07) | B 13 pairs 15 in 5748 (2.61) | ratio 2.32
+    fresh 200 or more, A from 3.5, B under 1.5: A 8 pairs 30 in 4839 (6.20) | B 13 pairs 15 in 5748 (2.61) | ratio 2.38
+    fresh 200 or more, A from 3.0, B under 2.0: A 8 pairs 30 in 4839 (6.20) | B 13 pairs 15 in 5748 (2.61) | ratio 2.38
+    fresh 200 or more, A from 3.0, B under 1.0: A 8 pairs 30 in 4839 (6.20) | B 10 pairs 13 in 4056 (3.21) | ratio 1.93
+    fresh 200 or more, A from 2.5, B under 2.5: A 9 pairs 34 in 5604 (6.07) | B 16 pairs 40 in 11340 (3.53) | ratio 1.72
+    fresh 200 or more, A from 2.0, B under 2.0: A 12 pairs 59 in 11196 (5.27) | B 13 pairs 15 in 5748 (2.61) | ratio 2.02
+    fresh 300 or more, A from 3.0, B under 1.5: A 6 pairs 24 in 4159 (5.77) | B 5 pairs 4 in 3159 (1.27) | ratio 4.56
+    fresh 300 or more, A from 2.5, B under 1.5: A 7 pairs 28 in 4924 (5.69) | B 5 pairs 4 in 3159 (1.27) | ratio 4.49
+    fresh 300 or more, A from 3.5, B under 1.5: A 6 pairs 24 in 4159 (5.77) | B 5 pairs 4 in 3159 (1.27) | ratio 4.56
+    fresh 300 or more, A from 3.0, B under 2.0: A 6 pairs 24 in 4159 (5.77) | B 5 pairs 4 in 3159 (1.27) | ratio 4.56
+    fresh 300 or more, A from 3.0, B under 1.0: A 6 pairs 24 in 4159 (5.77) | B 4 pairs 4 in 2086 (1.92) | ratio 3.01
+    fresh 300 or more, A from 2.5, B under 2.5: A 7 pairs 28 in 4924 (5.69) | B 7 pairs 26 in 8495 (3.06) | ratio 1.86
+    fresh 300 or more, A from 2.0, B under 2.0: A 9 pairs 50 in 10260 (4.87) | B 5 pairs 4 in 3159 (1.27) | ratio 3.85
+thirds of the 31 pairs by bring:
+    top third: 10 pairs (main 4, v31 6): 37 deaths in 5963 lone turns, 6.20 per 1,000; bring 2.64 to 5.75
+    middle: 11 pairs (main 8, v31 3): 36 deaths in 9346 lone turns, 3.85 per 1,000; bring 0.95 to 2.47
+    bottom third: 10 pairs (main 6, v31 4): 14 deaths in 3708 lone turns, 3.78 per 1,000; bring 0.01 to 0.68
+
+--- is bring just the kill being counted? ---
+bring from fresh turns more than 20 rounds before her death (and all fresh turns of games she survives), 150 or more such turns: A 8 pairs (main 4, v31 4): 30 deaths in 4839 lone turns, 6.20 per 1,000 | B 16 pairs (main 13, v31 3): 20 deaths in 6902 lone turns, 2.90 per 1,000 | between 4 pairs (main 1, v31 3): 29 deaths in 6460 lone turns, 4.49 per 1,000 | ratio 2.14
+bring from fresh turns more than 20 rounds before her death (and all fresh turns of games she survives), 100 or more such turns: A 8 pairs (main 4, v31 4): 30 deaths in 4839 lone turns, 6.20 per 1,000 | B 21 pairs (main 15, v31 6): 29 deaths in 8133 lone turns, 3.57 per 1,000 | between 7 pairs (main 1, v31 6): 34 deaths in 7069 lone turns, 4.81 per 1,000 | ratio 1.74
+bring from games in which she does not die as a lone queen, 150 or more such turns: A 0 pairs (main 0, v31 0): 0 deaths in 0 lone turns, n/a per 1,000 | B 8 pairs (main 5, v31 3): 19 deaths in 7317 lone turns, 2.60 per 1,000 | between 2 pairs (main 2, v31 0): 15 deaths in 3304 lone turns, 4.54 per 1,000 | ratio n/a
+bring from games in which she does not die as a lone queen, 100 or more such turns: A 0 pairs (main 0, v31 0): 0 deaths in 0 lone turns, n/a per 1,000 | B 13 pairs (main 9, v31 4): 32 deaths in 9760 lone turns, 3.28 per 1,000 | between 4 pairs (main 3, v31 1): 16 deaths in 3691 lone turns, 4.33 per 1,000 | ratio n/a
+how much the last 20 rounds weigh: A pairs bring 4.84 with them and 4.60 without; B pairs 0.72 and 0.59
+split halves (kind from every other game of a pair with 75 or more fresh turns there, deaths and turns from the remaining games): A 22 in 4538 (4.85) from 17 half-pairs | B 13 in 2621 (4.96) from 25 | between 34 in 6395 (5.32) from 14 | ratio 0.98
+
+--- layouts ---
+deaths per 1,000 lone turns by layout (both codes): Around UNSW #1 16 in 2161 (7.4); Australia #1 16 in 2372 (6.7); Autarky #1 8 in 2647 (3.0); Default #1 14 in 2854 (4.9); Devil #1 3 in 71 (42.3); Islands #1 13 in 1562 (8.3); Maze #1 17 in 1749 (9.7); Prisoners Dilemma #1 4 in 89 (44.9); Prisoners Dilemma #2 2 in 63 (31.7); Queen Of Spades #1 14 in 3596 (3.9); Stripes #1 10 in 285 (35.1); Tower Defense #1 10 in 2145 (4.7); Trauma #1 2 in 1747 (1.1); Trophy #1 5 in 769 (6.5); weakhold #1 10 in 1000 (10.0)
+kind A: deaths seen 30; expected from its layouts at the all-pairs rate of the same code 30.5 (seen over expected 0.98); at the both-codes layout rate 31.5 (0.95); its lone turns by layout: Islands #1 923, Default #1 820, Queen Of Spades #1 801, Around UNSW #1 581, Trophy #1 463, Australia #1 426
+kind B: deaths seen 23; expected from its layouts at the all-pairs rate of the same code 32.7 (seen over expected 0.70); at the both-codes layout rate 39.0 (0.59); its lone turns by layout: Trauma #1 1434, Tower Defense #1 1249, Autarky #1 805, Queen Of Spades #1 742, Maze #1 685, Default #1 624
+kind between: deaths seen 34; expected from its layouts at the all-pairs rate of the same code 50.4 (seen over expected 0.67); at the both-codes layout rate 45.8 (0.74); its lone turns by layout: Australia #1 1636, Autarky #1 1424, Queen Of Spades #1 982, Default #1 746, Tower Defense #1 553, Islands #1 533
+
+--- what the deaths are ---
+kind A: by engine reason {'head-on': 24, 'wall': 4, 'own body': 2}; killed by {'other side': 24, 'nobody': 6}; games with lone turns from r100 44, she dies in 0.68 of them; lone turns a lone game 110.0; mean rating 1873; deaths by KST hour {'2026-10-06T00': 1, '2026-10-06T02': 3, '2026-10-06T03': 2, '2026-10-06T11': 1, '2026-10-06T12': 1, '2026-10-06T13': 2, '2026-10-06T14': 2, '2026-10-06T15': 2, '2026-10-06T16': 3, '2026-10-06T20': 3, '2026-10-06T21': 3, '2026-10-06T23': 3, '2026-10-07T00': 1, '2026-10-07T04': 1, '2026-10-07T10': 2}
+    deaths at the hands of the other side per 1,000 lone turns: 4.96 (24)
+kind B: by engine reason {'head-on': 14, 'other': 2, 'wall': 4, 'other dragon body': 1, 'own body': 2}; killed by {'other side': 15, 'nobody': 8}; games with lone turns from r100 42, she dies in 0.55 of them; lone turns a lone game 167.4; mean rating 1912; deaths by KST hour {'2026-10-06T00': 2, '2026-10-06T02': 2, '2026-10-06T07': 1, '2026-10-06T10': 1, '2026-10-06T11': 3, '2026-10-06T19': 1, '2026-10-06T23': 3, '2026-10-07T00': 3, '2026-10-07T05': 2, '2026-10-07T06': 1, '2026-10-07T07': 2, '2026-10-07T09': 1, '2026-10-07T10': 1}
+    deaths at the hands of the other side per 1,000 lone turns: 2.13 (15)
+kind between: by engine reason {'head-on': 25, 'wall': 5, 'own body': 4}; killed by {'other side': 25, 'nobody': 9}; games with lone turns from r100 53, she dies in 0.64 of them; lone turns a lone game 134.8; mean rating 1833; deaths by KST hour {'2026-10-06T00': 1, '2026-10-06T01': 2, '2026-10-06T06': 1, '2026-10-06T08': 1, '2026-10-06T09': 3, '2026-10-06T10': 3, '2026-10-06T11': 1, '2026-10-06T12': 1, '2026-10-06T13': 4, '2026-10-06T15': 2, '2026-10-06T16': 1, '2026-10-06T23': 1, '2026-10-07T00': 5, '2026-10-07T06': 3, '2026-10-07T07': 2, '2026-10-07T08': 3}
+    deaths at the hands of the other side per 1,000 lone turns: 3.50 (25)
+
+=== 2. game results per kind ===
+kind A: wins 67 of 110 games (0.609, plus or minus 0.091) on all layouts; 55 of 91 on the layouts of the set; main 27 of 50, v31 40 of 60; mean rating 1873
+kind between: wins 70 of 115 games (0.609, plus or minus 0.089) on all layouts; 62 of 100 on the layouts of the set; main 28 of 40, v31 42 of 75; mean rating 1833
+kind B: wins 54 of 115 games (0.470, plus or minus 0.091) on all layouts; 45 of 98 on the layouts of the set; main 40 of 80, v31 14 of 35; mean rating 1912
+kind under 150 fresh turns: wins 210 of 425 games (0.494, plus or minus 0.048) on all layouts; 170 of 339 on the layouts of the set; main 103 of 185, v31 107 of 240; mean rating 1957
+
+=== 3. the 6-step flag in the new main games ===
+free layouts without Portals #1, 32 main games after battle 1289717, lone turn from the round after: a short enemy head within 6 path steps in 531 of 1964 of our lone-queen turns and 253 of 1499 of theirs
+free layouts without Portals #1, 32 main games after battle 1289717, lone turn from the round the other queen died: a short enemy head within 6 path steps in 531 of 1965 of our lone-queen turns and 253 of 1499 of theirs
+free layouts with Portals #1, 34 main games after battle 1289717, lone turn from the round after: a short enemy head within 6 path steps in 531 of 1964 of our lone-queen turns and 253 of 2011 of theirs
+free layouts with Portals #1, 34 main games after battle 1289717, lone turn from the round the other queen died: a short enemy head within 6 path steps in 531 of 1965 of our lone-queen turns and 253 of 2012 of theirs
+battles after 1289717 in the data: ['1291764', '1293344', '1293799', '1293952', '1295909', '1297395', '1297934', '1298211']
+
+=== 4. the definition, read the other way ===
+lone turn from the round their queen died (same round counted): A 8 pairs (main 4, v31 4): 30 deaths in 4843 lone turns, 6.19 per 1,000 | B 17 pairs (main 12, v31 5): 23 deaths in 7033 lone turns, 3.27 per 1,000 | between 6 pairs (main 2, v31 4): 34 deaths in 7150 lone turns, 4.76 per 1,000
+fresh = seen within 19 rounds: A 8 pairs (main 4, v31 4): 30 deaths in 4839 lone turns, 6.20 per 1,000 | B 17 pairs (main 12, v31 5): 23 deaths in 7031 lone turns, 3.27 per 1,000 | between 6 pairs (main 2, v31 4): 34 deaths in 7147 lone turns, 4.76 per 1,000
+
+=== 5. the same count for their lone queen (our short dragons near her), for scale ===
+their lone queen, all pairs: 83 pairs (main 40, v31 43): 139 deaths in 37883 lone turns, 3.67 per 1,000
+pairs where WE bring 3.0 or more: 0 pairs (main 0, v31 0): 0 deaths in 0 lone turns, n/a per 1,000 | under 1.5: 27 pairs (main 13, v31 14): 66 deaths in 22909 lone turns, 2.88 per 1,000 | between: 14 pairs (main 9, v31 5): 30 deaths in 8435 lone turns, 3.56 per 1,000
+
+=== 6. compare with rows.jsonl (read last) ===
+code, layout, winner, last round, queen death rounds and opponent against rows.jsonl: {'agree': 805}
+kind A wins by rows.jsonl: 67 of 110
+kind between wins by rows.jsonl: 70 of 115
+kind B wins by rows.jsonl: 54 of 115

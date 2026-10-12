@@ -1,0 +1,12 @@
+# merge / submit 분리 — 2026-10-04 11:28:20 KST
+- 중단된 `tools/meowbot.py` 수정을 이어받았다. 후보 OK + Confirm은 main 병합만 하고 연결 카드 상태를 kept로 바꾼다.
+- 병합 커밋·PR·연결 카드·변경 목록을 state에 기록하고 “merged to main as <sha>; ships with the next /submit”를 남긴다.
+- 현재 main HEAD와 후보 head의 compare behind_by가 0이 아니면 병합을 거절하고 지정 문구와 needs:rebase를 게시한다.
+- 고정 head의 코드 diff patch-id를 저장한다(후보 manifest 제외); 같은 PR/manifest·작성자·patch-id면 OK 유지, 변경되면 초기화한다.
+- 멤버 전용 /submit [ref=main]: 커밋·활성 제출 이후 기록된 변경·다음 vNN·동결을 비공개로 표시하고 공개 OK 카드를 만든다.
+- 요청자를 포함한 서로 다른 멤버 2명 + Confirm 후 해당 SHA를 sync_release하고 업로드한다. UPLOAD_ENABLED=True; 후보 승인은 업로드하지 않는다.
+- 10/08 20:00 KST 동결, 활성 제출 변경·버전 중복을 검사하고 submit.js의 대기 경기 거절을 표시한다. 성공 시 제출 id·버전·커밋·변경 목록을 저장한다.
+- docstring·footer·/status를 갱신했다. 새 롤백 명령은 없으며 롤백은 수동으로 한다. 활성 제출 기준을 모르면 미리보기에 명시한다.
+- 별도 runner 작업: needs:rebase PR의 연결 card/N을 최신 main에 rebase하고 충돌을 해결; metadata base/commit을 갱신하고 이전 base의 검사·결과를 무효화한다.
+- runner는 task에 old10×2 seeds 양편 identity + task-specific check, idea에 toggle-off identity + toggle-on 짧은 A/B를 재실행하고 근거/manifest를 갱신; 후보 토글을 다시 켜 기존 PR의 branch/head를 업데이트한 뒤 needs:rebase를 제거해야 한다(기존 PR 발견 조기 종료도 수정). runner 파일은 수정하지 않았다.
+- `check-merge-submit-split.py` 오프라인 대역 검사 13개, py_compile·diff --check 통과. 봇 실행/재시작/종료·실제 gh 쓰기·업로드·커밋은 하지 않았다; 실제 통합은 미검증이다.

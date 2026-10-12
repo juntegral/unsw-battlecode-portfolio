@@ -1,0 +1,13 @@
+our both-dead win rates used below (band at round 300; lowest band split by whether her queen died from round 300 on): {'(0, False)': '3 of 56', '(0, True)': '7 of 30', '(1, None)': '15 of 37', '(2, None)': '6 of 7', '(3, None)': '10 of 13'}
+
+== meow, all 401 games: round-500 losses with a candidate-1 event 25, with a candidate-2 event 63, with both 11
+   strict lenient                   candidate 1 alone  13.0 | candidate 2 alone  36.0 | sum  49.0 | together  56.0 | extra from doing both +7.0
+   strict hard                      candidate 1 alone   6.0 | candidate 2 alone  36.0 | sum  42.0 | together  51.0 | extra from doing both +9.0
+   realistic, our own survival      candidate 1 alone   9.1 | candidate 2 alone   6.3 | sum  15.4 | together  17.1 | extra from doing both +1.7
+   realistic, top-three survival    candidate 1 alone   9.1 | candidate 2 alone  17.2 | sum  26.3 | together  30.6 | extra from doing both +4.3
+
+== meow, live bot (275): round-500 losses with a candidate-1 event 15, with a candidate-2 event 40, with both 8
+   strict lenient                   candidate 1 alone   7.0 | candidate 2 alone  19.0 | sum  26.0 | together  32.0 | extra from doing both +6.0
+   strict hard                      candidate 1 alone   3.0 | candidate 2 alone  19.0 | sum  22.0 | together  29.0 | extra from doing both +7.0
+   realistic, our own survival      candidate 1 alone   5.9 | candidate 2 alone   3.3 | sum   9.2 | together  10.3 | extra from doing both +1.1
+   realistic, top-three survival    candidate 1 alone   5.9 | candidate 2 alone   9.2 | sum  15.1 | together  18.0 | extra from doing both +3.0

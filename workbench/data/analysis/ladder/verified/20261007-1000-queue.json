@@ -1,0 +1,44 @@
+[
+ {
+  "id": "F39",
+  "claim": "New part only (the 09:45 verdict on the 6-step flag stands). At the turns of a lone queen the other side has about as many dragons of length 4 or less alive on both sides, but the share of them within 12 path steps of her head is about a third as large for ours near their queen as for theirs near ours; and their lone queen has been in view of one of our heads within the last 20 rounds in about 6 of her turns in 10 (main), when ours then have half as many short dragons within 12 steps as theirs have near our queen at her fresh turns.",
+  "how_to_count": "Games: our_code main or v31, map not queen_spawn_dead_end (join on map_key). Lone queen of side s = queen (lowest initial id of the side) at a turnStart of hers when the other side's queen is already dead (her death event already seen). Part A (all lone turns): at the start of each such turn count the dragons of the OTHER side alive with body length 4 or less (short), and those whose head is within 12 path steps of her head (breadth-first over tiles, a kelp edge blocks, a portal edge leads to the paired edge's far tile, ordinary steps wrap, dragon bodies ignored). Report per code: mean short alive per turn for each side, and sum(within 12)/sum(short alive) for each side, the ratio ours/theirs; with and without Portals #1; full games (last_round 499); before and from grow_round (raw round 151 if width*height > 1200 else 301); layouts above and at or under 1200 cells. Part B (lone turns with raw round >= 100, Portals #1 left out): seen = at the turn start some head of the other side is within 3 columns and 3 rows (wrapped, Chebyshev 3) of any tile of her body; fresh = seen at this or one of her earlier lone turn starts with round difference <= 20 (sightings before round 100 but after she became lone count). Report share of turns fresh for each side, share of turns with no sighting yet since she became lone, and mean short dragons of the other side within 12 path steps at fresh turns and at stale turns. My scripts: work/h20_pass.py + h20_count.py (part A), work/h21_pass.py + h21_count.py (part B). Known approximation to judge: 'seen' is tested only at the queen's own turn starts, not at each of the other side's turn starts.",
+  "your_numbers": {
+   "A_main_all_endings": "their lone turns 21,707: our short alive 25.9, share within 12 0.029; our lone turns 14,371: their short alive 20.6, share within 12 0.082; ratio of shares 0.355; at least one within 12 in 0.30 against 0.50 of turns",
+   "A_v31_all_endings": "29,474 and 14,233 turns: 23.3 against 22.2 alive; 0.022 against 0.079; ratio 0.278; any within 12 0.23 against 0.53",
+   "A_without_portals": "main 0.032 against 0.082 (0.39); v31 0.026 against 0.079 (0.33)",
+   "A_full_games": "main 0.020 against 0.067 (0.30), short alive 27.8 against 26.6; v31 0.015 against 0.055 (0.27), 26.4 against 27.4",
+   "A_by_grow_round": "main before 0.040 against 0.092 (0.43), from 0.021 against 0.068 (0.30); v31 0.027 against 0.094 (0.29), 0.016 against 0.061 (0.27)",
+   "A_big_and_small": "main big 0.027 against 0.071 (0.37), small without Portals 0.039 against 0.091 (0.43); v31 0.021 against 0.057 (0.37), 0.031 against 0.108 (0.29)",
+   "B_main": "their lone queen: 16,432 turns in 108 games, seen now 0.320, fresh 0.596, never seen yet 0.240, short of ours within 12 at fresh turns 1.146 a turn, at stale turns 0.184; our lone queen: 11,660 turns in 95 games, seen now 0.399, fresh 0.705, never seen 0.109, theirs within 12 at fresh 2.305, stale 0.288",
+   "B_v31": "their lone queen: 20,697 turns in 122 games, fresh 0.489, never seen 0.250, 0.898 at fresh, 0.206 stale; ours: 10,480 turns in 115 games, fresh 0.648, never seen 0.161, 2.385 at fresh, 0.528 stale",
+   "B_big_layouts": "main fresh 0.498 against 0.784; v31 0.335 against 0.715",
+   "B_small_layouts": "main fresh 0.663 against 0.681, at fresh 0.80 against 1.71; v31 0.589 against 0.616, 0.67 against 1.76",
+   "B_by_band_theirs_at_fresh": "main 1700-1899 1.44, 1900+ 2.78; v31 1700-1899 2.32, 1900+ 2.20 (my bar on rating failed)"
+  },
+  "slices": [
+   "main and v31",
+   "before and from grow_round",
+   "layouts above 1200 cells and the others",
+   "main halves at 2026-10-06T14:48:15Z (fresh share 0.57 against 0.70 and 0.61 against 0.71)"
+  ]
+ },
+ {
+  "id": "F38",
+  "claim": "New part only (the 09:45 verdict stands). When a narrow tile is next to her, our queen steps onto a narrow tile 1.2 (main) to 1.3 (v31) times as often as their queens in r0-200; pearls do not draw her in (about one entry in nine lands on a tile that held a pearl, and with a pearl on a free narrow neighbour she enters no more often than theirs); in r101-200 her stays on narrow tiles are longer than theirs.",
+  "how_to_count": "Games: our_code main or v31, map not queen_spawn_dead_end. Open sides of a tile = its four edges that are not kelp (a portal edge is open); narrow = two or fewer open sides; neighbours follow portals and wrap. Chance = a turnStart of a queen whose head tile has three or more open sides and at least one neighbour tile that is narrow. Entered = at her next turnStart (or at the end of the game) she is alive and her head is on a narrow tile; a turn in which she dies is not an entry. Window by the raw round of the chance: r0-100, r101-200. Pearl part: pearls present from tileChange events; an entry 'onto a pearl' = the narrow tile she ends on is a neighbour that had no dragon body and held a pearl at the turn start; 'pearl chance' = a chance where some narrow neighbour without a body held a pearl. Stay = consecutive queen turn starts on narrow tiles, begun at the first such turn start after one on a non-narrow tile (or at spawn), assigned to the window of its first turn; report queen turn starts per stay and stays that end with her death. My scripts: work/h20_pass.py + h20_count.py.",
+  "your_numbers": {
+   "entry_r0_200": "main ours 1,498 of 4,885 (0.307), theirs 1,249 of 4,908 (0.255), 1.21 times; v31 1,991 of 6,318 (0.315) against 1,328 of 5,649 (0.235), 1.34 times",
+   "entry_slices_main": "half 1 440 of 1,575 against 313 of 1,449 (1.29); half 2 1,058 of 3,310 against 936 of 3,459 (1.18); 1700-1899 1.33; 1900-2099 1.13; r0-100 1.29; r101-200 518 of 1,691 against 483 of 1,686 (1.07)",
+   "entry_onto_pearl_r0_200": "main ours 173 of 1,498, theirs 113 of 1,249; v31 ours 214 of 1,991, theirs 172 of 1,328",
+   "pearl_chance_r0_200": "main ours entered 202 of 590, theirs 166 of 512 (1.06); v31 281 of 883 against 212 of 572 (0.86); r101-200 only: main 77 of 194 against 50 of 197, v31 91 of 216 against 53 of 205",
+   "stays_r101_200": "main ours 526 stays, 2.05 turns a stay, 47 end in her death; theirs 489, 1.29, 23; v31 539, 1.75, 52 against 472, 1.51, 40",
+   "chances_by_layout_both_codes_r0_200": "Maze 1,047 against 497; Prisoners Dilemma #1 639 against 93; Prisoners Dilemma #2 414 against 34; weakhold 1,262 against 1,107 (entered 654 against 354)"
+  },
+  "slices": [
+   "main and v31",
+   "main halves at 2026-10-06T14:48:15Z",
+   "main opponents 1700-1899 and 1900-2099"
+  ]
+ }
+]

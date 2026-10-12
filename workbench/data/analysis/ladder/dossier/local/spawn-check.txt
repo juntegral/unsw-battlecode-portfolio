@@ -1,0 +1,27 @@
+Matched games/arm=2; maps=1; cache reused=0, counted=4.
+Exact countdowns: replay kind-2 initial/reset events; true .map intervals checked; no mirror inference.
+Spawn/block/step/death: r0-300. early=0-100, mid=101-300, all=whole game; eats use eating rounds.
+Cases=side/tile/round with any qualifying head; all its substeps count. Birth-cohort waits followed to end.
+Blocked head/trail=recent empty entry (age<=current L); other=meal/older/initial entry. Checkpoints carry final state.
+Cells=ours / opponent; components separated by commas. Paired game means; each rate uses pairs with both denominators.
+| measure | m2base | m2all4 | paired m2all4 minus m2base |
+|---|---|---|---|
+| c1 cases/game | 96.500 / 71.500 | 94.500 / 65.000 | -2.000 / -6.500 |
+| c1 step-on % | 61.427 / 51.116 | 60.514 / 50.072 | -0.913 / -1.044 |
+| c2 cases/game | 92.000 / 69.000 | 93.000 / 74.500 | +1.000 / +5.500 |
+| c2 step-on % | 57.456 / 55.828 | 56.418 / 52.991 | -1.038 / -2.837 |
+| blocked: /game; /100 births | 991.500,97.283 / 362.000,35.534 | 983.500,96.512 / 354.000,34.745 | -8.000,-0.771 / -8.000,-0.789 |
+| blocked_head: /game; /100 births | 77.500,7.586 / 41.500,4.064 | 78.500,7.691 / 39.500,3.873 | +1.000,+0.105 / -2.000,-0.192 |
+| blocked_trail: /game; /100 births | 222.500,21.837 / 62.500,6.130 | 228.500,22.429 / 64.000,6.275 | +6.000,+0.592 / +1.500,+0.145 |
+| blocked_other: /game; /100 births | 691.500,67.860 / 258.000,25.340 | 676.500,66.392 / 250.500,24.597 | -15.000,-1.467 / -7.500,-0.743 |
+| 2 away / c2: cases/game; born % | 128.500,56.506 / 79.500,63.893 | 119.000,57.400 / 85.500,66.321 | -9.500,+0.895 / +6.000,+2.428 |
+| early: natural births; eaten /game | 336.500,244.000 / 336.500,62.500 | 330.000,233.500 / 330.000,61.500 | -6.500,-10.500 / -6.500,-1.000 |
+| early: birth-round eaten %; wait rounds | 11.540,20.561 / 2.957,18.434 | 9.998,17.287 / 2.875,19.585 | -1.542,-3.275 / -0.082,+1.151 |
+| mid: natural births; eaten /game | 683.500,468.000 / 683.500,207.500 | 690.000,446.500 / 690.000,234.500 | +6.500,-21.500 / +6.500,+27.000 |
+| mid: birth-round eaten %; wait rounds | 8.630,9.849 / 6.441,6.804 | 8.121,10.701 / 7.315,7.000 | -0.509,+0.852 / +0.874,+0.196 |
+| all: natural births; eaten /game | 1657.000,1076.500 / 1657.000,546.000 | 1596.000,1010.000 / 1596.000,544.500 | -61.000,-66.500 / -61.000,-1.500 |
+| all: birth-round eaten %; wait rounds | 9.384,12.095 / 5.854,8.635 | 8.273,13.007 / 6.732,8.681 | -1.112,+0.911 / +0.878,+0.046 |
+| wins (count) | 2.000 / 0.000 | 2.000 / 0.000 | +0.000 / +0.000 |
+| alive end r100; r300 | 61.500,56.500 / 28.500,59.500 | 60.500,58.000 / 26.500,60.000 | -1.000,+1.500 / -2.000,+0.500 |
+| wall; own; another deaths /1000 turns | 4.240,2.292,1.203 / 3.324,0.979,0.933 | 3.767,1.945,0.772 / 3.422,0.763,0.933 | -0.474,-0.347,-0.431 / +0.098,-0.216,-0.000 |
+| longest at end | 83.000 / 7.000 | 107.500 / 15.000 | +24.500 / +8.000 |

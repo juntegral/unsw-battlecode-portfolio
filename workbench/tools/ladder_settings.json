@@ -1,0 +1,5 @@
+{
+  "hooks": {
+    "PreToolUse": [{"matcher": ".*", "hooks": [{"type": "command", "command": "python3 tools/ladder_guard.py", "timeout": 10}]}]
+  }
+}

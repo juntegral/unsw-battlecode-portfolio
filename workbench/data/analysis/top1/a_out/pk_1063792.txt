@@ -1,0 +1,43 @@
+=== PACK 1063792 Trauma 48x24 | protagonist side B (team 306) vs forgot to mention (2288.0) | winner A by queen rule | rounds 500
+final: {'A': {'units': 14, 'total': 104, 'longest': 48, 'queen': 48}, 'B': {'units': 13, 'total': 85, 'longest': 35, 'queen': 35}} | queens: {'A': 0, 'B': 1}
+
+-- opening: units/total/longest every 10 rounds (own | opp)
+  r  0 own (2, 8, 4) | opp (2, 8, 4) | ownQ ((43, 8), 4) oppQ ((4, 15), 4)
+  r 10 own (4, 9, 3) | opp (4, 8, 2) | ownQ ((38, 6), 2) oppQ ((1, 21), 2)
+  r 20 own (4, 9, 3) | opp (4, 8, 2) | ownQ ((37, 13), 2) oppQ ((2, 12), 2)
+  r 30 own (4, 9, 3) | opp (4, 8, 2) | ownQ ((37, 19), 2) oppQ ((6, 6), 2)
+  r 40 own (4, 10, 3) | opp (4, 10, 4) | ownQ ((43, 23), 3) oppQ ((10, 6), 2)
+  r 50 own (4, 10, 4) | opp (7, 16, 4) | ownQ ((45, 23), 4) oppQ ((10, 16), 2)
+  r 60 own (5, 11, 3) | opp (9, 20, 4) | ownQ ((44, 23), 3) oppQ ((9, 17), 2)
+  r 80 own (6, 15, 3) | opp (16, 35, 4) | ownQ ((47, 10), 3) oppQ ((4, 6), 2)
+  r100 own (14, 32, 3) | opp (25, 56, 4) | ownQ ((42, 0), 3) oppQ ((4, 14), 2)
+  own splits r0-60 (before,parent,child):n [((4, 2, 2), 3)] | self-kills 0 | rams made 0
+  own queen first 30 actions: 0:SPLIT 1:mv W 2:mv W 3:mv W 4:mv W 5:mv W 6:mv W 7:mv N 8:mv N 9:mv E 10:mv N 11:mv W 12:mv S 13:mv S 14:mv S 15:mv S 16:mv S 17:mv S 18:mv S 19:mv S 20:mv S 21:mv E 22:mv E 23:mv S 24:mv W 25:mv W 26:mv S 27:mv S 28:mv S 29:mv S
+  opp splits r0-60 (before,parent,child):n [((4, 2, 2), 12)] | self-kills 4 | rams made 0
+  opp queen first 30 actions: 0:SPLIT 1:mv S 2:mv S 3:mv S 4:mv S 5:mv S 6:mv S 7:mv W 8:mv W 9:mv W 10:mv N 11:mv N 12:mv N 13:mv N 14:mv N 15:mv N 16:mv N 17:mv N 18:mv N 19:mv E 20:mv N 21:mv N 22:mv E 23:mv N 24:mv N 25:mv N 26:mv N 27:mv E 28:mv E 29:mv E
+
+-- own queen splits: [(0, '4->2+2', (43, 8)), (50, '4->2+2', (45, 23)), (92, '4->2+2', (45, 0)), (138, '4->2+2', (46, 0)), (149, '4->2+2', (46, 0))]
+   own queen eats per 50 rounds: {0: {'natural': 2}, 50: {'natural': 3}, 100: {'natural': 3}, 150: {'natural': 2}, 250: {'own_noaction': 13, 'natural': 1}, 300: {'natural': 1}, 400: {'own_noaction': 9, 'natural': 2}, 450: {'own_noaction': 3, 'natural': 2}}
+   own queen every 20 rounds (round: head, len, ball, nearest enemy d/L, allies<=6): 0:(43, 8) L4 b41 e- a0 | 20:(37, 13) L2 b25 e- a1 | 40:(43, 23) L3 b25 e- a0 | 60:(44, 23) L3 b24 e- a1 | 80:(47, 10) L3 b25 e- a0 | 100:(42, 0) L3 b25 e- a0 | 120:(44, 0) L3 b24 e- a0 | 140:(46, 1) L2 b24 e- a2 | 160:(45, 1) L4 b28 e- a2 | 180:(47, 3) L4 b24 e- a1 | 200:(45, 1) L4 b28 e- a0 | 220:(45, 1) L4 b28 e- a2 | 240:(46, 0) L4 b19 e- a2 | 260:(45, 1) L7 b28 e- a1 | 280:(38, 7) L14 b32 e- a1 | 300:(39, 9) L18 b37 e- a0 | 320:(42, 23) L18 b25 e- a1 | 340:(47, 15) L19 b25 e- a2 | 360:(41, 0) L19 b25 e- a1 | 380:(47, 3) L19 b24 e- a0 | 400:(46, 14) L19 b32 e- a1 | 420:(39, 18) L20 b37 e- a0 | 440:(42, 20) L25 b38 e- a2 | 460:(43, 17) L33 b41 e- a0 | 480:(40, 20) L33 b39 e- a0
+
+-- opp queen splits: [(0, '4->2+2', (4, 15))]
+   opp queen eats per 50 rounds: {200: {'own_noaction': 14}, 250: {'own_noaction': 4}, 300: {'own_noaction': 3}, 350: {'own_noaction': 9}, 400: {'own_noaction': 9}, 450: {'own_noaction': 7}}
+   opp queen every 20 rounds (round: head, len, ball, nearest enemy d/L, allies<=6): 0:(4, 15) L4 b41 e- a0 | 20:(2, 12) L2 b37 e- a1 | 40:(10, 6) L2 b25 e- a0 | 60:(9, 17) L2 b32 e- a0 | 80:(4, 6) L2 b41 e- a4 | 100:(4, 14) L2 b41 e- a5 | 120:(6, 12) L2 b41 e- a7 | 140:(5, 15) L2 b41 e- a5 | 160:(4, 16) L2 b41 e- a5 | 180:(5, 15) L2 b41 e- a7 | 200:(4, 6) L2 b41 e- a4 | 220:(5, 11) L7 b41 e- a3 | 240:(3, 15) L15 b40 e- a0 | 260:(4, 4) L16 b41 e- a1 | 280:(4, 22) L18 b32 e- a0 | 300:(6, 13) L20 b41 e- a0 | 320:(8, 11) L21 b37 e- a1 | 340:(7, 18) L23 b40 e- a0 | 360:(4, 9) L23 b41 e- a1 | 380:(9, 9) L30 b32 e- a0 | 400:(4, 13) L32 b41 e- a1 | 420:(7, 11) L34 b40 e- a1 | 440:(3, 1) L39 b31 e- a2 | 460:(5, 14) L42 b41 e- a0 | 480:(7, 14) L42 b40 e- a0
+
+-- own queen: 0 episodes with an enemy head within 3 steps; rounds []
+
+-- queen deaths
+  OWN queen alive at the end, len 35
+  ENEMY queen alive at the end, len 48
+
+-- deaths of dragons >= 15 long (both teams)
+
+-- own self-kills (noaction) by length class per 100 rounds, and top eaters of own self-kill pearls
+   {(0, '2'): 6, (100, '2'): 50, (100, '3-4'): 5, (200, '2'): 79, (200, '3-4'): 19, (300, '2'): 62, (300, '3-4'): 15, (400, '2'): 29, (400, '3-4'): 25, (400, '5-9'): 1}
+
+-- reverse splits (before >= 12, parent keeps <= 3) own: 4 opp: 4
+   own reverse splits of 20+ (round, id, before->p+c, at): []
+
+-- ram chances on the enemy queen (q3): own side
+   total 0, taken 0, not taken 0
+   (opponent's chances on the own queen: total 0, taken 0)

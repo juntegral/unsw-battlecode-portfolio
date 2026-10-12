@@ -1,0 +1,1593 @@
+{
+  "one5-c1": {
+    "games": 15,
+    "wins": 6,
+    "active_at350": 12,
+    "sides": {
+      "0": {
+        "ledger": {
+          "start": 1606,
+          "natural": 1442,
+          "mate_corpse": 1489,
+          "enemy_corpse": 291,
+          "rammed": 676,
+          "rams": 322,
+          "wall": 582,
+          "own body": 427,
+          "mate body": 259,
+          "foe body": 58,
+          "mate head": 0,
+          "stop": 1081,
+          "paid": 13,
+          "ours_eaten_enemy": 384,
+          "dead": 3405,
+          "end": 1410,
+          "residual": 0
+        },
+        "snapshots": {
+          "350": {
+            "alive": 30.066666666666666,
+            "total": 107.06666666666666,
+            "length": 9.333333333333334
+          },
+          "400": {
+            "alive": 30.866666666666667,
+            "total": 106.33333333333333,
+            "length": 12.4
+          },
+          "499": {
+            "alive": 18.466666666666665,
+            "total": 94,
+            "length": 25.466666666666665
+          }
+        }
+      },
+      "1": {
+        "ledger": {
+          "start": 1898,
+          "natural": 2723,
+          "mate_corpse": 2793,
+          "enemy_corpse": 403,
+          "rammed": 533,
+          "rams": 548,
+          "wall": 4,
+          "own body": 3736,
+          "mate body": 807,
+          "foe body": 28,
+          "mate head": 28,
+          "stop": 0,
+          "paid": 2,
+          "ours_eaten_enemy": 274,
+          "dead": 5684,
+          "end": 2131,
+          "residual": 0
+        },
+        "snapshots": {
+          "350": {
+            "alive": 37,
+            "total": 126.53333333333333,
+            "length": 18.466666666666665
+          },
+          "400": {
+            "alive": 34.2,
+            "total": 128.2,
+            "length": 25.133333333333333
+          },
+          "499": {
+            "alive": 23.333333333333332,
+            "total": 142.06666666666666,
+            "length": 36.733333333333334
+          }
+        }
+      }
+    },
+    "rally": {
+      "n": 559,
+      "mass": 1791,
+      "inward": 526,
+      "arrived": 125,
+      "advertised_arrived": 315,
+      "died": 364,
+      "died_before_arrival": 257,
+      "ever_top": 130,
+      "ever_target": 65,
+      "ever_final_top": 88,
+      "end_final_transferred": 88,
+      "end_top": 218,
+      "lost": 571,
+      "remaining": 1220,
+      "causes": {
+        "stop": 169,
+        "wall": 37,
+        "mate body": 20,
+        "rammed": 69,
+        "rams": 24,
+        "foe body": 8,
+        "own body": 37
+      },
+      "first_generation_top": 83,
+      "first_generation_other": 212,
+      "first_generation_enemy": 89,
+      "stop_first_top": 67,
+      "end_transported": 133,
+      "transported": 413
+    },
+    "rally_inward": {
+      "n": 526,
+      "mass": 1687,
+      "inward": 526,
+      "arrived": 115,
+      "advertised_arrived": 304,
+      "died": 336,
+      "died_before_arrival": 239,
+      "ever_top": 124,
+      "ever_target": 64,
+      "ever_final_top": 84,
+      "end_final_transferred": 84,
+      "end_top": 206,
+      "lost": 522,
+      "remaining": 1165,
+      "causes": {
+        "stop": 159,
+        "wall": 33,
+        "mate body": 20,
+        "rammed": 58,
+        "rams": 24,
+        "foe body": 7,
+        "own body": 35
+      },
+      "first_generation_top": 80,
+      "first_generation_other": 203,
+      "first_generation_enemy": 73,
+      "stop_first_top": 64,
+      "end_transported": 126,
+      "transported": 391
+    },
+    "cohort400_ours": {
+      "n": 407,
+      "mass": 1126,
+      "inward": 0,
+      "arrived": 134,
+      "advertised_arrived": 265,
+      "died": 326,
+      "died_before_arrival": 206,
+      "ever_top": 118,
+      "ever_target": 65,
+      "ever_final_top": 72,
+      "end_final_transferred": 72,
+      "end_top": 128,
+      "lost": 534,
+      "remaining": 592,
+      "causes": {
+        "rams": 20,
+        "stop": 142,
+        "rammed": 56,
+        "wall": 41,
+        "own body": 40,
+        "mate body": 20,
+        "foe body": 7
+      },
+      "first_generation_top": 69,
+      "first_generation_other": 187,
+      "first_generation_enemy": 72,
+      "stop_first_top": 62,
+      "end_transported": 116,
+      "transported": 371
+    },
+    "cohort400_theirs": {
+      "n": 357,
+      "mass": 954,
+      "inward": 0,
+      "arrived": 82,
+      "advertised_arrived": 0,
+      "died": 326,
+      "died_before_arrival": 255,
+      "ever_top": 57,
+      "ever_target": 31,
+      "ever_final_top": 27,
+      "end_final_transferred": 27,
+      "end_top": 76,
+      "lost": 578,
+      "remaining": 376,
+      "causes": {
+        "own body": 227,
+        "rams": 39,
+        "mate body": 48,
+        "rammed": 10,
+        "foe body": 2
+      },
+      "first_generation_top": 25,
+      "first_generation_other": 188,
+      "first_generation_enemy": 28,
+      "stop_first_top": 0,
+      "end_transported": 69,
+      "transported": 388
+    },
+    "fold": {
+      "n": 166,
+      "mass": 466,
+      "inward": 0,
+      "arrived": 166,
+      "advertised_arrived": 0,
+      "died": 166,
+      "died_before_arrival": 0,
+      "ever_top": 162,
+      "ever_target": 162,
+      "ever_final_top": 33,
+      "end_final_transferred": 32,
+      "end_top": 106,
+      "lost": 257,
+      "remaining": 209,
+      "causes": {
+        "own body": 166
+      },
+      "first_generation_top": 146,
+      "first_generation_other": 90,
+      "first_generation_enemy": 11,
+      "stop_first_top": 0,
+      "end_transported": 106,
+      "transported": 240
+    },
+    "coverage": {
+      "post400_our_turns": 39821,
+      "leader_wire_turns": 37117,
+      "eligible_moving_turns": 10463,
+      "eligible_inward_turns": 5267
+    },
+    "longest_deaths": [
+      {
+        "label": "one5-c1",
+        "gid": 1472754,
+        "map": "Islands",
+        "side": 1,
+        "round": 496,
+        "id": 1132,
+        "length": 47,
+        "cause": "rammed",
+        "free": 2,
+        "head": [
+          39,
+          1
+        ],
+        "rammer": [
+          14,
+          5,
+          0,
+          5,
+          0
+        ],
+        "stop_pearls": 0,
+        "mate_pearls": 5,
+        "foe_pearls": 1,
+        "reclaimed": 1,
+        "stolen": 0
+      },
+      {
+        "label": "one5-c1",
+        "gid": 1472758,
+        "map": "Around UNSW",
+        "side": 1,
+        "round": 377,
+        "id": 967,
+        "length": 28,
+        "cause": "rammed",
+        "free": 1,
+        "head": [
+          59,
+          8
+        ],
+        "rammer": [
+          3,
+          2,
+          0,
+          2,
+          0
+        ],
+        "stop_pearls": 0,
+        "mate_pearls": 0,
+        "foe_pearls": 0,
+        "reclaimed": 13,
+        "stolen": 1
+      },
+      {
+        "label": "one5-c1",
+        "gid": 1472758,
+        "map": "Around UNSW",
+        "side": 1,
+        "round": 410,
+        "id": 974,
+        "length": 34,
+        "cause": "rammed",
+        "free": 1,
+        "head": [
+          24,
+          31
+        ],
+        "rammer": [
+          12,
+          3,
+          0,
+          3,
+          0
+        ],
+        "stop_pearls": 0,
+        "mate_pearls": 11,
+        "foe_pearls": 0,
+        "reclaimed": 16,
+        "stolen": 1
+      },
+      {
+        "label": "one5-c1",
+        "gid": 1472758,
+        "map": "Around UNSW",
+        "side": 1,
+        "round": 416,
+        "id": 1073,
+        "length": 22,
+        "cause": "own body",
+        "free": 1,
+        "head": [
+          39,
+          0
+        ],
+        "rammer": null,
+        "stop_pearls": 0,
+        "mate_pearls": 2,
+        "foe_pearls": 0,
+        "reclaimed": 9,
+        "stolen": 2
+      },
+      {
+        "label": "one5-c1",
+        "gid": 1472758,
+        "map": "Around UNSW",
+        "side": 1,
+        "round": 425,
+        "id": 915,
+        "length": 15,
+        "cause": "own body",
+        "free": 0,
+        "head": [
+          57,
+          26
+        ],
+        "rammer": null,
+        "stop_pearls": 0,
+        "mate_pearls": 5,
+        "foe_pearls": 9,
+        "reclaimed": 6,
+        "stolen": 2
+      },
+      {
+        "label": "one5-c1",
+        "gid": 1472760,
+        "map": "Queen Of Spades",
+        "side": 0,
+        "round": 356,
+        "id": 135,
+        "length": 10,
+        "cause": "rammed",
+        "free": 1,
+        "head": [
+          15,
+          34
+        ],
+        "rammer": [
+          3,
+          2,
+          0,
+          2,
+          0
+        ],
+        "stop_pearls": 0,
+        "mate_pearls": 3,
+        "foe_pearls": 5,
+        "reclaimed": 5,
+        "stolen": 0
+      },
+      {
+        "label": "one5-c1",
+        "gid": 1472760,
+        "map": "Queen Of Spades",
+        "side": 0,
+        "round": 476,
+        "id": 277,
+        "length": 13,
+        "cause": "rammed",
+        "free": 1,
+        "head": [
+          24,
+          5
+        ],
+        "rammer": [
+          3,
+          2,
+          0,
+          2,
+          0
+        ],
+        "stop_pearls": 0,
+        "mate_pearls": 0,
+        "foe_pearls": 0,
+        "reclaimed": 7,
+        "stolen": 0
+      }
+    ]
+  },
+  "one5-w1": {
+    "games": 15,
+    "wins": 3,
+    "active_at350": 11,
+    "sides": {
+      "0": {
+        "ledger": {
+          "start": 1512,
+          "natural": 1117,
+          "mate_corpse": 1200,
+          "enemy_corpse": 203,
+          "rammed": 461,
+          "rams": 195,
+          "wall": 699,
+          "own body": 340,
+          "mate body": 270,
+          "foe body": 51,
+          "mate head": 6,
+          "stop": 615,
+          "paid": 15,
+          "ours_eaten_enemy": 232,
+          "dead": 2637,
+          "end": 1380,
+          "residual": 0
+        },
+        "snapshots": {
+          "350": {
+            "alive": 30.066666666666666,
+            "total": 100.8,
+            "length": 8.733333333333333
+          },
+          "400": {
+            "alive": 28.6,
+            "total": 96.73333333333333,
+            "length": 11.466666666666667
+          },
+          "499": {
+            "alive": 23.466666666666665,
+            "total": 92,
+            "length": 14.733333333333333
+          }
+        }
+      },
+      "1": {
+        "ledger": {
+          "start": 2240,
+          "natural": 2399,
+          "mate_corpse": 2861,
+          "enemy_corpse": 251,
+          "rammed": 279,
+          "rams": 340,
+          "wall": 1031,
+          "own body": 316,
+          "mate body": 435,
+          "foe body": 38,
+          "mate head": 24,
+          "stop": 3177,
+          "paid": 38,
+          "ours_eaten_enemy": 193,
+          "dead": 5640,
+          "end": 2073,
+          "residual": 0
+        },
+        "snapshots": {
+          "350": {
+            "alive": 37.86666666666667,
+            "total": 149.33333333333334,
+            "length": 15.8
+          },
+          "400": {
+            "alive": 34.333333333333336,
+            "total": 146.13333333333333,
+            "length": 23.8
+          },
+          "499": {
+            "alive": 16.266666666666666,
+            "total": 138.2,
+            "length": 41.13333333333333
+          }
+        }
+      }
+    },
+    "rally": {
+      "n": 411,
+      "mass": 1551,
+      "inward": 374,
+      "arrived": 67,
+      "advertised_arrived": 258,
+      "died": 259,
+      "died_before_arrival": 221,
+      "ever_top": 64,
+      "ever_target": 21,
+      "ever_final_top": 47,
+      "end_final_transferred": 47,
+      "end_top": 74,
+      "lost": 574,
+      "remaining": 977,
+      "causes": {
+        "wall": 65,
+        "stop": 80,
+        "rams": 12,
+        "foe body": 8,
+        "mate body": 22,
+        "rammed": 41,
+        "own body": 31
+      },
+      "first_generation_top": 37,
+      "first_generation_other": 170,
+      "first_generation_enemy": 29,
+      "stop_first_top": 27,
+      "end_transported": 55,
+      "transported": 325
+    },
+    "rally_inward": {
+      "n": 374,
+      "mass": 1301,
+      "inward": 374,
+      "arrived": 64,
+      "advertised_arrived": 247,
+      "died": 229,
+      "died_before_arrival": 191,
+      "ever_top": 55,
+      "ever_target": 21,
+      "ever_final_top": 46,
+      "end_final_transferred": 46,
+      "end_top": 72,
+      "lost": 455,
+      "remaining": 846,
+      "causes": {
+        "wall": 53,
+        "stop": 76,
+        "rams": 12,
+        "foe body": 8,
+        "mate body": 19,
+        "rammed": 35,
+        "own body": 26
+      },
+      "first_generation_top": 29,
+      "first_generation_other": 146,
+      "first_generation_enemy": 29,
+      "stop_first_top": 27,
+      "end_transported": 53,
+      "transported": 269
+    },
+    "cohort400_ours": {
+      "n": 236,
+      "mass": 745,
+      "inward": 0,
+      "arrived": 70,
+      "advertised_arrived": 163,
+      "died": 175,
+      "died_before_arrival": 121,
+      "ever_top": 51,
+      "ever_target": 16,
+      "ever_final_top": 22,
+      "end_final_transferred": 22,
+      "end_top": 46,
+      "lost": 334,
+      "remaining": 411,
+      "causes": {
+        "own body": 28,
+        "wall": 46,
+        "rammed": 21,
+        "mate body": 24,
+        "stop": 45,
+        "rams": 6,
+        "foe body": 5
+      },
+      "first_generation_top": 28,
+      "first_generation_other": 122,
+      "first_generation_enemy": 23,
+      "stop_first_top": 21,
+      "end_transported": 41,
+      "transported": 236
+    },
+    "cohort400_theirs": {
+      "n": 411,
+      "mass": 1370,
+      "inward": 0,
+      "arrived": 90,
+      "advertised_arrived": 0,
+      "died": 387,
+      "died_before_arrival": 300,
+      "ever_top": 128,
+      "ever_target": 73,
+      "ever_final_top": 106,
+      "end_final_transferred": 106,
+      "end_top": 153,
+      "lost": 732,
+      "remaining": 638,
+      "causes": {
+        "stop": 234,
+        "wall": 68,
+        "own body": 16,
+        "rams": 26,
+        "mate body": 31,
+        "rammed": 7,
+        "foe body": 3,
+        "mate head": 2
+      },
+      "first_generation_top": 66,
+      "first_generation_other": 254,
+      "first_generation_enemy": 32,
+      "stop_first_top": 62,
+      "end_transported": 142,
+      "transported": 574
+    },
+    "fold": {
+      "n": 187,
+      "mass": 532,
+      "inward": 0,
+      "arrived": 187,
+      "advertised_arrived": 0,
+      "died": 187,
+      "died_before_arrival": 0,
+      "ever_top": 236,
+      "ever_target": 234,
+      "ever_final_top": 174,
+      "end_final_transferred": 165,
+      "end_top": 217,
+      "lost": 274,
+      "remaining": 258,
+      "causes": {
+        "own body": 3,
+        "stop": 184
+      },
+      "first_generation_top": 212,
+      "first_generation_other": 74,
+      "first_generation_enemy": 6,
+      "stop_first_top": 212,
+      "end_transported": 216,
+      "transported": 288
+    },
+    "coverage": {
+      "post400_our_turns": 26261,
+      "leader_wire_turns": 21109,
+      "eligible_moving_turns": 7662,
+      "eligible_inward_turns": 3811
+    },
+    "longest_deaths": [
+      {
+        "label": "one5-w1",
+        "gid": 1472004,
+        "map": "Australia",
+        "side": 1,
+        "round": 396,
+        "id": 605,
+        "length": 18,
+        "cause": "rammed",
+        "free": 2,
+        "head": [
+          4,
+          33
+        ],
+        "rammer": [
+          16,
+          4,
+          0,
+          4,
+          0
+        ],
+        "stop_pearls": 2,
+        "mate_pearls": 5,
+        "foe_pearls": 1,
+        "reclaimed": 7,
+        "stolen": 2
+      },
+      {
+        "label": "one5-w1",
+        "gid": 1472004,
+        "map": "Australia",
+        "side": 0,
+        "round": 429,
+        "id": 802,
+        "length": 33,
+        "cause": "rammed",
+        "free": 1,
+        "head": [
+          23,
+          28
+        ],
+        "rammer": [
+          3,
+          2,
+          0,
+          2,
+          0
+        ],
+        "stop_pearls": 0,
+        "mate_pearls": 0,
+        "foe_pearls": 0,
+        "reclaimed": 17,
+        "stolen": 0
+      },
+      {
+        "label": "one5-w1",
+        "gid": 1472005,
+        "map": "Islands",
+        "side": 0,
+        "round": 482,
+        "id": 1052,
+        "length": 17,
+        "cause": "rammed",
+        "free": 1,
+        "head": [
+          28,
+          21
+        ],
+        "rammer": [
+          6,
+          3,
+          0,
+          3,
+          0
+        ],
+        "stop_pearls": 1,
+        "mate_pearls": 1,
+        "foe_pearls": 0,
+        "reclaimed": 1,
+        "stolen": 3
+      },
+      {
+        "label": "one5-w1",
+        "gid": 1472006,
+        "map": "Maze",
+        "side": 0,
+        "round": 404,
+        "id": 312,
+        "length": 12,
+        "cause": "rammed",
+        "free": 0,
+        "head": [
+          13,
+          18
+        ],
+        "rammer": [
+          2,
+          1,
+          0,
+          1,
+          0
+        ],
+        "stop_pearls": 0,
+        "mate_pearls": 2,
+        "foe_pearls": 0,
+        "reclaimed": 6,
+        "stolen": 0
+      },
+      {
+        "label": "one5-w1",
+        "gid": 1472006,
+        "map": "Maze",
+        "side": 0,
+        "round": 459,
+        "id": 916,
+        "length": 12,
+        "cause": "rammed",
+        "free": 0,
+        "head": [
+          24,
+          18
+        ],
+        "rammer": [
+          3,
+          2,
+          0,
+          2,
+          0
+        ],
+        "stop_pearls": 4,
+        "mate_pearls": 5,
+        "foe_pearls": 1,
+        "reclaimed": 5,
+        "stolen": 1
+      },
+      {
+        "label": "one5-w1",
+        "gid": 1472017,
+        "map": "Slithery Fight",
+        "side": 1,
+        "round": 441,
+        "id": 1597,
+        "length": 48,
+        "cause": "stop",
+        "free": 3,
+        "head": [
+          6,
+          7
+        ],
+        "rammer": null,
+        "stop_pearls": 0,
+        "mate_pearls": 0,
+        "foe_pearls": 0,
+        "reclaimed": 24,
+        "stolen": 0
+      }
+    ]
+  },
+  "one6-c1": {
+    "games": 15,
+    "wins": 3,
+    "active_at350": 9,
+    "sides": {
+      "0": {
+        "ledger": {
+          "start": 1432,
+          "natural": 965,
+          "mate_corpse": 1112,
+          "enemy_corpse": 269,
+          "rammed": 428,
+          "rams": 234,
+          "wall": 368,
+          "own body": 304,
+          "mate body": 164,
+          "foe body": 53,
+          "mate head": 13,
+          "stop": 985,
+          "paid": 9,
+          "ours_eaten_enemy": 274,
+          "dead": 2549,
+          "end": 1220,
+          "residual": 0
+        },
+        "snapshots": {
+          "350": {
+            "alive": 30.333333333333332,
+            "total": 95.46666666666667,
+            "length": 6.266666666666667
+          },
+          "400": {
+            "alive": 31.133333333333333,
+            "total": 94.93333333333334,
+            "length": 8.066666666666666
+          },
+          "499": {
+            "alive": 18.8,
+            "total": 81.33333333333333,
+            "length": 17.666666666666668
+          }
+        }
+      },
+      "1": {
+        "ledger": {
+          "start": 1753,
+          "natural": 2119,
+          "mate_corpse": 2164,
+          "enemy_corpse": 299,
+          "rammed": 499,
+          "rams": 354,
+          "wall": 7,
+          "own body": 2902,
+          "mate body": 581,
+          "foe body": 21,
+          "mate head": 4,
+          "stop": 0,
+          "paid": 1,
+          "ours_eaten_enemy": 258,
+          "dead": 4368,
+          "end": 1966,
+          "residual": 0
+        },
+        "snapshots": {
+          "350": {
+            "alive": 33.266666666666666,
+            "total": 116.86666666666666,
+            "length": 16.6
+          },
+          "400": {
+            "alive": 29.6,
+            "total": 108.86666666666666,
+            "length": 15.333333333333334
+          },
+          "499": {
+            "alive": 25.2,
+            "total": 131.06666666666666,
+            "length": 26.466666666666665
+          }
+        }
+      }
+    },
+    "rally": {
+      "n": 413,
+      "mass": 1292,
+      "inward": 403,
+      "arrived": 110,
+      "advertised_arrived": 254,
+      "died": 285,
+      "died_before_arrival": 191,
+      "ever_top": 85,
+      "ever_target": 43,
+      "ever_final_top": 55,
+      "end_final_transferred": 55,
+      "end_top": 192,
+      "lost": 490,
+      "remaining": 802,
+      "causes": {
+        "own body": 40,
+        "stop": 165,
+        "rammed": 27,
+        "rams": 12,
+        "wall": 26,
+        "mate body": 11,
+        "foe body": 4
+      },
+      "first_generation_top": 50,
+      "first_generation_other": 193,
+      "first_generation_enemy": 34,
+      "stop_first_top": 44,
+      "end_transported": 93,
+      "transported": 339
+    },
+    "rally_inward": {
+      "n": 403,
+      "mass": 1256,
+      "inward": 403,
+      "arrived": 107,
+      "advertised_arrived": 250,
+      "died": 277,
+      "died_before_arrival": 185,
+      "ever_top": 85,
+      "ever_target": 43,
+      "ever_final_top": 55,
+      "end_final_transferred": 55,
+      "end_top": 192,
+      "lost": 473,
+      "remaining": 783,
+      "causes": {
+        "own body": 37,
+        "stop": 162,
+        "rammed": 27,
+        "rams": 11,
+        "wall": 25,
+        "mate body": 11,
+        "foe body": 4
+      },
+      "first_generation_top": 50,
+      "first_generation_other": 187,
+      "first_generation_enemy": 34,
+      "stop_first_top": 44,
+      "end_transported": 93,
+      "transported": 331
+    },
+    "cohort400_ours": {
+      "n": 280,
+      "mass": 697,
+      "inward": 0,
+      "arrived": 85,
+      "advertised_arrived": 194,
+      "died": 242,
+      "died_before_arrival": 164,
+      "ever_top": 74,
+      "ever_target": 13,
+      "ever_final_top": 42,
+      "end_final_transferred": 42,
+      "end_top": 96,
+      "lost": 348,
+      "remaining": 349,
+      "causes": {
+        "own body": 34,
+        "wall": 24,
+        "stop": 144,
+        "rammed": 22,
+        "foe body": 4,
+        "rams": 4,
+        "mate body": 10
+      },
+      "first_generation_top": 39,
+      "first_generation_other": 171,
+      "first_generation_enemy": 23,
+      "stop_first_top": 37,
+      "end_transported": 79,
+      "transported": 280
+    },
+    "cohort400_theirs": {
+      "n": 246,
+      "mass": 656,
+      "inward": 0,
+      "arrived": 46,
+      "advertised_arrived": 0,
+      "died": 215,
+      "died_before_arrival": 174,
+      "ever_top": 55,
+      "ever_target": 38,
+      "ever_final_top": 21,
+      "end_final_transferred": 21,
+      "end_top": 49,
+      "lost": 391,
+      "remaining": 265,
+      "causes": {
+        "own body": 153,
+        "mate body": 37,
+        "rams": 17,
+        "foe body": 2,
+        "rammed": 5,
+        "wall": 1
+      },
+      "first_generation_top": 23,
+      "first_generation_other": 124,
+      "first_generation_enemy": 14,
+      "stop_first_top": 0,
+      "end_transported": 47,
+      "transported": 288
+    },
+    "fold": {
+      "n": 121,
+      "mass": 364,
+      "inward": 0,
+      "arrived": 121,
+      "advertised_arrived": 0,
+      "died": 121,
+      "died_before_arrival": 0,
+      "ever_top": 142,
+      "ever_target": 138,
+      "ever_final_top": 50,
+      "end_final_transferred": 50,
+      "end_top": 110,
+      "lost": 210,
+      "remaining": 154,
+      "causes": {
+        "own body": 121
+      },
+      "first_generation_top": 128,
+      "first_generation_other": 55,
+      "first_generation_enemy": 6,
+      "stop_first_top": 0,
+      "end_transported": 108,
+      "transported": 185
+    },
+    "coverage": {
+      "post400_our_turns": 29915,
+      "leader_wire_turns": 27960,
+      "eligible_moving_turns": 6058,
+      "eligible_inward_turns": 4623
+    },
+    "longest_deaths": [
+      {
+        "label": "one6-c1",
+        "gid": 1477039,
+        "map": "Australia",
+        "side": 1,
+        "round": 398,
+        "id": 556,
+        "length": 31,
+        "cause": "rammed",
+        "free": 1,
+        "head": [
+          44,
+          16
+        ],
+        "rammer": [
+          4,
+          3,
+          1,
+          3,
+          0
+        ],
+        "stop_pearls": 0,
+        "mate_pearls": 7,
+        "foe_pearls": 1,
+        "reclaimed": 6,
+        "stolen": 10
+      },
+      {
+        "label": "one6-c1",
+        "gid": 1477040,
+        "map": "Islands",
+        "side": 0,
+        "round": 444,
+        "id": 903,
+        "length": 13,
+        "cause": "rammed",
+        "free": 2,
+        "head": [
+          33,
+          23
+        ],
+        "rammer": [
+          2,
+          1,
+          0,
+          1,
+          0
+        ],
+        "stop_pearls": 8,
+        "mate_pearls": 10,
+        "foe_pearls": 0,
+        "reclaimed": 0,
+        "stolen": 7
+      },
+      {
+        "label": "one6-c1",
+        "gid": 1477041,
+        "map": "Maze",
+        "side": 1,
+        "round": 366,
+        "id": 0,
+        "length": 53,
+        "cause": "rammed",
+        "free": 2,
+        "head": [
+          5,
+          11
+        ],
+        "rammer": [
+          6,
+          3,
+          0,
+          3,
+          0
+        ],
+        "stop_pearls": 0,
+        "mate_pearls": 36,
+        "foe_pearls": 0,
+        "reclaimed": 19,
+        "stolen": 8
+      },
+      {
+        "label": "one6-c1",
+        "gid": 1477041,
+        "map": "Maze",
+        "side": 0,
+        "round": 397,
+        "id": 799,
+        "length": 18,
+        "cause": "rammed",
+        "free": 1,
+        "head": [
+          7,
+          22
+        ],
+        "rammer": [
+          3,
+          1,
+          0,
+          1,
+          0
+        ],
+        "stop_pearls": 0,
+        "mate_pearls": 1,
+        "foe_pearls": 0,
+        "reclaimed": 0,
+        "stolen": 9
+      },
+      {
+        "label": "one6-c1",
+        "gid": 1477041,
+        "map": "Maze",
+        "side": 1,
+        "round": 474,
+        "id": 980,
+        "length": 31,
+        "cause": "rammed",
+        "free": 1,
+        "head": [
+          2,
+          23
+        ],
+        "rammer": [
+          17,
+          4,
+          0,
+          4,
+          0
+        ],
+        "stop_pearls": 0,
+        "mate_pearls": 0,
+        "foe_pearls": 0,
+        "reclaimed": 12,
+        "stolen": 4
+      },
+      {
+        "label": "one6-c1",
+        "gid": 1477044,
+        "map": "Around UNSW",
+        "side": 1,
+        "round": 382,
+        "id": 734,
+        "length": 27,
+        "cause": "rammed",
+        "free": 0,
+        "head": [
+          50,
+          3
+        ],
+        "rammer": [
+          12,
+          6,
+          2,
+          6,
+          0
+        ],
+        "stop_pearls": 0,
+        "mate_pearls": 12,
+        "foe_pearls": 0,
+        "reclaimed": 2,
+        "stolen": 12
+      },
+      {
+        "label": "one6-c1",
+        "gid": 1477047,
+        "map": "Schooltime",
+        "side": 1,
+        "round": 415,
+        "id": 327,
+        "length": 20,
+        "cause": "rammed",
+        "free": 2,
+        "head": [
+          26,
+          31
+        ],
+        "rammer": [
+          3,
+          2,
+          0,
+          2,
+          0
+        ],
+        "stop_pearls": 0,
+        "mate_pearls": 2,
+        "foe_pearls": 0,
+        "reclaimed": 1,
+        "stolen": 9
+      },
+      {
+        "label": "one6-c1",
+        "gid": 1477047,
+        "map": "Schooltime",
+        "side": 1,
+        "round": 441,
+        "id": 290,
+        "length": 20,
+        "cause": "rammed",
+        "free": 1,
+        "head": [
+          8,
+          3
+        ],
+        "rammer": [
+          3,
+          2,
+          0,
+          2,
+          0
+        ],
+        "stop_pearls": 0,
+        "mate_pearls": 0,
+        "foe_pearls": 0,
+        "reclaimed": 0,
+        "stolen": 10
+      },
+      {
+        "label": "one6-c1",
+        "gid": 1477052,
+        "map": "Slithery Fight",
+        "side": 1,
+        "round": 393,
+        "id": 1622,
+        "length": 55,
+        "cause": "rammed",
+        "free": 2,
+        "head": [
+          44,
+          12
+        ],
+        "rammer": [
+          3,
+          1,
+          0,
+          1,
+          0
+        ],
+        "stop_pearls": 0,
+        "mate_pearls": 0,
+        "foe_pearls": 0,
+        "reclaimed": 15,
+        "stolen": 13
+      }
+    ]
+  },
+  "one6-w1": {
+    "games": 15,
+    "wins": 1,
+    "active_at350": 10,
+    "sides": {
+      "0": {
+        "ledger": {
+          "start": 1413,
+          "natural": 1006,
+          "mate_corpse": 1379,
+          "enemy_corpse": 210,
+          "rammed": 471,
+          "rams": 227,
+          "wall": 470,
+          "own body": 430,
+          "mate body": 301,
+          "foe body": 54,
+          "mate head": 0,
+          "stop": 1100,
+          "paid": 15,
+          "ours_eaten_enemy": 301,
+          "dead": 3053,
+          "end": 940,
+          "residual": 0
+        },
+        "snapshots": {
+          "350": {
+            "alive": 28.6,
+            "total": 94.2,
+            "length": 7.666666666666667
+          },
+          "400": {
+            "alive": 26.8,
+            "total": 88.86666666666666,
+            "length": 11.733333333333333
+          },
+          "499": {
+            "alive": 12.4,
+            "total": 62.666666666666664,
+            "length": 20.533333333333335
+          }
+        }
+      },
+      "1": {
+        "ledger": {
+          "start": 2107,
+          "natural": 2311,
+          "mate_corpse": 2607,
+          "enemy_corpse": 321,
+          "rammed": 266,
+          "rams": 370,
+          "wall": 1003,
+          "own body": 287,
+          "mate body": 374,
+          "foe body": 34,
+          "mate head": 6,
+          "stop": 2787,
+          "paid": 54,
+          "ours_eaten_enemy": 176,
+          "dead": 5127,
+          "end": 2165,
+          "residual": 0
+        },
+        "snapshots": {
+          "350": {
+            "alive": 41.93333333333333,
+            "total": 140.46666666666667,
+            "length": 13.933333333333334
+          },
+          "400": {
+            "alive": 36.6,
+            "total": 137.66666666666666,
+            "length": 23
+          },
+          "499": {
+            "alive": 23.266666666666666,
+            "total": 144.33333333333334,
+            "length": 37.06666666666667
+          }
+        }
+      }
+    },
+    "rally": {
+      "n": 480,
+      "mass": 1456,
+      "inward": 460,
+      "arrived": 150,
+      "advertised_arrived": 231,
+      "died": 353,
+      "died_before_arrival": 233,
+      "ever_top": 106,
+      "ever_target": 66,
+      "ever_final_top": 46,
+      "end_final_transferred": 46,
+      "end_top": 219,
+      "lost": 576,
+      "remaining": 880,
+      "causes": {
+        "stop": 179,
+        "wall": 45,
+        "rammed": 34,
+        "own body": 45,
+        "rams": 11,
+        "foe body": 8,
+        "mate body": 31
+      },
+      "first_generation_top": 62,
+      "first_generation_other": 213,
+      "first_generation_enemy": 38,
+      "stop_first_top": 57,
+      "end_transported": 100,
+      "transported": 399
+    },
+    "rally_inward": {
+      "n": 460,
+      "mass": 1354,
+      "inward": 460,
+      "arrived": 145,
+      "advertised_arrived": 227,
+      "died": 334,
+      "died_before_arrival": 219,
+      "ever_top": 104,
+      "ever_target": 65,
+      "ever_final_top": 46,
+      "end_final_transferred": 46,
+      "end_top": 190,
+      "lost": 533,
+      "remaining": 821,
+      "causes": {
+        "stop": 175,
+        "wall": 40,
+        "rammed": 32,
+        "own body": 42,
+        "rams": 9,
+        "foe body": 7,
+        "mate body": 29
+      },
+      "first_generation_top": 61,
+      "first_generation_other": 197,
+      "first_generation_enemy": 34,
+      "stop_first_top": 56,
+      "end_transported": 99,
+      "transported": 371
+    },
+    "cohort400_ours": {
+      "n": 359,
+      "mass": 954,
+      "inward": 0,
+      "arrived": 117,
+      "advertised_arrived": 228,
+      "died": 305,
+      "died_before_arrival": 205,
+      "ever_top": 103,
+      "ever_target": 62,
+      "ever_final_top": 32,
+      "end_final_transferred": 32,
+      "end_top": 98,
+      "lost": 510,
+      "remaining": 444,
+      "causes": {
+        "stop": 155,
+        "wall": 42,
+        "rammed": 27,
+        "own body": 41,
+        "rams": 9,
+        "foe body": 4,
+        "mate body": 27
+      },
+      "first_generation_top": 59,
+      "first_generation_other": 198,
+      "first_generation_enemy": 43,
+      "stop_first_top": 53,
+      "end_transported": 91,
+      "transported": 355
+    },
+    "cohort400_theirs": {
+      "n": 349,
+      "mass": 1017,
+      "inward": 0,
+      "arrived": 78,
+      "advertised_arrived": 0,
+      "died": 324,
+      "died_before_arrival": 254,
+      "ever_top": 85,
+      "ever_target": 58,
+      "ever_final_top": 66,
+      "end_final_transferred": 65,
+      "end_top": 87,
+      "lost": 556,
+      "remaining": 461,
+      "causes": {
+        "mate body": 24,
+        "stop": 185,
+        "wall": 62,
+        "rams": 17,
+        "rammed": 6,
+        "own body": 25,
+        "foe body": 4,
+        "mate head": 1
+      },
+      "first_generation_top": 53,
+      "first_generation_other": 210,
+      "first_generation_enemy": 12,
+      "stop_first_top": 49,
+      "end_transported": 83,
+      "transported": 432
+    },
+    "fold": {
+      "n": 191,
+      "mass": 514,
+      "inward": 0,
+      "arrived": 191,
+      "advertised_arrived": 0,
+      "died": 191,
+      "died_before_arrival": 0,
+      "ever_top": 237,
+      "ever_target": 238,
+      "ever_final_top": 134,
+      "end_final_transferred": 133,
+      "end_top": 183,
+      "lost": 255,
+      "remaining": 259,
+      "causes": {
+        "stop": 189,
+        "own body": 2
+      },
+      "first_generation_top": 218,
+      "first_generation_other": 67,
+      "first_generation_enemy": 1,
+      "stop_first_top": 217,
+      "end_transported": 183,
+      "transported": 286
+    },
+    "coverage": {
+      "post400_our_turns": 39044,
+      "leader_wire_turns": 36332,
+      "eligible_moving_turns": 6954,
+      "eligible_inward_turns": 5096
+    },
+    "longest_deaths": [
+      {
+        "label": "one6-w1",
+        "gid": 1474983,
+        "map": "Australia",
+        "side": 0,
+        "round": 441,
+        "id": 670,
+        "length": 35,
+        "cause": "rammed",
+        "free": 2,
+        "head": [
+          47,
+          29
+        ],
+        "rammer": [
+          6,
+          5,
+          2,
+          5,
+          0
+        ],
+        "stop_pearls": 13,
+        "mate_pearls": 13,
+        "foe_pearls": 0,
+        "reclaimed": 10,
+        "stolen": 8
+      },
+      {
+        "label": "one6-w1",
+        "gid": 1474989,
+        "map": "Default",
+        "side": 0,
+        "round": 425,
+        "id": 1,
+        "length": 25,
+        "cause": "rammed",
+        "free": 2,
+        "head": [
+          30,
+          4
+        ],
+        "rammer": [
+          3,
+          4,
+          2,
+          4,
+          0
+        ],
+        "stop_pearls": 18,
+        "mate_pearls": 20,
+        "foe_pearls": 0,
+        "reclaimed": 11,
+        "stolen": 2
+      }
+    ]
+  }
+}

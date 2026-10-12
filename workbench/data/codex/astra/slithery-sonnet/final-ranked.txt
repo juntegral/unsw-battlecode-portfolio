@@ -1,0 +1,24 @@
+===== Slithery Fight 12 games Counter({'loss': 9, 'win': 3}) by src Counter({'ranked': 12})
+ by version {'one11': {'loss': 1}, 'one12': {'loss': 3}, 'one13': {'loss': 4, 'win': 2}, 'one14': {'loss': 1, 'win': 1}}
+ loss classes {'a-ourQdead': 3, 'b-bothQdead': 6}
+ how decided (all games) {('loss', 'queen'): 3, ('loss', 'longest'): 5, ('win', 'queen'): 3, ('loss', 'total'): 1}
+ us queen alive at end: 3/12; in wins 3/3, in losses 0/9
+ them queen alive at end: 4/12; in wins 1/3, in losses 3/9
+ us queen first-death rounds: <100:0 100-299:3 300+:6 none:3
+ them queen first-death rounds: <100:2 100-299:3 300+:3 none:4
+ first queen to die (all games) {'us first': 5, 'them first': 6, 'none/tie': 1}
+ result by first queen to die {('loss', 'us first'): 5, ('loss', 'them first'): 4, ('win', 'none'): 1, ('win', 'them first'): 2}
+ our queen (>=8) splits down to 2: 3, of which queen dead within 3 rounds: 3
+ our queen died in 9 of 12 games
+===== Portals 8 games Counter({'loss': 5, 'win': 3}) by src Counter({'ranked': 8})
+ by version {'one11': {'win': 1, 'loss': 2}, 'one12': {'win': 1}, 'one13': {'loss': 2}, 'one14': {'win': 1, 'loss': 1}}
+ loss classes {'b-bothQdead': 3, 'a-ourQdead': 2}
+ how decided (all games) {('win', 'longest'): 3, ('loss', 'longest'): 3, ('loss', 'queen'): 2}
+ us queen alive at end: 0/8; in wins 0/3, in losses 0/5
+ them queen alive at end: 2/8; in wins 0/3, in losses 2/5
+ us queen first-death rounds: <100:2 100-299:4 300+:2 none:0
+ them queen first-death rounds: <100:3 100-299:2 300+:1 none:2
+ first queen to die (all games) {'them first': 4, 'us first': 4}
+ result by first queen to die {('win', 'them first'): 2, ('loss', 'us first'): 3, ('loss', 'them first'): 2, ('win', 'us first'): 1}
+ our queen (>=8) splits down to 2: 0, of which queen dead within 3 rounds: 0
+ our queen died in 8 of 8 games

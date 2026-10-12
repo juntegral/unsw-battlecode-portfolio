@@ -1,0 +1,37 @@
+our queen's turns with an enemy head in view: 11292
+
+== all 401 games: 11292 turns
+   moved into reach although a free cell out of reach existed (true length, pearl-paid steps): 136 turns, rammed that round on 103
+   model true   {'veto fires': 96, '... every cell it then allows is truly safe': 95, '... at least one cell it allows is truly safe': 96, '... none of the cells it allows is truly safe': 0, 'rammed turns: veto fires': 71, 'rammed turns: veto fires and every allowed cell is truly safe': 70, 'no veto: the model calls her cell safe': 40, 'no veto: the model sees no safe cell at all': 0}
+   model bot+1  {'veto fires': 67, '... every cell it then allows is truly safe': 67, '... at least one cell it allows is truly safe': 67, '... none of the cells it allows is truly safe': 0, 'rammed turns: veto fires': 59, 'rammed turns: veto fires and every allowed cell is truly safe': 59, 'no veto: the model calls her cell safe': 47, 'no veto: the model sees no safe cell at all': 22}
+   model bot    {'veto fires': 62, 'no veto: the model calls her cell safe': 72, 'no veto: the model sees no safe cell at all': 2, 'rammed turns: veto fires': 51, '... every cell it then allows is truly safe': 61, '... at least one cell it allows is truly safe': 62, '... none of the cells it allows is truly safe': 0, 'rammed turns: veto fires and every allowed cell is truly safe': 50}
+   the rule coded with model bot    would change 68 turns (0 of them she was not truly in reach; she took a pearl on 17)
+   the rule coded with model bot+1  would change 220 turns (150 of them she was not truly in reach; she took a pearl on 28)
+   rammed by an enemy in view: 220; the killer was only partly inside her view on 70 (its visible parts / true length: [('2/3', 19), ('1/3', 10), ('3/4', 8), ('2/4', 8), ('1/5', 6), ('1/4', 6), ('1/2', 2), ('1/6', 1)])
+
+== live bot: 8041 turns
+   moved into reach although a free cell out of reach existed (true length, pearl-paid steps): 91 turns, rammed that round on 68
+   model true   {'veto fires': 63, '... every cell it then allows is truly safe': 62, '... at least one cell it allows is truly safe': 63, '... none of the cells it allows is truly safe': 0, 'rammed turns: veto fires': 47, 'rammed turns: veto fires and every allowed cell is truly safe': 46, 'no veto: the model calls her cell safe': 28, 'no veto: the model sees no safe cell at all': 0}
+   model bot+1  {'veto fires': 40, '... every cell it then allows is truly safe': 40, '... at least one cell it allows is truly safe': 40, '... none of the cells it allows is truly safe': 0, 'rammed turns: veto fires': 34, 'rammed turns: veto fires and every allowed cell is truly safe': 34, 'no veto: the model calls her cell safe': 32, 'no veto: the model sees no safe cell at all': 19}
+   model bot    {'veto fires': 43, 'no veto: the model calls her cell safe': 46, 'no veto: the model sees no safe cell at all': 2, 'rammed turns: veto fires': 34, '... every cell it then allows is truly safe': 42, '... at least one cell it allows is truly safe': 43, '... none of the cells it allows is truly safe': 0, 'rammed turns: veto fires and every allowed cell is truly safe': 33}
+   the rule coded with model bot    would change 47 turns (0 of them she was not truly in reach; she took a pearl on 12)
+   the rule coded with model bot+1  would change 165 turns (123 of them she was not truly in reach; she took a pearl on 22)
+   rammed by an enemy in view: 142; the killer was only partly inside her view on 46 (its visible parts / true length: [('2/3', 11), ('2/4', 7), ('1/3', 6), ('3/4', 5), ('1/5', 5), ('1/4', 2), ('1/2', 2), ('2/8', 1)])
+
+== maps over 600 cells: 8177 turns
+   moved into reach although a free cell out of reach existed (true length, pearl-paid steps): 90 turns, rammed that round on 67
+   model true   {'veto fires': 63, '... every cell it then allows is truly safe': 62, '... at least one cell it allows is truly safe': 63, '... none of the cells it allows is truly safe': 0, 'no veto: the model calls her cell safe': 27, 'no veto: the model sees no safe cell at all': 0, 'rammed turns: veto fires': 46, 'rammed turns: veto fires and every allowed cell is truly safe': 45}
+   model bot+1  {'veto fires': 35, '... every cell it then allows is truly safe': 35, '... at least one cell it allows is truly safe': 35, '... none of the cells it allows is truly safe': 0, 'no veto: the model calls her cell safe': 40, 'no veto: the model sees no safe cell at all': 15, 'rammed turns: veto fires': 32, 'rammed turns: veto fires and every allowed cell is truly safe': 32}
+   model bot    {'veto fires': 33, '... every cell it then allows is truly safe': 32, '... at least one cell it allows is truly safe': 33, '... none of the cells it allows is truly safe': 0, 'no veto: the model calls her cell safe': 55, 'no veto: the model sees no safe cell at all': 2, 'rammed turns: veto fires': 29, 'rammed turns: veto fires and every allowed cell is truly safe': 28}
+   the rule coded with model bot    would change 37 turns (0 of them she was not truly in reach; she took a pearl on 13)
+   the rule coded with model bot+1  would change 99 turns (62 of them she was not truly in reach; she took a pearl on 21)
+   rammed by an enemy in view: 154; the killer was only partly inside her view on 61 (its visible parts / true length: [('2/3', 18), ('2/4', 8), ('1/3', 8), ('1/5', 6), ('3/4', 5), ('1/4', 3), ('1/2', 2), ('1/6', 1)])
+
+== maps of 600 cells or fewer: 3115 turns
+   moved into reach although a free cell out of reach existed (true length, pearl-paid steps): 46 turns, rammed that round on 36
+   model true   {'veto fires': 33, '... every cell it then allows is truly safe': 33, '... at least one cell it allows is truly safe': 33, '... none of the cells it allows is truly safe': 0, 'rammed turns: veto fires': 25, 'rammed turns: veto fires and every allowed cell is truly safe': 25, 'no veto: the model calls her cell safe': 13, 'no veto: the model sees no safe cell at all': 0}
+   model bot+1  {'veto fires': 32, '... every cell it then allows is truly safe': 32, '... at least one cell it allows is truly safe': 32, '... none of the cells it allows is truly safe': 0, 'rammed turns: veto fires': 27, 'rammed turns: veto fires and every allowed cell is truly safe': 27, 'no veto: the model calls her cell safe': 7, 'no veto: the model sees no safe cell at all': 7}
+   model bot    {'veto fires': 29, 'no veto: the model calls her cell safe': 17, 'no veto: the model sees no safe cell at all': 0, 'rammed turns: veto fires': 22, '... every cell it then allows is truly safe': 29, '... at least one cell it allows is truly safe': 29, '... none of the cells it allows is truly safe': 0, 'rammed turns: veto fires and every allowed cell is truly safe': 22}
+   the rule coded with model bot    would change 31 turns (0 of them she was not truly in reach; she took a pearl on 4)
+   the rule coded with model bot+1  would change 121 turns (88 of them she was not truly in reach; she took a pearl on 7)
+   rammed by an enemy in view: 66; the killer was only partly inside her view on 9 (its visible parts / true length: [('3/4', 3), ('1/4', 3), ('1/3', 2), ('2/3', 1)])

@@ -1,0 +1,68 @@
+h2h_mDone11_v8: 47 games, 17-28, draws 2; P(wins <= 17 of 45 at 50%) = 0.068
+   NEW queen paid moves (not a ram): 50, segments 65, from length 3: 29
+   old queen paid moves (not a ram): 23, segments 23, from length 3: 15
+   turns file: 48 games
+   NEW r<=300: queen-alive rounds 7643, non-queen self-kills (wall/own body) within 2 of the own queen 28 (length 69) = 0.37 per 100 queen rounds
+   NEW queen death rate per 100 rounds at length 2/3/4/5+: 0.43 (14/3231) 0.33 (10/3004) 0.34 (6/1755) 0.30 (5/1651)
+   NEW pearls per 100 turns: queen r1-50 14.2, r51-100 7.1; non-queen of 2-4 r1-50 29.0, r51-100 15.3, r101-350 14.0; all non-queen r101-350 19.8
+   old r<=300: queen-alive rounds 5843, non-queen self-kills (wall/own body) within 2 of the own queen 13 (length 33) = 0.22 per 100 queen rounds
+   old queen death rate per 100 rounds at length 2/3/4/5+: 0.59 (8/1355) 0.42 (12/2884) 0.53 (12/2250) 0.93 (5/537)
+   old pearls per 100 turns: queen r1-50 15.3, r51-100 6.8; non-queen of 2-4 r1-50 30.2, r51-100 15.9, r101-350 14.8; all non-queen r101-350 20.1
+h2h_mDone10_v8: 48 games, 21-24, draws 3; P(wins <= 21 of 45 at 50%) = 0.383
+   NEW queen paid moves (not a ram): 55, segments 68, from length 3: 35
+   old queen paid moves (not a ram): 33, segments 35, from length 3: 17
+   turns file: 48 games
+   NEW r<=300: queen-alive rounds 7007, non-queen self-kills (wall/own body) within 2 of the own queen 22 (length 72) = 0.31 per 100 queen rounds
+   NEW queen death rate per 100 rounds at length 2/3/4/5+: 0.45 (13/2908) 0.53 (15/2842) 0.31 (5/1637) 0.65 (6/929)
+   NEW pearls per 100 turns: queen r1-50 14.3, r51-100 7.3; non-queen of 2-4 r1-50 29.0, r51-100 15.6, r101-350 14.2; all non-queen r101-350 20.2
+   old r<=300: queen-alive rounds 5860, non-queen self-kills (wall/own body) within 2 of the own queen 13 (length 34) = 0.22 per 100 queen rounds
+   old queen death rate per 100 rounds at length 2/3/4/5+: 0.56 (8/1416) 0.39 (12/3042) 0.41 (9/2189) 2.16 (9/417)
+   old pearls per 100 turns: queen r1-50 14.9, r51-100 8.3; non-queen of 2-4 r1-50 29.4, r51-100 15.2, r101-350 13.4; all non-queen r101-350 18.6
+h2h_mDone8_v5: 33 games, 14-19, draws 0; P(wins <= 14 of 33 at 50%) = 0.243
+   NEW queen paid moves (not a ram): 26, segments 30, from length 3: 14
+   old queen paid moves (not a ram): 28, segments 34, from length 3: 13
+h2h_mDone11_v5: 34 games, 17-17, draws 0; P(wins <= 17 of 34 at 50%) = 0.568
+   NEW queen paid moves (not a ram): 26, segments 35, from length 3: 14
+   old queen paid moves (not a ram): 23, segments 23, from length 3: 16
+queen death rate pooled over the two arms against one8: {('NEW', 2): '0.44 per 100 (27/6139)', ('NEW', 3): '0.43 per 100 (25/5846)', ('NEW', 4): '0.32 per 100 (11/3392)', ('NEW', 5): '0.43 per 100 (11/2580)', ('old', 2): '0.58 per 100 (16/2771)', ('old', 3): '0.40 per 100 (24/5926)', ('old', 4): '0.47 per 100 (21/4439)', ('old', 5): '1.47 per 100 (14/954)'}
+queen death rate by length, poor maps left out (no fighting there), both arms against one8 pooled; and split by whether the enemy queen is already dead
+  Done10_v8 NEW    length 2 any              13 deaths in  1019 rounds = 1.28 per 100
+  Done10_v8 NEW    length 3 any              15 deaths in  1859 rounds = 0.81 per 100
+  Done10_v8 NEW    length 4 any               5 deaths in  1515 rounds = 0.33 per 100
+  Done10_v8 NEW    length 5+ any               6 deaths in   929 rounds = 0.65 per 100
+  Done10_v8 old    length 2 any               8 deaths in   418 rounds = 1.91 per 100
+  Done10_v8 old    length 3 any              12 deaths in  1776 rounds = 0.68 per 100
+  Done10_v8 old    length 4 any               9 deaths in  1459 rounds = 0.62 per 100
+  Done10_v8 old    length 5+ any               9 deaths in   417 rounds = 2.16 per 100
+  Done11_v8 NEW    length 2 any              14 deaths in  1102 rounds = 1.27 per 100
+  Done11_v8 NEW    length 3 any              10 deaths in  2261 rounds = 0.44 per 100
+  Done11_v8 NEW    length 4 any               6 deaths in  1633 rounds = 0.37 per 100
+  Done11_v8 NEW    length 5+ any               5 deaths in  1651 rounds = 0.30 per 100
+  Done11_v8 old    length 2 any               8 deaths in   357 rounds = 2.24 per 100
+  Done11_v8 old    length 3 any              12 deaths in  1728 rounds = 0.69 per 100
+  Done11_v8 old    length 4 any              12 deaths in  1488 rounds = 0.81 per 100
+  Done11_v8 old    length 5+ any               5 deaths in   459 rounds = 1.09 per 100
+  NEW              length 2 any              27 deaths in  2121 rounds = 1.27 per 100
+  NEW              length 2 foe queen alive   9 deaths in  1431 rounds = 0.63 per 100
+  NEW              length 2 foe queen dead   18 deaths in   690 rounds = 2.61 per 100
+  NEW              length 3 any              25 deaths in  4120 rounds = 0.61 per 100
+  NEW              length 3 foe queen alive  14 deaths in  2862 rounds = 0.49 per 100
+  NEW              length 3 foe queen dead   11 deaths in  1258 rounds = 0.87 per 100
+  NEW              length 4 any              11 deaths in  3148 rounds = 0.35 per 100
+  NEW              length 4 foe queen alive  10 deaths in  1936 rounds = 0.52 per 100
+  NEW              length 4 foe queen dead    1 deaths in  1212 rounds = 0.08 per 100
+  NEW              length 5+ any              11 deaths in  2580 rounds = 0.43 per 100
+  NEW              length 5+ foe queen alive   0 deaths in   528 rounds = 0.00 per 100
+  NEW              length 5+ foe queen dead   11 deaths in  2052 rounds = 0.54 per 100
+  old              length 2 any              16 deaths in   775 rounds = 2.06 per 100
+  old              length 2 foe queen alive  12 deaths in   563 rounds = 2.13 per 100
+  old              length 2 foe queen dead    4 deaths in   212 rounds = 1.89 per 100
+  old              length 3 any              24 deaths in  3504 rounds = 0.68 per 100
+  old              length 3 foe queen alive  19 deaths in  3081 rounds = 0.62 per 100
+  old              length 3 foe queen dead    5 deaths in   423 rounds = 1.18 per 100
+  old              length 4 any              21 deaths in  2947 rounds = 0.71 per 100
+  old              length 4 foe queen alive  16 deaths in  2477 rounds = 0.65 per 100
+  old              length 4 foe queen dead    5 deaths in   470 rounds = 1.06 per 100
+  old              length 5+ any              14 deaths in   876 rounds = 1.60 per 100
+  old              length 5+ foe queen alive   6 deaths in   636 rounds = 0.94 per 100
+  old              length 5+ foe queen dead    8 deaths in   240 rounds = 3.33 per 100

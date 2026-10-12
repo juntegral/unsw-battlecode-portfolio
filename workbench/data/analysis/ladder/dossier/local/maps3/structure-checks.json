@@ -1,0 +1,164 @@
+[
+  {
+    "layout": "Stripes #1",
+    "file": "ladder_stripes_1.map",
+    "source": "~/01. Project/개인 프로젝트/unsw-swarm/data/online/ladder/1182278/M1182278.replay",
+    "sha256": "3d68704c632f99b623041b5e3500cad732cae01fcba0c639f0004166417e125a",
+    "size": [
+      24,
+      12
+    ],
+    "cells": 288,
+    "dragons_per_side": {
+      "A": 2,
+      "B": 2
+    },
+    "check": [
+      {
+        "replay": "data/online/ladder/1182278/M1182278.replay",
+        "result": {
+          "size": "equal",
+          "walls": "equal",
+          "portals": "equal",
+          "dragons": "equal",
+          "tiles": "equal",
+          "edges": "equal",
+          "metadata": "equal"
+        }
+      },
+      {
+        "replay": "data/online/ladder/1240020/M1240024.replay",
+        "result": {
+          "size": "equal",
+          "walls": "equal",
+          "portals": "equal",
+          "dragons": "equal",
+          "tiles": "equal",
+          "edges": "equal",
+          "metadata": "equal"
+        }
+      }
+    ],
+    "engine": {
+      "unit_limits": [
+        64
+      ],
+      "spawns": 4,
+      "event_counts": {
+        "dragonUpdate": 4,
+        "roundStart": 1,
+        "turnStart": 1
+      },
+      "actions": 0,
+      "notices": []
+    }
+  },
+  {
+    "layout": "Portals #1",
+    "file": "ladder_portals_1.map",
+    "source": "~/01. Project/개인 프로젝트/unsw-swarm/data/online/ladder/1182278/M1182279.replay",
+    "sha256": "172fc73b48c127b263f3f176c8467d80d63107d8597e0a43957834a5e8b41a58",
+    "size": [
+      32,
+      16
+    ],
+    "cells": 512,
+    "dragons_per_side": {
+      "B": 3,
+      "A": 3
+    },
+    "check": [
+      {
+        "replay": "data/online/ladder/1182278/M1182279.replay",
+        "result": {
+          "size": "equal",
+          "walls": "equal",
+          "portals": "equal",
+          "dragons": "equal",
+          "tiles": "equal",
+          "edges": "equal",
+          "metadata": "equal"
+        }
+      },
+      {
+        "replay": "data/online/ladder/1243328/M1243331.replay",
+        "result": {
+          "size": "equal",
+          "walls": "equal",
+          "portals": "equal",
+          "dragons": "equal",
+          "tiles": "equal",
+          "edges": "equal",
+          "metadata": "equal"
+        }
+      }
+    ],
+    "engine": {
+      "unit_limits": [
+        64
+      ],
+      "spawns": 6,
+      "event_counts": {
+        "dragonUpdate": 6,
+        "roundStart": 1,
+        "turnStart": 1
+      },
+      "actions": 0,
+      "notices": []
+    }
+  },
+  {
+    "layout": "Tower Defense #1",
+    "file": "ladder_tower_defense_1.map",
+    "source": "~/01. Project/개인 프로젝트/unsw-swarm/data/online/ladder/1182278/M1182280.replay",
+    "sha256": "65900cc53db72d804e27601b441d9b679806c60a96342831b908415c92102acd",
+    "size": [
+      32,
+      16
+    ],
+    "cells": 512,
+    "dragons_per_side": {
+      "A": 2,
+      "B": 2
+    },
+    "check": [
+      {
+        "replay": "data/online/ladder/1182278/M1182280.replay",
+        "result": {
+          "size": "equal",
+          "walls": "equal",
+          "portals": "equal",
+          "dragons": "equal",
+          "tiles": "equal",
+          "edges": "equal",
+          "metadata": "equal"
+        }
+      },
+      {
+        "replay": "data/online/ladder/1233593/M1233596.replay",
+        "result": {
+          "size": "equal",
+          "walls": "equal",
+          "portals": "equal",
+          "dragons": "equal",
+          "tiles": "equal",
+          "edges": "equal",
+          "metadata": "equal"
+        }
+      }
+    ],
+    "engine": {
+      "unit_limits": [
+        64
+      ],
+      "spawns": 4,
+      "event_counts": {
+        "dragonUpdate": 4,
+        "roundStart": 1,
+        "turnStart": 1
+      },
+      "actions": 0,
+      "notices": []
+    }
+  }
+]

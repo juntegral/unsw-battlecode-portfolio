@@ -1,0 +1,116 @@
+1483007 v8 weakhold r103 L3 cause3 actor70
+ Q 101 [[19, 10], [19, 11], [18, 11]] act [1] split 0 exit [[20, 10]] -> [[21, 10]] end [[20, 10], [19, 10], [19, 11]]
+ Q 102 [[20, 10], [19, 10], [19, 11]] act [1] split 0 exit [[21, 10]] -> [[22, 10]] end [[21, 10], [20, 10], [19, 10]]
+ Q 103 [[21, 10], [20, 10], [19, 10]] act [1] split 0 exit [[22, 10]] -> [] end [[22, 10], [21, 10], [20, 10]]
+ neighbors [{'d': 'N', 'cell': [22, 9], 'edge': 0, 'occupant': [70, 0]}, {'d': 'E', 'cell': None, 'edge': 1, 'occupant': None}, {'d': 'S', 'cell': None, 'edge': 1, 'occupant': None}, {'d': 'W', 'cell': [21, 10], 'edge': 0, 'occupant': [1, 1]}]
+1483010 v8 Maze r56 L2 cause0 actor0
+ Q 54 [[27, 12], [26, 12]] act [1] split 0 exit [[27, 11], [28, 12]] -> [[29, 12]] end [[28, 12], [27, 12]]
+ Q 55 [[28, 12], [27, 12]] act [1] split 0 exit [[29, 12]] -> [] end [[29, 12], [28, 12]]
+ Q 56 [[29, 12], [28, 12]] act [1] split 0 exit [] -> [] end []
+ neighbors [{'d': 'N', 'cell': None, 'edge': 1, 'occupant': None}, {'d': 'E', 'cell': None, 'edge': 1, 'occupant': None}, {'d': 'S', 'cell': None, 'edge': 1, 'occupant': None}, {'d': 'W', 'cell': [28, 12], 'edge': 0, 'occupant': [0, 1]}]
+1483011 v8 Stripes r182 L3 cause1 actor1
+ Q 180 [[18, 11], [17, 11]] act [1] split 0 exit [[18, 10], [19, 11]] -> [[20, 10]] end [[19, 11], [18, 11]]
+ Q 181 [[19, 11], [18, 11]] act [0] split 0 exit [[20, 10]] -> [] end [[20, 10], [19, 11], [18, 11]]
+ Q 182 [[20, 10], [19, 11], [18, 11]] act [2] split 0 exit [] -> [] end []
+ neighbors [{'d': 'N', 'cell': None, 'edge': 1, 'occupant': None}, {'d': 'E', 'cell': None, 'edge': 1, 'occupant': None}, {'d': 'S', 'cell': [19, 11], 'edge': 2, 'occupant': [1, 1]}, {'d': 'W', 'cell': None, 'edge': 1, 'occupant': None}]
+1483018 v8 Devil r46 L2 cause0 actor0
+ Q 44 [[15, 10], [15, 11], [15, 12], [15, 13]] act [] split 45 exit [[15, 9]] -> [[15, 9]] end [[15, 10], [15, 11]]
+ Q 45 [[15, 10], [15, 11]] act [0] split 0 exit [[15, 9]] -> [] end [[15, 9], [15, 10]]
+ Q 46 [[15, 9], [15, 10]] act [3] split 0 exit [] -> [] end []
+ neighbors [{'d': 'N', 'cell': [15, 8], 'edge': 0, 'occupant': [30, 0]}, {'d': 'E', 'cell': [16, 9], 'edge': 0, 'occupant': [48, 0]}, {'d': 'S', 'cell': [15, 10], 'edge': 0, 'occupant': [0, 1]}, {'d': 'W', 'cell': None, 'edge': 1, 'occupant': None}]
+ CLOSE 45 48 L 2 vis True dist 2 body [[16, 8], [16, 7]] dirs [2] end [[16, 9], [16, 8], [16, 7]] exits [[16, 9]] remove [[16, 9]]
+1483020 v8 Portals r314 L3 cause3 actor0
+ Q 312 [[8, 10], [7, 10], [6, 10]] act [1] split 0 exit [[9, 10]] -> [[9, 11]] end [[9, 10], [8, 10], [7, 10]]
+ Q 313 [[9, 10], [8, 10], [7, 10]] act [2] split 0 exit [[9, 11]] -> [[22, 6]] end [[9, 11], [9, 10], [8, 10]]
+ Q 314 [[9, 11], [9, 10], [8, 10]] act [3] split 0 exit [] -> [] end []
+ neighbors [{'d': 'N', 'cell': [9, 10], 'edge': 0, 'occupant': [0, 1]}, {'d': 'E', 'cell': [10, 11], 'edge': 0, 'occupant': [875, 1]}, {'d': 'S', 'cell': None, 'edge': 1, 'occupant': None}, {'d': 'W', 'cell': [22, 6], 'edge': 2, 'occupant': None}]
+ CLOSE 313 766 L 4 vis False dist 17 body [[22, 7], [23, 7], [23, 6], [8, 11]] dirs [0] end [[22, 6], [22, 7], [23, 7], [23, 6], [8, 11]] exits [[22, 6]] remove [[22, 6]]
+1483021 v8 Slithery Fight r120 L2 cause0 actor1
+ Q 118 [[56, 12], [55, 12], [55, 13], [54, 13]] act [2] split 0 exit [[56, 11], [56, 13]] -> [[56, 14]] end [[56, 13], [56, 12], [55, 12], [55, 13]]
+ Q 119 [[56, 13], [56, 12], [55, 12], [55, 13]] act [] split 465 exit [] -> [] end [[56, 13], [56, 12]]
+ Q 120 [[56, 13], [56, 12]] act [1] split 0 exit [] -> [] end []
+ neighbors [{'d': 'N', 'cell': [56, 12], 'edge': 0, 'occupant': [1, 1]}, {'d': 'E', 'cell': None, 'edge': 1, 'occupant': None}, {'d': 'S', 'cell': [56, 14], 'edge': 0, 'occupant': [130, 1]}, {'d': 'W', 'cell': [55, 13], 'edge': 0, 'occupant': [465, 1]}]
+ CLOSE 118 130 L 2 vis True dist 2 body [[55, 14], [55, 15]] dirs [1] end [[56, 14], [55, 14]] exits [[56, 14]] remove [[56, 14]]
+1484431 v8 Islands r134 L3 cause1 actor1
+ Q 132 [[46, 11], [46, 10], [47, 10]] act [3] split 0 exit [[45, 11]] -> [[31, 15], [45, 12]] end [[45, 11], [46, 11], [46, 10]]
+ Q 133 [[45, 11], [46, 11], [46, 10]] act [2] split 0 exit [[31, 15], [45, 12]] -> [] end [[45, 12], [45, 11], [46, 11]]
+ Q 134 [[45, 12], [45, 11], [46, 11]] act [0] split 0 exit [] -> [] end []
+ neighbors [{'d': 'N', 'cell': [45, 11], 'edge': 0, 'occupant': [1, 1]}, {'d': 'E', 'cell': None, 'edge': 1, 'occupant': None}, {'d': 'S', 'cell': None, 'edge': 1, 'occupant': None}, {'d': 'W', 'cell': None, 'edge': 1, 'occupant': None}]
+1484432 v8 Maze r184 L3 cause0 actor0
+ Q 182 [[17, 8], [17, 9], [18, 9], [18, 10]] act [] split 228 exit [[16, 8]] -> [[16, 8]] end [[17, 8], [17, 9]]
+ Q 183 [[17, 8], [17, 9]] act [3] split 0 exit [[16, 8]] -> [] end [[16, 8], [17, 8], [17, 9]]
+ Q 184 [[16, 8], [17, 8], [17, 9]] act [3] split 0 exit [] -> [] end []
+ neighbors [{'d': 'N', 'cell': None, 'edge': 1, 'occupant': None}, {'d': 'E', 'cell': [17, 8], 'edge': 0, 'occupant': [0, 1]}, {'d': 'S', 'cell': None, 'edge': 1, 'occupant': None}, {'d': 'W', 'cell': None, 'edge': 1, 'occupant': None}]
+1484433 v8 Stripes r43 L4 cause3 actor21
+ Q 41 [[19, 7], [19, 8], [20, 8], [21, 8]] act [0] split 0 exit [[19, 6], [20, 7], [18, 7]] -> [[20, 6], [18, 6]] end [[19, 6], [19, 7], [19, 8], [20, 8]]
+ Q 42 [[19, 6], [19, 7], [19, 8], [20, 8]] act [3] split 0 exit [[20, 6], [18, 6]] -> [[18, 7], [17, 6]] end [[18, 6], [19, 6], [19, 7], [19, 8]]
+ Q 43 [[18, 6], [19, 6], [19, 7], [19, 8]] act [3] split 0 exit [[18, 7], [17, 6]] -> [[16, 6]] end [[17, 6], [18, 6], [19, 6], [19, 7]]
+ neighbors [{'d': 'N', 'cell': None, 'edge': 1, 'occupant': None}, {'d': 'E', 'cell': [18, 6], 'edge': 0, 'occupant': [1, 1]}, {'d': 'S', 'cell': [17, 7], 'edge': 0, 'occupant': [21, 0]}, {'d': 'W', 'cell': [16, 6], 'edge': 0, 'occupant': None}]
+1484434 v8 Tower Defense r363 L2 cause3 actor125
+ Q 361 [[8, 15], [9, 15]] act [0] split 0 exit [[8, 14], [7, 15]] -> [[9, 14], [7, 14]] end [[8, 14], [8, 15]]
+ Q 362 [[8, 14], [8, 15]] act [1] split 0 exit [[9, 14], [7, 14]] -> [[10, 14], [9, 15]] end [[9, 14], [8, 14]]
+ Q 363 [[9, 14], [8, 14]] act [1] split 0 exit [[10, 14], [9, 15]] -> [[10, 15]] end [[10, 14], [9, 14]]
+ neighbors [{'d': 'N', 'cell': None, 'edge': 1, 'occupant': None}, {'d': 'E', 'cell': [11, 14], 'edge': 0, 'occupant': [150, 2]}, {'d': 'S', 'cell': [10, 15], 'edge': 0, 'occupant': [125, 0]}, {'d': 'W', 'cell': [9, 14], 'edge': 0, 'occupant': [0, 1]}]
+1484435 v8 Around UNSW r324 L4 cause3 actor769
+ Q 322 [[41, 33], [42, 33], [43, 33], [43, 34]] act [3] split 0 exit [[41, 34], [40, 33]] -> [[40, 34], [39, 33]] end [[40, 33], [41, 33], [42, 33], [43, 33]]
+ Q 323 [[40, 33], [41, 33], [42, 33], [43, 33]] act [3] split 0 exit [[40, 34], [39, 33]] -> [[39, 34]] end [[39, 33], [40, 33], [41, 33], [42, 33]]
+ Q 324 [[39, 33], [40, 33], [41, 33], [42, 33]] act [2] split 0 exit [[39, 34]] -> [[40, 34]] end [[39, 34], [39, 33], [40, 33], [41, 33]]
+ neighbors [{'d': 'N', 'cell': [39, 33], 'edge': 0, 'occupant': [1, 1]}, {'d': 'E', 'cell': [40, 34], 'edge': 0, 'occupant': None}, {'d': 'S', 'cell': [39, 35], 'edge': 0, 'occupant': [769, 0]}, {'d': 'W', 'cell': None, 'edge': 1, 'occupant': None}]
+1484442 v8 Portals r10 L3 cause2 actor0
+ Q 8 [[26, 8], [26, 9], [27, 9], [3, 6]] act [1] split 0 exit [[27, 8]] -> [[3, 7]] end [[27, 8], [26, 8], [26, 9], [27, 9], [3, 6]]
+ Q 9 [[27, 8], [26, 8], [26, 9], [27, 9], [3, 6]] act [] split 11 exit [] -> [] end [[27, 8], [26, 8], [26, 9]]
+ Q 10 [[27, 8], [26, 8], [26, 9]] act [2] split 0 exit [] -> [] end []
+ neighbors [{'d': 'N', 'cell': None, 'edge': 1, 'occupant': None}, {'d': 'E', 'cell': None, 'edge': 1, 'occupant': None}, {'d': 'S', 'cell': [3, 7], 'edge': 2, 'occupant': [8, 1]}, {'d': 'W', 'cell': [26, 8], 'edge': 0, 'occupant': [0, 1]}]
+ CLOSE 8 8 L 2 vis False dist 8 body [[3, 8], [2, 8]] dirs [0] end [[3, 7], [3, 8]] exits [[3, 7]] remove [[3, 7]]
+1485170 v8 Islands r73 L5 cause3 actor100
+ Q 71 [[13, 14], [13, 13], [14, 13], [15, 13]] act [1] split 0 exit [[14, 14]] -> [[15, 14], [14, 15]] end [[14, 14], [13, 14], [13, 13], [14, 13]]
+ Q 72 [[14, 14], [13, 14], [13, 13], [14, 13]] act [1] split 0 exit [[15, 14], [14, 15]] -> [[15, 13], [16, 14], [15, 15]] end [[15, 14], [14, 14], [13, 14], [13, 13]]
+ Q 73 [[15, 14], [14, 14], [13, 14], [13, 13]] act [1] split 0 exit [[15, 13], [16, 14], [15, 15]] -> [[16, 15]] end [[16, 14], [15, 14], [14, 14], [13, 14], [13, 13]]
+ neighbors [{'d': 'N', 'cell': None, 'edge': 1, 'occupant': None}, {'d': 'E', 'cell': None, 'edge': 1, 'occupant': None}, {'d': 'S', 'cell': [16, 15], 'edge': 0, 'occupant': [100, 0]}, {'d': 'W', 'cell': [15, 14], 'edge': 0, 'occupant': [0, 1]}]
+1485171 v8 Maze r231 L2 cause3 actor374
+ Q 229 [[33, 15], [32, 15], [32, 16]] act [2] split 0 exit [[14, 22]] -> [[15, 22]] end [[14, 22], [33, 15], [32, 15], [32, 16]]
+ Q 230 [[14, 22], [33, 15], [32, 15], [32, 16]] act [] split 372 exit [[15, 22]] -> [[15, 22]] end [[14, 22], [33, 15]]
+ Q 231 [[14, 22], [33, 15]] act [1] split 0 exit [[15, 22]] -> [] end [[15, 22], [14, 22]]
+ neighbors [{'d': 'N', 'cell': None, 'edge': 1, 'occupant': None}, {'d': 'E', 'cell': [16, 22], 'edge': 0, 'occupant': [374, 0]}, {'d': 'S', 'cell': None, 'edge': 1, 'occupant': None}, {'d': 'W', 'cell': [14, 22], 'edge': 0, 'occupant': [1, 1]}]
+1485172 v8 Stripes r83 L2 cause0 actor0
+ Q 81 [[19, 11], [18, 11], [17, 11]] act [0] split 0 exit [[20, 10]] -> [] end [[20, 10], [19, 11], [18, 11], [17, 11]]
+ Q 82 [[20, 10], [19, 11], [18, 11], [17, 11]] act [] split 43 exit [] -> [] end [[20, 10], [19, 11]]
+ Q 83 [[20, 10], [19, 11]] act [1] split 0 exit [] -> [] end []
+ neighbors [{'d': 'N', 'cell': None, 'edge': 1, 'occupant': None}, {'d': 'E', 'cell': None, 'edge': 1, 'occupant': None}, {'d': 'S', 'cell': [19, 11], 'edge': 2, 'occupant': [0, 1]}, {'d': 'W', 'cell': None, 'edge': 1, 'occupant': None}]
+1485179 v8 Devil r34 L2 cause3 actor4
+ Q 32 [[17, 4], [18, 4], [19, 4], [19, 5]] act [2] split 0 exit [[17, 3], [17, 5], [16, 4]] -> [[17, 6]] end [[17, 5], [17, 4], [18, 4], [19, 4]]
+ Q 33 [[17, 5], [17, 4], [18, 4], [19, 4]] act [2] split 0 exit [[17, 6]] -> [[17, 7]] end [[17, 6], [17, 5], [17, 4], [18, 4]]
+ Q 34 [[17, 6], [17, 5], [17, 4], [18, 4]] act [] split 17 exit [[17, 7]] -> [[17, 7]] end [[17, 6], [17, 5]]
+ neighbors [{'d': 'N', 'cell': [17, 5], 'edge': 0, 'occupant': [1, 1]}, {'d': 'E', 'cell': None, 'edge': 1, 'occupant': None}, {'d': 'S', 'cell': [17, 7], 'edge': 0, 'occupant': [4, 0]}, {'d': 'W', 'cell': None, 'edge': 1, 'occupant': None}]
+1485181 v8 Portals r105 L3 cause2 actor1
+ Q 103 [[13, 14], [12, 14], [12, 15], [19, 2]] act [2] split 0 exit [[13, 15]] -> [[18, 2]] end [[13, 15], [13, 14], [12, 14], [12, 15], [19, 2]]
+ Q 104 [[13, 15], [13, 14], [12, 14], [12, 15], [19, 2]] act [] split 152 exit [] -> [] end [[13, 15], [13, 14], [12, 14]]
+ Q 105 [[13, 15], [13, 14], [12, 14]] act [3] split 0 exit [] -> [] end []
+ neighbors [{'d': 'N', 'cell': [13, 14], 'edge': 0, 'occupant': [1, 1]}, {'d': 'E', 'cell': None, 'edge': 1, 'occupant': None}, {'d': 'S', 'cell': None, 'edge': 1, 'occupant': None}, {'d': 'W', 'cell': [18, 2], 'edge': 2, 'occupant': [145, 1]}]
+ CLOSE 103 145 L 2 vis False dist 7 body [[17, 2], [17, 3]] dirs [1] end [[18, 2], [17, 2]] exits [[18, 2]] remove [[18, 2]]
+1485182 v8 Slithery Fight r335 L7 cause3 actor994
+ Q 333 [[21, 1], [21, 2], [20, 2], [20, 3], [20, 4], [20, 5]] act [1] split 0 exit [[21, 0], [22, 1], [20, 1]] -> [[22, 0], [23, 1], [22, 2]] end [[22, 1], [21, 1], [21, 2], [20, 2], [20, 3], [20, 4], [20, 5]]
+ Q 334 [[22, 1], [21, 1], [21, 2], [20, 2], [20, 3], [20, 4], [20, 5]] act [2] split 0 exit [[22, 0], [23, 1], [22, 2]] -> [[23, 2]] end [[22, 2], [22, 1], [21, 1], [21, 2], [20, 2], [20, 3], [20, 4]]
+ Q 335 [[22, 2], [22, 1], [21, 1], [21, 2], [20, 2], [20, 3], [20, 4]] act [1] split 0 exit [[23, 2]] -> [[24, 2]] end [[23, 2], [22, 2], [22, 1], [21, 1], [21, 2], [20, 2], [20, 3]]
+ neighbors [{'d': 'N', 'cell': None, 'edge': 1, 'occupant': None}, {'d': 'E', 'cell': [24, 2], 'edge': 0, 'occupant': [994, 0]}, {'d': 'S', 'cell': [23, 3], 'edge': 0, 'occupant': [1008, 0]}, {'d': 'W', 'cell': [22, 2], 'edge': 0, 'occupant': [0, 1]}]
+1487473 v9 weakhold r107 L2 cause3 actor37
+ Q 105 [[27, 13], [28, 13]] act [3] split 0 exit [[27, 12], [26, 13]] -> [[26, 12]] end [[26, 13], [27, 13]]
+ Q 106 [[26, 13], [27, 13]] act [0] split 0 exit [[26, 12]] -> [[26, 11]] end [[26, 12], [26, 13]]
+ Q 107 [[26, 12], [26, 13]] act [0] split 0 exit [[26, 11]] -> [[25, 11]] end [[26, 11], [26, 12]]
+ neighbors [{'d': 'N', 'cell': [26, 10], 'edge': 0, 'occupant': [37, 0]}, {'d': 'E', 'cell': None, 'edge': 1, 'occupant': None}, {'d': 'S', 'cell': [26, 12], 'edge': 0, 'occupant': [1, 1]}, {'d': 'W', 'cell': [25, 11], 'edge': 0, 'occupant': None}]
+1487474 v9 Australia r130 L4 cause3 actor78
+ Q 128 [[32, 15], [32, 16], [31, 16], [31, 17]] act [1] split 0 exit [[32, 14], [33, 15], [31, 15]] -> [[33, 14], [33, 16]] end [[33, 15], [32, 15], [32, 16], [31, 16]]
+ Q 129 [[33, 15], [32, 15], [32, 16], [31, 16]] act [2] split 0 exit [[33, 14], [33, 16]] -> [[33, 17]] end [[33, 16], [33, 15], [32, 15], [32, 16]]
+ Q 130 [[33, 16], [33, 15], [32, 15], [32, 16]] act [2] split 0 exit [[33, 17]] -> [[34, 17], [33, 18], [32, 17]] end [[33, 17], [33, 16], [33, 15], [32, 15]]
+ neighbors [{'d': 'N', 'cell': [33, 16], 'edge': 0, 'occupant': [0, 1]}, {'d': 'E', 'cell': [34, 17], 'edge': 0, 'occupant': [78, 0]}, {'d': 'S', 'cell': [33, 18], 'edge': 0, 'occupant': None}, {'d': 'W', 'cell': [32, 17], 'edge': 0, 'occupant': None}]
+1487476 v9 Maze r196 L2 cause0 actor0
+ Q 194 [[24, 5], [23, 5]] act [1] split 0 exit [[24, 4], [25, 5]] -> [[25, 4], [25, 6]] end [[25, 5], [24, 5]]
+ Q 195 [[25, 5], [24, 5]] act [0] split 0 exit [[25, 4], [25, 6]] -> [] end [[25, 4], [25, 5]]
+ Q 196 [[25, 4], [25, 5]] act [1] split 0 exit [] -> [] end []
+ neighbors [{'d': 'N', 'cell': None, 'edge': 1, 'occupant': None}, {'d': 'E', 'cell': None, 'edge': 1, 'occupant': None}, {'d': 'S', 'cell': [25, 5], 'edge': 0, 'occupant': [0, 1]}, {'d': 'W', 'cell': None, 'edge': 1, 'occupant': None}]
+1487477 v9 Stripes r17 L2 cause0 actor1
+ Q 15 [[12, 10], [11, 10]] act [2] split 0 exit [[12, 11]] -> [[11, 11]] end [[12, 11], [12, 10]]
+ Q 16 [[12, 11], [12, 10]] act [3] split 0 exit [[11, 11]] -> [] end [[11, 11], [12, 11]]
+ Q 17 [[11, 11], [12, 11]] act [2] split 0 exit [] -> [] end []
+ neighbors [{'d': 'N', 'cell': [10, 10], 'edge': 2, 'occupant': [5, 1]}, {'d': 'E', 'cell': [12, 11], 'edge': 0, 'occupant': [1, 1]}, {'d': 'S', 'cell': None, 'edge': 1, 'occupant': None}, {'d': 'W', 'cell': None, 'edge': 1, 'occupant': None}]
+counts Counter({(8, False): 27, (8, True): 18, (9, True): 4, (9, False): 2})

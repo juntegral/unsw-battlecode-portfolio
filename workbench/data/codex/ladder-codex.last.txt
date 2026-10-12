@@ -1,0 +1,7 @@
+2026-10-07 12:14:29 KST
+분석·검증을 tools/cx.sh의 gpt-6-astra / high로 전환(첫 실행도 high); 역할별 .log와 새 결과 파일로 완료 확인.
+ANALYSIS_EVERY_HOURS=3: KST 00·03·06·09·12·15·18·21시에만 분석·검증. 수집·집계·폴링 일정 유지, 나머지는 runner.log에 건너뛰기 기록.
+py_compile 통과; unittest test_ladder -q: 31개 통과; 24시간 주기·누락/오래된 결과 모킹 검사와 최종 diff 검토 통과.
+러너 시작·중지, 실제 모델 호출, 게시 없음. #meow 게시 금지와 기존 프롬프트 유지.
+첫 분석을 즉시 재실행하지 않는 재시작 명령(실행하지 않음):
+cd '~/01. Project/개인 프로젝트/unsw-swarm' && { pkill -f '[t]ools/ladder_hourly.py'; nohup caffeinate -is python3 tools/ladder_hourly.py >> data/analysis/ladder/runner.log 2>&1 & }

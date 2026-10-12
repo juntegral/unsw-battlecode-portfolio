@@ -1,0 +1,252 @@
+{
+  "dimensions-6x16": {
+    "loaded": false,
+    "notices": [],
+    "error": "map must be at least 7x7, got 6x16"
+  },
+  "dimensions-7x16": {
+    "loaded": true,
+    "notices": [],
+    "initial": "ID 0\nTEAM A\nMAP 7 16\nUNIT_LIMIT 64\n"
+  },
+  "dimensions-8x8": {
+    "loaded": true,
+    "notices": [],
+    "initial": "ID 0\nTEAM A\nMAP 8 8\nUNIT_LIMIT 64\n"
+  },
+  "dimensions-64x64": {
+    "loaded": true,
+    "notices": [],
+    "initial": "ID 0\nTEAM A\nMAP 64 64\nUNIT_LIMIT 64\n"
+  },
+  "dimensions-65x64": {
+    "loaded": true,
+    "notices": [],
+    "initial": "ID 0\nTEAM A\nMAP 65 64\nUNIT_LIMIT 64\n"
+  },
+  "dimensions-128x128": {
+    "loaded": true,
+    "notices": [],
+    "initial": "ID 0\nTEAM A\nMAP 128 128\nUNIT_LIMIT 64\n"
+  },
+  "dimensions-129x32": {
+    "loaded": true,
+    "notices": [],
+    "initial": "ID 0\nTEAM A\nMAP 129 32\nUNIT_LIMIT 64\n"
+  },
+  "dimensions-4097x1": {
+    "loaded": false,
+    "notices": [],
+    "error": "map must be at least 7x7, got 4097x1"
+  },
+  "dimensions-32x129": {
+    "loaded": true,
+    "notices": [],
+    "initial": "ID 0\nTEAM A\nMAP 32 129\nUNIT_LIMIT 64\n"
+  },
+  "dimensions-256x256": {
+    "loaded": true,
+    "notices": [],
+    "initial": "ID 0\nTEAM A\nMAP 256 256\nUNIT_LIMIT 64\n"
+  },
+  "dimensions-257x16": {
+    "loaded": false,
+    "notices": [],
+    "error": "map must be at most 256x256, got 257x16"
+  },
+  "dimensions-1024x16": {
+    "loaded": false,
+    "notices": [],
+    "error": "map must be at most 256x256, got 1024x16"
+  },
+  "dimensions-65536x16": {
+    "loaded": false,
+    "notices": [],
+    "error": "map must be at most 256x256, got 65536x16"
+  },
+  "dimensions-16x6": {
+    "loaded": false,
+    "notices": [],
+    "error": "map must be at least 7x7, got 16x6"
+  },
+  "dimensions-16x7": {
+    "loaded": true,
+    "notices": [],
+    "initial": "ID 0\nTEAM A\nMAP 16 7\nUNIT_LIMIT 64\n"
+  },
+  "dimensions-16x8": {
+    "loaded": true,
+    "notices": [],
+    "initial": "ID 0\nTEAM A\nMAP 16 8\nUNIT_LIMIT 64\n"
+  },
+  "symmetry-None": {
+    "loaded": true,
+    "notices": [],
+    "initial": "ID 0\nTEAM A\nMAP 16 16\nUNIT_LIMIT 64\n"
+  },
+  "symmetry-x": {
+    "loaded": true,
+    "notices": [],
+    "initial": "ID 0\nTEAM A\nMAP 16 16\nUNIT_LIMIT 64\n"
+  },
+  "symmetry-y": {
+    "loaded": true,
+    "notices": [],
+    "initial": "ID 0\nTEAM A\nMAP 16 16\nUNIT_LIMIT 64\n"
+  },
+  "symmetry-xy": {
+    "loaded": true,
+    "notices": [],
+    "initial": "ID 0\nTEAM A\nMAP 16 16\nUNIT_LIMIT 64\n"
+  },
+  "symmetry-none": {
+    "loaded": false,
+    "notices": [],
+    "error": "SYMMETRY must be x, y or xy: SYMMETRY none"
+  },
+  "symmetry-rot90": {
+    "loaded": false,
+    "notices": [],
+    "error": "SYMMETRY must be x, y or xy: SYMMETRY rot90"
+  },
+  "symmetry-diagonal": {
+    "loaded": false,
+    "notices": [],
+    "error": "SYMMETRY must be x, y or xy: SYMMETRY diagonal"
+  },
+  "gap-(0, 0)": {
+    "loaded": true,
+    "notices": [],
+    "initial": "ID 0\nTEAM A\nMAP 16 16\nUNIT_LIMIT 64\n"
+  },
+  "gap-(0, 1)": {
+    "loaded": false,
+    "notices": [],
+    "error": "TILE has bad gaps: TILE 8 8 0 1"
+  },
+  "gap-(1, 1)": {
+    "loaded": false,
+    "notices": [],
+    "error": "pearl bed at (7, 7) doesn't match its mirror at (8, 8)"
+  },
+  "gap-(1, 500)": {
+    "loaded": false,
+    "notices": [],
+    "error": "pearl bed at (7, 7) doesn't match its mirror at (8, 8)"
+  },
+  "gap-(500, 500)": {
+    "loaded": false,
+    "notices": [],
+    "error": "pearl bed at (7, 7) doesn't match its mirror at (8, 8)"
+  },
+  "gap-(501, 501)": {
+    "loaded": false,
+    "notices": [],
+    "error": "pearl bed at (7, 7) doesn't match its mirror at (8, 8)"
+  },
+  "gap-(1000000, 1000000)": {
+    "loaded": false,
+    "notices": [],
+    "error": "pearl bed at (7, 7) doesn't match its mirror at (8, 8)"
+  },
+  "gap-(-1, 10)": {
+    "loaded": false,
+    "notices": [],
+    "error": "TILE has bad gaps: TILE 8 8 -1 10"
+  },
+  "gap-(5, 4)": {
+    "loaded": false,
+    "notices": [],
+    "error": "TILE has bad gaps: TILE 8 8 5 4"
+  },
+  "unit-limit-0": {
+    "loaded": false,
+    "notices": [],
+    "error": "UNIT_LIMIT needs a positive count: UNIT_LIMIT 0"
+  },
+  "unit-limit-1": {
+    "loaded": true,
+    "notices": [],
+    "initial": "ID 0\nTEAM A\nMAP 16 16\nUNIT_LIMIT 1\n"
+  },
+  "unit-limit-2": {
+    "loaded": true,
+    "notices": [],
+    "initial": "ID 0\nTEAM A\nMAP 16 16\nUNIT_LIMIT 2\n"
+  },
+  "unit-limit-64": {
+    "loaded": true,
+    "notices": [],
+    "initial": "ID 0\nTEAM A\nMAP 16 16\nUNIT_LIMIT 64\n"
+  },
+  "unit-limit-128": {
+    "loaded": true,
+    "notices": [],
+    "initial": "ID 0\nTEAM A\nMAP 16 16\nUNIT_LIMIT 128\n"
+  },
+  "unit-limit-4096": {
+    "loaded": true,
+    "notices": [],
+    "initial": "ID 0\nTEAM A\nMAP 16 16\nUNIT_LIMIT 4096\n"
+  },
+  "unit-limit-2147483647": {
+    "loaded": true,
+    "notices": [],
+    "initial": "ID 0\nTEAM A\nMAP 16 16\nUNIT_LIMIT 2147483647\n"
+  },
+  "edges-EDGE 0 1 -1": {
+    "loaded": true,
+    "notices": [],
+    "initial": "ID 0\nTEAM A\nMAP 16 16\nUNIT_LIMIT 64\n"
+  },
+  "edges-EDGE 0 2 0\nEDGE 1 2 0": {
+    "loaded": true,
+    "notices": [],
+    "initial": "ID 0\nTEAM A\nMAP 16 16\nUNIT_LIMIT 64\n"
+  },
+  "edges-EDGE 0 2 0\nEDGE 16 2 0": {
+    "loaded": false,
+    "notices": [],
+    "error": "portal 0 has 1 end(s) and joins nothing at top of (0, 0)"
+  },
+  "edges-EDGE 0 2 1000000\nEDGE 1 2 1000000": {
+    "loaded": true,
+    "notices": [],
+    "initial": "ID 0\nTEAM A\nMAP 16 16\nUNIT_LIMIT 64\n"
+  },
+  "edges-EDGE 0 2 0": {
+    "loaded": false,
+    "notices": [],
+    "error": "portal 0 has 1 end(s) and joins nothing at top of (0, 0)"
+  },
+  "team-order-(0, 1)": {
+    "loaded": true,
+    "notices": [],
+    "initial": "ID 0\nTEAM A\nMAP 16 16\nUNIT_LIMIT 64\n"
+  },
+  "team-order-(1, 0)": {
+    "loaded": true,
+    "notices": [],
+    "initial": "ID 0\nTEAM B\nMAP 16 16\nUNIT_LIMIT 64\n"
+  },
+  "team-order-(0, 0)": {
+    "loaded": false,
+    "notices": [],
+    "error": "DRAGON teams must alternate, so dragons 0 and 1 are on different teams: DRAGON 0 2 5 2 4 2"
+  },
+  "team-order-(0, 1, 0)": {
+    "loaded": true,
+    "notices": [],
+    "initial": "ID 0\nTEAM A\nMAP 16 16\nUNIT_LIMIT 64\n"
+  },
+  "team-order-(0, 1, 1, 0)": {
+    "loaded": false,
+    "notices": [],
+    "error": "DRAGON teams must alternate, so dragons 0 and 1 are on different teams: DRAGON 1 2 8 2 7 2"
+  },
+  "dimensions-7x7": {
+    "loaded": true,
+    "notices": [],
+    "initial": "ID 0\nTEAM A\nMAP 7 7\nUNIT_LIMIT 64\n"
+  }
+}

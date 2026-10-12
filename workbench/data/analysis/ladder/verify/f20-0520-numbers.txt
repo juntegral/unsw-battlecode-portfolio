@@ -1,0 +1,134 @@
+
+=== main: 73 games on layouts with 1500 or more open tiles ([('Around UNSW #1', 18), ('Australia #1', 12), ('Islands #1', 9), ('Schooltime #1', 13), ('Schooltime #2', 7), ('Slithery Fight #1', 14)])
+ raw rounds 100-300, busy tiles from the game itself
+  main all                                       snapshots  205  our heads  11824  their heads  12185  our share 0.211  their share 0.318  gap +0.107
+    1700-1899 (29 games)                         snapshots   64  our heads   3530  their heads   3644  our share 0.207  their share 0.372  gap +0.164
+      gap 0.164 (game bootstrap 95% 0.118 to 0.213); kept snapshots by layout [('Around UNSW #1', 25), ('Australia #1', 3), ('Schooltime #1', 5), ('Schooltime #2', 13), ('Slithery Fight #1', 18)]
+    1900-2099 (38 games)                         snapshots  121  our heads   7122  their heads   7335  our share 0.211  their share 0.285  gap +0.074
+      gap 0.074 (game bootstrap 95% 0.046 to 0.102); kept snapshots by layout [('Around UNSW #1', 60), ('Australia #1', 2), ('Islands #1', 4), ('Schooltime #1', 3), ('Schooltime #2', 6), ('Slithery Fight #1', 46)]
+    2100+ (6 games)                              snapshots   20  our heads   1172  their heads   1206  our share 0.215  their share 0.353  gap +0.138
+      gap 0.138 (game bootstrap 95% 0.107 to 0.159); kept snapshots by layout [('Around UNSW #1', 13), ('Islands #1', 2), ('Slithery Fight #1', 5)]
+ the same with layout mix held fixed: gap per band within a layout (kept snapshots)
+    Around UNSW #1       1700-1899 +0.146 (25), 1900-2099 +0.095 (60), 2100+ +0.138 (13)
+    Australia #1         1700-1899 +0.075 (3), 1900-2099 -0.019 (2)
+    Islands #1           1900-2099 +0.035 (4), 2100+ +0.083 (2)
+    Schooltime #1        1700-1899 +0.030 (5), 1900-2099 +0.012 (3)
+    Schooltime #2        1700-1899 +0.160 (13), 1900-2099 +0.102 (6)
+    Slithery Fight #1    1700-1899 +0.211 (18), 1900-2099 +0.051 (46), 2100+ +0.161 (5)
+ raw rounds 100-300, busy tiles from the other games on the layout (8 or more births in at least half of them)
+  main all                                       snapshots  205  our heads  11824  their heads  12185  our share 0.191  their share 0.267  gap +0.076
+    1700-1899                                    snapshots   64  our heads   3530  their heads   3644  our share 0.201  their share 0.313  gap +0.112
+    1900-2099                                    snapshots  121  our heads   7122  their heads   7335  our share 0.190  their share 0.246  gap +0.055
+    2100+                                        snapshots   20  our heads   1172  their heads   1206  our share 0.167  their share 0.264  gap +0.096
+ raw rounds 50 and 75 pooled, busy tiles from the game itself
+  main r50+r75                                   snapshots   36  our heads   1049  their heads   1047  our share 0.319  their share 0.402  gap +0.083
+    r50 only                                     snapshots   23  our heads    634  their heads    623  our share 0.334  their share 0.419  gap +0.085
+    r75 only                                     snapshots   13  our heads    415  their heads    424  our share 0.296  their share 0.377  gap +0.081
+    Around UNSW #1                               snapshots    5  our heads    195  their heads    198  our share 0.323  their share 0.475  gap +0.152
+    Australia #1                                 snapshots    6  our heads    122  their heads    122  our share 0.213  their share 0.189  gap -0.025
+    Islands #1                                   snapshots    5  our heads    140  their heads    140  our share 0.307  their share 0.300  gap -0.007
+    Schooltime #1                                snapshots    8  our heads     54  their heads     54  our share 0.167  their share 0.259  gap +0.093
+    Schooltime #2                                snapshots    2  our heads     50  their heads     50  our share 0.480  their share 0.460  gap -0.020
+    Slithery Fight #1                            snapshots   10  our heads    488  their heads    483  our share 0.348  their share 0.466  gap +0.117
+   gap r50+r75: 0.083 (game bootstrap 95% 0.032 to 0.131)
+   by game (games with a kept early snapshot 29): theirs higher in 18, ours higher in 9, equal 2
+ raw rounds 50 and 75, busy tiles from the other games on the layout
+  main r50+r75                                   snapshots   36  our heads   1049  their heads   1047  our share 0.303  their share 0.377  gap +0.074
+    Around UNSW #1                               snapshots    5  our heads    195  their heads    198  our share 0.251  their share 0.394  gap +0.143
+    Australia #1                                 snapshots    6  our heads    122  their heads    122  our share 0.197  their share 0.189  gap -0.008
+    Islands #1                                   snapshots    5  our heads    140  their heads    140  our share 0.286  their share 0.300  gap +0.014
+    Schooltime #1                                snapshots    8  our heads     54  their heads     54  our share 0.222  their share 0.259  gap +0.037
+    Schooltime #2                                snapshots    2  our heads     50  their heads     50  our share 0.460  their share 0.460  gap +0.000
+    Slithery Fight #1                            snapshots   10  our heads    488  their heads    483  our share 0.348  their share 0.445  gap +0.097
+   gap r50+r75, other-game busy tiles: 0.074 (game bootstrap 95% 0.038 to 0.111)
+ all snapshots at r50 and r75 whatever the head counts:
+  main r50+r75 unfiltered                        snapshots  146  our heads   4370  their heads   4451  our share 0.322  their share 0.402  gap +0.080
+   early snapshots: 146 taken, 36 kept
+
+=== v31: 119 games on layouts with 1500 or more open tiles ([('Around UNSW #1', 26), ('Australia #1', 28), ('Islands #1', 17), ('Schooltime #1', 11), ('Schooltime #2', 13), ('Slithery Fight #1', 24)])
+ raw rounds 100-300, busy tiles from the game itself
+  v31 all                                        snapshots  301  our heads  17554  their heads  18041  our share 0.203  their share 0.317  gap +0.114
+    <1700 (4 games)                              snapshots   19  our heads   1105  their heads   1125  our share 0.218  their share 0.320  gap +0.102
+      gap 0.102 (game bootstrap 95% -0.013 to 0.171); kept snapshots by layout [('Australia #1', 7), ('Slithery Fight #1', 12)]
+    1700-1899 (54 games)                         snapshots  142  our heads   8304  their heads   8537  our share 0.204  their share 0.320  gap +0.116
+      gap 0.116 (game bootstrap 95% 0.076 to 0.160); kept snapshots by layout [('Around UNSW #1', 63), ('Australia #1', 11), ('Islands #1', 7), ('Schooltime #1', 2), ('Schooltime #2', 10), ('Slithery Fight #1', 49)]
+    1900-2099 (43 games)                         snapshots  101  our heads   5834  their heads   5981  our share 0.189  their share 0.301  gap +0.112
+      gap 0.112 (game bootstrap 95% 0.080 to 0.141); kept snapshots by layout [('Around UNSW #1', 53), ('Australia #1', 12), ('Islands #1', 4), ('Schooltime #1', 2), ('Schooltime #2', 4), ('Slithery Fight #1', 26)]
+    2100+ (18 games)                             snapshots   39  our heads   2311  their heads   2398  our share 0.228  their share 0.345  gap +0.117
+      gap 0.117 (game bootstrap 95% 0.028 to 0.238); kept snapshots by layout [('Around UNSW #1', 12), ('Slithery Fight #1', 27)]
+ the same with layout mix held fixed: gap per band within a layout (kept snapshots)
+    Around UNSW #1       1700-1899 +0.137 (63), 1900-2099 +0.152 (53), 2100+ +0.237 (12)
+    Australia #1         <1700 -0.013 (7), 1700-1899 +0.001 (11), 1900-2099 +0.008 (12)
+    Islands #1           1700-1899 +0.059 (7), 1900-2099 +0.071 (4)
+    Schooltime #1        1700-1899 -0.184 (2), 1900-2099 +0.100 (2)
+    Schooltime #2        1700-1899 +0.055 (10), 1900-2099 +0.036 (4)
+    Slithery Fight #1    <1700 +0.164 (12), 1700-1899 +0.138 (49), 1900-2099 +0.090 (26), 2100+ +0.064 (27)
+ raw rounds 100-300, busy tiles from the other games on the layout (8 or more births in at least half of them)
+  v31 all                                        snapshots  301  our heads  17554  their heads  18041  our share 0.190  their share 0.273  gap +0.083
+    <1700                                        snapshots   19  our heads   1105  their heads   1125  our share 0.205  their share 0.269  gap +0.065
+    1700-1899                                    snapshots  142  our heads   8304  their heads   8537  our share 0.194  their share 0.276  gap +0.082
+    1900-2099                                    snapshots  101  our heads   5834  their heads   5981  our share 0.167  their share 0.250  gap +0.083
+    2100+                                        snapshots   39  our heads   2311  their heads   2398  our share 0.227  their share 0.324  gap +0.097
+ raw rounds 50 and 75 pooled, busy tiles from the game itself
+  v31 r50+r75                                    snapshots   57  our heads   1972  their heads   1980  our share 0.338  their share 0.437  gap +0.099
+    r50 only                                     snapshots   34  our heads    943  their heads    941  our share 0.364  their share 0.422  gap +0.058
+    r75 only                                     snapshots   23  our heads   1029  their heads   1039  our share 0.315  their share 0.451  gap +0.137
+    Around UNSW #1                               snapshots    8  our heads    342  their heads    351  our share 0.269  their share 0.473  gap +0.204
+    Australia #1                                 snapshots    9  our heads    158  their heads    160  our share 0.177  their share 0.181  gap +0.004
+    Islands #1                                   snapshots    9  our heads    283  their heads    280  our share 0.279  their share 0.321  gap +0.042
+    Schooltime #1                                snapshots    4  our heads     27  their heads     28  our share 0.037  their share 0.286  gap +0.249
+    Schooltime #2                                snapshots    5  our heads     67  their heads     69  our share 0.552  their share 0.522  gap -0.030
+    Slithery Fight #1                            snapshots   22  our heads   1095  their heads   1092  our share 0.393  their share 0.492  gap +0.099
+   gap r50+r75: 0.099 (game bootstrap 95% 0.056 to 0.143)
+   by game (games with a kept early snapshot 45): theirs higher in 29, ours higher in 13, equal 3
+ raw rounds 50 and 75, busy tiles from the other games on the layout
+  v31 r50+r75                                    snapshots   57  our heads   1972  their heads   1980  our share 0.312  their share 0.401  gap +0.089
+    Around UNSW #1                               snapshots    8  our heads    342  their heads    351  our share 0.211  their share 0.387  gap +0.177
+    Australia #1                                 snapshots    9  our heads    158  their heads    160  our share 0.184  their share 0.175  gap -0.009
+    Islands #1                                   snapshots    9  our heads    283  their heads    280  our share 0.279  their share 0.321  gap +0.042
+    Schooltime #1                                snapshots    4  our heads     27  their heads     28  our share 0.037  their share 0.250  gap +0.213
+    Schooltime #2                                snapshots    5  our heads     67  their heads     69  our share 0.463  their share 0.333  gap -0.129
+    Slithery Fight #1                            snapshots   22  our heads   1095  their heads   1092  our share 0.368  their share 0.466  gap +0.098
+   gap r50+r75, other-game busy tiles: 0.089 (game bootstrap 95% 0.055 to 0.121)
+ all snapshots at r50 and r75 whatever the head counts:
+  v31 r50+r75 unfiltered                         snapshots  238  our heads   7350  their heads   7393  our share 0.319  their share 0.404  gap +0.084
+   early snapshots: 238 taken, 57 kept
+
+=== cost: per game gap (their share minus ours, kept snapshots r100-300, at least 3) against our share of pearls eaten in r101-300
+  Around UNSW #1, busy tiles of the game itself: 40 games (main 17, v31 23)
+    Spearman together -0.68 on 40 games (shuffles reaching it: 0 of 4000)
+    Spearman main -0.42 on 17 games (shuffles reaching it: 379 of 4000)
+    Spearman v31 -0.82 on 23 games (shuffles reaching it: 0 of 4000)
+    smaller-gap half: won 13 of 20, mean pearl share 0.379; bigger-gap half: won 10 of 20, mean pearl share 0.313
+    our share of heads near alone: Spearman +0.21 on 40 games (shuffles reaching it: 818 of 4000); their share alone: -0.68 on 40 games (shuffles reaching it: 0 of 4000)
+    number of busy tiles in the game against our pearl share: Spearman -0.22 on 40 games (shuffles reaching it: 663 of 4000)
+    share of busy tiles on which we ate more against the gap: Spearman -0.27 on 40 games (shuffles reaching it: 372 of 4000)
+    mean gap in games won 0.133 (23), lost 0.140 (17)
+    without the three games that support it most: Spearman -0.61 on 37 games (shuffles reaching it: 0 of 4000)
+    leave one opp out: -0.73 (without 天天开心 :( (835)) to -0.65 (without ComTamSuonNuong (193))
+    leave one evening out: -0.78 (without 10-07a) to -0.53 (without 10-06a)
+  Around UNSW #1, busy tiles of the other games: 40 games (main 17, v31 23)
+    Spearman together -0.67 on 40 games (shuffles reaching it: 0 of 4000)
+    Spearman main -0.36 on 17 games (shuffles reaching it: 679 of 4000)
+    Spearman v31 -0.82 on 23 games (shuffles reaching it: 0 of 4000)
+    smaller-gap half: won 11 of 20, mean pearl share 0.378; bigger-gap half: won 12 of 20, mean pearl share 0.314
+  Slithery Fight #1, busy tiles of the game itself: 32 games (main 12, v31 20)
+    Spearman together -0.62 on 32 games (shuffles reaching it: 1 of 4000)
+    Spearman main -0.50 on 12 games (shuffles reaching it: 428 of 4000)
+    Spearman v31 -0.58 on 20 games (shuffles reaching it: 40 of 4000)
+    smaller-gap half: won 7 of 16, mean pearl share 0.431; bigger-gap half: won 8 of 16, mean pearl share 0.354
+    our share of heads near alone: Spearman +0.27 on 32 games (shuffles reaching it: 502 of 4000); their share alone: -0.56 on 32 games (shuffles reaching it: 1 of 4000)
+    number of busy tiles in the game against our pearl share: Spearman -0.53 on 32 games (shuffles reaching it: 8 of 4000)
+    share of busy tiles on which we ate more against the gap: Spearman -0.47 on 32 games (shuffles reaching it: 34 of 4000)
+    mean gap in games won 0.119 (15), lost 0.123 (17)
+    without the three games that support it most: Spearman -0.50 on 29 games (shuffles reaching it: 28 of 4000)
+    leave one opp out: -0.66 (without free trip to sydney pls (82)) to -0.58 (without chaoliangUNSW (1016))
+    leave one evening out: -0.65 (without 10-06a) to -0.53 (without 10-06b)
+  Slithery Fight #1, busy tiles of the other games: 32 games (main 12, v31 20)
+    Spearman together -0.65 on 32 games (shuffles reaching it: 0 of 4000)
+    Spearman main -0.65 on 12 games (shuffles reaching it: 105 of 4000)
+    Spearman v31 -0.61 on 20 games (shuffles reaching it: 20 of 4000)
+    smaller-gap half: won 9 of 16, mean pearl share 0.427; bigger-gap half: won 6 of 16, mean pearl share 0.359
+
+  wins by gap half, both layouts pooled (median split inside each layout, busy tiles of the game itself):
+    smaller-gap half won 20 of 36; bigger-gap half won 18 of 36

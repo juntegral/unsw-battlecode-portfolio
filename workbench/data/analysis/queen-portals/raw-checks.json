@@ -1,0 +1,284 @@
+[
+  {
+    "check": "ours",
+    "game_id": "980157",
+    "source": "ladder/top1",
+    "map": "Stripes",
+    "w": 24,
+    "h": 12,
+    "wrap_x": true,
+    "wrap_y": true,
+    "side": "A",
+    "tag": "ours",
+    "jump": {
+      "event": 580,
+      "seq": 76,
+      "round": 18,
+      "id": 1,
+      "from_cell": [
+        10,
+        10
+      ],
+      "landing": [
+        11,
+        11
+      ],
+      "links": [
+        [
+          3,
+          560,
+          561
+        ]
+      ],
+      "distance": 5,
+      "nearest": [
+        0,
+        [
+          14,
+          1
+        ],
+        5
+      ],
+      "distance_bin": "4–8",
+      "own_start_distance": 10,
+      "enemy_start_distance": 12,
+      "other_side": false,
+      "death_delta": 15,
+      "death10": false,
+      "death30": true
+    },
+    "raw": [
+      {
+        "event": 579,
+        "seq": 76,
+        "round": 18,
+        "kind": "dragonAction",
+        "id": 1,
+        "action": 0,
+        "dirs": [
+          2
+        ]
+      },
+      {
+        "event": 580,
+        "seq": 76,
+        "round": 18,
+        "kind": "dragonUpdate",
+        "id": 1,
+        "old": [
+          10,
+          10
+        ],
+        "head": [
+          11,
+          11
+        ],
+        "tail": [
+          10,
+          10
+        ]
+      }
+    ],
+    "death": {
+      "round": 33,
+      "event": 1129,
+      "reason": "headon",
+      "cause": "rammed by enemy",
+      "actor": 4,
+      "target": null,
+      "owners": [],
+      "head": [
+        13,
+        0
+      ]
+    }
+  },
+  {
+    "check": "top three",
+    "game_id": "1006642",
+    "source": "ladder/top1",
+    "map": "Default",
+    "w": 32,
+    "h": 32,
+    "wrap_x": true,
+    "wrap_y": true,
+    "side": "B",
+    "tag": "top three",
+    "jump": {
+      "event": 1775,
+      "seq": 276,
+      "round": 19,
+      "id": 1,
+      "from_cell": [
+        7,
+        23
+      ],
+      "landing": [
+        27,
+        28
+      ],
+      "links": [
+        [
+          1,
+          1591,
+          1875
+        ]
+      ],
+      "distance": 7,
+      "nearest": [
+        14,
+        [
+          21,
+          29
+        ],
+        7
+      ],
+      "distance_bin": "4–8",
+      "own_start_distance": 7,
+      "enemy_start_distance": 9,
+      "other_side": false,
+      "death_delta": 143,
+      "death10": false,
+      "death30": false
+    },
+    "raw": [
+      {
+        "event": 1774,
+        "seq": 276,
+        "round": 19,
+        "kind": "dragonAction",
+        "id": 1,
+        "action": 0,
+        "dirs": [
+          2
+        ]
+      },
+      {
+        "event": 1775,
+        "seq": 276,
+        "round": 19,
+        "kind": "dragonUpdate",
+        "id": 1,
+        "old": [
+          7,
+          23
+        ],
+        "head": [
+          27,
+          28
+        ],
+        "tail": [
+          7,
+          22
+        ]
+      }
+    ],
+    "death": {
+      "round": 162,
+      "event": 32425,
+      "reason": "noaction",
+      "cause": "other",
+      "actor": 1,
+      "target": null,
+      "owners": [],
+      "head": [
+        21,
+        21
+      ]
+    }
+  },
+  {
+    "check": "death within 10",
+    "game_id": "980565",
+    "source": "ladder/top1",
+    "map": "Stripes",
+    "w": 24,
+    "h": 12,
+    "wrap_x": true,
+    "wrap_y": true,
+    "side": "B",
+    "tag": "other",
+    "jump": {
+      "event": 2860,
+      "seq": 388,
+      "round": 55,
+      "id": 0,
+      "from_cell": [
+        4,
+        1
+      ],
+      "landing": [
+        3,
+        0
+      ],
+      "links": [
+        [
+          6,
+          54,
+          53
+        ]
+      ],
+      "distance": 17,
+      "nearest": [
+        3,
+        [
+          15,
+          7
+        ],
+        17
+      ],
+      "distance_bin": "not seen",
+      "own_start_distance": 7,
+      "enemy_start_distance": 3,
+      "other_side": true,
+      "death_delta": 5,
+      "death10": true,
+      "death30": true
+    },
+    "raw": [
+      {
+        "event": 2858,
+        "seq": 388,
+        "round": 55,
+        "kind": "dragonAction",
+        "id": 0,
+        "action": 0,
+        "dirs": [
+          0
+        ]
+      },
+      {
+        "event": 2860,
+        "seq": 388,
+        "round": 55,
+        "kind": "dragonUpdate",
+        "id": 0,
+        "old": [
+          4,
+          1
+        ],
+        "head": [
+          3,
+          0
+        ],
+        "tail": [
+          5,
+          0
+        ]
+      }
+    ],
+    "death": {
+      "round": 60,
+      "event": 3349,
+      "reason": "wall",
+      "cause": "wall",
+      "actor": 0,
+      "target": null,
+      "owners": [],
+      "head": [
+        2,
+        1
+      ]
+    }
+  }
+]

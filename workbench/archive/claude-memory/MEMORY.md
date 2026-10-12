@@ -1,0 +1,55 @@
+- [Past judgments ≠ direction](past-judgments-not-direction.md) — user principle: carry facts not verdicts between waves; independent criteria from hypothesis only; enforce mechanically
+- [Upload-only rule](upload-only-rule.md) — online submissions: upload only, never auto-revert; rollback is the user's call; after the 10-01 reset, first upload as late as possible with a complete build
+- [Feedback is the core](feedback-core.md) — after every test, deep replay analysis vs baseline; feedback matters more than results
+- [Online feedback = mechanism check](online-feedback-mechanism-check.md) — feedback from online behaviour (did each mechanism fire and work vs elite); no win-rate gating; local proxy games = mechanism checks only, "numbers are poison"
+- [Analysis population = all games](analysis-population-all-games.md) — every per-hypothesis large-scale analysis uses all accumulated top games + all our elite sets; no samples; don't save tokens
+- [Codex outsourcing](codex-outsourcing.md) — build grind and counting go to Codex (gpt-6.1-sol); since 10-09 00:49 thinking may also go to Codex gpt-6-astra, ~8 in parallel, when Claude capacity is short; Codex cannot play games; verify before acting
+- [Subagent cleanup](subagent-cleanup.md) — after processing a finished subagent's report, TaskStop it so the user's panel stays tidy
+- [Report in Korean](report-in-korean.md) — user rule 10-01: all reports/status updates to the user in Korean (agent briefs/code may stay English)
+- [Ranked battles not ours](ranked-battles-not-ours.md) — battles the user didn't mention are other teams' requests; ticket estimate counts only our ledger (team order random since 9/28)
+- [Qualifier timeline](qualifier-timeline.md) — qualifier submissions close 2026-10-09 15:00 KST; bo7 on UNSEEN maps; per-map tables won't apply (earlier 'Jan 10' was wrong)
+- [Slay Queen rules](slay-queen-rules.md) — 10-01 rule change: longer queen (id 0/1) wins, dead queen = 0; ceil(L/4) free steps; ladder reset; v1.8 plan
+- [Brief code comments](code-comments-brief.md) — user rule 10-01: comments short; rationale goes to VERSION.md/DECISIONS, not code
+- [Meow team repo](meow-team-repo.md) — team 1119 "meow": github.com/forrest-gan2005/battlecode (C-- = QWQ) cloned to 개인 프로젝트/battlecode; gh + key symlink wired 10-02; new repo first; Discord #meow mirrored via unsw-swarm/tools/discord_sync.py
+- [Check in first](check-in-first.md) — user rule 10-03: lightly confirm before each step; one team; propose direction, don't pre-assign
+- [Discord first](discord-first.md) — user core rule 10-03: run unsw-swarm/tools/team_watch.py (Discord + GitHub) before every task, background --wait watcher; report lightly; in battlecode/CLAUDE.local.md
+- [Discord message style](discord-msg-style.md) — user rule: English drafts with Korean translation; short, no colons; plain code block; numbers that compare things go in a small monospace table (10-05)
+- [Old docs on request](old-docs-on-request.md) — user rule 10-03: ignore old-team docs/principles (PHILOSOPHY, EVAL, wave rules) unless the user asks; reason from current team context
+- [GitHub in English](github-english.md) — user rule 10-03: all GitHub/team-shareable material in English; Korean only in local chat
+- [No fixed-map optimisation](no-fixed-map-optimization.md) — user hard rule 10-03: qualifier is unseen custom maps; no per-map logic, judge on held-out sets; closes Oct 9 17:00 AEDT = 15:00 KST
+- [Overnight loop 10-03](overnight-loop-1003.md) — ~/meow-loop runner (Opus high, local, no uploads); report in Korean when the user says "일어났어"
+- [meowbot](meowbot.md) — Discord bridge running on the Mac since 10-03: PR/idea posts + candidate approve buttons; uploads mocked until team OK
+- [Known-map-preserving rule](known-map-preserving-rule.md) — user rule 10-03: universal logic: refactors keep old-10 maps replay-identical (real fixes: no big regression), changes only uncovered sizes/shapes, orientation-invariant; verify with metamorphic map tests
+- [Loop first](loop-first.md) — user rule 10-03: experiments run as board loops (runner waits, Claude only for short steps), not long-lived agents
+- [Discord promises](discord-promises.md) — user rule 10-03: every 'I'll…' posted in Discord is kept or explicitly corrected; ledger unsw-swarm/docs/PROMISES.md
+- [GitHub readability](github-readability.md) — user rule 10-03: GitHub posts open with a 3-line plain summary (tried / worked? / who decides), jargon glossed, details after
+- [Loop spec 10-04](loop-spec-1004.md) — agreed loop design: label state machine, clarify/look steps, approvals, freeze 10-08 20:00 KST
+- [Top-team study 10-04](top-team-study-1004.md) — overnight background study of the rank-1 team's games vs 2000+ teams; deliverables in unsw-swarm/data/analysis/top1/ by 10-05 morning
+- [Handover 10-06](handover-1006.md) — new session: read unsw-swarm/docs/HANDOVER-2026-10-06.md first (main vs server differ on purpose, open decisions, watchers to start, rules)
+- [Loop status first](loop-status-first.md) — user rule 10-05: every status report opens with the card loop (per card), then Discord etc.; "상황 확인" = Discord + loop status check
+- [Main session = master workbench](main-session-master-workbench.md) — user rule 10-05: no hands-on work in the main session unless truly urgent; delegate to Codex/Claude subagents; state this in every handover
+- [Bottleneck notice](bottleneck-notice.md) — user rule 10-05: confirmed bottlenecks we cannot fix ourselves get a ⚠️ important meowbot notice in #meow, same format as the online-test one
+- [AI cards delegated](ai-cards-delegated.md) — user 10-05: on by:ai cards Claude answers and decides itself to keep them moving; candidate approval and shipping still need a human
+- [Morning report 10-05](morning-report-1005.md) — trigger "아침 보고 진행해줘": report everything that ran overnight from 04:25 KST (loop, AI card decisions, online tests, top-team study)
+- [Humans first 10-05](humans-first-1005.md) — user direction: loop carries Zhe's and QWQ's ideas only (AI cards and 준싱's own cards archived, 16:52 update); 준싱 = infrastructure; Claude votes as 준싱 once an author approves, watch builds actively
+- [Bot speaks when mentioned](bot-speaks-when-mentioned.md) — user rule 10-06: never join Zhe and QWQ's conversations; answer a teammate in #meow only on an @meowbot mention or an /answer
+- [Same-hour baseline](same-hour-baseline.md) — superseded 10-08 19:59: NO baseline games online any more (tickets too valuable); tests play the new bot only, judged from its own games; older same-hour rule kept in the file
+- [Proxy answers](proxy-answers.md) — user rule 10-06: any teammate may answer loop questions on another's card (author away, queue must move); author binding only at merge
+- [Act on context](act-on-context.md) — user rule 10-06: clear teammate request → do it, report after; no magic words or slash syntax; one plain confirmation at most; user holds and classifier refusals still stand
+- [dev1 not informative](dev1-not-informative.md) — Zhe 10-06: dev test 1 (~2417) is too strong to separate our builds; default online tests to normal-team opponents
+- [Evidence-first replies](evidence-first-replies.md) — user feedback 10-06: the big-map reply form worked; for "why" questions gather evidence from several sources first, split measured from inferred
+- [Handover semi-auto](handover-semi-auto.md) — user decision 10-06: on "인계해" Claude writes the handover doc, starts the next session and reports; the new session takes over and stops the old one
+- [Elo defence](elo-defence.md) — user rule 10-06: when the live bot is put back, keep the best-rated copy of the intended code live; simple, no ceremony; 10-07 update: two copies run as a ratchet (park the higher, play the lower)
+- [meowbot answers in main](meowbot-answers-in-main.md) — user rule 10-07 03:2x: answers to teammates via meowbot are worked in the main session, no subagents (token saving); user will tell teammates to wait; keep context lean with script → file → read summary; confirm with a rough size before spawning subagents
+- [Ladder info is shared](ladder-info-shared.md) — user rule 10-07: jun runs the ladder analysis, but facts from it that bear on a teammate's question or card go to #meow
+- [Session state memo](session-state-memo.md) — user-agreed 10-07: keep unsw-swarm/docs/SESSION-STATE.md, update before every /compact or handover, re-read right after; after compaction reopen files before stating facts
+- [Autonomy within teammate hypotheses](autonomy-within-teammate-hypotheses.md) — user grant 10-07: lead and drive loop + tests actively without asking, only inside Zhe/QWQ hypotheses; they are the brake; merges still need the author
+- [Handover 10-07 evening](handover-1007b.md) — new session: read unsw-swarm/docs/HANDOVER-2026-10-07b.md first (autonomous project, end conditions, model split, loop state)
+- [Effort high only](effort-high-only.md) — user rule 10-08: no xhigh anywhere; loop builds, analysts and subagents at high at most
+- [Handover 10-08](handover-1008.md) — new session: read unsw-swarm/docs/HANDOVER-2026-10-08.md first (live v62, switch list, workbench, token-saving rules, final-day schedule)
+- [Full autonomy 10-08](full-autonomy-1008.md) — user grant ~19:00: solo project, decide everything yourself; only protocol is thinking → Claude, rest → Codex; verify before stating ("no more mistakes"); classifier denials still go to him
+- [One model live 10-08](one-model-live-1008.md) — user decision 22:19: one combined model live, improve its weaknesses from its own games by intuition; no rollback to the old bot, fix the switch that fails instead (v62 only if the bot is broken)
+- [Discord desk](discord-desk.md) — 10-09: Sonnet session meow-desk owns #meow talk and the mention/jun-DM watchers; passes work to main via unsw-swarm/data/guide/desk-inbox.txt; rules in docs/DISCORD-DESK.md
+- [Handover 10-09](handover-1009.md) — new session: read unsw-swarm/docs/HANDOVER-2026-10-09.md first (live one5, one-model loop, desk owns Discord, Astra analysts, freeze 09:00, deadline 15:00 KST)
+- [Active means spend](active-means-spend.md) — user 10-09: "적극적" = call models as needed, gain before risk calculation; Codex on gpt-6.1-sol; unseen-map readiness is a must
+- [Weak-loss rule](weak-loss-rule.md) — user 10-09: any game lost to a team rated 100+ below us → find the cause and fix it; tools/weak_watch.py automates detection + analyst

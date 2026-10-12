@@ -1,0 +1,21 @@
+KST·CEST·AEDT 순서로 표시하도록 수정했습니다. `ZoneInfo`로 DST를 처리합니다.
+
+변경 파일: `tools/meowbot.py`, `tools/test_meow_eta.py`, `tools/test_meow_late.py`, `tools/test_snooze.py`, `DECISIONS.md`.
+
+별도 형식 중 결과 카드·동결 안내·유예 응답은 헬퍼로 변경했습니다. `tasks.py`, `decision_nudge.py`, `snooze.py`, `meow_chat.py`는 import/API 구조 변경이 필요해 유지했습니다. `smoke.py` 동결 문구와 기록용 시각도 유지했습니다.
+
+실제 검사 결과:
+
+| 명령 | 출력 |
+|---|---|
+| `test_meow_eta.py` | Ran 5 tests in 0.010s — OK |
+| `test_meow_late.py` | Ran 11 tests in 0.014s — OK |
+| `check-meow.py` | Ran 28 tests in 0.130s — OK |
+| `test_meow_friction.py` | Ran 19 tests in 0.061s — OK |
+| `test_tasks.py` | Ran 28 tests in 0.101s — OK |
+| 추가 `test_snooze.py` | Ran 16 tests in 0.023s — OK |
+| `py_compile`, `git diff --check` | 출력 없음, 성공 |
+
+커밋은 생성하지 못했습니다. `.git` 쓰기 제한으로 `git add`와 커밋이 `index.lock: Operation not permitted`로 실패했습니다.
+
+봇 재시작·신호, 네트워크, 게시, 키 읽기, `data/` 편집은 하지 않았습니다. 지정한 두 문서의 기존 수정도 그대로 보존했습니다.

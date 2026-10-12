@@ -1,0 +1,60 @@
+games loaded 660 errors 0
+
+F8 recount from raw replays. Meeting = two reason-3 deaths in one turn, first the non-actor (victim), second the actor (mover), different teams.
+order check: meetings where the first death is the actor or the second is not: 0 of 24804; same-team head-ons (left out): 2550
+[main] games 210, meetings 8313, their mover share 0.657 (game bootstrap 95% 0.626 to 0.689), length lost ours 28067 theirs 31212, ours/theirs 0.899 (game bootstrap 95% 0.862 to 0.940)
+[main band <1700] games 0, meetings 0, their mover share no games, length lost ours 0 theirs 0, ours/theirs no games
+[main band 1700-1899] games 70, meetings 2734, their mover share 0.701 (game bootstrap 95% 0.649 to 0.745), length lost ours 9791 theirs 11111, ours/theirs 0.881 (game bootstrap 95% 0.818 to 0.942)
+[main band 1900-2099] games 130, meetings 5222, their mover share 0.630 (game bootstrap 95% 0.588 to 0.672), length lost ours 17052 theirs 18631, ours/theirs 0.915 (game bootstrap 95% 0.859 to 0.967)
+[main band 2100+] games 10, meetings 357, their mover share 0.723 (game bootstrap 95% 0.630 to 0.828), length lost ours 1224 theirs 1470, ours/theirs 0.833 (game bootstrap 95% 0.773 to 1.018)
+[main first half] games 97, meetings 3620, their mover share 0.639 (game bootstrap 95% 0.594 to 0.689), length lost ours 12295 theirs 13888, ours/theirs 0.885 (game bootstrap 95% 0.839 to 0.948)
+[main second half] games 113, meetings 4693, their mover share 0.671 (game bootstrap 95% 0.630 to 0.707), length lost ours 15772 theirs 17324, ours/theirs 0.910 (game bootstrap 95% 0.853 to 0.972)
+[v31] games 410, meetings 16491, their mover share 0.675 (game bootstrap 95% 0.654 to 0.697), length lost ours 54077 theirs 59702, ours/theirs 0.906 (game bootstrap 95% 0.878 to 0.935)
+[v31 band <1700] games 15, meetings 629, their mover share 0.569 (game bootstrap 95% 0.455 to 0.659), length lost ours 2189 theirs 2277, ours/theirs 0.961 (game bootstrap 95% 0.734 to 1.137)
+[v31 band 1700-1899] games 210, meetings 8193, their mover share 0.638 (game bootstrap 95% 0.601 to 0.670), length lost ours 26773 theirs 29356, ours/theirs 0.912 (game bootstrap 95% 0.878 to 0.949)
+[v31 band 1900-2099] games 135, meetings 5557, their mover share 0.708 (game bootstrap 95% 0.674 to 0.741), length lost ours 18372 theirs 20198, ours/theirs 0.910 (game bootstrap 95% 0.868 to 0.968)
+[v31 band 2100+] games 50, meetings 2112, their mover share 0.765 (game bootstrap 95% 0.726 to 0.799), length lost ours 6743 theirs 7871, ours/theirs 0.857 (game bootstrap 95% 0.777 to 0.964)
+
+--- checks
+[main] opponents with 5+ games: 24; with their mover share above 0.5: 22
+[main]    1 (231) 15 games 445 meetings 0.436; Knight Capital (226) 10 games 413 meetings 0.453; doofenshmirtz good incorporated (1015) 5 games 182 meetings 0.527; Nitronics (837) 5 games 210 meetings 0.557; :3 (217) 15 games 671 meetings 0.598; dev test 1 :P (545) 5 games 105 meetings 0.610; ComTamSuonNuong (193) 25 games 831 meetings 0.617; 😹 (456) 5 games 109 meetings 0.624; free trip to sydney pls (82) 15 games 720 meetings 0.637; food (871) 5 games 105 meetings 0.638; 天天开心 :( (835) 10 games 468 meetings 0.645; Memory? (1097) 5 games 100 meetings 0.650; NUSW Battlecode (262) 10 games 391 meetings 0.657; POFPOF (1055) 5 games 189 meetings 0.661; python.io (147) 5 games 98 meetings 0.673; 中国人不准飞😡😡😡😡😡😡😡 (791) 10 games 476 meetings 0.679; DeepSeek-V4.1-Flash (776) 5 games 144 meetings 0.681; calc (20) 10 games 552 meetings 0.712; byte_force (959) 15 games 545 meetings 0.734; Settlers of Battlecode (258) 10 games 403 meetings 0.764; 1234 (919) 5 games 256 meetings 0.777; Computers (112) 5 games 217 meetings 0.783; we love gru (998) 5 games 416 meetings 0.851; Heartbreaker (62) 5 games 267 meetings 0.895
+[main] leave one opponent out: share 0.647 to 0.670
+[main] per layout (games, meetings, share, ours/theirs length): Portals #1 7 0 0.000 0.00; Prisoners Dilemma #2 6 37 0.324 0.93; Prisoners Dilemma #1 3 34 0.353 0.94; Autarky #1 9 410 0.461 0.98; Devil #1 14 463 0.462 0.92; weakhold #1 10 203 0.498 0.92; Trophy #1 7 143 0.517 0.96; Default #1 15 593 0.556 0.91; Maze #1 16 731 0.572 0.92; Queen Of Spades #1 17 232 0.578 1.00; Tower Defense #1 15 114 0.632 0.98; Around UNSW #1 15 1468 0.655 0.81; Schooltime #2 6 648 0.681 0.94; Stripes #1 8 38 0.684 0.96; Trauma #1 19 275 0.698 1.04; Slithery Fight #1 13 1031 0.740 0.94; Islands #1 9 894 0.792 0.93; Australia #1 10 665 0.817 0.76; Schooltime #1 11 334 0.820 1.18
+[main] layouts with share above 0.5: 13 of 19; layouts where we lose more length than they do: 2
+[main] by evening (games, meetings, share): 10-06a 5 162 0.648; 10-06b 100 3788 0.646; 10-07a 105 4363 0.667
+[main] without the three games with the biggest surplus of their moves [(1255595, 'Islands', (178, 20)), (1255597, 'Around UNSW', (155, 24)), (1240863, 'Around UNSW', (101, 13))]: share 0.643
+[main] game level: games with 5+ meetings 186; their mover share above 0.5 in 129, below in 52, exactly half 5; median per-game share 0.636
+[main] raw rounds 0-99: meetings 1145, their mover share 0.612, length ours 3008 theirs 3037 (0.99)
+[main] raw rounds 100-199: meetings 2397, their mover share 0.642, length ours 6872 theirs 7252 (0.95)
+[main] raw rounds 200-299: meetings 2139, their mover share 0.689, length ours 7166 theirs 7690 (0.93)
+[main] raw rounds 300-499: meetings 2632, their mover share 0.665, length ours 11021 theirs 13233 (0.83)
+[main] when they move (5465): our victim mean length 3.64, their mover mean 3.17; when we move (2848): our mover mean 2.87, their victim mean 4.87
+[main]    meetings where both dragons are longer than 1: 8313, their mover share 0.657; where our dragon is at most 1 long: 0, share 0.000
+[main]    meetings where both dragons are longer than 2: 3546, their mover share 0.671; where our dragon is at most 2 long: 3693, share 0.609
+[main]    meetings where both dragons are longer than 3: 685, their mover share 0.606; where our dragon is at most 3 long: 6679, share 0.622
+[main] length distribution lost, ours: {2: 3693, 3: 2986, 4: 708, 5: 202, 6: 122, 7: 123, 8: 479}
+[main] length distribution lost, theirs: {2: 2963, 3: 3375, 4: 738, 5: 300, 6: 226, 7: 132, 8: 579}
+[main] queen as victim: ours 91, theirs 92; queen as mover: ours 7, theirs 13
+[main] for scale, dragons alive after r100 pooled: ours 4628 theirs 4748 (our share 0.494)
+
+[v31] opponents with 5+ games: 43; with their mover share above 0.5: 40
+[v31]    gdggs (64) 5 games 40 meetings 0.300; doofenshmirtz good incorporated (1015) 20 games 684 meetings 0.447; Weneedmoretokens (135) 10 games 304 meetings 0.461; Vodyanitsa (1052) 10 games 211 meetings 0.517; err404 (485) 25 games 738 meetings 0.520; 1 (231) 10 games 305 meetings 0.521; Ron Squad (928) 5 games 94 meetings 0.532; Stochastic Parrots (127) 10 games 513 meetings 0.536; Just Keep Swimming (7) 5 games 263 meetings 0.559; f2p (608) 10 games 313 meetings 0.578; CookAgent (716) 10 games 478 meetings 0.613; TheActualPlayer (1132) 5 games 263 meetings 0.620; free trip to sydney pls (82) 10 games 531 meetings 0.627; 中国人不准飞😡😡😡😡😡😡😡 (791) 50 games 1868 meetings 0.630; life is NP hard (30) 5 games 164 meetings 0.652; Check Raise (152) 5 games 245 meetings 0.661; food (871) 5 games 306 meetings 0.670; Delusion Tax (375) 20 games 525 meetings 0.674; calc (20) 5 games 225 meetings 0.684; test4 (19) 5 games 160 meetings 0.688; fandagong (552) 15 games 642 meetings 0.690; Memory? (1097) 5 games 112 meetings 0.696; Manny (52) 5 games 93 meetings 0.699; Sponge(Albert and Bob) (213) 5 games 220 meetings 0.700; the uncancelables (899) 10 games 449 meetings 0.702; ouroboros (1022) 5 games 303 meetings 0.703; Goated (733) 15 games 765 meetings 0.750; SHINK AI 6500 (280) 15 games 535 meetings 0.751; Proof by Intimidation (465) 10 games 589 meetings 0.752; Peanut Butter (104) 5 games 227 meetings 0.753; ddabap (457) 5 games 292 meetings 0.753; Codehammer 40K (34) 5 games 314 meetings 0.755; chad gdp (70) 15 games 404 meetings 0.760; Computers (112) 10 games 586 meetings 0.761; we love gru (998) 5 games 184 meetings 0.772; DESTINY 3 (948) 5 games 77 meetings 0.792; dev test 1 :P (545) 10 games 432 meetings 0.794; python.io (147) 5 games 192 meetings 0.802; Team SKKU (249) 5 games 311 meetings 0.807; Cache me outside (952) 5 games 198 meetings 0.808; chaoliangUNSW (1016) 5 games 308 meetings 0.812; Maccas (762) 5 games 305 meetings 0.820; NUSW Battlecode (262) 10 games 723 meetings 0.877
+[v31] leave one opponent out: share 0.666 to 0.685
+[v31] per layout (games, meetings, share, ours/theirs length): Portals #1 27 0 0.000 0.00; Prisoners Dilemma #2 7 54 0.389 1.00; Prisoners Dilemma #1 18 205 0.405 0.99; Trophy #1 24 594 0.433 0.98; weakhold #1 29 591 0.523 1.01; Devil #1 28 722 0.544 0.98; Default #1 15 616 0.555 1.02; Autarky #1 28 1209 0.557 1.01; Stripes #1 26 128 0.602 0.97; Queen Of Spades #1 26 490 0.604 0.97; Trauma #1 17 243 0.605 1.07; Maze #1 24 1089 0.611 0.98; Tower Defense #1 22 180 0.633 1.01; Around UNSW #1 26 2592 0.708 0.79; Slithery Fight #1 24 1958 0.722 0.93; Islands #1 17 1917 0.728 0.93; Schooltime #2 13 1237 0.729 0.89; Australia #1 28 2358 0.826 0.84; Schooltime #1 11 308 0.844 1.31
+[v31] layouts with share above 0.5: 15 of 19; layouts where we lose more length than they do: 6
+[v31] by evening (games, meetings, share): 10-06a 250 9733 0.667; 10-06b 160 6758 0.686
+[v31] without the three games with the biggest surplus of their moves [(1207220, 'Around UNSW', (142, 8)), (1161766, 'Australia', (136, 9)), (1161769, 'Islands', (140, 15))]: share 0.668
+[v31] game level: games with 5+ meetings 352; their mover share above 0.5 in 240, below in 104, exactly half 8; median per-game share 0.642
+[v31] raw rounds 0-99: meetings 2594, their mover share 0.625, length ours 6777 theirs 6854 (0.99)
+[v31] raw rounds 100-199: meetings 4991, their mover share 0.661, length ours 14113 theirs 14820 (0.95)
+[v31] raw rounds 200-299: meetings 4233, their mover share 0.695, length ours 13871 theirs 15155 (0.92)
+[v31] raw rounds 300-499: meetings 4673, their mover share 0.699, length ours 19316 theirs 22873 (0.84)
+[v31] when they move (11133): our victim mean length 3.49, their mover mean 3.11; when we move (5358): our mover mean 2.85, their victim mean 4.69
+[v31]    meetings where both dragons are longer than 1: 16491, their mover share 0.675; where our dragon is at most 1 long: 0, share 0.000
+[v31]    meetings where both dragons are longer than 2: 7184, their mover share 0.689; where our dragon is at most 2 long: 7252, share 0.622
+[v31]    meetings where both dragons are longer than 3: 1244, their mover share 0.626; where our dragon is at most 3 long: 13471, share 0.645
+[v31] length distribution lost, ours: {2: 7252, 3: 6219, 4: 1382, 5: 350, 6: 215, 7: 193, 8: 880}
+[v31] length distribution lost, theirs: {2: 5905, 3: 6784, 4: 1384, 5: 690, 6: 425, 7: 277, 8: 1026}
+[v31] queen as victim: ours 182, theirs 169; queen as mover: ours 29, theirs 28
+[v31] for scale, dragons alive after r100 pooled: ours 9336 theirs 9121 (our share 0.506)
+

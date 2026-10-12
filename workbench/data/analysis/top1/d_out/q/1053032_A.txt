@@ -1,0 +1,63 @@
+=== 1053032 Slithery Fight 63x27 (1701 cells) run dl-20261004 | A = meow (1853) vs WeHaveQuizzes (2157) | winner A by longest after 500 rounds
+queen #0 start (3, 22); enemy queen #1 start (59, 4); path between the starts 80
+DEATH r3 body L2 at (4, 21)
+splits (round, before -> keeps + child, child id): r0:25->2+23(#14)
+block | head | from start | len | ate nat/corpse | splits | rounds enemy in view | nearest enemy | cells used | own heads<=4 | units own/enemy
+r  0 | (3, 22)   |   0 | 25 | 0/0 | 1 |  0 | 9 |  3 | 1.0 | 7/7
+moves from round 0:
+   0:SPLIT  1:E  2:N  3:E
+death record: {"round": 3, "reason": "body", "len": 2, "pos": [4, 21], "own": 1, "step": 1, "nsteps": 1, "dir": "E", "portal": 0, "hit": ["a", 14, 19, 14, 5, 21, [0, 0]]}
+  r0 L25 at (3, 22) SPLIT -> None ate 0 | free 0 safe 0 | in reach at start 0, at end 0 | froom 0 tree 0 | N=o(3,21) #0L25s5 E=o(4,22) #0L25s3 S=o(3,23) #0L25s1 W=o(2,22) #0L25s7 | enemies 
+  r1 L2 at (3, 22) move E -> [4, 22] ate 0 | free 2 safe 2 | in reach at start 0, at end 0 | froom 5 tree 0 | N=F(3,21) reach0 room5 E=F(4,22) reach0 room5 S=o(3,23) #0L2s1 W=a(2,22) #14L23s22 | enemies 
+  r2 L2 at (4, 22) move N -> [4, 21] ate 0 | free 2 safe 2 | in reach at start 0, at end 0 | froom 5 tree 0 | N=F(4,21) reach0 room5 E=a(5,22) #14L21s15 S=F(4,23) reach0 room5 W=o(3,22) #0L2s1 | enemies 
+  r3 L2 at (4, 21) move E -> None ate 0 | free 0 safe 0 | in reach at start 0, at end 0 | froom 0 tree 0 | N=a(4,20) #14L19s12 E=a(5,21) #14L19s14 S=o(4,22) #0L2s1 W=A(3,21) #22L2s0 | enemies 
+--- board at the start of her turn, round 0
+     6162 0 1 2 3 4 5 6 7 8
+     + + + + + + + + + + + 
+ 17   . .|. . . . . . . .|*
+     + + + + + + + + + + + 
+ 18   . .|. . . . . . . .|*
+     + + + + + + + + + + +-
+ 19   . .|. . . . . . . . .
+     + + + + + + + + + + + 
+ 20   . .|. a a a a a . . .
+     + + + + + + + + + + + 
+ 21   . .|. a a a a a . . .
+     + + + + + + + + + + + 
+ 22   . .|. a a @ a a . . .
+     + + + + + + + + + + + 
+ 23   . .|. a a a a a . . .
+     + + + + + + + + + + + 
+ 24   . .|. a a a a a . . .
+     + + + + + + + + + + + 
+ 25   . .|. . . . . . . . .
+     + + + + + + + + + + + 
+ 26   . .|. . . . . . . . .
+     +-+-+-+-+-+-+-+-+-+-+-
+  0   . .|. . . . . . . . .
+heads: #0A L25 (3, 22)
+--- board at the start of her turn, round 3
+     62 0 1 2 3 4 5 6 7 8 9
+     + + + + + + + + + + + 
+ 16   .|. . . . . . . .|a|.
+     + + + + + + + + + + + 
+ 17   .|. . . . . . . .|a|.
+     + + + + + + + + + + + 
+ 18   .|. . . . . . . .|A|.
+     + + + + + + + + + +-+-
+ 19   .|. . . . . . . . . .
+     + + + + + + + + + + + 
+ 20   .|. a a a a a . . . .
+     + + + + + + + + + + + 
+ 21   .|. a a A @ a . . . .
+     + + + + + + + + + + + 
+ 22   .|. a . . a a . . . .
+     + + + + + + + + + + + 
+ 23   .|. a A . . a . . . .
+     + + + + + + + + + + + 
+ 24   .|. a a . a a . . . .
+     + + + + + + + + + + + 
+ 25   .|. a a a a . . . . .
+     + + + + + + + + + + + 
+ 26   .|. . . . A . . . . .
+heads: #0A L2 (4, 21); #14A L19 (4, 26); #21A L4 (8, 18); #22A L2 (3, 21); #28A L2 (2, 23)

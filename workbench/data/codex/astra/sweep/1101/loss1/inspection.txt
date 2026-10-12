@@ -1,0 +1,64 @@
+last queen turns
+{'round': 409, 'id': 1, 'event': 254318, 'body': [(56, 2), (56, 1), (57, 1)], 'units': 59, 'actions': [{'kind': 0, 'dirs': [1], 'child': None, 'tle': False}], 'logs': [], 'updates': [[(57, 2), (56, 2), (56, 1)]], 'eats': []}
+{'round': 410, 'id': 1, 'event': 254936, 'body': [(57, 2), (56, 2), (56, 1)], 'units': 60, 'actions': [{'kind': 0, 'dirs': [0], 'child': None, 'tle': False}], 'logs': [], 'updates': [[(57, 1), (57, 2), (56, 2)]], 'eats': []}
+{'round': 411, 'id': 1, 'event': 255568, 'body': [(57, 1), (57, 2), (56, 2)], 'units': 62, 'actions': [{'kind': 0, 'dirs': [3], 'child': None, 'tle': False}], 'logs': [], 'updates': [[(56, 1), (57, 1), (57, 2)]], 'eats': []}
+{'round': 412, 'id': 1, 'event': 256195, 'body': [(56, 1), (57, 1), (57, 2)], 'units': 60, 'actions': [{'kind': 0, 'dirs': [2], 'child': None, 'tle': False}], 'logs': [], 'updates': [[(56, 2), (56, 1), (57, 1)]], 'eats': []}
+{'round': 413, 'id': 1, 'event': 256816, 'body': [(56, 2), (56, 1), (57, 1)], 'units': 60, 'actions': [{'kind': 0, 'dirs': [1], 'child': None, 'tle': False}], 'logs': [], 'updates': [[(57, 2), (56, 2), (56, 1)]], 'eats': []}
+{'round': 414, 'id': 1, 'event': 257410, 'body': [(57, 2), (56, 2), (56, 1)], 'units': 60, 'actions': [{'kind': 0, 'dirs': [0], 'child': None, 'tle': False}], 'logs': [], 'updates': [[(57, 1), (57, 2), (56, 2)]], 'eats': []}
+{'round': 415, 'id': 1, 'event': 257993, 'body': [(57, 1), (57, 2), (56, 2)], 'units': 57, 'actions': [{'kind': 0, 'dirs': [3], 'child': None, 'tle': False}], 'logs': [], 'updates': [[(56, 1), (57, 1), (57, 2)]], 'eats': []}
+{'round': 416, 'id': 1, 'event': 258574, 'body': [(56, 1), (57, 1), (57, 2)], 'units': 55, 'actions': [{'kind': 0, 'dirs': [2], 'child': None, 'tle': False}], 'logs': [], 'updates': [[(56, 2), (56, 1), (57, 1)]], 'eats': []}
+{'round': 417, 'id': 1, 'event': 259159, 'body': [(56, 2), (56, 1), (57, 1)], 'units': 56, 'actions': [{'kind': 0, 'dirs': [1], 'child': None, 'tle': False}], 'logs': [], 'updates': [[(57, 2), (56, 2), (56, 1)]], 'eats': []}
+{'round': 418, 'id': 1, 'event': 259723, 'body': [(57, 2), (56, 2), (56, 1)], 'units': 55, 'actions': [{'kind': 0, 'dirs': [0], 'child': None, 'tle': False}], 'logs': [], 'updates': [[(57, 1), (57, 2), (56, 2)]], 'eats': []}
+{'round': 419, 'id': 1, 'event': 260282, 'body': [(57, 1), (57, 2), (56, 2)], 'units': 55, 'actions': [{'kind': 0, 'dirs': [3], 'child': None, 'tle': False}], 'logs': [], 'updates': [[(56, 1), (57, 1), (57, 2), (56, 2)]], 'eats': [(56, 1)]}
+{'round': 420, 'id': 1, 'event': 260836, 'body': [(56, 1), (57, 1), (57, 2), (56, 2)], 'units': 55, 'actions': [{'kind': 0, 'dirs': [1], 'child': None, 'tle': False}], 'logs': [], 'updates': [], 'eats': []}
+postdeath {'round': 420, 'event': 260838, 'id': 195, 'head': (21, 39), 'queen': (3, 1), 'topological': 9999, 'manhattan': 20} {'round': 423, 'event': 262801, 'id': 843, 'head': (2, 0), 'queen': (2, 1), 'topological': 9999, 'manhattan': 1} near count 0 queen locations Counter({(3, 1): 21, (3, 2): 20, (2, 2): 20, (2, 1): 19})
+queen meals [(1, 0, [(2, 2)]), (1, 1, [(57, 2)]), (419, 0, [(3, 1)]), (419, 1, [(56, 1)]), (421, 0, [(3, 2)])]
+r418 center=(57, 2) body=[(57, 2), (56, 2), (56, 1)] action=[{'kind': 0, 'dirs': [0], 'child': None, 'tle': False}]
++  +  +  +  +  +  +  +
+ A  a  .  a  a  a  a  
++--+--+--+--+--+--+--+
+ .  .  .  .  .  .  .  
++  +  +--+--+  +  +  +
+ .  . |q  . |.  .  .  
++  +  +  +  +  +  +  +
+ .  . |q  Q |.  .  .  
++  +  +--+--+  +  +  +
+ .  .  b  .  .  .  .  
++--+  +  +  +  +  +  +
+ . |.  B  .  .  .  .  
++  +  +  +  +  +  +  +
+ . |.  .  .  .  .  .  
++--+  +  +  +  +  +  +
+r419 center=(57, 1) body=[(57, 1), (57, 2), (56, 2)] action=[{'kind': 0, 'dirs': [3], 'child': None, 'tle': False}]
++  +  +  +  +  +  +  +
+ .  .  .  a  .  .  a  
++  +  +  +  +  +  +  +
+ a  .  *  a  a  a  .  
++--+--+--+--+--+--+--+
+ .  .  .  .  .  .  .  
++  +  +--+--+  +  +  +
+ .  . |*  Q |.  .  .  
++  +  +  +  +  +  +  +
+ .  . |q  q |.  .  .  
++  +  +--+--+  +  +  +
+ .  .  .  .  .  .  .  
++--+  +  +  +  +  +  +
+ . |.  b  B  .  .  .  
++  +  +  +  +  +  +  +
+r420 center=(56, 1) body=[(56, 1), (57, 1), (57, 2), (56, 2)] action=[{'kind': 0, 'dirs': [1], 'child': None, 'tle': False}]
++  +  +  +  +  +  +  +
+ .  .  A  .  a  .  .  
++  +  +  +  +  +  +  +
+ a  .  .  *  a  a  .  
++--+--+--+--+--+--+--+
+ .  .  .  .  .  .  .  
++  +  +  +--+--+  +  +
+ .  .  . |Q  q |.  .  
++  +  +  +  +  +  +  +
+ .  .  . |q  q |.  .  
++  +  +  +--+--+  +  +
+ .  .  .  .  B  .  .  
++--+--+  +  +  +  +  +
+|.  . |.  .  b  .  .  
++  +  +  +  +  +  +  +
+

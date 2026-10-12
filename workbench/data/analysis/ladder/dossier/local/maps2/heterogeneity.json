@@ -1,0 +1,67 @@
+{
+  "examples": [
+    {
+      "replay": "data/online/dl-20261003/M983514.replay",
+      "rounds": 500,
+      "mirror_pair": [
+        [
+          33,
+          1
+        ],
+        [
+          29,
+          25
+        ]
+      ],
+      "rounds_with_at_least_one_empty_mirror": 21,
+      "natural_birth_rounds": [
+        0,
+        5,
+        7,
+        31,
+        49,
+        50,
+        55,
+        64,
+        67,
+        114,
+        123,
+        131,
+        143,
+        192,
+        205,
+        225,
+        255,
+        295,
+        312,
+        319,
+        395
+      ],
+      "births_on_mirror_pair": {
+        "96": 12,
+        "1604": 10
+      }
+    },
+    {
+      "replay": "data/online/dl-20261003/M990346.replay",
+      "rounds": 500,
+      "mirror_pair": [
+        [
+          33,
+          1
+        ],
+        [
+          29,
+          25
+        ]
+      ],
+      "rounds_with_at_least_one_empty_mirror": 494,
+      "natural_birth_rounds": [],
+      "births_on_mirror_pair": {
+        "96": 0,
+        "1604": 0
+      }
+    }
+  ],
+  "inference": "The same visible Slithery Fight geometry is inconsistent with one fixed fast interval on this mirror pair; union-of-birth sites cannot identify one server spawn layout."
+}

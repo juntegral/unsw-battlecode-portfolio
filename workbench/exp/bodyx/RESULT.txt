@@ -1,0 +1,8 @@
+BODYX ANALYSIS 2026-10-02 10:11:29 KST; 192/192판·84짝·누락0·이력오류0 PASS
+발동 PASS: census ON거절10/10·OFF완주10/10, 합성3998/3998, 실제 후보 제거35(하한)
+다중 S PASS: 전체 OFF19/3189→ON0/3638; 여왕 OFF9/149→ON0/180; 원시S1588→1591
+몸 전이 PASS: 완주7281(ON3504) oracle/step/update drift0; 실제 기억 FAIL122/3504, unknown33·unseen14·누락0
+안전 FAIL: H+45·A+1, 원시 증가44/84키·기제 증가52/84키, 새여왕5·조기8, 지급실패1
+깨짐: 오류/timeout/no reply0 PASS; OFF공식WASM 동일·사건/음파12/12 PASS; CPU max32.4M/192판 PASS, 깊이 비교226781
+판면2: board-intended-before.txt / board-intended-after.txt; 기준별 값·N·판정은 VERSION.md §18·RESULT.md
+제안: switch OFF — 목적은 개선됐으나 기억 drift·지급 실패·사망 회귀가 남아 부분 적용 규칙 미충족.

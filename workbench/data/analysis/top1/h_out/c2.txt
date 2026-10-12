@@ -1,0 +1,81 @@
+== 1. How the own queen ended, in wins and in losses (share of games) ==
+  meow       wins   n= 112  alive 25%  ram stepped/stayed in 16%  ram cornered 25%  ram unseen 4%  boxed bodies 20%  boxed terrain 8%  own ram 2%  other 1%
+  meow       losses n= 289  alive 4%  ram stepped/stayed in 30%  ram cornered 30%  ram unseen 9%  boxed bodies 13%  boxed terrain 7%  own ram 6%
+  meow live  wins   n=  77  alive 25%  ram stepped/stayed in 18%  ram cornered 23%  ram unseen 4%  boxed bodies 21%  boxed terrain 6%  own ram 3%
+  meow live  losses n= 198  alive 4%  ram stepped/stayed in 27%  ram cornered 28%  ram unseen 10%  boxed bodies 15%  boxed terrain 8%  own ram 7%
+  opp        wins   n= 289  alive 55%  ram stepped/stayed in 3%  ram cornered 7%  ram unseen 2%  boxed bodies 20%  boxed terrain 10%  own ram 1%  other 2%
+  opp        losses n= 112  alive 3%  ram stepped/stayed in 16%  ram cornered 42%  ram unseen 2%  boxed bodies 14%  boxed terrain 6%  own ram 13%  other 4%
+  Vibing++   wins   n= 316  alive 37%  ram stepped/stayed in 5%  ram cornered 21%  ram unseen 10%  boxed bodies 18%  boxed terrain 4%  own ram 4%  other 0%
+  Vibing++   losses n= 186  alive 9%  ram stepped/stayed in 10%  ram cornered 33%  ram unseen 18%  boxed bodies 19%  boxed terrain 5%  own ram 4%  other 1%
+  SSS        wins   n= 326  alive 57%  ram stepped/stayed in 6%  ram cornered 20%  ram unseen 8%  boxed bodies 4%  boxed terrain 3%  own ram 1%  other 1%
+  SSS        losses n= 177  alive 12%  ram stepped/stayed in 11%  ram cornered 45%  ram unseen 18%  boxed bodies 6%  boxed terrain 3%  own ram 3%  other 3%
+  forgot     wins   n= 359  alive 58%  ram stepped/stayed in 3%  ram cornered 23%  ram unseen 8%  boxed bodies 3%  boxed terrain 4%  own ram 2%  other 0%
+  forgot     losses n= 273  alive 7%  ram stepped/stayed in 11%  ram cornered 50%  ram unseen 16%  boxed bodies 5%  boxed terrain 5%  own ram 4%  other 3%
+
+== 2. meow by queen rules (on = maps over 600 cells) ==
+  meow rules on : 256 games, won 71, queen alive at the end 35; {'r500 L her dead': 71, 'wipe W': 37, 'wipe L': 48, 'r500 L her alive': 66, 'r500 W her dead': 31, 'r500 W her alive': 3}
+  meow rules off: 145 games, won 41, queen alive at the end 4; {'wipe W': 30, 'r500 L her dead': 31, 'r500 L her alive': 18, 'wipe L': 55, 'r500 W her dead': 11}
+  meow live rules on : 175 games, won 51, queen alive at the end 25; {'r500 L her dead': 46, 'wipe W': 26, 'wipe L': 33, 'r500 L her alive': 45, 'r500 W her dead': 23, 'r500 W her alive': 2}
+  meow live rules off: 100 games, won 26, queen alive at the end 2; {'wipe W': 21, 'r500 L her dead': 23, 'r500 L her alive': 14, 'wipe L': 37, 'r500 W her dead': 5}
+
+== 2b. Economy at the moment of death: own / enemy total length in the round our queen died, by part ==
+  meow      a core         n=104  ratio under 0.67: 60, 0.67-1: 22, 1-1.5: 14, over 1.5: 8; mean units own 19 vs enemy 31; mean round 114
+  meow      b cut          n= 14  ratio under 0.67: 3, 0.67-1: 0, 1-1.5: 10, over 1.5: 1; mean units own 13 vs enemy 20; mean round 115
+  meow      c1 own ram     n= 10  ratio under 0.67: 7, 0.67-1: 2, 1-1.5: 1, over 1.5: 0; mean units own 4 vs enemy 20; mean round 99
+  meow      cornered rams  n=116  ratio under 0.67: 60, 0.67-1: 27, 1-1.5: 12, over 1.5: 17; mean units own 20 vs enemy 30; mean round 131
+  meow      all deaths     n=362  ratio under 0.67: 174, 0.67-1: 85, 1-1.5: 54, over 1.5: 49; mean units own 20 vs enemy 29; mean round 124
+  meow live a core         n= 68  ratio under 0.67: 37, 0.67-1: 15, 1-1.5: 10, over 1.5: 6; mean units own 20 vs enemy 30; mean round 109
+  meow live b cut          n= 11  ratio under 0.67: 3, 0.67-1: 0, 1-1.5: 7, over 1.5: 1; mean units own 13 vs enemy 22; mean round 146
+  meow live c1 own ram     n=  8  ratio under 0.67: 7, 0.67-1: 1, 1-1.5: 0, over 1.5: 0; mean units own 3 vs enemy 23; mean round 115
+  meow live cornered rams  n= 74  ratio under 0.67: 38, 0.67-1: 18, 1-1.5: 7, over 1.5: 11; mean units own 19 vs enemy 29; mean round 130
+  meow live all deaths     n=248  ratio under 0.67: 118, 0.67-1: 56, 1-1.5: 39, over 1.5: 35; mean units own 20 vs enemy 29; mean round 127
+
+== 3. Each part of candidate 2 ==
+
+--- meow
+  a   core: never end in a visible reach: deaths 104 (rules on 68, off 36); wipe-outs 54, r500 wins 6, r500 losses her dead 26, her alive 18
+       strict +26 (+6.5 pts) | top-three survival +8.6 (+2.1) | our own other rates +2.6 (+0.6)
+  b   shed, never cut: deaths 14 (rules on 14, off 0); wipe-outs 0, r500 wins 5, r500 losses her dead 4, her alive 5
+       strict +4 (+1.0 pts) | top-three survival +1.4 (+0.4) | our own other rates +0.4 (+0.1)
+  c1  never ram (free safe cell existed): deaths 10 (rules on 0, off 10); wipe-outs 6, r500 wins 0, r500 losses her dead 4, her alive 0
+       strict +4 (+1.0 pts) | top-three survival +1.2 (+0.3) | our own other rates +0.0 (+0.0)
+  c2  never a portal (boxed with a portal side, maps of 600 cells or fewer): deaths 14 (rules on 0, off 14); wipe-outs 1, r500 wins 1, r500 losses her dead 7, her alive 5
+       strict +7 (+1.7 pts) | top-three survival +2.7 (+0.7) | our own other rates +0.0 (+0.0)
+  c3  never onto a cell with no way round (terrain dead end): deaths 30 (rules on 9, off 21); wipe-outs 7, r500 wins 8, r500 losses her dead 8, her alive 7
+       strict +8 (+2.0 pts) | top-three survival +4.0 (+1.0) | our own other rates +0.4 (+0.1)
+  a+b: deaths 118 (rules on 82, off 36); wipe-outs 54, r500 wins 11, r500 losses her dead 30, her alive 23
+       strict +30 (+7.5 pts) | top-three survival +10.0 (+2.5) | our own other rates +3.6 (+0.9)
+  a+b+c1 (the candidate as proposed): deaths 128 (rules on 82, off 46); wipe-outs 60, r500 wins 11, r500 losses her dead 34, her alive 23
+       strict +34 (+8.5 pts) | top-three survival +11.1 (+2.8) | our own other rates +3.7 (+0.9)
+  a+b+c1+c2: deaths 142 (rules on 82, off 60); wipe-outs 61, r500 wins 12, r500 losses her dead 41, her alive 28
+       strict +41 (+10.2 pts) | top-three survival +13.8 (+3.5) | our own other rates +3.7 (+0.9)
+  a+b+c1+c2+c3 (the whole candidate): deaths 172 (rules on 91, off 81); wipe-outs 68, r500 wins 20, r500 losses her dead 49, her alive 35
+       strict +49 (+12.2 pts) | top-three survival +17.9 (+4.5) | our own other rates +5.0 (+1.2)
+  d   team-mates off her exit (not in the candidate): deaths 31 (rules on 15, off 16); wipe-outs 10, r500 wins 8, r500 losses her dead 6, her alive 7
+       strict +6 (+1.5 pts) | top-three survival +2.5 (+0.6) | our own other rates +0.5 (+0.1)
+  everything she or her team controls (a-d): deaths 203 (rules on 106, off 97); wipe-outs 78, r500 wins 28, r500 losses her dead 55, her alive 42
+       strict +55 (+13.7 pts) | top-three survival +20.4 (+5.1) | our own other rates +9.4 (+2.3)
+
+--- meow live
+  a   core: never end in a visible reach: deaths 68 (rules on 46, off 22); wipe-outs 37, r500 wins 5, r500 losses her dead 14, her alive 12
+       strict +14 (+5.1 pts) | top-three survival +4.7 (+1.7) | our own other rates +1.3 (+0.5)
+  b   shed, never cut: deaths 11 (rules on 11, off 0); wipe-outs 0, r500 wins 4, r500 losses her dead 2, her alive 5
+       strict +2 (+0.7 pts) | top-three survival +0.9 (+0.3) | our own other rates +0.4 (+0.1)
+  c1  never ram (free safe cell existed): deaths 8 (rules on 0, off 8); wipe-outs 5, r500 wins 0, r500 losses her dead 3, her alive 0
+       strict +3 (+1.1 pts) | top-three survival +0.8 (+0.3) | our own other rates +0.0 (+0.0)
+  c2  never a portal (boxed with a portal side, maps of 600 cells or fewer): deaths 10 (rules on 0, off 10); wipe-outs 1, r500 wins 0, r500 losses her dead 4, her alive 5
+       strict +4 (+1.5 pts) | top-three survival +1.7 (+0.6) | our own other rates +0.0 (+0.0)
+  c3  never onto a cell with no way round (terrain dead end): deaths 21 (rules on 8, off 13); wipe-outs 5, r500 wins 5, r500 losses her dead 6, her alive 5
+       strict +6 (+2.2 pts) | top-three survival +3.1 (+1.1) | our own other rates +0.2 (+0.1)
+  a+b: deaths 79 (rules on 57, off 22); wipe-outs 37, r500 wins 9, r500 losses her dead 16, her alive 17
+       strict +16 (+5.8 pts) | top-three survival +5.6 (+2.1) | our own other rates +2.0 (+0.7)
+  a+b+c1 (the candidate as proposed): deaths 87 (rules on 57, off 30); wipe-outs 42, r500 wins 9, r500 losses her dead 19, her alive 17
+       strict +19 (+6.9 pts) | top-three survival +6.4 (+2.3) | our own other rates +2.1 (+0.8)
+  a+b+c1+c2: deaths 97 (rules on 57, off 40); wipe-outs 43, r500 wins 9, r500 losses her dead 23, her alive 22
+       strict +23 (+8.4 pts) | top-three survival +8.1 (+3.0) | our own other rates +2.1 (+0.8)
+  a+b+c1+c2+c3 (the whole candidate): deaths 118 (rules on 65, off 53); wipe-outs 48, r500 wins 14, r500 losses her dead 29, her alive 27
+       strict +29 (+10.5 pts) | top-three survival +11.2 (+4.1) | our own other rates +2.8 (+1.0)
+  d   team-mates off her exit (not in the candidate): deaths 23 (rules on 11, off 12); wipe-outs 7, r500 wins 6, r500 losses her dead 5, her alive 5
+       strict +5 (+1.8 pts) | top-three survival +2.2 (+0.8) | our own other rates +0.4 (+0.2)
+  everything she or her team controls (a-d): deaths 141 (rules on 76, off 65); wipe-outs 55, r500 wins 20, r500 losses her dead 34, her alive 32
+       strict +34 (+12.4 pts) | top-three survival +13.4 (+4.9) | our own other rates +6.0 (+2.2)

@@ -1,0 +1,90 @@
+## v1.6g+H0 identity (2026-10-01 17:59 KST)
+# CONV2 off configs: held-out maps (FORTRESS default) vs v1.6g; recognised Autarky/Portals/PD vs v1.6g
+proxy4_king_Colosseum_A_1: f98fe80d5a4ac44a vs f98fe80d5a4ac44a IDENTICAL (events 22856 / 22856)
+proxy4_king_arena_A_1: 8044423bf62b2517 vs 8044423bf62b2517 IDENTICAL (events 2110 / 2110)
+proxy4_king_big_empty_A_1: 642aaa2fb24553e3 vs 642aaa2fb24553e3 IDENTICAL (events 268739 / 268739)
+proxy4_king_default_small_A_1: 2e6375b7dfca91aa vs 2e6375b7dfca91aa IDENTICAL (events 29659 / 29659)
+proxy4_king_stronghold_A_1: 2549e0c9d57aa8ae vs 2549e0c9d57aa8ae IDENTICAL (events 157138 / 157138)
+5/5 identical (exp/v16/h0-id-H vs exp/v16/gid-g-H)
+proxy4_king_autarky_A_1: 09cebc6cdc2a82f2 vs 09cebc6cdc2a82f2 IDENTICAL (events 135147 / 135147)
+proxy4_king_portals_A_1: 7018482d2741b1df vs 7018482d2741b1df IDENTICAL (events 109494 / 109494)
+proxy4_king_prisoners_dilemma_A_1: 04ad4e11e4a2c962 vs 04ad4e11e4a2c962 IDENTICAL (events 71505 / 71505)
+3/3 identical (exp/v16/h0-id-fort vs exp/v16/g-id-fort)
+# both H0 switches off vs v1.6g
+proxy4_king_default_B_1: 2c62436ffc1966a5 vs 2c62436ffc1966a5 IDENTICAL (events 130240 / 130240)
+proxy4_king_devil_B_1: 242ed86e8a931604 vs 242ed86e8a931604 IDENTICAL (events 137933 / 137933)
+proxy4_swarm_default_B_1: 172ee041bf7d4202 vs 172ee041bf7d4202 IDENTICAL (events 125441 / 125441)
+proxy4_swarm_devil_B_1: 653530b364242e72 vs 653530b364242e72 IDENTICAL (events 139885 / 139885)
+4/4 identical (exp/v16/h0off-d vs exp/v16/g-d)
+proxy4_king_slithery_fight_A_1: aa3a7c6a03278f30 vs aa3a7c6a03278f30 IDENTICAL (events 311135 / 311135)
+proxy4_king_trauma_A_1: 1d576d818ac9ce0e vs 1d576d818ac9ce0e IDENTICAL (events 114296 / 114296)
+2/2 identical (exp/v16/h0off-se vs exp/v16/g-se-a)
+# CONV2 rows: H0 vs v1.6g, first difference against v1.6g's first inflated-king trace
+proxy4_king_default_A_1: first difference r349; v1.6g's first inflated-king trace r340 (#19 declares #51 (true L2)) EXPLAINED
+proxy4_king_default_A_2: first difference r342; v1.6g's first inflated-king trace r344 (#149 declares #81 (true L3)) UNEXPLAINED
+proxy4_king_default_B_1: first difference r344; v1.6g's first inflated-king trace r340 (#120 declares #15 (true L2)) EXPLAINED
+proxy4_king_default_B_2: first difference r380; v1.6g's first inflated-king trace r340 (#5 declares #7 (true L2)) EXPLAINED
+proxy4_king_devil_A_1: first difference r365; v1.6g's first inflated-king trace r340 (#81 declares #2 (true L2)) EXPLAINED
+proxy4_king_devil_A_2: first difference r345; v1.6g's first inflated-king trace r340 (#48 declares #58 (true L2)) EXPLAINED
+proxy4_king_devil_B_1: first difference r350; v1.6g's first inflated-king trace r340 (#239 declares #140 (true L2)) EXPLAINED
+proxy4_king_devil_B_2: first difference r373; v1.6g's first inflated-king trace r340 (#58 declares #3 (true L2)) EXPLAINED
+proxy4_king_queen_of_spades_A_1: first difference r408; v1.6g's first inflated-king trace r400 (#10 declares #65 (true L3)) EXPLAINED
+proxy4_king_queen_of_spades_A_2: first difference r424; v1.6g's first inflated-king trace r400 (#155 declares #148 (true L3)) EXPLAINED
+proxy4_king_queen_of_spades_B_1: first difference r404; v1.6g's first inflated-king trace r400 (#137 declares #1 (true L3)) EXPLAINED
+proxy4_king_queen_of_spades_B_2: first difference r414; v1.6g's first inflated-king trace r400 (#3 declares #10 (true L2)) EXPLAINED
+proxy4_swarm_default_A_1: first difference r351; v1.6g's first inflated-king trace r340 (#0 declares #138 (true L2)) EXPLAINED
+proxy4_swarm_default_A_2: first difference r347; v1.6g's first inflated-king trace r340 (#0 declares #34 (true L2)) EXPLAINED
+proxy4_swarm_default_B_1: first difference r345; v1.6g's first inflated-king trace r340 (#44 declares #77 (true L3)) EXPLAINED
+proxy4_swarm_default_B_2: first difference r359; v1.6g's first inflated-king trace r340 (#145 declares #85 (true L2)) EXPLAINED
+proxy4_swarm_devil_A_1: first difference r367; v1.6g's first inflated-king trace r340 (#283 declares #2 (true L3)) EXPLAINED
+proxy4_swarm_devil_A_2: first difference r344; v1.6g's first inflated-king trace r340 (#116 declares #115 (true L2)) EXPLAINED
+proxy4_swarm_devil_B_1: first difference r341; v1.6g's first inflated-king trace r340 (#5 declares #39 (true L2)) EXPLAINED
+proxy4_swarm_devil_B_2: first difference r375; v1.6g's first inflated-king trace r340 (#37 declares #161 (true L2)) EXPLAINED
+proxy4_swarm_queen_of_spades_A_1: first difference r408; v1.6g's first inflated-king trace r400 (#27 declares #130 (true L2)) EXPLAINED
+proxy4_swarm_queen_of_spades_A_2: first difference r405; v1.6g's first inflated-king trace r400 (#0 declares #132 (true L2)) EXPLAINED
+proxy4_swarm_queen_of_spades_B_1: first difference r408; v1.6g's first inflated-king trace r400 (#4 declares #169 (true L2)) EXPLAINED
+proxy4_swarm_queen_of_spades_B_2: first difference r401; v1.6g's first inflated-king trace r400 (#1 declares #103 (true L2)) EXPLAINED
+0 identical, 23 differ at or after an inflated-king trace, 1 differ without one (exp/v16/h0-d vs exp/v16/g-d)
+proxy4_king_schooltime_b_A_1: first difference r349; v1.6g's first inflated-king trace r340 (#4 declares #23 (true L2)) EXPLAINED
+proxy4_king_schooltime_b_A_2: first difference r352; v1.6g's first inflated-king trace r340 (#113 declares #28 (true L2)) EXPLAINED
+proxy4_king_schooltime_b_B_1: first difference r347; v1.6g's first inflated-king trace r340 (#22 declares #16 (true L2)) EXPLAINED
+proxy4_king_schooltime_b_B_2: first difference r371; v1.6g's first inflated-king trace r340 (#57 declares #3 (true L3)) EXPLAINED
+proxy4_swarm_schooltime_b_A_1: first difference r343; v1.6g's first inflated-king trace r340 (#4 declares #47 (true L2)) EXPLAINED
+proxy4_swarm_schooltime_b_A_2: first difference r346; v1.6g's first inflated-king trace r340 (#8 declares #0 (true L3)) EXPLAINED
+proxy4_swarm_schooltime_b_B_1: first difference r353; v1.6g's first inflated-king trace r340 (#5 declares #81 (true L2)) EXPLAINED
+proxy4_swarm_schooltime_b_B_2: identical
+1 identical, 7 differ at or after an inflated-king trace, 0 differ without one (exp/v16/h0-dsb vs exp/v16/g-dsb)
+proxy4_king_schooltime_A_1: first difference r262; v1.6g's first inflated-king trace r250 (#218 declares #209 (true L2)) EXPLAINED
+proxy4_king_schooltime_A_2: first difference r301; v1.6g's first inflated-king trace r250 (#7 declares #15 (true L2)) EXPLAINED
+proxy4_king_schooltime_B_1: first difference r279; v1.6g's first inflated-king trace r250 (#19 declares #219 (true L2)) EXPLAINED
+proxy4_king_schooltime_B_2: first difference r251; v1.6g's first inflated-king trace r250 (#13 declares #172 (true L3)) EXPLAINED
+proxy4_king_slithery_fight_A_1: first difference r318; v1.6g's first inflated-king trace r250 (#525 declares #518 (true L3)) EXPLAINED
+proxy4_king_slithery_fight_A_2: identical
+proxy4_king_slithery_fight_B_1: first difference r252; v1.6g's first inflated-king trace r250 (#144 declares #87 (true L3)) EXPLAINED
+proxy4_king_slithery_fight_B_2: first difference r297; v1.6g's first inflated-king trace r250 (#65 declares #614 (true L2)) EXPLAINED
+proxy4_king_trauma_A_1: first difference r309; v1.6g's first inflated-king trace r250 (#52 declares #93 (true L3)) EXPLAINED
+proxy4_king_trauma_A_2: first difference r301; v1.6g's first inflated-king trace r250 (#0 declares #2 (true L3)) EXPLAINED
+proxy4_king_trauma_B_1: first difference r260; v1.6g's first inflated-king trace r250 (#132 declares #95 (true L2)) EXPLAINED
+proxy4_king_trauma_B_2: first difference r352; v1.6g's first inflated-king trace r250 (#8 declares #24 (true L3)) EXPLAINED
+proxy4_swarm_schooltime_A_1: first difference r261; v1.6g's first inflated-king trace r250 (#76 declares #118 (true L3)) EXPLAINED
+proxy4_swarm_schooltime_A_2: first difference r263; v1.6g's first inflated-king trace r250 (#61 declares #158 (true L3)) EXPLAINED
+proxy4_swarm_schooltime_B_1: first difference r269; v1.6g's first inflated-king trace r250 (#234 declares #106 (true L2)) EXPLAINED
+proxy4_swarm_schooltime_B_2: first difference r251; v1.6g's first inflated-king trace r250 (#38 declares #112 (true L2)) EXPLAINED
+proxy4_swarm_slithery_fight_A_1: first difference r252; v1.6g's first inflated-king trace r250 (#615 declares #135 (true L3)) EXPLAINED
+proxy4_swarm_slithery_fight_A_2: first difference r257; v1.6g's first inflated-king trace r250 (#59 declares #130 (true L3)) EXPLAINED
+proxy4_swarm_slithery_fight_B_1: first difference r253; v1.6g's first inflated-king trace r251 (#313 declares #95 (true L2)) EXPLAINED
+proxy4_swarm_slithery_fight_B_2: first difference r398; v1.6g's first inflated-king trace r254 (#842 declares #815 (true L2)) EXPLAINED
+proxy4_swarm_trauma_A_1: first difference r252; v1.6g's first inflated-king trace r251 (#18 declares #2 (true L2)) EXPLAINED
+proxy4_swarm_trauma_A_2: first difference r294; v1.6g's first inflated-king trace r250 (#0 declares #5 (true L3)) EXPLAINED
+proxy4_swarm_trauma_B_1: first difference r251; v1.6g's first inflated-king trace r250 (#7 declares #13 (true L2)) EXPLAINED
+proxy4_swarm_trauma_B_2: first difference r251; v1.6g's first inflated-king trace r250 (#17 declares #56 (true L3)) EXPLAINED
+1 identical, 23 differ at or after an inflated-king trace, 0 differ without one (exp/v16/h0-se-a vs exp/v16/g-se-a)
+proxy4_king_slithery_fight_b_A_1: first difference r278; v1.6g's first inflated-king trace r250 (#56 declares #16 (true L2)) EXPLAINED
+proxy4_king_slithery_fight_b_A_2: first difference r252; v1.6g's first inflated-king trace r250 (#62 declares #528 (true L3)) EXPLAINED
+proxy4_king_slithery_fight_b_B_1: first difference r255; v1.6g's first inflated-king trace r250 (#7 declares #407 (true L2)) EXPLAINED
+proxy4_king_slithery_fight_b_B_2: first difference r265; v1.6g's first inflated-king trace r250 (#11 declares #16 (true L2)) EXPLAINED
+proxy4_swarm_slithery_fight_b_A_1: first difference r261; v1.6g's first inflated-king trace r250 (#78 declares #15 (true L2)) EXPLAINED
+proxy4_swarm_slithery_fight_b_A_2: first difference r286; v1.6g's first inflated-king trace r253 (#93 declares #58 (true L2)) EXPLAINED
+proxy4_swarm_slithery_fight_b_B_1: first difference r254; v1.6g's first inflated-king trace r250 (#43 declares #56 (true L3)) EXPLAINED
+proxy4_swarm_slithery_fight_b_B_2: first difference r266; v1.6g's first inflated-king trace r250 (#680 declares #654 (true L2)) EXPLAINED
+0 identical, 8 differ at or after an inflated-king trace, 0 differ without one (exp/v16/h0-se-b vs exp/v16/g-se-b)

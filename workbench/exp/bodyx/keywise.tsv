@@ -1,0 +1,85 @@
+key	on_multi	off_multi	on_completed	off_completed	on_S	off_S	on_multi_S	off_multi_S	on_queen_multi_S	off_queen_multi_S	other_reason_delta	cause_delta	other_no_increase
+proxy4_king:arena:A:1	4	4	4	4	0	0	0	0	0	0	"{""H"": 0}"	"{""rammed"": 0}"	PASS
+proxy4_king:arena:B:1	3	3	3	3	0	0	0	0	0	0	"{""H"": 0}"	"{""rammed"": 0}"	PASS
+proxy4_king:big_empty:A:1	259	246	242	220	69	97	0	2	0	1	"{""H"": -4, ""O"": 10, ""S"": -28}"	"{""ram"": -6, ""rammed"": 2, ""sac"": -28, ""trap"": 10}"	FAIL
+proxy4_king:big_empty:B:1	326	319	308	295	64	47	0	2	0	0	"{""H"": -3, ""O"": 6, ""S"": 17}"	"{""ram"": 1, ""rammed"": -4, ""sac"": 16, ""trap"": 7}"	FAIL
+proxy4_king:Colosseum:A:1	10	10	9	9	0	0	0	0	0	0	"{""H"": 0}"	"{""ram"": 0, ""rammed"": 0}"	PASS
+proxy4_king:Colosseum:B:1	13	15	12	15	0	0	0	0	0	0	"{""H"": 0}"	"{""ram"": 1, ""rammed"": -1}"	FAIL
+proxy4_king:default_small:A:1	15	11	15	9	0	1	0	1	0	1	"{""H"": 0, ""O"": 0, ""S"": -1, ""W"": 3}"	"{""ram"": 0, ""rammed"": 0, ""sac"": -1, ""trap"": 3}"	FAIL
+proxy4_king:default_small:B:1	5	13	5	11	0	0	0	0	0	0	"{""H"": -5, ""W"": -4}"	"{""ram"": -8, ""rammed"": 3, ""trap"": -4}"	FAIL
+proxy4_king:stronghold:A:1	9	12	9	12	31	37	0	0	0	0	"{""H"": -2, ""O"": 7, ""S"": -6, ""W"": 11}"	"{""ram"": -1, ""rammed"": -1, ""sac"": -6, ""trap"": 18}"	FAIL
+proxy4_king:stronghold:B:1	19	18	19	18	40	43	0	0	0	0	"{""H"": -1, ""O"": -16, ""S"": -3, ""W"": -11}"	"{""rammed"": -1, ""sac"": -2, ""trap"": -28}"	PASS
+bot-hunter:arena:A:1	4	7	4	6	0	0	0	0	0	0	"{""H"": 0}"	"{""ram"": 0}"	PASS
+bot-hunter:arena:B:1	3	3	3	3	0	0	0	0	0	0	"{""H"": 0}"	"{""rammed"": 0}"	PASS
+bot-hunter:big_empty:A:1	159	135	156	133	53	74	0	0	0	0	"{""H"": 5, ""O"": -4, ""S"": -21}"	"{""ram"": 2, ""rammed"": 3, ""sac"": -20, ""trap"": -5}"	FAIL
+bot-hunter:big_empty:B:1	121	154	119	148	58	63	0	0	0	0	"{""H"": -11, ""O"": -10, ""S"": -5}"	"{""ram"": -5, ""rammed"": -6, ""sac"": -5, ""trap"": -10}"	PASS
+bot-hunter:Colosseum:A:1	235	84	230	80	25	1	0	0	0	0	"{""H"": 22, ""O"": 24, ""S"": 24, ""W"": 11}"	"{""allyHead"": 16, ""enemyBody"": 1, ""ram"": 3, ""rammed"": 3, ""sac"": 32, ""trap"": 26}"	FAIL
+bot-hunter:Colosseum:B:1	138	130	130	122	8	7	0	2	0	0	"{""H"": 7, ""O"": 5, ""S"": 1, ""W"": -1}"	"{""allyHead"": 0, ""enemyBody"": 5, ""ram"": 2, ""rammed"": 5, ""sac"": 0, ""trap"": 0}"	FAIL
+bot-hunter:default_small:A:1	87	82	86	80	15	13	0	0	0	0	"{""H"": 2, ""O"": -2, ""S"": 2, ""W"": -1}"	"{""ram"": 2, ""rammed"": 0, ""sac"": 3, ""trap"": -4}"	FAIL
+bot-hunter:default_small:B:1	94	85	92	82	11	17	0	1	0	1	"{""H"": 4, ""O"": -5, ""S"": -6, ""W"": -7}"	"{""ram"": 2, ""rammed"": 2, ""sac"": -6, ""trap"": -12}"	FAIL
+bot-hunter:stronghold:A:1	13	5	13	5	49	33	0	0	0	0	"{""H"": 2, ""O"": -7, ""S"": 16, ""W"": -17}"	"{""allyHead"": 2, ""sac"": 18, ""trap"": -26}"	FAIL
+bot-hunter:stronghold:B:1	15	13	15	13	43	40	0	0	0	0	"{""H"": 2, ""O"": -9, ""S"": 3, ""W"": -10}"	"{""allyHead"": 2, ""sac"": 3, ""trap"": -19}"	FAIL
+proxy4_king:default:A:1	25	23	23	22	1	0	0	0	0	0	"{""H"": -7, ""O"": 0, ""S"": 1, ""W"": 1}"	"{""ram"": 3, ""rammed"": -10, ""sac"": 0, ""trap"": 2}"	FAIL
+proxy4_king:default:B:1	19	13	19	13	0	0	0	0	0	0	"{""H"": -1, ""O"": 0}"	"{""ram"": 1, ""rammed"": -2, ""trap"": 0}"	FAIL
+proxy4_king:schooltime:A:1	73	27	70	26	30	4	0	1	0	1	"{""H"": 11, ""O"": 7, ""S"": 26, ""W"": 3}"	"{""allyHead"": -2, ""ram"": 6, ""rammed"": 7, ""sac"": 26, ""trap"": 10}"	FAIL
+proxy4_king:schooltime:B:1	32	71	30	68	0	21	0	2	0	1	"{""H"": -6, ""O"": -12, ""S"": -21, ""W"": -18}"	"{""ram"": -3, ""rammed"": -3, ""sac"": -21, ""trap"": -30}"	PASS
+proxy4_king:trophy:A:1	10	10	10	10	0	0	0	0	0	0	"{""H"": 0}"	"{""ram"": 0, ""rammed"": 0}"	PASS
+proxy4_king:trophy:B:1	10	8	10	7	0	0	0	0	0	0	"{""H"": 0, ""W"": 3}"	"{""ram"": 1, ""rammed"": -1, ""trap"": 3}"	FAIL
+proxy4_king:portals:A:1	7	5	7	5	21	21	0	0	0	0	"{""H"": -8, ""O"": 8, ""S"": 0, ""W"": 6}"	"{""allyHead"": -8, ""sac"": 0, ""trap"": 14}"	FAIL
+proxy4_king:portals:B:1	10	7	10	7	23	31	0	0	0	0	"{""H"": 2, ""O"": -29, ""S"": -8, ""W"": -36}"	"{""allyHead"": 2, ""sac"": -7, ""trap"": -66}"	FAIL
+proxy4_king:slithery_fight:A:1	24	21	23	19	15	13	0	0	0	0	"{""H"": -3, ""O"": 1, ""S"": 2, ""W"": 0}"	"{""ram"": -1, ""rammed"": -2, ""sac"": 2, ""trap"": 1}"	FAIL
+proxy4_king:slithery_fight:B:1	43	20	42	19	13	16	0	1	0	0	"{""H"": 13, ""O"": 13, ""S"": -3, ""W"": 12}"	"{""allyHead"": -6, ""ram"": 8, ""rammed"": 11, ""sac"": -3, ""trap"": 25}"	FAIL
+proxy4_king:autarky:A:1	6	4	6	4	18	24	0	0	0	0	"{""H"": 2, ""O"": 1, ""S"": -6, ""W"": -4}"	"{""allyHead"": 2, ""rammed"": 0, ""sac"": -6, ""trap"": -3}"	FAIL
+proxy4_king:autarky:B:1	4	4	4	4	20	20	0	0	0	0	"{""H"": 0, ""O"": 0, ""S"": 0, ""W"": 0}"	"{""allyHead"": 0, ""rammed"": 0, ""sac"": 0, ""trap"": 0}"	PASS
+proxy4_king:prisoners_dilemma:A:1	0	0	0	0	8	8	0	0	0	0	"{""H"": 0, ""O"": 0, ""S"": 0, ""W"": 0}"	"{""allyHead"": 0, ""sac"": 0, ""trap"": 0}"	PASS
+proxy4_king:prisoners_dilemma:B:1	0	0	0	0	8	8	0	0	0	0	"{""H"": 0, ""O"": 0, ""S"": 0, ""W"": 0}"	"{""allyHead"": 0, ""sac"": 0, ""trap"": 0}"	PASS
+bot-hunter:default:A:1	42	36	41	32	14	14	0	2	0	1	"{""A"": 1, ""H"": -7, ""O"": -1, ""S"": 0, ""W"": 0}"	"{""allyHead"": 0, ""enemyBody"": 1, ""ram"": -4, ""rammed"": -3, ""sac"": 0, ""sprintDeath"": 1, ""trap"": -2}"	FAIL
+bot-hunter:default:B:1	35	57	34	53	14	11	0	0	0	0	"{""H"": -6, ""O"": -1, ""S"": 3, ""W"": -7}"	"{""allyHead"": 2, ""enemyBody"": -1, ""ram"": -6, ""rammed"": -2, ""sac"": 2, ""trap"": -6}"	FAIL
+bot-hunter:schooltime:A:1	128	196	126	193	31	54	0	1	0	0	"{""H"": 1, ""O"": -26, ""S"": -23, ""W"": -11}"	"{""allyHead"": -2, ""enemyBody"": 2, ""ram"": 1, ""rammed"": 2, ""sac"": -27, ""trap"": -35}"	FAIL
+bot-hunter:schooltime:B:1	157	153	153	150	51	67	0	1	0	1	"{""H"": 11, ""O"": -2, ""S"": -16, ""W"": 14}"	"{""allyHead"": 6, ""enemyBody"": -1, ""ram"": 0, ""rammed"": 5, ""sac"": -12, ""trap"": 9}"	FAIL
+bot-hunter:trophy:A:1	80	122	77	121	54	54	0	0	0	0	"{""H"": 1, ""O"": -16, ""S"": 0, ""W"": -14}"	"{""allyHead"": 2, ""ram"": 2, ""rammed"": -3, ""sac"": 1, ""trap"": -31}"	FAIL
+bot-hunter:trophy:B:1	52	48	52	47	11	10	0	0	0	0	"{""H"": -1, ""S"": 1}"	"{""ram"": -2, ""rammed"": 1, ""sac"": 1}"	FAIL
+bot-hunter:portals:A:1	12	12	12	12	24	16	0	0	0	0	"{""H"": -8, ""O"": 23, ""S"": 8, ""W"": -5}"	"{""allyHead"": -8, ""sac"": 8, ""trap"": 18}"	FAIL
+bot-hunter:portals:B:1	11	5	11	4	25	29	0	0	0	0	"{""H"": 8, ""O"": 11, ""S"": -4, ""W"": -3}"	"{""allyHead"": 8, ""sac"": -4, ""trap"": 8}"	FAIL
+bot-hunter:slithery_fight:A:1	163	114	158	107	82	86	0	1	0	0	"{""H"": 0, ""O"": 40, ""S"": -4, ""W"": 39}"	"{""ram"": 3, ""rammed"": -3, ""sac"": -2, ""trap"": 77}"	FAIL
+bot-hunter:slithery_fight:B:1	125	120	121	115	61	74	0	0	0	0	"{""H"": 0, ""O"": 10, ""S"": -13, ""W"": 19}"	"{""allyHead"": 4, ""ram"": -2, ""rammed"": -2, ""sac"": -14, ""trap"": 30}"	FAIL
+bot-hunter:autarky:A:1	33	14	33	14	24	29	0	0	0	0	"{""O"": 1, ""S"": -5, ""W"": 30}"	"{""sac"": -5, ""trap"": 31}"	FAIL
+bot-hunter:autarky:B:1	17	25	17	25	31	28	0	0	0	0	"{""H"": 1, ""O"": -2, ""S"": 3, ""W"": 3}"	"{""allyHead"": 0, ""rammed"": 1, ""sac"": 2, ""trap"": 2}"	FAIL
+bot-hunter:prisoners_dilemma:A:1	0	0	0	0	8	8	0	0	0	0	"{""H"": 0, ""O"": 0, ""S"": 0, ""W"": 0}"	"{""allyHead"": 0, ""sac"": 0, ""trap"": 0}"	PASS
+bot-hunter:prisoners_dilemma:B:1	2	2	2	2	10	9	0	0	0	0	"{""O"": -1, ""S"": 1, ""W"": -7}"	"{""sac"": 1, ""trap"": -8}"	FAIL
+proxy4_king:around_unsw:A:1	116	62	104	55	20	14	0	0	0	0	"{""H"": 6, ""O"": 13, ""S"": 6, ""W"": 65}"	"{""ram"": 5, ""rammed"": 1, ""sac"": 4, ""trap"": 80}"	FAIL
+proxy4_king:around_unsw:B:1	34	42	30	37	11	12	0	0	0	0	"{""H"": -9, ""O"": 1, ""S"": -1, ""W"": -16}"	"{""ram"": -6, ""rammed"": -3, ""sac"": -1, ""trap"": -15}"	FAIL
+proxy4_king:australia:A:1	22	19	21	18	9	10	0	0	0	0	"{""H"": 2, ""O"": -1, ""S"": -1, ""W"": -3}"	"{""ram"": 1, ""rammed"": 1, ""sac"": 1, ""trap"": -6}"	FAIL
+proxy4_king:australia:B:1	92	48	85	45	21	19	0	0	0	0	"{""H"": 13, ""O"": 5, ""S"": 2, ""W"": 9}"	"{""ram"": 8, ""rammed"": 5, ""sac"": 2, ""trap"": 14}"	FAIL
+proxy4_king:stripes:A:1	4	3	4	3	0	0	0	0	0	0	"{""H"": -1}"	"{""ram"": 0, ""rammed"": -1}"	PASS
+proxy4_king:stripes:B:1	3	3	3	3	0	0	0	0	0	0	"{""H"": 0}"	"{""rammed"": 0}"	PASS
+bot-hunter:around_unsw:A:1	62	39	61	38	67	48	0	0	0	0	"{""H"": -1, ""O"": -14, ""S"": 19, ""W"": -44}"	"{""allyHead"": -2, ""ram"": -1, ""rammed"": 2, ""sac"": 20, ""trap"": -59}"	FAIL
+bot-hunter:around_unsw:B:1	87	45	83	42	67	75	0	0	0	0	"{""H"": 6, ""O"": -14, ""S"": -8, ""W"": -34}"	"{""ram"": 3, ""rammed"": 3, ""sac"": -9, ""trap"": -47}"	FAIL
+bot-hunter:australia:A:1	35	31	33	31	60	49	0	0	0	0	"{""H"": 0, ""O"": 2, ""S"": 11, ""W"": 13}"	"{""ram"": 1, ""rammed"": -1, ""sac"": 11, ""trap"": 15}"	FAIL
+bot-hunter:australia:B:1	31	21	30	20	66	57	0	0	0	0	"{""H"": 0, ""O"": -11, ""S"": 9, ""W"": 6}"	"{""ram"": -1, ""rammed"": 1, ""sac"": 9, ""trap"": -5}"	FAIL
+bot-hunter:stripes:A:1	3	3	3	3	0	0	0	0	0	0	"{""H"": 0}"	"{""ram"": 0, ""rammed"": 0}"	PASS
+bot-hunter:stripes:B:1	12	8	11	7	0	15	0	0	0	0	"{""H"": 0, ""O"": -6, ""S"": -15, ""W"": -20}"	"{""allyHead"": -2, ""ram"": 2, ""sac"": -14, ""trap"": -27}"	FAIL
+proxy4_king:gen_L_03:A:1	18	21	18	21	6	2	0	0	0	0	"{""H"": 6, ""S"": 4}"	"{""ram"": 1, ""rammed"": 5, ""sac"": 4}"	FAIL
+proxy4_king:gen_L_03:B:1	32	27	32	25	4	13	0	1	0	1	"{""H"": -2, ""S"": -9}"	"{""ram"": -1, ""rammed"": -1, ""sac"": -9}"	PASS
+proxy4_king:gen_X_07:A:1	88	60	86	58	15	15	0	0	0	0	"{""H"": 7, ""O"": -6, ""S"": 0, ""W"": -75}"	"{""allyHead"": 0, ""ram"": 7, ""rammed"": 0, ""sac"": 0, ""trap"": -81}"	FAIL
+proxy4_king:gen_X_07:B:1	112	86	107	76	19	18	0	1	0	1	"{""H"": -7, ""O"": 9, ""S"": 1, ""W"": -59}"	"{""enemyBody"": -1, ""ram"": -5, ""rammed"": -2, ""sac"": 3, ""trap"": -51}"	FAIL
+proxy4_king:gen_S_03:A:1	1	1	1	1	0	0	0	0	0	0	"{""H"": 0, ""O"": 0, ""W"": 2}"	"{""ram"": 0, ""rammed"": 0, ""trap"": 2}"	FAIL
+proxy4_king:gen_S_03:B:1	0	0	0	0	0	0	0	0	0	0	"{""W"": 0}"	"{""trap"": 0}"	PASS
+proxy4_king:gen_M_07:A:1	0	0	0	0	0	0	0	0	0	0	"{""W"": 0}"	"{""trap"": 0}"	PASS
+proxy4_king:gen_M_07:B:1	0	0	0	0	0	0	0	0	0	0	{}	{}	PASS
+proxy4_king:gen_R_01:A:1	0	0	0	0	0	0	0	0	0	0	"{""W"": 0}"	"{""trap"": 0}"	PASS
+proxy4_king:gen_R_01:B:1	0	0	0	0	0	0	0	0	0	0	"{""W"": 0}"	"{""trap"": 0}"	PASS
+proxy4_king:gen_L_02:A:1	0	0	0	0	0	0	0	0	0	0	"{""W"": 0}"	"{""trap"": 0}"	PASS
+proxy4_king:gen_L_02:B:1	0	0	0	0	0	0	0	0	0	0	"{""W"": 0}"	"{""trap"": 0}"	PASS
+bot-hunter:gen_L_03:A:1	14	16	13	14	47	35	0	0	0	0	"{""H"": -1, ""O"": 1, ""S"": 12}"	"{""ram"": -1, ""sac"": 12, ""trap"": 1}"	FAIL
+bot-hunter:gen_L_03:B:1	10	12	9	12	59	33	0	0	0	0	"{""H"": 2, ""O"": 3, ""S"": 26}"	"{""ram"": 1, ""rammed"": 1, ""sac"": 26, ""trap"": 3}"	FAIL
+bot-hunter:gen_X_07:A:1	99	68	98	67	46	28	0	0	0	0	"{""H"": 11, ""O"": -15, ""S"": 18, ""W"": 3}"	"{""ram"": 3, ""rammed"": 8, ""sac"": 20, ""trap"": -14}"	FAIL
+bot-hunter:gen_X_07:B:1	85	90	81	86	4	13	0	0	0	0	"{""H"": -4, ""O"": -17, ""S"": -9, ""W"": -52}"	"{""ram"": -2, ""rammed"": -2, ""sac"": -9, ""trap"": -69}"	PASS
+bot-hunter:gen_S_03:A:1	0	0	0	0	0	0	0	0	0	0	"{""W"": 0}"	"{""trap"": 0}"	PASS
+bot-hunter:gen_S_03:B:1	0	0	0	0	0	0	0	0	0	0	"{""W"": 0}"	"{""trap"": 0}"	PASS
+bot-hunter:gen_M_07:A:1	16	9	16	9	3	1	0	0	0	0	"{""H"": -3, ""O"": 6, ""S"": 2, ""W"": 22}"	"{""ram"": -3, ""rammed"": 0, ""sac"": 2, ""trap"": 28}"	FAIL
+bot-hunter:gen_M_07:B:1	10	9	10	9	4	3	0	0	0	0	"{""H"": -1, ""O"": -1, ""S"": 1, ""W"": -12}"	"{""ram"": 1, ""rammed"": -2, ""sac"": 1, ""trap"": -13}"	FAIL
+bot-hunter:gen_R_01:A:1	0	0	0	0	0	0	0	0	0	0	"{""W"": 0}"	"{""trap"": 0}"	PASS
+bot-hunter:gen_R_01:B:1	0	0	0	0	0	0	0	0	0	0	"{""W"": 0}"	"{""trap"": 0}"	PASS
+bot-hunter:gen_L_02:A:1	0	0	0	0	0	0	0	0	0	0	"{""W"": 0}"	"{""trap"": 0}"	PASS
+bot-hunter:gen_L_02:B:1	0	0	0	0	0	0	0	0	0	0	"{""W"": 0}"	"{""trap"": 0}"	PASS

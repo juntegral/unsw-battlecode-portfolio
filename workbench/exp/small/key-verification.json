@@ -1,0 +1,958 @@
+{
+  "N": 194,
+  "primaryGroups": {
+    "allOwn": {
+      "N": 194,
+      "rammedN": 1414,
+      "priorN": 1405,
+      "priorFree2plus": 1048,
+      "priorLen2": 1038,
+      "fatalStep2plus": 659,
+      "trapN": 689,
+      "trapAllyBody": 337,
+      "trapAllyHead": 481,
+      "trapAnyAlly": 668,
+      "trapEnemyBody": 39,
+      "trapReasons": {
+        "O": 163,
+        "W": 520,
+        "S": 6
+      }
+    },
+    "local/v12-F-H": {
+      "N": 24,
+      "rammedN": 140,
+      "priorN": 137,
+      "priorFree2plus": 106,
+      "priorLen2": 103,
+      "fatalStep2plus": 72,
+      "trapN": 49,
+      "trapAllyBody": 33,
+      "trapAllyHead": 35,
+      "trapAnyAlly": 49,
+      "trapEnemyBody": 2,
+      "trapReasons": {
+        "O": 18,
+        "W": 31
+      }
+    },
+    "local/bundled": {
+      "N": 48,
+      "rammedN": 311,
+      "priorN": 307,
+      "priorFree2plus": 226,
+      "priorLen2": 218,
+      "fatalStep2plus": 148,
+      "trapN": 108,
+      "trapAllyBody": 65,
+      "trapAllyHead": 80,
+      "trapAnyAlly": 107,
+      "trapEnemyBody": 5,
+      "trapReasons": {
+        "O": 32,
+        "W": 76
+      }
+    },
+    "local/Colosseum": {
+      "N": 16,
+      "rammedN": 132,
+      "priorN": 131,
+      "priorFree2plus": 110,
+      "priorLen2": 102,
+      "fatalStep2plus": 63,
+      "trapN": 6,
+      "trapAllyBody": 4,
+      "trapAllyHead": 5,
+      "trapAnyAlly": 5,
+      "trapEnemyBody": 1,
+      "trapReasons": {
+        "O": 5,
+        "W": 1
+      }
+    },
+    "local/arena": {
+      "N": 16,
+      "rammedN": 63,
+      "priorN": 60,
+      "priorFree2plus": 31,
+      "priorLen2": 25,
+      "fatalStep2plus": 34,
+      "trapN": 8,
+      "trapAllyBody": 4,
+      "trapAllyHead": 7,
+      "trapAnyAlly": 8,
+      "trapEnemyBody": 1,
+      "trapReasons": {
+        "O": 4,
+        "W": 4
+      }
+    },
+    "local/default_small": {
+      "N": 16,
+      "rammedN": 116,
+      "priorN": 116,
+      "priorFree2plus": 85,
+      "priorLen2": 91,
+      "fatalStep2plus": 51,
+      "trapN": 94,
+      "trapAllyBody": 57,
+      "trapAllyHead": 68,
+      "trapAnyAlly": 94,
+      "trapEnemyBody": 3,
+      "trapReasons": {
+        "W": 71,
+        "O": 23
+      }
+    },
+    "local/v12-S-H": {
+      "N": 24,
+      "rammedN": 171,
+      "priorN": 170,
+      "priorFree2plus": 120,
+      "priorLen2": 115,
+      "fatalStep2plus": 76,
+      "trapN": 59,
+      "trapAllyBody": 32,
+      "trapAllyHead": 45,
+      "trapAnyAlly": 58,
+      "trapEnemyBody": 3,
+      "trapReasons": {
+        "O": 14,
+        "W": 45
+      }
+    },
+    "local/v12-F-K": {
+      "N": 8,
+      "rammedN": 77,
+      "priorN": 77,
+      "priorFree2plus": 64,
+      "priorLen2": 66,
+      "fatalStep2plus": 35,
+      "trapN": 15,
+      "trapAllyBody": 5,
+      "trapAllyHead": 13,
+      "trapAnyAlly": 15,
+      "trapEnemyBody": 0,
+      "trapReasons": {
+        "W": 11,
+        "O": 4
+      }
+    },
+    "local/v12-S-K": {
+      "N": 8,
+      "rammedN": 102,
+      "priorN": 102,
+      "priorFree2plus": 80,
+      "priorLen2": 88,
+      "fatalStep2plus": 40,
+      "trapN": 32,
+      "trapAllyBody": 9,
+      "trapAllyHead": 29,
+      "trapAnyAlly": 32,
+      "trapEnemyBody": 1,
+      "trapReasons": {
+        "O": 5,
+        "W": 27
+      }
+    },
+    "local/v12-recognized": {
+      "N": 4,
+      "rammedN": 43,
+      "priorN": 43,
+      "priorFree2plus": 34,
+      "priorLen2": 35,
+      "fatalStep2plus": 17,
+      "trapN": 10,
+      "trapAllyBody": 4,
+      "trapAllyHead": 9,
+      "trapAnyAlly": 10,
+      "trapEnemyBody": 1,
+      "trapReasons": {
+        "O": 3,
+        "W": 7
+      }
+    },
+    "online/cand-merge2-online": {
+      "N": 7,
+      "rammedN": 25,
+      "priorN": 25,
+      "priorFree2plus": 17,
+      "priorLen2": 6,
+      "fatalStep2plus": 18,
+      "trapN": 1,
+      "trapAllyBody": 0,
+      "trapAllyHead": 1,
+      "trapAnyAlly": 1,
+      "trapEnemyBody": 0,
+      "trapReasons": {
+        "W": 1
+      }
+    },
+    "online/cand-merge2-online-r2": {
+      "N": 7,
+      "rammedN": 20,
+      "priorN": 20,
+      "priorFree2plus": 13,
+      "priorLen2": 6,
+      "fatalStep2plus": 9,
+      "trapN": 2,
+      "trapAllyBody": 1,
+      "trapAllyHead": 0,
+      "trapAnyAlly": 1,
+      "trapEnemyBody": 1,
+      "trapReasons": {
+        "O": 1,
+        "W": 1
+      }
+    },
+    "online/cand-merge2-online-r3": {
+      "N": 7,
+      "rammedN": 25,
+      "priorN": 25,
+      "priorFree2plus": 19,
+      "priorLen2": 12,
+      "fatalStep2plus": 14,
+      "trapN": 6,
+      "trapAllyBody": 5,
+      "trapAllyHead": 3,
+      "trapAnyAlly": 6,
+      "trapEnemyBody": 0,
+      "trapReasons": {
+        "W": 4,
+        "O": 2
+      }
+    },
+    "online/cand-stack1-online": {
+      "N": 7,
+      "rammedN": 23,
+      "priorN": 23,
+      "priorFree2plus": 18,
+      "priorLen2": 9,
+      "fatalStep2plus": 14,
+      "trapN": 11,
+      "trapAllyBody": 7,
+      "trapAllyHead": 3,
+      "trapAnyAlly": 9,
+      "trapEnemyBody": 4,
+      "trapReasons": {
+        "W": 6,
+        "O": 5
+      }
+    },
+    "online/cand-stack2-online": {
+      "N": 7,
+      "rammedN": 16,
+      "priorN": 16,
+      "priorFree2plus": 12,
+      "priorLen2": 2,
+      "fatalStep2plus": 10,
+      "trapN": 3,
+      "trapAllyBody": 2,
+      "trapAllyHead": 1,
+      "trapAnyAlly": 3,
+      "trapEnemyBody": 0,
+      "trapReasons": {
+        "W": 3
+      }
+    },
+    "online/cand-stack3-online": {
+      "N": 7,
+      "rammedN": 29,
+      "priorN": 27,
+      "priorFree2plus": 15,
+      "priorLen2": 9,
+      "fatalStep2plus": 11,
+      "trapN": 4,
+      "trapAllyBody": 2,
+      "trapAllyHead": 0,
+      "trapAnyAlly": 2,
+      "trapEnemyBody": 2,
+      "trapReasons": {
+        "W": 3,
+        "O": 1
+      }
+    },
+    "online/cand-stack4-online": {
+      "N": 7,
+      "rammedN": 20,
+      "priorN": 19,
+      "priorFree2plus": 16,
+      "priorLen2": 15,
+      "fatalStep2plus": 7,
+      "trapN": 0,
+      "trapAllyBody": 0,
+      "trapAllyHead": 0,
+      "trapAnyAlly": 0,
+      "trapEnemyBody": 0,
+      "trapReasons": {}
+    },
+    "online/cand-stack5-online": {
+      "N": 7,
+      "rammedN": 77,
+      "priorN": 76,
+      "priorFree2plus": 54,
+      "priorLen2": 62,
+      "fatalStep2plus": 31,
+      "trapN": 49,
+      "trapAllyBody": 23,
+      "trapAllyHead": 31,
+      "trapAnyAlly": 49,
+      "trapEnemyBody": 0,
+      "trapReasons": {
+        "W": 39,
+        "S": 2,
+        "O": 8
+      }
+    },
+    "online/cand-stack6-online": {
+      "N": 7,
+      "rammedN": 73,
+      "priorN": 73,
+      "priorFree2plus": 51,
+      "priorLen2": 56,
+      "fatalStep2plus": 35,
+      "trapN": 56,
+      "trapAllyBody": 30,
+      "trapAllyHead": 39,
+      "trapAnyAlly": 55,
+      "trapEnemyBody": 4,
+      "trapReasons": {
+        "W": 41,
+        "O": 15
+      }
+    },
+    "online/cand-stack6-online-r2": {
+      "N": 7,
+      "rammedN": 51,
+      "priorN": 51,
+      "priorFree2plus": 35,
+      "priorLen2": 43,
+      "fatalStep2plus": 24,
+      "trapN": 22,
+      "trapAllyBody": 13,
+      "trapAllyHead": 12,
+      "trapAnyAlly": 20,
+      "trapEnemyBody": 3,
+      "trapReasons": {
+        "W": 17,
+        "O": 5
+      }
+    },
+    "online/cand-stack7-online": {
+      "N": 7,
+      "rammedN": 65,
+      "priorN": 65,
+      "priorFree2plus": 47,
+      "priorLen2": 52,
+      "fatalStep2plus": 25,
+      "trapN": 52,
+      "trapAllyBody": 28,
+      "trapAllyHead": 35,
+      "trapAnyAlly": 51,
+      "trapEnemyBody": 1,
+      "trapReasons": {
+        "W": 38,
+        "O": 14
+      }
+    },
+    "online/cand-stack8-online": {
+      "N": 7,
+      "rammedN": 65,
+      "priorN": 65,
+      "priorFree2plus": 47,
+      "priorLen2": 49,
+      "fatalStep2plus": 33,
+      "trapN": 37,
+      "trapAllyBody": 17,
+      "trapAllyHead": 27,
+      "trapAnyAlly": 35,
+      "trapEnemyBody": 3,
+      "trapReasons": {
+        "W": 25,
+        "O": 12
+      }
+    },
+    "online/cand-stack9-online": {
+      "N": 7,
+      "rammedN": 51,
+      "priorN": 51,
+      "priorFree2plus": 44,
+      "priorLen2": 40,
+      "fatalStep2plus": 24,
+      "trapN": 37,
+      "trapAllyBody": 15,
+      "trapAllyHead": 28,
+      "trapAnyAlly": 36,
+      "trapEnemyBody": 2,
+      "trapReasons": {
+        "W": 30,
+        "O": 7
+      }
+    },
+    "online/cand-stack10-online": {
+      "N": 7,
+      "rammedN": 50,
+      "priorN": 50,
+      "priorFree2plus": 36,
+      "priorLen2": 42,
+      "fatalStep2plus": 31,
+      "trapN": 33,
+      "trapAllyBody": 6,
+      "trapAllyHead": 28,
+      "trapAnyAlly": 32,
+      "trapEnemyBody": 1,
+      "trapReasons": {
+        "W": 33
+      }
+    },
+    "online/cand-stack11-online": {
+      "N": 7,
+      "rammedN": 63,
+      "priorN": 62,
+      "priorFree2plus": 45,
+      "priorLen2": 52,
+      "fatalStep2plus": 31,
+      "trapN": 47,
+      "trapAllyBody": 21,
+      "trapAllyHead": 35,
+      "trapAnyAlly": 45,
+      "trapEnemyBody": 2,
+      "trapReasons": {
+        "W": 38,
+        "O": 9
+      }
+    },
+    "online/v1-w1": {
+      "N": 7,
+      "rammedN": 67,
+      "priorN": 67,
+      "priorFree2plus": 46,
+      "priorLen2": 53,
+      "fatalStep2plus": 27,
+      "trapN": 51,
+      "trapAllyBody": 23,
+      "trapAllyHead": 31,
+      "trapAnyAlly": 48,
+      "trapEnemyBody": 5,
+      "trapReasons": {
+        "W": 41,
+        "O": 10
+      }
+    },
+    "online/v1-w2": {
+      "N": 7,
+      "rammedN": 86,
+      "priorN": 86,
+      "priorFree2plus": 73,
+      "priorLen2": 64,
+      "fatalStep2plus": 42,
+      "trapN": 62,
+      "trapAllyBody": 30,
+      "trapAllyHead": 46,
+      "trapAnyAlly": 61,
+      "trapEnemyBody": 1,
+      "trapReasons": {
+        "W": 42,
+        "O": 18,
+        "S": 2
+      }
+    },
+    "online/v1-w3": {
+      "N": 7,
+      "rammedN": 75,
+      "priorN": 75,
+      "priorFree2plus": 56,
+      "priorLen2": 59,
+      "fatalStep2plus": 33,
+      "trapN": 51,
+      "trapAllyBody": 31,
+      "trapAllyHead": 30,
+      "trapAnyAlly": 50,
+      "trapEnemyBody": 3,
+      "trapReasons": {
+        "W": 37,
+        "O": 12,
+        "S": 2
+      }
+    }
+  },
+  "independentGroups": {
+    "allOwn": {
+      "N": 194,
+      "rammedN": 1414,
+      "priorN": 1405,
+      "priorFree2plus": 1048,
+      "priorLen2": 1038,
+      "fatalStep2plus": 659,
+      "trapN": 689,
+      "trapAllyBody": 337,
+      "trapAllyHead": 481,
+      "trapAnyAlly": 668,
+      "trapEnemyBody": 39,
+      "trapReasons": {
+        "O": 163,
+        "W": 520,
+        "S": 6
+      }
+    },
+    "local/v12-F-H": {
+      "N": 24,
+      "rammedN": 140,
+      "priorN": 137,
+      "priorFree2plus": 106,
+      "priorLen2": 103,
+      "fatalStep2plus": 72,
+      "trapN": 49,
+      "trapAllyBody": 33,
+      "trapAllyHead": 35,
+      "trapAnyAlly": 49,
+      "trapEnemyBody": 2,
+      "trapReasons": {
+        "O": 18,
+        "W": 31
+      }
+    },
+    "local/bundled": {
+      "N": 48,
+      "rammedN": 311,
+      "priorN": 307,
+      "priorFree2plus": 226,
+      "priorLen2": 218,
+      "fatalStep2plus": 148,
+      "trapN": 108,
+      "trapAllyBody": 65,
+      "trapAllyHead": 80,
+      "trapAnyAlly": 107,
+      "trapEnemyBody": 5,
+      "trapReasons": {
+        "O": 32,
+        "W": 76
+      }
+    },
+    "local/Colosseum": {
+      "N": 16,
+      "rammedN": 132,
+      "priorN": 131,
+      "priorFree2plus": 110,
+      "priorLen2": 102,
+      "fatalStep2plus": 63,
+      "trapN": 6,
+      "trapAllyBody": 4,
+      "trapAllyHead": 5,
+      "trapAnyAlly": 5,
+      "trapEnemyBody": 1,
+      "trapReasons": {
+        "O": 5,
+        "W": 1
+      }
+    },
+    "local/arena": {
+      "N": 16,
+      "rammedN": 63,
+      "priorN": 60,
+      "priorFree2plus": 31,
+      "priorLen2": 25,
+      "fatalStep2plus": 34,
+      "trapN": 8,
+      "trapAllyBody": 4,
+      "trapAllyHead": 7,
+      "trapAnyAlly": 8,
+      "trapEnemyBody": 1,
+      "trapReasons": {
+        "O": 4,
+        "W": 4
+      }
+    },
+    "local/default_small": {
+      "N": 16,
+      "rammedN": 116,
+      "priorN": 116,
+      "priorFree2plus": 85,
+      "priorLen2": 91,
+      "fatalStep2plus": 51,
+      "trapN": 94,
+      "trapAllyBody": 57,
+      "trapAllyHead": 68,
+      "trapAnyAlly": 94,
+      "trapEnemyBody": 3,
+      "trapReasons": {
+        "W": 71,
+        "O": 23
+      }
+    },
+    "local/v12-S-H": {
+      "N": 24,
+      "rammedN": 171,
+      "priorN": 170,
+      "priorFree2plus": 120,
+      "priorLen2": 115,
+      "fatalStep2plus": 76,
+      "trapN": 59,
+      "trapAllyBody": 32,
+      "trapAllyHead": 45,
+      "trapAnyAlly": 58,
+      "trapEnemyBody": 3,
+      "trapReasons": {
+        "O": 14,
+        "W": 45
+      }
+    },
+    "local/v12-F-K": {
+      "N": 8,
+      "rammedN": 77,
+      "priorN": 77,
+      "priorFree2plus": 64,
+      "priorLen2": 66,
+      "fatalStep2plus": 35,
+      "trapN": 15,
+      "trapAllyBody": 5,
+      "trapAllyHead": 13,
+      "trapAnyAlly": 15,
+      "trapEnemyBody": 0,
+      "trapReasons": {
+        "W": 11,
+        "O": 4
+      }
+    },
+    "local/v12-S-K": {
+      "N": 8,
+      "rammedN": 102,
+      "priorN": 102,
+      "priorFree2plus": 80,
+      "priorLen2": 88,
+      "fatalStep2plus": 40,
+      "trapN": 32,
+      "trapAllyBody": 9,
+      "trapAllyHead": 29,
+      "trapAnyAlly": 32,
+      "trapEnemyBody": 1,
+      "trapReasons": {
+        "O": 5,
+        "W": 27
+      }
+    },
+    "local/v12-recognized": {
+      "N": 4,
+      "rammedN": 43,
+      "priorN": 43,
+      "priorFree2plus": 34,
+      "priorLen2": 35,
+      "fatalStep2plus": 17,
+      "trapN": 10,
+      "trapAllyBody": 4,
+      "trapAllyHead": 9,
+      "trapAnyAlly": 10,
+      "trapEnemyBody": 1,
+      "trapReasons": {
+        "O": 3,
+        "W": 7
+      }
+    },
+    "online/cand-merge2-online": {
+      "N": 7,
+      "rammedN": 25,
+      "priorN": 25,
+      "priorFree2plus": 17,
+      "priorLen2": 6,
+      "fatalStep2plus": 18,
+      "trapN": 1,
+      "trapAllyBody": 0,
+      "trapAllyHead": 1,
+      "trapAnyAlly": 1,
+      "trapEnemyBody": 0,
+      "trapReasons": {
+        "W": 1
+      }
+    },
+    "online/cand-merge2-online-r2": {
+      "N": 7,
+      "rammedN": 20,
+      "priorN": 20,
+      "priorFree2plus": 13,
+      "priorLen2": 6,
+      "fatalStep2plus": 9,
+      "trapN": 2,
+      "trapAllyBody": 1,
+      "trapAllyHead": 0,
+      "trapAnyAlly": 1,
+      "trapEnemyBody": 1,
+      "trapReasons": {
+        "O": 1,
+        "W": 1
+      }
+    },
+    "online/cand-merge2-online-r3": {
+      "N": 7,
+      "rammedN": 25,
+      "priorN": 25,
+      "priorFree2plus": 19,
+      "priorLen2": 12,
+      "fatalStep2plus": 14,
+      "trapN": 6,
+      "trapAllyBody": 5,
+      "trapAllyHead": 3,
+      "trapAnyAlly": 6,
+      "trapEnemyBody": 0,
+      "trapReasons": {
+        "W": 4,
+        "O": 2
+      }
+    },
+    "online/cand-stack1-online": {
+      "N": 7,
+      "rammedN": 23,
+      "priorN": 23,
+      "priorFree2plus": 18,
+      "priorLen2": 9,
+      "fatalStep2plus": 14,
+      "trapN": 11,
+      "trapAllyBody": 7,
+      "trapAllyHead": 3,
+      "trapAnyAlly": 9,
+      "trapEnemyBody": 4,
+      "trapReasons": {
+        "W": 6,
+        "O": 5
+      }
+    },
+    "online/cand-stack2-online": {
+      "N": 7,
+      "rammedN": 16,
+      "priorN": 16,
+      "priorFree2plus": 12,
+      "priorLen2": 2,
+      "fatalStep2plus": 10,
+      "trapN": 3,
+      "trapAllyBody": 2,
+      "trapAllyHead": 1,
+      "trapAnyAlly": 3,
+      "trapEnemyBody": 0,
+      "trapReasons": {
+        "W": 3
+      }
+    },
+    "online/cand-stack3-online": {
+      "N": 7,
+      "rammedN": 29,
+      "priorN": 27,
+      "priorFree2plus": 15,
+      "priorLen2": 9,
+      "fatalStep2plus": 11,
+      "trapN": 4,
+      "trapAllyBody": 2,
+      "trapAllyHead": 0,
+      "trapAnyAlly": 2,
+      "trapEnemyBody": 2,
+      "trapReasons": {
+        "W": 3,
+        "O": 1
+      }
+    },
+    "online/cand-stack4-online": {
+      "N": 7,
+      "rammedN": 20,
+      "priorN": 19,
+      "priorFree2plus": 16,
+      "priorLen2": 15,
+      "fatalStep2plus": 7,
+      "trapN": 0,
+      "trapAllyBody": 0,
+      "trapAllyHead": 0,
+      "trapAnyAlly": 0,
+      "trapEnemyBody": 0,
+      "trapReasons": {}
+    },
+    "online/cand-stack5-online": {
+      "N": 7,
+      "rammedN": 77,
+      "priorN": 76,
+      "priorFree2plus": 54,
+      "priorLen2": 62,
+      "fatalStep2plus": 31,
+      "trapN": 49,
+      "trapAllyBody": 23,
+      "trapAllyHead": 31,
+      "trapAnyAlly": 49,
+      "trapEnemyBody": 0,
+      "trapReasons": {
+        "W": 39,
+        "S": 2,
+        "O": 8
+      }
+    },
+    "online/cand-stack6-online": {
+      "N": 7,
+      "rammedN": 73,
+      "priorN": 73,
+      "priorFree2plus": 51,
+      "priorLen2": 56,
+      "fatalStep2plus": 35,
+      "trapN": 56,
+      "trapAllyBody": 30,
+      "trapAllyHead": 39,
+      "trapAnyAlly": 55,
+      "trapEnemyBody": 4,
+      "trapReasons": {
+        "W": 41,
+        "O": 15
+      }
+    },
+    "online/cand-stack6-online-r2": {
+      "N": 7,
+      "rammedN": 51,
+      "priorN": 51,
+      "priorFree2plus": 35,
+      "priorLen2": 43,
+      "fatalStep2plus": 24,
+      "trapN": 22,
+      "trapAllyBody": 13,
+      "trapAllyHead": 12,
+      "trapAnyAlly": 20,
+      "trapEnemyBody": 3,
+      "trapReasons": {
+        "W": 17,
+        "O": 5
+      }
+    },
+    "online/cand-stack7-online": {
+      "N": 7,
+      "rammedN": 65,
+      "priorN": 65,
+      "priorFree2plus": 47,
+      "priorLen2": 52,
+      "fatalStep2plus": 25,
+      "trapN": 52,
+      "trapAllyBody": 28,
+      "trapAllyHead": 35,
+      "trapAnyAlly": 51,
+      "trapEnemyBody": 1,
+      "trapReasons": {
+        "W": 38,
+        "O": 14
+      }
+    },
+    "online/cand-stack8-online": {
+      "N": 7,
+      "rammedN": 65,
+      "priorN": 65,
+      "priorFree2plus": 47,
+      "priorLen2": 49,
+      "fatalStep2plus": 33,
+      "trapN": 37,
+      "trapAllyBody": 17,
+      "trapAllyHead": 27,
+      "trapAnyAlly": 35,
+      "trapEnemyBody": 3,
+      "trapReasons": {
+        "W": 25,
+        "O": 12
+      }
+    },
+    "online/cand-stack9-online": {
+      "N": 7,
+      "rammedN": 51,
+      "priorN": 51,
+      "priorFree2plus": 44,
+      "priorLen2": 40,
+      "fatalStep2plus": 24,
+      "trapN": 37,
+      "trapAllyBody": 15,
+      "trapAllyHead": 28,
+      "trapAnyAlly": 36,
+      "trapEnemyBody": 2,
+      "trapReasons": {
+        "W": 30,
+        "O": 7
+      }
+    },
+    "online/cand-stack10-online": {
+      "N": 7,
+      "rammedN": 50,
+      "priorN": 50,
+      "priorFree2plus": 36,
+      "priorLen2": 42,
+      "fatalStep2plus": 31,
+      "trapN": 33,
+      "trapAllyBody": 6,
+      "trapAllyHead": 28,
+      "trapAnyAlly": 32,
+      "trapEnemyBody": 1,
+      "trapReasons": {
+        "W": 33
+      }
+    },
+    "online/cand-stack11-online": {
+      "N": 7,
+      "rammedN": 63,
+      "priorN": 62,
+      "priorFree2plus": 45,
+      "priorLen2": 52,
+      "fatalStep2plus": 31,
+      "trapN": 47,
+      "trapAllyBody": 21,
+      "trapAllyHead": 35,
+      "trapAnyAlly": 45,
+      "trapEnemyBody": 2,
+      "trapReasons": {
+        "W": 38,
+        "O": 9
+      }
+    },
+    "online/v1-w1": {
+      "N": 7,
+      "rammedN": 67,
+      "priorN": 67,
+      "priorFree2plus": 46,
+      "priorLen2": 53,
+      "fatalStep2plus": 27,
+      "trapN": 51,
+      "trapAllyBody": 23,
+      "trapAllyHead": 31,
+      "trapAnyAlly": 48,
+      "trapEnemyBody": 5,
+      "trapReasons": {
+        "W": 41,
+        "O": 10
+      }
+    },
+    "online/v1-w2": {
+      "N": 7,
+      "rammedN": 86,
+      "priorN": 86,
+      "priorFree2plus": 73,
+      "priorLen2": 64,
+      "fatalStep2plus": 42,
+      "trapN": 62,
+      "trapAllyBody": 30,
+      "trapAllyHead": 46,
+      "trapAnyAlly": 61,
+      "trapEnemyBody": 1,
+      "trapReasons": {
+        "W": 42,
+        "O": 18,
+        "S": 2
+      }
+    },
+    "online/v1-w3": {
+      "N": 7,
+      "rammedN": 75,
+      "priorN": 75,
+      "priorFree2plus": 56,
+      "priorLen2": 59,
+      "fatalStep2plus": 33,
+      "trapN": 51,
+      "trapAllyBody": 31,
+      "trapAllyHead": 30,
+      "trapAnyAlly": 50,
+      "trapEnemyBody": 3,
+      "trapReasons": {
+        "W": 37,
+        "O": 12,
+        "S": 2
+      }
+    }
+  },
+  "mismatchN": 0,
+  "mismatches": [],
+  "method": "fresh independent replay-update reconstruction in Node, primary table aggregation separately in Python; per game and pooled"
+}

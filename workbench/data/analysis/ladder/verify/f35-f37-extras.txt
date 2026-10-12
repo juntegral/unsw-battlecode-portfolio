@@ -1,0 +1,70 @@
+Extras for F35 and F37, verifier run 2026-10-07 08:23 KST.
+
+== F35: all free games split by the standing in total length at raw round 100 (level = smaller total at least 0.8 of the larger) ==
+  main  ended before r100        games  17 (full   0, we won early  12, they won early   5)  alive at end: ours 8 of 10 (0.800)    theirs 1 of 7 (0.143)     per 1,000 lone turns: ours 9.13 (2, 219) theirs 41.10 (6, 146)
+  main  we are ahead by more     games  99 (full  40, we won early  58, they won early   1)  alive at end: ours 26 of 49 (0.531)   theirs 5 of 44 (0.114)    per 1,000 lone turns: ours 3.43 (23, 6701) theirs 8.53 (39, 4573)
+  main  level at r100            games  57 (full  48, we won early   3, they won early   6)  alive at end: ours 2 of 21 (0.095)    theirs 11 of 30 (0.367)   per 1,000 lone turns: ours 9.41 (19, 2020) theirs 3.05 (19, 6237)
+  main  they are ahead by more   games  82 (full  55, we won early   3, they won early  24)  alive at end: ours 2 of 22 (0.091)    theirs 28 of 49 (0.571)   per 1,000 lone turns: ours 6.49 (20, 3081) theirs 2.43 (21, 8656)
+  main  rate ratio pooled over the four groups (Mantel-Haenszel): 1.06
+  v31   ended before r100        games  25 (full   0, we won early  16, they won early   9)  alive at end: ours 10 of 12 (0.833)   theirs 3 of 11 (0.273)    per 1,000 lone turns: ours 9.85 (2, 203) theirs 46.78 (8, 171)
+  v31   we are ahead by more     games 131 (full  56, we won early  73, they won early   2)  alive at end: ours 31 of 72 (0.431)   theirs 7 of 52 (0.135)    per 1,000 lone turns: ours 6.18 (41, 6635) theirs 6.09 (45, 7390)
+  v31   level at r100            games  83 (full  70, we won early   6, they won early   7)  alive at end: ours 2 of 32 (0.062)    theirs 15 of 44 (0.341)   per 1,000 lone turns: ours 8.53 (30, 3517) theirs 3.25 (29, 8930)
+  v31   they are ahead by more   games 123 (full  65, we won early   2, they won early  56)  alive at end: ours 4 of 43 (0.093)    theirs 36 of 75 (0.480)   per 1,000 lone turns: ours 10.06 (39, 3878) theirs 3.00 (39, 12983)
+  v31   rate ratio pooled over the four groups (Mantel-Haenszel): 1.73
+  both  ended before r100        games  42 (full   0, we won early  28, they won early  14)  alive at end: ours 18 of 22 (0.818)   theirs 4 of 18 (0.222)    per 1,000 lone turns: ours 9.48 (4, 422) theirs 44.16 (14, 317)
+  both  we are ahead by more     games 230 (full  96, we won early 131, they won early   3)  alive at end: ours 57 of 121 (0.471)  theirs 12 of 96 (0.125)   per 1,000 lone turns: ours 4.80 (64, 13336) theirs 7.02 (84, 11963)
+  both  level at r100            games 140 (full 118, we won early   9, they won early  13)  alive at end: ours 4 of 53 (0.075)    theirs 26 of 74 (0.351)   per 1,000 lone turns: ours 8.85 (49, 5537) theirs 3.16 (48, 15167)
+  both  they are ahead by more   games 205 (full 120, we won early   5, they won early  80)  alive at end: ours 6 of 65 (0.092)    theirs 64 of 124 (0.516)  per 1,000 lone turns: ours 8.48 (59, 6959) theirs 2.77 (60, 21639)
+  both  rate ratio pooled over the four groups (Mantel-Haenszel): 1.41
+
+== F37: deaths per queen alive at the start of the window, full games ==
+  main full, wall or own body:
+      r0-100 ours 12 of 143 (0.084) theirs 8 of 143 (0.056) p 0.488
+      r101-200 ours 17 of 110 (0.155) theirs 1 of 115 (0.009) p 0.000
+      r201-300 ours 9 of 64 (0.141) theirs 5 of 94 (0.053) p 0.085
+      r301-499 ours 4 of 44 (0.091) theirs 9 of 74 (0.122) p 0.765
+  main full, mover with no free tile, any reason:
+      r0-100 ours 16 of 143 (0.112) theirs 12 of 143 (0.084) p 0.551
+      r101-200 ours 20 of 110 (0.182) theirs 4 of 115 (0.035) p 0.000
+      r201-300 ours 10 of 64 (0.156) theirs 8 of 94 (0.085) p 0.205
+      r301-499 ours 6 of 44 (0.136) theirs 13 of 74 (0.176) p 0.617
+  v31 full, wall or own body:
+      r0-100 ours 14 of 191 (0.073) theirs 10 of 191 (0.052) p 0.528
+      r101-200 ours 23 of 125 (0.184) theirs 9 of 145 (0.062) p 0.002
+      r201-300 ours 9 of 70 (0.129) theirs 8 of 106 (0.075) p 0.299
+      r301-499 ours 1 of 44 (0.023) theirs 10 of 84 (0.119) p 0.096
+  v31 full, mover with no free tile, any reason:
+      r0-100 ours 29 of 191 (0.152) theirs 21 of 191 (0.110) p 0.288
+      r101-200 ours 27 of 125 (0.216) theirs 15 of 145 (0.103) p 0.012
+      r201-300 ours 9 of 70 (0.129) theirs 16 of 106 (0.151) p 0.826
+      r301-499 ours 3 of 44 (0.068) theirs 21 of 84 (0.250) p 0.016
+
+== F37: what a queen with no free tile ran into when the engine recorded a head-on or another body (r101-200, games that reached r200) ==
+  main ours: {'body of her own team': 3}
+  main theirs: {'head-on into an enemy': 4, 'body of her own team': 1}
+  v31 ours: {'head-on into an enemy': 4, 'body of her own team': 4}
+  v31 theirs: {'head-on into an enemy': 5, 'body of her own team': 1}
+
+== F37: their 16 deaths of the wider set (every free main or v31 game, r101-200, wall or own body) ==
+  1156530 Islands          v31  r119 reason 0  N E S W: K S K K        len 3 last round 499
+  1157621 weakhold         v31  r150 reason 0  N E S W: K K K S        len 3 last round 157
+  1163727 weakhold         v31  r152 reason 0  N E S W: K T K K        len 2 last round 246
+  1163906 Portals          v31  r137 reason 1  N E S W: C T K Mh       len 2 last round 499
+  1167366 Portals          v31  r192 reason 1  N E S W: K Tp K K       len 2 last round 499
+  1168704 Portals          v31  r175 reason 0  N E S W: K K K Tp       len 2 last round 499
+  1187034 Portals          v31  r131 reason 1  N E S W: K K K Sp       len 3 last round 499
+  1200578 Tower Defense    v31  r162 reason 1  N E S W: S M K K        len 3 last round 499
+  1205311 Around UNSW      v31  r171 reason 0  N E S W: K K S K        len 5 last round 499
+  1210392 Prisoners Dilemma v31  r137 reason 1  N E S W: S K K H        len 3 last round 137
+  1230994 Prisoners Dilemma v31  r117 reason 0  N E S W: K H T H        len 2 last round 117
+  1234149 Maze             v31  r121 reason 0  N E S W: K S K K        len 3 last round 499
+  1235759 Tower Defense    v31  r189 reason 1  N E S W: S K Mh Mh      len 3 last round 429
+  1238417 Maze             v31  r117 reason 0  N E S W: K T C K        len 2 last round 499
+  1243702 Devil            main r136 reason 0  N E S W: H T K K        len 2 last round 150
+  1256142 weakhold         main r108 reason 0  N E S W: K S K K        len 3 last round 499
+
+== F37: length of the queen at a no-free-tile turn start does not come from the shards; length at death (r101-200, mover with no free tile) ==
+  main ours: length at death {2: 10, 3: 14} (a queen of length 2 or 3 cannot split)
+  main theirs: length at death {2: 4, 3: 2} (a queen of length 2 or 3 cannot split)
+  v31 ours: length at death {2: 21, 3: 17} (a queen of length 2 or 3 cannot split)
+  v31 theirs: length at death {2: 10, 3: 8, 5: 1} (a queen of length 2 or 3 cannot split)

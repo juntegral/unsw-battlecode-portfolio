@@ -1,0 +1,183 @@
+
+===== team 264 forgot to mention =====
+  0 games: {'n': 13}
+  A close rounds: {'n': 90}
+  A close rounds by game: {'1059834': 13, '1059840': 6, '1067620': 18, '1067629': 15, '1067641': 15, '1067644': 4, '1067654': 1, '1067667': 18}
+  A her move made the nearest enemy head: {'NEARER': 11, 'further': 75, 'same': 2}
+  A how the queen ended: {'alive': 7, 'rammed': 6}
+  A intruders rammed by an own dragon within 6 steps of the queen: {'n': 13}
+  A nearest intruder length: {'2': 76, '3': 11, '4': 2, '5-9': 1}
+  A orders: {'move 1': 85, 'move 2': 3, 'split': 2}
+  A own heads within 6: {'0': 54, '1': 20, '2': 12, '3+': 4}
+  B queen splits: {'1+ free cells, 4 -> 2+2': 43, '1+ free cells, shed 2 (queen 5+)': 23, 'no free cell, 4 -> 2+2': 1, 'no free cell, shed 2 (queen 5+)': 22}
+  C follower ate during the streak: {'1': 3, '2+': 1, 'nothing': 10}
+  C follower length at the start: {'2': 10, '3': 4}
+  C follower median path distance to her head: {'1-2': 1, '3': 7, '4': 4, '5-6': 2}
+  C follower streak length: {'10-19': 5, '20+': 1, '6-9': 8}
+  C followers (6+ rounds with the enemy queen's head in view): {'n': 14}
+  C how the streak ended: {'it rammed the queen': 2, 'it was rammed': 2, 'lost her / game end': 9, 'the queen was rammed by someone else': 1}
+  D queen kills by attacker length: {'2': 1, '3': 3, '5-9': 2}
+  D queen kills by steps: {'2 steps': 1, '3 steps': 1, '5 steps': 1, '6 steps': 1, 'next cell': 2}
+  E enemy 15+ dragons rammed, by attacker length: {'3': 2, '4': 2, '5-9': 3}
+  E enemy 15+ dragons rammed, by steps: {'2-3 steps': 5, '4+ steps': 2}
+  E enemy 15+ dragons rammed, split trick: {'no split': 7}
+  E enemy 15+ rammed after r300: {'n': 4}
+  E own 15+ dragons lost: {'noaction, had a free cell': 18, 'noaction, no free cell': 2, 'rammed by L2': 3, 'rammed by L3': 10, 'rammed by L4': 6, 'rammed by L5-9': 2}
+  F reverse splits: {'head had a free cell': 47, 'head had no free cell': 225}
+  G non-ram deaths r0-100: {'HAD A FREE CELL, order move, reason body': 1, 'HAD A FREE CELL, order move, reason self': 1, 'HAD A FREE CELL, order suicide, reason noaction': 2, 'no free cell, order move, reason body': 7, 'no free cell, order suicide, reason noaction': 477}
+  H deaths by choice (a free cell was there): {'r0 elsewhere': 2, 'r0 near the longest dragon': 1, 'r0 near the queen': 1, 'r100 near the queen': 1, 'r200 elsewhere': 3, 'r200 near the longest dragon': 2, 'r200 near the queen': 151, 'r300 elsewhere': 308, 'r300 near the longest dragon': 97, 'r300 near the queen': 101, 'r400 elsewhere': 154, 'r400 near the longest dragon': 63, 'r400 near the queen': 44}
+  H segments in those deaths: {'r0 elsewhere': 6, 'r0 near the longest dragon': 3, 'r0 near the queen': 2, 'r100 near the queen': 2, 'r200 elsewhere': 7, 'r200 near the longest dragon': 5, 'r200 near the queen': 350, 'r300 elsewhere': 1028, 'r300 near the longest dragon': 322, 'r300 near the queen': 251, 'r400 elsewhere': 646, 'r400 near the longest dragon': 389, 'r400 near the queen': 230}
+  [0 games] (13): 1059834 | 1063806 | 1059840 | 1067641 | 1067636 | 1067654 | 1063814 | 1067667 | 1067446 | 1067620 | 1067629 | 1067644 | 1067634
+  [A close round with a split] (2): 1067629 r30 L4 | 1067629 r74 L4
+  [A intruders rammed] (13): 1059834 r66 L2 rams L2 | 1059840 r128 L3 rams L3 | 1059840 r195 L2 rams L2 | 1067641 r146 L3 rams L3 | 1067667 r76 L2 rams L3 | 1067667 r115 L3 rams L2 | 1067667 r119 L3 rams L2 | 1067667 r165 L2 rams L2 | 1067667 r328 L3 rams L3 | 1067620 r134 L5 rams L2 | 1067629 r79 L2 rams L2 | 1067629 r93 L3 rams L2 | 1067629 r153 L3 rams L3
+  [A nearer] (11): 1059834 r64 | 1059840 r200 | 1059840 r208 | 1067641 r42 | 1067641 r49 | 1067641 r166 | 1067654 r86 | 1067629 r31 | 1067629 r67 | 1067629 r69 | 1067629 r110
+  [B queen splits not 4->2+2 with a free cell] (46): 1063806 r0 25->23+2 free 0 | 1063806 r1 23->21+2 free 0 | 1063806 r2 21->19+2 free 0 | 1063806 r3 19->17+2 free 0 | 1063806 r4 17->15+2 free 0 | 1063806 r5 15->13+2 free 0 | 1063806 r6 13->11+2 free 0 | 1063806 r7 11->9+2 free 0 | 1063806 r8 9->7+2 free 0 | 1063806 r9 7->5+2 free 1 | 1063806 r10 5->3+2 free 2 | 1063806 r490 82->80+2 free 0 | 1063806 r491 80->78+2 free 0 | 1063806 r492 78->76+2 free 0 | 1063806 r493 76->74+2 free 0 | 1063806 r494 74->72+2 free 0 | 1063806 r495 72->70+2 free 0 | 1063806 r496 70->68+2 free 0 | 1063806 r497 68->66+2 free 0 | 1063806 r498 66->64+2 free 0 | 1063806 r499 64->62+2 free 0 | 1067636 r482 102->100+2 free 1 | 1067636 r483 100->98+2 free 1 | 1067636 r484 98->96+2 free 1 | 1067636 r485 96->94+2 free 1 | 1067636 r486 94->92+2 free 1 | 1067636 r487 92->90+2 free 1 | 1067636 r488 90->88+2 free 1 | 1067636 r489 88->86+2 free 1 | 1067636 r490 86->84+2 free 1 | 1067636 r491 84->82+2 free 1 | 1067636 r492 82->80+2 free 1 | 1067636 r493 80->78+2 free 1 | 1067636 r494 78->76+2 free 1 | 1067636 r495 76->74+2 free 1 | 1067636 r496 74->72+2 free 1 | 1067636 r497 72->70+2 free 1 | 1067636 r498 70->68+2 free 1 | 1067636 r499 68->66+2 free 1 | 1067446 r186 5->3+2 free 1
+  [C followers of 10+ rounds] (6): 1059840 #88 L2 r110-123 (12 rounds), median 3 steps away (min 1), ate 0, it was rammed | 1059840 #16 L3 r137-157 (20 rounds), median 4 steps away (min 2), ate 0, it rammed the queen | 1067641 #5 L3 r110-128 (17 rounds), median 4 steps away (min 2), ate 0, lost her / game end | 1063814 #228 L2 r96-106 (11 rounds), median 4 steps away (min 2), ate 0, lost her / game end | 1067620 #117 L2 r91-107 (13 rounds), median 4 steps away (min 2), ate 0, lost her / game end | 1067620 #175 L2 r142-160 (17 rounds), median 3 steps away (min 1), ate 1, lost her / game end
+  [D queen kills] (6): 1059840 r157: #16 L3, 1 steps (0 paid), had her in view in 19 of the 40 rounds before, a starting dragon, victim queen L3 | 1067641 r166: #195 L5, 5 steps (3 paid), had her in view in 3 of the 40 rounds before, born r97 as a 2-long, victim queen L2 | 1067636 r181: #39 L3, 2 steps (1 paid), had her in view in 2 of the 40 rounds before, born r49 as a 2-long, victim queen L3 | 1067654 r111: #146 L2, 1 steps (0 paid), had her in view in 7 of the 40 rounds before, born r103 as a 2-long, victim queen L2 | 1067620 r178: #159 L9, 6 steps (3 paid), had her in view in 1 of the 40 rounds before, born r120 as a 2-long, victim queen L4 | 1067629 r103: #54 L3, 3 steps (2 paid), had her in view in 0 of the 40 rounds before, born r84 as a 2-long, victim queen L4
+
+===== team 91 SSS =====
+  0 games: {'n': 10}
+  A close rounds: {'n': 39}
+  A close rounds by game: {'1059834': 1, '1059840': 20, '1060356': 7, '1067629': 1, '1067636': 1, '1067641': 9}
+  A her move made the nearest enemy head: {'NEARER': 3, 'further': 36}
+  A how the queen ended: {'alive': 5, 'rammed': 5}
+  A intruders rammed by an own dragon within 6 steps of the queen: {'n': 6}
+  A nearest intruder length: {'10+': 1, '2': 21, '3': 15, '5-9': 2}
+  A orders: {'move 1': 39}
+  A own heads within 6: {'0': 10, '1': 12, '2': 4, '3+': 13}
+  B queen splits: {'1+ free cells, 4 -> 2+2': 34, '1+ free cells, shed 2 (queen 5+)': 13, 'no free cell, shed 2 (queen 5+)': 18}
+  C follower ate during the streak: {'1': 1, '2+': 3, 'nothing': 10}
+  C follower length at the start: {'2': 9, '3': 5}
+  C follower median path distance to her head: {'1-2': 1, '3': 4, '4': 6, '5-6': 3}
+  C follower streak length: {'10-19': 1, '20+': 4, '6-9': 9}
+  C followers (6+ rounds with the enemy queen's head in view): {'n': 14}
+  C how the streak ended: {'it rammed the queen': 2, 'lost her / game end': 9, 'the queen was rammed by someone else': 3}
+  D queen kills by attacker length: {'2': 1, '3': 2, '5-9': 2}
+  D queen kills by steps: {'2 steps': 1, '4 steps': 1, '6 steps': 1, 'next cell': 2}
+  E enemy 15+ dragons rammed, by attacker length: {'2': 2, '3': 8, '4': 3}
+  E enemy 15+ dragons rammed, by steps: {'2-3 steps': 9, '4+ steps': 1, 'next cell': 3}
+  E enemy 15+ dragons rammed, split trick: {'attacker split in the 5 rounds before': 2, 'no split': 11}
+  E enemy 15+ rammed after r300: {'n': 5}
+  E own 15+ dragons lost: {'noaction, had a free cell': 2, 'rammed by L3': 2, 'rammed by L4': 3, 'rammed by L5-9': 7, 'self, had a free cell': 6, 'self, no free cell': 1}
+  F reverse splits: {'head had a free cell': 63, 'head had no free cell': 11}
+  G non-ram deaths r0-100: {'HAD A FREE CELL, order suicide, reason noaction': 3, 'no free cell, order move, reason body': 89, 'no free cell, order move, reason self': 225}
+  H deaths by choice (a free cell was there): {'r0 elsewhere': 1, 'r0 near the queen': 2, 'r100 elsewhere': 22, 'r100 near the longest dragon': 4, 'r100 near the queen': 1, 'r200 elsewhere': 44, 'r200 near the longest dragon': 20, 'r200 near the queen': 1, 'r300 elsewhere': 103, 'r300 near the longest dragon': 135, 'r300 near the queen': 91, 'r400 elsewhere': 76, 'r400 near the longest dragon': 59, 'r400 near the queen': 70}
+  H segments in those deaths: {'r0 elsewhere': 2, 'r0 near the queen': 4, 'r100 elsewhere': 103, 'r100 near the longest dragon': 17, 'r100 near the queen': 2, 'r200 elsewhere': 217, 'r200 near the longest dragon': 163, 'r200 near the queen': 4, 'r300 elsewhere': 293, 'r300 near the longest dragon': 411, 'r300 near the queen': 242, 'r400 elsewhere': 261, 'r400 near the longest dragon': 207, 'r400 near the queen': 261}
+  [0 games] (10): 1059834 | 1063806 | 1060000 | 1059840 | 1060356 | 1067641 | 1067636 | 1067629 | 1067644 | 1067634
+  [A intruders rammed] (6): 1059834 r276 L4 rams L24 | 1059840 r125 L3 rams L2 | 1067641 r148 L3 rams L2 | 1067641 r158 L3 rams L2 | 1067641 r162 L3 rams L2 | 1067629 r57 L2 rams L2
+  [A nearer] (3): 1059840 r120 | 1059840 r157 | 1067636 r181
+  [B queen splits not 4->2+2 with a free cell] (31): 1063806 r0 25->23+2 free 0 | 1063806 r1 23->21+2 free 0 | 1063806 r2 21->19+2 free 0 | 1063806 r3 19->17+2 free 0 | 1063806 r4 17->15+2 free 0 | 1063806 r5 15->13+2 free 0 | 1063806 r6 13->11+2 free 0 | 1063806 r7 11->9+2 free 0 | 1063806 r8 9->7+2 free 0 | 1063806 r9 7->5+2 free 1 | 1063806 r10 5->3+2 free 2 | 1063806 r319 16->14+2 free 1 | 1063806 r363 45->43+2 free 2 | 1063806 r448 68->66+2 free 1 | 1063806 r449 66->64+2 free 1 | 1063806 r454 66->64+2 free 1 | 1063806 r457 65->63+2 free 1 | 1060000 r0 25->23+2 free 0 | 1060000 r1 23->21+2 free 0 | 1060000 r2 21->19+2 free 0 | 1060000 r3 19->17+2 free 0 | 1060000 r4 17->15+2 free 0 | 1060000 r5 15->13+2 free 0 | 1060000 r6 13->11+2 free 0 | 1060000 r7 11->9+2 free 0 | 1060000 r8 9->7+2 free 0 | 1060000 r9 7->5+2 free 1 | 1060000 r10 5->3+2 free 2 | 1067636 r124 5->3+2 free 2 | 1067634 r307 7->5+2 free 1 | 1067634 r471 56->54+2 free 1
+  [C followers of 10+ rounds] (5): 1059834 #100 L2 r52-72 (21 rounds), median 3 steps away (min 1), ate 0, the queen was rammed by someone else | 1059840 #21 L3 r21-51 (30 rounds), median 4 steps away (min 4), ate 0, lost her / game end | 1060356 #33 L2 r81-112 (29 rounds), median 5 steps away (min 3), ate 1, lost her / game end | 1060356 #115 L2 r117-143 (24 rounds), median 3 steps away (min 1), ate 0, the queen was rammed by someone else | 1067641 #29 L2 r40-51 (12 rounds), median 3 steps away (min 1), ate 3, lost her / game end
+  [D queen kills] (5): 1059834 r72: #42 L5, 4 steps (2 paid), had her in view in 13 of the 40 rounds before, born r15 as a 2-long, victim queen L2 | 1059840 r208: #255 L2, 1 steps (0 paid), had her in view in 3 of the 40 rounds before, born r200 as a 2-long, victim queen L3 | 1060356 r143: #123 L8, 6 steps (4 paid), had her in view in 0 of the 40 rounds before, born r106 as a 7-long, victim queen L2 | 1067641 r166: #227 L3, 1 steps (0 paid), had her in view in 7 of the 40 rounds before, born r111 as a 2-long, victim queen L3 | 1067644 r304: #76 L3, 2 steps (1 paid), had her in view in 7 of the 40 rounds before, born r174 as a 2-long, victim queen L6
+  [E split trick] (2): 1059834 r484 L2 rams L17: attacker split in the 5 rounds before | 1067641 r207 L3 rams L19: attacker split in the 5 rounds before
+
+===== team 178 (opponent) =====
+  0 games: {'n': 1}
+  A how the queen ended: {'alive': 1}
+  B queen splits: {'1+ free cells, shed 2 (queen 5+)': 2, 'no free cell, cut: keeps 2-3': 1, 'no free cell, shed 2 (queen 5+)': 9}
+  D queen kills by attacker length: {'10+': 1}
+  D queen kills by steps: {'5 steps': 1}
+  E enemy 15+ dragons rammed, by attacker length: {'3': 1, '5-9': 1}
+  E enemy 15+ dragons rammed, by steps: {'2-3 steps': 1, '4+ steps': 1}
+  E enemy 15+ dragons rammed, split trick: {'attacker is a split child born in the last 3 rounds': 1, 'no split': 1}
+  E enemy 15+ rammed after r300: {'n': 1}
+  E own 15+ dragons lost: {'headon, had a free cell': 1, 'noaction, had a free cell': 4}
+  F reverse splits: {'head had a free cell': 8, 'head had no free cell': 19}
+  G non-ram deaths r0-100: {'no free cell, order move, reason body': 3, 'no free cell, order suicide, reason noaction': 160}
+  H deaths by choice (a free cell was there): {'r100 near the queen': 2, 'r200 near the queen': 1, 'r300 near the queen': 7, 'r400 elsewhere': 77, 'r400 near the longest dragon': 12, 'r400 near the queen': 14}
+  H segments in those deaths: {'r100 near the queen': 4, 'r200 near the queen': 3, 'r300 near the queen': 15, 'r400 elsewhere': 235, 'r400 near the longest dragon': 78, 'r400 near the queen': 94}
+  [0 games] (1): 1060000
+  [B queen splits not 4->2+2 with a free cell] (12): 1060000 r0 25->23+2 free 0 | 1060000 r1 23->21+2 free 0 | 1060000 r2 21->19+2 free 0 | 1060000 r3 19->17+2 free 0 | 1060000 r4 17->15+2 free 0 | 1060000 r5 15->13+2 free 0 | 1060000 r6 13->11+2 free 0 | 1060000 r7 11->9+2 free 0 | 1060000 r8 9->7+2 free 0 | 1060000 r9 7->5+2 free 1 | 1060000 r10 5->3+2 free 2 | 1060000 r418 22->2+20 free 0
+  [D queen kills] (1): 1060000 r479: #1477 L18, 5 steps (0 paid), had her in view in 0 of the 40 rounds before, born r461 as a 16-long, victim queen L18
+  [E split trick] (1): 1060000 r356 L5 rams L16: attacker is a split child born in the last 3 rounds
+
+===== team 213 (opponent) =====
+  0 games: {'n': 2}
+  A close rounds: {'n': 25}
+  A close rounds by game: {'1063814': 1, '1067654': 24}
+  A her move made the nearest enemy head: {'NEARER': 2, 'further': 22}
+  A how the queen ended: {'alive': 1, 'rammed': 1}
+  A intruders rammed by an own dragon within 6 steps of the queen: {'n': 1}
+  A nearest intruder length: {'2': 19, '3': 6}
+  A orders: {'move 1': 24, 'split': 1}
+  A own heads within 6: {'0': 22, '1': 1, '2': 2}
+  B queen splits: {'1+ free cells, shed 2 (queen 5+)': 6, 'no free cell, 4 -> 2+2': 1}
+  D queen kills by attacker length: {'2': 1, '3': 1}
+  D queen kills by steps: {'6 steps': 1, 'next cell': 1}
+  E enemy 15+ dragons rammed, by attacker length: {'3': 1, '4': 3, '5-9': 2}
+  E enemy 15+ dragons rammed, by steps: {'2-3 steps': 4, '4+ steps': 2}
+  E enemy 15+ dragons rammed, split trick: {'no split': 6}
+  E enemy 15+ rammed after r300: {'n': 3}
+  E own 15+ dragons lost: {'noaction, had a free cell': 1, 'rammed by L3': 1}
+  F reverse splits: {'head had a free cell': 8, 'head had no free cell': 40}
+  G non-ram deaths r0-100: {'no free cell, order move, reason body': 8, 'no free cell, order move, reason self': 10, 'no free cell, order move, reason wall': 23}
+  H deaths by choice (a free cell was there): {'r100 elsewhere': 3, 'r100 near the queen': 6, 'r200 elsewhere': 2, 'r200 near the queen': 10, 'r300 elsewhere': 14, 'r300 near the longest dragon': 3, 'r300 near the queen': 4, 'r400 elsewhere': 53, 'r400 near the longest dragon': 38, 'r400 near the queen': 5}
+  H segments in those deaths: {'r100 elsewhere': 9, 'r100 near the queen': 16, 'r200 elsewhere': 5, 'r200 near the queen': 33, 'r300 elsewhere': 58, 'r300 near the longest dragon': 17, 'r300 near the queen': 15, 'r400 elsewhere': 159, 'r400 near the longest dragon': 171, 'r400 near the queen': 14}
+  [0 games] (2): 1067654 | 1063814
+  [A close round with a split] (1): 1067654 r111 L4
+  [A intruders rammed] (1): 1067654 r111 L2 rams L2
+  [A nearer] (2): 1067654 r105 | 1067654 r110
+  [B queen splits not 4->2+2 with a free cell] (7): 1067654 r111 4->2+2 free 0 | 1063814 r13 6->4+2 free 3 | 1063814 r24 6->4+2 free 2 | 1063814 r91 5->3+2 free 3 | 1063814 r253 23->21+2 free 2 | 1063814 r254 21->19+2 free 2 | 1063814 r255 19->17+2 free 2
+  [D queen kills] (2): 1067654 r86: #45 L2, 1 steps (0 paid), had her in view in 3 of the 40 rounds before, born r53 as a 2-long, victim queen L2 | 1063814 r34: #50 L3, 6 steps (5 paid), had her in view in 0 of the 40 rounds before, born r24 as a 2-long, victim queen L3
+
+===== team 306 Vibing++ =====
+  0 games: {'n': 1}
+  A close rounds: {'n': 41}
+  A close rounds by game: {'1067620': 41}
+  A her move made the nearest enemy head: {'NEARER': 3, 'further': 36, 'same': 2}
+  A how the queen ended: {'rammed': 1}
+  A intruders rammed by an own dragon within 6 steps of the queen: {'n': 1}
+  A nearest intruder length: {'10+': 1, '2': 32, '3': 7, '5-9': 1}
+  A orders: {'move 1': 32, 'move 2': 4, 'move 3': 5}
+  A own heads within 6: {'0': 34, '1': 3, '2': 3, '3+': 1}
+  C follower ate during the streak: {'1': 1, 'nothing': 1}
+  C follower length at the start: {'2': 2}
+  C follower median path distance to her head: {'1-2': 1, '4': 1}
+  C follower streak length: {'10-19': 1, '20+': 1}
+  C followers (6+ rounds with the enemy queen's head in view): {'n': 2}
+  C how the streak ended: {'lost her / game end': 2}
+  E enemy 15+ dragons rammed, by attacker length: {'2': 1}
+  E enemy 15+ dragons rammed, by steps: {'next cell': 1}
+  E enemy 15+ dragons rammed, split trick: {'attacker split in the 5 rounds before': 1}
+  E enemy 15+ rammed after r300: {'n': 1}
+  F reverse splits: {'head had a free cell': 4, 'head had no free cell': 1}
+  G non-ram deaths r0-100: {'HAD A FREE CELL, order move, reason body': 1, 'HAD A FREE CELL, order split, reason noaction': 1, 'no free cell, order split, reason noaction': 25}
+  H deaths by choice (a free cell was there): {'r0 elsewhere': 2, 'r100 elsewhere': 1, 'r100 near the longest dragon': 1, 'r200 near the longest dragon': 2, 'r300 near the longest dragon': 1, 'r400 elsewhere': 1}
+  H segments in those deaths: {'r0 elsewhere': 4, 'r100 elsewhere': 2, 'r100 near the longest dragon': 2, 'r200 near the longest dragon': 4, 'r300 near the longest dragon': 2, 'r400 elsewhere': 5}
+  [0 games] (1): 1067620
+  [A intruders rammed] (1): 1067620 r101 L2 rams L3
+  [A nearer] (3): 1067620 r92 | 1067620 r93 | 1067620 r143
+  [C followers of 10+ rounds] (2): 1067620 #3 L2 r15-38 (20 rounds), median 2 steps away (min 2), ate 0, lost her / game end | 1067620 #3 L2 r42-61 (18 rounds), median 4 steps away (min 3), ate 1, lost her / game end
+  [E split trick] (1): 1067620 r392 L2 rams L37: attacker split in the 5 rounds before
+
+===== team 507 (opponent) =====
+  0 games: {'n': 3}
+  A close rounds: {'n': 28}
+  A close rounds by game: {'1060356': 24, '1067667': 4}
+  A her move made the nearest enemy head: {'NEARER': 7, 'further': 21}
+  A how the queen ended: {'alive': 2, 'rammed': 1}
+  A intruders rammed by an own dragon within 6 steps of the queen: {'n': 2}
+  A nearest intruder length: {'2': 28}
+  A orders: {'move 1': 28}
+  A own heads within 6: {'0': 23, '1': 1, '2': 3, '3+': 1}
+  B queen splits: {'1+ free cells, 4 -> 2+2': 3, '1+ free cells, shed 2 (queen 5+)': 1}
+  C follower ate during the streak: {'1': 2, 'nothing': 4}
+  C follower length at the start: {'2': 4, '3': 2}
+  C follower median path distance to her head: {'3': 1, '4': 4, '5-6': 1}
+  C follower streak length: {'10-19': 3, '6-9': 3}
+  C followers (6+ rounds with the enemy queen's head in view): {'n': 6}
+  C how the streak ended: {'it was rammed': 1, 'lost her / game end': 5}
+  E enemy 15+ dragons rammed, by attacker length: {'3': 1, '4': 2, '5-9': 3}
+  E enemy 15+ dragons rammed, by steps: {'2-3 steps': 4, '4+ steps': 2}
+  E enemy 15+ dragons rammed, split trick: {'no split': 6}
+  E enemy 15+ rammed after r300: {'n': 6}
+  E own 15+ dragons lost: {'body, no free cell': 1, 'rammed by L4': 1}
+  F reverse splits: {'head had a free cell': 30, 'head had no free cell': 12}
+  G non-ram deaths r0-100: {'no free cell, order move, reason body': 7, 'no free cell, order move, reason self': 12, 'no free cell, order move, reason wall': 37, 'no free cell, order suicide, reason noaction': 1}
+  H deaths by choice (a free cell was there): {'r100 elsewhere': 23, 'r100 near the longest dragon': 11, 'r100 near the queen': 2, 'r200 elsewhere': 16, 'r200 near the longest dragon': 13, 'r200 near the queen': 8, 'r300 elsewhere': 82, 'r300 near the longest dragon': 25, 'r300 near the queen': 8, 'r400 elsewhere': 86, 'r400 near the longest dragon': 22, 'r400 near the queen': 57}
+  H segments in those deaths: {'r100 elsewhere': 61, 'r100 near the longest dragon': 29, 'r100 near the queen': 4, 'r200 elsewhere': 38, 'r200 near the longest dragon': 33, 'r200 near the queen': 22, 'r300 elsewhere': 214, 'r300 near the longest dragon': 65, 'r300 near the queen': 23, 'r400 elsewhere': 303, 'r400 near the longest dragon': 78, 'r400 near the queen': 199}
+  [0 games] (3): 1060356 | 1067667 | 1067446
+  [A intruders rammed] (2): 1067446 r215 L3 rams L2 | 1067446 r311 L2 rams L2
+  [A nearer] (7): 1060356 r100 | 1060356 r101 | 1060356 r120 | 1060356 r127 | 1060356 r128 | 1060356 r136 | 1060356 r142
+  [B queen splits not 4->2+2 with a free cell] (1): 1067667 r424 5->3+2 free 2
+  [C followers of 10+ rounds] (3): 1067667 #48 L3 r27-40 (10 rounds), median 3 steps away (min 3), ate 1, lost her / game end | 1067667 #88 L3 r49-60 (10 rounds), median 4 steps away (min 3), ate 1, lost her / game end | 1067667 #147 L2 r65-76 (12 rounds), median 4 steps away (min 4), ate 0, lost her / game end

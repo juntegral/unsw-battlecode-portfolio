@@ -1,0 +1,15 @@
+opponent m3base; cell = res q100/q200/q350/q400/qend p100 d100 | queen turns with an enemy head in view / her turns (gap<=3) mean gap | queen
+gx_corridors_64x16_911102-seed1-side0
+  qa_L  win    3/ 6/14/33/ 0 p 315 d 58 | seen  43/447 (<=3: 18) mean 3.93 end<=4:  26 | r446 L2 rammed | vs qa_L: -
+  qa_t3 win    3/ 6/ 0/ 0/ 0 p 315 d 58 | seen  15/324 (<=3:  2) mean 4.87 end<=4:   6 | r323 L12 rammed | vs qa_L: r187 QUEEN
+gx_open_24x12_910901-seed1-side1
+  qa_L  loss   0/ 0/ 0/ 0/ 0 p  26 d  0 | seen  11/ 27 (<=3:  7) mean 3.27 end<=4:  10 | r27 L4 rammed | vs qa_L: -
+  qa_t3 loss   0/ 0/ 0/ 0/ 0 p  26 d  0 | seen  11/ 27 (<=3:  7) mean 3.27 end<=4:  10 | r27 L4 rammed | vs qa_L: identical
+ladder_slithery_fight_1-seed1-side0
+  qa_L  win    4/ 2/10/25/67 p 453 d 59 | seen  18/500 (<=3:  4) mean 4.67 end<=4:   9 | lives | vs qa_L: -
+  qa_t3 win    4/ 2/10/25/67 p 453 d 59 | seen  18/500 (<=3:  4) mean 4.67 end<=4:   9 | lives | vs qa_L: identical
+ladder_tower_defense_1-seed1-side0
+  qa_L  win    3/ 0/ 0/ 0/ 0 p  46 d 14 | seen  14/118 (<=3:  1) mean 4.50 end<=4:   1 | r117 L4 rammed | vs qa_L: -
+  qa_t3 win    3/ 0/ 0/ 0/ 0 p  46 d 14 | seen  14/118 (<=3:  1) mean 4.50 end<=4:   1 | r117 L4 rammed | vs qa_L: identical
+qa_L {"n": 4, "win": 3, "qalive": 1, "qend": 67, "q100": 10, "q200": 8, "p100": 840, "d100": 131, "near": 86, "nearsum": 352, "turns": 1092, "deathsum": 1089, "near3": 30, "end4": 46, "q350": 24, "q400": 58, "meanNear": 4.09}
+qa_t3 {"n": 4, "win": 3, "qalive": 1, "qend": 67, "q100": 10, "q200": 8, "p100": 840, "d100": 131, "near": 58, "nearsum": 256, "turns": 969, "deathsum": 966, "near3": 14, "end4": 26, "q350": 10, "q400": 25, "meanNear": 4.41}

@@ -1,0 +1,123 @@
+
+GAME 1503514
+r 190 head (11, 13) length 3 directions [1] steps [[12, 13]]
+exits [('N', (11, 12), None), ('E', (12, 13), None), ('S', (11, 14), (0, 1)), ('W', (10, 13), None)]
+r 191 head (12, 13) length 3 directions [1] steps [[19, 0]]
+exits [('N', (12, 12), None), ('E', (19, 0), None), ('S', None, None), ('W', (11, 13), (0, 1))]
+r 192 head (19, 0) length 3 directions [2] steps [[19, 1]]
+exits [('N', None, None), ('E', None, None), ('S', (19, 1), None), ('W', (12, 13), (0, 1))]
+r 193 head (19, 1) length 3 directions [3] steps [[18, 1]]
+exits [('N', (19, 0), (0, 1)), ('E', None, None), ('S', None, None), ('W', (18, 1), None)]
+*EW    EW     eN     eN     .      eE     *NeW  
+.SW    .S     .S     ES     .S     EES    *SW   
+.NW    .NE    mNeW   qNEw   .NW    .N     .N    
+.W     .E     .SW    QES    .W     .      .S    
+.W     .      eNe    .Nw    e      .E     *NSW  
+eW     .      ES     .S     E      .E     *NSW  
+eW     EE     *NSW   *NES   .W     E      eNe   
+occupants [((17, 14), 248, 0), ((18, 14), 248, 1), ((19, 14), 263, 1), ((21, 14), 241, 1), ((19, 15), 263, 0), ((21, 15), 241, 0), ((18, 0), 229, 3), ((19, 0), 0, 1), ((19, 1), 0, 0), ((18, 2), 199, 1), ((20, 2), 243, 1), ((16, 3), 194, 2), ((18, 3), 199, 0), ((20, 3), 243, 0), ((16, 4), 194, 1), ((17, 4), 194, 0), ((21, 4), 233, 0), ((22, 4), 180, 2)]
+r 194 head (18, 1) length 3 directions [0] steps [[18, 0]]
+exits [('N', (18, 0), None), ('E', (19, 1), (0, 1)), ('S', None, None), ('W', None, None)]
+.E     EEW    eW     .N     .N     .      .E    
+.ES    .SW    ES     ES     eS     ES     eES   
+MNE    .NW    .NE    .NeW   qNEw   .NW    .N    
+mEW    .W     .E     QSW    qES    .W     .     
+mEW    .W     .      .Ne    .Nw    .      .E    
+mEW    .W     E      eS     .S     e      .E    
+mEW    eW     eE     *NSW   *NES   EW     e     
+occupants [((16, 14), 262, 0), ((17, 14), 248, 1), ((17, 15), 248, 0), ((18, 15), 263, 0), ((19, 15), 263, 1), ((20, 15), 241, 0), ((21, 15), 241, 1), ((15, 0), 261, 0), ((19, 0), 0, 2), ((15, 1), 261, 1), ((18, 1), 0, 0), ((19, 1), 0, 1), ((15, 2), 261, 2), ((15, 3), 261, 3), ((17, 3), 199, 0), ((18, 3), 199, 1), ((20, 3), 243, 1), ((15, 4), 261, 4), ((16, 4), 194, 2), ((17, 4), 194, 1), ((20, 4), 243, 0), ((21, 4), 233, 1)]
+r 195 head (18, 0) length 3 directions [1] steps []
+exits [('N', None, None), ('E', (13, 13), (267, 1)), ('S', (18, 1), (0, 1)), ('W', None, None)]
+.E     eEW    .EW    *NSW   *NES   .W     .     
+.E     EEW    .W     EN     .N     E      .E    
+.ES    ESW    eS     eS     .S     eS     .ES   
+MNE    .NW    .NE    QNeW   *NEw   .NW    .N    
+mEW    .W     .E     qSW    qES    .W     .     
+mEW    .W     E      .Ne    .Nw    .      .E    
+mEW    .W     e      .S     .S     .      .E    
+occupants [((16, 13), 262, 1), ((16, 14), 262, 0), ((18, 14), 263, 0), ((20, 14), 241, 0), ((16, 15), 248, 0), ((17, 15), 248, 1), ((18, 15), 263, 1), ((20, 15), 241, 1), ((15, 0), 261, 0), ((18, 0), 0, 0), ((15, 1), 261, 1), ((18, 1), 0, 1), ((19, 1), 0, 2), ((15, 2), 261, 2), ((17, 2), 199, 0), ((15, 3), 268, 2), ((17, 3), 199, 1)]
+death target (13, 13) occupants [('267', 1)]
+queen-death component 240 enemy q (31, 2) reachable False
+queen positions after death bounding [(16, 31), (0, 15)]
+
+GAME 1503515
+r 411 head (37, 16) length 12 directions [3] steps [[36, 16]]
+exits [('N', (37, 15), None), ('E', None, None), ('S', (37, 17), (1, 1)), ('W', (36, 16), None)]
+r 412 head (36, 16) length 12 directions [3] steps [[35, 16]]
+exits [('N', (36, 15), None), ('E', (37, 16), (1, 1)), ('S', (36, 17), (1, 3)), ('W', (35, 16), None)]
+r 413 head (35, 16) length 12 directions [2] steps [[35, 17]]
+exits [('N', None, None), ('E', (36, 16), (1, 1)), ('S', (35, 17), None), ('W', None, None)]
+r 414 head (35, 17) length 12 directions [] steps []
+exits [('N', (35, 16), (1, 1)), ('E', (36, 17), (1, 5)), ('S', (35, 18), None), ('W', (34, 17), None)]
+.ES    *NW    .ES    .NW    *ES    .NEW   .NW   
+.NW    .ES    .NW    .ES    .NW    .E     .W    
+.ES    .NW    .ES    qNW    q      qE     .SW   
+.NW    *ES    .NW    Q      q      q      .NE   
+.EW    *NSW   .S     .      q      q      q     
+MS     .NS    *NES   EW     q      qS     qES   
+.N     .NES   eNW    e      .ES    .NW    .N    
+occupants [((35, 16), 1, 1), ((36, 16), 1, 2), ((37, 16), 1, 3), ((35, 17), 1, 0), ((36, 17), 1, 5), ((37, 17), 1, 4), ((36, 18), 1, 6), ((37, 18), 1, 7), ((38, 18), 1, 8), ((32, 19), 1658, 0), ((35, 19), 1443, 0), ((36, 19), 1, 11), ((37, 19), 1, 10), ((38, 19), 1, 9), ((34, 20), 1443, 2), ((35, 20), 1443, 1)]
+r 415 head (35, 17) length 2 directions [3] steps [[34, 17]]
+exits [('N', (35, 16), (1, 1)), ('E', (36, 17), (1716, 7)), ('S', (35, 18), (1443, 0)), ('W', (34, 17), None)]
+.ES    *NW    .ES    .NW    *ES    .NEW   .NW   
+.NW    .ES    .NW    .ES    .NW    .E     .W    
+.ES    .NW    .ES    qNW    .      mE     .SW   
+.NW    *ES    .NW    Q      m      m      .NE   
+MEW    *NSW   .S     E      m      m      m     
+mS     .NS    *NES   eW     m      mS     mES   
+EN     .NES   .NW    e      MES    .NW    MN    
+occupants [((35, 16), 1, 1), ((37, 16), 1716, 9), ((35, 17), 1, 0), ((36, 17), 1716, 7), ((37, 17), 1716, 8), ((32, 18), 1658, 0), ((35, 18), 1443, 0), ((36, 18), 1716, 6), ((37, 18), 1716, 5), ((38, 18), 1716, 4), ((32, 19), 1658, 1), ((35, 19), 1443, 1), ((36, 19), 1716, 1), ((37, 19), 1716, 2), ((38, 19), 1716, 3), ((32, 20), 1686, 0), ((35, 20), 1443, 2), ((36, 20), 1716, 0), ((38, 20), 1666, 0)]
+r 416 head (34, 17) length 2 directions [2] steps []
+exits [('N', None, None), ('E', (35, 17), (1, 1)), ('S', (34, 18), (1443, 0)), ('W', None, None)]
+.      .ES    *NW    .ES    .NW    *ES    .NEW  
+.ES    .NW    .ES    .NW    .ES    .NW    .E    
+MNW    .ES    .NW    .ES    .NW    .      .E    
+mEW    .NW    *ES    QNW    q      .      .     
+.ES    *EW    *NSW   ES     e      m      m     
+.NS    .S     .NS    *NES   eW     m      mS    
+eNS    eN     .NES   .NW    m      mES    .NW   
+occupants [((31, 16), 1713, 0), ((31, 17), 1713, 1), ((34, 17), 1, 0), ((35, 17), 1, 1), ((34, 18), 1443, 0), ((35, 18), 1443, 1), ((36, 18), 1716, 9), ((37, 18), 1716, 8), ((35, 19), 1443, 2), ((36, 19), 1716, 4), ((37, 19), 1716, 5), ((31, 20), 1686, 2), ((32, 20), 1686, 1), ((35, 20), 1716, 2), ((36, 20), 1716, 3)]
+death target (34, 18) occupants []
+queen-death component 1699 enemy q (8, 14) reachable True
+queen positions after death bounding [(0, 12), (1, 26)]
+
+GAME 1503326
+r 309 head (21, 6) length 2 directions [2] steps [[21, 7]]
+exits [('N', (21, 5), (1, 1)), ('E', None, None), ('S', (21, 7), None), ('W', (20, 6), (243, 2))]
+r 310 head (21, 7) length 2 directions [3] steps [[20, 7]]
+exits [('N', (21, 6), (1, 1)), ('E', None, None), ('S', (21, 8), (272, 2)), ('W', (20, 7), None)]
+r 311 head (20, 7) length 2 directions [0] steps [[20, 6]]
+exits [('N', (20, 6), None), ('E', (21, 7), (1, 1)), ('S', (20, 8), None), ('W', (19, 7), (243, 2))]
+r 312 head (20, 6) length 2 directions [3] steps [[19, 6]]
+exits [('N', (20, 5), None), ('E', (21, 6), None), ('S', (20, 7), (1, 1)), ('W', (19, 6), None)]
+.      mS     MS     .      .E     *NSW   *NES  
+.E     *NSW   *NES   mW     m      MNe    .Nw   
+.E     *NSW   *NES   .W     .      mS     MS    
+M      mNe    .Nw    Q      .E     *NeW   *NEw  
+.W     mS     .S     q      .E     *SW    *ES   
+.EW    *NeW   *NEw   .W     M      mN     .N    
+mEW    *SW    *ES    .W     .      meS    MSw   
+occupants [((18, 3), 318, 2), ((19, 3), 335, 0), ((20, 4), 348, 2), ((21, 4), 348, 1), ((22, 4), 348, 0), ((22, 5), 344, 1), ((23, 5), 344, 0), ((17, 6), 243, 0), ((18, 6), 243, 1), ((20, 6), 1, 0), ((18, 7), 243, 2), ((20, 7), 1, 1), ((21, 8), 272, 0), ((22, 8), 272, 1), ((17, 9), 341, 2), ((22, 9), 272, 2), ((23, 9), 203, 0)]
+r 313 head (19, 6) length 2 directions [3] steps [[12, 3]]
+exits [('N', None, None), ('E', (20, 6), (1, 1)), ('S', (19, 7), None), ('W', (12, 3), None)]
+.W     .      *S     mS     M      .E     *NSW  
+mW     ME     *NSW   *NES   .W     m      mNe   
+.W     .E     *NSW   *NES   .W     .      MS    
+.SW    m      mNe    QNw    q      .E     *NeW  
+ENES   MW     .S     .S     .      ME     *SW   
+mNE    .EW    *NeW   *NEw   .W     m      mN    
+mEW    .EW    *SW    *ES    .W     .      .eS   
+occupants [((19, 3), 335, 1), ((20, 3), 335, 0), ((16, 4), 302, 1), ((17, 4), 302, 0), ((21, 4), 348, 2), ((22, 4), 348, 1), ((22, 5), 348, 0), ((17, 6), 243, 1), ((18, 6), 243, 2), ((19, 6), 1, 0), ((20, 6), 1, 1), ((16, 7), 351, 0), ((17, 7), 243, 0), ((21, 7), 272, 0), ((16, 8), 346, 1), ((21, 8), 272, 1), ((22, 8), 272, 2), ((16, 9), 346, 2)]
+r 314 head (12, 3) length 3 directions [0] steps []
+exits [('N', None, None), ('E', (19, 6), (1, 1)), ('S', None, None), ('W', None, None)]
+MNE    .NW    .N     .N     EN     .N     *NE   
+mESw   EW     .      eS     eS     .E     EEW   
+.Nw    e      .E     *NSW   *NES   eEW    eEW   
+.S     .      .E     QNeSW  *NESw  eEW    eEW   
+*NES   .W     .      .N     .N     EE     eEW   
+*NESw  .W     .      .eS    .Sw    .E     *EW   
+.Nw    .      .E     *NW    *NE    .EW    .EW   
+occupants [((9, 0), 338, 0), ((13, 0), 308, 0), ((9, 1), 338, 1), ((10, 1), 334, 0), ((12, 1), 308, 2), ((13, 1), 308, 1), ((15, 1), 349, 0), ((10, 2), 334, 1), ((14, 2), 325, 2), ((15, 2), 349, 1), ((12, 3), 1, 0), ((14, 3), 325, 1), ((15, 3), 349, 2), ((14, 4), 325, 0), ((15, 4), 349, 3)]
+death target None occupants []
+queen-death component 240 enemy q (1, 5) reachable False
+queen positions after death bounding [(0, 3), (5, 10)]

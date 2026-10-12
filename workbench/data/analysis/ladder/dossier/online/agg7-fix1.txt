@@ -1,0 +1,12 @@
+검증 시각: 2026-10-08 15:27:06 KST
+오류 판: agg7-m3 / M1426896 / Queen Of Spades / 패배 / 종료 r154.
+기존 count_job에서 KeyError('eaten') 재현. 섭취 0, 분열 0으로 두 카운터가 없음.
+수정: 누락된 eaten/pearls_eaten 및 splits를 get(..., 0)으로 비교. 일치 assert 유지.
+회귀 검증: 문제 판 정상 집계; 섭취를 인위적으로 +1 하면 pearl count mismatch로 실패.
+계산 AST가 검사문을 제외하면 동일함을 확인하고, 의존성 해시가 일치하는 기존 성공 캐시의 버전 해시를 갱신하여 재사용. 모든 현재 입력의 해시 검사는 재실행 시 유지.
+결과: 195판 / 고유 195판. 라벨별 battle_ids와 집계 game ID의 Counter 일치.
+승수: m1 7/30, m2 7/30, m3 7/30, b1 9/30, b2 14/30, q1 14/30, sr51-bob1 6/15.
+모든 라벨의 상대별 report.log 줄과 판수·승수 일치. m3는 Big Bobs Bots 6/15, WeHaveQuizzes 1/15.
+agg8-q2.json은 아직 없음. agg7.md에 미도착으로 표시; 도착하면 기존 LABELS로 포함됨.
+nice -n 10을 요청했으나 이 환경에서 setpriority가 Operation not permitted로 거부됨. Python 집계는 정상 완료.
+작성 범위: data/analysis/ladder/dossier/online/만. 네트워크·게시·대전 없음.

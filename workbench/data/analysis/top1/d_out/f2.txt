@@ -1,0 +1,66 @@
+=== 1. seen episodes
+group | games | queens ever seen | alive at the end: ever seen / never seen | episodes per game | per 100 queen-rounds | rounds per episode | ended rammed / dead another way / alive | close episodes (enemy within 3 steps) | of those rammed / dead another way / alive | episodes with her 2-3 long: rammed / other / alive
+test4 against the top three | 78 | 71 (91%) | 17 of 71 / 4 of 7 | 6.5 | 2.73 | 5.3 | 7.1% / 2.2% / 90.7% | 98 | 31% / 5% / 64% | 32 / 8 / 377 of 417
+test4 against meow | 154 | 137 (88%) | 61 of 137 / 9 of 17 | 7.9 | 2.64 | 4.6 | 2.9% / 1.8% / 95.3% | 231 | 15% / 4% / 81% | 28 / 19 / 946 of 993
+WHQ against the top three | 30 | 30 (100%) | 3 of 30 / 0 of 0 | 7.4 | 4.28 | 7.0 | 9.5% / 1.8% / 88.7% | 56 | 36% / 2% / 62% | 17 / 4 / 156 of 177
+top three against test4/WHQ | 108 | 98 (90%) | 29 of 98 / 6 of 10 | 7.9 | 3.43 | 6.2 | 6.0% / 1.1% / 92.9% | 134 | 31% / 1% / 68% | 41 / 5 / 595 of 641
+SSS on weakhold | 28 | 16 (57%) | 7 of 16 / 10 of 12 | 6.4 | 1.50 | 5.1 | 3.4% / 0.6% / 96.1% | 12 | 33% / 8% / 58% | 6 / 1 / 162 of 169
+
+=== 2. small intruders (4 or shorter, came within 4 path steps of the living queen)
+group | intruders | per game | it rammed the queen | it rammed another of her dragons | rammed_by_defender | rammed_by_queen | it died another way | left | queen_dead | game_end | with 3+ own heads within 6 steps: n, rammed the queen, rammed by a defender
+test4 against the top three | 194 | 2.5 | 29 (14.9%) | 8 (4.1%) | 25 (12.9%) | 2 (1.0%) | 2 (1.0%) | 90 (46.4%) | 25 (12.9%) | 13 (6.7%) | 32, 6.2%, 53.1%
+test4 against meow | 531 | 3.4 | 33 (6.2%) | 9 (1.7%) | 50 (9.4%) | 7 (1.3%) | 10 (1.9%) | 359 (67.6%) | 54 (10.2%) | 9 (1.7%) | 55, 5.5%, 21.8%
+WHQ against the top three | 124 | 4.1 | 21 (16.9%) | 9 (7.3%) | 20 (16.1%) | 1 (0.8%) | 3 (2.4%) | 45 (36.3%) | 20 (16.1%) | 5 (4.0%) | 18, 22.2%, 44.4%
+top three against test4/WHQ | 325 | 3.0 | 42 (12.9%) | 17 (5.2%) | 60 (18.5%) | 0 (0.0%) | 11 (3.4%) | 154 (47.4%) | 39 (12.0%) | 2 (0.6%) | 74, 8.1%, 39.2%
+SSS on weakhold | 8 | 0.3 | 4 (50.0%) | 0 (0.0%) | 0 (0.0%) | 1 (12.5%) | 2 (25.0%) | 1 (12.5%) | 0 (0.0%) | 0 (0.0%) | 0, 0.0%, 0.0%
+
+=== 3. circling
+group | queen-rounds | on a loop (4 or fewer cells in 12 rounds) | on a small patch (8 or fewer cells in 16 rounds) | queens with a loop of 20+ rounds | of 50+ rounds | loop rounds with an enemy head in view | queens rammed within 3 rounds of being on a loop
+test4 against the top three | 18506 | 22.1% | 33.6% | 44 of 78 | 11 | 86 | 1
+test4 against meow | 46116 | 25.2% | 38.0% | 84 of 154 | 37 | 184 | 0
+WHQ against the top three | 5184 | 0.6% | 4.7% | 0 of 30 | 0 | 27 | 1
+top three against test4/WHQ | 24774 | 4.0% | 9.8% | 7 of 108 | 4 | 181 | 3
+SSS on weakhold | 11871 | 46.2% | 75.0% | 21 of 28 | 19 | 338 | 2
+
+queens with a loop of 20+ rounds: game, map, side, team, longest loop run, loop rounds, loop rounds with an enemy head in view, queen death
+  by team: {'test4': 128, 'SSS': 22, 'forgot to me': 3, 'Vibing++': 1}
+   1052247 weakhold B SSS 458 458 70 None
+   1063105 weakhold B SSS 405 425 3 None
+   1061467 weakhold B SSS 400 400 0 None
+   1049267 weakhold B SSS 357 440 0 None
+   1057227 weakhold B SSS 353 436 0 None
+   1054792 Slithery Fight A test4 339 376 0 [469, 'rammed']
+   1056421 weakhold B SSS 316 439 0 None
+   1027811 Trauma B test4 289 289 0 None
+   1050181 weakhold B SSS 272 405 0 None
+   1029013 Trauma B test4 266 280 0 None
+   1050695 weakhold B SSS 264 267 0 [464, 'died']
+   1046159 weakhold B SSS 259 434 0 None
+   1046539 weakhold B SSS 253 319 0 None
+   1058155 Trauma B test4 245 341 0 None
+   1055956 weakhold B SSS 239 240 0 None
+   1054775 Slithery Fight A test4 227 350 2 None
+   1059835 weakhold B SSS 214 214 3 [257, 'died']
+   1063674 Tower Defense B test4 201 223 0 None
+   1067915 Trauma B test4 197 251 0 None
+   1058857 Trauma B test4 182 309 0 None
+   1063681 Trauma B test4 182 254 0 None
+   1063010 weakhold B test4 158 340 2 None
+   1054783 weakhold B SSS 141 141 0 None
+   1047117 weakhold B SSS 139 139 55 [182, 'rammed']
+   1029009 Queen Of Spades B test4 134 142 3 None
+   1027815 Slithery Fight B test4 131 216 0 None
+   1063683 Slithery Fight B test4 130 265 1 [362, 'rammed']
+   1058151 Queen Of Spades B test4 129 191 3 None
+   1054779 Tower Defense A test4 122 135 0 None
+   1067917 Slithery Fight B test4 122 243 0 None
+   1054780 Islands A test4 118 145 1 None
+   1067911 Queen Of Spades B test4 105 133 4 None
+   1067250 weakhold B SSS 101 102 91 [461, 'rammed']
+   1067914 Devil B test4 101 111 1 [193, 'rammed']
+   1063677 Queen Of Spades B test4 97 97 1 None
+   1045201 Trauma B test4 95 266 0 None
+   1058856 Devil B test4 94 94 0 None
+   1067908 Tower Defense B test4 93 141 0 None
+   1027818 Islands B test4 90 109 2 None
+   1052759 Tower Defense B test4 90 180 0 None

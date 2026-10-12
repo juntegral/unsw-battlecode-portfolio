@@ -1,0 +1,5 @@
+switch: Q2BOX_ON = false (on 복제본만 true)
+files: versions/v1.8/bot/{params.hpp,plan.cpp}, versions/v1.8/VERSION.md, exp/q2box/{bot-base,bot-on,bot-off,maps,spec.json,runq.js,ANALYZE.md,analyze.js,build.py,baseline-sha256.json,compile-check.json,compile.log,compiled,build-cache,gate-fixtures.cpp,gate.inc,gate-fixtures.txt,BUILD.txt}
+spec: exp/q2box/spec.json — 180판, on/off 78짝 + 동일성 12짝
+run: node exp/q2box/runq.js exp/q2box/spec.json --jobs 3 --cap 6; 이후 UNSW_RULES=123 node exp/q2box/analyze.js (ANALYZE.md 참조)
+risk: 부모 정보 없어 인접한 다른 L2 새끼·재시작에도 첫 이탈 적용; r6·A 동일성·타 지도 생존·CPU는 실행 뒤 검증. off WASM 바이트 동일, fixture 14개 통과. 게임·커밋·네트워크 0.

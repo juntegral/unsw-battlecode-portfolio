@@ -1,0 +1,9 @@
+Queen no longer scouts blind portals on small maps (QUEEN_NO_BLIND_PORTAL), profile = one16
+
+On maps of 600 cells or fewer the real queen was allowed to scout portals
+with an unknown far side. On Portals she stepped into a closed pearl room or
+a one-cell pocket and died boxed in (30 of 30 games of one11 to one14). The
+new switch is off by default; off = the same program as before. The profile
+turns it on and matches the live bot one16 (submission 21651).
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>

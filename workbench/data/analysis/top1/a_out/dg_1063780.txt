@@ -1,0 +1,76 @@
+=== 1063780 Around UNSW 64x64 | Vibing++ (side B) vs forgot to mention (2288) | WIN by queen rule | rounds 500 | start dragons 20 | portals 4
+phase table (own | opp): units, total, top3, queen length
+  r  0 | 10u  36t top[10, 4, 4] q4              | 10u  36t top[10, 4, 4] q4
+  r 50 | 35u  94t top[8, 4, 4] q8               | 34u  85t top[4, 4, 3] q0
+  r100 | 61u 180t top[12, 10, 9] q12            | 44u 108t top[3, 3, 3] q0
+  r150 | 60u 161t top[13, 8, 6] q13             | 60u 167t top[9, 6, 5] q0
+  r200 | 58u 192t top[13, 13, 12] q13           | 61u 157t top[9, 5, 4] q0
+  r250 | 61u 205t top[14, 12, 10] q3            | 61u 149t top[4, 4, 3] q0
+  r300 | 59u 223t top[21, 12, 11] q3            | 62u 190t top[15, 15, 14] q0
+  r350 | 60u 250t top[39, 14, 13] q3            | 60u 214t top[43, 20, 18] q0
+  r400 | 40u 275t top[38, 24, 20] q7            | 40u 254t top[54, 35, 29] q0
+  r450 | 38u 318t top[49, 39, 22] q3            | 19u 257t top[64, 45, 43] q0
+opening: first contact (heads within manh 4) r18; first ram (27, 'B', 2, 2) (round, attacker team, attacker len, victim len)
+  first splits of starting dragons (id: round, len -> parent+child): {3: (0, 4, 2, 2), 15: (0, 4, 2, 2), 19: (0, 10, 8, 2), 28: (4, 5, 2, 3), 34: (12, 5, 2, 3), 17: (17, 4, 2, 2), 24: (17, 4, 2, 2), 30: (17, 4, 2, 2)}
+  queen splits own: ['r216 13->3+10', 'r449 9->3+6'] | opp: ['r0 4->2+2']
+queen routine (own):
+  r  0 (43, 21) L4 ball26 home0 enemies<=8:[] allies<=6:3 cells/25r:1
+  r 25 (44, 20) L7 ball36 home2 enemies<=8:[] allies<=6:1 cells/25r:17
+  r 50 (46, 17) L8 ball41 home7 enemies<=8:[] allies<=6:2 cells/25r:24
+  r 75 (39, 23) L11 ball36 home6 enemies<=8:[] allies<=6:2 cells/25r:25
+  r100 (38, 27) L12 ball41 home11 enemies<=8:[(4, 'L2')] allies<=6:0 cells/25r:24
+  r125 (45, 31) L12 ball27 home12 enemies<=8:[(6, 'L2')] allies<=6:0 cells/25r:25
+  r150 (42, 38) L13 ball24 home18 enemies<=8:[] allies<=6:1 cells/25r:22
+  r175 (45, 38) L13 ball23 home19 enemies<=8:[(6, 'L3')] allies<=6:0 cells/25r:10
+  r200 (55, 30) L13 ball23 home21 enemies<=8:[] allies<=6:3 cells/25r:25
+  r225 (56, 19) L3 ball14 home15 enemies<=8:[] allies<=6:1 cells/25r:17
+  r250 (55, 23) L3 ball32 home14 enemies<=8:[] allies<=6:1 cells/25r:15
+  r275 (53, 30) L3 ball38 home19 enemies<=8:[] allies<=6:1 cells/25r:23
+  r300 (52, 34) L3 ball26 home22 enemies<=8:[] allies<=6:0 cells/25r:13
+  r325 (54, 31) L3 ball29 home21 enemies<=8:[] allies<=6:2 cells/25r:12
+  r350 (53, 31) L3 ball37 home20 enemies<=8:[] allies<=6:1 cells/25r:14
+  r375 (57, 24) L3 ball22 home17 enemies<=8:[] allies<=6:1 cells/25r:19
+  r400 (54, 33) L7 ball33 home23 enemies<=8:[] allies<=6:2 cells/25r:17
+  r425 (45, 36) L9 ball35 home17 enemies<=8:[(5, 'L2')] allies<=6:0 cells/25r:25
+  r450 (49, 35) L3 ball22 home20 enemies<=8:[] allies<=6:3 cells/25r:17
+  r475 (52, 39) L13 ball19 home27 enemies<=8:[] allies<=6:0 cells/25r:20
+  enemy heads that came within 6 steps of the own queen: 16 episodes; outcomes {'left': 15, 'RAMMED': 1}
+    r128-139 #364 L2 min dist 3 allies<=6 at start 1 -> left
+    r137-141 #368 L2 min dist 3 allies<=6 at start 0 -> left
+    r167-185 #364 L3 min dist 2 allies<=6 at start 0 -> left
+    r415-443 #994 L29 min dist 3 allies<=6 at start 0 -> left
+queen deaths:
+  ENEMY queen #0 died r34: headon, L3, at (27, 35)
+      killer #44 team B L5 from (29, 32), 5 of 5 steps, born r20
+      killer distance to the queen / its length, last rounds: r23:d14/L2 r24:d12/L2 r25:d10/L3 r26:d8/L3 r27:d8/L4 r28:d7/L2 r29:d5/L3 r30:d5/L4 r31:d6/L2 r32:d4/L3 r33:d4/L4 r34:d4/L5
+      queen track: r29:(29, 33)L2 r30:(30, 33)L3 r31:(30, 34)L3 r32:(29, 34)L3 r33:(29, 35)L3 r34:(28, 35)L3
+      other heads within manh 6 of the death cell: [(3, 'B', 3), (6, 'A', 2)]
+rams on enemy heads by own: per 100 rounds {0: 17, 1: 33, 2: 23, 3: 16, 4: 7}; by attacker length/steps {('2', 'adjacent'): 30, ('2', 'sprint2'): 2, ('2', 'sprint3'): 1, ('3-4', 'adjacent'): 15, ('3-4', 'sprint2'): 30, ('3-4', 'sprint3'): 9, ('3-4', 'sprint4'): 1, ('5-9', 'adjacent'): 2, ('5-9', 'sprint3'): 5, ('5-9', 'sprint5'): 1}
+   attacker len -> victim len: {('2', '2'): 24, ('2', '3-4'): 9, ('3-4', '10-19'): 2, ('3-4', '2'): 30, ('3-4', '3-4'): 22, ('3-4', '5-9'): 1, ('5-9', '2'): 3, ('5-9', '3-4'): 5}
+rams on enemy heads by opp: per 100 rounds {0: 10, 1: 26, 2: 25, 3: 9, 4: 7}; by attacker length/steps {('2', 'adjacent'): 32, ('3-4', 'adjacent'): 11, ('3-4', 'sprint2'): 22, ('3-4', 'sprint3'): 6, ('3-4', 'sprint4'): 1, ('5-9', 'sprint2'): 1, ('5-9', 'sprint5'): 4}
+   attacker len -> victim len: {('2', '10-19'): 2, ('2', '2'): 26, ('2', '3-4'): 4, ('3-4', '10-19'): 3, ('3-4', '2'): 22, ('3-4', '3-4'): 9, ('3-4', '5-9'): 6, ('5-9', '10-19'): 3, ('5-9', '2'): 1, ('5-9', '5-9'): 1}
+late game (own): leader every 25 rounds from r200:
+  r200 #1 L13 at (55, 30) ball23 (queen)
+  r225 #609 L12 at (60, 10) ball23
+  r250 #609 L14 at (54, 50) ball41
+  r275 #753 L16 at (44, 17) ball36
+  r300 #753 L21 at (50, 8) ball35
+  r325 #884 L33 at (32, 36) ball15
+  r350 #965 L39 at (40, 23) ball32
+  r375 #1021 L38 at (55, 29) ball26
+  r400 #1047 L38 at (57, 23) ball22
+  r425 #1087 L38 at (53, 22) ball40
+  r450 #1087 L49 at (33, 36) ball21
+  r475 #1171 L51 at (47, 14) ball39
+  self-kills ('noaction' deaths) per 50 rounds: n, mean len, share within manh 6 of own longest, share within 6 of own queen:
+    {0: (18, 2.3, 0.06, 0.11), 50: (32, 2.2, 0.03, 0.03), 100: (37, 2.5, 0.03, 0.03), 150: (37, 2.6, 0.0, 0.0), 200: (51, 2.6, 0.16, 0.0), 250: (60, 2.5, 0.05, 0.02), 300: (50, 2.9, 0.06, 0.04), 350: (49, 2.3, 0.08, 0.08), 400: (40, 2.4, 0.05, 0.07), 450: (61, 3.7, 0.02, 0.1)}
+  what own dragons ate per 100 rounds: {0: {'other<-natural': 246, 'other<-own_suicide': 53, 'other<-own_ram': 25, 'other<-enemy_ram': 18, 'queen<-natural': 6}, 100: {'other<-natural': 203, 'other<-own_suicide': 98, 'other<-own_ram': 69, 'other<-enemy_ram': 37, 'other<-enemy_suicide': 2}, 200: {'other<-natural': 240, 'other<-own_suicide': 158, 'other<-own_ram': 67, 'other<-enemy_ram': 32, 'other<-enemy_suicide': 7}, 300: {'other<-natural': 188, 'other<-own_suicide': 124, 'other<-own_ram': 21, 'other<-enemy_ram': 20, 'longest<-natural': 11}, 400: {'other<-natural': 259, 'other<-own_suicide': 128, 'queen<-own_suicide': 24, 'other<-own_ram': 21, 'longest<-natural': 18}}
+  'reverse' splits (child bigger than parent, len >= 12): 71 total; first: ['r75 #82 L12 -> keeps 2, child #186 gets 10', 'r216 #1 L13 -> keeps 3, child #605 gets 10']
+  deaths of dragons >= 15:
+    r246 team B #703 L16 headon by L3 in 2/2 steps at (34, 29)
+    r414 team B #1078 L17 headon by L2 in 1/1 steps at (61, 8)
+    r452 team A #1099 L43 noaction at (29, 41)
+    r453 team B #1094 L22 noaction at (50, 39)
+    r460 team B #1135 L19 noaction at (48, 36)
+roles (own): length histogram every 100 rounds: [(0, {'10-19': 1, '2': 4, '3-4': 5}), (100, {'10-19': 2, '2': 32, '3-4': 24, '5-9': 3}), (200, {'10-19': 3, '2': 31, '3-4': 20, '5-9': 4}), (300, {'10-19': 2, '2': 29, '20+': 1, '3-4': 19, '5-9': 8}), (400, {'10-19': 5, '2': 13, '20+': 3, '3-4': 9, '5-9': 10})]
+sonar pings per 100 rounds: own {0: 8722, 1: 15238, 2: 15138, 3: 14018, 4: 8545} | opp {0: 3995, 1: 8808, 2: 8654, 3: 8111, 4: 5650}

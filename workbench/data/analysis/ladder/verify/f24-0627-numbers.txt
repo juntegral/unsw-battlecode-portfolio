@@ -1,0 +1,110 @@
+games loaded 705 errors 0
+
+===== v31 free layouts, games 362
+ (a) reach, raw rounds 0-200, queen turn starts
+   <1700      games  13 battles  3 opponents  2 | our queen exposed (full reach) 12 of 1864 (0.006), within free steps 2 of 1864 (0.001), games with any exposed turn 6 of 13 (0.462) | their queen to our heads: 43 of 907 (0.047), free 37 of 907 (0.041)
+   1700-1899  games 186 battles 42 opponents 22 | our queen exposed (full reach) 390 of 24107 (0.016), within free steps 117 of 24107 (0.005), games with any exposed turn 75 of 186 (0.403) | their queen to our heads: 376 of 24759 (0.015), free 179 of 24759 (0.007)
+   1900-2099  games 120 battles 27 opponents 17 | our queen exposed (full reach) 274 of 13406 (0.020), within free steps 46 of 13406 (0.003), games with any exposed turn 46 of 120 (0.383) | their queen to our heads: 241 of 15572 (0.015), free 76 of 15572 (0.005)
+   2100+      games  43 battles 10 opponents  8 | our queen exposed (full reach) 45 of 4415 (0.010), within free steps 7 of 4415 (0.002), games with any exposed turn 17 of 43 (0.395) | their queen to our heads: 154 of 5459 (0.028), free 102 of 5459 (0.019)
+   exposed share 2100+ minus 1700-1899, battles resampled inside each band: (-0.0152, 0.0036, 0.899)
+   exposed share 2100+ minus 1900-2099, battles resampled inside each band: (-0.0223, 0.0021, 0.9515)
+   games as units: (-0.0137, 0.0012, 0.934)
+   2100+ by opponent: games, exposed turns of queen turns
+     Cache me outside (952)             5  6 of 774 (0.008)
+     Computers (112)                    3  0 of 420 (0.000)
+     Sponge(Albert and Bob) (213)       4  0 of 425 (0.000)
+     Team SKKU (249)                    4  0 of 233 (0.000)
+     chad gdp (70)                      9  16 of 652 (0.025)
+     dev test 1 :P (545)                9  13 of 795 (0.016)
+     fandagong (552)                    5  2 of 650 (0.003)
+     test4 (19)                         4  8 of 466 (0.017)
+   exposed share by layout, 2100+ against 1700-1899 (layouts with 2 or more games in each)
+     higher at 2100+ on 4 layouts, not higher on 10
+ (b) rams on our queen (she is the stationary victim, rammer of the other team)
+   <1700      games  13 rams   8 (by r200 4, per game 0.31); rammer alive at her last turn start 8; paid 1 of 8 (0.125) Wilson (0.022, 0.471); paid by the steps of the ramming turn itself 1 of 8 (0.125); her last step shortened the path 7 of 8 (0.875)
+              mean d0 2.12, mean d1 1.25, mean rammer length 2.38; d1 values [(1, 7), (3, 1)]; rammer lengths [(2, 6), (3, 1), (4, 1)]
+   1700-1899  games 186 rams  73 (by r200 51, per game 0.27); rammer alive at her last turn start 72; paid 31 of 72 (0.431) Wilson (0.323, 0.546); paid by the steps of the ramming turn itself 31 of 73 (0.425); her last step shortened the path 67 of 72 (0.931)
+              mean d0 2.54, mean d1 1.61, mean rammer length 3.21; d1 values [(1, 40), (2, 22), (3, 9), (5, 1)]; rammer lengths [(2, 29), (3, 28), (4, 8), (5, 3), (7, 2), (12, 1), (16, 1)]
+   1900-2099  games 120 rams  64 (by r200 52, per game 0.43); rammer alive at her last turn start 64; paid 33 of 64 (0.516) Wilson (0.396, 0.634); paid by the steps of the ramming turn itself 33 of 64 (0.516); her last step shortened the path 52 of 64 (0.812)
+              mean d0 2.64, mean d1 1.84, mean rammer length 3.02; d1 values [(1, 31), (2, 19), (3, 9), (4, 4), (6, 1)]; rammer lengths [(2, 27), (3, 23), (4, 9), (6, 3), (8, 2)]
+   2100+      games  43 rams  26 (by r200 23, per game 0.53); rammer alive at her last turn start 26; paid 20 of 26 (0.769) Wilson (0.579, 0.89); paid by the steps of the ramming turn itself 20 of 26 (0.769); her last step shortened the path 26 of 26 (1.000)
+              mean d0 3.23, mean d1 2.23, mean rammer length 3.31; d1 values [(1, 6), (2, 13), (3, 3), (4, 3), (5, 1)]; rammer lengths [(2, 6), (3, 15), (4, 1), (5, 1), (6, 2), (8, 1)]
+   all bands: her last step shortened the path 152 of 170 (0.894) | she had moved at all 159 of 170 (0.935) | excluded: rams by our own dragons 1 , rammer not alive at her last turn start 1
+   chance (Fisher, rams as units): 2100+ against 1700-1899 p 0.005386; against 1900-2099 p 0.03394; against everything under 2100 p 0.00553
+   paid share 2100+ minus 1700-1899, battles resampled inside each band: (0.1184, 0.5456, 0.002)
+   paid share 2100+ minus 1900-2099, battles resampled inside each band: (0.0145, 0.4646, 0.0175)
+   2100+ without three paid rams: 17 of 23 (0.739)
+   2100+ by opponent: games, rams, paid
+     Cache me outside (952)             5  4 of 4 (1.000)
+     Computers (112)                    3  0 of 1 (0.000)
+     Sponge(Albert and Bob) (213)       4  2 of 2 (1.000)
+     Team SKKU (249)                    4  3 of 3 (1.000)
+     chad gdp (70)                      9  2 of 4 (0.500)
+     dev test 1 :P (545)                9  4 of 6 (0.667)
+     fandagong (552)                    5  3 of 3 (1.000)
+     test4 (19)                         4  2 of 3 (0.667)
+     one opponent left out: paid share from 0.727 to 0.818
+   paid share by rammer length at her last turn start (free steps 1 for lengths 1-4, 2 for 5-8, 3 for 9-12)
+     length 1-2: <1700 0 of 6 (0.000); 1700-1899 1 of 29 (0.034); 1900-2099 1 of 27 (0.037); 2100+ 0 of 6 (0.000)
+     length 3-4: <1700 1 of 2 (0.500); 1700-1899 25 of 36 (0.694); 1900-2099 27 of 32 (0.844); 2100+ 16 of 16 (1.000)
+     length 5-8: 1700-1899 4 of 5 (0.800); 1900-2099 5 of 5 (1.000); 2100+ 4 of 4 (1.000)
+     length 9-99: 1700-1899 1 of 2 (0.500)
+   paid against not paid: mean rammer length
+     paid 3.78 (n 85), not paid 2.45 (n 85)
+   split at battle 1270027 (the analyst shards stop there): paid share by band, up to it | after it
+     <1700      1 of 8 (0.125) | 0 of 0 (-) (games after: 0)
+     1700-1899  31 of 72 (0.431) | 0 of 0 (-) (games after: 0)
+     1900-2099  33 of 64 (0.516) | 0 of 0 (-) (games after: 0)
+     2100+      20 of 26 (0.769) | 0 of 0 (-) (games after: 0)
+ mirror: our rams on their queen (their queen is the stationary victim)
+   <1700      rams   4; paid 1 of 4 (0.250); her last step shortened the path 4 of 4 (1.000)
+   1700-1899  rams  96; paid 38 of 94 (0.404); her last step shortened the path 92 of 94 (0.979)
+   1900-2099  rams  47; paid 27 of 47 (0.574); her last step shortened the path 43 of 47 (0.915)
+   2100+      rams  17; paid 7 of 17 (0.412); her last step shortened the path 16 of 17 (0.941)
+
+===== main free layouts, games 217
+ (a) reach, raw rounds 0-200, queen turn starts
+   1700-1899  games  77 battles 19 opponents 14 | our queen exposed (full reach) 121 of 10277 (0.012), within free steps 18 of 10277 (0.002), games with any exposed turn 28 of 77 (0.364) | their queen to our heads: 190 of 11282 (0.017), free 65 of 11282 (0.006)
+   1900-2099  games 123 battles 28 opponents 14 | our queen exposed (full reach) 289 of 16572 (0.017), within free steps 29 of 16572 (0.002), games with any exposed turn 49 of 123 (0.398) | their queen to our heads: 278 of 16320 (0.017), free 140 of 16320 (0.009)
+   2100+      games  17 battles  4 opponents  3 | our queen exposed (full reach) 31 of 2194 (0.014), within free steps 14 of 2194 (0.006), games with any exposed turn 8 of 17 (0.471) | their queen to our heads: 47 of 2522 (0.019), free 29 of 2522 (0.011)
+   exposed share 2100+ minus 1700-1899, battles resampled inside each band: (-0.0064, 0.0099, 0.3075)
+   exposed share 2100+ minus 1900-2099, battles resampled inside each band: (-0.0168, 0.0077, 0.698)
+   games as units: (-0.0093, 0.0181, 0.386)
+   2100+ by opponent: games, exposed turns of queen turns
+     Settlers of Battlecode (258)       8  15 of 927 (0.016)
+     SilverSamurai (28)                 4  4 of 574 (0.007)
+     dev test 1 :P (545)                5  12 of 693 (0.017)
+   exposed share by layout, 2100+ against 1700-1899 (layouts with 2 or more games in each)
+     higher at 2100+ on 2 layouts, not higher on 2
+ (b) rams on our queen (she is the stationary victim, rammer of the other team)
+   1700-1899  games  77 rams  28 (by r200 25, per game 0.32); rammer alive at her last turn start 28; paid 14 of 28 (0.500) Wilson (0.326, 0.674); paid by the steps of the ramming turn itself 14 of 28 (0.500); her last step shortened the path 23 of 28 (0.821)
+              mean d0 2.79, mean d1 2.04, mean rammer length 3.25; d1 values [(1, 13), (2, 9), (3, 1), (4, 3), (5, 1), (6, 1)]; rammer lengths [(2, 10), (3, 13), (5, 3), (8, 1), (9, 1)]
+   1900-2099  games 123 rams  61 (by r200 44, per game 0.36); rammer alive at her last turn start 57; paid 32 of 57 (0.561) Wilson (0.433, 0.682); paid by the steps of the ramming turn itself 33 of 61 (0.541); her last step shortened the path 44 of 57 (0.772)
+              mean d0 2.98, mean d1 2.28, mean rammer length 4.00; d1 values [(1, 22), (2, 14), (3, 11), (4, 4), (5, 5), (6, 1)]; rammer lengths [(2, 20), (3, 19), (4, 4), (5, 3), (6, 3), (7, 2), (8, 1), (9, 1), (10, 1), (12, 1), (14, 1), (15, 1)]
+   2100+      games  17 rams  12 (by r200 9, per game 0.53); rammer alive at her last turn start 10; paid 4 of 10 (0.400) Wilson (0.168, 0.687); paid by the steps of the ramming turn itself 4 of 12 (0.333); her last step shortened the path 8 of 10 (0.800)
+              mean d0 2.70, mean d1 1.90, mean rammer length 2.80; d1 values [(1, 6), (2, 1), (3, 1), (4, 2)]; rammer lengths [(2, 5), (3, 3), (4, 1), (5, 1)]
+   all bands: her last step shortened the path 75 of 95 (0.789) | she had moved at all 88 of 95 (0.926) | excluded: rams by our own dragons 0 , rammer not alive at her last turn start 6
+   chance (Fisher, rams as units): 2100+ against 1700-1899 p 0.719; against 1900-2099 p 0.4946; against everything under 2100 p 0.5095
+   paid share 2100+ minus 1700-1899, battles resampled inside each band: (-0.3851, 0.1111, 0.8345)
+   paid share 2100+ minus 1900-2099, battles resampled inside each band: (-0.3833, 0.0081, 0.9715)
+   2100+ without three paid rams: 1 of 7 (0.143)
+   2100+ by opponent: games, rams, paid
+     Settlers of Battlecode (258)       8  1 of 3 (0.333)
+     SilverSamurai (28)                 4  1 of 3 (0.333)
+     dev test 1 :P (545)                5  2 of 4 (0.500)
+     one opponent left out: paid share from 0.333 to 0.429
+   paid share by rammer length at her last turn start (free steps 1 for lengths 1-4, 2 for 5-8, 3 for 9-12)
+     length 1-2: 1700-1899 1 of 10 (0.100); 1900-2099 3 of 20 (0.150); 2100+ 0 of 5 (0.000)
+     length 3-4: 1700-1899 9 of 13 (0.692); 1900-2099 18 of 23 (0.783); 2100+ 3 of 4 (0.750)
+     length 5-8: 1700-1899 3 of 4 (0.750); 1900-2099 9 of 9 (1.000); 2100+ 1 of 1 (1.000)
+     length 9-99: 1700-1899 1 of 1 (1.000); 1900-2099 2 of 5 (0.400)
+   paid against not paid: mean rammer length
+     paid 4.18 (n 50), not paid 3.07 (n 45)
+   split at battle 1270027 (the analyst shards stop there): paid share by band, up to it | after it
+     1700-1899  11 of 23 (0.478) | 3 of 5 (0.600) (games after: 12)
+     1900-2099  30 of 54 (0.556) | 2 of 3 (0.667) (games after: 4)
+     2100+      3 of 6 (0.500) | 1 of 4 (0.250) (games after: 8)
+ mirror: our rams on their queen (their queen is the stationary victim)
+   1700-1899  rams  35; paid 13 of 34 (0.382); her last step shortened the path 30 of 34 (0.882)
+   1900-2099  rams  61; paid 17 of 59 (0.288); her last step shortened the path 56 of 59 (0.949)
+   2100+      rams   4; paid 2 of 3 (0.667); her last step shortened the path 2 of 3 (0.667)

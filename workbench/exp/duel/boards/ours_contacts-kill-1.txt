@@ -1,0 +1,194 @@
+game cand-merge2-online-r2 map Default/a us=A result {"winner":"B","end":"teamEliminated"}
+tags(our turns): {"sx":0,"sr":0,"sd":0,"sf":0,"sq":0,"sc":0,"sk":0,"esc":3,"split":5}
+timeline r | our units / longest / total | their units / longest / total
+  r  0 |   4 /   4 /   16 |   4 /   4 /   16
+  r 25 |   4 /   5 /   17 |   9 /   3 /   20
+  r 50 |   3 /   8 /   17 |  11 /   5 /   34
+  r 75 |   3 /   6 /   15 |  21 /   5 /   49
+  r100 |   2 /   6 /   11 |  26 /   3 /   62
+  r125 |   1 /   6 /    6 |  31 /   4 /   76
+  r150 |   2 /   6 /   11 |  35 /   4 /   89
+  r175 |   1 /   3 /    3 |  40 /   7 /  113
+  r200 |   1 /  10 /   10 |  46 /   4 /  116
+  r225 |   2 /   8 /   12 |  52 /   6 /  134
+  r250 |   2 /  11 /   17 |  59 /   8 /  159
+  r275 |   2 /   8 /   12 |  64 /   7 /  180
+  r300 |   2 /   8 /   10 |  64 /   7 /  199
+  r325 |   2 /   5 /    8 |  62 /   7 /  214
+  r350 |   1 /  10 /   10 |  61 /  12 /  232
+local feeds (sf) 0: first 12 → 
+--- r126: ours 1 dragons [7] total 7 | theirs 32 [3 3 3 3 3 3 3 3 …] total 76
++--------------------------------+
+|                 xxX       X    |
+|                                |
+|               Xx               |
+|   x             xxX            |
+|  XxXx                          |
+|x    x                    xX   X|
+|                        xX      |
+|   xX           Xx              |
+|         X                      |
+|         x                Xx    |
+|         x  x x        XX       |
+|            X x        xx       |
+|          x  xX        x        |
+|          X Xx                  |
+|              ...7              |
+| X  Xx      oo.    X            |
+| x           X..   x x          |
+|             x% %    X          |
+|            %                   |
+|                     X          |
+|            %        x          |
+|                     x          |
+|                                |
+|           xXo                  |
+|                        Xx      |
+|                           oo   |
+|Xxx                      o oo   |
+|                          o  o  |
+|                         ooo    |
+|X              xxX       ooooo  |
+|x                   xX      Xx  |
+|                          xx    |
++--------------------------------+
+--- r127: ours 1 dragons [7] total 7 | theirs 32 [3 3 3 3 3 3 3 3 …] total 78
++--------------------------------+
+|                  xxX     Xx    |
+|                                |
+|  o           Xx                |
+|  X               xxX           |
+|  xxxx                         X|
+|                           xX  x|
+|                         xX     |
+|    xX   X     Xx       X       |
+|         x                      |
+|         x             XXXx     |
+|                       xx       |
+|           Xx x        x        |
+|            X xX                |
+|          xXxx                  |
+| X            .... X            |
+| x Xx       oX.  7 x            |
+|             x.                 |
+|             x% %   Xx          |
+|            %                   |
+|                    Xx          |
+|            %        x          |
+|                                |
+|                                |
+|           xxX          X       |
+|                        x       |
+|                           oo   |
+|xx                       o oo  X|
+|                          o  o  |
+|                         ooo    |
+|x               xxX      ooooo X|
+|                     xX     x   |
+|                           xX   |
++--------------------------------+
+--- r128: ours 1 dragons [7] total 7 | theirs 32 [4 4 3 3 3 3 3 3 …] total 80
++--------------------------------+
+|                   xxX   Xxx    |
+|                                |
+|  X           x                 |
+|  x           X    xxX         X|
+|  xxx                          x|
+|                            xX  |
+|         X              X xX    |
+|     xX  x    Xx        x       |
+|     X   x              X       |
+|                      Xxxx      |
+|                       x X      |
+|           x                    |
+|           XxXxx                |
+| X         xx  X                |
+| x            ....Xx            |
+|   x        Xx.  .              |
+|   X         x   7              |
+|             x% %  Xx           |
+|            %       X           |
+|                    xx          |
+|            %                   |
+|                                |
+|                                |
+|            xxX        Xx       |
+|                                |
+|                           oo   |
+|x                        o oo Xx|
+|                          o  o  |
+|                         ooo   X|
+|                 xxX     ooooo x|
+|                      xX        |
+|                            xX  |
++--------------------------------+
+--- r129: ours 1 dragons [7] total 7 | theirs 33 [4 3 3 3 3 3 3 3 …] total 80
++--------------------------------+
+|                    xxX  xx     |
+|                                |
+|  X                            X|
+|  x           xX    xxX        x|
+|   x                            |
+|   X     X              X    xX |
+|         x              x  xX   |
+|      xX x   Xx         x       |
+|     x                X xX      |
+|     X                xx        |
+|                         x      |
+|             X           X      |
+| X        Xx x x                |
+| x             xX               |
+|              ....xx            |
+|           Xxx   .X             |
+|   x         x   . X            |
+|   X          % %7 x            |
+|            %      Xx           |
+|                    x           |
+|            %                   |
+|                                |
+|                                |
+|             xxX       x        |
+|                       X        |
+|                           oo X |
+|                         o oo xx|
+|                          o  o  |
+|X                        ooo   x|
+|                  xxX  X ooooo  |
+|                       x        |
+|                         X   xX |
++--------------------------------+
+--- r130: ours 1 dragons [8] total 8 | theirs 33 [3 3 3 3 3 3 3 3 …] total 77
++--------------------------------+
+|                     xxX x      |
+|                               X|
+|  xX            o              x|
+|               xX    xxX        |
+|         X                    X |
+|   xX    x              xX    x |
+|         x              x   xX  |
+|       x    Xx                  |
+|       X              xX xX     |
+|     xX               x         |
+|                                |
+| X          Xx           x      |
+| x        x    %         X      |
+|          X     %               |
+|              ....x             |
+|           Xx    .xX            |
+|            Xx   . xX           |
+|   x          % 8.              |
+|   X        %     Xxx           |
+|                                |
+|            %                   |
+|                                |
+|                                |
+|              xxX               |
+|                       xX     X |
+|                           oo x |
+|                         o oo x |
+|X                         o  o  |
+|x                   X  X ooo    |
+|               o   xx  x ooooo  |
+|                              X |
+|                         xX   x |
++--------------------------------+

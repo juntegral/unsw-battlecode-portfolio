@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Colosseum",
+    "key": "v12-F-H:proxy4_king:Colosseum:A:1",
+    "tm": "A",
+    "rounds": [
+      1,
+      25,
+      100,
+      120
+    ],
+    "mapHeader": "Colosseum",
+    "replay": "~/01. Project/개인 프로젝트/unsw-swarm/exp/gen/v12-F-H/games/proxy4_king_Colosseum_A_1/game.replay",
+    "command": [
+      "node",
+      "eval/board.js",
+      "~/01. Project/개인 프로젝트/unsw-swarm/exp/gen/v12-F-H/games/proxy4_king_Colosseum_A_1/game.replay",
+      "Colosseum",
+      "a",
+      "A",
+      "1,25,100,120"
+    ]
+  },
+  {
+    "name": "default_small",
+    "key": "v12-F-H:proxy4_king:default_small:A:1",
+    "tm": "A",
+    "rounds": [
+      25,
+      50,
+      100,
+      189
+    ],
+    "mapHeader": "Default Small",
+    "replay": "~/01. Project/개인 프로젝트/unsw-swarm/exp/gen/v12-F-H/games/proxy4_king_default_small_A_1/game.replay",
+    "command": [
+      "node",
+      "eval/board.js",
+      "~/01. Project/개인 프로젝트/unsw-swarm/exp/gen/v12-F-H/games/proxy4_king_default_small_A_1/game.replay",
+      "Default Small",
+      "a",
+      "A",
+      "25,50,100,189"
+    ]
+  },
+  {
+    "name": "Trophy",
+    "key": "top:637160:637169",
+    "tm": "A",
+    "rounds": [
+      25,
+      50,
+      100,
+      184
+    ],
+    "mapHeader": "Trophy",
+    "replay": "~/01. Project/개인 프로젝트/unsw-swarm/data/top/637160/637169.replay.gz",
+    "command": [
+      "node",
+      "eval/board.js",
+      "~/01. Project/개인 프로젝트/unsw-swarm/data/top/637160/637169.replay.gz",
+      "Trophy",
+      "a",
+      "A",
+      "25,50,100,184"
+    ]
+  }
+]

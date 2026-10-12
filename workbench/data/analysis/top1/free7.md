@@ -1,0 +1,1 @@
+Sub-session subA5.md has finished (ran 12:59-15:02 KST, exit code 0). What it printed is in subA5.out (2883 bytes). The .md files in this directory written while it ran: deep-read-5.md e_r0_head.md e_r2_tables.md e_r3_games.md e_r4_stories.md e_r5_answers.md e_r6_race.md e_r7_candidate.md e_r8_wrong.md e_r9_unknown.md.

@@ -1,0 +1,5 @@
+스위치: Q1B_BACKUP_ON=false; Q1C_SIGHT_ON=false (각각 독립, bot-on은 둘 다 true)
+변경: versions/v1.8/bot/{params.hpp,plan.hpp,plan.cpp,world.hpp,world.cpp,main.cpp,conv2.cpp,q1state.hpp}; versions/v1.8/VERSION.md; exp/q1c/**
+명세: exp/q1c/spec.json — 196판 (off/b/c/on 176, off/base 동일성 12, 우리끼리 8; 팀 뒤집힌 지도 포함)
+실행: node exp/q1c/runq.js exp/q1c/spec.json --jobs 3 --cap 6; 이후 UNSW_RULES=123 node exp/q1c/analyze.js (ANALYZE.md)
+위험: 사망 뒤 믿음은 직접 최대50/공유 최대100라운드 남음; 검사합7비트; 6칸 회피는 약한 잎 선호; 실판 기제·CPU 미검증. BUILD 새 대전0/커밋0/네트워크0.

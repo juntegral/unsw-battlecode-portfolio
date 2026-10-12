@@ -1,0 +1,1 @@
+Sub-session subA4.md has finished (ran 09:10-10:27 KST, exit code 0). What it printed is in subA4.out (3679 bytes). The .md files in this directory written while it ran: d_p1_head.md d_p2_class.md d_p3_games.md d_p4_kinds.md d_p5_answers.md d_p6_table.md d_p7_change.md d_p8_wrong.md d_p9_unknown.md deep-read-4.md.

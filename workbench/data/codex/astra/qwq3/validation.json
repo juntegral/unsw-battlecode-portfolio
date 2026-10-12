@@ -1,0 +1,8 @@
+{
+  "checked_at": "2026-10-09 02:36:21 KST",
+  "games": 90,
+  "per_game_rows": 90,
+  "report_words_excluding_tables": 384,
+  "python_ast": "pass",
+  "one5_one6_diff": "--- \n\n+++ \n\n@@ -148,7 +148,7 @@\n\n constexpr int QS_KEEP_LEN = 3;\n constexpr int QS_KEEP_ROUND = 0;\n constexpr int QS_KEEP_CLEAR = 0;\n-constexpr bool QUEEN_DEAD_ALL = false;\n+constexpr bool QUEEN_DEAD_ALL = true;\n // Card #54: dragons of LS_MIN_LENGTH+ take the queen's ring veto; an enemy reaches its free steps plus LS_PAY_STEPS paid.\n constexpr bool LONG_SAFETY = false;\n constexpr int LS_MIN_LENGTH = 31;\n@@ -277,7 +277,7 @@\n\n constexpr bool BARREN_KNOWN = false;\n constexpr bool NO_REVERSE = false;\n constexpr int RALLY_FRESH = 0;\n-constexpr int RALLY_END_FRESH = 0;\n+constexpr int RALLY_END_FRESH = 25;\n constexpr int LC_LEAD_ROUND = 0;\n constexpr int LC_FEED_ROUND = 0;\n constexpr double LC_LEAD_MULT = 1.0;"
+}

@@ -1,0 +1,20 @@
+##### F13 extras
+main OUR queen: with board 27; step beyond free steps 17 = she took such a step and was rammed anyway 15 + she ended inside the free reach though another step led out 2
+    a legal step beyond free + length - 1 (all the rammer could pay for and live): 0.148 of 27; beyond free + length: 0.037 of 27; queen did not move on her last turn: 4
+    alone at the ram 27 of 30 against 0.581 of her turns in that state: binomial upper tail p 0.00015
+    escape beyond actual ram, queen length 3 or less: 0.375 of 24; queen longer: 0.667 of 3
+main THEIR queen: with board 41; step beyond free steps 25 = she took such a step and was rammed anyway 15 + she ended inside the free reach though another step led out 10
+    a legal step beyond free + length - 1 (all the rammer could pay for and live): 0.195 of 41; beyond free + length: 0.024 of 41; queen did not move on her last turn: 2
+    alone at the ram 35 of 42 against 0.466 of her turns in that state: binomial upper tail p 0.00000
+    escape beyond actual ram, queen length 3 or less: 0.265 of 34; queen longer: 0.571 of 7
+main ours against theirs: alone 27 of 30 vs 35 of 42, Fisher p 0.506; step beyond free 17 of 27 vs 25 of 41, p 1.000; beyond actual 11 of 27 vs 13 of 41, p 0.605
+v31 OUR queen: with board 75; step beyond free steps 59 = she took such a step and was rammed anyway 43 + she ended inside the free reach though another step led out 16
+    a legal step beyond free + length - 1 (all the rammer could pay for and live): 0.333 of 75; beyond free + length: 0.040 of 75; queen did not move on her last turn: 2
+    alone at the ram 57 of 75 against 0.582 of her turns in that state: binomial upper tail p 0.00100
+    escape beyond actual ram, queen length 3 or less: 0.544 of 57; queen longer: 0.667 of 18
+v31 THEIR queen: with board 57; step beyond free steps 33 = she took such a step and was rammed anyway 26 + she ended inside the free reach though another step led out 7
+    a legal step beyond free + length - 1 (all the rammer could pay for and live): 0.158 of 57; beyond free + length: 0.035 of 57; queen did not move on her last turn: 1
+    alone at the ram 46 of 58 against 0.416 of her turns in that state: binomial upper tail p 0.00000
+    escape beyond actual ram, queen length 3 or less: 0.250 of 44; queen longer: 0.385 of 13
+v31 ours against theirs: alone 57 of 75 vs 46 of 58, Fisher p 0.681; step beyond free 59 of 75 vs 33 of 57, p 0.013; beyond actual 43 of 75 vs 16 of 57, p 0.001
+main against v31, our queen: step beyond free 17 of 27 vs 59 of 75, Fisher p 0.127; beyond actual 11 of 27 vs 43 of 75, p 0.179

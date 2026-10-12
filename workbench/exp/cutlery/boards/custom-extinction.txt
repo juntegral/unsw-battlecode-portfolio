@@ -1,0 +1,88 @@
+game 806968 map Tower Defense/a us=A result {"winner":"B","end":"teamEliminated"}
+tags(our turns): {"sx":0,"sr":0,"sd":0,"sf":0,"sq":0,"sc":0,"sk":0,"esc":0,"split":0}
+timeline r | our units / longest / total | their units / longest / total
+  r  0 |   2 /   2 /    4 |   2 /   2 /    4
+  r 25 |   2 /   3 /    6 |   3 /   2 /    6
+  r 50 |   3 /   3 /    7 |   4 /   3 /    9
+  r 75 |   5 /   3 /   12 |  10 /   4 /   26
+  r100 |   3 /   4 /    8 |  17 /   3 /   46
+  r125 |   2 /   3 /    5 |  33 /   4 /   77
+  r150 |   2 /   3 /    6 |  40 /   3 /   92
+  r175 |   1 /   3 /    3 |  43 /   4 /  102
+local feeds (sf) 0: first 12 → 
+--- r50: ours 3 dragons [3 2 2] total 7 | theirs 4 [3 2 2 2] total 9
++--------------------------------+
+|                                |
+|               ooo              |
+|      2      oo  X              |
+|      .      oooox              |
+|               oo  Xxoo         |
+|              o   o             |
+|                                |
+|      .                         |
+|      2                         |
+|                       xx       |
+|             o   o     X        |
+|   ..    oo   ooo       X       |
+|    3        o oooo     x       |
+|             o   oo             |
+|              ooo               |
+|                                |
++--------------------------------+
+--- r100: ours 3 dragons [4 2 2] total 8 | theirs 17 [3 3 3 3 3 3 3 3 …] total 46
++--------------------------------+
+|            xx  xx              |
+|              o  oo             |
+|           x o  oxx X           |
+|           x xx  Xo x           |
+|           X X x oo  oo         |
+|        o     Xx X              |
+|               xXx              |
+|                  xx            |
+|               X   X            |
+|               x x      x       |
+|           x    Xx      xX      |
+|         ooX    x o             |
+|            4  Xx  x   Xxx      |
+|           ....oo ox            |
+|           2 %   ooX            |
+|       2.   X% % X              |
++--------------------------------+
+--- r150: ours 2 dragons [3 3] total 6 | theirs 40 [3 3 3 3 3 3 3 3 …] total 92
++--------------------------------+
+|           xx x X xxxX          |
+|           X  X     x           |
+| X     o   x   XxX xX         x |
+| x     3.       ox           Xx |
+| x      .           Xoo         |
+|               X xx x           |
+|               x  X           x |
+|       3.  Xx                 X |
+|x       .  xXXx Xx              |
+|X             x Xx x    xXx     |
+|             Xx    X   xX X     |
+|      xx %oX  %  xX x  x   xx   |
+| X    X    x   Xx   X       X   |
+| x         xXxXX    %           |
+|    XxXxx      xx       X       |
+|        xX  X   x  X%   x       |
++--------------------------------+
+--- r190: ours 1 dragons [2] total 2 | theirs 50 [5 4 3 3 3 3 3 3 …] total 119
++--------------------------------+
+|X          X  xX XxXx  X        |
+|x        x          xX x    xxX |
+|x        X xX     xX        x  x|
+|     Xx        o           Xx  X|
+|  x          xxX XxxXoo         |
+|X xX       X xXx                |
+|x xx  Xx   x   X Xxxx           |
+| X         Xx Xxx  XX           |
+| x   2.      xX xX x      xX    |
+|   Xx        x      x  Xx    x  |
+|       Xxx   Xx xxx X  xX    x  |
+|         %ox    XXx X     Xx X  |
+|           X    o   x  Xx       |
+|             X x    x           |
+|     Xx  Xxx xxxX  X            |
+|           x      xx            |
++--------------------------------+

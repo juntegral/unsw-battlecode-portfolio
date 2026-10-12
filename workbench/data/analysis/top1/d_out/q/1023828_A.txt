@@ -1,0 +1,73 @@
+=== 1023828 Maze 48x24 (1152 cells) run dl-20261004 | A = meow (1841) vs forgot to mention (2269) | winner A by longest after 500 rounds
+queen #0 start (4, 15); enemy queen #1 start (43, 8); path between the starts 46
+DEATH r107 wall L2 at (16, 8)
+splits (round, before -> keeps + child, child id): r1:4->2+2(#6) r78:4->2+2(#49) r81:4->2+2(#52) r90:4->2+2(#67) r93:4->2+2(#71) r96:4->2+2(#76) r99:4->2+2(#83) r106:6->2+4(#95)
+block | head | from start | len | ate nat/corpse | splits | rounds enemy in view | nearest enemy | cells used | own heads<=4 | units own/enemy
+r  0 | (4, 15)   |   0 |  4 | 1/0 | 1 |  0 | 9 | 22 | 0.3 | 2/2
+r 25 | (13, 14)  |  12 |  3 | 0/0 | 0 |  0 | 9 | 19 | 0.0 | 5/5
+r 50 | (18, 12)  |  21 |  3 | 0/0 | 0 |  4 | 9 | 25 | 0.0 | 8/9
+r 75 | (27, 4)   |  34 |  3 | 11/0 | 6 |  7 | 9 | 20 | 0.7 | 12/19
+r100 | (31, 3)   |  39 |  2 | 4/0 | 1 |  0 | 9 |  7 | 1.1 | 27/34
+moves from round 77:
+   77:N+  78:SPLIT  79:N+  80:W+  81:SPLIT  82:W  83:W  84:N  85:W+  86:N  87:E  88:E+!9
+   89:E!9  90:SPLIT!9  91:E+!9  92:S+!9  93:SPLIT!9  94:E+!9  95:S+  96:SPLIT  97:S+  98:E+  99:SPLIT  100:N+
+   101:E  102:N  103:W+  104:N+  105:W+  106:SPLIT  107:N
+death record: {"round": 107, "reason": "wall", "len": 2, "pos": [16, 8], "own": 1, "step": 1, "nsteps": 1, "dir": "N", "portal": 0, "hit": ["K"]}
+  r100 L2 at (31, 3) move N -> [31, 2] ate 1 | free 1 safe 1 | in reach at start 0, at end 0 | froom 6 tree 1 | N=P(31,2) reach0 room5 E=K S=K W=o(30,3) #0L2s1 | enemies 
+  r101 L3 at (31, 2) move E -> [18, 10] ate 0 | free 1 safe 1 | in reach at start 0, at end 0 | froom 5 tree 1 | N=K E=F(18,10)p reach0 room4 S=o(31,3) #0L3s1 W=K | enemies 
+  r102 L3 at (18, 10) move N -> [18, 9] ate 0 | free 1 safe 1 | in reach at start 0, at end 0 | froom 4 tree 1 | N=F(18,9) reach0 room3 E=K S=K W=o(31,2)p #0L3s1 | enemies 
+  r103 L3 at (18, 9) move W -> [17, 9] ate 1 | free 1 safe 1 | in reach at start 0, at end 0 | froom 3 tree 1 | N=K E=K S=o(18,10) #0L3s1 W=P(17,9) reach0 room2 | enemies 
+  r104 L4 at (17, 9) move N -> [17, 8] ate 1 | free 1 safe 1 | in reach at start 0, at end 0 | froom 2 tree 1 | N=P(17,8) reach0 room1 E=o(18,9) #0L4s1 S=K W=K | enemies 
+  r105 L5 at (17, 8) move W -> [16, 8] ate 1 | free 1 safe 1 | in reach at start 0, at end 0 | froom 1 tree 1 | N=K E=K S=o(17,9) #0L5s1 W=P(16,8) reach0 room0 | enemies 
+  r106 L6 at (16, 8) SPLIT -> None ate 0 | free 0 safe 0 | in reach at start 0, at end 0 | froom 0 tree 1 | N=K E=o(17,8) #0L6s1 S=K W=K | enemies 
+  r107 L2 at (16, 8) move N -> None ate 0 | free 0 safe 0 | in reach at start 0, at end 0 | froom 0 tree 1 | N=K E=o(17,8) #0L2s1 S=K W=K | enemies 
+--- board at the start of her turn, round 104
+     1213141516171819202122
+     +-+ + + +-+ + + +-+ + 
+  4   . .|.|.|*|. .|. .|. .
+     +-+-+ + + + +-+-+ + + 
+  5   . .|.|* *|. . .|.|. A
+     + + + +-+-+-+ + + + + 
+  6   .|.|. .|. .O.|.|.|.|.
+     +-+ +-+ + +-+-+ + + +-
+  7   . . .|.|. . .|.|.|. .
+     +-+-+O+ +-+-+ + + +-+ 
+  8  |. .|a A|* *|. .|.|. .
+     + + +-+-+-+ +-+ + + +-
+  9   .|. . . .|@ a|. .|. .
+     +-+-+-+ +O+-+ + +-+-+-
+ 10  |. .|. . .|.Oa|. . . .
+     + + + +-+-+ +-+-+-+-+-
+ 11   . .|. . . .|. . . . .
+     +-+ +-+-+-+ +-+-+ + +-
+ 12   . .|. . .|. . .O.|A a
+     + +-+ + +-+ + +-+-+ +-
+ 13   .|. .|. . .|. . .|. .
+     +-+ +-+-+-+-+-+-+ + +O
+ 14   .|. .|. . . .|. . .|.
+heads: #0A L4 (17, 9); #59A L2 (21, 12); #67A L2 (22, 5); #83A L3 (15, 8)
+--- board at the start of her turn, round 107
+     1112131415161718192021
+     + + + + +-+-+ + + + + 
+  3  |. .|.|.|. . .|. .|a .
+     + +-+ + + +-+ + + +-+ 
+  4  |. . .|.|.|*|. .|. .|.
+     + +-+-+ + + + +-+-+ + 
+  5  |. . a|.|* *|. . .|.|.
+     +-+ + + +-+-+-+ + + + 
+  6  |. .|A|A a|. .O.|.|.|.
+     + +-+ +-+ + +-+-+ + + 
+  7   a . . .|a|. . .|.|.|.
+     + +-+-+O+ +-+-+ + + +-
+  8   A|. .|. .|@ a|. .|.|.
+     + + + +-+-+-+ +-+ + + 
+  9   . .|. . . .|* .|. .|.
+     + +-+-+-+ +O+-+ + +-+-
+ 10  |.|. .|. . .|.Oa|. . .
+     + + + + +-+-+ +-+-+-+-
+ 11  |. . .|. . . .|. . . .
+     +-+-+ +-+-+-+ +-+-+ + 
+ 12   . . .|. . .|. . .O.|.
+     +-+ +-+ + +-+ + +-+-+ 
+ 13  |. .|. .|. . .|. . .|.
+heads: #0A L2 (16, 8); #6A L2 (11, 8); #83A L3 (14, 6); #88A L2 (13, 6)

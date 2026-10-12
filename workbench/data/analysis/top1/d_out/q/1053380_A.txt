@@ -1,0 +1,77 @@
+=== 1053380 Maze 48x24 (1152 cells) run dl-20261004 | A = meow (1853) vs test4 (2233) | winner B by queen rule after 500 rounds
+queen #0 start (4, 15); enemy queen #1 start (43, 8); path between the starts 46
+DEATH r206 wall L2 at (17, 1)
+splits (round, before -> keeps + child, child id): r1:4->2+2(#5) r12:4->2+2(#7) r32:4->2+2(#16) r40:4->2+2(#24) r101:4->2+2(#76) r107:4->2+2(#84) r110:4->2+2(#85) r116:4->2+2(#94)
+block | head | from start | len | ate nat/corpse | splits | rounds enemy in view | nearest enemy | cells used | own heads<=4 | units own/enemy
+r  0 | (4, 15)   |   0 |  4 | 3/0 | 2 |  2 | 9 | 23 | 0.7 | 2/2
+r 25 | (4, 22)   |   7 |  3 | 3/0 | 2 |  0 | 9 | 20 | 1.6 | 6/6
+r 50 | (0, 13)   |   6 |  2 | 1/0 | 0 |  1 | 9 | 22 | 1.9 | 15/14
+r 75 | (8, 8)    |  11 |  3 | 1/0 | 0 |  0 | 9 | 25 | 0.8 | 22/20
+r100 | (25, 0)   |  30 |  4 | 6/0 | 4 | 17 | 9 | 21 | 0.2 | 26/28
+r125 | (25, 8)   |  37 |  2 | 0/0 | 0 | 15 | 4 | 25 | 0.2 | 33/37
+r150 | (16, 0)   |  31 |  2 | 0/0 | 0 |  3 | 8 | 14 | 1.0 | 43/44
+r175 | (13, 4)   |  22 |  2 | 0/0 | 0 |  2 | 9 | 18 | 1.6 | 57/46
+r200 | (18, 2)   |  30 |  2 | 0/0 | 0 |  0 | 9 |  7 | 2.0 | 58/43
+moves from round 176:
+   176:N!9  177:W  178:N  179:N  180:E  181:S  182:E  183:E  184:N  185:W  186:S  187:E
+   188:N  189:W  190:S  191:E  192:N  193:E  194:E  195:E  196:E  197:S  198:W  199:S
+   200:S  201:S  202:W  203:N  204:N  205:N  206:W
+death record: {"round": 206, "reason": "wall", "len": 2, "pos": [17, 1], "own": 1, "step": 1, "nsteps": 1, "dir": "W", "portal": 0, "hit": ["K"]}
+  r199 L2 at (18, 1) move S -> [18, 2] ate 0 | free 2 safe 2 | in reach at start 0, at end 0 | froom 40 tree 0 | N=K E=o(19,1) #0L2s1 S=F(18,2) reach0 room40 W=F(17,1) reach0 room40 | enemies 
+  r200 L2 at (18, 2) move S -> [18, 3] ate 0 | free 1 safe 1 | in reach at start 0, at end 0 | froom 40 tree 0 | N=o(18,1) #0L2s1 E=K S=F(18,3) reach0 room40 W=K | enemies 
+  r201 L2 at (18, 3) move S -> [18, 4] ate 0 | free 2 safe 2 | in reach at start 0, at end 0 | froom 40 tree 0 | N=o(18,2) #0L2s1 E=F(19,3) reach0 room31 S=F(18,4) reach0 room17 W=K | enemies 
+  r202 L2 at (18, 4) move W -> [17, 4] ate 0 | free 1 safe 1 | in reach at start 0, at end 0 | froom 15 tree 0 | N=o(18,3) #0L2s1 E=K S=K W=F(17,4) reach0 room40 | enemies 
+  r203 L2 at (17, 4) move N -> [17, 3] ate 0 | free 2 safe 2 | in reach at start 0, at end 0 | froom 40 tree 0 | N=F(17,3) reach0 room40 E=o(18,4) #0L2s1 S=P(17,5) reach0 room40 W=K | enemies 
+  r204 L2 at (17, 3) move N -> [17, 2] ate 0 | free 2 safe 2 | in reach at start 0, at end 0 | froom 13 tree 0 | N=F(17,2) reach0 room40 E=K S=o(17,4) #0L2s1 W=P(16,3) reach0 room5 | enemies 
+  r205 L2 at (17, 2) move N -> [17, 1] ate 0 | free 1 safe 1 | in reach at start 0, at end 0 | froom 40 tree 0 | N=F(17,1) reach0 room40 E=K S=o(17,3) #0L2s1 W=K | enemies 
+  r206 L2 at (17, 1) move W -> None ate 0 | free 0 safe 0 | in reach at start 0, at end 0 | froom 0 tree 0 | N=K E=A(18,1) #195L2s0 S=o(17,2) #0L2s1 W=K | enemies 
+--- board at the start of her turn, round 203
+     1213141516171819202122
+     +-+ +-+-+-+-+ + + +-+ 
+ 23   .|. a A * * * . . . .
+     +-+-+-+-+-+-+-+-+-+-+-
+  0  |. .|. . . a A .|. . .
+     + + + + + +-+-+ +-+ +-
+  1  |.|. . .|.|. . .|.O.|*
+     + +-+-+-+ + + +-+ +-+-
+  2  |. .|. . .|.|.|A a|. .
+     + + + +-+-+ + + + + + 
+  3   .|.|.|. * .|. .|a . .
+     +-+ + + +-+ + + +-+ + 
+  4   A a|.|.|*|@ a|. .|. .
+     +-+-+ + + + +-+-+ + + 
+  5   a .|.|* *|* . .|.|. .
+     + + + +-+-+-+ + + + + 
+  6   .|.|. .|. .O.|.|.|.|.
+     +-+ +-+ + +-+-+ + + +-
+  7   . . .|.|. . .|.|.|. .
+     +-+-+O+ +-+-+ + + +-+ 
+  8  |. .|. .|* *|. .|.|A *
+     + + +-+-+-+ +-+ + + +-
+  9   .|. . a .|* .|. .|a .
+heads: #0A L2 (17, 4); #191A L2 (21, 8); #195A L2 (18, 0); #211A L2 (12, 4); #229A L2 (15, 23); #238A L3 (19, 2)
+--- board at the start of her turn, round 206
+     1213141516171819202122
+     + + + +-+-+-+ + + + +-
+ 20  |.|.|.OA|* *|. . .|. .
+     +O+ +-+ + + + + + +-+ 
+ 21  |. . .|aO*|*|* . . .|.
+     +-+-+O+-+-+ +-+-+-+ +-
+ 22   * .|. . * . *|. .|. *
+     +-+ +-+-+-+-+ + + +-+ 
+ 23   .|A a . a A * . . . .
+     +-+-+-+-+-+-+-+-+-+-+-
+  0  |. .|. . . . . .|. . .
+     + + + + + +-+-+ +-+ +-
+  1  |.|. . .|.|@ A a|.O.|A
+     + +-+-+-+ + + +-+ +-+-
+  2  |. .|. . .|a|.|. .|. .
+     + + + +-+-+ + + + + + 
+  3   .|.|.|. * .|. a|. . .
+     +-+ + + +-+ + + +-+ + 
+  4   a A|.|.|*|. .|a A|. .
+     +-+-+ + + + +-+-+ + + 
+  5   . .|.|* *|* . .|.|. .
+     + + + +-+-+-+ + + + + 
+  6   .|.|. .|. .O.|.|.|.|.
+heads: #0A L2 (17, 1); #101A L3 (13, 4); #195A L2 (18, 1); #214A L4 (15, 20); #229A L2 (17, 23); #231A L5 (22, 1); #238A L3 (20, 4); #256A L2 (13, 23)

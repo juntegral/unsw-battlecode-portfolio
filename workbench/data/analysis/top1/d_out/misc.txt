@@ -1,0 +1,56 @@
+=== 1. own rams
+  meow: {'n': 19, 'boxed (no free cell): the head was her only non-kelp side': 9, 'had a free cell that was safe': 10, 'hit an enemy head': 19, 'the other head was 2-3 long': 19, 'rules off (600 cells or fewer)': 17, 'had a free cell': 10}
+  meow live: {'n': 16, 'boxed (no free cell): the head was her only non-kelp side': 8, 'had a free cell that was safe': 8, 'hit an enemy head': 16, 'the other head was 2-3 long': 16, 'rules off (600 cells or fewer)': 14, 'had a free cell': 8}
+  opp: {'n': 18, 'boxed (no free cell): the head was her only non-kelp side': 17, 'had a free cell that was safe': 1, 'hit an enemy head': 18, 'the other head was 2-3 long': 17, 'rules off (600 cells or fewer)': 10, 'had a free cell': 1}
+  forgot: {'n': 19, 'boxed (no free cell): the head was her only non-kelp side': 14, 'had a free cell that was safe': 4, 'hit an enemy head': 19, 'the other head was 2-3 long': 17, 'rules off (600 cells or fewer)': 8, 'had a free cell': 5}
+  SSS: {'n': 9, 'boxed (no free cell): the head was her only non-kelp side': 9, 'had a free cell that was safe': 0, 'hit an enemy head': 9, 'the other head was 2-3 long': 9, 'rules off (600 cells or fewer)': 5}
+  Vibing++: {'n': 20, 'boxed (no free cell): the head was her only non-kelp side': 15, 'had a free cell that was safe': 5, 'hit an enemy head': 17, 'the other head was 2-3 long': 20, 'rules off (600 cells or fewer)': 7, 'had a free cell': 5, "hit a team-mate's head": 3}
+
+=== 2. queens that died 6 or longer
+  meow: 16 deaths at 6+ ({'ram: unseen': 8, 'ram: stepped in': 3, 'ram: cornered': 5}); her last move had 3+ steps in 8 of the rams; games became {'r500 L her dead': 2, 'r500 L her alive': 12, 'r500 W her dead': 2}; plus 17 queens that cut themselves from 6+ to 2-3 and died boxed in
+     1029032 Slithery Fight stride-new       r  3 L 2 boxed: ally body       last move E cuts [[25, 2, 23]] | r500 L her dead | enemy queen final 0
+     1051357 Slithery Fight dl-20261004      r  3 L 2 boxed: ally body       last move E cuts [[25, 2, 23]] | r500 L her alive | enemy queen final 17
+     1052768 Slithery Fight dl-20261004      r  3 L 2 boxed: ally body       last move E cuts [[25, 2, 23]] | r500 W her dead | enemy queen final 0
+     1053032 Slithery Fight dl-20261004      r  3 L 2 boxed: ally body       last move E cuts [[25, 2, 23]] | r500 W her dead | enemy queen final 0
+     1053391 Slithery Fight dl-20261004      r  3 L 3 boxed: ally body       last move W cuts [[25, 2, 23]] | r500 L her alive | enemy queen final 51
+     1053786 Slithery Fight dl-20261004      r  3 L 3 boxed: ally body       last move E cuts [[25, 2, 23]] | r500 L her dead | enemy queen final 0
+     1059086 Slithery Fight passage2-test-ne r  3 L 2 boxed: ally body       last move E cuts [[25, 2, 23]] | r500 W her dead | enemy queen final 0
+     1063024 Slithery Fight qh31-test-old    r  3 L 2 boxed: ally body       last move E cuts [[25, 2, 23]] | r500 W her dead | enemy queen final 0
+     1063252 Slithery Fight qh31-test-old    r  3 L 2 boxed: ally body       last move E cuts [[25, 2, 23]] | r500 L her dead | enemy queen final 0
+     1063776 Slithery Fight qh31-test-new    r  3 L 2 boxed: ally body       last move E cuts [[25, 2, 23]] | r500 L her dead | enemy queen final 0
+     1023830 Prisoners Dile dl-20261004      r 91 L 2 boxed: terrain dead end last move E cuts [[6, 2, 4]] | wipe L | enemy queen final 2
+     1023828 Maze           dl-20261004      r107 L 2 boxed: terrain dead end last move N cuts [[6, 2, 4]] | r500 W her dead | enemy queen final 0
+     1063013 Maze           qh31-test-old    r128 L 2 boxed: terrain dead end last move E cuts [[6, 2, 4]] | r500 W her dead | enemy queen final 0
+     1029019 Australia      stride-new       r176 L 7 ram: stepped in        last move NN killer L3 4st cuts [] | r500 L her alive | enemy queen final 12
+     1003143 Slithery Fight dl-20261004      r256 L30 ram: unseen            last move SWS killer L3 3st cuts [] | r500 L her dead | enemy queen final 0
+     1058157 Slithery Fight passage2-test-ol r272 L17 ram: unseen            last move SWW killer L8 5st cuts [] | r500 L her alive | enemy queen final 70
+     1045197 Queen Of Spade dl-20261004      r307 L 6 ram: cornered          last move E killer L3 2st cuts [] | r500 L her alive | enemy queen final 23
+     1069661 Slithery Fight tc30-dev1b-new   r308 L 7 ram: unseen            last move EN killer L7 7st cuts [] | r500 L her dead | enemy queen final 0
+     1045196 Default        dl-20261004      r348 L 2 boxed: ally body       last move E cuts [[15, 2, 13]] | r500 W her dead | enemy queen final 0
+     1068691 Trauma         tc30-dev1-old    r349 L21 ram: unseen            last move NNNE killer L4 3st cuts [] | r500 L her alive | enemy queen final 47
+     1045388 Slithery Fight dl-20261004      r356 L48 ram: unseen            last move NENNEE killer L8 4st cuts [] | r500 L her alive | enemy queen final 94
+     990346 Slithery Fight dl-20261003      r386 L 2 boxed: enemy body      last move E cuts [[57, 2, 55]] | r500 L her alive | enemy queen final 3
+     1068682 Maze           tc30-dev1-old    r390 L 2 boxed: ally body       last move S cuts [[17, 2, 15]] | r500 L her alive | enemy queen final 109
+     1068693 Slithery Fight tc30-dev1-old    r393 L18 ram: cornered          last move EEE killer L15 5st cuts [] | r500 L her alive | enemy queen final 40
+     1058857 Trauma         passage2-test-ne r402 L 8 ram: cornered          last move ES killer L5 4st cuts [] | r500 L her alive | enemy queen final 29
+     1063681 Trauma         qh31-test-new    r403 L25 ram: stepped in        last move S killer L3 2st cuts [] | r500 L her alive | enemy queen final 38
+     1063018 Queen Of Spade qh31-test-old    r417 L17 ram: stepped in        last move N killer L3 3st cuts [] | r500 W her dead | enemy queen final 0
+     1046735 Autarky        dl-20261004      r422 L23 ram: unseen            last move NWWWNN killer L3 1st cuts [] | r500 W her dead | enemy queen final 0
+     1053389 Trauma         dl-20261004      r424 L27 ram: unseen            last move W killer L4 3st cuts [] | r500 L her alive | enemy queen final 19
+     1069659 Trauma         tc30-dev1b-new   r426 L20 ram: cornered          last move N killer L2 1st cuts [] | r500 L her alive | enemy queen final 42
+     1052766 Trauma         dl-20261004      r445 L34 ram: unseen            last move WNNNWW killer L2 1st cuts [] | r500 L her alive | enemy queen final 39
+     1044207 Trauma         dl-20261004      r458 L 2 boxed: ally body       last move E cuts [[32, 2, 30]] | r500 L her alive | enemy queen final 36
+     990234 Trauma         dl-20261003      r460 L28 ram: cornered          last move SWSWS killer L5 3st cuts [] | r500 L her alive | enemy queen final 5
+  meow live: 11 deaths at 6+ ({'ram: unseen': 7, 'ram: cornered': 3, 'ram: stepped in': 1}); her last move had 3+ steps in 8 of the rams; games became {'r500 L her dead': 1, 'r500 L her alive': 8, 'r500 W her dead': 2}; plus 14 queens that cut themselves from 6+ to 2-3 and died boxed in
+  opp: 43 deaths at 6+ ({'ram: cornered': 12, 'ram: stepped in': 4, 'ram: stayed in': 1, 'ram: unseen': 3, 'ram: model miss': 1, 'no action': 5, 'boxed: ally body': 8, 'boxed: enemy body': 1, 'boxed: own body': 6, 'boxed: terrain dead end': 2}); her last move had 3+ steps in 7 of the rams; games became {'r500 W her dead': 31, 'r500 L her dead': 11, 'wipe W': 1}; plus 24 queens that cut themselves from 6+ to 2-3 and died boxed in
+  forgot: 70 deaths at 6+ ({'ram: cornered': 26, 'ram: unseen': 34, 'ram: stepped in': 1, 'boxed: terrain dead end': 1, 'ally ram': 6, 'ram: model miss': 2}); her last move had 3+ steps in 13 of the rams; games became {'r500 L her alive': 21, 'r500 L her dead': 13, 'wipe L': 12, 'r500 W her dead': 20, 'wipe W': 4}; plus 0 queens that cut themselves from 6+ to 2-3 and died boxed in
+  SSS: 27 deaths at 6+ ({'ram: unseen': 15, 'boxed: ally body': 2, 'ram: cornered': 7, 'ram: stayed in': 2, 'crash: stride': 1}); her last move had 3+ steps in 1 of the rams; games became {'r500 L her dead': 9, 'r500 L her alive': 10, 'r500 W her dead': 6, 'wipe L': 2}; plus 0 queens that cut themselves from 6+ to 2-3 and died boxed in
+  Vibing++: 69 deaths at 6+ ({'ram: unseen': 37, 'ram: stayed in': 2, 'ram: cornered': 26, 'ram: model miss': 1, 'crash: portal': 1, 'ram: stepped in': 1, 'ally ram': 1}); her last move had 3+ steps in 9 of the rams; games became {'r500 L her alive': 11, 'r500 L her dead': 22, 'r500 W her dead': 34, 'wipe L': 2}; plus 12 queens that cut themselves from 6+ to 2-3 and died boxed in
+
+=== 3. splits just before a ram
+  meow: rammed queens 251; split within her last 3 turns 19 (7%), of those with an enemy head in view at the split 16; split on her very last turn 8
+  meow live: rammed queens 165; split within her last 3 turns 13 (7%), of those with an enemy head in view at the split 12; split on her very last turn 6
+  opp: rammed queens 102; split within her last 3 turns 11 (10%), of those with an enemy head in view at the split 11; split on her very last turn 4
+  forgot: rammed queens 327; split within her last 3 turns 28 (8%), of those with an enemy head in view at the split 23; split on her very last turn 10
+  SSS: rammed queens 240; split within her last 3 turns 17 (7%), of those with an enemy head in view at the split 14; split on her very last turn 7
+  Vibing++: rammed queens 230; split within her last 3 turns 23 (10%), of those with an enemy head in view at the split 19; split on her very last turn 11

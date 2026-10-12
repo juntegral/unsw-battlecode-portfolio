@@ -1,0 +1,86 @@
+=== 1. how the own queen ends, share of games (sealed map excluded)
+Vibing++  n=379 rammed=0.451 alive=0.280 noaction=0.230 self-inflicted=0.040 own_ram=0.034 self=0.003 body=0.003 | median round of a self-inflicted death 67
+SSS       n=379 rammed=0.472 alive=0.412 self-inflicted=0.116 self=0.047 body=0.045 own_ram=0.016 ally_ram=0.008 | median round of a self-inflicted death 292.0
+forgot    n=401 rammed=0.506 alive=0.362 noaction=0.085 self-inflicted=0.047 own_ram=0.032 ally_ram=0.012 body=0.002 | median round of a self-inflicted death 143
+meow      n=289 rammed=0.619 self-inflicted=0.280 wall=0.121 alive=0.100 body=0.080 own_ram=0.042 self=0.038 | median round of a self-inflicted death 95
+
+=== 2. our games with a self-inflicted queen death: what they became, and the what-if
+  {'r500 their queen alive L': 22, 'r500 their queen dead L': 22, 'r500 their queen dead W': 15, 'wipe-out L': 12, 'wipe-out W': 10}
+  round-500 losses with both queens dead after she crashed: 22 (each would be a queen-rule WIN had she lived)
+  expected wins if she had not crashed and then survived like a top-three queen on that map: 9.1
+  by map (games with a self-inflicted death -> expected flips): {'Around UNSW': '3 -> 0.4', 'Default': '1 -> 0.0', 'Devil': '5 -> 0.0', 'Islands': '3 -> 0.1', 'Maze': '10 -> 0.8', 'Portals': '19 -> 4.8', 'Prisoners Dilemma': '4 -> 0.0', 'Slithery Fight': '12 -> 0.8', 'Stripes': '6 -> 0.0', 'Tower Defense': '7 -> 1.5', 'Trauma': '2 -> 0.0', 'Trophy': '1 -> 0.0', 'weakhold': '8 -> 0.8'}
+
+=== 3. state at the start of the fatal round (our queen, self-inflicted deaths)
+n = 81
+  cause: {'body': 23, 'wall': 35, 'self': 11, 'own_ram': 12}
+  queen rules on (map > 600 cells): {False: 49, True: 32}
+  length at death: {2: 51, 3: 23, 4: 2, 5: 5}
+  free neighbour cells at round start: {0: 75, 1: 3, 2: 3}
+  open exits of the cell (kelp only): {1: 23, 2: 35, 3: 10, 4: 13}
+  openness ball4 (41 = open field): <=10: 17  11-20: 26  >20: 38
+  allied heads within 3 steps: {0: 34, 1: 37, 2: 9, 3: 1}
+  small enemy head within 3 steps: 13  within 6: 20
+  steps she had already taken in the fatal turn: {0: 81}
+  median round 95  median distance from spawn 13
+  cause x free cells: {'body / no free cell': 23, 'own_ram / 1 free cell': 2, 'own_ram / 2+ free cells': 3, 'own_ram / no free cell': 7, 'self / no free cell': 11, 'wall / 1 free cell': 1, 'wall / no free cell': 34}
+  examples (game, map, round, cause, len, free, ball4, allies<=3):
+    1045380 Around UNSW      r 96 wall     L2 free0 ball26 a3=1 e4=0 home21
+    1021862 Around UNSW      r107 self     L3 free0 ball29 a3=2 e4=0 home25
+    993428 Around UNSW      r226 own_ram  L2 free0 ball31 a3=1 e4=1 home13
+    1045196 Default          r348 body     L2 free0 ball16 a3=0 e4=0 home15
+    1003146 Devil            r 19 wall     L2 free0 ball17 a3=1 e4=0 home12
+    1059083 Devil            r 26 wall     L2 free0 ball26 a3=1 e4=1 home16
+    1023826 Devil            r 32 own_ram  L3 free0 ball26 a3=0 e4=2 home11
+    980374 Devil            r 67 self     L2 free0 ball27 a3=1 e4=0 home6
+    1044206 Devil            r142 self     L2 free0 ball17 a3=1 e4=0 home14
+    1044511 Islands          r104 wall     L2 free0 ball 9 a3=0 e4=0 home10
+    1045376 Islands          r105 wall     L2 free0 ball26 a3=1 e4=0 home18
+    1006643 Islands          r154 wall     L3 free0 ball 5 a3=0 e4=0 home10
+    1027976 Maze             r 89 wall     L3 free0 ball14 a3=1 e4=0 home19
+    993429 Maze             r 89 wall     L2 free0 ball 5 a3=0 e4=0 home19
+    1058366 Maze             r 90 wall     L3 free0 ball22 a3=1 e4=0 home33
+    1029036 Maze             r 95 wall     L2 free0 ball 5 a3=0 e4=0 home19
+    1058848 Maze             r 99 wall     L2 free0 ball23 a3=1 e4=0 home9
+    1023828 Maze             r107 wall     L2 free0 ball 5 a3=0 e4=0 home19
+    990348 Maze             r108 self     L2 free0 ball 5 a3=0 e4=0 home19
+    1044512 Maze             r153 self     L3 free0 ball24 a3=2 e4=0 home9
+    1045192 Maze             r194 self     L2 free0 ball17 a3=1 e4=0 home15
+    1053380 Maze             r206 wall     L2 free0 ball15 a3=1 e4=0 home23
+    1059085 Portals          r  9 body     L5 free0 ball21 a3=1 e4=0 home8
+    1029031 Portals          r  9 body     L4 free0 ball21 a3=1 e4=0 home8
+    1021859 Portals          r  9 body     L5 free0 ball21 a3=1 e4=0 home8
+    1052767 Portals          r  9 body     L4 free0 ball21 a3=1 e4=0 home8
+    1053785 Portals          r  9 body     L5 free0 ball21 a3=1 e4=0 home8
+    1023829 Portals          r  9 body     L5 free0 ball21 a3=1 e4=0 home8
+    1045387 Portals          r  9 body     L5 free0 ball21 a3=1 e4=0 home8
+    1029016 Portals          r 10 body     L2 free0 ball21 a3=1 e4=0 home8
+    990350 Portals          r 10 body     L2 free0 ball21 a3=1 e4=0 home8
+    1053031 Portals          r 51 self     L2 free0 ball14 a3=0 e4=0 home15
+    1058858 Portals          r 90 wall     L3 free0 ball14 a3=0 e4=0 home15
+    1044208 Portals          r108 self     L2 free0 ball13 a3=1 e4=0 home21
+    1058376 Portals          r119 wall     L3 free0 ball14 a3=0 e4=0 home15
+    1027971 Portals          r121 body     L3 free0 ball28 a3=2 e4=0 home8
+    1053390 Portals          r125 wall     L2 free0 ball14 a3=0 e4=0 home15
+    1045202 Portals          r156 wall     L2 free0 ball14 a3=0 e4=0 home14
+    1027814 Portals          r175 wall     L3 free0 ball14 a3=1 e4=0 home13
+    1058156 Portals          r255 wall     L3 free0 ball17 a3=1 e4=0 home10
+    1044522 Portals          r311 self     L3 free0 ball14 a3=0 e4=0 home15
+    983819 Prisoners Dilemma r 61 body     L3 free0 ball41 a3=2 e4=0 home17
+    1023830 Prisoners Dilemma r 91 wall     L2 free0 ball 5 a3=0 e4=0 home18
+    990232 Prisoners Dilemma r 99 wall     L2 free0 ball 5 a3=0 e4=0 home18
+    1027969 Prisoners Dilemma r130 wall     L2 free0 ball 5 a3=0 e4=0 home17
+    1053391 Slithery Fight   r  3 body     L3 free0 ball41 a3=1 e4=0 home2
+    1053786 Slithery Fight   r  3 body     L3 free0 ball41 a3=1 e4=0 home2
+    1052768 Slithery Fight   r  3 body     L2 free0 ball41 a3=1 e4=0 home2
+    1053032 Slithery Fight   r  3 body     L2 free0 ball41 a3=1 e4=0 home2
+    1029032 Slithery Fight   r  3 body     L2 free0 ball41 a3=1 e4=0 home2
+    1059086 Slithery Fight   r  3 body     L2 free0 ball41 a3=1 e4=0 home2
+    1051357 Slithery Fight   r  3 body     L2 free0 ball41 a3=1 e4=0 home2
+    1027815 Slithery Fight   r 51 wall     L2 free0 ball29 a3=2 e4=0 home20
+    1044523 Slithery Fight   r 52 body     L2 free0 ball38 a3=4 e4=0 home17
+    1045203 Slithery Fight   r211 self     L2 free0 ball 7 a3=0 e4=0 home25
+    1044209 Slithery Fight   r230 wall     L2 free0 ball 7 a3=0 e4=0 home37
+    990346 Slithery Fight   r386 body     L2 free0 ball33 a3=0 e4=0 home17
+    1044513 Stripes          r 29 wall     L2 free1 ball18 a3=0 e4=1 home14
+    1027820 Stripes          r 31 own_ram  L2 free1 ball22 a3=0 e4=1 home16
+    1059076 Stripes          r 49 wall     L3 free0 ball 8 a3=0 e4=1 home4

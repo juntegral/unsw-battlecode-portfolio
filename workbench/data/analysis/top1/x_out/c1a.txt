@@ -1,0 +1,66 @@
+games with data: 2478
+column sizes: {'meow all': 401, 'meow live': 275, 'meow test builds': 126, 'opp on our queen': 401, 'Vibing++': 502, 'SSS': 503, 'forgot': 632}
+
+== In-view chances taken, path test: STRICT (every body blocks; the bot's own test)
+attacker              meow all              meow live             meow test builds      opp on our queen      Vibing++              SSS                   forgot                
+2-3                   87 of 231 = 38%       61 of 164 = 37%       26 of 67 = 39%        139 of 146 = 95%      186 of 186 = 100%     155 of 155 = 100%     221 of 317 = 70%      
+4                     5 of 39 = 13%         1 of 26 = 4%          4 of 13 = 31%         29 of 31 = 94%        25 of 25 = 100%       26 of 26 = 100%       12 of 53 = 23%        
+5-9                   5 of 129 = 4%         4 of 95 = 4%          1 of 34 = 3%          28 of 47 = 60%        37 of 37 = 100%       59 of 59 = 100%       20 of 61 = 33%        
+10-12                 2 of 36 = 6%          1 of 25 = 4%          1 of 11 = 9%          1 of 4 = 25%          17 of 18 = 94%        10 of 12 = 83%        0 of 20 = 0%          
+13+                   0 of 21 = 0%          0 of 8 = 0%           0 of 13 = 0%          2 of 2 = 100%         10 of 17 = 59%        12 of 14 = 86%        1 of 31 = 3%          
+all <=12              99 of 435 = 23%       67 of 310 = 22%       32 of 125 = 26%       197 of 228 = 86%      265 of 266 = 100%     250 of 252 = 99%      253 of 451 = 56%      
+all                   99 of 456 = 22%       67 of 318 = 21%       32 of 138 = 23%       199 of 230 = 87%      275 of 283 = 97%      262 of 266 = 98%      254 of 482 = 53%      
+
+== In-view chances taken, path test: STRICT, path inside own 7x7 view
+attacker              meow all              meow live             meow test builds      opp on our queen      Vibing++              SSS                   forgot                
+2-3                   87 of 231 = 38%       61 of 164 = 37%       26 of 67 = 39%        139 of 146 = 95%      186 of 186 = 100%     155 of 155 = 100%     221 of 317 = 70%      
+4                     5 of 39 = 13%         1 of 26 = 4%          4 of 13 = 31%         29 of 31 = 94%        25 of 25 = 100%       26 of 26 = 100%       12 of 53 = 23%        
+5-9                   5 of 127 = 4%         4 of 95 = 4%          1 of 32 = 3%          28 of 47 = 60%        37 of 37 = 100%       59 of 59 = 100%       20 of 61 = 33%        
+10-12                 2 of 30 = 7%          1 of 20 = 5%          1 of 10 = 10%         1 of 3 = 33%          17 of 17 = 100%       10 of 10 = 100%       0 of 17 = 0%          
+13+                   0 of 16 = 0%          0 of 5 = 0%           0 of 11 = 0%          2 of 2 = 100%         9 of 10 = 90%         12 of 12 = 100%       1 of 28 = 4%          
+all <=12              99 of 427 = 23%       67 of 305 = 22%       32 of 122 = 26%       197 of 227 = 87%      265 of 265 = 100%     250 of 250 = 100%     253 of 448 = 56%      
+all                   99 of 443 = 22%       67 of 310 = 22%       32 of 133 = 24%       199 of 229 = 87%      274 of 275 = 100%     262 of 262 = 100%     254 of 476 = 53%      
+
+== In-view chances taken, path test: WALLS ONLY (bodies ignored)
+attacker              meow all              meow live             meow test builds      opp on our queen      Vibing++              SSS                   forgot                
+2-3                   87 of 293 = 30%       61 of 206 = 30%       26 of 87 = 30%        139 of 151 = 92%      186 of 201 = 93%      155 of 184 = 84%      221 of 368 = 60%      
+4                     5 of 72 = 7%          1 of 51 = 2%          4 of 21 = 19%         30 of 35 = 86%        25 of 36 = 69%        26 of 44 = 59%        12 of 85 = 14%        
+5-9                   5 of 283 = 2%         4 of 156 = 3%         1 of 127 = 1%         28 of 64 = 44%        39 of 82 = 48%        59 of 116 = 51%       21 of 120 = 18%       
+10-12                 2 of 68 = 3%          1 of 55 = 2%          1 of 13 = 8%          1 of 8 = 12%          17 of 26 = 65%        10 of 17 = 59%        0 of 38 = 0%          
+13+                   0 of 54 = 0%          0 of 24 = 0%          0 of 30 = 0%          2 of 3 = 67%          10 of 45 = 22%        12 of 47 = 26%        1 of 116 = 1%         
+all <=12              99 of 716 = 14%       67 of 468 = 14%       32 of 248 = 13%       198 of 258 = 77%      267 of 345 = 77%      250 of 361 = 69%      254 of 611 = 42%      
+all                   99 of 770 = 13%       67 of 492 = 14%       32 of 278 = 12%       200 of 261 = 77%      277 of 390 = 71%      262 of 408 = 64%      255 of 727 = 35%      
+
+== Strict test, detail (attackers of 12 or shorter unless said)
+                                                meow all            meow live           meow test builds    opp on our queen    Vibing++            SSS                 forgot              
+attacker is team's longest (no longer own dragon)18 of 181 = 10%     10 of 131 = 8%      8 of 50 = 16%       43 of 50 = 86%      70 of 70 = 100%     66 of 66 = 100%     42 of 125 = 34%     
+own queen alive                                 30 of 114 = 26%     22 of 83 = 27%      8 of 31 = 26%       180 of 211 = 85%    151 of 151 = 100%   192 of 193 = 99%    162 of 311 = 52%    
+own queen dead                                  69 of 321 = 21%     45 of 227 = 20%     24 of 94 = 26%      17 of 17 = 100%     114 of 115 = 99%    58 of 59 = 98%      91 of 140 = 65%     
+rounds 0-99                                     36 of 107 = 34%     24 of 68 = 35%      12 of 39 = 31%      85 of 91 = 93%      99 of 99 = 100%     69 of 69 = 100%     85 of 212 = 40%     
+rounds 100-299                                  46 of 219 = 21%     31 of 161 = 19%     15 of 58 = 26%      94 of 103 = 91%     127 of 127 = 100%   159 of 160 = 99%    138 of 176 = 78%    
+rounds 300+                                     17 of 109 = 16%     12 of 81 = 15%      5 of 28 = 18%       18 of 34 = 53%      39 of 40 = 98%      22 of 23 = 96%      30 of 63 = 48%      
+free (dS <= ceil(L/4))                          69 of 129 = 53%     46 of 88 = 52%      23 of 41 = 56%      82 of 88 = 93%      118 of 118 = 100%   94 of 94 = 100%     146 of 207 = 71%    
+1 paid step                                     20 of 148 = 14%     16 of 110 = 15%     4 of 38 = 11%       68 of 78 = 87%      92 of 92 = 100%     88 of 88 = 100%     83 of 149 = 56%     
+2 paid steps                                    8 of 68 = 12%       3 of 45 = 7%        5 of 23 = 22%       37 of 41 = 90%      32 of 32 = 100%     36 of 36 = 100%     16 of 63 = 25%      
+3+ paid steps                                   2 of 90 = 2%        2 of 67 = 3%        0 of 23 = 0%        10 of 21 = 48%      23 of 24 = 96%      32 of 34 = 94%      8 of 32 = 25%       
+not outnumbered (own_h >= en_h)                 78 of 147 = 53%     55 of 96 = 57%      23 of 51 = 45%      81 of 87 = 93%      128 of 129 = 99%    127 of 127 = 100%   148 of 189 = 78%    
+outnumbered (own_h < en_h)                      21 of 288 = 7%      12 of 214 = 6%      9 of 74 = 12%       116 of 141 = 82%    137 of 137 = 100%   123 of 125 = 98%    105 of 262 = 40%    
+alone with her (own_h 0, en_h 1)                3 of 106 = 3%       2 of 81 = 2%        1 of 25 = 4%        39 of 52 = 75%      42 of 42 = 100%     42 of 42 = 100%     38 of 93 = 41%      
+queen 2-3 long                                  70 of 287 = 24%     49 of 205 = 24%     21 of 82 = 26%      169 of 182 = 93%    179 of 179 = 100%   178 of 178 = 100%   172 of 308 = 56%    
+queen 4-7 long                                  11 of 48 = 23%      7 of 35 = 20%       4 of 13 = 31%       18 of 23 = 78%      50 of 50 = 100%     48 of 49 = 98%      56 of 102 = 55%     
+queen 8+ long                                   18 of 100 = 18%     11 of 70 = 16%      7 of 30 = 23%       10 of 23 = 43%      36 of 37 = 97%      24 of 25 = 96%      25 of 41 = 61%      
+path leaves own view (dV None)                  0 of 8 = 0%         0 of 5 = 0%         0 of 3 = 0%         0 of 1 = 0%         0 of 1 = 0%         0 of 2 = 0%         0 of 3 = 0%         
+
+== Games (strict test)
+                                                meow all            meow live           meow test builds    opp on our queen    Vibing++            SSS                 forgot              
+this side rammed the enemy queen                102 of 401 = 25%    69 of 275 = 25%     33 of 126 = 26%     251 of 401 = 63%    318 of 502 = 63%    320 of 503 = 64%    303 of 632 = 48%    
+had an in-view chance (any length)              176 of 401 = 44%    118 of 275 = 43%    58 of 126 = 46%     201 of 401 = 50%    277 of 502 = 55%    264 of 503 = 52%    316 of 632 = 50%    
+had an in-view chance (<=12)                    175 of 401 = 44%    117 of 275 = 43%    58 of 126 = 46%     199 of 401 = 50%    265 of 502 = 53%    251 of 503 = 50%    308 of 632 = 49%    
+had a chance (<=12) and never rammed her        75 of 401 = 19%     49 of 275 = 18%     26 of 126 = 21%     2 of 401 = 0%       0 of 502 = 0%       0 of 503 = 0%       43 of 632 = 7%      
+had a chance (any) and never rammed her         76 of 401 = 19%     50 of 275 = 18%     26 of 126 = 21%     2 of 401 = 0%       2 of 502 = 0%       2 of 503 = 0%       50 of 632 = 8%      
+first chance (<=12) taken                       54 of 401 = 13%     34 of 275 = 12%     20 of 126 = 16%     195 of 401 = 49%    264 of 502 = 53%    249 of 503 = 50%    204 of 632 = 32%    
+rammed her without an in-view strict chance turn3 of 401 = 1%       2 of 275 = 1%       1 of 126 = 1%       52 of 401 = 13%     43 of 502 = 9%      58 of 503 = 12%     49 of 632 = 8%      
+enemy queen alive at the end                    162 of 401 = 40%    116 of 275 = 42%    46 of 126 = 37%     39 of 401 = 10%     115 of 502 = 23%    96 of 503 = 19%     196 of 632 = 31%    
+
+queen ids other than {0,1}: 0 []
+queen id by side A: Counter({0: 1243, 1: 1235})

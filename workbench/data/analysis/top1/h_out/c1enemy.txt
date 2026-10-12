@@ -1,0 +1,62 @@
+our opponents in round-500 games: 231
+
+all
+  their queen alive at the end: n= 87  final longest median  46.0 mean  50.4; longest at the end / total at round 400: median 0.31, quartiles 0.21-0.47
+  their queen dead before round 300: n= 93  final longest median  56.0 mean  59.7; longest at the end / total at round 400: median 0.42, quartiles 0.25-0.63
+  their queen dead at round 300 or later: n= 51  final longest median  38.0 mean  47.8; longest at the end / total at round 400: median 0.21, quartiles 0.14-0.46
+     total at r400 0-150: queen alive: n= 39  final longest median  32.0 mean  33.4; longest at the end / total at round 400: median 0.45, quartiles 0.31-0.68
+     total at r400 0-150: queen dead before r300: n= 50  final longest median  40.0 mean  42.8; longest at the end / total at round 400: median 0.59, quartiles 0.50-0.68
+     total at r400 150-300: queen alive: n= 27  final longest median  60.0 mean  62.7; longest at the end / total at round 400: median 0.28, quartiles 0.23-0.38
+     total at r400 150-300: queen dead before r300: n= 17  final longest median  92.0 mean  84.1; longest at the end / total at round 400: median 0.34, quartiles 0.24-0.57
+     total at r400 300-: queen alive: n= 21  final longest median  59.0 mean  66.1; longest at the end / total at round 400: median 0.12, quartiles 0.11-0.22
+     total at r400 300-: queen dead before r300: n= 26  final longest median  73.5 mean  76.5; longest at the end / total at round 400: median 0.21, quartiles 0.17-0.27
+
+test4
+  their queen alive at the end: n= 40  final longest median  45.5 mean  47.7; longest at the end / total at round 400: median 0.23, quartiles 0.14-0.32
+  their queen dead before round 300: n= 29  final longest median  49.0 mean  45.4; longest at the end / total at round 400: median 0.48, quartiles 0.19-0.64
+  their queen dead at round 300 or later: n= 20  final longest median  35.5 mean  38.2; longest at the end / total at round 400: median 0.15, quartiles 0.09-0.46
+     total at r400 0-150: queen alive: n= 13  final longest median  27.0 mean  31.2; longest at the end / total at round 400: median 0.27, quartiles 0.22-0.50
+     total at r400 0-150: queen dead before r300: n= 20  final longest median  37.0 mean  37.6; longest at the end / total at round 400: median 0.55, quartiles 0.38-0.69
+     total at r400 150-300: queen alive: n= 17  final longest median  62.0 mean  58.7; longest at the end / total at round 400: median 0.28, quartiles 0.22-0.33
+     total at r400 150-300: queen dead before r300: n=  2  final longest median  81.5 mean  81.5; longest at the end / total at round 400: median 0.42, quartiles 0.07-0.78
+     total at r400 300-: queen alive: n= 10  final longest median  51.5 mean  50.4; longest at the end / total at round 400: median 0.11, quartiles 0.09-0.12
+     total at r400 300-: queen dead before r300: n=  7  final longest median  57.0 mean  57.6; longest at the end / total at round 400: median 0.16, quartiles 0.15-0.20
+
+WeHaveQuizzes
+  their queen alive at the end: n= 19  final longest median  49.0 mean  61.6; longest at the end / total at round 400: median 0.45, quartiles 0.37-0.61
+  their queen dead before round 300: n= 54  final longest median  73.5 mean  69.4; longest at the end / total at round 400: median 0.42, quartiles 0.27-0.60
+  their queen dead at round 300 or later: n= 21  final longest median  68.0 mean  61.7; longest at the end / total at round 400: median 0.24, quartiles 0.19-0.49
+     total at r400 0-150: queen alive: n= 13  final longest median  44.0 mean  42.0; longest at the end / total at round 400: median 0.48, quartiles 0.43-0.73
+     total at r400 0-150: queen dead before r300: n= 25  final longest median  45.0 mean  47.4; longest at the end / total at round 400: median 0.59, quartiles 0.54-0.65
+     total at r400 150-300: queen alive: n=  2  final longest median  99.0 mean  99.0; longest at the end / total at round 400: median 0.42, quartiles 0.34-0.50
+     total at r400 150-300: queen dead before r300: n= 13  final longest median  94.0 mean  88.6; longest at the end / total at round 400: median 0.34, quartiles 0.28-0.57
+     total at r400 300-: queen alive: n=  4  final longest median 109.5 mean 106.8; longest at the end / total at round 400: median 0.27, quartiles 0.22-0.35
+     total at r400 300-: queen dead before r300: n= 16  final longest median  87.5 mean  88.1; longest at the end / total at round 400: median 0.25, quartiles 0.20-0.28
+
+== empirical strict count for the 25 flippable losses ==
+  990232 Prisoners Dilemma ours  23 (queen 0) | hers: queen 9, best non-queen 0, total r400 17, expected longest without the queen   7.2 | FLIP
+  1006645 Australia        ours  17 (queen 0) | hers: queen 40, best non-queen 73, total r400 564, expected longest without the queen  73.0 | no
+  1027974 Australia        ours  11 (queen 0) | hers: queen 92, best non-queen 68, total r400 412, expected longest without the queen  92.0 | no
+  1029017 Slithery Fight   ours  60 (queen 0) | hers: queen 49, best non-queen 28, total r400 243, expected longest without the queen  49.0 | FLIP
+  1029019 Australia        ours  13 (queen 0) | hers: queen 12, best non-queen 31, total r400 510, expected longest without the queen  31.0 | no
+  1029030 Autarky          ours  93 (queen 0) | hers: queen 2, best non-queen 0, total r400 2, expected longest without the queen   0.8 | FLIP
+  1044523 Slithery Fight   ours  65 (queen 0) | hers: queen 104, best non-queen 28, total r400 219, expected longest without the queen  92.7 | no
+  1045190 Australia        ours  10 (queen 0) | hers: queen 59, best non-queen 28, total r400 558, expected longest without the queen  59.0 | no
+  1045197 Queen Of Spades  ours   9 (queen 0) | hers: queen 23, best non-queen 4, total r400 39, expected longest without the queen  18.9 | no
+  1052755 Australia        ours  11 (queen 0) | hers: queen 65, best non-queen 29, total r400 577, expected longest without the queen  65.0 | no
+  1053380 Maze             ours  26 (queen 0) | hers: queen 56, best non-queen 16, total r400 148, expected longest without the queen  56.0 | no
+  1053773 Australia        ours  26 (queen 0) | hers: queen 127, best non-queen 52, total r400 411, expected longest without the queen 127.0 | no
+  1053784 Trauma           ours  31 (queen 31) | hers: queen 39, best non-queen 26, total r400 57, expected longest without the queen  26.0 | FLIP
+  1059074 Islands          ours   2 (queen 0) | hers: queen 138, best non-queen 37, total r400 376, expected longest without the queen 138.0 | no
+  1063010 weakhold         ours   9 (queen 0) | hers: queen 27, best non-queen 4, total r400 50, expected longest without the queen  24.2 | no
+  1063011 Australia        ours   9 (queen 0) | hers: queen 39, best non-queen 28, total r400 637, expected longest without the queen  39.0 | no
+  1067904 Australia        ours  18 (queen 0) | hers: queen 42, best non-queen 15, total r400 318, expected longest without the queen  42.0 | no
+  1067909 Around UNSW      ours  47 (queen 0) | hers: queen 45, best non-queen 32, total r400 367, expected longest without the queen  45.0 | FLIP
+  1067913 Trophy           ours  13 (queen 0) | hers: queen 57, best non-queen 11, total r400 207, expected longest without the queen  57.0 | no
+  1068050 Australia        ours  29 (queen 0) | hers: queen 70, best non-queen 66, total r400 322, expected longest without the queen  70.0 | no
+  1068054 Tower Defense    ours  28 (queen 0) | hers: queen 32, best non-queen 14, total r400 26, expected longest without the queen  14.0 | FLIP
+  1068679 weakhold         ours  32 (queen 0) | hers: queen 4, best non-queen 0, total r400 10, expected longest without the queen   4.0 | FLIP
+  1068680 Australia        ours  13 (queen 0) | hers: queen 36, best non-queen 36, total r400 426, expected longest without the queen  36.0 | no
+  1068685 Around UNSW      ours  13 (queen 0) | hers: queen 17, best non-queen 85, total r400 392, expected longest without the queen  85.0 | no
+  1069649 Islands          ours  15 (queen 0) | hers: queen 34, best non-queen 46, total r400 318, expected longest without the queen  46.0 | no
+25 games; flips under the empirical reading: 7

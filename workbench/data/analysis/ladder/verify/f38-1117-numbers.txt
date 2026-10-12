@@ -1,0 +1,196 @@
+games read 805 errors 0 ; final state equals the result block in 805 ; body map consistent in 805 ; games with anomalies 0
+codes: {'v31': 410, 'other': 40, 'main': 355}
+dead-end layouts by maps.json: ['Schooltime #1', 'Schooltime #2', 'Slithery Fight #1']
+main games in the set 293 (half 1: 79 , half 2: 214 ); v31 335
+main with Portals #1 kept: 307 ; v31: 362
+main bands: {'1700-1899': 112, '1900-2099': 157, '2100 on': 17, 'under 1700': 7}  v31 bands: {'1700-1899': 173, '1900-2099': 110, '2100 on': 39, 'under 1700': 13}
+
+=== 1. long share of stays begun in raw rounds 101-200 ===
+main                                           ours 117 of 538 (0.217), theirs 18 of 485 (0.037), 5.86 times  [293 games]
+main half 1 (before the cut)                   ours 16 of 174 (0.092), theirs 1 of 101 (0.010), 9.29 times  [79 games]
+main half 2 (from the cut)                     ours 101 of 364 (0.277), theirs 17 of 384 (0.044), 6.27 times  [214 games]
+main under 1700                                ours 0 of 2 (0.000), theirs 0 of 0 (n/a), n/a times  [7 games]
+main 1700-1899                                 ours 64 of 231 (0.277), theirs 6 of 169 (0.036), 7.80 times  [112 games]
+main 1900-2099                                 ours 53 of 295 (0.180), theirs 12 of 289 (0.042), 4.33 times  [157 games]
+main 2100 on                                   ours 0 of 10 (0.000), theirs 0 of 27 (0.000), n/a times  [17 games]
+v31                                            ours 75 of 533 (0.141), theirs 37 of 432 (0.086), 1.64 times  [335 games]
+v31 half 1                                     ours 75 of 533 (0.141), theirs 37 of 432 (0.086), 1.64 times  [335 games]
+v31 half 2                                     ours 0 of 0 (n/a), theirs 0 of 0 (n/a), n/a times  [0 games]
+v31 under 1700                                 ours 12 of 38 (0.316), theirs 0 of 10 (0.000), n/a times  [13 games]
+v31 1700-1899                                  ours 42 of 318 (0.132), theirs 16 of 217 (0.074), 1.79 times  [173 games]
+v31 1900-2099                                  ours 19 of 147 (0.129), theirs 7 of 161 (0.043), 2.97 times  [110 games]
+v31 2100 on                                    ours 2 of 30 (0.067), theirs 14 of 44 (0.318), 0.21 times  [39 games]
+main with Portals #1 kept                      ours 123 of 546 (0.225), theirs 19 of 511 (0.037), 6.06 times  [307 games]
+
+--- other windows ---
+main r0-100                                    ours 157 of 1055 (0.149), theirs 82 of 804 (0.102), 1.46 times  [293 games]
+main r201-300                                  ours 54 of 257 (0.210), theirs 17 of 340 (0.050), 4.20 times  [293 games]
+main r301 on                                   ours 44 of 225 (0.196), theirs 37 of 345 (0.107), 1.82 times  [293 games]
+v31 r0-100                                     ours 213 of 1430 (0.149), theirs 142 of 869 (0.163), 0.91 times  [335 games]
+v31 r201-300                                   ours 21 of 173 (0.121), theirs 42 of 236 (0.178), 0.68 times  [335 games]
+v31 r301 on                                    ours 9 of 134 (0.067), theirs 27 of 358 (0.075), 0.89 times  [335 games]
+
+--- leave one out, main, r101-200 ---
+one opponent left out: ratio 4.39 (without NUSW Battlecode (262): 75 of 458 against 17 of 456) to 7.45 (without we love gru (998): 117 of 532 against 14 of 474); 40 kinds
+one layout left out: ratio 5.12 (without Maze #1: 71 of 362 against 17 of 444) to 8.13 (without weakhold #1: 92 of 475 against 10 of 420); 15 kinds
+one battle left out: ratio 5.18 (without 1283194: 99 of 506 against 18 of 477) to 7.45 (without 1255595: 117 of 532 against 14 of 474); 71 kinds
+--- leave one out, v31, r101-200 ---
+one opponent left out: ratio 1.49 (without 中国人不准飞😡😡😡😡😡😡😡 (791)) to 2.15 (without chad gdp (70))
+one layout left out: ratio 1.39 (without weakhold #1) to 2.22 (without Tower Defense #1)
+
+--- by layout, r101-200: ours long of stays, theirs long of stays ---
+both codes:
+    Around UNSW #1           ours 1 of 116 (0.009), theirs 3 of 166 (0.018), 0.48 times  [49 games]
+    Australia #1             ours 1 of 71 (0.014), theirs 1 of 85 (0.012), 1.20 times  [52 games]
+    Autarky #1               ours 6 of 14 (0.429), theirs 1 of 52 (0.019), 22.29 times  [49 games]
+    Default #1               ours 0 of 5 (0.000), theirs 0 of 0 (n/a), n/a times  [36 games]
+    Devil #1                 ours 5 of 5 (1.000), theirs 2 of 21 (0.095), 10.50 times  [45 games]
+    Islands #1               ours 3 of 125 (0.024), theirs 0 of 84 (0.000), n/a times  [32 games]
+    Maze #1                  ours 87 of 328 (0.265), theirs 17 of 104 (0.163), 1.62 times  [49 games]
+    Prisoners Dilemma #1     ours 1 of 7 (0.143), theirs 0 of 3 (0.000), n/a times  [25 games]
+    Prisoners Dilemma #2     ours 2 of 3 (0.667), theirs 0 of 3 (0.000), n/a times  [15 games]
+    Queen Of Spades #1       ours 1 of 58 (0.017), theirs 0 of 71 (0.000), n/a times  [52 games]
+    Stripes #1               ours 5 of 46 (0.109), theirs 0 of 18 (0.000), n/a times  [42 games]
+    Tower Defense #1         ours 39 of 86 (0.453), theirs 16 of 91 (0.176), 2.58 times  [46 games]
+    Trauma #1                ours 0 of 61 (0.000), theirs 1 of 47 (0.021), 0.00 times  [45 games]
+    Trophy #1                ours 2 of 24 (0.083), theirs 0 of 10 (0.000), n/a times  [41 games]
+    weakhold #1              ours 39 of 122 (0.320), theirs 14 of 162 (0.086), 3.70 times  [50 games]
+    ours the higher share on 12 layouts, the lower on 2
+    layout mix held (Mantel-Haenszel over layouts): 2.65 times
+    opponent mix held (Mantel-Haenszel over opponents): 2.73 times
+main:
+    Around UNSW #1           ours 0 of 50 (0.000), theirs 3 of 92 (0.033), 0.00 times  [23 games]
+    Australia #1             ours 0 of 29 (0.000), theirs 0 of 56 (0.000), n/a times  [24 games]
+    Autarky #1               ours 4 of 7 (0.571), theirs 0 of 37 (0.000), n/a times  [21 games]
+    Default #1               ours 0 of 3 (0.000), theirs 0 of 0 (n/a), n/a times  [21 games]
+    Devil #1                 ours 1 of 1 (1.000), theirs 0 of 10 (0.000), n/a times  [17 games]
+    Islands #1               ours 1 of 50 (0.020), theirs 0 of 35 (0.000), n/a times  [15 games]
+    Maze #1                  ours 46 of 176 (0.261), theirs 1 of 41 (0.024), 10.72 times  [25 games]
+    Prisoners Dilemma #1     ours 0 of 3 (0.000), theirs 0 of 0 (n/a), n/a times  [7 games]
+    Prisoners Dilemma #2     ours 1 of 2 (0.500), theirs 0 of 0 (n/a), n/a times  [8 games]
+    Queen Of Spades #1       ours 0 of 29 (0.000), theirs 0 of 36 (0.000), n/a times  [26 games]
+    Stripes #1               ours 1 of 18 (0.056), theirs 0 of 12 (0.000), n/a times  [16 games]
+    Tower Defense #1         ours 37 of 63 (0.587), theirs 5 of 62 (0.081), 7.28 times  [24 games]
+    Trauma #1                ours 0 of 34 (0.000), theirs 1 of 37 (0.027), 0.00 times  [28 games]
+    Trophy #1                ours 1 of 10 (0.100), theirs 0 of 2 (0.000), n/a times  [17 games]
+    weakhold #1              ours 25 of 63 (0.397), theirs 8 of 65 (0.123), 3.22 times  [21 games]
+    ours the higher share on 8 layouts, the lower on 2
+    layout mix held (Mantel-Haenszel over layouts): 5.11 times
+    opponent mix held (Mantel-Haenszel over opponents): 4.45 times
+v31:
+    Around UNSW #1           ours 1 of 66 (0.015), theirs 0 of 74 (0.000), n/a times  [26 games]
+    Australia #1             ours 1 of 42 (0.024), theirs 1 of 29 (0.034), 0.69 times  [28 games]
+    Autarky #1               ours 2 of 7 (0.286), theirs 1 of 15 (0.067), 4.29 times  [28 games]
+    Default #1               ours 0 of 2 (0.000), theirs 0 of 0 (n/a), n/a times  [15 games]
+    Devil #1                 ours 4 of 4 (1.000), theirs 2 of 11 (0.182), 5.50 times  [28 games]
+    Islands #1               ours 2 of 75 (0.027), theirs 0 of 49 (0.000), n/a times  [17 games]
+    Maze #1                  ours 41 of 152 (0.270), theirs 16 of 63 (0.254), 1.06 times  [24 games]
+    Prisoners Dilemma #1     ours 1 of 4 (0.250), theirs 0 of 3 (0.000), n/a times  [18 games]
+    Prisoners Dilemma #2     ours 1 of 1 (1.000), theirs 0 of 3 (0.000), n/a times  [7 games]
+    Queen Of Spades #1       ours 1 of 29 (0.034), theirs 0 of 35 (0.000), n/a times  [26 games]
+    Stripes #1               ours 4 of 28 (0.143), theirs 0 of 6 (0.000), n/a times  [26 games]
+    Tower Defense #1         ours 2 of 23 (0.087), theirs 11 of 29 (0.379), 0.23 times  [22 games]
+    Trauma #1                ours 0 of 27 (0.000), theirs 0 of 10 (0.000), n/a times  [17 games]
+    Trophy #1                ours 1 of 14 (0.071), theirs 0 of 8 (0.000), n/a times  [24 games]
+    weakhold #1              ours 14 of 59 (0.237), theirs 6 of 97 (0.062), 3.84 times  [29 games]
+    ours the higher share on 11 layouts, the lower on 2
+    layout mix held (Mantel-Haenszel over layouts): 1.54 times
+    opponent mix held (Mantel-Haenszel over opponents): 1.83 times
+main on Maze, weakhold, Tower Defense          ours 108 of 302 (0.358), theirs 14 of 168 (0.083), 4.29 times  [70 games]
+main without the three                         ours 9 of 236 (0.038), theirs 4 of 317 (0.013), 3.02 times  [223 games]
+v31 on Maze, weakhold, Tower Defense           ours 57 of 234 (0.244), theirs 33 of 189 (0.175), 1.40 times  [75 games]
+v31 without the three                          ours 18 of 299 (0.060), theirs 4 of 243 (0.016), 3.66 times  [260 games]
+both codes on Maze, weakhold, Tower Defense    ours 165 of 536 (0.308), theirs 47 of 357 (0.132), 2.34 times  [145 games]
+both codes without the three                   ours 27 of 535 (0.050), theirs 8 of 560 (0.014), 3.53 times  [483 games]
+main on Maze                                   ours 46 of 176 (0.261), theirs 1 of 41 (0.024), 10.72 times  [25 games]
+v31 on Maze                                    ours 41 of 152 (0.270), theirs 16 of 63 (0.254), 1.06 times  [24 games]
+main on weakhold                               ours 25 of 63 (0.397), theirs 8 of 65 (0.123), 3.22 times  [21 games]
+v31 on weakhold                                ours 14 of 59 (0.237), theirs 6 of 97 (0.062), 3.84 times  [29 games]
+main on Tower Defense                          ours 37 of 63 (0.587), theirs 5 of 62 (0.081), 7.28 times  [24 games]
+v31 on Tower Defense                           ours 2 of 23 (0.087), theirs 11 of 29 (0.379), 0.23 times  [22 games]
+share of the stays (r101-200) that lie on the three layouts: main ours 302 of 538 (0.561), theirs 168 of 485 (0.346); v31 ours 234 of 533 (0.439), theirs 189 of 432 (0.438)
+
+--- chance ---
+main: side swap by game, long share ours minus theirs 0.180: 0 of 10000 swaps at least as large; battle bootstrap of the ratio, 95 percent: 2.97 to 13.56 (2000 of 2000 resamples with a ratio)
+main half 1: side swap by game, long share ours minus theirs 0.082: 367 of 10000 swaps at least as large; battle bootstrap of the ratio, 95 percent: 1.20 to 17.49 (1303 of 2000 resamples with a ratio)
+main half 2: side swap by game, long share ours minus theirs 0.233: 0 of 10000 swaps at least as large; battle bootstrap of the ratio, 95 percent: 3.09 to 15.27 (2000 of 2000 resamples with a ratio)
+main 1700-1899: side swap by game, long share ours minus theirs 0.242: 15 of 10000 swaps at least as large; battle bootstrap of the ratio, 95 percent: 3.57 to 22.75 (1988 of 2000 resamples with a ratio)
+main 1900-2099: side swap by game, long share ours minus theirs 0.138: 17 of 10000 swaps at least as large; battle bootstrap of the ratio, 95 percent: 1.75 to 16.77 (1998 of 2000 resamples with a ratio)
+main on the three layouts: side swap by game, long share ours minus theirs 0.274: 2 of 10000 swaps at least as large; battle bootstrap of the ratio, 95 percent: 2.00 to 12.36 (1999 of 2000 resamples with a ratio)
+main without the three: side swap by game, long share ours minus theirs 0.026: 343 of 10000 swaps at least as large; battle bootstrap of the ratio, 95 percent: 0.96 to 12.94 (1971 of 2000 resamples with a ratio)
+v31: side swap by game, long share ours minus theirs 0.055: 500 of 10000 swaps at least as large; battle bootstrap of the ratio, 95 percent: 0.90 to 3.55 (2000 of 2000 resamples with a ratio)
+v31 on the three layouts: side swap by game, long share ours minus theirs 0.069: 1644 of 10000 swaps at least as large; battle bootstrap of the ratio, 95 percent: 0.71 to 3.17 (2000 of 2000 resamples with a ratio)
+v31 without the three: side swap by game, long share ours minus theirs 0.044: 115 of 10000 swaps at least as large; battle bootstrap of the ratio, 95 percent: 1.40 to 15.73 (1963 of 2000 resamples with a ratio)
+
+--- the three games that support it most (main, r101-200) ---
+games: [(1278846, 'Tower Defense #1', 'NUSW Battlecode (262)', 'ours long 16 of 17', 'theirs 1 of 6'), (1283195, 'Tower Defense #1', 'NUSW Battlecode (262)', 'ours long 14 of 14', 'theirs 0 of 5'), (1256142, 'weakhold #1', 'Nitronics (837)', 'ours long 12 of 19', 'theirs 1 of 2')]
+main without them                              ours 75 of 488 (0.154), theirs 16 of 472 (0.034), 4.53 times  [290 games]
+
+--- unit: games ---
+main: games with a long stay begun in r101-200: ours 33, theirs 11, both 3 of 293 games; most in one game ours 16, theirs 4
+main: queen turn starts in r101-200 ours 14125, theirs 13655; on narrow tiles 1092 of 14125 (0.077) and 622 of 13655 (0.046); long stays per 1,000 queen turn starts 8.28 against 1.32 (6.28 times); stays per 1,000 turn starts 38.1 against 35.5
+v31: games with a long stay begun in r101-200: ours 40, theirs 16, both 5 of 335 games; most in one game ours 5, theirs 10
+v31: queen turn starts in r101-200 ours 13611, theirs 14642; on narrow tiles 955 of 13611 (0.070) and 663 of 14642 (0.045); long stays per 1,000 queen turn starts 5.51 against 2.53 (2.18 times); stays per 1,000 turn starts 39.2 against 29.5
+
+--- by KST date (main, r101-200) ---
+main 2026-10-06                                ours 16 of 180 (0.089), theirs 2 of 107 (0.019), 4.76 times  [85 games]
+main 2026-10-07                                ours 101 of 358 (0.282), theirs 16 of 378 (0.042), 6.67 times  [208 games]
+
+=== 2. what is inside the long stays begun in r101-200 (both codes, as the queue has it) ===
+both codes ours: long stays 192; ended in her death 38; own dragon body beside her head at some turn start 20 (of them ended in her death 19); own beside at the first turn start 0; enemy head within 3 columns and rows of her head at some turn start 77 (at the first 45; of any body tile 87; a short enemy head 77); enemy body beside her head 1; a dead-end tile (one open side) at some turn start 13; mean length 4.91; stays with a tile seen twice 44; with a turn start with no free exit 37
+    deaths by engine reason: {'wall': 16, 'own body': 14, 'head-on': 6, 'other dragon body': 2}; deaths with an own dragon beside her at some turn start: 19 of 38, by reason {'wall': 9, 'own body': 8, 'other dragon body': 2}; deaths without: by reason {'wall': 7, 'own body': 6, 'head-on': 6}
+    long stays that she leaves alive: 154, of them with an own dragon beside her 1
+both codes theirs: long stays 55; ended in her death 8; own dragon body beside her head at some turn start 1 (of them ended in her death 0); own beside at the first turn start 1; enemy head within 3 columns and rows of her head at some turn start 18 (at the first 12; of any body tile 22; a short enemy head 17); enemy body beside her head 0; a dead-end tile (one open side) at some turn start 4; mean length 5.76; stays with a tile seen twice 12; with a turn start with no free exit 7
+    deaths by engine reason: {'head-on': 4, 'wall': 4}; deaths with an own dragon beside her at some turn start: 0 of 8, by reason {}; deaths without: by reason {'head-on': 4, 'wall': 4}
+    long stays that she leaves alive: 47, of them with an own dragon beside her 1
+main ours: long stays 117; ended in her death 16; own dragon body beside her head at some turn start 9 (of them ended in her death 9); own beside at the first turn start 0; enemy head within 3 columns and rows of her head at some turn start 42 (at the first 24; of any body tile 48; a short enemy head 42); enemy body beside her head 0; a dead-end tile (one open side) at some turn start 5; mean length 4.86; stays with a tile seen twice 21; with a turn start with no free exit 17
+    deaths by engine reason: {'wall': 5, 'own body': 8, 'head-on': 2, 'other dragon body': 1}; deaths with an own dragon beside her at some turn start: 9 of 16, by reason {'wall': 4, 'own body': 4, 'other dragon body': 1}; deaths without: by reason {'wall': 1, 'own body': 4, 'head-on': 2}
+    long stays that she leaves alive: 101, of them with an own dragon beside her 0
+main theirs: long stays 18; ended in her death 3; own dragon body beside her head at some turn start 0 (of them ended in her death 0); own beside at the first turn start 0; enemy head within 3 columns and rows of her head at some turn start 8 (at the first 6; of any body tile 9; a short enemy head 7); enemy body beside her head 0; a dead-end tile (one open side) at some turn start 1; mean length 6.06; stays with a tile seen twice 5; with a turn start with no free exit 2
+    deaths by engine reason: {'head-on': 2, 'wall': 1}; deaths with an own dragon beside her at some turn start: 0 of 3, by reason {}; deaths without: by reason {'head-on': 2, 'wall': 1}
+    long stays that she leaves alive: 15, of them with an own dragon beside her 0
+v31 ours: long stays 75; ended in her death 22; own dragon body beside her head at some turn start 11 (of them ended in her death 10); own beside at the first turn start 0; enemy head within 3 columns and rows of her head at some turn start 35 (at the first 21; of any body tile 39; a short enemy head 35); enemy body beside her head 1; a dead-end tile (one open side) at some turn start 8; mean length 4.97; stays with a tile seen twice 23; with a turn start with no free exit 20
+    deaths by engine reason: {'head-on': 4, 'wall': 11, 'own body': 6, 'other dragon body': 1}; deaths with an own dragon beside her at some turn start: 10 of 22, by reason {'wall': 5, 'own body': 4, 'other dragon body': 1}; deaths without: by reason {'head-on': 4, 'wall': 6, 'own body': 2}
+    long stays that she leaves alive: 53, of them with an own dragon beside her 1
+v31 theirs: long stays 37; ended in her death 5; own dragon body beside her head at some turn start 1 (of them ended in her death 0); own beside at the first turn start 1; enemy head within 3 columns and rows of her head at some turn start 10 (at the first 6; of any body tile 13; a short enemy head 10); enemy body beside her head 0; a dead-end tile (one open side) at some turn start 3; mean length 5.62; stays with a tile seen twice 7; with a turn start with no free exit 5
+    deaths by engine reason: {'wall': 3, 'head-on': 2}; deaths with an own dragon beside her at some turn start: 0 of 5, by reason {}; deaths without: by reason {'wall': 3, 'head-on': 2}
+    long stays that she leaves alive: 32, of them with an own dragon beside her 1
+
+--- the own-dragon flag in short stays and by window (both codes) ---
+ours r101-200: stays of 1 or 2 turn starts 879, own dragon beside her in 17, ended in her death 57 (with own beside 17)
+ours all rounds: long stays 690, own beside 44, ended in death 90, own beside among the deaths 43
+theirs r101-200: stays of 1 or 2 turn starts 862, own dragon beside her in 4, ended in her death 53 (with own beside 3)
+theirs all rounds: long stays 402, own beside 19, ended in death 62, own beside among the deaths 9
+
+=== 3. all rounds ===
+main ours: long stays 372; ended in her death 45 {'head-on': 12, 'wall': 19, 'other dragon body': 3, 'own body': 11}; turn starts inside long stays 1898; deaths per 1,000 turn starts inside 23.7 (95 percent 17.7 to 31.8); all queen turn starts 57905; all queen deaths 223; deaths per 1,000 turn starts outside long stays 3.18; her death-ended long stays in games we did not win 16 (lost outright 16); at the end of the game 1
+main theirs: long stays 154; ended in her death 24 {'head-on': 9, 'other': 2, 'wall': 11, 'own body': 1, 'other dragon body': 1}; turn starts inside long stays 996; deaths per 1,000 turn starts inside 24.1 (95 percent 16.2 to 36.0); all queen turn starts 61931; all queen deaths 221; deaths per 1,000 turn starts outside long stays 3.23; her death-ended long stays in games we did not win 9 (lost outright 9); at the end of the game 2
+main: deaths per turn inside long stays, ours over theirs 0.98 (95 percent 0.60 to 1.61); per long stay 0.121 against 0.156
+    main r0-100: ours 157 long stays, 798 turn starts inside, 17 deaths; theirs 82, 581, 13
+    main r101-200: ours 117 long stays, 569 turn starts inside, 16 deaths; theirs 18, 109, 3
+    main r201-300: ours 54 long stays, 273 turn starts inside, 6 deaths; theirs 17, 97, 2
+    main r301 on: ours 44 long stays, 258 turn starts inside, 6 deaths; theirs 37, 209, 6
+    main ours queen deaths 223: in a stay (her last turn start was on a narrow tile) 112; by reason {'wall': 39, 'head-on': 152, 'other dragon body': 10, 'own body': 21, 'other': 1}
+    main theirs queen deaths 221: in a stay (her last turn start was on a narrow tile) 101; by reason {'head-on': 177, 'other': 8, 'own body': 7, 'wall': 23, 'other dragon body': 6}
+v31 ours: long stays 318; ended in her death 45 {'head-on': 10, 'wall': 21, 'own body': 13, 'other dragon body': 1}; turn starts inside long stays 1609; deaths per 1,000 turn starts inside 28.0 (95 percent 20.9 to 37.5); all queen turn starts 54931; all queen deaths 273; deaths per 1,000 turn starts outside long stays 4.28; her death-ended long stays in games we did not win 15 (lost outright 15); at the end of the game 0
+v31 theirs: long stays 248; ended in her death 38 {'own body': 1, 'wall': 17, 'head-on': 10, 'other': 8, 'other dragon body': 2}; turn starts inside long stays 1544; deaths per 1,000 turn starts inside 24.6 (95 percent 17.9 to 33.8); all queen turn starts 64032; all queen deaths 265; deaths per 1,000 turn starts outside long stays 3.63; her death-ended long stays in games we did not win 19 (lost outright 19); at the end of the game 3
+v31: deaths per turn inside long stays, ours over theirs 1.14 (95 percent 0.74 to 1.75); per long stay 0.142 against 0.153
+    v31 r0-100: ours 213 long stays, 1102 turn starts inside, 14 deaths; theirs 142, 901, 22
+    v31 r101-200: ours 75 long stays, 373 turn starts inside, 22 deaths; theirs 37, 208, 5
+    v31 r201-300: ours 21 long stays, 94 turn starts inside, 7 deaths; theirs 42, 291, 7
+    v31 r301 on: ours 9 long stays, 40 turn starts inside, 2 deaths; theirs 27, 144, 4
+    v31 ours queen deaths 273: in a stay (her last turn start was on a narrow tile) 98; by reason {'head-on': 200, 'other dragon body': 8, 'wall': 41, 'own body': 22, 'other': 2}
+    v31 theirs queen deaths 265: in a stay (her last turn start was on a narrow tile) 134; by reason {'head-on': 196, 'own body': 8, 'wall': 32, 'other dragon body': 18, 'other': 11}
+
+=== 4. is it speed? runs of consecutive head positions on narrow tiles, every step counted ===
+main ours: runs begun in r101-200 546, of 3 or more tiles 110 (0.201); stays 538, long 117; all rounds: queen turn starts 57905, steps 62298, turns with two or more steps 4018 (0.069)
+main theirs: runs begun in r101-200 514, of 3 or more tiles 17 (0.033); stays 485, long 18; all rounds: queen turn starts 61931, steps 69612, turns with two or more steps 5041 (0.081)
+    main on the three layouts: runs of 3 or more tiles ours 102 of 304, theirs 16 of 174
+    main without the three: runs of 3 or more tiles ours 8 of 242, theirs 1 of 340
+v31 ours: runs begun in r101-200 541, of 3 or more tiles 68 (0.126); stays 533, long 75; all rounds: queen turn starts 54931, steps 57574, turns with two or more steps 2808 (0.051)
+v31 theirs: runs begun in r101-200 459, of 3 or more tiles 37 (0.081); stays 432, long 37; all rounds: queen turn starts 64032, steps 69737, turns with two or more steps 3899 (0.061)
+    v31 on the three layouts: runs of 3 or more tiles ours 56 of 234, theirs 34 of 187
+    v31 without the three: runs of 3 or more tiles ours 12 of 307, theirs 3 of 272
+
+=== 5. compare with rows.jsonl (read last) ===
+code, layout, winner, last round, queen death rounds, opponent and rating against rows.jsonl: {'agree': 805} rows in rows.jsonl 805

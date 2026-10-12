@@ -1,0 +1,183 @@
+{
+  "source": "data/online/smoke/one10-bot/main.cpp",
+  "source_sha256": "597dd6255cd65ab902d8d0ef92aa7b031f4c3b268dfc230e36517f18ff025d9b",
+  "games": [
+    {
+      "game": 1492099,
+      "final": [
+        {
+          "n": 4,
+          "long": 9,
+          "total": 28,
+          "q": 0
+        },
+        {
+          "n": 8,
+          "long": 21,
+          "total": 60,
+          "q": 0
+        }
+      ],
+      "ram": {
+        "passive": 39,
+        "active": 17
+      },
+      "persistent_deficit": {
+        "q": 500,
+        "long": 439,
+        "total": 339
+      },
+      "queen_eats": [
+        1,
+        1
+      ],
+      "queen_splits": [
+        {
+          "r": 50,
+          "parent": 1,
+          "child": 12,
+          "lens": [
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "game": 1492102,
+      "final": [
+        {
+          "n": 0,
+          "long": 0,
+          "total": 0,
+          "q": 0
+        },
+        {
+          "n": 48,
+          "long": 4,
+          "total": 115,
+          "q": 0
+        }
+      ],
+      "ram": {
+        "active": 8,
+        "passive": 27
+      },
+      "persistent_deficit": {
+        "q": 314,
+        "long": 313,
+        "total": 19
+      },
+      "queen_eats": [
+        0,
+        0
+      ],
+      "queen_splits": [
+        {
+          "r": 0,
+          "parent": 0,
+          "child": 6,
+          "lens": [
+            2,
+            2
+          ]
+        }
+      ],
+      "r51_100": [
+        {
+          "turns": 172,
+          "eats": 21
+        },
+        {
+          "turns": 714,
+          "eats": 76
+        }
+      ]
+    },
+    {
+      "game": 1492103,
+      "final": [
+        {
+          "n": 2,
+          "long": 27,
+          "total": 29,
+          "q": 27
+        },
+        {
+          "n": 44,
+          "long": 53,
+          "total": 179,
+          "q": 53
+        }
+      ],
+      "ram": {
+        "passive": 13,
+        "active": 4
+      },
+      "persistent_deficit": {
+        "q": 0,
+        "long": 61,
+        "total": 19
+      },
+      "queen_eats": [
+        33,
+        49
+      ],
+      "queen_splits": [
+        {
+          "r": 0,
+          "parent": 1,
+          "child": 4,
+          "lens": [
+            2,
+            2
+          ]
+        },
+        {
+          "r": 37,
+          "parent": 1,
+          "child": 16,
+          "lens": [
+            2,
+            2
+          ]
+        },
+        {
+          "r": 82,
+          "parent": 1,
+          "child": 51,
+          "lens": [
+            3,
+            2
+          ]
+        },
+        {
+          "r": 144,
+          "parent": 1,
+          "child": 132,
+          "lens": [
+            3,
+            2
+          ]
+        },
+        {
+          "r": 160,
+          "parent": 1,
+          "child": 163,
+          "lens": [
+            3,
+            2
+          ]
+        }
+      ],
+      "queen_late": {
+        "turns": 111,
+        "eats": 0,
+        "actions": {
+          "0": 111
+        }
+      },
+      "r301_388_suicides": 12
+    }
+  ]
+}

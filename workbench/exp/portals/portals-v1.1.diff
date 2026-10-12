@@ -1,0 +1,501 @@
+diff -ruN a/bot/engcfg.hpp b/bot/engcfg.hpp
+--- a/bot/engcfg.hpp	2026-10-01 05:35:15
++++ b/bot/engcfg.hpp	2026-10-01 05:35:15
+@@ -25,6 +25,8 @@
+     bool disperse = false;           // sd: replaces F (stack5 / stack8 F2)
+     bool claimSonar = false;         // the hotspot field carries our sd target; allies' hotspots are claims, not attraction sources
+     bool spawnClear = false;         // sc
++    // ---- exp/portals: the Portals module (decideImpl<3>; ptmod.cpp) ----
++    bool portals = false;
+     // ---- v1 final (map atlas interim) ----
+     int curve[5] = {0, 0, 0, 0, 0};  // head targets at r10 / r25 / r50 / r100 / r250 (linear between, held after r250)
+     bool d8Veto = false;             // the trade veto on local balance d8 <= LNT_D8_VETO (heads within Manhattan 8), not stack10's d3
+diff -ruN a/bot/main.cpp b/bot/main.cpp
+--- a/bot/main.cpp	2026-10-01 05:35:15
++++ b/bot/main.cpp	2026-10-01 05:35:15
+@@ -42,7 +42,7 @@
+         const MapPolicy& row = policy.get(world);
+         Action a;
+         if (row.engine == Engine::SWARM) a = swarm.decide(row, policy.config());
+-        else { planner.setConfig(&policy.config()); a = planner.decide(); }   // FORTRESS_CONFIG values; v1 5b rows add econW4
++        else { planner.setConfig(&policy.config()); a = planner.decide(); }   // FORTRESS_CONFIG values; v1 5b rows add econW4; exp/portals: the Portals row
+         // a well-formed fallback first: if the intended line were ever malformed, this one still applies
+         if (a.safeDir >= 0) writer.move(std::string(1, DIRCH[a.safeDir]).c_str());
+         if (a.kind == Action::SPLIT) {
+diff -ruN a/bot/params.hpp b/bot/params.hpp
+--- a/bot/params.hpp	2026-10-01 05:35:15
++++ b/bot/params.hpp	2026-10-01 05:35:15
+@@ -702,4 +702,44 @@
+ constexpr int    KING_BEACON_EVERY = 8;
+ constexpr int    BEACON_RELAY_AGE = 1;
+ 
++// --- unsw-swarm exp/portals (2026-10-01): the Portals module (ptmod.cpp, ptmap.hpp; exp/portals/PLAN.md) ---
++// Portals is solitaire: the two halves share no tile (movement BFS 240 / 240, no path), so our king500 depends on our play alone. Every
++// switch below acts only in a process that recognised the Portals family (World::mapFamIs("Portals")); other maps are untouched.
++// PT_ON: the Portals row gets its own planner instantiation (decideImpl<3>: policy.hpp makeConfig, main.cpp). false = FORTRESS as before.
++constexpr bool   PT_ON = true;
++// Conversion clock: stack1 conv from PT_CONV_START, central gathering (goal pull, feed on sight) from PT_GATHER_START (FORTRESS: 300 / 340).
++constexpr int    PT_CONV_START = 300;
++constexpr int    PT_GATHER_START = 340;
++// Endgame (PT_ENDGAME_ON): from PT_ENDGAME_ROUND every non-king follows the king and the late feed runs down to PT_FEED_MIN_UNITS units
++// (FORTRESS: gathering needs >= GATHER_FEED_UNITS units and length >= GATHER_FEED_MIN_LEN, the feed >= 3 units). The late window opens at
++// 500 - (length + path distance + PT_FEED_SLACK) (FORTRESS FEED_SLACK 8): the king needs about length + distance rounds to eat the drops.
++constexpr bool   PT_ENDGAME_ON = true;
++constexpr int    PT_ENDGAME_ROUND = 430;
++constexpr int    PT_FEED_MIN_UNITS = 2;
++constexpr int    PT_FEED_SLACK = 10;
++// King safety (PT_KING_SAFE_ON; the king class = iAmLongest and length >= KING_MIN_LEN): PT_KING_DEAD_PEN on every step onto a dead tile
++// (ptmap DEAD: outside the 2-core, or a compartment of <= 8 tiles with one way out; first step and the look-ahead), PT_KING_BLIND_PEN on
++// a first-step crossing whose exit is out of view without a clean probe from this tile last turn, while the king's head is outside the rooms
++// (ptmap ROOM: in a room every way out is a portal crossing).
++constexpr bool   PT_KING_SAFE_ON = true;
++constexpr double PT_KING_DEAD_PEN = 40.0;
++constexpr double PT_KING_BLIND_PEN = 12.0;
++// Crossings near the king (PT_PIECE_PORTAL_ON): a non-king's crossing whose exit is out of view and within PT_NEAR_KING_DIST (+ the news
++// age) of the king's head, known from news at most PT_KING_NEWS rounds old, pays PT_PIECE_NEAR_KING_PEN.
++constexpr bool   PT_PIECE_PORTAL_ON = true;
++constexpr int    PT_NEAR_KING_DIST = 2;
++constexpr int    PT_KING_NEWS = 3;
++constexpr double PT_PIECE_NEAR_KING_PEN = 12.0;
++// PT_LEN_ON: the length memory (World::ptUpdateLens): an ally's length is the longest evidence of the last PT_LEN_MEMORY rounds unless its
++// whole chain is in view; the king class, the gathering goal and the late feed read it (a partial sighting is a lower bound).
++constexpr bool   PT_LEN_ON = true;
++constexpr int    PT_LEN_MEMORY = 20;
++// Endgame 2 (after V1: the second died but its drops rarely reached the king): PT_ENDFEED_ON = from PT_ENDGAME_ROUND a non-king feeds the
++// king class (la >= king length - 2) on sight within FEED_MAX_DIST, without waiting for the late window; PT_KING_GRAB_ON = the late king
++// keeps the fresh-drop pull (grab; FORTRESS turns it off in the last GRAB_KING_ROUNDS); PT_END_GATHER_W = the gathering leaf weight per
++// tile from PT_ENDGAME_ROUND (FORTRESS GATHER_W 0.12).
++constexpr bool   PT_ENDFEED_ON = true;
++constexpr bool   PT_KING_GRAB_ON = true;
++constexpr double PT_END_GATHER_W = 0.4;
++
+ }} // namespace seed0::P
+diff -ruN a/bot/plan.cpp b/bot/plan.cpp
+--- a/bot/plan.cpp	2026-10-01 05:35:15
++++ b/bot/plan.cpp	2026-10-01 05:35:15
+@@ -11,6 +11,7 @@
+ #include <cstdio>
+ 
+ #include "params.hpp"
++#include "ptmap.hpp"   // exp/portals: dfsPt
+ 
+ namespace seed0 {
+ 
+@@ -574,6 +575,62 @@
+     return best;
+ }
+ 
++// exp/portals (ptmod.cpp): dfs() with the Portals king's dead-end price on every step it looks ahead (ptmap.hpp DEAD)
++double Planner::dfsPt(int t, int lastDir, int depth, int maxDepth, int removed, int lenNow, std::vector<int>& path, long long deadline) {
++    int turns = depth;
++    int stepBase = (int)path.size() - 1;
++    nodes_++;
++    bool over = nodes_ > P::DFS_NODE_BUDGET || (((nodes_ & 63) == 0) && nowPoints() > deadline);
++    if (depth >= maxDepth || over) {
++        const double g1 = GPOW[std::min(63, turns + 1)];
++        double v = attract_[t] * g1 + exploreValue(t) * g1;
++        if (frontierField_[t] > 0.0) v += frontierField_[t] * g1;
++        int freeN = 0;
++        for (int d = 0; d < 4; d++) { if (d == opp(lastDir)) continue; int u = w_.across(t, d); if (u >= 0 && tileEnterable(u, stepBase + 1, removed, path)) freeN++; }
++        v += freeN * 0.15;
++        if (goalOn_) v -= fGoal_ ? P::FG_W * std::max(0, std::min(goalDist_[t], 200) - P::FG_HOLD)
++                                 : P::GH_ON ? (w_.round >= P::PT_ENDGAME_ROUND ? P::PT_END_GATHER_W : P::GATHER_W) * std::max(0, std::min(goalDist_[t], 200) - P::GH_HOLD)
++                                 : P::GATHER_W * std::min(goalDist_[t], 200);
++        if (kxOn_) v -= P::KX_W * std::max(0, P::KX_DIST - (int)kxDist_[t]);
++        if (freeN == 0) v += DEATH * 0.5 * GPOW[std::min(63, turns)];
++        return v;
++    }
++    double best = -1e18; bool any = false;
++    for (int d = 0; d < 4; d++) {
++        if (d == opp(lastDir)) continue;
++        int u = w_.across(t, d);
++        if (u == -2) {
++            double fv = lenNow >= P::BLIND_MIN_LEN ? frontierValue(t, d) : 0.0;
++            if (fv > 0.0) {
++                any = true;
++                double v = (fv - blindRisk(lenNow)) * GPOW[std::min(63, turns + 1)];
++                if (ptKing_ && P::PT_KING_SAFE_ON) { int e = ptExit(t, d); if (e >= 0) v -= ptKingTilePen(e) * GPOW[std::min(63, turns + 1)]; }
++                if (v > best) best = v;
++            }
++            continue;
++        }
++        if (u < 0) continue;
++        if (!tileEnterable(u, stepBase + 1, removed, path)) continue;
++        any = true;
++        int arrive = w_.round + turns + 1;
++        double p = SC.pnow[u];
++        const Tile& x = w_.tiles[u];
++        if (p < 0.05 && x.seen >= 0 && x.spawnRound > w_.round && x.spawnRound <= arrive) p = P::SPAWN_CONF;
++        double g = GPOW[std::min(63, turns + 1)];
++        double v = pearlValue(u, p) * g - threatAt(u) * g - softPenalty_[u] * g - portalPenalty(t, d, u) * g;
++        if (w_.edgeUnknown(t, d)) v -= P::UNKNOWN_EDGE_PENALTY * g;
++        if (x.spawnRound == arrive + 1 && p < 0.5) v -= P::BLOCK_SPAWN_PENALTY * g;
++        if (ptKing_ && P::PT_KING_SAFE_ON) v -= ptKingTilePen(u) * g;   // the module's price
++        path.push_back(u);
++        bool eat = p >= 0.5;
++        v += dfsPt(u, d, depth + 1, maxDepth, removed + (eat ? 0 : 1), lenNow + (eat ? 1 : 0), path, deadline);
++        path.pop_back();
++        if (v > best) best = v;
++    }
++    if (!any) return DEATH * GPOW[std::min(63, turns)];
++    return best;
++}
++
+ // value of trading heads with this enemy this turn (0 = not allowed)
+ double Planner::tradeValue(int enemyId) const {
+     double v = tradeValueBase(enemyId);
+@@ -1231,11 +1288,12 @@
+ 
+ // ------------------------------------------------------------------------------------------------
+ // unsw-swarm v1: the engine dispatch (before this turn's point clock starts in decideImpl)
+-Action Planner::decide() { return cfg_->swarm ? decideImpl<2>() : cfg_->econW4 ? decideImpl<1>() : decideImpl<0>(); }
++Action Planner::decide() { return cfg_->swarm ? decideImpl<2>() : cfg_->econW4 ? decideImpl<1>() : cfg_->portals ? decideImpl<3>() : decideImpl<0>(); }
+ 
+-// MODE 0 = FORTRESS (stack11's decide()), 1 = FORTRESS with the W4-era economy (Autarky, PD6; v1 final item 5b), 2 = SWARM
++// MODE 0 = FORTRESS (stack11's decide()), 1 = FORTRESS with the W4-era economy (Autarky, PD6; v1 final item 5b), 2 = SWARM,
++// 3 = FORTRESS with the Portals module (exp/portals, ptmod.cpp)
+ template <int MODE> Action Planner::decideImpl() {
+-    constexpr bool SW = MODE == 2, W4 = MODE == 1;
++    constexpr bool SW = MODE == 2, W4 = MODE == 1, PT = MODE == 3;
+     initGpow();
+     turnCounter_++;
+     if (exposedPending_) { survivedExposures_++; exposedPending_ = false; } // we are alive: the shorter head declined
+@@ -1251,6 +1309,10 @@
+     // stack2 S2: not for the late king, computed here so that it does not depend on KS_ON (M3)
+     grabOn_ = P::GRAB_ON && !((500 - w_.round) <= P::GRAB_KING_ROUNDS && w_.iAmLongest() && w_.myLen >= P::KING_MIN_LEN);
+     splitTailBlocked_ = false; splitTailDist_ = 99; // stack4 split tail
++    if constexpr (PT) {   // exp/portals
++        ptKing_ = w_.iAmLongest() && w_.myLen >= P::KING_MIN_LEN; ptFire_ = 0;
++        if (P::PT_KING_GRAB_ON) grabOn_ = P::GRAB_ON;   // the late king also races for fresh drops (no enemy reaches our half)
++    }
+ 
+     if (!w_.parsedOk || w_.headT < 0 || w_.tiles.empty()) {
+         int order[4] = {w_.myDir, leftOf(w_.myDir), rightOf(w_.myDir), opp(w_.myDir)};
+@@ -1298,6 +1360,7 @@
+     } else {
+     computeGhDrops();        // stack11 gh (before the attraction field)
+     computeAttractT<MODE>();
++    if constexpr (PT) computeGoalPt(); else          // exp/portals: the module's gathering clock and endgame
+     computeGoal();
+     if constexpr (W4) { fGoal_ = false; fTarget_ = -1; fPause_ = -1; fTable_ = false; }   // 5b: no F / F2 / F2p on Autarky and PD6
+     else computeFountainGoal();   // stack5 F (only when no gathering goal is on)
+@@ -1372,7 +1435,7 @@
+             }
+         }
+     }
+-    if (!SW && P::CONV_ON && w_.round >= P::CONV_START && w_.myLen <= P::CONV_MAX_LEN && w_.unitCount >= P::CONV_MIN_UNITS &&   // stack1 conv: FORTRESS (sf replaces it)
++    if (!SW && P::CONV_ON && w_.round >= (PT ? P::PT_CONV_START : P::CONV_START) && w_.myLen <= P::CONV_MAX_LEN && w_.unitCount >= P::CONV_MIN_UNITS &&   // stack1 conv: FORTRESS (sf replaces it); exp/portals: its clock
+         w_.enemyHeadsNow.empty() && (int)w_.body.size() >= 2 && w_.round - escSplitRound_ > 3 && !youngPiece) {
+         int feedTo = -1, feedDist = 99, feedLen = 0;
+         for (int id : w_.allyHeadsNow) {
+@@ -1406,10 +1469,13 @@
+ 
+     // ---- late consolidation: only the longest dragon counts at the end. A shorter dragon beside a longer teammate
+     // dies in place so its ceil(L/2) dropped pearls lie where the teammate can eat them before round 500.
+-    bool gathering = !SW && w_.round >= P::GATHER_START;   // unsw-swarm v1: no central gathering in the swarm engine (the late window stays)
++    bool gathering = !SW && w_.round >= (PT ? P::PT_GATHER_START : P::GATHER_START);   // unsw-swarm v1: no central gathering in the swarm engine (the late window stays); exp/portals: its clock
+     lwkHeld_ = false;                                                                    // stack11 lwk
+-    if (!SW && (w_.round >= P::FEED_FIRST_ROUND || gathering) && w_.unitCount >= 3 && enemyDist_[w_.headT] > 4 && (int)w_.body.size() >= 2) {   // v1: sf's late branch in SWARM
++    // exp/portals: from PT_ENDGAME_ROUND the late feed runs down to PT_FEED_MIN_UNITS units (nothing on our half can reach the last dragon)
++    const int feedMinUnits = PT && w_.round >= P::PT_ENDGAME_ROUND ? P::PT_FEED_MIN_UNITS : 3;
++    if (!SW && (w_.round >= P::FEED_FIRST_ROUND || gathering) && w_.unitCount >= feedMinUnits && enemyDist_[w_.headT] > 4 && (int)w_.body.size() >= 2) {   // v1: sf's late branch in SWARM
+         int feedTo = -1, feedDist = 99;
++        [[maybe_unused]] int ptFeedLen = 0;          // exp/portals: the length of the ally chosen to be fed
+         // the longest ally we know of (recently): before the late window only it is fed, not every longer ally (c10m)
+         // stack11 lwk: the late window feeds the king class too, with kingLen from news of the last LWK_KING_FRESH rounds
+         const bool lwk = P::LWK_ON && w_.round >= P::FEED_FIRST_ROUND;
+@@ -1425,6 +1491,7 @@
+             const Dragon& a = w_.dragons[id];
+             // a whole chain in view is exact; a sonar length can predate a split made this round
+             int la = a.tailSeen && a.lastSeen == w_.round ? a.visLen : std::max(a.minLen, a.estLen);
++            if constexpr (PT) { if (!(a.tailSeen && a.lastSeen == w_.round) && w_.ptLenActive) la = std::max(la, w_.ptLenOf(id)); }   // exp/portals: the length memory
+             if (a.headT < 0 || la <= w_.myLen) continue;
+             if (earlyOnlyKing && la < kingLen - 2) continue;
+             const bool lwkOut = lwk && la < kingLen - 2;   // stack11 lwk: not the king class (the old late-window rule fed it)
+@@ -1449,10 +1516,14 @@
+                 }
+             }
+             if (lwkOut) { if (found < oldDist) { oldDist = found; oldTo = id; } continue; } // stack11 lwk
+-            if (found < feedDist) { feedDist = found; feedTo = id; }
++            if (found < feedDist) { feedDist = found; feedTo = id; if constexpr (PT) ptFeedLen = la; }
+         }
+-        bool lateWindow = w_.round >= P::FEED_FIRST_ROUND && w_.round >= 500 - (w_.myLen + feedDist + P::FEED_SLACK);
+-        const bool feedNow = feedTo >= 0 && (lateWindow || (gathering && w_.unitCount >= P::GATHER_FEED_UNITS && w_.myLen >= P::GATHER_FEED_MIN_LEN));
++        bool lateWindow = w_.round >= P::FEED_FIRST_ROUND && w_.round >= 500 - (w_.myLen + feedDist + (PT ? P::PT_FEED_SLACK : P::FEED_SLACK));
++        // exp/portals PT_ENDFEED_ON: from PT_ENDGAME_ROUND a non-king feeds the king class on sight (within FEED_MAX_DIST), without waiting
++        // for the late window: nothing on our half threatens the last dragons, and every round of waiting is a round the king cannot eat
++        bool ptEndFeed = false;
++        if constexpr (PT) ptEndFeed = P::PT_ENDFEED_ON && w_.round >= P::PT_ENDGAME_ROUND && feedTo >= 0 && ptFeedLen >= kingLen - 2;
++        const bool feedNow = feedTo >= 0 && (lateWindow || ptEndFeed || (gathering && w_.unitCount >= P::GATHER_FEED_UNITS && w_.myLen >= P::GATHER_FEED_MIN_LEN));
+         if (lwk && !feedNow && oldTo >= 0 && oldDist < 99) { // stack11 lwk: would the old rule (the nearest longer ally, any class) have fed?
+             const int od = std::min(oldDist, feedDist);
+             lwkHeld_ = w_.round >= 500 - (w_.myLen + od + P::FEED_SLACK) || (gathering && w_.unitCount >= P::GATHER_FEED_UNITS && w_.myLen >= P::GATHER_FEED_MIN_LEN);
+@@ -1684,6 +1755,16 @@
+         }
+     }
+ 
++    // exp/portals: the module's penalties on every step of every legal non-trade candidate (ptStepPenalty, ptmod.cpp)
++    if constexpr (PT) {
++        for (Cand& c : cands) {
++            if (!c.legal || c.trade) continue;
++            if (c.blind) { c.base -= ptStepPenalty(w_.headT, c.dirs[0], -2, true); continue; }
++            int from = w_.headT;
++            for (size_t k = 0; k < c.tiles.size(); k++) { c.base -= ptStepPenalty(from, c.dirs[k], c.tiles[k], false); from = c.tiles[k]; }
++        }
++    }
++
+     // ---- first-step safety (flood fill) once per legal candidate
+     std::vector<double> safety(cands.size(), 0.0);
+     for (size_t i = 0; i < cands.size(); i++) {
+@@ -1719,7 +1800,9 @@
+             if (!c.legal) continue;
+             if (c.trade || c.blind) { v2[i] = c.base + safety[i]; continue; } // safety: 0 for trades, the reference for blind
+             path.assign(1, w_.headT); for (int t : c.tiles) path.push_back(t);
+-            double cont = dfs(c.tiles.back(), c.dirs.back(), 0, depth, c.removed, w_.myLen + c.pearls - ((int)c.dirs.size() - 1), path, hard);
++            double cont;
++            if constexpr (PT) cont = dfsPt(c.tiles.back(), c.dirs.back(), 0, depth, c.removed, w_.myLen + c.pearls - ((int)c.dirs.size() - 1), path, hard);   // exp/portals
++            else cont = dfs(c.tiles.back(), c.dirs.back(), 0, depth, c.removed, w_.myLen + c.pearls - ((int)c.dirs.size() - 1), path, hard);
+             v2[i] = c.base + safety[i] + cont;
+             if (nodes_ > P::DFS_NODE_BUDGET || nowPoints() > hard) { aborted = true; break; }
+         }
+@@ -2064,6 +2147,12 @@
+         if (kingClass()) act.indicator += " sk";
+     }
+     if (P::KING_BEACON_ON && beaconTag_) act.indicator += beaconTag_ == 1 ? " kb" : " kbr";   // v1.1 C
++    if constexpr (PT) {   // exp/portals: " pt" on every module turn; " ptd" / " ptb" / " ptq" when a rule priced a candidate (king dead end, king blind crossing, crossing near the king)
++        act.indicator += " pt";
++        if (ptFire_ & 1) act.indicator += " ptd";
++        if (ptFire_ & 2) act.indicator += " ptb";
++        if (ptFire_ & 4) act.indicator += " ptq";
++    }
+     if (P::BELIEF_TAG && w_.round % P::BELIEF_TAG_EVERY == 0) act.indicator += beliefTag();   // v1 belief tag
+     if (P::PROFILE) {
+         long long tp5 = nowPoints();
+diff -ruN a/bot/plan.hpp b/bot/plan.hpp
+--- a/bot/plan.hpp	2026-10-01 05:35:15
++++ b/bot/plan.hpp	2026-10-01 05:35:15
+@@ -34,7 +34,9 @@
+     void setConfig(const EngineConfig* c) { cfg_ = c; }
+   private:
+     World& w_;
+-    template <int MODE> __attribute__((noinline)) Action decideImpl();   // MODE 0 FORTRESS, 1 FORTRESS_W4 (5b), 2 SWARM
++    // MODE 0 FORTRESS, 1 FORTRESS_W4 (5b), 2 SWARM, 3 PORTALS (exp/portals: the Portals module, ptmod.cpp; runs only in a process whose config
++    // has portals set, policy.hpp; the other instantiations compile exactly as before, every module block is compiled out)
++    template <int MODE> __attribute__((noinline)) Action decideImpl();
+     std::vector<double> attract_;      // pearl attraction field
+     std::vector<int> distBuf_, queue_, parBuf_;
+     std::vector<int16_t> enemyDist_;   // path distance (<=4) from the nearest enemy head; 99 otherwise
+@@ -184,6 +186,14 @@
+     bool kingClass() const;                            // the swarm engine's king class (the " sk" tag): fresh iAmLongest, L >= 8 or past the clock
+     void computeKingFloor();                           // B: kfDist_ / kfOn_
+     double kingFloorCost(int t) const;                 // B: the choice cost of ending this turn's move on t
++    // exp/portals: the Portals module (ptmod.cpp; params.hpp "exp/portals" section)
++    bool ptKing_ = false;                              // this turn: we are the king class (iAmLongest, length >= KING_MIN_LEN)
++    int ptFire_ = 0;                                   // this turn's rule firings on candidates (bit 1 king dead end, 2 king blind crossing, 4 piece crossing near the king)
++    int ptExit(int t, int d) const;                    // the tile across edge d of t by the static board (ptmap.hpp); -1 kelp
++    double ptKingTilePen(int t) const;                 // the king class's price for standing on t (ptmap DEAD)
++    double ptStepPenalty(int from, int d, int to, bool blind);  // the module's penalty on one step of a candidate (sets ptFire_ bits)
++    double dfsPt(int t, int lastDir, int depth, int maxDepth, int removed, int lenNow, std::vector<int>& path, long long deadline);
++    void computeGoalPt();                              // computeGoal with the module's gathering clock and endgame (no unit / length floor)
+ };
+ 
+ long long nowPoints();
+diff -ruN a/bot/policy.hpp b/bot/policy.hpp
+--- a/bot/policy.hpp	2026-10-01 05:35:15
++++ b/bot/policy.hpp	2026-10-01 05:35:15
+@@ -135,6 +135,8 @@
+         if (P::FORT_W4_ON && row.fam && (std::strcmp(row.fam, "Autarky") == 0 || (std::strcmp(row.fam, "Prisoners_Dilemma") == 0 && row.layout == 'a'))) {
+             c.econW4 = true; c.tag = 'W';
+         }
++        // exp/portals: the Portals row keeps FORTRESS's switches and runs the module's instantiation decideImpl<3> (params.hpp PT_*; tag stays 'F')
++        if (P::PT_ON && row.fam && std::strcmp(row.fam, "Portals") == 0) c.portals = true;
+         return c;
+     }
+     c.tag = 'S';
+diff -ruN a/bot/ptmap.hpp b/bot/ptmap.hpp
+--- a/bot/ptmap.hpp	1970-01-01 09:00:00
++++ b/bot/ptmap.hpp	2026-10-01 05:35:15
+@@ -0,0 +1,15 @@
++// ptmap.hpp — generated by exp/portals/gen/genptmap.js from maps/online-20260927/portals.map. Do not edit.
++// The Portals map (32 x 16) for the Portals module (ptmod.cpp): every tile's north and west edge as the protocol sends them (-2 kelp,
++// -1 open, >= 0 portal id; Planner::ptExit reads where a portal leads even before this process has seen its far end). DEAD: 1 on a tile a
++// long dragon must not enter (outside the 2-core of the movement graph, or in a walled compartment of <= 8 tiles with one way out).
++#pragma once
++#include <cstdint>
++namespace seed0 { namespace ptmap {
++constexpr int W = 32, H = 16;
++static const int16_t EDGE_N[512] = {-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,6,7,-1,-1,-1,-1,-1,-1,-1,-2,-2,-1,-1,-2,-2,-1,-1,-2,-2,-1,-1,-1,-1,-2,-2,-1,-1,-2,-2,-1,-1,-2,-2,-1,-1,-1,-1,-1,-1,-1,-1,-2,-2,-1,-1,-1,-1,-1,-1,-2,-2,-1,-1,-1,-1,-1,-1,-1,-1,-2,-2,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-2,-2,-1,-1,-2,-2,-1,-1,-2,-2,-1,-1,-1,-1,-2,-2,-1,-1,-2,-2,-1,-1,-2,-2,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-2,-2,-1,-1,-1,-1,-1,-1,-1,-1,-2,-2,-1,-1,-1,-1,-1,-1,-2,-2,-1,-1,-1,-1,-1,-1,-1,-1,-2,-2,-1,-1,-2,-2,-1,-1,-2,-2,-1,-1,-1,-1,-2,-2,-1,-1,-2,-2,-1,-1,-2,-2,-1,-1,-1,-1,-1,-1,-1,3,2,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-2,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-2,-2,-1,-1,-2,-2,-1,-1,-2,-2,-1,-2,-2,-1,-2,-2,-1,-1,-2,-2,-1,-1,-2,-2,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-2,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,3,2,-1,-1,-1,-1,-1,-1,-1,-2,-2,-1,-1,-2,-2,-1,-1,-2,-2,-1,-1,-1,-1,-2,-2,-1,-1,-2,-2,-1,-1,-2,-2,-1,-1,-1,-1,-1,-1,-1,-1,-2,-2,-1,-1,-1,-1,-1,-1,-2,-2,-1,-1,-1,-1,-1,-1,-1,-1,-2,-2,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-2,-2,-1,-1,-2,-2,-1,-1,-2,-2,-1,-1,-1,-1,-2,-2,-1,-1,-2,-2,-1,-1,-2,-2,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-2,-2,-1,-1,-1,-1,-1,-1,-1,-1,-2,-2,-1,-1,-1,-1,-1,-1,-2,-2,-1,-1,-1,-1,-1,-1,-1,-1,-2,-2,-1,-1,-2,-2,-1,-1,-2,-2,-1,-1,-1,-1,-2,-2,-1,-1,-2,-2,-1,-1,-2,-2,-1,-1,-1,-1,-1,-1,-1,6,7,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1};
++static const int16_t EDGE_W[512] = {-2,-1,-1,-1,-1,-1,-1,-1,-2,-1,-2,-1,-1,-1,-1,-1,-2,-1,-2,14,-2,-1,-1,-1,-1,-1,-2,-1,-2,-1,-1,-1,-2,-1,-1,-1,-1,1,-1,-1,-2,8,-2,-1,-1,-1,-1,-2,-2,-1,-2,-1,-2,-1,-1,-1,-1,-1,-2,-1,-2,-1,-1,-1,-2,-1,-1,-1,-2,0,-2,-1,-1,9,-1,-1,-2,-1,-2,-2,-2,-1,-1,15,-1,-1,-2,-1,-2,-1,-1,-1,-1,-1,-1,-1,-2,-1,-1,-1,-2,-1,-2,-1,-1,-1,-1,-1,-2,17,-2,-2,-2,-1,-1,-1,-1,-1,-2,-1,-2,-1,-1,-1,-1,-1,-1,-1,-2,-1,-1,-1,-1,-1,-1,-1,-2,-1,-2,-1,-1,-1,-1,-2,-2,-1,-2,-1,-2,-1,-1,13,-1,-1,-2,-1,-2,-1,-1,-1,-2,-1,-1,-1,-1,-1,-1,-1,-2,10,-2,-1,-1,18,-1,-2,-2,-1,-2,-1,-2,-1,-1,-1,-1,-1,-2,4,-2,-1,-1,-1,-2,-1,-1,-1,-2,-1,-2,-1,-1,11,-1,-1,-2,-1,-2,-2,-2,-1,-1,17,-1,-1,-2,12,-2,-1,-1,5,-1,-1,-1,-1,-2,-1,-1,-1,-2,-1,-2,-1,-1,-1,-1,-1,-2,19,-2,-2,-1,-2,-1,-1,-1,-1,-2,-1,-2,-1,-1,-1,-1,-1,-1,-1,-2,-1,-1,-1,-1,-1,-1,-1,-2,-1,-2,-1,-1,-1,-1,-2,-1,-2,-2,18,-2,-1,-1,-1,-1,-1,-2,-1,-2,-1,-1,-1,-2,-1,-1,-1,-1,4,-1,-1,-2,13,-2,-1,-1,16,-1,-1,-2,-2,-2,-1,-2,-1,-1,10,-1,-1,-2,-1,-2,-1,-1,-1,-2,-1,-1,-1,-2,5,-2,-1,-1,-1,-1,-1,-2,-1,-2,-1,-2,-2,-1,19,-1,-1,-2,11,-2,-1,-1,-1,-1,-1,-1,-1,-2,-1,-1,-1,-2,-1,-2,-1,-1,12,-1,-1,-2,-1,-2,-1,-2,-2,-1,-1,-1,-1,-2,-1,-2,-1,-1,-1,-1,-1,-1,-1,-2,-1,-1,-1,-1,-1,-1,-1,-2,-1,-2,-1,-1,-1,-1,-1,-2,-2,-2,16,-2,-1,-1,-1,-1,-1,-2,-1,-2,-1,-1,-1,-2,-1,-1,-1,-1,-1,-1,-1,-2,-1,-2,-1,-1,14,-1,-1,-2,-2,-2,-1,-2,-1,-1,8,-1,-1,-2,1,-2,-1,-1,-1,-2,-1,-1,-1,-2,-1,-2,-1,-1,-1,-1,-1,-2,-1,-2,-1,-2,-2,-1,-1,-1,-1,-2,9,-2,-1,-1,0,-1,-1,-1,-1,-2,-1,-1,-1,-2,-1,-2,-1,-1,-1,-1,-1,-2,15,-2,-1,-2,-1,-1,-1,-1,-1,-2,-1,-2,-1,-1,-1,-1,-1,-1,-1};
++static const uint8_t DEAD[512] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,1,0,0,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,1,0,0,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
++// ROOM: DEAD or any walled compartment of <= 8 tiles (the 2 x 2 rooms, pass-through ones included; a long dragon inside one depends on
++// what stands across its portals, which it cannot see)
++static const uint8_t ROOM[512] = {0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,1,0,0,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,1,0,0,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,1,0,0,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,1,0,0,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0,1,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,1,1,0,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0};
++} }
+diff -ruN a/bot/ptmod.cpp b/bot/ptmod.cpp
+--- a/bot/ptmod.cpp	1970-01-01 09:00:00
++++ b/bot/ptmod.cpp	2026-10-01 05:35:15
+@@ -0,0 +1,127 @@
++// ptmod.cpp — unsw-swarm exp/portals: the Portals module (exp/portals/PLAN.md, params.hpp "exp/portals" section).
++// Portals is solitaire (the halves share no tile), so everything here serves one aim: the longest dragon at round 500 on our own half.
++// Every rule acts only in a process that recognised the Portals family; other maps never reach this code.
++#include <algorithm>
++
++#include "params.hpp"
++#include "ptmap.hpp"
++#include "world.hpp"
++
++namespace seed0 {
++
++// PT_LEN_ON: after every ingest, fold this round's length evidence of each ally into ptLen: a whole chain in view is exact and replaces
++// the memory; otherwise the memory keeps the longest evidence (estLen / minLen: sightings and sonar reports) of the last PT_LEN_MEMORY rounds.
++void World::ptUpdateLens() {
++    for (auto& [id, d] : dragons) {
++        if (id == myId || d.team != myTeam) continue;
++        const bool exact = d.lastSeen == round && d.headSeen == round && d.tailSeen;
++        const int ev = exact ? d.visLen : std::max(d.estLen, d.minLen);
++        if (ev <= 0) continue;
++        auto it = ptLen.find(id);
++        if (exact || it == ptLen.end() || round - it->second.second > P::PT_LEN_MEMORY || ev >= it->second.first) ptLen[id] = {ev, round};
++    }
++}
++
++} // namespace seed0
++
++// ================================================================================================
++// The planner side (decideImpl<3>, plan.cpp). ptKing_ and ptFire_ are set at the top of each module turn.
++// ================================================================================================
++#include "plan.hpp"
++
++namespace seed0 {
++
++// the tile across edge d of t on the static board (ptmap.hpp), whatever this process has seen: -1 kelp
++int Planner::ptExit(int t, int d) const {
++    const int PW = ptmap::W, PH = ptmap::H;
++    if (w_.geo.W != PW || w_.geo.H != PH) return w_.across(t, d);
++    auto stepT = [&](int u, int dd) { int x = u % PW, y = u / PW; x = (x + DX[dd] + PW) % PW; y = (y + DY[dd] + PH) % PH; return y * PW + x; };
++    int tok = d == N ? ptmap::EDGE_N[t] : d == W ? ptmap::EDGE_W[t] : d == S ? ptmap::EDGE_N[stepT(t, S)] : ptmap::EDGE_W[stepT(t, E)];
++    if (tok == -2) return -1;
++    if (tok == -1) return stepT(t, d);
++    // the partner edge: the other (tile, N / W) with the same id
++    int side = d == N || d == S ? N : W, ct = d == N || d == W ? t : stepT(t, d);
++    for (int u = 0; u < PW * PH; u++) {
++        if (side == N && ptmap::EDGE_N[u] == tok && u != ct) return d == N ? stepT(u, N) : u;
++        if (side == W && ptmap::EDGE_W[u] == tok && u != ct) return d == W ? stepT(u, W) : u;
++    }
++    return -1;
++}
++
++double Planner::ptKingTilePen(int t) const { return ptmap::DEAD[t] ? P::PT_KING_DEAD_PEN : 0.0; }
++
++// One step of a candidate from `from` across edge d onto `to` (blind: an unexplored portal, `to` unknown to us; the static board gives it).
++//   king class (PT_KING_SAFE_ON): PT_KING_DEAD_PEN onto a dead tile (ptmap DEAD: outside the 2-core or in a one-way compartment; the
++//     baseline king dived into them and left through an escape split, 16 handoffs a game); PT_KING_BLIND_PEN across a portal whose exit is
++//     out of view without a clean probe from this very tile last turn (7 of 32 king head-ons had the other dragon cross blind, 3 the king).
++//   a non-king (PT_PIECE_PORTAL_ON): PT_PIECE_NEAR_KING_PEN across a portal whose exit is out of view and within PT_NEAR_KING_DIST (+ the news
++//     age) of the king's last known head (fresh news within PT_KING_NEWS rounds).
++double Planner::ptStepPenalty(int from, int d, int to, bool blind) {
++    double pen = 0.0;
++    const bool portal = w_.tiles[from].edge[d] == EDGE_PORTAL || blind;
++    const int exitT = blind || to < 0 ? ptExit(from, d) : to;
++    if (exitT < 0) return 0.0;
++    const bool unseen = w_.tiles[exitT].seen != w_.round;
++    if (P::PT_KING_SAFE_ON && ptKing_) {
++        if (ptmap::DEAD[exitT]) { pen += P::PT_KING_DEAD_PEN; ptFire_ |= 1; }
++        // not while the king's head is in a room (ptmap ROOM): there every way out is a portal crossing
++        if (portal && unseen && !ptmap::ROOM[w_.headT]) {
++            const bool probed = from == w_.headT && w_.probeRound == w_.round && w_.probeFromT == w_.headT && w_.probeDir == d && w_.probeClear;
++            if (!probed) { pen += P::PT_KING_BLIND_PEN; ptFire_ |= 2; }
++        }
++    } else if (P::PT_PIECE_PORTAL_ON && !ptKing_ && portal && unseen) {
++        int best = 0, kt = -1, age = 99;
++        for (auto& [id, a] : w_.dragons) {
++            if (id == w_.myId || a.team != w_.myTeam || a.headT < 0) continue;
++            const int ag = w_.round - std::max(a.lastSeen, a.headSeen), la = std::max(a.estLen, a.minLen);
++            if (ag > P::PT_KING_NEWS || la < P::KING_MIN_LEN || la <= w_.myLen || la <= best) continue;
++            best = la; kt = a.headT; age = ag;
++        }
++        if (kt >= 0 && w_.geo.manhattan(kt, exitT) <= P::PT_NEAR_KING_DIST + age) { pen += P::PT_PIECE_NEAR_KING_PEN; ptFire_ |= 4; }
++    }
++    return pen;
++}
++
++
++// computeGoal() with the module's clock and endgame: non-kings follow the king from PT_GATHER_START; from PT_ENDGAME_ROUND every non-king
++// does, whatever the unit count and its length (the baseline stopped at < GATHER_FEED_UNITS units or length < GATHER_FEED_MIN_LEN, so the
++// second-longest ended the game apart from the king: median second 10 at r500, 60 local games).
++void Planner::computeGoalPt() {
++    goalOn_ = false; goalT_ = -1; gatherKing_ = true; goalId_ = -1; gxOff_ = false;
++    if (w_.round < P::GATHER_BROADCAST) return;
++    int n = w_.geo.tiles();
++    int goalLen = 0, goalAge = 1 << 20;
++    if (P::BELIEF_FIX_ON) gatherKing_ = w_.iAmLongest();
++    for (auto& [id, d] : w_.dragons) {
++        if (id == w_.myId || d.team != w_.myTeam || d.headT < 0) continue;
++        int age = w_.round - d.headSeen;
++        int la = std::max(d.estLen, d.minLen);
++        if (w_.ptLenActive) la = std::max(la, w_.ptLenOf(id));   // PT_LEN_ON: the length memory
++        if (P::BELIEF_FIX_ON) { if (la <= w_.myLen || !w_.allyFresh(d, P::BELIEF_FRESH)) continue; }
++        else {
++            if (la <= w_.myLen || age > P::GATHER_KING_MEMORY) continue;
++            gatherKing_ = false;
++        }
++        if (age > P::GATHER_STALE) continue;
++        if (la > goalLen + 2 || (la + 2 >= goalLen && age < goalAge)) { goalLen = la; goalAge = age; goalT_ = d.headT; goalId_ = id; goalRound_ = d.headSeen; goalLen_ = la; }
++    }
++    if (gatherKing_ || goalT_ < 0) { goalId_ = -1; return; }
++    if (w_.round < P::PT_GATHER_START) return;
++    const bool endgame = P::PT_ENDGAME_ON && w_.round >= P::PT_ENDGAME_ROUND;
++    if (!endgame && w_.unitCount < P::GATHER_FEED_UNITS) return;
++    if (!endgame && w_.myLen < P::GATHER_FEED_MIN_LEN) return;
++    goalDist_.assign(n, 9999);
++    queue_.clear(); queue_.push_back(goalT_); goalDist_[goalT_] = 0;
++    for (size_t qi = 0; qi < queue_.size(); qi++) {
++        int t = queue_[qi];
++        for (int dir = 0; dir < 4; dir++) {
++            int u = w_.across(t, dir);
++            if (u < 0 || goalDist_[u] <= goalDist_[t] + 1) continue;
++            goalDist_[u] = goalDist_[t] + 1; queue_.push_back(u);
++        }
++    }
++    goalOn_ = goalDist_[w_.headT] < 9999;
++    if (P::GX_ON && goalOn_ && goalDist_[w_.headT] + P::GX_SLACK >= 500 - w_.round) { goalOn_ = false; gxOff_ = true; }
++}
++
++} // namespace seed0
+diff -ruN a/bot/world.cpp b/bot/world.cpp
+--- a/bot/world.cpp	2026-10-01 05:35:15
++++ b/bot/world.cpp	2026-10-01 05:35:15
+@@ -114,6 +114,8 @@
+     if (sym >= 0) applyMirror(winTile);
+     buildOccupancy();
+     ingestSonar(rb);
++    if (P::PT_LEN_ON && !ptLenActive && mapFamIs("Portals")) ptLenActive = true;   // exp/portals: the length memory (ptmod.cpp)
++    if (ptLenActive) ptUpdateLens();
+     if (P::BELIEF_FIX_ON) computeFreshAllies();   // v1 belief fix
+     if (birthRound < 0) {
+         // birth (pd10): a split child starts mid-game; exposed = two or more non-kelp edges besides the neck
+@@ -447,6 +449,7 @@
+     for (auto& [id, d] : dragons) {
+         if (id == myId || d.team != myTeam || !allyFresh(d, P::BELIEF_FRESH)) continue;
+         int la = std::max(d.estLen, d.minLen), seen = std::max(d.lastSeen, d.headSeen);
++        if (ptLenActive) la = std::max(la, ptLenOf(id));   // exp/portals: the length memory
+         if (la > freshAllyLen || (la == freshAllyLen && seen > bestSeen)) {
+             freshAllyLen = la; freshAllyT = d.headT; bestSeen = seen;
+             if constexpr (P::KING_BEACON_ON) { freshAllyId = id; freshAllyHeadRound = d.headSeen; }   // v1.1 beacon relay
+diff -ruN a/bot/world.hpp b/bot/world.hpp
+--- a/bot/world.hpp	2026-10-01 05:35:15
++++ b/bot/world.hpp	2026-10-01 05:35:15
+@@ -123,6 +123,13 @@
+     int mapTagState = -2;     // state last written to the indicator (mapStateCode()); -2 = never
+     bool mapIs(const char* famName, char layout) const;   // decided on this family (mapdb name) and layout
+     bool mapFamIs(const char* famName) const;              // stack7: this family known (layout decided or not), not "none"
++    // exp/portals (ptmod.cpp, P::PT_LEN_ON): per ally id the longest length evidence of the last PT_LEN_MEMORY rounds (a whole chain in view
++    // replaces it). The v1 belief fix lets a partial sighting replace a length bound older than BELIEF_LEN_STALE rounds, so a long king seen
++    // with 12 of its 42 segments in view became "12" and the second-longest took itself for the king (local game proxy4_king A 8, r452-500).
++    bool ptLenActive = false;
++    std::unordered_map<int, std::pair<int, int>> ptLen;   // id -> (length, round of the evidence)
++    void ptUpdateLens();
++    int ptLenOf(int id) const { auto it = ptLen.find(id); return it == ptLen.end() || round - it->second.second > P::PT_LEN_MEMORY ? 0 : it->second.first; }
+     int mapStateCode() const { return mapNone ? -1 : mapIdx >= 0 ? 1000 + mapIdx : mapFam >= 0 ? 100 + mapFam : 0; }
+     std::string mapTag() const;                            // "map=<Name>/<a|b|?>", "map=?", "map=none"
+     // stack8 F2 (mapid.cpp, terrdb.hpp): the recognised map's own fountain (1/0; spawn gap mean <= 12) and territory at tile t once

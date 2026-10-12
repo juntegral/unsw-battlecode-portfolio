@@ -1,0 +1,76 @@
+
+=== main: 235 games, 201 on layouts where the queen can leave spawn
+  band: games | our queen rammed (any mover) | by an enemy | their queen rammed (any) | by ours | our queen alive at end | theirs alive | ours died first / theirs first / neither died
+  1700-1899    69 | 25 of 69 = 0.362 (95% 0.26 to 0.48) | 25 | 32 of 69 = 0.464 | 32 | 20 of 69 = 0.290 (95% 0.20 to 0.41) | 18 of 69 = 0.261 | 36 / 23 / 10
+  1900-2099   119 | 58 of 119 = 0.487 (95% 0.40 to 0.58) | 58 | 60 of 119 = 0.504 | 60 | 25 of 119 = 0.210 (95% 0.15 to 0.29) | 31 of 119 = 0.261 | 60 / 49 / 10
+  2100+        13 | 9 of 13 = 0.692 (95% 0.42 to 0.87) | 9 | 2 of 13 = 0.154 | 2 | 0 of 13 = 0.000 (95% 0.00 to 0.23) | 8 of 13 = 0.615 | 10 / 3 / 0
+  all         201 | 92 of 201 = 0.458 (95% 0.39 to 0.53) | 92 | 94 of 201 = 0.468 | 94 | 45 of 201 = 0.224 (95% 0.17 to 0.29) | 57 of 201 = 0.284 | 106 / 75 / 20
+  [share of her deaths] our queen: rammed / died, by band: <1700 0 of 0, 1700-1899 25 of 49, 1900-2099 58 of 94, 2100+ 9 of 13
+  [share of her deaths] their queen: rammed / died, by band: <1700 0 of 0, 1700-1899 32 of 51, 1900-2099 60 of 88, 2100+ 2 of 5
+  [causes of our queen death by band] <1700: []; 1700-1899: [('alive', 20), ('body of own dragon', 3), ('head-on as mover', 3), ('head-on as standing victim', 25), ('own body', 5), ('wall', 13)]; 1900-2099: [('alive', 25), ('body of enemy dragon', 1), ('body of own dragon', 5), ('head-on as mover', 3), ('head-on as standing victim', 58), ('own body', 9), ('wall', 18)]; 2100+: [('body of own dragon', 1), ('head-on as standing victim', 9), ('wall', 3)]
+  [first to die] first half by time (100 games): ours 45, theirs 46
+  [first to die] second half by time (101 games): ours 61, theirs 29
+  [at the ram, her last own turn start; rams by an enemy with the rammer on that board]
+    1700-1899  rams 25, with a board 25; fewer than 2 friends within 5: 20 (at the ram itself: 20 of 25); enemy heads within 6: mean 2.96 (counting the rammer when farther: 3.04)
+    1900-2099  rams 58, with a board 54; fewer than 2 friends within 5: 42 (at the ram itself: 46 of 58); enemy heads within 6: mean 2.63 (counting the rammer when farther: 2.67)
+    2100+      rams 9, with a board 7; fewer than 2 friends within 5: 6 (at the ram itself: 7 of 9); enemy heads within 6: mean 4.00 (counting the rammer when farther: 4.00)
+    all        rams 92, with a board 86; fewer than 2 friends within 5: 68 (at the ram itself: 73 of 92); enemy heads within 6: mean 2.84 (counting the rammer when farther: 2.88)
+  [chance, our queen rammed] top band minus 1700-1899: +0.330, shuffles reaching it 108 of 4000; rating covariance: shuffles reaching it 6 of 4000; 47 battles
+  [chance, our queen NOT alive at end] top band minus 1700-1899: +0.290, shuffles reaching it 4 of 4000; rating covariance: shuffles reaching it 9 of 4000; 47 battles
+  [chance, their queen rammed] top band minus 1700-1899: -0.310, shuffles reaching it 3920 of 4000; rating covariance: shuffles reaching it 3778 of 4000; 47 battles
+  [chance, ours died first, among games where a queen died] top band minus 1700-1899: +0.159, shuffles reaching it 837 of 4000; rating covariance: shuffles reaching it 715 of 4000; 47 battles
+  [Fisher, games as units] our queen rammed: 1700-1899 against 1900-2099 p 0.1273; 1900-2099 against 2100+ p 0.2428; 1700-1899 against 2100+ p 0.0345; under 1900 against 1900 and over p 0.0540
+  [Fisher, games as units] our queen alive at end: 1700-1899 against 1900-2099 p 0.2208; 1900-2099 against 2100+ p 0.1274; 1700-1899 against 2100+ p 0.0314; under 1900 against 1900 and over p 0.1121
+  [2100+ cell by opponent: games, our queen rammed, our queen alive at end, their queen rammed, won]
+    Settlers of Battlecode (258)         8   5   0   2   0  ratings [2107, 2140]
+    dev test 1 :P (545)                  5   4   0   0   0  ratings [2382]
+  [2100+ cell by layout: games, rammed, alive] [('Around UNSW #1', 2, 2, 0), ('Australia #1', 1, 0, 0), ('Islands #1', 1, 0, 0), ('Portals #1', 2, 0, 0), ('Prisoners Dilemma #2', 1, 1, 0), ('Queen Of Spades #1', 1, 1, 0), ('Stripes #1', 1, 1, 0), ('Tower Defense #1', 1, 1, 0), ('Trauma #1', 1, 1, 0), ('Trophy #1', 1, 1, 0), ('weakhold #1', 1, 1, 0)]
+  [2100+ cell] evenings [('10-06b', 5), ('10-07a', 8)]; battles 3
+  [2100+ rammed share without one opponent] 0.625 (without dev test 1 :P (545), 8 games left) to 0.800 (without Settlers of Battlecode (258), 5 left)
+  [layout held fixed] rammed share 1900 and over minus under 1900, per layout with 4 or more games on each side:
+    higher on 5 layouts, lower on 4; weighted mean difference +0.163; Around UNSW #1 +0.00 (6, 12); Australia #1 -0.17 (6, 6); Autarky #1 -0.13 (5, 6); Default #1 -0.10 (5, 10); Devil #1 +0.45 (4, 11); Maze #1 +0.03 (5, 13); Portals #1 +0.00 (4, 5); Queen Of Spades #1 +0.77 (4, 13); Tower Defense #1 +0.56 (6, 9); Trauma #1 +0.38 (10, 13); weakhold #1 -0.28 (4, 9)
+  [finer bands, our queen rammed] 1700-1799: 10 of 30, 1800-1899: 15 of 39, 1900-1999: 30 of 74, 2000-2099: 28 of 45, 2100-2199: 5 of 8, 2300-2399: 4 of 5
+  [finer bands, our queen alive at end] 1700-1799: 7 of 30, 1800-1899: 13 of 39, 1900-1999: 17 of 74, 2000-2099: 8 of 45, 2100-2199: 0 of 8, 2300-2399: 0 of 5
+  [for contrast, Schooltime and Slithery Fight] <1700: rammed 0, alive 0 of 0, 1700-1899: rammed 4, alive 10 of 16, 1900-2099: rammed 4, alive 10 of 16, 2100+: rammed 1, alive 1 of 2
+
+=== v31: 410 games, 362 on layouts where the queen can leave spawn
+  band: games | our queen rammed (any mover) | by an enemy | their queen rammed (any) | by ours | our queen alive at end | theirs alive | ours died first / theirs first / neither died
+  <1700        13 | 8 of 13 = 0.615 (95% 0.36 to 0.82) | 8 | 4 of 13 = 0.308 | 4 | 1 of 13 = 0.077 (95% 0.01 to 0.33) | 1 of 13 = 0.077 | 3 / 10 / 0
+  1700-1899   186 | 73 of 186 = 0.392 (95% 0.33 to 0.46) | 73 | 96 of 186 = 0.516 | 96 | 44 of 186 = 0.237 (95% 0.18 to 0.30) | 33 of 186 = 0.177 | 88 / 90 / 8
+  1900-2099   120 | 65 of 120 = 0.542 (95% 0.45 to 0.63) | 64 | 50 of 120 = 0.417 | 47 | 15 of 120 = 0.125 (95% 0.08 to 0.20) | 30 of 120 = 0.250 | 68 / 47 / 5
+  2100+        43 | 26 of 43 = 0.605 (95% 0.46 to 0.74) | 26 | 17 of 43 = 0.395 | 17 | 2 of 43 = 0.047 (95% 0.01 to 0.15) | 12 of 43 = 0.279 | 28 / 13 / 2
+  all         362 | 172 of 362 = 0.475 (95% 0.42 to 0.53) | 171 | 167 of 362 = 0.461 | 164 | 62 of 362 = 0.171 (95% 0.14 to 0.21) | 76 of 362 = 0.210 | 187 / 160 / 15
+  [share of her deaths] our queen: rammed / died, by band: <1700 8 of 12, 1700-1899 73 of 142, 1900-2099 65 of 105, 2100+ 26 of 41
+  [share of her deaths] their queen: rammed / died, by band: <1700 4 of 12, 1700-1899 96 of 153, 1900-2099 50 of 90, 2100+ 17 of 31
+  [causes of our queen death by band] <1700: [('alive', 1), ('head-on as mover', 1), ('head-on as standing victim', 8), ('wall', 3)]; 1700-1899: [('alive', 44), ('body of own dragon', 12), ('head-on as mover', 16), ('head-on as standing victim', 73), ('no valid action', 1), ('own body', 9), ('wall', 31)]; 1900-2099: [('alive', 15), ('body of own dragon', 6), ('head-on as mover', 8), ('head-on as standing victim', 65), ('no valid action', 1), ('own body', 12), ('wall', 13)]; 2100+: [('alive', 2), ('body of own dragon', 3), ('head-on as mover', 3), ('head-on as standing victim', 26), ('own body', 4), ('wall', 5)]
+  [first to die] first half by time (181 games): ours 99, theirs 76
+  [first to die] second half by time (181 games): ours 88, theirs 84
+  [at the ram, her last own turn start; rams by an enemy with the rammer on that board]
+    <1700      rams 8, with a board 8; fewer than 2 friends within 5: 5 (at the ram itself: 6 of 8); enemy heads within 6: mean 3.00 (counting the rammer when farther: 3.00)
+    1700-1899  rams 73, with a board 72; fewer than 2 friends within 5: 47 (at the ram itself: 47 of 73); enemy heads within 6: mean 2.74 (counting the rammer when farther: 2.75)
+    1900-2099  rams 64, with a board 64; fewer than 2 friends within 5: 53 (at the ram itself: 55 of 64); enemy heads within 6: mean 2.44 (counting the rammer when farther: 2.45)
+    2100+      rams 26, with a board 26; fewer than 2 friends within 5: 20 (at the ram itself: 19 of 26); enemy heads within 6: mean 2.73 (counting the rammer when farther: 2.73)
+    all        rams 171, with a board 170; fewer than 2 friends within 5: 125 (at the ram itself: 127 of 171); enemy heads within 6: mean 2.64 (counting the rammer when farther: 2.65)
+  [chance, our queen rammed] top band minus 1700-1899: +0.212, shuffles reaching it 32 of 4000; rating covariance: shuffles reaching it 68 of 4000; 82 battles
+  [chance, our queen NOT alive at end] top band minus 1700-1899: +0.190, shuffles reaching it 1 of 4000; rating covariance: shuffles reaching it 25 of 4000; 82 battles
+  [chance, their queen rammed] top band minus 1700-1899: -0.121, shuffles reaching it 3755 of 4000; rating covariance: shuffles reaching it 3625 of 4000; 82 battles
+  [chance, ours died first, among games where a queen died] top band minus 1700-1899: +0.189, shuffles reaching it 101 of 4000; rating covariance: shuffles reaching it 15 of 4000; 82 battles
+  [Fisher, games as units] our queen rammed: 1700-1899 against 1900-2099 p 0.0134; 1900-2099 against 2100+ p 0.5917; 1700-1899 against 2100+ p 0.0162; under 1900 against 1900 and over p 0.0044
+  [Fisher, games as units] our queen alive at end: 1700-1899 against 1900-2099 p 0.0175; 1900-2099 against 2100+ p 0.2432; 1700-1899 against 2100+ p 0.0030; under 1900 against 1900 and over p 0.0030
+  [2100+ cell by opponent: games, our queen rammed, our queen alive at end, their queen rammed, won]
+    dev test 1 :P (545)                  9   6   0   6   2  ratings [2432, 2451]
+    chad gdp (70)                        9   4   0   2   1  ratings [2100, 2121]
+    Cache me outside (952)               5   4   1   2   0  ratings [2167]
+    fandagong (552)                      5   3   1   2   2  ratings [2177]
+    test4 (19)                           4   3   0   1   1  ratings [2202]
+    Team SKKU (249)                      4   3   0   2   2  ratings [2108]
+    Sponge(Albert and Bob) (213)         4   2   0   0   0  ratings [2269]
+    Computers (112)                      3   1   0   2   2  ratings [2123]
+  [2100+ cell by layout: games, rammed, alive] [('Around UNSW #1', 3, 3, 0), ('Australia #1', 6, 6, 0), ('Autarky #1', 3, 3, 0), ('Default #1', 2, 2, 0), ('Devil #1', 6, 3, 0), ('Islands #1', 2, 2, 0), ('Maze #1', 2, 0, 0), ('Portals #1', 4, 0, 0), ('Prisoners Dilemma #1', 2, 1, 0), ('Queen Of Spades #1', 3, 3, 0), ('Stripes #1', 2, 0, 0), ('Tower Defense #1', 2, 1, 0), ('Trauma #1', 2, 0, 2), ('weakhold #1', 4, 2, 0)]
+  [2100+ cell] evenings [('10-06a', 22), ('10-06b', 21)]; battles 10
+  [2100+ rammed share without one opponent] 0.579 (without Cache me outside (952), 38 games left) to 0.647 (without chad gdp (70), 34 left)
+  [layout held fixed] rammed share 1900 and over minus under 1900, per layout with 4 or more games on each side:
+    higher on 11 layouts, lower on 3; weighted mean difference +0.149; Around UNSW #1 +0.11 (12, 14); Australia #1 +0.16 (11, 17); Autarky #1 +0.38 (17, 11); Default #1 +0.36 (8, 7); Devil #1 +0.06 (16, 12); Islands #1 +0.10 (9, 8); Maze #1 -0.09 (14, 10); Portals #1 +0.00 (13, 14); Prisoners Dilemma #1 +0.44 (9, 9); Queen Of Spades #1 +0.31 (15, 11); Stripes #1 -0.23 (14, 12); Tower Defense #1 +0.11 (15, 7); Trauma #1 -0.01 (8, 9); Trophy #1 +0.16 (17, 7); weakhold #1 +0.43 (18, 11)
+  [finer bands, our queen rammed] 1600-1699: 8 of 13, 1700-1799: 35 of 68, 1800-1899: 38 of 118, 1900-1999: 40 of 76, 2000-2099: 25 of 44, 2100-2199: 15 of 26, 2200-2299: 5 of 8
+  [finer bands, our queen alive at end] 1600-1699: 1 of 13, 1700-1799: 11 of 68, 1800-1899: 33 of 118, 1900-1999: 9 of 76, 2000-2099: 6 of 44, 2100-2199: 2 of 26, 2200-2299: 0 of 8
+  [for contrast, Schooltime and Slithery Fight] <1700: rammed 0, alive 0 of 2, 1700-1899: rammed 5, alive 14 of 24, 1900-2099: rammed 3, alive 9 of 15, 2100+: rammed 3, alive 2 of 7

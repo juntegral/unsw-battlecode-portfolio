@@ -1,0 +1,16 @@
+{
+  "utility": "win=1 draw=.5 loss=0; r500; both teams retain at least one survivor; conditional comparisons abstract all tie levels",
+  "formula": "U=p*(1-s+s*a)+(1-p)*(1-s)*t",
+  "assumptions": {
+    "s": 0.8,
+    "a_feed": 0.8,
+    "a_backup": 0.6,
+    "t_feed": 0.2,
+    "t_backup": 0.9,
+    "independent_queen_survival": true,
+    "p_same_for_both_policies": true
+  },
+  "threshold": 0.46666666666666656,
+  "generalized_formula": "U(policy)=p_policy*(1-s+s*a_policy)+(1-p_policy)*(1-s)*t_policy",
+  "correlated_formula": "U=P(ours alive,enemy dead)+P(both alive)*a+P(both dead)*t"
+}

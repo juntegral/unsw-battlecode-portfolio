@@ -1,0 +1,10 @@
+[
+ {"bot": "exp/v16/bot-h2-off", "out": "exp/v16/h2off-d", "seeds": [1], "maps": "exp/v1/maps-swarm-a", "only": ["default", "devil"], "opps": ["proxy4_king", "proxy4_swarm"], "sides": ["B"]},
+ {"bot": "exp/v16/bot-h2-off", "out": "exp/v16/h2off-se", "seeds": [1], "maps": "exp/v1/maps-swarm-a", "only": ["slithery_fight", "trauma"], "opps": ["proxy4_king"], "sides": ["A"]},
+ {"bot": "exp/v16/bot-h2F", "out": "exp/v16/h2F-fort", "seeds": [1], "maps": "maps/online-20260927", "only": ["autarky", "portals", "prisoners_dilemma"], "opps": ["proxy4_king"], "sides": ["A"]},
+ {"bot": "exp/v16/bot-h2F", "out": "exp/v16/h2F-H", "seeds": [1, 2], "maps": "exp/gen/maps-heldout", "opps": ["proxy4_king", "proxy4_swarm"], "sides": ["A", "B"], "cpu": true},
+ {"bot": "exp/v16/bot-h2F-noid", "out": "exp/v16/h2F-K", "seeds": [1, 2], "maps": "maps/online-20260927", "opps": ["proxy4_king", "proxy4_swarm"], "sides": ["A", "B"], "cpu": true},
+ {"bot": "exp/v16/bot-h2F", "out": "exp/v16/h2F-gen", "seeds": [1], "maps": "maps/generated", "only": ["gen_L_01", "gen_L_02", "gen_L_03", "gen_L_04", "gen_L_05", "gen_L_06", "gen_M_06", "gen_R_01", "gen_R_02"], "opps": ["proxy4_king", "proxy4_swarm"], "sides": ["A", "B"], "cpu": true},
+ {"bot": "exp/v16/bot-h2F", "out": "exp/v16/h2F-se-a", "seeds": [1, 2], "maps": "exp/v1/maps-swarm-a", "only": ["slithery_fight", "schooltime", "trauma"], "opps": ["proxy4_king", "proxy4_swarm"], "sides": ["A", "B"], "cpu": true},
+ {"bot": "exp/v16/bot-h2F", "out": "exp/v16/h2F-se-b", "seeds": [1, 2], "maps": "exp/v1/maps-swarm-b", "only": ["slithery_fight_b"], "opps": ["proxy4_king", "proxy4_swarm"], "sides": ["A", "B"], "cpu": true}
+]

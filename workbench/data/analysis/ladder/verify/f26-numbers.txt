@@ -1,0 +1,194 @@
+games loaded 705 errors 0
+
+===== main games 255 large 65 other 190
+ in view, later eaten
+   large: ours n 9717 finished 0.787 walked 0.378 lying 0.168 | theirs n 14203 finished 0.889 walked 0.335 lying 0.085 | gaps: finished theirs-ours +0.102, walked ours-theirs +0.042
+   other: ours n 19545 finished 0.776 walked 0.410 lying 0.181 | theirs n 22201 finished 0.765 walked 0.424 lying 0.170 | gaps: finished theirs-ours -0.011, walked ours-theirs -0.015
+   large detail: ours: walked 0.378 (of which ate another pearl in that turn 0.155; still finished by the side 0.638), not farther 0.363, ate it in that turn 0.215, another ate it first 0.002, died first 0.043, eaten by the nearer dragon itself 0.490 | theirs: walked 0.335 (of which ate another pearl in that turn 0.170; still finished by the side 0.782), not farther 0.367, ate it in that turn 0.263, another ate it first 0.002, died first 0.033, eaten by the nearer dragon itself 0.571
+   other detail: ours: walked 0.410 (of which ate another pearl in that turn 0.207; still finished by the side 0.666), not farther 0.311, ate it in that turn 0.171, another ate it first 0.002, died first 0.106, eaten by the nearer dragon itself 0.315 | theirs: walked 0.424 (of which ate another pearl in that turn 0.174; still finished by the side 0.647), not farther 0.320, ate it in that turn 0.167, another ate it first 0.002, died first 0.086, eaten by the nearer dragon itself 0.335
+   large ours walked 3669 of 9717 (0.378); walked without eating another pearl in that turn 3101 of 9717 (0.319); walked and the side did not finish 1328 of 9717 (0.137)
+   large theirs walked 4760 of 14203 (0.335); walked without eating another pearl in that turn 3951 of 14203 (0.278); walked and the side did not finish 1039 of 14203 (0.073)
+ -- all births in view (eaten or not): large ours n 9854 finished 0.776 walked 0.381 lying 0.165 | theirs n 14363 finished 0.879 walked 0.338 lying 0.084 | gaps: finished theirs-ours +0.104, walked ours-theirs +0.043
+ -- nearer distance 0 or 1, all births: large ours n 3179 finished 0.871 walked 0.347 lying 0.085 | theirs n 4711 finished 0.945 walked 0.247 lying 0.033 | gaps: finished theirs-ours +0.074, walked ours-theirs +0.100
+ -- nearer distance 0 or 1, eaten only: large ours n 3160 finished 0.876 walked 0.344 lying 0.085 | theirs n 4689 finished 0.949 walked 0.244 lying 0.033 | gaps: finished theirs-ours +0.073, walked ours-theirs +0.100
+ -- out of view births, large: eaten ours 398 theirs 455; all ours 420 theirs 469
+ -- game resampling, large (2000 resamples): 2.5 pct, 97.5 pct, share of resamples at or below zero
+    walked ours-theirs, games as units   (0.0237, 0.0604, 0.0)
+    walked ours-theirs, battles as units (0.0234, 0.0601, 0.0)
+    walked ours-theirs, opponents as units (0.0242, 0.0588, 0.0)
+    finished theirs-ours, games as units   (0.076, 0.1292, 0.0)
+    finished theirs-ours, battles as units (0.0741, 0.1312, 0.0)
+    finished theirs-ours, opponents as units (0.0705, 0.1363, 0.0)
+    other layouts: walked ours-theirs, games (-0.0323, 0.0038, 0.922) finished theirs-ours, games (-0.0444, 0.0189, 0.75)
+ -- large games with 30 or more births a side: our walked share higher in 42, lower in 17, equal 0 (too few births 6), sign p 0.001547; their finished share higher in 47, lower in 12
+ -- large without the three games with the widest walked gap: ours n 9412 finished 0.787 walked 0.376 lying 0.168 | theirs n 13765 finished 0.889 walked 0.338 lying 0.086 | gaps: finished theirs-ours +0.102, walked ours-theirs +0.038
+ -- by rating band, large
+    1700-1899  games 25: ours n 3563 finished 0.812 walked 0.376 lying 0.148 | theirs n 4819 finished 0.872 walked 0.344 lying 0.101 | gaps: finished theirs-ours +0.060, walked ours-theirs +0.031
+    1900-2099  games 33: ours n 5336 finished 0.768 walked 0.383 lying 0.180 | theirs n 7810 finished 0.897 walked 0.326 lying 0.079 | gaps: finished theirs-ours +0.129, walked ours-theirs +0.057
+    2100+      games 7: ours n 818 finished 0.801 walked 0.352 lying 0.170 | theirs n 1574 finished 0.907 walked 0.354 lying 0.063 | gaps: finished theirs-ours +0.106, walked ours-theirs -0.002
+ -- per large layout
+    Around UNSW #1   games 20: ours n 4160 finished 0.762 walked 0.402 lying 0.186 | theirs n 5696 finished 0.877 walked 0.375 lying 0.099 | gaps: finished theirs-ours +0.114, walked ours-theirs +0.027
+    Australia #1     games 13: ours n 1713 finished 0.803 walked 0.365 lying 0.148 | theirs n 2336 finished 0.892 walked 0.277 lying 0.079 | gaps: finished theirs-ours +0.088, walked ours-theirs +0.089
+    Islands #1       games 10: ours n 1462 finished 0.791 walked 0.355 lying 0.168 | theirs n 2587 finished 0.915 walked 0.311 lying 0.056 | gaps: finished theirs-ours +0.124, walked ours-theirs +0.044
+    Schooltime #1    games 14: ours n 488 finished 0.779 walked 0.338 lying 0.193 | theirs n 853 finished 0.885 walked 0.280 lying 0.087 | gaps: finished theirs-ours +0.106, walked ours-theirs +0.058
+    Schooltime #2    games 8: ours n 1894 finished 0.824 walked 0.363 lying 0.137 | theirs n 2731 finished 0.890 walked 0.343 lying 0.087 | gaps: finished theirs-ours +0.066, walked ours-theirs +0.020
+ -- large, one layout name left out
+    without Around UNSW  ours n 5557 finished 0.805 walked 0.359 lying 0.154 | theirs n 8507 finished 0.897 walked 0.309 lying 0.075 | gaps: finished theirs-ours +0.093, walked ours-theirs +0.051
+    without Australia    ours n 8004 finished 0.783 walked 0.380 lying 0.172 | theirs n 11867 finished 0.889 walked 0.347 lying 0.086 | gaps: finished theirs-ours +0.106, walked ours-theirs +0.034
+    without Islands      ours n 8255 finished 0.786 walked 0.382 lying 0.168 | theirs n 11616 finished 0.884 walked 0.341 lying 0.091 | gaps: finished theirs-ours +0.097, walked ours-theirs +0.041
+    without Schooltime   ours n 7335 finished 0.778 walked 0.384 lying 0.174 | theirs n 10619 finished 0.889 walked 0.338 lying 0.084 | gaps: finished theirs-ours +0.112, walked ours-theirs +0.046
+ -- large, one opponent left out (27 opponents): walked gap from +0.038 (without Knight Capital (226)) to +0.046 (without byte_force (959)); finished gap from +0.093 to +0.108
+    opponents (30 or more births a side) with our walked share higher 19, not higher 6
+ -- by our seat, large
+    we are A: ours n 6715 finished 0.783 walked 0.379 lying 0.166 | theirs n 10518 finished 0.894 walked 0.337 lying 0.079 | gaps: finished theirs-ours +0.112, walked ours-theirs +0.041
+    we are B: ours n 3002 finished 0.796 walked 0.375 lying 0.172 | theirs n 3685 finished 0.874 walked 0.329 lying 0.100 | gaps: finished theirs-ours +0.079, walked ours-theirs +0.047
+ -- head counts within 6 of the tile at the birth, large (nearer side heads, other side heads)
+    1 and 1: ours n 1101 finished 0.720 walked 0.350 lying 0.233 | theirs n 1258 finished 0.811 walked 0.321 lying 0.153 | gaps: finished theirs-ours +0.091, walked ours-theirs +0.029
+    1 and 2: ours n 570 finished 0.623 walked 0.395 lying 0.298 | theirs n 529 finished 0.775 walked 0.278 lying 0.174 | gaps: finished theirs-ours +0.152, walked ours-theirs +0.117
+    2 and 1: ours n 1228 finished 0.803 walked 0.357 lying 0.164 | theirs n 1856 finished 0.885 walked 0.311 lying 0.093 | gaps: finished theirs-ours +0.082, walked ours-theirs +0.046
+    2 and 2: ours n 622 finished 0.707 walked 0.379 lying 0.240 | theirs n 713 finished 0.809 walked 0.316 lying 0.147 | gaps: finished theirs-ours +0.102, walked ours-theirs +0.064
+    3 or more on the nearer side: ours n 5125 finished 0.868 walked 0.386 lying 0.105 | theirs n 8952 finished 0.935 walked 0.346 lying 0.049 | gaps: finished theirs-ours +0.066, walked ours-theirs +0.040
+    3 or more on the other side : ours n 1905 finished 0.657 walked 0.399 lying 0.245 | theirs n 1818 finished 0.768 walked 0.364 lying 0.160 | gaps: finished theirs-ours +0.111, walked ours-theirs +0.036
+    ours nearer: mean heads of the nearer side within 6 3.03, of the other side 1.78
+    theirs nearer: mean heads of the nearer side within 6 3.49, of the other side 1.54
+ -- same cells for both sides (nearer distance, other distance, head counts capped at 3), weighted by their births, large
+    common cells cover 14171 of their births: finished ours 0.823 theirs 0.890; walked ours 0.376 theirs 0.335
+ -- by nearer distance, large
+    distance 0: ours n 0 | theirs n 0
+    distance 1: ours n 3160 finished 0.876 walked 0.344 lying 0.085 | theirs n 4689 finished 0.949 walked 0.244 lying 0.033 | gaps: finished theirs-ours +0.073, walked ours-theirs +0.100
+    distance 2: ours n 3690 finished 0.789 walked 0.399 lying 0.155 | theirs n 5529 finished 0.894 walked 0.374 lying 0.075 | gaps: finished theirs-ours +0.105, walked ours-theirs +0.025
+    distance 3: ours n 2022 finished 0.699 walked 0.405 lying 0.261 | theirs n 2903 finished 0.828 walked 0.393 lying 0.142 | gaps: finished theirs-ours +0.128, walked ours-theirs +0.012
+    distance 4: ours n 730 finished 0.677 walked 0.344 lying 0.286 | theirs n 914 finished 0.788 walked 0.373 lying 0.186 | gaps: finished theirs-ours +0.111, walked ours-theirs -0.029
+    distance 5: ours n 115 finished 0.496 walked 0.357 lying 0.443 | theirs n 168 finished 0.679 walked 0.399 lying 0.286 | gaps: finished theirs-ours +0.183, walked ours-theirs -0.042
+ -- path steps to the nearer head equal the plain distance (no kelp in the way), large: ours n 7465 finished 0.868 walked 0.299 lying 0.101 | theirs n 10912 finished 0.949 walked 0.239 lying 0.038 | gaps: finished theirs-ours +0.081, walked ours-theirs +0.060
+ -- path steps longer than the plain distance or beyond 8, large: ours n 2252 finished 0.518 walked 0.639 lying 0.389 | theirs n 3291 finished 0.690 walked 0.654 lying 0.239 | gaps: finished theirs-ours +0.172, walked ours-theirs -0.014
+ -- nearer dragon is not a queen, large: ours n 9616 finished 0.787 walked 0.377 lying 0.167 | theirs n 14093 finished 0.891 walked 0.334 lying 0.083 | gaps: finished theirs-ours +0.105, walked ours-theirs +0.044
+ -- nearer dragon is a queen, large: ours n 101 finished 0.782 walked 0.396 lying 0.198 | theirs n 110 finished 0.618 walked 0.500 lying 0.336 | gaps: finished theirs-ours -0.164, walked ours-theirs -0.104
+ -- nearer dragon length, large
+    length 1-1: ours n 0 | theirs n 0
+    length 2-2: ours n 4215 finished 0.776 walked 0.386 lying 0.174 | theirs n 5002 finished 0.890 walked 0.344 lying 0.077 | gaps: finished theirs-ours +0.114, walked ours-theirs +0.042
+    length 3-3: ours n 3183 finished 0.808 walked 0.419 lying 0.153 | theirs n 4087 finished 0.892 walked 0.356 lying 0.085 | gaps: finished theirs-ours +0.083, walked ours-theirs +0.063
+    length 4-6: ours n 1241 finished 0.799 walked 0.255 lying 0.155 | theirs n 2821 finished 0.899 walked 0.302 lying 0.083 | gaps: finished theirs-ours +0.100, walked ours-theirs -0.047
+    length 7-99: ours n 1078 finished 0.752 walked 0.364 lying 0.199 | theirs n 2293 finished 0.872 walked 0.319 lying 0.104 | gaps: finished theirs-ours +0.119, walked ours-theirs +0.044
+ -- by birth round, large
+    r0-100: ours n 1344 finished 0.848 walked 0.374 lying 0.130 | theirs n 1636 finished 0.906 walked 0.342 lying 0.070 | gaps: finished theirs-ours +0.058, walked ours-theirs +0.032
+    r101-200: ours n 2507 finished 0.817 walked 0.366 lying 0.148 | theirs n 3862 finished 0.896 walked 0.341 lying 0.078 | gaps: finished theirs-ours +0.078, walked ours-theirs +0.025
+    r201-300: ours n 2173 finished 0.750 walked 0.402 lying 0.203 | theirs n 3611 finished 0.896 walked 0.331 lying 0.082 | gaps: finished theirs-ours +0.146, walked ours-theirs +0.071
+    r301-499: ours n 3693 finished 0.766 walked 0.372 lying 0.174 | theirs n 5094 finished 0.874 walked 0.331 lying 0.097 | gaps: finished theirs-ours +0.109, walked ours-theirs +0.041
+ -- by birth round, other
+    r0-100: ours n 3653 finished 0.822 walked 0.392 lying 0.151 | theirs n 3190 finished 0.763 walked 0.395 lying 0.179 | gaps: finished theirs-ours -0.058, walked ours-theirs -0.003
+    r101-200: ours n 4921 finished 0.787 walked 0.391 lying 0.168 | theirs n 5522 finished 0.768 walked 0.427 lying 0.162 | gaps: finished theirs-ours -0.018, walked ours-theirs -0.036
+    r201-300: ours n 4844 finished 0.765 walked 0.399 lying 0.189 | theirs n 5931 finished 0.755 walked 0.438 lying 0.175 | gaps: finished theirs-ours -0.010, walked ours-theirs -0.039
+    r301-499: ours n 6127 finished 0.748 walked 0.443 lying 0.202 | theirs n 7558 finished 0.770 walked 0.424 lying 0.169 | gaps: finished theirs-ours +0.022, walked ours-theirs +0.020
+ -- other layouts by name
+    Autarky #1             games 12: ours n 554 finished 0.834 walked 0.179 lying 0.144 | theirs n 445 finished 0.640 walked 0.270 lying 0.297 | gaps: finished theirs-ours -0.193, walked ours-theirs -0.091
+    Default #1             games 15: ours n 617 finished 0.822 walked 0.337 lying 0.141 | theirs n 718 finished 0.852 walked 0.287 lying 0.121 | gaps: finished theirs-ours +0.031, walked ours-theirs +0.050
+    Devil #1               games 15: ours n 907 finished 0.908 walked 0.557 lying 0.061 | theirs n 497 finished 0.787 walked 0.509 lying 0.169 | gaps: finished theirs-ours -0.122, walked ours-theirs +0.048
+    Maze #1                games 21: ours n 3450 finished 0.868 walked 0.403 lying 0.114 | theirs n 4470 finished 0.889 walked 0.374 lying 0.096 | gaps: finished theirs-ours +0.021, walked ours-theirs +0.029
+    Portals #1             games 10: ours n 3306 finished 0.429 walked 0.546 lying 0.456 | theirs n 3909 finished 0.335 walked 0.608 lying 0.464 | gaps: finished theirs-ours -0.093, walked ours-theirs -0.062
+    Prisoners Dilemma #1   games 3: ours n 48 finished 0.896 walked 0.375 lying 0.104 | theirs n 40 finished 0.725 walked 0.450 lying 0.250 | gaps: finished theirs-ours -0.171, walked ours-theirs -0.075
+    Prisoners Dilemma #2   games 6: ours n 55 finished 0.727 walked 0.273 lying 0.164 | theirs n 128 finished 0.859 walked 0.188 lying 0.133 | gaps: finished theirs-ours +0.132, walked ours-theirs +0.085
+    Queen Of Spades #1     games 18: ours n 421 finished 0.929 walked 0.375 lying 0.059 | theirs n 251 finished 0.876 walked 0.291 lying 0.096 | gaps: finished theirs-ours -0.052, walked ours-theirs +0.084
+    Slithery Fight #1      games 16: ours n 7685 finished 0.846 walked 0.370 lying 0.123 | theirs n 8905 finished 0.869 walked 0.398 lying 0.085 | gaps: finished theirs-ours +0.022, walked ours-theirs -0.028
+    Stripes #1             games 10: ours n 91 finished 0.473 walked 0.604 lying 0.473 | theirs n 195 finished 0.949 walked 0.446 lying 0.046 | gaps: finished theirs-ours +0.476, walked ours-theirs +0.158
+    Tower Defense #1       games 16: ours n 150 finished 0.913 walked 0.273 lying 0.073 | theirs n 173 finished 0.798 walked 0.468 lying 0.156 | gaps: finished theirs-ours -0.116, walked ours-theirs -0.195
+    Trauma #1              games 23: ours n 819 finished 0.746 walked 0.513 lying 0.242 | theirs n 1054 finished 0.790 walked 0.494 lying 0.198 | gaps: finished theirs-ours +0.044, walked ours-theirs +0.019
+    Trophy #1              games 10: ours n 226 finished 0.916 walked 0.261 lying 0.058 | theirs n 213 finished 0.869 walked 0.300 lying 0.080 | gaps: finished theirs-ours -0.047, walked ours-theirs -0.039
+    weakhold #1            games 15: ours n 1216 finished 0.805 walked 0.322 lying 0.136 | theirs n 1203 finished 0.800 walked 0.313 lying 0.133 | gaps: finished theirs-ours -0.005, walked ours-theirs +0.009
+
+===== v31 games 410 large 95 other 315
+ in view, later eaten
+   large: ours n 14085 finished 0.775 walked 0.386 lying 0.174 | theirs n 21359 finished 0.911 walked 0.303 lying 0.066 | gaps: finished theirs-ours +0.137, walked ours-theirs +0.083
+   other: ours n 30587 finished 0.726 walked 0.422 lying 0.215 | theirs n 36779 finished 0.737 walked 0.425 lying 0.188 | gaps: finished theirs-ours +0.011, walked ours-theirs -0.003
+   large detail: ours: walked 0.386 (of which ate another pearl in that turn 0.145; still finished by the side 0.631), not farther 0.360, ate it in that turn 0.214, another ate it first 0.002, died first 0.038, eaten by the nearer dragon itself 0.477 | theirs: walked 0.303 (of which ate another pearl in that turn 0.173; still finished by the side 0.811), not farther 0.364, ate it in that turn 0.297, another ate it first 0.003, died first 0.034, eaten by the nearer dragon itself 0.604
+   other detail: ours: walked 0.422 (of which ate another pearl in that turn 0.207; still finished by the side 0.598), not farther 0.311, ate it in that turn 0.170, another ate it first 0.003, died first 0.094, eaten by the nearer dragon itself 0.311 | theirs: walked 0.425 (of which ate another pearl in that turn 0.178; still finished by the side 0.599), not farther 0.324, ate it in that turn 0.166, another ate it first 0.002, died first 0.083, eaten by the nearer dragon itself 0.322
+   large ours walked 5437 of 14085 (0.386); walked without eating another pearl in that turn 4648 of 14085 (0.330); walked and the side did not finish 2004 of 14085 (0.142)
+   large theirs walked 6468 of 21359 (0.303); walked without eating another pearl in that turn 5348 of 21359 (0.250); walked and the side did not finish 1224 of 21359 (0.057)
+ -- all births in view (eaten or not): large ours n 14298 finished 0.763 walked 0.390 lying 0.172 | theirs n 21559 finished 0.903 walked 0.305 lying 0.065 | gaps: finished theirs-ours +0.140, walked ours-theirs +0.085
+ -- nearer distance 0 or 1, all births: large ours n 4544 finished 0.879 walked 0.355 lying 0.071 | theirs n 7905 finished 0.958 walked 0.228 lying 0.025 | gaps: finished theirs-ours +0.079, walked ours-theirs +0.127
+ -- nearer distance 0 or 1, eaten only: large ours n 4513 finished 0.885 walked 0.350 lying 0.072 | theirs n 7883 finished 0.961 walked 0.226 lying 0.025 | gaps: finished theirs-ours +0.075, walked ours-theirs +0.124
+ -- out of view births, large: eaten ours 585 theirs 703; all ours 614 theirs 725
+ -- game resampling, large (2000 resamples): 2.5 pct, 97.5 pct, share of resamples at or below zero
+    walked ours-theirs, games as units   (0.0668, 0.0992, 0.0)
+    walked ours-theirs, battles as units (0.0671, 0.0992, 0.0)
+    walked ours-theirs, opponents as units (0.0602, 0.1041, 0.0)
+    finished theirs-ours, games as units   (0.1118, 0.16, 0.0)
+    finished theirs-ours, battles as units (0.1087, 0.1623, 0.0)
+    finished theirs-ours, opponents as units (0.1081, 0.1699, 0.0)
+    other layouts: walked ours-theirs, games (-0.0208, 0.0165, 0.616) finished theirs-ours, games (-0.0241, 0.0432, 0.2485)
+ -- large games with 30 or more births a side: our walked share higher in 72, lower in 16, equal 0 (too few births 7), sign p 1.192e-09; their finished share higher in 79, lower in 8
+ -- large without the three games with the widest walked gap: ours n 13721 finished 0.773 walked 0.385 lying 0.176 | theirs n 20913 finished 0.910 walked 0.306 lying 0.067 | gaps: finished theirs-ours +0.137, walked ours-theirs +0.079
+ -- by rating band, large
+    <1700      games 2: ours n 331 finished 0.855 walked 0.353 lying 0.112 | theirs n 313 finished 0.856 walked 0.275 lying 0.115 | gaps: finished theirs-ours +0.001, walked ours-theirs +0.079
+    1700-1899  games 43: ours n 7142 finished 0.788 walked 0.395 lying 0.169 | theirs n 10278 finished 0.899 walked 0.306 lying 0.075 | gaps: finished theirs-ours +0.111, walked ours-theirs +0.089
+    1900-2099  games 37: ours n 5341 finished 0.766 walked 0.380 lying 0.176 | theirs n 8153 finished 0.917 walked 0.308 lying 0.062 | gaps: finished theirs-ours +0.152, walked ours-theirs +0.072
+    2100+      games 13: ours n 1271 finished 0.718 walked 0.366 lying 0.213 | theirs n 2615 finished 0.947 walked 0.277 lying 0.039 | gaps: finished theirs-ours +0.230, walked ours-theirs +0.089
+ -- per large layout
+    Around UNSW #1   games 26: ours n 4591 finished 0.746 walked 0.404 lying 0.196 | theirs n 7165 finished 0.894 walked 0.357 lying 0.082 | gaps: finished theirs-ours +0.148, walked ours-theirs +0.048
+    Australia #1     games 28: ours n 3691 finished 0.816 walked 0.362 lying 0.136 | theirs n 4767 finished 0.907 walked 0.243 lying 0.064 | gaps: finished theirs-ours +0.091, walked ours-theirs +0.119
+    Islands #1       games 17: ours n 2484 finished 0.782 walked 0.366 lying 0.164 | theirs n 4244 finished 0.935 walked 0.292 lying 0.044 | gaps: finished theirs-ours +0.153, walked ours-theirs +0.074
+    Schooltime #1    games 11: ours n 336 finished 0.756 walked 0.330 lying 0.173 | theirs n 682 finished 0.933 walked 0.213 lying 0.053 | gaps: finished theirs-ours +0.177, walked ours-theirs +0.118
+    Schooltime #2    games 13: ours n 2983 finished 0.764 walked 0.411 lying 0.197 | theirs n 4501 finished 0.918 walked 0.304 lying 0.065 | gaps: finished theirs-ours +0.154, walked ours-theirs +0.107
+ -- large, one layout name left out
+    without Around UNSW  ours n 9494 finished 0.788 walked 0.377 lying 0.164 | theirs n 14194 finished 0.920 walked 0.276 lying 0.058 | gaps: finished theirs-ours +0.131, walked ours-theirs +0.102
+    without Australia    ours n 10394 finished 0.760 walked 0.395 lying 0.188 | theirs n 16592 finished 0.912 walked 0.320 lying 0.067 | gaps: finished theirs-ours +0.152, walked ours-theirs +0.075
+    without Islands      ours n 11601 finished 0.773 walked 0.390 lying 0.176 | theirs n 17115 finished 0.905 walked 0.306 lying 0.072 | gaps: finished theirs-ours +0.132, walked ours-theirs +0.085
+    without Schooltime   ours n 10766 finished 0.778 walked 0.381 lying 0.168 | theirs n 16176 finished 0.909 walked 0.306 lying 0.067 | gaps: finished theirs-ours +0.130, walked ours-theirs +0.075
+ -- large, one opponent left out (38 opponents): walked gap from +0.073 (without 中国人不准飞😡😡😡😡😡😡😡 (791)) to +0.085 (without err404 (485)); finished gap from +0.131 to +0.145
+    opponents (30 or more births a side) with our walked share higher 31, not higher 6
+ -- by our seat, large
+    we are A: ours n 10938 finished 0.777 walked 0.380 lying 0.171 | theirs n 16884 finished 0.916 walked 0.299 lying 0.063 | gaps: finished theirs-ours +0.139, walked ours-theirs +0.082
+    we are B: ours n 3147 finished 0.768 walked 0.406 lying 0.185 | theirs n 4475 finished 0.895 walked 0.319 lying 0.077 | gaps: finished theirs-ours +0.127, walked ours-theirs +0.087
+ -- head counts within 6 of the tile at the birth, large (nearer side heads, other side heads)
+    1 and 1: ours n 1500 finished 0.684 walked 0.355 lying 0.267 | theirs n 1956 finished 0.848 walked 0.262 lying 0.126 | gaps: finished theirs-ours +0.164, walked ours-theirs +0.092
+    1 and 2: ours n 798 finished 0.563 walked 0.376 lying 0.335 | theirs n 836 finished 0.767 walked 0.288 lying 0.182 | gaps: finished theirs-ours +0.204, walked ours-theirs +0.088
+    2 and 1: ours n 1769 finished 0.780 walked 0.380 lying 0.184 | theirs n 2857 finished 0.912 walked 0.271 lying 0.067 | gaps: finished theirs-ours +0.132, walked ours-theirs +0.109
+    2 and 2: ours n 826 finished 0.665 walked 0.397 lying 0.251 | theirs n 1140 finished 0.861 walked 0.274 lying 0.100 | gaps: finished theirs-ours +0.197, walked ours-theirs +0.123
+    3 or more on the nearer side: ours n 7765 finished 0.870 walked 0.385 lying 0.102 | theirs n 13124 finished 0.952 walked 0.319 lying 0.035 | gaps: finished theirs-ours +0.082, walked ours-theirs +0.066
+    3 or more on the other side : ours n 2352 finished 0.615 walked 0.409 lying 0.264 | theirs n 2540 finished 0.800 walked 0.318 lying 0.135 | gaps: finished theirs-ours +0.186, walked ours-theirs +0.091
+    ours nearer: mean heads of the nearer side within 6 3.18, of the other side 1.69
+    theirs nearer: mean heads of the nearer side within 6 3.46, of the other side 1.52
+ -- same cells for both sides (nearer distance, other distance, head counts capped at 3), weighted by their births, large
+    common cells cover 21341 of their births: finished ours 0.813 theirs 0.911; walked ours 0.383 theirs 0.303
+ -- by nearer distance, large
+    distance 0: ours n 0 | theirs n 0
+    distance 1: ours n 4513 finished 0.885 walked 0.350 lying 0.072 | theirs n 7883 finished 0.961 walked 0.226 lying 0.025 | gaps: finished theirs-ours +0.075, walked ours-theirs +0.124
+    distance 2: ours n 5316 finished 0.782 walked 0.410 lying 0.157 | theirs n 8136 finished 0.912 walked 0.325 lying 0.061 | gaps: finished theirs-ours +0.130, walked ours-theirs +0.085
+    distance 3: ours n 3058 finished 0.667 walked 0.409 lying 0.282 | theirs n 3878 finished 0.850 walked 0.391 lying 0.122 | gaps: finished theirs-ours +0.183, walked ours-theirs +0.018
+    distance 4: ours n 1031 finished 0.613 walked 0.360 lying 0.347 | theirs n 1269 finished 0.809 walked 0.359 lying 0.156 | gaps: finished theirs-ours +0.196, walked ours-theirs +0.001
+    distance 5: ours n 167 finished 0.515 walked 0.323 lying 0.437 | theirs n 193 finished 0.767 walked 0.352 lying 0.212 | gaps: finished theirs-ours +0.252, walked ours-theirs -0.029
+ -- path steps to the nearer head equal the plain distance (no kelp in the way), large: ours n 10833 finished 0.867 walked 0.305 lying 0.098 | theirs n 17033 finished 0.957 walked 0.215 lying 0.032 | gaps: finished theirs-ours +0.090, walked ours-theirs +0.090
+ -- path steps longer than the plain distance or beyond 8, large: ours n 3252 finished 0.469 walked 0.654 lying 0.427 | theirs n 4326 finished 0.733 walked 0.648 lying 0.199 | gaps: finished theirs-ours +0.264, walked ours-theirs +0.007
+ -- nearer dragon is not a queen, large: ours n 13904 finished 0.776 walked 0.385 lying 0.172 | theirs n 21205 finished 0.912 walked 0.301 lying 0.065 | gaps: finished theirs-ours +0.135, walked ours-theirs +0.084
+ -- nearer dragon is a queen, large: ours n 181 finished 0.641 walked 0.486 lying 0.320 | theirs n 154 finished 0.818 walked 0.539 lying 0.175 | gaps: finished theirs-ours +0.177, walked ours-theirs -0.053
+ -- nearer dragon length, large
+    length 1-1: ours n 0 | theirs n 0
+    length 2-2: ours n 6252 finished 0.749 walked 0.396 lying 0.196 | theirs n 7098 finished 0.912 walked 0.305 lying 0.062 | gaps: finished theirs-ours +0.164, walked ours-theirs +0.091
+    length 3-3: ours n 4761 finished 0.796 walked 0.425 lying 0.156 | theirs n 6254 finished 0.913 walked 0.331 lying 0.064 | gaps: finished theirs-ours +0.117, walked ours-theirs +0.095
+    length 4-6: ours n 1700 finished 0.815 walked 0.248 lying 0.138 | theirs n 4407 finished 0.922 walked 0.269 lying 0.061 | gaps: finished theirs-ours +0.107, walked ours-theirs -0.021
+    length 7-99: ours n 1372 finished 0.771 walked 0.374 lying 0.184 | theirs n 3599 finished 0.894 walked 0.292 lying 0.083 | gaps: finished theirs-ours +0.123, walked ours-theirs +0.082
+ -- by birth round, large
+    r0-100: ours n 1625 finished 0.839 walked 0.361 lying 0.130 | theirs n 2360 finished 0.916 walked 0.329 lying 0.063 | gaps: finished theirs-ours +0.077, walked ours-theirs +0.032
+    r101-200: ours n 4033 finished 0.811 walked 0.371 lying 0.145 | theirs n 5978 finished 0.912 walked 0.301 lying 0.065 | gaps: finished theirs-ours +0.100, walked ours-theirs +0.069
+    r201-300: ours n 3167 finished 0.751 walked 0.409 lying 0.192 | theirs n 5524 finished 0.923 walked 0.297 lying 0.056 | gaps: finished theirs-ours +0.173, walked ours-theirs +0.112
+    r301-499: ours n 5260 finished 0.741 walked 0.392 lying 0.199 | theirs n 7497 finished 0.901 walked 0.300 lying 0.075 | gaps: finished theirs-ours +0.159, walked ours-theirs +0.092
+ -- by birth round, other
+    r0-100: ours n 6396 finished 0.782 walked 0.405 lying 0.176 | theirs n 6590 finished 0.760 walked 0.408 lying 0.185 | gaps: finished theirs-ours -0.022, walked ours-theirs -0.003
+    r101-200: ours n 8107 finished 0.718 walked 0.402 lying 0.219 | theirs n 10038 finished 0.736 walked 0.435 lying 0.177 | gaps: finished theirs-ours +0.019, walked ours-theirs -0.033
+    r201-300: ours n 7676 finished 0.710 walked 0.426 lying 0.223 | theirs n 9229 finished 0.711 walked 0.436 lying 0.199 | gaps: finished theirs-ours +0.001, walked ours-theirs -0.011
+    r301-499: ours n 8408 finished 0.705 walked 0.451 lying 0.234 | theirs n 10922 finished 0.745 walked 0.416 lying 0.189 | gaps: finished theirs-ours +0.040, walked ours-theirs +0.035
+ -- other layouts by name
+    Autarky #1             games 28: ours n 1157 finished 0.848 walked 0.169 lying 0.141 | theirs n 1448 finished 0.801 walked 0.195 lying 0.165 | gaps: finished theirs-ours -0.047, walked ours-theirs -0.026
+    Default #1             games 15: ours n 609 finished 0.846 walked 0.338 lying 0.128 | theirs n 789 finished 0.867 walked 0.284 lying 0.096 | gaps: finished theirs-ours +0.021, walked ours-theirs +0.054
+    Devil #1               games 28: ours n 1088 finished 0.914 walked 0.599 lying 0.075 | theirs n 1028 finished 0.870 walked 0.536 lying 0.116 | gaps: finished theirs-ours -0.044, walked ours-theirs +0.063
+    Maze #1                games 24: ours n 4116 finished 0.872 walked 0.401 lying 0.112 | theirs n 4869 finished 0.898 walked 0.384 lying 0.087 | gaps: finished theirs-ours +0.026, walked ours-theirs +0.017
+    Portals #1             games 27: ours n 8510 finished 0.438 walked 0.533 lying 0.434 | theirs n 10305 finished 0.365 walked 0.601 lying 0.444 | gaps: finished theirs-ours -0.073, walked ours-theirs -0.068
+    Prisoners Dilemma #1   games 18: ours n 359 finished 0.883 walked 0.448 lying 0.036 | theirs n 336 finished 0.842 walked 0.312 lying 0.140 | gaps: finished theirs-ours -0.041, walked ours-theirs +0.136
+    Prisoners Dilemma #2   games 7: ours n 63 finished 0.825 walked 0.270 lying 0.079 | theirs n 141 finished 0.929 walked 0.099 lying 0.071 | gaps: finished theirs-ours +0.104, walked ours-theirs +0.171
+    Queen Of Spades #1     games 26: ours n 454 finished 0.894 walked 0.339 lying 0.084 | theirs n 734 finished 0.917 walked 0.281 lying 0.061 | gaps: finished theirs-ours +0.023, walked ours-theirs +0.059
+    Slithery Fight #1      games 24: ours n 10793 finished 0.833 walked 0.373 lying 0.124 | theirs n 12857 finished 0.884 walked 0.374 lying 0.074 | gaps: finished theirs-ours +0.051, walked ours-theirs -0.001
+    Stripes #1             games 26: ours n 337 finished 0.623 walked 0.519 lying 0.329 | theirs n 471 finished 0.926 walked 0.461 lying 0.068 | gaps: finished theirs-ours +0.303, walked ours-theirs +0.059
+    Tower Defense #1       games 22: ours n 212 finished 0.887 walked 0.335 lying 0.094 | theirs n 290 finished 0.869 walked 0.414 lying 0.093 | gaps: finished theirs-ours -0.018, walked ours-theirs -0.079
+    Trauma #1              games 17: ours n 632 finished 0.712 walked 0.479 lying 0.272 | theirs n 776 finished 0.830 walked 0.472 lying 0.162 | gaps: finished theirs-ours +0.118, walked ours-theirs +0.008
+    Trophy #1              games 24: ours n 570 finished 0.893 walked 0.261 lying 0.079 | theirs n 906 finished 0.889 walked 0.255 lying 0.087 | gaps: finished theirs-ours -0.004, walked ours-theirs +0.006
+    weakhold #1            games 29: ours n 1687 finished 0.755 walked 0.363 lying 0.207 | theirs n 1829 finished 0.898 walked 0.241 lying 0.078 | gaps: finished theirs-ours +0.143, walked ours-theirs +0.122

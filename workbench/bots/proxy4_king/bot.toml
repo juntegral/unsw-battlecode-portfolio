@@ -1,0 +1,5 @@
+# proxy4_king: local stand-in (v4 = v3 + the server's b pearl layouts in the spawn table) for the K teams (Kamikaze, 中国必须人能飞😡): swarm, then gather and feed one king.
+# Shared code: pxcore.cpp, pxproto.*, spawndb.hpp (copied from bots/proxy4_swarm); style: style.hpp. research/experiments/proxies-v3.md (v4 section).
+[project]
+language = "c++"
+include = [ "*.cpp", "*.hpp" ]

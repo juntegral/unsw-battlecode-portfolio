@@ -1,0 +1,16 @@
+# Runner 구현 보고
+- `battlecode`의 `juntegral`에서 `work/loop/runner.py`, `jobs.py`, `guard.py`, `settings.json`, 영어 프롬프트 7개를 추가했습니다.
+- GitHub 상태·댓글 기반 3분 폴링, 카드별 worktree/출력, 재시작 복구, 전역 AI/게임 잠금과 heartbeat를 구현했습니다.
+- clarify → build/identity → mechanism/look → testing/verdict 및 Zhe의 다국어 답변 대기를 연결했습니다.
+- `ident.py`의 종료 코드 대신 40개 OK와 마지막 `identical`을 검사합니다.
+- 소규모 기제 실행은 KEEP=1, 결과 A/B는 KEEP 해제·WORKERS=8·카드 고정 SEED0입니다.
+- held/fresh 및 전치본, 기존 10지도 ×8을 사용하며 누락·중복 판은 결과 보고를 막습니다.
+- 최장 길이가 측정되지 않은 종료 유형과 총 길이 미측정을 구분하며 old-base 보고에는 실제 시험 기준 커밋을 유지합니다.
+- 후보 준비는 동결 시각과 최신 기반을 확인합니다. git push 대상은 card/N뿐이며 후보 branch는 Git data API로 만듭니다.
+- Track 3는 4시간마다 새 완료 대전을 확인하고 최대 2개 AI 카드를 생성합니다.
+- docs/LOOP.md에 22줄 Running the loop 안내를 추가했습니다.
+- 검증: py_compile, 오프라인 테스트 25개, 가짜 gh dry-run, git diff --check 통과.
+- held/fresh 80개 지도 전치 왕복 검사와 기존 10개 지도 경로 확인도 통과했습니다.
+- 실제 AI 호출·게임·push·GitHub 쓰기·커밋은 하지 않았습니다. 실환경 통합 실행은 미검증입니다.
+- 봇이 만든 Zhe 카드에는 LOOP_ZHE_LOGIN 설정 또는 `Answer from Zhe:`로 기록된 Discord 답변이 필요합니다.
+- 기존 work/board.py의 변경은 유지했습니다. 가드는 도구/명령 정책 검사이며 OS 샌드박스는 아닙니다.

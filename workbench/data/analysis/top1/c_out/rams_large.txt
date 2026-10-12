@@ -1,0 +1,74 @@
+=== RAM EXCHANGE, large maps (per game means)
+group (games) phase | made n (rammer len / victim len, share with rammer <= victim) | suffered n (rammer len / victim len) | segments lost own / enemy | ram-corpse pearls eaten by own team (enemy corpses / own corpses) and by the enemy (our corpses / their corpses) | swing in total length (rams + pearls) | share of rams started
+meow                   (111) r  0- 49 | made   0.4 ( 2.5 /  2.5,  83%) | suffered   2.0 ( 2.5 /  2.6) | seg    6.2 /    6.1 | pearls own   0.7 /   1.3  enemy   1.7 /   2.8 | swing   -2.6 |  15%
+meow                   (111) r 50- 99 | made   1.8 ( 2.5 /  2.8,  84%) | suffered   8.9 ( 2.7 /  2.7) | seg   28.0 /   28.8 | pearls own   3.6 /   5.5  enemy  10.1 /  14.8 | swing  -14.9 |  17%
+meow                   (111) r100-149 | made   3.9 ( 2.5 /  3.4,  92%) | suffered  11.9 ( 2.9 /  2.7) | seg   42.3 /   48.1 | pearls own   8.6 /  10.6  enemy  14.0 /  22.2 | swing  -11.2 |  25%
+meow                   (111) r150-199 | made   3.4 ( 2.7 /  4.4,  93%) | suffered  11.2 ( 3.2 /  3.2) | seg   45.1 /   50.6 | pearls own   7.2 /   8.1  enemy  17.1 /  24.1 | swing  -20.4 |  24%
+meow                   (111) r200-299 | made   4.8 ( 3.1 /  6.1,  92%) | suffered  14.4 ( 3.4 /  3.9) | seg   70.3 /   77.4 | pearls own  12.6 /  12.8  enemy  28.1 /  35.2 | swing  -30.8 |  25%
+meow                   (111) r300-399 | made   4.0 ( 3.3 /  7.0,  89%) | suffered  11.1 ( 3.2 /  4.2) | seg   59.8 /   63.7 | pearls own  10.0 /  10.6  enemy  22.3 /  28.0 | swing  -25.8 |  26%
+meow                   (111) r400-499 | made   2.6 ( 5.6 / 14.9,  87%) | suffered   5.6 ( 3.2 /  5.2) | seg   43.8 /   56.8 | pearls own   9.8 /   8.0  enemy  15.1 /  19.4 | swing   -3.7 |  32%
+meow                   (111) rall     | made  20.8 ( 3.2 /  6.2,  90%) | suffered  65.1 ( 3.1 /  3.5) | seg  295.5 /  331.5 | pearls own  52.4 /  57.0  enemy 108.5 / 146.4 | swing -109.5 |  24%
+
+test4 vs meow          ( 42) r  0- 49 | made   2.6 ( 2.6 /  2.7,  73%) | suffered   0.4 ( 2.4 /  2.4) | seg    7.7 /    8.1 | pearls own   2.0 /   3.0  enemy   0.7 /   1.8 | swing   +2.8 |  87%
+test4 vs meow          ( 42) r 50- 99 | made   9.9 ( 2.7 /  2.6,  62%) | suffered   1.5 ( 2.4 /  3.2) | seg   31.9 /   29.1 | pearls own  11.5 /  16.3  enemy   3.4 /   5.7 | swing  +16.0 |  87%
+test4 vs meow          ( 42) r100-149 | made  11.1 ( 3.0 /  2.6,  50%) | suffered   3.5 ( 2.6 /  4.3) | seg   49.2 /   38.2 | pearls own  14.7 /  22.2  enemy   7.5 /   7.6 | swing  +10.8 |  76%
+test4 vs meow          ( 42) r150-199 | made   9.2 ( 3.5 /  3.1,  47%) | suffered   3.2 ( 2.8 /  5.2) | seg   48.3 /   37.1 | pearls own  15.0 /  20.2  enemy   6.6 /   5.9 | swing  +11.5 |  74%
+test4 vs meow          ( 42) r200-299 | made  10.7 ( 3.8 /  3.9,  54%) | suffered   5.7 ( 3.2 /  6.8) | seg   79.6 /   59.4 | pearls own  23.0 /  30.0  enemy  13.9 /  11.1 | swing   +7.8 |  65%
+test4 vs meow          ( 42) r300-399 | made   8.8 ( 3.9 /  4.6,  57%) | suffered   5.7 ( 3.5 /  7.1) | seg   74.6 /   60.7 | pearls own  19.7 /  27.7  enemy  12.2 /  12.0 | swing   +9.4 |  60%
+test4 vs meow          ( 42) r400-499 | made   5.4 ( 3.5 /  5.6,  68%) | suffered   3.4 ( 5.2 / 11.3) | seg   57.5 /   47.8 | pearls own  17.1 /  21.0  enemy  10.1 /   8.9 | swing   +9.4 |  62%
+test4 vs meow          ( 42) rall     | made  57.7 ( 3.4 /  3.5,  56%) | suffered  23.5 ( 3.4 /  6.6) | seg  348.8 /  280.4 | pearls own 103.0 / 140.3  enemy  54.3 /  52.8 | swing  +67.7 |  71%
+
+WeHaveQuizzes vs meow  ( 44) r  0- 49 | made   1.5 ( 2.4 /  2.6,  79%) | suffered   0.4 ( 2.6 /  2.8) | seg    4.6 /    4.9 | pearls own   1.3 /   2.4  enemy   0.8 /   1.2 | swing   +2.0 |  80%
+WeHaveQuizzes vs meow  ( 44) r 50- 99 | made   8.2 ( 2.6 /  2.8,  73%) | suffered   2.0 ( 2.5 /  2.7) | seg   26.4 /   27.6 | pearls own   8.9 /  13.4  enemy   4.3 /   6.0 | swing  +13.2 |  80%
+WeHaveQuizzes vs meow  ( 44) r100-149 | made  12.7 ( 2.8 /  2.8,  68%) | suffered   4.5 ( 2.4 /  2.8) | seg   47.4 /   47.0 | pearls own  14.7 /  22.7  enemy   9.7 /  12.3 | swing  +15.0 |  74%
+WeHaveQuizzes vs meow  ( 44) r150-199 | made  13.3 ( 2.9 /  3.3,  66%) | suffered   3.7 ( 2.6 /  3.8) | seg   52.9 /   53.0 | pearls own  20.6 /  28.3  enemy   7.3 /   9.2 | swing  +32.4 |  78%
+WeHaveQuizzes vs meow  ( 44) r200-299 | made  17.9 ( 3.1 /  3.9,  69%) | suffered   4.3 ( 2.9 /  4.5) | seg   75.5 /   81.5 | pearls own  33.3 /  37.6  enemy  12.0 /  14.5 | swing  +50.4 |  81%
+WeHaveQuizzes vs meow  ( 44) r300-399 | made  12.9 ( 2.8 /  3.9,  72%) | suffered   2.0 ( 2.8 /  7.2) | seg   50.8 /   56.6 | pearls own  23.6 /  25.1  enemy   7.0 /   8.7 | swing  +38.9 |  87%
+WeHaveQuizzes vs meow  ( 44) r400-499 | made   4.9 ( 2.9 /  5.1,  76%) | suffered   1.5 ( 6.6 / 23.9) | seg   51.1 /   35.2 | pearls own  11.5 /  15.7  enemy   8.4 /   6.5 | swing   -3.5 |  76%
+WeHaveQuizzes vs meow  ( 44) rall     | made  71.3 ( 2.9 /  3.5,  70%) | suffered  18.4 ( 3.0 /  5.6) | seg  308.7 /  305.8 | pearls own 113.8 / 145.2  enemy  49.5 /  58.4 | swing +148.3 |  80%
+
+test4 vs top3          ( 21) r  0- 49 | made   1.6 ( 2.5 /  2.7,  76%) | suffered   2.2 ( 2.8 /  2.7) | seg   10.0 /   10.4 | pearls own   1.4 /   2.3  enemy   2.2 /   4.2 | swing   -2.2 |  42%
+test4 vs top3          ( 21) r 50- 99 | made   7.5 ( 2.7 /  2.7,  63%) | suffered   7.4 ( 2.7 /  2.6) | seg   39.6 /   39.8 | pearls own   9.0 /  13.3  enemy   9.5 /  13.7 | swing   -0.7 |  50%
+test4 vs top3          ( 21) r100-149 | made  10.7 ( 2.8 /  2.9,  63%) | suffered  12.1 ( 2.8 /  3.0) | seg   66.4 /   65.3 | pearls own  15.5 /  23.3  enemy  14.5 /  22.5 | swing   +0.7 |  47%
+test4 vs top3          ( 21) r150-199 | made  12.0 ( 3.2 /  3.7,  62%) | suffered  13.9 ( 2.9 /  3.4) | seg   85.3 /   85.0 | pearls own  22.0 /  29.4  enemy  20.1 /  26.8 | swing   +4.2 |  46%
+test4 vs top3          ( 21) r200-299 | made  21.9 ( 3.1 /  3.8,  59%) | suffered  25.8 ( 2.8 /  3.7) | seg  164.3 /  157.0 | pearls own  39.5 /  57.7  enemy  38.8 /  53.8 | swing   -2.7 |  46%
+test4 vs top3          ( 21) r300-399 | made  17.5 ( 3.1 /  4.0,  63%) | suffered  21.0 ( 2.8 /  3.8) | seg  135.0 /  129.3 | pearls own  30.9 /  44.7  enemy  31.7 /  45.6 | swing   -7.4 |  45%
+test4 vs top3          ( 21) r400-499 | made   7.2 ( 3.1 /  6.8,  74%) | suffered   9.3 ( 3.3 /  5.8) | seg   76.6 /   79.9 | pearls own  20.4 /  25.5  enemy  19.4 /  24.7 | swing   +5.1 |  44%
+test4 vs top3          ( 21) rall     | made  78.3 ( 3.0 /  3.9,  63%) | suffered  91.7 ( 2.9 /  3.7) | seg  577.1 /  566.7 | pearls own 138.7 / 196.1  enemy 136.2 / 191.2 | swing   -3.0 |  46%
+
+WeHaveQuizzes vs top3  (  4) r  0- 49 | made   1.5 ( 2.7 /  2.2,  50%) | suffered   1.8 ( 2.4 /  2.3) | seg    8.0 /    7.5 | pearls own   2.0 /   3.2  enemy   1.5 /   1.8 | swing   +1.5 |  46%
+WeHaveQuizzes vs top3  (  4) r 50- 99 | made  10.0 ( 2.9 /  2.3,  50%) | suffered   8.5 ( 2.5 /  2.6) | seg   51.5 /   44.8 | pearls own  11.8 /  18.0  enemy  12.0 /  12.0 | swing   -1.0 |  54%
+WeHaveQuizzes vs top3  (  4) r100-149 | made  13.0 ( 3.0 /  2.7,  52%) | suffered   9.5 ( 2.8 /  3.3) | seg   70.5 /   61.0 | pearls own  16.8 /  27.5  enemy  12.8 /  17.2 | swing   +4.8 |  58%
+WeHaveQuizzes vs top3  (  4) r150-199 | made  13.5 ( 2.7 /  2.4,  50%) | suffered  20.0 ( 2.8 /  3.1) | seg   98.8 /   89.2 | pearls own  21.5 /  31.2  enemy  30.2 /  31.0 | swing  -18.0 |  40%
+WeHaveQuizzes vs top3  (  4) r200-299 | made  22.8 ( 2.8 /  3.3,  63%) | suffered  34.5 ( 2.9 /  3.0) | seg  167.8 /  174.8 | pearls own  37.2 /  58.0  enemy  46.5 /  61.2 | swing   -5.5 |  40%
+WeHaveQuizzes vs top3  (  4) r300-399 | made  14.5 ( 2.8 /  4.2,  69%) | suffered  13.8 ( 2.9 /  3.0) | seg   81.8 /  100.2 | pearls own  28.2 /  25.5  enemy  25.5 /  36.0 | swing  +10.8 |  51%
+WeHaveQuizzes vs top3  (  4) r400-499 | made   4.8 ( 2.7 /  4.0,  84%) | suffered   2.8 ( 3.9 /  8.8) | seg   37.0 /   29.8 | pearls own   7.2 /  12.2  enemy   6.2 /   7.8 | swing   -1.8 |  63%
+WeHaveQuizzes vs top3  (  4) rall     | made  80.0 ( 2.8 /  3.1,  59%) | suffered  90.8 ( 2.9 /  3.2) | seg  515.2 /  507.2 | pearls own 124.8 / 175.8  enemy 134.8 / 167.0 | swing   -9.2 |  47%
+
+forgot                 (161) r  0- 49 | made   1.8 ( 2.5 /  2.6,  75%) | suffered   2.4 ( 2.6 /  2.5) | seg   10.6 /   11.0 | pearls own   1.8 /   3.2  enemy   2.0 /   3.5 | swing   -0.1 |  43%
+forgot                 (161) r 50- 99 | made   7.7 ( 2.6 /  2.6,  69%) | suffered   9.0 ( 2.6 /  2.5) | seg   42.3 /   43.4 | pearls own  10.0 /  14.9  enemy   9.4 /  14.9 | swing   +1.7 |  46%
+forgot                 (161) r100-149 | made  11.3 ( 2.8 /  2.8,  62%) | suffered  11.6 ( 2.7 /  2.6) | seg   61.8 /   62.8 | pearls own  15.0 /  22.3  enemy  14.0 /  21.9 | swing   +2.6 |  49%
+forgot                 (161) r150-199 | made  12.7 ( 3.0 /  3.1,  60%) | suffered  11.3 ( 2.8 /  2.9) | seg   71.5 /   71.2 | pearls own  17.5 /  25.5  enemy  15.9 /  24.4 | swing   +2.4 |  53%
+forgot                 (161) r200-299 | made  24.6 ( 2.9 /  3.4,  65%) | suffered  23.6 ( 2.8 /  3.3) | seg  149.2 /  149.2 | pearls own  36.8 /  52.5  enemy  34.2 /  51.2 | swing   +3.9 |  51%
+forgot                 (161) r300-399 | made  15.6 ( 2.6 /  3.5,  74%) | suffered  20.6 ( 2.9 /  3.5) | seg  112.2 /  113.9 | pearls own  27.4 /  37.1  enemy  29.2 /  41.7 | swing   -4.8 |  43%
+forgot                 (161) r400-499 | made   5.8 ( 3.4 /  7.3,  76%) | suffered   7.4 ( 3.5 /  8.4) | seg   82.8 /   68.8 | pearls own  14.8 /  20.9  enemy  21.4 /  21.9 | swing  -21.6 |  44%
+forgot                 (161) rall     | made  79.6 ( 2.9 /  3.5,  67%) | suffered  86.1 ( 2.8 /  3.5) | seg  530.4 /  520.4 | pearls own 123.3 / 176.4  enemy 126.1 / 179.5 | swing  -15.8 |  48%
+
+SSS                    (139) r  0- 49 | made   2.2 ( 2.6 /  2.7,  77%) | suffered   1.7 ( 2.5 /  2.5) | seg   10.1 /   10.3 | pearls own   2.2 /   3.5  enemy   1.5 /   3.1 | swing   +1.3 |  56%
+SSS                    (139) r 50- 99 | made   7.7 ( 2.6 /  2.6,  71%) | suffered   5.9 ( 2.7 /  2.9) | seg   37.5 /   36.3 | pearls own   8.9 /  14.7  enemy   7.1 /  12.7 | swing   +2.6 |  56%
+SSS                    (139) r100-149 | made   8.7 ( 2.8 /  2.9,  69%) | suffered  10.2 ( 2.8 /  3.5) | seg   60.0 /   54.1 | pearls own  12.5 /  20.0  enemy  13.8 /  20.1 | swing   -7.4 |  46%
+SSS                    (139) r150-199 | made   9.3 ( 2.8 /  3.2,  70%) | suffered  11.3 ( 3.0 /  4.3) | seg   75.1 /   64.0 | pearls own  15.2 /  23.9  enemy  19.1 /  24.2 | swing  -15.3 |  45%
+SSS                    (139) r200-299 | made  18.2 ( 2.8 /  3.6,  72%) | suffered  22.0 ( 3.2 /  4.4) | seg  147.6 /  135.5 | pearls own  31.4 /  48.8  enemy  36.0 /  48.8 | swing  -16.8 |  45%
+SSS                    (139) r300-399 | made  16.7 ( 2.7 /  3.8,  74%) | suffered  17.2 ( 3.1 /  4.6) | seg  124.7 /  118.5 | pearls own  29.9 /  42.2  enemy  30.4 /  40.2 | swing   -4.6 |  49%
+SSS                    (139) r400-499 | made   6.7 ( 3.2 /  7.0,  74%) | suffered   7.9 ( 3.7 /  7.0) | seg   75.9 /   75.9 | pearls own  19.6 /  24.7  enemy  18.0 /  22.3 | swing   +4.0 |  46%
+SSS                    (139) rall     | made  69.5 ( 2.8 /  3.7,  72%) | suffered  76.2 ( 3.1 /  4.4) | seg  530.9 /  494.6 | pearls own 119.6 / 177.7  enemy 125.9 / 171.5 | swing  -36.2 |  48%
+
+Vibing++               (127) r  0- 49 | made   2.2 ( 2.6 /  2.6,  69%) | suffered   1.0 ( 2.4 /  2.4) | seg    8.2 /    8.1 | pearls own   1.8 /   3.1  enemy   1.1 /   2.0 | swing   +1.7 |  69%
+Vibing++               (127) r 50- 99 | made   7.9 ( 2.7 /  2.6,  66%) | suffered   5.1 ( 2.6 /  2.6) | seg   34.5 /   33.4 | pearls own   7.6 /  13.1  enemy   7.4 /  11.6 | swing   +0.7 |  61%
+Vibing++               (127) r100-149 | made  12.4 ( 2.8 /  2.8,  67%) | suffered   7.5 ( 2.7 /  2.9) | seg   56.4 /   54.6 | pearls own  13.6 /  22.4  enemy  11.8 /  18.1 | swing   +4.4 |  62%
+Vibing++               (127) r150-199 | made  12.8 ( 2.9 /  3.0,  67%) | suffered   9.5 ( 2.9 /  3.3) | seg   67.7 /   65.9 | pearls own  17.2 /  26.5  enemy  15.2 /  22.6 | swing   +4.1 |  57%
+Vibing++               (127) r200-299 | made  24.4 ( 3.1 /  3.3,  63%) | suffered  19.2 ( 2.9 /  3.8) | seg  147.7 /  136.5 | pearls own  34.3 /  56.1  enemy  33.6 /  46.4 | swing   -1.0 |  56%
+Vibing++               (127) r300-399 | made  21.5 ( 3.0 /  3.6,  64%) | suffered  16.3 ( 2.9 /  3.9) | seg  128.3 /  124.3 | pearls own  31.1 /  47.9  enemy  29.3 /  41.2 | swing   +4.4 |  57%
+Vibing++               (127) r400-499 | made   8.1 ( 3.6 /  7.0,  75%) | suffered   7.6 ( 3.5 /  7.3) | seg   85.1 /   83.7 | pearls own  20.3 /  25.9  enemy  21.7 /  25.3 | swing   -2.1 |  52%
+Vibing++               (127) rall     | made  89.4 ( 3.0 /  3.5,  66%) | suffered  66.2 ( 2.9 /  3.9) | seg  527.8 /  506.7 | pearls own 125.9 / 195.0  enemy 120.1 / 167.3 | swing  +12.3 |  57%
+

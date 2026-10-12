@@ -1,0 +1,14 @@
+=== 1045200 Devil 32x16 (512 cells) run dl-20261004 | B = test4 (2233) vs meow (1853) | winner B by wipe-out after 102 rounds
+queen #1 start (28, 5); enemy queen #0 start (3, 5); path between the starts 35
+ALIVE at the end, length 2
+splits (round, before -> keeps + child, child id): r0:4->2+2(#6)
+block | head | from start | len | ate nat/corpse | splits | rounds enemy in view | nearest enemy | cells used | own heads<=4 | units own/enemy
+r  0 | (28, 5)   |   0 |  4 | 0/0 | 1 |  0 | 9 |  4 | 1.4 | 3/3
+r 25 | (28, 5)   |   0 |  2 | 0/0 | 0 |  0 | 9 | 10 | 0.4 | 6/6
+r 50 | (30, 2)   |   5 |  2 | 0/0 | 0 |  0 | 9 |  4 | 0.1 | 15/4
+r 75 | (29, 2)   |   4 |  2 | 0/0 | 0 |  0 | 9 |  4 | 0.3 | 21/2
+r100 | (29, 1)   |   5 |  2 | 0/0 | 0 |  0 | 9 |  2 | 0.5 | 26/1
+moves from round 71:
+   71:N  72:E  73:S  74:W  75:N  76:E  77:S  78:W  79:N  80:E  81:S  82:W
+   83:N  84:E  85:S  86:W  87:N  88:E  89:S  90:W  91:N  92:E  93:S  94:W
+   95:N  96:E  97:S  98:W  99:N  100:E  101:S

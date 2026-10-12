@@ -1,0 +1,182 @@
+
+GAME 1496858 size 32 16 Q [0, 1]
+QTURN 61 L 5 head (23, 7) action 1 dirs None steps [] end [(23, 7), (22, 7), (22, 6)]
+. e e . . . *
+. . . . . . *
+. . q . e . .
+. . q Q0 E77 . .
+. . . . . . .
+E94 . . . e . *
+e . A60 A26 E67 . .
+neighbors [('N', 0, (23, 6), None), ('E', 1, (24, 7), 77), ('S', 1, (23, 8), None), ('W', 0, (22, 7), 0)]
+visibleHead 26 own True len 3 head (23, 10) visibleParts 1
+visibleHead 60 own True len 4 head (22, 10) visibleParts 1
+visibleHead 67 own False len 2 head (24, 10) visibleParts 2
+visibleHead 77 own False len 2 head (24, 7) visibleParts 2
+visibleHead 94 own False len 2 head (20, 9) visibleParts 2
+QTURN 62 L 3 head (23, 7) action 0 dirs [0] steps [(23, 6)] end [(23, 6), (23, 7), (22, 7)]
+. e e . . E69 *
+. . . . . . A48
+. . q . . . .
+. . q Q0 e E77 .
+. . . . . . .
+e E94 . . . . *
+. . A60 * e E67 .
+neighbors [('N', 0, (23, 6), None), ('E', 1, (24, 7), 77), ('S', 1, (23, 8), None), ('W', 0, (22, 7), 0)]
+visibleHead 48 own True len 4 head (26, 5) visibleParts 1
+visibleHead 60 own True len 2 head (22, 10) visibleParts 1
+visibleHead 67 own False len 2 head (25, 10) visibleParts 2
+visibleHead 69 own False len 2 head (25, 4) visibleParts 1
+visibleHead 77 own False len 2 head (25, 7) visibleParts 2
+visibleHead 94 own False len 2 head (21, 9) visibleParts 2
+QTURN 63 L 3 head (23, 6) action 0 dirs [3] steps [] end []
+. . * * . . .
+E99 e . . E69 e *
+. . . . . . A48
+. . . Q0 . E77 .
+. . q q . e .
+. E94 . . . . .
+. e . . . . *
+neighbors [('N', 1, (23, 5), None), ('E', 1, (24, 6), None), ('S', 0, (23, 7), 0), ('W', 2, (8, 11), 15)]
+visibleHead 48 own True len 2 head (26, 5) visibleParts 1
+visibleHead 69 own False len 2 head (24, 4) visibleParts 2
+visibleHead 77 own False len 2 head (25, 6) visibleParts 2
+visibleHead 94 own False len 2 head (21, 8) visibleParts 2
+visibleHead 99 own False len 2 head (20, 4) visibleParts 2
+death {'round': 63, 'event': 7185, 'id': 0, 'side': 0, 'reason': 2, 'actor': 0, 'body': [215, 247, 246], 'attacker_start': [215, 247, 246], 'directions': [3], 'steps': []}
+ATTACKER TURN 61 0 [(23, 7), (22, 7), (22, 6), (9, 11), (10, 11)] None [] []
+ATTACKER TURN 62 0 [(23, 7), (22, 7), (22, 6)] [0] [(23, 6)] []
+ATTACKER TURN 63 0 [(23, 6), (23, 7), (22, 7)] [3] [] []
+births relevant [{'round': 62, 'parent': 33, 'child': 99, 'body': [149, 150]}]
+last nonloss 62 turn permanent 63
+long late deaths [(338, 860, 10, 860, 2), (393, 950, 12, 950, 2), (449, 1013, 9, 1013, 0), (472, 1023, 9, 1023, 0), (486, 1040, 10, 1040, 4)]
+close count 0 examples [{'round': 63, 'event': 7185, 'distance': 99999, 'dragon': 15, 'head': 328, 'queen_head': 414}] [{'round': 63, 'event': 7185, 'distance': 99999, 'dragon': 15, 'head': 328, 'queen_head': 414}]
+SNAP 62 [{'alive': 17, 'total': 41, 'longest': 7, 'queen': 3, 'turns': 623, 'natural': 70, 'splits': 44, 'drop': 37}, {'alive': 23, 'total': 55, 'longest': 4, 'queen': 3, 'turns': 740, 'natural': 86, 'splits': 53, 'drop': 33}]
+SNAP 63 [{'alive': 16, 'total': 38, 'longest': 3, 'queen': 0, 'turns': 642, 'natural': 72, 'splits': 46, 'drop': 39}, {'alive': 25, 'total': 61, 'longest': 4, 'queen': 3, 'turns': 765, 'natural': 90, 'splits': 55, 'drop': 35}]
+SNAP 159 [{'alive': 24, 'total': 62, 'longest': 4, 'queen': 0, 'turns': 2701, 'natural': 221, 'splits': 172, 'drop': 209}, {'alive': 37, 'total': 87, 'longest': 4, 'queen': 3, 'turns': 3842, 'natural': 248, 'splits': 196, 'drop': 211}]
+SNAP 160 [{'alive': 22, 'total': 59, 'longest': 4, 'queen': 0, 'turns': 2726, 'natural': 222, 'splits': 173, 'drop': 213}, {'alive': 36, 'total': 87, 'longest': 4, 'queen': 3, 'turns': 3880, 'natural': 249, 'splits': 197, 'drop': 214}]
+SNAP 275 [{'alive': 26, 'total': 65, 'longest': 4, 'queen': 0, 'turns': 5831, 'natural': 406, 'splits': 343, 'drop': 464}, {'alive': 33, 'total': 79, 'longest': 3, 'queen': 3, 'turns': 7640, 'natural': 406, 'splits': 352, 'drop': 439}]
+SNAP 350 [{'alive': 13, 'total': 76, 'longest': 11, 'queen': 0, 'turns': 7553, 'natural': 524, 'splits': 431, 'drop': 635}, {'alive': 14, 'total': 51, 'longest': 19, 'queen': 19, 'turns': 9613, 'natural': 519, 'splits': 455, 'drop': 592}]
+SNAP 449 [{'alive': 8, 'total': 50, 'longest': 26, 'queen': 0, 'turns': 9221, 'natural': 633, 'splits': 530, 'drop': 785}, {'alive': 3, 'total': 67, 'longest': 42, 'queen': 42, 'turns': 10476, 'natural': 597, 'splits': 491, 'drop': 687}]
+SNAP 450 [{'alive': 7, 'total': 51, 'longest': 27, 'queen': 0, 'turns': 9229, 'natural': 634, 'splits': 530, 'drop': 787}, {'alive': 3, 'total': 69, 'longest': 43, 'queen': 43, 'turns': 10479, 'natural': 597, 'splits': 491, 'drop': 689}]
+SNAP 451 [{'alive': 7, 'total': 54, 'longest': 28, 'queen': 0, 'turns': 9236, 'natural': 635, 'splits': 530, 'drop': 789}, {'alive': 3, 'total': 69, 'longest': 43, 'queen': 43, 'turns': 10482, 'natural': 597, 'splits': 491, 'drop': 689}]
+SNAP 475 [{'alive': 8, 'total': 56, 'longest': 31, 'queen': 0, 'turns': 9431, 'natural': 643, 'splits': 537, 'drop': 803}, {'alive': 3, 'total': 61, 'longest': 50, 'queen': 50, 'turns': 10563, 'natural': 604, 'splits': 496, 'drop': 704}]
+SNAP 490 [{'alive': 8, 'total': 58, 'longest': 39, 'queen': 0, 'turns': 9564, 'natural': 655, 'splits': 544, 'drop': 816}, {'alive': 3, 'total': 65, 'longest': 51, 'queen': 51, 'turns': 10610, 'natural': 604, 'splits': 497, 'drop': 710}]
+SNAP 496 [{'alive': 7, 'total': 62, 'longest': 40, 'queen': 0, 'turns': 9610, 'natural': 658, 'splits': 544, 'drop': 820}, {'alive': 3, 'total': 65, 'longest': 51, 'queen': 51, 'turns': 10628, 'natural': 604, 'splits': 497, 'drop': 710}]
+SNAP 497 [{'alive': 6, 'total': 60, 'longest': 40, 'queen': 0, 'turns': 9617, 'natural': 658, 'splits': 544, 'drop': 820}, {'alive': 3, 'total': 65, 'longest': 51, 'queen': 51, 'turns': 10631, 'natural': 604, 'splits': 497, 'drop': 710}]
+SNAP 498 [{'alive': 6, 'total': 61, 'longest': 40, 'queen': 0, 'turns': 9623, 'natural': 658, 'splits': 544, 'drop': 821}, {'alive': 3, 'total': 65, 'longest': 51, 'queen': 51, 'turns': 10634, 'natural': 604, 'splits': 497, 'drop': 710}]
+SNAP 499 [{'alive': 5, 'total': 58, 'longest': 40, 'queen': 0, 'turns': 9629, 'natural': 658, 'splits': 544, 'drop': 821}, {'alive': 3, 'total': 65, 'longest': 51, 'queen': 51, 'turns': 10637, 'natural': 604, 'splits': 497, 'drop': 710}]
+
+GAME 1496859 size 63 27 Q [1, 0]
+QTURN 495 L 83 head (58, 8) action 0 dirs [2, 3] steps [(58, 9), (57, 9)] end [(57, 9), (58, 9), (58, 8), (58, 7), (59, 7), (59, 8), (59, 9), (59, 10), (60, 10), (60, 11), (61, 11), (62, 11), (62, 12), (62, 13), (62, 14), (62, 15), (61, 15), (61, 14), (61, 13), (60, 13), (59, 13), (59, 14), (59, 15), (58, 15), (58, 16), (59, 16), (59, 17), (59, 18), (58, 18), (58, 19), (58, 20), (59, 20), (59, 19), (60, 19), (60, 18), (61, 18), (62, 18), (62, 19), (62, 20), (61, 20), (61, 21), (60, 21), (60, 22), (60, 23), (60, 24), (59, 24), (59, 23), (59, 22), (58, 22), (57, 22), (56, 22), (56, 21), (55, 21), (54, 21), (53, 21), (52, 21), (51, 21), (50, 21), (50, 20), (50, 19), (51, 19), (51, 20), (52, 20), (52, 19), (53, 19), (54, 19), (54, 20), (55, 20), (55, 19), (55, 18), (55, 17), (56, 17), (56, 16), (55, 16), (55, 15), (55, 14), (55, 13), (56, 13), (56, 12), (55, 12), (55, 11), (54, 11), (54, 12), (54, 13)]
+. . a a . . .
+. . A1518 . . . .
+. . . q q . .
+. * . Q1 q . .
+. . * . q . .
+. . . . q q .
+q . . . . q q
+neighbors [('N', 0, (58, 7), 1), ('E', 0, (59, 8), 1), ('S', 0, (58, 9), None), ('W', 0, (57, 8), None)]
+visibleHead 1518 own True len 3 head (57, 6) visibleParts 3
+QTURN 496 L 84 head (57, 9) action 0 dirs [3, 0] steps [(56, 9), (56, 8)] end [(56, 8), (56, 9), (57, 9), (58, 9), (58, 8), (58, 7), (59, 7), (59, 8), (59, 9), (59, 10), (60, 10), (60, 11), (61, 11), (62, 11), (62, 12), (62, 13), (62, 14), (62, 15), (61, 15), (61, 14), (61, 13), (60, 13), (59, 13), (59, 14), (59, 15), (58, 15), (58, 16), (59, 16), (59, 17), (59, 18), (58, 18), (58, 19), (58, 20), (59, 20), (59, 19), (60, 19), (60, 18), (61, 18), (62, 18), (62, 19), (62, 20), (61, 20), (61, 21), (60, 21), (60, 22), (60, 23), (60, 24), (59, 24), (59, 23), (59, 22), (58, 22), (57, 22), (56, 22), (56, 21), (55, 21), (54, 21), (53, 21), (52, 21), (51, 21), (50, 21), (50, 20), (50, 19), (51, 19), (51, 20), (52, 20), (52, 19), (53, 19), (54, 19), (54, 20), (55, 20), (55, 19), (55, 18), (55, 17), (56, 17), (56, 16), (55, 16), (55, 15), (55, 14), (55, 13), (56, 13), (56, 12), (55, 12), (55, 11), (54, 11), (54, 12)]
+. . . * . . .
+. . . . q q .
+* . * . q q .
+. . . Q1 q q .
+* . . . . q q
+q q . . . . q
+q q q . . . .
+neighbors [('N', 0, (57, 8), None), ('E', 0, (58, 9), 1), ('S', 0, (57, 10), None), ('W', 0, (56, 9), None)]
+QTURN 497 L 85 head (56, 8) action 0 dirs [1, 0] steps [(57, 8), (57, 7)] end [(57, 7), (57, 8), (56, 8), (56, 9), (57, 9), (58, 9), (58, 8), (58, 7), (59, 7), (59, 8), (59, 9), (59, 10), (60, 10), (60, 11), (61, 11), (62, 11), (62, 12), (62, 13), (62, 14), (62, 15), (61, 15), (61, 14), (61, 13), (60, 13), (59, 13), (59, 14), (59, 15), (58, 15), (58, 16), (59, 16), (59, 17), (59, 18), (58, 18), (58, 19), (58, 20), (59, 20), (59, 19), (60, 19), (60, 18), (61, 18), (62, 18), (62, 19), (62, 20), (61, 20), (61, 21), (60, 21), (60, 22), (60, 23), (60, 24), (59, 24), (59, 23), (59, 22), (58, 22), (57, 22), (56, 22), (56, 21), (55, 21), (54, 21), (53, 21), (52, 21), (51, 21), (50, 21), (50, 20), (50, 19), (51, 19), (51, 20), (52, 20), (52, 19), (53, 19), (54, 19), (54, 20), (55, 20), (55, 19), (55, 18), (55, 17), (56, 17), (56, 16), (55, 16), (55, 15), (55, 14), (55, 13), (56, 13), (56, 12), (55, 12), (55, 11)]
+. . . . . * .
+. . . . * . .
+. . . . . q q
+. * . Q1 . q q
+. . . q q q q
+. * . . . . q
+. q q . . . .
+neighbors [('N', 0, (56, 7), None), ('E', 0, (57, 8), None), ('S', 0, (56, 9), 1), ('W', 0, (55, 8), None)]
+death {'round': 497, 'event': 279036, 'id': 1, 'side': 0, 'reason': 3, 'actor': 1794, 'body': [498, 561, 560, 623, 624, 625, 562, 499, 500, 563, 626, 689, 690, 753, 754, 755, 818, 881, 944, 1007, 1006, 943, 880, 879, 878, 941, 1004, 1003, 1066, 1067, 1130, 1193, 1192, 1255, 1318, 1319, 1256, 1257, 1194, 1195, 1196, 1259, 1322, 1321, 1384, 1383, 1446, 1509, 1572, 1571, 1508, 1445, 1444, 1443, 1442, 1379, 1378, 1377, 1376, 1375, 1374, 1373, 1310, 1247, 1248, 1311, 1312, 1249, 1250, 1251, 1314, 1315, 1252, 1189, 1126, 1127, 1064, 1063, 1000, 937, 874, 875, 812, 811, 748], 'attacker_start': [375, 312, 249, 186], 'directions': [3, 3, 2, 3, 2], 'steps': [374, 373, 436, 435]}
+ATTACKER TURN 495 1794 [(60, 3), (60, 2), (59, 2), (58, 2)] [2] [(60, 4)] []
+ATTACKER TURN 496 1794 [(60, 4), (60, 3), (60, 2), (59, 2)] [2] [(60, 5)] []
+ATTACKER TURN 497 1794 [(60, 5), (60, 4), (60, 3), (60, 2)] [3, 3, 2, 3, 2] [(59, 5), (58, 5), (58, 6), (57, 6)] [[373, 'drop'], [435, 'drop']]
+births relevant [{'round': 456, 'parent': 1777, 'child': 1794, 'body': [105, 42]}]
+last nonloss 496 turn permanent 497
+long late deaths [(310, 814, 9, 1091, 3), (338, 424, 15, 1139, 3), (353, 1286, 9, 1286, 4), (392, 1254, 9, 1254, 1), (401, 1239, 8, 1239, 4), (454, 1630, 10, 1630, 4), (473, 1279, 10, 1279, 4), (495, 1870, 13, 1789, 3), (497, 1, 85, 1794, 3), (499, 1905, 12, 1905, 1)]
+close count 0 examples [] []
+SNAP 62 [{'alive': 54, 'total': 137, 'longest': 6, 'queen': 4, 'turns': 2124, 'splits': 120, 'natural': 179, 'drop': 69}, {'alive': 44, 'total': 111, 'longest': 5, 'queen': 5, 'turns': 2135, 'splits': 138, 'natural': 183, 'drop': 110}]
+SNAP 63 [{'alive': 51, 'total': 133, 'longest': 7, 'queen': 4, 'turns': 2177, 'splits': 120, 'natural': 180, 'drop': 70}, {'alive': 43, 'total': 109, 'longest': 5, 'queen': 5, 'turns': 2181, 'splits': 140, 'natural': 186, 'drop': 114}]
+SNAP 159 [{'alive': 61, 'total': 209, 'longest': 19, 'queen': 4, 'turns': 8080, 'splits': 239, 'natural': 432, 'drop': 228}, {'alive': 63, 'total': 161, 'longest': 6, 'queen': 6, 'turns': 7774, 'splits': 406, 'natural': 506, 'drop': 464}]
+SNAP 160 [{'alive': 60, 'total': 211, 'longest': 19, 'queen': 4, 'turns': 8141, 'splits': 239, 'natural': 433, 'drop': 231}, {'alive': 63, 'total': 159, 'longest': 6, 'queen': 6, 'turns': 7839, 'splits': 408, 'natural': 509, 'drop': 465}]
+SNAP 275 [{'alive': 62, 'total': 231, 'longest': 12, 'queen': 3, 'turns': 15270, 'splits': 313, 'natural': 623, 'drop': 372}, {'alive': 58, 'total': 185, 'longest': 26, 'queen': 0, 'turns': 15189, 'splits': 674, 'natural': 893, 'drop': 920}]
+SNAP 350 [{'alive': 47, 'total': 211, 'longest': 30, 'queen': 26, 'turns': 19622, 'splits': 387, 'natural': 719, 'drop': 529}, {'alive': 38, 'total': 171, 'longest': 56, 'queen': 0, 'turns': 18737, 'splits': 912, 'natural': 1170, 'drop': 1276}]
+SNAP 449 [{'alive': 21, 'total': 169, 'longest': 66, 'queen': 66, 'turns': 23213, 'splits': 475, 'natural': 817, 'drop': 688}, {'alive': 62, 'total': 295, 'longest': 71, 'queen': 0, 'turns': 24153, 'splits': 1284, 'natural': 1635, 'drop': 1722}]
+SNAP 450 [{'alive': 22, 'total': 171, 'longest': 67, 'queen': 67, 'turns': 23235, 'splits': 476, 'natural': 818, 'drop': 689}, {'alive': 60, 'total': 288, 'longest': 71, 'queen': 0, 'turns': 24218, 'splits': 1287, 'natural': 1637, 'drop': 1727}]
+SNAP 451 [{'alive': 21, 'total': 172, 'longest': 68, 'queen': 68, 'turns': 23258, 'splits': 477, 'natural': 819, 'drop': 694}, {'alive': 58, 'total': 257, 'longest': 71, 'queen': 0, 'turns': 24278, 'splits': 1288, 'natural': 1639, 'drop': 1731}]
+SNAP 475 [{'alive': 16, 'total': 178, 'longest': 76, 'queen': 76, 'turns': 23684, 'splits': 491, 'natural': 841, 'drop': 737}, {'alive': 61, 'total': 295, 'longest': 69, 'queen': 0, 'turns': 25692, 'splits': 1342, 'natural': 1730, 'drop': 1804}]
+SNAP 490 [{'alive': 10, 'total': 170, 'longest': 82, 'queen': 82, 'turns': 23868, 'splits': 500, 'natural': 853, 'drop': 754}, {'alive': 55, 'total': 296, 'longest': 76, 'queen': 0, 'turns': 26546, 'splits': 1370, 'natural': 1778, 'drop': 1861}]
+SNAP 496 [{'alive': 8, 'total': 158, 'longest': 85, 'queen': 85, 'turns': 23929, 'splits': 502, 'natural': 857, 'drop': 759}, {'alive': 59, 'total': 309, 'longest': 76, 'queen': 0, 'turns': 26911, 'splits': 1388, 'natural': 1808, 'drop': 1883}]
+SNAP 497 [{'alive': 6, 'total': 69, 'longest': 21, 'queen': 0, 'turns': 23938, 'splits': 503, 'natural': 858, 'drop': 759}, {'alive': 59, 'total': 299, 'longest': 77, 'queen': 0, 'turns': 26974, 'splits': 1392, 'natural': 1811, 'drop': 1887}]
+SNAP 498 [{'alive': 6, 'total': 69, 'longest': 21, 'queen': 0, 'turns': 23944, 'splits': 503, 'natural': 858, 'drop': 759}, {'alive': 56, 'total': 301, 'longest': 77, 'queen': 0, 'turns': 27033, 'splits': 1392, 'natural': 1816, 'drop': 1890}]
+SNAP 499 [{'alive': 5, 'total': 58, 'longest': 21, 'queen': 0, 'turns': 23950, 'splits': 503, 'natural': 858, 'drop': 760}, {'alive': 57, 'total': 307, 'longest': 77, 'queen': 0, 'turns': 27091, 'splits': 1394, 'natural': 1820, 'drop': 1894}]
+
+GAME 1497630 size 64 64 Q [1, 0]
+QTURN 158 L 2 head (27, 52) action 0 dirs [1] steps [(28, 52)] end [(28, 52), (27, 52)]
+. . . . . . .
+. . . . . . .
+. e E149 . . . .
+. . q Q1 . . .
+. . . . . . e
+. . e E202 . . .
+. . . . . . .
+neighbors [('N', 0, (27, 51), None), ('E', 0, (28, 52), None), ('S', 0, (27, 53), None), ('W', 0, (26, 52), 1)]
+visibleHead 149 own False len 2 head (26, 51) visibleParts 2
+visibleHead 202 own False len 2 head (27, 54) visibleParts 2
+QTURN 159 L 2 head (28, 52) action 0 dirs [1] steps [(29, 52)] end [(29, 52), (28, 52)]
+. . . . . . .
+. . . . . . .
+. e E149 . . . .
+. . q Q1 . . E174
+. . . . . . e
+. . e E202 . . .
+. . . . . . .
+neighbors [('N', 0, (28, 51), None), ('E', 0, (29, 52), None), ('S', 0, (28, 53), None), ('W', 0, (27, 52), 1)]
+visibleHead 149 own False len 2 head (27, 51) visibleParts 2
+visibleHead 174 own False len 2 head (31, 52) visibleParts 2
+visibleHead 202 own False len 2 head (28, 54) visibleParts 2
+QTURN 160 L 2 head (29, 52) action 0 dirs [2] steps [(29, 53)] end [(29, 53), (29, 52)]
+A216 . . . . . .
+. . . . . . .
+. e E149 . . . .
+. . q Q1 E174 e .
+. . . . . . .
+. . e E202 . . .
+. . . . . . .
+neighbors [('N', 0, (29, 51), None), ('E', 0, (30, 52), 174), ('S', 0, (29, 53), None), ('W', 0, (28, 52), 1)]
+visibleHead 149 own False len 2 head (28, 51) visibleParts 2
+visibleHead 174 own False len 2 head (30, 52) visibleParts 2
+visibleHead 202 own False len 2 head (29, 54) visibleParts 2
+visibleHead 216 own True len 3 head (26, 49) visibleParts 1
+death {'round': 160, 'event': 56608, 'id': 1, 'side': 0, 'reason': 3, 'actor': 202, 'body': [3421, 3357], 'attacker_start': [3485, 3484], 'directions': [0], 'steps': []}
+ATTACKER TURN 158 202 [(27, 54), (26, 54)] [1] [(28, 54)] []
+ATTACKER TURN 159 202 [(28, 54), (27, 54)] [1] [(29, 54)] []
+ATTACKER TURN 160 202 [(29, 54), (28, 54)] [0] [] []
+births relevant [{'round': 148, 'parent': 175, 'child': 202, 'body': [3607, 3671]}]
+last nonloss 122 turn permanent 123
+long late deaths [(450, 786, 26, 786, 3)]
+close count 139 examples [{'round': 160, 'event': 56608, 'distance': 5, 'dragon': 170, 'head': 1812, 'queen_head': 1817}, {'round': 161, 'event': 57044, 'distance': 5, 'dragon': 170, 'head': 1813, 'queen_head': 1753}, {'round': 162, 'event': 57587, 'distance': 5, 'dragon': 170, 'head': 1814, 'queen_head': 1754}, {'round': 163, 'event': 57823, 'distance': 4, 'dragon': 170, 'head': 1814, 'queen_head': 1818}, {'round': 163, 'event': 58131, 'distance': 3, 'dragon': 170, 'head': 1815, 'queen_head': 1818}] [{'round': 448, 'event': 233740, 'distance': 3, 'dragon': 680, 'head': 1683, 'queen_head': 1491}, {'round': 449, 'event': 234454, 'distance': 3, 'dragon': 656, 'head': 1236, 'queen_head': 1428}, {'round': 449, 'event': 234455, 'distance': 2, 'dragon': 758, 'head': 1431, 'queen_head': 1429}, {'round': 450, 'event': 235145, 'distance': 2, 'dragon': 758, 'head': 1367, 'queen_head': 1430}, {'round': 450, 'event': 235809, 'distance': 1, 'dragon': 786, 'head': 1495, 'queen_head': 1494}]
+SNAP 62 [{'alive': 21, 'total': 52, 'longest': 4, 'queen': 4, 'turns': 923, 'splits': 12, 'natural': 24, 'drop': 2}, {'alive': 28, 'total': 63, 'longest': 3, 'queen': 2, 'turns': 1019, 'splits': 30, 'natural': 57, 'drop': 7}]
+SNAP 63 [{'alive': 21, 'total': 54, 'longest': 4, 'queen': 4, 'turns': 944, 'splits': 12, 'natural': 26, 'drop': 2}, {'alive': 28, 'total': 68, 'longest': 4, 'queen': 2, 'turns': 1047, 'splits': 30, 'natural': 61, 'drop': 8}]
+SNAP 159 [{'alive': 36, 'total': 89, 'longest': 4, 'queen': 2, 'turns': 3889, 'splits': 67, 'natural': 93, 'drop': 67}, {'alive': 61, 'total': 201, 'longest': 15, 'queen': 2, 'turns': 6268, 'splits': 139, 'natural': 295, 'drop': 107}]
+SNAP 160 [{'alive': 36, 'total': 88, 'longest': 4, 'queen': 0, 'turns': 3927, 'splits': 69, 'natural': 95, 'drop': 68}, {'alive': 60, 'total': 202, 'longest': 15, 'queen': 2, 'turns': 6329, 'splits': 139, 'natural': 296, 'drop': 109}]
+SNAP 275 [{'alive': 37, 'total': 98, 'longest': 7, 'queen': 0, 'turns': 8181, 'splits': 192, 'natural': 203, 'drop': 265}, {'alive': 55, 'total': 236, 'longest': 26, 'queen': 2, 'turns': 13306, 'splits': 221, 'natural': 485, 'drop': 236}]
+SNAP 350 [{'alive': 49, 'total': 120, 'longest': 3, 'queen': 0, 'turns': 11948, 'splits': 280, 'natural': 278, 'drop': 400}, {'alive': 59, 'total': 219, 'longest': 21, 'queen': 2, 'turns': 17795, 'splits': 309, 'natural': 636, 'drop': 357}]
+SNAP 449 [{'alive': 53, 'total': 189, 'longest': 26, 'queen': 0, 'turns': 17456, 'splits': 352, 'natural': 380, 'drop': 546}, {'alive': 58, 'total': 212, 'longest': 34, 'queen': 6, 'turns': 23230, 'splits': 417, 'natural': 812, 'drop': 512}]
+SNAP 450 [{'alive': 51, 'total': 161, 'longest': 15, 'queen': 0, 'turns': 17509, 'splits': 352, 'natural': 380, 'drop': 547}, {'alive': 58, 'total': 208, 'longest': 35, 'queen': 0, 'turns': 23289, 'splits': 418, 'natural': 814, 'drop': 512}]
+SNAP 451 [{'alive': 51, 'total': 163, 'longest': 15, 'queen': 0, 'turns': 17560, 'splits': 352, 'natural': 381, 'drop': 548}, {'alive': 58, 'total': 211, 'longest': 35, 'queen': 0, 'turns': 23347, 'splits': 418, 'natural': 815, 'drop': 514}]
+SNAP 475 [{'alive': 45, 'total': 167, 'longest': 17, 'queen': 0, 'turns': 18723, 'splits': 359, 'natural': 396, 'drop': 570}, {'alive': 62, 'total': 235, 'longest': 38, 'queen': 0, 'turns': 24809, 'splits': 441, 'natural': 847, 'drop': 551}]
+SNAP 490 [{'alive': 42, 'total': 176, 'longest': 26, 'queen': 0, 'turns': 19363, 'splits': 364, 'natural': 402, 'drop': 594}, {'alive': 61, 'total': 222, 'longest': 41, 'queen': 0, 'turns': 25738, 'splits': 449, 'natural': 869, 'drop': 566}]
+SNAP 496 [{'alive': 42, 'total': 183, 'longest': 30, 'queen': 0, 'turns': 19617, 'splits': 365, 'natural': 404, 'drop': 601}, {'alive': 62, 'total': 228, 'longest': 41, 'queen': 0, 'turns': 26111, 'splits': 452, 'natural': 877, 'drop': 568}]
+SNAP 497 [{'alive': 41, 'total': 183, 'longest': 30, 'queen': 0, 'turns': 19658, 'splits': 365, 'natural': 407, 'drop': 601}, {'alive': 62, 'total': 230, 'longest': 41, 'queen': 0, 'turns': 26174, 'splits': 453, 'natural': 880, 'drop': 569}]
+SNAP 498 [{'alive': 40, 'total': 181, 'longest': 30, 'queen': 0, 'turns': 19699, 'splits': 365, 'natural': 407, 'drop': 601}, {'alive': 62, 'total': 233, 'longest': 41, 'queen': 0, 'turns': 26236, 'splits': 453, 'natural': 881, 'drop': 571}]
+SNAP 499 [{'alive': 40, 'total': 181, 'longest': 30, 'queen': 0, 'turns': 19739, 'splits': 365, 'natural': 407, 'drop': 601}, {'alive': 62, 'total': 236, 'longest': 41, 'queen': 0, 'turns': 26298, 'splits': 453, 'natural': 883, 'drop': 572}]

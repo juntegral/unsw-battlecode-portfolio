@@ -1,0 +1,77 @@
+{
+  "games": {
+    "off": 44,
+    "b": 44,
+    "c": 44,
+    "on": 44,
+    "id-off": 6,
+    "id-base": 6,
+    "self": 8
+  },
+  "missing": [],
+  "historyErrors": [],
+  "identity": [
+    {
+      "key": "proxy4_king:trophy:A:1",
+      "same": true
+    },
+    {
+      "key": "proxy4_king:trophy:B:1",
+      "same": true
+    },
+    {
+      "key": "proxy4_king:around_unsw:A:1",
+      "same": true
+    },
+    {
+      "key": "proxy4_king:around_unsw:B:1",
+      "same": true
+    },
+    {
+      "key": "proxy4_king:gen_M_07:A:1",
+      "same": true
+    },
+    {
+      "key": "proxy4_king:gen_M_07:B:1",
+      "same": true
+    }
+  ],
+  "safety": {}
+}
+off errors 0 checks {'sim': 0, 'splits': 0, 'drops': 0, 'eatTC': 0, 'ledger': 0, 'final': 0, 'lineage': 0, 'natBal': 0, 'dropBal': 0, 'unknownDeath': 0} CPU 32.3 cpuMissing 0 violations 0 traps []
+b errors 0 checks {'sim': 0, 'splits': 0, 'drops': 0, 'eatTC': 0, 'ledger': 0, 'final': 0, 'lineage': 0, 'natBal': 0, 'dropBal': 0, 'unknownDeath': 0} CPU 32.6 cpuMissing 0 violations 0 traps []
+c errors 0 checks {'sim': 0, 'splits': 0, 'drops': 0, 'eatTC': 0, 'ledger': 0, 'final': 0, 'lineage': 0, 'natBal': 0, 'dropBal': 0, 'unknownDeath': 0} CPU 32.6 cpuMissing 0 violations 0 traps []
+c primary {"games": 36, "belief": {"N": 225202, "TP": 12067, "FP": 5004, "FN": 117515, "TN": 90616, "accuracy": 0.455959538547615, "precision": 0.7068713022084236, "recall": 0.09312250158200985}, "rays": {"N": 522803, "TP": 5358, "FP": 949, "FN": 261180, "TN": 255316, "accuracy": 0.4986084624610035, "precision": 0.8495322657364833, "recall": 0.020102199311167638}, "senderTurns": {"N": 222710, "TP": 3813, "FP": 850, "FN": 124971, "TN": 93076, "accuracy": 0.4350455749629563, "precision": 0.8177139180784903, "recall": 0.029607715244129706}, "relay": 191140, "directTrue": 5361, "visible": 997, "receivedOnly": 11710, "propagation": {"N": 1490, "set": 1490, "delayMax": 1}, "feeds": 750, "queenFeeds": 14} staleFeeds 1
+c flip {"games": 8, "belief": {"N": 61885, "TP": 2320, "FP": 264, "FN": 40642, "TN": 18659, "accuracy": 0.3389997576149309, "precision": 0.8978328173374613, "recall": 0.05400121037195661}, "rays": {"N": 140729, "TP": 625, "FP": 32, "FN": 90791, "TN": 49281, "accuracy": 0.3546248463358654, "precision": 0.9512937595129376, "recall": 0.006836877570665967}, "senderTurns": {"N": 61313, "TP": 445, "FP": 32, "FN": 42113, "TN": 18723, "accuracy": 0.31262538124052, "precision": 0.9329140461215933, "recall": 0.01045631843601673}, "relay": 47780, "directTrue": 527, "visible": 60, "receivedOnly": 2057, "propagation": {"N": 144, "set": 144, "delayMax": 1}, "feeds": 197, "queenFeeds": 3} staleFeeds 1
+on errors 0 checks {'sim': 0, 'splits': 0, 'drops': 0, 'eatTC': 0, 'ledger': 0, 'final': 0, 'lineage': 0, 'natBal': 0, 'dropBal': 0, 'unknownDeath': 0} CPU 32.7 cpuMissing 0 violations 0 traps [{'key': 'bot-hunter:stronghold:B:1', 'r': 496, 'cause': 'trap', 'block': 'a', 'indicator': {'r': 496, 'text': 'no-exit qc0,-1000,135,0 E=F'}}]
+on primary {"games": 36, "belief": {"N": 223455, "TP": 12952, "FP": 4657, "FN": 107819, "TN": 98027, "accuracy": 0.49665033228166744, "precision": 0.7355329660968822, "recall": 0.1072442887779351}, "rays": {"N": 516602, "TP": 5376, "FP": 874, "FN": 227710, "TN": 282642, "accuracy": 0.5575239739683547, "precision": 0.86016, "recall": 0.023064448315214127}, "senderTurns": {"N": 221030, "TP": 3816, "FP": 832, "FN": 116296, "TN": 100086, "accuracy": 0.47008098448174457, "precision": 0.8209982788296041, "recall": 0.031770347675502866}, "relay": 189308, "directTrue": 5415, "visible": 1058, "receivedOnly": 12194, "propagation": {"N": 1583, "set": 1583, "delayMax": 1}, "feeds": 750, "queenFeeds": 13} staleFeeds 1
+on flip {"games": 8, "belief": {"N": 64690, "TP": 2403, "FP": 461, "FN": 40224, "TN": 21602, "accuracy": 0.3710774462822693, "precision": 0.839036312849162, "recall": 0.05637272151453304}, "rays": {"N": 151931, "TP": 1039, "FP": 68, "FN": 89296, "TN": 61528, "accuracy": 0.4118119409468772, "precision": 0.938572719060524, "recall": 0.011501632811202745}, "senderTurns": {"N": 64115, "TP": 526, "FP": 41, "FN": 41728, "TN": 21820, "accuracy": 0.34852998518287454, "precision": 0.927689594356261, "recall": 0.012448525583376722}, "relay": 52668, "directTrue": 639, "visible": 61, "receivedOnly": 2225, "propagation": {"N": 188, "set": 188, "delayMax": 1}, "feeds": 188, "queenFeeds": 3} staleFeeds 2
+id-off errors 0 checks {'sim': 0, 'splits': 0, 'drops': 0, 'eatTC': 0, 'ledger': 0, 'final': 0, 'lineage': 0, 'natBal': 0, 'dropBal': 0, 'unknownDeath': 0} CPU 31.0 cpuMissing 0 violations 0 traps []
+id-base errors 0 checks {'sim': 0, 'splits': 0, 'drops': 0, 'eatTC': 0, 'ledger': 0, 'final': 0, 'lineage': 0, 'natBal': 0, 'dropBal': 0, 'unknownDeath': 0} CPU 31.0 cpuMissing 0 violations 0 traps []
+self errors 0 checks {'sim': 0, 'splits': 0, 'drops': 0, 'eatTC': 0, 'ledger': 0, 'final': 0, 'lineage': 0, 'natBal': 0, 'dropBal': 0, 'unknownDeath': 0} CPU 32.7 cpuMissing 0 violations 0 traps []
+self primary {"games": 8, "belief": {"N": 80045, "TP": 8591, "FP": 1320, "FN": 40514, "TN": 29620, "accuracy": 0.4773689799487788, "precision": 0.8668146503884573, "recall": 0.17495163425313104}, "rays": {"N": 193001, "TP": 3337, "FP": 231, "FN": 93243, "TN": 96190, "accuracy": 0.5156812659001767, "precision": 0.9352578475336323, "recall": 0.034551667011803684}, "senderTurns": {"N": 78950, "TP": 1957, "FP": 93, "FN": 46821, "TN": 30079, "accuracy": 0.4057758074730842, "precision": 0.9546341463414634, "recall": 0.04012054614785354}, "relay": 71168, "directTrue": 2438, "visible": 467, "receivedOnly": 7473, "propagation": {"N": 1347, "set": 1347, "delayMax": 1}, "feeds": 310, "queenFeeds": 12} staleFeeds 0
+self flip {"games": 0, "belief": {"N": 0, "TP": 0, "FP": 0, "FN": 0, "TN": 0, "accuracy": null, "precision": null, "recall": null}, "rays": {"N": 0, "TP": 0, "FP": 0, "FN": 0, "TN": 0, "accuracy": null, "precision": null, "recall": null}, "senderTurns": {"N": 0, "TP": 0, "FP": 0, "FN": 0, "TN": 0, "accuracy": null, "precision": null, "recall": null}, "relay": 0, "directTrue": 0, "visible": 0, "receivedOnly": 0, "propagation": {"N": 0, "set": 0, "delayMax": null}, "feeds": 0, "queenFeeds": 0} staleFeeds 0
+primary/off/b {"N": 36, "commonN": 12, "oneSidedAlive": [{"key": "bot-hunter:australia:B:1", "off": {"r": 256, "cause": "trap", "block": "a"}, "on": null}, {"key": "proxy4_king:gen_L_03:A:1", "off": null, "on": {"r": 242, "cause": "rammed", "block": "-"}}, {"key": "bot-hunter:gen_L_03:A:1", "off": null, "on": {"r": 371, "cause": "sac", "block": "-"}}, {"key": "bot-hunter:gen_L_03:B:1", "off": null, "on": {"r": 414, "cause": "rammed", "block": "-"}}], "crowd": {"340": {"off": {"N": 117, "median": 0, "ge2": 0, "share": 0.0}, "on": {"N": 117, "median": 0, "ge2": 0, "share": 0.0}, "matchedN": 102, "increased": 4, "decreased": 3, "increaseKeys": ["bot-hunter:stronghold:B:1", "proxy4_king:big_empty:B:1", "proxy4_king:stronghold:A:1", "proxy4_king:trauma:B:1"]}, "430": {"off": {"N": 78, "median": 0.0, "ge2": 0, "share": 0.0}, "on": {"N": 66, "median": 0.0, "ge2": 0, "share": 0.0}, "matchedN": 60, "increased": 1, "decreased": 0, "increaseKeys": ["bot-hunter:stronghold:A:1"]}}, "newTraps": []}
+350 {'N': 10, 'null': 2, 'medianDelta': 1.0, 'positive': 6, 'zero': 2, 'negative': 2}
+400 {'N': 10, 'null': 2, 'medianDelta': 0.0, 'positive': 4, 'zero': 2, 'negative': 4}
+430 {'N': 10, 'null': 2, 'medianDelta': 2.5, 'positive': 6, 'zero': 2, 'negative': 2}
+primary/off/c {"N": 36, "commonN": 14, "oneSidedAlive": [{"key": "bot-hunter:gen_L_03:A:1", "off": null, "on": {"r": 354, "cause": "rammed", "block": "-"}}], "crowd": {"340": {"off": {"N": 117, "median": 0, "ge2": 0, "share": 0.0}, "on": {"N": 110, "median": 0.0, "ge2": 1, "share": 0.00909090909090909}, "matchedN": 110, "increased": 8, "decreased": 3, "increaseKeys": ["bot-hunter:australia:A:1", "bot-hunter:gen_L_03:B:1", "bot-hunter:stronghold:A:1", "bot-hunter:stronghold:B:1", "proxy4_king:big_empty:B:1"]}, "430": {"off": {"N": 78, "median": 0.0, "ge2": 0, "share": 0.0}, "on": {"N": 71, "median": 0, "ge2": 0, "share": 0.0}, "matchedN": 71, "increased": 5, "decreased": 0, "increaseKeys": ["bot-hunter:stronghold:A:1", "proxy4_king:australia:B:1", "proxy4_king:big_empty:B:1"]}}, "newTraps": []}
+350 {'N': 12, 'null': 2, 'medianDelta': 0.0, 'positive': 5, 'zero': 5, 'negative': 2}
+400 {'N': 12, 'null': 2, 'medianDelta': 3.0, 'positive': 8, 'zero': 1, 'negative': 3}
+430 {'N': 12, 'null': 2, 'medianDelta': 7.0, 'positive': 9, 'zero': 1, 'negative': 2}
+primary/b/on {"N": 36, "commonN": 12, "oneSidedAlive": [{"key": "bot-hunter:trauma:B:1", "off": null, "on": {"r": 338, "cause": "allyHead", "block": "-"}}, {"key": "bot-hunter:gen_L_03:B:1", "off": {"r": 414, "cause": "rammed", "block": "-"}, "on": null}], "crowd": {"340": {"off": {"N": 117, "median": 0, "ge2": 0, "share": 0.0}, "on": {"N": 105, "median": 0, "ge2": 0, "share": 0.0}, "matchedN": 104, "increased": 10, "decreased": 3, "increaseKeys": ["bot-hunter:australia:B:1", "proxy4_king:australia:B:1", "proxy4_king:stronghold:A:1", "proxy4_king:stronghold:B:1", "proxy4_king:trauma:B:1"]}, "430": {"off": {"N": 66, "median": 0.0, "ge2": 0, "share": 0.0}, "on": {"N": 65, "median": 0, "ge2": 0, "share": 0.0}, "matchedN": 59, "increased": 3, "decreased": 1, "increaseKeys": ["proxy4_king:stronghold:B:1", "proxy4_king:trauma:B:1"]}}, "newTraps": [{"key": "bot-hunter:stronghold:B:1", "r": 496, "cause": "trap", "block": "a", "indicator": {"r": 496, "text": "no-exit qc0,-1000,135,0 E=F"}}]}
+350 {'N': 10, 'null': 2, 'medianDelta': 0.0, 'positive': 4, 'zero': 3, 'negative': 3}
+400 {'N': 10, 'null': 2, 'medianDelta': 4.0, 'positive': 7, 'zero': 2, 'negative': 1}
+430 {'N': 10, 'null': 2, 'medianDelta': 1.5, 'positive': 5, 'zero': 2, 'negative': 3}
+flip/off/b {"N": 8, "commonN": 6, "oneSidedAlive": [], "crowd": {"340": {"off": {"N": 54, "median": 0.0, "ge2": 0, "share": 0.0}, "on": {"N": 54, "median": 0.0, "ge2": 0, "share": 0.0}, "matchedN": 54, "increased": 1, "decreased": 0, "increaseKeys": ["proxy4_king:trauma_flip:A:1"]}, "430": {"off": {"N": 36, "median": 0.0, "ge2": 0, "share": 0.0}, "on": {"N": 36, "median": 0.0, "ge2": 0, "share": 0.0}, "matchedN": 36, "increased": 0, "decreased": 0, "increaseKeys": []}}, "newTraps": []}
+350 {'N': 6, 'null': 0, 'medianDelta': -1.5, 'positive': 0, 'zero': 1, 'negative': 5}
+400 {'N': 6, 'null': 0, 'medianDelta': -0.5, 'positive': 2, 'zero': 1, 'negative': 3}
+430 {'N': 6, 'null': 0, 'medianDelta': 0.0, 'positive': 3, 'zero': 0, 'negative': 3}
+flip/off/c {"N": 8, "commonN": 6, "oneSidedAlive": [], "crowd": {"340": {"off": {"N": 54, "median": 0.0, "ge2": 0, "share": 0.0}, "on": {"N": 54, "median": 0.0, "ge2": 0, "share": 0.0}, "matchedN": 54, "increased": 1, "decreased": 0, "increaseKeys": ["bot-hunter:australia_flip:B:1"]}, "430": {"off": {"N": 36, "median": 0.0, "ge2": 0, "share": 0.0}, "on": {"N": 36, "median": 0.0, "ge2": 1, "share": 0.027777777777777776}, "matchedN": 36, "increased": 4, "decreased": 0, "increaseKeys": ["bot-hunter:australia_flip:A:1", "bot-hunter:australia_flip:B:1", "proxy4_king:australia_flip:A:1"]}}, "newTraps": []}
+350 {'N': 6, 'null': 0, 'medianDelta': 0.0, 'positive': 1, 'zero': 4, 'negative': 1}
+400 {'N': 6, 'null': 0, 'medianDelta': 2.0, 'positive': 6, 'zero': 0, 'negative': 0}
+430 {'N': 6, 'null': 0, 'medianDelta': 3.5, 'positive': 4, 'zero': 1, 'negative': 1}
+flip/b/on {"N": 8, "commonN": 6, "oneSidedAlive": [], "crowd": {"340": {"off": {"N": 54, "median": 0.0, "ge2": 0, "share": 0.0}, "on": {"N": 54, "median": 0.0, "ge2": 0, "share": 0.0}, "matchedN": 54, "increased": 4, "decreased": 1, "increaseKeys": ["bot-hunter:australia_flip:B:1", "proxy4_king:australia_flip:A:1", "proxy4_king:trauma_flip:A:1"]}, "430": {"off": {"N": 36, "median": 0.0, "ge2": 0, "share": 0.0}, "on": {"N": 35, "median": 0, "ge2": 0, "share": 0.0}, "matchedN": 35, "increased": 3, "decreased": 0, "increaseKeys": ["bot-hunter:trauma_flip:A:1", "proxy4_king:trauma_flip:A:1"]}}, "newTraps": []}
+350 {'N': 6, 'null': 0, 'medianDelta': 0.5, 'positive': 3, 'zero': 3, 'negative': 0}
+400 {'N': 6, 'null': 0, 'medianDelta': 0.0, 'positive': 2, 'zero': 2, 'negative': 2}
+430 {'N': 6, 'null': 0, 'medianDelta': 0.0, 'positive': 2, 'zero': 2, 'negative': 2}

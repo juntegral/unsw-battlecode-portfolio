@@ -1,0 +1,21 @@
+=== a. enemy queen alive at the end / own queen alive at the end, by size
+Vibing++  small: enemy 0.29 own 0.22 (n170) | medium: enemy 0.25 own 0.45 (n106) | large: enemy 0.16 own 0.20 (n103) | all: enemy 0.24 own 0.28 (n379)
+SSS       small: enemy 0.17 own 0.44 (n156) | medium: enemy 0.33 own 0.55 (n108) | large: enemy 0.06 own 0.24 (n115) | all: enemy 0.18 own 0.41 (n379)
+forgot    small: enemy 0.24 own 0.41 (n175) | medium: enemy 0.44 own 0.37 (n120) | large: enemy 0.28 own 0.28 (n106) | all: enemy 0.31 own 0.36 (n401)
+meow      small: enemy 0.37 own 0.10 (n125) | medium: enemy 0.51 own 0.19 (n85) | large: enemy 0.37 own 0.00 (n79) | all: enemy 0.41 own 0.10 (n289)
+
+=== b. our round-500 losses with their queen alive
+top-three kill rate per approach by attacker length: {'10+': 0.234, '2': 0.06, '3': 0.099, '4': 0.116, '5-6': 0.286, '7-9': 0.273}
+  {'games': 59, 'flip games': 30, 'flip games with >=1 approach': 11, 'flip games with >=5 approaches': 8}
+  expected flips if our approaches in those games converted at top-three rates: 8.0
+
+=== c. our approaches and expected kills at top-three conversion
+  small  games 125 approaches/game   6.9 our kills/game 0.32 -> expected share of games with a kill at top-three conversion 0.32
+  medium games  85 approaches/game  14.2 our kills/game 0.24 -> expected share of games with a kill at top-three conversion 0.41
+  large  games  79 approaches/game   9.4 our kills/game 0.18 -> expected share of games with a kill at top-three conversion 0.45
+  all    games 289 approaches/game   9.7 our kills/game 0.26 -> expected share of games with a kill at top-three conversion 0.38
+
+=== d. length of the dragon that rammed the enemy queen (top three), by map size
+  small  n=251 median 3 mean 3.0 share >=5 long 0.04 share <=3 0.89
+  medium n=173 median 3 mean 3.5 share >=5 long 0.09 share <=3 0.83
+  large  n=226 median 4.0 mean 5.6 share >=5 long 0.46 share <=3 0.43

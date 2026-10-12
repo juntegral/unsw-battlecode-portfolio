@@ -1,0 +1,147 @@
+{
+  "engine_sha256": "26e68680e45eb0f221db702aead9eefde776c2ad2ba066f4ddf8c12500c6a546",
+  "constructor_arrays": [
+    {
+      "field": "north_edge",
+      "bytes_per_cell": 1
+    },
+    {
+      "field": "west_edge",
+      "bytes_per_cell": 1
+    },
+    {
+      "field": "north_portal",
+      "bytes_per_cell": 4
+    },
+    {
+      "field": "west_portal",
+      "bytes_per_cell": 4
+    },
+    {
+      "field": "pearl_here",
+      "bytes_per_cell": 1
+    },
+    {
+      "field": "pearl_timer",
+      "bytes_per_cell": 4
+    },
+    {
+      "field": "seen_round",
+      "bytes_per_cell": 4
+    },
+    {
+      "field": "hot",
+      "bytes_per_cell": 1
+    },
+    {
+      "field": "low_seen",
+      "bytes_per_cell": 4
+    },
+    {
+      "field": "timer_max",
+      "bytes_per_cell": 4
+    },
+    {
+      "field": "occupied_round",
+      "bytes_per_cell": 4
+    },
+    {
+      "field": "corpse_round",
+      "bytes_per_cell": 4
+    },
+    {
+      "field": "fast_seen",
+      "bytes_per_cell": 4
+    },
+    {
+      "field": "enter_time",
+      "bytes_per_cell": 4
+    },
+    {
+      "field": "trade_target_stamp",
+      "bytes_per_cell": 4
+    },
+    {
+      "field": "hunt_stamp",
+      "bytes_per_cell": 4
+    },
+    {
+      "field": "threat_stamp",
+      "bytes_per_cell": 4
+    },
+    {
+      "field": "threat_depth",
+      "bytes_per_cell": 4
+    },
+    {
+      "field": "threat_depth_small",
+      "bytes_per_cell": 4
+    },
+    {
+      "field": "bfs_parent",
+      "bytes_per_cell": 4
+    },
+    {
+      "field": "bfs_via",
+      "bytes_per_cell": 1
+    },
+    {
+      "field": "rival_dist",
+      "bytes_per_cell": 4
+    },
+    {
+      "field": "rival_stamp",
+      "bytes_per_cell": 4
+    },
+    {
+      "field": "ally_dist",
+      "bytes_per_cell": 4
+    },
+    {
+      "field": "ally_stamp",
+      "bytes_per_cell": 4
+    },
+    {
+      "field": "ally_part_stamp",
+      "bytes_per_cell": 4
+    },
+    {
+      "field": "visit_stamp",
+      "bytes_per_cell": 4
+    },
+    {
+      "field": "step_count",
+      "bytes_per_cell": 4
+    },
+    {
+      "field": "eaten_count",
+      "bytes_per_cell": 4
+    },
+    {
+      "field": "bfs_queue",
+      "bytes_per_cell": 16
+    },
+    {
+      "field": "bfs_beyond",
+      "bytes_per_cell": 2
+    },
+    {
+      "field": "beyond_portal",
+      "bytes_per_cell": 1
+    }
+  ],
+  "constructor_bytes_per_cell": 120,
+  "constructor_payload_at_65536": 7864320,
+  "portal_payload_at_id_8000000": 64000008,
+  "guard_fixture_pair_except_portal_id": true,
+  "compile_command": "c++ -std=c++20 -O2 build-check/main.cpp -o build-check/bot",
+  "compile_exit_code": 0,
+  "executed_bot_turns": 0,
+  "loader_fixture_count": 33,
+  "loader_all_loaded": true,
+  "final_verified_at": "2026-10-09 01:46:33 KST",
+  "report_prose_words": 152,
+  "original_sources_unchanged": true,
+  "candidate_one_line_only": true,
+  "manifest_count": 33
+}

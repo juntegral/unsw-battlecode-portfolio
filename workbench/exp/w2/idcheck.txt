@@ -1,0 +1,30 @@
+# C1 off-build identity (exp/w2/off-id2 = exp/w2/bot-off vs v1.6, seed 1, side A, proxy4_king), 15 maps
+== identity: timing unchanged in 10/10 games; of those strict identical 10, behaviour identical 10
+   timing changed in 0 games: strict identical 0, behaviour identical 0
+   proxy4_king:autarky:A:1                  timing same strict = behaviour =  G 60 -> 60
+   proxy4_king:default:A:1                  timing same strict = behaviour =  G 21 -> 21
+   proxy4_king:devil:A:1                    timing same strict = behaviour =  G 19 -> 19
+   proxy4_king:portals:A:1                  timing same strict = behaviour =  G 40 -> 40
+   proxy4_king:prisoners_dilemma:A:1        timing same strict = behaviour =  G 28 -> 28
+   proxy4_king:queen_of_spades:A:1          timing same strict = behaviour =  G 9 -> 9
+   proxy4_king:schooltime:A:1               timing same strict = behaviour =  G 22 -> 22
+   proxy4_king:slithery_fight:A:1           timing same strict = behaviour =  G 35 -> 35
+   proxy4_king:trauma:A:1                   timing same strict = behaviour =  G 31 -> 31
+   proxy4_king:trophy:A:1                   timing same strict = behaviour =  G 0 -> 0
+== identity: timing unchanged in 5/5 games; of those strict identical 5, behaviour identical 5
+   timing changed in 0 games: strict identical 0, behaviour identical 0
+   proxy4_king:Colosseum:A:1                timing same strict = behaviour =  G 0 -> 0
+   proxy4_king:arena:A:1                    timing same strict = behaviour =  G 0 -> 0
+   proxy4_king:big_empty:A:1                timing same strict = behaviour =  G 43 -> 43
+   proxy4_king:default_small:A:1            timing same strict = behaviour =  G 0 -> 0
+   proxy4_king:stronghold:A:1               timing same strict = behaviour =  G 85 -> 85
+
+# first attempt (exp/w2/off-id: AllyMsg field and start table also in the off build)
+== identity: timing unchanged in 4/5 games; of those strict identical 4, behaviour identical 4
+   timing changed in 1 games: strict identical 0, behaviour identical 0
+   outcome in the timing-changed games (new vs base): wins 0 vs 0, elim 0 vs 0, final 52.0 vs 43.0, 1/0/0, p 1.000
+   proxy4_king:Colosseum:A:1                timing same strict = behaviour =  G 0 -> 0
+   proxy4_king:arena:A:1                    timing same strict = behaviour =  G 0 -> 0
+   proxy4_king:big_empty:A:1                timing CHANGED {"id":231,"base":null,"new":"absent"} strict ≠ behaviour ≠  G 43 -> 52
+   proxy4_king:default_small:A:1            timing same strict = behaviour =  G 0 -> 0
+   proxy4_king:stronghold:A:1               timing same strict = behaviour =  G 85 -> 85

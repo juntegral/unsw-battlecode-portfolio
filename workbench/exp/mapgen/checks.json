@@ -1,0 +1,235 @@
+{
+  "at": "2026-10-01T06:08:32.164Z",
+  "tests": [
+    {
+      "name": "valid x-axis/y-axis/rotation interpretation",
+      "pass": true
+    },
+    {
+      "name": "edge symmetry agrees with transformed endpoints",
+      "pass": true
+    },
+    {
+      "name": "count mismatch rejected",
+      "pass": true
+    },
+    {
+      "name": "invalid size, tile and padding edge rejected",
+      "pass": true
+    },
+    {
+      "name": "noninteger, minGap, duplicated tile rejected",
+      "pass": true
+    },
+    {
+      "name": "one asymmetric tile rejected",
+      "pass": true
+    },
+    {
+      "name": "dragon overlap and nonadjacency rejected",
+      "pass": true
+    },
+    {
+      "name": "portal cardinality, orientation and mirrored pairing rejected",
+      "pass": true
+    },
+    {
+      "name": "disconnected symmetric topology rejected",
+      "pass": true
+    },
+    {
+      "name": "CPU max parser records precision and unknown teams",
+      "pass": true
+    },
+    {
+      "name": "35+13 planned smoke tasks, no result columns",
+      "pass": true
+    },
+    {
+      "name": "same plan and seed serialize identically",
+      "pass": true
+    },
+    {
+      "name": "six alternative seeds across all ordinary families are valid",
+      "pass": true
+    },
+    {
+      "name": "saved maps exactly match plan seed and manifest hash",
+      "pass": true
+    },
+    {
+      "name": "trap neighbourhoods and starts retained, outside change >=40%",
+      "pass": true
+    }
+  ],
+  "crossChecks": [
+    {
+      "file": "maps/online-20260927/autarky.map",
+      "graphMismatches": 0,
+      "researchMetricMismatches": 0
+    },
+    {
+      "file": "maps/online-20260927/default.map",
+      "graphMismatches": 0,
+      "researchMetricMismatches": 0
+    },
+    {
+      "file": "maps/online-20260927/devil.map",
+      "graphMismatches": 0,
+      "researchMetricMismatches": 0
+    },
+    {
+      "file": "maps/online-20260927/portals.map",
+      "graphMismatches": 0,
+      "researchMetricMismatches": 0
+    },
+    {
+      "file": "maps/online-20260927/prisoners_dilemma.map",
+      "graphMismatches": 0,
+      "researchMetricMismatches": 0
+    },
+    {
+      "file": "maps/online-20260927/queen_of_spades.map",
+      "graphMismatches": 0,
+      "researchMetricMismatches": 0
+    },
+    {
+      "file": "maps/online-20260927/schooltime.map",
+      "graphMismatches": 0,
+      "researchMetricMismatches": 0
+    },
+    {
+      "file": "maps/online-20260927/slithery_fight.map",
+      "graphMismatches": 0,
+      "researchMetricMismatches": 0
+    },
+    {
+      "file": "maps/online-20260927/trauma.map",
+      "graphMismatches": 0,
+      "researchMetricMismatches": 0
+    },
+    {
+      "file": "maps/online-20260927/trophy.map",
+      "graphMismatches": 0,
+      "researchMetricMismatches": 0
+    },
+    {
+      "file": "maps/bundled/Colosseum.map",
+      "graphMismatches": 0
+    },
+    {
+      "file": "maps/bundled/arena.map",
+      "graphMismatches": 0
+    },
+    {
+      "file": "maps/bundled/autarky.map",
+      "graphMismatches": 0
+    },
+    {
+      "file": "maps/bundled/big_empty.map",
+      "graphMismatches": 0
+    },
+    {
+      "file": "maps/bundled/default.map",
+      "graphMismatches": 0
+    },
+    {
+      "file": "maps/bundled/default_small.map",
+      "graphMismatches": 0
+    },
+    {
+      "file": "maps/bundled/devil.map",
+      "graphMismatches": 0
+    },
+    {
+      "file": "maps/bundled/dilemma.map",
+      "graphMismatches": 0
+    },
+    {
+      "file": "maps/bundled/queen_of_spades.map",
+      "graphMismatches": 0
+    },
+    {
+      "file": "maps/bundled/schooltime.map",
+      "graphMismatches": 0
+    },
+    {
+      "file": "maps/bundled/stronghold.map",
+      "graphMismatches": 0
+    },
+    {
+      "file": "maps/bundled/trauma.map",
+      "graphMismatches": 0
+    },
+    {
+      "file": "maps/bundled/trophy.map",
+      "graphMismatches": 0
+    },
+    {
+      "file": "maps/server-b/autarky.map",
+      "graphMismatches": 0
+    },
+    {
+      "file": "maps/server-b/default.map",
+      "graphMismatches": 0
+    },
+    {
+      "file": "maps/server-b/devil_b.map",
+      "graphMismatches": 0
+    },
+    {
+      "file": "maps/server-b/portals.map",
+      "graphMismatches": 0
+    },
+    {
+      "file": "maps/server-b/prisoners_dilemma_10.map",
+      "graphMismatches": 0
+    },
+    {
+      "file": "maps/server-b/queen_of_spades_b.map",
+      "graphMismatches": 0
+    },
+    {
+      "file": "maps/server-b/schooltime_b.map",
+      "graphMismatches": 0
+    },
+    {
+      "file": "maps/server-b/slithery_fight_b.map",
+      "graphMismatches": 0
+    },
+    {
+      "file": "maps/server-b/trauma.map",
+      "graphMismatches": 0
+    },
+    {
+      "file": "maps/server-b/trophy.map",
+      "graphMismatches": 0
+    },
+    {
+      "file": "maps/variants/devil_b.map",
+      "graphMismatches": 0,
+      "researchMetricMismatches": 0
+    },
+    {
+      "file": "maps/variants/prisoners_dilemma_10.map",
+      "graphMismatches": 0,
+      "researchMetricMismatches": 0
+    },
+    {
+      "file": "maps/variants/queen_of_spades_b.map",
+      "graphMismatches": 0,
+      "researchMetricMismatches": 0
+    },
+    {
+      "file": "maps/variants/schooltime_b.map",
+      "graphMismatches": 0,
+      "researchMetricMismatches": 0
+    },
+    {
+      "file": "maps/variants/slithery_fight_b.map",
+      "graphMismatches": 0,
+      "researchMetricMismatches": 0
+    }
+  ],
+  "allPassed": true
+}

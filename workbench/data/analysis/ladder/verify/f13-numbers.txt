@@ -1,0 +1,112 @@
+games loaded 660 errors 0 []
+codes: {'v31': 410, 'other': 40, 'main': 210} | unranked: 0 | no battle record: 0
+rebuild checks over main and v31 games: final state differs from result block in 0, drop count mismatches 0, anomalies {}
+
+F13 recount from raw replays. Queen = lowest initial dragon id of a side. Rounds are raw.
+layouts of the excluded names: {'Schooltime #1': 22, 'Schooltime #2': 19, 'Slithery Fight #1': 37}
+queen deaths on excluded layouts (ours, theirs): 35 27 in 78 games
+[main] games 180 (wins 103) | theirs first 71 | ours first 91 | same round 3 | neither dies 15
+   theirs first: ours dies later 47 of 71 = 0.662 (95% 0.55 to 0.76) | wins among 26 of 47 = 0.553 (95% 0.41 to 0.69) | survives 24, wins 24
+   causes of our queen death (dies later): {'rammed by enemy': 30, 'wall': 7, 'own body': 5, 'other dragon body': 3, 'she rammed enemy': 2}
+   mirror (ours first): theirs dies later 60 of 91 = 0.659 (95% 0.56 to 0.75) | our wins among 41 of 60 = 0.683 (95% 0.56 to 0.79) | theirs survives 31, our wins 0
+   causes of their queen death (mirror, dies later): {'rammed by enemy': 39, 'wall': 10, 'she rammed enemy': 6, 'other dragon body': 2, 'own body': 2, 'she rammed own team': 1}
+[main band <1700] games 0 (wins 0) | theirs first 0 | ours first 0 | same round 0 | neither dies 0
+   theirs first: ours dies later 0 of 0 | wins among 0 of 0 | survives 0, wins 0
+   causes of our queen death (dies later): {}
+   mirror (ours first): theirs dies later 0 of 0 | our wins among 0 of 0 | theirs survives 0, our wins 0
+   causes of their queen death (mirror, dies later): {}
+[main band 1700-1899] games 57 (wins 41) | theirs first 22 | ours first 28 | same round 1 | neither dies 6
+   theirs first: ours dies later 12 of 22 = 0.545 (95% 0.35 to 0.73) | wins among 9 of 12 = 0.750 (95% 0.47 to 0.91) | survives 10, wins 10
+   causes of our queen death (dies later): {'rammed by enemy': 8, 'own body': 2, 'wall': 1, 'she rammed enemy': 1}
+   mirror (ours first): theirs dies later 23 of 28 = 0.821 (95% 0.64 to 0.92) | our wins among 16 of 23 = 0.696 (95% 0.49 to 0.84) | theirs survives 5, our wins 0
+   causes of their queen death (mirror, dies later): {'rammed by enemy': 14, 'wall': 3, 'she rammed enemy': 3, 'own body': 2, 'she rammed own team': 1}
+[main band 1900-2099] games 114 (wins 62) | theirs first 47 | ours first 56 | same round 2 | neither dies 9
+   theirs first: ours dies later 33 of 47 = 0.702 (95% 0.56 to 0.81) | wins among 17 of 33 = 0.515 (95% 0.35 to 0.67) | survives 14, wins 14
+   causes of our queen death (dies later): {'rammed by enemy': 20, 'wall': 6, 'other dragon body': 3, 'own body': 3, 'she rammed enemy': 1}
+   mirror (ours first): theirs dies later 35 of 56 = 0.625 (95% 0.49 to 0.74) | our wins among 25 of 35 = 0.714 (95% 0.55 to 0.84) | theirs survives 21, our wins 0
+   causes of their queen death (mirror, dies later): {'rammed by enemy': 23, 'wall': 7, 'she rammed enemy': 3, 'other dragon body': 2}
+[main band 2100+] games 9 (wins 0) | theirs first 2 | ours first 7 | same round 0 | neither dies 0
+   theirs first: ours dies later 2 of 2 = 1.000 (95% 0.34 to 1.00) | wins among 0 of 2 = 0.000 (95% 0.00 to 0.66) | survives 0, wins 0
+   causes of our queen death (dies later): {'rammed by enemy': 2}
+   mirror (ours first): theirs dies later 2 of 7 = 0.286 (95% 0.08 to 0.64) | our wins among 0 of 2 = 0.000 (95% 0.00 to 0.66) | theirs survives 5, our wins 0
+   causes of their queen death (mirror, dies later): {'rammed by enemy': 2}
+[main first half (before 2026-10-06T14:48:15Z)] games 84 (wins 48) | theirs first 37 | ours first 37 | same round 2 | neither dies 8
+   theirs first: ours dies later 24 of 37 = 0.649 (95% 0.49 to 0.78) | wins among 12 of 24 = 0.500 (95% 0.31 to 0.69) | survives 13, wins 13
+   causes of our queen death (dies later): {'rammed by enemy': 17, 'wall': 3, 'she rammed enemy': 2, 'other dragon body': 2}
+   mirror (ours first): theirs dies later 22 of 37 = 0.595 (95% 0.43 to 0.74) | our wins among 14 of 22 = 0.636 (95% 0.43 to 0.80) | theirs survives 15, our wins 0
+   causes of their queen death (mirror, dies later): {'rammed by enemy': 15, 'wall': 4, 'she rammed enemy': 1, 'she rammed own team': 1, 'other dragon body': 1}
+[main second half] games 96 (wins 55) | theirs first 34 | ours first 54 | same round 1 | neither dies 7
+   theirs first: ours dies later 23 of 34 = 0.676 (95% 0.51 to 0.81) | wins among 14 of 23 = 0.609 (95% 0.41 to 0.78) | survives 11, wins 11
+   causes of our queen death (dies later): {'rammed by enemy': 13, 'own body': 5, 'wall': 4, 'other dragon body': 1}
+   mirror (ours first): theirs dies later 38 of 54 = 0.704 (95% 0.57 to 0.81) | our wins among 27 of 38 = 0.711 (95% 0.55 to 0.83) | theirs survives 16, our wins 0
+   causes of their queen death (mirror, dies later): {'rammed by enemy': 24, 'wall': 6, 'she rammed enemy': 5, 'own body': 2, 'other dragon body': 1}
+   main games exactly on the cut second: 1
+[v31] games 362 (wins 179) | theirs first 159 | ours first 182 | same round 6 | neither dies 15
+   theirs first: ours dies later 112 of 159 = 0.704 (95% 0.63 to 0.77) | wins among 45 of 112 = 0.402 (95% 0.32 to 0.49) | survives 47, wins 47
+   causes of our queen death (dies later): {'rammed by enemy': 75, 'wall': 16, 'she rammed enemy': 13, 'own body': 6, 'other dragon body': 1, 'other': 1}
+   mirror (ours first): theirs dies later 121 of 182 = 0.665 (95% 0.59 to 0.73) | our wins among 73 of 121 = 0.603 (95% 0.51 to 0.69) | theirs survives 61, our wins 0
+   causes of their queen death (mirror, dies later): {'rammed by enemy': 57, 'own body': 15, 'wall': 13, 'other dragon body': 13, 'she rammed enemy': 10, 'other': 8, 'she rammed own team': 3, 'rammed by own team': 2}
+[v31 band <1700] games 13 (wins 9) | theirs first 10 | ours first 3 | same round 0 | neither dies 0
+   theirs first: ours dies later 9 of 10 = 0.900 (95% 0.60 to 0.98) | wins among 6 of 9 = 0.667 (95% 0.35 to 0.88) | survives 1, wins 1
+   causes of our queen death (dies later): {'rammed by enemy': 6, 'wall': 2, 'she rammed enemy': 1}
+   mirror (ours first): theirs dies later 2 of 3 = 0.667 (95% 0.21 to 0.94) | our wins among 2 of 2 = 1.000 (95% 0.34 to 1.00) | theirs survives 1, our wins 0
+   causes of their queen death (mirror, dies later): {'rammed by enemy': 1, 'she rammed enemy': 1}
+[v31 band 1700-1899] games 186 (wins 107) | theirs first 90 | ours first 87 | same round 1 | neither dies 8
+   theirs first: ours dies later 54 of 90 = 0.600 (95% 0.50 to 0.70) | wins among 26 of 54 = 0.481 (95% 0.35 to 0.61) | survives 36, wins 36
+   causes of our queen death (dies later): {'rammed by enemy': 34, 'wall': 9, 'she rammed enemy': 7, 'own body': 2, 'other dragon body': 1, 'other': 1}
+   mirror (ours first): theirs dies later 62 of 87 = 0.713 (95% 0.61 to 0.80) | our wins among 37 of 62 = 0.597 (95% 0.47 to 0.71) | theirs survives 25, our wins 0
+   causes of their queen death (mirror, dies later): {'rammed by enemy': 31, 'wall': 8, 'own body': 7, 'other dragon body': 7, 'she rammed enemy': 6, 'other': 2, 'she rammed own team': 1}
+[v31 band 1900-2099] games 120 (wins 53) | theirs first 46 | ours first 65 | same round 4 | neither dies 5
+   theirs first: ours dies later 36 of 46 = 0.783 (95% 0.64 to 0.88) | wins among 12 of 36 = 0.333 (95% 0.20 to 0.50) | survives 10, wins 10
+   causes of our queen death (dies later): {'rammed by enemy': 25, 'own body': 4, 'she rammed enemy': 4, 'wall': 3}
+   mirror (ours first): theirs dies later 40 of 65 = 0.615 (95% 0.49 to 0.72) | our wins among 27 of 40 = 0.675 (95% 0.52 to 0.80) | theirs survives 25, our wins 0
+   causes of their queen death (mirror, dies later): {'rammed by enemy': 17, 'other dragon body': 6, 'own body': 5, 'wall': 4, 'other': 3, 'she rammed enemy': 2, 'rammed by own team': 2, 'she rammed own team': 1}
+[v31 band 2100+] games 43 (wins 10) | theirs first 13 | ours first 27 | same round 1 | neither dies 2
+   theirs first: ours dies later 13 of 13 = 1.000 (95% 0.77 to 1.00) | wins among 1 of 13 = 0.077 (95% 0.01 to 0.33) | survives 0, wins 0
+   causes of our queen death (dies later): {'rammed by enemy': 10, 'wall': 2, 'she rammed enemy': 1}
+   mirror (ours first): theirs dies later 17 of 27 = 0.630 (95% 0.44 to 0.78) | our wins among 7 of 17 = 0.412 (95% 0.22 to 0.64) | theirs survives 10, our wins 0
+   causes of their queen death (mirror, dies later): {'rammed by enemy': 8, 'other': 3, 'own body': 3, 'she rammed own team': 1, 'she rammed enemy': 1, 'wall': 1}
+
+--- checks
+[main] survivors (ours alive, theirs dead): 24 games, ended at r499 7, earlier (elimination) 17, wins 24
+[main] our side: dies later 47 of 71; their side in the mirror: 60 of 91; Fisher two-sided p = 1.000
+[main] when both queens die: we win 26 of 47 = 0.553 (95% 0.41 to 0.69) after theirs-first, 41 of 60 = 0.683 (95% 0.56 to 0.79) after ours-first; Fisher p = 0.227; all non-excluded games win rate 103 of 180 = 0.572 (95% 0.50 to 0.64)
+[main] queen ever dies: ours 141 of 180 = 0.783 (95% 0.72 to 0.84), theirs 134 of 180 = 0.744 (95% 0.68 to 0.80)
+[main] death rate per queen-round of the our queen, before / after the other queen is dead: r0-99 before 52/13891=0.0037 after 11/1486=0.0074; r100-199 before 26/5297=0.0049 after 15/3102=0.0048; r200-299 before 10/3175=0.0031 after 10/2207=0.0045; r300-399 before 4/2166=0.0018 after 8/1257=0.0064; r400-499 before 2/1700=0.0012 after 3/684=0.0044
+[main] death rate per queen-round of the their queen, before / after the other queen is dead: r0-99 before 51/13891=0.0037 after 15/1700=0.0088; r100-199 before 15/5297=0.0028 after 18/3450=0.0052; r200-299 before 4/3175=0.0013 after 15/3043=0.0049; r300-399 before 1/2166=0.0005 after 3/2876=0.0010; r400-499 before 3/1700=0.0018 after 9/2468=0.0036
+[main] theirs-first, ours dies later: their death round median 79, ours median 161, gap median 60, gaps under 25 rounds: 10, gaps of 100+: 19
+[main] theirs-first, ours survives: their death round median 89.0
+[main] theirs-first by opp (games, ours dies later, wins among those): calc (20) 9/5/1; NUSW Battlecode (262) 9/6/5; 中国人不准飞😡😡😡😡😡😡😡 (791) 5/1/1; ComTamSuonNuong (193) 5/3/2; :3 (217) 4/3/1; 1 (231) 4/3/3; byte_force (959) 4/2/1; food (871) 3/2/1; we love gru (998) 3/2/0; Nitronics (837) 3/2/1; doofenshmirtz good incorporated (1015) 2/1/0; Computers (112) 2/2/0; Settlers of Battlecode (258) 2/2/0; Heartbreaker (62) 2/1/1; python.io (147) 2/1/1; Knight Capital (226) 2/2/2; dev test 1 :P (545) 2/2/0; 天天开心 :( (835) 2/2/2; POFPOF (1055) 2/2/2; 😹 (456) 2/2/1; DeepSeek-V4.1-Flash (776) 1/0/0; free trip to sydney pls (82) 1/1/1
+[main]    leave one opp out: dies-later share 0.652 to 0.697, win share among them 0.512 to 0.595
+[main] theirs-first by map_key (games, ours dies later, wins among those): Queen Of Spades #1 10/4/1; Default #1 9/6/3; Around UNSW #1 8/5/4; Maze #1 7/7/7; Islands #1 5/5/0; Trophy #1 5/1/0; Tower Defense #1 4/3/1; Autarky #1 4/2/2; Stripes #1 4/3/1; weakhold #1 3/3/3; Prisoners Dilemma #2 3/2/1; Prisoners Dilemma #1 2/0/0; Devil #1 2/2/2; Trauma #1 2/1/0; Australia #1 2/2/0; Portals #1 1/1/1
+[main]    leave one map_key out: dies-later share 0.625 to 0.705, win share among them 0.475 to 0.619
+[main] theirs-first by evening (games, ours dies later, wins among those): 10-06b 38/25/12; 10-07a 30/21/13; 10-06a 3/1/1
+[main]    leave one evening out: dies-later share 0.634 to 0.676, win share among them 0.500 to 0.636
+[main] theirs-first by band (games, ours dies later, wins among those): 1900-2099 47/33/17; 1700-1899 22/12/9; 2100+ 2/2/0
+[main]    leave one band out: dies-later share 0.583 to 0.714, win share among them 0.486 to 0.643
+[main] drop three supporting games: dies later 44 of 68 = 0.647 (95% 0.53 to 0.75); wins among (three losses removed) 26 of 44 = 0.591 (95% 0.44 to 0.72)
+[main] rammed by enemy: 30; rammer was their queen 0 (cannot be, she is dead); rammer length median 3.0; our queen length at death median 2.0 (all causes 2)
+[main] our queen death causes in ALL non-excluded games where she dies: {'rammed by enemy': 83, 'wall': 28, 'own body': 14, 'other dragon body': 10, 'she rammed enemy': 6}
+[main] their queen death causes in ALL non-excluded games where she dies: {'rammed by enemy': 89, 'wall': 19, 'she rammed enemy': 13, 'own body': 5, 'other dragon body': 4, 'other': 3, 'she rammed own team': 1}
+
+[v31] survivors (ours alive, theirs dead): 47 games, ended at r499 8, earlier (elimination) 39, wins 47
+[v31] our side: dies later 112 of 159; their side in the mirror: 121 of 182; Fisher two-sided p = 0.484
+[v31] when both queens die: we win 45 of 112 = 0.402 (95% 0.32 to 0.49) after theirs-first, 73 of 121 = 0.603 (95% 0.51 to 0.69) after ours-first; Fisher p = 0.003; all non-excluded games win rate 179 of 362 = 0.494 (95% 0.44 to 0.55)
+[v31] queen ever dies: ours 300 of 362 = 0.829 (95% 0.79 to 0.86), theirs 286 of 362 = 0.790 (95% 0.75 to 0.83)
+[v31] death rate per queen-round of the our queen, before / after the other queen is dead: r0-99 before 107/25962=0.0041 after 31/3733=0.0083; r100-199 before 61/8966=0.0068 after 44/5043=0.0087; r200-299 before 14/3648=0.0038 after 19/2709=0.0070; r300-399 before 5/2174=0.0023 after 11/1636=0.0067; r400-499 before 1/1613=0.0006 after 7/1084=0.0065
+[v31] death rate per queen-round of the their queen, before / after the other queen is dead: r0-99 before 111/25962=0.0043 after 33/3781=0.0087; r100-199 before 39/8966=0.0043 after 35/7855=0.0045; r200-299 before 11/3648=0.0030 after 22/7354=0.0030; r300-399 before 2/2174=0.0009 after 15/6056=0.0025; r400-499 before 2/1613=0.0012 after 16/4377=0.0037
+[v31] theirs-first, ours dies later: their death round median 63.5, ours median 151.0, gap median 54.5, gaps under 25 rounds: 29, gaps of 100+: 39
+[v31] theirs-first, ours survives: their death round median 79
+[v31] theirs-first by opp (games, ours dies later, wins among those): 中国人不准飞😡😡😡😡😡😡😡 (791) 24/11/6; doofenshmirtz good incorporated (1015) 13/7/3; err404 (485) 12/11/6; Delusion Tax (375) 8/6/1; CookAgent (716) 7/6/4; chad gdp (70) 6/6/1; fandagong (552) 6/6/1; the uncancelables (899) 5/4/2; f2p (608) 5/2/1; Weneedmoretokens (135) 5/4/2; calc (20) 5/4/1; Stochastic Parrots (127) 4/2/0; Proof by Intimidation (465) 4/3/2; Cache me outside (952) 4/4/0; Goated (733) 4/4/2; chaoliangUNSW (1016) 4/3/1; Maccas (762) 3/3/1; NUSW Battlecode (262) 3/3/2; ddabap (457) 3/3/1; Vodyanitsa (1052) 3/0/0; Computers (112) 3/2/1; food (871) 2/2/0; Just Keep Swimming (7) 2/0/0; Check Raise (152) 2/1/0; TheActualPlayer (1132) 2/2/1; Peanut Butter (104) 2/1/0; python.io (147) 2/2/1; 1 (231) 2/1/1; Memory? (1097) 1/0/0; SHINK AI 6500 (280) 1/1/1; we love gru (998) 1/1/0; dev test 1 :P (545) 1/1/0; test4 (19) 1/1/0; ouroboros (1022) 1/1/1; Ron Squad (928) 1/0/0; free trip to sydney pls (82) 1/0/0; gdggs (64) 1/0/0; Codehammer 40K (34) 1/1/0; Sponge(Albert and Bob) (213) 1/1/0; DESTINY 3 (948) 1/1/1; life is NP hard (30) 1/1/1; Manny (52) 1/0/0
+[v31]    leave one opp out: dies-later share 0.687 to 0.748, win share among them 0.386 to 0.417
+[v31] theirs-first by map_key (games, ours dies later, wins among those): Queen Of Spades #1 18/11/2; Trophy #1 15/4/1; Autarky #1 15/8/5; Australia #1 14/12/3; Prisoners Dilemma #1 14/5/1; Stripes #1 13/10/3; Default #1 12/9/4; Around UNSW #1 11/11/7; weakhold #1 10/9/4; Islands #1 9/9/0; Devil #1 9/8/7; Maze #1 8/8/6; Tower Defense #1 6/5/1; Trauma #1 3/1/0; Prisoners Dilemma #2 2/2/1
+[v31]    leave one map_key out: dies-later share 0.682 to 0.750, win share among them 0.365 to 0.437
+[v31] theirs-first by evening (games, ours dies later, wins among those): 10-06a 97/70/25; 10-06b 62/42/20
+[v31]    leave one evening out: dies-later share 0.677 to 0.722, win share among them 0.357 to 0.476
+[v31] theirs-first by band (games, ours dies later, wins among those): 1700-1899 90/54/26; 1900-2099 46/36/12; 2100+ 13/13/1; <1700 10/9/6
+[v31]    leave one band out: dies-later share 0.673 to 0.841, win share among them 0.328 to 0.444
+[v31] drop three supporting games: dies later 109 of 156 = 0.699 (95% 0.62 to 0.77); wins among (three losses removed) 45 of 109 = 0.413 (95% 0.32 to 0.51)
+[v31] rammed by enemy: 75; rammer was their queen 0 (cannot be, she is dead); rammer length median 3; our queen length at death median 3 (all causes 3.0)
+[v31] our queen death causes in ALL non-excluded games where she dies: {'rammed by enemy': 171, 'wall': 52, 'she rammed enemy': 28, 'own body': 25, 'other dragon body': 21, 'other': 2, 'rammed by own team': 1}
+[v31] their queen death causes in ALL non-excluded games where she dies: {'rammed by enemy': 164, 'wall': 35, 'she rammed enemy': 28, 'other dragon body': 19, 'own body': 18, 'other': 15, 'she rammed own team': 4, 'rammed by own team': 3}
+

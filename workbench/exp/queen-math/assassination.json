@@ -1,0 +1,1232 @@
+{
+  "fixtures": [
+    {
+      "name": "open_Q2_H2_one",
+      "cells": null,
+      "queen": [
+        [
+          0,
+          0
+        ],
+        [
+          -1,
+          0
+        ]
+      ],
+      "hunters": [
+        {
+          "id": 2,
+          "body": [
+            [
+              1,
+              -1
+            ],
+            [
+              2,
+              -1
+            ]
+          ]
+        }
+      ],
+      "legal_queen_choices": 3,
+      "negative_cases_include_recursive_hunter_splits": true,
+      "all_choices_killed": false,
+      "cases": [
+        {
+          "queen_action": "N",
+          "queen_body": [
+            [
+              0,
+              -1
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "forced_contact": true,
+          "hunter_response": [
+            [
+              2,
+              "W"
+            ]
+          ]
+        },
+        {
+          "queen_action": "E",
+          "queen_body": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "forced_contact": true,
+          "hunter_response": [
+            [
+              2,
+              "S"
+            ]
+          ]
+        },
+        {
+          "queen_action": "S",
+          "queen_body": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "forced_contact": false,
+          "hunter_response": null
+        }
+      ]
+    },
+    {
+      "name": "open_Q2_H2_two",
+      "cells": null,
+      "queen": [
+        [
+          0,
+          0
+        ],
+        [
+          -1,
+          0
+        ]
+      ],
+      "hunters": [
+        {
+          "id": 2,
+          "body": [
+            [
+              1,
+              -1
+            ],
+            [
+              2,
+              -1
+            ]
+          ]
+        },
+        {
+          "id": 3,
+          "body": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        }
+      ],
+      "legal_queen_choices": 3,
+      "negative_cases_include_recursive_hunter_splits": true,
+      "all_choices_killed": true,
+      "cases": [
+        {
+          "queen_action": "N",
+          "queen_body": [
+            [
+              0,
+              -1
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "forced_contact": true,
+          "hunter_response": [
+            [
+              2,
+              "W"
+            ]
+          ]
+        },
+        {
+          "queen_action": "E",
+          "queen_body": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "forced_contact": true,
+          "hunter_response": [
+            [
+              2,
+              "S"
+            ]
+          ]
+        },
+        {
+          "queen_action": "S",
+          "queen_body": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "forced_contact": true,
+          "hunter_response": [
+            [
+              2,
+              "E"
+            ],
+            [
+              3,
+              "W"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "corridor_Q3_H3",
+      "cells": [
+        [
+          -3,
+          0
+        ],
+        [
+          -2,
+          0
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          7,
+          0
+        ]
+      ],
+      "queen": [
+        [
+          0,
+          0
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          -2,
+          0
+        ]
+      ],
+      "hunters": [
+        {
+          "id": 2,
+          "body": [
+            [
+              3,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              5,
+              0
+            ]
+          ]
+        }
+      ],
+      "legal_queen_choices": 2,
+      "negative_cases_include_recursive_hunter_splits": true,
+      "all_choices_killed": true,
+      "cases": [
+        {
+          "queen_action": "E",
+          "queen_body": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              -1,
+              0
+            ]
+          ],
+          "forced_contact": true,
+          "hunter_response": [
+            [
+              2,
+              "WW"
+            ]
+          ]
+        },
+        {
+          "queen_action": "EE",
+          "queen_body": [
+            [
+              2,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "forced_contact": true,
+          "hunter_response": [
+            [
+              2,
+              "W"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "corridor_Q4_H2",
+      "cells": [
+        [
+          -4,
+          0
+        ],
+        [
+          -3,
+          0
+        ],
+        [
+          -2,
+          0
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          8,
+          0
+        ]
+      ],
+      "queen": [
+        [
+          0,
+          0
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          -2,
+          0
+        ],
+        [
+          -3,
+          0
+        ]
+      ],
+      "hunters": [
+        {
+          "id": 2,
+          "body": [
+            [
+              4,
+              0
+            ],
+            [
+              5,
+              0
+            ]
+          ]
+        }
+      ],
+      "legal_queen_choices": 4,
+      "negative_cases_include_recursive_hunter_splits": true,
+      "all_choices_killed": false,
+      "cases": [
+        {
+          "queen_action": "E",
+          "queen_body": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              -1,
+              0
+            ],
+            [
+              -2,
+              0
+            ]
+          ],
+          "forced_contact": false,
+          "hunter_response": null
+        },
+        {
+          "queen_action": "EE",
+          "queen_body": [
+            [
+              2,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "forced_contact": false,
+          "hunter_response": null
+        },
+        {
+          "queen_action": "EEE",
+          "queen_body": [
+            [
+              3,
+              0
+            ],
+            [
+              2,
+              0
+            ]
+          ],
+          "forced_contact": true,
+          "hunter_response": [
+            [
+              2,
+              "W"
+            ]
+          ]
+        },
+        {
+          "queen_action": "SPLIT 2",
+          "queen_body": [
+            [
+              0,
+              0
+            ],
+            [
+              -1,
+              0
+            ]
+          ],
+          "forced_contact": false,
+          "hunter_response": null
+        }
+      ]
+    },
+    {
+      "name": "mouth_Q3_H3",
+      "cells": [
+        [
+          -2,
+          0
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "queen": [
+        [
+          0,
+          0
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          -2,
+          0
+        ]
+      ],
+      "hunters": [
+        {
+          "id": 2,
+          "body": [
+            [
+              2,
+              0
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ]
+        }
+      ],
+      "legal_queen_choices": 1,
+      "negative_cases_include_recursive_hunter_splits": true,
+      "all_choices_killed": true,
+      "cases": [
+        {
+          "queen_action": "E",
+          "queen_body": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              -1,
+              0
+            ]
+          ],
+          "forced_contact": true,
+          "hunter_response": [
+            [
+              2,
+              "W"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "open_Q2_H4_one",
+      "cells": null,
+      "queen": [
+        [
+          0,
+          0
+        ],
+        [
+          -1,
+          0
+        ]
+      ],
+      "hunters": [
+        {
+          "id": 2,
+          "body": [
+            [
+              1,
+              -1
+            ],
+            [
+              2,
+              -1
+            ],
+            [
+              3,
+              -1
+            ],
+            [
+              4,
+              -1
+            ]
+          ]
+        }
+      ],
+      "legal_queen_choices": 3,
+      "negative_cases_include_recursive_hunter_splits": true,
+      "all_choices_killed": true,
+      "cases": [
+        {
+          "queen_action": "N",
+          "queen_body": [
+            [
+              0,
+              -1
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "forced_contact": true,
+          "hunter_response": [
+            [
+              2,
+              "W"
+            ]
+          ]
+        },
+        {
+          "queen_action": "E",
+          "queen_body": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "forced_contact": true,
+          "hunter_response": [
+            [
+              2,
+              "S"
+            ]
+          ]
+        },
+        {
+          "queen_action": "S",
+          "queen_body": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "forced_contact": true,
+          "hunter_response": [
+            [
+              2,
+              "SSW"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "open_Q3_H5_one",
+      "cells": null,
+      "queen": [
+        [
+          0,
+          0
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          -2,
+          0
+        ]
+      ],
+      "hunters": [
+        {
+          "id": 2,
+          "body": [
+            [
+              1,
+              -1
+            ],
+            [
+              2,
+              -1
+            ],
+            [
+              3,
+              -1
+            ],
+            [
+              4,
+              -1
+            ],
+            [
+              5,
+              -1
+            ]
+          ]
+        }
+      ],
+      "legal_queen_choices": 10,
+      "negative_cases_include_recursive_hunter_splits": true,
+      "all_choices_killed": false,
+      "cases": [
+        {
+          "queen_action": "N",
+          "queen_body": [
+            [
+              0,
+              -1
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              -1,
+              0
+            ]
+          ],
+          "forced_contact": true,
+          "hunter_response": [
+            [
+              2,
+              "W"
+            ]
+          ]
+        },
+        {
+          "queen_action": "E",
+          "queen_body": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              -1,
+              0
+            ]
+          ],
+          "forced_contact": true,
+          "hunter_response": [
+            [
+              2,
+              "S"
+            ]
+          ]
+        },
+        {
+          "queen_action": "S",
+          "queen_body": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              -1,
+              0
+            ]
+          ],
+          "forced_contact": true,
+          "hunter_response": [
+            [
+              2,
+              "SSW"
+            ]
+          ]
+        },
+        {
+          "queen_action": "NN",
+          "queen_body": [
+            [
+              0,
+              -2
+            ],
+            [
+              0,
+              -1
+            ]
+          ],
+          "forced_contact": true,
+          "hunter_response": [
+            [
+              2,
+              "NW"
+            ]
+          ]
+        },
+        {
+          "queen_action": "NW",
+          "queen_body": [
+            [
+              -1,
+              -1
+            ],
+            [
+              0,
+              -1
+            ]
+          ],
+          "forced_contact": true,
+          "hunter_response": [
+            [
+              2,
+              "NWWS"
+            ]
+          ]
+        },
+        {
+          "queen_action": "EE",
+          "queen_body": [
+            [
+              2,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "forced_contact": false,
+          "hunter_response": null
+        },
+        {
+          "queen_action": "ES",
+          "queen_body": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "forced_contact": true,
+          "hunter_response": [
+            [
+              2,
+              "WSSE"
+            ]
+          ]
+        },
+        {
+          "queen_action": "SE",
+          "queen_body": [
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "forced_contact": true,
+          "hunter_response": [
+            [
+              2,
+              "SS"
+            ]
+          ]
+        },
+        {
+          "queen_action": "SS",
+          "queen_body": [
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "forced_contact": true,
+          "hunter_response": [
+            [
+              2,
+              "SSSW"
+            ]
+          ]
+        },
+        {
+          "queen_action": "SW",
+          "queen_body": [
+            [
+              -1,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "forced_contact": true,
+          "hunter_response": [
+            [
+              2,
+              "SWWS"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "open_Q3_H6_one",
+      "cells": null,
+      "queen": [
+        [
+          0,
+          0
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          -2,
+          0
+        ]
+      ],
+      "hunters": [
+        {
+          "id": 2,
+          "body": [
+            [
+              1,
+              -1
+            ],
+            [
+              2,
+              -1
+            ],
+            [
+              3,
+              -1
+            ],
+            [
+              4,
+              -1
+            ],
+            [
+              5,
+              -1
+            ],
+            [
+              6,
+              -1
+            ]
+          ]
+        }
+      ],
+      "legal_queen_choices": 10,
+      "negative_cases_include_recursive_hunter_splits": true,
+      "all_choices_killed": true,
+      "cases": [
+        {
+          "queen_action": "N",
+          "queen_body": [
+            [
+              0,
+              -1
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              -1,
+              0
+            ]
+          ],
+          "forced_contact": true,
+          "hunter_response": [
+            [
+              2,
+              "W"
+            ]
+          ]
+        },
+        {
+          "queen_action": "E",
+          "queen_body": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              -1,
+              0
+            ]
+          ],
+          "forced_contact": true,
+          "hunter_response": [
+            [
+              2,
+              "S"
+            ]
+          ]
+        },
+        {
+          "queen_action": "S",
+          "queen_body": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              -1,
+              0
+            ]
+          ],
+          "forced_contact": true,
+          "hunter_response": [
+            [
+              2,
+              "SSW"
+            ]
+          ]
+        },
+        {
+          "queen_action": "NN",
+          "queen_body": [
+            [
+              0,
+              -2
+            ],
+            [
+              0,
+              -1
+            ]
+          ],
+          "forced_contact": true,
+          "hunter_response": [
+            [
+              2,
+              "NW"
+            ]
+          ]
+        },
+        {
+          "queen_action": "NW",
+          "queen_body": [
+            [
+              -1,
+              -1
+            ],
+            [
+              0,
+              -1
+            ]
+          ],
+          "forced_contact": true,
+          "hunter_response": [
+            [
+              2,
+              "NWWS"
+            ]
+          ]
+        },
+        {
+          "queen_action": "EE",
+          "queen_body": [
+            [
+              2,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "forced_contact": true,
+          "hunter_response": [
+            [
+              2,
+              "NNESSS"
+            ]
+          ]
+        },
+        {
+          "queen_action": "ES",
+          "queen_body": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "forced_contact": true,
+          "hunter_response": [
+            [
+              2,
+              "WSSE"
+            ]
+          ]
+        },
+        {
+          "queen_action": "SE",
+          "queen_body": [
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "forced_contact": true,
+          "hunter_response": [
+            [
+              2,
+              "SS"
+            ]
+          ]
+        },
+        {
+          "queen_action": "SS",
+          "queen_body": [
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "forced_contact": true,
+          "hunter_response": [
+            [
+              2,
+              "SSSW"
+            ]
+          ]
+        },
+        {
+          "queen_action": "SW",
+          "queen_body": [
+            [
+              -1,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "forced_contact": true,
+          "hunter_response": [
+            [
+              2,
+              "SWWS"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "Q2_H2_one_hunter_exhaust": {
+    "configurations": 38,
+    "forcing_configurations": [],
+    "completeness": "Hunter head must be within distance 2 of queen start to hit a one-step endpoint; all four length2 body headings included. No split legal for Q2."
+  }
+}

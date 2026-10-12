@@ -1,0 +1,88 @@
+game proxy4_king_default_small_A_1 map Default Small/a us=A result {"winner":"B","end":"teamEliminated"}
+tags(our turns): {"sx":0,"sr":0,"sd":0,"sf":0,"sq":0,"sc":0,"sk":0,"esc":0,"split":0}
+timeline r | our units / longest / total | their units / longest / total
+  r  0 |   2 /   3 /    6 |   2 /   3 /    6
+  r 25 |   6 /   2 /   12 |   5 /   3 /   11
+  r 50 |   6 /   3 /   16 |  11 /   4 /   31
+  r 75 |   8 /   2 /   16 |  15 /   4 /   38
+  r100 |   3 /   3 /    7 |  19 /   4 /   50
+  r125 |   2 /   2 /    4 |  25 /   4 /   58
+  r150 |   2 /   2 /    4 |  31 /   4 /   75
+  r175 |   2 /   2 /    4 |  36 /   3 /   86
+local feeds (sf) 0: first 12 → 
+--- r25: ours 6 dragons [2 2 2 2 2 2] total 12 | theirs 5 [3 2 2 2 2] total 11
++----------------+
+|                |
+|                |
+|          oo    |
+|             X  |
+|       2.    x x|
+|    .2   xx    X|
+| .2      Xo     |
+|                |
+|       Xx       |
+|     oo         |
+|2. 2.      o    |
+|  .   X         |
+|  2   x         |
+|    oo          |
+|                |
+|                |
++----------------+
+--- r50: ours 6 dragons [3 3 3 3 2 2] total 16 | theirs 11 [4 3 3 3 3 3 3 3 …] total 31
++----------------+
+|                |
+|            xx  |
+|  o    Xx   XoX |
+|        x    xx |
+|          xx    |
+|   2.    x X  xX|
+|         xX  x  |
+|       X     X  |
+|  x    xx       |
+|2.xXx           |
+|    X    xxX    |
+|         x      |
+| 3              |
+|..oo         o  |
+|3..  3..3       |
+|%   ..          |
++----------------+
+--- r100: ours 3 dragons [3 2 2] total 7 | theirs 19 [4 4 3 3 3 3 3 3 …] total 50
++----------------+
+|                |
+|  Xx       xX   |
+|           x  x |
+| x    xxX    xx |
+| X Xx        X  |
+|    x  Xx Xxx   |
+|                |
+|.3      x       |
+|.    xX Xx      |
+|2  xx   xxX     |
+|.   X x X       |
+| xx  xX      xX |
+| Xx  X xxX      |
+|   xX           |
+| . x            |
+| 2              |
++----------------+
+--- r189: ours 1 dragons [2] total 2 | theirs 38 [4 3 3 3 3 3 3 3 …] total 96
++----------------+
+|      xx   xX   |
+|   Xx X Xx      |
+|  X 2.X xxX X   |
+|x x   x     xxx |
+|X xxX x    xX X |
+|       xXxx   x |
+|xxXx     X xxXX |
+|   x xXxx  Xx   |
+|Xx X    XxX     |
+| x  o    x  X   |
+|   xX x X   x   |
+| Xx  Xxxx    xX |
+|  xx X  xX xX x |
+| xX  xx x  x  xX|
+|     Xx   x X   |
+|Xx        X x   |
++----------------+

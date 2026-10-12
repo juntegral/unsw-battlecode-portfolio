@@ -1,0 +1,96 @@
+{
+  "as_of": "2026-10-09T06:15:45.918040+09:00",
+  "folders": 802,
+  "complete": 800,
+  "incomplete": [
+    {
+      "arm": "mGx6_vb",
+      "game": "gx_ring_256x256_911307-seed1-side0",
+      "path": "~/meow-redteam/solo/runs/mGx6_vb/gx_ring_256x256_911307-seed1-side0",
+      "cells": 65536,
+      "available": {
+        "result.json": false,
+        "result.txt": false,
+        "game.replay": false,
+        "engine.log": true
+      },
+      "finished": false,
+      "last_log_death_round": 173,
+      "log_error_lines": []
+    },
+    {
+      "arm": "mGx6_vb",
+      "game": "gx_ring_256x256_911307-seed1-side1",
+      "path": "~/meow-redteam/solo/runs/mGx6_vb/gx_ring_256x256_911307-seed1-side1",
+      "cells": 65536,
+      "available": {
+        "result.json": false,
+        "result.txt": false,
+        "game.replay": false,
+        "engine.log": true
+      },
+      "finished": false,
+      "last_log_death_round": 140,
+      "log_error_lines": []
+    }
+  ],
+  "arms": 30,
+  "distinct_maps": 59,
+  "native_games": 800,
+  "turns": 27913384,
+  "turns_with_usage": 0,
+  "bot_errors": 0,
+  "timeout_actions": 0,
+  "large_games": 32,
+  "large_turns": 1733100,
+  "large_action_death_ours": {
+    "no_action": 1878
+  },
+  "large_action_death_old_main": {
+    "no_action": 2779
+  },
+  "all_action_death_ours": {
+    "no_action": 80253
+  },
+  "all_action_death_old_main": {
+    "no_action": 79251
+  },
+  "matched_4096_65536": [
+    {
+      "large_game": "gx_islands_256x256_911207-seed1-side0",
+      "small_game": "gx_islands_64x64_911204-seed1-side0",
+      "large_ms": 10.218331178713447,
+      "small_ms": 1.133123829901043,
+      "ratio": 9.017841571301016,
+      "large_alive": 124.14498682681766,
+      "small_alive": 123.53052286707675
+    },
+    {
+      "large_game": "gx_islands_256x256_911207-seed1-side1",
+      "small_game": "gx_islands_64x64_911204-seed1-side1",
+      "large_ms": 8.465978536905055,
+      "small_ms": 1.2959610493909786,
+      "ratio": 6.532587179902931,
+      "large_alive": 124.05260915867945,
+      "small_alive": 123.40754249765762
+    },
+    {
+      "large_game": "gx_poor_256x256_911507-seed1-side0",
+      "small_game": "gx_poor_64x64_911504-seed1-side0",
+      "large_ms": 8.875634401719172,
+      "small_ms": 1.0518885921404044,
+      "ratio": 8.437808402940133,
+      "large_alive": 43.83064331763522,
+      "small_alive": 10.549027088897368
+    },
+    {
+      "large_game": "gx_poor_256x256_911507-seed1-side1",
+      "small_game": "gx_poor_64x64_911504-seed1-side1",
+      "large_ms": 8.576189823069537,
+      "small_ms": 1.1080719204284621,
+      "ratio": 7.7397411349918075,
+      "large_alive": 43.83449915420839,
+      "small_alive": 10.538638102524866
+    }
+  ]
+}

@@ -1,0 +1,203 @@
+on proxy4_king:default_small:B:1 r58 turn #1 around 14,7 x=10
+  3 ..*x...X.
+  4 ....x..x.
+  5 x...X....
+  6 xX.......
+  7 xxX.A....
+  8 ....acEe.
+  9 .aaaaC...
+ 10 .........
+ 11 xX....B..
+a=#1 L6 b=#3 L3 c=#5 L2 d=#8 L3 e=#9 L2 f=#17 L2
+
+on proxy4_king:default_small:B:1 r58 after action #1 around 14,6 x=10
+  2 .xxX.....
+  3 ..*x...X.
+  4 ....x..x.
+  5 x...X....
+  6 xX..A....
+  7 xxX.a....
+  8 ....acEe.
+  9 ..aaaC...
+ 10 .........
+a=#1 L6 b=#3 L3 c=#5 L2 d=#8 L3 e=#9 L2 f=#17 L2
+
+on proxy4_king:default_small:B:1 r58 death #1 around 14,6 x=10
+  2 .xxX.....
+  3 ..*x...X.
+  4 ....x..x.
+  5 x...X....
+  6 xX..A....
+  7 xxX.a....
+  8 ....a.Ee.
+  9 ..aaac...
+ 10 .X...CB..
+a=#1 L6 b=#3 L3 c=#5 L2 d=#8 L3 e=#9 L2 f=#17 L2
+
+on proxy4_king:default_small:B:1 r83 death #8 around 0,13 x=12
+  9 xx.......
+ 10 ....fF..x
+ 11 X.....*.X
+ 12 x.....x..
+ 13 ....CXxX.
+ 14 ....c..xx
+ 15 .........
+  0 .........
+  1 Xx.......
+a=#3 L2 b=#5 L2 c=#8 L2 d=#9 L2 e=#17 L2 f=#26 L2
+
+on proxy4_king:default_small:B:1 r108 turn #3 around 2,10 x=14
+  6 Xx.eE....
+  7 .x......x
+  8 .....x..X
+  9 xXX.aX...
+ 10 ..x.A..xX
+ 11 .......x.
+ 12 ...xX*..X
+ 13 ...x..X..
+ 14 .....xx..
+a=#3 L2 b=#5 L2 c=#9 L2 d=#17 L2 e=#26 L2
+
+on proxy4_king:default_small:B:1 r108 after action #3 around 3,10 x=15
+  6 x.eE.....
+  7 x......xx
+  8 ....x..X.
+  9 XX..X...X
+ 10 .x.aA.xX.
+ 11 ......x..
+ 12 ..xX*..Xx
+ 13 ..x..X...
+ 14 ....xx..X
+a=#3 L2 b=#5 L2 c=#9 L2 d=#17 L2 e=#26 L2
+
+on proxy4_king:default_small:B:1 r108 death #3 around 3,10 x=15
+  6 x..e....X
+  7 .......x.
+  8 .X..x.Xx.
+  9 xx..X..Xx
+ 10 X..aA.xxX
+ 11 .......X.
+ 12 ..xX*..x.
+ 13 ..x.Xx...
+ 14 .....x.Xx
+a=#3 L2 b=#5 L2 c=#9 L2 d=#17 L2 e=#26 L2
+
+on proxy4_king:default_small:B:1 r136 death #5 around 10,12 x=6
+  8 X.X......
+  9 .x...xX..
+ 10 .xX.....x
+ 11 ...xX...X
+ 12 ..xaA.x..
+ 13 .Xx.X.X..
+ 14 ....x....
+ 15 xx.......
+  0 ......xx.
+a=#5 L2 b=#9 L2 c=#17 L2 d=#26 L2
+
+on proxy4_king:default_small:B:1 r141 turn #17 around 5,0 x=1
+ 12 xx..x....
+ 13 .XxxxX.Xx
+ 14 ...X.....
+ 15 X.xX....X
+  0 ..CbBxx..
+  1 ..c..X.aA
+  2 ..X......
+  3 .xx.....x
+  4 ...xX...X
+a=#9 L2 b=#17 L2 c=#26 L2
+
+on proxy4_king:default_small:B:1 r141 after action #17 around 5,1 x=1
+ 13 .XxxxX.Xx
+ 14 ...X.....
+ 15 X.xX....X
+  0 ..C.bxx..
+  1 ..c.BX.aA
+  2 ..X......
+  3 .xx.....x
+  4 ...xX...X
+  5 ........X
+a=#9 L2 b=#17 L2 c=#26 L2
+
+on proxy4_king:default_small:B:1 r141 death #17 around 5,1 x=1
+ 13 .Xxxxx.Xx
+ 14 ...X.....
+ 15 X.xX....X
+  0 ..C.bxx..
+  1 ..c.BX.aA
+  2 ..X......
+  3 .xx.....x
+  4 ...xX...X
+  5 ........X
+a=#9 L2 b=#17 L2 c=#26 L2
+
+on proxy4_king:default_small:B:1 r142 turn #9 around 9,1 x=5
+ 13 xx.x...x.
+ 14 .......X.
+ 15 X..Xx....
+  0 ..*..Xxx.
+  1 **.aA..Xx
+  2 ....X.*.X
+  3 ....x..Xx
+  4 X...Xx...
+  5 ....xXx..
+a=#9 L2 b=#26 L2
+
+on proxy4_king:default_small:B:1 r142 after action #9 around 9,0 x=5
+ 12 .X.X.X...
+ 13 xx.x...x.
+ 14 .......X.
+ 15 X..Xx....
+  0 ..*.AXxx.
+  1 **..a..Xx
+  2 ....X.*.X
+  3 ....x..Xx
+  4 X...Xx...
+a=#9 L2 b=#26 L2
+
+on proxy4_king:default_small:B:1 r142 death #9 around 9,0 x=5
+ 12 XxXx.x...
+ 13 .x...X.x.
+ 14 .......X.
+ 15 xX.Xx....
+  0 ..*.AXxx.
+  1 **..a..X.
+  2 ....X.*Xx
+  3 X...x..Xx
+  4 x...*....
+a=#9 L2 b=#26 L2
+
+on proxy4_king:default_small:B:1 r150 turn #26 around 3,3 x=15
+ 15 ..x...X..
+  0 X......x.
+  1 x..Xx..X.
+  2 .........
+  3 ...aA.Xx.
+  4 ..xX.....
+  5 .X......X
+  6 xx..x....
+  7 x.XXx..xX
+a=#26 L2
+
+on proxy4_king:default_small:B:1 r150 after action #26 around 3,4 x=15
+  0 X......x.
+  1 x..Xx..X.
+  2 .........
+  3 ....a.Xx.
+  4 ..xXA....
+  5 .X......X
+  6 xx..x....
+  7 x.XXx..xX
+  8 ..x.....X
+a=#26 L2
+
+on proxy4_king:default_small:B:1 r150 death #26 around 3,4 x=15
+  0 X......x.
+  1 x.Xx...X.
+  2 .........
+  3 ....a.Xx.
+  4 ..xXA....
+  5 .X......X
+  6 .x..x....
+  7 x.XXx..xX
+  8 ..x.....X
+a=#26 L2

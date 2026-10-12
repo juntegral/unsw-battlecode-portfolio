@@ -1,0 +1,66 @@
+game cand-stack11-online map Trophy/a us=A result {"winner":"B","end":"teamEliminated"}
+tags(our turns): {"sx":0,"sr":0,"sd":0,"sf":0,"sq":0,"sc":0,"sk":0,"esc":0,"split":0}
+timeline r | our units / longest / total | their units / longest / total
+  r  0 |   2 /   3 /    6 |   2 /   3 /    6
+  r 25 |   3 /   3 /    7 |   5 /   3 /   12
+  r 50 |   5 /   3 /   14 |  12 /   4 /   32
+  r 75 |   7 /   3 /   17 |  28 /   4 /   77
+  r100 |   6 /   3 /   15 |  47 /   4 /  120
+  r125 |   4 /   2 /    8 |  61 /   4 /  157
+local feeds (sf) 0: first 12 → 
+--- r50: ours 5 dragons [3 3 3 3 2] total 14 | theirs 12 [4 3 3 3 3 3 3 2 …] total 32
++-------------------------+
+|%                        |
+|%                        |
+|                        %|
+|           o o           |
+|                         |
+|   o    Xxx          o   |
+|   o         X       oo  |
+| ...        xx      oo   |
+|  3.3    xxo xx          |
+|  .. 2   X   x         o |
+|o 3  .Xx   X XxX        o|
+|           x  xX      oo |
+|            x     o  o   |
+|      3     X      X o   |
+|     ..            x     |
+|                   x     |
+|                         |
+|                         |
+|                         |
+|                         |
+|  o                   o  |
+|         x  Xxx          |
+|         x               |
+|  o      X            o  |
+| %                       |
++-------------------------+
+--- r100: ours 6 dragons [3 3 3 2 2 2] total 15 | theirs 47 [4 4 3 3 3 3 3 3 …] total 120
++-------------------------+
+|                  x  x   |
+|           xX     X  xX  |
+|             xx          |
+|             X           |
+|     x  xx         x     |
+|     X   XxX       x     |
+|    xX    xx    x  X     |
+|   .   x xX Xx  X    XxXx|
+|   .   X xo xXo xX   xx x|
+| .23  Xx xXx x  xx  Xx  X|
+|o.3 .2   X xXx Xx    x  o|
+| .       xX   x X xx     |
+|   3%.2XXx    X x X      |
+|   ..  x    XxX   %      |
+|              x    x     |
+|          X       Xx     |
+|          xx  x x  xx    |
+|     X   X    X x  X     |
+|     xx  x  X   X        |
+|   xx    x xx       xX   |
+|   X   x      X          |
+|       xX     x          |
+|              x  x       |
+|          xX     X       |
+|              xX  x      |
++-------------------------+

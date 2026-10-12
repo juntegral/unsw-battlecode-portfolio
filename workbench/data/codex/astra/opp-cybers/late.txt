@@ -1,0 +1,45 @@
+=== 1512747 Default loss
+  longest us  : r300 3 r350 8 r375 12 r400 13 r425 14 r450 14 r475 14 r499 14
+  longest them: r300 4 r350 4 r375 6 r400 9 r425 30 r450 42 r475 28 r499 45
+  dragons us  : r300 6 r350 3 r375 2 r400 1 r425 1 r450 1 r475 1 r499 1
+  dragons them: r300 45 r350 47 r375 56 r400 59 r425 37 r450 28 r475 14 r499 8
+  us   deaths r>=400 by kind: {}
+  us   dragons of 8+ lost, whole game: 0  by kind {}  rammed ones (round,len): []
+  them deaths r>=400 by kind: {'own body': 59, 'mate head': 6, 'mate body': 4}
+  them dragons of 8+ lost, whole game: 1  by kind {'mate head': 1}  rammed ones (round,len): []
+=== 1512749 Portals loss
+  longest us  : r300 6 r350 7 r375 7 r400 8 r425 12 r450 20 r475 21 r499 24
+  longest them: r300 5 r350 4 r375 6 r400 5 r425 19 r450 34 r475 38 r499 38
+  dragons us  : r300 36 r350 31 r375 31 r400 26 r425 15 r450 13 r475 10 r499 8
+  dragons them: r300 36 r350 40 r375 34 r400 30 r425 6 r450 1 r475 1 r499 1
+  us   deaths r>=400 by kind: {'stop': 28, 'wall': 17, 'mate body': 7, 'own body': 6}
+  us   dragons of 8+ lost, whole game: 1  by kind {'wall': 1}  rammed ones (round,len): []
+  them deaths r>=400 by kind: {'own body': 34, 'mate body': 3}
+  them dragons of 8+ lost, whole game: 3  by kind {'mate body': 1, 'own body': 2}  rammed ones (round,len): []
+=== 1512751 Islands win
+  longest us  : r300 7 r350 12 r375 13 r400 19 r425 30 r450 34 r475 42 r499 55
+  longest them: r300 6 r350 14 r375 15 r400 20 r425 32 r450 35 r475 48 r499 24
+  dragons us  : r300 59 r350 59 r375 56 r400 55 r425 52 r450 59 r475 53 r499 52
+  dragons them: r300 58 r350 51 r375 55 r400 49 r425 13 r450 8 r475 3 r499 2
+  us   deaths r>=400 by kind: {'stop': 46, 'wall': 16, 'own body': 5, 'mate body': 4, 'rammed': 3, 'foe body': 3}
+  us   dragons of 8+ lost, whole game: 7  by kind {'rammed': 2, 'mate body': 1, 'rams': 2, 'foe body': 1, 'stop': 1}  rammed ones (round,len): [(200, 10), (312, 12)]
+  them deaths r>=400 by kind: {'own body': 55, 'mate head': 4, 'rams': 3, 'mate body': 1, 'rammed': 1}
+  them dragons of 8+ lost, whole game: 7  by kind {'rammed': 2, 'own body': 5}  rammed ones (round,len): [(394, 10), (497, 49)]
+=== 1535559 Slithery Fight loss
+  longest us  : r300 11 r350 13 r375 12 r400 7 r425 17 r450 23 r475 26 r499 26
+  longest them: r300 12 r350 21 r375 25 r400 19 r425 23 r450 23 r475 39 r499 40
+  dragons us  : r300 58 r350 58 r375 53 r400 55 r425 44 r450 40 r475 41 r499 49
+  dragons them: r300 62 r350 62 r375 60 r400 58 r425 55 r450 53 r475 22 r499 12
+  us   deaths r>=400 by kind: {'wall': 26, 'stop': 26, 'mate body': 18, 'own body': 14, 'rammed': 8, 'rams': 2}
+  us   dragons of 8+ lost, whole game: 10  by kind {'own body': 2, 'rammed': 8}  rammed ones (round,len): [(208, 8), (240, 14), (284, 10), (288, 16), (295, 8), (311, 9), (359, 9), (416, 9)]
+  them deaths r>=400 by kind: {'own body': 178, 'rams': 8, 'rammed': 2}
+  them dragons of 8+ lost, whole game: 11  by kind {'own body': 9, 'rammed': 2}  rammed ones (round,len): [(448, 8), (464, 9)]
+=== 1535560 Schooltime loss
+  longest us  : r300 14 r350 16 r375 23 r400 22 r425 33 r450 37 r475 36 r499 43
+  longest them: r300 17 r350 30 r375 36 r400 37 r425 77 r450 89 r475 93 r499 44
+  dragons us  : r300 56 r350 60 r375 55 r400 60 r425 48 r450 49 r475 48 r499 48
+  dragons them: r300 62 r350 62 r375 62 r400 58 r425 26 r450 15 r475 11 r499 11
+  us   deaths r>=400 by kind: {'stop': 57, 'own body': 17, 'wall': 14, 'rammed': 13, 'mate body': 11, 'rams': 4}
+  us   dragons of 8+ lost, whole game: 10  by kind {'rammed': 6, 'rams': 3, 'own body': 1}  rammed ones (round,len): [(268, 10), (276, 10), (304, 12), (317, 11), (320, 15), (358, 11)]
+  them deaths r>=400 by kind: {'own body': 60, 'rams': 13, 'rammed': 4}
+  them dragons of 8+ lost, whole game: 23  by kind {'rammed': 11, 'own body': 10, 'rams': 1, 'mate body': 1}  rammed ones (round,len): [(160, 13), (176, 13), (194, 12), (252, 12), (272, 12), (313, 20), (385, 17), (395, 14), (395, 19), (465, 9), (486, 28)]

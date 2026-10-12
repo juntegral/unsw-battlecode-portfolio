@@ -1,0 +1,105 @@
+game 815351 map Trauma/a us=B result {"winner":"B","end":"roundLimit"}
+tags(our turns): {"sx":0,"sr":0,"sd":0,"sf":0,"sq":0,"sc":0,"sk":0,"esc":0,"split":0}
+timeline r | our units / longest / total | their units / longest / total
+  r  0 |   2 /   4 /    8 |   2 /   4 /    8
+  r 25 |   7 /   3 /   15 |   4 /   6 /   14
+  r 50 |   9 /   4 /   22 |   8 /   6 /   24
+  r 75 |   8 /   3 /   20 |  11 /   7 /   34
+  r100 |   9 /   3 /   21 |  19 /   5 /   51
+  r125 |   8 /   4 /   21 |  28 /   5 /   74
+  r150 |   8 /   3 /   19 |  38 /   5 /   97
+  r175 |   7 /   3 /   16 |  42 /   5 /  111
+  r200 |   6 /   3 /   14 |  48 /   7 /  133
+  r225 |   7 /   4 /   17 |  55 /   7 /  141
+  r250 |   9 /   4 /   23 |  59 /   7 /  159
+  r275 |   8 /   4 /   22 |  57 /   7 /  164
+  r300 |   4 /   6 /   14 |  43 /  10 /  154
+  r325 |   3 /  12 /   17 |  29 /  19 /  131
+  r350 |   3 /  14 /   18 |  25 /  23 /  129
+  r375 |   4 /  14 /   21 |  32 /  25 /  145
+  r400 |   3 /   4 /   10 |  31 /  26 /  147
+  r425 |   4 /   7 /   16 |  26 /  27 /  143
+  r450 |   2 /  11 /   17 |  23 /  33 /  151
+  r475 |   2 /   9 /   11 |  22 /  34 /  144
+local feeds (sf) 0: first 12 → 
+--- r400: ours 3 dragons [4 3 3] total 10 | theirs 31 [26 23 7 7 6 5 5 5 …] total 147
++------------------------------------------------+
+|                             %    o        ooooo|
+|        xx              %o   o   o              |
+| x xxx XXX              % %                     |
+| xX  x x             %  Xxx% oo xxxX            |
+|xX   x    X           % oo   oo  o x            |
+|   xxxxxxxx          %Xxoo       %ox            |
+|   xx   xX            xxoo  %%   % x            |
+|   xxx  x            xx%o%  %%     X            |
+|   x x  xxx xX  X    x Xxx    o X               |
+|   x x  xxx     x      %      xxx  %o           |
+|   x x  xxKX         X% xX xX o %   o           |
+|  xx x  xx x xX     xx     x        o           |
+|  Xx x  xx x xxx    x %   xx        o           |
+|   x x  xx x       xx               o           |
+|   xxK     xX      %   xx                       |
+|    x           x % %  X                    %   |
+|               Xx     oo      %            % %  |
+|           xx         oo X     %                |
+|           x %oxx     oo xx                % %  |
+|           X  o xoooo oo oo                     |
+|               Xx%ooo    oo          .3  . % %  |
+|                 xxX   %            %.   .      |
+|             oo   xX x%%          %  ..  3      |
+|   o         oo   xxxxoo             .4     o   |
++------------------------------------------------+
+--- r450: ours 2 dragons [11 6] total 17 | theirs 23 [33 30 9 7 7 7 6 5 …] total 151
++------------------------------------------------+
+| xxx                    o    %   oo        ooooo|
+| x x   xxX              %o   o   oo             |
+| x xxxx  Xx             % %                     |
+| x xx xxx            %o      oo    X            |
+| x xx   x             % o   %ooxxo x            |
+| x xx   x                      Xx%ox            |
+| x KK   x              xoo   %  x% x            |
+| x      x              xo%     xxo              |
+| x    xxx   xX  X      X   %Xo%xx               |
+| x    x         x    %    xxx  xX  %o           |
+| x    x    X          %     o  x    o           |
+| x %  xxx  x        X       oo x    o           |
+| xx     x  x     x  x     xxxX      o           |
+|  x  %  x  x   X xxxx     xxx       o           |
+|  xxx   x  xX  xx xx   xx                       |
+|    x   x        XxxX Xxx                   %   |
+|    x %xx     o Xxxxx oo      %              %  |
+|   xx  x      o x     oo       %                |
+|      xx     %o %     oo                     %  |
+|      x     x o  oooo oo                        |
+|  %   x     x% Xx%ooo                      #..  |
+|            xxxX       %            %   .    .  |
+|             oo   xxxX%%          %   . ......  |
+|             oo   xxx oo              ....6  o  |
++------------------------------------------------+
+--- r499: ours 1 dragons [9] total 9 | theirs 24 [34 33 10 10 10 8 6 6 …] total 159
++------------------------------------------------+
+| oxxx   Xx              oo    xxxx         ooooo|
+|xKx xxx                 %Kxxxxx                 |
+|x x xxx                 %        Xxx            |
+|x x x  x             %o     ooo%                |
+|x x x  XxX           o% oo  %oo  oo             |
+|x x x X              xxx       x %o             |
+|x x xxx                xoo   % x xx             |
+|x x x   xX             xo%  o ox xX             |
+|x x x  xX  xX          X   %xK%x                |
+|x x x          xX    %      xxxx   %o           |
+|x x x      o       xx %    xKo      o           |
+|x x  Xx    x     xxxX      xooo     o           |
+|x x        x     oo  %    xx x      o           |
+|x x        x      o %     xxxx      o           |
+|x xxK%     xX       % %                         |
+|x                   x                      %    |
+|x             oX   Xx oo      %             %   |
+|x          X  ox      oo       %             %  |
+|x          xX%ox      oo               ..       |
+|x     x    xxoo  oooo oo oo           ...    %  |
+|x %   xX    x%   %ooo     o           . 9     % |
+|x     xx    xxxxx    % %            % .         |
+|xxxxxxx      oo       %%          %   .         |
+|xx% %        oo       oo                   o  o |
++------------------------------------------------+

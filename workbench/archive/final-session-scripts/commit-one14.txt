@@ -1,0 +1,9 @@
+Server profile = one14: the short-dragon portal rule is off again
+
+PORTAL_SCOUT_MIN_LEN 4 kept the whole side out of portals whose far side
+nobody had seen (nobody crosses, so it never becomes seen) and cut our pearls
+by round 100 on portal maps by half or more (Portals 238 to 71, Australia 92
+to 36). The profile now matches the live bot one14 (submission 21497): the
+line is removed, the code keeps the switch at its default 0.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>

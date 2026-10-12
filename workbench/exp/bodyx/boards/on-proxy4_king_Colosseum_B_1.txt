@@ -1,0 +1,47 @@
+on proxy4_king:Colosseum:B:1 r16 after #1 pearl-multi around 11,11 x=7
+  7 ......x..
+  8 ..*...x..
+  9 ...*..X..
+ 10 .........
+ 11 ....A..bB
+ 12 ..aaa....
+ 13 .........
+ 14 .........
+ 15 .........
+a=#1 L4 b=#3 L2 c=#4 L2
+
+on proxy4_king:Colosseum:B:1 r52 turn #23 around 6,13 x=2
+  9 x......x.
+ 10 ...xXx.x.
+ 11 .XxX..*X.
+ 12 b...*Xxx.
+ 13 b..gG....
+ 14 .....*.aA
+ 15 Xx.......
+  0 .x.......
+  1 .....x.x.
+a=#3 L2 b=#4 L3 c=#6 L2 d=#14 L3 e=#16 L2 f=#21 L2 g=#23 L2
+
+on proxy4_king:Colosseum:B:1 r52 after action #23 around 6,12 x=2
+  8 xx.XxXx..
+  9 x......x.
+ 10 ...xXx.x.
+ 11 .XxX..*X.
+ 12 b...GXxx.
+ 13 b..gg....
+ 14 .....*.aA
+ 15 Xx.......
+  0 .x.......
+a=#3 L2 b=#4 L3 c=#6 L2 d=#14 L3 e=#16 L2 f=#21 L2 g=#23 L3
+
+on proxy4_king:Colosseum:B:1 r52 death #23 around 6,12 x=2
+  8 xx.XxXx..
+  9 x......x.
+ 10 ...xXx.x.
+ 11 .XxX..*X.
+ 12 b...G*.*.
+ 13 b..gg....
+ 14 .....*.aA
+ 15 Xx.......
+  0 .x.......
+a=#3 L2 b=#4 L3 c=#6 L2 d=#14 L3 e=#16 L2 f=#21 L2 g=#23 L3

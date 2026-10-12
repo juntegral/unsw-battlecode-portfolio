@@ -1,0 +1,127 @@
+{
+  "source": "data/online/smoke/one8-bot/main.cpp",
+  "switches": {
+    "EAT_FIRST": {
+      "line": 113,
+      "value": "true"
+    },
+    "HEADING_TIE": {
+      "line": 24,
+      "value": "1.5"
+    },
+    "FEED_CAP_ROUND": {
+      "line": 80,
+      "value": "350"
+    },
+    "QUEEN_HERD": {
+      "line": 217,
+      "value": "true"
+    },
+    "QUEEN_DEFEND_STEPS": {
+      "line": 129,
+      "value": "3"
+    },
+    "QUEEN_DEAD_ALL": {
+      "line": 154,
+      "value": "true"
+    },
+    "QUEEN_EXIT_KEEP": {
+      "line": 155,
+      "value": "true"
+    },
+    "QUEEN_AVENGE": {
+      "line": 132,
+      "value": "8"
+    },
+    "RALLY_END_FRESH": {
+      "line": 289,
+      "value": "5"
+    },
+    "PORTAL_ID_GUARD": {
+      "line": 159,
+      "value": "true"
+    },
+    "SMALL_SPRINT_THREAT": {
+      "line": 282,
+      "value": "true"
+    },
+    "MATE_UNPIN": {
+      "line": 156,
+      "value": "true"
+    },
+    "POCKET_KEEP_OUT": {
+      "line": 157,
+      "value": "true"
+    },
+    "TARGET_REACHABLE": {
+      "line": 275,
+      "value": "true"
+    },
+    "QS_KEEP_MIN_UNITS": {
+      "line": 151,
+      "value": "2"
+    },
+    "SPLIT_PORTAL_OK": null,
+    "REACH_EATS": null,
+    "SHORT_EVADE": {
+      "line": 158,
+      "value": "false"
+    },
+    "SHORT_EVADE_PAID": null,
+    "QUEEN_SURE_LEN": {
+      "line": 74,
+      "value": "4"
+    },
+    "QUEEN_SURE_STEPS": {
+      "line": 75,
+      "value": "3"
+    },
+    "CUT_BODY_LEN": null,
+    "QS_PAY_REACH": {
+      "line": 148,
+      "value": "3"
+    },
+    "QUEEN_PORTAL_ALL": {
+      "line": 184,
+      "value": "false"
+    },
+    "QUEEN_BOOT_LEN": null
+  },
+  "games": [
+    {
+      "gid": 1493691,
+      "queen_retained_L4_turns": 153,
+      "noaction": 15,
+      "noaction_length": 41,
+      "noaction_drops": 23,
+      "drops_to_queen": 20,
+      "drops_to_other_mates": 3,
+      "feed_cap_eligible_turns": 0,
+      "portal_guard_bad_ids": 0,
+      "portal_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "event_counts_no_logs": true
+    },
+    {
+      "gid": 1493692,
+      "queen_retained_L4_turns": 68,
+      "noaction": 0,
+      "noaction_length": 0,
+      "noaction_drops": 0,
+      "drops_to_queen": 0,
+      "drops_to_other_mates": 0,
+      "feed_cap_eligible_turns": 0,
+      "portal_guard_bad_ids": 0,
+      "portal_ids": [
+        0
+      ],
+      "event_counts_no_logs": true
+    }
+  ]
+}

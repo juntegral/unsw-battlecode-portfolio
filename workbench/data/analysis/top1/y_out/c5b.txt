@@ -1,0 +1,153 @@
+== 1. Which of our games have readable pings (theirs: 83 games, 78 in the study; ladder 3 Oct, first 31 of 4 Oct, stride-old)
+   dl-20261003          games  24 readable  24
+   dl-20261004          games 153 readable  31
+   passage2-test-new    games  28 readable   0
+   passage2-test-old    games  28 readable   0
+   qh31-test-new        games  28 readable   0
+   qh31-test-old        games  28 readable   0
+   stride-new           games  28 readable   0
+   stride-old           games  28 readable  27
+   tc30-dev1-old        games  14 readable   0
+   tc30-dev1b-new       games  14 readable   0
+   tc30-test-new        games  28 readable   0
+   readable: 82 games (60 small maps, 22 big); races among them 25 (won 12)
+   in the other games the share of pings that happen to pass the plausibility test: median 0.0000, max 1.0000
+
+== 2. What our dragons name as leader, per 25-round block (all own dragons but the longest; a look every 5 rounds)
+   theirs (small maps, blocks 300-324 ... 475-499): true 16 / 32 / 28 / 34 / 37 / 34 / 31 / 28%; dead 49 / 26 / 37 / 27 / 19 / 36 / 36 / 34%;
+   samples with half or more naming it 26 / 35 / 32 / 39 / 48 / 50 / 46 / 39%; could feed by our rules 2.0 / 4.6 / 3.9 / 4.6 / 5.2 / 3.0 / 1.5 / 1.2, without the belief test 7.5 / 9.2 / 9.5 / 10.2 / 9.3 / 5.2 / 4.1 / 3.7
+ small maps (60 games): block | naming a longest | naming a dead id | dead or under half the longest | naming itself | samples with half or more naming it | could feed it: by geometry / also naming it
+   150-174 |   8% |  47% |  53% |  11% |  10% (202) | 6.5 / 0.4
+   175-199 |  11% |  57% |  63% |   9% |  16% (197) | 8.3 / 1.1
+   200-224 |  13% |  57% |  65% |  10% |  17% (181) | 9.4 / 1.5
+   225-249 |   8% |  57% |  66% |  12% |  11% (170) | 8.6 / 0.8
+   250-274 |   9% |  55% |  64% |  12% |  16% (167) | 6.3 / 0.4
+   275-299 |   8% |  52% |  61% |  11% |  21% (160) | 6.9 / 0.4
+   300-324 |  21% |  49% |  57% |   9% |  37% (151) | 7.6 / 2.3
+   325-349 |  36% |  24% |  50% |  10% |  42% (155) | 9.6 / 4.9
+   350-374 |  31% |  36% |  58% |   8% |  35% (154) | 9.6 / 4.1
+   375-399 |  36% |  26% |  57% |   9% |  42% (149) | 10.1 / 4.7
+   400-424 |  39% |  18% |  52% |  13% |  50% (145) | 9.2 / 5.3
+   425-449 |  37% |  33% |  53% |  15% |  53% (145) | 5.2 / 3.0
+   450-474 |  32% |  35% |  60% |  16% |  48% (143) | 4.1 / 1.5
+   475-499 |  29% |  34% |  65% |  17% |  42% (129) | 3.9 / 1.3
+ big maps (22 games): block | naming a longest | naming a dead id | dead or under half the longest | naming itself | samples with half or more naming it | could feed it: by geometry / also naming it
+   150-174 |  12% |  49% |  63% |  11% |   5% (110) | 9.5 / 2.0
+   175-199 |  32% |  27% |  50% |  12% |  28% (109) | 8.9 / 3.8
+   200-224 |  33% |  19% |  45% |  15% |  28% (106) | 9.3 / 4.4
+   225-249 |  36% |  17% |  41% |  13% |  34% (94) | 10.1 / 6.4
+   250-274 |  28% |  28% |  57% |  13% |  21% (90) | 9.6 / 4.9
+   275-299 |  38% |  19% |  43% |  12% |  31% (90) | 9.9 / 6.0
+   300-324 |  25% |  20% |  57% |  14% |  25% (88) | 9.2 / 3.2
+   325-349 |  38% |  21% |  47% |  13% |  32% (85) | 10.4 / 6.0
+   350-374 |  35% |  13% |  51% |  15% |  28% (81) | 9.2 / 5.0
+   375-399 |  37% |  17% |  55% |  14% |  27% (81) | 10.0 / 5.1
+   400-424 |  48% |  13% |  36% |  12% |  44% (80) | 10.2 / 6.1
+   425-449 |  34% |  20% |  56% |  15% |  30% (80) | 7.5 / 4.4
+   450-474 |  45% |   5% |  47% |  13% |  33% (75) | 7.3 / 4.5
+   475-499 |  18% |  16% |  71% |  18% |  15% (75) | 7.2 / 2.1
+
+== 3. After a leader cut (longest 8+, from round 150): rounds until half of our dragons name the true longest again
+   theirs: median 27 and 27.5 rounds (quartiles 17 and 36-41); 161 cuts on small maps, 227 on big; in between the most-named id is dead in 36-44%, alive but under half in 28-34%
+   small maps cuts 177 | rounds until half name the true longest: quartile 18, median 32, quartile 201 | never before the end 38 | within 5 rounds 13, within 10 27, within 20 52
+              meanwhile the most-named id is: dead 42%, alive but under half the longest 37%, a longest 7%
+   big maps   cuts 281 | rounds until half name the true longest: quartile 17, median 38, quartile 98 | never before the end 50 | within 5 rounds 38, within 10 51, within 20 80
+              meanwhile the most-named id is: dead 34%, alive but under half the longest 23%, a longest 9%
+   all        cuts 458 | rounds until half name the true longest: quartile 17, median 34, quartile 109 | never before the end 88 | within 5 rounds 51, within 10 78, within 20 132
+              meanwhile the most-named id is: dead 37%, alive but under half the longest 28%, a longest 8%
+
+== 4. Rounds 400-494, a look every 5 rounds, 10+ senders: growth of the longest over the next 5 rounds by the share naming it
+   theirs: under a quarter +0.42 (187 samples), a quarter to a half +1.85 (40), a half to three quarters +1.51 (41), more +2.00 (79)
+   share naming the longest | growth (samples) | with 2 per cut in those 5 rounds given back | samples with a cut in those 5 rounds | mean could-feed-by-geometry | mean longest
+   under a quarter            | +0.40 (211) | +0.87 | 46 of 211 = 22% | 10.2 | 26.3
+   a quarter to a half        | +2.06 (52) | +2.40 | 7 of 52 = 13% | 8.9 | 35.1
+   a half to three quarters   | +2.10 (51) | +2.41 | 7 of 51 = 14% | 13.2 | 29.2
+   more                       | +2.10 (115) | +2.34 | 13 of 115 = 11% | 13.1 | 35.4
+   The same, only samples with NO leader cut in the next 5 rounds:
+   under a quarter            | +0.90 (165)
+   a quarter to a half        | +2.42 (45)
+   a half to three quarters   | +2.61 (44)
+   more                       | +2.47 (102)
+   The same by rounds since the last leader cut (no cut in the next 5 rounds): under a quarter / a quarter or more
+     0-4   rounds since the cut | +0.62 (40) | +1.00 (1)
+     5-9   rounds since the cut | +1.23 (35) | +1.00 (2)
+    10-14  rounds since the cut | +1.30 (23) | +3.67 (6)
+    15-24  rounds since the cut | +1.32 (22) | +2.63 (27)
+    25-39  rounds since the cut | +0.25 (8) | +2.33 (45)
+    40-up  rounds since the cut | +0.94 (18) | +2.52 (84)
+   no leader cut yet            | +0.16 (19) | +2.42 (26)
+   Inside the same game (games with both kinds of sample, no cut in the next 5 rounds): mean of (a quarter or more) minus (under a quarter)
+   +1.13 per 5 rounds (se 0.26, 20 games)
+   vs test4   under a quarter +0.45 (49) | otherwise +1.60 (45)   (theirs 0.40 / 1.45, 0.35 / 2.41, 0.46 / 1.63)
+   vs WHQ     under a quarter +0.32 (41) | otherwise +2.37 (49)   (theirs 0.40 / 1.45, 0.35 / 2.41, 0.46 / 1.63)
+   vs others  under a quarter +0.40 (121) | otherwise +2.15 (124)   (theirs 0.40 / 1.45, 0.35 / 2.41, 0.46 / 1.63)
+
+== 5. What the feeders near a cut do in the next 25 rounds. Cuts from round 395 with 10+ other own dragons.
+   Cohort = own dragons at most half the heir's length within 15 cells of the heir's or the stub's head at the cut.
+   H died by choice within 3 steps of the heir | S ... of the stub | B ... of another dragon twice its length | N ... of none of these |
+   R rammed | X boxed in | h alive, 3+ cells nearer the heir | s alive, 3+ nearer the stub | w alive, neither | c cut short (heir cut again or died before round 25)
+   group | cuts | cut short before round 25 | cohort a cut | of the cohort of cuts NOT cut short:    H    S    B    N    R    X    h    s    w | died next to the heir by round: 1-5 / 6-10 / 11-15 / 16-20 / 21-25
+   meow live       316 |  249 ({'recut': 178, 'gameend': 42, 'heirdead': 29}) | 11.6 |  14%   2%  10%  10%   4%  11%  13%   4%  32% | 19% / 21% / 15% / 30% / 15%
+   meow test       167 |  141 ({'recut': 100, 'gameend': 18, 'heirdead': 23}) | 13.0 |  17%   1%  15%   8%   3%  19%  10%   0%  26% | 14% / 26% / 20% / 29% / 11%
+   meow readable    79 |   67 ({'recut': 49, 'heirdead': 6, 'gameend': 12}) | 12.6 |   6%   4%   5%  14%   6%  17%  14%   0%  33% | 27% / 27% / 27% / 9% / 9%
+   meow small      240 |  196 ({'recut': 151, 'gameend': 23, 'heirdead': 22}) | 12.5 |  19%   1%  11%  13%   3%  19%   9%   3%  22% | 11% / 25% / 16% / 34% / 14%
+   meow big        243 |  194 ({'recut': 127, 'gameend': 37, 'heirdead': 30}) | 11.7 |  11%   2%  12%   7%   5%  10%  14%   3%  37% | 27% / 19% / 18% / 22% / 14%
+   opponents       264 |  185 ({'recut': 116, 'heirdead': 34, 'gameend': 35}) | 10.5 |  13%   0%  12%  11%   3%  19%   9%   1%  30% | 36% / 27% / 13% / 15% / 9%
+   test4 (vs us)   110 |   80 ({'gameend': 17, 'recut': 46, 'heirdead': 17}) | 10.5 |  11%   1%  14%   8%   2%  20%   8%   2%  32% | 29% / 19% / 26% / 19% / 6%
+   WHQ (vs us)     103 |   65 ({'recut': 47, 'gameend': 7, 'heirdead': 11}) | 10.3 |  14%   0%  11%  14%   3%  18%  10%   0%  28% | 38% / 29% / 8% / 14% / 11%
+   forgot          370 |  260 ({'recut': 195, 'gameend': 43, 'heirdead': 22}) | 8.5 |  15%   0%  10%   7%   8%  23%   7%   1%  29% | 36% / 30% / 13% / 16% / 6%
+   SSS             295 |  200 ({'recut': 141, 'gameend': 36, 'heirdead': 23}) | 19.5 |  16%   0%   5%   2%   3%  18%  15%   5%  35% | 30% / 31% / 18% / 12% / 9%
+   Vibing++        329 |  210 ({'recut': 139, 'heirdead': 22, 'gameend': 49}) | 12.6 |   8%   1%   4%   9%   7%  26%   9%   3%  32% | 40% / 22% / 20% / 10% / 8%
+
+   The heir's own growth after a cut that was not cut short: mean length at the cut and 5 / 10 / 15 / 20 / 25 / 30 rounds later; share of heirs still the side's longest at 25
+   meow live      cuts   52 | 21.5 / 21.4 / 21.8 / 21.9 / 23.2 / 24.2 / 25.2 | 67%
+   meow test      cuts   20 | 22.0 / 22.9 / 20.9 / 21.8 / 24.4 / 27.2 / 29.4 | 65%
+   meow readable  cuts    8 | 23.4 / 24.1 / 24.5 / 25.2 / 26.4 / 27.0 / 28.2 | 100%
+   meow small     cuts   33 | 15.9 / 16.9 / 17.5 / 19.1 / 20.8 / 21.8 / 23.3 | 73%
+   meow big       cuts   39 | 26.4 / 26.0 / 25.1 / 24.3 / 25.8 / 27.7 / 28.9 | 62%
+   opponents      cuts   70 | 37.5 / 38.5 / 39.9 / 41.4 / 41.2 / 42.5 / 43.2 | 70%
+   test4 (vs us)  cuts   25 | 21.4 / 22.2 / 23.0 / 23.7 / 22.7 / 23.6 / 22.7 | 52%
+   WHQ (vs us)    cuts   34 | 48.6 / 49.9 / 51.7 / 53.2 / 53.1 / 54.8 / 56.5 | 82%
+   forgot         cuts   82 | 44.5 / 46.1 / 47.5 / 48.6 / 49.6 / 50.8 / 52.0 | 84%
+   SSS            cuts   77 | 38.5 / 39.5 / 40.6 / 41.6 / 42.9 / 44.1 / 45.5 | 79%
+   Vibing++       cuts   94 | 36.5 / 37.8 / 38.9 / 40.2 / 41.7 / 42.2 / 42.4 | 78%
+
+   How soon the next cut comes (all cuts from 395 of the group): the heir cuts again within 1 / 5 / 10 / 25 rounds; the game ends within 25
+   meow live      cuts  316 | again within 1: 4%, 5: 23%, 10: 42%, 25: 56% | game ends within 25: 13% | heir dies within 25: 9%
+   meow test      cuts  167 | again within 1: 4%, 5: 23%, 10: 41%, 25: 60% | game ends within 25: 11% | heir dies within 25: 14%
+   meow readable  cuts   79 | again within 1: 8%, 5: 28%, 10: 49%, 25: 62% | game ends within 25: 15% | heir dies within 25: 8%
+   meow small     cuts  240 | again within 1: 5%, 5: 31%, 10: 50%, 25: 63% | game ends within 25: 10% | heir dies within 25: 9%
+   meow big       cuts  243 | again within 1: 3%, 5: 16%, 10: 34%, 25: 52% | game ends within 25: 15% | heir dies within 25: 12%
+   opponents      cuts  264 | again within 1: 4%, 5: 20%, 10: 30%, 25: 44% | game ends within 25: 13% | heir dies within 25: 13%
+   test4 (vs us)  cuts  110 | again within 1: 10%, 5: 22%, 10: 31%, 25: 42% | game ends within 25: 15% | heir dies within 25: 15%
+   WHQ (vs us)    cuts  103 | again within 1: 0%, 5: 15%, 10: 29%, 25: 46% | game ends within 25: 7% | heir dies within 25: 11%
+   forgot         cuts  370 | again within 1: 3%, 5: 19%, 10: 29%, 25: 53% | game ends within 25: 12% | heir dies within 25: 6%
+   SSS            cuts  295 | again within 1: 15%, 5: 27%, 10: 37%, 25: 48% | game ends within 25: 12% | heir dies within 25: 8%
+   Vibing++       cuts  329 | again within 1: 2%, 5: 12%, 10: 24%, 25: 42% | game ends within 25: 15% | heir dies within 25: 7%
+
+== 6. Readable games: what the cohort names after a cut (cuts from 395, 10+ others, not cut short), by round after the cut
+   t | cohort alive | naming the heir | the stub | another living id | a dead id | nothing
+   cuts: 8
+    1 | 13.1 |   0% |  24% |  49% |  28% |   0%
+    2 | 13.0 |   1% |  23% |  49% |  27% |   0%
+    3 | 12.8 |   0% |  20% |  53% |  27% |   0%
+    5 | 12.5 |   0% |  17% |  56% |  27% |   0%
+    8 | 11.1 |   3% |  17% |  49% |  30% |   0%
+   10 | 10.5 |  10% |  17% |  45% |  29% |   0%
+   12 | 10.2 |  12% |  17% |  44% |  27% |   0%
+   15 | 8.8 |  17% |  17% |  46% |  20% |   0%
+   18 | 7.5 |  25% |  18% |  43% |  13% |   0%
+   20 | 7.2 |  34% |  19% |  38% |   9% |   0%
+   22 | 7.0 |  41% |  18% |  38% |   4% |   0%
+   24 | 6.6 |  45% |   8% |  45% |   2% |   0%
+   25 | 6.6 |  47% |   8% |  43% |   2% |   0%
+   26 | 0.0 |   0% |   0% |   0% |   0% |   0%
+   27 | 0.0 |   0% |   0% |   0% |   0% |   0%
+   28 | 0.0 |   0% |   0% |   0% |   0% |   0%
+   30 | 0.0 |   0% |   0% |   0% |   0% |   0%
+
+   Fast against slow, cut by cut (readable games, cuts not cut short): the round at which half of the living cohort first names the heir
+   half name the heir within 10 rounds    cuts   1 | heir's growth in 25 rounds +6.0 | cohort 12.0 | died next to the heir 2.00 a cut | next to the stub 0.00
+   in 11-20 rounds                        cuts   2 | heir's growth in 25 rounds +2.5 | cohort 18.0 | died next to the heir 1.00 a cut | next to the stub 0.00
+   in 21-30 rounds                        cuts   2 | heir's growth in 25 rounds +3.0 | cohort 12.0 | died next to the heir 0.50 a cut | next to the stub 0.00
+   not within 30 rounds                   cuts   3 | heir's growth in 25 rounds +4.0 | cohort 12.3 | died next to the heir 0.67 a cut | next to the stub 0.33

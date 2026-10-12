@@ -1,0 +1,85 @@
+game proxy4_king_Colosseum_A_1 map Colosseum/a us=A result {"winner":"B","end":"teamEliminated"}
+tags(our turns): {"sx":0,"sr":0,"sd":0,"sf":0,"sq":0,"sc":0,"sk":0,"esc":0,"split":0}
+timeline r | our units / longest / total | their units / longest / total
+  r  0 |   1 /   4 /    4 |   1 /   4 /    4
+  r 25 |   6 /   2 /   12 |   9 /   4 /   21
+  r 50 |   8 /   2 /   16 |  20 /   4 /   54
+  r 75 |   6 /   3 /   13 |  29 /   4 /   73
+  r100 |   3 /   2 /    6 |  34 /   5 /   89
+local feeds (sf) 0: first 12 → 
+--- r1: ours 1 dragons [4] total 4 | theirs 2 [2 2] total 4
++----------------+
+|...             |
+|4               |
+|                |
+|                |
+|                |
+|                |
+|     o          |
+|                |
+|                |
+|          o     |
+|                |
+|                |
+|                |
+|                |
+|            X   |
+|            x xX|
++----------------+
+--- r25: ours 6 dragons [2 2 2 2 2 2] total 12 | theirs 9 [4 3 2 2 2 2 2 2 …] total 21
++----------------+
+|                |
+|  o             |
+|          o   2 |
+| 2.     .2    . |
+|    Xx      o   |
+| 2.ooxoX        |
+|  2. x x    xX  |
+|      X     x   |
+|    x x  x      |
+|    X o  X      |
+|         o Xo   |
+|   o    x  x  o |
+|  o     X xX  o |
+|    2o          |
+|    .        o  |
+|                |
++----------------+
+--- r100: ours 3 dragons [2 2 2] total 6 | theirs 34 [5 4 4 3 3 3 3 3 …] total 89
++----------------+
+| %   xx      %  |
+| %   X x   %X  %|
+|       X    xx  |
+|     xx XX%  x  |
+|X   XxX  x   x x|
+|   x    X XxXX  |
+|  xxX   xo xxx  |
+|  xxxXxX xxoxX  |
+| XXxx  X xX XXx |
+| x    xx XxXx x |
+|     X X x      |
+|x X  x x xX x   |
+|Xox  x xxx Xx  x|
+|      xX x     X|
+|.2  2 x  X      |
+| 2. .  Xxx      |
++----------------+
+--- r120: ours 1 dragons [2] total 2 | theirs 38 [4 4 4 3 3 3 3 3 …] total 97
++----------------+
+|   x  x         |
+|x   xx      XxoX|
+|xXx X    X   xx |
+|   xXxxX%x    X |
+|   x X x X    x |
+|   xX  x x    X |
+| Xx   xX  Xxx  x|
+|  Xx  x x  xxx X|
+|Xx XxX  xx xx   |
+|X x x X  X  X   |
+|x X   xx   xX  x|
+|     xX xx X    |
+| Xx      X x  x |
+|    xX2Xx    Xx |
+|    X . xx      |
+|Xx XxxX% xX     |
++----------------+

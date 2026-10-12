@@ -1,0 +1,44 @@
+== 1. Round-500 games with both queens dead: wins / games ==
+-- by own / enemy TOTAL length at round 400: <0.5 | 0.5-0.8 | 0.8-1.25 | 1.25-2 | >2
+   meow          41/143 =  29%   1/55 | 11/33 | 13/36 | 6/7 | 10/12
+   meow live     27/ 96 =  28%   0/38 | 7/21 | 10/24 | 3/4 | 7/9
+   opp of meow  102/143 =  71%   2/12 | 1/7 | 23/36 | 22/33 | 54/55
+   Vibing++      99/152 =  65%   3/18 | 5/12 | 28/44 | 25/37 | 38/41
+   SSS           82/141 =  58%   0/11 | 7/20 | 37/61 | 24/34 | 14/15
+   forgot        85/154 =  55%   4/26 | 8/29 | 30/51 | 14/18 | 29/30
+   top3         266/447 =  60%   7/55 | 20/61 | 95/156 | 63/89 | 81/86
+-- by own / enemy LONGEST dragon at round 400: <0.5 | 0.5-0.8 | 0.8-1.25 | 1.25-2 | >2
+   meow          41/143 =  29%   8/75 | 9/23 | 9/24 | 5/9 | 10/12
+   meow live     27/ 96 =  28%   6/54 | 4/12 | 7/15 | 3/7 | 7/8
+   opp of meow  102/143 =  71%   2/10 | 4/11 | 14/23 | 14/20 | 68/79
+   Vibing++      99/152 =  65%   7/22 | 13/18 | 16/33 | 31/36 | 32/43
+   SSS           82/141 =  58%   7/18 | 4/19 | 13/23 | 14/29 | 44/52
+   forgot        85/154 =  55%   4/16 | 6/17 | 12/32 | 12/24 | 51/65
+   top3         266/447 =  60%   18/56 | 23/54 | 41/88 | 57/89 | 127/160
+
+== 2. Logistic fit: win ~ a + b1*log(longest ratio r400) + b2*log(total ratio r400) ==
+   meow         n=143  intercept +0.01  longest-ratio +0.90  total-ratio +1.83
+   meow live    n= 96  intercept +0.02  longest-ratio +0.98  total-ratio +1.80
+   opp of meow  n=143  intercept -0.01  longest-ratio +0.90  total-ratio +1.83
+   Vibing++     n=152  intercept +0.32  longest-ratio +0.27  total-ratio +1.54
+   SSS          n=141  intercept +0.15  longest-ratio +0.35  total-ratio +1.98
+   forgot       n=154  intercept +0.12  longest-ratio +0.47  total-ratio +2.00
+   top3         n=447  intercept +0.19  longest-ratio +0.35  total-ratio +1.81
+
+== 3. Longest dragon, means over these games: own r300 -> r400 -> end | enemy r300 -> r400 -> end ==
+   meow         n=143  own   9.8 ->  14.8 ->  34.9 | enemy  15.4 ->  32.9 ->  55.6 | own total r400   104 vs   200; own units r400 30.6 vs 31.5
+   meow live    n= 96  own   9.6 ->  15.1 ->  35.0 | enemy  15.1 ->  32.7 ->  55.0 | own total r400   104 vs   199; own units r400 30.3 vs 31.4
+   opp of meow  n=143  own  15.4 ->  32.9 ->  55.6 | enemy   9.8 ->  14.8 ->  34.9 | own total r400   200 vs   104; own units r400 31.5 vs 30.6
+   Vibing++     n=152  own  12.6 ->  26.7 ->  49.0 | enemy  10.3 ->  23.2 ->  38.7 | own total r400   159 vs   133; own units r400 33.4 vs 31.6
+   SSS          n=141  own  15.8 ->  36.7 ->  52.6 | enemy  12.4 ->  27.4 ->  46.3 | own total r400   175 vs   163; own units r400 41.5 vs 37.9
+   forgot       n=154  own  12.9 ->  32.7 ->  49.7 | enemy  10.9 ->  22.3 ->  42.6 | own total r400   135 vs   141; own units r400 24.1 vs 35.0
+   top3         n=447  own  13.7 ->  31.9 ->  50.4 | enemy  11.2 ->  24.2 ->  42.5 | own total r400   156 vs   145; own units r400 32.8 vs 34.8
+
+== 4. Level games (total ratio at r400 0.8-1.25): longest at r400 and the result ==
+   meow         13/36; own longest ahead at r400: 5/10; not ahead: 8/26; mean own longest r400 16.6 vs 27.1
+   meow live    10/24; own longest ahead at r400: 4/8; not ahead: 6/16; mean own longest r400 16.8 vs 24.1
+   opp of meow  23/36; own longest ahead at r400: 17/25; not ahead: 6/11; mean own longest r400 27.1 vs 16.6
+   Vibing++     28/44; own longest ahead at r400: 18/28; not ahead: 10/16; mean own longest r400 33.2 vs 27.2
+   SSS          37/61; own longest ahead at r400: 28/40; not ahead: 9/21; mean own longest r400 37.7 vs 30.3
+   forgot       30/51; own longest ahead at r400: 25/40; not ahead: 5/11; mean own longest r400 37.8 vs 27.5
+   top3         95/156; own longest ahead at r400: 71/108; not ahead: 24/48; mean own longest r400 36.5 vs 28.5

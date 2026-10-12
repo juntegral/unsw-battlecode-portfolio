@@ -1,0 +1,105 @@
+game bot-hunter_maze_A_1 map maze/a us=A result {"winner":"B","end":"roundLimit"}
+tags(our turns): {"sx":0,"sr":0,"sd":0,"sf":0,"sq":0,"sc":0,"sk":0,"esc":1,"split":6}
+timeline r | our units / longest / total | their units / longest / total
+  r  0 |   2 /   4 /    8 |   2 /   4 /    8
+  r 25 |   3 /   9 /   15 |   3 /   9 /   13
+  r 50 |   4 /  14 /   32 |   7 /  22 /   40
+  r 75 |   9 /  22 /   52 |  12 /  27 /   52
+  r100 |  13 /  23 /   58 |  17 /  27 /   62
+  r125 |  17 /  24 /   68 |  21 /  27 /   74
+  r150 |  22 /  22 /   84 |  25 /  25 /   94
+  r175 |  23 /  22 /   88 |  27 /  25 /  107
+  r200 |  25 /  22 /   89 |  26 /  25 /  106
+  r225 |  25 /  22 /  101 |  25 /  25 /  104
+  r250 |  28 /  28 /  115 |  29 /  25 /  105
+  r275 |  28 /  32 /  125 |  28 /  23 /  112
+  r300 |  25 /  32 /  118 |  28 /  23 /  122
+  r325 |  25 /  32 /  108 |  25 /  23 /  116
+  r350 |  19 /  32 /  113 |  23 /  23 /  118
+  r375 |   8 /  35 /   96 |  14 /  23 /  101
+  r400 |   7 /  47 /   92 |   4 /  35 /   58
+  r425 |   6 /  60 /   95 |   4 /  43 /   59
+  r450 |   7 /  16 /   53 |   3 /  49 /   63
+  r475 |   3 /  29 /   54 |   4 /  64 /   78
+local feeds (sf) 0: first 12 → 
+--- r435: ours 7 dragons [63 16 7 6 3 2 2] total 99 | theirs 3 [45 7 2] total 54
++------------------------------------------------+
+|           o    ....         ooo   o   oo   oooo|
+|           o    .     ooo   o%   o     o    %o%o|
+|          .o   7.            oooo      o   %  oo|
+|          2       ..    % %  oooo    o   o  o o |
+|     .2         %..#                   o%   o oo|
+|            xx %o...    Kx%          oo o oo% o |
+|           xxx xoo%..o   xx                 oooo|
+|           xX  X   ..     xxx      oooo   %o%  o|
+|                %o ..       x     xxoxx o  o % %|
+|                 % ..      xx    %xxxxx       % |
+|                         % xxxxxxxx  xx  xxx    |
+|                             xx xx   xx   xx    |
+|     6                                xxxxx     |
+| .....                                     %% % |
+|  .. ...                      o             % % |
+|........ oo%                  oo     % %   % % %|
+|.......  ooo%          o    o           % %     |
+|3...  ....               ooo         %          |
+|....oo.. .o           o     o  oo               |
+| ....   o..                    o                |
+|#..o. o   .    oooo         o                   |
+|. . ..  o .    ooooo o              o           |
+|. .  .... .  oo o oooooooo          o           |
+|...   ..... ooo ooooooo             o           |
++------------------------------------------------+
+--- r436: ours 7 dragons [63 16 7 6 3 2 2] total 99 | theirs 3 [45 7 2] total 54
++------------------------------------------------+
+|           o    ...          ooo   o   oo   oooo|
+|           o    .     ooo   o%   o     o    %o%o|
+|           o  7..            oooo      o   %  oo|
+|      2   .       ..    % %  oooo    o   o  o o |
+|      .   2     %...#   K              o%   o oo|
+|            xx %o...    xx%          oo o oo% o |
+|           xx   oo%. o   xx                 oooo|
+|           xxX x   ..     xxx      oooo   %o%  o|
+|               X%o ..       x     xxoxx o  o % %|
+|                 % ..      xx    %xxxxx       % |
+|                         % xxxxxxxx  xx   xx    |
+|                             xx xx   xx   xx    |
+|    6.                                xxxxx     |
+|  ....                                     %% % |
+|  .. ...                      o             % % |
+| ....... oo%                  oo     % %   % % %|
+|.......  ooo%          o    o           % %     |
+|....  ....               ooo         %          |
+|3...oo.. .o           o     o  oo               |
+|#....   o..                    o                |
+|...o. o   .    oooo         o                   |
+|. . ..  o .    ooooo o              o           |
+|. .  .... .  oo o oooooooo          o           |
+|...   ..... ooo ooooooo             o           |
++------------------------------------------------+
+--- r437: ours 6 dragons [16 7 6 4 2 2] total 37 | theirs 3 [46 7 2] total 55
++------------------------------------------------+
+|           o    ..           ooo   o   oo   oooo|
+|           o    .     ooo   o%   o     o    %o%o|
+|           o  ...            oooo      o   %  oo|
+|      .2      7   ..    K %  oooo    o   o  o o |
+|          .     %....   x              o%   o oo|
+|          2 x  %o...#   xx%          oo o oo% o |
+|           xxX  oo%. o   xx                 oooo|
+|           xxx     .      xxx      oooo   %o%  o|
+|              Xx%o ..       x     xxoxx o  o % %|
+|                 % ..      xx    %xxxxx       % |
+|                         % xxxxxxxx  xx   xx    |
+|    6                        xx xx   xx   xx    |
+|    ..                                xxxxx     |
+|   ...                                     %% % |
+|   % % %                      o             % % |
+|  % % %  oo%                  oo     % %   % % %|
+|.% % %   ooo%          o    o           % %     |
+|. %   % %                ooo         %          |
+|.% %oo % %o           o     o  oo               |
+|4 % %   o %                    o                |
+| % o  o        oooo         o                   |
+|% % %   o %    ooooo o              o           |
+|     % %     oo o oooooooo          o           |
+|% %   % % % ooo ooooooo             o           |
++------------------------------------------------+

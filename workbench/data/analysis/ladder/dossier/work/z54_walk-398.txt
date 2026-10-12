@@ -1,0 +1,148 @@
+first roundStart value 0
+   SPLIT round 190 parent 284 (len 2 head (41, 41)) child 398 (len 16 head (43, 46))
+
+=== round 190, dragon 398 (team 1) turn starts: len 16 head (43, 46) tail (43, 41); team units 64 (enemy 64)
+     37383940414243444546474849
+ 40  m m m m m . o o o o . m m 
+ 41  m m . . M m T o o o * m m 
+ 42  . m M m M . . o . . m m m 
+ 43  m m m m . . . o M m m m m 
+ 44  m m m m . o o o m m . m m 
+ 45  m m m m . o . * m m . m m 
+ 46  . * m m . o O . m m . m m 
+     # # # # # # # # # # # # # 
+  0  .#.#.#.#.#.#.#.#.#.#.#.#.#
+     # # # # # # # # # # # # # 
+  1  m . . . . . m m m m m . . 
+  2  m m m m . . m m m m m * . 
+  3  m M . m . . m m m m m m m 
+  4  m . . . . . m m . m . m m 
+  5  m * . . . . . . . M . . m 
+   head gap 5 mate id 385 len 33 at (45, 43)
+   head gap 6 mate id 5 len 3 at (41, 42)
+   head gap 7 mate id 284 len 2 at (41, 41)
+   head gap 8 mate id 382 len 13 at (39, 42)
+   head gap 9 mate id 211 len 5 at (38, 3)
+   head gap 9 mate id 215 len 16 at (46, 5)
+   head gap 10 mate id 96 len 14 at (52, 45)
+   head gap 10 mate id 363 len 27 at (51, 1)
+   head gap 10 mate id 368 len 24 at (35, 44)
+   head gap 11 mate id 227 len 7 at (47, 39)
+   head gap 11 mate id 268 len 4 at (39, 6)
+   head gap 12 mate id 190 len 7 at (44, 10)
+   head gap 12 mate id 394 len 7 at (46, 8)
+   step N -> (43, 45): free
+   step E -> (44, 46): free
+   step S -> (43, 0): KELP
+   step W -> (42, 46): own body idx 1 of 16
+   ACTION kind move dirs ['N'] childSize - tle False points None
+   update: head (43, 45) tail (43, 40) len 16 (actor 398)
+
+=== round 191, dragon 398 (team 1) turn starts: len 16 head (43, 45) tail (43, 40); team units 64 (enemy 64)
+     37383940414243444546474849
+ 39  . . . . m m . . . . m m . 
+ 40  m m m m m . T o o o . m m 
+ 41  m m M M m . . o o o * m m 
+ 42  . m m m m . . o M . m m m 
+ 43  m m m . M . . o m m m m m 
+ 44  m m m m . o o o m m . m m 
+ 45  m m m m . o O * m m . m m 
+ 46  . * m m . o o . m m . m m 
+     # # # # # # # # # # # # # 
+  0  .#.#.#.#.#.#.#.#.#.#.#.#.#
+     # # # # # # # # # # # # # 
+  1  m . . . . . m m m m . . . 
+  2  m m m . . . m m m m m * * 
+  3  m m m M . . m m m m m m m 
+  4  m * . . . . m . . m . m m 
+   head gap 4 mate id 5 len 3 at (41, 43)
+   head gap 5 mate id 385 len 33 at (45, 42)
+   head gap 7 mate id 284 len 2 at (40, 41)
+   head gap 8 mate id 211 len 5 at (40, 3)
+   head gap 8 mate id 382 len 13 at (39, 41)
+   head gap 10 mate id 215 len 17 at (45, 6)
+   head gap 10 mate id 363 len 27 at (50, 1)
+   head gap 10 mate id 368 len 24 at (34, 46)
+   head gap 10 mate id 369 len 12 at (43, 35)
+   head gap 11 mate id 96 len 14 at (52, 43)
+   head gap 11 mate id 268 len 4 at (39, 5)
+   head gap 12 mate id 227 len 7 at (48, 38)
+   step N -> (43, 44): own body idx 5 of 16
+   step E -> (44, 45): free pearl
+   step S -> (43, 46): own body idx 1 of 16
+   step W -> (42, 45): own body idx 3 of 16
+   ACTION kind move dirs ['E'] childSize - tle False points None
+   ate pearl at (44, 45)
+   update: head (44, 45) tail (43, 40) len 17 (actor 398)
+   (nearby death round 192 id 382 team 1 len 13 reason 2 head (39, 41), during turn of 382)
+
+=== round 192, dragon 398 (team 1) turn starts: len 17 head (44, 45) tail (43, 40); team units 64 (enemy 64)
+     38394041424344454647484950
+ 39  . . . m m . . . . m m . M 
+ 40  m m m m . T o o o . m . . 
+ 41  m * m . . . o o o * m m . 
+ 42  m . M m . . o m M m m m m 
+ 43  m * . m M . o m m m m m m 
+ 44  m . * . o o o m m . m m m 
+ 45  . * . . o o O m m . m m m 
+ 46  * . * . o o . m m . m m m 
+     # # # # # # # # # # # # # 
+  0  .#.#.#.#.#.#.#.#.#.#.#.#.#
+     # # # # # # # # # # # # # 
+  1  . . . . . m m m m . . m m 
+  2  . . . . . m m m m . * M . 
+  3  m m m . . . m m m m m m m 
+  4  * . m M . . . * m . m m . 
+   head gap 4 mate id 5 len 3 at (42, 43)
+   head gap 5 mate id 385 len 33 at (46, 42)
+   head gap 7 mate id 215 len 17 at (44, 5)
+   head gap 7 mate id 284 len 2 at (40, 42)
+   head gap 9 mate id 211 len 5 at (41, 4)
+   head gap 9 mate id 363 len 28 at (49, 2)
+   head gap 9 mate id 369 len 12 at (43, 37)
+   head gap 11 mate id 227 len 7 at (47, 37)
+   head gap 12 mate id 96 len 15 at (53, 42)
+   head gap 12 mate id 338 len 10 at (50, 39)
+   head gap 12 mate id 368 len 24 at (33, 46)
+   step N -> (44, 44): own body idx 7 of 17
+   step E -> (45, 45): mate body id 385 len 33 idx 4
+   step S -> (44, 46): free
+   step W -> (43, 45): own body idx 1 of 17
+   ACTION kind move dirs ['S'] childSize - tle False points None
+   update: head (44, 46) tail (44, 40) len 17 (actor 398)
+
+=== round 193, dragon 398 (team 1) turn starts: len 17 head (44, 46) tail (44, 40); team units 64 (enemy 63)
+     38394041424344454647484950
+ 40  m m m m . . T o o . M m m 
+ 41  m * . . . . o o o * m m . 
+ 42  m . m . M . o m M m m m m 
+ 43  m * M m m . o m m m m m m 
+ 44  m . * . o o o m m . m m m 
+ 45  . * . . o o o m m . m m m 
+ 46  * . * . o o O m m . m m m 
+     # # # # # # # # # # # # # 
+  0  .#.#.#.#.#.#.#.#.#.#.#.#.#
+     # # # # # # # # # # # # # 
+  1  . . . . . m m m m . . m m 
+  2  . . . . . m m m m m m m . 
+  3  . . m . . . . m m M . m m 
+  4  * . m m . . . * m * m m . 
+  5  m m . m . M m . m . . M m 
+   head gap 6 mate id 5 len 3 at (42, 42)
+   head gap 6 mate id 385 len 2 at (46, 42)
+   head gap 7 mate id 215 len 17 at (43, 5)
+   head gap 7 mate id 284 len 2 at (40, 43)
+   head gap 7 mate id 363 len 29 at (47, 3)
+   head gap 8 mate id 369 len 12 at (43, 39)
+   head gap 10 mate id 211 len 5 at (41, 6)
+   head gap 10 mate id 227 len 7 at (46, 38)
+   head gap 10 mate id 338 len 10 at (48, 40)
+   head gap 11 mate id 300 len 3 at (49, 5)
+   head gap 11 mate id 394 len 7 at (45, 9)
+   head gap 12 mate id 368 len 25 at (32, 46)
+   step N -> (44, 45): own body idx 1 of 17
+   step E -> (45, 46): mate body id 405 len 31 idx 27
+   step S -> (44, 0): KELP
+   step W -> (43, 46): own body idx 3 of 17
+   ACTION kind move dirs ['N'] childSize - tle False points None
+   DEATH round 193 id 398 len 17 reason 1 (own body) head (44, 46), during turn of 398

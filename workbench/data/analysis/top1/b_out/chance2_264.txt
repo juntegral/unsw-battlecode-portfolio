@@ -1,0 +1,20 @@
+team 264: 457 in-view chances
+  1a. attacker 2 long, by round: r000-049: 13/26 | r050-099: 34/51 | r100-199: 45/47 | r200+: 14/14
+  1b. attacker 3 long, by round: r000-049: 12/37 | r050-099: 26/64 | r100-199: 49/50 | r200+: 28/28
+  1c. attacker 2-3 long, her length >= attacker, by round: r000-049: 20/43 | r050-099: 49/81 | r100-199: 80/83 | r200+: 35/35
+  1d. attacker 3 long, her 2 long, by cost: cost 0: 13/28 | cost 1: 24/47
+  1e. attacker 3 long, her 2 long, by round: r000-049: 5/20 | r050-099: 11/34 | r100-199: 14/14 | r200+: 7/7
+  2a. her length >= attacker length: all rounds: 254/457
+  2a. her length >= attacker length: r000-049: 20/44 | r050-099: 49/84 | r100-199: 88/96 | r200+: 47/67
+  2b. her length = attacker length - 1: r000-049: 5/27 | r050-099: 11/41 | r100-199: 18/21 | r200+: 9/12
+  2c. her length <= attacker length - 2: r000-049: 0/8 | r050-099: 0/8 | r100-199: 4/24 | r200+: 3/25
+  2d. her length >= attacker length, by own queen alive: own queen alive 0: 70/90 | own queen alive 1: 134/201
+  2e. her length >= attacker length, by map size: large>1500: 65/87 | medium701-1500: 55/85 | small<=700: 84/119
+  2f. her length >= attacker length, by cost: cost 0: 133/171 | cost 1: 55/86 | cost 2: 12/21 | cost 3: 4/8 | cost 4: 0/4 | cost 5: 0/1
+  2g. her length >= attacker length, r100+, by attacker length: L10: 0/4 | L12: 0/1 | L2: 59/61 | L3: 56/57 | L4: 9/13 | L5: 8/10 | L6: 1/8 | L7: 2/6 | L8: 0/1 | L9: 0/2
+  2h. her length >= attacker length, r0-99, by attacker length: L2: 47/77 | L3: 22/47 | L4: 0/4
+  2i. her length < attacker length, by (attacker, her): L3 vs 2: 37/75 | L4 vs 2: 1/18 | L4 vs 3: 2/18 | L5 vs 2: 3/7 | L5 vs 3: 1/12 | L5 vs 4: 3/18 | L5 vs 5: 3/18
+  3. dragons with at least one in-view chance not taken: 131 | by number of such turns: {1: 93, 2: 23, 3: 6, 4: 4, 5: 5} | {'this dragon rammed her later': 10, 'never': 121}
+  4. games with an in-view chance: 308; with at least one not taken: 104; of those, games in which her queen was never rammed: 37 (won 12)
+     games with an in-view chance and none missed: 204 (won 154)
+     games with a missed one where she was rammed later anyway: 67 (won 50)

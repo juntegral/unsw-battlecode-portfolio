@@ -1,0 +1,70 @@
+{
+  "checked_at": "2026-10-09T06:13:20.242163+09:00",
+  "command": "python3 -B analyze.py; python3 -B metrics.py",
+  "words_excluding_table": 360,
+  "checks": [
+    {
+      "game": 1495464,
+      "map": "Devil",
+      "bot": "21126",
+      "final_verified_by_imported_reader": true,
+      "zero_reconstruction_anomalies": true,
+      "ahead_for_good": 135,
+      "replay_sha256": "ee7a7d6012b8bbd14b1fbb4869d0f488c275f1bb4e6037876f2f76126b61ad2b"
+    },
+    {
+      "game": 1495465,
+      "map": "Maze",
+      "bot": "21126",
+      "final_verified_by_imported_reader": true,
+      "zero_reconstruction_anomalies": true,
+      "ahead_for_good": 387,
+      "replay_sha256": "a4441a529d35329306d9c6f2c7108b14de643249d9ea7d7748a3e075b5408922"
+    },
+    {
+      "game": 1495466,
+      "map": "Islands",
+      "bot": "21126",
+      "final_verified_by_imported_reader": true,
+      "zero_reconstruction_anomalies": true,
+      "ahead_for_good": 351,
+      "replay_sha256": "c75b0927c68d7a61cfcc83d10ef6560e941b164a2f0a88bd284ac3fea6e18656"
+    },
+    {
+      "game": 1495467,
+      "map": "Queen Of Spades",
+      "bot": "21126",
+      "final_verified_by_imported_reader": true,
+      "zero_reconstruction_anomalies": true,
+      "ahead_for_good": 259,
+      "replay_sha256": "daabe6505d3e71eca6f92214653a8594fe7bb664c5674961daae53cd456ce976"
+    }
+  ],
+  "aggregate_counts": {
+    "turns": 49674,
+    "queen_turns": 629,
+    "queen_L4_nonsplit_units2": 305,
+    "splits": 1141,
+    "early_short_moving": 145,
+    "adjacent_pearl_turn": 4358,
+    "adjacent_pearl_taken_first": 3011,
+    "adjacent_pearl_passed": 1347,
+    "no_step_no_split": 836,
+    "queen_splits": 15,
+    "queen_no_exit": 1,
+    "enemy_queen_ram": 3,
+    "queen_near3_ram": 1
+  },
+  "metrics_counts": {
+    "early_short_moving": 145,
+    "early_short_continued_heading": 78,
+    "moving_past_adjacent_pearl": 1150,
+    "queen_split_L4_to_2": 4,
+    "queen_nearest_mate_4_6_movement": 155,
+    "queen_toward_nearest_mate_4_6": 86,
+    "no_valid_action_with_free_exit": 108
+  },
+  "source_sha256": "539d1f398bccbfc9f381157861bc4a0b742e28c1f2be82b2f1dd6386db5a3b0a",
+  "method": "Imported tools/ladder_replay.py, including its existing packed replay reader and final-stat / pearl-ledger assertions. Custom turn scan records actual body updates, actions, splits, legal empty neighbors, visible heads, and end-round score ordering. No games or network. No switch ablations; behavioral proxies do not identify executed overrides.",
+  "limitation": "nice -n 10 attempted; OS denied setpriority. Offline replay scans completed. No engine or bot execution."
+}

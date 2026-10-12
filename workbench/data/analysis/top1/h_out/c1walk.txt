@@ -1,0 +1,95 @@
+untaken in-view chance turns: 347 in 122 games
+
+-- what the dragon did instead, by attacker length
+   10-12  n= 37  moved, ended nearer 16; moved, ended farther 16; moved, ended farther (ate) 2; moved, ended nearer (ate) 2; moved, ended same distance (ate) 1
+   2-3    n=144  moved, ended farther 116; moved, ended nearer 15; moved, ended farther (ate) 8; moved, ended nearer (ate) 5
+   4      n= 34  split 24; moved, ended farther 6; moved, ended nearer 4
+   5-9    n=132  moved, ended farther 59; moved, ended same distance 31; moved, ended nearer 29; split 5; moved, ended nearer (ate) 4; moved, ended same distance (ate) 2; moved, ended farther (ate) 1; moved and died 1
+
+-- what the dragon did instead, all
+   all    n=347  moved, ended farther 197; moved, ended nearer 64; moved, ended same distance 31; split 29; moved, ended nearer (ate) 11; moved, ended farther (ate) 11; moved, ended same distance (ate) 3; moved and died 1
+
+-- the trade rule's conditions on untaken turns of attackers 2-4 long
+   turns: 178
+   fewer own other heads in view than enemy heads (local edge fails): 131
+   after the round at which trading stops (400, or 300 with our queen alive on maps over 600 cells): 7
+   queen too short to count as a target (shorter than the attacker; on maps over 1,200 cells shorter than max(5, own + 2)): 112
+   none of the three (rule should have allowed it): 7
+
+-- the dragon that had the first untaken in-view chance of the game: what became of it
+   games: 122
+   dead by the end of the game: 107
+   alive at the end: 15
+   ... and our longest dragon at the end: 2
+   round-500 wins among these games: 16
+   round-500 wins in which that dragon was our longest then or at the end:
+      1021858 Slithery Fight 167 8 our longest then ended 0 our final longest 83, second 33; her final longest 30; her queen died r376 STILL A WIN without it
+      1027806 Default 210 4 our longest then ended 0 our final longest 36, second 14; her final longest 7; her queen died r340 STILL A WIN without it
+      1058845 weakhold 346 6 our longest then ended 0 our final longest 32, second 18; her final longest 8; her queen died r395 STILL A WIN without it
+      1059086 Slithery Fight 145 11 our longest then ended 0 our final longest 82, second 17; her final longest 41; her queen died r166 WOULD NEED A NEW LEADER
+
+-- price: length of the attacker on the first untaken in-view chance of each game, and paid steps
+   attacker length: {'4': 20, '2-3': 63, '5-9': 32, '10-12': 7}  paid steps (4 = 4 or more): {0: 27, 1: 45, 2: 26, 3: 16, 4: 8}
+   segments spent (attacker lengths summed): 537 in 122 games; her queen's length on those turns summed: 818
+
+-- examples: untaken turns with her head on the next cell (1 step) or 2 steps away, attackers 2-4 long
+   1006643 Islands          r116 our #174 L2 needs 1 step(s); her queen L3; it moved, ended farther; own/enemy other heads in view 1/0; game: L wipe-out, her queen alive at the end
+   1021860 Australia        r192 our #85 L3 needs 1 step(s); her queen L2; it moved, ended farther; own/enemy other heads in view 1/0; game: W longest, her queen dead at the end
+   1021860 Australia        r196 our #85 L3 needs 1 step(s); her queen L2; it moved, ended farther; own/enemy other heads in view 1/0; game: W longest, her queen dead at the end
+   1021862 Around UNSW      r184 our #279 L3 needs 1 step(s); her queen L2; it moved, ended farther; own/enemy other heads in view 0/1; game: W longest, her queen dead at the end
+   1023827 Islands          r 45 our #32 L2 needs 1 step(s); her queen L3; it moved, ended farther; own/enemy other heads in view 1/0; game: L wipe-out, her queen dead at the end
+   1027806 Default          r210 our #35 L4 needs 1 step(s); her queen L2; it split; own/enemy other heads in view 2/1; game: W longest, her queen dead at the end
+   1027964 Queen Of Spades  r102 our #42 L3 needs 1 step(s); her queen L2; it moved, ended farther; own/enemy other heads in view 1/1; game: L wipe-out, her queen alive at the end
+   1027964 Queen Of Spades  r134 our #63 L2 needs 1 step(s); her queen L3; it moved, ended farther; own/enemy other heads in view 1/3; game: L wipe-out, her queen alive at the end
+   1027967 Devil            r 42 our #15 L2 needs 1 step(s); her queen L2; it moved, ended farther (ate); own/enemy other heads in view 1/1; game: W wipe-out, her queen dead at the end
+   1029015 Autarky          r299 our #245 L3 needs 1 step(s); her queen L2; it moved, ended farther; own/enemy other heads in view 2/0; game: W wipe-out, her queen dead at the end
+   1029024 Queen Of Spades  r261 our #68 L2 needs 1 step(s); her queen L3; it moved, ended farther; own/enemy other heads in view 0/3; game: L wipe-out, her queen dead at the end
+   1029027 Devil            r 56 our #45 L2 needs 1 step(s); her queen L2; it moved, ended farther; own/enemy other heads in view 1/2; game: L wipe-out, her queen dead at the end
+   1029030 Autarky          r234 our #267 L3 needs 1 step(s); her queen L2; it moved, ended farther; own/enemy other heads in view 3/0; game: L queen rule, her queen alive at the end
+   1029033 weakhold         r 88 our #70 L2 needs 1 step(s); her queen L3; it moved, ended farther; own/enemy other heads in view 0/0; game: L longest, her queen dead at the end
+   1044196 Australia        r487 our #321 L4 needs 1 step(s); her queen L51; it moved, ended farther; own/enemy other heads in view 0/1; game: L longest, her queen dead at the end
+   1044509 weakhold         r139 our #85 L2 needs 1 step(s); her queen L2; it moved, ended farther; own/enemy other heads in view 1/1; game: W longest, her queen dead at the end
+   1044512 Maze             r242 our #333 L3 needs 1 step(s); her queen L5; it moved, ended farther; own/enemy other heads in view 1/4; game: L longest, her queen dead at the end
+   1044514 Tower Defense    r258 our #78 L3 needs 1 step(s); her queen L2; it moved, ended farther; own/enemy other heads in view 1/3; game: L longest, her queen dead at the end
+   1044514 Tower Defense    r259 our #78 L3 needs 1 step(s); her queen L2; it moved, ended farther; own/enemy other heads in view 1/2; game: L longest, her queen dead at the end
+   1044514 Tower Defense    r275 our #78 L3 needs 1 step(s); her queen L2; it moved, ended farther; own/enemy other heads in view 1/1; game: L longest, her queen dead at the end
+   1044517 Queen Of Spades  r170 our #61 L3 needs 1 step(s); her queen L2; it moved, ended farther; own/enemy other heads in view 2/1; game: W wipe-out, her queen dead at the end
+   1044519 Trophy           r 32 our #3 L2 needs 1 step(s); her queen L2; it moved, ended farther; own/enemy other heads in view 1/1; game: W wipe-out, her queen dead at the end
+   1045196 Default          r377 our #193 L3 needs 1 step(s); her queen L7; it moved, ended farther; own/enemy other heads in view 1/1; game: W longest, her queen dead at the end
+   1045197 Queen Of Spades  r328 our #152 L2 needs 1 step(s); her queen L2; it moved, ended farther; own/enemy other heads in view 2/0; game: L queen rule, her queen alive at the end
+   1045197 Queen Of Spades  r329 our #152 L2 needs 1 step(s); her queen L2; it moved, ended farther; own/enemy other heads in view 2/1; game: L queen rule, her queen alive at the end
+   1045382 Queen Of Spades  r166 our #14 L4 needs 1 step(s); her queen L2; it split; own/enemy other heads in view 1/2; game: L longest, her queen dead at the end
+   1045382 Queen Of Spades  r257 our #25 L2 needs 1 step(s); her queen L4; it moved, ended farther (ate); own/enemy other heads in view 1/3; game: L longest, her queen dead at the end
+   1051356 Devil            r 31 our #9 L3 needs 1 step(s); her queen L3; it moved, ended farther; own/enemy other heads in view 3/3; game: L wipe-out, her queen dead at the end
+   1052762 Queen Of Spades  r286 our #38 L3 needs 1 step(s); her queen L2; it moved, ended farther; own/enemy other heads in view 0/0; game: L wipe-out, her queen alive at the end
+   1053777 Tower Defense    r196 our #89 L3 needs 1 step(s); her queen L2; it moved, ended farther; own/enemy other heads in view 2/3; game: L longest, her queen dead at the end
+   1058150 Default          r283 our #174 L2 needs 1 step(s); her queen L2; it moved, ended farther; own/enemy other heads in view 0/0; game: L longest, her queen dead at the end
+   1058150 Default          r284 our #174 L2 needs 1 step(s); her queen L2; it moved, ended farther; own/enemy other heads in view 0/0; game: L longest, her queen dead at the end
+   1058374 Devil            r 70 our #71 L2 needs 1 step(s); her queen L2; it moved, ended farther; own/enemy other heads in view 0/1; game: W wipe-out, her queen dead at the end
+   1058374 Devil            r 71 our #71 L2 needs 1 step(s); her queen L2; it moved, ended farther; own/enemy other heads in view 0/1; game: W wipe-out, her queen dead at the end
+   1058374 Devil            r 72 our #71 L2 needs 1 step(s); her queen L2; it moved, ended farther; own/enemy other heads in view 1/1; game: W wipe-out, her queen dead at the end
+   1059074 Islands          r286 our #438 L2 needs 1 step(s); her queen L25; it moved, ended farther; own/enemy other heads in view 1/0; game: L queen rule, her queen alive at the end
+   1059075 Maze             r 94 our #7 L2 needs 1 step(s); her queen L2; it moved, ended farther; own/enemy other heads in view 0/0; game: L longest, her queen dead at the end
+   1059076 Stripes          r 55 our #5 L4 needs 1 step(s); her queen L3; it split; own/enemy other heads in view 0/0; game: W wipe-out, her queen dead at the end
+   1063017 Default          r134 our #51 L2 needs 1 step(s); her queen L2; it moved, ended farther; own/enemy other heads in view 1/1; game: W longest, her queen dead at the end
+   1063244 Around UNSW      r300 our #547 L2 needs 1 step(s); her queen L2; it moved, ended farther (ate); own/enemy other heads in view 0/1; game: L longest, her queen dead at the end
+   1063249 Devil            r 21 our #5 L3 needs 1 step(s); her queen L2; it moved, ended farther; own/enemy other heads in view 1/1; game: L wipe-out, her queen dead at the end
+   1063765 Maze             r322 our #377 L2 needs 1 step(s); her queen L28; it moved, ended farther; own/enemy other heads in view 0/0; game: L longest, her queen dead at the end
+   1067907 Stripes          r 46 our #10 L2 needs 1 step(s); her queen L2; it moved, ended farther; own/enemy other heads in view 1/3; game: L wipe-out, her queen dead at the end
+   1067907 Stripes          r 47 our #10 L2 needs 1 step(s); her queen L2; it moved, ended farther; own/enemy other heads in view 0/2; game: L wipe-out, her queen dead at the end
+   1068055 Around UNSW      r139 our #60 L3 needs 1 step(s); her queen L6; it moved, ended farther; own/enemy other heads in view 0/1; game: L longest, her queen dead at the end
+   1068056 Default          r196 our #44 L3 needs 1 step(s); her queen L2; it moved, ended farther; own/enemy other heads in view 2/0; game: W wipe-out, her queen dead at the end
+   1068060 Devil            r 25 our #10 L3 needs 1 step(s); her queen L3; it moved, ended farther (ate); own/enemy other heads in view 1/1; game: L wipe-out, her queen dead at the end
+   1068679 weakhold         r461 our #275 L3 needs 1 step(s); her queen L2; it moved, ended farther; own/enemy other heads in view 0/0; game: L queen rule, her queen alive at the end
+   1068679 weakhold         r469 our #275 L3 needs 1 step(s); her queen L2; it moved, ended farther; own/enemy other heads in view 0/0; game: L queen rule, her queen alive at the end
+   1068683 Stripes          r 65 our #16 L2 needs 1 step(s); her queen L2; it moved, ended farther; own/enemy other heads in view 0/0; game: L wipe-out, her queen alive at the end
+   1068690 Devil            r 88 our #81 L3 needs 1 step(s); her queen L2; it moved, ended farther; own/enemy other heads in view 1/2; game: W longest, her queen dead at the end
+   983821 Devil            r135 our #106 L3 needs 2 step(s); her queen L3; it moved, ended nearer; own/enemy other heads in view 2/5; game: W wipe-out, her queen dead at the end
+   990232 Prisoners Dilemma r222 our #30 L3 needs 2 step(s); her queen L3; it moved, ended farther; own/enemy other heads in view 0/0; game: L queen rule, her queen alive at the end
+   1003142 Islands          r235 our #320 L4 needs 2 step(s); her queen L13; it moved, ended farther; own/enemy other heads in view 0/0; game: L longest, her queen dead at the end
+   1003146 Devil            r 24 our #13 L3 needs 2 step(s); her queen L2; it moved, ended nearer (ate); own/enemy other heads in view 2/3; game: W wipe-out, her queen dead at the end
+   1003146 Devil            r 25 our #13 L4 needs 2 step(s); her queen L2; it split; own/enemy other heads in view 1/3; game: W wipe-out, her queen dead at the end
+   1006646 Trophy           r 93 our #39 L3 needs 2 step(s); her queen L2; it moved, ended nearer; own/enemy other heads in view 5/1; game: W wipe-out, her queen dead at the end
+   1006646 Trophy           r 94 our #39 L3 needs 2 step(s); her queen L2; it moved, ended nearer; own/enemy other heads in view 4/1; game: W wipe-out, her queen dead at the end
+   1021860 Australia        r 72 our #4 L3 needs 2 step(s); her queen L2; it moved, ended farther; own/enemy other heads in view 0/1; game: W longest, her queen dead at the end
+   1021860 Australia        r116 our #22 L3 needs 2 step(s); her queen L2; it moved, ended farther; own/enemy other heads in view 0/1; game: W longest, her queen dead at the end

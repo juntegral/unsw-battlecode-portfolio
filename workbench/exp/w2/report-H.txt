@@ -1,0 +1,44 @@
+W2 report: base exp/w2/v16-H vs new exp/w2/v161-H, 40 paired keys
+
+== outcome (new vs base): wins, eliminated, final longest mean, paired final longest higher/lower/equal, sign p
+Colosseum          n   8  wins 0 vs 0  elim 8 vs 8  final 0.0 vs 0.0  0/0/8  p 1.000
+arena              n   8  wins 0 vs 0  elim 8 vs 8  final 0.0 vs 0.0  0/0/8  p 1.000
+big_empty          n   8  wins 7 vs 5  elim 0 vs 0  final 59.6 vs 55.5  2/0/6  p 0.500
+default_small      n   8  wins 0 vs 0  elim 8 vs 8  final 0.0 vs 0.0  0/0/8  p 1.000
+stronghold         n   8  wins 7 vs 7  elim 0 vs 0  final 71.8 vs 67.9  5/3/0  p 0.727
+POOLED             n  40  wins 14 vs 12  elim 24 vs 24  final 26.3 vs 24.7  7/3/30  p 0.344
+
+== recognition timing per map (own turns): start decided on 1st turn; children decided on 1st turn / later (median p90 max) / never
+Colosseum          base start 0/8  children 56: 1st turn 0 (0%)  later 0 (median - p90 - max -)  never 56 (lived median 55 turns)  <=3 turns 0%
+                   new  start 0/8  children 56: 1st turn 0 (0%)  later 0 (median - p90 - max -)  never 56 (lived median 55 turns)  <=3 turns 0%
+arena              base start 0/8  children 19: 1st turn 0 (0%)  later 0 (median - p90 - max -)  never 19 (lived median 10 turns)  <=3 turns 0%
+                   new  start 0/8  children 19: 1st turn 0 (0%)  later 0 (median - p90 - max -)  never 19 (lived median 10 turns)  <=3 turns 0%
+big_empty          base start 0/24  children 1069: 1st turn 0 (0%)  later 0 (median - p90 - max -)  never 1069 (lived median 70 turns)  <=3 turns 0%
+                   new  start 0/24  children 1076: 1st turn 0 (0%)  later 0 (median - p90 - max -)  never 1076 (lived median 72 turns)  <=3 turns 0%
+default_small      base start 0/16  children 86: 1st turn 0 (0%)  later 0 (median - p90 - max -)  never 86 (lived median 42 turns)  <=3 turns 0%
+                   new  start 0/16  children 86: 1st turn 0 (0%)  later 0 (median - p90 - max -)  never 86 (lived median 42 turns)  <=3 turns 0%
+stronghold         base start 0/16  children 1125: 1st turn 46 (4%)  later 0 (median - p90 - max -)  never 1079 (lived median 36 turns)  <=3 turns 4%
+                   new  start 0/16  children 1130: 1st turn 0 (0%)  later 0 (median - p90 - max -)  never 1130 (lived median 37 turns)  <=3 turns 0%
+
+== misrecognition on held-out maps: games with any decided tag / games, processes, our E=S turns
+base Colosseum      0/8  processes 0 {}  E=S turns 0
+base arena          0/8  processes 0 {}  E=S turns 0
+base big_empty      0/8  processes 0 {}  E=S turns 0
+base default_small  0/8  processes 0 {}  E=S turns 0
+base stronghold     8/8  processes 46 {"Trauma/a":46}  E=S turns 287
+new  Colosseum      0/8  processes 0 {}  E=S turns 0
+new  arena          0/8  processes 0 {}  E=S turns 0
+new  big_empty      0/8  processes 0 {}  E=S turns 0
+new  default_small  0/8  processes 0 {}  E=S turns 0
+new  stronghold     0/8  processes 0 {}  E=S turns 0
+
+== v1.6.1 tags (new set): mg (gate held a decision), ms (start check dropped), mn (none from a message), mc (decided on a confirmation)
+Colosseum          mg 0  ms 0  mn 0  mc 0
+arena              mg 0  ms 0  mn 0  mc 0
+big_empty          mg 0  ms 0  mn 0  mc 0
+default_small      mg 0  ms 0  mn 0  mc 0
+stronghold         mg 44  ms 0  mn 320  mc 0
+
+== identity: timing unchanged in 29/40 games; of those strict identical 29, behaviour identical 29
+   timing changed in 11 games: strict identical 0, behaviour identical 0
+   outcome in the timing-changed games (new vs base): wins 10 vs 8, elim 0 vs 0, final 68.9 vs 63.1, 7/3/1, p 0.344

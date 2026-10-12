@@ -1,0 +1,806 @@
+[
+  {
+    "gid": 1490641,
+    "bot": "21200",
+    "ours": "A",
+    "final": {
+      "us": {
+        "alive": 42,
+        "total": 101,
+        "longest": 5,
+        "pearls": 218,
+        "queen_alive": false,
+        "queen_length": 0
+      },
+      "them": {
+        "alive": 0,
+        "total": 0,
+        "longest": 0,
+        "pearls": 31,
+        "queen_alive": false,
+        "queen_length": 0
+      }
+    },
+    "last_round": 125,
+    "permanent_round_end_lead": 117,
+    "ledger_residuals": [
+      0,
+      0
+    ],
+    "queen_attacks": [
+      {
+        "r": 76,
+        "id": 34,
+        "L": 2,
+        "dirs": [
+          3
+        ],
+        "queen_alive": false
+      }
+    ],
+    "cut_nonqueen_visible_under4_turns": 0,
+    "cut_examples": [],
+    "adjacent_pearl_turns": 231,
+    "first_step_takes_adjacent_pearl": 218,
+    "no_action_donors": [],
+    "queen_splits": [],
+    "max_own_turn_start_units": 43,
+    "queen_adjacent_pearl_misses": []
+  },
+  {
+    "gid": 1490642,
+    "bot": "21200",
+    "ours": "A",
+    "final": {
+      "us": {
+        "alive": 8,
+        "total": 69,
+        "longest": 38,
+        "pearls": 444,
+        "queen_alive": true,
+        "queen_length": 38
+      },
+      "them": {
+        "alive": 5,
+        "total": 45,
+        "longest": 23,
+        "pearls": 430,
+        "queen_alive": true,
+        "queen_length": 23
+      }
+    },
+    "last_round": 499,
+    "permanent_round_end_lead": 319,
+    "ledger_residuals": [
+      0,
+      0
+    ],
+    "queen_attacks": [],
+    "cut_nonqueen_visible_under4_turns": 39,
+    "cut_examples": [
+      {
+        "round": 179,
+        "enemies": [
+          [
+            3,
+            2,
+            2,
+            [
+              47,
+              2
+            ]
+          ]
+        ],
+        "action": [
+          0
+        ]
+      },
+      {
+        "round": 181,
+        "enemies": [
+          [
+            77,
+            3,
+            1,
+            [
+              47,
+              19
+            ]
+          ]
+        ],
+        "action": [
+          2
+        ]
+      },
+      {
+        "round": 182,
+        "enemies": [
+          [
+            3,
+            2,
+            1,
+            [
+              46,
+              2
+            ]
+          ],
+          [
+            77,
+            3,
+            1,
+            [
+              47,
+              20
+            ]
+          ]
+        ],
+        "action": []
+      }
+    ],
+    "adjacent_pearl_turns": 697,
+    "first_step_takes_adjacent_pearl": 414,
+    "no_action_donors": [
+      {
+        "round": 301,
+        "id": 185,
+        "length": 3,
+        "queen_length": 5,
+        "queen_eaten": 0,
+        "own_eaten": 2,
+        "enemy_eaten": 0,
+        "uneaten": 0
+      },
+      {
+        "round": 304,
+        "id": 211,
+        "length": 2,
+        "queen_length": 5,
+        "queen_eaten": 1,
+        "own_eaten": 1,
+        "enemy_eaten": 0,
+        "uneaten": 0
+      },
+      {
+        "round": 311,
+        "id": 224,
+        "length": 3,
+        "queen_length": 6,
+        "queen_eaten": 2,
+        "own_eaten": 2,
+        "enemy_eaten": 0,
+        "uneaten": 0
+      },
+      {
+        "round": 314,
+        "id": 151,
+        "length": 2,
+        "queen_length": 8,
+        "queen_eaten": 1,
+        "own_eaten": 1,
+        "enemy_eaten": 0,
+        "uneaten": 0
+      },
+      {
+        "round": 314,
+        "id": 226,
+        "length": 2,
+        "queen_length": 8,
+        "queen_eaten": 1,
+        "own_eaten": 1,
+        "enemy_eaten": 0,
+        "uneaten": 0
+      },
+      {
+        "round": 315,
+        "id": 177,
+        "length": 3,
+        "queen_length": 8,
+        "queen_eaten": 2,
+        "own_eaten": 2,
+        "enemy_eaten": 0,
+        "uneaten": 0
+      },
+      {
+        "round": 317,
+        "id": 242,
+        "length": 2,
+        "queen_length": 9,
+        "queen_eaten": 1,
+        "own_eaten": 1,
+        "enemy_eaten": 0,
+        "uneaten": 0
+      },
+      {
+        "round": 336,
+        "id": 227,
+        "length": 3,
+        "queen_length": 15,
+        "queen_eaten": 2,
+        "own_eaten": 2,
+        "enemy_eaten": 0,
+        "uneaten": 0
+      },
+      {
+        "round": 336,
+        "id": 232,
+        "length": 2,
+        "queen_length": 15,
+        "queen_eaten": 1,
+        "own_eaten": 1,
+        "enemy_eaten": 0,
+        "uneaten": 0
+      },
+      {
+        "round": 351,
+        "id": 204,
+        "length": 3,
+        "queen_length": 18,
+        "queen_eaten": 2,
+        "own_eaten": 2,
+        "enemy_eaten": 0,
+        "uneaten": 0
+      },
+      {
+        "round": 355,
+        "id": 74,
+        "length": 2,
+        "queen_length": 20,
+        "queen_eaten": 1,
+        "own_eaten": 1,
+        "enemy_eaten": 0,
+        "uneaten": 0
+      },
+      {
+        "round": 357,
+        "id": 113,
+        "length": 2,
+        "queen_length": 21,
+        "queen_eaten": 1,
+        "own_eaten": 1,
+        "enemy_eaten": 0,
+        "uneaten": 0
+      },
+      {
+        "round": 357,
+        "id": 132,
+        "length": 3,
+        "queen_length": 21,
+        "queen_eaten": 2,
+        "own_eaten": 2,
+        "enemy_eaten": 0,
+        "uneaten": 0
+      },
+      {
+        "round": 365,
+        "id": 153,
+        "length": 2,
+        "queen_length": 24,
+        "queen_eaten": 1,
+        "own_eaten": 1,
+        "enemy_eaten": 0,
+        "uneaten": 0
+      },
+      {
+        "round": 402,
+        "id": 223,
+        "length": 3,
+        "queen_length": 28,
+        "queen_eaten": 0,
+        "own_eaten": 2,
+        "enemy_eaten": 0,
+        "uneaten": 0
+      },
+      {
+        "round": 403,
+        "id": 276,
+        "length": 2,
+        "queen_length": 28,
+        "queen_eaten": 1,
+        "own_eaten": 1,
+        "enemy_eaten": 0,
+        "uneaten": 0
+      },
+      {
+        "round": 410,
+        "id": 280,
+        "length": 3,
+        "queen_length": 29,
+        "queen_eaten": 0,
+        "own_eaten": 0,
+        "enemy_eaten": 0,
+        "uneaten": 2
+      },
+      {
+        "round": 418,
+        "id": 266,
+        "length": 2,
+        "queen_length": 30,
+        "queen_eaten": 1,
+        "own_eaten": 1,
+        "enemy_eaten": 0,
+        "uneaten": 0
+      },
+      {
+        "round": 429,
+        "id": 298,
+        "length": 2,
+        "queen_length": 31,
+        "queen_eaten": 0,
+        "own_eaten": 0,
+        "enemy_eaten": 0,
+        "uneaten": 1
+      },
+      {
+        "round": 444,
+        "id": 315,
+        "length": 2,
+        "queen_length": 31,
+        "queen_eaten": 1,
+        "own_eaten": 1,
+        "enemy_eaten": 0,
+        "uneaten": 0
+      },
+      {
+        "round": 449,
+        "id": 288,
+        "length": 2,
+        "queen_length": 32,
+        "queen_eaten": 1,
+        "own_eaten": 1,
+        "enemy_eaten": 0,
+        "uneaten": 0
+      },
+      {
+        "round": 452,
+        "id": 310,
+        "length": 2,
+        "queen_length": 33,
+        "queen_eaten": 0,
+        "own_eaten": 1,
+        "enemy_eaten": 0,
+        "uneaten": 0
+      },
+      {
+        "round": 463,
+        "id": 319,
+        "length": 3,
+        "queen_length": 34,
+        "queen_eaten": 0,
+        "own_eaten": 2,
+        "enemy_eaten": 0,
+        "uneaten": 0
+      },
+      {
+        "round": 468,
+        "id": 326,
+        "length": 2,
+        "queen_length": 34,
+        "queen_eaten": 0,
+        "own_eaten": 1,
+        "enemy_eaten": 0,
+        "uneaten": 0
+      },
+      {
+        "round": 471,
+        "id": 329,
+        "length": 2,
+        "queen_length": 34,
+        "queen_eaten": 0,
+        "own_eaten": 1,
+        "enemy_eaten": 0,
+        "uneaten": 0
+      },
+      {
+        "round": 472,
+        "id": 160,
+        "length": 2,
+        "queen_length": 34,
+        "queen_eaten": 0,
+        "own_eaten": 1,
+        "enemy_eaten": 0,
+        "uneaten": 0
+      },
+      {
+        "round": 476,
+        "id": 318,
+        "length": 3,
+        "queen_length": 34,
+        "queen_eaten": 2,
+        "own_eaten": 2,
+        "enemy_eaten": 0,
+        "uneaten": 0
+      },
+      {
+        "round": 487,
+        "id": 293,
+        "length": 3,
+        "queen_length": 36,
+        "queen_eaten": 0,
+        "own_eaten": 0,
+        "enemy_eaten": 0,
+        "uneaten": 2
+      },
+      {
+        "round": 489,
+        "id": 337,
+        "length": 2,
+        "queen_length": 36,
+        "queen_eaten": 0,
+        "own_eaten": 1,
+        "enemy_eaten": 0,
+        "uneaten": 0
+      },
+      {
+        "round": 490,
+        "id": 332,
+        "length": 2,
+        "queen_length": 36,
+        "queen_eaten": 0,
+        "own_eaten": 1,
+        "enemy_eaten": 0,
+        "uneaten": 0
+      }
+    ],
+    "queen_splits": [
+      {
+        "round": 0,
+        "length": 4,
+        "units": 2
+      },
+      {
+        "round": 118,
+        "length": 5,
+        "units": 10
+      },
+      {
+        "round": 177,
+        "length": 5,
+        "units": 21
+      },
+      {
+        "round": 182,
+        "length": 5,
+        "units": 23
+      }
+    ],
+    "max_own_turn_start_units": 30,
+    "queen_adjacent_pearl_misses": [
+      455,
+      473
+    ]
+  },
+  {
+    "gid": 1490645,
+    "bot": "21200",
+    "ours": "A",
+    "final": {
+      "us": {
+        "alive": 3,
+        "total": 16,
+        "longest": 9,
+        "pearls": 376,
+        "queen_alive": true,
+        "queen_length": 4
+      },
+      "them": {
+        "alive": 7,
+        "total": 56,
+        "longest": 14,
+        "pearls": 433,
+        "queen_alive": false,
+        "queen_length": 0
+      }
+    },
+    "last_round": 499,
+    "permanent_round_end_lead": 122,
+    "ledger_residuals": [
+      0,
+      0
+    ],
+    "queen_attacks": [
+      {
+        "r": 236,
+        "id": 141,
+        "L": 2,
+        "dirs": [
+          3
+        ],
+        "queen_alive": true
+      }
+    ],
+    "cut_nonqueen_visible_under4_turns": 118,
+    "cut_examples": [
+      {
+        "round": 7,
+        "enemies": [
+          [
+            2,
+            2,
+            2,
+            [
+              0,
+              9
+            ]
+          ]
+        ],
+        "action": [
+          0
+        ]
+      },
+      {
+        "round": 100,
+        "enemies": [
+          [
+            28,
+            2,
+            1,
+            [
+              26,
+              1
+            ]
+          ]
+        ],
+        "action": [
+          3
+        ]
+      },
+      {
+        "round": 101,
+        "enemies": [
+          [
+            28,
+            2,
+            2,
+            [
+              25,
+              1
+            ]
+          ]
+        ],
+        "action": [
+          3
+        ]
+      }
+    ],
+    "adjacent_pearl_turns": 486,
+    "first_step_takes_adjacent_pearl": 371,
+    "no_action_donors": [
+      {
+        "round": 402,
+        "id": 277,
+        "length": 2,
+        "queen_length": 3,
+        "queen_eaten": 1,
+        "own_eaten": 1,
+        "enemy_eaten": 0,
+        "uneaten": 0
+      },
+      {
+        "round": 408,
+        "id": 305,
+        "length": 2,
+        "queen_length": 4,
+        "queen_eaten": 0,
+        "own_eaten": 1,
+        "enemy_eaten": 0,
+        "uneaten": 0
+      },
+      {
+        "round": 432,
+        "id": 315,
+        "length": 2,
+        "queen_length": 4,
+        "queen_eaten": 0,
+        "own_eaten": 1,
+        "enemy_eaten": 0,
+        "uneaten": 0
+      },
+      {
+        "round": 449,
+        "id": 285,
+        "length": 2,
+        "queen_length": 4,
+        "queen_eaten": 0,
+        "own_eaten": 1,
+        "enemy_eaten": 0,
+        "uneaten": 0
+      },
+      {
+        "round": 457,
+        "id": 313,
+        "length": 2,
+        "queen_length": 4,
+        "queen_eaten": 0,
+        "own_eaten": 0,
+        "enemy_eaten": 0,
+        "uneaten": 1
+      },
+      {
+        "round": 458,
+        "id": 322,
+        "length": 2,
+        "queen_length": 4,
+        "queen_eaten": 0,
+        "own_eaten": 0,
+        "enemy_eaten": 1,
+        "uneaten": 0
+      },
+      {
+        "round": 463,
+        "id": 323,
+        "length": 2,
+        "queen_length": 4,
+        "queen_eaten": 0,
+        "own_eaten": 0,
+        "enemy_eaten": 1,
+        "uneaten": 0
+      }
+    ],
+    "queen_splits": [
+      {
+        "round": 0,
+        "length": 4,
+        "units": 2
+      }
+    ],
+    "max_own_turn_start_units": 25,
+    "queen_adjacent_pearl_misses": [
+      176,
+      180,
+      184,
+      188,
+      192,
+      196,
+      200,
+      204,
+      208,
+      212,
+      216,
+      220,
+      224,
+      228,
+      232,
+      236,
+      240,
+      244,
+      248,
+      252,
+      256,
+      260,
+      264,
+      268,
+      272,
+      276,
+      280,
+      284,
+      288,
+      292,
+      296,
+      300,
+      304,
+      308,
+      312,
+      316,
+      320,
+      324,
+      328,
+      374,
+      445,
+      451,
+      457,
+      463,
+      469,
+      475,
+      481,
+      487,
+      493,
+      499
+    ]
+  },
+  {
+    "gid": 1490797,
+    "bot": "20941",
+    "ours": "B",
+    "final": {
+      "us": {
+        "alive": 51,
+        "total": 126,
+        "longest": 5,
+        "pearls": 314,
+        "queen_alive": true,
+        "queen_length": 4
+      },
+      "them": {
+        "alive": 0,
+        "total": 0,
+        "longest": 0,
+        "pearls": 49,
+        "queen_alive": false,
+        "queen_length": 0
+      }
+    },
+    "last_round": 143,
+    "permanent_round_end_lead": 69,
+    "ledger_residuals": [
+      0,
+      0
+    ],
+    "queen_attacks": [
+      {
+        "r": 143,
+        "id": 57,
+        "L": 2,
+        "dirs": [
+          1
+        ],
+        "queen_alive": true
+      }
+    ],
+    "cut_nonqueen_visible_under4_turns": 11,
+    "cut_examples": [
+      {
+        "round": 10,
+        "enemies": [
+          [
+            17,
+            2,
+            2,
+            [
+              14,
+              4
+            ]
+          ]
+        ],
+        "action": [
+          0
+        ]
+      },
+      {
+        "round": 11,
+        "enemies": [
+          [
+            17,
+            2,
+            2,
+            [
+              13,
+              4
+            ]
+          ]
+        ],
+        "action": [
+          0
+        ]
+      },
+      {
+        "round": 13,
+        "enemies": [
+          [
+            17,
+            2,
+            2,
+            [
+              14,
+              3
+            ]
+          ]
+        ],
+        "action": [
+          0
+        ]
+      }
+    ],
+    "adjacent_pearl_turns": 340,
+    "first_step_takes_adjacent_pearl": 314,
+    "no_action_donors": [],
+    "queen_splits": [
+      {
+        "round": 6,
+        "length": 4,
+        "units": 11
+      }
+    ],
+    "max_own_turn_start_units": 53,
+    "queen_adjacent_pearl_misses": []
+  }
+]

@@ -1,0 +1,73 @@
+=== chances per game and how many were taken
+  SSS       map <= 1200 cells  games 264  with a chance 0.46  chances/game  0.65  taken  115 (0.669 of chances)  queen kills with no flagged chance 29
+  SSS       map > 1200 cells   games 115  with a chance 0.77  chances/game  2.18  taken   78 (0.311 of chances)  queen kills with no flagged chance 14
+  Vibing++  map <= 1200 cells  games 276  with a chance 0.51  chances/game  0.63  taken  139 (0.799 of chances)  queen kills with no flagged chance 22
+  Vibing++  map > 1200 cells   games 103  with a chance 0.63  chances/game  1.84  taken   56 (0.295 of chances)  queen kills with no flagged chance 17
+  forgot    map <= 1200 cells  games 295  with a chance 0.49  chances/game  0.86  taken  101 (0.396 of chances)  queen kills with no flagged chance 18
+  forgot    map > 1200 cells   games 106  with a chance 0.61  chances/game  1.71  taken   51 (0.282 of chances)  queen kills with no flagged chance 10
+  meow      map <= 1200 cells  games 210  with a chance 0.43  chances/game  1.29  taken   60 (0.221 of chances)  queen kills with no flagged chance 0
+  meow      map > 1200 cells   games  79  with a chance 0.52  chances/game  4.78  taken   14 (0.037 of chances)  queen kills with no flagged chance 0
+
+=== share of chances taken, by attacker length (chance-turns)
+  top three L2:  172/  200 = 0.860 | L3:  207/  249 = 0.831 | L4:   47/   73 = 0.644 | L5-9:   95/  421 = 0.226 | L10-12:   19/  280 = 0.068
+  Vibing++  L2:   57/   57 = 1.000 | L3:   80/   83 = 0.964 | L4:   18/   20 = 0.900 | L5-9:   30/  107 = 0.280 | L10-12:   10/   97 = 0.103
+  SSS       L2:   53/   55 = 0.964 | L3:   59/   59 = 1.000 | L4:   21/   23 = 0.913 | L5-9:   51/  176 = 0.290 | L10-12:    9/  110 = 0.082
+  forgot    L2:   62/   88 = 0.705 | L3:   68/  107 = 0.636 | L4:    8/   30 = 0.267 | L5-9:   14/  138 = 0.101 | L10-12:    0/   73 = 0.000
+  meow      L2:   29/   48 = 0.604 | L3:   36/  135 = 0.267 | L4:    3/   37 = 0.081 | L5-9:    4/  296 = 0.014 | L10-12:    2/  133 = 0.015
+
+=== the same, counting each dragon once (did it ever take one of its chances in that game?)
+  top three L2:  171/  187 = 0.914 | L3:  204/  234 = 0.872 | L4:   48/   70 = 0.686 | L5-9:   98/  196 = 0.500 | L10-12:   19/   65 = 0.292
+  meow      L2:   27/   39 = 0.692 | L3:   36/  100 = 0.360 | L4:    5/   28 = 0.179 | L5-9:    5/   73 = 0.068 | L10-12:    1/   28 = 0.036
+
+=== by steps needed
+  top three L2     1 step:  172/  200 = 0.860
+  top three L3     1 step:   63/   74 = 0.851 | 2 steps:  144/  175 = 0.823
+  top three L4     1 step:    4/    9 = 0.444 | 2 steps:   14/   23 = 0.609 | 3 steps:   29/   41 = 0.707
+  top three L5-9   1 step:    0/    2 = 0.000 | 2 steps:    3/    7 = 0.429 | 3 steps:   12/   24 = 0.500 | 4 steps:   28/   55 = 0.509 | 5 steps+:   52/  333 = 0.156
+  top three L10-12 1 step:    1/    1 = 1.000 | 3 steps:    4/    6 = 0.667 | 4 steps:    5/   10 = 0.500 | 5 steps+:    9/  263 = 0.034
+  meow      L2     1 step:   29/   48 = 0.604
+  meow      L3     1 step:   20/   35 = 0.571 | 2 steps:   16/  100 = 0.160
+  meow      L4     1 step:    1/    5 = 0.200 | 2 steps:    0/    7 = 0.000 | 3 steps:    2/   25 = 0.080
+  meow      L5-9   2 steps:    0/    3 = 0.000 | 3 steps:    0/   11 = 0.000 | 4 steps:    1/   38 = 0.026 | 5 steps+:    3/  244 = 0.012
+  meow      L10-12 3 steps:    0/    2 = 0.000 | 4 steps:    0/    3 = 0.000 | 5 steps+:    2/  128 = 0.016
+
+=== by paid steps needed (segments the attacker gives up)
+  top three free steps only:  247/  299 = 0.826 | 1 paid:  176/  238 = 0.739 | 2 paid:   65/  121 = 0.537 | 3 paid:   34/  141 = 0.241 | 4 paid:   18/  424 = 0.042
+  meow      free steps only:   50/   93 = 0.538 | 1 paid:   16/  126 = 0.127 | 2 paid:    6/   75 = 0.080 | 3 paid:    2/  104 = 0.019 | 4 paid:    0/  251 = 0.000
+
+=== by map class and attacker class
+  meow      map <= 1200 cells  attacker 5-12             0/   82 = 0.000
+  meow      map <= 1200 cells  short attacker (<=4)     60/  189 = 0.317
+  meow      map > 1200 cells   attacker 5-12             6/  347 = 0.017
+  meow      map > 1200 cells   short attacker (<=4)      8/   31 = 0.258
+  top three map <= 1200 cells  attacker 5-12            21/  180 = 0.117
+  top three map <= 1200 cells  short attacker (<=4)    334/  421 = 0.793
+  top three map > 1200 cells   attacker 5-12            93/  521 = 0.179
+  top three map > 1200 cells   short attacker (<=4)     92/  101 = 0.911
+
+=== by phase and own queen
+  meow      r150-299  own queen alive     6/   21 = 0.286
+  meow      r150-299  own queen dead     21/  278 = 0.076
+  meow      r300-399  own queen dead      4/   97 = 0.041
+  meow      r400+     own queen alive     0/   18 = 0.000
+  meow      r400+     own queen dead      9/   93 = 0.097
+  meow      r<150     own queen alive    17/   67 = 0.254
+  meow      r<150     own queen dead     17/   75 = 0.227
+  top three r150-299  own queen alive    94/  258 = 0.364
+  top three r150-299  own queen dead     57/  130 = 0.438
+  top three r300-399  own queen alive    19/   51 = 0.373
+  top three r300-399  own queen dead     18/   57 = 0.316
+  top three r400+     own queen alive    11/   90 = 0.122
+  top three r400+     own queen dead     23/  143 = 0.161
+  top three r<150     own queen alive   243/  373 = 0.651
+  top three r<150     own queen dead     75/  121 = 0.620
+
+=== by whether the attacker is its team's longest dragon, and her length
+  meow      not the longest  her len 5+    17/  201 = 0.085
+  meow      not the longest  her len<=4    53/  232 = 0.228
+  meow      team's longest   her len 5+     1/   68 = 0.015
+  meow      team's longest   her len<=4     3/  148 = 0.020
+  top three not the longest  her len 5+   140/  477 = 0.294
+  top three not the longest  her len<=4   358/  593 = 0.604
+  top three team's longest   her len 5+     3/   42 = 0.071
+  top three team's longest   her len<=4    39/  111 = 0.351

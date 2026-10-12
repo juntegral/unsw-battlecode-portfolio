@@ -1,0 +1,200 @@
+[
+  {
+    "name": "off-22",
+    "bot": "exp/qsight/bot-off",
+    "out": "exp/qsight/off",
+    "maps": "exp/q2/maps-22",
+    "opps": [
+      "proxy4_king",
+      "exp/q2/bot-hunter"
+    ],
+    "seeds": [
+      1
+    ],
+    "sides": [
+      "A",
+      "B"
+    ],
+    "cpu": true
+  },
+  {
+    "name": "off-generated",
+    "bot": "exp/qsight/bot-off",
+    "out": "exp/qsight/off",
+    "maps": "maps/generated",
+    "opps": [
+      "proxy4_king",
+      "exp/q2/bot-hunter"
+    ],
+    "seeds": [
+      1
+    ],
+    "sides": [
+      "A",
+      "B"
+    ],
+    "cpu": true,
+    "only": [
+      "gen_M_07"
+    ]
+  },
+  {
+    "name": "on-22",
+    "bot": "exp/qsight/bot-on",
+    "out": "exp/qsight/on",
+    "maps": "exp/q2/maps-22",
+    "opps": [
+      "proxy4_king",
+      "exp/q2/bot-hunter"
+    ],
+    "seeds": [
+      1
+    ],
+    "sides": [
+      "A",
+      "B"
+    ],
+    "cpu": true
+  },
+  {
+    "name": "on-generated",
+    "bot": "exp/qsight/bot-on",
+    "out": "exp/qsight/on",
+    "maps": "maps/generated",
+    "opps": [
+      "proxy4_king",
+      "exp/q2/bot-hunter"
+    ],
+    "seeds": [
+      1
+    ],
+    "sides": [
+      "A",
+      "B"
+    ],
+    "cpu": true,
+    "only": [
+      "gen_M_07"
+    ]
+  },
+  {
+    "name": "id-off-online",
+    "bot": "exp/qsight/bot-off",
+    "out": "exp/qsight/id-off",
+    "maps": "exp/q2/maps-22",
+    "opps": [
+      "proxy4_king"
+    ],
+    "seeds": [
+      1
+    ],
+    "sides": [
+      "A",
+      "B"
+    ],
+    "cpu": true,
+    "only": [
+      "trophy"
+    ]
+  },
+  {
+    "name": "id-off-sprint",
+    "bot": "exp/qsight/bot-off",
+    "out": "exp/qsight/id-off",
+    "maps": "maps/sprint",
+    "opps": [
+      "proxy4_king"
+    ],
+    "seeds": [
+      1
+    ],
+    "sides": [
+      "A",
+      "B"
+    ],
+    "cpu": true,
+    "only": [
+      "australia"
+    ]
+  },
+  {
+    "name": "id-off-generated",
+    "bot": "exp/qsight/bot-off",
+    "out": "exp/qsight/id-off",
+    "maps": "maps/generated",
+    "opps": [
+      "proxy4_king"
+    ],
+    "seeds": [
+      1
+    ],
+    "sides": [
+      "A",
+      "B"
+    ],
+    "cpu": true,
+    "only": [
+      "gen_L_03"
+    ]
+  },
+  {
+    "name": "id-base-online",
+    "bot": "versions/v1.8/bot",
+    "out": "exp/qsight/id-base",
+    "maps": "exp/q2/maps-22",
+    "opps": [
+      "proxy4_king"
+    ],
+    "seeds": [
+      1
+    ],
+    "sides": [
+      "A",
+      "B"
+    ],
+    "cpu": true,
+    "only": [
+      "trophy"
+    ]
+  },
+  {
+    "name": "id-base-sprint",
+    "bot": "versions/v1.8/bot",
+    "out": "exp/qsight/id-base",
+    "maps": "maps/sprint",
+    "opps": [
+      "proxy4_king"
+    ],
+    "seeds": [
+      1
+    ],
+    "sides": [
+      "A",
+      "B"
+    ],
+    "cpu": true,
+    "only": [
+      "australia"
+    ]
+  },
+  {
+    "name": "id-base-generated",
+    "bot": "versions/v1.8/bot",
+    "out": "exp/qsight/id-base",
+    "maps": "maps/generated",
+    "opps": [
+      "proxy4_king"
+    ],
+    "seeds": [
+      1
+    ],
+    "sides": [
+      "A",
+      "B"
+    ],
+    "cpu": true,
+    "only": [
+      "gen_L_03"
+    ]
+  }
+]

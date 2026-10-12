@@ -1,0 +1,15 @@
+r36 Q0 L4 head(7,4) free 1 mates<=4 0 foes<=6 [(6, 3, 3)]
+r37 Q0 L4 head(7,5) free 2 mates<=4 0 foes<=6 [(6, 3, 3)]
+r38 Q0 L4 head(7,6) free 3 mates<=4 0 foes<=6 [(4, 3, 3), (6, 12, 2)]
+r39 Q0 L4 head(8,6) free 3 mates<=4 0 foes<=6 [(2, 14, 2), (6, 3, 4), (6, 12, 2)]
+r40 Q0 L4 head(8,7) free 3 mates<=4 0 foes<=6 [(3, 16, 2), (4, 14, 2), (5, 3, 2), (6, 12, 2)]
+r41 Q0 L4 head(8,8) free 3 mates<=4 0 foes<=6 [(3, 3, 2), (3, 16, 2), (6, 1, 6), (6, 12, 2)]
+r42 Q0 L4 head(9,8) free 3 mates<=4 0 foes<=6 [(3, 1, 7), (3, 3, 2), (3, 16, 2), (6, 12, 2)]
+r43 Q0 L4 head(10,8) free 3 mates<=4 0 foes<=6 [(2, 1, 5), (3, 3, 2), (3, 16, 2), (5, 17, 2)]
+r44 Q0 L4 head(10,9) free 3 mates<=4 0 foes<=6 [(3, 1, 6), (3, 16, 2), (5, 3, 3), (5, 17, 2)]
+r45 Q0 L3 head(12,9) free 2 mates<=4 0 foes<=6 [(4, 1, 6), (4, 17, 2), (5, 14, 2), (6, 3, 3)]
+r46 Q0 L3 head(13,9) free 3 mates<=4 0 foes<=6 [(3, 14, 2), (4, 1, 6), (4, 13, 2), (4, 17, 3)]
+r47 Q0 L4 head(13,10) free 3 mates<=4 0 foes<=6 [(3, 1, 6), (4, 13, 2), (4, 17, 3), (5, 14, 2)]
+r48 Q0 L4 head(14,10) free 3 mates<=4 0 foes<=6 [(2, 17, 3), (4, 1, 7), (6, 11, 3), (6, 13, 2)]
+   r48 SPLIT queen -> parent 0 L2, child 19 L2 (queen now L2)
+   r48 QUEEN DIES (reason 3) L2 actor 17

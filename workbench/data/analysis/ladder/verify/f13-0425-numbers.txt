@@ -1,0 +1,247 @@
+games loaded 675 errors 0 ; main 225 v31 410 other 40
+latest game completed at 2026-10-06T18:59:13.783Z
+
+=== main: 225 games, 193 off Schooltime and Slithery Fight
+
+--- main, OUR queen rammed after theirs had died
+  rams 30 in 30 games; no last-turn snapshot 0; rammer born later 3; with board 27
+  friends within 5 under 2: 27 of 30 = 0.900 (95% 0.74 to 0.97)
+  friends within 5 equal 0: 18 of 30 = 0.600 (95% 0.42 to 0.75)
+  friends histogram [(0, 18), (1, 9), (2, 1), (3, 1), (5, 1)]
+  own other dragons alive at the ram: median 14.0 min 0 ; with none alive 2 ; with under 5 alive 8
+  enemy dragons alive at the ram: median 24.5
+  escape beyond free steps (of with board): 17 of 27 = 0.630 (95% 0.44 to 0.78)
+  escape beyond actual ram distance: 11 of 27 = 0.407 (95% 0.25 to 0.59)
+  rammer in the 7x7 square: 23 of 27 = 0.852 (95% 0.68 to 0.94)
+  [extra] a legal step beyond the free reach of EVERY enemy head: 15 of 27 = 0.556 (95% 0.37 to 0.72)
+  [extra] no legal step at all: 1 ; legal steps histogram [(0, 1), (1, 12), (2, 6), (3, 8)]
+  [extra] she ended where the rammer needed more than its free steps (d_ram > free): 16 of 27 = 0.593 (95% 0.41 to 0.75)
+  [extra] rammer made more steps in the ram turn than its free steps (paid length): 17 of 30 = 0.567 (95% 0.39 to 0.73)
+  [extra] rammer steps in the ram turn histogram [(1, 11), (2, 8), (3, 6), (4, 4), (6, 1)] ; rammer length at its turn start histogram [(2, 6), (3, 15), (4, 2), (5, 2), (6, 1), (8, 1), (9, 1), (12, 1), (14, 1)]
+  [extra] ended inside free reach: 11, of which another step led beyond free: 2; ended beyond free reach and was rammed anyway: 16
+  [extra] enemy heads with her start tile inside their free reach, histogram [(0, 23), (1, 3), (2, 1)]
+  [extra] queen length histogram [(2, 21), (3, 6), (4, 1), (26, 1), (55, 1)]
+  [extra] start-of-last-turn path distance rammer to queen histogram [(1, 1), (2, 12), (3, 7), (4, 3), (5, 3), (7, 1)]
+  band 1700-1899: rams 8, alone (friends under 2) 7, friends 0 3, with board 8, escape free 5, escape actual 2, in square 7, escape every enemy 5
+  band 1900-2099: rams 20, alone (friends under 2) 18, friends 0 14, with board 17, escape free 11, escape actual 8, in square 14, escape every enemy 9
+  band 2100+: rams 2, alone (friends under 2) 2, friends 0 1, with board 2, escape free 1, escape actual 1, in square 2, escape every enemy 1
+  by map_key (12 groups):
+      Default #1: 6 rams, alone 6, board 6, esc free 5, esc actual 5
+      Queen Of Spades #1: 4 rams, alone 4, board 4, esc free 2, esc actual 1
+      Around UNSW #1: 4 rams, alone 4, board 4, esc free 1, esc actual 1
+      Stripes #1: 3 rams, alone 2, board 1, esc free 1, esc actual 0
+      Maze #1: 3 rams, alone 2, board 3, esc free 1, esc actual 0
+      Autarky #1: 2 rams, alone 2, board 1, esc free 1, esc actual 1
+      Australia #1: 2 rams, alone 2, board 2, esc free 2, esc actual 1
+      Islands #1: 2 rams, alone 1, board 2, esc free 1, esc actual 0
+      Prisoners Dilemma #2: 1 rams, alone 1, board 1, esc free 1, esc actual 1
+      Tower Defense #1: 1 rams, alone 1, board 1, esc free 0, esc actual 0
+      Trauma #1: 1 rams, alone 1, board 1, esc free 1, esc actual 1
+      Trophy #1: 1 rams, alone 1, board 1, esc free 1, esc actual 0
+     leave one map_key out: alone share 0.875 to 0.929; escape-free share 0.571 to 0.696
+  by opp (18 groups):
+      calc (20): 4 rams, alone 3, board 4, esc free 3, esc actual 2
+      ComTamSuonNuong (193): 3 rams, alone 3, board 2, esc free 2, esc actual 1
+      Computers (112): 2 rams, alone 2, board 1, esc free 0, esc actual 0
+      Settlers of Battlecode (258): 2 rams, alone 2, board 1, esc free 0, esc actual 0
+      dev test 1 :P (545): 2 rams, alone 2, board 2, esc free 1, esc actual 1
+      byte_force (959): 2 rams, alone 2, board 2, esc free 1, esc actual 0
+      we love gru (998): 2 rams, alone 1, board 2, esc free 0, esc actual 0
+      NUSW Battlecode (262): 2 rams, alone 2, board 2, esc free 2, esc actual 2
+      天天开心 :( (835): 2 rams, alone 2, board 2, esc free 1, esc actual 1
+      :3 (217): 1 rams, alone 1, board 1, esc free 0, esc actual 0
+      python.io (147): 1 rams, alone 0, board 1, esc free 1, esc actual 0
+      Heartbreaker (62): 1 rams, alone 1, board 1, esc free 1, esc actual 1
+     leave one opp out: alone share 0.889 to 0.931; escape-free share 0.600 to 0.680
+  by evening (2 groups):
+      10-06b: 18 rams, alone 16, board 16, esc free 10, esc actual 7
+      10-07a: 12 rams, alone 11, board 11, esc free 7, esc actual 4
+     leave one evening out: alone share 0.889 to 0.917; escape-free share 0.625 to 0.636
+  [baseline] all turns of this queen while the other queen is dead: 8746 turns, friends under 2 in 0.581 of 8746, friends 0 in 0.319 of 8746
+  [baseline] same, only the games with such a ram: 3275 turns, friends under 2 in 0.635 of 3275, friends 0 in 0.355 of 3275
+  [rate] rams per 1000 such queen turns: 3.43
+  [contrast] same queen rammed while the other queen was still alive: 56 rams, alone 0.732 of 56, friends 0 0.411 of 56, escape free 0.691 of 55, escape actual 0.364 of 55, in square 0.891 of 55
+
+--- main, THEIR queen rammed by ours after ours had died
+  rams 42 in 42 games; no last-turn snapshot 0; rammer born later 1; with board 41
+  friends within 5 under 2: 35 of 42 = 0.833 (95% 0.69 to 0.92)
+  friends within 5 equal 0: 19 of 42 = 0.452 (95% 0.31 to 0.60)
+  friends histogram [(0, 19), (1, 16), (2, 5), (3, 1), (6, 1)]
+  own other dragons alive at the ram: median 12.5 min 0 ; with none alive 2 ; with under 5 alive 9
+  enemy dragons alive at the ram: median 25.0
+  escape beyond free steps (of with board): 25 of 41 = 0.610 (95% 0.46 to 0.74)
+  escape beyond actual ram distance: 13 of 41 = 0.317 (95% 0.20 to 0.47)
+  rammer in the 7x7 square: 40 of 41 = 0.976 (95% 0.87 to 1.00)
+  [extra] a legal step beyond the free reach of EVERY enemy head: 22 of 41 = 0.537 (95% 0.39 to 0.68)
+  [extra] no legal step at all: 2 ; legal steps histogram [(0, 2), (1, 23), (2, 11), (3, 5)]
+  [extra] she ended where the rammer needed more than its free steps (d_ram > free): 15 of 41 = 0.366 (95% 0.24 to 0.52)
+  [extra] rammer made more steps in the ram turn than its free steps (paid length): 15 of 42 = 0.357 (95% 0.23 to 0.51)
+  [extra] rammer steps in the ram turn histogram [(1, 26), (2, 15), (5, 1)] ; rammer length at its turn start histogram [(2, 16), (3, 23), (4, 1), (5, 1), (8, 1)]
+  [extra] ended inside free reach: 26, of which another step led beyond free: 10; ended beyond free reach and was rammed anyway: 15
+  [extra] enemy heads with her start tile inside their free reach, histogram [(0, 36), (1, 3), (2, 2)]
+  [extra] queen length histogram [(2, 25), (3, 9), (4, 3), (7, 1), (19, 1), (29, 1), (33, 1), (37, 1)]
+  [extra] start-of-last-turn path distance rammer to queen histogram [(1, 2), (2, 22), (3, 15), (5, 1), (6, 1)]
+  band 1700-1899: rams 16, alone (friends under 2) 13, friends 0 6, with board 16, escape free 8, escape actual 4, in square 16, escape every enemy 7
+  band 1900-2099: rams 24, alone (friends under 2) 21, friends 0 12, with board 23, escape free 15, escape actual 9, in square 22, escape every enemy 13
+  band 2100+: rams 2, alone (friends under 2) 1, friends 0 1, with board 2, escape free 2, escape actual 0, in square 2, escape every enemy 2
+  by map_key (12 groups):
+      Australia #1: 8 rams, alone 6, board 8, esc free 5, esc actual 4
+      Devil #1: 7 rams, alone 6, board 7, esc free 7, esc actual 3
+      Default #1: 5 rams, alone 5, board 5, esc free 4, esc actual 4
+      Queen Of Spades #1: 4 rams, alone 4, board 4, esc free 1, esc actual 0
+      weakhold #1: 4 rams, alone 3, board 4, esc free 1, esc actual 0
+      Maze #1: 3 rams, alone 2, board 3, esc free 1, esc actual 1
+      Autarky #1: 3 rams, alone 2, board 3, esc free 1, esc actual 1
+      Stripes #1: 2 rams, alone 2, board 2, esc free 1, esc actual 0
+      Prisoners Dilemma #2: 2 rams, alone 2, board 2, esc free 1, esc actual 0
+      Around UNSW #1: 2 rams, alone 2, board 1, esc free 1, esc actual 0
+      Islands #1: 1 rams, alone 1, board 1, esc free 1, esc actual 0
+      Trophy #1: 1 rams, alone 0, board 1, esc free 1, esc actual 0
+     leave one map_key out: alone share 0.811 to 0.854; escape-free share 0.529 to 0.649
+  by opp (22 groups):
+      free trip to sydney pls (82): 5 rams, alone 4, board 5, esc free 2, esc actual 2
+      1 (231): 4 rams, alone 4, board 4, esc free 4, esc actual 1
+      Knight Capital (226): 3 rams, alone 2, board 3, esc free 2, esc actual 1
+      ComTamSuonNuong (193): 3 rams, alone 3, board 2, esc free 1, esc actual 0
+      Memory? (1097): 3 rams, alone 3, board 3, esc free 2, esc actual 2
+      天天开心 :( (835): 3 rams, alone 3, board 3, esc free 1, esc actual 0
+      中国人不准飞😡😡😡😡😡😡😡 (791): 2 rams, alone 2, board 2, esc free 1, esc actual 0
+      :3 (217): 2 rams, alone 2, board 2, esc free 1, esc actual 1
+      byte_force (959): 2 rams, alone 2, board 2, esc free 1, esc actual 1
+      Settlers of Battlecode (258): 2 rams, alone 1, board 2, esc free 2, esc actual 0
+      1234 (919): 2 rams, alone 1, board 2, esc free 0, esc actual 0
+      doofenshmirtz good incorporated (1015): 1 rams, alone 1, board 1, esc free 1, esc actual 1
+     leave one opp out: alone share 0.816 to 0.854; escape-free share 0.568 to 0.641
+  by evening (3 groups):
+      10-07a: 26 rams, alone 20, board 25, esc free 14, esc actual 9
+      10-06b: 15 rams, alone 14, board 15, esc free 11, esc actual 4
+      10-06a: 1 rams, alone 1, board 1, esc free 0, esc actual 0
+     leave one evening out: alone share 0.778 to 0.938; escape-free share 0.538 to 0.688
+  [baseline] all turns of this queen while the other queen is dead: 15190 turns, friends under 2 in 0.466 of 15190, friends 0 in 0.236 of 15190
+  [baseline] same, only the games with such a ram: 3719 turns, friends under 2 in 0.622 of 3719, friends 0 in 0.333 of 3719
+  [rate] rams per 1000 such queen turns: 2.76
+  [contrast] same queen rammed while the other queen was still alive: 49 rams, alone 0.796 of 49, friends 0 0.490 of 49, escape free 0.596 of 47, escape actual 0.468 of 47, in square 0.979 of 47
+
+=== v31: 410 games, 362 off Schooltime and Slithery Fight
+
+--- v31, OUR queen rammed after theirs had died
+  rams 75 in 75 games; no last-turn snapshot 0; rammer born later 0; with board 75
+  friends within 5 under 2: 57 of 75 = 0.760 (95% 0.65 to 0.84)
+  friends within 5 equal 0: 35 of 75 = 0.467 (95% 0.36 to 0.58)
+  friends histogram [(0, 35), (1, 22), (2, 13), (3, 5)]
+  own other dragons alive at the ram: median 16 min 0 ; with none alive 5 ; with under 5 alive 20
+  enemy dragons alive at the ram: median 25
+  escape beyond free steps (of with board): 59 of 75 = 0.787 (95% 0.68 to 0.86)
+  escape beyond actual ram distance: 43 of 75 = 0.573 (95% 0.46 to 0.68)
+  rammer in the 7x7 square: 66 of 75 = 0.880 (95% 0.79 to 0.94)
+  [extra] a legal step beyond the free reach of EVERY enemy head: 57 of 75 = 0.760 (95% 0.65 to 0.84)
+  [extra] no legal step at all: 0 ; legal steps histogram [(1, 20), (2, 27), (3, 28)]
+  [extra] she ended where the rammer needed more than its free steps (d_ram > free): 43 of 75 = 0.573 (95% 0.46 to 0.68)
+  [extra] rammer made more steps in the ram turn than its free steps (paid length): 43 of 75 = 0.573 (95% 0.46 to 0.68)
+  [extra] rammer steps in the ram turn histogram [(1, 31), (2, 24), (3, 12), (4, 6), (5, 1), (6, 1)] ; rammer length at its turn start histogram [(2, 25), (3, 29), (4, 8), (5, 4), (6, 3), (7, 2), (8, 3), (12, 1)]
+  [extra] ended inside free reach: 32, of which another step led beyond free: 16; ended beyond free reach and was rammed anyway: 43
+  [extra] enemy heads with her start tile inside their free reach, histogram [(0, 71), (1, 4)]
+  [extra] queen length histogram [(2, 33), (3, 24), (4, 3), (5, 3), (6, 2), (8, 1), (10, 1), (16, 1), (26, 1), (27, 1), (36, 1), (45, 1), (54, 1), (69, 1), (72, 1)]
+  [extra] start-of-last-turn path distance rammer to queen histogram [(1, 3), (2, 29), (3, 25), (4, 8), (5, 8), (6, 2)]
+  band <1700: rams 6, alone (friends under 2) 4, friends 0 2, with board 6, escape free 1, escape actual 1, in square 6, escape every enemy 1
+  band 1700-1899: rams 34, alone (friends under 2) 23, friends 0 13, with board 34, escape free 28, escape actual 22, in square 31, escape every enemy 26
+  band 1900-2099: rams 25, alone (friends under 2) 23, friends 0 17, with board 25, escape free 20, escape actual 13, in square 21, escape every enemy 20
+  band 2100+: rams 10, alone (friends under 2) 7, friends 0 3, with board 10, escape free 10, escape actual 7, in square 8, escape every enemy 10
+  by map_key (14 groups):
+      Queen Of Spades #1: 11 rams, alone 10, board 11, esc free 8, esc actual 5
+      Australia #1: 11 rams, alone 9, board 11, esc free 10, esc actual 6
+      Around UNSW #1: 10 rams, alone 7, board 10, esc free 8, esc actual 5
+      Islands #1: 7 rams, alone 5, board 7, esc free 6, esc actual 4
+      Autarky #1: 7 rams, alone 6, board 7, esc free 5, esc actual 4
+      Default #1: 7 rams, alone 6, board 7, esc free 6, esc actual 4
+      Stripes #1: 5 rams, alone 3, board 5, esc free 3, esc actual 2
+      weakhold #1: 4 rams, alone 2, board 4, esc free 4, esc actual 4
+      Maze #1: 3 rams, alone 2, board 3, esc free 1, esc actual 1
+      Prisoners Dilemma #1: 3 rams, alone 3, board 3, esc free 2, esc actual 2
+      Tower Defense #1: 3 rams, alone 1, board 3, esc free 2, esc actual 2
+      Trophy #1: 2 rams, alone 2, board 2, esc free 2, esc actual 2
+     leave one map_key out: alone share 0.734 to 0.778; escape-free share 0.766 to 0.806
+  by opp (29 groups):
+      err404 (485): 8 rams, alone 7, board 8, esc free 6, esc actual 5
+      中国人不准飞😡😡😡😡😡😡😡 (791): 7 rams, alone 4, board 7, esc free 5, esc actual 2
+      fandagong (552): 5 rams, alone 5, board 5, esc free 4, esc actual 3
+      chad gdp (70): 4 rams, alone 4, board 4, esc free 4, esc actual 3
+      Weneedmoretokens (135): 4 rams, alone 1, board 4, esc free 4, esc actual 3
+      CookAgent (716): 4 rams, alone 2, board 4, esc free 1, esc actual 1
+      Cache me outside (952): 4 rams, alone 1, board 4, esc free 4, esc actual 3
+      Goated (733): 4 rams, alone 3, board 4, esc free 4, esc actual 3
+      the uncancelables (899): 3 rams, alone 2, board 3, esc free 3, esc actual 2
+      ddabap (457): 3 rams, alone 3, board 3, esc free 3, esc actual 3
+      calc (20): 3 rams, alone 3, board 3, esc free 1, esc actual 1
+      chaoliangUNSW (1016): 3 rams, alone 3, board 3, esc free 2, esc actual 2
+     leave one opp out: alone share 0.743 to 0.789; escape-free share 0.775 to 0.817
+  by evening (2 groups):
+      10-06a: 48 rams, alone 34, board 48, esc free 44, esc actual 33
+      10-06b: 27 rams, alone 23, board 27, esc free 15, esc actual 10
+     leave one evening out: alone share 0.708 to 0.852; escape-free share 0.556 to 0.917
+  [baseline] all turns of this queen while the other queen is dead: 14233 turns, friends under 2 in 0.582 of 14233, friends 0 in 0.321 of 14233
+  [baseline] same, only the games with such a ram: 6919 turns, friends under 2 in 0.651 of 6919, friends 0 in 0.363 of 6919
+  [rate] rams per 1000 such queen turns: 5.27
+  [contrast] same queen rammed while the other queen was still alive: 92 rams, alone 0.717 of 92, friends 0 0.337 of 92, escape free 0.747 of 91, escape actual 0.637 of 91, in square 0.967 of 91
+
+--- v31, THEIR queen rammed by ours after ours had died
+  rams 58 in 58 games; no last-turn snapshot 0; rammer born later 1; with board 57
+  friends within 5 under 2: 46 of 58 = 0.793 (95% 0.67 to 0.88)
+  friends within 5 equal 0: 33 of 58 = 0.569 (95% 0.44 to 0.69)
+  friends histogram [(0, 33), (1, 13), (2, 5), (3, 4), (4, 2), (7, 1)]
+  own other dragons alive at the ram: median 7.0 min 0 ; with none alive 7 ; with under 5 alive 17
+  enemy dragons alive at the ram: median 18.0
+  escape beyond free steps (of with board): 33 of 57 = 0.579 (95% 0.45 to 0.70)
+  escape beyond actual ram distance: 16 of 57 = 0.281 (95% 0.18 to 0.41)
+  rammer in the 7x7 square: 55 of 57 = 0.965 (95% 0.88 to 0.99)
+  [extra] a legal step beyond the free reach of EVERY enemy head: 31 of 57 = 0.544 (95% 0.42 to 0.67)
+  [extra] no legal step at all: 1 ; legal steps histogram [(0, 1), (1, 30), (2, 21), (3, 5)]
+  [extra] she ended where the rammer needed more than its free steps (d_ram > free): 26 of 57 = 0.456 (95% 0.33 to 0.58)
+  [extra] rammer made more steps in the ram turn than its free steps (paid length): 26 of 58 = 0.448 (95% 0.33 to 0.58)
+  [extra] rammer steps in the ram turn histogram [(1, 31), (2, 23), (3, 1), (4, 1), (5, 1), (6, 1)] ; rammer length at its turn start histogram [(2, 20), (3, 31), (4, 4), (6, 1), (9, 1), (13, 1)]
+  [extra] ended inside free reach: 31, of which another step led beyond free: 7; ended beyond free reach and was rammed anyway: 26
+  [extra] enemy heads with her start tile inside their free reach, histogram [(0, 55), (1, 2)]
+  [extra] queen length histogram [(2, 30), (3, 14), (4, 1), (5, 2), (6, 1), (8, 2), (15, 2), (23, 1), (26, 1), (31, 1), (33, 1), (41, 1), (49, 1)]
+  [extra] start-of-last-turn path distance rammer to queen histogram [(1, 1), (2, 29), (3, 23), (5, 2), (6, 2)]
+  band <1700: rams 1, alone (friends under 2) 1, friends 0 0, with board 1, escape free 0, escape actual 0, in square 1, escape every enemy 0
+  band 1700-1899: rams 31, alone (friends under 2) 23, friends 0 18, with board 30, escape free 12, escape actual 8, in square 30, escape every enemy 11
+  band 1900-2099: rams 17, alone (friends under 2) 17, friends 0 11, with board 17, escape free 14, escape actual 4, in square 15, escape every enemy 14
+  band 2100+: rams 9, alone (friends under 2) 5, friends 0 4, with board 9, escape free 7, escape actual 4, in square 9, escape every enemy 6
+  by map_key (13 groups):
+      Devil #1: 13 rams, alone 7, board 13, esc free 6, esc actual 3
+      weakhold #1: 10 rams, alone 9, board 10, esc free 4, esc actual 1
+      Autarky #1: 6 rams, alone 5, board 6, esc free 3, esc actual 3
+      Australia #1: 4 rams, alone 3, board 3, esc free 3, esc actual 1
+      Queen Of Spades #1: 4 rams, alone 4, board 4, esc free 2, esc actual 1
+      Around UNSW #1: 4 rams, alone 3, board 4, esc free 3, esc actual 2
+      Trophy #1: 3 rams, alone 3, board 3, esc free 1, esc actual 0
+      Stripes #1: 3 rams, alone 3, board 3, esc free 2, esc actual 1
+      Default #1: 3 rams, alone 3, board 3, esc free 2, esc actual 1
+      Prisoners Dilemma #2: 3 rams, alone 3, board 3, esc free 2, esc actual 0
+      Prisoners Dilemma #1: 2 rams, alone 2, board 2, esc free 2, esc actual 2
+      Islands #1: 2 rams, alone 0, board 2, esc free 2, esc actual 1
+     leave one map_key out: alone share 0.771 to 0.867; escape-free share 0.556 to 0.617
+  by opp (30 groups):
+      中国人不准飞😡😡😡😡😡😡😡 (791): 6 rams, alone 3, board 6, esc free 3, esc actual 1
+      err404 (485): 5 rams, alone 4, board 5, esc free 1, esc actual 0
+      dev test 1 :P (545): 5 rams, alone 3, board 5, esc free 4, esc actual 1
+      SHINK AI 6500 (280): 3 rams, alone 3, board 3, esc free 3, esc actual 2
+      Goated (733): 3 rams, alone 3, board 3, esc free 3, esc actual 0
+      Stochastic Parrots (127): 2 rams, alone 1, board 2, esc free 2, esc actual 2
+      Memory? (1097): 2 rams, alone 2, board 1, esc free 0, esc actual 0
+      Proof by Intimidation (465): 2 rams, alone 1, board 2, esc free 1, esc actual 1
+      ddabap (457): 2 rams, alone 2, board 2, esc free 1, esc actual 0
+      f2p (608): 2 rams, alone 1, board 2, esc free 1, esc actual 1
+      Vodyanitsa (1052): 2 rams, alone 1, board 2, esc free 1, esc actual 1
+      Ron Squad (928): 2 rams, alone 2, board 2, esc free 1, esc actual 0
+     leave one opp out: alone share 0.782 to 0.827; escape-free share 0.556 to 0.615
+  by evening (2 groups):
+      10-06a: 37 rams, alone 29, board 36, esc free 18, esc actual 11
+      10-06b: 21 rams, alone 17, board 21, esc free 15, esc actual 5
+     leave one evening out: alone share 0.784 to 0.810; escape-free share 0.500 to 0.714
+  [baseline] all turns of this queen while the other queen is dead: 29474 turns, friends under 2 in 0.416 of 29474, friends 0 in 0.224 of 29474
+  [baseline] same, only the games with such a ram: 4399 turns, friends under 2 in 0.626 of 4399, friends 0 in 0.386 of 4399
+  [rate] rams per 1000 such queen turns: 1.97
+  [contrast] same queen rammed while the other queen was still alive: 105 rams, alone 0.829 of 105, friends 0 0.505 of 105, escape free 0.615 of 104, escape actual 0.394 of 104, in square 0.971 of 104
+
+checks: games with final state not equal to the result block 0 ; anomalies {} ; head-on groups not victim-then-mover 0 of 28089 ; drop mismatches 0 ; bad portal pairs 0

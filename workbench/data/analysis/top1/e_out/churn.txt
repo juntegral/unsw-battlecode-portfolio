@@ -1,0 +1,282 @@
+
+==================== all maps ====================
+
+--- meow live: 96 games
+    leader cuts from r395  games won            c at the end       longest r400 -> end    own P / enemy P r400   units end    free cell at the cut
+    none                      18 3 of 18 = 17%  0.83               6 -> 10 (+4)           0.18                   3            -
+    1-2                       23 10 of 23 = 43% 0.67               14 -> 47 (+25)         0.68                   11           71%
+    3-5                       29 10 of 29 = 34% 0.51               13 -> 30 (+14)         0.73                   16           73%
+    6 or more                 26 4 of 26 = 15%  0.43               13 -> 30.5 (+13)       0.82                   17           64%
+    leader cuts from round 395: mean 3.82 a game, median 3; from round 300 to 394: mean 2.68; segments left behind in them from 395: mean 7.6
+    meow live: 25-round windows from round 400 with 10+ other dragons left: a leader cut in the window or the 25 rounds before: 194 windows, longest grows by median 4, mean 4.5; no leader cut: 66 windows, longest grows by median 9.5, mean 11.4
+
+--- meow test: 47 games
+    leader cuts from r395  games won            c at the end       longest r400 -> end    own P / enemy P r400   units end    free cell at the cut
+    none                       8 2 of 8 = 25%   0.71               7 -> 10 (+7)           0.34                   4.5          -
+    1-2                        8 4 of 8 = 50%   0.53               10 -> 24 (+15.5)       0.73                   6.5          75%
+    3-5                       18 4 of 18 = 22%  0.58               12.5 -> 36.5 (+22)     0.74                   9.5          66%
+    6 or more                 13 4 of 13 = 31%  0.49               13 -> 30 (+18)         0.70                   18           67%
+    leader cuts from round 395: mean 4.04 a game, median 4; from round 300 to 394: mean 3.70; segments left behind in them from 395: mean 8.1
+    meow test: 25-round windows from round 400 with 10+ other dragons left: a leader cut in the window or the 25 rounds before: 97 windows, longest grows by median 5, mean 6.1; no leader cut: 25 windows, longest grows by median 10, mean 9.3
+
+--- meow: 143 games
+    leader cuts from r395  games won            c at the end       longest r400 -> end    own P / enemy P r400   units end    free cell at the cut
+    none                      26 5 of 26 = 19%  0.71               6 -> 10 (+5)           0.20                   3            -
+    1-2                       31 14 of 31 = 45% 0.62               13 -> 36 (+21)         0.70                   8            72%
+    3-5                       47 14 of 47 = 30% 0.55               13 -> 34 (+17)         0.74                   11           70%
+    6 or more                 39 8 of 39 = 21%  0.44               13 -> 30 (+13)         0.80                   18           65%
+    leader cuts from round 395: mean 3.90 a game, median 3; from round 300 to 394: mean 3.01; segments left behind in them from 395: mean 7.8
+    meow: 25-round windows from round 400 with 10+ other dragons left: a leader cut in the window or the 25 rounds before: 291 windows, longest grows by median 4, mean 5.0; no leader cut: 91 windows, longest grows by median 10, mean 10.8
+
+--- opp: 143 games
+    leader cuts from r395  games won            c at the end       longest r400 -> end    own P / enemy P r400   units end    free cell at the cut
+    none                      30 23 of 30 = 77% 0.53               36.5 -> 71.5 (+26.5)   1.60                   7.5          -
+    1-2                       59 41 of 59 = 69% 0.57               27 -> 50 (+25)         1.35                   7            37%
+    3-5                       41 27 of 41 = 66% 0.50               23 -> 46 (+24)         1.41                   8            45%
+    6 or more                 13 11 of 13 = 85% 0.59               43 -> 54 (+24)         1.69                   9            29%
+    leader cuts from round 395: mean 2.39 a game, median 2; from round 300 to 394: mean 2.57; segments left behind in them from 395: mean 4.8
+    opp: 25-round windows from round 400 with 10+ other dragons left: a leader cut in the window or the 25 rounds before: 216 windows, longest grows by median 6, mean 6.0; no leader cut: 156 windows, longest grows by median 7, mean 6.9
+
+--- test4 (vs us): 49 games
+    leader cuts from r395  games won            c at the end       longest r400 -> end    own P / enemy P r400   units end    free cell at the cut
+    none                       5 3 of 5 = 60%   0.47               7 -> 33 (+23)          1.19                   18           -
+    1-2                       24 14 of 24 = 58% 0.60               22 -> 42.5 (+21)       1.14                   8            66%
+    3-5                       16 12 of 16 = 75% 0.43               18.5 -> 43 (+24)       1.42                   12           80%
+    6 or more                  4 3 of 4 = 75%   0.61               25 -> 50 (+25)         2.89                   8            75%
+    leader cuts from round 395: mean 2.53 a game, median 2; from round 300 to 394: mean 3.02; segments left behind in them from 395: mean 5.1
+    test4 (vs us): 25-round windows from round 400 with 10+ other dragons left: a leader cut in the window or the 25 rounds before: 78 windows, longest grows by median 5, mean 6.1; no leader cut: 46 windows, longest grows by median 7, mean 7.7
+
+--- WHQ (vs us): 74 games
+    leader cuts from r395  games won            c at the end       longest r400 -> end    own P / enemy P r400   units end    free cell at the cut
+    none                      22 19 of 22 = 86% 0.53               46 -> 78 (+29.5)       2.22                   7.5          -
+    1-2                       29 25 of 29 = 86% 0.57               45 -> 79 (+27)         2.06                   6            12%
+    3-5                       17 12 of 17 = 71% 0.55               34 -> 50 (+23)         1.82                   5            18%
+    6 or more                  6 5 of 6 = 83%   0.58               60.5 -> 65 (+17.5)     1.99                   8.5          2%
+    leader cuts from round 395: mean 2.05 a game, median 1; from round 300 to 394: mean 2.22; segments left behind in them from 395: mean 4.1
+    WHQ (vs us): 25-round windows from round 400 with 10+ other dragons left: a leader cut in the window or the 25 rounds before: 101 windows, longest grows by median 7, mean 6.0; no leader cut: 95 windows, longest grows by median 8, mean 7.3
+
+--- forgot: 154 games
+    leader cuts from r395  games won            c at the end       longest r400 -> end    own P / enemy P r400   units end    free cell at the cut
+    none                      19 8 of 19 = 42%  0.60               16 -> 28 (+3)          0.64                   4            -
+    1-2                       40 18 of 40 = 45% 0.61               28.5 -> 50.5 (+20.5)   0.94                   8            7%
+    3-5                       62 37 of 62 = 60% 0.49               37.5 -> 55 (+19.5)     1.04                   11.5         12%
+    6 or more                 33 22 of 33 = 67% 0.65               25 -> 49 (+22)         1.05                   8            11%
+    leader cuts from round 395: mean 3.56 a game, median 3; from round 300 to 394: mean 1.51; segments left behind in them from 395: mean 7.1
+    forgot: 25-round windows from round 400 with 10+ other dragons left: a leader cut in the window or the 25 rounds before: 317 windows, longest grows by median 5, mean 5.1; no leader cut: 88 windows, longest grows by median 5, mean 4.9
+
+--- SSS: 141 games
+    leader cuts from r395  games won            c at the end       longest r400 -> end    own P / enemy P r400   units end    free cell at the cut
+    none                      38 27 of 38 = 71% 0.57               31.5 -> 62 (+29)       1.13                   19.5         -
+    1-2                       70 39 of 70 = 56% 0.48               35 -> 47.5 (+18.5)     1.12                   22.5         98%
+    3-5                       23 12 of 23 = 52% 0.39               40 -> 44 (+8)          1.13                   22           98%
+    6 or more                 10 4 of 10 = 40%  0.37               44.5 -> 46 (+6.5)      1.22                   25           94%
+    leader cuts from round 395: mean 1.94 a game, median 1; from round 300 to 394: mean 1.37; segments left behind in them from 395: mean 3.9
+    SSS: 25-round windows from round 400 with 10+ other dragons left: a leader cut in the window or the 25 rounds before: 249 windows, longest grows by median 4, mean 2.7; no leader cut: 234 windows, longest grows by median 7, mean 6.5
+
+--- Vibing++: 152 games
+    leader cuts from r395  games won            c at the end       longest r400 -> end    own P / enemy P r400   units end    free cell at the cut
+    none                      25 15 of 25 = 60% 0.54               22 -> 41 (+29)         1.14                   9            -
+    1-2                       67 45 of 67 = 67% 0.45               28 -> 48 (+20)         1.25                   14           75%
+    3-5                       49 32 of 49 = 65% 0.47               27 -> 44 (+20)         1.47                   14           61%
+    6 or more                 11 7 of 11 = 64%  0.42               30 -> 36 (+13)         1.15                   16           52%
+    leader cuts from round 395: mean 2.41 a game, median 2; from round 300 to 394: mean 2.93; segments left behind in them from 395: mean 4.8
+    Vibing++: 25-round windows from round 400 with 10+ other dragons left: a leader cut in the window or the 25 rounds before: 319 windows, longest grows by median 4, mean 5.8; no leader cut: 179 windows, longest grows by median 6, mean 7.4
+
+--- top3: 447 games
+    leader cuts from r395  games won            c at the end       longest r400 -> end    own P / enemy P r400   units end    free cell at the cut
+    none                      82 50 of 82 = 61% 0.57               22.5 -> 50 (+20)       1.06                   10           -
+    1-2                      177 102 of 177 = 58% 0.50               31 -> 48 (+20)         1.09                   14           69%
+    3-5                      134 81 of 134 = 60% 0.47               35 -> 50.5 (+19)       1.18                   14           45%
+    6 or more                 54 33 of 54 = 61% 0.55               31 -> 48.5 (+16)       1.15                   10.5         35%
+    leader cuts from round 395: mean 2.66 a game, median 2; from round 300 to 394: mean 1.95; segments left behind in them from 395: mean 5.3
+    top3: 25-round windows from round 400 with 10+ other dragons left: a leader cut in the window or the 25 rounds before: 885 windows, longest grows by median 5, mean 4.7; no leader cut: 501 windows, longest grows by median 6, mean 6.5
+
+==================== maps of 1,200 cells or fewer ====================
+
+--- meow live: 53 games
+    leader cuts from r395  games won            c at the end       longest r400 -> end    own P / enemy P r400   units end    free cell at the cut
+    none                      13 3 of 13 = 23%  0.83               6 -> 10 (+4)           0.20                   3            -
+    1-2                       12 6 of 12 = 50%  0.78               13 -> 35 (+23)         0.79                   7            84%
+    3-5                       15 8 of 15 = 53%  0.71               11 -> 28 (+18)         0.96                   7            68%
+    6 or more                 13 1 of 13 = 8%   0.54               13 -> 23 (+11)         0.94                   10           66%
+    leader cuts from round 395: mean 3.79 a game, median 3; from round 300 to 394: mean 2.34; segments left behind in them from 395: mean 7.6
+    meow live: 25-round windows from round 400 with 10+ other dragons left: a leader cut in the window or the 25 rounds before: 83 windows, longest grows by median 3, mean 4.0; no leader cut: 38 windows, longest grows by median 12, mean 13.4
+
+--- meow test: 25 games
+    leader cuts from r395  games won            c at the end       longest r400 -> end    own P / enemy P r400   units end    free cell at the cut
+    none                       4 1 of 4 = 25%   0.65               6.5 -> 7.5 (+3)        0.39                   4            -
+    1-2                        6 4 of 6 = 67%   0.57               12.5 -> 38 (+25)       0.87                   5            70%
+    3-5                        9 3 of 9 = 33%   0.79               11 -> 44 (+33)         0.81                   4            65%
+    6 or more                  6 3 of 6 = 50%   0.71               11.5 -> 31 (+19.5)     1.21                   4            65%
+    leader cuts from round 395: mean 3.96 a game, median 3; from round 300 to 394: mean 3.52; segments left behind in them from 395: mean 7.9
+    meow test: 25-round windows from round 400 with 10+ other dragons left: a leader cut in the window or the 25 rounds before: 42 windows, longest grows by median 9, mean 9.9; no leader cut: 13 windows, longest grows by median 10, mean 9.7
+
+--- meow: 78 games
+    leader cuts from r395  games won            c at the end       longest r400 -> end    own P / enemy P r400   units end    free cell at the cut
+    none                      17 4 of 17 = 24%  0.82               6 -> 10 (+4)           0.22                   3            -
+    1-2                       18 10 of 18 = 56% 0.67               13 -> 35 (+24)         0.82                   6            79%
+    3-5                       24 11 of 24 = 46% 0.76               11 -> 33.5 (+25.5)     0.90                   6            67%
+    6 or more                 19 4 of 19 = 21%  0.56               12 -> 25 (+12)         1.00                   9            66%
+    leader cuts from round 395: mean 3.85 a game, median 3; from round 300 to 394: mean 2.72; segments left behind in them from 395: mean 7.7
+    meow: 25-round windows from round 400 with 10+ other dragons left: a leader cut in the window or the 25 rounds before: 125 windows, longest grows by median 4, mean 6.0; no leader cut: 51 windows, longest grows by median 11, mean 12.4
+
+--- opp: 78 games
+    leader cuts from r395  games won            c at the end       longest r400 -> end    own P / enemy P r400   units end    free cell at the cut
+    none                      14 7 of 14 = 50%  0.77               13 -> 35 (+26)         1.23                   5            -
+    1-2                       36 22 of 36 = 61% 0.80               21 -> 42.5 (+23.5)     1.03                   3.5          37%
+    3-5                       22 14 of 22 = 64% 0.76               16.5 -> 33 (+23)       1.21                   3            42%
+    6 or more                  6 6 of 6 = 100%  0.65               28 -> 50 (+24)         4.50                   6.5          40%
+    leader cuts from round 395: mean 2.29 a game, median 2; from round 300 to 394: mean 2.63; segments left behind in them from 395: mean 4.6
+    opp: 25-round windows from round 400 with 10+ other dragons left: a leader cut in the window or the 25 rounds before: 80 windows, longest grows by median 6, mean 6.8; no leader cut: 54 windows, longest grows by median 8, mean 7.9
+
+--- test4 (vs us): 29 games
+    leader cuts from r395  games won            c at the end       longest r400 -> end    own P / enemy P r400   units end    free cell at the cut
+    none                       3 1 of 3 = 33%   0.73               5 -> 10 (+5)           0.84                   6            -
+    1-2                       15 8 of 15 = 53%  0.90               14 -> 37 (+21)         1.00                   2            55%
+    3-5                        8 6 of 8 = 75%   0.79               10 -> 33 (+23)         1.27                   3            77%
+    6 or more                  3 3 of 3 = 100%  0.63               27 -> 51 (+26)         4.10                   7            74%
+    leader cuts from round 395: mean 2.38 a game, median 2; from round 300 to 394: mean 2.66; segments left behind in them from 395: mean 4.8
+    test4 (vs us): 25-round windows from round 400 with 10+ other dragons left: a leader cut in the window or the 25 rounds before: 27 windows, longest grows by median 5, mean 8.5; no leader cut: 17 windows, longest grows by median 8, mean 7.6
+
+--- WHQ (vs us): 39 games
+    leader cuts from r395  games won            c at the end       longest r400 -> end    own P / enemy P r400   units end    free cell at the cut
+    none                       9 6 of 9 = 67%   0.81               28 -> 59 (+29)         1.34                   5            -
+    1-2                       17 13 of 17 = 76% 0.80               29 -> 47 (+27)         1.24                   4            17%
+    3-5                       12 8 of 12 = 67%  0.76               17 -> 32 (+18)         1.06                   3            22%
+    6 or more                  1 1 of 1 = 100%  0.81               43 -> 67 (+24)         25.67                  2            0%
+    leader cuts from round 395: mean 2.03 a game, median 2; from round 300 to 394: mean 2.77; segments left behind in them from 395: mean 4.1
+    WHQ (vs us): 25-round windows from round 400 with 10+ other dragons left: a leader cut in the window or the 25 rounds before: 41 windows, longest grows by median 7, mean 5.7; no leader cut: 34 windows, longest grows by median 9, mean 8.3
+
+--- forgot: 65 games
+    leader cuts from r395  games won            c at the end       longest r400 -> end    own P / enemy P r400   units end    free cell at the cut
+    none                      12 4 of 12 = 33%  0.63               7.5 -> 10.5 (+2)       0.32                   4            -
+    1-2                       13 8 of 13 = 62%  0.70               17 -> 30 (+11)         1.04                   4            11%
+    3-5                       18 11 of 18 = 61% 0.64               21.5 -> 50.5 (+24.5)   1.53                   6            17%
+    6 or more                 22 14 of 22 = 64% 0.70               17 -> 43.5 (+23)       1.06                   6.5          14%
+    leader cuts from round 395: mean 4.09 a game, median 4; from round 300 to 394: mean 1.03; segments left behind in them from 395: mean 8.2
+    forgot: 25-round windows from round 400 with 10+ other dragons left: a leader cut in the window or the 25 rounds before: 82 windows, longest grows by median 8, mean 8.7; no leader cut: 16 windows, longest grows by median 7.5, mean 5.9
+
+--- SSS: 42 games
+    leader cuts from r395  games won            c at the end       longest r400 -> end    own P / enemy P r400   units end    free cell at the cut
+    none                      15 9 of 15 = 60%  0.88               18 -> 39 (+16)         1.06                   2            -
+    1-2                       19 11 of 19 = 58% 0.79               31 -> 39 (+17)         1.07                   6            97%
+    3-5                        4 2 of 4 = 50%   0.87               31 -> 43 (+10)         1.20                   4            94%
+    6 or more                  4 1 of 4 = 25%   0.37               15.5 -> 16.5 (+3.5)    1.19                   14           90%
+    leader cuts from round 395: mean 2.05 a game, median 1; from round 300 to 394: mean 1.60; segments left behind in them from 395: mean 4.1
+    SSS: 25-round windows from round 400 with 10+ other dragons left: a leader cut in the window or the 25 rounds before: 53 windows, longest grows by median 2, mean 2.4; no leader cut: 47 windows, longest grows by median 8, mean 6.2
+
+--- Vibing++: 67 games
+    leader cuts from r395  games won            c at the end       longest r400 -> end    own P / enemy P r400   units end    free cell at the cut
+    none                      11 4 of 11 = 36%  0.71               6 -> 17 (+11)          1.12                   7            -
+    1-2                       26 20 of 26 = 77% 0.67               12 -> 37.5 (+21)       1.19                   6            77%
+    3-5                       25 18 of 25 = 72% 0.53               9 -> 38 (+22)          2.50                   10           63%
+    6 or more                  5 5 of 5 = 100%  0.58               10 -> 68 (+17)         1.25                   13           41%
+    leader cuts from round 395: mean 2.57 a game, median 2; from round 300 to 394: mean 3.40; segments left behind in them from 395: mean 5.1
+    Vibing++: 25-round windows from round 400 with 10+ other dragons left: a leader cut in the window or the 25 rounds before: 119 windows, longest grows by median 6, mean 8.0; no leader cut: 65 windows, longest grows by median 6, mean 5.8
+
+--- top3: 174 games
+    leader cuts from r395  games won            c at the end       longest r400 -> end    own P / enemy P r400   units end    free cell at the cut
+    none                      38 17 of 38 = 45% 0.72               9.5 -> 19 (+7.5)       0.94                   4            -
+    1-2                       58 39 of 58 = 67% 0.71               16 -> 37 (+18.5)       1.09                   6            70%
+    3-5                       47 31 of 47 = 66% 0.59               13 -> 40 (+22)         1.86                   7            47%
+    6 or more                 31 20 of 31 = 65% 0.69               16 -> 39 (+21)         1.13                   8            30%
+    leader cuts from round 395: mean 3.01 a game, median 2; from round 300 to 394: mean 2.08; segments left behind in them from 395: mean 6.0
+    top3: 25-round windows from round 400 with 10+ other dragons left: a leader cut in the window or the 25 rounds before: 254 windows, longest grows by median 6, mean 7.1; no leader cut: 128 windows, longest grows by median 7, mean 6.0
+
+==================== maps over 1,200 cells ====================
+
+--- meow live: 43 games
+    leader cuts from r395  games won            c at the end       longest r400 -> end    own P / enemy P r400   units end    free cell at the cut
+    none                       5 0 of 5 = 0%    0.47               8 -> 13 (+5)           0.12                   6            -
+    1-2                       11 4 of 11 = 36%  0.62               21 -> 58 (+25)         0.64                   16           58%
+    3-5                       14 2 of 14 = 14%  0.34               17.5 -> 32.5 (+11)     0.53                   21           78%
+    6 or more                 13 3 of 13 = 23%  0.34               15 -> 44 (+17)         0.59                   31           62%
+    leader cuts from round 395: mean 3.86 a game, median 3; from round 300 to 394: mean 3.09; segments left behind in them from 395: mean 7.7
+    meow live: 25-round windows from round 400 with 10+ other dragons left: a leader cut in the window or the 25 rounds before: 111 windows, longest grows by median 4, mean 4.8; no leader cut: 28 windows, longest grows by median 5.5, mean 8.6
+
+--- meow test: 22 games
+    leader cuts from r395  games won            c at the end       longest r400 -> end    own P / enemy P r400   units end    free cell at the cut
+    none                       4 1 of 4 = 25%   0.71               10 -> 22.5 (+14)       0.20                   6.5          -
+    1-2                        2 0 of 2 = 0%    0.45               7.5 -> 11.5 (+4)       0.12                   7            100%
+    3-5                        9 1 of 9 = 11%   0.41               14 -> 34 (+11)         0.52                   17           68%
+    6 or more                  7 1 of 7 = 14%   0.31               25 -> 29 (+13)         0.65                   23           69%
+    leader cuts from round 395: mean 4.14 a game, median 4; from round 300 to 394: mean 3.91; segments left behind in them from 395: mean 8.3
+    meow test: 25-round windows from round 400 with 10+ other dragons left: a leader cut in the window or the 25 rounds before: 55 windows, longest grows by median 3, mean 3.1; no leader cut: 12 windows, longest grows by median 8, mean 8.9
+
+--- meow: 65 games
+    leader cuts from r395  games won            c at the end       longest r400 -> end    own P / enemy P r400   units end    free cell at the cut
+    none                       9 1 of 9 = 11%   0.70               8 -> 13 (+5)           0.12                   6            -
+    1-2                       13 4 of 13 = 31%  0.59               14 -> 47 (+14)         0.43                   12           62%
+    3-5                       23 3 of 23 = 13%  0.36               16 -> 34 (+11)         0.52                   20           74%
+    6 or more                 20 4 of 20 = 20%  0.33               18 -> 39 (+16.5)       0.62                   27           65%
+    leader cuts from round 395: mean 3.95 a game, median 4; from round 300 to 394: mean 3.37; segments left behind in them from 395: mean 7.9
+    meow: 25-round windows from round 400 with 10+ other dragons left: a leader cut in the window or the 25 rounds before: 166 windows, longest grows by median 4, mean 4.3; no leader cut: 40 windows, longest grows by median 6.5, mean 8.7
+
+--- opp: 65 games
+    leader cuts from r395  games won            c at the end       longest r400 -> end    own P / enemy P r400   units end    free cell at the cut
+    none                      16 16 of 16 = 100% 0.49               54.5 -> 86.5 (+28.5)   4.09                   9.5          -
+    1-2                       23 19 of 23 = 83% 0.38               38 -> 68 (+28)         2.90                   15           38%
+    3-5                       19 13 of 19 = 68% 0.34               32 -> 52 (+25)         1.54                   18           49%
+    6 or more                  7 5 of 7 = 71%   0.39               50 -> 63 (+11)         1.51                   11           18%
+    leader cuts from round 395: mean 2.51 a game, median 2; from round 300 to 394: mean 2.49; segments left behind in them from 395: mean 5.1
+    opp: 25-round windows from round 400 with 10+ other dragons left: a leader cut in the window or the 25 rounds before: 136 windows, longest grows by median 6, mean 5.5; no leader cut: 102 windows, longest grows by median 5.5, mean 6.3
+
+--- test4 (vs us): 20 games
+    leader cuts from r395  games won            c at the end       longest r400 -> end    own P / enemy P r400   units end    free cell at the cut
+    none                       2 2 of 2 = 100%  0.42               36.5 -> 81.5 (+45)     2.24                   19           -
+    1-2                        9 6 of 9 = 67%   0.24               25 -> 50 (+28)         1.94                   29           80%
+    3-5                        8 6 of 8 = 75%   0.31               22.5 -> 50.5 (+25.5)   1.70                   18.5         84%
+    6 or more                  1 0 of 1 = 0%    0.08               12 -> 12 (+0)          1.45                   62           78%
+    leader cuts from round 395: mean 2.75 a game, median 2; from round 300 to 394: mean 3.55; segments left behind in them from 395: mean 5.6
+    test4 (vs us): 25-round windows from round 400 with 10+ other dragons left: a leader cut in the window or the 25 rounds before: 51 windows, longest grows by median 4, mean 4.8; no leader cut: 29 windows, longest grows by median 6, mean 7.7
+
+--- WHQ (vs us): 35 games
+    leader cuts from r395  games won            c at the end       longest r400 -> end    own P / enemy P r400   units end    free cell at the cut
+    none                      13 13 of 13 = 100% 0.52               55 -> 90 (+30)         5.33                   9            -
+    1-2                       12 12 of 12 = 100% 0.47               57.5 -> 91 (+33.5)     4.21                   9.5          6%
+    3-5                        5 4 of 5 = 80%   0.44               51 -> 74 (+25)         3.36                   9            10%
+    6 or more                  5 4 of 5 = 80%   0.54               71 -> 63 (+11)         1.56                   10           3%
+    leader cuts from round 395: mean 2.09 a game, median 1; from round 300 to 394: mean 1.60; segments left behind in them from 395: mean 4.2
+    WHQ (vs us): 25-round windows from round 400 with 10+ other dragons left: a leader cut in the window or the 25 rounds before: 60 windows, longest grows by median 8, mean 6.2; no leader cut: 61 windows, longest grows by median 7, mean 6.7
+
+--- forgot: 89 games
+    leader cuts from r395  games won            c at the end       longest r400 -> end    own P / enemy P r400   units end    free cell at the cut
+    none                       7 4 of 7 = 57%   0.52               37 -> 40 (+18)         0.78                   9            -
+    1-2                       27 10 of 27 = 37% 0.60               41 -> 56 (+22)         0.89                   9            5%
+    3-5                       44 26 of 44 = 59% 0.45               41 -> 56.5 (+16.5)     0.97                   14           9%
+    6 or more                 11 8 of 11 = 73%  0.55               51 -> 55 (+16)         1.05                   10           4%
+    leader cuts from round 395: mean 3.18 a game, median 3; from round 300 to 394: mean 1.87; segments left behind in them from 395: mean 6.4
+    forgot: 25-round windows from round 400 with 10+ other dragons left: a leader cut in the window or the 25 rounds before: 235 windows, longest grows by median 4, mean 3.8; no leader cut: 72 windows, longest grows by median 5, mean 4.6
+
+--- SSS: 99 games
+    leader cuts from r395  games won            c at the end       longest r400 -> end    own P / enemy P r400   units end    free cell at the cut
+    none                      23 18 of 23 = 78% 0.49               35 -> 67 (+30)         1.14                   24           -
+    1-2                       51 28 of 51 = 55% 0.42               41 -> 52 (+19)         1.13                   31           99%
+    3-5                       19 10 of 19 = 53% 0.38               46 -> 46 (+8)          0.99                   33           99%
+    6 or more                  6 3 of 6 = 50%   0.40               56.5 -> 56.5 (+9.5)    1.25                   34           98%
+    leader cuts from round 395: mean 1.90 a game, median 1; from round 300 to 394: mean 1.27; segments left behind in them from 395: mean 3.8
+    SSS: 25-round windows from round 400 with 10+ other dragons left: a leader cut in the window or the 25 rounds before: 196 windows, longest grows by median 4, mean 2.8; no leader cut: 187 windows, longest grows by median 6, mean 6.6
+
+--- Vibing++: 85 games
+    leader cuts from r395  games won            c at the end       longest r400 -> end    own P / enemy P r400   units end    free cell at the cut
+    none                      14 11 of 14 = 79% 0.43               29 -> 69.5 (+42.5)     1.25                   16           -
+    1-2                       41 25 of 41 = 61% 0.37               36 -> 54 (+19)         1.25                   20           73%
+    3-5                       24 14 of 24 = 58% 0.41               40.5 -> 59.5 (+16)     1.10                   17           60%
+    6 or more                  6 2 of 6 = 33%   0.29               34.5 -> 35.5 (+8.5)    1.15                   26.5         62%
+    leader cuts from round 395: mean 2.28 a game, median 2; from round 300 to 394: mean 2.56; segments left behind in them from 395: mean 4.6
+    Vibing++: 25-round windows from round 400 with 10+ other dragons left: a leader cut in the window or the 25 rounds before: 200 windows, longest grows by median 4, mean 4.5; no leader cut: 114 windows, longest grows by median 6, mean 8.2
+
+--- top3: 273 games
+    leader cuts from r395  games won            c at the end       longest r400 -> end    own P / enemy P r400   units end    free cell at the cut
+    none                      44 33 of 44 = 75% 0.48               32.5 -> 65 (+29.5)     1.11                   20           -
+    1-2                      119 63 of 119 = 53% 0.43               38 -> 54 (+20)         1.09                   20           68%
+    3-5                       87 50 of 87 = 57% 0.42               41 -> 55 (+15)         0.99                   16           43%
+    6 or more                 23 13 of 23 = 57% 0.42               48 -> 51 (+12)         1.15                   16           42%
+    leader cuts from round 395: mean 2.44 a game, median 2; from round 300 to 394: mean 1.87; segments left behind in them from 395: mean 4.9
+    top3: 25-round windows from round 400 with 10+ other dragons left: a leader cut in the window or the 25 rounds before: 631 windows, longest grows by median 4, mean 3.7; no leader cut: 373 windows, longest grows by median 6, mean 6.7
+
+--- meow, readable sonar, rounds 400-494, 10+ senders: growth of the longest dragon over the next 5 rounds
+    under 25% believe the true longest      187 samples: mean +0.42, median 0; share with any growth 40%
+    25-50%                                   40 samples: mean +1.85, median 1; share with any growth 72%
+    50-75%                                   41 samples: mean +1.51, median 1; share with any growth 73%
+    75% or more                              79 samples: mean +2.00, median 2; share with any growth 66%

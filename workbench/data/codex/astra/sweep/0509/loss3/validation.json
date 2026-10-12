@@ -1,0 +1,118 @@
+{
+  "time": "2026-10-09T05:18:12.891316+09:00",
+  "games": [
+    {
+      "gid": 1490798,
+      "sha256": "d6cabb04aabc3e08b63396901fd4673b822b429cb20d8b27284f0f798a13d8d6",
+      "bot": "20941",
+      "final": {
+        "us": {
+          "alive": 0,
+          "total": 0,
+          "longest": 0,
+          "pearls": 21,
+          "queen_alive": false,
+          "queen_length": 0
+        },
+        "them": {
+          "alive": 47,
+          "total": 119,
+          "longest": 4,
+          "pearls": 271,
+          "queen_alive": true,
+          "queen_length": 3
+        }
+      },
+      "near_after_death": [],
+      "how": "wiped out",
+      "anomalies": {}
+    },
+    {
+      "gid": 1490799,
+      "sha256": "5f0dae638c351397e6a402639004be906bf17b6400dcaf540bcbac8de0c43db0",
+      "bot": "20941",
+      "final": {
+        "us": {
+          "alive": 25,
+          "total": 174,
+          "longest": 43,
+          "pearls": 1059,
+          "queen_alive": false,
+          "queen_length": 0
+        },
+        "them": {
+          "alive": 20,
+          "total": 102,
+          "longest": 52,
+          "pearls": 1127,
+          "queen_alive": true,
+          "queen_length": 52
+        }
+      },
+      "near_after_death": [
+        {
+          "round": 459,
+          "event": 209102,
+          "id": 137,
+          "distance": 5,
+          "head": 568,
+          "enemy_head": 469
+        },
+        {
+          "round": 460,
+          "event": 209506,
+          "id": 137,
+          "distance": 5,
+          "head": 567,
+          "enemy_head": 468
+        }
+      ],
+      "how": "queen",
+      "anomalies": {}
+    },
+    {
+      "gid": 1490800,
+      "sha256": "acb15e593015e051d18739fd8c011b1ee20c921bb7cd98ff50e7e713d04abf7b",
+      "bot": "20941",
+      "final": {
+        "us": {
+          "alive": 4,
+          "total": 41,
+          "longest": 32,
+          "pearls": 1012,
+          "queen_alive": false,
+          "queen_length": 0
+        },
+        "them": {
+          "alive": 9,
+          "total": 84,
+          "longest": 38,
+          "pearls": 1319,
+          "queen_alive": false,
+          "queen_length": 0
+        }
+      },
+      "near_after_death": [],
+      "how": "longest",
+      "anomalies": {}
+    }
+  ],
+  "boards": 9,
+  "board_cells": [
+    7,
+    7
+  ],
+  "words_excluding_tables": 220,
+  "source_sha256": "bfdd8e0ce9c2072542b1e046545f70ad285f5d58726ee1e82a9ca4255a999712",
+  "checks": [
+    "ladder_replay final body state == embedded replay result",
+    "o1_scan every round alive/total/longest/queen == ladder_replay snapshots",
+    "nine queen turn-start boards each seven by seven, including wall and portal edges"
+  ],
+  "limitations": [
+    "no counterfactual matches",
+    "no internal bot branch/score/memory reconstruction",
+    "proximity ignores occupied bodies",
+    "one10 not replayed"
+  ]
+}

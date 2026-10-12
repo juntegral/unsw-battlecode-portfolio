@@ -1,0 +1,62 @@
+
+-- meow (401 games): n=175, taken 54, not taken 121
+   const                  +0.35 (se 0.53)
+   taken                  +0.96 (se 0.54)
+   log length ratio       +1.76 (se 0.31)
+   round/100              -0.68 (se 0.25)
+   own queen alive        -0.34 (se 0.51)
+   average change in win chance for the NOT-taken games if taken: +12.1 points (80% interval +3.2 to +21.0), n=121 -> +14.6 games
+
+-- meow, adding 'outnumbered where it stands' and the unit ratio: n=175, taken 54, not taken 121
+   const                  +0.59 (se 0.68)
+   taken                  +0.72 (se 0.62)
+   log length ratio       +0.98 (se 0.99)
+   round/100              -0.71 (se 0.25)
+   own queen alive        -0.27 (se 0.51)
+   outn                   -0.31 (se 0.55)
+   units                  +0.85 (se 1.11)
+   average change in win chance for the NOT-taken games if taken: +9.1 points (80% interval -0.8 to +19.4), n=121 -> +11.0 games
+
+-- forgot: n=308, taken 204, not taken 104
+   const                  -0.59 (se 0.50)
+   taken                  +0.58 (se 0.35)
+   log length ratio       +2.66 (se 0.37)
+   round/100              +0.06 (se 0.16)
+   own queen alive        +0.53 (se 0.41)
+   average change in win chance for the NOT-taken games if taken: +8.1 points (80% interval +1.9 to +14.0), n=104 -> +8.5 games
+
+-- forgot, adding 'outnumbered' and the unit ratio: n=308, taken 204, not taken 104
+   const                  -0.02 (se 0.60)
+   taken                  +0.38 (se 0.38)
+   log length ratio       +2.61 (se 0.83)
+   round/100              +0.11 (se 0.17)
+   own queen alive        +0.46 (se 0.42)
+   outn                   -0.69 (se 0.38)
+   units                  -0.02 (se 0.79)
+   average change in win chance for the NOT-taken games if taken: +5.2 points (80% interval -1.5 to +11.7), n=104 -> +5.4 games
+
+-- other teams rated 2000+: n=584, taken 514, not taken 70
+   const                  -1.34 (se 0.61)
+   taken                  +0.12 (se 0.37)
+   log length ratio       +2.52 (se 0.25)
+   round/100              +0.27 (se 0.09)
+   own queen alive        +0.46 (se 0.27)
+   average change in win chance for the NOT-taken games if taken: +1.9 points (80% interval -5.8 to +10.0), n=70 -> +1.4 games
+
+-- pooled meow + forgot + others, team terms: n=1067, taken 772, not taken 295
+   const                  -1.26 (se 0.49)
+   taken                  +0.37 (se 0.22)
+   log length ratio       +2.39 (se 0.18)
+   round/100              +0.13 (se 0.07)
+   own queen alive        +0.35 (se 0.20)
+   average change in win chance for the NOT-taken games if taken: +5.2 points (80% interval +1.2 to +9.3), n=295 -> +15.4 games
+
+-- pooled, adding 'outnumbered' and the unit ratio: n=1067, taken 772, not taken 295
+   const                  -0.66 (se 0.51)
+   taken                  +0.17 (se 0.23)
+   log length ratio       +1.94 (se 0.36)
+   round/100              +0.14 (se 0.07)
+   own queen alive        +0.37 (se 0.20)
+   outn                   -0.66 (se 0.19)
+   units                  +0.41 (se 0.34)
+   average change in win chance for the NOT-taken games if taken: +2.4 points (80% interval -1.7 to +6.5), n=295 -> +7.0 games

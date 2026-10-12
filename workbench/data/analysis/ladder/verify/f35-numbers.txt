@@ -1,0 +1,236 @@
+F35 numbers, verifier run 2026-10-07 08:23 KST. Source: x8 shards (own rebuild of all raw replays).
+games read 745, unreadable 0, final state differs from the result block 0, tile ownership off 0, anomalies {}
+queen alive flag agrees with no death record: 1490 of 1490 sides
+by code: {'v31': 410, 'other': 40, 'main': 295}
+main and v31 games 705; on free layouts 617; of those full (last raw round 499) 334; up to battle 1276407: 665 of the main and v31 games, 579 on free layouts
+full games whose end reason is not round limit: 0; games ended by elimination with last round 499: 0
+both queens died in the same raw round (neither is lone): 2 of the 334 full free games
+
+== 1. First part: lone queen alive at the end, full games on free layouts ==
+  main                                           games  143  ours 8 of 43 (0.186)    theirs 32 of 80 (0.400)   ratio 0.47  Fisher p 0.0166
+  v31                                            games  191  ours 8 of 67 (0.119)    theirs 36 of 107 (0.336)  ratio 0.35  Fisher p 0.0012
+  main and v31 pooled                            games  334  ours 16 of 110 (0.145)  theirs 68 of 187 (0.364)  ratio 0.40  Fisher p 0.0001
+  main <1700                                     games    0  ours 0 of 0 (-)         theirs 0 of 0 (-)         ratio nan  Fisher p 1.0000
+  main 1700-1899                                 games   59  ours 4 of 18 (0.222)    theirs 10 of 31 (0.323)   ratio 0.69  Fisher p 0.5273
+  main 1900-2099                                 games   74  ours 4 of 23 (0.174)    theirs 15 of 41 (0.366)   ratio 0.48  Fisher p 0.1552
+  main 2100+                                     games   10  ours 0 of 2 (0.000)     theirs 7 of 8 (0.875)     ratio 0.00  Fisher p 0.0667
+  v31 <1700                                      games    8  ours 0 of 7 (0.000)     theirs 0 of 1 (0.000)     ratio nan  Fisher p 1.0000
+  v31 1700-1899                                  games   88  ours 7 of 32 (0.219)    theirs 16 of 47 (0.340)   ratio 0.64  Fisher p 0.3157
+  v31 1900-2099                                  games   68  ours 1 of 19 (0.053)    theirs 14 of 43 (0.326)   ratio 0.16  Fisher p 0.0247
+  v31 2100+                                      games   27  ours 0 of 9 (0.000)     theirs 6 of 16 (0.375)    ratio 0.00  Fisher p 0.0571
+  layouts above 1200 cells, both codes           games  113  ours 5 of 44 (0.114)    theirs 24 of 69 (0.348)   ratio 0.33  Fisher p 0.0074
+  other layouts, both codes                      games  221  ours 11 of 66 (0.167)   theirs 44 of 118 (0.373)  ratio 0.45  Fisher p 0.0041
+  main layouts above 1200 cells                  games   49  ours 3 of 16 (0.188)    theirs 10 of 33 (0.303)   ratio 0.62  Fisher p 0.5018
+  main other layouts                             games   94  ours 5 of 27 (0.185)    theirs 22 of 47 (0.468)   ratio 0.40  Fisher p 0.0232
+  v31 layouts above 1200 cells                   games   64  ours 2 of 28 (0.071)    theirs 14 of 36 (0.389)   ratio 0.18  Fisher p 0.0039
+  v31 other layouts                              games  127  ours 6 of 39 (0.154)    theirs 22 of 71 (0.310)   ratio 0.50  Fisher p 0.1083
+  main before 2026-10-06T14:48:15Z               games   48  ours 4 of 15 (0.267)    theirs 13 of 25 (0.520)   ratio 0.51  Fisher p 0.1874
+  main from 2026-10-06T14:48:15Z                 games   95  ours 4 of 28 (0.143)    theirs 19 of 55 (0.345)   ratio 0.41  Fisher p 0.0698
+  endings main full: both dead 83 (49 won), only theirs 32 (0 won), only ours 8 (8 won), both alive 20 (14 won)
+  endings v31 full: both dead 132 (63 won), only theirs 36 (0 won), only ours 8 (8 won), both alive 15 (11 won)
+  alive 100 rounds after the other queen died, main: ours 22 of 40 (0.550), theirs 59 of 79 (0.747)
+  alive 100 rounds after the other queen died, v31: ours 39 of 65 (0.600), theirs 74 of 106 (0.698)
+  queen dead by raw round 200, main full games: ours 79, theirs 49 of 143
+  queen dead by raw round 200, v31 full games: ours 121, theirs 85 of 191
+
+== 2. Chance (first part) ==
+  main: ours 8 of 43 (0.186) Wilson (0.097, 0.326); theirs 32 of 80 (0.400) Wilson (0.3, 0.51); ratio 0.47
+     bootstrap over games (2.5%, 97.5%, share of resamples with ratio at or above 0.7, at or above 1): (0.198, 0.848, 0.0965, 0.0075)
+     bootstrap over battle clusters (58): (0.148, 0.87, 0.123, 0.007)
+     bootstrap over opp clusters (32): (0.093, 0.848, 0.0995, 0.0025)
+     bootstrap over map_key clusters (13): (0.143, 0.793, 0.0805, 0.0025)
+     bootstrap over evening clusters (2): (0.445, 0.667, 0.0, 0.0)
+  v31: ours 8 of 67 (0.119) Wilson (0.062, 0.218); theirs 36 of 107 (0.336) Wilson (0.254, 0.43); ratio 0.35
+     bootstrap over games (2.5%, 97.5%, share of resamples with ratio at or above 0.7, at or above 1): (0.143, 0.642, 0.0075, 0.0)
+     bootstrap over battle clusters (80): (0.127, 0.695, 0.023, 0.0015)
+     bootstrap over opp clusters (42): (0.041, 0.839, 0.071, 0.0075)
+     bootstrap over map_key clusters (14): (0.116, 0.79, 0.0425, 0.0075)
+     bootstrap over evening clusters (2): (0.299, 0.374, 0.0, 0.0)
+  both: ours 16 of 110 (0.145) Wilson (0.092, 0.223); theirs 68 of 187 (0.364) Wilson (0.298, 0.435); ratio 0.40
+     bootstrap over games (2.5%, 97.5%, share of resamples with ratio at or above 0.7, at or above 1): (0.218, 0.62, 0.0045, 0.0)
+     bootstrap over battle clusters (138): (0.199, 0.643, 0.0095, 0.0)
+     bootstrap over opp clusters (58): (0.104, 0.759, 0.045, 0.0015)
+     bootstrap over map_key clusters (15): (0.206, 0.703, 0.027, 0.0005)
+     bootstrap over evening clusters (3): (0.299, 0.667, 0.0, 0.0)
+
+== 3. Who carries their surviving lone queens (full free games) ==
+  main by opp (ours survived of lone, theirs survived of lone):
+      ComTamSuonNuong (193)        ours 0 of 2   theirs 4 of 11
+      Settlers of Battlecode (258) ours 0 of 1   theirs 4 of 5
+      byte_force (959)             ours 0 of 2   theirs 3 of 4
+      :3 (217)                     ours 1 of 4   theirs 2 of 4
+      Computers (112)              ours 0 of 0   theirs 2 of 3
+      Proof by Intimidation (465)  ours 0 of 0   theirs 2 of 4
+      dev test 1 :P (545)          ours 0 of 0   theirs 2 of 2
+      y (71)                       ours 0 of 1   theirs 2 of 6
+      1 (231)                      ours 0 of 2   theirs 1 of 5
+      Bot (11)                     ours 0 of 0   theirs 1 of 1
+      Knight Capital (226)         ours 0 of 2   theirs 1 of 2
+      Memory? (1097)               ours 0 of 0   theirs 1 of 1
+      without the two with most surviving lone queens of theirs (ComTamSuonNuong (193), Settlers of Battlecode (258)): ours 8 of 40 (0.200) theirs 24 of 64 (0.375) ratio 0.53
+      leave one opp out: ratio from 0.32 to 0.51 (highest when byte_force (959) is left out)
+      opp clusters with lone queens on both sides: 19; ours share lower in 11, equal in 6, higher in 2
+  main by map_key (ours survived of lone, theirs survived of lone):
+      Around UNSW #1               ours 3 of 9   theirs 6 of 12
+      Maze #1                      ours 0 of 9   theirs 5 of 13
+      Tower Defense #1             ours 1 of 4   theirs 5 of 8
+      Portals #1                   ours 0 of 2   theirs 4 of 8
+      Australia #1                 ours 0 of 3   theirs 3 of 15
+      Trauma #1                    ours 2 of 2   theirs 3 of 3
+      weakhold #1                  ours 0 of 4   theirs 3 of 10
+      Autarky #1                   ours 0 of 1   theirs 1 of 2
+      Islands #1                   ours 0 of 4   theirs 1 of 6
+      Prisoners Dilemma #2         ours 0 of 0   theirs 1 of 1
+      Default #1                   ours 2 of 4   theirs 0 of 1
+      Devil #1                     ours 0 of 0   theirs 0 of 1
+      without the two with most surviving lone queens of theirs (Around UNSW #1, Maze #1): ours 5 of 25 (0.200) theirs 21 of 55 (0.382) ratio 0.52
+      leave one map_key out: ratio from 0.38 to 0.58 (highest when Maze #1 is left out)
+      map_key clusters with lone queens on both sides: 10; ours share lower in 8, equal in 1, higher in 1
+  main by evening (ours survived of lone, theirs survived of lone):
+      10-06                        ours 7 of 38   theirs 29 of 70
+      10-07                        ours 1 of 5   theirs 3 of 10
+      without the two with most surviving lone queens of theirs (10-06, 10-07): ours 0 of 0 (-) theirs 0 of 0 (-) ratio nan
+      leave one evening out: ratio from 0.44 to 0.67 (highest when 10-06 is left out)
+      evening clusters with lone queens on both sides: 2; ours share lower in 2, equal in 0, higher in 0
+  v31 by opp (ours survived of lone, theirs survived of lone):
+      NUSW Battlecode (262)        ours 0 of 0   theirs 4 of 4
+      Proof by Intimidation (465)  ours 0 of 2   theirs 3 of 3
+      Vodyanitsa (1052)            ours 1 of 1   theirs 3 of 3
+      Computers (112)              ours 0 of 2   theirs 2 of 3
+      Goated (733)                 ours 0 of 4   theirs 2 of 4
+      SHINK AI 6500 (280)          ours 0 of 0   theirs 2 of 6
+      Sponge(Albert and Bob) (213) ours 0 of 1   theirs 2 of 2
+      Team SKKU (249)              ours 0 of 0   theirs 2 of 2
+      doofenshmirtz good incorporated (1015) ours 0 of 2   theirs 2 of 4
+      fandagong (552)              ours 0 of 2   theirs 2 of 5
+      free trip to sydney pls (82) ours 0 of 0   theirs 2 of 3
+      Codehammer 40K (34)          ours 0 of 0   theirs 1 of 3
+      without the two with most surviving lone queens of theirs (NUSW Battlecode (262), Proof by Intimidation (465)): ours 8 of 65 (0.123) theirs 29 of 100 (0.290) ratio 0.42
+      leave one opp out: ratio from 0.15 to 0.39 (highest when Proof by Intimidation (465) is left out)
+      opp clusters with lone queens on both sides: 24; ours share lower in 11, equal in 10, higher in 3
+  v31 by map_key (ours survived of lone, theirs survived of lone):
+      Around UNSW #1               ours 0 of 11   theirs 7 of 15
+      Maze #1                      ours 0 of 8   theirs 6 of 14
+      Portals #1                   ours 0 of 0   theirs 6 of 27
+      Tower Defense #1             ours 1 of 6   theirs 6 of 8
+      Australia #1                 ours 2 of 13   theirs 4 of 13
+      Islands #1                   ours 0 of 4   theirs 3 of 8
+      weakhold #1                  ours 0 of 7   theirs 2 of 13
+      Autarky #1                   ours 1 of 4   theirs 1 of 4
+      Prisoners Dilemma #2         ours 0 of 0   theirs 1 of 1
+      Default #1                   ours 0 of 5   theirs 0 of 1
+      Prisoners Dilemma #1         ours 0 of 0   theirs 0 of 1
+      Queen Of Spades #1           ours 2 of 6   theirs 0 of 1
+      without the two with most surviving lone queens of theirs (Around UNSW #1, Maze #1): ours 8 of 48 (0.167) theirs 23 of 78 (0.295) ratio 0.57
+      leave one map_key out: ratio from 0.28 to 0.45 (highest when Around UNSW #1 is left out)
+      map_key clusters with lone queens on both sides: 9; ours share lower in 6, equal in 2, higher in 1
+  v31 by evening (ours survived of lone, theirs survived of lone):
+      10-06                        ours 6 of 46   theirs 22 of 63
+      10-05                        ours 2 of 21   theirs 14 of 44
+      without the two with most surviving lone queens of theirs (10-06, 10-05): ours 0 of 0 (-) theirs 0 of 0 (-) ratio nan
+      leave one evening out: ratio from 0.30 to 0.37 (highest when 10-05 is left out)
+      evening clusters with lone queens on both sides: 2; ours share lower in 2, equal in 0, higher in 0
+
+== 4. Three most supporting games removed (full free games) ==
+  main: ratio 0.47; worst case after removing 3 games (3 where our lone queen died, 0 where their lone queen lived): 0.50
+  v31: ratio 0.35; worst case after removing 3 games (0 where our lone queen died, 3 where their lone queen lived): 0.38
+
+== 5. Does restricting to full games bias the first part? ==
+  main free games 255: full 143, ended early 112 (we won 76, they won 36, drawn 0)
+  main full games                                games  143  ours 8 of 43 (0.186)    theirs 32 of 80 (0.400)   ratio 0.47  Fisher p 0.0166
+  main games ended early                         games  112  ours 30 of 59 (0.508)   theirs 13 of 50 (0.260)   ratio 1.96  Fisher p 0.0106
+  main early, we won                             games   76  ours 30 of 43 (0.698)   theirs 0 of 31 (0.000)    ratio nan  Fisher p 0.0000
+  main early, they won                           games   36  ours 0 of 16 (0.000)    theirs 13 of 19 (0.684)   ratio 0.00  Fisher p 0.0000
+  main all games                                 games  255  ours 38 of 102 (0.373)  theirs 45 of 130 (0.346)  ratio 1.08  Fisher p 0.6816
+  v31 free games 362: full 191, ended early 171 (we won 97, they won 74, drawn 0)
+  v31 full games                                 games  191  ours 8 of 67 (0.119)    theirs 36 of 107 (0.336)  ratio 0.35  Fisher p 0.0012
+  v31 games ended early                          games  171  ours 39 of 92 (0.424)   theirs 25 of 75 (0.333)   ratio 1.27  Fisher p 0.2644
+  v31 early, we won                              games   97  ours 39 of 62 (0.629)   theirs 0 of 33 (0.000)    ratio nan  Fisher p 0.0000
+  v31 early, they won                            games   74  ours 0 of 30 (0.000)    theirs 25 of 42 (0.595)   ratio 0.00  Fisher p 0.0000
+  v31 all games                                  games  362  ours 47 of 159 (0.296)  theirs 61 of 182 (0.335)  ratio 0.88  Fisher p 0.4843
+  both codes all games                           games  617  ours 85 of 261 (0.326)  theirs 106 of 312 (0.340) ratio 0.96  Fisher p 0.7896
+  main early endings by queens at the end: {'they won, both dead': 23, 'they won, only theirs alive': 13, 'we won, both dead': 46, 'we won, only ours alive': 30}
+  v31 early endings by queens at the end: {'they won, both dead': 49, 'they won, only theirs alive': 25, 'we won, both dead': 58, 'we won, only ours alive': 39}
+
+== 6. Games level in total length at raw round 100 (smaller total at least 0.8 of the larger) ==
+  main full, level at r100                       games   48  ours 2 of 16 (0.125)    theirs 10 of 26 (0.385)   ratio 0.32  Fisher p 0.0900
+  main full, we are ahead by more                games   40  ours 4 of 16 (0.250)    theirs 5 of 20 (0.250)    ratio 1.00  Fisher p 1.0000
+  main full, they are ahead by more              games   55  ours 2 of 11 (0.182)    theirs 17 of 34 (0.500)   ratio 0.36  Fisher p 0.0859
+  main all games, level at r100                  games   57  ours 2 of 21 (0.095)    theirs 11 of 30 (0.367)   ratio 0.26  Fisher p 0.0484
+  v31 full, level at r100                        games   70  ours 1 of 25 (0.040)    theirs 13 of 38 (0.342)   ratio 0.12  Fisher p 0.0050
+  v31 full, we are ahead by more                 games   56  ours 4 of 24 (0.167)    theirs 7 of 27 (0.259)    ratio 0.64  Fisher p 0.5077
+  v31 full, they are ahead by more               games   65  ours 3 of 18 (0.167)    theirs 16 of 42 (0.381)   ratio 0.44  Fisher p 0.1355
+  v31 all games, level at r100                   games   83  ours 2 of 32 (0.062)    theirs 15 of 44 (0.341)   ratio 0.18  Fisher p 0.0048
+  both codes full, level at r100                 games  118  ours 3 of 41 (0.073)    theirs 23 of 64 (0.359)   ratio 0.20  Fisher p 0.0010
+  both codes full, level within 10 percent       games   53  ours 2 of 20 (0.100)    theirs 11 of 29 (0.379)   ratio 0.26  Fisher p 0.0473
+  bootstrap over games, both codes full level: (0.0, 0.492, 0.0005, 0.0)
+  bootstrap over opponents, both codes full level: (0.0, 0.469, 0.002, 0.0)
+
+== 7. Plainer explanations: when the lone spell starts and who is ahead then (full free games, both codes and apart) ==
+  main  other queen died in r0-100    ours 3 of 24 (0.125)    theirs 10 of 31 (0.323)   ratio 0.39
+  main  other queen died in r101-200  ours 0 of 7 (0.000)     theirs 13 of 33 (0.394)   ratio 0.00
+  main  other queen died in r201-300  ours 2 of 7 (0.286)     theirs 5 of 11 (0.455)    ratio 0.63
+  main  other queen died in r301-499  ours 3 of 5 (0.600)     theirs 4 of 5 (0.800)     ratio 0.75
+  v31   other queen died in r0-100    ours 3 of 35 (0.086)    theirs 16 of 54 (0.296)   ratio 0.29
+  v31   other queen died in r101-200  ours 3 of 21 (0.143)    theirs 14 of 37 (0.378)   ratio 0.38
+  v31   other queen died in r201-300  ours 0 of 7 (0.000)     theirs 4 of 11 (0.364)    ratio 0.00
+  v31   other queen died in r301-499  ours 2 of 4 (0.500)     theirs 2 of 5 (0.400)     ratio 1.25
+  both  other queen died in r0-100    ours 6 of 59 (0.102)    theirs 26 of 85 (0.306)   ratio 0.33
+  both  other queen died in r101-200  ours 3 of 28 (0.107)    theirs 27 of 70 (0.386)   ratio 0.28
+  both  other queen died in r201-300  ours 2 of 14 (0.143)    theirs 9 of 22 (0.409)    ratio 0.35
+  both  other queen died in r301-499  ours 5 of 9 (0.556)     theirs 6 of 10 (0.600)    ratio 0.93
+  main  lone side ahead or level in total length then ours 4 of 28 (0.143)    theirs 23 of 52 (0.442)   ratio 0.32
+  main  lone side behind in total length then        ours 4 of 15 (0.267)    theirs 9 of 28 (0.321)    ratio 0.83
+  v31   lone side ahead or level in total length then ours 3 of 34 (0.088)    theirs 25 of 63 (0.397)   ratio 0.22
+  v31   lone side behind in total length then        ours 5 of 33 (0.152)    theirs 11 of 44 (0.250)   ratio 0.61
+  both  lone side ahead or level in total length then ours 7 of 62 (0.113)    theirs 48 of 115 (0.417)  ratio 0.27
+  both  lone side behind in total length then        ours 9 of 48 (0.188)    theirs 20 of 72 (0.278)   ratio 0.67
+  main lone queens of ours: median start round 95, own dragons then 27, enemy dragons then 22, her length then 3
+  main lone queens of theirs: median start round 118, own dragons then 31, enemy dragons then 26, her length then 3
+  v31 lone queens of ours: median start round 96, own dragons then 18, enemy dragons then 17, her length then 3
+  v31 lone queens of theirs: median start round 100, own dragons then 24, enemy dragons then 20, her length then 3
+
+== 8. Second part: deaths per 1,000 lone turns ==
+  lone turn = a turn start of a queen with the other queen already gone from the board; deaths = lone queens (other died in a strictly earlier round) that died.
+  main all free games                      games  255  ours 5.32 (64 deaths, 12021 turns)  theirs 4.33 (85, 19612)  rate ratio 1.23 (log-normal 95% 0.89 to 1.70)  [event-order deaths 66 / 86]
+  main up to battle 1276407                games  217  ours 5.51 (54 deaths, 9809 turns)  theirs 4.13 (73, 17680)  rate ratio 1.33 (log-normal 95% 0.94 to 1.90)  [event-order deaths 56 / 74]
+  main full games                          games  143  ours 5.68 (35 deaths, 6162 turns)  theirs 2.84 (48, 16906)  rate ratio 2.00 (log-normal 95% 1.29 to 3.09)  [event-order deaths 35 / 48]
+  main games ended early                   games  112  ours 4.95 (29 deaths, 5859 turns)  theirs 13.67 (37, 2706)  rate ratio 0.36 (log-normal 95% 0.22 to 0.59)  [event-order deaths 31 / 38]
+  main 1700-1899                           games  100  ours 5.14 (24 deaths, 4671 turns)  theirs 5.33 (37, 6936)  rate ratio 0.96 (log-normal 95% 0.58 to 1.61)  [event-order deaths 25 / 37]
+  main 1900-2099                           games  138  ours 5.47 (36 deaths, 6583 turns)  theirs 4.44 (45, 10132)  rate ratio 1.23 (log-normal 95% 0.79 to 1.91)  [event-order deaths 37 / 46]
+  main big layouts                         games   52  ours 5.37 (15 deaths, 2795 turns)  theirs 3.54 (24, 6773)  rate ratio 1.51 (log-normal 95% 0.79 to 2.89)  [event-order deaths 15 / 24]
+  main other layouts                       games  203  ours 5.31 (49 deaths, 9226 turns)  theirs 4.75 (61, 12839)  rate ratio 1.12 (log-normal 95% 0.77 to 1.63)  [event-order deaths 51 / 62]
+  main level at r100                       games   57  ours 9.41 (19 deaths, 2020 turns)  theirs 3.05 (19, 6237)  rate ratio 3.09 (log-normal 95% 1.63 to 5.83)  [event-order deaths 19 / 19]
+     bootstrap of the rate ratio over games (2.5%, 97.5%, share at or below 1): [0.893, 1.705, 0.1185]
+     opp clusters (32): bootstrap [0.886, 1.768, 0.099]; leave one out: rate ratio from 1.14 (without ComTamSuonNuong (193)) to 1.32 (without NUSW Battlecode (262))
+     map_key clusters (16): bootstrap [0.657, 2.072, 0.2375]; leave one out: rate ratio from 1.07 (without Maze #1) to 1.42 (without Queen Of Spades #1)
+     evening clusters (2): bootstrap [0.728, 1.333, 0.2515]; leave one out: rate ratio from 0.73 (without 10-06) to 1.33 (without 10-07)
+     main r0-100    ours 5.19 (12 deaths, 2311 turns)  theirs 8.97 (21, 2340)
+     main r101-200  ours 5.78 (24 deaths, 4150 turns)  theirs 6.40 (30, 4690)
+     main r201-300  ours 3.78 (11 deaths, 2910 turns)  theirs 3.41 (16, 4686)
+     main r301-499  ours 6.42 (17 deaths, 2650 turns)  theirs 2.28 (18, 7896)
+     main how lone queens of ours died: {'head-on, rammed by an enemy': 37, 'own body with no free tile': 11, 'wall with no free tile': 9, 'other body with no free tile': 4, 'head-on, she moved': 2, 'no valid action with a free tile': 1}
+     main how lone queens of theirs died: {'head-on, rammed by an enemy': 54, 'wall with no free tile': 12, 'head-on, she moved': 11, 'no valid action with no free tile': 3, 'other body with no free tile': 2, 'own body with a free tile': 2, 'other body with a free tile': 1}
+  v31 all free games                       games  362  ours 7.87 (112 deaths, 14233 turns)  theirs 4.11 (121, 29474)  rate ratio 1.92 (log-normal 95% 1.48 to 2.48)  [event-order deaths 113 / 126]
+  v31 up to battle 1276407                 games  362  ours 7.87 (112 deaths, 14233 turns)  theirs 4.11 (121, 29474)  rate ratio 1.92 (log-normal 95% 1.48 to 2.48)  [event-order deaths 113 / 126]
+  v31 full games                           games  191  ours 6.43 (59 deaths, 9172 turns)  theirs 2.97 (71, 23941)  rate ratio 2.17 (log-normal 95% 1.54 to 3.06)  [event-order deaths 59 / 73]
+  v31 games ended early                    games  171  ours 10.47 (53 deaths, 5061 turns)  theirs 9.04 (50, 5533)  rate ratio 1.16 (log-normal 95% 0.79 to 1.71)  [event-order deaths 54 / 53]
+  v31 1700-1899                            games  186  ours 6.35 (54 deaths, 8500 turns)  theirs 4.41 (62, 14050)  rate ratio 1.44 (log-normal 95% 1.00 to 2.07)  [event-order deaths 54 / 63]
+  v31 1900-2099                            games  120  ours 11.11 (36 deaths, 3239 turns)  theirs 3.70 (40, 10810)  rate ratio 3.00 (log-normal 95% 1.91 to 4.71)  [event-order deaths 37 / 43]
+  v31 big layouts                          games   71  ours 8.00 (32 deaths, 3998 turns)  theirs 2.60 (23, 8841)  rate ratio 3.08 (log-normal 95% 1.80 to 5.26)  [event-order deaths 32 / 23]
+  v31 other layouts                        games  291  ours 7.82 (80 deaths, 10235 turns)  theirs 4.75 (98, 20633)  rate ratio 1.65 (log-normal 95% 1.22 to 2.21)  [event-order deaths 81 / 103]
+  v31 level at r100                        games   83  ours 8.53 (30 deaths, 3517 turns)  theirs 3.25 (29, 8930)  rate ratio 2.63 (log-normal 95% 1.58 to 4.38)  [event-order deaths 30 / 29]
+     bootstrap of the rate ratio over games (2.5%, 97.5%, share at or below 1): [1.473, 2.574, 0.0]
+     opp clusters (43): bootstrap [1.33, 2.904, 0.0]; leave one out: rate ratio from 1.79 (without fandagong (552)) to 2.35 (without 中国人不准飞😡😡😡😡😡😡😡 (791))
+     map_key clusters (16): bootstrap [1.314, 2.558, 0.0005]; leave one out: rate ratio from 1.73 (without Around UNSW #1) to 2.04 (without Queen Of Spades #1)
+     evening clusters (2): bootstrap [1.806, 2.021, 0.0]; leave one out: rate ratio from 1.81 (without 10-06) to 2.02 (without 10-05)
+     v31 r0-100    ours 8.38 (32 deaths, 3818 turns)  theirs 8.52 (33, 3873)
+     v31 r101-200  ours 8.57 (43 deaths, 5020 turns)  theirs 4.43 (35, 7893)
+     v31 r201-300  ours 7.05 (19 deaths, 2696 turns)  theirs 3.00 (22, 7343)
+     v31 r301-499  ours 6.67 (18 deaths, 2699 turns)  theirs 2.99 (31, 10365)
+     v31 how lone queens of ours died: {'head-on, rammed by an enemy': 75, 'wall with no free tile': 16, 'head-on, she moved': 13, 'own body with no free tile': 6, 'other body with no free tile': 1, 'no valid action with a free tile': 1}
+     v31 how lone queens of theirs died: {'head-on, rammed by an enemy': 57, 'own body with no free tile': 14, 'wall with no free tile': 13, 'other body with no free tile': 13, 'head-on, she moved': 13, 'no valid action with no free tile': 8, 'head-on, rammed by a dragon of her team': 2, 'own body with a free tile': 1}
+  both codes all free games                games  617  ours 6.70 (176 deaths, 26254 turns)  theirs 4.20 (206, 49086)  rate ratio 1.60 (log-normal 95% 1.31 to 1.95)  [event-order deaths 179 / 212]
+
+== 9. Compare with rows.jsonl (read only here) ==
+  rows 745, my games 745, games of mine without a row 0; fields that differ: none

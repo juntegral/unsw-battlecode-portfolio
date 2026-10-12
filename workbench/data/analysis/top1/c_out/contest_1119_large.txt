@@ -1,0 +1,123 @@
+=== CONTEST team 1119, large maps, 111 games, pearls appearing in rounds 0-500
+kind | class | pearls | eaten within 20 rounds by own team % (mean wait) / by the enemy % (mean wait) / left % | own nearest dragon: ended nearer % / not nearer % / died % | enemy nearest dragon: nearer % / not % / died %
+all                          | own only           |  71390 | own  87% ( 3.8) / enemy   2% (10.8) / left  11% | own  44 /  48 /   8 | enemy   0 /   0 /   0
+all                          | own nearer by 3+   |  20857 | own  80% ( 3.2) / enemy  14% ( 7.3) / left   6% | own  47 /  40 /  13 | enemy  45 /  51 /   4
+all                          | own nearer by 2    |   7309 | own  64% ( 3.6) / enemy  28% ( 6.0) / left   8% | own  45 /  41 /  13 | enemy  45 /  48 /   7
+all                          | own nearer by 1    |   7514 | own  52% ( 3.8) / enemy  40% ( 5.1) / left   7% | own  46 /  43 /  11 | enemy  45 /  46 /   9
+all                          | same distance      |   8156 | own  36% ( 4.3) / enemy  57% ( 4.5) / left   7% | own  45 /  45 /  11 | enemy  47 /  42 /  11
+all                          | enemy nearer by 1  |   8962 | own  22% ( 5.2) / enemy  71% ( 4.0) / left   7% | own  41 /  49 /   9 | enemy  50 /  36 /  14
+all                          | enemy nearer by 2  |  10353 | own  14% ( 5.8) / enemy  80% ( 3.6) / left   6% | own  41 /  51 /   8 | enemy  50 /  33 /  17
+all                          | enemy nearer by 3+ |  37975 | own   5% ( 7.4) / enemy  90% ( 2.8) / left   4% | own  43 /  51 /   6 | enemy  54 /  29 /  17
+all                          | enemy only         | 160172 | own   1% (11.4) / enemy  89% ( 3.8) / left  10% | own   0 /   0 /   0 | enemy  54 /  39 /   7
+all                          | nobody within 8    |  13590 | own  12% (12.1) / enemy  33% (10.6) / left  55% | own   0 /   0 /   0 | enemy   0 /   0 /   0
+
+natural                      | own only           |  41885 | own  88% ( 3.5) / enemy   2% (11.1) / left  10% | own  48 /  45 /   7 | enemy   0 /   0 /   0
+natural                      | own nearer by 3+   |  11681 | own  84% ( 2.6) / enemy  10% ( 8.0) / left   6% | own  55 /  39 /   6 | enemy  45 /  52 /   3
+natural                      | own nearer by 2    |   3554 | own  68% ( 3.0) / enemy  24% ( 6.1) / left   8% | own  51 /  43 /   6 | enemy  45 /  52 /   4
+natural                      | own nearer by 1    |   3391 | own  55% ( 3.3) / enemy  37% ( 5.0) / left   7% | own  49 /  46 /   5 | enemy  45 /  51 /   5
+natural                      | same distance      |   3454 | own  35% ( 3.8) / enemy  57% ( 4.0) / left   8% | own  46 /  48 /   6 | enemy  50 /  45 /   5
+natural                      | enemy nearer by 1  |   3740 | own  18% ( 5.0) / enemy  75% ( 3.4) / left   7% | own  41 /  53 /   7 | enemy  56 /  40 /   5
+natural                      | enemy nearer by 2  |   4385 | own  10% ( 6.6) / enemy  83% ( 3.0) / left   6% | own  38 /  56 /   6 | enemy  58 /  38 /   4
+natural                      | enemy nearer by 3+ |  18550 | own   2% ( 8.1) / enemy  93% ( 2.2) / left   4% | own  42 /  53 /   5 | enemy  66 /  31 /   3
+natural                      | enemy only         |  88887 | own   1% (11.4) / enemy  90% ( 3.5) / left  10% | own   0 /   0 /   0 | enemy  57 /  38 /   5
+natural                      | nobody within 8    |   9575 | own  13% (12.2) / enemy  27% (11.2) / left  60% | own   0 /   0 /   0 | enemy   0 /   0 /   0
+
+ram corpse                   | own only           |   4218 | own  73% ( 6.7) / enemy  14% (10.6) / left  14% | own  34 /  23 /  43 | enemy   0 /   0 /   0
+ram corpse                   | own nearer by 3+   |   3601 | own  64% ( 4.5) / enemy  33% ( 6.2) / left   3% | own  30 /  17 /  53 | enemy  52 /  42 /   6
+ram corpse                   | own nearer by 2    |   1846 | own  53% ( 4.4) / enemy  44% ( 5.2) / left   3% | own  40 /  25 /  35 | enemy  52 /  36 /  12
+ram corpse                   | own nearer by 1    |   2165 | own  45% ( 4.7) / enemy  52% ( 5.0) / left   3% | own  44 /  30 /  27 | enemy  50 /  30 /  20
+ram corpse                   | same distance      |   2646 | own  35% ( 4.8) / enemy  63% ( 4.6) / left   2% | own  47 /  34 /  19 | enemy  49 /  27 /  24
+ram corpse                   | enemy nearer by 1  |   3010 | own  25% ( 5.2) / enemy  73% ( 4.1) / left   2% | own  44 /  41 /  14 | enemy  48 /  22 /  30
+ram corpse                   | enemy nearer by 2  |   3557 | own  20% ( 5.0) / enemy  78% ( 3.7) / left   2% | own  48 /  42 /  10 | enemy  41 /  18 /  41
+ram corpse                   | enemy nearer by 3+ |  10141 | own  12% ( 6.9) / enemy  86% ( 3.5) / left   2% | own  49 /  45 /   6 | enemy  32 /  13 /  56
+ram corpse                   | enemy only         |   8988 | own   3% (11.1) / enemy  92% ( 4.7) / left   5% | own   0 /   0 /   0 | enemy  40 /  20 /  39
+ram corpse                   | nobody within 8    |    991 | own  21% (12.2) / enemy  38% (10.6) / left  40% | own   0 /   0 /   0 | enemy   0 /   0 /   0
+
+own non-ram corpse           | own only           |  24242 | own  89% ( 3.9) / enemy   1% (12.2) / left  10% | own  40 /  56 /   4 | enemy   0 /   0 /   0
+own non-ram corpse           | own nearer by 3+   |   4805 | own  85% ( 3.6) / enemy   7% ( 8.7) / left   9% | own  40 /  56 /   4 | enemy  39 /  56 /   6
+own non-ram corpse           | own nearer by 2    |   1368 | own  75% ( 3.5) / enemy  14% ( 7.3) / left  11% | own  39 /  55 /   6 | enemy  36 /  57 /   7
+own non-ram corpse           | own nearer by 1    |   1151 | own  69% ( 3.5) / enemy  20% ( 5.8) / left  11% | own  40 /  54 /   7 | enemy  34 /  59 /   7
+own non-ram corpse           | same distance      |    941 | own  59% ( 3.7) / enemy  30% ( 4.8) / left  11% | own  40 /  52 /   8 | enemy  34 /  61 /   5
+own non-ram corpse           | enemy nearer by 1  |    654 | own  45% ( 4.1) / enemy  44% ( 4.7) / left  11% | own  41 /  50 /   9 | enemy  33 /  61 /   6
+own non-ram corpse           | enemy nearer by 2  |    447 | own  26% ( 6.2) / enemy  60% ( 4.7) / left  15% | own  34 /  59 /   6 | enemy  33 /  63 /   4
+own non-ram corpse           | enemy nearer by 3+ |    623 | own  16% ( 8.2) / enemy  69% ( 4.9) / left  15% | own  39 /  57 /   4 | enemy  30 /  67 /   3
+own non-ram corpse           | enemy only         |    576 | own   6% ( 9.7) / enemy  61% ( 6.3) / left  33% | own   0 /   0 /   0 | enemy  36 /  61 /   2
+own non-ram corpse           | nobody within 8    |    320 | own  23% (10.3) / enemy  14% (13.9) / left  63% | own   0 /   0 /   0 | enemy   0 /   0 /   0
+
+enemy non-ram corpse         | own only           |   1045 | own  52% ( 7.0) / enemy  21% ( 9.0) / left  27% | own  52 /  47 /   1 | enemy   0 /   0 /   0
+enemy non-ram corpse         | own nearer by 3+   |    770 | own  55% ( 4.5) / enemy  29% ( 7.2) / left  15% | own  42 /  55 /   3 | enemy  46 /  51 /   3
+enemy non-ram corpse         | own nearer by 2    |    541 | own  45% ( 6.3) / enemy  41% ( 6.9) / left  14% | own  43 /  52 /   6 | enemy  45 /  48 /   7
+enemy non-ram corpse         | own nearer by 1    |    807 | own  34% ( 5.4) / enemy  51% ( 5.6) / left  15% | own  48 /  47 /   5 | enemy  47 /  48 /   5
+enemy non-ram corpse         | same distance      |   1115 | own  21% ( 6.4) / enemy  65% ( 5.2) / left  14% | own  40 /  52 /   8 | enemy  46 /  49 /   5
+enemy non-ram corpse         | enemy nearer by 1  |   1558 | own  15% ( 6.8) / enemy  73% ( 4.8) / left  12% | own  38 /  55 /   7 | enemy  48 /  46 /   6
+enemy non-ram corpse         | enemy nearer by 2  |   1964 | own   9% ( 7.1) / enemy  79% ( 4.4) / left  12% | own  36 /  56 /   8 | enemy  49 /  45 /   6
+enemy non-ram corpse         | enemy nearer by 3+ |   8661 | own   3% ( 8.8) / enemy  90% ( 3.2) / left   7% | own  38 /  55 /   7 | enemy  56 /  40 /   4
+enemy non-ram corpse         | enemy only         |  61721 | own   1% (11.9) / enemy  88% ( 4.1) / left  11% | own   0 /   0 /   0 | enemy  52 /  43 /   5
+enemy non-ram corpse         | nobody within 8    |   2704 | own   6% (11.5) / enemy  52% ( 9.2) / left  42% | own   0 /   0 /   0 | enemy   0 /   0 /   0
+
+natural r0-99                | own only           |  13282 | own  93% ( 3.4) / enemy   1% (12.8) / left   6% | own  48 /  45 /   8 | enemy   0 /   0 /   0
+natural r0-99                | own nearer by 3+   |   2827 | own  93% ( 2.5) / enemy   5% ( 7.5) / left   2% | own  57 /  37 /   6 | enemy  46 /  51 /   3
+natural r0-99                | own nearer by 2    |    585 | own  83% ( 2.8) / enemy  12% ( 6.2) / left   5% | own  47 /  47 /   6 | enemy  38 /  57 /   4
+natural r0-99                | own nearer by 1    |    433 | own  73% ( 3.1) / enemy  24% ( 4.7) / left   3% | own  50 /  45 /   5 | enemy  43 /  48 /   9
+natural r0-99                | same distance      |    466 | own  42% ( 3.6) / enemy  53% ( 3.5) / left   5% | own  48 /  46 /   6 | enemy  51 /  44 /   5
+natural r0-99                | enemy nearer by 1  |    467 | own  18% ( 5.4) / enemy  79% ( 3.4) / left   4% | own  40 /  48 /  13 | enemy  56 /  37 /   7
+natural r0-99                | enemy nearer by 2  |    616 | own   8% ( 8.1) / enemy  89% ( 2.7) / left   3% | own  34 /  58 /   8 | enemy  54 /  42 /   4
+natural r0-99                | enemy nearer by 3+ |   2962 | own   2% ( 7.1) / enemy  96% ( 2.2) / left   2% | own  43 /  53 /   5 | enemy  62 /  35 /   3
+natural r0-99                | enemy only         |  17097 | own   0% (14.7) / enemy  92% ( 3.6) / left   8% | own   0 /   0 /   0 | enemy  54 /  41 /   5
+natural r0-99                | nobody within 8    |   4537 | own  13% (13.4) / enemy  15% (14.0) / left  72% | own   0 /   0 /   0 | enemy   0 /   0 /   0
+
+natural r100-199             | own only           |   9621 | own  90% ( 3.0) / enemy   2% (10.9) / left   8% | own  47 /  45 /   8 | enemy   0 /   0 /   0
+natural r100-199             | own nearer by 3+   |   3407 | own  86% ( 2.4) / enemy   9% ( 8.4) / left   5% | own  56 /  38 /   6 | enemy  46 /  50 /   4
+natural r100-199             | own nearer by 2    |   1019 | own  70% ( 2.6) / enemy  24% ( 5.9) / left   6% | own  51 /  43 /   6 | enemy  46 /  49 /   5
+natural r100-199             | own nearer by 1    |    974 | own  57% ( 2.7) / enemy  37% ( 5.2) / left   6% | own  51 /  44 /   5 | enemy  46 /  49 /   5
+natural r100-199             | same distance      |    911 | own  36% ( 3.1) / enemy  57% ( 3.9) / left   6% | own  47 /  43 /   9 | enemy  53 /  42 /   5
+natural r100-199             | enemy nearer by 1  |   1002 | own  19% ( 4.2) / enemy  75% ( 3.0) / left   6% | own  40 /  53 /   6 | enemy  59 /  37 /   5
+natural r100-199             | enemy nearer by 2  |   1242 | own   7% ( 6.1) / enemy  87% ( 2.8) / left   5% | own  40 /  54 /   7 | enemy  60 /  37 /   4
+natural r100-199             | enemy nearer by 3+ |   5250 | own   2% ( 8.2) / enemy  95% ( 2.2) / left   3% | own  43 /  51 /   6 | enemy  67 /  31 /   2
+natural r100-199             | enemy only         |  20464 | own   0% (12.4) / enemy  93% ( 3.3) / left   7% | own   0 /   0 /   0 | enemy  60 /  36 /   4
+natural r100-199             | nobody within 8    |    640 | own  12% (12.8) / enemy  43% (10.8) / left  45% | own   0 /   0 /   0 | enemy   0 /   0 /   0
+
+natural r200+                | own only           |  18982 | own  82% ( 3.9) / enemy   3% (10.9) / left  15% | own  48 /  45 /   7 | enemy   0 /   0 /   0
+natural r200+                | own nearer by 3+   |   5447 | own  78% ( 2.9) / enemy  13% ( 7.9) / left   9% | own  54 /  41 /   5 | enemy  44 /  53 /   3
+natural r200+                | own nearer by 2    |   1950 | own  62% ( 3.4) / enemy  28% ( 6.2) / left  11% | own  53 /  42 /   5 | enemy  45 /  51 /   3
+natural r200+                | own nearer by 1    |   1984 | own  50% ( 3.7) / enemy  40% ( 5.0) / left   9% | own  48 /  47 /   5 | enemy  44 /  52 /   4
+natural r200+                | same distance      |   2077 | own  33% ( 4.1) / enemy  58% ( 4.2) / left   9% | own  44 /  50 /   5 | enemy  49 /  46 /   5
+natural r200+                | enemy nearer by 1  |   2271 | own  18% ( 5.4) / enemy  74% ( 3.6) / left   8% | own  41 /  54 /   5 | enemy  54 /  42 /   4
+natural r200+                | enemy nearer by 2  |   2527 | own  12% ( 6.5) / enemy  80% ( 3.2) / left   8% | own  38 /  57 /   5 | enemy  58 /  37 /   5
+natural r200+                | enemy nearer by 3+ |  10338 | own   3% ( 8.2) / enemy  92% ( 2.2) / left   6% | own  42 /  54 /   4 | enemy  66 /  31 /   3
+natural r200+                | enemy only         |  51326 | own   1% (10.7) / enemy  88% ( 3.5) / left  11% | own   0 /   0 /   0 | enemy  58 /  38 /   5
+natural r200+                | nobody within 8    |   4398 | own  12% (10.9) / enemy  38% (10.2) / left  50% | own   0 /   0 /   0 | enemy   0 /   0 /   0
+
+ram corpse r0-99             | own only           |    196 | own  90% ( 4.9) / enemy   5% (14.3) / left   5% | own  46 /  24 /  29 | enemy   0 /   0 /   0
+ram corpse r0-99             | own nearer by 3+   |    292 | own  76% ( 4.1) / enemy  23% ( 6.1) / left   1% | own  30 /  14 /  56 | enemy  54 /  40 /   5
+ram corpse r0-99             | own nearer by 2    |    203 | own  65% ( 3.4) / enemy  34% ( 4.5) / left   0% | own  43 /  20 /  37 | enemy  56 /  33 /  11
+ram corpse r0-99             | own nearer by 1    |    284 | own  56% ( 4.0) / enemy  43% ( 4.1) / left   1% | own  47 /  31 /  22 | enemy  47 /  27 /  26
+ram corpse r0-99             | same distance      |    402 | own  42% ( 4.2) / enemy  57% ( 4.6) / left   1% | own  54 /  34 /  12 | enemy  47 /  24 /  29
+ram corpse r0-99             | enemy nearer by 1  |    502 | own  30% ( 4.2) / enemy  70% ( 4.1) / left   0% | own  51 /  36 /  12 | enemy  47 /  18 /  35
+ram corpse r0-99             | enemy nearer by 2  |    649 | own  22% ( 4.5) / enemy  77% ( 3.5) / left   0% | own  51 /  40 /   9 | enemy  42 /  14 /  43
+ram corpse r0-99             | enemy nearer by 3+ |   1658 | own  13% ( 6.3) / enemy  87% ( 3.6) / left   0% | own  53 /  42 /   5 | enemy  32 /  12 /  56
+ram corpse r0-99             | enemy only         |    735 | own   2% (10.8) / enemy  97% ( 4.5) / left   1% | own   0 /   0 /   0 | enemy  45 /  19 /  36
+ram corpse r0-99             | nobody within 8    |     15 | own  33% (11.4) / enemy  40% (10.7) / left  27% | own   0 /   0 /   0 | enemy   0 /   0 /   0
+
+ram corpse r100-199          | own only           |    916 | own  86% ( 6.0) / enemy   9% ( 9.6) / left   5% | own  38 /  24 /  38 | enemy   0 /   0 /   0
+ram corpse r100-199          | own nearer by 3+   |   1235 | own  70% ( 4.2) / enemy  28% ( 5.9) / left   2% | own  31 /  16 /  52 | enemy  53 /  42 /   5
+ram corpse r100-199          | own nearer by 2    |    602 | own  58% ( 4.0) / enemy  40% ( 4.8) / left   2% | own  44 /  25 /  31 | enemy  55 /  34 /  11
+ram corpse r100-199          | own nearer by 1    |    764 | own  49% ( 4.3) / enemy  49% ( 4.7) / left   2% | own  47 /  29 /  25 | enemy  53 /  30 /  18
+ram corpse r100-199          | same distance      |    924 | own  37% ( 4.5) / enemy  62% ( 4.1) / left   1% | own  50 /  34 /  16 | enemy  53 /  23 /  24
+ram corpse r100-199          | enemy nearer by 1  |   1014 | own  26% ( 4.6) / enemy  72% ( 3.7) / left   1% | own  44 /  43 /  13 | enemy  48 /  20 /  31
+ram corpse r100-199          | enemy nearer by 2  |   1261 | own  20% ( 4.9) / enemy  80% ( 3.5) / left   0% | own  47 /  44 /   9 | enemy  41 /  18 /  42
+ram corpse r100-199          | enemy nearer by 3+ |   3590 | own  13% ( 6.4) / enemy  86% ( 3.5) / left   1% | own  50 /  45 /   5 | enemy  32 /  13 /  56
+ram corpse r100-199          | enemy only         |   2270 | own   3% (11.9) / enemy  94% ( 4.4) / left   3% | own   0 /   0 /   0 | enemy  42 /  19 /  39
+ram corpse r100-199          | nobody within 8    |     85 | own  29% (11.7) / enemy  46% ( 9.9) / left  25% | own   0 /   0 /   0 | enemy   0 /   0 /   0
+
+ram corpse r200+             | own only           |   3106 | own  68% ( 7.1) / enemy  16% (10.7) / left  17% | own  31 /  23 /  46 | enemy   0 /   0 /   0
+ram corpse r200+             | own nearer by 3+   |   2074 | own  58% ( 4.7) / enemy  38% ( 6.4) / left   4% | own  29 /  18 /  53 | enemy  51 /  42 /   7
+ram corpse r200+             | own nearer by 2    |   1041 | own  48% ( 4.9) / enemy  49% ( 5.5) / left   3% | own  37 /  26 /  37 | enemy  50 /  38 /  12
+ram corpse r200+             | own nearer by 1    |   1117 | own  40% ( 5.2) / enemy  56% ( 5.3) / left   4% | own  41 /  30 /  29 | enemy  49 /  31 /  19
+ram corpse r200+             | same distance      |   1320 | own  32% ( 5.3) / enemy  65% ( 4.9) / left   3% | own  42 /  35 /  23 | enemy  46 /  31 /  23
+ram corpse r200+             | enemy nearer by 1  |   1494 | own  23% ( 6.1) / enemy  74% ( 4.3) / left   3% | own  42 /  42 /  16 | enemy  48 /  23 /  28
+ram corpse r200+             | enemy nearer by 2  |   1647 | own  19% ( 5.3) / enemy  78% ( 3.9) / left   3% | own  48 /  40 /  12 | enemy  42 /  20 /  39
+ram corpse r200+             | enemy nearer by 3+ |   4893 | own  12% ( 7.4) / enemy  86% ( 3.5) / left   3% | own  47 /  46 /   7 | enemy  32 /  13 /  55
+ram corpse r200+             | enemy only         |   5983 | own   3% (10.9) / enemy  90% ( 4.8) / left   7% | own   0 /   0 /   0 | enemy  39 /  21 /  40
+ram corpse r200+             | nobody within 8    |    891 | own  21% (12.3) / enemy  38% (10.7) / left  42% | own   0 /   0 /   0 | enemy   0 /   0 /   0
+

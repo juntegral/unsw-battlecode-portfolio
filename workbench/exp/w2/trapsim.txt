@@ -1,0 +1,102 @@
+gen_X_01.map 54x18: candidates Autarky/a; dragons 12
+   start #0 team 0 (18,2) L14: window leaves nothing -> none
+   start #1 team 1 (35,15) L14: window leaves nothing -> none
+   start #2 team 0 (22,2) L3: window leaves Autarky/a -> one family: Autarky (start anchor holds: DECIDES at r0)
+   start #3 team 1 (31,15) L3: window leaves Autarky/a -> one family: Autarky (start anchor holds: DECIDES at r0)
+   start #4 team 0 (22,17) L3: window leaves Autarky/a -> one family: Autarky (start anchor holds: DECIDES at r0)
+   start #5 team 1 (31,0) L3: window leaves Autarky/a -> one family: Autarky (start anchor holds: DECIDES at r0)
+   start #6 team 0 (30,6) L3: window leaves Autarky/a -> one family: Autarky (start anchor holds: DECIDES at r0)
+   start #7 team 1 (23,11) L3: window leaves nothing -> none
+   start #8 team 0 (7,1) L3: window leaves Autarky/a -> one family: Autarky (start anchor holds: DECIDES at r0)
+   start #9 team 1 (46,16) L3: window leaves nothing -> none
+   start #10 team 0 (7,15) L3: window leaves nothing -> none
+   start #11 team 1 (46,2) L3: window leaves nothing -> none
+   single windows leaving exactly one family: 166/972 {"Autarky":166}
+gen_X_02.map 32x32: candidates Default/a; dragons 8
+   start #0 team 0 (0,0) L4: window leaves Default/a -> one family: Default (start anchor holds: DECIDES at r0)
+   start #1 team 1 (31,31) L4: window leaves nothing -> none
+   start #2 team 0 (4,0) L4: window leaves Default/a -> one family: Default (start anchor holds: DECIDES at r0)
+   start #3 team 1 (27,31) L4: window leaves Default/a -> one family: Default (start anchor holds: DECIDES at r0)
+   start #4 team 0 (8,0) L4: window leaves Default/a -> one family: Default (start anchor holds: DECIDES at r0)
+   start #5 team 1 (23,31) L4: window leaves Default/a -> one family: Default (start anchor holds: DECIDES at r0)
+   start #6 team 0 (12,0) L4: window leaves nothing -> none
+   start #7 team 1 (19,31) L4: window leaves nothing -> none
+   single windows leaving exactly one family: 51/1024 {"Default":51}
+gen_X_03.map 32x16: candidates Devil/a, Portals/a, Prisoners Dilemma/a, Prisoners Dilemma/b, Devil/b; dragons 6
+   start #0 team 0 (3,5) L4: window leaves nothing -> none
+   start #1 team 1 (28,5) L4: window leaves nothing -> none
+   start #2 team 0 (3,11) L4: window leaves Devil/a -> one family: Devil (start anchor holds: DECIDES at r0)
+   start #3 team 1 (28,11) L4: window leaves nothing -> none
+   start #4 team 0 (3,8) L4: window leaves Devil/a -> one family: Devil (start anchor holds: DECIDES at r0)
+   start #5 team 1 (28,8) L4: window leaves Devil/a -> one family: Devil (start anchor holds: DECIDES at r0)
+   single windows leaving exactly one family: 42/512 {"Devil":42}
+gen_X_04.map 32x16: candidates Devil/a, Portals/a, Prisoners Dilemma/a, Prisoners Dilemma/b, Devil/b; dragons 6
+   start #0 team 0 (0,5) L3: window leaves nothing -> none
+   start #1 team 1 (31,10) L3: window leaves nothing -> none
+   start #2 team 0 (1,11) L3: window leaves Portals/a -> one family: Portals (start anchor holds: DECIDES at r0)
+   start #3 team 1 (30,4) L3: window leaves nothing -> none
+   start #4 team 0 (12,1) L3: window leaves nothing -> none
+   start #5 team 1 (19,14) L3: window leaves nothing -> none
+   single windows leaving exactly one family: 16/512 {"Portals":16}
+gen_X_05.map 32x16: candidates Devil/a, Portals/a, Prisoners Dilemma/a, Prisoners Dilemma/b, Devil/b; dragons 6
+   start #0 team 0 (14,2) L11: window leaves nothing -> none
+   start #1 team 1 (17,13) L11: window leaves nothing -> none
+   start #2 team 0 (3,6) L3: window leaves nothing -> none
+   start #3 team 1 (28,9) L3: window leaves Prisoners Dilemma/a, Prisoners Dilemma/b -> one family: Prisoners Dilemma (start anchor holds: DECIDES at r0)
+   start #4 team 0 (3,12) L3: window leaves Prisoners Dilemma/a, Prisoners Dilemma/b -> one family: Prisoners Dilemma (start anchor holds: DECIDES at r0)
+   start #5 team 1 (28,3) L3: window leaves nothing -> none
+   single windows leaving exactly one family: 32/512 {"Prisoners Dilemma":32}
+gen_X_06.map 25x35: candidates Queen Of Spades/a, Queen Of Spades/b; dragons 4
+   start #0 team 0 (5,11) L3: window leaves nothing -> none
+   start #1 team 1 (19,23) L3: window leaves nothing -> none
+   start #2 team 0 (2,9) L3: window leaves nothing -> none
+   start #3 team 1 (22,25) L3: window leaves nothing -> none
+   single windows leaving exactly one family: 4/875 {"Queen Of Spades":4}
+gen_X_07.map 60x40: candidates Schooltime/a, Schooltime/b; dragons 6
+   start #0 team 0 (3,2) L4: window leaves nothing -> none
+   start #1 team 1 (56,2) L4: window leaves nothing -> none
+   start #2 team 0 (16,3) L4: window leaves Schooltime/a -> one family: Schooltime (start anchor holds: DECIDES at r0)
+   start #3 team 1 (43,3) L4: window leaves Schooltime/a -> one family: Schooltime (start anchor holds: DECIDES at r0)
+   start #4 team 0 (23,3) L4: window leaves nothing -> none
+   start #5 team 1 (36,3) L4: window leaves nothing -> none
+   single windows leaving exactly one family: 2/2400 {"Schooltime":2}
+gen_X_08.map 63x27: candidates Slithery Fight/a, Slithery Fight/b; dragons 14
+   start #0 team 0 (8,10) L7: window leaves nothing -> none
+   start #1 team 1 (54,16) L7: window leaves Slithery Fight/a -> one family: Slithery Fight (start anchor holds: DECIDES at r0)
+   start #2 team 0 (18,7) L4: window leaves Slithery Fight/a -> one family: Slithery Fight (start anchor holds: DECIDES at r0)
+   start #3 team 1 (44,19) L4: window leaves Slithery Fight/a -> one family: Slithery Fight (start anchor holds: DECIDES at r0)
+   start #4 team 0 (3,22) L25: window leaves nothing -> none
+   start #5 team 1 (59,4) L25: window leaves nothing -> none
+   start #6 team 0 (15,13) L2: window leaves nothing -> none
+   start #7 team 1 (47,13) L2: window leaves nothing -> none
+   start #8 team 0 (33,2) L5: window leaves Slithery Fight/a -> one family: Slithery Fight (start anchor holds: DECIDES at r0)
+   start #9 team 1 (29,24) L5: window leaves nothing -> none
+   start #10 team 0 (26,23) L2: window leaves nothing -> none
+   start #11 team 1 (36,3) L2: window leaves Slithery Fight/a -> one family: Slithery Fight (start anchor holds: DECIDES at r0)
+   start #12 team 0 (20,4) L2: window leaves nothing -> none
+   start #13 team 1 (42,22) L2: window leaves Slithery Fight/a -> one family: Slithery Fight (start anchor holds: DECIDES at r0)
+   single windows leaving exactly one family: 55/1701 {"Slithery Fight":55}
+gen_X_09.map 48x24: candidates Trauma/a; dragons 4
+   start #0 team 0 (4,15) L4: window leaves nothing -> none
+   start #1 team 1 (43,8) L4: window leaves nothing -> none
+   start #2 team 0 (4,2) L4: window leaves nothing -> none
+   start #3 team 1 (43,21) L4: window leaves nothing -> none
+   single windows leaving exactly one family: 0/1152 {}
+gen_X_10.map 25x25: candidates Trophy/a; dragons 4
+   start #0 team 0 (4,2) L3: window leaves nothing -> none
+   start #1 team 1 (20,2) L3: window leaves nothing -> none
+   start #2 team 0 (4,22) L3: window leaves nothing -> none
+   start #3 team 1 (20,22) L3: window leaves nothing -> none
+   single windows leaving exactly one family: 43/625 {"Trophy":43}
+gen_X_11.map 32x16: candidates Devil/a, Portals/a, Prisoners Dilemma/a, Prisoners Dilemma/b, Devil/b; dragons 2
+   start #0 team 0 (8,8) L5: window leaves nothing -> none
+   start #1 team 1 (23,8) L5: window leaves nothing -> none
+   single windows leaving exactly one family: 0/512 {}
+gen_X_12.map 48x24: candidates Trauma/a; dragons 2
+   start #0 team 0 (12,12) L5: window leaves nothing -> none
+   start #1 team 1 (35,11) L5: window leaves nothing -> none
+   single windows leaving exactly one family: 0/1152 {}
+gen_X_13.map 25x25: candidates Trophy/a; dragons 2
+   start #0 team 0 (6,12) L5: window leaves nothing -> none
+   start #1 team 1 (18,12) L5: window leaves nothing -> none
+   single windows leaving exactly one family: 0/625 {}

@@ -1,0 +1,70 @@
+maps.json dead-end layouts ['Schooltime #1', 'Schooltime #2', 'Slithery Fight #1'] | my layout keys missing from maps.json []
+main games 195 battle time span KST 2026-10-06T07:35:04.496000+09:00 2026-10-07T02:07:58.305000+09:00 battles 39
+ALL kept {'games': 168, 'ours': 39, 'ours_wall': 26, 'ours_own': 13, 'theirs': 20, 'theirs_wall': 15, 'theirs_own': 5}
+band <1700 {'games': 0, 'ours': 0, 'ours_wall': 0, 'ours_own': 0, 'theirs': 0, 'theirs_wall': 0, 'theirs_own': 0}
+band 1700-1899 {'games': 49, 'ours': 13, 'ours_wall': 9, 'ours_own': 4, 'theirs': 4, 'theirs_wall': 2, 'theirs_own': 2}
+band 1900-2099 {'games': 110, 'ours': 24, 'ours_wall': 15, 'ours_own': 9, 'theirs': 15, 'theirs_wall': 13, 'theirs_own': 2}
+band 2100+ {'games': 9, 'ours': 2, 'ours_wall': 2, 'ours_own': 0, 'theirs': 1, 'theirs_wall': 0, 'theirs_own': 1}
+half first main games in half 97 {'games': 84, 'ours': 16, 'ours_wall': 12, 'ours_own': 4, 'theirs': 11, 'theirs_wall': 9, 'theirs_own': 2}
+half second main games in half 98 {'games': 84, 'ours': 23, 'ours_wall': 14, 'ours_own': 9, 'theirs': 9, 'theirs_wall': 6, 'theirs_own': 3}
+excluded layouts {'games': 27, 'ours': 2, 'ours_wall': 1, 'ours_own': 1, 'theirs': 3, 'theirs_wall': 1, 'theirs_own': 2} all 195 {'games': 195, 'ours': 41, 'ours_wall': 27, 'ours_own': 14, 'theirs': 23, 'theirs_wall': 16, 'theirs_own': 7}
+games: only ours 31 only theirs 12 both 8 neither 117 sign test two-sided p 0.0054
+battle bootstrap 95% (2000 draws): ratio ours/theirs (1.25, 3.4) difference ours-theirs in games (7, 32)
+  slice 1700-1899 ratio 3.25 boot ratio (1.833, 9.0) boot diff (4, 15) only ours/only theirs 11 2 sign p 0.0225
+  slice 1900-2099 ratio 1.6 boot ratio (0.917, 3.143) boot diff (-2, 19) only ours/only theirs 18 9 sign p 0.1221
+  slice first ratio 1.4545454545454546 boot ratio (0.706, 3.4) boot diff (-4, 15) only ours/only theirs 11 6 sign p 0.3323
+  slice second ratio 2.5555555555555554 boot ratio (1.5, 5.8) boot diff (6, 22) only ours/only theirs 20 6 sign p 0.0094
+queen fate, kept games (ours | theirs):
+   us {'alive at end': 38, 'wall': 26, 'own body': 13, 'head-on': 83, 'other body': 8} died any cause 130
+   them {'head-on': 97, 'alive at end': 44, 'no action': 3, 'own body': 5, 'wall': 15, 'other body': 4} died any cause 124
+  wall/own-body death of us queen: round median 120 r0-100 16 r101-300 20 r301+ 3 length median 3 rounds [10, 20, 24, 25, 27, 33, 36, 38, 46, 66, 71, 74, 78, 85, 85, 97, 103, 104, 106, 120, 141, 144, 147, 172, 173, 182, 188, 196, 198, 208, 210, 242, 264, 272, 279, 283, 316, 357, 369]
+  wall/own-body death of them queen: round median 168.5 r0-100 8 r101-300 4 r301+ 8 length median 2.0 rounds [14, 31, 39, 46, 56, 62, 68, 77, 108, 136, 201, 234, 303, 415, 419, 420, 445, 450, 457, 494]
+share of a side's queen deaths that are wall/own body: ours 39 / 130 theirs 20 / 124
+result: ours wall/own in games we won 22 lost 17 | theirs in games we won 14 lost 6 | kept games won 96 of 168
+by layout: games ours theirs
+   Around UNSW #1 14 2 3
+   Australia #1 9 1 0
+   Autarky #1 8 0 0
+   Default #1 15 0 0
+   Devil #1 13 6 3
+   Islands #1 8 4 2
+   Maze #1 15 9 4
+   Portals #1 6 4 1
+   Prisoners Dilemma #1 3 0 0
+   Prisoners Dilemma #2 6 1 0
+   Queen Of Spades #1 17 0 0
+   Stripes #1 8 2 0
+   Tower Defense #1 13 5 3
+   Trauma #1 18 0 1
+   Trophy #1 6 0 1
+   weakhold #1 9 5 2
+by opponent: games ours theirs
+   ComTamSuonNuong (193) 17 4 1
+   1 (231) 14 4 3
+   free trip to sydney pls (82) 13 3 3
+   :3 (217) 12 4 1
+   byte_force (959) 12 2 1
+   NUSW Battlecode (262) 10 4 0
+   中国人不准飞😡😡😡😡😡😡😡 (791) 9 5 1
+   calc (20) 9 0 4
+   Settlers of Battlecode (258) 8 2 0
+   Knight Capital (226) 8 1 1
+   天天开心 :( (835) 8 0 0
+   doofenshmirtz good incorporated (1015) 5 1 0
+   Computers (112) 5 0 0
+   dev test 1 :P (545) 5 0 1
+   we love gru (998) 5 1 0
+   Memory? (1097) 5 1 0
+   python.io (147) 4 2 1
+   DeepSeek-V4.1-Flash (776) 4 1 0
+   food (871) 4 1 1
+   Nitronics (837) 4 1 1
+   POFPOF (1055) 4 2 1
+   Heartbreaker (62) 3 0 0
+by bot id: {'18066': (5, 3, 0), '18504': (120, 30, 15), '18570': (43, 6, 5)}
+by evening: {'10-06': (168, 39, 20)}
+leave one map_key out: lowest ratio (1.84, 35, 19, 'Portals #1') highest (2.18, 37, 17, 'Around UNSW #1')
+leave one opp out: lowest ratio (1.75, 35, 20, 'NUSW Battlecode (262)') highest (2.44, 39, 16, 'calc (20)')
+2-start layouts {'games': 86, 'ours': 21, 'ours_wall': 12, 'ours_own': 9, 'theirs': 11, 'theirs_wall': 7, 'theirs_own': 4} | other kept layouts {'games': 82, 'ours': 18, 'ours_wall': 14, 'ours_own': 4, 'theirs': 9, 'theirs_wall': 8, 'theirs_own': 1}
+without the three most supporting layouts ['Maze #1', 'Portals #1', 'Devil #1'] {'games': 134, 'ours': 20, 'ours_wall': 14, 'ours_own': 6, 'theirs': 12, 'theirs_wall': 8, 'theirs_own': 4}
+by KST hour of battle: {'10-06T07': (5, 3, 0), '10-06T19': (5, 1, 0), '10-06T20': (13, 1, 1), '10-06T21': (29, 8, 7), '10-06T22': (12, 1, 0), '10-06T23': (26, 4, 5), '10-07T00': (61, 16, 3), '10-07T01': (13, 3, 3), '10-07T02': (4, 2, 1)}

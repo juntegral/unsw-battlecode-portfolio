@@ -1,0 +1,16 @@
+Generated 2026-10-09T13:50:03.886287+09:00
+data/online/smoke/one5-bot/main.cpp sha256=0ae59ce207ec9914cb274b3f0959c366e5239a65e1f3e58f05ca594a50e9d2fd lines=6477
+data/online/smoke/one17-bot/main.cpp sha256=1143e97efa733a5110bb984bab93b62dbf679bef685d38b832c4982234025042 lines=8620
+data/online/smoke/one17-bot/helper.hpp sha256=9f080746e6e18c73657245e00c9dda2581f6f534fa90d11d78556924b9290152 lines=635
+data/online/smoke/one17-bot/sonar_codec.hpp sha256=e3dc0b0402fcf040f0141c1d680fb0911a0e74191cba98451e63b46ad042a60f lines=86
+Static upper-bound arithmetic (not measured bot executions):
+256 * 256 = 65536
+four survey traversals, allowing two queue entries per cell = 524288
+depth-6 four-way tree, including root = 5461
+depth-8 look_gain, first cell fixed, four-way upper bound = 21845
+vision cells = 49
+
+Final static review completed 2026-10-09T13:55:10.650026+09:00
+Report prose excluding tables: 227 whitespace-separated words (<450).
+Live/one5 source SHA256 unchanged from initial evidence; helper.hpp and sonar_codec.hpp identical across builds.
+No games, uploads, network requests, source edits or compilation were performed.

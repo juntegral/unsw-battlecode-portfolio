@@ -1,0 +1,398 @@
+{
+  "expectedGames": 160,
+  "missing": 0,
+  "historyErrors": 0,
+  "pairs": 68,
+  "identity": [
+    {
+      "key": "proxy4_king:trophy:A:1",
+      "same": true
+    },
+    {
+      "key": "proxy4_king:trophy:B:1",
+      "same": true
+    },
+    {
+      "key": "bot-hunter:trophy:A:1",
+      "same": true
+    },
+    {
+      "key": "bot-hunter:trophy:B:1",
+      "same": true
+    },
+    {
+      "key": "proxy4_king:around_unsw:A:1",
+      "same": true
+    },
+    {
+      "key": "proxy4_king:around_unsw:B:1",
+      "same": true
+    },
+    {
+      "key": "bot-hunter:around_unsw:A:1",
+      "same": true
+    },
+    {
+      "key": "bot-hunter:around_unsw:B:1",
+      "same": true
+    },
+    {
+      "key": "proxy4_king:gen_M_07:A:1",
+      "same": true
+    },
+    {
+      "key": "proxy4_king:gen_M_07:B:1",
+      "same": true
+    },
+    {
+      "key": "bot-hunter:gen_M_07:A:1",
+      "same": true
+    },
+    {
+      "key": "bot-hunter:gen_M_07:B:1",
+      "same": true
+    }
+  ],
+  "regressions": [
+    {
+      "key": "proxy4_king:arena:B:1",
+      "freeMultiDelta": 0,
+      "rateOn": 0.25,
+      "rateOff": 0.1875,
+      "selfDelta": 0,
+      "wallDelta": 0,
+      "queenDeathDelta": 0,
+      "queenEarlier": true
+    },
+    {
+      "key": "proxy4_king:big_empty:B:1",
+      "freeMultiDelta": 483,
+      "rateOn": 0.0743063675985968,
+      "rateOff": 0.017464424320827943,
+      "selfDelta": 31,
+      "wallDelta": 0,
+      "queenDeathDelta": 0,
+      "queenEarlier": false
+    },
+    {
+      "key": "proxy4_king:default_small:A:1",
+      "freeMultiDelta": 1,
+      "rateOn": 0.031578947368421054,
+      "rateOff": 0.045454545454545456,
+      "selfDelta": -1,
+      "wallDelta": 3,
+      "queenDeathDelta": 0,
+      "queenEarlier": false
+    },
+    {
+      "key": "proxy4_king:default_small:B:1",
+      "freeMultiDelta": 4,
+      "rateOn": 0.07692307692307693,
+      "rateOff": 0.03225806451612903,
+      "selfDelta": 0,
+      "wallDelta": -2,
+      "queenDeathDelta": 0,
+      "queenEarlier": true
+    },
+    {
+      "key": "proxy4_king:stronghold:A:1",
+      "freeMultiDelta": 106,
+      "rateOn": 0.09292412617220801,
+      "rateOff": 0.003667481662591687,
+      "selfDelta": 3,
+      "wallDelta": -1,
+      "queenDeathDelta": 1,
+      "queenEarlier": true
+    },
+    {
+      "key": "bot-hunter:arena:B:1",
+      "freeMultiDelta": 70,
+      "rateOn": 0.15286624203821655,
+      "rateOff": 0.06896551724137931,
+      "selfDelta": 1,
+      "wallDelta": 16,
+      "queenDeathDelta": 0,
+      "queenEarlier": false
+    },
+    {
+      "key": "bot-hunter:big_empty:A:1",
+      "freeMultiDelta": 1012,
+      "rateOn": 0.08553750966744006,
+      "rateOff": 0.007340882467786021,
+      "selfDelta": 10,
+      "wallDelta": 0,
+      "queenDeathDelta": -1,
+      "queenEarlier": false
+    },
+    {
+      "key": "bot-hunter:big_empty:B:1",
+      "freeMultiDelta": 1265,
+      "rateOn": 0.10435040391314014,
+      "rateOff": 0.009987428411789356,
+      "selfDelta": 19,
+      "wallDelta": 0,
+      "queenDeathDelta": 0,
+      "queenEarlier": false
+    },
+    {
+      "key": "bot-hunter:Colosseum:A:1",
+      "freeMultiDelta": 78,
+      "rateOn": 0.255050505050505,
+      "rateOff": 0.023958333333333335,
+      "selfDelta": 5,
+      "wallDelta": -9,
+      "queenDeathDelta": 0,
+      "queenEarlier": false
+    },
+    {
+      "key": "bot-hunter:Colosseum:B:1",
+      "freeMultiDelta": 134,
+      "rateOn": 0.2533112582781457,
+      "rateOff": 0.06050955414012739,
+      "selfDelta": 7,
+      "wallDelta": -2,
+      "queenDeathDelta": 0,
+      "queenEarlier": true
+    },
+    {
+      "key": "bot-hunter:default_small:A:1",
+      "freeMultiDelta": 27,
+      "rateOn": 0.07526881720430108,
+      "rateOff": 0.0343213728549142,
+      "selfDelta": 5,
+      "wallDelta": -3,
+      "queenDeathDelta": 0,
+      "queenEarlier": false
+    },
+    {
+      "key": "bot-hunter:stronghold:A:1",
+      "freeMultiDelta": 118,
+      "rateOn": 0.09534883720930233,
+      "rateOff": 0.0059594755661501785,
+      "selfDelta": -7,
+      "wallDelta": -9,
+      "queenDeathDelta": 1,
+      "queenEarlier": true
+    },
+    {
+      "key": "proxy4_king:portals:A:1",
+      "freeMultiDelta": 91,
+      "rateOn": 0.05491329479768786,
+      "rateOff": 0.002844950213371266,
+      "selfDelta": 4,
+      "wallDelta": 52,
+      "queenDeathDelta": 0,
+      "queenEarlier": false
+    },
+    {
+      "key": "proxy4_king:portals:B:1",
+      "freeMultiDelta": 83,
+      "rateOn": 0.047174986286341196,
+      "rateOff": 0.0015189873417721519,
+      "selfDelta": -7,
+      "wallDelta": -2,
+      "queenDeathDelta": 0,
+      "queenEarlier": true
+    },
+    {
+      "key": "proxy4_king:slithery_fight:A:1",
+      "freeMultiDelta": 61,
+      "rateOn": 0.06680369989722508,
+      "rateOff": 0.0058823529411764705,
+      "selfDelta": 5,
+      "wallDelta": -2,
+      "queenDeathDelta": 0,
+      "queenEarlier": false
+    },
+    {
+      "key": "proxy4_king:slithery_fight:B:1",
+      "freeMultiDelta": 44,
+      "rateOn": 0.06753246753246753,
+      "rateOff": 0.009163802978235968,
+      "selfDelta": -3,
+      "wallDelta": 23,
+      "queenDeathDelta": 0,
+      "queenEarlier": false
+    },
+    {
+      "key": "bot-hunter:trophy:A:1",
+      "freeMultiDelta": 259,
+      "rateOn": 0.08931648477886273,
+      "rateOff": 0.019556224144415192,
+      "selfDelta": 10,
+      "wallDelta": 3,
+      "queenDeathDelta": 0,
+      "queenEarlier": false
+    },
+    {
+      "key": "bot-hunter:trophy:B:1",
+      "freeMultiDelta": 61,
+      "rateOn": 0.1111111111111111,
+      "rateOff": 0.013856812933025405,
+      "selfDelta": 1,
+      "wallDelta": 0,
+      "queenDeathDelta": 0,
+      "queenEarlier": true
+    },
+    {
+      "key": "bot-hunter:portals:A:1",
+      "freeMultiDelta": 87,
+      "rateOn": 0.055855855855855854,
+      "rateOff": 0.003738317757009346,
+      "selfDelta": 15,
+      "wallDelta": 21,
+      "queenDeathDelta": 0,
+      "queenEarlier": false
+    },
+    {
+      "key": "bot-hunter:portals:B:1",
+      "freeMultiDelta": 108,
+      "rateOn": 0.06303236797274275,
+      "rateOff": 0.0017452006980802793,
+      "selfDelta": -8,
+      "wallDelta": 28,
+      "queenDeathDelta": 1,
+      "queenEarlier": true
+    },
+    {
+      "key": "bot-hunter:slithery_fight:A:1",
+      "freeMultiDelta": 252,
+      "rateOn": 0.06169517586008072,
+      "rateOff": 0.016178194607268465,
+      "selfDelta": 1,
+      "wallDelta": 7,
+      "queenDeathDelta": 0,
+      "queenEarlier": false
+    },
+    {
+      "key": "bot-hunter:slithery_fight:B:1",
+      "freeMultiDelta": 215,
+      "rateOn": 0.06571031929662194,
+      "rateOff": 0.01515817223198594,
+      "selfDelta": 3,
+      "wallDelta": 14,
+      "queenDeathDelta": 0,
+      "queenEarlier": false
+    },
+    {
+      "key": "proxy4_king:around_unsw:B:1",
+      "freeMultiDelta": 66,
+      "rateOn": 0.06202849958088852,
+      "rateOff": 0.014010507880910683,
+      "selfDelta": 8,
+      "wallDelta": 13,
+      "queenDeathDelta": 0,
+      "queenEarlier": false
+    },
+    {
+      "key": "proxy4_king:australia:A:1",
+      "freeMultiDelta": 17,
+      "rateOn": 0.044169611307420496,
+      "rateOff": 0.0121765601217656,
+      "selfDelta": 1,
+      "wallDelta": -7,
+      "queenDeathDelta": -1,
+      "queenEarlier": false
+    },
+    {
+      "key": "bot-hunter:around_unsw:A:1",
+      "freeMultiDelta": 96,
+      "rateOn": 0.06402604449267499,
+      "rateOff": 0.006518518518518518,
+      "selfDelta": -3,
+      "wallDelta": -60,
+      "queenDeathDelta": 1,
+      "queenEarlier": true
+    },
+    {
+      "key": "bot-hunter:australia:A:1",
+      "freeMultiDelta": 189,
+      "rateOn": 0.07460492466005145,
+      "rateOff": 0.005816368923971749,
+      "selfDelta": 16,
+      "wallDelta": 33,
+      "queenDeathDelta": 0,
+      "queenEarlier": false
+    },
+    {
+      "key": "bot-hunter:australia:B:1",
+      "freeMultiDelta": 179,
+      "rateOn": 0.04921814919251474,
+      "rateOff": 0.004786450662739323,
+      "selfDelta": 5,
+      "wallDelta": 8,
+      "queenDeathDelta": -1,
+      "queenEarlier": false
+    },
+    {
+      "key": "bot-hunter:stripes:A:1",
+      "freeMultiDelta": 4,
+      "rateOn": 0.03496503496503497,
+      "rateOff": 0.01,
+      "selfDelta": 0,
+      "wallDelta": 14,
+      "queenDeathDelta": 0,
+      "queenEarlier": false
+    },
+    {
+      "key": "proxy4_king:gen_X_07:A:1",
+      "freeMultiDelta": 172,
+      "rateOn": 0.07930052867019113,
+      "rateOff": 0.008369723435225618,
+      "selfDelta": 4,
+      "wallDelta": 76,
+      "queenDeathDelta": 0,
+      "queenEarlier": true
+    },
+    {
+      "key": "proxy4_king:gen_X_07:B:1",
+      "freeMultiDelta": 250,
+      "rateOn": 0.10276243093922652,
+      "rateOff": 0.011394891944990177,
+      "selfDelta": 5,
+      "wallDelta": -124,
+      "queenDeathDelta": 0,
+      "queenEarlier": true
+    },
+    {
+      "key": "bot-hunter:gen_M_03:A:1",
+      "freeMultiDelta": 396,
+      "rateOn": 0.12916754036485636,
+      "rateOff": 0.04138449962377728,
+      "selfDelta": 0,
+      "wallDelta": 8,
+      "queenDeathDelta": 0,
+      "queenEarlier": false
+    },
+    {
+      "key": "bot-hunter:gen_M_03:B:1",
+      "freeMultiDelta": 456,
+      "rateOn": 0.12075543685616177,
+      "rateOff": 0.030168740412476563,
+      "selfDelta": 6,
+      "wallDelta": 11,
+      "queenDeathDelta": 0,
+      "queenEarlier": false
+    },
+    {
+      "key": "bot-hunter:gen_M_07:A:1",
+      "freeMultiDelta": 71,
+      "rateOn": 0.060430463576158944,
+      "rateOff": 0.002457002457002457,
+      "selfDelta": 4,
+      "wallDelta": 32,
+      "queenDeathDelta": 0,
+      "queenEarlier": false
+    },
+    {
+      "key": "bot-hunter:gen_X_07:A:1",
+      "freeMultiDelta": 289,
+      "rateOn": 0.10550609957138148,
+      "rateOff": 0.008962127782596125,
+      "selfDelta": -5,
+      "wallDelta": -79,
+      "queenDeathDelta": 0,
+      "queenEarlier": true
+    }
+  ]
+}

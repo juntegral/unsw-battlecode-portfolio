@@ -1,0 +1,171 @@
+
+-- our races, rounds 300-499, all builds: 4677 deaths
+   the longest, 3 path steps or fewer                    2006 = 42.9% | pearls  3049: final lineage  66%, other own  28%, enemy  2.0%, nobody   4%
+   the longest, a wall between (over 3 path steps)        254 =  5.4% | pearls   406: final lineage  16%, other own  56%, enemy 10.6%, nobody  17%
+   another dragon twice its length                       1844 = 39.4% | pearls  2393: final lineage  10%, other own  80%, enemy  4.9%, nobody   5%
+   the stub of a cut in the last 26 rounds                354 =  7.6% | pearls   606: final lineage  12%, other own  71%, enemy  8.3%, nobody   9%
+   a dragon under twice its length (no fresh stub)        219 =  4.7% | pearls   266: final lineage   8%, other own  76%, enemy  9.4%, nobody   7%
+   readable part: the id named one turn before was in view within 3 cells in 595 of 747 = 80% of deaths with a named id; of those the named length was twice its own while the true length was not in 58 of 595 = 10%
+   'under twice its length': (own length, target length) most often: (2,2) x96, (2,3) x81, (3,3) x18, (3,2) x8, (3,5) x4, (3,4) x4, (5,3) x2, (4,3) x2
+
+-- our races, small maps, rounds 300-499: 2041 deaths
+   the longest, 3 path steps or fewer                    1105 = 54.1% | pearls  1611: final lineage  70%, other own  25%, enemy  1.4%, nobody   4%
+   the longest, a wall between (over 3 path steps)        173 =  8.5% | pearls   244: final lineage  18%, other own  60%, enemy  7.0%, nobody  15%
+   another dragon twice its length                        512 = 25.1% | pearls   636: final lineage  14%, other own  74%, enemy  4.7%, nobody   7%
+   the stub of a cut in the last 26 rounds                151 =  7.4% | pearls   242: final lineage  14%, other own  68%, enemy  2.5%, nobody  15%
+   a dragon under twice its length (no fresh stub)        100 =  4.9% | pearls   118: final lineage   9%, other own  75%, enemy  5.9%, nobody   9%
+   readable part: the id named one turn before was in view within 3 cells in 271 of 339 = 80% of deaths with a named id; of those the named length was twice its own while the true length was not in 39 of 271 = 14%
+   'under twice its length': (own length, target length) most often: (2,2) x47, (2,3) x37, (3,3) x9, (3,2) x3, (3,4) x1, (3,5) x1, (6,3) x1, (5,3) x1
+
+-- our races, big maps, rounds 300-499: 2636 deaths
+   the longest, 3 path steps or fewer                     901 = 34.2% | pearls  1438: final lineage  62%, other own  32%, enemy  2.7%, nobody   4%
+   the longest, a wall between (over 3 path steps)         81 =  3.1% | pearls   162: final lineage  14%, other own  50%, enemy 16.0%, nobody  20%
+   another dragon twice its length                       1332 = 50.5% | pearls  1757: final lineage   9%, other own  82%, enemy  5.0%, nobody   5%
+   the stub of a cut in the last 26 rounds                203 =  7.7% | pearls   364: final lineage  10%, other own  73%, enemy 12.1%, nobody   5%
+   a dragon under twice its length (no fresh stub)        119 =  4.5% | pearls   148: final lineage   6%, other own  76%, enemy 12.2%, nobody   5%
+   readable part: the id named one turn before was in view within 3 cells in 324 of 408 = 79% of deaths with a named id; of those the named length was twice its own while the true length was not in 19 of 324 = 6%
+   'under twice its length': (own length, target length) most often: (2,2) x49, (2,3) x44, (3,3) x9, (3,2) x5, (3,5) x3, (3,4) x3, (4,3) x2, (5,2) x2
+
+-- our races, live bot, rounds 300-499: 2982 deaths
+   the longest, 3 path steps or fewer                    1295 = 43.4% | pearls  1941: final lineage  68%, other own  27%, enemy  2.3%, nobody   3%
+   the longest, a wall between (over 3 path steps)        189 =  6.3% | pearls   306: final lineage  18%, other own  54%, enemy 12.7%, nobody  16%
+   another dragon twice its length                       1137 = 38.1% | pearls  1496: final lineage   8%, other own  80%, enemy  5.9%, nobody   6%
+   the stub of a cut in the last 26 rounds                228 =  7.6% | pearls   382: final lineage   9%, other own  69%, enemy 10.5%, nobody  12%
+   a dragon under twice its length (no fresh stub)        133 =  4.5% | pearls   159: final lineage   4%, other own  78%, enemy 10.7%, nobody   7%
+   readable part: the id named one turn before was in view within 3 cells in 595 of 747 = 80% of deaths with a named id; of those the named length was twice its own while the true length was not in 58 of 595 = 10%
+   'under twice its length': (own length, target length) most often: (2,2) x60, (2,3) x50, (3,3) x9, (3,2) x5, (3,4) x4, (5,3) x2, (4,3) x1, (6,3) x1
+
+-- our races, test builds, rounds 300-499: 1695 deaths
+   the longest, 3 path steps or fewer                     711 = 41.9% | pearls  1108: final lineage  64%, other own  31%, enemy  1.5%, nobody   4%
+   the longest, a wall between (over 3 path steps)         65 =  3.8% | pearls   100: final lineage  12%, other own  64%, enemy  4.0%, nobody  20%
+   another dragon twice its length                        707 = 41.7% | pearls   897: final lineage  14%, other own  78%, enemy  3.2%, nobody   5%
+   the stub of a cut in the last 26 rounds                126 =  7.4% | pearls   224: final lineage  17%, other own  75%, enemy  4.5%, nobody   4%
+   a dragon under twice its length (no fresh stub)         86 =  5.1% | pearls   107: final lineage  12%, other own  73%, enemy  7.5%, nobody   7%
+   'under twice its length': (own length, target length) most often: (2,2) x36, (2,3) x31, (3,3) x9, (3,5) x3, (3,2) x3, (5,2) x2, (4,5) x1, (4,3) x1
+
+-- our races, rounds 400-499: 3803 deaths
+   the longest, 3 path steps or fewer                    1760 = 46.3% | pearls  2699: final lineage  67%, other own  26%, enemy  2.3%, nobody   4%
+   the longest, a wall between (over 3 path steps)        216 =  5.7% | pearls   341: final lineage  16%, other own  54%, enemy  9.4%, nobody  20%
+   another dragon twice its length                       1426 = 37.5% | pearls  1881: final lineage  10%, other own  78%, enemy  5.2%, nobody   7%
+   the stub of a cut in the last 26 rounds                265 =  7.0% | pearls   445: final lineage  12%, other own  69%, enemy  6.5%, nobody  13%
+   a dragon under twice its length (no fresh stub)        136 =  3.6% | pearls   164: final lineage  10%, other own  70%, enemy  9.1%, nobody  10%
+   readable part: the id named one turn before was in view within 3 cells in 490 of 611 = 80% of deaths with a named id; of those the named length was twice its own while the true length was not in 53 of 490 = 11%
+   'under twice its length': (own length, target length) most often: (2,2) x66, (2,3) x45, (3,3) x10, (3,2) x5, (3,5) x3, (3,4) x3, (6,3) x1, (4,3) x1
+
+-- our races with readable pings only, rounds 300-499: 803 deaths
+   the longest, 3 path steps or fewer                     363 = 45.2% | pearls   529: final lineage  71%, other own  23%, enemy  3.0%, nobody   3%
+   the longest, a wall between (over 3 path steps)         69 =  8.6% | pearls   117: final lineage   7%, other own  53%, enemy 19.7%, nobody  21%
+   another dragon twice its length                        277 = 34.5% | pearls   362: final lineage   4%, other own  84%, enemy  4.7%, nobody   7%
+   the stub of a cut in the last 26 rounds                 73 =  9.1% | pearls   113: final lineage   6%, other own  72%, enemy  5.3%, nobody  17%
+   a dragon under twice its length (no fresh stub)         21 =  2.6% | pearls    22: final lineage   0%, other own  73%, enemy 13.6%, nobody  14%
+   readable part: the id named one turn before was in view within 3 cells in 595 of 747 = 80% of deaths with a named id; of those the named length was twice its own while the true length was not in 58 of 595 = 10%
+   'under twice its length': (own length, target length) most often: (2,3) x11, (2,2) x9, (3,2) x1
+
+-- all our 401 games, rounds 150-499: 8535 deaths
+   the longest, 3 path steps or fewer                    3621 = 42.4% | pearls  5423: final lineage  59%, other own  36%, enemy  1.9%, nobody   3%
+   the longest, a wall between (over 3 path steps)        488 =  5.7% | pearls   742: final lineage  15%, other own  62%, enemy  7.8%, nobody  15%
+   another dragon twice its length                       3262 = 38.2% | pearls  4178: final lineage  11%, other own  79%, enemy  5.1%, nobody   5%
+   the stub of a cut in the last 26 rounds                590 =  6.9% | pearls   977: final lineage   9%, other own  74%, enemy  8.9%, nobody   8%
+   a dragon under twice its length (no fresh stub)        574 =  6.7% | pearls   676: final lineage   4%, other own  81%, enemy  6.7%, nobody   8%
+   readable part: the id named one turn before was in view within 3 cells in 1221 of 1533 = 80% of deaths with a named id; of those the named length was twice its own while the true length was not in 141 of 1221 = 12%
+   'under twice its length': (own length, target length) most often: (2,2) x274, (2,3) x207, (3,3) x40, (3,2) x17, (3,5) x11, (3,4) x9, (5,3) x3, (5,2) x3
+
+-- our races against test4: 1853 deaths
+   the longest, 3 path steps or fewer                     757 = 40.9% | pearls  1153: final lineage  67%, other own  28%, enemy  1.6%, nobody   3%
+   the longest, a wall between (over 3 path steps)         88 =  4.7% | pearls   144: final lineage  20%, other own  60%, enemy  7.6%, nobody  12%
+   another dragon twice its length                        780 = 42.1% | pearls  1008: final lineage  10%, other own  78%, enemy  6.5%, nobody   5%
+   the stub of a cut in the last 26 rounds                155 =  8.4% | pearls   282: final lineage  12%, other own  69%, enemy 10.6%, nobody   8%
+   a dragon under twice its length (no fresh stub)         73 =  3.9% | pearls    96: final lineage   6%, other own  83%, enemy  9.4%, nobody   1%
+   readable part: the id named one turn before was in view within 3 cells in 78 of 119 = 66% of deaths with a named id; of those the named length was twice its own while the true length was not in 22 of 78 = 28%
+   'under twice its length': (own length, target length) most often: (2,2) x27, (2,3) x26, (3,3) x8, (3,2) x5, (3,4) x3, (5,3) x1, (4,3) x1, (6,3) x1
+
+-- our races against WHQ: 2005 deaths
+   the longest, 3 path steps or fewer                     917 = 45.7% | pearls  1387: final lineage  68%, other own  26%, enemy  1.8%, nobody   4%
+   the longest, a wall between (over 3 path steps)         91 =  4.5% | pearls   135: final lineage  16%, other own  56%, enemy  5.9%, nobody  21%
+   another dragon twice its length                        747 = 37.3% | pearls   970: final lineage  12%, other own  78%, enemy  3.8%, nobody   5%
+   the stub of a cut in the last 26 rounds                140 =  7.0% | pearls   235: final lineage  10%, other own  74%, enemy  5.5%, nobody  10%
+   a dragon under twice its length (no fresh stub)        110 =  5.5% | pearls   129: final lineage   9%, other own  74%, enemy  9.3%, nobody   8%
+   readable part: the id named one turn before was in view within 3 cells in 169 of 198 = 85% of deaths with a named id; of those the named length was twice its own while the true length was not in 21 of 169 = 12%
+   'under twice its length': (own length, target length) most often: (2,2) x58, (2,3) x35, (3,3) x8, (3,5) x4, (3,2) x2, (4,3) x1, (5,3) x1, (5,2) x1
+
+-- our races on Maze: 1013 deaths
+   the longest, 3 path steps or fewer                     617 = 60.9% | pearls   885: final lineage  72%, other own  23%, enemy  1.6%, nobody   4%
+   the longest, a wall between (over 3 path steps)         47 =  4.6% | pearls    66: final lineage  14%, other own  77%, enemy  4.5%, nobody   5%
+   another dragon twice its length                        273 = 26.9% | pearls   345: final lineage  11%, other own  72%, enemy  8.1%, nobody   9%
+   the stub of a cut in the last 26 rounds                 33 =  3.3% | pearls    46: final lineage  24%, other own  59%, enemy  0.0%, nobody  17%
+   a dragon under twice its length (no fresh stub)         43 =  4.2% | pearls    53: final lineage   6%, other own  81%, enemy  9.4%, nobody   4%
+   readable part: the id named one turn before was in view within 3 cells in 147 of 185 = 79% of deaths with a named id; of those the named length was twice its own while the true length was not in 2 of 147 = 1%
+   'under twice its length': (own length, target length) most often: (2,3) x18, (2,2) x16, (3,3) x7, (3,2) x1, (5,3) x1
+
+-- our races on Portals: 490 deaths
+   the longest, 3 path steps or fewer                     253 = 51.6% | pearls   404: final lineage  71%, other own  26%, enemy  0.0%, nobody   3%
+   the longest, a wall between (over 3 path steps)         32 =  6.5% | pearls    45: final lineage  33%, other own  56%, enemy  0.0%, nobody  11%
+   another dragon twice its length                        117 = 23.9% | pearls   136: final lineage  26%, other own  69%, enemy  0.0%, nobody   5%
+   the stub of a cut in the last 26 rounds                 78 = 15.9% | pearls   139: final lineage  15%, other own  71%, enemy  0.0%, nobody  14%
+   a dragon under twice its length (no fresh stub)         10 =  2.0% | pearls    15: final lineage  13%, other own  87%, enemy  0.0%, nobody   0%
+   readable part: the id named one turn before was in view within 3 cells in 37 of 52 = 71% of deaths with a named id; of those the named length was twice its own while the true length was not in 20 of 37 = 54%
+   'under twice its length': (own length, target length) most often: (2,3) x3, (2,2) x3, (3,2) x1, (3,4) x1, (3,5) x1, (6,3) x1
+
+-- our races on weakhold: 171 deaths
+   the longest, 3 path steps or fewer                      51 = 29.8% | pearls    64: final lineage  78%, other own  12%, enemy  1.6%, nobody   8%
+   the longest, a wall between (over 3 path steps)         30 = 17.5% | pearls    38: final lineage  24%, other own  55%, enemy 13.2%, nobody   8%
+   another dragon twice its length                         42 = 24.6% | pearls    56: final lineage  18%, other own  73%, enemy  1.8%, nobody   7%
+   the stub of a cut in the last 26 rounds                 11 =  6.4% | pearls    15: final lineage   7%, other own  73%, enemy  0.0%, nobody  20%
+   a dragon under twice its length (no fresh stub)         37 = 21.6% | pearls    38: final lineage  13%, other own  61%, enemy  5.3%, nobody  21%
+   readable part: the id named one turn before was in view within 3 cells in 12 of 18 = 67% of deaths with a named id; of those the named length was twice its own while the true length was not in 2 of 12 = 17%
+   'under twice its length': (own length, target length) most often: (2,2) x28, (2,3) x8, (3,3) x1
+
+-- our races on Default: 187 deaths
+   the longest, 3 path steps or fewer                      93 = 49.7% | pearls   130: final lineage  75%, other own  18%, enemy  0.8%, nobody   6%
+   the longest, a wall between (over 3 path steps)         48 = 25.7% | pearls    71: final lineage   8%, other own  51%, enemy  9.9%, nobody  31%
+   another dragon twice its length                         29 = 15.5% | pearls    34: final lineage   0%, other own  97%, enemy  2.9%, nobody   0%
+   the stub of a cut in the last 26 rounds                 16 =  8.6% | pearls    23: final lineage   0%, other own  78%, enemy 21.7%, nobody   0%
+   a dragon under twice its length (no fresh stub)          1 =  0.5% | pearls     2: final lineage   0%, other own 100%, enemy  0.0%, nobody   0%
+   readable part: the id named one turn before was in view within 3 cells in 49 of 56 = 88% of deaths with a named id; of those the named length was twice its own while the true length was not in 8 of 49 = 16%
+   'under twice its length': (own length, target length) most often: (3,3) x1
+
+-- our races on Trauma: 0 deaths
+
+-- our races on Queen Of Spades: 26 deaths
+   the longest, 3 path steps or fewer                      12 = 46.2% | pearls    14: final lineage   7%, other own  93%, enemy  0.0%, nobody   0%
+   the longest, a wall between (over 3 path steps)          1 =  3.8% | pearls     2: final lineage   0%, other own 100%, enemy  0.0%, nobody   0%
+   another dragon twice its length                         11 = 42.3% | pearls    12: final lineage   8%, other own  83%, enemy  0.0%, nobody   8%
+   the stub of a cut in the last 26 rounds                  1 =  3.8% | pearls     2: final lineage  50%, other own  50%, enemy  0.0%, nobody   0%
+   a dragon under twice its length (no fresh stub)          1 =  3.8% | pearls     1: final lineage   0%, other own 100%, enemy  0.0%, nobody   0%
+   'under twice its length': (own length, target length) most often: (2,3) x1
+
+-- our races on Slithery Fight: 1145 deaths
+   the longest, 3 path steps or fewer                     517 = 45.2% | pearls   793: final lineage  64%, other own  31%, enemy  1.1%, nobody   4%
+   the longest, a wall between (over 3 path steps)         38 =  3.3% | pearls    73: final lineage   5%, other own  53%, enemy  2.7%, nobody  38%
+   another dragon twice its length                        471 = 41.1% | pearls   585: final lineage   9%, other own  83%, enemy  1.7%, nobody   6%
+   the stub of a cut in the last 26 rounds                 71 =  6.2% | pearls   126: final lineage   8%, other own  83%, enemy  6.3%, nobody   3%
+   a dragon under twice its length (no fresh stub)         48 =  4.2% | pearls    70: final lineage   7%, other own  81%, enemy 10.0%, nobody   1%
+   readable part: the id named one turn before was in view within 3 cells in 120 of 148 = 81% of deaths with a named id; of those the named length was twice its own while the true length was not in 10 of 120 = 8%
+   'under twice its length': (own length, target length) most often: (2,3) x21, (2,2) x8, (3,3) x6, (3,5) x3, (3,2) x3, (3,4) x2, (5,2) x2, (5,3) x1
+
+-- our races on Around UNSW: 1262 deaths
+   the longest, 3 path steps or fewer                     307 = 24.3% | pearls   522: final lineage  58%, other own  36%, enemy  3.8%, nobody   3%
+   the longest, a wall between (over 3 path steps)         34 =  2.7% | pearls    75: final lineage  21%, other own  49%, enemy 22.7%, nobody   7%
+   another dragon twice its length                        741 = 58.7% | pearls  1022: final lineage   8%, other own  82%, enemy  6.2%, nobody   4%
+   the stub of a cut in the last 26 rounds                116 =  9.2% | pearls   217: final lineage  12%, other own  69%, enemy 13.8%, nobody   6%
+   a dragon under twice its length (no fresh stub)         64 =  5.1% | pearls    70: final lineage   6%, other own  73%, enemy 15.7%, nobody   6%
+   readable part: the id named one turn before was in view within 3 cells in 156 of 200 = 78% of deaths with a named id; of those the named length was twice its own while the true length was not in 4 of 156 = 3%
+   'under twice its length': (own length, target length) most often: (2,2) x36, (2,3) x22, (3,3) x3, (3,2) x2, (4,3) x1
+
+-- our races on Australia: 179 deaths
+   the longest, 3 path steps or fewer                      62 = 34.6% | pearls    94: final lineage  63%, other own  29%, enemy  4.3%, nobody   4%
+   the longest, a wall between (over 3 path steps)          5 =  2.8% | pearls    10: final lineage   0%, other own  40%, enemy 60.0%, nobody   0%
+   another dragon twice its length                         97 = 54.2% | pearls   123: final lineage  15%, other own  72%, enemy  9.8%, nobody   2%
+   the stub of a cut in the last 26 rounds                 10 =  5.6% | pearls    13: final lineage   0%, other own  38%, enemy 46.2%, nobody  15%
+   a dragon under twice its length (no fresh stub)          5 =  2.8% | pearls     5: final lineage   0%, other own 100%, enemy  0.0%, nobody   0%
+   readable part: the id named one turn before was in view within 3 cells in 47 of 58 = 81% of deaths with a named id; of those the named length was twice its own while the true length was not in 5 of 47 = 11%
+   'under twice its length': (own length, target length) most often: (2,2) x4, (2,3) x1
+
+-- our races on Islands: 50 deaths
+   the longest, 3 path steps or fewer                      15 = 30.0% | pearls    29: final lineage  48%, other own  24%, enemy 20.7%, nobody   7%
+   the longest, a wall between (over 3 path steps)          4 =  8.0% | pearls     4: final lineage  50%, other own  25%, enemy 25.0%, nobody   0%
+   another dragon twice its length                         23 = 46.0% | pearls    27: final lineage  11%, other own  74%, enemy 11.1%, nobody   4%
+   the stub of a cut in the last 26 rounds                  6 = 12.0% | pearls     8: final lineage   0%, other own  75%, enemy  0.0%, nobody  25%
+   a dragon under twice its length (no fresh stub)          2 =  4.0% | pearls     3: final lineage   0%, other own   0%, enemy  0.0%, nobody 100%
+   readable part: the id named one turn before was in view within 3 cells in 1 of 2 = 50% of deaths with a named id; of those the named length was twice its own while the true length was not in 0 of 1 = 0%
+   'under twice its length': (own length, target length) most often: (2,2) x1, (3,4) x1

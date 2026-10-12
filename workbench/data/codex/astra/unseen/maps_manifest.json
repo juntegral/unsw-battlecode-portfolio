@@ -1,0 +1,299 @@
+[
+  {
+    "file": "un_portalid_1.map",
+    "width": 16,
+    "height": 16,
+    "cells": 256,
+    "unit_limit": 64,
+    "dragons": 2,
+    "purpose": "Sparse portal ID: observing the mouth attempts an 8,000,001-entry array (64,000,008 bytes)."
+  },
+  {
+    "file": "un_portalid_2.map",
+    "width": 16,
+    "height": 16,
+    "cells": 256,
+    "unit_limit": 64,
+    "dragons": 2,
+    "purpose": "Geometrically identical control with dense portal ID 0."
+  },
+  {
+    "file": "un_sonar128_1.map",
+    "width": 129,
+    "height": 32,
+    "cells": 4128,
+    "unit_limit": 64,
+    "dragons": 2,
+    "purpose": "Coordinate/index boundaries: compare constructor sonar gate and dormant sight codec."
+  },
+  {
+    "file": "un_sonar128_2.map",
+    "width": 32,
+    "height": 129,
+    "cells": 4128,
+    "unit_limit": 64,
+    "dragons": 2,
+    "purpose": "Coordinate/index boundaries: compare constructor sonar gate and dormant sight codec."
+  },
+  {
+    "file": "un_sonar128_3.map",
+    "width": 128,
+    "height": 128,
+    "cells": 16384,
+    "unit_limit": 64,
+    "dragons": 2,
+    "purpose": "Coordinate/index boundaries: compare constructor sonar gate and dormant sight codec."
+  },
+  {
+    "file": "un_width64_1.map",
+    "width": 65,
+    "height": 16,
+    "cells": 1040,
+    "unit_limit": 64,
+    "dragons": 2,
+    "purpose": "Coordinate/index boundaries: compare constructor sonar gate and dormant sight codec."
+  },
+  {
+    "file": "un_cells4096_1.map",
+    "width": 64,
+    "height": 65,
+    "cells": 4160,
+    "unit_limit": 64,
+    "dragons": 2,
+    "purpose": "Coordinate/index boundaries: compare constructor sonar gate and dormant sight codec."
+  },
+  {
+    "file": "un_cells4097_1.map",
+    "width": 17,
+    "height": 241,
+    "cells": 4097,
+    "unit_limit": 64,
+    "dragons": 2,
+    "purpose": "Coordinate/index boundaries: compare constructor sonar gate and dormant sight codec."
+  },
+  {
+    "file": "un_cpu_1.map",
+    "width": 256,
+    "height": 256,
+    "cells": 65536,
+    "unit_limit": 64,
+    "dragons": 128,
+    "purpose": "Largest legal open board, 64 starters per side (default unit cap reached); full-map floods and surveys."
+  },
+  {
+    "file": "un_unitcap_1.map",
+    "width": 128,
+    "height": 128,
+    "cells": 16384,
+    "unit_limit": 8,
+    "dragons": 16,
+    "purpose": "Custom unit limit and fast births: fixed 56/60 thresholds; high cumulative dragon IDs under churn are not guaranteed."
+  },
+  {
+    "file": "un_unitcap_2.map",
+    "width": 128,
+    "height": 128,
+    "cells": 16384,
+    "unit_limit": 256,
+    "dragons": 128,
+    "purpose": "Custom unit limit and fast births: fixed 56/60 thresholds; high cumulative dragon IDs under churn are not guaranteed."
+  },
+  {
+    "file": "un_id32768_1.map",
+    "width": 128,
+    "height": 128,
+    "cells": 16384,
+    "unit_limit": 512,
+    "dragons": 256,
+    "purpose": "Custom unit limit and fast births: fixed 56/60 thresholds; high cumulative dragon IDs under churn are not guaranteed."
+  },
+  {
+    "file": "un_queen600_1.map",
+    "width": 24,
+    "height": 25,
+    "cells": 600,
+    "unit_limit": 64,
+    "dragons": 2,
+    "purpose": "Area/aspect boundary for queen identity gate, center pull, aggression or leader grow timing."
+  },
+  {
+    "file": "un_queen600_2.map",
+    "width": 24,
+    "height": 26,
+    "cells": 624,
+    "unit_limit": 64,
+    "dragons": 2,
+    "purpose": "Area/aspect boundary for queen identity gate, center pull, aggression or leader grow timing."
+  },
+  {
+    "file": "un_center700_1.map",
+    "width": 28,
+    "height": 25,
+    "cells": 700,
+    "unit_limit": 64,
+    "dragons": 2,
+    "purpose": "Area/aspect boundary for queen identity gate, center pull, aggression or leader grow timing."
+  },
+  {
+    "file": "un_center700_2.map",
+    "width": 28,
+    "height": 26,
+    "cells": 728,
+    "unit_limit": 64,
+    "dragons": 2,
+    "purpose": "Area/aspect boundary for queen identity gate, center pull, aggression or leader grow timing."
+  },
+  {
+    "file": "un_center1000_1.map",
+    "width": 50,
+    "height": 20,
+    "cells": 1000,
+    "unit_limit": 64,
+    "dragons": 2,
+    "purpose": "Area/aspect boundary for queen identity gate, center pull, aggression or leader grow timing."
+  },
+  {
+    "file": "un_center1000_2.map",
+    "width": 51,
+    "height": 20,
+    "cells": 1020,
+    "unit_limit": 64,
+    "dragons": 2,
+    "purpose": "Area/aspect boundary for queen identity gate, center pull, aggression or leader grow timing."
+  },
+  {
+    "file": "un_aggressive1200_1.map",
+    "width": 48,
+    "height": 25,
+    "cells": 1200,
+    "unit_limit": 64,
+    "dragons": 2,
+    "purpose": "Area/aspect boundary for queen identity gate, center pull, aggression or leader grow timing."
+  },
+  {
+    "file": "un_aggressive1200_2.map",
+    "width": 49,
+    "height": 25,
+    "cells": 1225,
+    "unit_limit": 64,
+    "dragons": 2,
+    "purpose": "Area/aspect boundary for queen identity gate, center pull, aggression or leader grow timing."
+  },
+  {
+    "file": "un_aspect_1.map",
+    "width": 40,
+    "height": 16,
+    "cells": 640,
+    "unit_limit": 64,
+    "dragons": 2,
+    "purpose": "Area/aspect boundary for queen identity gate, center pull, aggression or leader grow timing."
+  },
+  {
+    "file": "un_aspect_2.map",
+    "width": 16,
+    "height": 40,
+    "cells": 640,
+    "unit_limit": 64,
+    "dragons": 2,
+    "purpose": "Area/aspect boundary for queen identity gate, center pull, aggression or leader grow timing."
+  },
+  {
+    "file": "un_symmetry_1.map",
+    "width": 32,
+    "height": 24,
+    "cells": 768,
+    "unit_limit": 64,
+    "dragons": 2,
+    "purpose": "Supported declared symmetry or legal omission/asymmetry. SYM_INFER is false in live one5; do not enable it unvalidated."
+  },
+  {
+    "file": "un_symmetry_2.map",
+    "width": 32,
+    "height": 24,
+    "cells": 768,
+    "unit_limit": 64,
+    "dragons": 2,
+    "purpose": "Supported declared symmetry or legal omission/asymmetry. SYM_INFER is false in live one5; do not enable it unvalidated."
+  },
+  {
+    "file": "un_symmetry_3.map",
+    "width": 32,
+    "height": 24,
+    "cells": 768,
+    "unit_limit": 64,
+    "dragons": 2,
+    "purpose": "Supported declared symmetry or legal omission/asymmetry. SYM_INFER is false in live one5; do not enable it unvalidated."
+  },
+  {
+    "file": "un_symmetry_4.map",
+    "width": 32,
+    "height": 24,
+    "cells": 768,
+    "unit_limit": 64,
+    "dragons": 2,
+    "purpose": "Supported declared symmetry or legal omission/asymmetry. SYM_INFER is false in live one5; do not enable it unvalidated."
+  },
+  {
+    "file": "un_edgewrap_1.map",
+    "width": 16,
+    "height": 16,
+    "cells": 256,
+    "unit_limit": 64,
+    "dragons": 2,
+    "purpose": "Torus with kelp walls on seam edges (a physically closed rectangle)."
+  },
+  {
+    "file": "un_portalonly_1.map",
+    "width": 32,
+    "height": 16,
+    "cells": 512,
+    "unit_limit": 64,
+    "dragons": 2,
+    "purpose": "Portal access between sealed halves: remote endpoint discovery and size-gated queen portal ban."
+  },
+  {
+    "file": "un_startlength_1.map",
+    "width": 32,
+    "height": 16,
+    "cells": 512,
+    "unit_limit": 64,
+    "dragons": 2,
+    "purpose": "Two-dragon start, queen length 2 (legal)."
+  },
+  {
+    "file": "un_startlength_2.map",
+    "width": 128,
+    "height": 32,
+    "cells": 4096,
+    "unit_limit": 64,
+    "dragons": 2,
+    "purpose": "Two legal long starters (1116): body beyond vision, QH leader length saturates at 1023."
+  },
+  {
+    "file": "un_startlayout_1.map",
+    "width": 16,
+    "height": 16,
+    "cells": 256,
+    "unit_limit": 64,
+    "dragons": 3,
+    "purpose": "Odd starter count, B queen has id 0; non-mirrored lengths and positions."
+  },
+  {
+    "file": "un_timers_1.map",
+    "width": 32,
+    "height": 32,
+    "cells": 1024,
+    "unit_limit": 64,
+    "dragons": 2,
+    "purpose": "Timers from 1 to signed-int max; sparse fountains and slow/absent supply challenge hot/barren heuristics."
+  },
+  {
+    "file": "un_threatreach_1.map",
+    "width": 128,
+    "height": 64,
+    "cells": 8192,
+    "unit_limit": 64,
+    "dragons": 4,
+    "purpose": "Enemy nonqueen L61 head visible beside our queen; most body outside 7x7, actual free reach16 versus visible stub and threat depth caps."
+  }
+]

@@ -1,0 +1,155 @@
+games walked: {'SSS large': 50, 'SSS other': 103, 'Vibing++ large': 52, 'Vibing++ other': 113, 'forgot large': 45, 'forgot other': 129, 'meow live large': 77, 'meow live other': 198, 'meow other cand large': 22, 'meow other cand other': 62, 'meow tc30 large': 12, 'meow tc30 other': 30, 'opp of meow large': 111, 'opp of meow other': 290, 'top3 large': 147, 'top3 other': 345}
+
+===== maps over 1,200 cells
+-- meeting: the enemy head is on the next cell.  Rammed, share of such turns
+   group            | all | enemy not shorter | ... and own other heads >= enemy heads in view | ... and fewer own heads (alone or outnumbered) | enemy shorter
+   meow live        |   6% of   7531 |   8% of   5255 |  15% of   2064 |   3% of   3191 |   3% of   4552
+   meow tc30        |  26% of    962 |  33% of    726 |  87% of    250 |   5% of    476 |   3% of    472
+   meow other cand  |   6% of   1764 |   7% of   1280 |  15% of    502 |   2% of    778 |   2% of    968
+   opp of meow      |  36% of   6185 |  42% of   4450 |  78% of   1613 |  22% of   2837 |  21% of   3470
+   Vibing++         |  34% of   4406 |  40% of   2889 |  90% of    759 |  22% of   2130 |  21% of   3034
+   SSS              |  43% of   3483 |  54% of   2279 |  98% of    962 |  21% of   1317 |  24% of   2408
+   forgot           |  36% of   4596 |  41% of   3088 |  93% of    950 |  19% of   2138 |  26% of   3016
+   top3             |  37% of  12485 |  44% of   8256 |  94% of   2671 |  21% of   5585 |  24% of   8458
+   enemy not shorter, by round (0-149 | 150-299 | 300+), all then alone-or-outnumbered
+   meow live        |   8% of   1725 |   9% of   2028 |   6% of   1502  ||    1% of    966 |   3% of   1288 |   5% of    937
+   meow tc30        |  43% of    204 |  32% of    310 |  25% of    212  ||    5% of    118 |   4% of    213 |   5% of    145
+   meow other cand  |   7% of    451 |   8% of    485 |   6% of    344  ||    0% of    267 |   2% of    300 |   4% of    211
+   opp of meow      |  41% of   1885 |  43% of   1475 |  43% of   1090  ||   21% of   1245 |  23% of    929 |  21% of    663
+   Vibing++         |  49% of    759 |  40% of   1098 |  33% of   1032  ||   30% of    529 |  22% of    804 |  17% of    797
+   SSS              |  54% of    630 |  53% of    901 |  54% of    748  ||   20% of    365 |  20% of    510 |  24% of    442
+   forgot           |  41% of    878 |  42% of   1239 |  40% of    971  ||   17% of    590 |  19% of    853 |  19% of    695
+   top3             |  47% of   2267 |  45% of   3238 |  41% of   2751  ||   22% of   1484 |  20% of   2167 |  19% of   1934
+-- charge: the enemy head is 2-3 free steps away, inside reach.  Rammed, share of such turns
+   group            | all | enemy not shorter | ... and own other heads >= enemy heads in view | ... and fewer own heads (alone or outnumbered) | enemy shorter
+   meow live        |   1% of   8851 |   3% of   2936 |   9% of   1068 |   0% of   1868 |   0% of  11830
+   meow tc30        |   7% of   1144 |  20% of    409 |  65% of    124 |   0% of    285 |   0% of   1470
+   meow other cand  |   1% of   2402 |   2% of    831 |   5% of    340 |   0% of    491 |   0% of   3142
+   opp of meow      |  15% of  17141 |  26% of   3985 |  58% of   1445 |   8% of   2540 |  12% of  26312
+   Vibing++         |  28% of   5597 |  45% of   1497 |  88% of    520 |  23% of    977 |  22% of   8200
+   SSS              |  21% of   5933 |  31% of   1465 |  85% of    476 |   5% of    989 |  18% of   8936
+   forgot           |  20% of   4710 |  24% of   1357 |  61% of    446 |   7% of    911 |  18% of   6706
+   top3             |  23% of  16240 |  34% of   4319 |  78% of   1442 |  12% of   2877 |  19% of  23842
+   enemy not shorter, by round (0-149 | 150-299 | 300+), all then alone-or-outnumbered
+   meow live        |   5% of   1036 |   3% of   1116 |   2% of    784  ||    0% of    617 |   0% of    743 |   0% of    508
+   meow tc30        |  34% of    119 |  20% of    166 |   6% of    124  ||    0% of     76 |   1% of    117 |   0% of     92
+   meow other cand  |   2% of    349 |   2% of    313 |   1% of    169  ||    0% of    209 |   0% of    185 |   0% of     97
+   opp of meow      |  27% of   1483 |  27% of   1496 |  23% of   1006  ||    8% of    989 |   9% of    899 |   5% of    652
+   Vibing++         |  49% of    388 |  45% of    617 |  43% of    492  ||   24% of    243 |  23% of    398 |  23% of    336
+   SSS              |  31% of    340 |  31% of    640 |  32% of    485  ||    5% of    236 |   5% of    430 |   6% of    323
+   forgot           |  22% of    430 |  32% of    558 |  15% of    369  ||    4% of    317 |   9% of    354 |   6% of    240
+   top3             |  34% of   1158 |  36% of   1815 |  31% of   1346  ||   10% of    796 |  12% of   1182 |  12% of    899
+-- meeting, by the enemy's length against the own: longer / same / shorter, each as: own heads >= enemy heads in view, then fewer
+   meow live        |  16% of    533 ,   3% of    602   ;    15% of   1531 ,   3% of   2589   ;     2% of    623 ,   3% of   1653
+   meow tc30        |  87% of     78 ,   4% of    102   ;    87% of    172 ,   5% of    374   ;     3% of     58 ,   3% of    178
+   meow other cand  |  13% of    173 ,   1% of    143   ;    16% of    329 ,   2% of    635   ;     1% of    134 ,   3% of    350
+   opp of meow      |  91% of    550 ,  46% of    765   ;    72% of   1063 ,  12% of   2072   ;    48% of    507 ,  10% of   1228
+   Vibing++         |  89% of    201 ,  42% of    304   ;    90% of    558 ,  19% of   1826   ;    68% of    374 ,   6% of   1143
+   SSS              |  98% of    216 ,  93% of    245   ;    98% of    746 ,   5% of   1072   ;    63% of    413 ,   3% of    791
+   forgot           |  98% of    245 ,  55% of    265   ;    91% of    705 ,  13% of   1873   ;    78% of    370 ,   9% of   1138
+   top3             |  95% of    662 ,  61% of    814   ;    93% of   2009 ,  14% of   4771   ;    70% of   1157 ,   6% of   3072
+-- charge, by the enemy's length against the own: longer / same / shorter, each as: own heads >= enemy heads in view, then fewer
+   meow live        |  12% of    190 ,   0% of    276   ;     9% of    878 ,   0% of   1592   ;     0% of   1966 ,   0% of   3949
+   meow tc30        |  58% of     26 ,   0% of     40   ;    66% of     98 ,   0% of    245   ;     0% of    223 ,   0% of    512
+   meow other cand  |   3% of     94 ,   0% of     85   ;     5% of    246 ,   0% of    406   ;     0% of    533 ,   0% of   1038
+   opp of meow      |  83% of    170 ,  42% of    218   ;    55% of   1275 ,   5% of   2322   ;    29% of   4720 ,   2% of   8436
+   Vibing++         |  90% of     79 ,  41% of    105   ;    87% of    441 ,  21% of    872   ;    55% of   1366 ,   5% of   2734
+   SSS              |  90% of     61 ,  59% of     85   ;    84% of    415 ,   0% of    904   ;    44% of   1781 ,   0% of   2687
+   forgot           |  83% of     63 ,  20% of     80   ;    57% of    383 ,   5% of    831   ;    46% of   1149 ,   3% of   2204
+   top3             |  88% of    203 ,  40% of    270   ;    77% of   1239 ,   9% of   2607   ;    48% of   4296 ,   3% of   7625
+-- rams made per game on small enemy heads (meetings + charges), and chances per game in brackets:
+   group            | not outnumbered: enemy longer, same, shorter | alone or outnumbered: enemy longer, same, shorter | all
+   meow live        |  1.4 (  9.4),  3.9 ( 31.3),  0.2 ( 33.6) |  0.2 ( 11.4),  1.0 ( 54.3),  0.7 ( 72.8) |   7.5
+   meow tc30        |  6.9 (  8.7), 17.9 ( 22.5),  0.2 ( 23.4) |  0.3 ( 11.8),  1.6 ( 51.6),  0.6 ( 57.5) |  27.6
+   meow other cand  |  1.1 ( 12.1),  3.0 ( 26.1),  0.2 ( 30.3) |  0.0 ( 10.4),  0.7 ( 47.3),  0.5 ( 63.1) |   5.5
+   opp of meow      |  5.8 (  6.5), 13.1 ( 21.1), 14.7 ( 47.1) |  4.0 (  8.9),  3.3 ( 39.6),  3.0 ( 87.1) |  43.9
+   Vibing++         |  4.8 (  5.4), 17.1 ( 19.2), 19.4 ( 33.5) |  3.3 (  7.9), 10.2 ( 51.9),  3.9 ( 74.6) |  58.6
+   SSS              |  5.3 (  5.5), 21.5 ( 23.2), 20.8 ( 43.9) |  5.5 (  6.6),  1.1 ( 39.5),  0.7 ( 69.6) |  55.0
+   forgot           |  6.5 (  6.8), 19.1 ( 24.2), 18.0 ( 33.8) |  3.6 (  7.7),  6.6 ( 60.1),  3.9 ( 74.3) |  57.7
+   top3             |  5.5 (  5.9), 19.2 ( 22.1), 19.4 ( 37.1) |  4.1 (  7.4),  6.0 ( 50.2),  2.8 ( 72.8) |  57.1
+-- chances per game (enemy not shorter): meetings, charge chances; and rams made from them
+   meow live        meetings  68.2 a game, rammed  5.3; charge chances  38.1, rammed  1.3
+   meow tc30        meetings  60.5 a game, rammed 20.0; charge chances  34.1, rammed  6.8
+   meow other cand  meetings  58.2 a game, rammed  4.2; charge chances  37.8, rammed  0.7
+   opp of meow      meetings  40.1 a game, rammed 16.9; charge chances  35.9, rammed  9.3
+   Vibing++         meetings  55.6 a game, rammed 22.2; charge chances  28.8, rammed 13.1
+   SSS              meetings  45.6 a game, rammed 24.4; charge chances  29.3, rammed  9.1
+   forgot           meetings  68.6 a game, rammed 28.4; charge chances  30.2, rammed  7.3
+   top3             meetings  56.2 a game, rammed 24.9; charge chances  29.4, rammed 10.0
+
+===== maps of 1,200 cells or fewer
+-- meeting: the enemy head is on the next cell.  Rammed, share of such turns
+   group            | all | enemy not shorter | ... and own other heads >= enemy heads in view | ... and fewer own heads (alone or outnumbered) | enemy shorter
+   meow live        |  33% of   4002 |  40% of   2995 |  88% of   1165 |   9% of   1830 |  10% of   2014
+   meow tc30        |  25% of    731 |  33% of    507 |  99% of    134 |   9% of    373 |   9% of    448
+   meow other cand  |  37% of    951 |  48% of    687 |  95% of    289 |  14% of    398 |  10% of    528
+   opp of meow      |  31% of   6206 |  36% of   4522 |  68% of   1485 |  20% of   3037 |  20% of   3368
+   Vibing++         |  39% of   2036 |  45% of   1445 |  89% of    428 |  27% of   1017 |  25% of   1182
+   SSS              |  54% of   1312 |  61% of    914 |  98% of    425 |  30% of    489 |  36% of    796
+   forgot           |  36% of   2507 |  42% of   1742 |  86% of    570 |  21% of   1172 |  23% of   1530
+   top3             |  41% of   5855 |  47% of   4101 |  90% of   1423 |  25% of   2678 |  27% of   3508
+   enemy not shorter, by round (0-149 | 150-299 | 300+), all then alone-or-outnumbered
+   meow live        |  43% of   1107 |  42% of   1219 |  30% of    669  ||    5% of    636 |  10% of    760 |  13% of    434
+   meow tc30        |  43% of    151 |  35% of    206 |  18% of    150  ||    9% of     93 |  10% of    147 |   8% of    133
+   meow other cand  |  45% of    244 |  58% of    281 |  35% of    162  ||    6% of    142 |  19% of    140 |  16% of    116
+   opp of meow      |  32% of   1739 |  36% of   2010 |  41% of    773  ||   17% of   1249 |  20% of   1349 |  27% of    439
+   Vibing++         |  42% of    584 |  43% of    573 |  54% of    288  ||   24% of    414 |  25% of    412 |  37% of    191
+   SSS              |  58% of    391 |  61% of    342 |  68% of    181  ||   21% of    203 |  34% of    195 |  38% of     91
+   forgot           |  42% of    757 |  43% of    708 |  42% of    277  ||   18% of    494 |  21% of    466 |  26% of    212
+   top3             |  46% of   1732 |  47% of   1623 |  53% of    746  ||   21% of   1111 |  25% of   1073 |  33% of    494
+-- charge: the enemy head is 2-3 free steps away, inside reach.  Rammed, share of such turns
+   group            | all | enemy not shorter | ... and own other heads >= enemy heads in view | ... and fewer own heads (alone or outnumbered) | enemy shorter
+   meow live        |   8% of   4074 |  26% of   1311 |  77% of    448 |   0% of    863 |   0% of   5526
+   meow tc30        |   5% of    658 |  13% of    262 |  71% of     48 |   0% of    214 |   0% of    792
+   meow other cand  |   9% of    997 |  29% of    306 |  80% of    110 |   0% of    196 |   0% of   1382
+   opp of meow      |  17% of   6769 |  27% of   2155 |  50% of    943 |   9% of   1212 |  13% of   9228
+   Vibing++         |  29% of   2209 |  44% of    684 |  84% of    253 |  20% of    431 |  22% of   3050
+   SSS              |  32% of   1763 |  41% of    491 |  93% of    204 |   5% of    287 |  28% of   2544
+   forgot           |  22% of   2321 |  29% of    748 |  64% of    259 |  10% of    489 |  18% of   3146
+   top3             |  27% of   6293 |  37% of   1923 |  79% of    716 |  12% of   1207 |  22% of   8740
+   enemy not shorter, by round (0-149 | 150-299 | 300+), all then alone-or-outnumbered
+   meow live        |  29% of    457 |  30% of    545 |  16% of    309  ||    0% of    297 |   0% of    364 |   0% of    202
+   meow tc30        |  18% of     80 |  19% of    102 |   1% of     80  ||    0% of     59 |   0% of     80 |   0% of     75
+   meow other cand  |  45% of    103 |  27% of    143 |   5% of     60  ||    0% of     50 |   0% of     97 |   0% of     49
+   opp of meow      |  29% of    707 |  31% of    945 |  17% of    503  ||   10% of    437 |   9% of    505 |   5% of    270
+   Vibing++         |  41% of    287 |  45% of    261 |  48% of    136  ||   21% of    201 |  19% of    159 |  17% of     71
+   SSS              |  46% of    194 |  44% of    197 |  26% of    100  ||    6% of    110 |   5% of    110 |   1% of     67
+   forgot           |  31% of    320 |  33% of    290 |  14% of    138  ||    8% of    213 |  12% of    186 |  11% of     90
+   top3             |  38% of    801 |  40% of    748 |  29% of    374  ||   13% of    524 |  13% of    455 |  10% of    228
+-- meeting, by the enemy's length against the own: longer / same / shorter, each as: own heads >= enemy heads in view, then fewer
+   meow live        |  88% of    336 ,  11% of    395   ;    89% of    829 ,   9% of   1435   ;    11% of    283 ,  10% of    724
+   meow tc30        | 100% of     32 ,   8% of     98   ;    98% of    102 ,   9% of    275   ;    14% of     42 ,   8% of    182
+   meow other cand  |  93% of     86 ,  19% of     81   ;    96% of    203 ,  12% of    317   ;    18% of     74 ,   7% of    190
+   opp of meow      |  77% of    447 ,  52% of    495   ;    64% of   1038 ,  14% of   2542   ;    42% of    440 ,  12% of   1244
+   Vibing++         |  92% of    129 ,  43% of    164   ;    87% of    299 ,  24% of    853   ;    64% of    146 ,  11% of    445
+   SSS              |  98% of    102 ,  83% of    102   ;    98% of    323 ,  16% of    387   ;    83% of    150 ,   8% of    248
+   forgot           |  94% of    165 ,  47% of    179   ;    83% of    405 ,  16% of    993   ;    61% of    195 ,  11% of    570
+   top3             |  94% of    396 ,  54% of    445   ;    89% of   1027 ,  19% of   2233   ;    69% of    491 ,  10% of   1263
+-- charge, by the enemy's length against the own: longer / same / shorter, each as: own heads >= enemy heads in view, then fewer
+   meow live        |  82% of     49 ,   0% of     77   ;    76% of    399 ,   0% of    786   ;     0% of    968 ,   0% of   1795
+   meow tc30        |  50% of      8 ,   0% of     12   ;    75% of     40 ,   0% of    202   ;     0% of    116 ,   0% of    280
+   meow other cand  |  67% of     15 ,   0% of     11   ;    82% of     95 ,   0% of    185   ;     0% of    278 ,   0% of    413
+   opp of meow      |  56% of    102 ,  34% of    116   ;    50% of    841 ,   6% of   1096   ;    27% of   1912 ,   3% of   2702
+   Vibing++         |  88% of     43 ,  37% of     41   ;    83% of    210 ,  18% of    390   ;    51% of    558 ,   6% of    967
+   SSS              |  94% of     16 ,  42% of     31   ;    93% of    188 ,   0% of    256   ;    58% of    606 ,   0% of    666
+   forgot           |  58% of     38 ,  26% of     42   ;    65% of    221 ,   9% of    447   ;    45% of    562 ,   3% of   1011
+   top3             |  77% of     97 ,  34% of    114   ;    80% of    619 ,  10% of   1093   ;    51% of   1726 ,   3% of   2644
+-- rams made per game on small enemy heads (meetings + charges), and chances per game in brackets:
+   group            | not outnumbered: enemy longer, same, shorter | alone or outnumbered: enemy longer, same, shorter | all
+   meow live        |  1.7 (  1.9),  5.2 (  6.2),  0.2 (  6.3) |  0.2 (  2.4),  0.6 ( 11.2),  0.4 ( 12.7) |   8.3
+   meow tc30        |  1.2 (  1.3),  4.3 (  4.7),  0.2 (  5.3) |  0.3 (  3.7),  0.8 ( 15.9),  0.5 ( 15.4) |   7.4
+   meow other cand  |  1.5 (  1.6),  4.4 (  4.8),  0.2 (  5.7) |  0.2 (  1.5),  0.6 (  8.1),  0.2 (  9.7) |   7.1
+   opp of meow      |  1.4 (  1.9),  3.7 (  6.5),  2.4 (  8.1) |  1.0 (  2.1),  1.4 ( 12.5),  0.8 ( 13.6) |  10.8
+   Vibing++         |  1.4 (  1.5),  3.9 (  4.5),  3.3 (  6.2) |  0.8 (  1.8),  2.4 ( 11.0),  0.9 ( 12.5) |  12.7
+   SSS              |  1.1 (  1.1),  4.8 (  5.0),  4.6 (  7.3) |  1.0 (  1.3),  0.6 (  6.2),  0.2 (  8.9) |  12.2
+   forgot           |  1.4 (  1.6),  3.7 (  4.9),  2.9 (  5.9) |  0.7 (  1.7),  1.5 ( 11.2),  0.7 ( 12.3) |  11.0
+   top3             |  1.3 (  1.4),  4.1 (  4.8),  3.6 (  6.4) |  0.8 (  1.6),  1.5 (  9.6),  0.6 ( 11.3) |  11.9
+-- chances per game (enemy not shorter): meetings, charge chances; and rams made from them
+   meow live        meetings  15.1 a game, rammed  6.1; charge chances   6.6, rammed  1.7
+   meow tc30        meetings  16.9 a game, rammed  5.5; charge chances   8.7, rammed  1.1
+   meow other cand  meetings  11.1 a game, rammed  5.3; charge chances   4.9, rammed  1.4
+   opp of meow      meetings  15.6 a game, rammed  5.5; charge chances   7.4, rammed  2.0
+   Vibing++         meetings  12.8 a game, rammed  5.8; charge chances   6.1, rammed  2.6
+   SSS              meetings   8.9 a game, rammed  5.4; charge chances   4.8, rammed  2.0
+   forgot           meetings  13.5 a game, rammed  5.7; charge chances   5.8, rammed  1.7
+   top3             meetings  11.9 a game, rammed  5.6; charge chances   5.6, rammed  2.1

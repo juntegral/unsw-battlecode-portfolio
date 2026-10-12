@@ -1,0 +1,168 @@
+[
+  {
+    "variant": "q18",
+    "key": "proxy4_king:big_empty:A:1",
+    "queenDeath": {
+      "r": 76,
+      "cause": "sac",
+      "blk": "-",
+      "allyBlock": 0,
+      "enemyBlock": 0,
+      "L": 10,
+      "head": {
+        "x": 10,
+        "y": 17
+      },
+      "lastIndicator": {
+        "r": 76,
+        "text": "EES v3.6 d6 L10 esc E=F"
+      },
+      "split": null,
+      "precursor": "sac while L>=4",
+      "other": null
+    },
+    "firstDifferenceBase": {
+      "r": 414,
+      "event": {
+        "type": "dragonAction",
+        "id": 236,
+        "action": {
+          "kind": "move",
+          "steps": [
+            "W"
+          ]
+        }
+      },
+      "id": 236,
+      "indicator": {
+        "r": 414,
+        "text": "W v5.6 d7 L7 g23 E=F"
+      }
+    },
+    "firstDifferenceVariant": {
+      "r": 414,
+      "event": {
+        "type": "dragonAction",
+        "id": 236,
+        "action": {
+          "kind": "move",
+          "steps": [
+            "S"
+          ]
+        }
+      },
+      "id": 236,
+      "indicator": {
+        "r": 414,
+        "text": "S v5.7 d6 L7 g23 E=F"
+      }
+    },
+    "previousBase": {
+      "r": 414,
+      "event": {
+        "type": "turnStart",
+        "id": 236
+      },
+      "id": 236,
+      "indicator": {
+        "r": 413,
+        "text": "S v6.5 d7 L7 g19 E=F"
+      }
+    },
+    "previousVariant": {
+      "r": 414,
+      "event": {
+        "type": "turnStart",
+        "id": 236
+      },
+      "id": 236,
+      "indicator": {
+        "r": 413,
+        "text": "S v6.5 d7 L7 g19 E=F"
+      }
+    }
+  },
+  {
+    "variant": "q18b2",
+    "key": "proxy4_king:big_empty:A:1",
+    "queenDeath": {
+      "r": 76,
+      "cause": "sac",
+      "blk": "-",
+      "allyBlock": 0,
+      "enemyBlock": 0,
+      "L": 10,
+      "head": {
+        "x": 10,
+        "y": 17
+      },
+      "lastIndicator": {
+        "r": 76,
+        "text": "EES v3.6 d6 L10 esc E=F"
+      },
+      "split": null,
+      "precursor": "sac while L>=4",
+      "other": null
+    },
+    "firstDifferenceBase": {
+      "r": 386,
+      "event": {
+        "type": "dragonAction",
+        "id": 183,
+        "action": {
+          "kind": "move",
+          "steps": [
+            "E"
+          ]
+        }
+      },
+      "id": 183,
+      "indicator": {
+        "r": 386,
+        "text": "E v7.5 d7 L5 g14 E=F"
+      }
+    },
+    "firstDifferenceVariant": {
+      "r": 386,
+      "event": {
+        "type": "dragonAction",
+        "id": 183,
+        "action": {
+          "kind": "move",
+          "steps": [
+            "S"
+          ]
+        }
+      },
+      "id": 183,
+      "indicator": {
+        "r": 386,
+        "text": "S v7.4 d6 L5 g14 E=F"
+      }
+    },
+    "previousBase": {
+      "r": 386,
+      "event": {
+        "type": "turnStart",
+        "id": 183
+      },
+      "id": 183,
+      "indicator": {
+        "r": 385,
+        "text": "E v7.6 d7 L5 g15 bl30@60,16 k0 E=F"
+      }
+    },
+    "previousVariant": {
+      "r": 386,
+      "event": {
+        "type": "turnStart",
+        "id": 183
+      },
+      "id": 183,
+      "indicator": {
+        "r": 385,
+        "text": "E v7.6 d7 L5 g15 bl30@60,16 k0 E=F"
+      }
+    }
+  }
+]

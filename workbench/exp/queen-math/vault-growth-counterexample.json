@@ -1,0 +1,130 @@
+{
+  "Q": 9,
+  "C": 10,
+  "start_body": [
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      4,
+      0
+    ],
+    [
+      3,
+      0
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "pearl": [
+    0,
+    1
+  ],
+  "requested_move": "WNE",
+  "events": [
+    {
+      "event": "step",
+      "id": 0,
+      "dest": [
+        0,
+        1
+      ],
+      "paid": false,
+      "ate": true,
+      "length": 10
+    },
+    {
+      "event": "death",
+      "id": 0,
+      "reason": "Hit Self",
+      "body": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "drops": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ]
+    }
+  ],
+  "explanation": "first free step eats and fills cycle; second step's destination is own tail before advance"
+}

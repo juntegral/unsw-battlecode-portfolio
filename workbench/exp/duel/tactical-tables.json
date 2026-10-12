@@ -1,0 +1,471 @@
+{
+  "at": "2026-10-01 23:21:58 KST",
+  "N_records": 1146139,
+  "missing": [],
+  "nonzeroChecks": [],
+  "verification": {
+    "headPrimary": 1065327,
+    "headIndependent": 1065327,
+    "bodyPrimary": 46524,
+    "bodyIndependent": 46524
+  },
+  "groups": {
+    "population/winner": {
+      "N": 1127966,
+      "headContacts": 1049390,
+      "bodyKills": 23736,
+      "bodyDeaths": 21375,
+      "nearWallSelf": 15767,
+      "crowdedN": 1057663,
+      "nearHeadN": 1121183,
+      "patterns": {
+        "cut_off": 15839,
+        "near_head": 19817,
+        "coil": 3900,
+        "far_head": 3919,
+        "other_body_or_near_wall": 1798,
+        "sprint_cut": 1763,
+        "pearl_bait": 220,
+        "wall_pin": 216
+      },
+      "ourDeathPatterns": {
+        "cut_off": 15130,
+        "other_body_or_near_wall": 5355,
+        "wall_pin": 10228,
+        "pearl_bait": 1154,
+        "coil": 4011,
+        "sprint_cut": 1264
+      },
+      "priorDecisions": {
+        "N": 489985,
+        "free2": 371591,
+        "len2": 249348,
+        "pearls2": 136991
+      },
+      "examples": {}
+    },
+    "strict/winner": {
+      "N": 293693,
+      "headContacts": 276491,
+      "bodyKills": 5419,
+      "bodyDeaths": 5263,
+      "nearWallSelf": 2853,
+      "crowdedN": 277176,
+      "nearHeadN": 292277,
+      "patterns": {
+        "cut_off": 3612,
+        "near_head": 4631,
+        "coil": 796,
+        "far_head": 788,
+        "other_body_or_near_wall": 350,
+        "sprint_cut": 583,
+        "pearl_bait": 36,
+        "wall_pin": 42
+      },
+      "ourDeathPatterns": {
+        "cut_off": 3724,
+        "other_body_or_near_wall": 961,
+        "wall_pin": 1928,
+        "pearl_bait": 201,
+        "coil": 849,
+        "sprint_cut": 453
+      },
+      "priorDecisions": {
+        "N": 127693,
+        "free2": 98183,
+        "len2": 69930,
+        "pearls2": 32877
+      },
+      "examples": {}
+    },
+    "population/loser": {
+      "N": 1127966,
+      "headContacts": 1049390,
+      "bodyKills": 21375,
+      "bodyDeaths": 23736,
+      "nearWallSelf": 17698,
+      "crowdedN": 1057663,
+      "nearHeadN": 1121183,
+      "patterns": {
+        "cut_off": 15130,
+        "near_head": 18511,
+        "sprint_cut": 1264,
+        "other_body_or_near_wall": 1389,
+        "far_head": 2864,
+        "pearl_bait": 155,
+        "coil": 3273,
+        "wall_pin": 164
+      },
+      "ourDeathPatterns": {
+        "cut_off": 15839,
+        "coil": 4632,
+        "wall_pin": 11730,
+        "other_body_or_near_wall": 6191,
+        "pearl_bait": 1279,
+        "sprint_cut": 1763
+      },
+      "priorDecisions": {
+        "N": 625486,
+        "free2": 481338,
+        "len2": 322368,
+        "pearls2": 163746
+      },
+      "examples": {}
+    },
+    "strict/loser": {
+      "N": 293693,
+      "headContacts": 276491,
+      "bodyKills": 5263,
+      "bodyDeaths": 5419,
+      "nearWallSelf": 3667,
+      "crowdedN": 277176,
+      "nearHeadN": 292277,
+      "patterns": {
+        "cut_off": 3724,
+        "near_head": 4635,
+        "sprint_cut": 453,
+        "other_body_or_near_wall": 277,
+        "far_head": 628,
+        "pearl_bait": 40,
+        "coil": 731,
+        "wall_pin": 38
+      },
+      "ourDeathPatterns": {
+        "cut_off": 3612,
+        "coil": 933,
+        "wall_pin": 2419,
+        "other_body_or_near_wall": 1259,
+        "pearl_bait": 280,
+        "sprint_cut": 583
+      },
+      "priorDecisions": {
+        "N": 162439,
+        "free2": 126573,
+        "len2": 89847,
+        "pearls2": 39838
+      },
+      "examples": {}
+    },
+    "under/known": {
+      "N": 6285,
+      "headContacts": 5963,
+      "bodyKills": 161,
+      "bodyDeaths": 54,
+      "nearWallSelf": 7,
+      "crowdedN": 5840,
+      "nearHeadN": 6269,
+      "patterns": {
+        "cut_off": 143,
+        "near_head": 152,
+        "coil": 11,
+        "far_head": 9,
+        "other_body_or_near_wall": 6,
+        "pearl_bait": 1
+      },
+      "ourDeathPatterns": {
+        "wall_pin": 2,
+        "cut_off": 42,
+        "other_body_or_near_wall": 8,
+        "coil": 9
+      },
+      "priorDecisions": {
+        "N": 2983,
+        "free2": 2375,
+        "len2": 1452,
+        "pearls2": 983
+      },
+      "examples": {}
+    },
+    "elite/loser": {
+      "N": 477820,
+      "headContacts": 447181,
+      "bodyKills": 9865,
+      "bodyDeaths": 8319,
+      "nearWallSelf": 6014,
+      "crowdedN": 450245,
+      "nearHeadN": 475225,
+      "patterns": {
+        "cut_off": 6944,
+        "near_head": 8604,
+        "sprint_cut": 746,
+        "other_body_or_near_wall": 634,
+        "far_head": 1261,
+        "pearl_bait": 78,
+        "coil": 1392,
+        "wall_pin": 71
+      },
+      "ourDeathPatterns": {
+        "cut_off": 5517,
+        "coil": 1569,
+        "wall_pin": 3923,
+        "other_body_or_near_wall": 2131,
+        "pearl_bait": 449,
+        "sprint_cut": 744
+      },
+      "priorDecisions": {
+        "N": 255961,
+        "free2": 198503,
+        "len2": 138166,
+        "pearls2": 65857
+      },
+      "examples": {}
+    },
+    "elite/winner": {
+      "N": 571952,
+      "headContacts": 534426,
+      "bodyKills": 12757,
+      "bodyDeaths": 9782,
+      "nearWallSelf": 5950,
+      "crowdedN": 537589,
+      "nearHeadN": 568797,
+      "patterns": {
+        "cut_off": 8480,
+        "near_head": 10808,
+        "coil": 1882,
+        "far_head": 1949,
+        "other_body_or_near_wall": 921,
+        "sprint_cut": 1252,
+        "pearl_bait": 107,
+        "wall_pin": 115
+      },
+      "ourDeathPatterns": {
+        "cut_off": 7038,
+        "other_body_or_near_wall": 1993,
+        "wall_pin": 3892,
+        "pearl_bait": 453,
+        "coil": 1700,
+        "sprint_cut": 656
+      },
+      "priorDecisions": {
+        "N": 237601,
+        "free2": 181243,
+        "len2": 126277,
+        "pearls2": 64194
+      },
+      "examples": {}
+    },
+    "ours": {
+      "N": 15455,
+      "headContacts": 13483,
+      "bodyKills": 599,
+      "bodyDeaths": 668,
+      "nearWallSelf": 473,
+      "crowdedN": 13956,
+      "nearHeadN": 15051,
+      "patterns": {
+        "cut_off": 227,
+        "near_head": 342,
+        "other_body_or_near_wall": 48,
+        "coil": 292,
+        "far_head": 257,
+        "sprint_cut": 25,
+        "pearl_bait": 3,
+        "wall_pin": 4
+      },
+      "ourDeathPatterns": {
+        "coil": 217,
+        "other_body_or_near_wall": 92,
+        "wall_pin": 383,
+        "sprint_cut": 66,
+        "cut_off": 365,
+        "pearl_bait": 18
+      },
+      "priorDecisions": {
+        "N": 12134,
+        "free2": 7478,
+        "len2": 7488,
+        "pearls2": 1217
+      },
+      "examples": {}
+    },
+    "ours/known": {
+      "N": 15332,
+      "headContacts": 13375,
+      "bodyKills": 598,
+      "bodyDeaths": 657,
+      "nearWallSelf": 470,
+      "crowdedN": 13850,
+      "nearHeadN": 14930,
+      "patterns": {
+        "cut_off": 226,
+        "near_head": 341,
+        "other_body_or_near_wall": 48,
+        "coil": 292,
+        "far_head": 257,
+        "sprint_cut": 25,
+        "pearl_bait": 3,
+        "wall_pin": 4
+      },
+      "ourDeathPatterns": {
+        "coil": 213,
+        "other_body_or_near_wall": 92,
+        "wall_pin": 381,
+        "sprint_cut": 66,
+        "cut_off": 358,
+        "pearl_bait": 17
+      },
+      "priorDecisions": {
+        "N": 12105,
+        "free2": 7474,
+        "len2": 7470,
+        "pearls2": 1212
+      },
+      "examples": {}
+    },
+    "under/known_autoscrim": {
+      "N": 1343,
+      "headContacts": 1281,
+      "bodyKills": 29,
+      "bodyDeaths": 23,
+      "nearWallSelf": 2,
+      "crowdedN": 1245,
+      "nearHeadN": 1341,
+      "patterns": {
+        "cut_off": 25,
+        "near_head": 28,
+        "other_body_or_near_wall": 3,
+        "coil": 1,
+        "far_head": 1
+      },
+      "ourDeathPatterns": {
+        "other_body_or_near_wall": 3,
+        "cut_off": 20,
+        "coil": 2
+      },
+      "priorDecisions": {
+        "N": 725,
+        "free2": 600,
+        "len2": 350,
+        "pearls2": 273
+      },
+      "examples": {}
+    },
+    "ours/custom": {
+      "N": 123,
+      "headContacts": 108,
+      "bodyKills": 1,
+      "bodyDeaths": 11,
+      "nearWallSelf": 3,
+      "crowdedN": 106,
+      "nearHeadN": 121,
+      "patterns": {
+        "cut_off": 1,
+        "near_head": 1
+      },
+      "ourDeathPatterns": {
+        "cut_off": 7,
+        "coil": 4,
+        "wall_pin": 2,
+        "pearl_bait": 1
+      },
+      "priorDecisions": {
+        "N": 29,
+        "free2": 4,
+        "len2": 18,
+        "pearls2": 5
+      },
+      "examples": {}
+    },
+    "sprint_custom/loser": {
+      "N": 31541,
+      "headContacts": 28469,
+      "bodyKills": 583,
+      "bodyDeaths": 839,
+      "nearWallSelf": 919,
+      "crowdedN": 27813,
+      "nearHeadN": 31300,
+      "patterns": {
+        "cut_off": 423,
+        "near_head": 500,
+        "coil": 79,
+        "far_head": 83,
+        "other_body_or_near_wall": 45,
+        "sprint_cut": 26,
+        "pearl_bait": 8,
+        "wall_pin": 2
+      },
+      "ourDeathPatterns": {
+        "cut_off": 536,
+        "coil": 211,
+        "wall_pin": 583,
+        "pearl_bait": 57,
+        "other_body_or_near_wall": 322,
+        "sprint_cut": 49
+      },
+      "priorDecisions": {
+        "N": 17272,
+        "free2": 11871,
+        "len2": 8421,
+        "pearls2": 3856
+      },
+      "examples": {}
+    },
+    "sprint_custom/winner": {
+      "N": 31541,
+      "headContacts": 28469,
+      "bodyKills": 839,
+      "bodyDeaths": 583,
+      "nearWallSelf": 731,
+      "crowdedN": 27813,
+      "nearHeadN": 31300,
+      "patterns": {
+        "cut_off": 536,
+        "near_head": 681,
+        "coil": 153,
+        "far_head": 158,
+        "sprint_cut": 49,
+        "other_body_or_near_wall": 84,
+        "wall_pin": 8,
+        "pearl_bait": 9
+      },
+      "ourDeathPatterns": {
+        "wall_pin": 470,
+        "cut_off": 423,
+        "pearl_bait": 51,
+        "coil": 110,
+        "other_body_or_near_wall": 234,
+        "sprint_cut": 26
+      },
+      "priorDecisions": {
+        "N": 13990,
+        "free2": 9585,
+        "len2": 7017,
+        "pearls2": 3081
+      },
+      "examples": {}
+    },
+    "under/custom": {
+      "N": 624,
+      "headContacts": 595,
+      "bodyKills": 4,
+      "bodyDeaths": 1,
+      "nearWallSelf": 1,
+      "crowdedN": 562,
+      "nearHeadN": 624,
+      "patterns": {
+        "cut_off": 4,
+        "near_head": 4
+      },
+      "ourDeathPatterns": {
+        "other_body_or_near_wall": 1,
+        "cut_off": 1
+      },
+      "priorDecisions": {
+        "N": 271,
+        "free2": 203,
+        "len2": 153,
+        "pearls2": 94
+      },
+      "examples": {}
+    }
+  },
+  "definitions": {
+    "unit": "one direct cross-team head contact OR enemy-body death OR wall/self death within BFS2 of nearest enemy head; not episode",
+    "bodyKill": "O with killer id obtained from actual collision; killer head may be far away",
+    "wallSelf": "nearest enemy-head association only; not proof that enemy caused death",
+    "headBait": "passive last decision sees an enemy and precedes contact by <=1 round; broader than episode reach proxy, not intentional bait",
+    "pearlBait": "actual consumption with visible enemy in last2 rounds; not intent",
+    "success": "terminal event patterns only; episode attempt table supplies attempt denominators",
+    "scope": "includes crowded contacts excluded from isolated episodes; separate denominators"
+  }
+}

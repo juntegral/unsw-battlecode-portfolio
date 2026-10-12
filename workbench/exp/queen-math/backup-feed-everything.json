@@ -1,0 +1,21 @@
+{
+  "starting_lengths": [
+    14,
+    3,
+    2
+  ],
+  "feed_everything": [
+    17
+  ],
+  "keep_backup": [
+    15,
+    3
+  ],
+  "assumptions": "Same enemy length distributions/s=.8 as concrete model; p same by policy, independent; full drop collection free; enemy always has living backup2..4. Feed-all queen death is early team elimination and loss.",
+  "a_feed": 0.6363636363636364,
+  "a_backup": 0.5,
+  "t_backup": 0.5,
+  "feed_formula": "U_F=39p/55",
+  "backup_formula": "U_B=1/10+p/2",
+  "threshold": 0.4782608695652174
+}

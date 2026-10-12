@@ -1,0 +1,104 @@
+{"gid": 1510794, "queens": [0, 1], "bot": "21377", "size": [32, 16], "final": [[0, 0, 0, 0], [53, 130, 4, 0]], "near_min": null, "near_first5": null, "last_not_behind_queen": 169, "portal_first": [null, null], "portal_100": [0, 0]}
+qdeath {'r': 60, 'event': 4124, 'id': 0, 'side': 0, 'body': [(7, 9), (6, 9), (6, 10), (6, 11)], 'reason': 3, 'actor': 29, 'turn_event': 4118}
+QTURN {'r': 58, 'event': 3892, 'id': 0, 'side': 0, 'body': [(6, 11), (7, 11), (7, 10), (7, 9)], 'eaten': 0, 'dirs': [0], 'steps': [[(6, 11), (6, 10)]], 'split': None, 'neighbors': [{'dir': 0, 'dest': (6, 10), 'edge': (0, -1), 'occupants': []}, {'dir': 1, 'dest': (7, 11), 'edge': (0, -1), 'occupants': [0]}, {'dir': 2, 'dest': (6, 12), 'edge': (0, -1), 'occupants': []}, {'dir': 3, 'dest': None, 'edge': (1, -1), 'occupants': []}], 'actiontype': 0, 'endbody': [(6, 10), (6, 11), (7, 11), (7, 10)], 'endstate': [[2, 7, 4, 4], [22, 55, 4, 0]]} 
++ + + + + + + +
+ . . . . . . . 
++ + + + + + + +
+ . . . . q . b 
++ + + + + + + +
+ . .|.|. q|.|* 
++ + + + + + + +
+ . A|.|Q q|.|. 
++ + + + + + + +
+ a a|.|. .|.|. 
++ + + + + + + +
+ . .|.|. .|.|. 
++ + + + + + + +
+ . .|.|. .|.|* 
++ + + + + + + +
+QTURN {'r': 59, 'event': 3985, 'id': 0, 'side': 0, 'body': [(6, 10), (6, 11), (7, 11), (7, 10)], 'eaten': 0, 'dirs': [0], 'steps': [[(6, 10), (6, 9)]], 'split': None, 'neighbors': [{'dir': 0, 'dest': (6, 9), 'edge': (0, -1), 'occupants': []}, {'dir': 1, 'dest': (7, 10), 'edge': (0, -1), 'occupants': [0]}, {'dir': 2, 'dest': (6, 11), 'edge': (0, -1), 'occupants': [0]}, {'dir': 3, 'dest': None, 'edge': (1, -1), 'occupants': []}], 'actiontype': 0, 'endbody': [(6, 9), (6, 10), (6, 11), (7, 11)], 'endstate': [[2, 7, 4, 4], [22, 53, 4, 0]]} 
++ + + + + + + +
+ . . . . * . * 
++ + + + + + + +
+ . . . . . . B 
++ + + + + + + +
+ . . . . . . . 
++ + + + + + + +
+ . A|.|Q q|.|* 
++ + + + + + + +
+ . a|.|q q|.|. 
++ + + + + + + +
+ . a|.|. .|.|. 
++ + + + + + + +
+ . .|.|. .|.|. 
++ + + + + + + +
+QTURN {'r': 60, 'event': 4082, 'id': 0, 'side': 0, 'body': [(6, 9), (6, 10), (6, 11), (7, 11)], 'eaten': 0, 'dirs': [1], 'steps': [[(6, 9), (7, 9)]], 'split': None, 'neighbors': [{'dir': 0, 'dest': (6, 8), 'edge': (0, -1), 'occupants': []}, {'dir': 1, 'dest': (7, 9), 'edge': (0, -1), 'occupants': []}, {'dir': 2, 'dest': (6, 10), 'edge': (0, -1), 'occupants': [0]}, {'dir': 3, 'dest': (5, 9), 'edge': (0, -1), 'occupants': []}], 'actiontype': 0, 'endbody': [(7, 9), (6, 9), (6, 10), (6, 11)], 'endstate': [[2, 7, 4, 4], [23, 57, 4, 0]]} 
++ + + + + + + +
+ . .|.|. .|.|* 
++ + + + + + + +
+ . . . . * . B 
++ + + + + + + +
+ . . . . . . b 
++ + + + + + + +
+ . A . Q . . . 
++ + + + + + + +
+ . a|.|q .|.|* 
++ + + + + + + +
+ . a|.|q q|.|. 
++ + + + + + + +
+ . .|.|. .|.|. 
++ + + + + + + +
+DEATH_ACTION {'r': 60, 'event': 4118, 'id': 29, 'side': 1, 'body': [(9, 7), (9, 8), (10, 8), (10, 9)], 'eaten': 1, 'dirs': [3, 3, 2, 2], 'steps': [[(9, 7), (8, 7)], [(8, 7), (7, 7)], [(7, 7), (7, 8)]], 'split': None, 'actiontype': 0, 'endbody': [], 'endstate': [[1, 3, 3, 0], [23, 54, 3, 0]]}
+{"gid": 1510795, "queens": [1, 0], "bot": "21377", "size": [48, 24], "final": [[3, 26, 20, 20], [41, 167, 44, 44]], "near_min": null, "near_first5": null, "last_not_behind_queen": 35, "portal_first": [null, [9, 2, 1, 2, [10, 0], [16, 7]]], "portal_100": [0, 28]}
+qdeath None
+{"gid": 1510796, "queens": [0, 1], "bot": "21377", "size": [32, 16], "final": [[3, 48, 40, 0], [6, 70, 48, 48]], "near_min": [430, 111500, 99999, 491, [8, 3], [21, 5]], "near_first5": null, "last_not_behind_queen": 301, "portal_first": [[4, 0, 0, 3, [3, 6], [27, 9]], [6, 3, 1, 3, [28, 8], [4, 7]]], "portal_100": [27, 60]}
+qdeath {'r': 430, 'event': 111500, 'id': 0, 'side': 0, 'body': [(27, 13), (4, 1), (3, 1), (3, 2)], 'reason': 0, 'actor': 0, 'turn_event': 111498}
+QTURN {'r': 428, 'event': 111254, 'id': 0, 'side': 0, 'body': [(27, 13), (4, 1), (3, 1), (3, 2), (3, 3), (2, 3), (2, 4), (2, 5)], 'eaten': 0, 'dirs': [], 'steps': [], 'split': [778, 8], 'neighbors': [{'dir': 0, 'dest': None, 'edge': (1, -1), 'occupants': []}, {'dir': 1, 'dest': None, 'edge': (1, -1), 'occupants': []}, {'dir': 2, 'dest': None, 'edge': (1, -1), 'occupants': []}, {'dir': 3, 'dest': (4, 1), 'edge': (2, 1), 'occupants': [0]}], 'actiontype': 1, 'endbody': [(27, 13), (4, 1), (3, 1), (3, 2), (3, 3), (2, 3)], 'endstate': [[12, 63, 25, 6], [3, 48, 43, 43]]} 
++ + +-+-+ + + +
+|. . . k k . k 
++ + + + + + + +
+|. . . . k k k 
++ + +-+-+ + + +
+ k k|* *|. k k 
++ + +-+-+ + + +
+ . k|*PQ|. k . 
++ + +-+-+ + + +
+|. k .P. k k . 
++ + + + + + + +
+|. k k k k . . 
++-+-+-+-+-+-+-+
+ . .|* *|. . . 
++ + + +P+P+ + +
+QTURN {'r': 429, 'event': 111374, 'id': 0, 'side': 0, 'body': [(27, 13), (4, 1), (3, 1), (3, 2), (3, 3), (2, 3)], 'eaten': 0, 'dirs': [], 'steps': [], 'split': [781, 6], 'neighbors': [{'dir': 0, 'dest': None, 'edge': (1, -1), 'occupants': []}, {'dir': 1, 'dest': None, 'edge': (1, -1), 'occupants': []}, {'dir': 2, 'dest': None, 'edge': (1, -1), 'occupants': []}, {'dir': 3, 'dest': (4, 1), 'edge': (2, 1), 'occupants': [0]}], 'actiontype': 1, 'endbody': [(27, 13), (4, 1), (3, 1), (3, 2)], 'endstate': [[15, 65, 26, 4], [3, 50, 44, 44]]} 
++ + +-+-+ + + +
+|. . . k k . k 
++ + + + + + + +
+|. . . . k k k 
++ + +-+-+ + + +
+ k k|* *|. k k 
++ + +-+-+ + + +
+ . k|*PQ|. k . 
++ + +-+-+ + + +
+|. k .P. k k . 
++ + + + + + + +
+|. k k k k . . 
++-+-+-+-+-+-+-+
+ . .|* *|. . . 
++ + + +P+P+ + +
+QTURN {'r': 430, 'event': 111498, 'id': 0, 'side': 0, 'body': [(27, 13), (4, 1), (3, 1), (3, 2)], 'eaten': 0, 'dirs': [2], 'steps': [], 'split': None, 'neighbors': [{'dir': 0, 'dest': None, 'edge': (1, -1), 'occupants': []}, {'dir': 1, 'dest': None, 'edge': (1, -1), 'occupants': []}, {'dir': 2, 'dest': None, 'edge': (1, -1), 'occupants': []}, {'dir': 3, 'dest': (4, 1), 'edge': (2, 1), 'occupants': [0]}], 'actiontype': 0, 'endbody': [], 'endstate': [[12, 59, 26, 0], [4, 52, 45, 45]]} 
++ + +-+-+ + + +
+|. . . . k . k 
++ + + + + + + +
+|. . . . k k k 
++ + +-+-+ + + +
+ k k|* *|. k k 
++ + +-+-+ + + +
+ . k|*PQ|. k . 
++ + +-+-+ + + +
+|. k .P. k k . 
++ + + + + + + +
+|. k k k k . . 
++-+-+-+-+-+-+-+
+ . .|* *|. . . 
++ + + +P+P+ + +
+DEATH_ACTION {'r': 430, 'event': 111498, 'id': 0, 'side': 0, 'body': [(27, 13), (4, 1), (3, 1), (3, 2)], 'eaten': 0, 'dirs': [2], 'steps': [], 'split': None, 'neighbors': [{'dir': 0, 'dest': None, 'edge': (1, -1), 'occupants': []}, {'dir': 1, 'dest': None, 'edge': (1, -1), 'occupants': []}, {'dir': 2, 'dest': None, 'edge': (1, -1), 'occupants': []}, {'dir': 3, 'dest': (4, 1), 'edge': (2, 1), 'occupants': [0]}], 'actiontype': 0, 'endbody': [], 'endstate': [[12, 59, 26, 0], [4, 52, 45, 45]]}

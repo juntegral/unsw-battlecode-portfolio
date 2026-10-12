@@ -1,0 +1,52 @@
+W2 report: base exp/w2/v16-K vs new exp/w2/v161-K, 80 paired keys
+
+== outcome (new vs base): wins, eliminated, final longest mean, paired final longest higher/lower/equal, sign p
+autarky            n   8  wins 8 vs 8  elim 0 vs 0  final 62.1 vs 65.5  2/3/3  p 1.000
+default            n   8  wins 1 vs 0  elim 0 vs 0  final 13.1 vs 13.6  4/4/0  p 1.000
+devil              n   8  wins 0 vs 0  elim 1 vs 0  final 11.0 vs 13.4  0/4/4  p 0.125
+portals            n   8  wins 8 vs 7  elim 0 vs 0  final 44.0 vs 47.9  4/4/0  p 1.000
+prisoners_dilemma  n   8  wins 4 vs 4  elim 1 vs 1  final 20.5 vs 20.5  0/0/8  p 1.000
+queen_of_spades    n   8  wins 3 vs 2  elim 1 vs 0  final 13.9 vs 15.6  3/5/0  p 0.727
+schooltime         n   8  wins 7 vs 6  elim 0 vs 0  final 64.4 vs 61.6  4/3/1  p 1.000
+slithery_fight     n   8  wins 2 vs 4  elim 0 vs 0  final 29.9 vs 39.9  3/5/0  p 0.727
+trauma             n   8  wins 1 vs 5  elim 0 vs 0  final 13.8 vs 22.0  0/7/1  p 0.016
+trophy             n   8  wins 0 vs 0  elim 8 vs 8  final 0.0 vs 0.0  0/0/8  p 1.000
+POOLED             n  80  wins 34 vs 36  elim 11 vs 9  final 27.3 vs 30.0  20/35/25  p 0.058
+
+== recognition timing per map (own turns): start decided on 1st turn; children decided on 1st turn / later (median p90 max) / never
+autarky            base start 48/48  children 2052: 1st turn 2052 (100%)  later 0 (median - p90 - max -)  never 0  <=3 turns 100%
+                   new  start 48/48  children 2015: 1st turn 893 (44%)  later 404 (median 1 p90 2 max 26)  never 718 (lived median 5 turns)  <=3 turns 63%
+default            base start 32/32  children 500: 1st turn 500 (100%)  later 0 (median - p90 - max -)  never 0  <=3 turns 100%
+                   new  start 32/32  children 524: 1st turn 262 (50%)  later 241 (median 2 p90 10 max 86)  never 21 (lived median 15 turns)  <=3 turns 80%
+devil              base start 24/24  children 229: 1st turn 213 (93%)  later 16 (median 5 p90 8 max 8)  never 0  <=3 turns 96%
+                   new  start 24/24  children 238: 1st turn 195 (82%)  later 40 (median 2 p90 8 max 9)  never 3 (lived median 12 turns)  <=3 turns 93%
+portals            base start 24/24  children 984: 1st turn 982 (100%)  later 2 (median 1 p90 1 max 1)  never 0  <=3 turns 100%
+                   new  start 24/24  children 1108: 1st turn 357 (32%)  later 638 (median 2 p90 11 max 61)  never 113 (lived median 5 turns)  <=3 turns 69%
+prisoners_dilemma  base start 24/24  children 1941: 1st turn 1941 (100%)  later 0 (median - p90 - max -)  never 0  <=3 turns 100%
+                   new  start 24/24  children 1934: 1st turn 533 (28%)  later 582 (median 1 p90 2 max 16)  never 819 (lived median 5 turns)  <=3 turns 56%
+queen_of_spades    base start 16/16  children 271: 1st turn 271 (100%)  later 0 (median - p90 - max -)  never 0  <=3 turns 100%
+                   new  start 16/16  children 143: 1st turn 87 (61%)  later 49 (median 2 p90 8 max 41)  never 7 (lived median 5 turns)  <=3 turns 85%
+schooltime         base start 24/24  children 1951: 1st turn 1951 (100%)  later 0 (median - p90 - max -)  never 0  <=3 turns 100%
+                   new  start 24/24  children 1647: 1st turn 1224 (74%)  later 395 (median 1 p90 5 max 40)  never 28 (lived median 2 turns)  <=3 turns 94%
+slithery_fight     base start 56/56  children 2090: 1st turn 2090 (100%)  later 0 (median - p90 - max -)  never 0  <=3 turns 100%
+                   new  start 56/56  children 2281: 1st turn 1890 (83%)  later 370 (median 1 p90 3 max 23)  never 21 (lived median 4 turns)  <=3 turns 98%
+trauma             base start 16/16  children 374: 1st turn 374 (100%)  later 0 (median - p90 - max -)  never 0  <=3 turns 100%
+                   new  start 16/16  children 406: 1st turn 166 (41%)  later 128 (median 7 p90 51 max 132)  never 112 (lived median 13 turns)  <=3 turns 54%
+trophy             base start 16/16  children 99: 1st turn 99 (100%)  later 0 (median - p90 - max -)  never 0  <=3 turns 100%
+                   new  start 16/16  children 90: 1st turn 60 (67%)  later 29 (median 2 p90 7 max 12)  never 1 (lived median 8 turns)  <=3 turns 90%
+
+== v1.6.1 tags (new set): mg (gate held a decision), ms (start check dropped), mn (none from a message), mc (decided on a confirmation)
+autarky            mg 1122  ms 0  mn 0  mc 1297
+default            mg 262  ms 0  mn 0  mc 503
+devil              mg 33  ms 0  mn 0  mc 235
+portals            mg 750  ms 0  mn 0  mc 995
+prisoners_dilemma  mg 1401  ms 0  mn 0  mc 1115
+queen_of_spades    mg 56  ms 0  mn 0  mc 136
+schooltime         mg 423  ms 0  mn 0  mc 1619
+slithery_fight     mg 391  ms 0  mn 0  mc 2260
+trauma             mg 240  ms 0  mn 0  mc 294
+trophy             mg 30  ms 0  mn 0  mc 89
+
+== identity: timing unchanged in 1/80 games; of those strict identical 0, behaviour identical 1
+   timing changed in 79 games: strict identical 0, behaviour identical 9
+   outcome in the timing-changed games (new vs base): wins 34 vs 36, elim 10 vs 8, final 27.6 vs 30.4, 20/35/24, p 0.058

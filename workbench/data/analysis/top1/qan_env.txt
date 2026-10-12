@@ -1,0 +1,186 @@
+games loaded 1754
+
+################ QUEEN ENVIRONMENT (per-game means while alive, then mean over games)
+columns: len e8m e8p e4p a6p a3p seen exposed small2 free ball deg portal home cells100 longest
+
+--- map size small
+Vibing++  own r  0- 50 n=170 len=2.67 e8m=1.09 e8p=0.56 e4p=0.15 a6p=0.94 a3p=0.29 seen=0.28 exposed=0.02 small2=0.03 free=2.22 ball=27.43 deg=3.31 portal=0.34 home=8.40 cells100=80.36 longest=0.56
+Vibing++  own r 50-100 n=105 len=2.64 e8m=2.09 e8p=0.78 e4p=0.20 a6p=1.74 a3p=0.46 seen=0.47 exposed=0.04 small2=0.04 free=2.09 ball=24.30 deg=3.23 portal=0.35 home=12.63 cells100=61.69 longest=0.28
+Vibing++  own r100-200 n= 68 len=2.77 e8m=2.37 e8p=0.51 e4p=0.15 a6p=2.42 a3p=0.64 seen=0.47 exposed=0.05 small2=0.03 free=2.09 ball=24.54 deg=3.25 portal=0.35 home=12.07 cells100=58.58 longest=0.17
+Vibing++  own r200-300 n= 31 len=8.47 e8m=3.12 e8p=0.08 e4p=0.01 a6p=2.80 a3p=0.70 seen=0.60 exposed=0.02 small2=0.00 free=2.04 ball=23.98 deg=3.31 portal=0.47 home=12.01 cells100=52.91 longest=0.52
+Vibing++  own r300-400 n= 23 len=18.35 e8m=2.10 e8p=0.09 e4p=0.01 a6p=2.07 a3p=0.57 seen=0.56 exposed=0.03 small2=0.00 free=2.02 ball=24.82 deg=3.35 portal=0.44 home=11.55 cells100=55.99 longest=0.71
+Vibing++  own r400-500 n= 21 len=30.60 e8m=0.83 e8p=0.04 e4p=0.00 a6p=0.48 a3p=0.08 seen=0.51 exposed=0.05 small2=0.00 free=1.97 ball=24.50 deg=3.28 portal=0.49 home=11.48 cells100=72.96 longest=0.85
+Vibing++  opp r  0- 50 n=169 len=2.50 e8m=0.88 e8p=0.40 e4p=0.11 a6p=0.89 a3p=0.21 seen=0.21 exposed=0.01 small2=0.02 free=2.41 ball=27.65 deg=3.46 portal=0.29 home=6.96 cells100=67.60 longest=0.58
+Vibing++  opp r 50-100 n=129 len=2.65 e8m=1.44 e8p=0.52 e4p=0.17 a6p=1.54 a3p=0.33 seen=0.28 exposed=0.01 small2=0.03 free=2.40 ball=26.99 deg=3.49 portal=0.30 home=7.56 cells100=53.51 longest=0.41
+Vibing++  opp r100-200 n=104 len=2.96 e8m=1.95 e8p=0.47 e4p=0.17 a6p=2.49 a3p=0.57 seen=0.36 exposed=0.03 small2=0.05 free=2.32 ball=26.41 deg=3.44 portal=0.26 home=7.17 cells100=48.36 longest=0.41
+Vibing++  opp r200-300 n= 55 len=5.17 e8m=1.78 e8p=0.19 e4p=0.09 a6p=3.10 a3p=0.68 seen=0.35 exposed=0.01 small2=0.02 free=2.15 ball=25.27 deg=3.37 portal=0.31 home=7.13 cells100=48.92 longest=0.38
+Vibing++  opp r300-400 n= 39 len=9.23 e8m=1.44 e8p=0.23 e4p=0.08 a6p=3.11 a3p=0.66 seen=0.30 exposed=0.02 small2=0.02 free=2.09 ball=25.58 deg=3.40 portal=0.41 home=7.41 cells100=50.57 longest=0.43
+Vibing++  opp r400-500 n= 28 len=21.05 e8m=0.67 e8p=0.07 e4p=0.02 a6p=1.13 a3p=0.24 seen=0.33 exposed=0.03 small2=0.01 free=2.11 ball=26.41 deg=3.43 portal=0.44 home=7.95 cells100=68.82 longest=0.61
+SSS       own r  0- 50 n=156 len=2.57 e8m=1.03 e8p=0.42 e4p=0.09 a6p=1.13 a3p=0.34 seen=0.27 exposed=0.02 small2=0.02 free=2.38 ball=27.95 deg=3.46 portal=0.34 home=8.20 cells100=72.71 longest=0.65
+SSS       own r 50-100 n=128 len=2.55 e8m=1.62 e8p=0.42 e4p=0.10 a6p=1.70 a3p=0.38 seen=0.33 exposed=0.01 small2=0.02 free=2.29 ball=25.55 deg=3.37 portal=0.38 home=9.56 cells100=52.39 longest=0.37
+SSS       own r100-200 n=104 len=2.55 e8m=2.49 e8p=0.43 e4p=0.13 a6p=2.60 a3p=0.61 seen=0.39 exposed=0.01 small2=0.03 free=2.25 ball=24.63 deg=3.34 portal=0.33 home=9.47 cells100=39.03 longest=0.30
+SSS       own r200-300 n= 66 len=2.55 e8m=2.63 e8p=0.07 e4p=0.02 a6p=3.61 a3p=0.96 seen=0.38 exposed=0.00 small2=0.00 free=2.15 ball=23.98 deg=3.33 portal=0.36 home=8.59 cells100=40.27 longest=0.17
+SSS       own r300-400 n= 46 len=3.36 e8m=2.07 e8p=0.07 e4p=0.02 a6p=3.15 a3p=0.86 seen=0.32 exposed=0.00 small2=0.00 free=2.08 ball=23.03 deg=3.27 portal=0.40 home=9.12 cells100=39.17 longest=0.13
+SSS       own r400-500 n= 31 len=8.84 e8m=0.69 e8p=0.01 e4p=0.00 a6p=1.24 a3p=0.32 seen=0.25 exposed=0.00 small2=0.00 free=2.06 ball=23.12 deg=3.25 portal=0.39 home=8.97 cells100=46.05 longest=0.19
+SSS       opp r  0- 50 n=156 len=2.60 e8m=0.89 e8p=0.45 e4p=0.10 a6p=0.79 a3p=0.18 seen=0.22 exposed=0.01 small2=0.02 free=2.37 ball=27.42 deg=3.42 portal=0.36 home=7.14 cells100=72.48 longest=0.57
+SSS       opp r 50-100 n=115 len=2.73 e8m=1.72 e8p=0.70 e4p=0.16 a6p=1.35 a3p=0.27 seen=0.35 exposed=0.01 small2=0.02 free=2.34 ball=26.03 deg=3.40 portal=0.39 home=9.02 cells100=57.82 longest=0.42
+SSS       opp r100-200 n= 86 len=3.47 e8m=3.51 e8p=0.73 e4p=0.24 a6p=2.03 a3p=0.45 seen=0.58 exposed=0.02 small2=0.03 free=2.25 ball=25.20 deg=3.38 portal=0.36 home=7.87 cells100=52.35 longest=0.46
+SSS       opp r200-300 n= 46 len=6.80 e8m=4.48 e8p=0.30 e4p=0.09 a6p=2.92 a3p=0.63 seen=0.66 exposed=0.01 small2=0.01 free=2.18 ball=25.12 deg=3.39 portal=0.42 home=7.55 cells100=50.51 longest=0.48
+SSS       opp r300-400 n= 32 len=12.96 e8m=3.47 e8p=0.17 e4p=0.03 a6p=3.09 a3p=0.65 seen=0.61 exposed=0.03 small2=0.01 free=2.14 ball=26.14 deg=3.42 portal=0.47 home=7.92 cells100=60.18 longest=0.60
+SSS       opp r400-500 n= 22 len=24.08 e8m=1.04 e8p=0.04 e4p=0.01 a6p=1.09 a3p=0.23 seen=0.48 exposed=0.03 small2=0.00 free=2.04 ball=24.89 deg=3.29 portal=0.55 home=9.14 cells100=71.13 longest=0.72
+forgot    own r  0- 50 n=173 len=2.53 e8m=1.17 e8p=0.62 e4p=0.14 a6p=1.11 a3p=0.36 seen=0.30 exposed=0.02 small2=0.02 free=2.23 ball=26.85 deg=3.31 portal=0.32 home=8.93 cells100=75.22 longest=0.59
+forgot    own r 50-100 n=128 len=2.59 e8m=1.95 e8p=0.62 e4p=0.16 a6p=1.80 a3p=0.51 seen=0.40 exposed=0.02 small2=0.02 free=2.24 ball=26.30 deg=3.37 portal=0.31 home=9.69 cells100=60.64 longest=0.32
+forgot    own r100-200 n= 92 len=2.68 e8m=2.33 e8p=0.15 e4p=0.05 a6p=3.18 a3p=0.92 seen=0.39 exposed=0.00 small2=0.01 free=2.18 ball=26.27 deg=3.38 portal=0.31 home=7.90 cells100=48.54 longest=0.26
+forgot    own r200-300 n= 55 len=10.17 e8m=3.12 e8p=0.16 e4p=0.03 a6p=2.79 a3p=0.70 seen=0.60 exposed=0.01 small2=0.00 free=2.14 ball=27.88 deg=3.49 portal=0.42 home=8.16 cells100=57.35 longest=0.82
+forgot    own r300-400 n= 44 len=24.83 e8m=2.83 e8p=0.20 e4p=0.04 a6p=2.26 a3p=0.54 seen=0.70 exposed=0.01 small2=0.00 free=1.81 ball=26.66 deg=3.35 portal=0.47 home=10.70 cells100=70.98 longest=0.94
+forgot    own r400-500 n= 34 len=35.30 e8m=1.10 e8p=0.09 e4p=0.02 a6p=0.58 a3p=0.16 seen=0.54 exposed=0.04 small2=0.00 free=1.83 ball=25.97 deg=3.26 portal=0.44 home=11.27 cells100=77.49 longest=0.88
+forgot    opp r  0- 50 n=175 len=2.59 e8m=1.00 e8p=0.48 e4p=0.11 a6p=0.95 a3p=0.24 seen=0.25 exposed=0.01 small2=0.02 free=2.37 ball=27.62 deg=3.42 portal=0.35 home=7.16 cells100=69.19 longest=0.55
+forgot    opp r 50-100 n=130 len=2.73 e8m=2.01 e8p=0.65 e4p=0.17 a6p=1.64 a3p=0.35 seen=0.41 exposed=0.02 small2=0.04 free=2.20 ball=24.98 deg=3.31 portal=0.31 home=9.29 cells100=59.15 longest=0.36
+forgot    opp r100-200 n= 82 len=3.43 e8m=2.99 e8p=0.48 e4p=0.14 a6p=2.25 a3p=0.49 seen=0.48 exposed=0.03 small2=0.04 free=2.28 ball=25.59 deg=3.43 portal=0.30 home=7.83 cells100=49.13 longest=0.40
+forgot    opp r200-300 n= 40 len=6.33 e8m=2.83 e8p=0.15 e4p=0.05 a6p=2.90 a3p=0.62 seen=0.49 exposed=0.00 small2=0.00 free=2.31 ball=27.06 deg=3.52 portal=0.43 home=6.79 cells100=53.26 longest=0.42
+forgot    opp r300-400 n= 30 len=10.91 e8m=2.68 e8p=0.13 e4p=0.02 a6p=3.05 a3p=0.71 seen=0.54 exposed=0.01 small2=0.00 free=2.28 ball=26.53 deg=3.49 portal=0.49 home=7.19 cells100=52.71 longest=0.41
+forgot    opp r400-500 n= 24 len=21.12 e8m=1.00 e8p=0.05 e4p=0.01 a6p=1.18 a3p=0.23 seen=0.44 exposed=0.04 small2=0.00 free=2.21 ball=26.41 deg=3.42 portal=0.58 home=8.49 cells100=60.96 longest=0.63
+meow      own r  0- 50 n=125 len=2.49 e8m=0.97 e8p=0.34 e4p=0.08 a6p=1.16 a3p=0.43 seen=0.26 exposed=0.01 small2=0.02 free=2.28 ball=27.50 deg=3.34 portal=0.36 home=7.61 cells100=68.07 longest=0.63
+meow      own r 50-100 n= 76 len=2.45 e8m=1.30 e8p=0.50 e4p=0.13 a6p=1.85 a3p=0.47 seen=0.29 exposed=0.03 small2=0.02 free=2.27 ball=27.22 deg=3.34 portal=0.33 home=10.35 cells100=65.81 longest=0.38
+meow      own r100-200 n= 39 len=2.45 e8m=2.44 e8p=0.35 e4p=0.11 a6p=2.41 a3p=0.62 seen=0.38 exposed=0.02 small2=0.02 free=2.31 ball=26.70 deg=3.38 portal=0.28 home=7.81 cells100=56.48 longest=0.31
+meow      own r200-300 n=  7 len=2.38 e8m=4.51 e8p=0.14 e4p=0.04 a6p=3.77 a3p=1.04 seen=0.49 exposed=0.00 small2=0.00 free=2.30 ball=27.07 deg=3.41 portal=0.45 home=7.26 cells100=47.99 longest=0.20
+meow      opp r  0- 50 n=125 len=2.54 e8m=1.07 e8p=0.50 e4p=0.11 a6p=0.97 a3p=0.24 seen=0.27 exposed=0.01 small2=0.02 free=2.30 ball=26.92 deg=3.34 portal=0.30 home=7.48 cells100=67.85 longest=0.56
+meow      opp r 50-100 n=104 len=2.60 e8m=1.61 e8p=0.75 e4p=0.20 a6p=1.35 a3p=0.26 seen=0.35 exposed=0.02 small2=0.04 free=2.23 ball=25.42 deg=3.31 portal=0.32 home=10.17 cells100=61.87 longest=0.38
+meow      opp r100-200 n= 80 len=2.71 e8m=2.01 e8p=0.52 e4p=0.11 a6p=2.66 a3p=0.60 seen=0.38 exposed=0.01 small2=0.02 free=2.19 ball=24.79 deg=3.31 portal=0.29 home=9.76 cells100=50.45 longest=0.33
+meow      opp r200-300 n= 43 len=3.19 e8m=2.66 e8p=0.28 e4p=0.09 a6p=3.34 a3p=0.84 seen=0.47 exposed=0.01 small2=0.01 free=2.09 ball=24.70 deg=3.30 portal=0.36 home=9.55 cells100=48.99 longest=0.26
+meow      opp r300-400 n= 25 len=6.18 e8m=2.38 e8p=0.22 e4p=0.05 a6p=3.18 a3p=0.81 seen=0.50 exposed=0.01 small2=0.01 free=2.09 ball=25.52 deg=3.37 portal=0.38 home=9.08 cells100=55.42 longest=0.41
+meow      opp r400-500 n= 16 len=19.71 e8m=0.78 e8p=0.16 e4p=0.03 a6p=0.91 a3p=0.20 seen=0.30 exposed=0.04 small2=0.00 free=2.05 ball=25.25 deg=3.27 portal=0.42 home=8.94 cells100=74.33 longest=0.73
+
+--- map size medium
+Vibing++  own r  0- 50 n=106 len=2.59 e8m=0.44 e8p=0.25 e4p=0.07 a6p=1.17 a3p=0.25 seen=0.17 exposed=0.00 small2=0.02 free=2.46 ball=30.61 deg=3.52 portal=0.19 home=11.16 cells100=84.56 longest=0.46
+Vibing++  own r 50-100 n= 91 len=2.53 e8m=0.84 e8p=0.40 e4p=0.12 a6p=1.83 a3p=0.45 seen=0.23 exposed=0.03 small2=0.04 free=2.44 ball=30.17 deg=3.54 portal=0.32 home=14.32 cells100=70.38 longest=0.25
+Vibing++  own r100-200 n= 80 len=2.82 e8m=1.18 e8p=0.35 e4p=0.11 a6p=2.34 a3p=0.60 seen=0.28 exposed=0.01 small2=0.03 free=2.29 ball=27.53 deg=3.42 portal=0.32 home=14.68 cells100=53.20 longest=0.17
+Vibing++  own r200-300 n= 57 len=6.42 e8m=1.17 e8p=0.18 e4p=0.06 a6p=2.47 a3p=0.63 seen=0.33 exposed=0.00 small2=0.01 free=2.14 ball=26.50 deg=3.39 portal=0.32 home=13.76 cells100=48.25 longest=0.48
+Vibing++  own r300-400 n= 48 len=11.59 e8m=1.10 e8p=0.05 e4p=0.02 a6p=2.22 a3p=0.54 seen=0.34 exposed=0.01 small2=0.00 free=2.08 ball=27.24 deg=3.39 portal=0.28 home=12.09 cells100=59.14 longest=0.67
+Vibing++  own r400-500 n= 40 len=25.96 e8m=0.46 e8p=0.11 e4p=0.01 a6p=0.90 a3p=0.15 seen=0.24 exposed=0.03 small2=0.00 free=2.07 ball=28.74 deg=3.43 portal=0.29 home=12.12 cells100=80.30 longest=0.84
+Vibing++  opp r  0- 50 n=106 len=2.83 e8m=0.47 e8p=0.23 e4p=0.07 a6p=0.82 a3p=0.16 seen=0.16 exposed=0.00 small2=0.01 free=2.68 ball=33.50 deg=3.73 portal=0.17 home=8.77 cells100=75.88 longest=0.59
+Vibing++  opp r 50-100 n= 98 len=3.09 e8m=0.96 e8p=0.37 e4p=0.12 a6p=1.54 a3p=0.33 seen=0.27 exposed=0.01 small2=0.02 free=2.62 ball=32.75 deg=3.71 portal=0.18 home=10.26 cells100=66.70 longest=0.46
+Vibing++  opp r100-200 n= 84 len=3.78 e8m=1.44 e8p=0.58 e4p=0.21 a6p=2.68 a3p=0.56 seen=0.36 exposed=0.02 small2=0.04 free=2.56 ball=32.78 deg=3.72 portal=0.13 home=8.68 cells100=57.73 longest=0.49
+Vibing++  opp r200-300 n= 59 len=5.97 e8m=0.99 e8p=0.24 e4p=0.09 a6p=3.71 a3p=0.76 seen=0.27 exposed=0.01 small2=0.01 free=2.54 ball=33.81 deg=3.76 portal=0.12 home=7.84 cells100=57.89 longest=0.61
+Vibing++  opp r300-400 n= 47 len=10.54 e8m=1.33 e8p=0.35 e4p=0.11 a6p=3.46 a3p=0.75 seen=0.36 exposed=0.01 small2=0.01 free=2.51 ball=34.17 deg=3.78 portal=0.14 home=8.16 cells100=69.30 longest=0.63
+Vibing++  opp r400-500 n= 34 len=25.11 e8m=0.68 e8p=0.12 e4p=0.02 a6p=1.41 a3p=0.30 seen=0.33 exposed=0.03 small2=0.00 free=2.40 ball=33.72 deg=3.75 portal=0.10 home=8.43 cells100=82.87 longest=0.79
+SSS       own r  0- 50 n=108 len=2.49 e8m=0.39 e8p=0.20 e4p=0.05 a6p=1.10 a3p=0.25 seen=0.12 exposed=0.00 small2=0.01 free=2.68 ball=33.83 deg=3.74 portal=0.19 home=9.76 cells100=83.62 longest=0.44
+SSS       own r 50-100 n=105 len=2.48 e8m=0.84 e8p=0.32 e4p=0.09 a6p=2.45 a3p=0.59 seen=0.21 exposed=0.00 small2=0.01 free=2.59 ball=33.30 deg=3.70 portal=0.20 home=10.71 cells100=76.18 longest=0.23
+SSS       own r100-200 n= 96 len=2.52 e8m=1.25 e8p=0.32 e4p=0.09 a6p=4.22 a3p=0.91 seen=0.26 exposed=0.01 small2=0.01 free=2.58 ball=33.52 deg=3.71 portal=0.21 home=10.81 cells100=66.68 longest=0.16
+SSS       own r200-300 n= 74 len=2.60 e8m=1.60 e8p=0.28 e4p=0.06 a6p=5.66 a3p=1.26 seen=0.25 exposed=0.01 small2=0.01 free=2.57 ball=34.46 deg=3.75 portal=0.15 home=11.56 cells100=61.84 longest=0.11
+SSS       own r300-400 n= 61 len=8.87 e8m=1.49 e8p=0.23 e4p=0.05 a6p=4.92 a3p=1.16 seen=0.33 exposed=0.01 small2=0.00 free=2.55 ball=35.53 deg=3.81 portal=0.13 home=10.84 cells100=67.07 longest=0.25
+SSS       own r400-500 n= 50 len=22.65 e8m=0.74 e8p=0.18 e4p=0.03 a6p=2.09 a3p=0.52 seen=0.29 exposed=0.03 small2=0.00 free=2.38 ball=33.87 deg=3.68 portal=0.14 home=11.70 cells100=77.08 longest=0.46
+SSS       opp r  0- 50 n=108 len=2.89 e8m=0.50 e8p=0.29 e4p=0.07 a6p=0.89 a3p=0.16 seen=0.16 exposed=0.00 small2=0.01 free=2.67 ball=32.98 deg=3.72 portal=0.20 home=9.00 cells100=73.33 longest=0.58
+SSS       opp r 50-100 n=106 len=3.06 e8m=1.10 e8p=0.59 e4p=0.17 a6p=1.69 a3p=0.31 seen=0.28 exposed=0.02 small2=0.03 free=2.54 ball=31.32 deg=3.63 portal=0.23 home=10.70 cells100=65.20 longest=0.46
+SSS       opp r100-200 n= 84 len=4.14 e8m=1.75 e8p=0.79 e4p=0.20 a6p=2.71 a3p=0.60 seen=0.35 exposed=0.01 small2=0.03 free=2.50 ball=31.41 deg=3.65 portal=0.22 home=10.38 cells100=55.76 longest=0.45
+SSS       opp r200-300 n= 57 len=5.79 e8m=1.66 e8p=0.29 e4p=0.07 a6p=3.82 a3p=0.83 seen=0.34 exposed=0.01 small2=0.01 free=2.47 ball=32.25 deg=3.70 portal=0.16 home=9.25 cells100=52.38 longest=0.43
+SSS       opp r300-400 n= 49 len=10.72 e8m=1.23 e8p=0.15 e4p=0.05 a6p=3.43 a3p=0.78 seen=0.32 exposed=0.02 small2=0.01 free=2.33 ball=31.90 deg=3.65 portal=0.14 home=9.02 cells100=51.46 longest=0.50
+SSS       opp r400-500 n= 39 len=22.88 e8m=0.64 e8p=0.10 e4p=0.02 a6p=1.39 a3p=0.30 seen=0.28 exposed=0.04 small2=0.01 free=2.36 ball=33.27 deg=3.71 portal=0.15 home=9.24 cells100=70.41 longest=0.72
+forgot    own r  0- 50 n=120 len=2.58 e8m=0.51 e8p=0.32 e4p=0.11 a6p=0.91 a3p=0.22 seen=0.16 exposed=0.01 small2=0.00 free=2.62 ball=33.84 deg=3.70 portal=0.18 home=10.65 cells100=86.29 longest=0.59
+forgot    own r 50-100 n=113 len=2.63 e8m=0.95 e8p=0.53 e4p=0.18 a6p=1.47 a3p=0.40 seen=0.27 exposed=0.02 small2=0.02 free=2.58 ball=32.55 deg=3.68 portal=0.16 home=11.73 cells100=74.83 longest=0.33
+forgot    own r100-200 n= 90 len=2.64 e8m=1.27 e8p=0.41 e4p=0.11 a6p=2.91 a3p=0.74 seen=0.27 exposed=0.01 small2=0.01 free=2.55 ball=32.75 deg=3.66 portal=0.08 home=6.66 cells100=51.23 longest=0.23
+forgot    own r200-300 n= 68 len=11.53 e8m=1.29 e8p=0.27 e4p=0.06 a6p=1.66 a3p=0.34 seen=0.33 exposed=0.01 small2=0.01 free=2.47 ball=33.75 deg=3.72 portal=0.07 home=6.13 cells100=64.79 longest=0.81
+forgot    own r300-400 n= 52 len=28.97 e8m=1.36 e8p=0.34 e4p=0.07 a6p=0.98 a3p=0.21 seen=0.50 exposed=0.02 small2=0.01 free=2.17 ball=32.96 deg=3.65 portal=0.09 home=8.17 cells100=75.74 longest=0.98
+forgot    own r400-500 n= 40 len=43.09 e8m=0.78 e8p=0.17 e4p=0.03 a6p=0.45 a3p=0.12 seen=0.39 exposed=0.04 small2=0.00 free=2.14 ball=32.95 deg=3.64 portal=0.13 home=9.16 cells100=85.36 longest=0.90
+forgot    opp r  0- 50 n=119 len=2.76 e8m=0.43 e8p=0.26 e4p=0.07 a6p=0.84 a3p=0.14 seen=0.15 exposed=0.01 small2=0.01 free=2.67 ball=33.17 deg=3.71 portal=0.20 home=9.16 cells100=73.60 longest=0.54
+forgot    opp r 50-100 n=109 len=2.96 e8m=0.90 e8p=0.42 e4p=0.10 a6p=1.69 a3p=0.36 seen=0.22 exposed=0.01 small2=0.02 free=2.63 ball=33.18 deg=3.71 portal=0.25 home=11.11 cells100=67.30 longest=0.37
+forgot    opp r100-200 n= 96 len=3.67 e8m=1.35 e8p=0.57 e4p=0.19 a6p=2.60 a3p=0.55 seen=0.32 exposed=0.03 small2=0.04 free=2.55 ball=32.42 deg=3.68 portal=0.21 home=11.06 cells100=62.31 longest=0.38
+forgot    opp r200-300 n= 69 len=6.67 e8m=1.18 e8p=0.26 e4p=0.07 a6p=3.41 a3p=0.68 seen=0.30 exposed=0.01 small2=0.01 free=2.48 ball=31.97 deg=3.68 portal=0.16 home=10.14 cells100=60.79 longest=0.51
+forgot    opp r300-400 n= 58 len=11.06 e8m=0.84 e8p=0.20 e4p=0.04 a6p=2.95 a3p=0.59 seen=0.27 exposed=0.03 small2=0.01 free=2.42 ball=32.11 deg=3.65 portal=0.16 home=10.32 cells100=63.34 longest=0.54
+forgot    opp r400-500 n= 45 len=24.78 e8m=0.41 e8p=0.07 e4p=0.01 a6p=1.50 a3p=0.31 seen=0.26 exposed=0.02 small2=0.00 free=2.33 ball=32.47 deg=3.67 portal=0.17 home=10.10 cells100=74.97 longest=0.78
+meow      own r  0- 50 n= 85 len=2.48 e8m=0.58 e8p=0.41 e4p=0.10 a6p=0.89 a3p=0.17 seen=0.17 exposed=0.01 small2=0.02 free=2.71 ball=34.40 deg=3.73 portal=0.17 home=10.37 cells100=87.41 longest=0.55
+meow      own r 50-100 n= 75 len=2.47 e8m=1.12 e8p=0.59 e4p=0.20 a6p=1.33 a3p=0.25 seen=0.30 exposed=0.01 small2=0.05 free=2.55 ball=30.92 deg=3.57 portal=0.15 home=13.70 cells100=85.29 longest=0.31
+meow      own r100-200 n= 58 len=2.56 e8m=1.64 e8p=0.64 e4p=0.18 a6p=1.73 a3p=0.36 seen=0.36 exposed=0.01 small2=0.03 free=2.51 ball=30.20 deg=3.54 portal=0.11 home=12.04 cells100=74.26 longest=0.23
+meow      own r200-300 n= 33 len=3.11 e8m=1.72 e8p=0.57 e4p=0.13 a6p=2.02 a3p=0.42 seen=0.31 exposed=0.01 small2=0.02 free=2.68 ball=34.02 deg=3.75 portal=0.08 home=10.81 cells100=71.50 longest=0.34
+meow      own r300-400 n= 22 len=10.70 e8m=1.75 e8p=0.59 e4p=0.16 a6p=1.19 a3p=0.22 seen=0.44 exposed=0.02 small2=0.02 free=2.56 ball=33.84 deg=3.76 portal=0.06 home=9.79 cells100=77.60 longest=0.72
+meow      own r400-500 n= 16 len=27.06 e8m=0.76 e8p=0.29 e4p=0.08 a6p=0.45 a3p=0.07 seen=0.50 exposed=0.03 small2=0.01 free=2.27 ball=32.64 deg=3.67 portal=0.08 home=9.99 cells100=79.06 longest=0.99
+meow      opp r  0- 50 n= 85 len=2.64 e8m=0.41 e8p=0.29 e4p=0.05 a6p=0.91 a3p=0.15 seen=0.11 exposed=0.00 small2=0.00 free=2.64 ball=33.30 deg=3.68 portal=0.17 home=8.84 cells100=73.06 longest=0.56
+meow      opp r 50-100 n= 85 len=2.56 e8m=0.86 e8p=0.48 e4p=0.08 a6p=1.73 a3p=0.33 seen=0.21 exposed=0.00 small2=0.01 free=2.57 ball=31.59 deg=3.64 portal=0.18 home=10.42 cells100=63.32 longest=0.30
+meow      opp r100-200 n= 80 len=2.81 e8m=1.50 e8p=0.81 e4p=0.16 a6p=3.06 a3p=0.69 seen=0.33 exposed=0.01 small2=0.03 free=2.48 ball=31.85 deg=3.63 portal=0.19 home=10.94 cells100=56.91 longest=0.30
+meow      opp r200-300 n= 65 len=3.56 e8m=1.77 e8p=0.95 e4p=0.22 a6p=4.02 a3p=0.90 seen=0.32 exposed=0.03 small2=0.03 free=2.41 ball=32.11 deg=3.63 portal=0.22 home=11.51 cells100=56.62 longest=0.33
+meow      opp r300-400 n= 44 len=12.45 e8m=1.17 e8p=0.40 e4p=0.09 a6p=3.66 a3p=0.85 seen=0.29 exposed=0.03 small2=0.01 free=2.33 ball=31.43 deg=3.60 portal=0.13 home=10.08 cells100=60.91 longest=0.55
+meow      opp r400-500 n= 32 len=33.87 e8m=0.61 e8p=0.15 e4p=0.03 a6p=1.16 a3p=0.26 seen=0.37 exposed=0.02 small2=0.00 free=2.38 ball=32.43 deg=3.66 portal=0.11 home=9.02 cells100=83.89 longest=0.85
+
+--- map size large
+Vibing++  own r  0- 50 n=129 len=4.94 e8m=0.46 e8p=0.07 e4p=0.01 a6p=1.13 a3p=0.31 seen=0.08 exposed=0.00 small2=0.00 free=2.14 ball=25.05 deg=3.33 portal=0.09 home=5.91 cells100=56.91 longest=0.90
+Vibing++  own r 50-100 n=126 len=5.75 e8m=1.00 e8p=0.35 e4p=0.06 a6p=1.52 a3p=0.34 seen=0.26 exposed=0.00 small2=0.01 free=2.03 ball=24.00 deg=3.23 portal=0.08 home=9.28 cells100=59.90 longest=0.69
+Vibing++  own r100-200 n=115 len=7.64 e8m=1.62 e8p=0.49 e4p=0.10 a6p=1.50 a3p=0.32 seen=0.41 exposed=0.03 small2=0.01 free=1.93 ball=23.03 deg=3.15 portal=0.06 home=12.00 cells100=53.56 longest=0.53
+Vibing++  own r200-300 n= 85 len=9.00 e8m=2.00 e8p=0.32 e4p=0.05 a6p=1.19 a3p=0.24 seen=0.45 exposed=0.03 small2=0.00 free=1.85 ball=21.41 deg=3.07 portal=0.05 home=12.65 cells100=43.42 longest=0.35
+Vibing++  own r300-400 n= 74 len=10.77 e8m=2.00 e8p=0.37 e4p=0.07 a6p=0.90 a3p=0.15 seen=0.44 exposed=0.03 small2=0.01 free=1.75 ball=20.01 deg=2.96 portal=0.05 home=12.91 cells100=46.94 longest=0.30
+Vibing++  own r400-500 n= 59 len=19.40 e8m=1.60 e8p=0.19 e4p=0.03 a6p=0.34 a3p=0.06 seen=0.36 exposed=0.07 small2=0.00 free=1.63 ball=18.27 deg=2.84 portal=0.05 home=12.15 cells100=50.87 longest=0.23
+Vibing++  opp r  0- 50 n=129 len=3.43 e8m=0.37 e8p=0.10 e4p=0.03 a6p=1.73 a3p=0.37 seen=0.05 exposed=0.00 small2=0.01 free=2.21 ball=27.45 deg=3.39 portal=0.10 home=6.04 cells100=55.13 longest=0.49
+Vibing++  opp r 50-100 n=119 len=3.32 e8m=0.68 e8p=0.29 e4p=0.09 a6p=1.96 a3p=0.41 seen=0.16 exposed=0.01 small2=0.02 free=2.18 ball=26.25 deg=3.29 portal=0.09 home=9.80 cells100=57.15 longest=0.38
+Vibing++  opp r100-200 n=105 len=3.78 e8m=1.20 e8p=0.39 e4p=0.11 a6p=2.35 a3p=0.48 seen=0.27 exposed=0.04 small2=0.02 free=2.12 ball=25.97 deg=3.25 portal=0.08 home=10.39 cells100=49.60 longest=0.31
+Vibing++  opp r200-300 n= 79 len=5.17 e8m=1.62 e8p=0.40 e4p=0.08 a6p=2.34 a3p=0.50 seen=0.33 exposed=0.08 small2=0.01 free=2.00 ball=24.22 deg=3.17 portal=0.06 home=9.87 cells100=44.05 longest=0.28
+Vibing++  opp r300-400 n= 56 len=7.00 e8m=1.89 e8p=0.09 e4p=0.02 a6p=1.85 a3p=0.39 seen=0.33 exposed=0.01 small2=0.00 free=1.78 ball=20.30 deg=2.95 portal=0.02 home=8.22 cells100=35.44 longest=0.24
+Vibing++  opp r400-500 n= 51 len=11.89 e8m=1.76 e8p=0.10 e4p=0.01 a6p=1.31 a3p=0.28 seen=0.33 exposed=0.05 small2=0.00 free=1.64 ball=18.69 deg=2.84 portal=0.04 home=8.39 cells100=40.54 longest=0.29
+SSS       own r  0- 50 n=135 len=3.33 e8m=0.38 e8p=0.08 e4p=0.02 a6p=2.15 a3p=0.52 seen=0.06 exposed=0.00 small2=0.00 free=2.25 ball=30.05 deg=3.50 portal=0.11 home=6.59 cells100=66.41 longest=0.32
+SSS       own r 50-100 n=129 len=2.71 e8m=0.67 e8p=0.30 e4p=0.05 a6p=2.74 a3p=0.65 seen=0.15 exposed=0.00 small2=0.01 free=2.35 ball=29.62 deg=3.46 portal=0.15 home=10.36 cells100=62.96 longest=0.17
+SSS       own r100-200 n=125 len=2.70 e8m=0.93 e8p=0.45 e4p=0.08 a6p=2.92 a3p=0.65 seen=0.19 exposed=0.01 small2=0.01 free=2.34 ball=29.36 deg=3.45 portal=0.08 home=12.32 cells100=55.40 longest=0.09
+SSS       own r200-300 n=101 len=2.82 e8m=1.30 e8p=0.29 e4p=0.05 a6p=3.00 a3p=0.69 seen=0.23 exposed=0.03 small2=0.01 free=2.22 ball=28.05 deg=3.38 portal=0.06 home=12.34 cells100=52.04 longest=0.02
+SSS       own r300-400 n= 79 len=4.19 e8m=1.34 e8p=0.12 e4p=0.03 a6p=2.44 a3p=0.57 seen=0.21 exposed=0.05 small2=0.00 free=2.10 ball=26.51 deg=3.29 portal=0.04 home=11.64 cells100=46.78 longest=0.04
+SSS       own r400-500 n= 68 len=9.51 e8m=1.16 e8p=0.17 e4p=0.03 a6p=1.83 a3p=0.45 seen=0.24 exposed=0.08 small2=0.01 free=1.94 ball=24.42 deg=3.19 portal=0.05 home=11.98 cells100=52.95 longest=0.11
+SSS       opp r  0- 50 n=134 len=4.08 e8m=0.41 e8p=0.07 e4p=0.02 a6p=1.79 a3p=0.36 seen=0.07 exposed=0.00 small2=0.00 free=2.27 ball=28.79 deg=3.48 portal=0.11 home=5.77 cells100=54.53 longest=0.63
+SSS       opp r 50-100 n=127 len=4.09 e8m=0.97 e8p=0.37 e4p=0.08 a6p=1.83 a3p=0.34 seen=0.23 exposed=0.01 small2=0.01 free=2.27 ball=27.79 deg=3.41 portal=0.11 home=8.69 cells100=55.79 longest=0.53
+SSS       opp r100-200 n=108 len=4.73 e8m=1.48 e8p=0.48 e4p=0.11 a6p=2.05 a3p=0.42 seen=0.34 exposed=0.04 small2=0.01 free=2.17 ball=26.44 deg=3.32 portal=0.07 home=9.96 cells100=52.63 longest=0.40
+SSS       opp r200-300 n= 64 len=6.11 e8m=2.04 e8p=0.17 e4p=0.02 a6p=2.06 a3p=0.38 seen=0.39 exposed=0.03 small2=0.00 free=1.95 ball=23.23 deg=3.12 portal=0.07 home=8.37 cells100=42.49 longest=0.34
+SSS       opp r300-400 n= 44 len=7.41 e8m=2.34 e8p=0.16 e4p=0.03 a6p=1.58 a3p=0.31 seen=0.43 exposed=0.03 small2=0.00 free=1.75 ball=19.35 deg=2.92 portal=0.05 home=6.34 cells100=33.54 longest=0.27
+SSS       opp r400-500 n= 38 len=13.80 e8m=2.50 e8p=0.12 e4p=0.02 a6p=0.89 a3p=0.19 seen=0.43 exposed=0.05 small2=0.00 free=1.61 ball=17.60 deg=2.78 portal=0.06 home=8.17 cells100=43.09 longest=0.27
+forgot    own r  0- 50 n=131 len=3.11 e8m=0.51 e8p=0.17 e4p=0.05 a6p=1.58 a3p=0.35 seen=0.08 exposed=0.00 small2=0.01 free=2.20 ball=27.42 deg=3.37 portal=0.09 home=8.02 cells100=66.89 longest=0.36
+forgot    own r 50-100 n=114 len=2.80 e8m=0.91 e8p=0.48 e4p=0.12 a6p=1.60 a3p=0.40 seen=0.17 exposed=0.01 small2=0.01 free=2.20 ball=26.07 deg=3.28 portal=0.10 home=15.04 cells100=59.71 longest=0.24
+forgot    own r100-200 n= 94 len=2.90 e8m=1.05 e8p=0.24 e4p=0.05 a6p=1.94 a3p=0.48 seen=0.17 exposed=0.01 small2=0.01 free=2.08 ball=24.45 deg=3.17 portal=0.09 home=9.06 cells100=39.52 longest=0.15
+forgot    own r200-300 n= 80 len=9.15 e8m=1.27 e8p=0.15 e4p=0.02 a6p=1.12 a3p=0.20 seen=0.27 exposed=0.02 small2=0.00 free=1.96 ball=24.18 deg=3.16 portal=0.08 home=6.90 cells100=46.00 longest=0.45
+forgot    own r300-400 n= 72 len=19.44 e8m=1.47 e8p=0.19 e4p=0.02 a6p=0.69 a3p=0.12 seen=0.33 exposed=0.04 small2=0.00 free=1.74 ball=22.63 deg=3.04 portal=0.08 home=7.99 cells100=52.19 longest=0.38
+forgot    own r400-500 n= 65 len=25.00 e8m=1.26 e8p=0.18 e4p=0.04 a6p=0.35 a3p=0.09 seen=0.35 exposed=0.06 small2=0.00 free=1.60 ball=21.02 deg=2.90 portal=0.05 home=8.29 cells100=49.82 longest=0.28
+forgot    opp r  0- 50 n=131 len=4.22 e8m=0.37 e8p=0.11 e4p=0.01 a6p=1.55 a3p=0.33 seen=0.06 exposed=0.00 small2=0.00 free=2.19 ball=26.76 deg=3.38 portal=0.10 home=4.95 cells100=52.15 longest=0.72
+forgot    opp r 50-100 n=129 len=4.49 e8m=1.11 e8p=0.43 e4p=0.07 a6p=1.65 a3p=0.33 seen=0.28 exposed=0.01 small2=0.01 free=2.16 ball=25.88 deg=3.29 portal=0.07 home=8.38 cells100=56.77 longest=0.60
+forgot    opp r100-200 n=116 len=5.32 e8m=1.81 e8p=0.61 e4p=0.16 a6p=1.91 a3p=0.39 seen=0.43 exposed=0.03 small2=0.03 free=2.10 ball=25.78 deg=3.26 portal=0.06 home=10.01 cells100=53.87 longest=0.46
+forgot    opp r200-300 n= 78 len=5.94 e8m=2.09 e8p=0.25 e4p=0.05 a6p=1.89 a3p=0.36 seen=0.42 exposed=0.02 small2=0.01 free=1.96 ball=22.79 deg=3.12 portal=0.05 home=8.85 cells100=45.29 longest=0.26
+forgot    opp r300-400 n= 70 len=7.76 e8m=2.19 e8p=0.16 e4p=0.03 a6p=1.68 a3p=0.35 seen=0.37 exposed=0.02 small2=0.01 free=1.87 ball=21.74 deg=3.04 portal=0.04 home=8.58 cells100=41.57 longest=0.27
+forgot    opp r400-500 n= 67 len=16.78 e8m=1.57 e8p=0.11 e4p=0.02 a6p=0.97 a3p=0.20 seen=0.38 exposed=0.06 small2=0.00 free=1.78 ball=20.73 deg=2.99 portal=0.06 home=10.69 cells100=48.44 longest=0.35
+meow      own r  0- 50 n= 90 len=2.51 e8m=0.42 e8p=0.14 e4p=0.03 a6p=1.78 a3p=0.34 seen=0.06 exposed=0.00 small2=0.01 free=2.37 ball=28.04 deg=3.46 portal=0.08 home=6.58 cells100=60.63 longest=0.30
+meow      own r 50-100 n= 81 len=2.51 e8m=1.10 e8p=0.64 e4p=0.14 a6p=1.63 a3p=0.33 seen=0.24 exposed=0.01 small2=0.02 free=2.30 ball=26.99 deg=3.33 portal=0.10 home=11.88 cells100=59.34 longest=0.23
+meow      own r100-200 n= 60 len=2.67 e8m=2.25 e8p=0.82 e4p=0.18 a6p=1.56 a3p=0.34 seen=0.42 exposed=0.03 small2=0.02 free=2.16 ball=24.82 deg=3.20 portal=0.06 home=12.80 cells100=55.60 longest=0.16
+meow      own r200-300 n= 32 len=3.81 e8m=3.84 e8p=0.10 e4p=0.03 a6p=1.64 a3p=0.44 seen=0.63 exposed=0.02 small2=0.00 free=1.59 ball=16.00 deg=2.66 portal=0.02 home=10.14 cells100=38.60 longest=0.09
+meow      own r300-400 n= 20 len=5.70 e8m=5.84 e8p=0.02 e4p=0.00 a6p=0.22 a3p=0.05 seen=0.81 exposed=0.01 small2=0.00 free=1.15 ball=7.19 deg=2.18 portal=0.01 home=2.38 cells100=13.11 longest=0.17
+meow      own r400-500 n= 18 len=3.00 e8m=3.56 e8p=0.00 e4p=0.00 a6p=0.00 a3p=0.00 seen=0.56 exposed=0.00 small2=0.00 free=1.00 ball=4.00 deg=2.00 portal=0.00 home=1.00 cells100=4.00 longest=0.12
+meow      opp r  0- 50 n= 97 len=2.91 e8m=0.34 e8p=0.07 e4p=0.01 a6p=1.81 a3p=0.38 seen=0.04 exposed=0.00 small2=0.00 free=2.32 ball=28.30 deg=3.47 portal=0.12 home=4.43 cells100=43.40 longest=0.35
+meow      opp r 50-100 n= 97 len=2.97 e8m=0.81 e8p=0.28 e4p=0.04 a6p=2.10 a3p=0.41 seen=0.15 exposed=0.00 small2=0.00 free=2.31 ball=27.85 deg=3.41 portal=0.10 home=8.79 cells100=48.78 longest=0.22
+meow      opp r100-200 n= 95 len=3.60 e8m=1.08 e8p=0.35 e4p=0.05 a6p=2.26 a3p=0.46 seen=0.20 exposed=0.02 small2=0.00 free=2.19 ball=26.69 deg=3.34 portal=0.10 home=10.54 cells100=39.52 longest=0.09
+meow      opp r200-300 n= 84 len=5.11 e8m=0.91 e8p=0.26 e4p=0.04 a6p=1.94 a3p=0.42 seen=0.20 exposed=0.05 small2=0.00 free=2.11 ball=26.14 deg=3.31 portal=0.09 home=11.48 cells100=42.17 longest=0.07
+meow      opp r300-400 n= 63 len=10.88 e8m=0.85 e8p=0.12 e4p=0.02 a6p=1.68 a3p=0.34 seen=0.19 exposed=0.02 small2=0.00 free=2.00 ball=24.80 deg=3.22 portal=0.09 home=8.81 cells100=40.54 longest=0.15
+meow      opp r400-500 n= 53 len=24.51 e8m=0.89 e8p=0.10 e4p=0.02 a6p=0.96 a3p=0.18 seen=0.24 exposed=0.05 small2=0.00 free=1.88 ball=23.38 deg=3.12 portal=0.06 home=9.43 cells100=57.53 longest=0.33
+
+--- wins vs losses control (own queen, rounds 50-200, all sizes pooled then by size)
+Vibing++  all    W n=223 len=4.29 e8m=1.36 e8p=0.41 e4p=0.10 a6p=1.95 a3p=0.48 seen=0.34 exposed=0.03 small2=0.02 free=2.11 ball=25.13 deg=3.28 portal=0.22 home=12.92 cells100=53.30 longest=0.34
+Vibing++  all    L n= 99 len=4.41 e8m=2.12 e8p=0.89 e4p=0.25 a6p=1.54 a3p=0.38 seen=0.44 exposed=0.04 small2=0.05 free=2.15 ball=26.00 deg=3.32 portal=0.25 home=12.04 cells100=55.32 longest=0.45
+Vibing++  small  W n= 71 len=2.67 e8m=1.78 e8p=0.43 e4p=0.10 a6p=2.37 a3p=0.63 seen=0.43 exposed=0.03 small2=0.02 free=2.03 ball=23.60 deg=3.19 portal=0.34 home=12.96 cells100=52.84 longest=0.20
+Vibing++  small  L n= 34 len=2.76 e8m=3.50 e8p=1.65 e4p=0.49 a6p=1.43 a3p=0.38 seen=0.63 exposed=0.06 small2=0.09 free=2.20 ball=26.72 deg=3.35 portal=0.36 home=11.96 cells100=62.23 longest=0.36
+Vibing++  medium W n= 70 len=2.78 e8m=1.02 e8p=0.42 e4p=0.14 a6p=2.06 a3p=0.51 seen=0.28 exposed=0.03 small2=0.04 free=2.36 ball=28.86 deg=3.49 portal=0.29 home=14.39 cells100=57.58 longest=0.22
+Vibing++  medium L n= 21 len=2.53 e8m=1.21 e8p=0.43 e4p=0.13 a6p=2.12 a3p=0.56 seen=0.27 exposed=0.02 small2=0.03 free=2.31 ball=28.02 deg=3.42 portal=0.45 home=15.79 cells100=49.24 longest=0.23
+Vibing++  large  W n= 82 len=6.98 e8m=1.28 e8p=0.39 e4p=0.07 a6p=1.50 a3p=0.33 seen=0.33 exposed=0.01 small2=0.01 free=1.96 ball=23.28 deg=3.18 portal=0.06 home=11.63 cells100=50.05 longest=0.57
+Vibing++  large  L n= 44 len=6.57 e8m=1.49 e8p=0.54 e4p=0.13 a6p=1.35 a3p=0.30 seen=0.39 exposed=0.03 small2=0.02 free=2.04 ball=24.49 deg=3.26 portal=0.07 home=10.30 cells100=52.89 longest=0.64
+SSS       all    W n=234 len=2.59 e8m=1.08 e8p=0.29 e4p=0.07 a6p=2.90 a3p=0.65 seen=0.22 exposed=0.01 small2=0.01 free=2.37 ball=29.02 deg=3.48 portal=0.22 home=10.55 cells100=50.40 longest=0.19
+SSS       all    L n=128 len=2.61 e8m=1.83 e8p=0.59 e4p=0.14 a6p=2.57 a3p=0.61 seen=0.36 exposed=0.01 small2=0.02 free=2.39 ball=29.10 deg=3.50 portal=0.24 home=11.02 cells100=51.97 longest=0.26
+SSS       small  W n= 86 len=2.55 e8m=1.51 e8p=0.33 e4p=0.08 a6p=2.59 a3p=0.60 seen=0.30 exposed=0.01 small2=0.02 free=2.27 ball=26.01 deg=3.37 portal=0.33 home=9.83 cells100=41.57 longest=0.28
+SSS       small  L n= 42 len=2.59 e8m=3.24 e8p=0.75 e4p=0.20 a6p=1.46 a3p=0.34 seen=0.55 exposed=0.02 small2=0.04 free=2.21 ball=23.20 deg=3.27 portal=0.44 home=8.98 cells100=34.47 longest=0.45
+SSS       medium W n= 65 len=2.49 e8m=0.92 e8p=0.26 e4p=0.09 a6p=3.22 a3p=0.68 seen=0.22 exposed=0.01 small2=0.02 free=2.60 ball=33.26 deg=3.70 portal=0.21 home=11.08 cells100=64.15 longest=0.16
+SSS       medium L n= 40 len=2.52 e8m=1.37 e8p=0.49 e4p=0.12 a6p=3.77 a3p=0.91 seen=0.30 exposed=0.01 small2=0.01 free=2.54 ball=33.59 deg=3.70 portal=0.18 home=10.68 cells100=63.73 longest=0.23
+SSS       large  W n= 83 len=2.71 e8m=0.75 e8p=0.29 e4p=0.05 a6p=2.98 a3p=0.67 seen=0.14 exposed=0.01 small2=0.00 free=2.30 ball=28.83 deg=3.41 portal=0.10 home=10.87 cells100=48.77 longest=0.11
+SSS       large  L n= 46 len=2.69 e8m=0.95 e8p=0.54 e4p=0.10 a6p=2.54 a3p=0.59 seen=0.23 exposed=0.01 small2=0.01 free=2.43 ball=30.59 deg=3.53 portal=0.10 home=13.18 cells100=57.71 longest=0.11
+forgot    all    W n=212 len=2.68 e8m=1.21 e8p=0.37 e4p=0.10 a6p=2.36 a3p=0.63 seen=0.25 exposed=0.01 small2=0.01 free=2.29 ball=28.01 deg=3.41 portal=0.17 home=10.30 cells100=50.43 longest=0.22
+forgot    all    L n=143 len=2.71 e8m=2.06 e8p=0.79 e4p=0.22 a6p=1.78 a3p=0.48 seen=0.39 exposed=0.03 small2=0.03 free=2.31 ball=28.15 deg=3.42 portal=0.20 home=10.93 cells100=54.93 longest=0.33
+forgot    small  W n= 84 len=2.59 e8m=1.54 e8p=0.32 e4p=0.10 a6p=2.45 a3p=0.69 seen=0.33 exposed=0.01 small2=0.01 free=2.21 ball=25.94 deg=3.35 portal=0.29 home=9.32 cells100=49.84 longest=0.27
+forgot    small  L n= 44 len=2.66 e8m=3.78 e8p=1.17 e4p=0.27 a6p=2.19 a3p=0.66 seen=0.60 exposed=0.04 small2=0.04 free=2.21 ball=27.05 deg=3.39 portal=0.36 home=8.78 cells100=51.84 longest=0.41
+forgot    medium W n= 59 len=2.57 e8m=1.07 e8p=0.42 e4p=0.12 a6p=2.94 a3p=0.76 seen=0.25 exposed=0.01 small2=0.01 free=2.60 ball=34.15 deg=3.73 portal=0.10 home=9.07 cells100=58.45 longest=0.20
+forgot    medium L n= 54 len=2.72 e8m=1.34 e8p=0.70 e4p=0.24 a6p=1.34 a3p=0.34 seen=0.35 exposed=0.02 small2=0.03 free=2.46 ball=30.36 deg=3.54 portal=0.16 home=11.15 cells100=60.94 longest=0.40
+forgot    large  W n= 69 len=2.88 e8m=0.94 e8p=0.39 e4p=0.09 a6p=1.75 a3p=0.43 seen=0.16 exposed=0.01 small2=0.01 free=2.12 ball=25.28 deg=3.22 portal=0.09 home=12.54 cells100=44.29 longest=0.20
+forgot    large  L n= 45 len=2.74 e8m=1.24 e8p=0.53 e4p=0.15 a6p=1.91 a3p=0.48 seen=0.25 exposed=0.02 small2=0.02 free=2.22 ball=26.58 deg=3.30 portal=0.11 home=12.77 cells100=50.72 longest=0.17
+meow      all    W n= 65 len=2.49 e8m=1.19 e8p=0.48 e4p=0.16 a6p=1.94 a3p=0.39 seen=0.29 exposed=0.01 small2=0.06 free=2.33 ball=28.15 deg=3.37 portal=0.22 home=13.98 cells100=69.33 longest=0.20
+meow      all    L n=167 len=2.50 e8m=1.75 e8p=0.72 e4p=0.18 a6p=1.60 a3p=0.37 seen=0.36 exposed=0.02 small2=0.03 free=2.35 ball=28.00 deg=3.39 portal=0.17 home=11.73 cells100=61.91 longest=0.28
+meow      small  W n= 28 len=2.44 e8m=0.96 e8p=0.32 e4p=0.11 a6p=2.57 a3p=0.51 seen=0.23 exposed=0.03 small2=0.04 free=2.30 ball=28.99 deg=3.37 portal=0.30 home=13.36 cells100=68.28 longest=0.22
+meow      small  L n= 48 len=2.42 e8m=2.22 e8p=0.66 e4p=0.17 a6p=1.58 a3p=0.48 seen=0.41 exposed=0.03 small2=0.02 free=2.22 ball=25.87 deg=3.29 portal=0.33 home=8.62 cells100=55.13 longest=0.42
+meow      medium W n= 27 len=2.44 e8m=1.12 e8p=0.69 e4p=0.25 a6p=1.55 a3p=0.32 seen=0.34 exposed=0.01 small2=0.10 free=2.49 ball=30.30 deg=3.51 portal=0.20 home=15.29 cells100=81.64 longest=0.21
+meow      medium L n= 48 len=2.54 e8m=1.50 e8p=0.61 e4p=0.19 a6p=1.52 a3p=0.30 seen=0.32 exposed=0.01 small2=0.03 free=2.51 ball=30.23 deg=3.53 portal=0.12 home=12.72 cells100=72.73 longest=0.30
+meow      large  W n= 10 len=2.77 e8m=2.03 e8p=0.37 e4p=0.05 a6p=1.22 a3p=0.25 seen=0.34 exposed=0.01 small2=0.00 free=1.94 ball=20.00 deg=2.98 portal=0.03 home=12.18 cells100=39.05 longest=0.15
+meow      large  L n= 71 len=2.53 e8m=1.60 e8p=0.83 e4p=0.20 a6p=1.67 a3p=0.35 seen=0.35 exposed=0.02 small2=0.03 free=2.34 ball=27.93 deg=3.37 portal=0.10 home=13.15 cells100=59.17 longest=0.18

@@ -1,0 +1,4 @@
+- 2026-10-04 14:28:49 KST — `/submit`을 요청자 1명 + 즉시 Confirm으로 변경하고 docstring·도움말·footer·오프라인 검사를 갱신했다.
+- main에 뒤처져도 역방향 GitHub compare files에 `mybot2/` 변경(삭제·이름 변경 포함)이 있을 때만 stale로 막는다. docs/work/tools 변경은 허용한다.
+- 동결·대기 경기 검사·고정 커밋 업로드·UPLOAD_ENABLED=True 유지. 오프라인 검사 13개, Python 컴파일·diff 공백 검사 통과.
+- 봇 실행·재시작·종료, 실제 원격 호출·업로드·커밋은 하지 않았다.

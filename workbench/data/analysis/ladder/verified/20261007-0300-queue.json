@@ -1,0 +1,277 @@
+[
+ {
+  "id": "F13",
+  "claim": "On layouts where the queen can leave spawn, when their queen dies before ours our queen still dies later in about two games out of three, and we win every game in which she survives but only about half (main) of those in which she dies.",
+  "how_to_count": "main games = our bot id in the replay is 18066, 18068, 18504 or 18570; v31 games = id 17790 (or use our_code in rows.jsonl). Test builds are never used. Leave out layouts with queen_spawn_dead_end true in maps.json (Schooltime #1, Schooltime #2, Slithery Fight #1). The queen of a side is its lowest initial dragon id. Select games where the opponent queen has a dragonDeath event in a raw round strictly earlier than our queen death round, or our queen never dies. In that set count: games; games where our queen dies later; wins among those; games where she is alive at the end; wins among those. Also the cause of her death: head-on as the non-moving victim of an opponent dragon (rammed by enemy), head-on as the mover, wall, own body, other dragon body. Mirror set: our queen dies strictly first; count how often theirs dies later and our wins in each part.",
+  "your_numbers": {
+   "main": {
+    "games": 71,
+    "ours_dies_later": 47,
+    "wins_when_dies_later": 26,
+    "survives": 24,
+    "wins_when_survives": 24,
+    "causes": {
+     "rammed_by_enemy": 30,
+     "wall": 7,
+     "own_body": 5,
+     "other_dragon_body": 3,
+     "she_rammed": 2
+    }
+   },
+   "main_band_1700_1899": {
+    "games": 22,
+    "ours_dies_later": 12,
+    "wins_when_dies_later": 9
+   },
+   "main_band_1900_2099": {
+    "games": 47,
+    "ours_dies_later": 33,
+    "wins_when_dies_later": 17
+   },
+   "main_first_half": {
+    "games": 37,
+    "ours_dies_later": 24
+   },
+   "main_second_half": {
+    "games": 34,
+    "ours_dies_later": 23
+   },
+   "v31": {
+    "games": 159,
+    "ours_dies_later": 112,
+    "wins_when_dies_later": 45,
+    "survives": 47,
+    "wins_when_survives": 47
+   },
+   "mirror_main": {
+    "games": 91,
+    "theirs_dies_later": 60,
+    "our_wins_when_dies_later": 41,
+    "survives": 31,
+    "our_wins_when_survives": 0
+   },
+   "mirror_v31": {
+    "games": 182,
+    "theirs_dies_later": 121,
+    "our_wins_when_dies_later": 73,
+    "survives": 61,
+    "our_wins_when_survives": 0
+   }
+  },
+  "slices": [
+   "main, opponent rating 1700-1899",
+   "main, opponent rating 1900-2099",
+   "main first half / second half by game time (cut 2026-10-06T14:48:15Z)",
+   "v31 games"
+  ]
+ },
+ {
+  "id": "F11",
+  "claim": "On large layouts (2000 or more open tiles) our share of pearls eaten in raw rounds 101-300 is about one third, against about 0.47 on the other layouts, in both codes and in each rating band.",
+  "how_to_count": "main games = our bot id in the replay is 18066, 18068, 18504 or 18570; v31 games = id 17790 (or use our_code in rows.jsonl). Test builds are never used. Large layouts = map_key entries in maps.json with open_tiles >= 2000 (Around UNSW #1, Australia #1, Islands #1, Schooltime #1, Schooltime #2). A pearl eaten = a tile removal credited to the dragon whose turn removed it, natural and dropped pearls both, by the raw round of the meal. Share = pearls we ate in raw rounds 101 to 300 / pearls both sides ate in those rounds, pooled over the games of the group (sum the counts, then divide). Report pooled large and pooled other for main and v31, each of the five layouts in both codes, and large against other within opponent rating 1700-1899, 1900-2099 and 2100+. Also wins / games on large and on other layouts.",
+  "your_numbers": {
+   "main_large": {
+    "games": 51,
+    "share": 0.334,
+    "wins": 20
+   },
+   "main_other": {
+    "games": 159,
+    "share": 0.471,
+    "wins": 98
+   },
+   "v31_large": {
+    "games": 95,
+    "share": 0.341,
+    "wins": 37
+   },
+   "v31_other": {
+    "games": 315,
+    "share": 0.473,
+    "wins": 166
+   },
+   "per_layout_main": {
+    "Around_UNSW": 0.369,
+    "Australia": 0.274,
+    "Islands": 0.242,
+    "Schooltime_1": 0.309,
+    "Schooltime_2": 0.428
+   },
+   "per_layout_v31": {
+    "Around_UNSW": 0.332,
+    "Australia": 0.357,
+    "Islands": 0.301,
+    "Schooltime_1": 0.263,
+    "Schooltime_2": 0.396
+   },
+   "large_by_band_main": {
+    "b": 0.383,
+    "c": 0.313,
+    "d": 0.255
+   },
+   "large_by_band_v31": {
+    "b": 0.376,
+    "c": 0.339,
+    "d": 0.207
+   },
+   "other_by_band_main": {
+    "b": 0.491,
+    "c": 0.47,
+    "d": 0.359
+   },
+   "other_by_band_v31": {
+    "b": 0.498,
+    "c": 0.473,
+    "d": 0.397
+   }
+  },
+  "slices": [
+   "main games",
+   "v31 games",
+   "opponent rating 1700-1899 and 1900-2099 inside each code",
+   "each of the five layouts"
+  ]
+ },
+ {
+  "id": "F10",
+  "claim": "On the four 2-dragon-start layouts with scarce early pearls (Tower Defense, Stripes, Trauma, Queen Of Spades) our share of the pearls eaten by raw round 50 is about one third in both codes, against about half on other layouts; on main the gap is absent against opponents rated 1700-1899.",
+  "how_to_count": "main games = our bot id in the replay is 18066, 18068, 18504 or 18570; v31 games = id 17790 (or use our_code in rows.jsonl). Test builds are never used. Games that reached raw round 50. Pearls eaten by r50 = all meals with raw round <= 50, natural and dropped. For each map_key and code with at least 5 such games take the median over games of (our pearls + their pearls by r50); the layout is scarce in that code if the median is under 30. Pooled share = sum of our pearls by r50 / sum of both sides, over the games of the scarce layouts and over the games of the other classed layouts. Then the same share for the four named layouts together, split by opponent rating band, in each code. Also per layout: median raw round of each side first, second and third dragonSplit (500 if it never happens).",
+  "your_numbers": {
+   "main": {
+    "scarce_layouts": 5,
+    "scarce_games": 70,
+    "scarce_share": 0.357,
+    "other_layouts": 13,
+    "other_games": 137,
+    "other_share": 0.508
+   },
+   "v31": {
+    "scarce_layouts": 7,
+    "scarce_games": 130,
+    "scarce_share": 0.373,
+    "other_layouts": 12,
+    "other_games": 279,
+    "other_share": 0.508
+   },
+   "per_layout_share_main": {
+    "Tower_Defense": 0.37,
+    "Stripes": 0.28,
+    "Trauma": 0.2,
+    "Queen_Of_Spades": 0.44
+   },
+   "per_layout_share_v31": {
+    "Tower_Defense": 0.38,
+    "Stripes": 0.27,
+    "Trauma": 0.33,
+    "Queen_Of_Spades": 0.28
+   },
+   "four_layouts_by_band_main": {
+    "b": "0.491 (19 games)",
+    "c": "0.297 (37 games)",
+    "d": "0.08 (3 games)"
+   },
+   "four_layouts_by_band_v31": {
+    "b": "0.33 (48)",
+    "c": "0.33 (30)",
+    "d": "0.127 (9)"
+   },
+   "split_rounds_main_ours_theirs": {
+    "Stripes": "24/18, 61.5/33.5, 130/36",
+    "Queen_Of_Spades": "31/12, 43/22, 50/30",
+    "Tower_Defense": "52/43, 118/64, 145/68"
+   }
+  },
+  "slices": [
+   "main games",
+   "v31 games",
+   "each of the four layouts",
+   "opponent rating bands inside each code"
+  ]
+ },
+ {
+  "id": "F8",
+  "claim": "In cross-team head-on meetings the opponent dragon is the mover in about two thirds of meetings, in every rating band and time half, and the meetings do not cost us more length than them.",
+  "how_to_count": "main games = our bot id in the replay is 18066, 18068, 18504 or 18570; v31 games = id 17790 (or use our_code in rows.jsonl). Test builds are never used. A cross-team head-on meeting = two dragonDeath events with reason 3 inside one turn, the first of a dragon that is not the turn actor (the victim), the second of the actor (the mover), the two on different teams. Their mover share = meetings whose mover is an opponent dragon / all cross-team meetings, pooled over games. Length lost = body length just before death; sum ours and theirs over all meetings. Report main all, opponent rating 1700-1899, 1900-2099, first and second half of main by game time (cut 2026-10-06T14:48:15Z), v31, and the number of opponents with at least 5 main games whose share is above 0.5.",
+  "your_numbers": {
+   "main": {
+    "meetings": 8313,
+    "their_mover_share": 0.657,
+    "length_lost_us": 28067,
+    "length_lost_them": 31212
+   },
+   "band_1700_1899": {
+    "meetings": 2734,
+    "share": 0.701,
+    "length_ratio": 0.881
+   },
+   "band_1900_2099": {
+    "meetings": 5222,
+    "share": 0.63,
+    "length_ratio": 0.915
+   },
+   "first_half": {
+    "meetings": 3620,
+    "share": 0.639
+   },
+   "second_half": {
+    "meetings": 4693,
+    "share": 0.671
+   },
+   "v31": {
+    "meetings": 16491,
+    "share": 0.675,
+    "length_ratio": 0.906
+   },
+   "opponents_above_half": "22 of 24"
+  },
+  "slices": [
+   "main, opponent rating 1700-1899",
+   "main, opponent rating 1900-2099",
+   "main first half / second half",
+   "v31 games"
+  ]
+ },
+ {
+  "id": "F15",
+  "claim": "Our no-action deaths are working feeder deaths: at least nine in ten happen within 8 tiles of one of our own dragons at least twice as long, and our side eats about 80 percent of the pearls they drop within 15 rounds while the opponent eats under 5 percent.",
+  "how_to_count": "main games = our bot id in the replay is 18066, 18068, 18504 or 18570; v31 games = id 17790 (or use our_code in rows.jsonl). Test builds are never used. Take every dragonDeath of one of our dragons with reason 4 (other; all of ours are no action). At that moment, with the dying dragon removed: wrapped Manhattan distance from its head to the nearest head of one of our living dragons whose length is at least twice its length (none = no such dragon). Its drop = the pearls spawned on its body segments 0, 2, 4, ... right after the death. For each dropped pearl: eaten within raw round difference <= 15 by our side, by the opponent, or not. Report deaths, share within 3 and within 8 tiles, share with no such dragon, pearls dropped, shares eaten by us and by them; and the share of these deaths before raw round 300 and before raw round 200.",
+  "your_numbers": {
+   "main": {
+    "deaths": 5895,
+    "within_3": 0.872,
+    "within_8": 0.928,
+    "no_big_dragon": 0.01,
+    "length_given_up": 15455,
+    "pearls_dropped": 8565,
+    "eaten_by_us": 6883,
+    "eaten_by_them": 281,
+    "before_r300": 1270,
+    "before_r200": 0
+   },
+   "band_1700_1899": {
+    "deaths": 2302,
+    "within_8": 0.926,
+    "eaten_by_us_share": 0.803,
+    "eaten_by_them_share": 0.023
+   },
+   "band_1900_2099": {
+    "deaths": 3357,
+    "within_8": 0.93,
+    "eaten_by_us_share": 0.803,
+    "eaten_by_them_share": 0.039
+   },
+   "v31": {
+    "deaths": 10326,
+    "within_8": 0.93,
+    "pearls_dropped": 14763,
+    "eaten_by_us": 11719,
+    "eaten_by_them": 523
+   }
+  },
+  "slices": [
+   "main, opponent rating 1700-1899",
+   "main, opponent rating 1900-2099",
+   "v31 games"
+  ]
+ }
+]

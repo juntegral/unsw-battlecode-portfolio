@@ -1,0 +1,8 @@
+[
+ {"bot": "exp/v16/bot-b", "out": "exp/v16/p16b-a", "seeds": [1, 2, 3, 4], "maps": "exp/v1/maps-swarm-a", "only": ["slithery_fight", "schooltime", "trauma"], "opps": ["proxy4_king", "proxy4_swarm"], "sides": ["A", "B"], "cpu": true},
+ {"bot": "exp/v16/bot-b", "out": "exp/v16/p16b-b", "seeds": [1, 2, 3, 4], "maps": "exp/v1/maps-swarm-b", "only": ["slithery_fight_b"], "opps": ["proxy4_king", "proxy4_swarm"], "sides": ["A", "B"], "cpu": true},
+ {"bot": "exp/v16/bot-b-off", "out": "exp/v16/id-boff-a", "seeds": [1, 2], "maps": "exp/v1/maps-swarm-a", "only": ["slithery_fight", "schooltime", "trauma"], "opps": ["proxy4_king"], "sides": ["A", "B"]},
+ {"bot": "exp/v16/bot-b-off", "out": "exp/v16/id-boff-b", "seeds": [1, 2], "maps": "exp/v1/maps-swarm-b", "only": ["slithery_fight_b"], "opps": ["proxy4_king"], "sides": ["A", "B"]},
+ {"bot": "exp/v16/bot-b", "out": "exp/v16/id-b-o", "seeds": [1, 2], "maps": "maps/online-20260927", "only": ["default", "autarky"], "opps": ["proxy4_king"], "sides": ["A", "B"]},
+ {"bot": "exp/v16/bot-b", "out": "exp/v16/id-b-sb", "seeds": [1, 2], "maps": "exp/v1/maps-swarm-b", "only": ["schooltime_b"], "opps": ["proxy4_king"], "sides": ["A", "B"]}
+]

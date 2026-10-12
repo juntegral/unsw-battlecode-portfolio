@@ -1,0 +1,45 @@
+{
+  "label": "v1-a-px4",
+  "bot": "~/01. Project/개인 프로젝트/unsw-swarm/versions/v1/bot",
+  "at": "2026-09-30T18:18:35.934Z",
+  "benchmark": {
+    "maps": 10,
+    "opps": [
+      "proxy4_king",
+      "proxy4_swarm",
+      "proxy4_elim"
+    ],
+    "seeds": [
+      1
+    ],
+    "sides": 2
+  },
+  "all": {
+    "n": 60,
+    "G": 22.433333333333334,
+    "alive": 0.8666666666666667,
+    "win": 0.3
+  },
+  "byOpp": {
+    "proxy4_king": {
+      "n": 20,
+      "G": 20.9,
+      "alive": 0.85,
+      "win": 0.25
+    },
+    "proxy4_swarm": {
+      "n": 20,
+      "G": 20.7,
+      "alive": 0.85,
+      "win": 0.4
+    },
+    "proxy4_elim": {
+      "n": 20,
+      "G": 25.7,
+      "alive": 0.9,
+      "win": 0.25
+    }
+  },
+  "problems": 0,
+  "errors": 0
+}

@@ -1,0 +1,100 @@
+== 1. What is left unfed at the end of a race (medians): units | potential not in the longest (P - L) | of it within 15 cells of the longest | farther | share of P in the longest
+ small maps
+   meow live      all  n= 53 | units  7.0 | unfed  16.0 | near   8.0 (mean 10.9) | far   4.0 (mean 7.8) | 0.65
+   meow live      won  n= 18 | units 11.5 | unfed  24.5 | near  11.5 (mean 15.4) | far   9.5 (mean 13.5) | 0.56
+   meow live      lost n= 35 | units  5.0 | unfed   9.0 | near   6.0 (mean 8.5) | far   4.0 (mean 4.9) | 0.71
+   meow test      all  n= 25 | units  4.0 | unfed   9.0 | near   3.0 (mean 6.0) | far   3.0 (mean 10.2) | 0.71
+   meow test      won  n= 11 | units  4.0 | unfed  15.0 | near   2.0 (mean 5.5) | far   9.0 (mean 14.6) | 0.72
+   meow test      lost n= 14 | units  5.0 | unfed   7.0 | near   4.0 (mean 6.4) | far   1.0 (mean 6.6) | 0.68
+   opponents      all  n= 78 | units  4.0 | unfed  13.0 | near   5.0 (mean 9.0) | far   3.5 (mean 8.8) | 0.77
+   opponents      won  n= 49 | units  4.0 | unfed  15.0 | near   9.0 (mean 10.4) | far   6.0 (mean 9.1) | 0.77
+   opponents      lost n= 29 | units  3.0 | unfed   6.0 | near   2.0 (mean 6.7) | far   0.0 (mean 8.3) | 0.77
+   test4 (vs us)  all  n= 29 | units  3.0 | unfed  11.0 | near   7.0 (mean 9.3) | far   0.0 (mean 6.9) | 0.77
+   test4 (vs us)  won  n= 18 | units  5.5 | unfed  12.5 | near  10.0 (mean 12.1) | far   1.0 (mean 8.9) | 0.72
+   test4 (vs us)  lost n= 11 | units  2.0 | unfed   2.0 | near   0.0 (mean 4.8) | far   0.0 (mean 3.6) | 0.88
+   WHQ (vs us)    all  n= 39 | units  4.0 | unfed  15.0 | near   5.0 (mean 8.2) | far   5.0 (mean 9.3) | 0.80
+   WHQ (vs us)    won  n= 28 | units  4.0 | unfed  15.5 | near   5.5 (mean 8.4) | far   6.0 (mean 9.6) | 0.81
+   WHQ (vs us)    lost n= 11 | units  4.0 | unfed   6.0 | near   3.0 (mean 7.5) | far   0.0 (mean 8.5) | 0.54
+   forgot         all  n= 65 | units  6.0 | unfed  15.0 | near   7.0 (mean 9.6) | far   5.0 (mean 9.0) | 0.69
+   forgot         won  n= 37 | units  6.0 | unfed  21.0 | near  10.0 (mean 11.8) | far   7.0 (mean 10.8) | 0.70
+   forgot         lost n= 28 | units  4.0 | unfed  10.0 | near   5.0 (mean 6.8) | far   1.0 (mean 6.7) | 0.65
+   SSS            all  n= 42 | units  6.0 | unfed  11.5 | near   5.0 (mean 9.6) | far   4.0 (mean 8.4) | 0.79
+   SSS            won  n= 23 | units  7.0 | unfed  21.0 | near   9.0 (mean 11.4) | far   6.0 (mean 11.0) | 0.72
+   SSS            lost n= 19 | units  2.0 | unfed   2.0 | near   1.0 (mean 7.4) | far   0.0 (mean 5.4) | 0.90
+   Vibing++       all  n= 67 | units  8.0 | unfed  19.0 | near  10.0 (mean 12.8) | far   9.0 (mean 15.8) | 0.59
+   Vibing++       won  n= 47 | units  9.0 | unfed  23.0 | near  13.0 (mean 14.1) | far   9.0 (mean 17.5) | 0.60
+   Vibing++       lost n= 20 | units  5.0 | unfed  11.0 | near   4.0 (mean 9.6) | far   4.5 (mean 11.7) | 0.56
+ big maps
+   meow live      all  n= 43 | units 20.0 | unfed  56.0 | near   6.0 (mean 11.9) | far  43.0 (mean 51.5) | 0.43
+   meow live      won  n=  9 | units 45.0 | unfed 102.0 | near  22.0 (mean 23.4) | far  78.0 (mean 77.6) | 0.44
+   meow live      lost n= 34 | units 16.5 | unfed  44.0 | near   4.5 (mean 8.9) | far  36.0 (mean 44.6) | 0.43
+   meow test      all  n= 22 | units 18.5 | unfed  38.5 | near   4.5 (mean 9.6) | far  31.5 (mean 35.7) | 0.43
+   meow test      lost n= 19 | units 18.0 | unfed  37.0 | near   4.0 (mean 9.3) | far  28.0 (mean 33.3) | 0.41
+   opponents      all  n= 65 | units 13.0 | unfed 104.0 | near  17.0 (mean 18.9) | far  86.0 (mean 92.3) | 0.40
+   opponents      won  n= 53 | units 11.0 | unfed 103.0 | near  14.0 (mean 18.4) | far  86.0 (mean 90.2) | 0.42
+   opponents      lost n= 12 | units 50.0 | unfed 111.0 | near  19.5 (mean 21.4) | far  93.5 (mean 101.7) | 0.23
+   test4 (vs us)  all  n= 20 | units 27.5 | unfed 135.5 | near  31.5 (mean 26.6) | far 100.0 (mean 112.8) | 0.29
+   test4 (vs us)  won  n= 14 | units 19.0 | unfed 122.0 | near  28.0 (mean 26.4) | far  93.0 (mean 106.1) | 0.32
+   test4 (vs us)  lost n=  6 | units 50.5 | unfed 141.0 | near  32.5 (mean 26.8) | far 121.5 (mean 128.5) | 0.16
+   WHQ (vs us)    all  n= 35 | units  9.0 | unfed  91.0 | near   4.0 (mean 13.0) | far  84.0 (mean 77.9) | 0.48
+   WHQ (vs us)    won  n= 33 | units  9.0 | unfed  94.0 | near   4.0 (mean 13.4) | far  85.0 (mean 78.6) | 0.49
+   forgot         all  n= 89 | units 11.0 | unfed  54.0 | near   6.0 (mean 11.2) | far  39.0 (mean 46.8) | 0.49
+   forgot         won  n= 48 | units 14.0 | unfed  61.5 | near   8.5 (mean 12.3) | far  54.0 (mean 55.8) | 0.49
+   forgot         lost n= 41 | units  9.0 | unfed  36.0 | near   4.0 (mean 9.8) | far  28.0 (mean 36.2) | 0.49
+   SSS            all  n= 99 | units 31.0 | unfed  81.0 | near  14.0 (mean 17.0) | far  63.0 (mean 66.5) | 0.42
+   SSS            won  n= 59 | units 34.0 | unfed  90.0 | near  18.0 (mean 18.9) | far  68.0 (mean 70.6) | 0.47
+   SSS            lost n= 40 | units 22.5 | unfed  75.5 | near   9.0 (mean 14.2) | far  57.5 (mean 60.5) | 0.35
+   Vibing++       all  n= 85 | units 20.0 | unfed  96.0 | near  13.0 (mean 16.6) | far  78.0 (mean 79.0) | 0.39
+   Vibing++       won  n= 52 | units 20.0 | unfed 103.5 | near  14.0 (mean 17.8) | far  93.0 (mean 88.2) | 0.40
+   Vibing++       lost n= 33 | units 14.0 | unfed  77.0 | near  11.0 (mean 14.8) | far  63.0 (mean 64.7) | 0.36
+
+== 2. Our two longest dragons during feeding (races): longest minus second at rounds 400 / 425 / 450 / 475: share of races with a gap of 5 or less, 12 or less
+   meow live      small 58% / 92% (median gap 5.0) | 32% / 66% (median gap 9) | 16% / 60% (median gap 10) | 20% / 44% (median gap 14)
+   meow live      big   47% / 71% (median gap 6.0) | 47% / 66% (median gap 6.5) | 27% / 66% (median gap 9) | 30% / 52% (median gap 11.5)
+   meow test      small 63% / 100% (median gap 4) | 17% / 57% (median gap 11) | 15% / 45% (median gap 16.5) | 15% / 35% (median gap 26.5)
+   meow test      big   67% / 78% (median gap 4.0) | 39% / 72% (median gap 8.5) | 26% / 47% (median gap 13) | 24% / 67% (median gap 9)
+   opponents      small 29% / 52% (median gap 12.0) | 20% / 46% (median gap 15) | 22% / 35% (median gap 22.0) | 14% / 25% (median gap 27.5)
+   opponents      big   49% / 80% (median gap 6) | 32% / 58% (median gap 11) | 32% / 62% (median gap 10) | 34% / 49% (median gap 13)
+   test4 (vs us)  small 36% / 55% (median gap 10.5) | 27% / 54% (median gap 10.5) | 28% / 40% (median gap 17) | 12% / 28% (median gap 22)
+   test4 (vs us)  big   80% / 100% (median gap 2.0) | 70% / 85% (median gap 3.0) | 60% / 75% (median gap 5.0) | 45% / 65% (median gap 7.5)
+   WHQ (vs us)    small 24% / 50% (median gap 12.5) | 13% / 38% (median gap 20) | 18% / 26% (median gap 24) | 13% / 21% (median gap 30)
+   WHQ (vs us)    big   31% / 66% (median gap 9) | 9% / 40% (median gap 14) | 17% / 51% (median gap 12) | 29% / 37% (median gap 18)
+   forgot         small 37% / 63% (median gap 8.0) | 27% / 45% (median gap 13) | 23% / 39% (median gap 15.5) | 21% / 32% (median gap 25)
+   forgot         big   19% / 39% (median gap 15) | 13% / 40% (median gap 15) | 17% / 35% (median gap 18) | 10% / 31% (median gap 22.0)
+   SSS            small 19% / 31% (median gap 24.5) | 15% / 26% (median gap 27.0) | 14% / 24% (median gap 31) | 14% / 22% (median gap 34)
+   SSS            big   16% / 37% (median gap 18.0) | 11% / 30% (median gap 24) | 11% / 28% (median gap 27) | 15% / 30% (median gap 26)
+   Vibing++       small 52% / 75% (median gap 5.0) | 40% / 61% (median gap 10) | 15% / 45% (median gap 15.0) | 15% / 32% (median gap 22.5)
+   Vibing++       big   27% / 56% (median gap 11) | 14% / 46% (median gap 13.0) | 17% / 32% (median gap 17.5) | 13% / 32% (median gap 21.5)
+
+== 3. The size, on our lost races (the enemy unchanged; never above 0.9 of our final potential)
+   over our 143 races, rounds 300-499: pearls of feeders dying next to the true longest 3049, the final lineage ate 66% of them;
+   for a fresh stub 606 (12%); for a dragon under twice their length 266 (8%); across a wall 406 (16%); for another big dragon 2393 (10%)
+   per race: stub pearls 4.2, under-twice pearls 1.9, wall pearls 2.8, other-big-dragon pearls 16.7
+   strict: all stub and under-twice pearls reach the true longest, +1.2 per leader cut after round 470  -> lost races that turn: 5 (live bot 5) | mean gain in lost races 4.6 segments | vs test4 3, WHQ 2, others 0 | small maps 3, big 2
+        games: 1058363 (gain 2.4, margin 2), 1058149 (gain 8.6, margin 5), 1044201 (gain 18.2, margin 1), 1058146 (gain 8.4, margin 7), 1044522 (gain 6.2, margin 6)
+   middle: stub pearls reach it, half of the under-twice ones                                           -> lost races that turn: 2 (live bot 2) | mean gain in lost races 2.7 segments | vs test4 2, WHQ 0, others 0 | small maps 0, big 2
+        games: 1058149 (gain 5.3, margin 5), 1044201 (gain 17.2, margin 1)
+   cautious: half of the stub pearls reach it                                                           -> lost races that turn: 1 (live bot 1) | mean gain in lost races 1.1 segments | vs test4 1, WHQ 0, others 0 | small maps 0, big 1
+        games: 1044201 (gain 8.1, margin 1)
+   for scale, not candidate 5: feeders that died across a wall from the longest die next to it instead  -> lost races that turn: 2 (live bot 2) | mean gain in lost races 0.9 segments | vs test4 0, WHQ 1, others 1 | small maps 1, big 1
+        games: 1058363 (gain 4.0, margin 2), 993428 (gain 13.5, margin 5)
+
+   A5's what-ifs recounted (theirs: growth after round 400 x1.25 / x1.5 / x2, capped at 0.9 P, only races with a leader cut after 395: 6 / 12 / 18; +5 / +10 / +15 segments: 4 / 11 / 20)
+   growth after 400 x1.25: 5 lost races turn (live bot 4)
+   growth after 400 x1.50: 10 lost races turn (live bot 8)
+   growth after 400 x2.00: 17 lost races turn (live bot 13)
+   our final longest +2: 2 lost races turn | for the other direction, our final longest -2: 6 of our 41 won races are lost
+   our final longest +3: 3 lost races turn | for the other direction, our final longest -3: 8 of our 41 won races are lost
+   our final longest +5: 3 lost races turn | for the other direction, our final longest -5: 10 of our 41 won races are lost
+   our final longest +8: 10 lost races turn | for the other direction, our final longest -8: 16 of our 41 won races are lost
+   our final longest +10: 11 lost races turn | for the other direction, our final longest -10: 17 of our 41 won races are lost
+   our final longest +15: 20 lost races turn | for the other direction, our final longest -15: 21 of our 41 won races are lost
+   margins of our 102 lost races: [1, 1, 2, 5, 5, 6, 6, 6, 7, 7, 9, 11, 11, 12, 12, 12, 13, 13, 14, 14, 15, 16, 16, 17, 17] ... median 32.5
+   margins of our 41 won races: [0, 0, 1, 1, 2, 2, 3, 3, 5, 5, 6, 6, 7, 7, 7, 8, 9, 11, 11, 12, 14, 19, 20, 22, 23, 24, 29, 33, 33, 34, 35, 37, 41, 41, 42, 47, 53, 54, 55, 56, 62]
+
+== 4. The 'see it is long' test on today's feeder deaths (rounds 300-499 of our races): the dying dragon must have min(2 x its length, 6) segments of its target in view
+   target is another big dragon: fails                                      399 =  8.5%
+   target is another big dragon: passes                                    1457 = 31.2%
+   target is the longest: FAILS (too few segments in view)                  628 = 13.4%
+   target is the longest: passes                                           1635 = 35.0%
+   target under twice its length: fails (as intended)                       558 = 11.9%

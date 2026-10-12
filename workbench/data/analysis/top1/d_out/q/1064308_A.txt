@@ -1,0 +1,68 @@
+=== 1064308 Devil 32x16 (512 cells) run 1064304 | A = SSS (2338) vs test4 (2121) | winner A by wipe-out after 114 rounds
+queen #0 start (3, 5); enemy queen #1 start (28, 5); path between the starts 35
+DEATH r17 headon L2 at (15, 4) by #5B L2 from (16, 4) with W
+splits (round, before -> keeps + child, child id): r0:4->2+2(#6)
+block | head | from start | len | ate nat/corpse | splits | rounds enemy in view | nearest enemy | cells used | own heads<=4 | units own/enemy
+r  0 | (3, 5)    |   0 |  4 | 0/0 | 1 |  1 | 2 | 17 | 1.5 | 3/3
+moves from round 0:
+   0:SPLIT  1:E  2:S  3:S  4:E  5:E  6:E  7:E  8:E  9:E  10:E  11:E
+   12:N  13:N  14:N  15:E  16:E  17:E!2
+death record: {"round": 17, "reason": "headon", "len": 2, "pos": [15, 4], "own": 0, "killer": {"id": 5, "team": "B", "len": 2, "steps": 1, "nsteps": 1, "start": [16, 4], "born": 0, "dirs": "W", "cheb_now": 1, "seen_last": 1, "seen_last3": 1}}
+  r10 L2 at (10, 7) move E -> [11, 7] ate 0 | free 3 safe 3 | in reach at start 0, at end 0 | froom 40 tree 0 | N=F(10,6) reach0 room40 E=F(11,7) reach0 room40 S=F(10,8) reach0 room40 W=o(9,7) #0L2s1 | enemies 
+  r11 L2 at (11, 7) move E -> [12, 7] ate 0 | free 3 safe 3 | in reach at start 0, at end 0 | froom 40 tree 0 | N=F(11,6) reach0 room12 E=F(12,7) reach0 room40 S=F(11,8) reach0 room40 W=o(10,7) #0L2s1 | enemies 
+  r12 L2 at (12, 7) move N -> [12, 6] ate 0 | free 3 safe 3 | in reach at start 0, at end 0 | froom 40 tree 0 | N=F(12,6) reach0 room40 E=F(13,7) reach0 room40 S=F(12,8) reach0 room40 W=o(11,7) #0L2s1 | enemies 
+  r13 L2 at (12, 6) move N -> [12, 5] ate 0 | free 2 safe 2 | in reach at start 0, at end 0 | froom 40 tree 0 | N=F(12,5) reach0 room40 E=F(13,6) reach0 room40 S=o(12,7) #0L2s1 W=K | enemies 
+  r14 L2 at (12, 5) move N -> [12, 4] ate 0 | free 2 safe 2 | in reach at start 0, at end 0 | froom 40 tree 0 | N=F(12,4) reach0 room40 E=F(13,5) reach0 room40 S=o(12,6) #0L2s1 W=K | enemies 
+  r15 L2 at (12, 4) move E -> [13, 4] ate 0 | free 2 safe 2 | in reach at start 0, at end 0 | froom 40 tree 0 | N=F(12,3) reach0 room40 E=F(13,4) reach0 room40 S=o(12,5) #0L2s1 W=K | enemies #5L2@(18,4)c6p6
+  r16 L2 at (13, 4) move E -> [14, 4] ate 0 | free 3 safe 3 | in reach at start 0, at end 0 | froom 40 tree 0 | N=F(13,3) reach0 room40 E=F(14,4) reach0 room40 S=F(13,5) reach0 room40 W=o(12,4) #0L2s1 | enemies #5L2@(17,4)c4p4
+  r17 L2 at (14, 4) move E -> [15, 4] ate 0 | free 3 safe 2 | in reach at start 0, at end 1 | froom 40 tree 0 | N=F(14,3) reach0 room40 E=F(15,4) reach1 room40 S=F(14,5) reach0 room3 W=o(13,4) #0L2s1 | enemies #5L2@(16,4)c2p2V
+--- board at the start of her turn, round 14
+      7 8 91011121314151617
+     +-+ +-+-+ +-+-+ +-+-+ 
+  0   .|*|. .|*|. .|.|* *|.
+     + + + + + + + + + + + 
+  1   .|.|. .|.|. .|.|* *|.
+     + + + + + + + + + + + 
+  2   .|.|. .|.|. .|.|. .|.
+     + + + + + + + + + + + 
+  3   .|.|. *|.|. . . . . .
+     + + + + + + + + + + + 
+  4   .|.|. .|.|. . . . . .
+     + + + + + + + + + + + 
+  5   .|.|. .|.|@ .|.|. .|.
+     + + + + + + + + + + + 
+  6   .|.|. .|.|a .|.|. .|.
+     + + + + + + + + + + + 
+  7   a A . . . . .|*|. .|*
+     + + + + + + + + + + + 
+  8   A . . . . a .|*|. .|*
+     + + + + + + + + + + + 
+  9   . . . . . A .|.|. .|.
+     + + + + + + + + + + + 
+ 10   .|.|. .|.|. a|.|. .|.
+heads: #0A L2 (12, 5); #2A L2 (12, 9); #6A L2 (8, 7); #8A L2 (7, 8)
+--- board at the start of her turn, round 17
+      910111213141516171819
+     + + + + + + + + + + + 
+ 15  |. .|.|. .|.|* *|.|. .
+     +-+-+ +-+-+ +-+-+ +-+-
+  0  |. .|*|. .|.|* *|.|. .
+     + + + + + + + + + + + 
+  1  |. .|.|. .|.|* *|.|. .
+     + + + + + + + + + + + 
+  2  |* .|.|. .|.|. .|.|. .
+     + + + + + + + + + + + 
+  3  |. *|.|. . . . . . . .
+     + + + + + + + + + + + 
+  4  |. .|.|. a @ . B b . .
+     + + + + + + + + + + + 
+  5  |. .|.|. .|.|. .|.|. .
+     + + + + + + + + + + + 
+  6  |. .|.|. .|.|. .|.|. b
+     + + + + + + + + + + + 
+  7   . a A . .|*|. .|*|. B
+     + + + + + + + + + + + 
+  8   a A . . .|*|. .|*|. .
+     + + + + + + + + + + + 
+  9   . . . . .|A|. .|.|. .
+heads: #0A L2 (14, 4); #4A L2 (14, 9); #5B L2 (16, 4); #6A L2 (11, 7); #8A L2 (10, 8); #11B L2 (19, 7)

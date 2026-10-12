@@ -1,0 +1,25 @@
+MAP ATLAS - DONE 2026-10-01 03:50 KST (Claude; finished Codex's partial run). Report: research/observations/map-atlas.md (Korean).
+Population: top-vs-top 17,057 games (index frozen 02:50; 274 stalled excluded), ours W0-W12 1,050 + 630 earlier-lineage games.
+Checks: extract.js reconstruction 0/19,383; independent recount.js equal on all 19,011 games, every field (8 layout-tie labels differ);
+decoder vs official viewer 0 differences on 60 games / 3.48M events; geometry recomputed equal; inherited-cache audit 0/43 metrics.
+Families: ELIMINATION (top 36-96% eliminated): r100 Voronoi share and heads decide (std diff up to 2.17), early split speed does not.
+500-ROUND (1-7%): heads equal, king-line conversion after r250 decides. PORTALS: halves disconnected, pure king-length race.
+Our gap: elim maps = space + heads (Voronoi 0.15-0.35 vs 0.58-0.98, splits 0.03-0.09 vs 0.6-0.8); 500-round = mass (1/3.5-1/7);
+Portals = conversion (mass equal 72 vs 69, king500/r400 mass 0.34 vs 0.59, own-move king deaths).
+Fortress maps: our king fell after W5 (Autarky median 64 -> 52 -> 42, PD6 32 -> 21, p<0.0001, opponents flat) -> W4-era economy.
+
+Map/layout      Engine        heads r10/25/50/100/250  split  clock  our top6 W/N  note
+Autarky         F (W4 econ)   12/14/17/23/39           0.59   (350)  37/90   king 53.5 > elite 39.5, conv 0.98
+PD 6 (a)        F (W4 econ)   6/7/9/13/19              0.63   (330)  18/49   4/49 eliminated, conv 0.78
+PD 10 (b)       F (keep)      7/7/10/15/24             0.75   (330)  4/41    hybrid candidate; king 13 flat
+Portals         F -> F+C      4/7/14/26/32             0.59   250    16/90   local test is exact; king 40 => 57% vs top6
+Trauma          SE            4/4/7/17/38              0.40   250    3/90    path 98, cut 1; mass 22 vs 91
+Slithery a / b  SE            20/31/47/56/56, 20/30/43 0.67   250    2/47,1/43 heads at cap; outnumbered trades not a loss
+Schooltime a    SE            6/6/13/45/56             0.75   260    0/56    mass 36 vs 246
+Schooltime b    EL (slow)     6/6/8/16/49              0.70   340    0/34    r100-250 decides
+Default         EL            7/8/11/19/38             0.78   340    0/90    torus, heads 2 apart, poorest
+Devil a / b     EL            6/8/17/31/39, 6/7/12/24  0.65   340/330 0/52,0/38 Voronoi 0.98 vs 0.40
+QoS a / b       EL (slow)     2/4/7/13/23, 2/4/7/12/21 0.61   400    0/40,0/50
+Trophy          EL            2/5/15/30/44             0.81   360    0/90    fastest elimination map
+All swarm rows: feed radius 3 (covers 74-86%), trade veto at d8<=-3 (except Slithery), king path distance floor 4, target 6-10.
+Engine count: 2 code engines (fortress, swarm) with 4 behaviours (F, F+C, SE, EL) and 15 policy rows. Interim: exp/map-atlas/INTERIM.md.

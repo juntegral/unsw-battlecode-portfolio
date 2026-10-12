@@ -1,0 +1,28 @@
+== exp/q2/v17-king: games 28, won 11
+   our queen:   alive at the end 1/28; deaths rammed 14, trap 12, ram 1 (median round 130); median length r50/100/250/end 2/2/0/0
+   their queen: alive at the end 2/28; deaths allyHead 2, ram 3, sac 3, trap 18 (median round 100); median length r50/100/250/end 2/2/0/0; killed: allyHead by them 2, ram by us 3, sac by them 3, trap by them 18
+== exp/q2/abc-king: games 28, won 7
+   our queen:   alive at the end 1/28; deaths trap 11, rammed 13, ram 1, sac 2 (median round 90); median length r50/100/250/end 4/0/0/0
+   their queen: alive at the end 1/28; deaths rammed 6, allyHead 2, trap 18, ram 1 (median round 60); median length r50/100/250/end 2/0/0/0; killed: rammed by us 6, allyHead by them 2, trap by them 18, ram by us 1
+== exp/q2/abcn-king: games 28, won 7
+   our queen:   alive at the end 0/28; deaths trap 9, rammed 17, sac 2 (median round 94); median length r50/100/250/end 5/0/0/0
+   their queen: alive at the end 1/28; deaths rammed 6, allyHead 2, trap 18, ram 1 (median round 60); median length r50/100/250/end 2/0/0/0; killed: rammed by us 6, allyHead by them 2, trap by them 18, ram by us 1
+== exp/q2/abcnd-king: games 28, won 6
+   our queen:   alive at the end 0/28; deaths rammed 14, enemyBody 2, trap 10, allyHead 2 (median round 121); median length r50/100/250/end 4/2/0/0
+   their queen: alive at the end 1/28; deaths rammed 6, sac 1, trap 18, ram 2 (median round 60); median length r50/100/250/end 2/0/0/0; killed: rammed by us 6, sac by them 1, trap by them 18, ram by us 2
+== exp/q2/a-king: games 14, won 5
+   our queen:   alive at the end 0/14; deaths rammed 6, trap 8 (median round 122); median length r50/100/250/end 4/3/0/0
+   their queen: alive at the end 0/14; deaths ram 1, sac 2, trap 11 (median round 89); median length r50/100/250/end 2/0/0/0; killed: ram by us 1, sac by them 2, trap by them 11
+== exp/q2/b-king: games 14, won 4
+   our queen:   alive at the end 0/14; deaths ram 1, rammed 5, trap 7, sac 1 (median round 126); median length r50/100/250/end 2/2/0/0
+   their queen: alive at the end 1/14; deaths enemyBody 2, rammed 1, trap 8, sac 1, ram 1 (median round 89); median length r50/100/250/end 2/0/0/0; killed: enemyBody by us 2, rammed by us 1, trap by them 8, sac by them 1, ram by us 1
+== exp/q2/c-king: games 14, won 5
+   our queen:   alive at the end 1/14; deaths rammed 5, trap 8 (median round 95); median length r50/100/250/end 2/0/0/0
+   their queen: alive at the end 0/14; deaths rammed 6, trap 8 (median round 65); median length r50/100/250/end 2/0/0/0; killed: rammed by us 6, trap by them 8
+v17-king: rammed while L<=3 11, trap after escape-split 6, trap while L<=3 6, rammed while L>=4 2, rammed after escape-split 1, ram after csplit 1
+abc-king: trap after escape-split 9, rammed while L<=3 7, rammed after escape-split 3, rammed while L>=4 3, trap while L<=3 2, sac while L>=4 2, ram after escape-split 1
+abcn-king: trap after escape-split 8, rammed while L<=3 7, rammed while L>=4 6, rammed after escape-split 4, sac while L>=4 2, trap while L<=3 1
+abcnd-king: rammed while L>=4 7, rammed while L<=3 6, trap after escape-split 6, trap while L<=3 4, enemyBody while L>=4 2, allyHead while L>=4 2, rammed after escape-split 1
+v17-king: games 28; queen eats per 100 of her turns r0-99 3.8, r100-299 1.6, r300-499 3.9 (her turns 2396/2038/515); turns with a claim or grab 9.0%
+abcn-king: games 28; queen eats per 100 of her turns r0-99 4.8, r100-299 1.4, r300-499 0.0 (her turns 2294/962/70); turns with a claim or grab 9.3%
+abcnd-king: games 28; queen eats per 100 of her turns r0-99 6.5, r100-299 3.2, r300-499 6.8 (her turns 2329/1295/161); turns with a claim or grab 8.7%

@@ -1,0 +1,8 @@
+band | N | king-turns r300-499 per game | on non-2-core tiles | entries into non-2-core per game | free < L share | free < L/2 share | handoff splits per game (parent kept, mean) | king deaths per game | deaths: cause (on non-core at last turn, free < L at last turn, entry within 10 rounds)
+top decile | 354 | 192 | 1.7% | 0.68 | 25.3% | 15.0% | 2.66 (2.1) | 0.23 | trap 46, allyHead 31, sac 3 (0/80, 31/80, 2/80)
+median band | 200 | 161 | 3.2% | 0.82 | 24.3% | 16.3% | 5.11 (2.0) | 0.74 | trap 98, allyHead 36, sac 9, fault 5 (16/148, 81/148, 15/148)
+bottom quartile | 200 | 131 | 5.6% | 0.94 | 27.6% | 19.9% | 6.84 (2.0) | 0.83 | allyHead 41, trap 115, sac 11 (15/167, 116/167, 22/167)
+ours W0-W4 | 49 | 192 | 4.4% | 1.22 | 27.6% | 18.0% | 7.12 (2.0) | 0.51 | allyHead 10, trap 14, sac 1 (1/25, 12/25, 1/25)
+ours W5-W9 | 35 | 207 | 2.8% | 1.49 | 34.4% | 21.9% | 10.69 (2.0) | 1.37 | trap 23, allyHead 25 (0/48, 18/48, 3/48)
+ours W10-W12 | 21 | 210 | 7.4% | 1.81 | 40.2% | 28.7% | 14.14 (2.0) | 1.05 | trap 8, allyHead 12, sac 2 (0/22, 3/22, 1/22)
+core tiles (static 2-core of the Portals graph): 446 of 512

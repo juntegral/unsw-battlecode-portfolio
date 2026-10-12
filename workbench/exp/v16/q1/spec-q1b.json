@@ -1,0 +1,10 @@
+[
+ {"bot": "exp/v16/q1/bot-b-off", "out": "exp/v16/q1/boff-id", "seeds": [1], "maps": "maps/online-20260927", "only": ["trauma", "queen_of_spades"], "opps": ["proxy4_king"], "sides": ["A", "B"]},
+ {"bot": "exp/v16/q1/bot", "out": "exp/v16/q1/q1x-id", "seeds": [1], "maps": "maps/online-20260927", "only": ["trauma", "queen_of_spades"], "opps": ["proxy4_king"], "sides": ["A", "B"]},
+ {"bot": "exp/v16/q1/bot-b", "out": "exp/v16/q1/q1b-online", "seeds": [1, 2], "maps": "maps/online-20260927", "opps": ["proxy4_king", "proxy4_swarm"], "sides": ["A", "B"], "cpu": true},
+ {"bot": "exp/v16/q1/bot-b", "out": "exp/v16/q1/q1b-flip", "seeds": [1, 2], "maps": "exp/v16/q1/flip-online", "opps": ["proxy4_king"], "sides": ["A", "B"], "cpu": true},
+ {"bot": "exp/v16/q1/bot-b", "out": "exp/v16/q1/q1b-sprint", "seeds": [1], "maps": "maps/sprint", "opps": ["proxy4_king", "proxy4_swarm"], "sides": ["A", "B"], "cpu": true},
+ {"bot": "exp/v16/q1/bot-b", "out": "exp/v16/q1/q1b-flipsprint", "seeds": [1], "maps": "exp/v16/q1/flip-sprint", "opps": ["proxy4_king"], "sides": ["A", "B"], "cpu": true},
+ {"bot": "exp/v16/q1/bot", "out": "exp/v16/q1/q1x-online", "seeds": [1, 2], "maps": "maps/online-20260927", "opps": ["proxy4_king", "proxy4_swarm"], "sides": ["A", "B"]},
+ {"bot": "exp/v16/q1/bot", "out": "exp/v16/q1/q1x-sprint", "seeds": [1], "maps": "maps/sprint", "opps": ["proxy4_king", "proxy4_swarm"], "sides": ["A", "B"]}
+]

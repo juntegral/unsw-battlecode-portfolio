@@ -1,0 +1,75 @@
+[
+ {
+  "id": "F44",
+  "claim": "On layouts of 1200 cells or fewer we are wiped out by raw round 125 far more often against teams rated 2100 or more than against teams rated 1700 to 1899, on main and on v31; in most of these games our pearls by r50 are under half of theirs and our queen is killed by an enemy ram.",
+  "how_to_count": "Games with our_code main or v31 (apart). Early wipe-out = the replay ends by elimination, our side has no dragon left, last raw roundStart index 125 or lower. Layout size = width times height of the MAP header, 1200 or fewer. Rating bands from the battle list opponentElo: 1700-1899, 1900-2099, 2100 and above. Count early wipe-outs over all games on those layouts per band and code; also the mirror (their side has no dragon left by raw round 125). For each early wipe-out: cumulative pearls eaten by each side through raw round 50 (ours times 2 below theirs = under half); whether the layout starts each team with 2 dragons; our queen's death reason and, for head-on, which side's dragon was the mover; our deaths in raw rounds 0-100 by engine reason, against the other games of the same code on the same layouts.",
+  "your_numbers": {
+   "main_wipeouts": "18 of 435 games",
+   "v31_wipeouts": "16 of 410",
+   "main_by_band_small_layouts": "1700-1899 4 of 110, 1900-2099 7 of 142, 2100+ 7 of 32",
+   "v31_by_band_small_layouts": "1 of 156, 10 of 92, 4 of 32",
+   "mirror_main": "10, 11, 2",
+   "mirror_v31": "18, 11, 2",
+   "pearls_r50_under_half": "main 13 of 18, v31 13 of 16",
+   "two_dragon_start": "main 11 of 18, v31 11 of 16",
+   "queen_rammed_by_them": "main 17 of 18, v31 14 of 16",
+   "our_deaths_r0_100_per_game_wipeouts": "main 11.2 of which head-on 8.7; v31 8.1 of which 6.4",
+   "same_layouts_other_games": "main 20.5 of which 8.2; v31 17.9 of which 8.5",
+   "queen_spawn_distance_10_or_less": "main 14 of 18, v31 14 of 16",
+   "main_halves": "3 in the first 97 games, 15 in the later 338"
+  },
+  "slices": [
+   "main",
+   "v31",
+   "rating bands 1700-1899 / 1900-2099 / 2100+ within each code"
+  ]
+ },
+ {
+  "id": "F42",
+  "claim": "In full games that we lose on the queen rule with only their queen alive and our longest dragon the longer one, no head of ours of any length is within 6 path steps of their queen in about nine of ten of her turns after our queen died (main), and heads of length 5 or more add almost nothing to the short ones; in the mirror games their short heads are near our surviving queen about twice as often.",
+  "how_to_count": "Games with our_code main or v31 (apart), last raw round 499, ended on the queen rule, exactly one queen alive at the end, layouts where queen_spawn_dead_end is false. Flagged = only their queen alive and our final longest strictly above theirs; not flagged = only theirs alive otherwise; mirror = only our queen alive. At every turnStart of the surviving queen that comes after the dragonDeath event of the other queen: breadth-first distance from her head over open tile sides and through paired portals (kelp blocks, dragons ignored), limit 6. A = at least one head of the other side with body length 4 or less at distance 6 or less; B = at least one head of the other side of any length at distance 6 or less; also the same with distance 2 or less. Shares are turns with the flag over all such turns, pooled over games; also per game.",
+  "your_numbers": {
+   "main_flagged": "18 games, 6,033 turns, A 0.079, B 0.094, any head within 2 steps 0.0043",
+   "main_not_flagged": "29 games, 8,956 turns, A 0.065, B 0.074",
+   "main_mirror": "15 games, 4,372 turns, A 0.177, B 0.199, short head within 2 steps 0.0197",
+   "v31_flagged": "13 games, 4,905 turns, A 0.019, B 0.023",
+   "v31_not_flagged": "23 games, 8,413 turns, A 0.038, B 0.043",
+   "v31_mirror": "8 games, 2,483 turns, A 0.177, B 0.208",
+   "main_flagged_games_with_B_zero": "9 of 18 (Portals 5)",
+   "v31_flagged_games_with_B_zero": "8 of 13 (Portals 4)",
+   "main_flagged_without_portals": "13 games, 3,880 turns, B 0.146",
+   "new_games_flag": "3 of 6 such losses after battle 1302921",
+   "totals_flag": "main 18 of 47, v31 13 of 36"
+  },
+  "slices": [
+   "main",
+   "v31",
+   "flagged / not flagged / mirror",
+   "with and without Portals #1"
+  ]
+ },
+ {
+  "id": "F7",
+  "claim": "On layouts where each team starts with 2 dragons, our side has 6 or fewer dragons alive at raw round 100 (or is already wiped out) in about three games in eight, but the opponents do so nearly as often; our side does it far more often than the opponent only on Tower Defense and Stripes. The opponents' rate falls with their rating and ours does not.",
+  "how_to_count": "Games with our_code main or v31 (apart) on layouts whose initial replay state has 2 dragons per team (Maze, Queen Of Spades, Stripes, Tower Defense, Trauma, Trophy, weakhold). For each side: never grew = 6 or fewer dragons of that side alive after all events of raw round 100, or, if the game ended before raw round 100, that side has no dragon left at the end. Count per side, per layout, per rating band of the opponent (1700-1899, 1900-2099, 2100 and above), and our wins among our never-grew games, split by whether their side also never grew.",
+  "your_numbers": {
+   "main": "ours 71 of 185 (19 won), theirs 56 of 185",
+   "v31": "4 of 43 and 3 of 17",
+   "main_by_layout_ours_theirs": "Tower Defense 29 and 11 of 29; Stripes 17 and 9 of 19; Queen Of Spades 11 and 15 of 30; Trauma 7 and 8 of 31; Trophy 7 and 9 of 21; weakhold 0 and 4 of 23; Maze 0 and 0 of 32",
+   "v31_by_layout_ours_theirs": "Tower Defense 22 and 13 of 22; Stripes 18 and 12 of 26; Queen Of Spades 12 and 3 of 26; Trophy 6 and 12 of 24; Trauma 2 and 1 of 17; weakhold 0 and 9 of 29; Maze 0 and 0 of 24",
+   "main_by_band_ours": "29 of 72, 31 of 92, 10 of 19",
+   "main_by_band_theirs": "35 of 72, 19 of 92, 2 of 19",
+   "v31_by_band_ours": "30 of 93, 19 of 52, 7 of 15",
+   "v31_by_band_theirs": "33 of 93, 14 of 52, 2 of 15",
+   "main_won_when_only_we_never_grew": "9 of 50",
+   "main_won_when_both": "10 of 21",
+   "main_halves_ours": "18 of 45 (6 won), 53 of 140 (13 won)"
+  },
+  "slices": [
+   "main",
+   "v31",
+   "per layout",
+   "rating bands within each code"
+  ]
+ }
+]

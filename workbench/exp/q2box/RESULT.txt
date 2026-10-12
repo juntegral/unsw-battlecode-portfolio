@@ -1,0 +1,8 @@
+2026-10-02 05:48:24 KST | 분석 180/180판 PASS; missing/historyErrors/오류/재구성 검사값 모두 0 (N=180).
+C1: 대안 있는 관측 seal off 8→on 0 PASS (N=78짝); 전체 seal 41→26 FAIL(약0 미달); 잔여 26=생성 대안 부재, 시야 밖 0.
+C2 qw: 조건 해당 첫 이탈 18/18 PASS; qw 126/128 매칭, 누락2=여왕 먼저 사망; off 21/21로 추가 개선 미확인; 비qw qbe 25마리/32후보, 첫 이동 사망0/25.
+C2 Around: B r6 제거 0/4 FAIL(모두 r6); A 사건/여왕 궤적 동일 4/4 PASS; 시작 주머니 사건 동일 12/12 PASS.
+C3: 다른 지도 r500 여왕 생존 off/on 14/70, 회귀0/70 PASS; 양쪽 사망 54키의 조기 사망0/54; 전체 회귀0/78.
+C4: off WASM 2개 바이트 동일 PASS; 사건 동일12/12 PASS; CPU 최대32.1M<80M<100M/누락0 PASS (N=180); 오류0/180 PASS.
+판면2: picture-purpose-off.txt, picture-purpose-on.txt (big_empty A/hunter/1 r195); on은 (21,6) 출구 확보. Around B #9 대안 없음·시드1 qw 거리3 조건 밖; exceptions.md 전수 기록.
+제안: switch ON — 부분 적용 규칙: 봉쇄 8→0·출구 확보로 목적 개선, 회귀/깨짐 없음. 약0 seal·Around B r6 제거 실패는 남김; 스위치 수정 없음.

@@ -1,0 +1,141 @@
+
+one8-c2 n=15
+|구간|종료 머리|자연|사체|분열|사망|3걸음 머리|진주 최단 점유 %|먹음/100턴|
+|---|---|---|---|---|---|---|---|---|
+|0–0|5.1/5.1|0.0/0.2|0.0/0.0|1.3/1.3|0.1/0.1|0.6/0.6|50.0/48.4|0.0/3.8|
+<!-- death causes [{'wall': 1}, {'own body': 1}] -->
+|1–10|6.2/6.3|2.8/2.9|0.1/0.3|1.9/1.9|0.8/0.7|1.7/1.8|45.9/43.5|5.1/5.5|
+<!-- death causes [{'rammed': 1, 'wall': 8, 'own body': 2, 'mate body': 1}, {'rams': 1, 'own body': 10}] -->
+|11–20|7.7/8.5|5.9/8.8|0.5/1.3|2.3/3.9|0.9/1.6|1.9/3.3|43.2/47.8|9.1/13.3|
+<!-- death causes [{'wall': 9, 'own body': 1, 'mate body': 1, 'rams': 2}, {'own body': 21, 'mate body': 1, 'rammed': 2}] -->
+|21–30|9.1/11.3|5.7/10.3|1.4/2.9|2.9/5.7|1.5/3.0|3.2/4.1|46.3/44.5|8.0/13.1|
+<!-- death causes [{'own body': 3, 'wall': 12, 'mate body': 3, 'rammed': 2, 'rams': 2}, {'mate body': 10, 'own body': 30, 'rams': 2, 'wall': 1, 'rammed': 2}] -->
+|31–40|11.2/13.9|8.8/12.1|2.0/5.3|4.3/7.4|2.2/4.8|3.6/4.9|48.6/41.0|10.4/13.2|
+<!-- death causes [{'rammed': 10, 'rams': 2, 'mate body': 3, 'wall': 12, 'own body': 5, 'foe body': 1}, {'rams': 10, 'rammed': 2, 'own body': 47, 'mate body': 10, 'wall': 3}] -->
+|41–50|14.5/16.9|10.1/13.4|2.7/7.0|5.5/8.6|2.2/5.6|4.0/6.1|45.7/40.1|9.5/12.6|
+<!-- death causes [{'rammed': 8, 'mate body': 4, 'wall': 16, 'own body': 3, 'rams': 2}, {'rams': 8, 'mate body': 23, 'own body': 49, 'rammed': 2, 'wall': 2}] -->
+|51–60|16.6/20.1|9.3/15.9|3.0/7.4|5.2/10.1|3.1/6.9|4.6/7.1|52.4/38.6|7.6/12.0|
+<!-- death causes [{'rams': 3, 'own body': 9, 'mate body': 9, 'wall': 17, 'rammed': 8, 'foe body': 1}, {'rammed': 3, 'own body': 61, 'mate body': 27, 'rams': 8, 'wall': 3, 'foe body': 1}] -->
+|61–70|19.6/23.2|9.9/13.9|4.2/7.5|5.7/9.5|2.7/6.3|4.5/6.6|43.9/42.5|8.2/9.6|
+<!-- death causes [{'rams': 8, 'own body': 7, 'mate body': 4, 'wall': 16, 'rammed': 6}, {'rammed': 8, 'own body': 61, 'mate body': 16, 'rams': 6, 'mate head': 2, 'wall': 2}] -->
+|71–80|21.1/26.5|10.1/15.1|3.7/9.9|5.5/11.1|3.9/7.9|4.7/7.7|43.8/43.2|7.3/9.8|
+<!-- death causes [{'wall': 18, 'own body': 11, 'mate body': 6, 'rams': 5, 'rammed': 13, 'mate head': 6}, {'own body': 77, 'mate body': 20, 'rammed': 5, 'rams': 13, 'wall': 3}] -->
+|81–90|21.7/29.0|8.7/13.3|5.0/10.3|4.7/10.7|4.1/8.2|4.3/8.9|44.3/44.9|6.8/8.4|
+<!-- death causes [{'own body': 8, 'rammed': 18, 'wall': 26, 'rams': 7, 'mate body': 3}, {'own body': 74, 'rams': 18, 'mate body': 21, 'rammed': 7, 'foe body': 1, 'wall': 2}] -->
+|91–100|22.4/30.9|8.2/14.0|3.7/12.3|4.5/10.0|3.8/8.1|4.7/9.3|41.9/47.1|5.8/9.0|
+<!-- death causes [{'wall': 17, 'mate body': 4, 'own body': 11, 'rammed': 19, 'rams': 4, 'foe body': 2}, {'own body': 71, 'mate body': 22, 'rams': 19, 'rammed': 4, 'mate head': 2, 'wall': 3}] -->
+TOTAL [{"nat": 1193.0, "corp": 397.0, "splits": 658.0, "deaths": 380.0, "turns": 20886.0, "paid": 9.0}, {"nat": 1800.0, "corp": 962.0, "splits": 1203.0, "deaths": 797.0, "turns": 26661.0, "paid": 4.0}]
+DEATH [{'rammed': 85, 'rams': 35, 'mate body': 38, 'wall': 152, 'own body': 60, 'mate head': 6, 'foe body': 4}, {'rams': 85, 'rammed': 35, 'own body': 502, 'mate body': 150, 'mate head': 4, 'foe body': 2, 'wall': 19}]
+GATES Counter({'QS_KEEP_LEN eligible (ring/early-return precedence unknown)': 686, 'unresolved internal gate or earlier action': 470, 'CHILD_MIN_ROOM geometry (memory/precedence unknown)': 149, 'child_has_exit geometry (memory/precedence unknown)': 122, 'portal-adjacent (exception/precedence unknown)': 36, 'child_spans_portal geometry (precedence unknown)': 36})
+SPLIT LENGTH [{4: 437, 5: 93, 25: 1, 7: 25, 23: 1, 21: 1, 6: 81, 19: 1, 17: 1, 15: 1, 13: 1, 11: 1, 9: 4, 8: 7, 10: 3}, {7: 19, 4: 1119, 25: 1, 5: 48, 23: 1, 21: 1, 19: 1, 17: 1, 15: 1, 13: 1, 11: 1, 9: 1, 6: 5, 10: 1, 8: 2}]
+START [3.8666666666666667, 3.8666666666666667]
+
+one10-c1 n=15
+|구간|종료 머리|자연|사체|분열|사망|3걸음 머리|진주 최단 점유 %|먹음/100턴|
+|---|---|---|---|---|---|---|---|---|
+|0–0|5.4/5.1|0.0/0.2|0.0/0.0|1.6/1.3|0.1/0.1|0.7/0.7|50.0/48.5|0.0/3.8|
+<!-- death causes [{'wall': 1}, {'own body': 1}] -->
+|1–10|6.4/6.3|2.2/3.1|0.1/0.3|1.7/1.9|0.7/0.7|1.5/1.6|47.9/42.3|3.9/6.0|
+<!-- death causes [{'wall': 8, 'rammed': 1, 'own body': 1}, {'own body': 10, 'rams': 1}] -->
+|11–20|7.3/8.5|4.5/7.5|0.4/1.3|1.7/3.7|0.7/1.5|1.7/3.1|43.7/47.1|6.9/11.6|
+<!-- death causes [{'wall': 7, 'rams': 1, 'own body': 1, 'mate head': 2}, {'own body': 18, 'mate body': 3, 'rammed': 1}] -->
+|21–30|8.9/11.3|5.8/11.6|0.9/3.5|2.8/5.7|1.2/2.9|2.3/3.5|48.9/40.5|8.0/14.7|
+<!-- death causes [{'wall': 7, 'rams': 2, 'rammed': 2, 'mate body': 1, 'own body': 5, 'foe body': 1}, {'own body': 29, 'rammed': 2, 'wall': 1, 'rams': 2, 'mate body': 9}] -->
+|31–40|10.2/13.9|7.5/10.1|1.2/4.4|3.3/6.9|2.1/4.4|2.9/4.9|51.6/37.3|8.7/10.7|
+<!-- death causes [{'rammed': 5, 'wall': 11, 'mate body': 4, 'own body': 7, 'rams': 1, 'mate head': 2, 'foe body': 1}, {'own body': 41, 'mate body': 16, 'rams': 5, 'wall': 3, 'rammed': 1}] -->
+|41–50|12.3/16.3|7.7/11.3|2.8/6.1|4.5/7.9|2.3/5.5|3.5/5.1|44.7/43.7|8.9/11.1|
+<!-- death causes [{'rammed': 7, 'own body': 4, 'wall': 16, 'rams': 5, 'mate body': 3}, {'mate body': 21, 'own body': 44, 'rams': 7, 'rammed': 5, 'mate head': 4, 'wall': 2}] -->
+|51–60|15.2/18.9|9.7/12.1|3.9/5.8|5.7/8.1|2.8/5.5|3.6/4.9|44.5/43.1|9.4/9.7|
+<!-- death causes [{'wall': 19, 'rammed': 7, 'rams': 5, 'mate body': 8, 'own body': 2, 'foe body': 1}, {'mate body': 17, 'own body': 48, 'rams': 7, 'rammed': 5, 'mate head': 2, 'wall': 3}] -->
+|61–70|18.1/20.9|10.1/12.1|3.2/7.1|6.0/8.1|3.1/6.1|4.5/6.6|44.8/43.6|7.8/9.2|
+<!-- death causes [{'wall': 17, 'foe body': 1, 'mate body': 7, 'own body': 9, 'rammed': 9, 'rams': 3}, {'own body': 62, 'mate body': 15, 'rams': 9, 'rammed': 3, 'wall': 2}] -->
+|71–80|21.1/23.0|10.3/13.5|5.1/9.0|6.9/9.4|3.9/7.3|5.0/6.5|45.3/39.9|7.7/9.9|
+<!-- death causes [{'own body': 6, 'rams': 10, 'wall': 27, 'mate body': 8, 'rammed': 7}, {'own body': 68, 'mate body': 21, 'rammed': 10, 'rams': 7, 'wall': 3, 'foe body': 1}] -->
+|81–90|22.8/24.6|11.9/13.5|4.7/9.2|6.2/9.1|4.5/7.5|4.6/6.9|45.0/43.0|7.4/9.2|
+<!-- death causes [{'rammed': 10, 'own body': 18, 'mate head': 2, 'wall': 21, 'foe body': 2, 'rams': 6, 'mate body': 9}, {'own body': 70, 'mate body': 23, 'rams': 10, 'foe body': 1, 'rammed': 6, 'wall': 2}] -->
+|91–100|24.1/27.3|8.8/12.1|4.9/10.1|5.3/10.0|4.0/7.3|4.8/6.7|43.2/42.0|6.5/8.2|
+<!-- death causes [{'mate body': 10, 'rammed': 8, 'own body': 11, 'rams': 9, 'wall': 20, 'mate head': 2}, {'own body': 65, 'rams': 8, 'mate body': 21, 'rammed': 9, 'wall': 4, 'mate head': 2}] -->
+TOTAL [{"nat": 1180.0, "corp": 407.0, "splits": 683.0, "deaths": 380.0, "turns": 20841.0, "paid": 4.0}, {"nat": 1608.0, "corp": 852.0, "splits": 1082.0, "deaths": 730.0, "turns": 25052.0, "paid": 0.0}]
+DEATH [{'wall': 154, 'rammed': 56, 'own body': 64, 'foe body': 6, 'mate body': 50, 'rams': 42, 'mate head': 8}, {'own body': 456, 'mate body': 146, 'rams': 56, 'rammed': 42, 'foe body': 2, 'mate head': 8, 'wall': 20}]
+GATES Counter({'QS_KEEP_LEN eligible (ring/early-return precedence unknown)': 425, 'unresolved internal gate or earlier action': 304, 'CHILD_MIN_ROOM geometry (memory/precedence unknown)': 131, 'child_has_exit geometry (memory/precedence unknown)': 127, 'child_spans_portal geometry (precedence unknown)': 17, 'portal-adjacent (exception/precedence unknown)': 12})
+SPLIT LENGTH [{4: 457, 10: 1, 8: 32, 6: 73, 5: 78, 7: 33, 25: 1, 23: 1, 21: 1, 19: 1, 17: 1, 15: 1, 13: 1, 11: 1, 9: 1}, {4: 973, 10: 1, 8: 2, 6: 5, 5: 60, 7: 32, 25: 1, 23: 1, 21: 1, 19: 1, 17: 1, 15: 1, 13: 1, 11: 1, 9: 1}]
+START [3.8666666666666667, 3.8666666666666667]
+
+Cache pooled n=30
+|구간|종료 머리|자연|사체|분열|사망|3걸음 머리|진주 최단 점유 %|먹음/100턴|
+|---|---|---|---|---|---|---|---|---|
+|0–0|5.2/5.1|0.0/0.2|0.0/0.0|1.4/1.3|0.1/0.1|0.6/0.6|50.0/48.5|0.0/3.8|
+<!-- death causes [{'wall': 2}, {'own body': 2}] -->
+|1–10|6.3/6.3|2.5/3.0|0.1/0.3|1.8/1.9|0.7/0.7|1.6/1.7|46.9/42.9|4.5/5.7|
+<!-- death causes [{'rammed': 2, 'wall': 16, 'own body': 3, 'mate body': 1}, {'rams': 2, 'own body': 20}] -->
+|11–20|7.5/8.5|5.2/8.2|0.5/1.3|2.0/3.8|0.8/1.5|1.8/3.2|43.4/47.5|8.0/12.5|
+<!-- death causes [{'wall': 16, 'own body': 2, 'mate body': 1, 'rams': 3, 'mate head': 2}, {'own body': 39, 'mate body': 4, 'rammed': 3}] -->
+|21–30|9.0/11.3|5.7/11.0|1.2/3.2|2.9/5.7|1.3/2.9|2.8/3.8|47.5/42.7|8.0/13.9|
+<!-- death causes [{'own body': 8, 'wall': 19, 'mate body': 4, 'rammed': 4, 'rams': 4, 'foe body': 1}, {'mate body': 19, 'own body': 59, 'rams': 4, 'rammed': 4, 'wall': 2}] -->
+|31–40|10.7/13.9|8.2/11.1|1.6/4.8|3.8/7.2|2.1/4.6|3.2/4.9|50.0/39.3|9.6/11.9|
+<!-- death causes [{'rammed': 15, 'rams': 3, 'mate body': 7, 'wall': 23, 'own body': 12, 'foe body': 2, 'mate head': 2}, {'rams': 15, 'rammed': 3, 'own body': 88, 'mate body': 26, 'wall': 6}] -->
+|41–50|13.4/16.6|8.9/12.3|2.8/6.6|5.0/8.3|2.3/5.6|3.7/5.6|45.2/41.8|9.3/11.9|
+<!-- death causes [{'rammed': 15, 'mate body': 7, 'wall': 32, 'own body': 7, 'rams': 7}, {'rams': 15, 'mate body': 44, 'own body': 93, 'rammed': 7, 'mate head': 4, 'wall': 4}] -->
+|51–60|15.9/19.5|9.5/14.0|3.4/6.6|5.4/9.1|3.0/6.2|4.1/6.0|48.9/40.6|8.4/10.9|
+<!-- death causes [{'rams': 8, 'own body': 11, 'mate body': 17, 'wall': 36, 'rammed': 15, 'foe body': 2}, {'rammed': 8, 'own body': 109, 'mate body': 44, 'rams': 15, 'mate head': 2, 'wall': 6, 'foe body': 1}] -->
+|61–70|18.9/22.1|10.0/13.0|3.7/7.3|5.9/8.8|2.9/6.2|4.5/6.6|44.3/43.0|8.0/9.4|
+<!-- death causes [{'rams': 11, 'own body': 16, 'mate body': 11, 'wall': 33, 'foe body': 1, 'rammed': 15}, {'rammed': 11, 'own body': 123, 'mate body': 31, 'rams': 15, 'mate head': 2, 'wall': 4}] -->
+|71–80|21.1/24.7|10.2/14.3|4.4/9.5|6.2/10.3|3.9/7.6|4.9/7.1|44.5/41.7|7.5/9.8|
+<!-- death causes [{'wall': 45, 'own body': 17, 'mate body': 14, 'rams': 15, 'rammed': 20, 'mate head': 6}, {'own body': 145, 'mate body': 41, 'rammed': 15, 'rams': 20, 'wall': 6, 'foe body': 1}] -->
+|81–90|22.3/26.8|10.3/13.4|4.8/9.7|5.5/9.9|4.3/7.8|4.4/7.9|44.6/44.1|7.1/8.8|
+<!-- death causes [{'own body': 26, 'rammed': 28, 'wall': 47, 'rams': 13, 'mate body': 12, 'mate head': 2, 'foe body': 2}, {'own body': 144, 'rams': 28, 'mate body': 44, 'rammed': 13, 'foe body': 2, 'wall': 4}] -->
+|91–100|23.2/29.1|8.5/13.1|4.3/11.2|4.9/10.0|3.9/7.7|4.8/8.0|42.5/44.9|6.1/8.6|
+<!-- death causes [{'wall': 37, 'mate body': 14, 'own body': 22, 'rammed': 27, 'rams': 13, 'foe body': 2, 'mate head': 2}, {'own body': 136, 'mate body': 43, 'rams': 27, 'rammed': 13, 'mate head': 4, 'wall': 7}] -->
+TOTAL [{"nat": 2373.0, "corp": 804.0, "splits": 1341.0, "deaths": 760.0, "turns": 41727.0, "paid": 13.0}, {"nat": 3408.0, "corp": 1814.0, "splits": 2285.0, "deaths": 1527.0, "turns": 51713.0, "paid": 4.0}]
+DEATH [{'rammed': 141, 'rams': 77, 'mate body': 88, 'wall': 306, 'own body': 124, 'foe body': 10, 'mate head': 14}, {'rams': 141, 'rammed': 77, 'own body': 958, 'mate body': 296, 'foe body': 4, 'mate head': 12, 'wall': 39}]
+GATES Counter({'QS_KEEP_LEN eligible (ring/early-return precedence unknown)': 1111, 'unresolved internal gate or earlier action': 774, 'CHILD_MIN_ROOM geometry (memory/precedence unknown)': 280, 'child_has_exit geometry (memory/precedence unknown)': 249, 'child_spans_portal geometry (precedence unknown)': 53, 'portal-adjacent (exception/precedence unknown)': 48})
+SPLIT LENGTH [{4: 894, 5: 171, 25: 2, 7: 58, 23: 2, 21: 2, 6: 154, 19: 2, 17: 2, 15: 2, 13: 2, 11: 2, 9: 5, 8: 39, 10: 4}, {7: 51, 4: 2092, 25: 2, 5: 108, 23: 2, 21: 2, 19: 2, 17: 2, 15: 2, 13: 2, 11: 2, 9: 2, 10: 2, 8: 4, 6: 10}]
+START [3.8666666666666667, 3.8666666666666667]
+
+one8-p1 n=15
+|구간|종료 머리|자연|사체|분열|사망|3걸음 머리|진주 최단 점유 %|먹음/100턴|
+|---|---|---|---|---|---|---|---|---|
+|0–0|5.0/5.3|0.0/0.1|0.0/0.0|1.3/1.7|0.1/0.2|0.6/0.7|48.2/48.7|0.0/1.2|
+<!-- death causes [{'wall': 1, 'rammed': 1}, {'illegal split': 2, 'rams': 1}] -->
+|1–10|6.1/6.8|3.0/3.8|0.3/0.7|2.0/2.5|0.9/1.0|1.4/1.5|46.0/43.3|5.8/7.2|
+<!-- death causes [{'wall': 8, 'rams': 1, 'mate head': 2, 'mate body': 1, 'own body': 1}, {'illegal split': 14, 'rammed': 1}] -->
+|11–20|7.6/8.3|5.5/5.8|0.9/0.8|2.7/2.7|1.3/1.2|1.7/2.7|46.9/42.3|9.1/8.6|
+<!-- death causes [{'own body': 3, 'wall': 9, 'rammed': 2, 'rams': 1, 'mate body': 2, 'mate head': 2}, {'illegal split': 12, 'rams': 2, 'rammed': 1, 'mate head': 2, 'mate body': 1}] -->
+|21–30|9.9/11.5|7.3/10.0|1.5/2.1|3.7/5.2|1.4/2.0|2.7/3.1|40.0/46.2|9.9/12.2|
+<!-- death causes [{'rams': 1, 'wall': 12, 'foe body': 1, 'mate body': 3, 'rammed': 2, 'own body': 2}, {'rammed': 1, 'illegal split': 26, 'rams': 2, 'mate body': 1}] -->
+|31–40|12.3/14.5|8.8/11.7|1.9/3.0|4.5/6.2|2.1/3.3|2.9/3.8|44.3/41.2|9.5/11.1|
+<!-- death causes [{'rammed': 7, 'wall': 13, 'rams': 3, 'mate body': 5, 'own body': 3}, {'illegal split': 34, 'rams': 7, 'mate head': 2, 'rammed': 3, 'foe body': 2, 'mate body': 1}] -->
+|41–50|14.7/18.0|9.1/13.2|2.3/3.7|4.5/7.3|2.0/3.7|4.0/4.9|48.0/41.8|8.1/10.0|
+<!-- death causes [{'rammed': 7, 'wall': 13, 'rams': 4, 'own body': 6}, {'illegal split': 39, 'rams': 7, 'mate head': 6, 'rammed': 4}] -->
+|51–60|17.7/21.3|10.5/14.6|2.6/5.4|5.9/7.9|2.9/4.7|4.1/6.1|39.7/47.2|7.7/9.8|
+<!-- death causes [{'wall': 15, 'own body': 13, 'rammed': 5, 'rams': 5, 'foe body': 2, 'mate head': 2, 'mate body': 1}, {'illegal split': 52, 'rams': 5, 'rammed': 5, 'foe body': 1, 'mate head': 6, 'mate body': 1}] -->
+|61–70|20.6/25.1|10.7/14.7|5.2/6.8|6.8/9.7|3.9/5.9|4.9/7.5|37.9/44.8|8.0/9.0|
+<!-- death causes [{'rams': 12, 'wall': 18, 'own body': 9, 'rammed': 11, 'mate body': 9}, {'illegal split': 59, 'rammed': 12, 'rams': 11, 'mate head': 6}] -->
+|71–80|23.5/28.2|11.2/16.3|4.5/8.2|6.5/9.3|3.7/6.3|5.5/6.9|35.4/52.1|7.0/9.0|
+<!-- death causes [{'own body': 12, 'wall': 19, 'rammed': 11, 'mate body': 7, 'rams': 6}, {'illegal split': 72, 'rams': 11, 'mate head': 4, 'rammed': 6, 'mate body': 1}] -->
+|81–90|25.6/29.9|11.0/16.9|5.5/7.9|6.8/8.9|4.7/7.3|4.6/8.3|30.5/56.6|6.6/8.5|
+<!-- death causes [{'rammed': 21, 'wall': 25, 'mate body': 5, 'own body': 7, 'mate head': 2, 'rams': 9, 'foe body': 1}, {'illegal split': 71, 'rams': 21, 'mate head': 4, 'mate body': 3, 'rammed': 9, 'foe body': 1}] -->
+|91–100|26.1/31.9|10.4/14.9|5.4/9.8|5.5/8.9|5.0/6.9|5.5/8.8|35.3/52.2|6.0/8.1|
+<!-- death causes [{'rams': 12, 'rammed': 16, 'own body': 15, 'wall': 22, 'mate body': 8, 'mate head': 2}, {'illegal split': 58, 'rammed': 12, 'rams': 16, 'mate head': 12, 'mate body': 4, 'foe body': 1}] -->
+TOTAL [{"nat": 1313.0, "corp": 452.0, "splits": 752.0, "deaths": 418.0, "turns": 23693.0, "paid": 7.0}, {"nat": 1832.0, "corp": 727.0, "splits": 1055.0, "deaths": 635.0, "turns": 27887.0, "paid": 17.0}]
+DEATH [{'own body': 71, 'rams': 54, 'rammed': 83, 'wall': 155, 'foe body': 4, 'mate body': 41, 'mate head': 10}, {'rammed': 54, 'illegal split': 439, 'rams': 83, 'mate head': 42, 'mate body': 12, 'foe body': 5}]
+GATES Counter({'QS_KEEP_LEN eligible (ring/early-return precedence unknown)': 677, 'unresolved internal gate or earlier action': 475, 'CHILD_MIN_ROOM geometry (memory/precedence unknown)': 145, 'child_has_exit geometry (memory/precedence unknown)': 135, 'portal-adjacent (exception/precedence unknown)': 55, 'child_spans_portal geometry (precedence unknown)': 31})
+SPLIT LENGTH [{4: 509, 5: 94, 8: 23, 6: 77, 9: 6, 7: 33, 10: 2, 25: 1, 23: 1, 21: 1, 19: 1, 17: 1, 15: 1, 13: 1, 11: 1}, {4: 881, 5: 123, 6: 18, 8: 7, 7: 10, 10: 3, 9: 5, 11: 1, 25: 1, 22: 1, 20: 1, 18: 1, 16: 1, 14: 1, 12: 1}]
+START [3.8666666666666667, 3.8666666666666667]
+
+MAPS
+Around UNSW [(1492097, 264, [{'nat': 6, 'corp': 0, 'splits': 7, 'deaths': 2, 'turns': 308, 'paid': 0, 'causes': Counter({'wall': 2})}, {'nat': 20, 'corp': 4, 'splits': 13, 'deaths': 5, 'turns': 318, 'paid': 0, 'causes': Counter({'own body': 5})}]), (1494959, 174, [{'nat': 9, 'corp': 0, 'splits': 8, 'deaths': 2, 'turns': 310, 'paid': 0, 'causes': Counter({'wall': 2})}, {'nat': 13, 'corp': 5, 'splits': 14, 'deaths': 5, 'turns': 336, 'paid': 0, 'causes': Counter({'illegal split': 5})}]), (1493883, 157, [{'nat': 12, 'corp': 0, 'splits': 10, 'deaths': 3, 'turns': 311, 'paid': 0, 'causes': Counter({'wall': 3})}, {'nat': 24, 'corp': 3, 'splits': 15, 'deaths': 4, 'turns': 330, 'paid': 0, 'causes': Counter({'own body': 4})}])]
+Schooltime [(1493886, 246, [{'nat': 0, 'corp': 1, 'splits': 3, 'deaths': 1, 'turns': 106, 'paid': 0, 'causes': Counter({'wall': 1})}, {'nat': 0, 'corp': 1, 'splits': 3, 'deaths': 1, 'turns': 106, 'paid': 0, 'causes': Counter({'own body': 1})}]), (1494962, 207, [{'nat': 0, 'corp': 1, 'splits': 3, 'deaths': 1, 'turns': 106, 'paid': 0, 'causes': Counter({'wall': 1})}, {'nat': 0, 'corp': 1, 'splits': 3, 'deaths': 1, 'turns': 106, 'paid': 0, 'causes': Counter({'illegal split': 1})}]), (1492100, 17, [{'nat': 2, 'corp': 1, 'splits': 3, 'deaths': 1, 'turns': 106, 'paid': 0, 'causes': Counter({'wall': 1})}, {'nat': 1, 'corp': 1, 'splits': 3, 'deaths': 1, 'turns': 106, 'paid': 0, 'causes': Counter({'own body': 1})}])]
+Stripes [(1493881, 123, [{'nat': 2, 'corp': 0, 'splits': 0, 'deaths': 0, 'turns': 42, 'paid': 0, 'causes': Counter()}, {'nat': 10, 'corp': 3, 'splits': 6, 'deaths': 4, 'turns': 63, 'paid': 0, 'causes': Counter({'own body': 4})}]), (1494957, 112, [{'nat': 2, 'corp': 0, 'splits': 0, 'deaths': 0, 'turns': 42, 'paid': 0, 'causes': Counter()}, {'nat': 6, 'corp': 0, 'splits': 1, 'deaths': 0, 'turns': 49, 'paid': 0, 'causes': Counter()}]), (1492095, 139, [{'nat': 1, 'corp': 0, 'splits': 0, 'deaths': 0, 'turns': 42, 'paid': 0, 'causes': Counter()}, {'nat': 10, 'corp': 3, 'splits': 5, 'deaths': 3, 'turns': 54, 'paid': 0, 'causes': Counter({'own body': 3})}])]
+Devil [(1494964, 150, [{'nat': 4, 'corp': 0, 'splits': 4, 'deaths': 1, 'turns': 109, 'paid': 0, 'causes': Counter({'own body': 1})}, {'nat': 4, 'corp': 0, 'splits': 4, 'deaths': 0, 'turns': 129, 'paid': 0, 'causes': Counter()}]), (1492102, 83, [{'nat': 3, 'corp': 1, 'splits': 3, 'deaths': 2, 'turns': 125, 'paid': 1, 'causes': Counter({'wall': 1, 'rams': 1})}, {'nat': 3, 'corp': 0, 'splits': 3, 'deaths': 1, 'turns': 107, 'paid': 0, 'causes': Counter({'rammed': 1})}]), (1493888, 122, [{'nat': 3, 'corp': 0, 'splits': 3, 'deaths': 1, 'turns': 109, 'paid': 0, 'causes': Counter({'rams': 1})}, {'nat': 5, 'corp': 0, 'splits': 2, 'deaths': 1, 'turns': 101, 'paid': 0, 'causes': Counter({'rammed': 1})}])]
+Slithery Fight [(1493891, 87, [{'nat': 45, 'corp': 5, 'splits': 34, 'deaths': 12, 'turns': 426, 'paid': 0, 'causes': Counter({'wall': 9, 'own body': 2, 'mate body': 1})}, {'nat': 59, 'corp': 12, 'splits': 41, 'deaths': 15, 'turns': 471, 'paid': 0, 'causes': Counter({'own body': 14, 'mate body': 1})}]), (1492105, 74, [{'nat': 43, 'corp': 5, 'splits': 32, 'deaths': 12, 'turns': 424, 'paid': 0, 'causes': Counter({'wall': 8, 'own body': 2, 'mate head': 2})}, {'nat': 52, 'corp': 9, 'splits': 41, 'deaths': 15, 'turns': 466, 'paid': 0, 'causes': Counter({'own body': 13, 'mate body': 2})}]), (1494967, 160, [{'nat': 43, 'corp': 4, 'splits': 34, 'deaths': 15, 'turns': 422, 'paid': 0, 'causes': Counter({'wall': 8, 'own body': 3, 'mate body': 2, 'mate head': 2})}, {'nat': 49, 'corp': 11, 'splits': 39, 'deaths': 16, 'turns': 475, 'paid': 0, 'causes': Counter({'illegal split': 16})}])]
+Islands [(1494955, 105, [{'nat': 20, 'corp': 1, 'splits': 6, 'deaths': 2, 'turns': 160, 'paid': 0, 'causes': Counter({'rammed': 1, 'rams': 1})}, {'nat': 25, 'corp': 0, 'splits': 10, 'deaths': 2, 'turns': 180, 'paid': 0, 'causes': Counter({'rams': 1, 'rammed': 1})}]), (1493879, 158, [{'nat': 21, 'corp': 0, 'splits': 6, 'deaths': 1, 'turns': 164, 'paid': 0, 'causes': Counter({'rams': 1})}, {'nat': 32, 'corp': 3, 'splits': 11, 'deaths': 5, 'turns': 168, 'paid': 0, 'causes': Counter({'own body': 4, 'rammed': 1})}]), (1492093, 57, [{'nat': 17, 'corp': 0, 'splits': 7, 'deaths': 0, 'turns': 176, 'paid': 0, 'causes': Counter()}, {'nat': 32, 'corp': 4, 'splits': 13, 'deaths': 4, 'turns': 178, 'paid': 0, 'causes': Counter({'own body': 3, 'mate body': 1})}])]
+Australia [(1493878, 245, [{'nat': 3, 'corp': 0, 'splits': 3, 'deaths': 0, 'turns': 242, 'paid': 0, 'causes': Counter()}, {'nat': 18, 'corp': 1, 'splits': 10, 'deaths': 2, 'turns': 267, 'paid': 0, 'causes': Counter({'own body': 2})}]), (1494954, -77, [{'nat': 5, 'corp': 0, 'splits': 5, 'deaths': 1, 'turns': 243, 'paid': 0, 'causes': Counter({'rammed': 1})}, {'nat': 5, 'corp': 0, 'splits': 5, 'deaths': 1, 'turns': 263, 'paid': 0, 'causes': Counter({'rams': 1})}]), (1492092, 130, [{'nat': 2, 'corp': 0, 'splits': 2, 'deaths': 0, 'turns': 231, 'paid': 0, 'causes': Counter()}, {'nat': 17, 'corp': 1, 'splits': 9, 'deaths': 2, 'turns': 263, 'paid': 0, 'causes': Counter({'own body': 2})}])]
+Tower Defense [(1492096, 70, [{'nat': 0, 'corp': 0, 'splits': 0, 'deaths': 0, 'turns': 42, 'paid': 0, 'causes': Counter()}, {'nat': 0, 'corp': 0, 'splits': 0, 'deaths': 0, 'turns': 42, 'paid': 0, 'causes': Counter()}]), (1494958, 56, [{'nat': 0, 'corp': 0, 'splits': 0, 'deaths': 0, 'turns': 42, 'paid': 0, 'causes': Counter()}, {'nat': 0, 'corp': 0, 'splits': 0, 'deaths': 0, 'turns': 42, 'paid': 0, 'causes': Counter()}]), (1493882, 75, [{'nat': 1, 'corp': 0, 'splits': 0, 'deaths': 0, 'turns': 42, 'paid': 0, 'causes': Counter()}, {'nat': 2, 'corp': 0, 'splits': 0, 'deaths': 0, 'turns': 42, 'paid': 0, 'causes': Counter()}])]
+Trauma [(1494965, 56, [{'nat': 0, 'corp': 0, 'splits': 1, 'deaths': 0, 'turns': 63, 'paid': 0, 'causes': Counter()}, {'nat': 2, 'corp': 0, 'splits': 2, 'deaths': 0, 'turns': 84, 'paid': 0, 'causes': Counter()}]), (1492103, 45, [{'nat': 0, 'corp': 0, 'splits': 2, 'deaths': 0, 'turns': 84, 'paid': 0, 'causes': Counter()}, {'nat': 2, 'corp': 0, 'splits': 1, 'deaths': 0, 'turns': 63, 'paid': 0, 'causes': Counter()}]), (1493889, 94, [{'nat': 0, 'corp': 0, 'splits': 1, 'deaths': 0, 'turns': 63, 'paid': 0, 'causes': Counter()}, {'nat': 2, 'corp': 0, 'splits': 1, 'deaths': 0, 'turns': 63, 'paid': 0, 'causes': Counter()}])]
+Portals [(1493890, 5, [{'nat': 18, 'corp': 3, 'splits': 9, 'deaths': 6, 'turns': 104, 'paid': 0, 'causes': Counter({'wall': 4, 'own body': 1, 'mate body': 1})}, {'nat': 12, 'corp': 1, 'splits': 7, 'deaths': 3, 'turns': 106, 'paid': 0, 'causes': Counter({'own body': 3})}]), (1494966, -72, [{'nat': 16, 'corp': 6, 'splits': 10, 'deaths': 8, 'turns': 96, 'paid': 0, 'causes': Counter({'wall': 5, 'mate head': 2, 'mate body': 1})}, {'nat': 14, 'corp': 1, 'splits': 7, 'deaths': 4, 'turns': 103, 'paid': 0, 'causes': Counter({'illegal split': 3, 'mate body': 1})}]), (1492104, 110, [{'nat': 10, 'corp': 1, 'splits': 5, 'deaths': 3, 'turns': 81, 'paid': 0, 'causes': Counter({'wall': 3})}, {'nat': 14, 'corp': 1, 'splits': 8, 'deaths': 2, 'turns': 115, 'paid': 0, 'causes': Counter({'own body': 2})}])]
+Default [(1494960, -6, [{'nat': 1, 'corp': 5, 'splits': 5, 'deaths': 2, 'turns': 133, 'paid': 0, 'causes': Counter({'rammed': 1, 'rams': 1})}, {'nat': 1, 'corp': 1, 'splits': 3, 'deaths': 2, 'turns': 113, 'paid': 2, 'causes': Counter({'rams': 1, 'rammed': 1})}]), (1492098, 39, [{'nat': 3, 'corp': 0, 'splits': 4, 'deaths': 0, 'turns': 168, 'paid': 0, 'causes': Counter()}, {'nat': 5, 'corp': 0, 'splits': 4, 'deaths': 0, 'turns': 150, 'paid': 0, 'causes': Counter()}]), (1493884, -5, [{'nat': 2, 'corp': 0, 'splits': 4, 'deaths': 0, 'turns': 148, 'paid': 0, 'causes': Counter()}, {'nat': 5, 'corp': 0, 'splits': 5, 'deaths': 0, 'turns': 153, 'paid': 0, 'causes': Counter()}])]
+weakhold [(1494953, 53, [{'nat': 5, 'corp': 1, 'splits': 2, 'deaths': 1, 'turns': 65, 'paid': 0, 'causes': Counter({'wall': 1})}, {'nat': 10, 'corp': 2, 'splits': 6, 'deaths': 3, 'turns': 96, 'paid': 0, 'causes': Counter({'illegal split': 3})}]), (1492091, 9, [{'nat': 4, 'corp': 0, 'splits': 3, 'deaths': 1, 'turns': 86, 'paid': 0, 'causes': Counter({'wall': 1})}, {'nat': 0, 'corp': 0, 'splits': 1, 'deaths': 0, 'turns': 63, 'paid': 0, 'causes': Counter()}]), (1493877, -44, [{'nat': 5, 'corp': 1, 'splits': 2, 'deaths': 1, 'turns': 65, 'paid': 0, 'causes': Counter({'wall': 1})}, {'nat': 0, 'corp': 0, 'splits': 1, 'deaths': 0, 'turns': 63, 'paid': 0, 'causes': Counter()}])]
+Maze [(1493880, -5, [{'nat': 11, 'corp': 0, 'splits': 5, 'deaths': 0, 'turns': 94, 'paid': 0, 'causes': Counter()}, {'nat': 4, 'corp': 0, 'splits': 2, 'deaths': 0, 'turns': 67, 'paid': 0, 'causes': Counter()}]), (1494956, 1, [{'nat': 11, 'corp': 0, 'splits': 6, 'deaths': 0, 'turns': 103, 'paid': 0, 'causes': Counter()}, {'nat': 11, 'corp': 0, 'splits': 5, 'deaths': 0, 'turns': 114, 'paid': 0, 'causes': Counter()}]), (1492094, -4, [{'nat': 6, 'corp': 0, 'splits': 4, 'deaths': 0, 'turns': 95, 'paid': 0, 'causes': Counter()}, {'nat': 2, 'corp': 0, 'splits': 1, 'deaths': 0, 'turns': 63, 'paid': 0, 'causes': Counter()}])]
+Queen Of Spades [(1494961, 17, [{'nat': 4, 'corp': 1, 'splits': 2, 'deaths': 1, 'turns': 52, 'paid': 0, 'causes': Counter({'wall': 1})}, {'nat': 4, 'corp': 2, 'splits': 3, 'deaths': 2, 'turns': 48, 'paid': 0, 'causes': Counter({'mate head': 2})}]), (1493885, -16, [{'nat': 4, 'corp': 0, 'splits': 2, 'deaths': 0, 'turns': 51, 'paid': 0, 'causes': Counter()}, {'nat': 4, 'corp': 0, 'splits': 2, 'deaths': 0, 'turns': 50, 'paid': 0, 'causes': Counter()}]), (1492099, -21, [{'nat': 2, 'corp': 0, 'splits': 1, 'deaths': 0, 'turns': 48, 'paid': 0, 'causes': Counter()}, {'nat': 3, 'corp': 0, 'splits': 1, 'deaths': 0, 'turns': 51, 'paid': 0, 'causes': Counter()}])]
+Trophy [(1493887, -70, [{'nat': 4, 'corp': 0, 'splits': 1, 'deaths': 1, 'turns': 36, 'paid': 0, 'causes': Counter({'rammed': 1})}, {'nat': 1, 'corp': 0, 'splits': 0, 'deaths': 1, 'turns': 30, 'paid': 0, 'causes': Counter({'rams': 1})}]), (1492101, -139, [{'nat': 2, 'corp': 0, 'splits': 1, 'deaths': 1, 'turns': 34, 'paid': 0, 'causes': Counter({'rammed': 1})}, {'nat': 2, 'corp': 0, 'splits': 1, 'deaths': 1, 'turns': 33, 'paid': 0, 'causes': Counter({'rams': 1})}]), (1494963, -142, [{'nat': 8, 'corp': 0, 'splits': 4, 'deaths': 0, 'turns': 57, 'paid': 0, 'causes': Counter()}, {'nat': 1, 'corp': 0, 'splits': 1, 'deaths': 0, 'turns': 43, 'paid': 1, 'causes': Counter()}])]

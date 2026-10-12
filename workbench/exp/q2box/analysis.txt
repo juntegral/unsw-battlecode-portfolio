@@ -1,0 +1,918 @@
+{
+  "missing": 0,
+  "identity": "12/12",
+  "pairs": 78,
+  "survivalRegressions": [],
+  "around": [
+    {
+      "key": "bot-hunter:around_unsw:A:1",
+      "onAlive500": true,
+      "offAlive500": true,
+      "survivalRegression": false,
+      "onDeath": null,
+      "offDeath": null,
+      "onSeals": 1,
+      "offSeals": 1,
+      "sameEvents": true,
+      "sameQueenHeads": true
+    },
+    {
+      "key": "bot-hunter:around_unsw:B:1",
+      "onAlive500": false,
+      "offAlive500": false,
+      "survivalRegression": false,
+      "onDeath": {
+        "round": 6,
+        "cause": "trap",
+        "length": 2,
+        "head": {
+          "x": 41,
+          "y": 22
+        },
+        "other": null
+      },
+      "offDeath": {
+        "round": 6,
+        "cause": "trap",
+        "length": 2,
+        "head": {
+          "x": 41,
+          "y": 22
+        },
+        "other": null
+      },
+      "onSeals": 1,
+      "offSeals": 1,
+      "sameEvents": true,
+      "sameQueenHeads": true
+    },
+    {
+      "key": "proxy4_king:around_unsw:A:1",
+      "onAlive500": false,
+      "offAlive500": false,
+      "survivalRegression": false,
+      "onDeath": {
+        "round": 189,
+        "cause": "rammed",
+        "length": 17,
+        "head": {
+          "x": 21,
+          "y": 43
+        },
+        "other": 193
+      },
+      "offDeath": {
+        "round": 189,
+        "cause": "rammed",
+        "length": 17,
+        "head": {
+          "x": 21,
+          "y": 43
+        },
+        "other": 193
+      },
+      "onSeals": 0,
+      "offSeals": 0,
+      "sameEvents": true,
+      "sameQueenHeads": true
+    },
+    {
+      "key": "proxy4_king:around_unsw:B:1",
+      "onAlive500": false,
+      "offAlive500": false,
+      "survivalRegression": false,
+      "onDeath": {
+        "round": 6,
+        "cause": "trap",
+        "length": 2,
+        "head": {
+          "x": 41,
+          "y": 22
+        },
+        "other": null
+      },
+      "offDeath": {
+        "round": 6,
+        "cause": "trap",
+        "length": 2,
+        "head": {
+          "x": 41,
+          "y": 22
+        },
+        "other": null
+      },
+      "onSeals": 1,
+      "offSeals": 1,
+      "sameEvents": true,
+      "sameQueenHeads": true
+    },
+    {
+      "key": "proxy4_king:around_unsw:A:2",
+      "onAlive500": false,
+      "offAlive500": false,
+      "survivalRegression": false,
+      "onDeath": {
+        "round": 221,
+        "cause": "sac",
+        "length": 14,
+        "head": {
+          "x": 18,
+          "y": 44
+        },
+        "other": null
+      },
+      "offDeath": {
+        "round": 221,
+        "cause": "sac",
+        "length": 14,
+        "head": {
+          "x": 18,
+          "y": 44
+        },
+        "other": null
+      },
+      "onSeals": 0,
+      "offSeals": 0,
+      "sameEvents": true,
+      "sameQueenHeads": true
+    },
+    {
+      "key": "proxy4_king:around_unsw:B:2",
+      "onAlive500": false,
+      "offAlive500": false,
+      "survivalRegression": false,
+      "onDeath": {
+        "round": 6,
+        "cause": "trap",
+        "length": 3,
+        "head": {
+          "x": 41,
+          "y": 22
+        },
+        "other": null
+      },
+      "offDeath": {
+        "round": 6,
+        "cause": "trap",
+        "length": 3,
+        "head": {
+          "x": 41,
+          "y": 22
+        },
+        "other": null
+      },
+      "onSeals": 1,
+      "offSeals": 1,
+      "sameEvents": true,
+      "sameQueenHeads": true
+    },
+    {
+      "key": "bot-hunter:around_unsw:A:2",
+      "onAlive500": true,
+      "offAlive500": true,
+      "survivalRegression": false,
+      "onDeath": null,
+      "offDeath": null,
+      "onSeals": 0,
+      "offSeals": 0,
+      "sameEvents": true,
+      "sameQueenHeads": true
+    },
+    {
+      "key": "bot-hunter:around_unsw:B:2",
+      "onAlive500": false,
+      "offAlive500": false,
+      "survivalRegression": false,
+      "onDeath": {
+        "round": 6,
+        "cause": "trap",
+        "length": 3,
+        "head": {
+          "x": 41,
+          "y": 22
+        },
+        "other": null
+      },
+      "offDeath": {
+        "round": 6,
+        "cause": "trap",
+        "length": 3,
+        "head": {
+          "x": 41,
+          "y": 22
+        },
+        "other": null
+      },
+      "onSeals": 1,
+      "offSeals": 1,
+      "sameEvents": true,
+      "sameQueenHeads": true
+    }
+  ],
+  "onSeals": [
+    {
+      "key": "bot-hunter:around_unsw:A:1",
+      "id": 86,
+      "round": 200,
+      "qh": {
+        "x": 19,
+        "y": 44
+      },
+      "distance": 2,
+      "exits": [
+        2836
+      ],
+      "free": [
+        2836
+      ],
+      "visible": true,
+      "nonsealSingles": [],
+      "outwardSingles": [],
+      "action": {
+        "kind": "move",
+        "steps": [
+          "N"
+        ]
+      },
+      "indicator": "N v-134.2 d7 L2 qb1 cl@20,44 bl16@19,44 k0 E=F"
+    },
+    {
+      "key": "bot-hunter:around_unsw:B:1",
+      "id": 9,
+      "round": 4,
+      "qh": {
+        "x": 41,
+        "y": 22
+      },
+      "distance": 2,
+      "exits": [
+        1450
+      ],
+      "free": [
+        1450
+      ],
+      "visible": true,
+      "nonsealSingles": [],
+      "outwardSingles": [],
+      "action": {
+        "kind": "move",
+        "steps": [
+          "N"
+        ]
+      },
+      "indicator": "N v-133.1 d7 L2 qb1 E=F"
+    },
+    {
+      "key": "bot-hunter:australia:A:1",
+      "id": 10,
+      "round": 60,
+      "qh": {
+        "x": 17,
+        "y": 23
+      },
+      "distance": 2,
+      "exits": [
+        1490,
+        1553
+      ],
+      "free": [
+        1490
+      ],
+      "visible": true,
+      "nonsealSingles": [],
+      "outwardSingles": [],
+      "action": {
+        "kind": "move",
+        "steps": [
+          "N"
+        ]
+      },
+      "indicator": "N v-133.5 d7 L2 qb1 bl7@17,23 k0 E=F"
+    },
+    {
+      "key": "bot-hunter:australia:B:1",
+      "id": 132,
+      "round": 252,
+      "qh": {
+        "x": 43,
+        "y": 34
+      },
+      "distance": 2,
+      "exits": [
+        2283,
+        2218
+      ],
+      "free": [
+        2218
+      ],
+      "visible": true,
+      "nonsealSingles": [],
+      "outwardSingles": [],
+      "action": {
+        "kind": "move",
+        "steps": [
+          "E"
+        ]
+      },
+      "indicator": "E v-135.3 d7 L4 qb1 E=F"
+    },
+    {
+      "key": "bot-hunter:big_empty:A:1",
+      "id": 94,
+      "round": 195,
+      "qh": {
+        "x": 21,
+        "y": 6
+      },
+      "distance": 2,
+      "exits": [
+        341,
+        406,
+        469
+      ],
+      "free": [
+        469
+      ],
+      "visible": true,
+      "nonsealSingles": [],
+      "outwardSingles": [],
+      "action": {
+        "kind": "move",
+        "steps": [
+          "E"
+        ]
+      },
+      "indicator": "E v-1253.0 d7 L3 qb1 kbr bl12@21,6 k0 map=none E=F"
+    },
+    {
+      "key": "bot-hunter:default:B:1",
+      "id": 11,
+      "round": 134,
+      "qh": {
+        "x": 29,
+        "y": 29
+      },
+      "distance": 2,
+      "exits": [
+        956
+      ],
+      "free": [
+        956
+      ],
+      "visible": true,
+      "nonsealSingles": [],
+      "outwardSingles": [],
+      "action": {
+        "kind": "move",
+        "steps": [
+          "E"
+        ]
+      },
+      "indicator": "E v-134.0 d7 L2 qb1 E=F"
+    },
+    {
+      "key": "bot-hunter:maze:B:1",
+      "id": 31,
+      "round": 81,
+      "qh": {
+        "x": 41,
+        "y": 2
+      },
+      "distance": 2,
+      "exits": [
+        89,
+        138,
+        185
+      ],
+      "free": [
+        89
+      ],
+      "visible": true,
+      "nonsealSingles": [],
+      "outwardSingles": [],
+      "action": {
+        "kind": "move",
+        "steps": [
+          "E"
+        ]
+      },
+      "indicator": "E v-1007.8 d7 L3 qb1 E=F"
+    },
+    {
+      "key": "bot-hunter:maze:B:1",
+      "id": 31,
+      "round": 85,
+      "qh": {
+        "x": 41,
+        "y": 2
+      },
+      "distance": 2,
+      "exits": [
+        89,
+        138,
+        185
+      ],
+      "free": [
+        89
+      ],
+      "visible": true,
+      "nonsealSingles": [],
+      "outwardSingles": [],
+      "action": {
+        "kind": "move",
+        "steps": [
+          "E"
+        ]
+      },
+      "indicator": "E v-133.0 d7 L3 qb1 bl10@41,2 k0 E=F"
+    },
+    {
+      "key": "bot-hunter:maze:B:1",
+      "id": 52,
+      "round": 122,
+      "qh": {
+        "x": 39,
+        "y": 4
+      },
+      "distance": 2,
+      "exits": [
+        183,
+        232,
+        230
+      ],
+      "free": [
+        232
+      ],
+      "visible": true,
+      "nonsealSingles": [],
+      "outwardSingles": [],
+      "action": {
+        "kind": "move",
+        "steps": [
+          "S"
+        ]
+      },
+      "indicator": "S v-1253.0 d7 L3 qb1 E=F"
+    },
+    {
+      "key": "bot-hunter:maze:B:1",
+      "id": 56,
+      "round": 147,
+      "qh": {
+        "x": 38,
+        "y": 6
+      },
+      "distance": 2,
+      "exits": [
+        327,
+        374,
+        325
+      ],
+      "free": [
+        325
+      ],
+      "visible": true,
+      "nonsealSingles": [],
+      "outwardSingles": [],
+      "action": {
+        "kind": "move",
+        "steps": [
+          "S"
+        ]
+      },
+      "indicator": "S v-132.2 d7 L6 qb1 E=F"
+    },
+    {
+      "key": "bot-hunter:maze:B:1",
+      "id": 39,
+      "round": 202,
+      "qh": {
+        "x": 45,
+        "y": 6
+      },
+      "distance": 2,
+      "exits": [
+        285,
+        334,
+        381
+      ],
+      "free": [
+        285
+      ],
+      "visible": true,
+      "nonsealSingles": [],
+      "outwardSingles": [],
+      "action": {
+        "kind": "move",
+        "steps": [
+          "W"
+        ]
+      },
+      "indicator": "W v-132.5 d7 L5 qb1 E=F"
+    },
+    {
+      "key": "bot-hunter:maze:B:1",
+      "id": 56,
+      "round": 235,
+      "qh": {
+        "x": 41,
+        "y": 7
+      },
+      "distance": 2,
+      "exits": [
+        329,
+        425,
+        376
+      ],
+      "free": [
+        425
+      ],
+      "visible": true,
+      "nonsealSingles": [],
+      "outwardSingles": [],
+      "action": {
+        "kind": "move",
+        "steps": [
+          "N"
+        ]
+      },
+      "indicator": "N v-1124.4 d7 L3 qb2 grab@40,8 bl9@41,7 k0 E=F"
+    },
+    {
+      "key": "bot-hunter:queen_of_spades:A:1",
+      "id": 35,
+      "round": 294,
+      "qh": {
+        "x": 24,
+        "y": 15
+      },
+      "distance": 2,
+      "exits": [
+        374,
+        424
+      ],
+      "free": [
+        424
+      ],
+      "visible": true,
+      "nonsealSingles": [],
+      "outwardSingles": [],
+      "action": {
+        "kind": "move",
+        "steps": [
+          "N"
+        ]
+      },
+      "indicator": "N v-1206.9 d7 L11 qb1 E=F"
+    },
+    {
+      "key": "bot-hunter:schooltime:A:1",
+      "id": 35,
+      "round": 125,
+      "qh": {
+        "x": 43,
+        "y": 14
+      },
+      "distance": 2,
+      "exits": [
+        943
+      ],
+      "free": [
+        943
+      ],
+      "visible": true,
+      "nonsealSingles": [],
+      "outwardSingles": [],
+      "action": {
+        "kind": "move",
+        "steps": [
+          "N"
+        ]
+      },
+      "indicator": "N v-133.9 d7 L2 qb1 bl11@43,14 k0 E=F"
+    },
+    {
+      "key": "bot-hunter:schooltime:B:1",
+      "id": 24,
+      "round": 141,
+      "qh": {
+        "x": 56,
+        "y": 12
+      },
+      "distance": 2,
+      "exits": [
+        836
+      ],
+      "free": [
+        836
+      ],
+      "visible": true,
+      "nonsealSingles": [],
+      "outwardSingles": [],
+      "action": {
+        "kind": "move",
+        "steps": [
+          "E"
+        ]
+      },
+      "indicator": "E v-137.3 d7 L3 qb1 E=F"
+    },
+    {
+      "key": "bot-hunter:stripes:B:1",
+      "id": 8,
+      "round": 85,
+      "qh": {
+        "x": 11,
+        "y": 1
+      },
+      "distance": 2,
+      "exits": [
+        11
+      ],
+      "free": [
+        11
+      ],
+      "visible": true,
+      "nonsealSingles": [],
+      "outwardSingles": [],
+      "action": {
+        "kind": "move",
+        "steps": [
+          "W"
+        ]
+      },
+      "indicator": "W v-1304.0 d7 L2 bx1 qb1 kbr bl5@11,1 k0 map=none E=F"
+    },
+    {
+      "key": "bot-hunter:stripes:B:1",
+      "id": 5,
+      "round": 194,
+      "qh": {
+        "x": 6,
+        "y": 7
+      },
+      "distance": 2,
+      "exits": [
+        198,
+        173
+      ],
+      "free": [
+        198
+      ],
+      "visible": true,
+      "nonsealSingles": [],
+      "outwardSingles": [],
+      "action": {
+        "kind": "move",
+        "steps": [
+          "W"
+        ]
+      },
+      "indicator": "W v-1305.5 d7 L2 bx1 qb1 E=F"
+    },
+    {
+      "key": "bot-hunter:trophy:A:1",
+      "id": 12,
+      "round": 186,
+      "qh": {
+        "x": 21,
+        "y": 5
+      },
+      "distance": 2,
+      "exits": [
+        121,
+        145
+      ],
+      "free": [
+        145
+      ],
+      "visible": true,
+      "nonsealSingles": [],
+      "outwardSingles": [],
+      "action": {
+        "kind": "move",
+        "steps": [
+          "E"
+        ]
+      },
+      "indicator": "E v-195.0 d7 L3 bx1 qb1 E=F"
+    },
+    {
+      "key": "proxy4_king:around_unsw:B:1",
+      "id": 9,
+      "round": 4,
+      "qh": {
+        "x": 41,
+        "y": 22
+      },
+      "distance": 2,
+      "exits": [
+        1450
+      ],
+      "free": [
+        1450
+      ],
+      "visible": true,
+      "nonsealSingles": [],
+      "outwardSingles": [],
+      "action": {
+        "kind": "move",
+        "steps": [
+          "N"
+        ]
+      },
+      "indicator": "N v-133.1 d7 L2 qb1 E=F"
+    },
+    {
+      "key": "proxy4_king:stronghold:A:1",
+      "id": 40,
+      "round": 116,
+      "qh": {
+        "x": 8,
+        "y": 22
+      },
+      "distance": 2,
+      "exits": [
+        1065,
+        1112,
+        1063
+      ],
+      "free": [
+        1065
+      ],
+      "visible": true,
+      "nonsealSingles": [],
+      "outwardSingles": [],
+      "action": {
+        "kind": "move",
+        "steps": [
+          "S"
+        ]
+      },
+      "indicator": "S v-134.4 d7 L2 qb1 kbr map=none E=F"
+    },
+    {
+      "key": "proxy4_king:stronghold:A:1",
+      "id": 34,
+      "round": 134,
+      "qh": {
+        "x": 7,
+        "y": 20
+      },
+      "distance": 2,
+      "exits": [
+        919,
+        1015,
+        966
+      ],
+      "free": [
+        966
+      ],
+      "visible": true,
+      "nonsealSingles": [],
+      "outwardSingles": [],
+      "action": {
+        "kind": "move",
+        "steps": [
+          "S"
+        ]
+      },
+      "indicator": "S v-134.0 d7 L2 qb1 E=F"
+    },
+    {
+      "key": "proxy4_king:stronghold:A:1",
+      "id": 2,
+      "round": 191,
+      "qh": {
+        "x": 8,
+        "y": 20
+      },
+      "distance": 2,
+      "exits": [
+        920,
+        969,
+        1016
+      ],
+      "free": [
+        920
+      ],
+      "visible": true,
+      "nonsealSingles": [],
+      "outwardSingles": [],
+      "action": {
+        "kind": "move",
+        "steps": [
+          "E"
+        ]
+      },
+      "indicator": "E v-758.9 d7 L4 qb1 kbr E=F"
+    },
+    {
+      "key": "proxy4_king:stronghold:B:1",
+      "id": 14,
+      "round": 126,
+      "qh": {
+        "x": 47,
+        "y": 5
+      },
+      "distance": 2,
+      "exits": [
+        335,
+        286
+      ],
+      "free": [
+        335
+      ],
+      "visible": true,
+      "nonsealSingles": [],
+      "outwardSingles": [],
+      "action": {
+        "kind": "move",
+        "steps": [
+          "E"
+        ]
+      },
+      "indicator": "E v-134.4 d7 L3 qb1 E=F"
+    },
+    {
+      "key": "proxy4_king:stronghold:B:1",
+      "id": 176,
+      "round": 274,
+      "qh": {
+        "x": 44,
+        "y": 4
+      },
+      "distance": 2,
+      "exits": [
+        188,
+        237,
+        235
+      ],
+      "free": [
+        188
+      ],
+      "visible": true,
+      "nonsealSingles": [],
+      "outwardSingles": [],
+      "action": {
+        "kind": "move",
+        "steps": [
+          "E"
+        ]
+      },
+      "indicator": "E v-134.7 d7 L2 qb1 E=F"
+    },
+    {
+      "key": "proxy4_king:around_unsw:B:2",
+      "id": 9,
+      "round": 4,
+      "qh": {
+        "x": 41,
+        "y": 22
+      },
+      "distance": 2,
+      "exits": [
+        1450
+      ],
+      "free": [
+        1450
+      ],
+      "visible": true,
+      "nonsealSingles": [],
+      "outwardSingles": [],
+      "action": {
+        "kind": "move",
+        "steps": [
+          "N"
+        ]
+      },
+      "indicator": "N v-133.8 d7 L2 qb1 E=F"
+    },
+    {
+      "key": "bot-hunter:around_unsw:B:2",
+      "id": 9,
+      "round": 4,
+      "qh": {
+        "x": 41,
+        "y": 22
+      },
+      "distance": 2,
+      "exits": [
+        1450
+      ],
+      "free": [
+        1450
+      ],
+      "visible": true,
+      "nonsealSingles": [],
+      "outwardSingles": [],
+      "action": {
+        "kind": "move",
+        "steps": [
+          "N"
+        ]
+      },
+      "indicator": "N v-133.8 d7 L2 qb1 E=F"
+    }
+  ]
+}

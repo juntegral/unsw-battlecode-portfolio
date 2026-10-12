@@ -1,0 +1,71 @@
+=== 1053778 Around UNSW 64x64 (4096 cells) run dl-20261004 | A = meow (1853) vs WeHaveQuizzes (2157) | winner B by longest after 500 rounds
+queen #0 start (20, 42); enemy queen #1 start (43, 21); path between the starts 62
+DEATH r56 headon L3 at (28, 28) by #21B L2 from (27, 28) with E
+splits (round, before -> keeps + child, child id): r1:4->2+2(#28) r40:4->2+2(#68) r48:4->2+2(#83)
+block | head | from start | len | ate nat/corpse | splits | rounds enemy in view | nearest enemy | cells used | own heads<=4 | units own/enemy
+r  0 | (20, 42)  |   0 |  4 | 0/0 | 1 |  0 | 9 | 24 | 1.1 | 10/10
+r 25 | (24, 36)  |  20 |  2 | 5/0 | 2 | 12 | 1 | 19 | 0.8 | 16/15
+r 50 | (28, 31)  |  31 |  3 | 0/0 | 0 |  7 | 2 |  5 | 0.4 | 34/31
+moves from round 26:
+   26:E  27:N  28:E  29:N  30:W  31:N  32:N  33:N  34:N  35:E  36:N  37:E!8
+   38:S+!5  39:S+!6  40:SPLIT!6  41:W!5  42:N  43:N!3  44:E!1  45:S!3  46:E+!3  47:S+!5  48:SPLIT!3  49:W+!4
+   50:N!4  51:E!4  52:S!6  53:W!6  54:N!4  55:N!4  56:N!2
+death record: {"round": 56, "reason": "headon", "len": 3, "pos": [28, 28], "own": 0, "killer": {"id": 21, "team": "B", "len": 2, "steps": 1, "nsteps": 1, "start": [27, 28], "born": 0, "dirs": "E", "parent": [3, 0], "cheb_now": 1, "seen_last": 1, "seen_last3": 1}}
+  r49 L2 at (29, 31) move W -> [28, 31] ate 1 | free 1 safe 1 | in reach at start 0, at end 0 | froom 3 tree 0 | N=o(29,30) #0L2s1 E=K S=K W=P(28,31) reach0 room3 | enemies #21L2@(27,29)c2p4V #51L2@(32,32)c3p-1V #61L3@(31,30)c2p-1V #75L2@(28,33)c2p9V #86L2@(32,34)c3p-1V
+  r50 L3 at (28, 31) move N -> [28, 30] ate 0 | free 2 safe 2 | in reach at start 0, at end 0 | froom 40 tree 0 | N=F(28,30) reach0 room2 E=o(29,31) #0L3s1 S=K W=F(27,31) reach0 room40 | enemies #20L3@(30,28)c3p7V #21L2@(26,29)c2p4V #51L2@(31,32)c3p-1V #61L3@(31,29)c3p9V #75L3@(29,32)c1p8V #86L2@(31,34)c3p-1V
+  r51 L3 at (28, 30) move E -> [29, 30] ate 0 | free 2 safe 2 | in reach at start 0, at end 0 | froom 40 tree 0 | N=F(28,29) reach0 room40 E=F(29,30) reach0 room1 S=o(28,31) #0L3s1 W=K | enemies #20L3@(29,28)c2p5V #21L2@(26,28)c2p4V #51L2@(30,32)c2p-1V #75L3@(29,33)c3p-1V #86L2@(31,33)c3p-1V
+  r52 L3 at (29, 30) move S -> [29, 31] ate 0 | free 1 safe 1 | in reach at start 0, at end 0 | froom 1 tree 0 | N=K E=K S=F(29,31) reach0 room40 W=o(28,30) #0L3s1 | enemies #20L4@(30,29)c1p8V #21L2@(25,28)c4p6 #51L2@(30,31)c1p-1V #61L4@(32,30)c3p-1V #75L4@(30,33)c3p-1V #85L3@(33,28)c4p-1 #86L2@(31,32)c2p-1V
+  r53 L3 at (29, 31) move W -> [28, 31] ate 0 | free 1 safe 1 | in reach at start 0, at end 0 | froom 40 tree 0 | N=o(29,30) #0L3s1 E=K S=K W=F(28,31) reach0 room40 | enemies #20L2@(30,29)c2p9V #21L2@(25,29)c4p6 #51L2@(31,31)c2p-1V #61L2@(32,30)c3p-1V #75L2@(30,33)c2p-1V #85L3@(33,27)c4p-1 #86L2@(32,32)c3p-1V #95L2@(27,32)c2p7V
+  r54 L3 at (28, 31) move N -> [28, 30] ate 0 | free 2 safe 2 | in reach at start 0, at end 0 | froom 40 tree 0 | N=F(28,30) reach0 room40 E=o(29,31) #0L3s1 S=K W=F(27,31) reach0 room40 | enemies #20L2@(31,29)c3p9V #21L2@(26,29)c2p4V #51L2@(32,31)c4p-1 #75L2@(30,34)c3p-1V #95L2@(26,32)c2p5V
+  r55 L3 at (28, 30) move N -> [28, 29] ate 0 | free 2 safe 2 | in reach at start 0, at end 0 | froom 40 tree 0 | N=F(28,29) reach0 room40 E=F(29,30) reach0 room1 S=o(28,31) #0L3s1 W=K | enemies #20L3@(31,30)c3p9V #21L2@(26,28)c2p4V #75L2@(29,34)c4p-1 #95L2@(26,31)c2p5V
+  r56 L3 at (28, 29) move N -> [28, 28] ate 0 | free 2 safe 0 | in reach at start 0, at end 1 | froom 40 tree 0 | N=F(28,28) reach1 room40 E=K S=o(28,30) #0L3s1 W=F(27,29) reach1 room40 | enemies #20L3@(31,31)c3p9V #21L2@(27,28)c1p2V #93L3@(30,26)c3p7V #95L2@(26,30)c2p3V
+--- board at the start of her turn, round 53
+     2425262728293031323334
+     + + +-+ + + +-+-+ + + 
+ 26  |. .|. a|. . . .|.|*|.
+     +-+-+ + +-+-+ + + +-+ 
+ 27  |. .|. . . .|B *|. B .
+     +-+ +-+-+ + + + + + + 
+ 28   . b . . .|. b|*|. b .
+     + + + + + + + +-+-+ + 
+ 29   .|B . . .|b B . b|b .
+     + + + + + +-+ + + + + 
+ 30   .|. . .|a a|.|*|B|. .
+     +-+-+ + + + + + + +-+ 
+ 31   . . .|. . @|b B . . .
+     + + + +-+-+-+ +-+-+ +-
+ 32   . . . B b . . b B .|.
+     + + + +-+ + +-+ + + + 
+ 33   . . . . .|b B|.|.|.|*
+     + + + + + + + + + + +-
+ 34   . . . . . . .|. * * *
+     + + + + + + + +-+-+ + 
+ 35   . . . . . A . .|*|. .
+     + + + + +-+ + + + + + 
+ 36   a a A . . a . .|* .|.
+heads: #0A L3 (29, 31); #20B L2 (30, 29); #21B L2 (25, 29); #28A L3 (26, 36); #49A L2 (29, 35); #51B L2 (31, 31); #61B L2 (32, 30); #75B L2 (30, 33); #85B L3 (33, 27); #86B L2 (32, 32); #93B L2 (30, 27); #95B L2 (27, 32)
+--- board at the start of her turn, round 56
+     2324252627282930313233
+     + + + +-+ + + + + + + 
+ 24   . . .|. . .|A . . . .
+     +-+ + + + + + + + +-+ 
+ 25   .|. .|. . . a|. .|.|*
+     + + + +-+ + + +-+-+ + 
+ 26   .|. .|. .|. . B b|.|*
+     + +-+-+ + +-+-+ + + +-
+ 27   .|. .|. . . .|. b|. .
+     + +-+ +-+-+ + + + + + 
+ 28   . . . b B .|. .|*|. .
+     + + + + + + + + +-+-+ 
+ 29   . .|. . . @|. . b .|.
+     + + + + + + +-+ + + + 
+ 30   . .|. B .|a .|.|b|*|.
+     +-+-+-+ + + + + + + +-
+ 31   . . . b|. a .|. B . b
+     + + + + +-+-+-+ +-+-+ 
+ 32   . . . . . . . . * . b
+     + + + + +-+ + +-+ + + 
+ 33   . . . . . .|. .|.|.|b
+     + + + + + + + + + + + 
+ 34   . . . . A . b .|. * B
+heads: #0A L3 (28, 29); #20B L3 (31, 31); #21B L2 (27, 28); #28A L3 (27, 34); #83A L2 (29, 24); #86B L3 (33, 34); #93B L3 (30, 26); #95B L2 (26, 30)

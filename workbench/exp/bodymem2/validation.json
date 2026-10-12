@@ -1,0 +1,202 @@
+{
+  "games": 192,
+  "counts": {
+    "exp/bodymem2/on": 84,
+    "exp/bodymem2/off": 84,
+    "exp/bodymem2/id-off": 12,
+    "exp/bodymem2/id-base": 12
+  },
+  "pairs": 84,
+  "identityKeys": 12,
+  "sameKeysAsBodymem": true,
+  "sourceCopiesExact": true,
+  "otherSwitchesPreserved": true,
+  "legacyAllyAndSonarCodeUnchanged": true,
+  "allySnapshotsIdentical": true,
+  "wasmIdentity": true,
+  "compile": {
+    "base": {
+      "bytes": 530752,
+      "sha256": "57afd1216ab3b50e0e1d35431e2502ee1e3e332f0fe3d1dcd3bce605fd1dde19"
+    },
+    "off": {
+      "bytes": 530752,
+      "sha256": "57afd1216ab3b50e0e1d35431e2502ee1e3e332f0fe3d1dcd3bce605fd1dde19"
+    },
+    "on": {
+      "bytes": 536250,
+      "sha256": "1363a4b2c686cca0f66f696e367fea3812757521df001329820a0fe729b831fe"
+    },
+    "off_equals_original_v18_wasm": true
+  },
+  "fixtures": {
+    "on": {
+      "on": true,
+      "memoryCases": 2133,
+      "resyncDrift": 0,
+      "paymentCases": 2138,
+      "priceChanges": 0,
+      "allyCases": 4,
+      "worldBytes": 912,
+      "plannerBytes": 1520
+    },
+    "off": {
+      "on": false,
+      "memoryCases": 2133,
+      "resyncDrift": 1802,
+      "paymentCases": 2138,
+      "priceChanges": 0,
+      "allyCases": 4,
+      "worldBytes": 864,
+      "plannerBytes": 1520
+    }
+  },
+  "existingReplaySmoke": {
+    "paymentChoice": {
+      "round": 188,
+      "id": 14,
+      "on": "N",
+      "off": "NW",
+      "actual": "NW",
+      "onNativeReproduced": false,
+      "offNativeReproduced": true,
+      "onOracle": {
+        "survived": true,
+        "body": [
+          891,
+          775
+        ]
+      },
+      "offOracle": {
+        "survived": false,
+        "reason": "A",
+        "step": 1
+      },
+      "onIndicator": "N v-1.1 d7 L2 bodymem2r3 tgx",
+      "offIndicator": "NW v-0.6 d7 L2 bodyx1,1,3,0,2615463712,3470953599,2 tg",
+      "future3Rounds": "UNMEASURED"
+    },
+    "nativeOnly": true,
+    "realGameCausalGateMeasured": false
+  },
+  "gamesRun": 0,
+  "networkUsed": false,
+  "committed": false,
+  "unmeasured": [
+    "real-game body drift",
+    "firstdiv causal gates/harm explanations",
+    "payment deaths",
+    "event/sonar identity",
+    "CPU"
+  ],
+  "specHash": "a98e373bec248245ae375397ad98ab115b3299d47e189b9c49adc5212ab56085",
+  "sourceHashes": {
+    "base": {
+      "bodymem.hpp": "2edca94d26fe7f07f372d1f5b60b5a0028abdfc295056c52105fbd34d639d425",
+      "bodyx.hpp": "f79a629f42ef3f693ed8e8b32d744fcfe7f2a4338c9faec6a119059c30e4bf26",
+      "bot.toml": "a4b969199b979daa216d4c40d663460ef5f5388d4a5e5302a8ec9d69a290d3b9",
+      "conv2.cpp": "7b82ff219114ce199098e45572bd7f1d51b121e924268a99a495774dcc033160",
+      "engcfg.hpp": "ccb971b003d640748c837f9f245430d776595c73291215c77c17c5dd1721e2d6",
+      "engine.hpp": "9a68e0f660cc99d1f45b1f9346ff888771d7920d69d2660ed19e756e58bbd718",
+      "frontdb.hpp": "97b1711eb27a6f8685a24229b08014c42d65848894dd28eb91cb9192a670c488",
+      "geom.hpp": "597e5051042b29ae36e975e6684eb3b19097eb9c6ce09ad78464988e4dc45110",
+      "main.cpp": "a3d21478adb261069209d3c6e77ee902baacd1f4ac77431fc93e9a39d0ecc1a9",
+      "mapdb.hpp": "72e95957b5e2ffbe84166b9a92ab8757655632819b42a2ff951db668d7fb2249",
+      "mapid.cpp": "1efaefefc13a94a8b7424d0e05b71a887456e100a814d9cef1863088965a9505",
+      "mapstart.hpp": "d9240c3e279b00f3909626026d9c3d19cc9abfeca3d8087ea4d093bbfbd5c034",
+      "params.hpp": "ca8f8629d300757e6adc3f7afbbe120d6a9b9f94afc608dc2e121976a71a6865",
+      "plan.cpp": "7aab7bfb1c0c0e215f5f0a232149d60bd6b087edb909b4089dca147b33bc0aba",
+      "plan.hpp": "93a9daf198ece9455c978eb9fb278f1bbe5e2429410ad01938a5d5d7cdc95494",
+      "policy.hpp": "6726513d620df84648559c8a28b67a03f7ec6c50098fbbce829a1da7acec6b68",
+      "proto.cpp": "13733819373249547d884b8501f4262a8b8b81ceb9e5e423f5136b279d6a85df",
+      "proto.hpp": "7d17d68489ddfbaf42d2b157dabae3a144a674477908bdec9beb4d5f9b2693e4",
+      "ptmap.hpp": "b95a4c7bd24b93fbdb6a4060be41cd3b848a3c93ac74bc458a84f34694da1e41",
+      "ptmod.cpp": "f4f1b14c55bc89ddfc0812af7ad6b1fa3c3fd1855b83e48e6488df2a95e0e967",
+      "q1state.hpp": "4f38cf409935c135bf2a71644a7fb3bab718c9926bd9a64c78471897f46a83b3",
+      "qsight.cpp": "09a775720b3738173c2afcbcdda66f9a4a2595867a89846fadc605c16def79c9",
+      "qsight.hpp": "1dae3c5492378b6017812badc78843c70ebb10f49c0bc5a681a32e734210d833",
+      "terrdb.hpp": "69f446a55ba8da0cc3ea2c08e8d10e915b636efca0a3ff9fda28c4fb1520b914",
+      "world.cpp": "139f223592f966aba0d07f61abc3a36d5d27197f0d3585920ba52151d8ca42b9",
+      "world.hpp": "ee18f94349a9d551eeea6375668762ee27ee6270b0cd695e9812bdf4a6a6a26f"
+    },
+    "off": {
+      "bodymem.hpp": "2edca94d26fe7f07f372d1f5b60b5a0028abdfc295056c52105fbd34d639d425",
+      "bodyx.hpp": "f79a629f42ef3f693ed8e8b32d744fcfe7f2a4338c9faec6a119059c30e4bf26",
+      "bot.toml": "a4b969199b979daa216d4c40d663460ef5f5388d4a5e5302a8ec9d69a290d3b9",
+      "conv2.cpp": "7b82ff219114ce199098e45572bd7f1d51b121e924268a99a495774dcc033160",
+      "engcfg.hpp": "ccb971b003d640748c837f9f245430d776595c73291215c77c17c5dd1721e2d6",
+      "engine.hpp": "9a68e0f660cc99d1f45b1f9346ff888771d7920d69d2660ed19e756e58bbd718",
+      "frontdb.hpp": "97b1711eb27a6f8685a24229b08014c42d65848894dd28eb91cb9192a670c488",
+      "geom.hpp": "597e5051042b29ae36e975e6684eb3b19097eb9c6ce09ad78464988e4dc45110",
+      "main.cpp": "95c1cfafedb24261a9aecea30b8cbdf0ab8206faf1c460e634a86b3427df1b60",
+      "mapdb.hpp": "72e95957b5e2ffbe84166b9a92ab8757655632819b42a2ff951db668d7fb2249",
+      "mapid.cpp": "1efaefefc13a94a8b7424d0e05b71a887456e100a814d9cef1863088965a9505",
+      "mapstart.hpp": "d9240c3e279b00f3909626026d9c3d19cc9abfeca3d8087ea4d093bbfbd5c034",
+      "params.hpp": "d614e82c92638eb92855063de1f3992c058315f1e306bde636130c49019595f5",
+      "plan.cpp": "f6ceb7b26f8158098a1c3073127cf84150d9a01ed85a9cbd5f1a533b9c1b9824",
+      "plan.hpp": "93a9daf198ece9455c978eb9fb278f1bbe5e2429410ad01938a5d5d7cdc95494",
+      "policy.hpp": "6726513d620df84648559c8a28b67a03f7ec6c50098fbbce829a1da7acec6b68",
+      "proto.cpp": "13733819373249547d884b8501f4262a8b8b81ceb9e5e423f5136b279d6a85df",
+      "proto.hpp": "7d17d68489ddfbaf42d2b157dabae3a144a674477908bdec9beb4d5f9b2693e4",
+      "ptmap.hpp": "b95a4c7bd24b93fbdb6a4060be41cd3b848a3c93ac74bc458a84f34694da1e41",
+      "ptmod.cpp": "f4f1b14c55bc89ddfc0812af7ad6b1fa3c3fd1855b83e48e6488df2a95e0e967",
+      "q1state.hpp": "4f38cf409935c135bf2a71644a7fb3bab718c9926bd9a64c78471897f46a83b3",
+      "qsight.cpp": "09a775720b3738173c2afcbcdda66f9a4a2595867a89846fadc605c16def79c9",
+      "qsight.hpp": "1dae3c5492378b6017812badc78843c70ebb10f49c0bc5a681a32e734210d833",
+      "terrdb.hpp": "69f446a55ba8da0cc3ea2c08e8d10e915b636efca0a3ff9fda28c4fb1520b914",
+      "world.cpp": "027aac929b627091c706c43dea933c228ac175ddd5b96013fe8b4b6266e2bbff",
+      "world.hpp": "73f633ae342f3916c75c4f09358ce7cefd003557ed72c38a81112178ec4798fc"
+    },
+    "on": {
+      "bodymem.hpp": "2edca94d26fe7f07f372d1f5b60b5a0028abdfc295056c52105fbd34d639d425",
+      "bodyx.hpp": "f79a629f42ef3f693ed8e8b32d744fcfe7f2a4338c9faec6a119059c30e4bf26",
+      "bot.toml": "a4b969199b979daa216d4c40d663460ef5f5388d4a5e5302a8ec9d69a290d3b9",
+      "conv2.cpp": "7b82ff219114ce199098e45572bd7f1d51b121e924268a99a495774dcc033160",
+      "engcfg.hpp": "ccb971b003d640748c837f9f245430d776595c73291215c77c17c5dd1721e2d6",
+      "engine.hpp": "9a68e0f660cc99d1f45b1f9346ff888771d7920d69d2660ed19e756e58bbd718",
+      "frontdb.hpp": "97b1711eb27a6f8685a24229b08014c42d65848894dd28eb91cb9192a670c488",
+      "geom.hpp": "597e5051042b29ae36e975e6684eb3b19097eb9c6ce09ad78464988e4dc45110",
+      "main.cpp": "95c1cfafedb24261a9aecea30b8cbdf0ab8206faf1c460e634a86b3427df1b60",
+      "mapdb.hpp": "72e95957b5e2ffbe84166b9a92ab8757655632819b42a2ff951db668d7fb2249",
+      "mapid.cpp": "1efaefefc13a94a8b7424d0e05b71a887456e100a814d9cef1863088965a9505",
+      "mapstart.hpp": "d9240c3e279b00f3909626026d9c3d19cc9abfeca3d8087ea4d093bbfbd5c034",
+      "params.hpp": "4b6c904989b110b69e050bdee60a70faa64bab80c9f9040e5d0d3901084fd317",
+      "plan.cpp": "f6ceb7b26f8158098a1c3073127cf84150d9a01ed85a9cbd5f1a533b9c1b9824",
+      "plan.hpp": "93a9daf198ece9455c978eb9fb278f1bbe5e2429410ad01938a5d5d7cdc95494",
+      "policy.hpp": "6726513d620df84648559c8a28b67a03f7ec6c50098fbbce829a1da7acec6b68",
+      "proto.cpp": "13733819373249547d884b8501f4262a8b8b81ceb9e5e423f5136b279d6a85df",
+      "proto.hpp": "7d17d68489ddfbaf42d2b157dabae3a144a674477908bdec9beb4d5f9b2693e4",
+      "ptmap.hpp": "b95a4c7bd24b93fbdb6a4060be41cd3b848a3c93ac74bc458a84f34694da1e41",
+      "ptmod.cpp": "f4f1b14c55bc89ddfc0812af7ad6b1fa3c3fd1855b83e48e6488df2a95e0e967",
+      "q1state.hpp": "4f38cf409935c135bf2a71644a7fb3bab718c9926bd9a64c78471897f46a83b3",
+      "qsight.cpp": "09a775720b3738173c2afcbcdda66f9a4a2595867a89846fadc605c16def79c9",
+      "qsight.hpp": "1dae3c5492378b6017812badc78843c70ebb10f49c0bc5a681a32e734210d833",
+      "terrdb.hpp": "69f446a55ba8da0cc3ea2c08e8d10e915b636efca0a3ff9fda28c4fb1520b914",
+      "world.cpp": "027aac929b627091c706c43dea933c228ac175ddd5b96013fe8b4b6266e2bbff",
+      "world.hpp": "73f633ae342f3916c75c4f09358ce7cefd003557ed72c38a81112178ec4798fc"
+    }
+  },
+  "mapHashes": {
+    "maps/bundled/arena.map": "b4bab09603289c2d186ca94d6cf5362e5cc8f24637736c497d9651c0dd921937",
+    "maps/bundled/big_empty.map": "6cb3b7be72a4e27ed19363e9009d46742851709f701e61d73b56437314fdd827",
+    "maps/bundled/Colosseum.map": "c7549a41ea26600f613a7d906e5c73e90303f3bc037b28d8aa2751cd17819772",
+    "maps/bundled/default_small.map": "8ac4b2eedcf19f8544ab1866acfcbc628b3cb5ff2df87d80aa682dcb5aa9df19",
+    "maps/bundled/stronghold.map": "c83cb7579e89fff0064b075f38250fa06487a10b6ddf320f6c57d63a84e9f32c",
+    "maps/online-20260927/default.map": "6bd7abf2ed51a7f667552c243ad038f4177e450cf2f9dd9be52f826f9e526f95",
+    "maps/online-20260927/schooltime.map": "726c404f3b34b4ed7b21cef83628407e70b717cd919f114e4a0e57f7f6d66520",
+    "maps/online-20260927/trophy.map": "5f1f6b23d6edb944954a9a31b95f229fd9966bec0875a9f04bca680aa3de33f5",
+    "maps/online-20260927/portals.map": "56341e6577da7429efb6f33b64b79b0c4223c4fbd9df995713ad781bead5f423",
+    "maps/online-20260927/slithery_fight.map": "954ea0147fbc56532920caa51ecda03f21ef6765806d7adc0eef73f6069001bc",
+    "maps/online-20260927/autarky.map": "35737755c5a3123fcd4c3fd1cf1ecb08513adf9ac14c351f00f76c23e9bd6dbd",
+    "maps/online-20260927/prisoners_dilemma.map": "d76d7ad9ada3a8d089b52f4a973e7e9acf7ae4b7f695e9f018caf6ae75bdb109",
+    "maps/sprint/around_unsw.map": "a51dc8e417fb76f47dc714dc1c018340c11db987568e4b3fcc60cce091d5207d",
+    "maps/sprint/australia.map": "af1d51d41e956a1117bf5b96f84d540b55a6f60516e0c4e11fd4fa79565f165d",
+    "maps/sprint/stripes.map": "e09f0f538136aa6854fbc56415eb055885fd1d06380d1e7ba60c646a8bbe4635",
+    "maps/generated/gen_L_03.map": "9ea77aa689b1fe2e9b745c96394d14c30afbe1c2a1031089e379423c250ed56c",
+    "maps/generated/gen_X_07.map": "0255aa2151617b3806f42ae7864656c4af9928c0f1fd9ceb0db84d9bfd3c5fcd",
+    "maps/generated/gen_S_03.map": "13c405c24d3b1e9a1b90f8a68a6b4932e63890060fc42ca9ba6b674c6c8e0a7b",
+    "maps/generated/gen_M_07.map": "e6545373ab505505e7d765f2094096a10d17e7fcd1eb6c6f989e286f4a9379d8",
+    "maps/generated/gen_R_01.map": "90b58d5abd66c90e6deb1cd0405b1cdf6beb63fd0568239e68e206faf61c87cb",
+    "maps/generated/gen_L_02.map": "bd89a8be5b968d6768bf75e648567a6fec8e3185382c5cc71221ef9ab3acbb9f"
+  }
+}

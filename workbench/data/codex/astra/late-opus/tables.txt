@@ -1,0 +1,272 @@
+games 509 skip {'time': 488, 'ver': 2, 'dup': 330}
+by version [('one11', 74), ('one12', 72), ('one13', 172), ('one14', 100), ('one15', 56), ('one16', 35)]
+by src [('ranked', 179), ('unranked', 330)]
+wins 217 winner values Counter({'b': 285, 'a': 224})
+last round [(466, 1), (486, 1), (490, 1), (499, 306)]
+
+queen split turns by kind [(('stood', 'drop2', 'parent'), 2080), (('stood', 'to2', 'parent'), 46)]
+
+== Count A: standing wait splits (head stays, length -2 by split)
+turns 2080 in games 473 of 509
+per game count distribution [(1, 118), (2, 96), (3, 69), (4, 54), (5, 25), (6, 18), (7, 20), (8, 10), (9, 13), (10, 3), (11, 5), (12, 6), (13, 9), (14, 5), (15, 4), (16, 4), (17, 3), (18, 3), (20, 3), (23, 1), (24, 1), (25, 1), (36, 2)]
+length band x round band
+L        0-99  100-299   300+    all
+4-5      1081      403     17   1501
+6-9        80       22     44    146
+10-19     175        6     59    240
+20+       105        0     88    193
+all      1441      431    208   2080
+length band x free cells beside head
+L          f0     f1    f2+
+4-5        88    462    951
+6-9        37     72     37
+10-19     175     17     48
+20+       105     35     53
+all       405    586   1089
+by version (turns / games with any / games)
+  one11 289 71 74
+  one12 327 69 72
+  one13 678 158 172
+  one14 400 91 100
+  one15 203 51 56
+  one16 183 33 35
+
+runs 1628 run length dist [(1, 1562), (2, 17), (3, 6), (4, 2), (8, 2), (10, 2), (11, 35), (13, 1), (24, 1)]
+length lost per run dist [(2, 1562), (4, 17), (6, 6), (8, 2), (16, 2), (20, 2), (22, 35), (26, 1), (48, 1)]
+  start 4-5 runs 1462 turns 1462 mean run 1.0 length lost total 2924 mean lost 2.0
+  start 6-9 runs 59 turns 67 mean run 1.14 length lost total 134 mean lost 2.3
+  start 10-19 runs 35 turns 57 mean run 1.63 length lost total 114 mean lost 3.3
+  start 20+ runs 72 turns 494 mean run 6.86 length lost total 988 mean lost 13.7
+
+runs starting at 10+ (each)
+game     ver   src         r0   n   L0   L1  f   eq  lead  d<=5 d<=20 dthR qfin win
+opening runs from 10+ (r<100): 35 games 35 turns 385 run length dist [(11, 35)] start round dist [(0, 35)]
+late runs from 10+ (r100+): 72 turns 166 multi-turn runs 24 lost in multi 236 free cells at start dist [(1, 23), (2, 49)] nearest visible foe head gap at start [('4-6', 20), ('7+', 43), ('<=3', 7), ('none', 2)]
+1496859  one11 one11-c1   351   1   26   24  2    0     1     0     0  497    0   0
+1496859  one11 one11-c1   364   1   34   32  3    0     1     0     0  497    0   0
+1496859  one11 one11-c1   366   1   33   31  2    0     1     0     0  497    0   0
+1496859  one11 one11-c1   391   2   37   33  2    0     1     0     0  497    0   0
+1496859  one11 one11-c1   483   1   80   78  2    0     1     0     1  497    0   0
+1501671  one12 one12-c1   484   1   13   11  2    0     1     0     0    -   17   1
+1504486  one12 one12-k1   348   1   17   15  3    0     1     0     0  470    0   0
+1504486  one12 one12-k1   411   1   44   42  1    0     1     0     0  470    0   0
+1504493  one12 one12-k1   406   1   54   52  3    5     1     0     0  445    0   0
+1503507  one12 one12-p1   333   2   10    6  1    0     1     0     0  359    0   1
+1503515  one12 one12-p1   379   1   18   16  3   21     0     0     0  416    0   0
+1503515  one12 one12-p1   381   2   17   13  3   19     0     0     0  416    0   0
+1503515  one12 one12-p1   384   1   14   12  1   19     0     0     0  416    0   0
+1503515  one12 one12-p1   387   1   12   10  2   19     0     0     0  416    0   0
+1506227  one13 one13-c1   403   1   54   52  2   11     1     0     0  477    0   0
+1510797  one13 one13-c2   283   1   10    8  1    6     1     0     0  387    0   1
+1510797  one13 one13-c2   328   4   18   10  2    6     1     0     0  387    0   1
+1510797  one13 one13-c2   352   2   19   15  1    6     1     0     0  387    0   1
+1509111  one13 one13-k1   277   1   11    9  3    7     1     0     0  449    0   0
+1509111  one13 one13-k1   310   1   19   17  1    7     1     0     0  449    0   0
+1509111  one13 one13-k1   348   1   42   40  2    7     1     0     0  449    0   0
+1509111  one13 one13-k1   448   1   63   61  1   11     1     1     1  449    0   0
+1512570  one13 one13-p2   362   1   19   17  2   19     0     0     0    -    3   0
+1515663  one13 one13-q1   315   1   10    8  1   13     0     0     0  441    0   1
+1515663  one13 one13-q1   320   2   10    6  3   13     0     0     0  441    0   1
+1515669  one13 one13-q1   395   1   13   11  2   21     0     0     0  466    0   0
+1517686  one14 one14-c1   379   1   26   24  1    0     1     0     1  392    0   0
+1517699  one14 one14-c1   331   1   15   13  2    0     1     0     0    -   80   1
+1520828  one14 one14-k1   404   1   35   33  1    0     1     1     1  405    0   1
+1522432  one14 one14-s1   262   2   15   11  3    0     1     0     1  274    0   1
+1522432  one14 one14-s1   265   3   11    5  1    0     1     0     1  274    0   1
+1523634  one15 one15-c1   387   2   47   43  3    0     1     1     1  391    0   0
+1525833  one15 one15-p1   319   1   13   11  3   33     0     0     0    -   86   1
+1525842  one15 one15-p1   421   1   21   19  2   25     0     0     1  431    0   0
+1525844  one15 one15-p1   326   3   11    5  2   34     0     0     0    -   14   0
+1525844  one15 one15-p1   433   3   15    9  1   54     0     0     0    -   14   0
+1527409  one15 one15-s1   423   1   31   29  2   13     1     0     0  486    0   0
+1530575  one16 one16-p1   338   1   13   11  2    7     1     1     1  341    0   0
+1530577  one16 one16-p1   466  24   69   21  1   19     1     0     0    -   23   0
+1496002  one11 ranked     437   3   12    6  3    0     1     0     1  451    0   1
+1501020  one11 ranked     326   1   16   14  3    7     1     0     0  422    0   0
+1501020  one11 ranked     374   8   43   27  3    7     1     0     0  422    0   0
+1501020  one11 ranked     401  13   36   10  2   11     1     0     1  422    0   0
+1501021  one11 ranked     359   1   29   27  2    0     1     0     0    -   65   1
+1502775  one12 ranked     329   1   11    9  2    0     1     0     1  339    0   0
+1504019  one12 ranked     340   1   24   22  2    0     1     0     0  430    0   0
+1504019  one12 ranked     428   1   60   58  1    0     1     1     1  430    0   0
+1504150  one12 ranked     351   1   24   22  3    3     1     0     0  420    0   0
+1504150  one12 ranked     355   1   22   20  1    3     1     0     0  420    0   0
+1504150  one12 ranked     360   1   21   19  1    3     1     0     0  420    0   0
+1504150  one12 ranked     381   1   23   21  1    3     1     0     0  420    0   0
+1504150  one12 ranked     405   1   35   33  2    5     1     0     1  420    0   0
+1507575  one13 ranked     290   1   10    8  2    0     1     0     0  402    0   0
+1508582  one13 ranked     355   1   11    9  3    6     1     0     0    -   63   1
+1508582  one13 ranked     380   1   15   13  2    6     1     0     0    -   63   1
+1508582  one13 ranked     431   2   45   41  2    7     1     0     0    -   63   1
+1508918  one13 ranked     421   2   39   35  1    3     1     0     0    -   46   1
+1513120  one13 ranked     336   1   14   12  2   11     1     0     1  353    0   0
+1515124  one13 ranked     387  10   29    9  2    0     1     0     0    -   78   1
+1515124  one13 ranked     398   1   10    8  2    0     1     0     0    -   78   1
+1515124  one13 ranked     464   1   58   56  2    0     1     0     0    -   78   1
+1516206  one14 ranked     350   2   25   21  3    5     1     0     0  395    0   0
+1516206  one14 ranked     353   1   22   20  2    5     1     0     0  395    0   0
+1516206  one14 ranked     356   1   21   19  2    5     1     0     0  395    0   0
+1516556  one14 ranked     332   2   15   11  1    0     1     0     0    -   31   1
+1516556  one14 ranked     353   8   20    4  2    0     1     0     0    -   31   1
+1516556  one14 ranked     427  10   29    9  2    0     1     0     0    -   31   1
+1522570  one14 ranked     323   3   10    4  1   29     0     0     0    -   70   1
+1522570  one14 ranked     379   1   13   11  1   32     0     0     0    -   70   1
+1522570  one14 ranked     430   1   40   38  2    0     1     0     0    -   70   1
+1526093  one15 ranked     354   4   12    4  1    3     1     0     0  445    0   0
+1526093  one15 ranked     410   1   20   18  1    6     1     0     0  445    0   0
+totals {'n': 72, 'lead': 58, 'd5': 5, 'd20': 15, 'alive': 21, 'win': 27, 'lost_len': 332, 'lead_win': 22, 'lead_d20': 14, 'lead_alive': 15, 'lead_end': 57, 'late': 67, 'late_d20': 13, 'late_win': 24, 'f2': 49} distinct games 38
+games with a 10+ run: n 38 wins 15 queen alive at end 12 mean qfin 15.2
+
+comparison (queen 10+ at some round start from 300 on): queen 10+ at round 300, by whether the game has a 10+ run at round 300+
+  no 10+ run at all          n  36 alive at end  15 (42%) wins  14 (39%) mean qfin 18.2 mean max ql r300+ 31.4
+  10+ run only before r300   n   1 alive at end   0 (0%) wins   0 (0%) mean qfin 0.0 mean max ql r300+ 43.0
+  10+ run at r300+           n  36 alive at end  12 (33%) wins  14 (39%) mean qfin 16.0 mean max ql r300+ 41.9
+same, restricted to queen 10+ and leading at round 300
+  no 10+ run at r300+        n  28 alive at end  11 wins  14 mean qfin 19.3
+  10+ run at r300+           n  33 alive at end  11 wins  14 mean qfin 17.0
+
+== Count B: our queen deaths at round 350+
+game     ver   src          r   L  eq lead cause      detail                 last3     m5 nm win
+1496850  one11 one11-c1   351   2   6    0 ram_seen   attL 3 steps 1 qview 1 TTT towar  0  8   0
+1496859  one11 one11-c1   497  85   0    1 ram_unseen attL 4 steps 5 qview 0 AT= level  0  7   0
+1501678  one12 one12-c1   402   3   0    1 own        hit wall               =T. towar  5 39   0
+1504479  one12 one12-k1   452  21   5    1 ram_unseen attL 5 steps 4 qview 0 ..T towar  0 14   0
+1504486  one12 one12-k1   470  59   0    1 own        hit ?                  TA. level  0 31   0
+1504493  one12 one12-k1   445   2   7    0 ram_seen   attL 9 steps 3 qview 1 TT= towar  1 39   0
+1503507  one12 one12-p1   359   2   0    1 ram_seen   attL 3 steps 2 qview 1 AAT away   4 60   1
+1503515  one12 one12-p1   416   2  39    0 own        hit ?                  =A. away   3 51   0
+1506227  one13 one13-c1   477   3  16    0 ram_seen   attL 4 steps 3 qview 1 AAA away   1 38   0
+1510796  one13 one13-c2   430   4  45    0 own        hit wall               ==. level  0 12   0
+1510797  one13 one13-c2   387  31   6    1 ram_unseen attL 4 steps 3 qview 0 TTT towar  1 51   1
+1509109  one13 one13-k1   439   2  13    0 ram_seen   attL 4 steps 3 qview 1 AT= level  0  3   0
+1509111  one13 one13-k1   449   2  11    0 ram_seen   attL 8 steps 4 qview 1 === level  0 17   0
+1513845  one13 one13-k2   372   6   4    1 ram_seen   attL 5 steps 5 qview 1 =AA away   0  2   0
+1507916  one13 one13-p1   362   5  71    0 own        hit ?                  AA. away   3 52   0
+1507919  one13 one13-p1   455   4   0    1 own        hit mate 999 26 body   AA. away   0 30   0
+1507925  one13 one13-p1   408   2   8    0 ram_seen   attL 3 steps 1 qview 1 AAA away   0  0   0
+1515663  one13 one13-q1   441  35   2    1 ram_unseen attL 4 steps 3 qview 0 ATA away   1 47   1
+1515669  one13 one13-q1   466  11  29    0 ram_unseen attL 6 steps 4 qview 0 ... nofoe  0  1   0
+1517686  one14 one14-c1   392  28   0    1 ram_seen   attL 3 steps 3 qview 0 ATT towar  3 38   0
+1517692  one14 one14-c1   368   2   0    1 own        hit ?                  T=. towar  3 22   1
+1520820  one14 one14-k1   402   4   3    1 ram_seen   attL 5 steps 5 qview 1 AAT away   1 27   0
+1520828  one14 one14-k1   405  33   0    1 ram_seen   attL 5 steps 5 qview 0 A=A away   5 10   1
+1518920  one14 one14-p1   400   2  21    0 own        hit ?                  AA. away   0  2   0
+1522435  one14 one14-s1   366   4   2    1 own        hit wall               TA. level  2 52   0
+1522438  one14 one14-s1   482  29   4    1 ram_unseen attL 11 steps 5 qview  A.. away   0  3   0
+1523634  one15 one15-c1   391  44   0    1 ram_seen   attL 3 steps 4 qview 0 AAT away   1 51   0
+1525842  one15 one15-p1   431   2  25    0 ram_seen   attL 3 steps 1 qview 1 A=T level  1  2   0
+1527406  one15 one15-s1   433   4   4    0 own        hit wall               AT. level  1 47   1
+1527409  one15 one15-s1   486   8  26    0 ram_unseen attL 13 steps 5 qview  ... nofoe  0  0   0
+1528866  one16 one16-c1   390  33  37    0 ram_seen   attL 3 steps 1 qview 1 ATT towar  3  6   0
+1528868  one16 one16-c1   476   2   0    1 ram_seen   attL 4 steps 2 qview 1 TTT towar  0 24   0
+1496002  one11 ranked     451   4   0    1 own        hit own 1 4 body       =A. away   3 13   1
+1497632  one11 ranked     429   2   0    1 ram_seen   attL 5 steps 5 qview 1 AAA away   4 54   1
+1501020  one11 ranked     422  19  17    1 ram_seen   attL 6 steps 5 qview 1 TA= level  4 54   0
+1501263  one12 ranked     353   3   0    1 own        hit wall               A=. away   0 32   1
+1504019  one12 ranked     430   2   0    1 own        hit ?                  ==. level  1 20   0
+1504148  one12 ranked     356   2  35    0 ram_seen   attL 2 steps 1 qview 1 AAT away   0  0   0
+1504150  one12 ranked     420  37  15    1 ram_seen   attL 5 steps 5 qview 0 AAT away   2 38   0
+1506911  one13 ranked     401   5  23    0 own        hit own 0 5 body       AA. away   1 52   0
+1507575  one13 ranked     402   2   0    1 ram_seen   attL 2 steps 1 qview 1 T=T towar  0 28   0
+1507592  one13 ranked     431   2  24    0 ram_seen   attL 4 steps 3 qview 1 A=A away   0  1   0
+1508916  one13 ranked     396   4   2    1 own        hit wall               TA. level  2 57   0
+1508962  one13 ranked     374   2  20    0 ram_seen   attL 2 steps 1 qview 1 AA= away   0 19   0
+1511410  one13 ranked     395   3  70    0 mate       reason 3               AAT away   7 31   0
+1513120  one13 ranked     353  17  13    1 ram_unseen attL 7 steps 5 qview 0 A.. away   0  0   0
+1515127  one13 ranked     441  54   0    1 own        hit ?                  =T. towar  1 30   1
+1516206  one14 ranked     395  46   8    1 ram_seen   attL 12 steps 3 qview  TTA towar  3 45   0
+1516987  one14 ranked     381  12   0    1 ram_unseen attL 6 steps 4 qview 0 AAA away   1 52   1
+1516988  one14 ranked     420   2  38    0 ram_seen   attL 3 steps 1 qview 1 T=T towar  0  4   0
+1518021  one14 ranked     420   4   2    1 own        hit own 1 4 body       AA. away   1 54   0
+1522572  one14 ranked     418   2   0    1 ram_seen   attL 9 steps 1 qview 1 T=T towar  0  3   1
+1526093  one15 ranked     445  34  10    1 ram_unseen attL 5 steps 3 qview 0 AA= away   0 33   0
+totals
+   ('cause', 'mate') 1
+   ('cause', 'own') 17
+   ('cause', 'ram_seen') 25
+   ('cause', 'ram_unseen') 10
+   ('lead', 0) 21
+   ('lead', 1) 32
+   ('lead_cause', 0, 'mate') 1
+   ('lead_cause', 0, 'own') 6
+   ('lead_cause', 0, 'ram_seen') 12
+   ('lead_cause', 0, 'ram_unseen') 2
+   ('lead_cause', 1, 'own') 11
+   ('lead_cause', 1, 'ram_seen') 13
+   ('lead_cause', 1, 'ram_unseen') 8
+   ('lead_trend', 0, 'away') 10
+   ('lead_trend', 0, 'level') 5
+   ('lead_trend', 0, 'nofoe') 2
+   ('lead_trend', 0, 'toward') 4
+   ('lead_trend', 1, 'away') 16
+   ('lead_trend', 1, 'level') 6
+   ('lead_trend', 1, 'toward') 10
+   ('lead_win', 0, 0) 20
+   ('lead_win', 0, 1) 1
+   ('lead_win', 1, 0) 21
+   ('lead_win', 1, 1) 11
+   ('m5', 0) 24
+   ('m5', 1) 13
+   ('m5', 2) 16
+   ('trend', 'away') 26
+   ('trend', 'level') 11
+   ('trend', 'nofoe') 2
+   ('trend', 'toward') 14
+   ('win', 0) 41
+   ('win', 1) 12
+   ('wsplit3', 0) 36
+   ('wsplit3', 1) 17
+   n 53
+
+== Prize: state at round 350 against the result
+   ('behind', 'games') 27
+   ('behind', 'win') 4
+   ('both dead', 'games') 109
+   ('both dead', 'win') 50
+   ('lead', 'games') 51
+   ('lead', 'win') 25
+   ('lead-loss cause', 'own') 3
+   ('lead-loss cause', 'ram_seen') 16
+   ('lead-loss cause', 'ram_unseen') 6
+   ('lead-loss', 'alive') 1
+   ('lead-loss', 'queen died') 25
+   ('level', 'games') 36
+   ('level', 'win') 18
+   ('our queen dead', 'games') 104
+   ('our queen dead', 'win') 20
+   game ended before r350 182
+games lost from a queen lead at r350:
+game     ver   src       q@350 e@350 qfin efin  how
+1496859  one11 one11-c1     24     0    0    0  queen died r497 ram_unseen L85 (winner b, last 499)
+1504479  one12 one12-k1      7     3    0    9  queen died r452 ram_unseen L21 (winner b, last 499)
+1504486  one12 one12-k1     15     0    0    0  queen died r470 own L59 (winner b, last 499)
+1504493  one12 one12-k1     18     5    0   12  queen died r445 ram_seen L2 (winner b, last 499)
+1506227  one13 one13-c1     31     5    0   16  queen died r477 ram_seen L3 (winner b, last 499)
+1509109  one13 one13-k1     20     7    0   24  queen died r439 ram_seen L2 (winner b, last 499)
+1509111  one13 one13-k1     40     7    0   10  queen died r449 ram_seen L2 (winner b, last 499)
+1513845  one13 one13-k2     17     4    0   18  queen died r372 ram_seen L6 (winner b, last 499)
+1507919  one13 one13-p1      8     7    0    0  queen died r455 own L4 (winner b, last 499)
+1512570  one13 one13-p2     18    16    3   39  alive, overtaken (winner b, last 499)
+1517686  one14 one14-c1     20     0    0    0  queen died r392 ram_seen L28 (winner b, last 499)
+1520820  one14 one14-k1      5     3    0    3  queen died r402 ram_seen L4 (winner b, last 499)
+1522438  one14 one14-s1     15     3    0    4  queen died r482 ram_unseen L29 (winner b, last 499)
+1523634  one15 one15-c1     22     0    0    0  queen died r391 ram_seen L44 (winner b, last 499)
+1525842  one15 one15-p1     18    11    0   38  queen died r431 ram_seen L2 (winner b, last 499)
+1527409  one15 one15-s1     21     2    0   26  queen died r486 ram_unseen L8 (winner b, last 486)
+1528868  one16 one16-c1     18     0    0    0  queen died r476 ram_seen L2 (winner b, last 499)
+1501020  one11 ranked       26     7    0   19  queen died r422 ram_seen L19 (winner a, last 499)
+1504019  one12 ranked       29     0    0    0  queen died r430 own L2 (winner a, last 499)
+1504150  one12 ranked       24     3    0   41  queen died r420 ram_seen L37 (winner a, last 499)
+1507575  one13 ranked       31     0    0    0  queen died r402 ram_seen L2 (winner a, last 499)
+1507592  one13 ranked       16     4    0   34  queen died r431 ram_seen L2 (winner b, last 499)
+1508962  one13 ranked       25    19    0    0  queen died r374 ram_seen L2 (winner a, last 499)
+1513120  one13 ranked       17    13    0   13  queen died r353 ram_unseen L17 (winner a, last 353)
+1516206  one14 ranked       25     5    0    0  queen died r395 ram_seen L46 (winner a, last 499)
+1526093  one15 ranked       10     3    0   16  queen died r445 ram_unseen L34 (winner a, last 499)
+lead at r350 by version: games / wins / losses with queen death
+   one11 5 3 2
+   one12 10 5 5
+   one13 19 9 9
+   one14 12 8 4
+   one15 4 0 4
+   one16 1 0 1

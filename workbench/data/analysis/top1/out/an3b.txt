@@ -1,0 +1,32 @@
+=== cheap = at most 1 paid step(s), attacker not our longest
+  games                                              289
+  games with a cheap chance                          99
+  games with any chance                              132
+  we rammed her                                      74
+  cheap chance, never rammed her                     33
+    -> r500, their queen dead L                      8
+    -> wipe-out W                                    7
+    -> r500, their queen alive L                     7
+       ... of those losses, flips if she had died    5
+    -> wipe-out L                                    9
+    -> r500, their queen dead W                      2
+  round-500 losses with her alive and a cheap chance, by map (games, flips): {'Australia': (1, 0), 'Autarky': (1, 1), 'Islands': (1, 0), 'Prisoners Dilemma': (1, 1), 'Queen Of Spades': (1, 1), 'Slithery Fight': (2, 2)}
+=== cheap = at most 2 paid step(s), attacker not our longest
+  games                                              289
+  games with a cheap chance                          106
+  games with any chance                              132
+  we rammed her                                      74
+  cheap chance, never rammed her                     37
+    -> r500, their queen dead L                      9
+    -> wipe-out W                                    7
+    -> r500, their queen alive L                     9
+       ... of those losses, flips if she had died    6
+    -> wipe-out L                                    10
+    -> r500, their queen dead W                      2
+  round-500 losses with her alive and a cheap chance, by map (games, flips): {'Australia': (2, 0), 'Autarky': (1, 1), 'Islands': (1, 0), 'Prisoners Dilemma': (1, 1), 'Queen Of Spades': (1, 1), 'Slithery Fight': (2, 2), 'Trauma': (1, 1)}
+
+=== pooled headline (chance-turns)
+  Vibing++  len 2-3: 137/140 = 0.98 | len 4+: 58/224 = 0.26 | at most 1 paid step, not the longest: 141/150 = 0.94 | at most 2 paid steps, not the longest: 162/181 = 0.90
+  SSS       len 2-3: 112/114 = 0.98 | len 4+: 81/309 = 0.26 | at most 1 paid step, not the longest: 120/125 = 0.96 | at most 2 paid steps, not the longest: 146/164 = 0.89
+  forgot    len 2-3: 130/195 = 0.67 | len 4+: 22/241 = 0.09 | at most 1 paid step, not the longest: 133/215 = 0.62 | at most 2 paid steps, not the longest: 143/240 = 0.60
+  meow      len 2-3: 65/183 = 0.36 | len 4+: 9/466 = 0.02 | at most 1 paid step, not the longest: 63/187 = 0.34 | at most 2 paid steps, not the longest: 68/234 = 0.29

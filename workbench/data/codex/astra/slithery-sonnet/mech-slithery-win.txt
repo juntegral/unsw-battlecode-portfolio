@@ -1,0 +1,48 @@
+Slithery Fight win 11 games
+-- queen length (dead = 0)  rounds [50, 100, 150, 200, 250, 300, 350, 400, 450, 499]
+us    mean   3.2   3.5   3.1   3.2   3.1   3.3   7.5  13.6  25.3  34.2
+us    alive  1.00  1.00  0.91  0.91  0.73  0.64  0.55  0.45  0.45  0.45
+us    median(alive)     3     4   3.0   3.0   3.5     4  13.0    25    50    78
+them  mean   3.8   4.2   4.9   6.5   7.7  11.5   8.9   5.0   0.6   0.6
+them  alive  0.91  0.91  0.91  0.82  0.64  0.64  0.55  0.27  0.09  0.09
+them  median(alive)   4.0   4.0   5.0     7    14    21   9.5     7     7     7
+-- longest dragon  rounds [50, 100, 150, 200, 250, 300, 350, 400, 450, 499]
+us    mean   6.7   7.4   8.4  11.1  13.3  15.3  15.2  29.4  49.1  66.8
+them  mean   5.2   6.9   7.9  10.5  14.3  17.0  24.1  27.7  34.1  46.1
+-- dragons  rounds [50, 100, 150, 200, 250, 300, 350, 400, 450, 499]
+us    mean  40.5  51.5  59.1  60.6  60.8  61.3  58.5  53.2  31.3  20.0
+them  mean  42.9  55.8  61.3  61.6  61.5  61.8  56.4  50.3  26.5  17.4
+-- total length  rounds [50, 100, 150, 200, 250, 300, 350, 400, 450, 499]
+us    mean 109.9 137.9 165.4 191.2 215.2 232.2 215.5 194.6 168.2 160.1
+them  mean 106.7 140.2 172.0 199.6 215.2 227.3 225.4 216.6 193.6 192.5
+-- dragons >=10 count  rounds [50, 100, 150, 200, 250, 300, 350, 400, 450, 499]
+us    mean   0.1   0.1   0.3   1.0   2.5   2.9   2.8   3.2   3.0   3.4
+them  mean   0.0   0.1   0.3   1.3   2.1   2.6   3.8   3.3   5.9   6.5
+-- queen eats (count per game) by round window: natural / own-corpse / foe-corpse
+us     0-100 {'n': 0.3, 'own': 2.1}
+us   100-200 {'n': 1.4, 'own': 0.2}
+us   200-300 {'foe': 0.2, 'n': 1.5, 'own': 1.3}
+us   300-400 {'n': 1.8, 'own': 17.5}
+us   400-500 {'n': 0.5, 'own': 20.9}
+them   0-100 {'n': 0.4, 'own': 1.6}
+them 100-200 {'foe': 0.2, 'n': 1.1, 'own': 2.2}
+them 200-300 {'n': 1.0, 'own': 7.0}
+them 300-400 {'n': 2.4, 'own': 5.6}
+them 400-500 {'n': 0.4, 'own': 0.9}
+-- all-dragon eats per game (natural), by window
+us   [(0, {'foe': 10, 'n': 289, 'own': 176}), (100, {'foe': 19, 'n': 276, 'own': 205}), (200, {'foe': 24, 'n': 219, 'own': 163}), (300, {'foe': 24, 'n': 183, 'own': 218}), (400, {'foe': 23, 'n': 157, 'own': 196})]
+them [(0, {'foe': 11, 'n': 268, 'own': 167}), (100, {'foe': 23, 'n': 283, 'own': 241}), (200, {'foe': 28, 'n': 282, 'own': 270}), (300, {'foe': 33, 'n': 264, 'own': 300}), (400, {'foe': 22, 'n': 178, 'own': 213})]
+-- queen splits per game (count; mean length kept) and rounds >=100
+us   mean splits 16.3, after r100 4.4, kept-length mean 12.2 median 11
+them mean splits 6.5, after r100 2.4, kept-length mean 10.5 median 9.0
+-- deaths of dragons with L>=8: by side, cause; rammed: attacker length bucket, steps vs free
+us   long deaths 152 (13.8/game) {'rammed': 78, 'own body': 7, 'wall': 5, 'stop': 43, 'mate body': 9, 'rams': 10} rammed-by-attacker-len {'4-7': 28, '1-3': 46, '8-15': 2, '16+': 2} {'paid': 63, 'free': 15}
+them long deaths 219 (19.9/game) {'wall': 32, 'rammed': 60, 'mate body': 12, 'own body': 38, 'rams': 12, 'stop': 54, 'mate head': 11} rammed-by-attacker-len {'1-3': 35, '4-7': 18, '8-15': 4, '16+': 3} {'paid': 36, 'free': 24}
+-- long (>=8) deaths split by victim length >=16 only
+us   18 {'own body': 2, 'rammed': 7, 'stop': 6, 'rams': 3} {'4-7': 4, '1-3': 3} {'paid': 5, 'free': 2}
+them 46 {'own body': 5, 'wall': 4, 'rams': 6, 'rammed': 18, 'stop': 9, 'mate head': 2, 'mate body': 2} {'4-7': 6, '1-3': 8, '8-15': 2, '16+': 2} {'paid': 6, 'free': 12}
+-- queen deaths: kind / length / round bucket
+us   6 of 11 {'rammed': 6} len {2: 1, 3: 2, 4: 1, 12: 2} round<100 0, 100-299 4, 300+ 2
+     rammed queens: attacker L0 [3, 3, 4, 4, 4, 8] steps vs free(ceil L0/4) Counter({'paid': 4, 'free': 2})
+them 10 of 11 {'mate body': 3, 'rammed': 4, 'wall': 3} len {2: 1, 4: 1, 5: 1, 6: 2, 9: 1, 12: 4} round<100 1, 100-299 3, 300+ 6
+     rammed queens: attacker L0 [2, 10, 13, 14] steps vs free(ceil L0/4) Counter({'free': 3, 'paid': 1})

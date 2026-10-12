@@ -1,0 +1,11 @@
+Final bot one19: corridor guard sees past mates, no queen ram when trapped, small-map fixes
+
+Code (every new switch off by default; off = the same program as before):
+QUEEN_CORRIDOR_MATE and QUEEN_CORRIDOR_TREE in the queen's corridor guard,
+QUEEN_NO_RAM in her trapped branch, QUEEN_BLIND_STALL on the blind-portal
+ban, SPLIT_KNOWN_TAIL in split_child_size. The profile matches the live bot
+one19 (submission 21827): QUEEN_DEAD_ALL removed, QUEEN_CORRIDOR_MATE,
+CENTER_MAX_CELLS 100000, QUEEN_NO_RAM and QUEEN_BLIND_STALL 20 added;
+QUEEN_CORRIDOR_TREE and SPLIT_KNOWN_TAIL stay off (tested, not kept).
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>

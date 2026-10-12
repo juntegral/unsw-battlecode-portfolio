@@ -1,0 +1,5 @@
+switch: BODYMEM_ON=false (bot-on만 true; BODYX_ON=true 유지)
+files: versions/v1.8/bot/{params.hpp,bodymem.hpp,world.hpp,world.cpp,plan.hpp,plan.cpp,main.cpp}, versions/v1.8/VERSION.md, exp/bodymem/**
+spec: exp/bodymem/spec.json — 192 games (84 on/off pairs + 12 off/base identity keys)
+run: node exp/bodymem/runq.js exp/bodymem/spec.json --jobs 3 --cap 6; 이후 UNSW_RULES=123 node exp/bodymem/analyze.js 및 ANALYZE.md 절차
+risk: 초기 미관측 긴 몸 꼬리 추정은 남음; 실제 CPU/게임 drift/변경 결정 judge 재현·3라운드 fork 미검증(native 진단만 제공)

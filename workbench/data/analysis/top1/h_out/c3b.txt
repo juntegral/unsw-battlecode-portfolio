@@ -1,0 +1,66 @@
+
+===== maps over 1,200 cells (our clock: round 150)
+-- units (mean; games that reach the round)   r100  r150  r200  r250  r300  r350  r400  r450
+   meow live    n=  77   42.4  47.2  41.2  37.2  35.9  33.1  31.6  24.0
+   meow cand    n=  34   43.2  46.6  42.2  37.5  36.3  34.0  34.0  24.3
+   meow tc30    n=  12   45.2  51.6  47.8  42.8  42.2  39.4  38.2  27.3
+   opp of meow  n= 111   53.9  60.4  61.8  62.9  61.2  57.1  50.6  36.2
+   Vibing++     n= 127   41.5  49.7  54.3  56.0  56.6  56.2  38.4  31.2
+   SSS          n= 139   53.8  58.4  59.7  59.9  60.3  56.1  51.4  40.6
+   forgot       n= 161   52.1  57.8  59.6  59.4  59.2  56.5  32.9  21.1
+   top3         n= 427   49.5  55.6  58.1  58.6  58.8  56.3  40.6  30.6
+-- total length (mean; games that reach the round)   r100  r150  r200  r250  r300  r350  r400  r450
+   meow live    n=  77  107.3 123.4 121.5 121.7 121.5 117.6 118.7 113.1
+   meow cand    n=  34  107.9 124.3 122.2 116.3 120.1 120.8 121.6 110.1
+   meow tc30    n=  12  112.0 142.8 142.2 135.2 146.8 147.5 145.1 122.5
+   opp of meow  n= 111  152.0 209.5 261.3 301.0 326.5 339.6 351.2 332.7
+   Vibing++     n= 127  115.2 151.2 180.4 200.0 210.7 216.0 211.4 212.3
+   SSS          n= 139  145.3 186.8 202.5 211.9 221.1 215.6 222.6 219.6
+   forgot       n= 161  131.0 156.7 172.4 179.9 188.5 195.3 197.7 189.3
+   top3         n= 427  130.9 164.9 184.7 196.4 205.8 208.2 210.0 206.3
+-- longest dragon (mean; games that reach the round)   r100  r150  r200  r250  r300  r350  r400  r450
+   meow live    n=  77    4.9   5.8   9.1  12.8  14.2  16.4  18.6  26.4
+   meow cand    n=  34    5.1   5.6   9.4  12.6  15.5  16.4  17.1  25.1
+   meow tc30    n=  12    4.9   6.8  10.3  13.8  19.2  21.0  21.7  28.7
+   opp of meow  n= 111    6.8  11.0  14.5  17.7  23.4  32.6  41.8  52.5
+   Vibing++     n= 127    8.7  10.9  12.6  14.7  16.4  20.6  36.0  46.6
+   SSS          n= 139    6.1   9.0  13.7  17.5  20.5  34.4  42.4  52.3
+   forgot       n= 161    4.8   6.4   8.3  12.7  18.1  31.2  44.0  54.2
+   top3         n= 427    6.4   8.6  11.4  14.9  18.4  29.1  41.1  51.3
+
+===== maps of 1,200 cells or fewer (our clock: round 300)
+-- units (mean; games that reach the round)   r100  r150  r200  r250  r300  r350  r400  r450
+   meow live    n= 182   14.6  19.1  21.8  22.8  22.6  19.9  19.5  10.1
+   meow cand    n=  83   13.2  17.8  24.6  26.4  26.6  22.8  22.1  10.6
+   meow tc30    n=  29   14.3  18.4  24.0  21.9  21.6  17.5  17.6   7.4
+   opp of meow  n= 265   18.0  26.2  30.1  32.7  34.8  31.9  24.0  11.4
+   Vibing++     n= 345   17.9  24.0  28.4  30.1  30.8  31.3  28.5  18.0
+   SSS          n= 338   19.2  28.7  34.8  37.6  38.5  31.4  24.9  15.5
+   forgot       n= 421   18.8  23.7  27.7  26.4  25.8  26.3  14.8   9.9
+   top3         n=1104   18.7  25.3  30.1  30.9  31.2  29.5  22.2  14.1
+-- total length (mean; games that reach the round)   r100  r150  r200  r250  r300  r350  r400  r450
+   meow live    n= 182   35.6  47.1  54.1  56.2  56.5  58.4  62.4  51.1
+   meow cand    n=  83   32.0  44.2  60.9  64.6  65.4  67.3  71.8  56.4
+   meow tc30    n=  29   34.3  45.6  58.2  53.0  52.7  52.1  59.2  44.7
+   opp of meow  n= 265   44.0  65.5  78.7  86.9  96.3  99.0  94.6  85.5
+   Vibing++     n= 345   44.1  60.6  76.0  83.7  89.8  93.8  96.7  84.4
+   SSS          n= 338   47.1  70.2  87.3  95.5 101.6  95.6  95.2  85.0
+   forgot       n= 421   45.5  58.3  68.9  71.6  76.8  84.1  84.6  81.1
+   top3         n=1104   45.5  62.7  76.7  82.6  88.5  90.7  91.6  83.3
+-- longest dragon (mean; games that reach the round)   r100  r150  r200  r250  r300  r350  r400  r450
+   meow live    n= 182    3.7   3.9   4.1   3.9   4.3   9.2  11.8  22.8
+   meow cand    n=  83    3.5   3.9   4.1   4.1   4.2   8.9  13.1  24.3
+   meow tc30    n=  29    3.5   3.8   3.9   3.6   4.1   8.1  11.6  23.5
+   opp of meow  n= 265    3.8   4.0   4.8   5.1   7.8  14.1  21.2  35.0
+   Vibing++     n= 345    4.1   4.6   5.8   7.3  10.5  12.9  17.3  30.3
+   SSS          n= 338    4.0   4.1   4.4   4.4   5.9  16.6  25.5  33.0
+   forgot       n= 421    3.6   3.7   3.9   9.3  15.2  20.1  27.5  37.9
+   top3         n=1104    3.9   4.1   4.7   7.2  10.9  16.7  23.7  34.1
+
+===== 3. our games on maps over 1,200 cells: how they were won, and the longest dragon
+meow live: wins 9 ({'longest': 9}), losses 68
+   wins: own longest r300 25.0, r400 34.6, final 67.1; enemy longest r300 19.3, r400 27.8, final 34.9; own total r300 210 vs 284; own units r300 54 vs 62
+   losses: own longest r300 12.8, r400 16.3, final 24.4; enemy longest r300 24.2, r400 43.5, final 68.2; own total r300 109 vs 333; own units r300 33 vs 61
+meow cand: wins 3 ({'longest': 3}), losses 31
+   wins: own longest r300 17.7, r400 25.7, final 63.3; enemy longest r300 20.3, r400 32.7, final 39.3; own total r300 194 vs 340; own units r300 56 vs 61
+   losses: own longest r300 15.3, r400 16.2, final 25.1; enemy longest r300 23.2, r400 43.3, final 68.4; own total r300 113 vs 324; own units r300 34 vs 60

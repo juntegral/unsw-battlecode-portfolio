@@ -1,0 +1,12 @@
+opponent mD15; cell = res q100/q200/q350/q400/qend p100 d100 | queen turns with an enemy head in view / her turns (gap<=3) mean gap | queen
+ladder_islands_1-seed1-side1
+  qa_L  win    4/ 4/ 0/ 0/ 0 p 253 d 59 | seen  62/239 (<=3: 17) mean 3.90 end<=4:  36 | r238 L4 rammed | vs qa_L: -
+  qa_t1 win    4/ 4/ 0/ 0/ 0 p 253 d 59 | seen  62/239 (<=3: 17) mean 3.90 end<=4:  36 | r238 L4 rammed | vs qa_L: identical
+ladder_slithery_fight_1-seed1-side1
+  qa_L  win    3/ 3/ 0/ 0/ 0 p 462 d 59 | seen  29/351 (<=3: 11) mean 3.86 end<=4:  26 | r350 L17 rammed | vs qa_L: -
+  qa_t1 loss   3/ 3/ 0/ 0/ 0 p 462 d 59 | seen  29/350 (<=3: 11) mean 3.86 end<=4:  26 | r349 L18 rammed | vs qa_L: r348 QUEEN
+ladder_slithery_fight_1-seed2-side1
+  qa_L  loss   4/ 5/ 0/ 0/ 0 p 434 d 56 | seen  31/249 (<=3: 12) mean 4.03 end<=4:  17 | r248 L2 own | vs qa_L: -
+  qa_t1 loss   4/ 5/ 0/ 0/ 0 p 434 d 56 | seen  31/249 (<=3: 12) mean 4.03 end<=4:  17 | r248 L2 own | vs qa_L: identical
+qa_L {"n": 3, "win": 2, "qalive": 0, "qend": 0, "q100": 11, "q200": 12, "p100": 1149, "d100": 174, "near": 122, "nearsum": 479, "turns": 839, "deathsum": 836, "near3": 40, "end4": 79, "q350": 0, "q400": 0, "meanNear": 3.93}
+qa_t1 {"n": 3, "win": 1, "qalive": 0, "qend": 0, "q100": 11, "q200": 12, "p100": 1149, "d100": 174, "near": 122, "nearsum": 479, "turns": 838, "deathsum": 835, "near3": 40, "end4": 79, "q350": 0, "q400": 0, "meanNear": 3.93}

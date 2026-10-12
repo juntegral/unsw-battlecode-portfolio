@@ -1,0 +1,27 @@
+---
+name: loop-spec-1004
+description: agreed loop design from 10-04: card state machine on GitHub labels, no timed waves, clarify/look steps, freeze 10-08 20:00 KST
+metadata:
+  type: project
+---
+Agreed 10-04 ~00:30 KST (spec doc: battlecode docs/LOOP.md on juntegral, PR #8):
+- A runner script polls labels; AI is called only on state changes. No timed waves, no call cap.
+- States: ready → needs-info (Zhe cards: edge-case questions, @mention, no timeout) → building (toggle off = replay-identical) → needs-look (author eyeballs smoke_pick replays; required for Zhe) → testing → tested → candidate (meowbot: author + 1 OK; AI ideas 1 OK) → smoke (dev 545, ~60 games, optional) → kept/rejected/inconclusive.
+- Priority: Zhe cards > board > AI ladder hypotheses.
+- Results always include a "why" table: our vs their longest, total, by map family.
+- Base = current main; old-base results flagged; combined check for multi-toggle candidates.
+- Freeze: dropped by the user on 10-07 ~09:50 KST ("동결은 진행하지 않아. 마지막 submission 시간까지 진행할거야"). Work continues until submissions close 2026-10-09 15:00 KST; which version stays active is decided late, by waiting. The 10-08 20:00 KST freeze is still hard-coded in battlecode work/loop/runner.py (FREEZE) until someone changes it.
+
+Related: [[loop-first]], [[zhe-intuition]], [[github-readability]].
+- 10-04 01:20: task cards (type:task) = changes that must not change play (security/refactor/CPU/tools). Same loop, same single branch flow, shorter steps (identity vs the current base + own check). Priority FIRST: type:task > by:zhe > other humans > by:ai. Say "the previous version / current base", never "v61", when describing identity checks.
+- 10-04 02:25: runner scheduled via ~/meow-loop-out/start-0800.sh (detached, caffeinate) to start 08:00 KST from the battlecode checkout on juntegral; log ~/meow-loop-out/runner.log. First card #15 [Task] sonar encryption (type:task, by:zhe, status:ready). Round-1 cards #9-#11, #14 closed (Zhe owns #9-#11 follow-ups). Morning: check Discord, the active submission (Zhe may swap bots for unranked), runner.log, PR juntegral→main for 5db42aa.
+- 10-04 11:30: the user (admin) can override the approval rule when they ask explicitly (e.g. merged #15 PR #20 directly as dd14b08). Follow such explicit requests; otherwise keep the normal rules.
+- Approval OK = merge to main only. /submit uploads for real (UPLOAD_ENABLED=True), one member + confirm. Rollbacks are done by hand (no /rollback). Uploads for 30:30 pair scrims are fine to do casually.
+- 10-04 18:06: live bot = submission 16577 "stride-test" (v61 settings + STRIDE_BUDGET=12000, STRIDE_CAP=1500, STRIDE_MARGIN=-50); v61 = 15011 for rollback. main 78ef70d: mybot2/main.cpp defaults are now byte-identical to the live bot (before, defaults were an old config and the loop tested on it, so loop results before 18:06 on #17/#18 are invalid). Rule from now: main's mybot2 defaults == the live release; a candidate turns its toggle on in mybot2; /submit uploads mybot2 as is.
+- Verify "main == live" any time with: `node unsw-swarm/tools/submit.js check battlecode/mybot2` (read-only; compares the active server zip with main's bot files). Run it at the start of a session and after anyone uploads/activates by hand.
+- 10-04 18:40 user (admin) allows: when the live server bot and main differ (someone uploaded/activated by hand), sync main's mybot2 to the live bot automatically (commit on main, note in Discord via meowbot). No need to ask.
+- 10-04 21:25: naming rule: people see only the card number + short name ("#27 passage", label name:<slug>); PR numbers only inside links; candidate PRs titled "Candidate #27 passage". When talking to the user/team, always say the card ref this way.
+- 10-04 23:05 user REQUIREMENT: when a step runs past its estimate (or a card waits long), post a notice in Discord with the reason and the new expected end time. Automatic version being built (events `late` → meowbot "⏳ … running late … why … new estimate"); until it is deployed, post these by hand with `meowbot.py --announce-file`.
+- 10-05 00:10 user: fairness between teammates. Queue order becomes: task cards → human idea cards in round-robin by author (zhe, qwq, junsing; least recently served first) → AI cards (when no human card is ready, plus every 4th slot). Same rotation for the online test slot. Zhe's extra steps (questions, replay check) stay. Reason: if Zhe posts faster than the loop runs, QWQ's cards would never get a turn.
+- 10-05 08:21: live bot = submission 17184 "card-29-82407e034c" (main f9ba3e7 = stride + #29 safer-stride, `STRIDE_SAFE_END = true`); previous live 16577 for rollback, v61 = 15011. The user ran the upload himself because the permission classifier refuses server uploads from Claude ("Production Deploy"). The pooled online baseline is keyed by the live submission, so the first online test after a release replays the live side (run-pair.sh with BASELINE=1, at most 2 opponents).
+- 10-05 08:31: the user added two allow rules himself via /permissions so Claude can do release uploads: `Bash(node tools/submit.js upload *)` and `Bash(node tools/submit.js activate *)`. Run them as plain commands from the unsw-swarm directory (no loops or `$(...)` wrappers, which may not match the rule). Not yet exercised; if an upload is still refused, tell the user rather than routing around it. Claude cannot read or edit its own permission settings (refused as self-modification).

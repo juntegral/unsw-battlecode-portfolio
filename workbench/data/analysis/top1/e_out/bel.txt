@@ -1,0 +1,76 @@
+meow study games: 401; with readable sonar: 78 ({'dl-20261004': 30, 'stride-old': 26, 'dl-20261003': 22})
+
+--- maps of 1,200 cells or fewer, all games that reach the round: 56 games with readable sonar
+    rounds                                                                    150-174  175-199  200-224  225-249  250-274  275-299  300-324  325-349  350-374  375-399  400-424  425-449  450-474  475-499
+    dragons whose believed leader is the true longest                              3%       8%      10%       6%       4%       4%      16%      32%      28%      34%      37%      34%      31%      28%
+    ... is a dead dragon                                                          45%      55%      57%      56%      55%      51%      49%      26%      37%      27%      19%      36%      36%      34%
+    ... is dead or less than half as long as the true longest                     67%      70%      70%      72%      72%      66%      65%      53%      60%      59%      54%      57%      61%      65%
+    samples (every 5 rounds) in which at least half believe the true longest       5%       8%      10%       7%       4%       4%      26%      35%      32%      39%      48%      50%      46%      39%
+    mean age of the news, rounds                                                  7.1      8.0      7.4      7.9      7.7      7.5      7.4      6.4      7.7      7.0      6.9      6.9      6.9      6.6
+    true longest, mean length                                                     3.8      4.1      4.2      4.3      4.2      4.1      4.9      7.2      8.4     10.0     13.5     19.8     25.0     26.7
+    could feed it by our rules (believe it, within 15, half its length): dragons      0.3      1.0      1.4      0.7      0.4      0.4      2.0      4.6      3.9      4.6      5.2      3.0      1.5      1.2
+    ... the same without the belief test                                          5.8      7.8      9.2      8.3      6.3      6.7      7.5      9.2      9.5     10.2      9.3      5.2      4.1      3.7
+    could feed it: their summed length                                            0.7      2.3      3.3      1.7      0.9      0.7      4.6     10.9      9.4     11.0     13.1      7.8      3.8      3.2
+    ... the same without the belief test                                         12.1     16.5     19.6     17.8     13.6     14.1     16.5     21.9     22.7     24.2     23.1     13.8     11.2     10.6
+
+--- maps of 1,200 cells or fewer, round-500 games with both queens dead: 14 games with readable sonar
+    rounds                                                                    150-174  175-199  200-224  225-249  250-274  275-299  300-324  325-349  350-374  375-399  400-424  425-449  450-474  475-499
+    dragons whose believed leader is the true longest                              5%       2%       3%       3%       2%       2%      15%      41%      38%      45%      31%      27%      31%      30%
+    ... is a dead dragon                                                          61%      63%      59%      59%      60%      52%      56%      26%      28%      19%      26%      44%      40%      36%
+    ... is dead or less than half as long as the true longest                     72%      75%      73%      72%      73%      70%      69%      48%      47%      53%      61%      63%      62%      66%
+    samples (every 5 rounds) in which at least half believe the true longest      10%       6%       6%       7%       7%       0%      20%      47%      46%      57%      41%      41%      50%      50%
+    mean age of the news, rounds                                                  8.2      8.7      7.1      7.9      8.6      7.9      8.2      6.2      7.0      7.2      7.7      7.2      7.4      6.6
+    true longest, mean length                                                     4.1      4.2      4.1      4.2      4.2      4.2      4.9      7.6      9.3     10.0     12.8     19.3     24.9     27.5
+    could feed it by our rules (believe it, within 15, half its length): dragons      0.6      0.1      0.4      0.3      0.3      0.2      2.2      7.8      7.0      7.9      5.9      3.6      2.2      1.9
+    ... the same without the belief test                                          6.1      8.0      8.7      8.6      7.4      8.9      9.2     12.3     13.0     14.6     12.6      7.5      6.5      5.8
+    could feed it: their summed length                                            1.3      0.2      0.8      0.7      0.7      0.5      5.1     19.0     17.0     19.1     14.5      9.4      5.7      5.1
+    ... the same without the belief test                                         13.2     16.9     18.2     17.9     15.9     19.0     20.5     30.2     31.5     34.6     30.5     19.5     18.1     17.1
+
+--- maps over 1,200 cells, all games: 22 games with readable sonar
+    rounds                                                                    150-174  175-199  200-224  225-249  250-274  275-299  300-324  325-349  350-374  375-399  400-424  425-449  450-474  475-499
+    dragons whose believed leader is the true longest                             10%      31%      32%      36%      27%      37%      21%      33%      33%      37%      47%      33%      45%      18%
+    ... is a dead dragon                                                          48%      27%      19%      17%      28%      19%      20%      21%      13%      17%      13%      20%       5%      16%
+    ... is dead or less than half as long as the true longest                     67%      54%      45%      42%      58%      45%      60%      48%      53%      57%      37%      56%      49%      72%
+    samples (every 5 rounds) in which at least half believe the true longest       5%      25%      26%      34%      20%      27%      16%      24%      27%      27%      41%      29%      33%      14%
+    mean age of the news, rounds                                                  9.2      7.6      7.7      6.9      8.5      7.5      8.0      7.5      6.9      8.1      7.2      8.1      7.2      6.9
+    true longest, mean length                                                     6.3      7.8      9.3     13.0     13.6     14.9     15.6     16.4     21.4     24.3     27.9     33.1     36.5     39.2
+    could feed it by our rules (believe it, within 15, half its length): dragons      2.0      3.8      4.3      6.4      4.9      6.0      3.1      5.7      4.9      5.1      6.1      4.3      4.5      2.0
+    ... the same without the belief test                                          9.3      8.8      9.3     10.2      9.7      9.9      9.0      9.8      9.2     10.1     10.2      7.4      7.3      7.0
+    could feed it: their summed length                                            4.9      9.5     11.2     15.8     12.5     16.3      8.0     15.9     14.8     15.2     18.0     13.1     13.2      6.3
+    ... the same without the belief test                                         22.0     22.0     23.8     25.8     25.3     26.6     25.2     28.1     26.3     30.6     29.9     22.4     20.8     22.7
+
+--- maps over 1,200 cells, round-500 games with both queens dead: 11 games with readable sonar
+    rounds                                                                    150-174  175-199  200-224  225-249  250-274  275-299  300-324  325-349  350-374  375-399  400-424  425-449  450-474  475-499
+    dragons whose believed leader is the true longest                             13%      38%      37%      37%      26%      33%      22%      29%      19%      32%      48%      29%      43%      19%
+    ... is a dead dragon                                                          42%      19%      13%      12%      23%      18%      21%      19%      16%      21%      12%      14%       6%      14%
+    ... is dead or less than half as long as the true longest                     61%      47%      43%      37%      58%      46%      62%      52%      66%      63%      33%      57%      50%      69%
+    samples (every 5 rounds) in which at least half believe the true longest       9%      42%      35%      40%      22%      27%      22%      24%      12%      28%      44%      26%      38%      18%
+    mean age of the news, rounds                                                  9.6      9.2      8.2      7.4      8.7      8.9      8.5      9.2      8.1      8.6      8.3      7.7      8.1      7.8
+    true longest, mean length                                                     7.1      9.2     11.9     15.8     16.1     17.8     19.2     19.4     23.4     25.7     29.5     36.0     41.6     46.6
+    could feed it by our rules (believe it, within 15, half its length): dragons      3.1      6.2      6.5      8.2      5.5      5.4      3.3      5.1      3.0      5.3      7.0      4.0      4.5      2.2
+    ... the same without the belief test                                         12.5     11.6     11.0     12.3     10.6      9.3      7.5      9.8      9.4     11.2     11.2      8.1      7.0      6.7
+    could feed it: their summed length                                            8.0     15.3     17.1     20.3     14.3     15.1      8.1     13.7      8.5     15.9     20.3     12.7     12.8      6.2
+    ... the same without the belief test                                         30.2     28.6     28.7     31.3     27.8     25.8     21.5     27.3     25.7     33.8     32.3     25.1     20.1     22.8
+
+--- after a leader split
+    maps of 1,200 cells or fewer: 161 leader splits that kept 2-3 (leader 8+, from round 150); half of the team believes the true longest again after: median 27 rounds, quartiles 17 / 36; not within 60 rounds (or another split first): 76
+       5-round samples in between: the top believed id is dead 44%, the top believed id is alive but shorter than half the true longest 34%, other 22%
+    maps over 1,200 cells: 227 leader splits that kept 2-3 (leader 8+, from round 150); half of the team believes the true longest again after: median 27.5 rounds, quartiles 17 / 41; not within 60 rounds (or another split first): 109
+       5-round samples in between: the top believed id is dead 36%, other 36%, the top believed id is alive but shorter than half the true longest 28%
+
+--- whom our feeders die next to (all meow study games, sonar not needed)
+    maps of 1,200 cells or fewer: 3640 `noaction` deaths (12.6 a game)
+       next to the team's true longest                       1928 = 53% | their length 4931, pearls dropped 2799: the dragon next to them ate 76%, the final lineage ate 66%, the enemy 1%
+       no own dragon twice as long within 8 path steps        769 = 21% | their length 1822, pearls dropped 991: the dragon next to them ate 0%, the final lineage ate 8%, the enemy 6%
+       next to another own dragon under 8                     614 = 17% | their length 1300, pearls dropped 686: the dragon next to them ate 41%, the final lineage ate 16%, the enemy 2%
+       next to another own dragon of 8+                       329 = 9% | their length 812, pearls dropped 467: the dragon next to them ate 58%, the final lineage ate 24%, the enemy 2%
+    maps over 1,200 cells: 4895 `noaction` deaths (44.1 a game)
+       next to the team's true longest                       1704 = 35% | their length 4847, pearls dropped 2719: the dragon next to them ate 72%, the final lineage ate 49%, the enemy 3%
+       next to another own dragon of 8+                      1426 = 29% | their length 3665, pearls dropped 2067: the dragon next to them ate 68%, the final lineage ate 13%, the enemy 4%
+       next to another own dragon under 8                    1214 = 25% | their length 2599, pearls dropped 1385: the dragon next to them ate 48%, the final lineage ate 7%, the enemy 6%
+       no own dragon twice as long within 8 path steps        551 = 11% | their length 1586, pearls dropped 882: the dragon next to them ate 0%, the final lineage ate 4%, the enemy 15%
+    round-500 games with both queens dead, all maps: 5559 `noaction` deaths (38.9 a game)
+       next to the team's true longest                       2335 = 42% | their length 6356, pearls dropped 3592: the dragon next to them ate 73%, the final lineage ate 60%, the enemy 2%
+       next to another own dragon of 8+                      1273 = 23% | their length 3266, pearls dropped 1842: the dragon next to them ate 67%, the final lineage ate 14%, the enemy 4%
+       next to another own dragon under 8                    1119 = 20% | their length 2383, pearls dropped 1264: the dragon next to them ate 48%, the final lineage ate 9%, the enemy 4%
+       no own dragon twice as long within 8 path steps        832 = 15% | their length 2200, pearls dropped 1204: the dragon next to them ate 0%, the final lineage ate 7%, the enemy 12%

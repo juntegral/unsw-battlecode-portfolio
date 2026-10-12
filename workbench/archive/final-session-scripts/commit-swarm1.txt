@@ -1,0 +1,21 @@
+Wrap-up: final-week docs, tools and the analysis record that lived only on disk
+
+The contest ended on 2026-10-10. This brings into git what had been kept
+out of it since 10-06:
+
+- docs: session state log, handover of 10-09, Discord desk rules, promises.
+- tools: weak_watch, sweep_games, sweep_loop and edits to cx.sh, smoke.py,
+  pair_report.py.
+- data/ (ignored by default, added by hand here): the text part of the
+  analysts' work (reports, scripts, tables, briefs), the ladder and top-team
+  study scripts and reports, every uploaded bot folder with versions.tsv,
+  the notices posted to the team channel and the channel mirror. Replays,
+  per-game json, caches and worker logs stay out; replays are attached to
+  the release data-2026-10-10 as archives.
+- archive/: the last session's scripts and switch lists, the standing rules
+  given to the AI sessions (claude-memory, claude-rules).
+
+Keys (docs/api.txt, docs/discord.txt) are not included; the staged files
+were scanned for them and for token patterns.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>

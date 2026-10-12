@@ -1,0 +1,204 @@
+# Deaths per 1,000 head-rounds by frontier bin (bins 2; causes trap, rammed, ram); local sets on 128 common keys
+
+Cells: trap / rammed / ram per 1,000 head-rounds; HR = head-rounds in that bin (share of all head-rounds in the window).
+
+## Default/a
+
+| class | window | bin 2: trap / rammed / ram (HR, share) |
+| --- | --- | --- |
+| elite winners (N 1894) | all | 3.38 / 1.95 / 2.94 (11413551, 62%) |
+| elite winners | r50-374 | 3.35 / 2.06 / 3.20 (9444151, 63%) |
+| elite losers (N 1894) | all | 3.62 / 7.69 / 4.89 (4443274, 65%) |
+| elite losers | r50-374 | 3.73 / 8.20 / 5.32 (3680952, 67%) |
+| ours online W12 (stack11) (N 7) | all | 5.94 / 6.41 / 0.63 (6397, 56%) |
+| ours online W12 (stack11) | r50-374 | 7.23 / 8.01 / 0.78 (5118, 62%) |
+| top teams vs us online (N 168) | all | 3.41 / 0.21 / 0.79 (959131, 63%) |
+| top teams vs us online | r50-374 | 3.44 / 0.19 / 0.81 (855604, 65%) |
+| local hold (16 games) | all | 4.27 / 2.25 / 0.61 (58995, 67%) |
+| local hold (16 games) | r50-374 | 4.80 / 2.43 / 0.63 (46047, 71%) |
+| local hold (16 games) | r0-99 | 1.90 / 0.81 / 0.54 (7372, 52%) |
+| local holdall (16 games) | all | 4.55 / 1.92 / 0.72 (52730, 69%) |
+| local holdall (16 games) | r50-374 | 4.57 / 2.12 / 0.72 (40034, 73%) |
+| local holdall (16 games) | r0-99 | 2.14 / 1.60 / 0.36 (5611, 43%) |
+| local v14 (16 games) | all | 4.27 / 2.25 / 0.61 (58995, 67%) |
+| local v14 (16 games) | r50-374 | 4.80 / 2.43 / 0.63 (46047, 71%) |
+| local v14 (16 games) | r0-99 | 1.90 / 0.81 / 0.54 (7372, 52%) |
+| local v12 (16 games) | all | 4.37 / 2.43 / 0.42 (59762, 68%) |
+| local v12 (16 games) | r50-374 | 4.23 / 2.54 / 0.45 (44887, 71%) |
+| local v12 (16 games) | r0-99 | 1.42 / 1.26 / 0.32 (6337, 48%) |
+
+## Devil/a
+
+| class | window | bin 2: trap / rammed / ram (HR, share) |
+| --- | --- | --- |
+| elite winners (N 792) | all | 49.40 / 1.81 / 3.48 (1574482, 38%) |
+| elite winners | r50-374 | 51.46 / 1.07 / 2.00 (1338008, 38%) |
+| elite losers (N 792) | all | 40.66 / 32.52 / 17.24 (154312, 13%) |
+| elite losers | r50-374 | 45.47 / 25.23 / 13.96 (93762, 11%) |
+| ours online W12 (stack11) (N 6) | all | 15.04 / 22.56 / 7.52 (133, 2%) |
+| ours online W12 (stack11) | r50-374 | 0.00 / 51.72 / 17.24 (58, 1%) |
+| top teams vs us online (N 103) | all | 57.32 / 0.21 / 0.54 (244760, 33%) |
+| top teams vs us online | r50-374 | 59.50 / 0.17 / 0.37 (206365, 32%) |
+| local hold (16 games) | all | 12.35 / 28.81 / 8.23 (1215, 3%) |
+| local hold (16 games) | r50-374 | 12.50 / 56.25 / 31.25 (160, 0%) |
+| local hold (16 games) | r0-99 | 8.32 / 36.38 / 7.28 (962, 7%) |
+| local holdall (16 games) | all | 8.74 / 26.21 / 5.56 (1259, 3%) |
+| local holdall (16 games) | r50-374 | 0.00 / 32.09 / 10.70 (187, 1%) |
+| local holdall (16 games) | r0-99 | 5.02 / 33.10 / 6.02 (997, 7%) |
+| local v14 (16 games) | all | 12.40 / 31.89 / 4.43 (1129, 3%) |
+| local v14 (16 games) | r50-374 | 0.00 / 72.46 / 14.49 (138, 0%) |
+| local v14 (16 games) | r0-99 | 8.07 / 35.32 / 5.05 (991, 7%) |
+| local v12 (16 games) | all | 14.71 / 27.31 / 6.30 (476, 1%) |
+| local v12 (16 games) | r50-374 | 0.00 / 111.11 / 37.04 (27, 0%) |
+| local v12 (16 games) | r0-99 | 0.00 / 54.30 / 4.52 (221, 2%) |
+
+## Devil/b
+
+| class | window | bin 2: trap / rammed / ram (HR, share) |
+| --- | --- | --- |
+| elite winners (N 779) | all | 42.60 / 2.89 / 4.70 (1204775, 40%) |
+| elite winners | r50-374 | 44.40 / 1.96 / 3.28 (1031783, 40%) |
+| elite losers (N 779) | all | 31.59 / 34.58 / 21.79 (153462, 17%) |
+| elite losers | r50-374 | 34.87 / 36.64 / 22.57 (84984, 14%) |
+| ours online W12 (stack11) (N 1) | all | – / – / – (0, 0%) |
+| ours online W12 (stack11) | r50-374 | – / – / – (0, 0%) |
+| top teams vs us online (N 65) | all | 50.15 / 0.09 / 0.21 (162131, 35%) |
+| top teams vs us online | r50-374 | 51.31 / 0.07 / 0.10 (139364, 34%) |
+| local hold (16 games) | all | 8.87 / 22.33 / 5.58 (3045, 10%) |
+| local hold (16 games) | r50-374 | 5.21 / 41.67 / 6.25 (960, 5%) |
+| local hold (16 games) | r0-99 | 6.25 / 23.82 / 4.30 (2561, 26%) |
+| local holdall (16 games) | all | 8.32 / 23.07 / 6.05 (2644, 8%) |
+| local holdall (16 games) | r50-374 | 5.43 / 48.85 / 5.43 (737, 4%) |
+| local holdall (16 games) | r0-99 | 6.90 / 24.36 / 6.09 (2463, 25%) |
+| local v14 (16 games) | all | 7.92 / 17.82 / 7.92 (3031, 9%) |
+| local v14 (16 games) | r50-374 | 6.51 / 34.71 / 13.02 (922, 4%) |
+| local v14 (16 games) | r0-99 | 6.73 / 20.59 / 6.73 (2525, 23%) |
+| local v12 (16 games) | all | 8.13 / 23.23 / 1.16 (861, 2%) |
+| local v12 (16 games) | r50-374 | 3.29 / 32.89 / 3.29 (304, 1%) |
+| local v12 (16 games) | r0-99 | 3.06 / 27.57 / 1.53 (653, 5%) |
+
+## Schooltime/a
+
+| class | window | bin 2: trap / rammed / ram (HR, share) |
+| --- | --- | --- |
+| elite winners (N 1005) | all | 11.25 / 3.48 / 3.69 (14585937, 70%) |
+| elite winners | r50-374 | 11.56 / 3.87 / 4.02 (11721502, 71%) |
+| elite losers (N 1005) | all | 13.57 / 4.29 / 4.06 (12541147, 71%) |
+| elite losers | r50-374 | 14.14 / 4.62 / 4.47 (10197971, 72%) |
+| ours online W12 (stack11) (N 3) | all | 31.41 / 7.52 / 2.07 (5317, 45%) |
+| ours online W12 (stack11) | r50-374 | 32.99 / 8.05 / 2.21 (4971, 49%) |
+| top teams vs us online (N 96) | all | 11.00 / 0.28 / 0.60 (1146984, 68%) |
+| top teams vs us online | r50-374 | 10.76 / 0.30 / 0.61 (982553, 69%) |
+| local hold (16 games) | all | 7.16 / 1.63 / 0.59 (187477, 77%) |
+| local hold (16 games) | r50-374 | 7.20 / 1.92 / 0.55 (133335, 78%) |
+| local hold (16 games) | r0-99 | 15.34 / 1.77 / 0.42 (9585, 53%) |
+| local holdall (16 games) | all | 9.50 / 1.84 / 0.63 (167306, 80%) |
+| local holdall (16 games) | r50-374 | 9.54 / 2.43 / 0.62 (117070, 81%) |
+| local holdall (16 games) | r0-99 | 16.76 / 2.19 / 0.52 (9606, 55%) |
+| local v14 (16 games) | all | 7.60 / 1.63 / 0.68 (189797, 79%) |
+| local v14 (16 games) | r50-374 | 7.57 / 1.92 / 0.71 (138486, 80%) |
+| local v14 (16 games) | r0-99 | 12.19 / 2.16 / 0.59 (10175, 54%) |
+| local v12 (16 games) | all | 8.10 / 1.79 / 0.91 (151643, 73%) |
+| local v12 (16 games) | r50-374 | 7.69 / 2.13 / 0.89 (111237, 75%) |
+| local v12 (16 games) | r0-99 | 12.34 / 2.71 / 0.54 (7373, 42%) |
+
+## Schooltime/b
+
+| class | window | bin 2: trap / rammed / ram (HR, share) |
+| --- | --- | --- |
+| elite winners (N 978) | all | 3.39 / 1.72 / 2.29 (7838059, 60%) |
+| elite winners | r50-374 | 3.32 / 1.98 / 2.60 (6202007, 61%) |
+| elite losers (N 978) | all | 3.73 / 5.31 / 4.05 (3353081, 64%) |
+| elite losers | r50-374 | 3.87 / 5.74 / 4.44 (2796074, 65%) |
+| ours online W12 (stack11) (N 4) | all | 3.81 / 4.29 / 0.48 (8395, 54%) |
+| ours online W12 (stack11) | r50-374 | 4.47 / 4.92 / 0.30 (6706, 56%) |
+| top teams vs us online (N 72) | all | 3.81 / 0.20 / 0.46 (655230, 60%) |
+| top teams vs us online | r50-374 | 3.64 / 0.20 / 0.50 (540816, 61%) |
+| local hold (16 games) | all | 1.47 / 2.66 / 1.02 (46169, 60%) |
+| local hold (16 games) | r50-374 | 1.26 / 3.18 / 1.02 (34238, 62%) |
+| local hold (16 games) | r0-99 | 0.28 / 0.00 / 0.28 (3565, 33%) |
+| local holdall (16 games) | all | 1.65 / 2.61 / 0.78 (48597, 58%) |
+| local holdall (16 games) | r50-374 | 1.66 / 3.07 / 0.86 (36104, 60%) |
+| local holdall (16 games) | r0-99 | 0.90 / 0.60 / 0.30 (3332, 30%) |
+| local v14 (16 games) | all | 1.36 / 2.62 / 0.84 (59494, 67%) |
+| local v14 (16 games) | r50-374 | 1.23 / 3.06 / 0.85 (44759, 70%) |
+| local v14 (16 games) | r0-99 | 0.23 / 0.69 / 0.23 (4319, 40%) |
+| local v12 (16 games) | all | 1.61 / 2.41 / 0.87 (64700, 64%) |
+| local v12 (16 games) | r50-374 | 1.49 / 2.79 / 0.90 (47587, 68%) |
+| local v12 (16 games) | r0-99 | 0.59 / 0.00 / 0.30 (3379, 30%) |
+
+## Slithery Fight/a
+
+| class | window | bin 2: trap / rammed / ram (HR, share) |
+| --- | --- | --- |
+| elite winners (N 881) | all | 46.87 / 1.68 / 1.76 (4409720, 21%) |
+| elite winners | r50-374 | 46.06 / 1.83 / 1.90 (3516061, 21%) |
+| elite losers (N 881) | all | 48.80 / 1.86 / 1.78 (4097290, 20%) |
+| elite losers | r50-374 | 47.96 / 1.97 / 1.92 (3309352, 21%) |
+| ours online W12 (stack11) (N 5) | all | 25.56 / 6.82 / 1.28 (2347, 6%) |
+| ours online W12 (stack11) | r50-374 | 31.96 / 7.04 / 1.63 (1846, 5%) |
+| top teams vs us online (N 80) | all | 41.91 / 0.36 / 0.79 (389044, 21%) |
+| top teams vs us online | r50-374 | 41.65 / 0.39 / 0.85 (322278, 22%) |
+| local hold (16 games) | all | 22.23 / 8.35 / 2.25 (16416, 9%) |
+| local hold (16 games) | r50-374 | 25.07 / 9.77 / 2.46 (13403, 10%) |
+| local hold (16 games) | r0-99 | 11.68 / 5.19 / 0.49 (6165, 14%) |
+| local holdall (16 games) | all | 20.94 / 6.98 / 3.15 (20627, 13%) |
+| local holdall (16 games) | r50-374 | 22.68 / 8.78 / 3.41 (15256, 12%) |
+| local holdall (16 games) | r0-99 | 12.41 / 5.09 / 1.96 (7655, 17%) |
+| local v14 (16 games) | all | 22.23 / 8.35 / 2.25 (16416, 9%) |
+| local v14 (16 games) | r50-374 | 25.07 / 9.77 / 2.46 (13403, 10%) |
+| local v14 (16 games) | r0-99 | 11.68 / 5.19 / 0.49 (6165, 14%) |
+| local v12 (16 games) | all | 24.70 / 8.56 / 2.34 (14128, 9%) |
+| local v12 (16 games) | r50-374 | 28.96 / 10.57 / 2.57 (10876, 8%) |
+| local v12 (16 games) | r0-99 | 11.36 / 5.05 / 0.50 (3963, 9%) |
+
+## Slithery Fight/b
+
+| class | window | bin 2: trap / rammed / ram (HR, share) |
+| --- | --- | --- |
+| elite winners (N 938) | all | 45.63 / 1.84 / 1.90 (3925495, 18%) |
+| elite winners | r50-374 | 45.07 / 2.04 / 2.08 (3066239, 18%) |
+| elite losers (N 938) | all | 46.30 / 1.94 / 1.85 (3850339, 18%) |
+| elite losers | r50-374 | 45.59 / 2.06 / 1.99 (3086829, 19%) |
+| ours online W12 (stack11) (N 2) | all | 7.22 / 5.05 / 0.00 (1386, 11%) |
+| ours online W12 (stack11) | r50-374 | 7.85 / 5.49 / 0.00 (1274, 13%) |
+| top teams vs us online (N 88) | all | 40.39 / 0.25 / 0.44 (385606, 19%) |
+| top teams vs us online | r50-374 | 40.28 / 0.24 / 0.46 (315636, 19%) |
+| local hold (16 games) | all | 8.09 / 5.80 / 1.28 (18800, 10%) |
+| local hold (16 games) | r50-374 | 8.46 / 6.85 / 1.47 (14299, 10%) |
+| local hold (16 games) | r0-99 | 4.24 / 4.48 / 0.24 (4241, 11%) |
+| local holdall (16 games) | all | 10.66 / 4.77 / 1.19 (25146, 13%) |
+| local holdall (16 games) | r50-374 | 11.42 / 5.79 / 1.30 (19171, 13%) |
+| local holdall (16 games) | r0-99 | 11.47 / 3.82 / 0.32 (6277, 16%) |
+| local v14 (16 games) | all | 8.09 / 5.80 / 1.28 (18800, 10%) |
+| local v14 (16 games) | r50-374 | 8.46 / 6.85 / 1.47 (14299, 10%) |
+| local v14 (16 games) | r0-99 | 4.24 / 4.48 / 0.24 (4241, 11%) |
+| local v12 (16 games) | all | 8.51 / 5.85 / 2.29 (21379, 12%) |
+| local v12 (16 games) | r50-374 | 8.93 / 7.10 / 2.02 (16345, 12%) |
+| local v12 (16 games) | r0-99 | 5.92 / 5.67 / 0.77 (3883, 11%) |
+
+## Trophy/a
+
+| class | window | bin 2: trap / rammed / ram (HR, share) |
+| --- | --- | --- |
+| elite winners (N 1559) | all | 3.01 / 2.84 / 4.16 (3359662, 40%) |
+| elite winners | r50-374 | 3.05 / 2.79 / 3.95 (3001900, 39%) |
+| elite losers (N 1559) | all | 2.45 / 14.34 / 10.00 (1006423, 39%) |
+| elite losers | r50-374 | 2.56 / 14.58 / 10.48 (845749, 40%) |
+| ours online W12 (stack11) (N 7) | all | 10.20 / 10.20 / 0.93 (1078, 19%) |
+| ours online W12 (stack11) | r50-374 | 11.51 / 12.66 / 0.00 (869, 20%) |
+| top teams vs us online (N 168) | all | 2.57 / 0.20 / 0.92 (258737, 43%) |
+| top teams vs us online | r50-374 | 2.81 / 0.20 / 0.95 (227681, 42%) |
+| local hold (16 games) | all | 4.34 / 7.64 / 0.40 (12440, 50%) |
+| local hold (16 games) | r50-374 | 4.88 / 8.58 / 0.45 (11075, 51%) |
+| local hold (16 games) | r0-99 | 2.78 / 2.17 / 0.00 (6465, 51%) |
+| local holdall (16 games) | all | 5.16 / 6.98 / 0.56 (12608, 64%) |
+| local holdall (16 games) | r50-374 | 5.65 / 7.80 / 0.54 (11149, 67%) |
+| local holdall (16 games) | r0-99 | 3.50 / 2.91 / 0.44 (6862, 61%) |
+| local v14 (16 games) | all | 4.25 / 7.98 / 0.68 (13164, 54%) |
+| local v14 (16 games) | r50-374 | 4.75 / 8.90 / 0.68 (11792, 55%) |
+| local v14 (16 games) | r0-99 | 2.70 / 1.80 / 0.30 (6655, 52%) |
+| local v12 (16 games) | all | 3.41 / 9.61 / 0.50 (9985, 44%) |
+| local v12 (16 games) | r50-374 | 3.52 / 10.23 / 0.53 (9388, 48%) |
+| local v12 (16 games) | r0-99 | 2.28 / 1.14 / 0.00 (4390, 38%) |
+

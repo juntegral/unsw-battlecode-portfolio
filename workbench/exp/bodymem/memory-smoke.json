@@ -1,0 +1,232 @@
+{
+  "file": "exp/bodyx/on/games/proxy4_king_big_empty_A_1/game.replay",
+  "side": "A",
+  "checks": {
+    "sim": 0,
+    "splits": 0,
+    "drops": 0,
+    "eatTC": 0,
+    "ledger": 0,
+    "final": 0,
+    "lineage": 0,
+    "natBal": 0,
+    "dropBal": 0,
+    "unknownDeath": 0
+  },
+  "uncertain": {
+    "missingCountdown": 0,
+    "ambiguousFacing": 0
+  },
+  "scope": "native diagnostics with common observed input and forced recorded past actions; not a judge-clock or three-round causal gate",
+  "arms": {
+    "on": {
+      "turns": 80,
+      "startDrift": [
+        {
+          "round": 334,
+          "id": 164,
+          "body": [
+            200,
+            201,
+            137,
+            136,
+            135,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78
+          ],
+          "post": [
+            134,
+            198,
+            199,
+            200,
+            201,
+            137,
+            136,
+            135,
+            71,
+            72,
+            73,
+            74,
+            75
+          ],
+          "choice": "WWN",
+          "indicator": "WWN v3.3 d7 L13 bodyx4,0,13,0,3169868716,4244214118,0 esc",
+          "score": 3.29188,
+          "native": true
+        },
+        {
+          "round": 453,
+          "id": 329,
+          "body": [
+            4060,
+            28,
+            27,
+            26,
+            25,
+            24,
+            23,
+            22,
+            21
+          ],
+          "post": [
+            4061,
+            4060,
+            28,
+            27,
+            26,
+            25,
+            24,
+            23,
+            22
+          ],
+          "choice": "E",
+          "indicator": "E v5.0 d7 L9",
+          "score": 4.98012,
+          "native": true
+        },
+        {
+          "round": 454,
+          "id": 329,
+          "body": [
+            4061,
+            4060,
+            28,
+            27,
+            26,
+            25,
+            24,
+            23,
+            22
+          ],
+          "post": [
+            93,
+            29,
+            4061,
+            4060,
+            28,
+            27,
+            26,
+            25,
+            24
+          ],
+          "choice": "SS",
+          "indicator": "SS v4.9 d7 L9 bodyx3,0,9,0,3425777001,777847430,0 g5 gh",
+          "score": 4.89831,
+          "native": true
+        }
+      ],
+      "choicesReproduced": 79
+    },
+    "off": {
+      "turns": 80,
+      "startDrift": [
+        {
+          "round": 334,
+          "id": 164,
+          "body": [
+            200,
+            201,
+            137,
+            136,
+            135,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78
+          ],
+          "post": [
+            200,
+            201,
+            137,
+            136,
+            135,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78
+          ],
+          "choice": "WWN",
+          "indicator": "WWN v3.3 d7 L13 bodyx4,0,13,0,3169868716,4244214118,0 esc",
+          "score": 3.29188,
+          "native": true
+        },
+        {
+          "round": 453,
+          "id": 329,
+          "body": [
+            4060,
+            28,
+            27,
+            26,
+            25,
+            24,
+            23,
+            22,
+            21
+          ],
+          "post": [
+            4060,
+            28,
+            27,
+            26,
+            25,
+            24,
+            23,
+            22,
+            21
+          ],
+          "choice": "E",
+          "indicator": "E v5.0 d7 L9",
+          "score": 4.98012,
+          "native": true
+        },
+        {
+          "round": 454,
+          "id": 329,
+          "body": [
+            4061,
+            4060,
+            28,
+            27,
+            26,
+            25,
+            24,
+            23,
+            22
+          ],
+          "post": [
+            4061,
+            4060,
+            28,
+            27,
+            26,
+            25,
+            24,
+            23,
+            22
+          ],
+          "choice": "SS",
+          "indicator": "SS v4.9 d7 L9 bodyx3,0,9,0,3425777001,777847430,0 g5 gh",
+          "score": 4.89831,
+          "native": true
+        }
+      ],
+      "choicesReproduced": 79
+    }
+  },
+  "changed": []
+}

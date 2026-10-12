@@ -1,0 +1,21 @@
+our cuts of a boxed-in queen of 6 or more: 39 by map: {'Slithery Fight': 31, 'Maze': 4, 'Prisoners Dilemma': 1, 'Trauma': 2, 'Default': 1} {('Slithery Fight', 'round 0-5'): 29, ('Slithery Fight', 'later'): 2, ('Maze', 'later'): 4, ('Prisoners Dilemma', 'later'): 1, ('Trauma', 'later'): 2, ('Default', 'later'): 1}
+the ones after round 5, one by one:
+   round 90  game 1023830 Prisoners Dilemma queen  6 long keeps 2; she died 1 rounds later (wall); game lost (rounds 208); enemy queen alive at the end: True (length 2)
+   round 106 game 1023828 Maze            queen  6 long keeps 2; she died 1 rounds later (wall); game WON (rounds 500); enemy queen alive at the end: False (length 0)
+   round 127 game 1063013 Maze            queen  6 long keeps 2; she died 1 rounds later (wall); game WON (rounds 500); enemy queen alive at the end: False (length 0)
+   round 286 game 1069661 Slithery Fight  queen 36 long keeps 2; she died 22 rounds later (headon); game lost (rounds 500); enemy queen alive at the end: False (length 0)
+   round 347 game 1045196 Default         queen 15 long keeps 2; she died 1 rounds later (body); game WON (rounds 500); enemy queen alive at the end: False (length 0)
+   round 358 game 1068682 Maze            queen 61 long keeps 2; she died 32 rounds later (body); game lost (rounds 500); enemy queen alive at the end: True (length 109)
+   round 377 game 1067915 Trauma          queen 17 long keeps 2; she died None rounds later (alive); game lost (rounds 500); enemy queen alive at the end: True (length 33)
+   round 385 game 990346 Slithery Fight  queen 57 long keeps 2; she died 1 rounds later (body); game lost (rounds 500); enemy queen alive at the end: True (length 3)
+   round 389 game 1068682 Maze            queen 17 long keeps 2; she died 1 rounds later (body); game lost (rounds 500); enemy queen alive at the end: True (length 109)
+   round 457 game 1044207 Trauma          queen 32 long keeps 2; she died 1 rounds later (body); game lost (rounds 500); enemy queen alive at the end: True (length 36)
+the 29 cuts in rounds 0-5: she died within 5 rounds in 10, within 20 in 10, later in 19, alive at the end in 0; games won 5
+
+Slithery Fight (the queen starts as a 25-long coil): first action of each queen and her fate
+   meow           games 47  {'first split keeps 2, child 4+': 47} | queen dead by round 10: 13, by round 100: 20, alive at the end: 0 | games won 14
+   Vibing++       games 28  {'first split keeps 3, child 4+': 28} | queen dead by round 10: 0, by round 100: 5, alive at the end: 9 | games won 14
+   SSS            games 43  {'first split keeps 4+, child 2': 43} | queen dead by round 10: 0, by round 100: 0, alive at the end: 16 | games won 29
+   forgot         games 35  {'first split keeps 4+, child 2': 35} | queen dead by round 10: 0, by round 100: 3, alive at the end: 23 | games won 20
+   test4          games 18  {'first split keeps 4+, child 4+': 18} | queen dead by round 10: 2, by round 100: 2, alive at the end: 10 | games won 12
+   WeHaveQuizzes  games 12  {'first split keeps 2, child 4+': 12} | queen dead by round 10: 0, by round 100: 0, alive at the end: 2 | games won 10

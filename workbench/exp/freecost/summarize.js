@@ -1,0 +1,11 @@
+'use strict';
+const fs=require('fs');
+const a=JSON.parse(fs.readFileSync('exp/freecost/analysis.json'));
+const sum=(rows)=>{const o={games:rows.length,turnsL5:0,freeMulti:0,completedFreeMulti:0,self:0,wall:0,queenDeaths:0,predicted:0,unknownBodies:0,blindUnverified:0,missingTags:0,knownBodyDrift:0,uncertainBodyDrift:0,oracleDrift:0,oversprint:0,invalidAction:0,cpuMaxM:0,cpuMissing:0,checks:{},bands:{}};for(const x of rows){for(const k of ['turnsL5','freeMulti','completedFreeMulti','self','wall','predicted','unknownBodies','blindUnverified','missingTags','oversprint','invalidAction'])o[k]+=x[k];for(const k of ['knownBodyDrift','uncertainBodyDrift','oracleDrift'])o[k]+=x[k].length;o.queenDeaths+=!!x.death;o.cpuMaxM=Math.max(o.cpuMaxM,x.cpuMaxM||0);o.cpuMissing+=x.cpuMaxM===null;for(const[k,v]of Object.entries(x.checks))o.checks[k]=(o.checks[k]||0)+v;for(const[k,v]of Object.entries(x.bands)){const b=o.bands[k]||(o.bands[k]={turns:0,freeMulti:0});b.turns+=v.turns;b.freeMulti+=v.freeMulti;}}o.rate=o.freeMulti/o.turnsL5;return o;};
+const s={sets:{},maps:{},sides:{},opponents:{},pairs:a.pairs,regressions:[],drifts:[]};
+for(const [set,rows]of Object.entries(a.sets))s.sets[set]=sum(Object.values(rows));
+for(const group of ['maps','sides','opponents']){const part={maps:1,sides:2,opponents:0}[group];for(const set of ['on','off'])for(const [key,row]of Object.entries(a.sets[set])){const g=key.split(':')[part];(s[group][g]||(s[group][g]={}))[set]=(s[group][g][set]||[]).concat(row);}for(const g of Object.keys(s[group]))for(const set of ['on','off'])s[group][g][set]=sum(s[group][g][set]);}
+for(const p of a.pairs)if(p.selfDelta>0||p.wallDelta>0||p.queenDeathDelta>0||p.queenEarlier){const on=a.sets.on[p.key],off=a.sets.off[p.key];s.regressions.push({...p,onDeath:on.death,offDeath:off.death,onSW:on.deaths.filter(x=>['S','W'].includes(x.reason)),offSW:off.deaths.filter(x=>['S','W'].includes(x.reason))});}
+for(const [key,row]of Object.entries(a.sets.on))for(const kind of ['knownBodyDrift','uncertainBodyDrift','oracleDrift'])for(const x of row[kind])s.drifts.push({key,kind,...x});
+fs.writeFileSync('exp/freecost/summary.json',JSON.stringify(s,null,2)+'\n');
+console.log(JSON.stringify({sets:s.sets,regressions:s.regressions,drifts:s.drifts},null,2));

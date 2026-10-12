@@ -1,0 +1,5 @@
+switch: FREECOST_ON=false (bot-on만 true; Q2D_FREESTEP_ON/Q2DQ_ON=false 유지)
+files: versions/v1.8/bot/{params.hpp,plan.hpp,plan.cpp,main.cpp,world.hpp,world.cpp}, versions/v1.8/VERSION.md, exp/freecost/{bot-base,bot-on,bot-off,spec.json,runq.js,ANALYZE.md,analyze.js,build.py,fixtures.cpp,check-fixtures.py,validate.py,compile-check.json,validation.json,analysis-smoke.json,compiled,build-cache,fixtures-*,*.log,edit.py,BUILD.txt}
+spec: exp/freecost/spec.json; 160 games (68 on/off pairs + 12 off/base identity pairs)
+run: node exp/freecost/runq.js exp/freecost/spec.json --jobs 3 --cap 6; UNSW_RULES=123 node exp/freecost/analyze.js > exp/freecost/analysis.txt
+risk: 부분 관측의 몸/진주·blind 예측은 따로 검증; 기존 후보/위협 관문 유지; on 몸 해시의 CPU 및 실제 사망/기보 drift는 실행 뒤 확인; BUILD 게임 0·off WASM 바이트 동일

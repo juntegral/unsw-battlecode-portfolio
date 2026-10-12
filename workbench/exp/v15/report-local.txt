@@ -1,0 +1,67 @@
+# v1.4 local report: v15 vs v13 vs v14 vs v12 (same keys: 32)
+
+## Opening metrics against the elite winners (opening-book.md)
+
+| map | set | games | r0-10 splits/game | first middle r (arrived/N) | r10 middle share | r25 middle share | r25 heads | r25 bins 0-4 | r50 middle share | r50 heads |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Slithery Fight/a | elite winners | study | 23.81 | 6.42 | 3.2% | 17.5% | 31.1 | 16/7/4/1/0 \| 16/9/7/0/0 | 19.6% | 47.1 |
+| Slithery Fight/a | v15 | 16 | 19.6 | 3.0 (16/16) | 2.2% | 13.8% | 25.8 | 290/66/57/0/0 | 12.5% | 35.6 |
+| Slithery Fight/a | v13 | 16 | 11.1 | 3.0 (16/16) | 4.9% | 9.2% | 21.8 | 248/67/32/1/1 | 9.5% | 34.9 |
+| Slithery Fight/a | v14 | 16 | 18.1 | 3.0 (16/16) | 3.5% | 18.6% | 23.1 | 212/82/69/6/1 | 12.4% | 29.7 |
+| Slithery Fight/a | v12 | 16 | 8.9 | 3.0 (16/16) | 8.5% | 13.8% | 19.5 | 190/73/43/4/2 | 8.2% | 28.9 |
+| Slithery Fight/b | elite winners | study | 23.68 | 6.54 | 3.4% | 18.1% | 30.1 | 15/9/6/0/1 \| 15/9/6/0/0 | 20.8% | 43.5 |
+| Slithery Fight/b | v15 | 16 | 21.8 | 3.0 (16/16) | 3.9% | 12.5% | 26.4 | 276/92/53/2/0 | 10.3% | 33.4 |
+| Slithery Fight/b | v13 | 16 | 11.0 | 3.0 (16/16) | 4.4% | 8.8% | 23.4 | 264/74/33/3/0 | 12.0% | 35.0 |
+| Slithery Fight/b | v14 | 16 | 19.9 | 3.0 (16/16) | 3.1% | 21.4% | 21.3 | 202/58/73/5/3 | 15.8% | 25.8 |
+| Slithery Fight/b | v12 | 16 | 8.9 | 3.0 (16/16) | 9.9% | 16.8% | 17.8 | 165/70/48/2/0 | 13.5% | 26.3 |
+
+## Chain after the opening: middle share (bin 2) and enemy bins (3-4) at r25-r100, heads, intake, early rammed deaths
+
+| map | set | mid r25 / r50 / r75 / r100 | enemy bins r50 / r100 | heads r50 / r100 | intake r0-49 / r0-99 | rammed / ram / trap deaths r0-99 per game |
+| --- | --- | --- | --- | --- | --- | --- |
+| Slithery Fight/a | elite winners | 17.5% / 19.6% / – / 20.5% | 2.3% / 2.6% | 47.1 / 59.3 | – | – |
+| Slithery Fight/a | elite losers | 17.5% / 19.7% / – / 20.3% | 2.4% / 2.7% | 45.1 / 57.2 | – | – |
+| Slithery Fight/a | v15 | 13.8% / 12.5% / 8.2% / 9.0% | 0.2% / 0.0% | 35.6 / 45.1 | 87.7 / 180.2 | 6.4 / 0.9 / 76.9 |
+| Slithery Fight/a | v13 | 9.2% / 9.5% / 6.1% / 5.0% | 0.0% / 0.0% | 34.9 / 43.9 | 82.7 / 167.6 | 6.3 / 0.6 / 72.6 |
+| Slithery Fight/a | v14 | 18.6% / 12.4% / 13.2% / 18.3% | 0.8% / 0.5% | 29.7 / 40.7 | 48.3 / 101.6 | 5.2 / 0.6 / 17.3 |
+| Slithery Fight/a | v12 | 13.8% / 8.2% / 6.9% / 14.4% | 0.4% / 0.3% | 28.9 / 39.2 | 42.9 / 87.2 | 4.1 / 0.1 / 13.6 |
+| Slithery Fight/b | elite winners | 17.9% / 20.8% / – / 19.1% | 2.4% / 3.1% | 43.3 / 53.8 | – | – |
+| Slithery Fight/b | elite losers | 18.2% / 21.1% / – / 19.5% | 2.5% / 3.0% | 42.1 / 52.3 | – | – |
+| Slithery Fight/b | v15 | 12.5% / 10.3% / 4.1% / 1.6% | 0.2% / 0.0% | 33.4 / 31.7 | 84.3 / 140.7 | 6.4 / 0.8 / 73.9 |
+| Slithery Fight/b | v13 | 8.8% / 12.0% / 4.1% / 1.6% | 0.2% / 0.2% | 35.0 / 35.9 | 78.4 / 139.1 | 6.4 / 0.9 / 65.8 |
+| Slithery Fight/b | v14 | 21.4% / 15.8% / 5.5% / 7.9% | 1.0% / 0.2% | 25.8 / 26.2 | 38.1 / 49.6 | 3.9 / 0.4 / 11.3 |
+| Slithery Fight/b | v12 | 16.8% / 13.5% / 9.2% / 7.0% | 0.0% / 0.0% | 26.3 / 27.8 | 33.3 / 47.7 | 3.4 / 0.6 / 10.0 |
+
+## Outcome and chain (same keys)
+
+| map | set | games | wins | eliminated | final longest mean / median (theirs) | units r50 / r100 | intake ours / theirs | deaths trap / rammed / ram / enemyBody |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Slithery Fight/a | v15 | 16 | 4 | 0 | 29.9 / 29.5 (38.5) | 35.6 / 45.1 | 424.7 / 1628.0 | 3261 / 381 / 134 / 0 |
+| Slithery Fight/a | v13 | 16 | 2 | 0 | 30.1 / 33.5 (39.5) | 34.9 / 43.9 | 387.6 / 1689.2 | 2937 / 351 / 109 / 0 |
+| Slithery Fight/a | v14 | 16 | 2 | 0 | 26.3 / 24.5 (38.3) | 29.7 / 40.7 | 225.3 / 1648.9 | 827 / 329 / 94 / 0 |
+| Slithery Fight/a | v12 | 16 | 3 | 0 | 26.3 / 26.5 (37.5) | 28.9 / 39.2 | 205.3 / 1673.9 | 725 / 288 / 75 / 0 |
+| Slithery Fight/b | v15 | 16 | 3 | 0 | 21.7 / 22.0 (33.8) | 33.4 / 31.7 | 323.1 / 1488.4 | 2219 / 361 / 99 / 0 |
+| Slithery Fight/b | v13 | 16 | 1 | 0 | 23.6 / 24.5 (36.1) | 35.0 / 35.9 | 342.4 / 1467.2 | 2292 / 370 / 91 / 0 |
+| Slithery Fight/b | v14 | 16 | 0 | 0 | 18.6 / 19.0 (36.1) | 25.8 / 26.2 | 205.6 / 1427.3 | 548 / 299 / 85 / 0 |
+| Slithery Fight/b | v12 | 16 | 0 | 0 | 18.5 / 17.5 (37.9) | 26.3 / 27.8 | 195.7 / 1448.3 | 527 / 315 / 106 / 0 |
+| all | v15 | 32 | 7 | 0 | 25.8 / 26.0 (36.2) | 34.5 / 38.4 | 373.9 / 1558.2 | 5480 / 742 / 233 / 0 |
+| all | v13 | 32 | 3 | 0 | 26.8 / 28.5 (37.8) | 35.0 / 39.9 | 365.0 / 1578.2 | 5229 / 721 / 200 / 0 |
+| all | v14 | 32 | 2 | 0 | 22.5 / 21.5 (37.2) | 27.7 / 33.4 | 215.4 / 1538.1 | 1375 / 628 / 179 / 0 |
+| all | v12 | 32 | 3 | 0 | 22.4 / 23.0 (37.7) | 27.6 / 33.5 | 200.5 / 1561.1 | 1252 / 603 / 181 / 0 |
+
+## Paired (first set minus second, same key)
+
+
+## Module tags (processes with a role; hand-back reasons and their mean round)
+
+| map | set | role processes / game | scheduled splits / game | hand-back: reason n (mean round) |
+| --- | --- | --- | --- | --- |
+| Slithery Fight/a | v15 | 5.5 | 9.2 | e 38 (10.8), n 3538 (152.2) |
+| Slithery Fight/a | v14 | 5.5 | 8.8 | e 40 (10.8), n 1603 (131.7) |
+| Slithery Fight/b | v15 | 6.5 | 8.1 | e 56 (8.5), n 2472 (143.6) |
+| Slithery Fight/b | v14 | 6.5 | 7.8 | e 56 (8.6), n 1243 (166.1) |
+
+## Hold phase tags (processes that held; end reasons, mean round)
+
+| map | set | holding processes / game | holding turns / game | ends: reason n (mean round) |
+| --- | --- | --- | --- | --- |

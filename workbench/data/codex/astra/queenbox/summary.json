@@ -1,0 +1,1621 @@
+{
+  "games": 166,
+  "excluded": 30,
+  "boxed": 46,
+  "zero_exit": 46,
+  "small": 33,
+  "existing": 13,
+  "near": 34,
+  "ally": 15,
+  "child": 5,
+  "ally_alternatives": 3,
+  "delta_deaths": 11,
+  "delta_turns": 37,
+  "delta_pearls": 13,
+  "delta_pearl_alternatives": 0,
+  "ally_closure_pearls": 4,
+  "queen_pearls": 1748,
+  "queen_turns": 30004,
+  "facts": [
+    {
+      "game": 1460558,
+      "near": false,
+      "ally": true,
+      "eligible": true,
+      "child": false,
+      "alt": [],
+      "delta_rounds": [],
+      "earlier_rounds": [],
+      "last_move": 181,
+      "last_move_choice": {
+        "d": "S",
+        "cell": [
+          26,
+          8
+        ],
+        "pearl": false,
+        "room": 865.0,
+        "tail": true,
+        "known": 6,
+        "dead": false,
+        "penalty": 0,
+        "s1": true,
+        "s2": true,
+        "s3": true
+      },
+      "closure_round": 182,
+      "closure_actor": 202,
+      "actor_pearls": 0,
+      "queen_gate": true
+    },
+    {
+      "game": 1460566,
+      "near": true,
+      "ally": true,
+      "eligible": true,
+      "child": true,
+      "alt": [],
+      "delta_rounds": [],
+      "earlier_rounds": [],
+      "last_move": 78,
+      "last_move_choice": {
+        "d": "W",
+        "cell": [
+          15,
+          13
+        ],
+        "pearl": false,
+        "room": 6,
+        "tail": true,
+        "known": 7,
+        "dead": false,
+        "penalty": 6000,
+        "s1": true,
+        "s2": true,
+        "s3": true
+      },
+      "closure_round": 79,
+      "closure_actor": 74,
+      "actor_pearls": 1,
+      "queen_gate": false
+    },
+    {
+      "game": 1460568,
+      "near": true,
+      "ally": false,
+      "eligible": false,
+      "child": false,
+      "alt": [
+        {
+          "d": "E",
+          "cell": [
+            10,
+            6
+          ],
+          "pearl": false,
+          "queen_exits": [
+            [
+              11,
+              6
+            ],
+            [
+              10,
+              7
+            ]
+          ],
+          "self_exits": 2,
+          "portal": false
+        }
+      ],
+      "delta_rounds": [],
+      "earlier_rounds": [],
+      "last_move": 160,
+      "last_move_choice": null,
+      "closure_round": 160,
+      "closure_actor": 0,
+      "actor_pearls": 1,
+      "queen_gate": false
+    },
+    {
+      "game": 1461128,
+      "near": false,
+      "ally": false,
+      "eligible": false,
+      "child": false,
+      "alt": [],
+      "delta_rounds": [
+        82,
+        85
+      ],
+      "earlier_rounds": [
+        85
+      ],
+      "last_move": 86,
+      "last_move_choice": {
+        "d": "E",
+        "cell": [
+          32,
+          5
+        ],
+        "pearl": true,
+        "room": 1,
+        "tail": false,
+        "known": 1,
+        "dead": true,
+        "penalty": 13600,
+        "s1": false,
+        "s2": false,
+        "s3": false
+      },
+      "closure_round": 86,
+      "closure_actor": 0,
+      "actor_pearls": 1,
+      "queen_gate": false
+    },
+    {
+      "game": 1461131,
+      "near": false,
+      "ally": false,
+      "eligible": false,
+      "child": false,
+      "alt": [],
+      "delta_rounds": [],
+      "earlier_rounds": [],
+      "last_move": 81,
+      "last_move_choice": {
+        "d": "E",
+        "cell": [
+          31,
+          15
+        ],
+        "pearl": true,
+        "room": 1,
+        "tail": false,
+        "known": 1,
+        "dead": true,
+        "penalty": 13600,
+        "s1": false,
+        "s2": false,
+        "s3": false
+      },
+      "closure_round": 81,
+      "closure_actor": 1,
+      "actor_pearls": 1,
+      "queen_gate": true
+    },
+    {
+      "game": 1461132,
+      "near": true,
+      "ally": false,
+      "eligible": false,
+      "child": false,
+      "alt": [],
+      "delta_rounds": [],
+      "earlier_rounds": [],
+      "last_move": 82,
+      "last_move_choice": {
+        "d": "E",
+        "cell": [
+          17,
+          10
+        ],
+        "pearl": true,
+        "room": 1,
+        "tail": false,
+        "known": 1,
+        "dead": true,
+        "penalty": 13600,
+        "s1": false,
+        "s2": false,
+        "s3": false
+      },
+      "closure_round": 82,
+      "closure_actor": 0,
+      "actor_pearls": 1,
+      "queen_gate": false
+    },
+    {
+      "game": 1461133,
+      "near": true,
+      "ally": false,
+      "eligible": false,
+      "child": false,
+      "alt": [],
+      "delta_rounds": [
+        87
+      ],
+      "earlier_rounds": [
+        87
+      ],
+      "last_move": 90,
+      "last_move_choice": {
+        "d": "N",
+        "cell": [
+          13,
+          1
+        ],
+        "pearl": true,
+        "room": 1,
+        "tail": false,
+        "known": 1,
+        "dead": true,
+        "penalty": 13600,
+        "s1": false,
+        "s2": false,
+        "s3": false
+      },
+      "closure_round": 90,
+      "closure_actor": 1,
+      "actor_pearls": 1,
+      "queen_gate": false
+    },
+    {
+      "game": 1461139,
+      "near": true,
+      "ally": true,
+      "eligible": true,
+      "child": false,
+      "alt": [],
+      "delta_rounds": [],
+      "earlier_rounds": [],
+      "last_move": 90,
+      "last_move_choice": {
+        "d": "N",
+        "cell": [
+          23,
+          3
+        ],
+        "pearl": false,
+        "room": 355.5,
+        "tail": true,
+        "known": 6,
+        "dead": false,
+        "penalty": 0,
+        "s1": true,
+        "s2": true,
+        "s3": true
+      },
+      "closure_round": 91,
+      "closure_actor": 76,
+      "actor_pearls": 0,
+      "queen_gate": false
+    },
+    {
+      "game": 1461141,
+      "near": true,
+      "ally": false,
+      "eligible": false,
+      "child": false,
+      "alt": [],
+      "delta_rounds": [],
+      "earlier_rounds": [],
+      "last_move": 115,
+      "last_move_choice": {
+        "d": "S",
+        "cell": [
+          8,
+          1
+        ],
+        "pearl": true,
+        "room": 1,
+        "tail": false,
+        "known": 1,
+        "dead": true,
+        "penalty": 13600,
+        "s1": false,
+        "s2": false,
+        "s3": false
+      },
+      "closure_round": 115,
+      "closure_actor": 1,
+      "actor_pearls": 1,
+      "queen_gate": false
+    },
+    {
+      "game": 1462980,
+      "near": true,
+      "ally": false,
+      "eligible": false,
+      "child": false,
+      "alt": [],
+      "delta_rounds": [
+        95,
+        98
+      ],
+      "earlier_rounds": [
+        98
+      ],
+      "last_move": 100,
+      "last_move_choice": {
+        "d": "E",
+        "cell": [
+          32,
+          5
+        ],
+        "pearl": true,
+        "room": 1,
+        "tail": false,
+        "known": 1,
+        "dead": true,
+        "penalty": 13200,
+        "s1": false,
+        "s2": false,
+        "s3": false
+      },
+      "closure_round": 100,
+      "closure_actor": 0,
+      "actor_pearls": 1,
+      "queen_gate": false
+    },
+    {
+      "game": 1462982,
+      "near": true,
+      "ally": true,
+      "eligible": true,
+      "child": false,
+      "alt": [
+        {
+          "d": "E",
+          "cell": [
+            19,
+            7
+          ],
+          "pearl": false,
+          "queen_exits": [
+            [
+              17,
+              7
+            ]
+          ],
+          "self_exits": 1,
+          "portal": false
+        }
+      ],
+      "delta_rounds": [],
+      "earlier_rounds": [],
+      "last_move": 77,
+      "last_move_choice": {
+        "d": "E",
+        "cell": [
+          16,
+          7
+        ],
+        "pearl": false,
+        "room": 1238.0,
+        "tail": true,
+        "known": 6,
+        "dead": false,
+        "penalty": 0,
+        "s1": true,
+        "s2": true,
+        "s3": true
+      },
+      "closure_round": 77,
+      "closure_actor": 102,
+      "actor_pearls": 0,
+      "queen_gate": true
+    },
+    {
+      "game": 1462984,
+      "near": true,
+      "ally": false,
+      "eligible": false,
+      "child": false,
+      "alt": [],
+      "delta_rounds": [
+        47
+      ],
+      "earlier_rounds": [],
+      "last_move": 54,
+      "last_move_choice": {
+        "d": "S",
+        "cell": [
+          2,
+          1
+        ],
+        "pearl": true,
+        "room": 1,
+        "tail": false,
+        "known": 1,
+        "dead": true,
+        "penalty": 13600,
+        "s1": false,
+        "s2": false,
+        "s3": false
+      },
+      "closure_round": 54,
+      "closure_actor": 0,
+      "actor_pearls": 1,
+      "queen_gate": false
+    },
+    {
+      "game": 1462985,
+      "near": true,
+      "ally": true,
+      "eligible": true,
+      "child": false,
+      "alt": [],
+      "delta_rounds": [],
+      "earlier_rounds": [],
+      "last_move": 65,
+      "last_move_choice": {
+        "d": "N",
+        "cell": [
+          22,
+          9
+        ],
+        "pearl": false,
+        "room": 2,
+        "tail": false,
+        "known": 2,
+        "dead": true,
+        "penalty": 12800,
+        "s1": true,
+        "s2": false,
+        "s3": false
+      },
+      "closure_round": 65,
+      "closure_actor": 3,
+      "actor_pearls": 0,
+      "queen_gate": false
+    },
+    {
+      "game": 1462990,
+      "near": true,
+      "ally": false,
+      "eligible": false,
+      "child": false,
+      "alt": [],
+      "delta_rounds": [],
+      "earlier_rounds": [],
+      "last_move": 74,
+      "last_move_choice": {
+        "d": "W",
+        "cell": [
+          19,
+          6
+        ],
+        "pearl": true,
+        "room": 1,
+        "tail": false,
+        "known": 1,
+        "dead": true,
+        "penalty": 13600,
+        "s1": false,
+        "s2": false,
+        "s3": false
+      },
+      "closure_round": 74,
+      "closure_actor": 0,
+      "actor_pearls": 1,
+      "queen_gate": true
+    },
+    {
+      "game": 1462993,
+      "near": true,
+      "ally": false,
+      "eligible": false,
+      "child": false,
+      "alt": [
+        {
+          "d": "S",
+          "cell": [
+            26,
+            15
+          ],
+          "pearl": false,
+          "queen_exits": [
+            [
+              27,
+              15
+            ],
+            [
+              25,
+              15
+            ]
+          ],
+          "self_exits": 2,
+          "portal": false
+        }
+      ],
+      "delta_rounds": [],
+      "earlier_rounds": [],
+      "last_move": 31,
+      "last_move_choice": null,
+      "closure_round": 31,
+      "closure_actor": 1,
+      "actor_pearls": 1,
+      "queen_gate": false
+    },
+    {
+      "game": 1465492,
+      "near": true,
+      "ally": false,
+      "eligible": false,
+      "child": false,
+      "alt": [],
+      "delta_rounds": [],
+      "earlier_rounds": [],
+      "last_move": 154,
+      "last_move_choice": {
+        "d": "W",
+        "cell": [
+          16,
+          2
+        ],
+        "pearl": false,
+        "room": 1,
+        "tail": false,
+        "known": 1,
+        "dead": true,
+        "penalty": 13600,
+        "s1": false,
+        "s2": false,
+        "s3": false
+      },
+      "closure_round": 154,
+      "closure_actor": 0,
+      "actor_pearls": 0,
+      "queen_gate": false
+    },
+    {
+      "game": 1465493,
+      "near": true,
+      "ally": false,
+      "eligible": false,
+      "child": false,
+      "alt": [
+        {
+          "d": "N",
+          "cell": [
+            17,
+            30
+          ],
+          "pearl": false,
+          "queen_exits": [
+            [
+              18,
+              30
+            ],
+            [
+              16,
+              30
+            ]
+          ],
+          "self_exits": 2,
+          "portal": false
+        }
+      ],
+      "delta_rounds": [],
+      "earlier_rounds": [],
+      "last_move": 104,
+      "last_move_choice": {
+        "d": "N",
+        "cell": [
+          17,
+          30
+        ],
+        "pearl": false,
+        "room": 2283.0,
+        "tail": true,
+        "known": 5,
+        "dead": false,
+        "penalty": 0,
+        "s1": true,
+        "s2": true,
+        "s3": true
+      },
+      "closure_round": 104,
+      "closure_actor": 1,
+      "actor_pearls": 0,
+      "queen_gate": true
+    },
+    {
+      "game": 1465494,
+      "near": true,
+      "ally": false,
+      "eligible": false,
+      "child": false,
+      "alt": [
+        {
+          "d": "N",
+          "cell": [
+            19,
+            11
+          ],
+          "pearl": false,
+          "queen_exits": [
+            [
+              20,
+              11
+            ]
+          ],
+          "self_exits": 1,
+          "portal": false
+        },
+        {
+          "d": "S",
+          "cell": [
+            19,
+            13
+          ],
+          "pearl": false,
+          "queen_exits": [
+            [
+              18,
+              13
+            ]
+          ],
+          "self_exits": 1,
+          "portal": false
+        }
+      ],
+      "delta_rounds": [],
+      "earlier_rounds": [
+        51
+      ],
+      "last_move": 51,
+      "last_move_choice": {
+        "d": "N",
+        "cell": [
+          19,
+          11
+        ],
+        "pearl": false,
+        "room": 2,
+        "tail": false,
+        "known": 2,
+        "dead": true,
+        "penalty": 13600,
+        "s1": true,
+        "s2": false,
+        "s3": false
+      },
+      "closure_round": 51,
+      "closure_actor": 0,
+      "actor_pearls": 0,
+      "queen_gate": true
+    },
+    {
+      "game": 1465495,
+      "near": true,
+      "ally": false,
+      "eligible": false,
+      "child": false,
+      "alt": [],
+      "delta_rounds": [],
+      "earlier_rounds": [],
+      "last_move": 214,
+      "last_move_choice": {
+        "d": "W",
+        "cell": [
+          27,
+          10
+        ],
+        "pearl": false,
+        "room": 1,
+        "tail": false,
+        "known": 1,
+        "dead": true,
+        "penalty": 13600,
+        "s1": false,
+        "s2": false,
+        "s3": false
+      },
+      "closure_round": 214,
+      "closure_actor": 1,
+      "actor_pearls": 0,
+      "queen_gate": true
+    },
+    {
+      "game": 1465503,
+      "near": false,
+      "ally": true,
+      "eligible": true,
+      "child": true,
+      "alt": [],
+      "delta_rounds": [],
+      "earlier_rounds": [],
+      "last_move": 154,
+      "last_move_choice": {
+        "d": "S",
+        "cell": [
+          26,
+          14
+        ],
+        "pearl": false,
+        "room": 2,
+        "tail": false,
+        "known": 2,
+        "dead": true,
+        "penalty": 13200,
+        "s1": true,
+        "s2": false,
+        "s3": false
+      },
+      "closure_round": 154,
+      "closure_actor": 173,
+      "actor_pearls": 1,
+      "queen_gate": false
+    },
+    {
+      "game": 1465505,
+      "near": true,
+      "ally": true,
+      "eligible": true,
+      "child": false,
+      "alt": [],
+      "delta_rounds": [],
+      "earlier_rounds": [],
+      "last_move": 46,
+      "last_move_choice": {
+        "d": "N",
+        "cell": [
+          9,
+          8
+        ],
+        "pearl": true,
+        "room": 3,
+        "tail": false,
+        "known": 3,
+        "dead": true,
+        "penalty": 13200,
+        "s1": true,
+        "s2": true,
+        "s3": false
+      },
+      "closure_round": 47,
+      "closure_actor": 66,
+      "actor_pearls": 1,
+      "queen_gate": false
+    },
+    {
+      "game": 1465965,
+      "near": true,
+      "ally": true,
+      "eligible": true,
+      "child": true,
+      "alt": [
+        {
+          "d": "W",
+          "cell": [
+            22,
+            14
+          ],
+          "pearl": false,
+          "queen_exits": [
+            [
+              23,
+              13
+            ]
+          ],
+          "self_exits": 1,
+          "portal": false
+        }
+      ],
+      "delta_rounds": [],
+      "earlier_rounds": [],
+      "last_move": 93,
+      "last_move_choice": {
+        "d": "W",
+        "cell": [
+          23,
+          12
+        ],
+        "pearl": false,
+        "room": 2,
+        "tail": false,
+        "known": 2,
+        "dead": true,
+        "penalty": 13200,
+        "s1": true,
+        "s2": false,
+        "s3": false
+      },
+      "closure_round": 93,
+      "closure_actor": 43,
+      "actor_pearls": 0,
+      "queen_gate": false
+    },
+    {
+      "game": 1465978,
+      "near": true,
+      "ally": true,
+      "eligible": true,
+      "child": false,
+      "alt": [
+        {
+          "d": "N",
+          "cell": [
+            14,
+            3
+          ],
+          "pearl": false,
+          "queen_exits": [
+            [
+              14,
+              5
+            ]
+          ],
+          "self_exits": 1,
+          "portal": false
+        }
+      ],
+      "delta_rounds": [
+        92
+      ],
+      "earlier_rounds": [],
+      "last_move": 94,
+      "last_move_choice": {
+        "d": "N",
+        "cell": [
+          14,
+          6
+        ],
+        "pearl": false,
+        "room": 3,
+        "tail": false,
+        "known": 3,
+        "dead": true,
+        "penalty": 12800,
+        "s1": true,
+        "s2": true,
+        "s3": false
+      },
+      "closure_round": 94,
+      "closure_actor": 77,
+      "actor_pearls": 0,
+      "queen_gate": false
+    },
+    {
+      "game": 1470217,
+      "near": true,
+      "ally": false,
+      "eligible": false,
+      "child": false,
+      "alt": [],
+      "delta_rounds": [],
+      "earlier_rounds": [],
+      "last_move": 123,
+      "last_move_choice": {
+        "d": "E",
+        "cell": [
+          31,
+          10
+        ],
+        "pearl": false,
+        "room": 1,
+        "tail": false,
+        "known": 1,
+        "dead": true,
+        "penalty": 13200,
+        "s1": false,
+        "s2": false,
+        "s3": false
+      },
+      "closure_round": 123,
+      "closure_actor": 1,
+      "actor_pearls": 0,
+      "queen_gate": false
+    },
+    {
+      "game": 1470221,
+      "near": true,
+      "ally": false,
+      "eligible": false,
+      "child": false,
+      "alt": [],
+      "delta_rounds": [],
+      "earlier_rounds": [],
+      "last_move": 15,
+      "last_move_choice": {
+        "d": "W",
+        "cell": [
+          11,
+          11
+        ],
+        "pearl": false,
+        "room": 1,
+        "tail": false,
+        "known": 1,
+        "dead": true,
+        "penalty": 13200,
+        "s1": false,
+        "s2": false,
+        "s3": false
+      },
+      "closure_round": 15,
+      "closure_actor": 1,
+      "actor_pearls": 0,
+      "queen_gate": false
+    },
+    {
+      "game": 1470222,
+      "near": true,
+      "ally": false,
+      "eligible": false,
+      "child": false,
+      "alt": [],
+      "delta_rounds": [
+        84
+      ],
+      "earlier_rounds": [
+        84
+      ],
+      "last_move": 87,
+      "last_move_choice": {
+        "d": "E",
+        "cell": [
+          14,
+          2
+        ],
+        "pearl": true,
+        "room": 1,
+        "tail": false,
+        "known": 1,
+        "dead": true,
+        "penalty": 13600,
+        "s1": false,
+        "s2": false,
+        "s3": false
+      },
+      "closure_round": 87,
+      "closure_actor": 0,
+      "actor_pearls": 1,
+      "queen_gate": false
+    },
+    {
+      "game": 1470230,
+      "near": true,
+      "ally": false,
+      "eligible": false,
+      "child": false,
+      "alt": [],
+      "delta_rounds": [],
+      "earlier_rounds": [],
+      "last_move": 72,
+      "last_move_choice": null,
+      "closure_round": 72,
+      "closure_actor": 0,
+      "actor_pearls": 1,
+      "queen_gate": false
+    },
+    {
+      "game": 1470231,
+      "near": false,
+      "ally": false,
+      "eligible": false,
+      "child": false,
+      "alt": [],
+      "delta_rounds": [],
+      "earlier_rounds": [],
+      "last_move": 249,
+      "last_move_choice": {
+        "d": "W",
+        "cell": [
+          49,
+          7
+        ],
+        "pearl": false,
+        "room": 1,
+        "tail": false,
+        "known": 1,
+        "dead": true,
+        "penalty": 13600,
+        "s1": false,
+        "s2": false,
+        "s3": false
+      },
+      "closure_round": 249,
+      "closure_actor": 1,
+      "actor_pearls": 0,
+      "queen_gate": true
+    },
+    {
+      "game": 1468668,
+      "near": false,
+      "ally": true,
+      "eligible": true,
+      "child": false,
+      "alt": [],
+      "delta_rounds": [],
+      "earlier_rounds": [],
+      "last_move": 305,
+      "last_move_choice": {
+        "d": "W",
+        "cell": [
+          0,
+          18
+        ],
+        "pearl": false,
+        "room": 2,
+        "tail": false,
+        "known": 2,
+        "dead": true,
+        "penalty": 13200,
+        "s1": true,
+        "s2": false,
+        "s3": false
+      },
+      "closure_round": 305,
+      "closure_actor": 595,
+      "actor_pearls": 0,
+      "queen_gate": true
+    },
+    {
+      "game": 1468676,
+      "near": true,
+      "ally": false,
+      "eligible": false,
+      "child": false,
+      "alt": [],
+      "delta_rounds": [],
+      "earlier_rounds": [],
+      "last_move": 53,
+      "last_move_choice": {
+        "d": "S",
+        "cell": [
+          11,
+          6
+        ],
+        "pearl": false,
+        "room": 1,
+        "tail": false,
+        "known": 1,
+        "dead": true,
+        "penalty": 13200,
+        "s1": false,
+        "s2": false,
+        "s3": false
+      },
+      "closure_round": 53,
+      "closure_actor": 0,
+      "actor_pearls": 0,
+      "queen_gate": false
+    },
+    {
+      "game": 1468678,
+      "near": true,
+      "ally": true,
+      "eligible": false,
+      "child": false,
+      "alt": [
+        {
+          "d": "E",
+          "cell": [
+            4,
+            8
+          ],
+          "pearl": false,
+          "queen_exits": [
+            [
+              3,
+              7
+            ]
+          ],
+          "self_exits": 2,
+          "portal": false
+        },
+        {
+          "d": "S",
+          "cell": [
+            3,
+            9
+          ],
+          "pearl": false,
+          "queen_exits": [
+            [
+              3,
+              7
+            ]
+          ],
+          "self_exits": 3,
+          "portal": false
+        }
+      ],
+      "delta_rounds": [],
+      "earlier_rounds": [],
+      "last_move": 8,
+      "last_move_choice": {
+        "d": "E",
+        "cell": [
+          27,
+          8
+        ],
+        "pearl": true,
+        "room": 1,
+        "tail": false,
+        "known": 1,
+        "dead": true,
+        "penalty": 14000,
+        "s1": false,
+        "s2": false,
+        "s3": false
+      },
+      "closure_round": 8,
+      "closure_actor": 8,
+      "actor_pearls": 0,
+      "queen_gate": false
+    },
+    {
+      "game": 1462081,
+      "near": false,
+      "ally": true,
+      "eligible": true,
+      "child": true,
+      "alt": [],
+      "delta_rounds": [],
+      "earlier_rounds": [],
+      "last_move": 89,
+      "last_move_choice": {
+        "d": "W",
+        "cell": [
+          14,
+          0
+        ],
+        "pearl": true,
+        "room": 475.0,
+        "tail": true,
+        "known": 5,
+        "dead": false,
+        "penalty": 0,
+        "s1": true,
+        "s2": true,
+        "s3": true
+      },
+      "closure_round": 89,
+      "closure_actor": 30,
+      "actor_pearls": 0,
+      "queen_gate": false
+    },
+    {
+      "game": 1462085,
+      "near": true,
+      "ally": false,
+      "eligible": false,
+      "child": false,
+      "alt": [],
+      "delta_rounds": [
+        74
+      ],
+      "earlier_rounds": [],
+      "last_move": 78,
+      "last_move_choice": {
+        "d": "S",
+        "cell": [
+          14,
+          15
+        ],
+        "pearl": true,
+        "room": 1,
+        "tail": false,
+        "known": 1,
+        "dead": true,
+        "penalty": 13200,
+        "s1": false,
+        "s2": false,
+        "s3": false
+      },
+      "closure_round": 78,
+      "closure_actor": 0,
+      "actor_pearls": 1,
+      "queen_gate": false
+    },
+    {
+      "game": 1466570,
+      "near": true,
+      "ally": true,
+      "eligible": true,
+      "child": false,
+      "alt": [],
+      "delta_rounds": [],
+      "earlier_rounds": [],
+      "last_move": 52,
+      "last_move_choice": {
+        "d": "W",
+        "cell": [
+          18,
+          7
+        ],
+        "pearl": false,
+        "room": 1239.5,
+        "tail": true,
+        "known": 6,
+        "dead": false,
+        "penalty": 0,
+        "s1": true,
+        "s2": true,
+        "s3": true
+      },
+      "closure_round": 52,
+      "closure_actor": 17,
+      "actor_pearls": 0,
+      "queen_gate": true
+    },
+    {
+      "game": 1467174,
+      "near": true,
+      "ally": false,
+      "eligible": false,
+      "child": false,
+      "alt": [],
+      "delta_rounds": [
+        73
+      ],
+      "earlier_rounds": [
+        73
+      ],
+      "last_move": 74,
+      "last_move_choice": null,
+      "closure_round": 74,
+      "closure_actor": 0,
+      "actor_pearls": 1,
+      "queen_gate": false
+    },
+    {
+      "game": 1467175,
+      "near": true,
+      "ally": false,
+      "eligible": false,
+      "child": false,
+      "alt": [],
+      "delta_rounds": [],
+      "earlier_rounds": [],
+      "last_move": 146,
+      "last_move_choice": {
+        "d": "E",
+        "cell": [
+          17,
+          10
+        ],
+        "pearl": true,
+        "room": 1,
+        "tail": false,
+        "known": 1,
+        "dead": true,
+        "penalty": 13600,
+        "s1": false,
+        "s2": false,
+        "s3": false
+      },
+      "closure_round": 146,
+      "closure_actor": 1,
+      "actor_pearls": 1,
+      "queen_gate": false
+    },
+    {
+      "game": 1467177,
+      "near": false,
+      "ally": false,
+      "eligible": false,
+      "child": false,
+      "alt": [],
+      "delta_rounds": [],
+      "earlier_rounds": [],
+      "last_move": 36,
+      "last_move_choice": {
+        "d": "N",
+        "cell": [
+          35,
+          7
+        ],
+        "pearl": false,
+        "room": 1,
+        "tail": false,
+        "known": 1,
+        "dead": true,
+        "penalty": 13200,
+        "s1": false,
+        "s2": false,
+        "s3": false
+      },
+      "closure_round": 36,
+      "closure_actor": 1,
+      "actor_pearls": 0,
+      "queen_gate": true
+    },
+    {
+      "game": 1467178,
+      "near": true,
+      "ally": false,
+      "eligible": false,
+      "child": false,
+      "alt": [],
+      "delta_rounds": [
+        40
+      ],
+      "earlier_rounds": [],
+      "last_move": 44,
+      "last_move_choice": {
+        "d": "N",
+        "cell": [
+          17,
+          0
+        ],
+        "pearl": true,
+        "room": 1,
+        "tail": false,
+        "known": 1,
+        "dead": true,
+        "penalty": 13200,
+        "s1": false,
+        "s2": false,
+        "s3": false
+      },
+      "closure_round": 44,
+      "closure_actor": 0,
+      "actor_pearls": 1,
+      "queen_gate": false
+    },
+    {
+      "game": 1467565,
+      "near": false,
+      "ally": true,
+      "eligible": true,
+      "child": false,
+      "alt": [],
+      "delta_rounds": [],
+      "earlier_rounds": [],
+      "last_move": 121,
+      "last_move_choice": {
+        "d": "W",
+        "cell": [
+          15,
+          13
+        ],
+        "pearl": false,
+        "room": 3,
+        "tail": false,
+        "known": 3,
+        "dead": true,
+        "penalty": 12800,
+        "s1": true,
+        "s2": true,
+        "s3": false
+      },
+      "closure_round": 121,
+      "closure_actor": 67,
+      "actor_pearls": 0,
+      "queen_gate": true
+    },
+    {
+      "game": 1470543,
+      "near": false,
+      "ally": false,
+      "eligible": false,
+      "child": false,
+      "alt": [],
+      "delta_rounds": [
+        39
+      ],
+      "earlier_rounds": [],
+      "last_move": 47,
+      "last_move_choice": {
+        "d": "S",
+        "cell": [
+          2,
+          1
+        ],
+        "pearl": true,
+        "room": 1,
+        "tail": false,
+        "known": 1,
+        "dead": true,
+        "penalty": 13200,
+        "s1": false,
+        "s2": false,
+        "s3": false
+      },
+      "closure_round": 47,
+      "closure_actor": 0,
+      "actor_pearls": 1,
+      "queen_gate": false
+    },
+    {
+      "game": 1472014,
+      "near": false,
+      "ally": true,
+      "eligible": true,
+      "child": false,
+      "alt": [],
+      "delta_rounds": [],
+      "earlier_rounds": [],
+      "last_move": 110,
+      "last_move_choice": {
+        "d": "N",
+        "cell": [
+          7,
+          0
+        ],
+        "pearl": false,
+        "room": 2,
+        "tail": false,
+        "known": 2,
+        "dead": true,
+        "penalty": 12800,
+        "s1": true,
+        "s2": false,
+        "s3": false
+      },
+      "closure_round": 110,
+      "closure_actor": 113,
+      "actor_pearls": 0,
+      "queen_gate": false
+    },
+    {
+      "game": 1472016,
+      "near": true,
+      "ally": true,
+      "eligible": true,
+      "child": true,
+      "alt": [],
+      "delta_rounds": [],
+      "earlier_rounds": [],
+      "last_move": 126,
+      "last_move_choice": {
+        "d": "S",
+        "cell": [
+          18,
+          1
+        ],
+        "pearl": true,
+        "room": 2,
+        "tail": false,
+        "known": 2,
+        "dead": true,
+        "penalty": 13200,
+        "s1": true,
+        "s2": false,
+        "s3": false
+      },
+      "closure_round": 126,
+      "closure_actor": 264,
+      "actor_pearls": 1,
+      "queen_gate": false
+    },
+    {
+      "game": 1471456,
+      "near": true,
+      "ally": false,
+      "eligible": false,
+      "child": false,
+      "alt": [],
+      "delta_rounds": [
+        197
+      ],
+      "earlier_rounds": [],
+      "last_move": 201,
+      "last_move_choice": {
+        "d": "W",
+        "cell": [
+          24,
+          0
+        ],
+        "pearl": true,
+        "room": 1,
+        "tail": false,
+        "known": 1,
+        "dead": true,
+        "penalty": 13600,
+        "s1": false,
+        "s2": false,
+        "s3": false
+      },
+      "closure_round": 201,
+      "closure_actor": 0,
+      "actor_pearls": 1,
+      "queen_gate": false
+    },
+    {
+      "game": 1471459,
+      "near": false,
+      "ally": false,
+      "eligible": false,
+      "child": false,
+      "alt": [],
+      "delta_rounds": [],
+      "earlier_rounds": [],
+      "last_move": 80,
+      "last_move_choice": {
+        "d": "N",
+        "cell": [
+          35,
+          14
+        ],
+        "pearl": false,
+        "room": 1,
+        "tail": false,
+        "known": 1,
+        "dead": true,
+        "penalty": 13200,
+        "s1": false,
+        "s2": false,
+        "s3": false
+      },
+      "closure_round": 80,
+      "closure_actor": 1,
+      "actor_pearls": 0,
+      "queen_gate": true
+    },
+    {
+      "game": 1471460,
+      "near": true,
+      "ally": false,
+      "eligible": false,
+      "child": false,
+      "alt": [],
+      "delta_rounds": [],
+      "earlier_rounds": [],
+      "last_move": 49,
+      "last_move_choice": null,
+      "closure_round": 49,
+      "closure_actor": 0,
+      "actor_pearls": 1,
+      "queen_gate": false
+    },
+    {
+      "game": 1471469,
+      "near": true,
+      "ally": true,
+      "eligible": false,
+      "child": false,
+      "alt": [
+        {
+          "d": "N",
+          "cell": [
+            28,
+            6
+          ],
+          "pearl": false,
+          "queen_exits": [
+            [
+              28,
+              8
+            ]
+          ],
+          "self_exits": 3,
+          "portal": false
+        },
+        {
+          "d": "W",
+          "cell": [
+            27,
+            7
+          ],
+          "pearl": false,
+          "queen_exits": [
+            [
+              28,
+              8
+            ]
+          ],
+          "self_exits": 2,
+          "portal": false
+        }
+      ],
+      "delta_rounds": [],
+      "earlier_rounds": [],
+      "last_move": 8,
+      "last_move_choice": {
+        "d": "W",
+        "cell": [
+          4,
+          7
+        ],
+        "pearl": true,
+        "room": 1,
+        "tail": false,
+        "known": 1,
+        "dead": true,
+        "penalty": 13600,
+        "s1": false,
+        "s2": false,
+        "s3": false
+      },
+      "closure_round": 8,
+      "closure_actor": 8,
+      "actor_pearls": 0,
+      "queen_gate": false
+    }
+  ]
+}

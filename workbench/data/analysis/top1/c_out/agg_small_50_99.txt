@@ -1,0 +1,74 @@
+=== AGG small, rounds 50-99: means per game. Games: meow 171, test4 v meow 66, WHQ v meow 66, test4 v top3 34, WHQ v top3 17, forgot 276, SSS 213, Vibing++ 226
+                                                               |         meow | test4 v meow |   WHQ v meow | test4 v top3 |   WHQ v top3 |       forgot |          SSS |     Vibing++
+units at start                                                 |         7.87 |         7.21 |         7.15 |         8.59 |         7.00 |         8.15 |         7.62 |         8.16
+units at round 90 (last snapshot)                              |         12.7 |         14.2 |         13.0 |         13.5 |         10.1 |         16.2 |         15.0 |         13.3
+total length at round 90 (last snapshot)                       |         31.3 |         35.6 |         32.0 |         33.2 |         24.6 |         39.6 |         36.5 |         33.3
+natural pearls eaten                                           |         31.5 |         38.4 |         37.1 |         32.8 |         28.6 |         42.2 |         37.9 |         36.9
+  on own-half fountains                                        |         13.9 |         15.5 |         13.3 |         15.7 |         10.0 |         15.0 |         9.87 |         10.3
+  on enemy-half fountains                                      |         0.41 |         1.76 |         1.47 |         0.91 |         0.12 |         1.66 |         2.08 |         2.30
+  on other tiles                                               |         17.2 |         21.1 |         22.3 |         16.2 |         18.5 |         25.5 |         25.9 |         24.3
+corpse pearls eaten, own corpses                               |         18.4 |         13.1 |         13.7 |         15.2 |         11.0 |         18.9 |         14.4 |         18.0
+corpse pearls eaten, enemy corpses                             |         2.34 |         2.11 |         2.45 |         2.68 |         2.65 |         3.12 |         3.18 |         3.08
+dragon-turns                                                   |        522.8 |        577.7 |        542.8 |        576.8 |        419.4 |        642.9 |        602.0 |        568.3
+natural pearls per 100 dragon-turns                            |         5.07 |         7.52 |         6.58 |         4.65 |         6.45 |         6.38 |         6.02 |         6.32
+turns %: eat                                                   |         8.16 |         10.1 |         8.80 |         7.17 |         8.48 |         9.58 |         8.60 |         9.82
+turns %: split                                                 |         3.48 |         3.40 |         3.72 |         2.85 |         3.56 |         4.04 |         3.59 |         4.14
+turns %: die                                                   |         2.12 |         1.83 |         2.94 |         1.81 |         2.38 |         2.20 |         1.87 |         3.02
+turns %: approach (pearl in view, ended nearer)                |         17.7 |         18.1 |         17.7 |         18.1 |         17.3 |         18.6 |         21.1 |         17.9
+turns %: pass (pearl in view, not nearer)                      |         15.2 |         17.6 |         16.7 |         17.4 |         14.4 |         14.6 |         18.6 |         14.1
+turns %: no pearl in view, new cell                            |         11.9 |         12.0 |         12.1 |         11.8 |         15.3 |         12.3 |         10.4 |         13.3
+turns %: no pearl in view, visited cell                        |         41.4 |         36.9 |         36.5 |         40.9 |         38.6 |         38.7 |         35.9 |         37.7
+turns with a pearl in view %                                   |         43.6 |         48.7 |         47.1 |         45.2 |         44.0 |         46.1 |         51.9 |         45.7
+turns with an enemy head in view %                             |         36.4 |         36.2 |         36.2 |         35.4 |         46.6 |         37.9 |         37.9 |         38.9
+new dragons (splits)                                           |         21.9 |         21.2 |         21.3 |         20.0 |         16.5 |         26.8 |         22.7 |         24.0
+dragons rammed by the enemy                                    |         1.97 |         1.20 |         1.59 |         2.26 |         3.06 |         2.21 |         1.41 |         1.76
+dragons that rammed an enemy                                   |         1.36 |         1.67 |         2.11 |         1.47 |         2.47 |         2.03 |         2.46 |         2.53
+non-ram deaths, no free cell (boxed)                           |         12.1 |         9.17 |         9.52 |         10.0 |         7.53 |         12.1 |         9.15 |         13.1
+non-ram deaths with a free cell                                |         0.19 |         0.02 |         0.18 |         0.06 |         0.06 |         0.10 |         0.03 |         0.14
+segments lost: rammed                                          |         5.12 |         3.14 |         4.24 |         6.35 |         7.94 |         5.50 |         3.56 |         4.12
+segments lost: rammer                                          |         3.20 |         4.55 |         5.74 |         4.24 |         6.88 |         5.22 |         6.78 |         6.94
+segments lost: boxed                                           |         28.8 |         21.6 |         21.0 |         23.5 |         16.2 |         27.4 |         21.0 |         28.5
+segments lost: free-cell deaths                                |         0.46 |         0.03 |         0.42 |         0.12 |         0.12 |         0.24 |         0.08 |         0.30
+segments paid for steps                                        |         0.01 |         0.97 |         3.14 |         1.38 |         3.35 |         1.11 |         0.79 |         1.72
+moves of 2+ steps                                              |         1.26 |         1.39 |         3.44 |         1.53 |         3.41 |         2.06 |         2.28 |         4.77
+pearls appearing within 6 steps of an own head                 |         30.0 |         32.7 |         32.8 |         32.2 |         26.2 |         39.2 |         34.4 |         35.4
+  eaten by own team within 20 rounds %                         |         70.2 |         67.3 |         72.6 |         54.7 |         65.5 |         75.8 |         69.8 |         72.4
+  eaten by the enemy %                                         |         13.5 |         15.7 |         10.4 |         14.7 |         15.4 |         16.5 |         12.7 |         15.2
+  left for 20 rounds %                                         |         6.21 |         14.7 |         11.4 |         22.7 |         6.19 |         3.93 |         13.4 |         9.11
+  uncontested ones: mean rounds until eaten                    |         3.03 |         4.00 |         3.84 |         3.58 |         3.25 |         3.54 |         4.10 |         3.46
+eats with a second own head within 2 steps                     |         5.13 |         5.11 |         4.73 |         5.50 |         4.65 |         7.93 |         8.38 |         6.36
+squares (of 64) with an own head, at round 90                  |         11.2 |         12.1 |         11.0 |         11.3 |         8.71 |         13.1 |         12.6 |         11.3
+cells visited by round 90                                      |        181.0 |        198.5 |        188.5 |        198.0 |        182.0 |        220.0 |        200.3 |        207.7
+mean distance of heads from own spawn, at round 90             |         14.5 |         18.4 |         18.1 |         15.9 |         19.1 |         19.7 |         18.9 |         18.8
+share of heads with an own head within 6 steps                 |         0.72 |         0.66 |         0.71 |         0.65 |         0.67 |         0.74 |         0.78 |         0.73
+own heads on tight cells (mean)                                |         2.87 |         3.24 |         3.53 |         2.82 |         2.81 |         3.63 |         3.11 |         3.72
+dragons not eaten for 20 rounds, at round 90                   |         3.09 |         3.65 |         3.80 |         3.65 |         3.24 |         2.91 |         3.62 |         3.58
+own heads in own half %                                        |         71.6 |         69.4 |         76.0 |         74.1 |         70.9 |         64.0 |         66.9 |         67.9
+own heads within 3 steps of a fountain %                       |         20.2 |         19.5 |         19.4 |         19.1 |         14.9 |         14.3 |         17.3 |         17.1
+own-half fountains: pearl lying %                              |         38.5 |         48.4 |         41.6 |         35.5 |         44.8 |         38.0 |         40.8 |         34.3
+own-half fountains: body on it %                               |         11.1 |         8.07 |         8.63 |         9.34 |         9.34 |         8.86 |         6.48 |         9.36
+own-half fountains eaten from by round 90 (of n)               |         4.56 |         5.94 |         4.88 |         5.53 |         3.76 |         5.47 |         4.26 |         3.08
+own-half fountains (n)                                         |         6.44 |         6.77 |         6.71 |         6.44 |         5.24 |         6.11 |         6.41 |         5.22
+own-half fountains the enemy has seen by round 90              |         5.82 |         6.23 |         5.97 |         6.21 |         5.12 |         5.46 |         5.85 |         4.56
+units at round 100 (games that reached it)                     |         13.5 |         17.9 |         16.4 |         15.2 |         10.6 |         19.0 |         17.7 |         15.0
+total length at round 100 (games that reached it)              |         32.9 |         45.0 |         39.5 |         37.4 |         25.6 |         45.8 |         42.9 |         37.3
+pearl in view, nobody else as near: turns                      |        130.8 |        147.7 |        147.3 |        128.4 |        106.8 |        154.3 |        167.4 |        147.6
+  [free] ate or ended nearer %                                 |         70.7 |         68.5 |         64.3 |         66.2 |         73.3 |         72.5 |         64.9 |         72.2
+  [free] did not get nearer %                                  |         20.5 |         25.5 |         22.3 |         29.2 |         18.9 |         18.0 |         25.9 |         18.3
+  [free] split or died %                                       |         7.07 |         5.96 |         8.76 |         4.64 |         7.74 |         8.05 |         8.25 |         8.10
+pearl in view, an own head is nearer: turns                    |         73.6 |         95.9 |         81.3 |         90.2 |         60.7 |        109.7 |        118.7 |         83.3
+  [mate] ate or ended nearer %                                 |         32.4 |         32.7 |         35.1 |         38.1 |         33.3 |         37.6 |         40.2 |         38.9
+  [mate] did not get nearer %                                  |         45.9 |         52.1 |         52.0 |         44.7 |         54.6 |         47.5 |         47.8 |         44.8
+  [mate] split or died %                                       |         6.49 |         6.13 |         6.83 |         5.40 |         6.28 |         6.55 |         5.91 |         6.98
+pearl in view, an enemy head is as near or nearer: turns       |         18.2 |         18.4 |         19.9 |         20.2 |         24.8 |         25.4 |         25.7 |         25.5
+  [enemy] ate or ended nearer %                                |         36.7 |         35.1 |         31.3 |         41.1 |         43.3 |         42.0 |         40.6 |         38.1
+  [enemy] did not get nearer %                                 |         21.5 |         25.4 |         23.0 |         22.9 |         31.0 |         27.9 |         27.1 |         30.1
+  [enemy] split or died %                                      |         4.93 |         4.67 |         6.27 |         6.60 |         8.03 |         5.75 |         6.94 |         7.51
+enemy head in view at turn start: turns                        |        161.2 |        209.1 |        179.5 |        191.2 |        177.4 |        216.3 |        190.3 |        180.7
+  ended farther from it %                                      |         24.5 |         23.8 |         20.8 |         29.0 |         25.9 |         23.8 |         27.3 |         24.9
+  ended nearer to it %                                         |         15.2 |         16.1 |         15.0 |         14.2 |         16.3 |         18.4 |         15.9 |         17.1
+  rammed an enemy that turn %                                  |         1.93 |         1.86 |         2.38 |         1.52 |         1.85 |         1.83 |         1.73 |         1.90
+enemy head on a neighbouring cell at turn start                |         2.67 |         3.67 |         3.74 |         2.35 |         5.00 |         3.21 |         2.18 |         3.27
+  rammed it %                                                  |         24.2 |         17.2 |         22.2 |         16.1 |         20.5 |         34.7 |         34.2 |         30.7
+  stepped away %                                               |         29.0 |         32.8 |         38.4 |         39.8 |         50.1 |         34.1 |         23.1 |         35.3
+  stepped away, rammed within 2 rounds (n)                     |         0.16 |         0.29 |         0.20 |         0.15 |         0.35 |         0.21 |         0.12 |         0.23

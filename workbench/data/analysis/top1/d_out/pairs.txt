@@ -1,0 +1,77 @@
+=== 1. old against new, paired by opponent and map
+--- stride-old against stride-new: 28 pairs; wins old 9, new 8; queen death round median old 102, new 101 (alive counted as 999); new queen died earlier in 13 pairs, later in 13, same round in 2
+    kind | old | new
+    alive | 3 | 5
+    stepped in | 6 | 7
+    stayed in | 3 | 1
+    cornered | 10 | 8
+    unseen | 0 | 2
+    boxed by own | 3 | 4
+    terrain | 2 | 1
+    own ram | 1 | 0
+    dead before round 100: old 14 new 14 | before round 300: old 23 new 23
+--- passage2-test-old against passage2-test-new: 28 pairs; wins old 10, new 10; queen death round median old 136, new 106 (alive counted as 999); new queen died earlier in 16 pairs, later in 11, same round in 1
+    kind | old | new
+    alive | 3 | 2
+    stepped in | 4 | 7
+    stayed in | 3 | 3
+    cornered | 8 | 4
+    unseen | 6 | 4
+    boxed by own | 3 | 5
+    terrain | 1 | 3
+    dead before round 100: old 9 new 13 | before round 300: old 25 new 24
+--- qh31-test-old against qh31-test-new: 28 pairs; wins old 8, new 9; queen death round median old 117, new 92 (alive counted as 999); new queen died earlier in 16 pairs, later in 10, same round in 2
+    kind | old | new
+    alive | 4 | 2
+    stepped in | 6 | 5
+    stayed in | 1 | 3
+    cornered | 6 | 11
+    unseen | 1 | 0
+    boxed by own | 5 | 4
+    terrain | 2 | 1
+    own ram | 3 | 2
+    dead before round 100: old 11 new 15 | before round 300: old 23 new 25
+--- tc30-dev1-old against tc30-dev1b-new: 14 pairs; wins old 2, new 3; queen death round median old 142, new 146 (alive counted as 999); new queen died earlier in 7 pairs, later in 5, same round in 2
+    kind | old | new
+    alive | 1 | 1
+    stepped in | 4 | 2
+    cornered | 3 | 7
+    unseen | 1 | 1
+    boxed by own | 4 | 0
+    terrain | 0 | 3
+    own ram | 1 | 0
+    dead before round 100: old 5 new 5 | before round 300: old 10 new 10
+
+=== 2. the qn23 'queen no trap' candidate (45 games, not in games.csv) against the live bot against the same opponents
+live bot: 215 games; qn23: 45 games
+kind | live bot | qn23
+alive | 22 (10%) | 5 (11%)
+stepped in | 34 (16%) | 7 (16%)
+stayed in | 20 (9%) | 5 (11%)
+cornered | 57 (27%) | 9 (20%)
+unseen | 20 (9%) | 4 (9%)
+boxed by own | 36 (17%) | 7 (16%)
+boxed by enemy | 1 (0%) | 0 (0%)
+terrain | 15 (7%) | 8 (18%)
+own ram | 10 (5%) | 0 (0%)
+other | 0 (0%) | 0 (0%)
+live bot: wins 60 of 215; deaths per 1,000 queen-rounds 6.08; boxed-in deaths per 1,000 queen-rounds 1.64; dead before round 100: 92
+qn23: wins 8 of 45; deaths per 1,000 queen-rounds 5.61; boxed-in deaths per 1,000 queen-rounds 2.10; dead before round 100: 20
+qn23 boxed-in and early deaths (game, map, opponent, round, kind, sides):
+   1072777 Around UNSW vs test4 r5 boxed: ally body L2 sides KKao splits in her last turns [[4, 2, 2, 33]]
+   1073075 Around UNSW vs WeHaveQu r5 boxed: ally body L2 sides KKao splits in her last turns [[4, 2, 2, 33]]
+   1073191 Around UNSW vs dev test r5 boxed: ally body L2 sides KKao splits in her last turns [[4, 2, 2, 32]]
+   1073196 Devil vs dev test r52 boxed: ally body L3 sides oKaK splits in her last turns [[4, 2, 2, 35]]
+   1072785 Slithery Fight vs test4 r371 boxed: ally body L2 sides KaoK splits in her last turns [[13, 2, 11, 1052]]
+   1073083 Slithery Fight vs WeHaveQu r410 boxed: ally body L2 sides AoKK splits in her last turns [[66, 2, 64, 1409]]
+   1072776 Tower Defense vs test4 r158 boxed: ally body L3 sides AKoK splits in her last turns []
+   1072774 Maze vs test4 r111 boxed: terrain dead end L2 sides KoKK splits in her last turns [[4, 2, 2, 81], [9, 2, 7, 96]]
+   1073072 Maze vs WeHaveQu r59 boxed: terrain dead end L3 sides KKKo splits in her last turns []
+   1073188 Maze vs dev test r268 boxed: terrain dead end L2 sides KKoK splits in her last turns [[6, 2, 4, 477]]
+   1072784 Portals vs test4 r24 boxed: terrain dead end L3 sides KoKK splits in her last turns [[4, 2, 2, 18]]
+   1073082 Portals vs WeHaveQu r68 boxed: terrain dead end L3 sides KoKK splits in her last turns [[4, 2, 2, 65]]
+   1073198 Portals vs dev test r79 boxed: terrain dead end L2 sides KoKK splits in her last turns [[4, 2, 2, 83], [4, 2, 2, 96]]
+   1073189 Stripes vs dev test r76 boxed: terrain dead end L3 sides oKKK splits in her last turns []
+   1073185 weakhold vs dev test r174 boxed: terrain dead end L2 sides KKKo splits in her last turns [[4, 2, 2, 132], [6, 2, 4, 150]]
+   1073076 Default vs WeHaveQu r28 ram: cornered L4 sides oFPK splits in her last turns []
+   1073073 Stripes vs WeHaveQu r25 ram: stayed in L4 sides KoPF splits in her last turns []

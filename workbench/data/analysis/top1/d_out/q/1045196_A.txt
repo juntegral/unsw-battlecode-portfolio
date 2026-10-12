@@ -1,0 +1,82 @@
+=== 1045196 Default 32x32 (1024 cells) run dl-20261004 | A = meow (1853) vs test4 (2233) | winner A by longest after 500 rounds
+queen #0 start (0, 0); enemy queen #1 start (31, 31); path between the starts 6
+DEATH r348 body L2 at (20, 3)
+splits (round, before -> keeps + child, child id): r1:4->2+2(#11) r24:4->2+2(#17) r55:4->2+2(#30) r108:4->2+2(#56) r166:4->2+2(#91) r347:15->2+13(#196)
+block | head | from start | len | ate nat/corpse | splits | rounds enemy in view | nearest enemy | cells used | own heads<=4 | units own/enemy
+r  0 | (0, 0)    |   0 |  4 | 2/0 | 2 |  4 | 5 | 24 | 0.2 | 4/4
+r 25 | (2, 15)   |  17 |  2 | 1/0 | 0 |  4 | 3 | 25 | 0.2 | 8/8
+r 50 | (3, 27)   |   8 |  3 | 1/0 | 1 |  8 | 2 | 17 | 0.4 | 11/8
+r 75 | (25, 31)  |  10 |  2 | 1/0 | 0 |  3 | 2 | 25 | 0.4 | 18/9
+r100 | (21, 22)  |  23 |  3 | 1/0 | 1 |  0 | 9 | 23 | 0.6 | 21/11
+r125 | (9, 18)   |  23 |  2 | 0/0 | 0 | 14 | 2 | 21 | 0.2 | 21/11
+r150 | (10, 8)   |  18 |  2 | 2/0 | 1 | 17 | 3 | 24 | 0.3 | 22/13
+r175 | (5, 1)    |   6 |  2 | 0/0 | 0 | 23 | 4 | 24 | 1.2 | 26/11
+r200 | (3, 12)   |  15 |  2 | 0/0 | 0 |  4 | 4 | 25 | 0.8 | 26/11
+r225 | (24, 12)  |  20 |  2 | 0/2 | 0 | 22 | 3 | 25 | 1.6 | 37/13
+r250 | (7, 5)    |  12 |  3 | 1/0 | 0 | 17 | 3 | 21 | 0.6 | 38/11
+r275 | (19, 2)   |  15 |  4 | 0/0 | 0 |  7 | 4 | 20 | 0.4 | 34/8
+r300 | (11, 3)   |  14 |  4 | 0/2 | 0 | 12 | 5 | 24 | 0.7 | 32/10
+r325 | (30, 3)   |   5 |  6 | 1/8 | 1 |  7 | 2 | 23 | 0.7 | 27/14
+moves from round 318:
+   318:WN!9  319:NW!8  320:SS  321:SS+  322:WW!9  323:WW!9  324:SE  325:SW+  326:SE+  327:SE+  328:NNN  329:WNN
+   330:NNE++  331:NEE  332:SSS!2  333:SSS  334:WWW!7  335:NEN!6  336:WW+  337:SW+  338:WW+!9  339:WN+!9  340:WWWS  341:WNWW
+   342:WWWS  343:E  344:E  345:E  346:E  347:SPLIT!9  348:E!9
+death record: {"round": 348, "reason": "body", "len": 2, "pos": [20, 3], "own": 1, "step": 1, "nsteps": 1, "dir": "E", "portal": 0, "hit": ["a", 196, 13, 7, 21, 3, [0, 347]]}
+  r341 L15 at (22, 3) move WNWW -> [19, 2] ate 0 | free 2 safe 2 | in reach at start 0, at end 0 | froom 40 tree 0 | N=o(22,2) #0L15s1 E=F(23,3) reach0 room1 S=K W=F(21,3) reach0 room40 | enemies #190L2@(26,7)c4p-1
+  r342 L15 at (19, 2) move WWWS -> [16, 3] ate 0 | free 2 safe 2 | in reach at start 0, at end 0 | froom 40 tree 0 | N=K E=o(20,2) #0L15s1 S=F(19,3) reach0 room40 W=F(18,2) reach0 room40 | enemies 
+  r343 L15 at (16, 3) move E -> [17, 3] ate 0 | free 2 safe 2 | in reach at start 0, at end 0 | froom 8 tree 0 | N=o(16,2) #0L15s1 E=F(17,3) reach0 room3 S=K W=F(15,3) reach0 room3 | enemies 
+  r344 L15 at (17, 3) move E -> [18, 3] ate 0 | free 1 safe 1 | in reach at start 0, at end 0 | froom 3 tree 0 | N=o(17,2) #0L15s3 E=F(18,3) reach0 room2 S=K W=o(16,3) #0L15s1 | enemies 
+  r345 L15 at (18, 3) move E -> [19, 3] ate 0 | free 1 safe 1 | in reach at start 0, at end 0 | froom 2 tree 0 | N=o(18,2) #0L15s5 E=F(19,3) reach0 room1 S=K W=o(17,3) #0L15s1 | enemies 
+  r346 L15 at (19, 3) move E -> [20, 3] ate 0 | free 1 safe 1 | in reach at start 0, at end 0 | froom 1 tree 0 | N=o(19,2) #0L15s7 E=F(20,3) reach0 room0 S=K W=o(18,3) #0L15s1 | enemies 
+  r347 L15 at (20, 3) SPLIT -> None ate 0 | free 0 safe 0 | in reach at start 0, at end 0 | froom 0 tree 0 | N=o(20,2) #0L15s9 E=o(21,3) #0L15s11 S=K W=o(19,3) #0L15s1 | enemies #190L2@(23,6)c3p-1V
+  r348 L2 at (20, 3) move E -> None ate 0 | free 0 safe 0 | in reach at start 0, at end 0 | froom 0 tree 0 | N=a(20,2) #196L13s9 E=a(21,3) #196L13s7 S=K W=o(19,3) #0L2s1 | enemies #190L2@(22,6)c3p-1V
+--- board at the start of her turn, round 345
+     1314151617181920212223
+     +-+-+-+-+-+-+-+-+-+ + 
+ 30   . . . . . . . . . . .
+     + + + + + + + + + + + 
+ 31   . . . . . . . . . . .
+     + + + + + + + + + + + 
+  0   . . . . . . . . . . .
+     + + + + + + + + + + + 
+  1   . . . . . . . . . . A
+     +-+-+-+-+-+-+-+-+-+-+-
+  2   . . . a a a a a a a a
+     + + + + + + + + + + + 
+  3   . a A a a @ . . a a .
+     +-+-+-+-+-+-+-+-+-+-+-
+  4   . . . . . . . . . . .
+     + + + + + + + + + + + 
+  5   . . . . . . . . . . .
+     + + + + + + + + + + + 
+  6   . . . . . . . . . . .
+     + + + + + + + + + + + 
+  7   . a A . . . . . . . .
+     + + + + + + + + + + + 
+  8   . . . . . . . . . . .
+heads: #0A L15 (18, 3); #128A L2 (23, 1); #171A L2 (15, 7); #189A L2 (15, 3)
+--- board at the start of her turn, round 348
+     1516171819202122232425
+     +-+-+-+-+-+-+-+ + + +-
+ 30   . . . . . . . . . . .
+     + + + + + + + + + + + 
+ 31   . . . . . . . . . . .
+     + + + + + + + + + + + 
+  0   . . . . . . . . . a A
+     + + + + + + + + + + + 
+  1   . . . . . . . . . . .
+     +-+-+-+-+-+-+-+-+-+-+-
+  2   * . a a a a a a a a a
+     + + + + + + + + + + + 
+  3   A . . . a @ a a . . .
+     +-+-+-+-+-+-+-+-+-+-+-
+  4   . . . . . . . . . . .
+     + + + + + + + + + + + 
+  5   . . . . . . . . . . .
+     + + + + + + + + + + + 
+  6   . . . . . . . B b . .
+     + + + + + + + + + + + 
+  7   . . . . . . . . . . .
+     + + + + + + + + + +O+ 
+  8   . . . . . . . . . . A
+heads: #0A L2 (20, 3); #128A L2 (25, 0); #133A L2 (15, 3); #148A L2 (25, 8); #190B L2 (22, 6)

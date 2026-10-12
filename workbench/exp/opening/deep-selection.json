@@ -1,0 +1,622 @@
+{
+  "method": "largest winner cluster per side -> winning member nearest standardized cluster center; ours nearest cohort r25 bin means",
+  "N": 88,
+  "selection": [
+    {
+      "key": "607645:607645",
+      "team": "B",
+      "role": "canonical-winner-A",
+      "N": 628,
+      "mapKey": "Default/a"
+    },
+    {
+      "key": "611497:611497",
+      "team": "A",
+      "role": "canonical-winner-B",
+      "N": 620,
+      "mapKey": "Default/a"
+    },
+    {
+      "key": "cand-stack11-online:724065",
+      "team": "A",
+      "role": "set:cand-stack11-online",
+      "N": 7,
+      "mapKey": "Default/a"
+    },
+    {
+      "key": "v1-w1:744685",
+      "team": "A",
+      "role": "set:v1-w1",
+      "N": 7,
+      "mapKey": "Default/a"
+    },
+    {
+      "key": "v1-w2:748862",
+      "team": "A",
+      "role": "set:v1-w2",
+      "N": 7,
+      "mapKey": "Default/a"
+    },
+    {
+      "key": "exp/v11:v1-b-px4:proxy4_swarm_default_B_2",
+      "team": "B",
+      "role": "local:v1",
+      "N": 28,
+      "mapKey": "Default/a"
+    },
+    {
+      "key": "exp/v11:v11-b-px4:proxy4_swarm_default_B_2",
+      "team": "B",
+      "role": "local:v11",
+      "N": 16,
+      "mapKey": "Default/a"
+    },
+    {
+      "key": "exp/v11:v11c-b-px4:proxy4_swarm_default_B_2",
+      "team": "B",
+      "role": "local:v11c",
+      "N": 16,
+      "mapKey": "Default/a"
+    },
+    {
+      "key": "704227:704230",
+      "team": "A",
+      "role": "canonical-winner-A",
+      "N": 325,
+      "mapKey": "Devil/a"
+    },
+    {
+      "key": "624021:624029",
+      "team": "A",
+      "role": "canonical-winner-B",
+      "N": 281,
+      "mapKey": "Devil/a"
+    },
+    {
+      "key": "cand-stack11-online:724089",
+      "team": "A",
+      "role": "set:cand-stack11-online",
+      "N": 6,
+      "mapKey": "Devil/a"
+    },
+    {
+      "key": "v1-w1:744639",
+      "team": "A",
+      "role": "set:v1-w1",
+      "N": 2,
+      "mapKey": "Devil/a"
+    },
+    {
+      "key": "v1-w2:748856",
+      "team": "A",
+      "role": "set:v1-w2",
+      "N": 2,
+      "mapKey": "Devil/a"
+    },
+    {
+      "key": "exp/v1:v1-a-px4:proxy4_elim_devil_B_1",
+      "team": "B",
+      "role": "local:v1",
+      "N": 14,
+      "mapKey": "Devil/a"
+    },
+    {
+      "key": "exp/v11:v11-a2-px4:proxy4_swarm_devil_A_2",
+      "team": "A",
+      "role": "local:v11",
+      "N": 8,
+      "mapKey": "Devil/a"
+    },
+    {
+      "key": "exp/v11:v11c-a2-px4:proxy4_swarm_devil_A_2",
+      "team": "A",
+      "role": "local:v11c",
+      "N": 8,
+      "mapKey": "Devil/a"
+    },
+    {
+      "key": "625486:625491",
+      "team": "B",
+      "role": "canonical-winner-A",
+      "N": 217,
+      "mapKey": "Queen Of Spades/a"
+    },
+    {
+      "key": "609867:609867",
+      "team": "A",
+      "role": "canonical-winner-B",
+      "N": 289,
+      "mapKey": "Queen Of Spades/a"
+    },
+    {
+      "key": "cand-stack11-online:724131",
+      "team": "A",
+      "role": "set:cand-stack11-online",
+      "N": 1,
+      "mapKey": "Queen Of Spades/a"
+    },
+    {
+      "key": "v1-w1:744696",
+      "team": "A",
+      "role": "set:v1-w1",
+      "N": 3,
+      "mapKey": "Queen Of Spades/a"
+    },
+    {
+      "key": "v1-w2:748883",
+      "team": "A",
+      "role": "set:v1-w2",
+      "N": 1,
+      "mapKey": "Queen Of Spades/a"
+    },
+    {
+      "key": "exp/v1:v1-a-px4:proxy4_elim_queen_of_spades_B_1",
+      "team": "B",
+      "role": "local:v1",
+      "N": 14,
+      "mapKey": "Queen Of Spades/a"
+    },
+    {
+      "key": "exp/v11:v11-a2-px4:proxy4_king_queen_of_spades_B_2",
+      "team": "B",
+      "role": "local:v11",
+      "N": 8,
+      "mapKey": "Queen Of Spades/a"
+    },
+    {
+      "key": "exp/v11:v11c-a2-px4:proxy4_king_queen_of_spades_B_2",
+      "team": "B",
+      "role": "local:v11c",
+      "N": 8,
+      "mapKey": "Queen Of Spades/a"
+    },
+    {
+      "key": "681843:681843",
+      "team": "B",
+      "role": "canonical-winner-A",
+      "N": 240,
+      "mapKey": "Schooltime/a"
+    },
+    {
+      "key": "723550:723551",
+      "team": "A",
+      "role": "canonical-winner-B",
+      "N": 208,
+      "mapKey": "Schooltime/a"
+    },
+    {
+      "key": "cand-stack11-online:724077",
+      "team": "A",
+      "role": "set:cand-stack11-online",
+      "N": 3,
+      "mapKey": "Schooltime/a"
+    },
+    {
+      "key": "v1-w1:744657",
+      "team": "A",
+      "role": "set:v1-w1",
+      "N": 4,
+      "mapKey": "Schooltime/a"
+    },
+    {
+      "key": "v1-w2:748844",
+      "team": "A",
+      "role": "set:v1-w2",
+      "N": 3,
+      "mapKey": "Schooltime/a"
+    },
+    {
+      "key": "exp/v1:v1-a-px4:proxy4_elim_schooltime_A_1",
+      "team": "A",
+      "role": "local:v1",
+      "N": 14,
+      "mapKey": "Schooltime/a"
+    },
+    {
+      "key": "exp/v11:v11-a-px4:proxy4_king_schooltime_A_1",
+      "team": "A",
+      "role": "local:v11",
+      "N": 8,
+      "mapKey": "Schooltime/a"
+    },
+    {
+      "key": "exp/v11:v11c-a-px4:proxy4_king_schooltime_A_1",
+      "team": "A",
+      "role": "local:v11c",
+      "N": 8,
+      "mapKey": "Schooltime/a"
+    },
+    {
+      "key": "669824:669824",
+      "team": "A",
+      "role": "canonical-winner-A",
+      "N": 183,
+      "mapKey": "Slithery Fight/a"
+    },
+    {
+      "key": "654174:654176",
+      "team": "B",
+      "role": "canonical-winner-B",
+      "N": 185,
+      "mapKey": "Slithery Fight/a"
+    },
+    {
+      "key": "cand-stack11-online:724074",
+      "team": "A",
+      "role": "set:cand-stack11-online",
+      "N": 5,
+      "mapKey": "Slithery Fight/a"
+    },
+    {
+      "key": "v1-w1:744714",
+      "team": "A",
+      "role": "set:v1-w1",
+      "N": 3,
+      "mapKey": "Slithery Fight/a"
+    },
+    {
+      "key": "v1-w2:748861",
+      "team": "A",
+      "role": "set:v1-w2",
+      "N": 3,
+      "mapKey": "Slithery Fight/a"
+    },
+    {
+      "key": "exp/v11:v1-a2-px4:proxy4_swarm_slithery_fight_B_2",
+      "team": "B",
+      "role": "local:v1",
+      "N": 14,
+      "mapKey": "Slithery Fight/a"
+    },
+    {
+      "key": "exp/v11:v11-a2-px4:proxy4_swarm_slithery_fight_A_2",
+      "team": "A",
+      "role": "local:v11",
+      "N": 8,
+      "mapKey": "Slithery Fight/a"
+    },
+    {
+      "key": "exp/v11:v11c-a2-px4:proxy4_swarm_slithery_fight_A_2",
+      "team": "A",
+      "role": "local:v11c",
+      "N": 8,
+      "mapKey": "Slithery Fight/a"
+    },
+    {
+      "key": "588110:588118",
+      "team": "A",
+      "role": "canonical-winner-A",
+      "N": 936,
+      "mapKey": "Trauma/a"
+    },
+    {
+      "key": "644991:644999",
+      "team": "A",
+      "role": "canonical-winner-B",
+      "N": 969,
+      "mapKey": "Trauma/a"
+    },
+    {
+      "key": "cand-stack11-online:724070",
+      "team": "A",
+      "role": "set:cand-stack11-online",
+      "N": 7,
+      "mapKey": "Trauma/a"
+    },
+    {
+      "key": "v1-w1:744640",
+      "team": "A",
+      "role": "set:v1-w1",
+      "N": 7,
+      "mapKey": "Trauma/a"
+    },
+    {
+      "key": "v1-w2:748837",
+      "team": "A",
+      "role": "set:v1-w2",
+      "N": 7,
+      "mapKey": "Trauma/a"
+    },
+    {
+      "key": "exp/v1:v1-a-px4:proxy4_elim_trauma_A_1",
+      "team": "A",
+      "role": "local:v1",
+      "N": 28,
+      "mapKey": "Trauma/a"
+    },
+    {
+      "key": "exp/v11:v11-a-px4:proxy4_king_trauma_A_1",
+      "team": "A",
+      "role": "local:v11",
+      "N": 16,
+      "mapKey": "Trauma/a"
+    },
+    {
+      "key": "exp/v11:v11c-a-px4:proxy4_king_trauma_A_1",
+      "team": "A",
+      "role": "local:v11c",
+      "N": 16,
+      "mapKey": "Trauma/a"
+    },
+    {
+      "key": "618279:618281",
+      "team": "B",
+      "role": "canonical-winner-A",
+      "N": 295,
+      "mapKey": "Trophy/a"
+    },
+    {
+      "key": "642884:642887",
+      "team": "A",
+      "role": "canonical-winner-B",
+      "N": 273,
+      "mapKey": "Trophy/a"
+    },
+    {
+      "key": "cand-stack11-online:724133",
+      "team": "A",
+      "role": "set:cand-stack11-online",
+      "N": 7,
+      "mapKey": "Trophy/a"
+    },
+    {
+      "key": "v1-w1:744638",
+      "team": "A",
+      "role": "set:v1-w1",
+      "N": 7,
+      "mapKey": "Trophy/a"
+    },
+    {
+      "key": "v1-w2:748845",
+      "team": "A",
+      "role": "set:v1-w2",
+      "N": 7,
+      "mapKey": "Trophy/a"
+    },
+    {
+      "key": "exp/v11:v1-a3-px4:proxy4_swarm_trophy_A_4",
+      "team": "A",
+      "role": "local:v1",
+      "N": 28,
+      "mapKey": "Trophy/a"
+    },
+    {
+      "key": "exp/v11:v11-a3-px4:proxy4_swarm_trophy_A_4",
+      "team": "A",
+      "role": "local:v11",
+      "N": 16,
+      "mapKey": "Trophy/a"
+    },
+    {
+      "key": "exp/v11:v11c-a3-px4:proxy4_swarm_trophy_A_4",
+      "team": "A",
+      "role": "local:v11c",
+      "N": 16,
+      "mapKey": "Trophy/a"
+    },
+    {
+      "key": "600402:600404",
+      "team": "A",
+      "role": "canonical-winner-A",
+      "N": 340,
+      "mapKey": "Devil/b"
+    },
+    {
+      "key": "586220:586222",
+      "team": "B",
+      "role": "canonical-winner-B",
+      "N": 347,
+      "mapKey": "Devil/b"
+    },
+    {
+      "key": "cand-stack11-online:724134",
+      "team": "A",
+      "role": "set:cand-stack11-online",
+      "N": 1,
+      "mapKey": "Devil/b"
+    },
+    {
+      "key": "v1-w1:744649",
+      "team": "A",
+      "role": "set:v1-w1",
+      "N": 5,
+      "mapKey": "Devil/b"
+    },
+    {
+      "key": "v1-w2:748836",
+      "team": "A",
+      "role": "set:v1-w2",
+      "N": 5,
+      "mapKey": "Devil/b"
+    },
+    {
+      "key": "exp/v1:v1-b-px4:proxy4_elim_devil_b_A_2",
+      "team": "A",
+      "role": "local:v1",
+      "N": 14,
+      "mapKey": "Devil/b"
+    },
+    {
+      "key": "exp/v11:v11-b-px4:proxy4_swarm_devil_b_A_2",
+      "team": "A",
+      "role": "local:v11",
+      "N": 8,
+      "mapKey": "Devil/b"
+    },
+    {
+      "key": "exp/v11:v11c-b-px4:proxy4_swarm_devil_b_A_2",
+      "team": "A",
+      "role": "local:v11c",
+      "N": 8,
+      "mapKey": "Devil/b"
+    },
+    {
+      "key": "674002:674005",
+      "team": "B",
+      "role": "canonical-winner-A",
+      "N": 179,
+      "mapKey": "Queen Of Spades/b"
+    },
+    {
+      "key": "726656:726659",
+      "team": "A",
+      "role": "canonical-winner-B",
+      "N": 244,
+      "mapKey": "Queen Of Spades/b"
+    },
+    {
+      "key": "cand-stack11-online:724076",
+      "team": "A",
+      "role": "set:cand-stack11-online",
+      "N": 6,
+      "mapKey": "Queen Of Spades/b"
+    },
+    {
+      "key": "v1-w1:744646",
+      "team": "A",
+      "role": "set:v1-w1",
+      "N": 4,
+      "mapKey": "Queen Of Spades/b"
+    },
+    {
+      "key": "v1-w2:748833",
+      "team": "A",
+      "role": "set:v1-w2",
+      "N": 6,
+      "mapKey": "Queen Of Spades/b"
+    },
+    {
+      "key": "exp/v1:v1-b-px4:proxy4_elim_queen_of_spades_b_A_2",
+      "team": "A",
+      "role": "local:v1",
+      "N": 14,
+      "mapKey": "Queen Of Spades/b"
+    },
+    {
+      "key": "exp/v11:v11-b-px4:proxy4_king_queen_of_spades_b_A_2",
+      "team": "A",
+      "role": "local:v11",
+      "N": 8,
+      "mapKey": "Queen Of Spades/b"
+    },
+    {
+      "key": "exp/v11:v11c-b-px4:proxy4_king_queen_of_spades_b_A_2",
+      "team": "A",
+      "role": "local:v11c",
+      "N": 8,
+      "mapKey": "Queen Of Spades/b"
+    },
+    {
+      "key": "664120:664120",
+      "team": "A",
+      "role": "canonical-winner-A",
+      "N": 277,
+      "mapKey": "Schooltime/b"
+    },
+    {
+      "key": "620232:620234",
+      "team": "B",
+      "role": "canonical-winner-B",
+      "N": 208,
+      "mapKey": "Schooltime/b"
+    },
+    {
+      "key": "cand-stack11-online:724118",
+      "team": "A",
+      "role": "set:cand-stack11-online",
+      "N": 4,
+      "mapKey": "Schooltime/b"
+    },
+    {
+      "key": "v1-w1:744647",
+      "team": "A",
+      "role": "set:v1-w1",
+      "N": 3,
+      "mapKey": "Schooltime/b"
+    },
+    {
+      "key": "v1-w2:748884",
+      "team": "A",
+      "role": "set:v1-w2",
+      "N": 4,
+      "mapKey": "Schooltime/b"
+    },
+    {
+      "key": "exp/v1:v1-b-px4:proxy4_king_schooltime_b_B_2",
+      "team": "B",
+      "role": "local:v1",
+      "N": 14,
+      "mapKey": "Schooltime/b"
+    },
+    {
+      "key": "exp/v11:v11-b-px4:proxy4_king_schooltime_b_B_2",
+      "team": "B",
+      "role": "local:v11",
+      "N": 8,
+      "mapKey": "Schooltime/b"
+    },
+    {
+      "key": "exp/v11:v11c-b-px4:proxy4_king_schooltime_b_B_2",
+      "team": "B",
+      "role": "local:v11c",
+      "N": 8,
+      "mapKey": "Schooltime/b"
+    },
+    {
+      "key": "716594:716601",
+      "team": "B",
+      "role": "canonical-winner-A",
+      "N": 156,
+      "mapKey": "Slithery Fight/b"
+    },
+    {
+      "key": "620276:620285",
+      "team": "A",
+      "role": "canonical-winner-B",
+      "N": 138,
+      "mapKey": "Slithery Fight/b"
+    },
+    {
+      "key": "cand-stack11-online:724125",
+      "team": "A",
+      "role": "set:cand-stack11-online",
+      "N": 2,
+      "mapKey": "Slithery Fight/b"
+    },
+    {
+      "key": "v1-w1:744704",
+      "team": "A",
+      "role": "set:v1-w1",
+      "N": 4,
+      "mapKey": "Slithery Fight/b"
+    },
+    {
+      "key": "v1-w2:748881",
+      "team": "A",
+      "role": "set:v1-w2",
+      "N": 4,
+      "mapKey": "Slithery Fight/b"
+    },
+    {
+      "key": "exp/v1:v1-b-px4:proxy4_king_slithery_fight_b_B_2",
+      "team": "B",
+      "role": "local:v1",
+      "N": 14,
+      "mapKey": "Slithery Fight/b"
+    },
+    {
+      "key": "exp/v11:v11-b-px4:proxy4_king_slithery_fight_b_B_2",
+      "team": "B",
+      "role": "local:v11",
+      "N": 8,
+      "mapKey": "Slithery Fight/b"
+    },
+    {
+      "key": "exp/v11:v11c-b-px4:proxy4_king_slithery_fight_b_B_2",
+      "team": "B",
+      "role": "local:v11c",
+      "N": 8,
+      "mapKey": "Slithery Fight/b"
+    }
+  ]
+}

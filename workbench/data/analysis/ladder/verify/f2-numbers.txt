@@ -1,0 +1,85 @@
+main games 195 meetings 7787 same-team head-ons 739 games without a cross-team meeting 6
+ALL games 195 us 11166 them 16587 dropped 31301 share 0.4023 battle bootstrap 95% (0.38, 0.429)
+band <1700 games 0 us 0 them 0 dropped 0 share None battle bootstrap 95% (None, None)
+band 1700-1899 games 60 us 4071 them 4887 dropped 10166 share 0.4545 battle bootstrap 95% (0.407, 0.504)
+band 1900-2099 games 125 us 6628 them 10816 dropped 19618 share 0.38 battle bootstrap 95% (0.359, 0.403)
+band 2100+ games 10 us 467 them 884 dropped 1517 share 0.3457 battle bootstrap 95% (0.273, 0.484)
+half first games 97 us 5059 them 7872 dropped 14754 share 0.3912 battle bootstrap 95% (0.365, 0.419)
+half second games 98 us 6107 them 8715 dropped 16547 share 0.412 battle bootstrap 95% (0.373, 0.456)
+games fewer / more / equal 119 68 8 sign test p 0.00023594309365666677
+not credited: eaten later than 15 rounds 2605 never eaten 213 censored by game end 730
+pearls dropped by us : 14855 eaten within 15 by us 5787 by them 7383 our share 0.4394
+pearls dropped by them : 16446 eaten within 15 by us 5379 by them 9204 our share 0.3689
+meetings where the mover was us : count 2697 us 5876 them 4134 share 0.587
+meetings where the mover was them : count 5090 us 5290 them 12453 share 0.2981
+all pearls eaten, whole game: us 116197 them 165112 share 0.4131 | natural only 64441 88203 0.4222 | every death drop 51756 76909 0.4023 | dragon turns 1989078 2267221 0.4673
+drops from all other deaths or eaten later: us 40590 them 60322 share 0.4022
+share expected if pearls split like living dragons at the meeting: 0.4964 observed 0.4023
+meetings with dragon counts within 0.8-1.25: us 5244 them 7196 share 0.4215 | we outnumber >1.25:  [3841, 3109] 0.5527 | they outnumber: [2081, 6282] 0.2488
+meeting round r0-100 us 1515 them 1638 share 0.4805
+meeting round r101-300 us 5577 them 8610 share 0.3931
+meeting round r301+ us 4074 them 6339 share 0.3912
+by result: won (7157, 7855, 17249) 0.4768 games 111 | lost (4009, 8732, 14052) 0.3147 games 84
+by layout: games us them share | games fewer/more
+   Around UNSW #1 14 2649 3601 0.424 | 12 2
+   Australia #1 9 725 2036 0.263 | 8 1
+   Autarky #1 8 553 460 0.546 | 1 7
+   Default #1 15 919 731 0.557 | 3 12
+   Devil #1 13 698 625 0.528 | 3 10
+   Islands #1 8 696 2079 0.251 | 8 0
+   Maze #1 15 640 1081 0.372 | 15 0
+   Portals #1 6 0 0 None | 0 0
+   Prisoners Dilemma #1 3 64 37 0.634 | 1 2
+   Prisoners Dilemma #2 6 61 28 0.685 | 2 4
+   Queen Of Spades #1 17 277 314 0.469 | 7 10
+   Schooltime #1 9 251 812 0.236 | 9 0
+   Schooltime #2 6 1201 1514 0.442 | 4 2
+   Slithery Fight #1 12 1618 2136 0.431 | 11 1
+   Stripes #1 8 25 53 0.321 | 5 1
+   Tower Defense #1 13 118 146 0.447 | 6 7
+   Trauma #1 18 227 507 0.309 | 17 1
+   Trophy #1 6 212 178 0.544 | 2 4
+   weakhold #1 9 232 249 0.482 | 5 4
+by opponent: games us them share
+   ComTamSuonNuong (193) ['1900-2099'] 20 791 1383 0.364
+   :3 (217) ['1900-2099'] 15 1090 1436 0.432
+   1 (231) ['1900-2099'] 15 671 1004 0.401
+   byte_force (959) ['1700-1899'] 15 889 1183 0.429
+   free trip to sydney pls (82) ['1900-2099'] 15 905 1730 0.343
+   中国人不准飞😡😡😡😡😡😡😡 (791) ['1700-1899'] 10 696 1082 0.391
+   Settlers of Battlecode (258) ['1900-2099', '2100+'] 10 354 958 0.27
+   calc (20) ['1900-2099'] 10 663 1206 0.355
+   Knight Capital (226) ['1900-2099'] 10 533 900 0.372
+   NUSW Battlecode (262) ['1900-2099'] 10 481 803 0.375
+   天天开心 :( (835) ['1700-1899'] 10 1065 884 0.546
+   doofenshmirtz good incorporated (1015) ['1700-1899'] 5 265 359 0.425
+   Computers (112) ['1900-2099'] 5 303 650 0.318
+   Heartbreaker (62) ['1700-1899'] 5 464 684 0.404
+   python.io (147) ['1700-1899'] 5 126 171 0.424
+   DeepSeek-V4.1-Flash (776) ['1700-1899'] 5 229 268 0.461
+   dev test 1 :P (545) ['2100+'] 5 226 241 0.484
+   food (871) ['1900-2099'] 5 104 158 0.397
+   we love gru (998) ['1900-2099'] 5 549 761 0.419
+   Memory? (1097) ['1900-2099'] 5 116 136 0.46
+   Nitronics (837) ['1900-2099'] 5 309 334 0.481
+   POFPOF (1055) ['1700-1899'] 5 337 256 0.568
+by bot id: {'18066': (5, (254, 391), 0.394), '18504': (140, (7962, 11641), 0.406), '18570': (50, (2950, 4555), 0.393)}
+leave one map_key out: lowest share (0.3926, 'Default #1') highest (0.4192, 'Islands #1')
+leave one opp out: lowest share (0.3915, '天天开心 :( (835)') highest (0.4089, 'Settlers of Battlecode (258)')
+   ALL without its three most supporting games [(1256637, 'Australia #1', (35, 388)), (1250698, 'Islands #1', (65, 312)), (1240023, 'Australia #1', (54, 288))] -> (11012, 15599) 0.4138
+     leave one layout out within slice: lowest (0.3926, 'Default #1') highest (0.4192, 'Islands #1')
+     per-game share: median 0.411 games fewer/more/equal 119 68 8
+   1700-1899 without its three most supporting games [(1255362, 'Australia #1', (94, 278)), (1252500, 'Islands #1', (71, 229)), (1252501, 'Schooltime #2', (200, 343))] -> (3706, 4037) 0.4786
+     leave one layout out within slice: lowest (0.4397, 'Default #1') highest (0.4699, 'Around UNSW #1')
+     per-game share: median 0.48 games fewer/more/equal 30 28 2
+   1900-2099 without its three most supporting games [(1256637, 'Australia #1', (35, 388)), (1250698, 'Islands #1', (65, 312)), (1240023, 'Australia #1', (54, 288))] -> (6474, 9828) 0.3971
+     leave one layout out within slice: lowest (0.3649, 'Around UNSW #1') highest (0.3991, 'Australia #1')
+     per-game share: median 0.402 games fewer/more/equal 81 39 5
+   first without its three most supporting games [(1250698, 'Islands #1', (65, 312)), (1240023, 'Australia #1', (54, 288)), (1244936, 'Islands #1', (54, 228))] -> (4886, 7044) 0.4096
+     leave one layout out within slice: lowest (0.3766, 'Around UNSW #1') highest (0.406, 'Islands #1')
+     per-game share: median 0.402 games fewer/more/equal 62 30 5
+   second without its three most supporting games [(1256637, 'Australia #1', (35, 388)), (1257760, 'Islands #1', (73, 299)), (1256640, 'Schooltime #2', (118, 328))] -> (5881, 7700) 0.433
+     leave one layout out within slice: lowest (0.3985, 'Default #1') highest (0.4312, 'Islands #1')
+     per-game share: median 0.425 games fewer/more/equal 57 38 3
+band 1700-1899 by layout: {'Around UNSW #1': (4, (675, 1056), 0.39), 'Australia #1': (3, (394, 584), 0.403), 'Autarky #1': (3, (244, 141), 0.634), 'Default #1': (5, (408, 220), 0.65), 'Devil #1': (2, (110, 58), 0.655), 'Islands #1': (1, (71, 229), 0.237), 'Maze #1': (4, (150, 248), 0.377), 'Portals #1': (2, (0, 0), None), 'Prisoners Dilemma #1': (2, (49, 5), 0.907), 'Prisoners Dilemma #2': (2, (37, 5), 0.881), 'Queen Of Spades #1': (4, (40, 5), 0.889), 'Schooltime #1': (3, (135, 317), 0.299), 'Schooltime #2': (4, (888, 896), 0.498), 'Slithery Fight #1': (4, (622, 776), 0.445), 'Stripes #1': (2, (16, 22), 0.421), 'Tower Defense #1': (5, (56, 69), 0.448), 'Trauma #1': (7, (106, 190), 0.358), 'Trophy #1': (1, (20, 0), 1.0), 'weakhold #1': (2, (50, 66), 0.431)}
+per layout share, 1700-1899 vs 1900-2099: {'Around UNSW #1': (0.39, 0.429), 'Australia #1': (0.403, 0.191), 'Autarky #1': (0.634, 0.492), 'Default #1': (0.65, 0.5), 'Devil #1': (0.655, 0.509), 'Islands #1': (0.237, 0.26), 'Maze #1': (0.377, 0.37), 'Portals #1': (None, None), 'Prisoners Dilemma #1': (0.907, 0.319), 'Prisoners Dilemma #2': (0.881, 0.786), 'Queen Of Spades #1': (0.889, 0.437), 'Schooltime #1': (0.299, 0.19), 'Schooltime #2': (0.498, 0.336), 'Slithery Fight #1': (0.445, 0.426), 'Stripes #1': (0.421, 0.225), 'Tower Defense #1': (0.448, 0.467), 'Trauma #1': (0.358, 0.279), 'Trophy #1': (1.0, 0.535), 'weakhold #1': (0.431, 0.499)}

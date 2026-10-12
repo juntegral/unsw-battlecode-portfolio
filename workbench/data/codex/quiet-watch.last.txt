@@ -1,0 +1,5 @@
+선택적 세 번째 인자 quiet를 추가하고 모듈 docstring에 설명했습니다.
+quiet에서는 done 완료 알림과 building/testing 전환 알림을 건너뛰며 기억 상태를 갱신합니다.
+새 needs-look/needs-info 카드는 깨우고, 나머지 깨우기 조건은 유지합니다.
+python3 -m py_compile tools/loop_watch.py 통과; diff를 읽고 일반 모드 동작이 동일함을 확인했습니다.
+watcher 루프 실행 및 외부 게시 없음.

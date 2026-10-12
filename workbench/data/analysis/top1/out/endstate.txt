@@ -1,0 +1,140 @@
+
+===== Vibing++ (306) vs >=2000: N=406
+  -- all: N=406 win 0.66; reach r500 246/406
+     r500  own=noQ   their=noQ   :  77/116 = 0.66   {'longestW': 77, 'longestL': 39}
+     r500  own=noQ   their=theirQ:   0/ 33 = 0.00   {'queen ruleL': 33}
+     r500  own=ownQ  their=noQ   :  41/ 41 = 1.00   {'queen ruleW': 41}
+     r500  own=ownQ  their=theirQ:  41/ 56 = 0.73   {'longestW': 19, 'queen ruleW': 22, 'queen ruleL': 8, 'longestL': 7}
+     wipe  own=noQ   their=noQ   :  74/ 96 = 0.77   {'wipe-outW': 74, 'wipe-outL': 22}
+     wipe  own=noQ   their=theirQ:   0/ 29 = 0.00   {'wipe-outL': 29}
+     wipe  own=ownQ  their=noQ   :  35/ 35 = 1.00   {'wipe-outW': 35}
+     queen alive own/opp: r50: 0.85/0.89 (n404)  r100: 0.70/0.78 (n385)  r150: 0.59/0.68 (n354)  r200: 0.54/0.63 (n322)  r300: 0.53/0.52 (n279)  r400: 0.46/0.44 (n266)  rend: 0.33/0.29 (n406)
+  -- small<=700: N=171 win 0.60; reach r500 58/171
+     r500  own=noQ   their=noQ   :  21/ 28 = 0.75   {'longestW': 21, 'longestL': 7}
+     r500  own=noQ   their=theirQ:   0/ 12 = 0.00   {'queen ruleL': 12}
+     r500  own=ownQ  their=noQ   :   9/  9 = 1.00   {'queen ruleW': 9}
+     r500  own=ownQ  their=theirQ:   8/  9 = 0.89   {'queen ruleL': 1, 'queen ruleW': 8}
+     wipe  own=noQ   their=noQ   :  45/ 65 = 0.69   {'wipe-outW': 45, 'wipe-outL': 20}
+     wipe  own=noQ   their=theirQ:   0/ 29 = 0.00   {'wipe-outL': 29}
+     wipe  own=ownQ  their=noQ   :  19/ 19 = 1.00   {'wipe-outW': 19}
+     queen alive own/opp: r50: 0.69/0.82 (n169)  r100: 0.49/0.71 (n150)  r150: 0.34/0.63 (n122)  r200: 0.33/0.60 (n95)  r300: 0.35/0.57 (n69)  r400: 0.32/0.45 (n65)  rend: 0.22/0.29 (n171)
+  -- medium701-1500: N=106 win 0.77; reach r500 59/106
+     r500  own=noQ   their=noQ   :  12/ 21 = 0.57   {'longestW': 12, 'longestL': 9}
+     r500  own=noQ   their=theirQ:   0/  6 = 0.00   {'queen ruleL': 6}
+     r500  own=ownQ  their=noQ   :  12/ 12 = 1.00   {'queen ruleW': 12}
+     r500  own=ownQ  their=theirQ:  13/ 20 = 0.65   {'queen ruleW': 13, 'queen ruleL': 7}
+     wipe  own=noQ   their=noQ   :  29/ 31 = 0.94   {'wipe-outW': 29, 'wipe-outL': 2}
+     wipe  own=ownQ  their=noQ   :  16/ 16 = 1.00   {'wipe-outW': 16}
+     queen alive own/opp: r50: 0.92/0.94 (n106)  r100: 0.77/0.82 (n106)  r150: 0.66/0.68 (n103)  r200: 0.60/0.62 (n98)  r300: 0.60/0.59 (n81)  r400: 0.58/0.51 (n72)  rend: 0.45/0.25 (n106)
+  -- large>1500: N=129 win 0.65; reach r500 129/129
+     r500  own=noQ   their=noQ   :  44/ 67 = 0.66   {'longestL': 23, 'longestW': 44}
+     r500  own=noQ   their=theirQ:   0/ 15 = 0.00   {'queen ruleL': 15}
+     r500  own=ownQ  their=noQ   :  20/ 20 = 1.00   {'queen ruleW': 20}
+     r500  own=ownQ  their=theirQ:  20/ 27 = 0.74   {'longestW': 19, 'longestL': 7, 'queen ruleW': 1}
+     queen alive own/opp: r50: 0.99/0.93 (n129)  r100: 0.90/0.83 (n129)  r150: 0.77/0.71 (n129)  r200: 0.66/0.65 (n129)  r300: 0.59/0.44 (n129)  r400: 0.46/0.40 (n129)  rend: 0.36/0.33 (n129)
+
+===== SSS (91) vs >=2000: N=399
+  -- all: N=399 win 0.65; reach r500 251/399
+     r500  own=noQ   their=noQ   :  63/113 = 0.56   {'longestW': 63, 'longestL': 50}
+     r500  own=noQ   their=theirQ:   0/ 24 = 0.00   {'queen ruleL': 24}
+     r500  own=ownQ  their=noQ   :  62/ 62 = 1.00   {'queen ruleW': 62}
+     r500  own=ownQ  their=theirQ:  33/ 52 = 0.63   {'longestW': 15, 'queen ruleW': 18, 'queen ruleL': 14, 'longestL': 5}
+     wipe  own=noQ   their=noQ   :  38/ 72 = 0.53   {'wipe-outL': 34, 'wipe-outW': 38}
+     wipe  own=noQ   their=theirQ:   0/ 14 = 0.00   {'wipe-outL': 14}
+     wipe  own=ownQ  their=noQ   :  62/ 62 = 1.00   {'wipe-outW': 62}
+     queen alive own/opp: r50: 0.93/0.91 (n395)  r100: 0.87/0.78 (n380)  r150: 0.81/0.63 (n352)  r200: 0.77/0.55 (n319)  r300: 0.68/0.46 (n281)  r400: 0.59/0.39 (n262)  rend: 0.44/0.23 (n399)
+  -- small<=700: N=156 win 0.67; reach r500 51/156
+     r500  own=noQ   their=noQ   :   8/ 16 = 0.50   {'longestW': 8, 'longestL': 8}
+     r500  own=noQ   their=theirQ:   0/ 11 = 0.00   {'queen ruleL': 11}
+     r500  own=ownQ  their=noQ   :  19/ 19 = 1.00   {'queen ruleW': 19}
+     r500  own=ownQ  their=theirQ:   2/  5 = 0.40   {'queen ruleW': 2, 'queen ruleL': 3}
+     wipe  own=noQ   their=noQ   :  30/ 49 = 0.61   {'wipe-outL': 19, 'wipe-outW': 30}
+     wipe  own=noQ   their=theirQ:   0/ 11 = 0.00   {'wipe-outL': 11}
+     wipe  own=ownQ  their=noQ   :  45/ 45 = 1.00   {'wipe-outW': 45}
+     queen alive own/opp: r50: 0.86/0.80 (n152)  r100: 0.77/0.66 (n137)  r150: 0.74/0.58 (n113)  r200: 0.79/0.59 (n86)  r300: 0.76/0.52 (n62)  r400: 0.60/0.42 (n53)  rend: 0.44/0.17 (n156)
+  -- medium701-1500: N=108 win 0.61; reach r500 65/108
+     r500  own=noQ   their=noQ   :  10/ 16 = 0.62   {'longestL': 6, 'longestW': 10}
+     r500  own=noQ   their=theirQ:   0/  7 = 0.00   {'queen ruleL': 7}
+     r500  own=ownQ  their=noQ   :  16/ 16 = 1.00   {'queen ruleW': 16}
+     r500  own=ownQ  their=theirQ:  15/ 26 = 0.58   {'queen ruleW': 15, 'queen ruleL': 11}
+     wipe  own=noQ   their=noQ   :   8/ 23 = 0.35   {'wipe-outL': 15, 'wipe-outW': 8}
+     wipe  own=noQ   their=theirQ:   0/  3 = 0.00   {'wipe-outL': 3}
+     wipe  own=ownQ  their=noQ   :  17/ 17 = 1.00   {'wipe-outW': 17}
+     queen alive own/opp: r50: 0.97/0.99 (n108)  r100: 0.91/0.82 (n108)  r150: 0.85/0.65 (n104)  r200: 0.79/0.60 (n98)  r300: 0.74/0.58 (n84)  r400: 0.70/0.55 (n74)  rend: 0.55/0.33 (n108)
+  -- large>1500: N=135 win 0.65; reach r500 135/135
+     r500  own=noQ   their=noQ   :  45/ 81 = 0.56   {'longestW': 45, 'longestL': 36}
+     r500  own=noQ   their=theirQ:   0/  6 = 0.00   {'queen ruleL': 6}
+     r500  own=ownQ  their=noQ   :  27/ 27 = 1.00   {'queen ruleW': 27}
+     r500  own=ownQ  their=theirQ:  16/ 21 = 0.76   {'longestW': 15, 'queen ruleW': 1, 'longestL': 5}
+     queen alive own/opp: r50: 0.96/0.96 (n135)  r100: 0.93/0.86 (n135)  r150: 0.84/0.64 (n135)  r200: 0.76/0.49 (n135)  r300: 0.60/0.36 (n135)  r400: 0.52/0.28 (n135)  rend: 0.36/0.20 (n135)
+
+===== forgot (264) vs >=2000: N=426
+  -- all: N=426 win 0.56; reach r500 258/426
+     r500  own=noQ   their=noQ   :  56/ 97 = 0.58   {'totalL': 2, 'longestL': 39, 'longestW': 56}
+     r500  own=noQ   their=theirQ:   0/ 51 = 0.00   {'queen ruleL': 51}
+     r500  own=ownQ  their=noQ   :  43/ 43 = 1.00   {'queen ruleW': 43}
+     r500  own=ownQ  their=theirQ:  47/ 67 = 0.70   {'longestW': 16, 'queen ruleW': 31, 'longestL': 8, 'queen ruleL': 12}
+     wipe  own=noQ   their=noQ   :  34/ 76 = 0.45   {'wipe-outW': 34, 'wipe-outL': 42}
+     wipe  own=noQ   their=theirQ:   0/ 32 = 0.00   {'wipe-outL': 32}
+     wipe  own=ownQ  their=noQ   :  60/ 60 = 1.00   {'wipe-outW': 60}
+     queen alive own/opp: r50: 0.88/0.90 (n423)  r100: 0.73/0.78 (n392)  r150: 0.67/0.66 (n358)  r200: 0.64/0.58 (n328)  r300: 0.59/0.56 (n289)  r400: 0.53/0.52 (n270)  rend: 0.40/0.35 (n426)
+  -- small<=700: N=175 win 0.61; reach r500 60/175
+     r500  own=noQ   their=noQ   :  12/ 21 = 0.57   {'longestL': 9, 'longestW': 12}
+     r500  own=noQ   their=theirQ:   0/ 13 = 0.00   {'queen ruleL': 13}
+     r500  own=ownQ  their=noQ   :  19/ 19 = 1.00   {'queen ruleW': 19}
+     r500  own=ownQ  their=theirQ:   5/  7 = 0.71   {'queen ruleW': 5, 'queen ruleL': 2}
+     wipe  own=noQ   their=noQ   :  25/ 48 = 0.52   {'wipe-outL': 23, 'wipe-outW': 25}
+     wipe  own=noQ   their=theirQ:   0/ 22 = 0.00   {'wipe-outL': 22}
+     wipe  own=ownQ  their=noQ   :  45/ 45 = 1.00   {'wipe-outW': 45}
+     queen alive own/opp: r50: 0.81/0.82 (n172)  r100: 0.66/0.64 (n142)  r150: 0.64/0.53 (n112)  r200: 0.63/0.47 (n87)  r300: 0.66/0.46 (n68)  r400: 0.56/0.38 (n64)  rend: 0.41/0.24 (n175)
+  -- medium701-1500: N=120 win 0.49; reach r500 72/120
+     r500  own=noQ   their=noQ   :  12/ 23 = 0.52   {'longestL': 10, 'longestW': 12, 'totalL': 1}
+     r500  own=noQ   their=theirQ:   0/ 16 = 0.00   {'queen ruleL': 16}
+     r500  own=ownQ  their=noQ   :   6/  6 = 1.00   {'queen ruleW': 6}
+     r500  own=ownQ  their=theirQ:  22/ 27 = 0.81   {'queen ruleW': 22, 'queen ruleL': 5}
+     wipe  own=noQ   their=noQ   :   8/ 27 = 0.30   {'wipe-outW': 8, 'wipe-outL': 19}
+     wipe  own=noQ   their=theirQ:   0/ 10 = 0.00   {'wipe-outL': 10}
+     wipe  own=ownQ  their=noQ   :  11/ 11 = 1.00   {'wipe-outW': 11}
+     queen alive own/opp: r50: 0.97/0.93 (n120)  r100: 0.79/0.82 (n119)  r150: 0.71/0.69 (n117)  r200: 0.64/0.63 (n112)  r300: 0.57/0.64 (n92)  r400: 0.53/0.64 (n77)  rend: 0.37/0.44 (n120)
+  -- large>1500: N=131 win 0.57; reach r500 126/131
+     r500  own=noQ   their=noQ   :  32/ 53 = 0.60   {'totalL': 1, 'longestW': 32, 'longestL': 20}
+     r500  own=noQ   their=theirQ:   0/ 22 = 0.00   {'queen ruleL': 22}
+     r500  own=ownQ  their=noQ   :  18/ 18 = 1.00   {'queen ruleW': 18}
+     r500  own=ownQ  their=theirQ:  20/ 33 = 0.61   {'longestW': 16, 'longestL': 8, 'queen ruleL': 5, 'queen ruleW': 4}
+     wipe  own=noQ   their=noQ   :   1/  1 = 1.00   {'wipe-outW': 1}
+     wipe  own=ownQ  their=noQ   :   4/  4 = 1.00   {'wipe-outW': 4}
+     queen alive own/opp: r50: 0.89/0.98 (n131)  r100: 0.75/0.89 (n131)  r150: 0.67/0.75 (n129)  r200: 0.64/0.60 (n129)  r300: 0.57/0.55 (n129)  r400: 0.50/0.52 (n129)  rend: 0.42/0.42 (n131)
+
+===== meow (1119) vs >=2000: N=307
+  -- all: N=307 win 0.29; reach r500 181/307
+     r500  own=noQ   their=noQ   :  28/101 = 0.28   {'longestW': 26, 'longestL': 73, 'totalW': 2}
+     r500  own=noQ   their=theirQ:   0/ 51 = 0.00   {'queen ruleL': 51}
+     r500  own=ownQ  their=noQ   :   1/  1 = 1.00   {'queen ruleW': 1}
+     r500  own=ownQ  their=theirQ:   6/ 28 = 0.21   {'longestW': 4, 'longestL': 14, 'queen ruleL': 8, 'queen ruleW': 2}
+     wipe  own=noQ   their=noQ   :  36/ 51 = 0.71   {'wipe-outW': 36, 'wipe-outL': 15}
+     wipe  own=noQ   their=theirQ:   0/ 57 = 0.00   {'wipe-outL': 57}
+     wipe  own=ownQ  their=noQ   :  18/ 18 = 1.00   {'wipe-outW': 18}
+     queen alive own/opp: r50: 0.80/0.97 (n306)  r100: 0.59/0.90 (n289)  r150: 0.42/0.90 (n261)  r200: 0.32/0.82 (n240)  r300: 0.22/0.64 (n209)  r400: 0.18/0.53 (n195)  rend: 0.15/0.44 (n307)
+  -- small<=700: N=125 win 0.38; reach r500 42/125
+     r500  own=noQ   their=noQ   :   7/ 30 = 0.23   {'longestL': 23, 'totalW': 1, 'longestW': 6}
+     r500  own=noQ   their=theirQ:   0/ 12 = 0.00   {'queen ruleL': 12}
+     wipe  own=noQ   their=noQ   :  27/ 36 = 0.75   {'wipe-outW': 27, 'wipe-outL': 9}
+     wipe  own=noQ   their=theirQ:   0/ 34 = 0.00   {'wipe-outL': 34}
+     wipe  own=ownQ  their=noQ   :  13/ 13 = 1.00   {'wipe-outW': 13}
+     queen alive own/opp: r50: 0.65/0.93 (n124)  r100: 0.40/0.77 (n108)  r150: 0.22/0.75 (n83)  r200: 0.12/0.66 (n68)  r300: 0.04/0.48 (n52)  r400: 0.00/0.39 (n46)  rend: 0.10/0.37 (n125)
+  -- medium701-1500: N=85 win 0.33; reach r500 52/85
+     r500  own=noQ   their=noQ   :  11/ 25 = 0.44   {'longestW': 10, 'longestL': 14, 'totalW': 1}
+     r500  own=noQ   their=theirQ:   0/ 16 = 0.00   {'queen ruleL': 16}
+     r500  own=ownQ  their=noQ   :   1/  1 = 1.00   {'queen ruleW': 1}
+     r500  own=ownQ  their=theirQ:   2/ 10 = 0.20   {'queen ruleL': 8, 'queen ruleW': 2}
+     wipe  own=noQ   their=noQ   :   9/ 11 = 0.82   {'wipe-outW': 9, 'wipe-outL': 2}
+     wipe  own=noQ   their=theirQ:   0/ 17 = 0.00   {'wipe-outL': 17}
+     wipe  own=ownQ  their=noQ   :   5/  5 = 1.00   {'wipe-outW': 5}
+     queen alive own/opp: r50: 0.93/1.00 (n85)  r100: 0.71/0.96 (n84)  r150: 0.56/0.96 (n81)  r200: 0.47/0.88 (n75)  r300: 0.39/0.71 (n62)  r400: 0.30/0.57 (n56)  rend: 0.19/0.51 (n85)
+  -- large>1500: N=97 win 0.14; reach r500 87/97
+     r500  own=noQ   their=noQ   :  10/ 46 = 0.22   {'longestW': 10, 'longestL': 36}
+     r500  own=noQ   their=theirQ:   0/ 23 = 0.00   {'queen ruleL': 23}
+     r500  own=ownQ  their=theirQ:   4/ 18 = 0.22   {'longestW': 4, 'longestL': 14}
+     wipe  own=noQ   their=noQ   :   0/  4 = 0.00   {'wipe-outL': 4}
+     wipe  own=noQ   their=theirQ:   0/  6 = 0.00   {'wipe-outL': 6}
+     queen alive own/opp: r50: 0.89/1.00 (n97)  r100: 0.69/0.99 (n97)  r150: 0.47/0.97 (n97)  r200: 0.34/0.89 (n97)  r300: 0.22/0.67 (n95)  r400: 0.19/0.57 (n93)  rend: 0.19/0.48 (n97)

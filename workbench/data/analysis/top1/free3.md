@@ -1,0 +1,1 @@
+Sub-session subA3.md has finished (ran 06:29-08:50 KST, exit code 0). What it printed is in subA3.out (2795 bytes). The .md files in this directory written while it ran: c_p_answers.md c_p_change.md c_p_games.md c_p_head.md c_p_maps.md c_p_maps2.md c_p_table.md c_p_unknown.md c_p_wrong.md deep-read-3.md.

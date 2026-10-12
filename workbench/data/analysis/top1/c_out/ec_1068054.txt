@@ -1,0 +1,191 @@
+=== ECON 1068054 Tower Defense (32x16) | A = meow (1119, 1839) B = WeHaveQuizzes (87, 2180) | winner B by queen rule | queen spawns {'A': (5, 4), 'B': (26, 11)} | first contact (heads in view of each other) round None
+
+T1 economy | units total | ate: natural, corpse (own corpses / enemy corpses) | natural eaten in own half / enemy half | natural pearls that appeared: board total, in own half | lying at block start: board total, nearer to own heads | mean age of the natural pearls eaten
+  r  0 | A:  2u   4t | nat   0 cor  0/ 0 | half   0/ 0 | app   8,  3 | lying   0,  0 | age  0.0 || B:  2u   4t | nat   0 cor  0/ 0 | half   0/ 0 | app   8,  3 | lying   0,  0 | age  0.0
+  r 10 | A:  2u   4t | nat   0 cor  1/ 0 | half   0/ 0 | app   6,  2 | lying   8,  2 | age  0.0 || B:  2u   4t | nat   0 cor  0/ 0 | half   0/ 0 | app   6,  2 | lying   8,  6 | age  0.0
+  r 20 | A:  1u   3t | nat   0 cor  0/ 0 | half   0/ 0 | app   6,  3 | lying  14,  2 | age  0.0 || B:  2u   4t | nat   0 cor  0/ 0 | half   0/ 0 | app   6,  3 | lying  14, 12 | age  0.0
+  r 30 | A:  1u   3t | nat   0 cor  0/ 0 | half   0/ 0 | app   2,  0 | lying  20,  2 | age  0.0 || B:  2u   4t | nat   0 cor  0/ 0 | half   0/ 0 | app   2,  0 | lying  20, 18 | age  0.0
+  r 40 | A:  1u   3t | nat   0 cor  0/ 0 | half   0/ 0 | app  14,  4 | lying  22,  2 | age  0.0 || B:  2u   4t | nat   0 cor  1/ 0 | half   0/ 0 | app  14,  4 | lying  22, 20 | age  0.0
+  r 50 | A:  1u   3t | nat   0 cor  0/ 0 | half   0/ 0 | app   6,  2 | lying  36,  2 | age  0.0 || B:  1u   3t | nat   0 cor  0/ 0 | half   0/ 0 | app   6,  2 | lying  36, 34 | age  0.0
+  r 60 | A:  1u   3t | nat   1 cor  0/ 0 | half   1/ 0 | app   2,  0 | lying  42,  1 | age 13.0 || B:  1u   3t | nat   0 cor  0/ 0 | half   0/ 0 | app   2,  0 | lying  42, 41 | age  0.0
+  r 70 | A:  2u   4t | nat   0 cor  0/ 0 | half   0/ 0 | app  12,  3 | lying  43,  0 | age  0.0 || B:  1u   3t | nat   0 cor  0/ 0 | half   0/ 0 | app  12,  3 | lying  43, 43 | age  0.0
+  r 80 | A:  2u   4t | nat   0 cor  0/ 0 | half   0/ 0 | app   6,  3 | lying  55,  2 | age  0.0 || B:  1u   3t | nat   0 cor  0/ 0 | half   0/ 0 | app   6,  3 | lying  55, 53 | age  0.0
+  r 90 | A:  2u   4t | nat   2 cor  0/ 0 | half   2/ 0 | app   8,  3 | lying  61,  0 | age  0.5 || B:  1u   3t | nat   0 cor  0/ 0 | half   0/ 0 | app   8,  3 | lying  61, 61 | age  0.0
+  r100 | A:  2u   6t | nat   0 cor  0/ 0 | half   0/ 0 | app   1,  0 | lying  67,  0 | age  0.0 || B:  1u   3t | nat   0 cor  0/ 0 | half   0/ 0 | app   1,  1 | lying  67, 67 | age  0.0
+  r110 | A:  2u   6t | nat   0 cor  0/ 0 | half   0/ 0 | app   4,  1 | lying  68,  0 | age  0.0 || B:  1u   3t | nat   0 cor  0/ 0 | half   0/ 0 | app   4,  3 | lying  68, 68 | age  0.0
+  r120 | A:  2u   6t | nat   1 cor  0/ 0 | half   1/ 0 | app   0,  0 | lying  72,  1 | age  7.0 || B:  1u   3t | nat   0 cor  0/ 0 | half   0/ 0 | app   0,  0 | lying  72, 71 | age  0.0
+  r130 | A:  3u   7t | nat   0 cor  0/ 0 | half   0/ 0 | app   0,  0 | lying  71,  2 | age  0.0 || B:  1u   3t | nat   0 cor  0/ 0 | half   0/ 0 | app   0,  0 | lying  71, 69 | age  0.0
+  r140 | A:  3u   7t | nat   0 cor  0/ 0 | half   0/ 0 | app   0,  0 | lying  71,  0 | age  0.0 || B:  1u   3t | nat   0 cor  0/ 0 | half   0/ 0 | app   0,  0 | lying  71, 71 | age  0.0
+  r150 | A:  3u   7t | nat   0 cor  0/ 0 | half   0/ 0 | app   0,  0 | lying  71,  2 | age  0.0 || B:  1u   3t | nat   0 cor  0/ 0 | half   0/ 0 | app   0,  0 | lying  71, 69 | age  0.0
+
+T2 units | new dragons (splits) | rammed by enemy n/segments | rammed an enemy n/seg | team-mate ram n | boxed non-ram n/seg | non-ram with a free cell n/seg
+  r  0 | A:  2u | + 0 | hit  0/ 0 | rams  0/ 0 | fr  0 | boxed  0/ 0 | free  0/ 0 || B:  2u | + 0 | hit  0/ 0 | rams  0/ 0 | fr  0 | boxed  0/ 0 | free  0/ 0
+  r 10 | A:  2u | + 0 | hit  0/ 0 | rams  0/ 0 | fr  0 | boxed  1/ 2 | free  0/ 0 || B:  2u | + 0 | hit  0/ 0 | rams  0/ 0 | fr  0 | boxed  0/ 0 | free  0/ 0
+  r 20 | A:  1u | + 0 | hit  0/ 0 | rams  0/ 0 | fr  0 | boxed  0/ 0 | free  0/ 0 || B:  2u | + 0 | hit  0/ 0 | rams  0/ 0 | fr  0 | boxed  0/ 0 | free  0/ 0
+  r 30 | A:  1u | + 0 | hit  0/ 0 | rams  0/ 0 | fr  0 | boxed  0/ 0 | free  0/ 0 || B:  2u | + 0 | hit  0/ 0 | rams  0/ 0 | fr  0 | boxed  0/ 0 | free  0/ 0
+  r 40 | A:  1u | + 0 | hit  0/ 0 | rams  0/ 0 | fr  0 | boxed  0/ 0 | free  0/ 0 || B:  2u | + 0 | hit  0/ 0 | rams  0/ 0 | fr  0 | boxed  0/ 0 | free  1/ 2
+  r 50 | A:  1u | + 0 | hit  0/ 0 | rams  0/ 0 | fr  0 | boxed  0/ 0 | free  0/ 0 || B:  1u | + 0 | hit  0/ 0 | rams  0/ 0 | fr  0 | boxed  0/ 0 | free  0/ 0
+  r 60 | A:  1u | + 1 | hit  0/ 0 | rams  0/ 0 | fr  0 | boxed  0/ 0 | free  0/ 0 || B:  1u | + 0 | hit  0/ 0 | rams  0/ 0 | fr  0 | boxed  0/ 0 | free  0/ 0
+  r 70 | A:  2u | + 0 | hit  0/ 0 | rams  0/ 0 | fr  0 | boxed  0/ 0 | free  0/ 0 || B:  1u | + 0 | hit  0/ 0 | rams  0/ 0 | fr  0 | boxed  0/ 0 | free  0/ 0
+  r 80 | A:  2u | + 0 | hit  0/ 0 | rams  0/ 0 | fr  0 | boxed  0/ 0 | free  0/ 0 || B:  1u | + 0 | hit  0/ 0 | rams  0/ 0 | fr  0 | boxed  0/ 0 | free  0/ 0
+  r 90 | A:  2u | + 0 | hit  0/ 0 | rams  0/ 0 | fr  0 | boxed  0/ 0 | free  0/ 0 || B:  1u | + 0 | hit  0/ 0 | rams  0/ 0 | fr  0 | boxed  0/ 0 | free  0/ 0
+  r100 | A:  2u | + 0 | hit  0/ 0 | rams  0/ 0 | fr  0 | boxed  0/ 0 | free  0/ 0 || B:  1u | + 0 | hit  0/ 0 | rams  0/ 0 | fr  0 | boxed  0/ 0 | free  0/ 0
+  r110 | A:  2u | + 0 | hit  0/ 0 | rams  0/ 0 | fr  0 | boxed  0/ 0 | free  0/ 0 || B:  1u | + 0 | hit  0/ 0 | rams  0/ 0 | fr  0 | boxed  0/ 0 | free  0/ 0
+  r120 | A:  2u | + 1 | hit  0/ 0 | rams  0/ 0 | fr  0 | boxed  0/ 0 | free  0/ 0 || B:  1u | + 0 | hit  0/ 0 | rams  0/ 0 | fr  0 | boxed  0/ 0 | free  0/ 0
+  r130 | A:  3u | + 0 | hit  0/ 0 | rams  0/ 0 | fr  0 | boxed  0/ 0 | free  0/ 0 || B:  1u | + 0 | hit  0/ 0 | rams  0/ 0 | fr  0 | boxed  0/ 0 | free  0/ 0
+  r140 | A:  3u | + 0 | hit  0/ 0 | rams  0/ 0 | fr  0 | boxed  0/ 0 | free  0/ 0 || B:  1u | + 0 | hit  0/ 0 | rams  0/ 0 | fr  0 | boxed  0/ 0 | free  0/ 0
+  r150 | A:  3u | + 0 | hit  0/ 0 | rams  0/ 0 | fr  0 | boxed  0/ 0 | free  0/ 0 || B:  1u | + 0 | hit  0/ 0 | rams  0/ 0 | fr  0 | boxed  0/ 0 | free  0/ 0
+
+T3 spread | squares of 64 with an own head | cells visited | mean / max path distance of heads from own queen spawn | share of heads with another own head within 6 steps | own heads on tight cells (mean per round)
+  r  0 | A: sq  2 | vis    2 | dist   1.5/  3 | crowd 1.00 | tight  0.4 || B: sq  2 | vis    2 | dist   1.5/  3 | crowd 1.00 | tight  0.1
+  r 10 | A: sq  2 | vis   19 | dist   6.5/  7 | crowd 0.10 | tight  0.5 || B: sq  2 | vis   18 | dist   4.5/  6 | crowd 0.00 | tight  0.8
+  r 20 | A: sq  1 | vis   21 | dist   6.0/  6 | crowd 0.00 | tight  0.6 || B: sq  2 | vis   33 | dist   9.5/ 16 | crowd 0.00 | tight  1.3
+  r 30 | A: sq  1 | vis   22 | dist   6.0/  6 | crowd 0.00 | tight  0.6 || B: sq  2 | vis   43 | dist  17.5/ 26 | crowd 0.00 | tight  1.6
+  r 40 | A: sq  1 | vis   22 | dist   6.0/  6 | crowd 0.00 | tight  0.6 || B: sq  2 | vis   57 | dist  22.5/ 26 | crowd 0.20 | tight  1.2
+  r 50 | A: sq  1 | vis   22 | dist   6.0/  6 | crowd 0.00 | tight  0.6 || B: sq  1 | vis   63 | dist  16.0/ 16 | crowd 0.00 | tight  0.0
+  r 60 | A: sq  1 | vis   22 | dist   6.0/  6 | crowd 0.20 | tight  0.2 || B: sq  1 | vis   73 | dist  26.0/ 26 | crowd 0.00 | tight  0.3
+  r 70 | A: sq  2 | vis   26 | dist   2.0/  3 | crowd 1.00 | tight  0.1 || B: sq  1 | vis   81 | dist  30.0/ 30 | crowd 0.00 | tight  0.0
+  r 80 | A: sq  2 | vis   34 | dist   4.0/  5 | crowd 1.00 | tight  0.3 || B: sq  1 | vis   84 | dist  30.0/ 30 | crowd 0.00 | tight  0.0
+  r 90 | A: sq  2 | vis   41 | dist   3.0/  5 | crowd 1.00 | tight  0.2 || B: sq  1 | vis   84 | dist  32.0/ 32 | crowd 0.00 | tight  0.0
+  r100 | A: sq  2 | vis   45 | dist   4.0/  5 | crowd 0.80 | tight  0.4 || B: sq  1 | vis   84 | dist  30.0/ 30 | crowd 0.00 | tight  0.0
+  r110 | A: sq  2 | vis   45 | dist   2.0/  3 | crowd 1.00 | tight  0.3 || B: sq  1 | vis   84 | dist  32.0/ 32 | crowd 0.00 | tight  0.0
+  r120 | A: sq  2 | vis   46 | dist   3.0/  3 | crowd 1.00 | tight  0.2 || B: sq  1 | vis   84 | dist  30.0/ 30 | crowd 0.00 | tight  0.0
+  r130 | A: sq  3 | vis   46 | dist   3.7/  5 | crowd 1.00 | tight  0.3 || B: sq  1 | vis   84 | dist  32.0/ 32 | crowd 0.00 | tight  0.0
+  r140 | A: sq  3 | vis   46 | dist   2.3/  3 | crowd 1.00 | tight  0.2 || B: sq  1 | vis   84 | dist  30.0/ 30 | crowd 0.00 | tight  0.0
+  r150 | A: sq  2 | vis   46 | dist   3.7/  5 | crowd 1.00 | tight  2.0 || B: sq  1 | vis   84 | dist  32.0/ 32 | crowd 0.00 | tight  0.0
+
+T4 turns | dragon-turns | eat / split / die / approach / pass / new / old (share of turns, %) | turns with a pearl in view % | not eaten for 20 rounds | loop (at block start)
+  r  0 | A:   20 |  0/ 0/ 0/ 0/ 0/85/15 | view   0 | hungry  0 | loop  0 || B:   20 |  0/ 0/ 0/ 0/ 0/80/20 | view   0 | hungry  0 | loop  0
+  r 10 | A:   11 |  9/ 0/ 9/18/ 9/ 9/45 | view  36 | hungry  0 | loop  0 || B:   20 |  0/ 0/ 0/ 0/ 0/75/25 | view   0 | hungry  0 | loop  0
+  r 20 | A:   10 |  0/ 0/ 0/ 0/ 0/10/90 | view   0 | hungry  0 | loop  0 || B:   20 |  0/ 0/ 0/ 0/ 0/50/50 | view   0 | hungry  2 | loop  0
+  r 30 | A:   10 |  0/ 0/ 0/ 0/ 0/ 0/100 | view   0 | hungry  0 | loop  0 || B:   20 |  0/ 0/ 0/ 0/ 0/70/30 | view   0 | hungry  2 | loop  0
+  r 40 | A:   10 |  0/ 0/ 0/ 0/ 0/ 0/100 | view   0 | hungry  1 | loop  1 || B:   13 |  8/ 0/ 8/ 8/ 0/38/38 | view  15 | hungry  2 | loop  0
+  r 50 | A:   10 |  0/ 0/ 0/ 0/ 0/ 0/100 | view   0 | hungry  1 | loop  1 || B:   10 |  0/ 0/ 0/ 0/ 0/100/ 0 | view   0 | hungry  0 | loop  0
+  r 60 | A:   13 |  8/ 8/ 0/31/ 0/31/23 | view  38 | hungry  1 | loop  1 || B:   10 |  0/ 0/ 0/40/30/30/ 0 | view  70 | hungry  0 | loop  0
+  r 70 | A:   20 |  0/ 0/ 0/ 0/ 0/40/60 | view   0 | hungry  0 | loop  0 || B:   10 |  0/ 0/ 0/50/50/ 0/ 0 | view 100 | hungry  1 | loop  0
+  r 80 | A:   20 |  0/ 0/ 0/ 0/ 0/35/65 | view   0 | hungry  0 | loop  0 || B:   10 |  0/ 0/ 0/60/40/ 0/ 0 | view 100 | hungry  1 | loop  1
+  r 90 | A:   20 | 10/ 0/ 0/15/ 0/20/55 | view  25 | hungry  2 | loop  0 || B:   10 |  0/ 0/ 0/40/60/ 0/ 0 | view 100 | hungry  1 | loop  1
+  r100 | A:   20 |  0/ 0/ 0/ 0/ 0/ 0/100 | view   0 | hungry  0 | loop  0 || B:   10 |  0/ 0/ 0/60/40/ 0/ 0 | view 100 | hungry  1 | loop  1
+  r110 | A:   20 |  0/ 0/ 0/ 5/ 5/ 5/85 | view  10 | hungry  0 | loop  0 || B:   10 |  0/ 0/ 0/40/60/ 0/ 0 | view 100 | hungry  1 | loop  1
+  r120 | A:   27 |  4/ 4/ 0/ 7/ 0/ 0/85 | view  11 | hungry  2 | loop  0 || B:   10 |  0/ 0/ 0/60/40/ 0/ 0 | view 100 | hungry  1 | loop  1
+  r130 | A:   30 |  0/ 0/ 0/ 0/ 0/ 0/100 | view   0 | hungry  1 | loop  0 || B:   10 |  0/ 0/ 0/40/60/ 0/ 0 | view 100 | hungry  1 | loop  1
+  r140 | A:   30 |  0/ 0/ 0/ 0/ 0/ 0/100 | view   0 | hungry  1 | loop  2 || B:   10 |  0/ 0/ 0/60/40/ 0/ 0 | view 100 | hungry  1 | loop  1
+  r150 | A:    3 |  0/ 0/ 0/ 0/ 0/ 0/100 | view   0 | hungry  3 | loop  3 || B:    1 |  0/ 0/ 0/ 0/100/ 0/ 0 | view 100 | hungry  1 | loop  1
+
+T5 pearls that appeared within 6 steps of an own head | n | eaten by own within 20 rounds (mean wait, mean distance at appearance) | eaten by enemy | left for 20 rounds || uncontested (no enemy head within 6): n | own (wait, dist) | enemy | left || two own heads within 2 steps of an eaten pearl
+  r  0 | A:   0 | own   0 ( 0.0, 0.0) | en  0 | left  0 || unc   0 | own   0 ( 0.0, 0.0) | en  0 | left  0 || dup  0 || B:   0 | own   0 ( 0.0, 0.0) | en  0 | left  0 || unc   0 | own   0 ( 0.0, 0.0) | en  0 | left  0 || dup  0
+  r 10 | A:   0 | own   0 ( 0.0, 0.0) | en  0 | left  0 || unc   0 | own   0 ( 0.0, 0.0) | en  0 | left  0 || dup  0 || B:   0 | own   0 ( 0.0, 0.0) | en  0 | left  0 || unc   0 | own   0 ( 0.0, 0.0) | en  0 | left  0 || dup  0
+  r 20 | A:   0 | own   0 ( 0.0, 0.0) | en  0 | left  0 || unc   0 | own   0 ( 0.0, 0.0) | en  0 | left  0 || dup  0 || B:   0 | own   0 ( 0.0, 0.0) | en  0 | left  0 || unc   0 | own   0 ( 0.0, 0.0) | en  0 | left  0 || dup  0
+  r 30 | A:   0 | own   0 ( 0.0, 0.0) | en  0 | left  0 || unc   0 | own   0 ( 0.0, 0.0) | en  0 | left  0 || dup  0 || B:   0 | own   0 ( 0.0, 0.0) | en  0 | left  0 || unc   0 | own   0 ( 0.0, 0.0) | en  0 | left  0 || dup  0
+  r 40 | A:   0 | own   0 ( 0.0, 0.0) | en  0 | left  0 || unc   0 | own   0 ( 0.0, 0.0) | en  0 | left  0 || dup  0 || B:   0 | own   0 ( 0.0, 0.0) | en  0 | left  0 || unc   0 | own   0 ( 0.0, 0.0) | en  0 | left  0 || dup  0
+  r 50 | A:   1 | own   1 (13.0, 6.0) | en  0 | left  0 || unc   1 | own   1 (13.0, 6.0) | en  0 | left  0 || dup  0 || B:   0 | own   0 ( 0.0, 0.0) | en  0 | left  0 || unc   0 | own   0 ( 0.0, 0.0) | en  0 | left  0 || dup  0
+  r 60 | A:   0 | own   0 ( 0.0, 0.0) | en  0 | left  0 || unc   0 | own   0 ( 0.0, 0.0) | en  0 | left  0 || dup  0 || B:   0 | own   0 ( 0.0, 0.0) | en  0 | left  0 || unc   0 | own   0 ( 0.0, 0.0) | en  0 | left  0 || dup  0
+  r 70 | A:   0 | own   0 ( 0.0, 0.0) | en  0 | left  0 || unc   0 | own   0 ( 0.0, 0.0) | en  0 | left  0 || dup  0 || B:   0 | own   0 ( 0.0, 0.0) | en  0 | left  0 || unc   0 | own   0 ( 0.0, 0.0) | en  0 | left  0 || dup  0
+  r 80 | A:   0 | own   0 ( 0.0, 0.0) | en  0 | left  0 || unc   0 | own   0 ( 0.0, 0.0) | en  0 | left  0 || dup  0 || B:   1 | own   0 ( 0.0, 0.0) | en  0 | left  1 || unc   1 | own   0 ( 0.0, 0.0) | en  0 | left  1 || dup  0
+  r 90 | A:   2 | own   2 ( 0.5, 1.5) | en  0 | left  0 || unc   2 | own   2 ( 0.5, 1.5) | en  0 | left  0 || dup  1 || B:   1 | own   0 ( 0.0, 0.0) | en  0 | left  1 || unc   1 | own   0 ( 0.0, 0.0) | en  0 | left  1 || dup  0
+  r100 | A:   0 | own   0 ( 0.0, 0.0) | en  0 | left  0 || unc   0 | own   0 ( 0.0, 0.0) | en  0 | left  0 || dup  0 || B:   0 | own   0 ( 0.0, 0.0) | en  0 | left  0 || unc   0 | own   0 ( 0.0, 0.0) | en  0 | left  0 || dup  0
+  r110 | A:   1 | own   1 ( 7.0, 6.0) | en  0 | left  0 || unc   1 | own   1 ( 7.0, 6.0) | en  0 | left  0 || dup  0 || B:   0 | own   0 ( 0.0, 0.0) | en  0 | left  0 || unc   0 | own   0 ( 0.0, 0.0) | en  0 | left  0 || dup  0
+  r120 | A:   0 | own   0 ( 0.0, 0.0) | en  0 | left  0 || unc   0 | own   0 ( 0.0, 0.0) | en  0 | left  0 || dup  0 || B:   0 | own   0 ( 0.0, 0.0) | en  0 | left  0 || unc   0 | own   0 ( 0.0, 0.0) | en  0 | left  0 || dup  0
+  r130 | A:   0 | own   0 ( 0.0, 0.0) | en  0 | left  0 || unc   0 | own   0 ( 0.0, 0.0) | en  0 | left  0 || dup  0 || B:   0 | own   0 ( 0.0, 0.0) | en  0 | left  0 || unc   0 | own   0 ( 0.0, 0.0) | en  0 | left  0 || dup  0
+  r140 | A:   0 | own   0 ( 0.0, 0.0) | en  0 | left  0 || unc   0 | own   0 ( 0.0, 0.0) | en  0 | left  0 || dup  0 || B:   0 | own   0 ( 0.0, 0.0) | en  0 | left  0 || unc   0 | own   0 ( 0.0, 0.0) | en  0 | left  0 || dup  0
+  r150 | A:   0 | own   0 ( 0.0, 0.0) | en  0 | left  0 || unc   0 | own   0 ( 0.0, 0.0) | en  0 | left  0 || dup  0 || B:   0 | own   0 ( 0.0, 0.0) | en  0 | left  0 || unc   0 | own   0 ( 0.0, 0.0) | en  0 | left  0 || dup  0
+
+T6 sprints | move orders of 2+ steps | by purpose pearl / ram / flee / other | paid moves / segments paid | segments paid by purpose pearl / ram / flee / other
+  r  0 | A: multi   0 |   0/ 0/ 0/  0 | paid  0/ 0 |  0/ 0/ 0/ 0 || B: multi   0 |   0/ 0/ 0/  0 | paid  0/ 0 |  0/ 0/ 0/ 0
+  r 10 | A: multi   0 |   0/ 0/ 0/  0 | paid  0/ 0 |  0/ 0/ 0/ 0 || B: multi   0 |   0/ 0/ 0/  0 | paid  0/ 0 |  0/ 0/ 0/ 0
+  r 20 | A: multi   0 |   0/ 0/ 0/  0 | paid  0/ 0 |  0/ 0/ 0/ 0 || B: multi   0 |   0/ 0/ 0/  0 | paid  0/ 0 |  0/ 0/ 0/ 0
+  r 30 | A: multi   0 |   0/ 0/ 0/  0 | paid  0/ 0 |  0/ 0/ 0/ 0 || B: multi   0 |   0/ 0/ 0/  0 | paid  0/ 0 |  0/ 0/ 0/ 0
+  r 40 | A: multi   0 |   0/ 0/ 0/  0 | paid  0/ 0 |  0/ 0/ 0/ 0 || B: multi   0 |   0/ 0/ 0/  0 | paid  0/ 0 |  0/ 0/ 0/ 0
+  r 50 | A: multi   0 |   0/ 0/ 0/  0 | paid  0/ 0 |  0/ 0/ 0/ 0 || B: multi   0 |   0/ 0/ 0/  0 | paid  0/ 0 |  0/ 0/ 0/ 0
+  r 60 | A: multi   0 |   0/ 0/ 0/  0 | paid  0/ 0 |  0/ 0/ 0/ 0 || B: multi   0 |   0/ 0/ 0/  0 | paid  0/ 0 |  0/ 0/ 0/ 0
+  r 70 | A: multi   0 |   0/ 0/ 0/  0 | paid  0/ 0 |  0/ 0/ 0/ 0 || B: multi   0 |   0/ 0/ 0/  0 | paid  0/ 0 |  0/ 0/ 0/ 0
+  r 80 | A: multi   0 |   0/ 0/ 0/  0 | paid  0/ 0 |  0/ 0/ 0/ 0 || B: multi   0 |   0/ 0/ 0/  0 | paid  0/ 0 |  0/ 0/ 0/ 0
+  r 90 | A: multi   0 |   0/ 0/ 0/  0 | paid  0/ 0 |  0/ 0/ 0/ 0 || B: multi   0 |   0/ 0/ 0/  0 | paid  0/ 0 |  0/ 0/ 0/ 0
+  r100 | A: multi   0 |   0/ 0/ 0/  0 | paid  0/ 0 |  0/ 0/ 0/ 0 || B: multi   0 |   0/ 0/ 0/  0 | paid  0/ 0 |  0/ 0/ 0/ 0
+  r110 | A: multi   0 |   0/ 0/ 0/  0 | paid  0/ 0 |  0/ 0/ 0/ 0 || B: multi   0 |   0/ 0/ 0/  0 | paid  0/ 0 |  0/ 0/ 0/ 0
+  r120 | A: multi   0 |   0/ 0/ 0/  0 | paid  0/ 0 |  0/ 0/ 0/ 0 || B: multi   0 |   0/ 0/ 0/  0 | paid  0/ 0 |  0/ 0/ 0/ 0
+  r130 | A: multi   0 |   0/ 0/ 0/  0 | paid  0/ 0 |  0/ 0/ 0/ 0 || B: multi   0 |   0/ 0/ 0/  0 | paid  0/ 0 |  0/ 0/ 0/ 0
+  r140 | A: multi   0 |   0/ 0/ 0/  0 | paid  0/ 0 |  0/ 0/ 0/ 0 || B: multi   0 |   0/ 0/ 0/  0 | paid  0/ 0 |  0/ 0/ 0/ 0
+  r150 | A: multi   0 |   0/ 0/ 0/  0 | paid  0/ 0 |  0/ 0/ 0/ 0 || B: multi   0 |   0/ 0/ 0/  0 | paid  0/ 0 |  0/ 0/ 0/ 0
+
+T7 contact | turns with an enemy head in view (% of turns) | turns that began with an enemy head on a neighbouring cell: n -> rammed it / stepped away / died otherwise | stepped away and was rammed within 2 rounds | by length: own <= enemy rammed/away, own > enemy rammed/away | pearls of ram corpses eaten: own corpses / enemy corpses
+  r  0 | A: view   0% | adj  0 ->  0/ 0/ 0 | then hit  0 | le  0/ 0 gt  0/ 0 | ramcorpse  0/ 0 || B: view   0% | adj  0 ->  0/ 0/ 0 | then hit  0 | le  0/ 0 gt  0/ 0 | ramcorpse  0/ 0
+  r 10 | A: view   0% | adj  0 ->  0/ 0/ 0 | then hit  0 | le  0/ 0 gt  0/ 0 | ramcorpse  0/ 0 || B: view   0% | adj  0 ->  0/ 0/ 0 | then hit  0 | le  0/ 0 gt  0/ 0 | ramcorpse  0/ 0
+  r 20 | A: view   0% | adj  0 ->  0/ 0/ 0 | then hit  0 | le  0/ 0 gt  0/ 0 | ramcorpse  0/ 0 || B: view   0% | adj  0 ->  0/ 0/ 0 | then hit  0 | le  0/ 0 gt  0/ 0 | ramcorpse  0/ 0
+  r 30 | A: view   0% | adj  0 ->  0/ 0/ 0 | then hit  0 | le  0/ 0 gt  0/ 0 | ramcorpse  0/ 0 || B: view   0% | adj  0 ->  0/ 0/ 0 | then hit  0 | le  0/ 0 gt  0/ 0 | ramcorpse  0/ 0
+  r 40 | A: view   0% | adj  0 ->  0/ 0/ 0 | then hit  0 | le  0/ 0 gt  0/ 0 | ramcorpse  0/ 0 || B: view   0% | adj  0 ->  0/ 0/ 0 | then hit  0 | le  0/ 0 gt  0/ 0 | ramcorpse  0/ 0
+  r 50 | A: view   0% | adj  0 ->  0/ 0/ 0 | then hit  0 | le  0/ 0 gt  0/ 0 | ramcorpse  0/ 0 || B: view   0% | adj  0 ->  0/ 0/ 0 | then hit  0 | le  0/ 0 gt  0/ 0 | ramcorpse  0/ 0
+  r 60 | A: view   0% | adj  0 ->  0/ 0/ 0 | then hit  0 | le  0/ 0 gt  0/ 0 | ramcorpse  0/ 0 || B: view   0% | adj  0 ->  0/ 0/ 0 | then hit  0 | le  0/ 0 gt  0/ 0 | ramcorpse  0/ 0
+  r 70 | A: view   0% | adj  0 ->  0/ 0/ 0 | then hit  0 | le  0/ 0 gt  0/ 0 | ramcorpse  0/ 0 || B: view   0% | adj  0 ->  0/ 0/ 0 | then hit  0 | le  0/ 0 gt  0/ 0 | ramcorpse  0/ 0
+  r 80 | A: view   0% | adj  0 ->  0/ 0/ 0 | then hit  0 | le  0/ 0 gt  0/ 0 | ramcorpse  0/ 0 || B: view   0% | adj  0 ->  0/ 0/ 0 | then hit  0 | le  0/ 0 gt  0/ 0 | ramcorpse  0/ 0
+  r 90 | A: view   0% | adj  0 ->  0/ 0/ 0 | then hit  0 | le  0/ 0 gt  0/ 0 | ramcorpse  0/ 0 || B: view   0% | adj  0 ->  0/ 0/ 0 | then hit  0 | le  0/ 0 gt  0/ 0 | ramcorpse  0/ 0
+  r100 | A: view   0% | adj  0 ->  0/ 0/ 0 | then hit  0 | le  0/ 0 gt  0/ 0 | ramcorpse  0/ 0 || B: view   0% | adj  0 ->  0/ 0/ 0 | then hit  0 | le  0/ 0 gt  0/ 0 | ramcorpse  0/ 0
+  r110 | A: view   0% | adj  0 ->  0/ 0/ 0 | then hit  0 | le  0/ 0 gt  0/ 0 | ramcorpse  0/ 0 || B: view   0% | adj  0 ->  0/ 0/ 0 | then hit  0 | le  0/ 0 gt  0/ 0 | ramcorpse  0/ 0
+  r120 | A: view   0% | adj  0 ->  0/ 0/ 0 | then hit  0 | le  0/ 0 gt  0/ 0 | ramcorpse  0/ 0 || B: view   0% | adj  0 ->  0/ 0/ 0 | then hit  0 | le  0/ 0 gt  0/ 0 | ramcorpse  0/ 0
+  r130 | A: view   0% | adj  0 ->  0/ 0/ 0 | then hit  0 | le  0/ 0 gt  0/ 0 | ramcorpse  0/ 0 || B: view   0% | adj  0 ->  0/ 0/ 0 | then hit  0 | le  0/ 0 gt  0/ 0 | ramcorpse  0/ 0
+  r140 | A: view   0% | adj  0 ->  0/ 0/ 0 | then hit  0 | le  0/ 0 gt  0/ 0 | ramcorpse  0/ 0 || B: view   0% | adj  0 ->  0/ 0/ 0 | then hit  0 | le  0/ 0 gt  0/ 0 | ramcorpse  0/ 0
+  r150 | A: view   0% | adj  0 ->  0/ 0/ 0 | then hit  0 | le  0/ 0 gt  0/ 0 | ramcorpse  0/ 0 || B: view   0% | adj  0 ->  0/ 0/ 0 | then hit  0 | le  0/ 0 gt  0/ 0 | ramcorpse  0/ 0
+
+T8 fountains (tiles with 10+ natural pearls per 500 rounds over all games on this map: 1 tiles, 0 nearer to A's spawn, 1 nearer to B's) | own-half fountains: seen so far by own team / eaten from by own team / seen by the enemy | own-half fountain tile-rounds in the block: a pearl lying % / a body on it % / empty % | natural pearls eaten on own-half fountains / on enemy-half fountains / on other tiles | share of own heads within 3 steps of a fountain % | share of own heads in own half %
+  r  0 | A: seen  0 ate  0 en  0 of  0 | lying   0 body   0 empty   0 | nat   0/  0/  0 | at   0% | home 100% || B: seen  0 ate  0 en  0 of  1 | lying  90 body   0 empty  10 | nat   0/  0/  0 | at   0% | home 100%
+  r 10 | A: seen  0 ate  0 en  0 of  0 | lying   0 body   0 empty   0 | nat   0/  0/  0 | at   0% | home 100% || B: seen  0 ate  0 en  0 of  1 | lying 100 body   0 empty   0 | nat   0/  0/  0 | at   0% | home 100%
+  r 20 | A: seen  0 ate  0 en  0 of  0 | lying   0 body   0 empty   0 | nat   0/  0/  0 | at   0% | home 100% || B: seen  0 ate  0 en  0 of  1 | lying 100 body   0 empty   0 | nat   0/  0/  0 | at   0% | home 100%
+  r 30 | A: seen  0 ate  0 en  0 of  0 | lying   0 body   0 empty   0 | nat   0/  0/  0 | at   0% | home 100% || B: seen  1 ate  0 en  0 of  1 | lying 100 body   0 empty   0 | nat   0/  0/  0 | at   0% | home 100%
+  r 40 | A: seen  0 ate  0 en  0 of  0 | lying   0 body   0 empty   0 | nat   0/  0/  0 | at   0% | home 100% || B: seen  1 ate  0 en  0 of  1 | lying 100 body   0 empty   0 | nat   0/  0/  0 | at   0% | home 100%
+  r 50 | A: seen  0 ate  0 en  0 of  0 | lying   0 body   0 empty   0 | nat   0/  0/  0 | at   0% | home 100% || B: seen  1 ate  0 en  0 of  1 | lying 100 body   0 empty   0 | nat   0/  0/  0 | at   0% | home 100%
+  r 60 | A: seen  0 ate  0 en  0 of  0 | lying   0 body   0 empty   0 | nat   0/  0/  1 | at   0% | home 100% || B: seen  1 ate  0 en  0 of  1 | lying 100 body   0 empty   0 | nat   0/  0/  0 | at   0% | home 100%
+  r 70 | A: seen  0 ate  0 en  0 of  0 | lying   0 body   0 empty   0 | nat   0/  0/  0 | at   0% | home 100% || B: seen  1 ate  0 en  0 of  1 | lying 100 body   0 empty   0 | nat   0/  0/  0 | at   0% | home 100%
+  r 80 | A: seen  0 ate  0 en  0 of  0 | lying   0 body   0 empty   0 | nat   0/  0/  0 | at   0% | home 100% || B: seen  1 ate  0 en  0 of  1 | lying 100 body   0 empty   0 | nat   0/  0/  0 | at   0% | home 100%
+  r 90 | A: seen  0 ate  0 en  0 of  0 | lying   0 body   0 empty   0 | nat   0/  0/  2 | at   0% | home 100% || B: seen  1 ate  0 en  0 of  1 | lying 100 body   0 empty   0 | nat   0/  0/  0 | at   0% | home 100%
+  r100 | A: seen  0 ate  0 en  0 of  0 | lying   0 body   0 empty   0 | nat   0/  0/  0 | at   0% | home 100% || B: seen  1 ate  0 en  0 of  1 | lying 100 body   0 empty   0 | nat   0/  0/  0 | at   0% | home 100%
+  r110 | A: seen  0 ate  0 en  0 of  0 | lying   0 body   0 empty   0 | nat   0/  0/  0 | at   0% | home 100% || B: seen  1 ate  0 en  0 of  1 | lying 100 body   0 empty   0 | nat   0/  0/  0 | at   0% | home 100%
+  r120 | A: seen  0 ate  0 en  0 of  0 | lying   0 body   0 empty   0 | nat   0/  0/  1 | at   0% | home 100% || B: seen  1 ate  0 en  0 of  1 | lying 100 body   0 empty   0 | nat   0/  0/  0 | at   0% | home 100%
+  r130 | A: seen  0 ate  0 en  0 of  0 | lying   0 body   0 empty   0 | nat   0/  0/  0 | at   0% | home 100% || B: seen  1 ate  0 en  0 of  1 | lying 100 body   0 empty   0 | nat   0/  0/  0 | at   0% | home 100%
+  r140 | A: seen  0 ate  0 en  0 of  0 | lying   0 body   0 empty   0 | nat   0/  0/  0 | at   0% | home 100% || B: seen  1 ate  0 en  0 of  1 | lying 100 body   0 empty   0 | nat   0/  0/  0 | at   0% | home 100%
+  r150 | A: seen  0 ate  0 en  0 of  0 | lying   0 body   0 empty   0 | nat   0/  0/  0 | at   0% | home 100% || B: seen  1 ate  0 en  0 of  1 | lying 100 body   0 empty   0 | nat   0/  0/  0 | at   0% | home 100%
+
+  length histogram of living dragons at each block start (6 = 6 or longer):
+    r  0 A {2: 2} | B {2: 2}
+    r 10 A {2: 2} | B {2: 2}
+    r 20 A {3: 1} | B {2: 2}
+    r 30 A {3: 1} | B {2: 2}
+    r 40 A {3: 1} | B {2: 2}
+    r 50 A {3: 1} | B {3: 1}
+    r 60 A {3: 1} | B {3: 1}
+    r 70 A {2: 2} | B {3: 1}
+    r 80 A {2: 2} | B {3: 1}
+    r 90 A {2: 2} | B {3: 1}
+    r100 A {3: 2} | B {3: 1}
+    r110 A {3: 2} | B {3: 1}
+    r120 A {3: 2} | B {3: 1}
+    r130 A {2: 2, 3: 1} | B {3: 1}
+    r140 A {2: 2, 3: 1} | B {3: 1}
+    r150 A {2: 2, 3: 1} | B {3: 1}
+
+  A (meow) totals rounds 0-150: natural 4 (own half 4, enemy half 0), corpse own/enemy 1/0, splits 2, rammed 0 (0 seg), rammer 0 (0 seg), boxed 1 (2 seg), free-cell deaths 0 (0 seg)
+     turns 274: eat 1.8% split 0.7% die 0.4% approach 4.4% pass 0.7% new 15.7% old 76.3% | pearl in view 6.9% | enemy head in view 0.0% | natural pearls per 100 turns 1.46
+     pearls appearing within 6 steps: 4: own 4 (wait 5.2, dist 3.8), enemy 0, left 0 | uncontested 4: own 4 (wait 5.2, dist 3.8), enemy 0, left 0 | two heads on one pearl 1
+     2+ step moves 0 (pearl 0, ram 0, flee 0, other 0); paid segments 0 (pearl 0, ram 0, flee 0, other 0)
+     enemy head on a neighbouring cell at turn start: 0 -> rammed 0, stepped away 0 (then rammed within 2 rounds: 0), died otherwise 0; own<=enemy: ram 0 away 0; own>enemy: ram 0 away 0
+     ram-corpse pearls eaten: from own corpses 0, from enemy corpses 0
+     splits (before -> parent + child: n; mean rounds since the dragon became 4+): 4->2+2: 2 | wait by length before: L4: 1.0 (n 2)
+     parent-child path distance after 5 rounds: n 2 mean 3.0; after 10: n 2 mean 3.0; child from its birth cell after 10: 3.0; parent from the split cell after 10: 3.0; pairs with one dead by +5: 0, by +10: 0
+     steps in the 10 rounds after a split onto cells no own head had visited: child 4 of 22 (18%), parent 7 of 20 (35%)
+     non-ram deaths: 1 on 1 cells; 0 on cells used twice or more; most used [((2, 8), 1)]
+     blockers in those deaths: {'kelp 2, own body 1, team-mate 1, enemy 0, free 0': 1}
+     non-ram deaths with a free cell: []
+     natural pearls eaten by eater length (6 = 6+): {2: 2, 3: 2}
+
+  B (WeHaveQuizzes) totals rounds 0-150: natural 0 (own half 0, enemy half 0), corpse own/enemy 1/0, splits 0, rammed 0 (0 seg), rammer 0 (0 seg), boxed 0 (0 seg), free-cell deaths 1 (2 seg)
+     turns 194: eat 0.5% split 0.0% die 0.5% approach 23.7% pass 22.2% new 37.6% old 15.5% | pearl in view 46.4% | enemy head in view 0.0% | natural pearls per 100 turns 0.00
+     pearls appearing within 6 steps: 2: own 0 (wait 0.0, dist 0.0), enemy 0, left 2 | uncontested 2: own 0 (wait 0.0, dist 0.0), enemy 0, left 2 | two heads on one pearl 0
+     2+ step moves 0 (pearl 0, ram 0, flee 0, other 0); paid segments 0 (pearl 0, ram 0, flee 0, other 0)
+     enemy head on a neighbouring cell at turn start: 0 -> rammed 0, stepped away 0 (then rammed within 2 rounds: 0), died otherwise 0; own<=enemy: ram 0 away 0; own>enemy: ram 0 away 0
+     ram-corpse pearls eaten: from own corpses 0, from enemy corpses 0
+     splits (before -> parent + child: n; mean rounds since the dragon became 4+):  | wait by length before: 
+     parent-child path distance after 5 rounds: n 0 mean 0.0; after 10: n 0 mean 0.0; child from its birth cell after 10: 0.0; parent from the split cell after 10: 0.0; pairs with one dead by +5: 0, by +10: 0
+     steps in the 10 rounds after a split onto cells no own head had visited: child 0 of 0 (0%), parent 0 of 0 (0%)
+     non-ram deaths: 1 on 1 cells; 0 on cells used twice or more; most used [((25, 5), 1)]
+     blockers in those deaths: {'kelp 2, own body 1, team-mate 0, enemy 0, free 1': 1}
+     non-ram deaths with a free cell: [(42, 3, 2, 'noaction', (25, 5))]
+     natural pearls eaten by eater length (6 = 6+): {}

@@ -1,0 +1,77 @@
+games 32 | split loss (old - parent - child): {0: 15177} | odd: {'told_end_not_in_catalogue': 12}
+sample told end: {"kind": "split", "spots": [[[11, 3], true], [[9, 2], true]], "end": {"gate": [14, 0], "dir": "E", "room": 9, "pearls": 1, "on_map": true}}
+map portals_v0 32x16: 2 shut areas, sizes [9, 9], fully in view from the gate 0
+map prisoners_dilemma_v0 32x16: 4 shut areas, sizes [4, 4, 4, 4], fully in view from the gate 0
+map schooltime 60x40: 56 shut areas, sizes [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 4, 4, 4, 4, 4, 4], fully in view from the gate 42
+map trauma 48x24: 58 shut areas, sizes [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4], fully in view from the gate 54
+ROOMY areas (a loop inside)            n= 222 L0  4.5 | ate 0/1-2/3+  75/ 36/111 | net +/0/- 117/ 45/ 60 | net sum  +873 (ate<3  -107, ate3+  +980) | none out  38 | entrant out 101 | rounds 47.6
+  at the gate of a true dead end, arriving from outside, never inside before (all maps): not told, not visited lately: stepped in 152 of 2284 ; not told, we were in there in the last 25 rounds: stepped in 144 of 655 ; told, not visited lately: stepped in 0 of 0 ; told, we were in there in the last 25 rounds: stepped in 0 of 0
+  at the gate of a true dead end, arriving from outside, never inside before (prisoners_dilemma_v0): not told, not visited lately: stepped in 37 of 146 ; not told, we were in there in the last 25 rounds: stepped in 82 of 349 ; told, not visited lately: stepped in 0 of 0 ; told, we were in there in the last 25 rounds: stepped in 0 of 0
+--- base: visits 738, still open at game end 19, started by a birth inside 76
+all walked-in visits                   n= 425 L0  3.4 | ate 0/1-2/3+  76/225/124 | net +/0/- 119/127/179 | net sum   -94 (ate<3  -296, ate3+  +202) | none out 126 | entrant out  50 | rounds  5.9
+  area fully in view from the gate     n= 146 L0  4.2 | ate 0/1-2/3+  68/ 68/ 10 | net +/0/-  24/ 51/ 71 | net sum  -109 (ate<3  -121, ate3+   +12) | none out  46 | entrant out  50 | rounds  2.9
+  area NOT fully in view               n= 279 L0  2.9 | ate 0/1-2/3+   8/157/114 | net +/0/-  95/ 76/108 | net sum   +15 (ate<3  -175, ate3+  +190) | none out  80 | entrant out   0 | rounds  7.5
+  area of 8 tiles or fewer             n= 362 L0  3.3 | ate 0/1-2/3+  69/207/ 86 | net +/0/-  93/118/151 | net sum   -95 (ate<3  -263, ate3+  +168) | none out 110 | entrant out  50 | rounds  4.9
+  area of 9 to 31 tiles                n=  63 L0  3.9 | ate 0/1-2/3+   7/ 18/ 38 | net +/0/-  26/  9/ 28 | net sum    +1 (ate<3   -33, ate3+   +34) | none out  16 | entrant out   0 | rounds 12.1
+  same dragon had been in before       n=  35 L0  2.7 | ate 0/1-2/3+  27/  6/  2 | net +/0/-   2/ 29/  4 | net sum    -4 (ate<3    -7, ate3+    +3) | none out   2 | entrant out  27 | rounds  4.4
+  entered at length 2 or 3             n= 391 L0  2.3 | ate 0/1-2/3+  71/199/121 | net +/0/- 115/116/160 | net sum   -70 (ate<3  -266, ate3+  +196) | none out 126 | entrant out  49 | rounds  6.0
+  entered at length 4 or more          n=  34 L0 15.6 | ate 0/1-2/3+   5/ 26/  3 | net +/0/-   4/ 11/ 19 | net sum   -24 (ate<3   -30, ate3+    +6) | none out   0 | entrant out   1 | rounds  4.8
+  map portals_v0                       n=  63 L0  3.9 | ate 0/1-2/3+   7/ 18/ 38 | net +/0/-  26/  9/ 28 | net sum    +1 (ate<3   -33, ate3+   +34) | none out  16 | entrant out   0 | rounds 12.1
+  map prisoners_dilemma_v0             n= 155 L0  2.9 | ate 0/1-2/3+   1/138/ 16 | net +/0/-  13/ 66/ 76 | net sum  -127 (ate<3  -140, ate3+   +13) | none out  60 | entrant out   0 | rounds  4.7
+  map schooltime                       n=  57 L0  6.8 | ate 0/1-2/3+  15/ 42/  0 | net +/0/-   1/ 16/ 40 | net sum   -71 (ate<3   -71, ate3+    +0) | none out  20 | entrant out   2 | rounds  2.8
+  map trauma                           n= 150 L0  2.4 | ate 0/1-2/3+  53/ 27/ 70 | net +/0/-  79/ 36/ 35 | net sum  +103 (ate<3   -52, ate3+  +155) | none out  30 | entrant out  48 | rounds  5.8
+ROOMY areas (a loop inside)            n= 262 L0  4.8 | ate 0/1-2/3+  82/ 47/133 | net +/0/- 145/ 65/ 52 | net sum  +954 (ate<3   -74, ate3+ +1028) | none out  25 | entrant out 132 | rounds 34.7
+  at the gate of a true dead end, arriving from outside, never inside before (all maps): not told, not visited lately: stepped in 159 of 2519 ; not told, we were in there in the last 25 rounds: stepped in 113 of 446 ; told, not visited lately: stepped in 11 of 150 ; told, we were in there in the last 25 rounds: stepped in 9 of 155
+  at the gate of a true dead end, arriving from outside, never inside before (prisoners_dilemma_v0): not told, not visited lately: stepped in 34 of 136 ; not told, we were in there in the last 25 rounds: stepped in 63 of 205 ; told, not visited lately: stepped in 9 of 98 ; told, we were in there in the last 25 rounds: stepped in 6 of 128
+--- candidate: visits 743, still open at game end 25, started by a birth inside 71
+all walked-in visits                   n= 389 L0  3.9 | ate 0/1-2/3+  58/200/131 | net +/0/- 131/ 89/169 | net sum   -19 (ate<3  -278, ate3+  +259) | none out 110 | entrant out  36 | rounds  6.1
+  area fully in view from the gate     n= 141 L0  5.0 | ate 0/1-2/3+  53/ 76/ 12 | net +/0/-  30/ 24/ 87 | net sum  -120 (ate<3  -138, ate3+   +18) | none out  51 | entrant out  36 | rounds  2.9
+  area NOT fully in view               n= 248 L0  3.2 | ate 0/1-2/3+   5/124/119 | net +/0/- 101/ 65/ 82 | net sum  +101 (ate<3  -140, ate3+  +241) | none out  59 | entrant out   0 | rounds  7.9
+  area of 8 tiles or fewer             n= 340 L0  4.0 | ate 0/1-2/3+  55/188/ 97 | net +/0/- 108/ 80/152 | net sum   -23 (ate<3  -244, ate3+  +221) | none out  96 | entrant out  36 | rounds  5.2
+  area of 9 to 31 tiles                n=  49 L0  3.4 | ate 0/1-2/3+   3/ 12/ 34 | net +/0/-  23/  9/ 17 | net sum    +4 (ate<3   -34, ate3+   +38) | none out  14 | entrant out   0 | rounds 12.7
+  same dragon had been in before       n=  11 L0  3.0 | ate 0/1-2/3+   7/  2/  2 | net +/0/-   2/  9/  0 | net sum   +11 (ate<3    +0, ate3+   +11) | none out   0 | entrant out   7 | rounds  5.8
+  entered at length 2 or 3             n= 342 L0  2.3 | ate 0/1-2/3+  47/170/125 | net +/0/- 127/ 76/139 | net sum   +20 (ate<3  -226, ate3+  +246) | none out 109 | entrant out  34 | rounds  6.3
+  entered at length 4 or more          n=  47 L0 15.6 | ate 0/1-2/3+  11/ 30/  6 | net +/0/-   4/ 13/ 30 | net sum   -39 (ate<3   -52, ate3+   +13) | none out   1 | entrant out   2 | rounds  4.9
+  map portals_v0                       n=  49 L0  3.4 | ate 0/1-2/3+   3/ 12/ 34 | net +/0/-  23/  9/ 17 | net sum    +4 (ate<3   -34, ate3+   +38) | none out  14 | entrant out   0 | rounds 12.7
+  map prisoners_dilemma_v0             n= 131 L0  3.7 | ate 0/1-2/3+   1/112/ 18 | net +/0/-  15/ 55/ 61 | net sum   -90 (ate<3  -104, ate3+   +14) | none out  41 | entrant out   0 | rounds  4.8
+  map schooltime                       n=  56 L0  9.1 | ate 0/1-2/3+  19/ 37/  0 | net +/0/-   0/  9/ 47 | net sum   -78 (ate<3   -78, ate3+    +0) | none out  18 | entrant out   3 | rounds  2.7
+  map trauma                           n= 153 L0  2.3 | ate 0/1-2/3+  35/ 39/ 79 | net +/0/-  93/ 16/ 44 | net sum  +145 (ate<3   -62, ate3+  +207) | none out  37 | entrant out  33 | rounds  6.4
+  entrant had been TOLD this area      n=  24 L0  4.1 | ate 0/1-2/3+   1/ 14/  9 | net +/0/-   7/  7/ 10 | net sum   -20 (ate<3   -25, ate3+    +5) | none out   6 | entrant out   0 | rounds  5.8
+    told within 25 rounds              n=  21 L0  4.3 | ate 0/1-2/3+   1/ 12/  8 | net +/0/-   6/  5/ 10 | net sum   -21 (ate<3   -25, ate3+    +4) | none out   6 | entrant out   0 | rounds  5.9
+    told longer ago                    n=   3 L0  2.3 | ate 0/1-2/3+   0/  2/  1 | net +/0/-   1/  2/  0 | net sum    +1 (ate<3    +0, ate3+    +1) | none out   0 | entrant out   0 | rounds  5.0
+    told entrants: highest pearl count ever told {0: 24} | times told {1: 18, 2: 1, 5: 1, 4: 1, 3: 2, 6: 1}
+    last told count was 0 pearls       n=  24 L0  4.1 | ate 0/1-2/3+   1/ 14/  9 | net +/0/-   7/  7/ 10 | net sum   -20 (ate<3   -25, ate3+    +5) | none out   6 | entrant out   0 | rounds  5.8
+    last told count 1-2 pearls         n=   0
+    last told count 3+ pearls          n=   0
+  entrant NOT told                     n= 365 L0  3.9 | ate 0/1-2/3+  57/186/122 | net +/0/- 124/ 82/159 | net sum    +1 (ate<3  -253, ate3+  +254) | none out 104 | entrant out  36 | rounds  6.1
+--- 16 pairs, true dead ends: walk-ins that ate under 3, candidate minus base: fewer in 10, same 1, more in 5 (diffs [-15, -14, -13, -10, -3, -3, -2, -2, -1, -1, 0, 2, 2, 4, 6, 7]); net length, candidate better in 9, worse in 6 (diffs [-14, -3, -3, -3, -2, -1, 0, 1, 1, 2, 4, 10, 11, 17, 21, 34])
+--- replay 1: prisoners_dilemma_v0 14700 side 1, pocket holding (17,2)
+candidate_prisoners_dilemma_v0_14700_1 area ([[17, 4], 4, False], [(17, 0), (17, 1), (17, 2), (17, 3)])
+  visits here                          n=  24 L0  2.2 | ate 0/1-2/3+   0/ 23/  1 | net +/0/-   1/ 13/ 10 | net sum   -18 (ate<3   -19, ate3+    +1) | none out   9 | entrant out   0 | rounds  4.7
+  told entrants 1 | entry lengths {2: 19, 3: 5} | eaten {2: 15, 1: 8, 3: 1}
+    r17 id 21 in at 2, ate 2, splits 1, out 2 in 1 bodies, died inside 1 (len 2), closed r22, not told
+    r46 id 60 in at 3, ate 2, splits 1, out 3 in 1 bodies, died inside 1 (len 2), closed r51, not told
+    r83 id 156 in at 2, ate 2, splits 1, out 2 in 1 bodies, died inside 1 (len 2), closed r88, not told
+    r100 id 20 in at 2, ate 2, splits 1, out 0 in 0 bodies, died inside 2 (len 4), closed r105, not told
+  all areas, this game                 n=  66 L0  2.6 | ate 0/1-2/3+   0/ 57/  9 | net +/0/-   8/ 28/ 30 | net sum   -43 (ate<3   -51, ate3+    +8) | none out  19 | entrant out   0 | rounds  4.8
+base_prisoners_dilemma_v0_14700_1 area ([[17, 4], 4, False], [(17, 0), (17, 1), (17, 2), (17, 3)])
+  visits here                          n=  25 L0  4.6 | ate 0/1-2/3+   0/ 22/  3 | net +/0/-   2/ 10/ 13 | net sum   -24 (ate<3   -26, ate3+    +2) | none out  12 | entrant out   0 | rounds  4.8
+  told entrants 0 | entry lengths {2: 20, 3: 4, 64: 1} | eaten {2: 15, 1: 7, 3: 3}
+    r17 id 21 in at 2, ate 2, splits 1, out 2 in 1 bodies, died inside 1 (len 2), closed r22, not told
+    r32 id 51 in at 2, ate 2, splits 1, out 2 in 1 bodies, died inside 1 (len 2), closed r37, not told
+    r55 id 54 in at 3, ate 1, splits 1, out 0 in 0 bodies, died inside 2 (len 4), closed r60, not told
+    r62 id 109 in at 2, ate 2, splits 1, out 0 in 0 bodies, died inside 2 (len 4), closed r67, not told
+  all areas, this game                 n=  80 L0  3.4 | ate 0/1-2/3+   0/ 70/ 10 | net +/0/-   8/ 34/ 38 | net sum   -60 (ate<3   -68, ate3+    +8) | none out  28 | entrant out   0 | rounds  4.7
+--- replay 2: portals_v0 14700 side 1, dragon 1263
+    area [[17, 15], 9, False]  r401 id 1263 in at 8, ate 4, splits 2, out 7 in 1 bodies, died inside 2 (len 5), closed r412, told r385 pearls 0 x1 members [1263, 1402]
+  visits to that area, whole game      n=  12 L0  4.8 | ate 0/1-2/3+   2/  2/  8 | net +/0/-   7/  1/  4 | net sum    -5 (ate<3   -17, ate3+   +12) | none out   2 | entrant out   0 | rounds 10.9
+    of those, told                     n=   2 L0 10.0 | ate 0/1-2/3+   1/  0/  1 | net +/0/-   0/  0/  2 | net sum   -13 (ate<3   -12, ate3+    -1) | none out   1 | entrant out   0 | rounds  7.5
+--- replay 3: trauma 14701 side 1, corridor holding (36,12)
+candidate_trauma_14701_1 area [[35, 15], 8, False]
+  visits here                          n=  15 L0  2.3 | ate 0/1-2/3+   0/  0/ 15 | net +/0/-  13/  1/  1 | net sum   +60 (ate<3    +0, ate3+   +60) | none out   1 | entrant out   0 | rounds 12.6
+    told                               n=   0
+    r349 id 262 in at 2, ate 8, splits 3, out 8 in 3 bodies, died inside 1 (len 2), closed r363, not told
+base_trauma_14701_1 area [[35, 15], 8, False]
+  visits here                          n=  13 L0  2.2 | ate 0/1-2/3+   0/  1/ 12 | net +/0/-  11/  0/  2 | net sum   +40 (ate<3    -2, ate3+   +42) | none out   2 | entrant out   0 | rounds 10.8
+    told                               n=   0
+    r354 id 220 in at 3, ate 8, splits 3, out 9 in 3 bodies, died inside 1 (len 2), closed r368, not told

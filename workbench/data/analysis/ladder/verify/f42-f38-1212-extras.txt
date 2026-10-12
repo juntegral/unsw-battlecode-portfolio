@@ -1,0 +1,88 @@
+==================== F42 extras
+both codes 1700-1899: 14 of 28 (0.500)
+both codes 1900-2099: 12 of 35 (0.343)
+both codes 2100 on: 2 of 14 (0.143)
+both codes, under 2100 against 2100 on: 26 of 63 (0.413) against 2 of 14 (0.143); label shuffles with a gap at least as large: 1431 of 20000
+both codes, under 1900 against 1900 on: 14 of 28 (0.500) against 14 of 49 (0.286); shuffles: 1669 of 20000
+main: our queen died with no dragon of theirs in it (wall, own body, body of a dragon of ours, no action): flagged 10 of 15 (0.667), not flagged 8 of 26 (0.308); shuffles 1027 of 20000
+   main flagged: we have 3 or fewer dragons left 6; their total over twice ours 4; our total over twice theirs 3; ours has more dragons 8
+   main not flagged: we have 3 or fewer dragons left 11 of 26; their total over twice ours 17
+   main their queen length median: flagged 14, not flagged 23; under 10: flagged 5 of 15, not flagged 7 of 26
+v31: our queen died with no dragon of theirs in it (wall, own body, body of a dragon of ours, no action): flagged 8 of 13 (0.615), not flagged 7 of 23 (0.304); shuffles 1776 of 20000
+   v31 flagged: we have 3 or fewer dragons left 1; their total over twice ours 0; our total over twice theirs 4; ours has more dragons 6
+   v31 not flagged: we have 3 or fewer dragons left 11 of 23; their total over twice ours 13
+   v31 their queen length median: flagged 21, not flagged 22; under 10: flagged 4 of 13, not flagged 6 of 23
+both: our queen died with no dragon of theirs in it (wall, own body, body of a dragon of ours, no action): flagged 18 of 28 (0.643), not flagged 15 of 49 (0.306); shuffles 139 of 20000
+   both flagged: we have 3 or fewer dragons left 7; their total over twice ours 4; our total over twice theirs 7; ours has more dragons 14
+   both not flagged: we have 3 or fewer dragons left 22 of 49; their total over twice ours 30
+   both their queen length median: flagged 18, not flagged 22; under 10: flagged 9 of 28, not flagged 13 of 49
+main: games on free layouts 322, losses 144; flagged games are 15 of those losses
+v31: games on free layouts 362, losses 183; flagged games are 13 of those losses
+
+==================== F38 extras
+-- main
+main ours long: turn starts on wider tiles since her last stay: 1: 68 stays, another way 18; 2-3: 27 stays, another way 8; 4 on: 27 stays, another way 19
+      at the mouth: body of another dragon of her side on a neighbour tile 21 of 122 (0.172); of the other side 0 of 122 (0.000)
+      of the 77 without another way: only one free neighbour 21; own other dragon beside 21; she dies in the stay 12 (with another way: 6 of 45)
+main ours short: turn starts on wider tiles since her last stay: 1: 108 stays, another way 27; 2-3: 78 stays, another way 37; 4 on: 254 stays, another way 222
+      at the mouth: body of another dragon of her side on a neighbour tile 18 of 440 (0.041); of the other side 2 of 440 (0.005)
+      of the 154 without another way: only one free neighbour 14; own other dragon beside 10; she dies in the stay 14 (with another way: 20 of 286)
+main ours long: Maze, weakhold, Tower Defense: another way 36 of 112 (0.321), enemy near 26 of 112 (0.232); other layouts: another way 9 of 10 (0.900), enemy near 6 of 10 (0.600)
+main ours short: the three layouts: another way 85 of 203 (0.419); other layouts: 201 of 237 (0.848)
+      main ours all: every turn start on a wider tile r100-199: enemy near 3513 of 13668 (0.257), free wider neighbour 13423 of 13668 (0.982) | mouths of long stays: enemy near 32 of 122 (0.262), another way 45 of 122 (0.369)
+      main ours half 1: every turn start on a wider tile r100-199: enemy near 967 of 3948 (0.245), free wider neighbour 3885 of 3948 (0.984) | mouths of long stays: enemy near 1 of 16 (0.062), another way 7 of 16 (0.438)
+      main ours half 2: every turn start on a wider tile r100-199: enemy near 2546 of 9720 (0.262), free wider neighbour 9538 of 9720 (0.981) | mouths of long stays: enemy near 31 of 106 (0.292), another way 38 of 106 (0.358)
+      main ours 1700-1899: every turn start on a wider tile r100-199: enemy near 1244 of 5509 (0.226), free wider neighbour 5400 of 5509 (0.980) | mouths of long stays: enemy near 9 of 64 (0.141), another way 24 of 64 (0.375)
+      main ours 1900-2099: every turn start on a wider tile r100-199: enemy near 1947 of 7199 (0.270), free wider neighbour 7071 of 7199 (0.982) | mouths of long stays: enemy near 21 of 56 (0.375), another way 21 of 56 (0.375)
+      main ours three layouts: every turn start on a wider tile r100-199: enemy near 939 of 3922 (0.239), free wider neighbour 3718 of 3922 (0.948) | mouths of long stays: enemy near 26 of 112 (0.232), another way 36 of 112 (0.321)
+      main ours other layouts: every turn start on a wider tile r100-199: enemy near 2574 of 9746 (0.264), free wider neighbour 9705 of 9746 (0.996) | mouths of long stays: enemy near 6 of 10 (0.600), another way 9 of 10 (0.900)
+main theirs long: turn starts on wider tiles since her last stay: 1: 16 stays, another way 3; 2-3: 2 stays, another way 0; 4 on: 10 stays, another way 7
+      at the mouth: body of another dragon of her side on a neighbour tile 2 of 28 (0.071); of the other side 1 of 28 (0.036)
+      of the 18 without another way: only one free neighbour 4; own other dragon beside 2; she dies in the stay 2 (with another way: 1 of 10)
+main theirs short: turn starts on wider tiles since her last stay: 1: 76 stays, another way 49; 2-3: 178 stays, another way 129; 4 on: 254 stays, another way 209
+      at the mouth: body of another dragon of her side on a neighbour tile 18 of 508 (0.035); of the other side 20 of 508 (0.039)
+      of the 121 without another way: only one free neighbour 30; own other dragon beside 12; she dies in the stay 7 (with another way: 14 of 387)
+main theirs long: Maze, weakhold, Tower Defense: another way 8 of 24 (0.333), enemy near 5 of 24 (0.208); other layouts: another way 2 of 4 (0.500), enemy near 2 of 4 (0.500)
+main theirs short: the three layouts: another way 121 of 177 (0.684); other layouts: 266 of 331 (0.804)
+      main theirs all: every turn start on a wider tile r100-199: enemy near 2349 of 13828 (0.170), free wider neighbour 13676 of 13828 (0.989) | mouths of long stays: enemy near 7 of 28 (0.250), another way 10 of 28 (0.357)
+      main theirs half 1: every turn start on a wider tile r100-199: enemy near 441 of 3429 (0.129), free wider neighbour 3409 of 3429 (0.994) | mouths of long stays: enemy near 0 of 1 (0.000), another way 1 of 1 (1.000)
+      main theirs half 2: every turn start on a wider tile r100-199: enemy near 1908 of 10399 (0.183), free wider neighbour 10267 of 10399 (0.987) | mouths of long stays: enemy near 7 of 27 (0.259), another way 9 of 27 (0.333)
+      main theirs 1700-1899: every turn start on a wider tile r100-199: enemy near 810 of 5771 (0.140), free wider neighbour 5726 of 5771 (0.992) | mouths of long stays: enemy near 2 of 10 (0.200), another way 7 of 10 (0.700)
+      main theirs 1900-2099: every turn start on a wider tile r100-199: enemy near 1364 of 7089 (0.192), free wider neighbour 7016 of 7089 (0.990) | mouths of long stays: enemy near 5 of 12 (0.417), another way 3 of 12 (0.250)
+      main theirs three layouts: every turn start on a wider tile r100-199: enemy near 584 of 5054 (0.116), free wider neighbour 4976 of 5054 (0.985) | mouths of long stays: enemy near 5 of 24 (0.208), another way 8 of 24 (0.333)
+      main theirs other layouts: every turn start on a wider tile r100-199: enemy near 1765 of 8774 (0.201), free wider neighbour 8700 of 8774 (0.992) | mouths of long stays: enemy near 2 of 4 (0.500), another way 2 of 4 (0.500)
+main ours long: games 36; games where under half have another way 15; exactly half 7; over half 14
+main ours long: battles 30; battle bootstrap of the another way share 0.29 to 0.47; resamples at one half or more: 28 of 4000
+-- v31
+v31 ours long: turn starts on wider tiles since her last stay: 1: 30 stays, another way 7; 2-3: 17 stays, another way 4; 4 on: 28 stays, another way 22
+      at the mouth: body of another dragon of her side on a neighbour tile 11 of 75 (0.147); of the other side 1 of 75 (0.013)
+      of the 42 without another way: only one free neighbour 7; own other dragon beside 8; she dies in the stay 14 (with another way: 8 of 33)
+v31 ours short: turn starts on wider tiles since her last stay: 1: 90 stays, another way 28; 2-3: 120 stays, another way 48; 4 on: 248 stays, another way 216
+      at the mouth: body of another dragon of her side on a neighbour tile 28 of 458 (0.061); of the other side 7 of 458 (0.015)
+      of the 166 without another way: only one free neighbour 26; own other dragon beside 23; she dies in the stay 13 (with another way: 12 of 292)
+v31 ours long: Maze, weakhold, Tower Defense: another way 20 of 57 (0.351), enemy near 15 of 57 (0.263); other layouts: another way 13 of 18 (0.722), enemy near 7 of 18 (0.389)
+v31 ours short: the three layouts: another way 69 of 177 (0.390); other layouts: 223 of 281 (0.794)
+      v31 ours all: every turn start on a wider tile r100-199: enemy near 3383 of 12766 (0.265), free wider neighbour 12540 of 12766 (0.982) | mouths of long stays: enemy near 22 of 75 (0.293), another way 33 of 75 (0.440)
+      v31 ours half 1: every turn start on a wider tile r100-199: enemy near 3383 of 12766 (0.265), free wider neighbour 12540 of 12766 (0.982) | mouths of long stays: enemy near 22 of 75 (0.293), another way 33 of 75 (0.440)
+      v31 ours half 2: every turn start on a wider tile r100-199: enemy near 0 of 0 (n/a), free wider neighbour 0 of 0 (n/a) | mouths of long stays: enemy near 0 of 0 (n/a), another way 0 of 0 (n/a)
+      v31 ours 1700-1899: every turn start on a wider tile r100-199: enemy near 1986 of 7491 (0.265), free wider neighbour 7367 of 7491 (0.983) | mouths of long stays: enemy near 12 of 42 (0.286), another way 20 of 42 (0.476)
+      v31 ours 1900-2099: every turn start on a wider tile r100-199: enemy near 893 of 3589 (0.249), free wider neighbour 3515 of 3589 (0.979) | mouths of long stays: enemy near 7 of 19 (0.368), another way 7 of 19 (0.368)
+      v31 ours three layouts: every turn start on a wider tile r100-199: enemy near 532 of 3370 (0.158), free wider neighbour 3218 of 3370 (0.955) | mouths of long stays: enemy near 15 of 57 (0.263), another way 20 of 57 (0.351)
+      v31 ours other layouts: every turn start on a wider tile r100-199: enemy near 2851 of 9396 (0.303), free wider neighbour 9322 of 9396 (0.992) | mouths of long stays: enemy near 7 of 18 (0.389), another way 13 of 18 (0.722)
+v31 theirs long: turn starts on wider tiles since her last stay: 1: 17 stays, another way 1; 2-3: 8 stays, another way 3; 4 on: 12 stays, another way 6
+      at the mouth: body of another dragon of her side on a neighbour tile 6 of 37 (0.162); of the other side 1 of 37 (0.027)
+      of the 27 without another way: only one free neighbour 6; own other dragon beside 5; she dies in the stay 5 (with another way: 0 of 10)
+v31 theirs short: turn starts on wider tiles since her last stay: 1: 53 stays, another way 24; 2-3: 119 stays, another way 86; 4 on: 223 stays, another way 187
+      at the mouth: body of another dragon of her side on a neighbour tile 34 of 395 (0.086); of the other side 9 of 395 (0.023)
+      of the 98 without another way: only one free neighbour 33; own other dragon beside 18; she dies in the stay 8 (with another way: 24 of 297)
+v31 theirs long: Maze, weakhold, Tower Defense: another way 7 of 33 (0.212), enemy near 6 of 33 (0.182); other layouts: another way 3 of 4 (0.750), enemy near 1 of 4 (0.250)
+v31 theirs short: the three layouts: another way 99 of 156 (0.635); other layouts: 198 of 239 (0.828)
+      v31 theirs all: every turn start on a wider tile r100-199: enemy near 2629 of 14055 (0.187), free wider neighbour 13912 of 14055 (0.990) | mouths of long stays: enemy near 7 of 37 (0.189), another way 10 of 37 (0.270)
+      v31 theirs half 1: every turn start on a wider tile r100-199: enemy near 2629 of 14055 (0.187), free wider neighbour 13912 of 14055 (0.990) | mouths of long stays: enemy near 7 of 37 (0.189), another way 10 of 37 (0.270)
+      v31 theirs half 2: every turn start on a wider tile r100-199: enemy near 0 of 0 (n/a), free wider neighbour 0 of 0 (n/a) | mouths of long stays: enemy near 0 of 0 (n/a), another way 0 of 0 (n/a)
+      v31 theirs 1700-1899: every turn start on a wider tile r100-199: enemy near 1563 of 7474 (0.209), free wider neighbour 7405 of 7474 (0.991) | mouths of long stays: enemy near 3 of 16 (0.188), another way 3 of 16 (0.188)
+      v31 theirs 1900-2099: every turn start on a wider tile r100-199: enemy near 706 of 4892 (0.144), free wider neighbour 4851 of 4892 (0.992) | mouths of long stays: enemy near 3 of 7 (0.429), another way 2 of 7 (0.286)
+      v31 theirs three layouts: every turn start on a wider tile r100-199: enemy near 517 of 4794 (0.108), free wider neighbour 4702 of 4794 (0.981) | mouths of long stays: enemy near 6 of 33 (0.182), another way 7 of 33 (0.212)
+      v31 theirs other layouts: every turn start on a wider tile r100-199: enemy near 2112 of 9261 (0.228), free wider neighbour 9210 of 9261 (0.994) | mouths of long stays: enemy near 1 of 4 (0.250), another way 3 of 4 (0.750)
+v31 ours long: games 40; games where under half have another way 18; exactly half 5; over half 17
+v31 ours long: battles 36; battle bootstrap of the another way share 0.34 to 0.55; resamples at one half or more: 618 of 4000

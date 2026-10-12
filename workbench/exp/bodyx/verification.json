@@ -1,0 +1,48 @@
+{
+  "sets": {
+    "on": {
+      "queenMulti": 180,
+      "queenCompleted": 179,
+      "updates": 7306,
+      "turns": 490962,
+      "unknownMap": 0,
+      "unqualified": 134,
+      "qualified": 3370
+    },
+    "off": {
+      "queenMulti": 149,
+      "queenCompleted": 140,
+      "updates": 6324,
+      "turns": 483520,
+      "unknownMap": 0,
+      "unqualified": 0,
+      "qualified": 0
+    }
+  },
+  "firstEvent": {
+    "index": 3175,
+    "round": 52,
+    "on": {
+      "type": "dragonAction",
+      "id": 0,
+      "action": {
+        "kind": "move",
+        "steps": [
+          "N"
+        ]
+      }
+    },
+    "off": {
+      "type": "dragonAction",
+      "id": 0,
+      "action": {
+        "kind": "move",
+        "steps": [
+          "N",
+          "N",
+          "W"
+        ]
+      }
+    }
+  }
+}

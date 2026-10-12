@@ -1,0 +1,1075 @@
+{
+  "map": "Slithery Fight/a",
+  "role": "ours:stack11",
+  "diagnostic": true,
+  "best": {
+    "key": "cand-stack11-online:724115",
+    "src": "online",
+    "team": "A",
+    "diagnostics": {
+      "turns": 14801,
+      "targetPocket": 348,
+      "targetPresent": 123,
+      "adjacentOpen": 2,
+      "adjacentEntered": 1,
+      "adjacentAvoided": 1,
+      "mouthOpen": 10,
+      "mouthEntered": 4,
+      "mouthAvoided": 6,
+      "mouthPresent": 1,
+      "sd": 0,
+      "F": 1153,
+      "examples": [
+        {
+          "tile": 1541,
+          "adjacent": true,
+          "mouth": true,
+          "round": 27,
+          "id": 81,
+          "head": 1478,
+          "length": 2,
+          "tag": "W v9.4 d7 L2 F1@29,24 F2",
+          "action": {
+            "kind": "move",
+            "steps": [
+              "W"
+            ]
+          },
+          "after": 1477
+        },
+        {
+          "tile": 1541,
+          "adjacent": true,
+          "mouth": true,
+          "round": 27,
+          "id": 81,
+          "head": 1478,
+          "length": 2,
+          "tag": "W v9.4 d7 L2 F1@29,24 F2",
+          "action": {
+            "kind": "move",
+            "steps": [
+              "W"
+            ]
+          },
+          "after": 1477
+        },
+        {
+          "tile": 1604,
+          "adjacent": false,
+          "mouth": true,
+          "round": 32,
+          "id": 92,
+          "head": 1478,
+          "length": 2,
+          "tag": "W v8.3 d7 L2 F1@29,25 F2",
+          "action": {
+            "kind": "move",
+            "steps": [
+              "W"
+            ]
+          },
+          "after": 1477
+        },
+        {
+          "tile": 1236,
+          "adjacent": false,
+          "mouth": true,
+          "round": 89,
+          "id": 81,
+          "head": 1239,
+          "length": 2,
+          "tag": "N v9.1 d7 L2 F2@39,19 F2",
+          "action": {
+            "kind": "move",
+            "steps": [
+              "N"
+            ]
+          },
+          "after": 1176
+        },
+        {
+          "tile": 1188,
+          "adjacent": false,
+          "mouth": true,
+          "round": 266,
+          "id": 814,
+          "head": 999,
+          "length": 2,
+          "tag": "E v7.9 d7 L2 F1@54,18 F2",
+          "action": {
+            "kind": "move",
+            "steps": [
+              "E"
+            ]
+          },
+          "after": 1000
+        },
+        {
+          "tile": 1667,
+          "adjacent": false,
+          "mouth": true,
+          "round": 268,
+          "id": 590,
+          "head": 1478,
+          "length": 2,
+          "tag": "E v8.0 d7 L2 F1@29,26 F2 cl@30,26 tgx",
+          "action": {
+            "kind": "move",
+            "steps": [
+              "E"
+            ]
+          },
+          "after": 1479
+        },
+        {
+          "tile": 1188,
+          "adjacent": false,
+          "mouth": true,
+          "round": 301,
+          "id": 747,
+          "head": 999,
+          "length": 15,
+          "tag": "N v6.6 d7 L15 F1@54,18 F2",
+          "action": {
+            "kind": "move",
+            "steps": [
+              "N"
+            ]
+          },
+          "after": 936
+        }
+      ]
+    },
+    "timeline": [
+      {
+        "round": 26,
+        "seq": 3808,
+        "type": "turnStart",
+        "id": 81
+      },
+      {
+        "round": 26,
+        "seq": 3809,
+        "type": "dragonIndicator",
+        "id": 81,
+        "text": "W v10.2 d7 L2 F2@29,24 F2 cl@29,24"
+      },
+      {
+        "round": 26,
+        "seq": 3810,
+        "type": "dragonAction",
+        "id": 81,
+        "action": {
+          "kind": "move",
+          "steps": [
+            "W"
+          ]
+        },
+        "instructions": {
+          "count": 13738225,
+          "exceeded": false
+        }
+      },
+      {
+        "round": 26,
+        "seq": 3811,
+        "type": "dragonUpdate",
+        "id": 81,
+        "facing": "W",
+        "head": {
+          "x": 29,
+          "y": 23
+        },
+        "tail": {
+          "x": 30,
+          "y": 23
+        }
+      },
+      {
+        "round": 27,
+        "seq": 3994,
+        "type": "turnStart",
+        "id": 81
+      },
+      {
+        "round": 27,
+        "seq": 3995,
+        "type": "dragonIndicator",
+        "id": 81,
+        "text": "W v9.4 d7 L2 F1@29,24 F2"
+      },
+      {
+        "round": 27,
+        "seq": 3996,
+        "type": "dragonAction",
+        "id": 81,
+        "action": {
+          "kind": "move",
+          "steps": [
+            "W"
+          ]
+        },
+        "instructions": {
+          "count": 13706953,
+          "exceeded": false
+        }
+      },
+      {
+        "round": 27,
+        "seq": 3997,
+        "type": "dragonUpdate",
+        "id": 81,
+        "facing": "W",
+        "head": {
+          "x": 28,
+          "y": 23
+        },
+        "tail": {
+          "x": 29,
+          "y": 23
+        }
+      },
+      {
+        "round": 27,
+        "seq": 4031,
+        "type": "turnStart",
+        "id": 92
+      },
+      {
+        "round": 27,
+        "seq": 4032,
+        "type": "dragonIndicator",
+        "id": 92,
+        "text": "N v9.2 d7 L2 F0@31,25 F2 cl@29,24 map=Slithery_Fight/a"
+      },
+      {
+        "round": 27,
+        "seq": 4033,
+        "type": "dragonAction",
+        "id": 92,
+        "action": {
+          "kind": "move",
+          "steps": [
+            "N"
+          ]
+        },
+        "instructions": {
+          "count": 11397153,
+          "exceeded": false
+        }
+      },
+      {
+        "round": 27,
+        "seq": 4034,
+        "type": "dragonUpdate",
+        "id": 92,
+        "facing": "N",
+        "head": {
+          "x": 32,
+          "y": 24
+        },
+        "tail": {
+          "x": 32,
+          "y": 25
+        }
+      },
+      {
+        "round": 28,
+        "seq": 4188,
+        "type": "turnStart",
+        "id": 81
+      },
+      {
+        "round": 28,
+        "seq": 4189,
+        "type": "dragonIndicator",
+        "id": 81,
+        "text": "N v9.7 d7 L2 F2@29,24 F2 cov cl@29,21"
+      },
+      {
+        "round": 28,
+        "seq": 4190,
+        "type": "dragonAction",
+        "id": 81,
+        "action": {
+          "kind": "move",
+          "steps": [
+            "N"
+          ]
+        },
+        "instructions": {
+          "count": 16094087,
+          "exceeded": false
+        }
+      },
+      {
+        "round": 28,
+        "seq": 4191,
+        "type": "dragonUpdate",
+        "id": 81,
+        "facing": "N",
+        "head": {
+          "x": 28,
+          "y": 22
+        },
+        "tail": {
+          "x": 28,
+          "y": 23
+        }
+      },
+      {
+        "round": 28,
+        "seq": 4224,
+        "type": "turnStart",
+        "id": 92
+      },
+      {
+        "round": 28,
+        "seq": 4225,
+        "type": "dragonIndicator",
+        "id": 92,
+        "text": "N v10.7 d7 L2 F1@31,25 F2 cl@29,24"
+      },
+      {
+        "round": 28,
+        "seq": 4226,
+        "type": "dragonAction",
+        "id": 92,
+        "action": {
+          "kind": "move",
+          "steps": [
+            "N"
+          ]
+        },
+        "instructions": {
+          "count": 14364511,
+          "exceeded": false
+        }
+      },
+      {
+        "round": 28,
+        "seq": 4227,
+        "type": "dragonUpdate",
+        "id": 92,
+        "facing": "N",
+        "head": {
+          "x": 32,
+          "y": 23
+        },
+        "tail": {
+          "x": 32,
+          "y": 24
+        }
+      },
+      {
+        "round": 29,
+        "seq": 4401,
+        "type": "turnStart",
+        "id": 81
+      },
+      {
+        "round": 29,
+        "seq": 4402,
+        "type": "dragonIndicator",
+        "id": 81,
+        "text": "E v9.1 d7 L2 F3@29,24 F2 cl@29,21"
+      },
+      {
+        "round": 29,
+        "seq": 4403,
+        "type": "dragonAction",
+        "id": 81,
+        "action": {
+          "kind": "move",
+          "steps": [
+            "E"
+          ]
+        },
+        "instructions": {
+          "count": 13965210,
+          "exceeded": false
+        }
+      },
+      {
+        "round": 29,
+        "seq": 4404,
+        "type": "dragonUpdate",
+        "id": 81,
+        "facing": "E",
+        "head": {
+          "x": 29,
+          "y": 22
+        },
+        "tail": {
+          "x": 28,
+          "y": 22
+        }
+      },
+      {
+        "round": 29,
+        "seq": 4436,
+        "type": "turnStart",
+        "id": 92
+      },
+      {
+        "round": 29,
+        "seq": 4437,
+        "type": "dragonIndicator",
+        "id": 92,
+        "text": "W v9.7 d7 L2 cl@29,24"
+      },
+      {
+        "round": 29,
+        "seq": 4438,
+        "type": "dragonAction",
+        "id": 92,
+        "action": {
+          "kind": "move",
+          "steps": [
+            "W"
+          ]
+        },
+        "instructions": {
+          "count": 11268250,
+          "exceeded": false
+        }
+      },
+      {
+        "round": 29,
+        "seq": 4439,
+        "type": "dragonUpdate",
+        "id": 92,
+        "facing": "W",
+        "head": {
+          "x": 31,
+          "y": 23
+        },
+        "tail": {
+          "x": 32,
+          "y": 23
+        }
+      },
+      {
+        "round": 30,
+        "seq": 4610,
+        "type": "turnStart",
+        "id": 81
+      },
+      {
+        "round": 30,
+        "seq": 4611,
+        "type": "dragonIndicator",
+        "id": 81,
+        "text": "E v9.2 d7 L2 F2@29,24 F2 cl@31,25"
+      },
+      {
+        "round": 30,
+        "seq": 4612,
+        "type": "dragonAction",
+        "id": 81,
+        "action": {
+          "kind": "move",
+          "steps": [
+            "E"
+          ]
+        },
+        "instructions": {
+          "count": 11175586,
+          "exceeded": false
+        }
+      },
+      {
+        "round": 30,
+        "seq": 4613,
+        "type": "dragonUpdate",
+        "id": 81,
+        "facing": "E",
+        "head": {
+          "x": 30,
+          "y": 22
+        },
+        "tail": {
+          "x": 29,
+          "y": 22
+        }
+      },
+      {
+        "round": 30,
+        "seq": 4646,
+        "type": "turnStart",
+        "id": 92
+      },
+      {
+        "round": 30,
+        "seq": 4647,
+        "type": "dragonIndicator",
+        "id": 92,
+        "text": "W v9.4 d7 L2 cl@29,24"
+      },
+      {
+        "round": 30,
+        "seq": 4648,
+        "type": "dragonAction",
+        "id": 92,
+        "action": {
+          "kind": "move",
+          "steps": [
+            "W"
+          ]
+        },
+        "instructions": {
+          "count": 10373672,
+          "exceeded": false
+        }
+      },
+      {
+        "round": 30,
+        "seq": 4649,
+        "type": "dragonUpdate",
+        "id": 92,
+        "facing": "W",
+        "head": {
+          "x": 30,
+          "y": 23
+        },
+        "tail": {
+          "x": 31,
+          "y": 23
+        }
+      },
+      {
+        "round": 31,
+        "seq": 4812,
+        "type": "turnStart",
+        "id": 81
+      },
+      {
+        "round": 31,
+        "seq": 4813,
+        "type": "dragonIndicator",
+        "id": 81,
+        "text": "E v8.9 d7 L2 cl@31,25"
+      },
+      {
+        "round": 31,
+        "seq": 4814,
+        "type": "dragonAction",
+        "id": 81,
+        "action": {
+          "kind": "move",
+          "steps": [
+            "E"
+          ]
+        },
+        "instructions": {
+          "count": 8371105,
+          "exceeded": false
+        }
+      },
+      {
+        "round": 31,
+        "seq": 4815,
+        "type": "dragonUpdate",
+        "id": 81,
+        "facing": "E",
+        "head": {
+          "x": 31,
+          "y": 22
+        },
+        "tail": {
+          "x": 30,
+          "y": 22
+        }
+      },
+      {
+        "round": 31,
+        "seq": 4845,
+        "type": "turnStart",
+        "id": 92
+      },
+      {
+        "round": 31,
+        "seq": 4846,
+        "type": "dragonIndicator",
+        "id": 92,
+        "text": "W v8.7 d7 L2 F2@29,25 F2 cl@29,24"
+      },
+      {
+        "round": 31,
+        "seq": 4847,
+        "type": "dragonAction",
+        "id": 92,
+        "action": {
+          "kind": "move",
+          "steps": [
+            "W"
+          ]
+        },
+        "instructions": {
+          "count": 11549135,
+          "exceeded": false
+        }
+      },
+      {
+        "round": 31,
+        "seq": 4848,
+        "type": "dragonUpdate",
+        "id": 92,
+        "facing": "W",
+        "head": {
+          "x": 29,
+          "y": 23
+        },
+        "tail": {
+          "x": 30,
+          "y": 23
+        }
+      },
+      {
+        "round": 32,
+        "seq": 5028,
+        "type": "turnStart",
+        "id": 81
+      },
+      {
+        "round": 32,
+        "seq": 5029,
+        "type": "dragonIndicator",
+        "id": 81,
+        "text": "S v10.1 d7 L2 cl@29,24"
+      },
+      {
+        "round": 32,
+        "seq": 5030,
+        "type": "dragonAction",
+        "id": 81,
+        "action": {
+          "kind": "move",
+          "steps": [
+            "S"
+          ]
+        },
+        "instructions": {
+          "count": 9128862,
+          "exceeded": false
+        }
+      },
+      {
+        "round": 32,
+        "seq": 5031,
+        "type": "dragonUpdate",
+        "id": 81,
+        "facing": "S",
+        "head": {
+          "x": 31,
+          "y": 23
+        },
+        "tail": {
+          "x": 31,
+          "y": 22
+        }
+      },
+      {
+        "round": 32,
+        "seq": 5061,
+        "type": "turnStart",
+        "id": 92
+      },
+      {
+        "round": 32,
+        "seq": 5062,
+        "type": "dragonIndicator",
+        "id": 92,
+        "text": "W v8.3 d7 L2 F1@29,25 F2"
+      },
+      {
+        "round": 32,
+        "seq": 5063,
+        "type": "dragonAction",
+        "id": 92,
+        "action": {
+          "kind": "move",
+          "steps": [
+            "W"
+          ]
+        },
+        "instructions": {
+          "count": 13132159,
+          "exceeded": false
+        }
+      },
+      {
+        "round": 32,
+        "seq": 5064,
+        "type": "dragonUpdate",
+        "id": 92,
+        "facing": "W",
+        "head": {
+          "x": 28,
+          "y": 23
+        },
+        "tail": {
+          "x": 29,
+          "y": 23
+        }
+      },
+      {
+        "round": 33,
+        "seq": 5243,
+        "type": "turnStart",
+        "id": 81
+      },
+      {
+        "round": 33,
+        "seq": 5244,
+        "type": "dragonIndicator",
+        "id": 81,
+        "text": "E v9.4 d7 L2 F5@30,21 F2 cl@31,25"
+      },
+      {
+        "round": 33,
+        "seq": 5245,
+        "type": "dragonAction",
+        "id": 81,
+        "action": {
+          "kind": "move",
+          "steps": [
+            "E"
+          ]
+        },
+        "instructions": {
+          "count": 10219636,
+          "exceeded": false
+        }
+      },
+      {
+        "round": 33,
+        "seq": 5246,
+        "type": "dragonUpdate",
+        "id": 81,
+        "facing": "E",
+        "head": {
+          "x": 32,
+          "y": 23
+        },
+        "tail": {
+          "x": 31,
+          "y": 23
+        }
+      },
+      {
+        "round": 33,
+        "seq": 5277,
+        "type": "turnStart",
+        "id": 92
+      },
+      {
+        "round": 33,
+        "seq": 5278,
+        "type": "dragonIndicator",
+        "id": 92,
+        "text": "S v8.9 d7 L2"
+      },
+      {
+        "round": 33,
+        "seq": 5279,
+        "type": "dragonAction",
+        "id": 92,
+        "action": {
+          "kind": "move",
+          "steps": [
+            "S"
+          ]
+        },
+        "instructions": {
+          "count": 13420428,
+          "exceeded": false
+        }
+      },
+      {
+        "round": 33,
+        "seq": 5280,
+        "type": "dragonUpdate",
+        "id": 92,
+        "facing": "S",
+        "head": {
+          "x": 28,
+          "y": 24
+        },
+        "tail": {
+          "x": 28,
+          "y": 23
+        }
+      },
+      {
+        "round": 34,
+        "seq": 5483,
+        "type": "turnStart",
+        "id": 81
+      },
+      {
+        "round": 34,
+        "seq": 5484,
+        "type": "dragonIndicator",
+        "id": 81,
+        "text": "N v10.4 d7 L2"
+      },
+      {
+        "round": 34,
+        "seq": 5485,
+        "type": "dragonAction",
+        "id": 81,
+        "action": {
+          "kind": "move",
+          "steps": [
+            "N"
+          ]
+        },
+        "instructions": {
+          "count": 10309725,
+          "exceeded": false
+        }
+      },
+      {
+        "round": 34,
+        "seq": 5486,
+        "type": "dragonUpdate",
+        "id": 81,
+        "facing": "N",
+        "head": {
+          "x": 32,
+          "y": 22
+        },
+        "tail": {
+          "x": 32,
+          "y": 23
+        }
+      },
+      {
+        "round": 34,
+        "seq": 5516,
+        "type": "turnStart",
+        "id": 92
+      },
+      {
+        "round": 34,
+        "seq": 5517,
+        "type": "dragonIndicator",
+        "id": 92,
+        "text": "W v9.7 d7 L2"
+      },
+      {
+        "round": 34,
+        "seq": 5518,
+        "type": "dragonAction",
+        "id": 92,
+        "action": {
+          "kind": "move",
+          "steps": [
+            "W"
+          ]
+        },
+        "instructions": {
+          "count": 12350313,
+          "exceeded": false
+        }
+      },
+      {
+        "round": 34,
+        "seq": 5519,
+        "type": "dragonUpdate",
+        "id": 92,
+        "facing": "W",
+        "head": {
+          "x": 27,
+          "y": 24
+        },
+        "tail": {
+          "x": 28,
+          "y": 24
+        }
+      },
+      {
+        "round": 35,
+        "seq": 5711,
+        "type": "turnStart",
+        "id": 81
+      },
+      {
+        "round": 35,
+        "seq": 5712,
+        "type": "dragonIndicator",
+        "id": 81,
+        "text": "W v11.6 d7 L2 cl@29,24"
+      },
+      {
+        "round": 35,
+        "seq": 5713,
+        "type": "dragonAction",
+        "id": 81,
+        "action": {
+          "kind": "move",
+          "steps": [
+            "W"
+          ]
+        },
+        "instructions": {
+          "count": 11258207,
+          "exceeded": false
+        }
+      },
+      {
+        "round": 35,
+        "seq": 5714,
+        "type": "dragonUpdate",
+        "id": 81,
+        "facing": "W",
+        "head": {
+          "x": 31,
+          "y": 22
+        },
+        "tail": {
+          "x": 32,
+          "y": 22
+        }
+      },
+      {
+        "round": 35,
+        "seq": 5743,
+        "type": "turnStart",
+        "id": 92
+      },
+      {
+        "round": 35,
+        "seq": 5744,
+        "type": "dragonIndicator",
+        "id": 92,
+        "text": "N v7.0 d7 L2 cl@29,24 tgx"
+      },
+      {
+        "round": 35,
+        "seq": 5745,
+        "type": "dragonAction",
+        "id": 92,
+        "action": {
+          "kind": "move",
+          "steps": [
+            "N"
+          ]
+        },
+        "instructions": {
+          "count": 12711825,
+          "exceeded": false
+        }
+      },
+      {
+        "round": 35,
+        "seq": 5746,
+        "type": "dragonUpdate",
+        "id": 92,
+        "facing": "N",
+        "head": {
+          "x": 27,
+          "y": 23
+        },
+        "tail": {
+          "x": 27,
+          "y": 24
+        }
+      },
+      {
+        "round": 36,
+        "seq": 5941,
+        "type": "turnStart",
+        "id": 81
+      },
+      {
+        "round": 36,
+        "seq": 5942,
+        "type": "dragonIndicator",
+        "id": 81,
+        "text": "W v9.4 d7 L2 cl@29,21"
+      },
+      {
+        "round": 36,
+        "seq": 5943,
+        "type": "dragonAction",
+        "id": 81,
+        "action": {
+          "kind": "move",
+          "steps": [
+            "W"
+          ]
+        },
+        "instructions": {
+          "count": 9542430,
+          "exceeded": false
+        }
+      },
+      {
+        "round": 36,
+        "seq": 5944,
+        "type": "dragonUpdate",
+        "id": 81,
+        "facing": "W",
+        "head": {
+          "x": 30,
+          "y": 22
+        },
+        "tail": {
+          "x": 31,
+          "y": 22
+        }
+      },
+      {
+        "round": 36,
+        "seq": 5968,
+        "type": "turnStart",
+        "id": 92
+      },
+      {
+        "round": 36,
+        "seq": 5969,
+        "type": "dragonIndicator",
+        "id": 92,
+        "text": "W v9.3 d7 L2"
+      },
+      {
+        "round": 36,
+        "seq": 5970,
+        "type": "dragonAction",
+        "id": 92,
+        "action": {
+          "kind": "move",
+          "steps": [
+            "W"
+          ]
+        },
+        "instructions": {
+          "count": 11867232,
+          "exceeded": false
+        }
+      },
+      {
+        "round": 36,
+        "seq": 5971,
+        "type": "dragonUpdate",
+        "id": 92,
+        "facing": "W",
+        "head": {
+          "x": 26,
+          "y": 23
+        },
+        "tail": {
+          "x": 27,
+          "y": 23
+        }
+      }
+    ],
+    "snapshots": [],
+    "replay": "~/01. Project/개인 프로젝트/unsw-swarm/data/online/cand-stack11-online/M724115.replay"
+  },
+  "score": null,
+  "classN": null
+}

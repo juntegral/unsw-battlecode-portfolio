@@ -1,0 +1,96 @@
+data/online/live-one1/b1504479/M1504492.replay side0 QUEEN DEAD r9 L4 reason body (actor 0 = queen) free-at-death -
+  r0 head (0, 5) L3 body [(0, 5), (0, 6), (0, 7)] free NE room(no portal) 39 portal-sides 2 units 3 | N->(0, 4) E->(1, 5) S->(0, 6)[own0]
+      .     .     .E    .W    .     .     .E    
+      .     .     .E    .W    .     .     .E    
+      .     E     .E    .W    .     .     .     
+      .     e     .E    HW    .     .     .     
+      .     e     .E    bW    .     .     .Es   
+      .     .     .E    bW    .     .     .nE   
+      .     .     eE    .W    .     .     .     
+     queen action kind 0 dirs E
+  r1 head (1, 5) L3 body [(1, 5), (0, 5), (0, 6)] free NES room(no portal) 39 portal-sides 2 units 3 | N->(1, 4) E->(2, 5) S->(1, 6) W->(0, 5)[own0]
+      .     .E    .W    .     .     .E    .NeSW 
+      E     .E    .W    .     .     .E    oNSW  
+      e     .E    .W    .     .     .     .N    
+      e     .E    bW    H     .     .     .S    
+      .     .E    bW    .     .     .Es   .NsW  
+      .     .E    .W    .     .     .nE   .nSW  
+      .     .E    .W    .     .     .     .N    
+     queen action kind 0 dirs E
+  r2 head (2, 5) L3 body [(2, 5), (1, 5), (0, 5)] free NES room(no portal) 39 portal-sides 2 units 3 | N->(2, 4) E->(3, 5) S->(2, 6) W->(1, 5)[own0]
+      .E    .W    .     .     .E    .NeSW .NESw 
+      .E    .W    .     .     .E    oNSW  .NES  
+      .E    .W    .     .     .     .N    .N    
+      .E    bW    b     H     .     .S    .S    
+      .E    .W    .     .     .Es   .NsW  .NE   
+      .E    .W    .     .     .nE   .nSW  .ES   
+      .E    .W    .     .     .     .N    .N    
+     queen action kind 0 dirs E
+  r3 head (3, 5) L3 body [(3, 5), (2, 5), (1, 5)] free NES room(no portal) 39 portal-sides 2 units 3 | N->(3, 4) E->(4, 5) S->(3, 6) W->(2, 5)[own0]
+      .W    .     .     .E    .NeSW .NESw .W    
+      .W    .     .     .E    oNSW  .NES  .W    
+      .W    .     .     .     .N    .N    .     
+      .W    b     b     H     .S    .S    .     
+      .W    .     .     .Es   .NsW  .NE   .W    
+      .W    .     .     .nE   .nSW  .ES   .W    
+      .W    .     .     .     .N    .N    .     
+     queen action kind 0 dirs S
+       mate 2 L3 at (2, 9) action kind 0 dirs E
+  r4 head (3, 6) L3 body [(3, 6), (3, 5), (2, 5)] free sW room(no portal) 39 portal-sides 3 units 3 | N->(3, 5)[own0] Sp->(27, 9) W->(2, 6)
+      .W    .     .     .E    oNSW  oNES  .W    
+      .W    .     .     .     .N    .N    .     
+      .W    .     b     b     .S    .S    .     
+      .W    .     .     HEs   .NsW  .NE   .W    
+      .W    .     .     .nE   .nSW  .ES   .W    
+      .W    .     .     .     .N    .N    .     
+      .W    .     m     M     .eS   .Sw   .     
+     queen action kind 0 dirs S
+  r5 head (27, 9) L3 body [(27, 9), (3, 6), (3, 5)] free W room(no portal) 3 portal-sides 2 units 3 | Np->(3, 6)[own0] W->(26, 9)
+      .W    .     .Ne   .Nw   .     .     .     
+      .W    .     .S    .S    .     E     .     
+      .     .E    .NW   .NEs  .sW   e     e     
+      .     .E    oSW   HnES  .nW   .     .     
+      .W    .     .N    .N    .     .     .     
+      .W    .     .S    .S    .     .     .     
+      .     .E    oNSW  oNES  .W    .     .     
+     queen action kind 0 dirs W
+     queen eats (26, 9)
+  r6 head (26, 9) L4 body [(26, 9), (27, 9), (3, 6), (3, 5)] free N room(no portal) 2 portal-sides 1 units 4 | N->(26, 8) E->(27, 9)[own0]
+      oNEw  .W    .     .Ne   .Nw   .     E     
+      .ES   .W    .     .S    .S    .     e     
+      .N    .     .E    oNW   .NEs  .sW   e     
+      .Sw   .     .E    HSW   bnES  .nW   .     
+      oNESw .W    .     .N    .N    .     .     
+      oNES  .W    .     .S    .S    .     .     
+      .N    .     .E    oNSW  oNES  .W    .     
+     queen action kind 1 dirs 
+     QUEEN SPLIT L4 -> queen [(26, 9), (27, 9)] child 8 [(3, 5), (3, 6)]
+  r7 head (26, 9) L2 body [(26, 9), (27, 9)] free N room(no portal) 2 portal-sides 1 units 5 | N->(26, 8) E->(27, 9)[own0]
+      oNEw  .W    .     .Ne   .Nw   E     e     
+      oES   .W    .     .S    .S    .     e     
+      .N    .     .E    oNW   .NEs  .sW   .     
+      .Sw   .     .E    HSW   bnES  .nW   .     
+      oNESw .W    .     .N    .N    .     .     
+      oNES  .W    .     .S    .S    .     .     
+      .N    .     .E    oNSW  oNES  .W    .     
+     queen action kind 0 dirs N
+     queen eats (26, 8)
+  r8 head (26, 8) L3 body [(26, 8), (26, 9), (27, 9)] free E room(no portal) 1 portal-sides 1 units 5 | E->(27, 8) S->(26, 9)[own0]
+      .S    .     .E    oNeSW oNESw EW    .     
+      oNEw  .W    .     .Ne   .Nw   e     e     
+      oES   .W    .     .S    .S    .     .     
+      .N    .     .E    HNW   oNEs  .sW   .     
+      .Sw   .     .E    bSW   bnES  .nW   .     
+      oNESw .W    .     .N    .N    .     .     
+      oNES  .W    .     .S    .S    .     .     
+     queen action kind 0 dirs E
+     queen eats (27, 8)
+  r9 head (27, 8) L4 body [(27, 8), (26, 8), (26, 9), (27, 9)] free - room(no portal) 0 portal-sides 1 units 5 | Sp->(3, 7)[mate2] W->(26, 8)[own0]
+      .     .E    oNeSW oNESw eW    .     .     
+      .W    .     .Ne   .Nw   e     .     .     
+      .W    .     .S    .S    .     .     .     
+      .     .E    bNW   HNEs  .sW   .     .     
+      .     .E    bSW   bnES  .nW   .     .     
+      .W    .     .N    .N    .     .     .     
+      .W    .     .S    .S    .     .     .     
+     queen action kind 0 dirs S

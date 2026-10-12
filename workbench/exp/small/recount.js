@@ -1,0 +1,27 @@
+// Independent state: replay dragonUpdate head/tail, never mass_ledger simulated bodies.
+// Uses the separate general/atlas_recount graph, as in pocket/blocking.js.
+'use strict';
+const AR=require('../general/atlas_recount');
+function recount(R){const M=R.match.map,W=M.width,G=AR.graph(M),ix=p=>p.y*W+p.x,body=new Map(),team=new Map(),occ=new Int32Array(W*M.height).fill(-1),born=new Map(),start=new Map(),deaths=[],splits=[],curves=[],contacts=[];let r=-1,cur=-1,steps=[],updates=0,tle=false,first=false,victim=null;
+ const put=id=>{for(const k of body.get(id))occ[k]=id;},lift=id=>{for(const k of body.get(id))if(occ[k]===id)occ[k]=-1;};for(const d of M.initialDragons){body.set(d.id,d.body.map(ix));team.set(d.id,d.team);born.set(d.id,0);put(d.id);}
+ function local(id){const b=body.get(id),h=b[0],tm=team.get(id),o={free:0,a3:0,e3:0,a8:0,e8:0,visibleAlly:0,visibleEnemy:0,head:[h%W,h/W|0],len:b.length,blocked:{kelp:0,self:0,allyBody:0,enemyBody:0,allyHead:0,enemyHead:0}};for(let z=0;z<4;z++){const n=G.nb[h*4+z];if(n<0){o.blocked.kelp++;continue;}const od=occ[n];if(od<0){o.free++;continue;}if(od===id){o.blocked.self++;continue;}const isHead=body.get(od)[0]===n;o.blocked[(team.get(od)===tm?'ally':'enemy')+(isHead?'Head':'Body')]++;}for(const [od,ob]of body){if(od===id)continue;const dx=Math.abs(h%W-ob[0]%W),dy=Math.abs((h/W|0)-(ob[0]/W|0)),md=Math.min(dx,W-dx)+Math.min(dy,M.height-dy),cd=Math.max(Math.min(dx,W-dx),Math.min(dy,M.height-dy)),ally=team.get(od)===tm;o[ally?'a3':'e3']+=+(md<=3);o[ally?'a8':'e8']+=+(md<=8);o[ally?'visibleAlly':'visibleEnemy']+=+(cd<=3);}return o;}
+ for(const e of R.events){if(e.type==='roundStart'){r=e.round;first=true;}else if(e.type==='turnStart'){cur=e.id;steps=[];updates=0;tle=false;victim=null;start.set(cur,local(cur));if(first){first=false;const c={r};for(const tm of ['A','B']){const bs=[...body].filter(([id])=>team.get(id)===tm).map(([id,b])=>b);c[tm]={heads:bs.length,total:bs.reduce((s,b)=>s+b.length,0),king:Math.max(0,...bs.map(b=>b.length))};}curves.push(c);}}
+ else if(e.type==='dragonAction'){steps=e.action?.kind==='move'?e.action.steps:[];tle=!!e.tle;}
+ else if(e.type==='dragonUpdate'&&r>=0){const b=body.get(e.id);lift(e.id);const h=ix(e.head),tail=ix(e.tail);if(b[0]!==h)b.unshift(h);while(b.length>1&&b.at(-1)!==tail)b.pop();put(e.id);updates++;}
+ else if(e.type==='dragonSplit'){lift(e.parentId);body.set(e.parentId,e.parentBody.map(ix));put(e.parentId);body.set(e.childId,e.childBody.map(ix));team.set(e.childId,e.team);born.set(e.childId,r);put(e.childId);splits.push({r,parent:e.parentId,child:e.childId,team:e.team,kept:e.parentBody.length,childLen:e.childBody.length});}
+ else if(e.type==='dragonDeath'){const b=body.get(e.id),tm=team.get(e.id),a=start.get(e.id);let cause,other=null;if(e.id!==cur){cause=team.get(cur)===tm?'allyHead':'rammed';victim={r,id:e.id,team:tm,len:b.length,local:local(e.id)};other=cur;}
+ else if(e.reason==='H'){cause=victim?.team===tm?'allyHead':'ram';other=victim?.id;contacts.push({r,mover:cur,victim:victim?.id,moverLen:b.length,victimLen:victim?.len,moverTeam:tm,victimTeam:victim?.team,moverStart:a,victimAtContact:victim?.local,victimLastTurn:start.get(victim?.id)||null,steps,collisionStep:updates+1});}
+ else if(e.reason==='O'){const z='NESW'.indexOf(steps[updates]),n=z<0?-1:G.nb[b[0]*4+z],oid=n>=0?occ[n]:-1;other=oid>=0?oid:null;cause=oid>=0&&team.get(oid)===tm?(a.free?'sac':'trap'):(a.free?'enemyBody':'trap');}
+ else if(e.reason==='A'&&tle)cause='fault';else if(e.reason==='A'&&updates>0&&b.length<=2&&steps.length>updates)cause='sprintDeath';else cause=a.free?'sac':'trap';
+ deaths.push({r,id:e.id,team:tm,cause,len:b.length,position:[b[0]%W,b[0]/W|0],killer:other,reason:e.reason,start:a});lift(e.id);body.delete(e.id);}
+ }
+ const final={};for(const tm of ['A','B']){const ds=[...body].filter(([id])=>team.get(id)===tm).map(([id,b])=>b);final[tm]={heads:ds.length,total:ds.reduce((s,b)=>s+b.length,0),king:Math.max(0,...ds.map(b=>b.length))};}
+ return {splits,deaths,curves,contacts,final};
+}
+function compare(P,I){const bad={splits:0,deaths:0,curves:0,contacts:0,final:0},examples=[];function mismatch(k,a,b){if(JSON.stringify(a)!==JSON.stringify(b)){bad[k]++;if(examples.length<5)examples.push({k,a,b});}}
+ const mapFields=(a,fields)=>a.map(x=>fields.map(k=>x[k]));mismatch('splits',mapFields(P.splits,['r','parent','child','team','kept','childLen']),mapFields(I.splits,['r','parent','child','team','kept','childLen']));mismatch('deaths',mapFields(P.deaths,['r','id','team','cause','len','position']),mapFields(I.deaths,['r','id','team','cause','len','position']));
+ mismatch('curves',P.curves.map(c=>[c.r,c.A.heads,c.B.heads,c.A.total,c.B.total,c.A.king,c.B.king]),I.curves.map(c=>[c.r,c.A.heads,c.B.heads,c.A.total,c.B.total,c.A.king,c.B.king]));mismatch('contacts',mapFields(P.contacts,['r','mover','victim','moverLen','victimLen','collisionStep']),mapFields(I.contacts,['r','mover','victim','moverLen','victimLen','collisionStep']));
+ for(let j=0;j<P.contacts.length;j++){const a=P.contacts[j],b=I.contacts[j];if(!b)continue;for(const type of ['moverStart','victimAtContact'])for(const k of ['free','a3','e3','a8','e8','visibleAlly','visibleEnemy'])mismatch('contacts',a[type]?.[k],b[type]?.[k]);}
+ for(const tm of ['A','B'])mismatch('final',[P[tm].final.dragonCount,P[tm].final.totalLength,P[tm].final.longestDragon],[I.final[tm].heads,I.final[tm].total,I.final[tm].king]);return {bad,examples};
+}
+module.exports={recount,compare};

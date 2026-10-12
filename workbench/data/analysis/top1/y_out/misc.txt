@@ -1,0 +1,25 @@
+1. leader cuts in readable games: 458; half name the true longest again before the end in 370: quartiles 14 / 28 / 46 rounds; never before the end: 88
+2. margins (final longest, winner minus loser)
+   small maps: lost races 49, median margin 28, margins of 5 or less 2, 10 or less 8: [1, 2, 6, 6, 6, 7, 7, 9, 11, 12, 12, 13, 13, 14]
+   small maps: won races 29, median margin 9, margins of 3 or less 6, 5 or less 8: [0, 0, 1, 2, 3, 3, 5, 5, 6, 6, 7, 7, 7, 8]
+   big maps: lost races 53, median margin 44, margins of 5 or less 3, 10 or less 3: [1, 5, 5, 11, 12, 14, 16, 17, 17, 19, 20, 21, 21, 23]
+   big maps: won races 12, median margin 32.0, margins of 3 or less 2, 5 or less 2: [1, 2, 11, 19, 20, 23, 41, 41, 42, 47, 53, 62]
+3. growth of the longest from round 400 to the end in races (median), small / big maps
+   meow live          10 (53 races) / 14 (43 races)
+   meow test          21 (25 races) / 9.5 (22 races)
+   meow earlier bot   7.5 (14 races) / 14 (11 races)
+   opponents          24.0 (78 races) / 25 (65 races)
+   forgot             20 (65 races) / 18 (89 races)
+   SSS                15.5 (42 races) / 19 (99 races)
+   Vibing++           20 (67 races) / 19 (85 races)
+     run dl-20261003          9.5 (2) / 18.5 (2)
+     run dl-20261004          10.5 (28) / 11.0 (28)
+     run passage2-test-new    21 (5) / 16.5 (6)
+     run passage2-test-old    14 (5) / 18.5 (4)
+     run qh31-test-new        19 (7) / 18 (7)
+     run qh31-test-old        8.0 (8) / 27.5 (6)
+     run stride-new           12 (7) / 5 (3)
+     run stride-old           6.5 (8) / 14 (3)
+     run tc30-dev1-old        33.0 (2) / -
+     run tc30-dev1b-new       70 (1) / -5.0 (2)
+     run tc30-test-new        29 (5) / 7.5 (4)

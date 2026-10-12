@@ -1,0 +1,16 @@
+## Things I could not determine from replays
+
+1. **What makes a forgot 2-3-long hold back before round 100.** The head count within 4 steps separates the turns well (47 of 51 against 38 of 127) but 38 outnumbered dragons rammed all the same and 4 that were not outnumbered did not. Whether the real test is the head count, something it stands for, or a round number other than 100 exactly, the replay does not say.
+2. **What forgot's dragons of 5-12 are for** when they walk past a queen in view. They are too long to be foragers (forgot splits at 4), 19 of 31 had been eating dead team-mates' pearls, and none went on to feed the queen or the leader within 40 rounds. A leader in the making that is not to be risked is my reading (inference); the replay does not show a role.
+3. **What starts SSS's queen feeding.** It began the round after an SSS dragon saw forgot's 33-long queen (1063806 r304-305) and did not begin after SSS dragons saw Kaizen's 17-22-long queen (1060000 r364-394). A length threshold, a comparison with its own leader, or chance: two games cannot tell.
+4. **The full layout of SSS's sonar value.** One field is a cell that tracks the enemy queen; a second field lower in the value tracks her too; the top 12 bits were the same in every value I looked at; a field at bits 10-17 equals the low 8 bits of the round number in 46% of pings (1060356). The bit offsets change with the map size. I did not decode the rest, and I did not find what the cell holds when it is not the queen.
+5. **Whether SSS's hunters act on the broadcast cell.** The cell is there and the later killer received it (1060356 r123-133), but its path afterwards was not a straight line to her (14-20 steps away for ten more rounds).
+6. **What Vibing++'s sonar says.** The search that finds the queen's cell for SSS finds nothing for Vibing++ in two games. Its value may be packed differently (relative coordinates, a hash, another unit).
+7. **Why SSS's dragons stayed within 17-27 cells of their spawn on Australia in 1059840 and spread to 27-31 in 1060356** from the same spawn. In the loss 11 of its 16-20 dragons died with no free cell in the west pearl field in rounds 30-59 and 13 were rammed in rounds 61-120; whether that is the whole reason I cannot say.
+8. **Why SSS's queen walked north two steps a round for five rounds in 1060000 (r475-479)** and away from her feeders. Nothing was near her that I could see as a reason.
+9. **Why forgot's queen keeps to a 2x2 loop with an enemy head beside it** (1059840 r208, 1067641 r166) but steps away in 18 of 18 close rounds in 1067667. The games are from the same days; I found no condition that separates them.
+10. **Whether the queen sees through kelp or portals.** "In view" in this file is the 7x7 square only.
+11. **How natural pearls are placed**, and so whether the pearl in a one-cell dead end is ever worth the dragon it costs.
+12. **Whether the SSS queen's wait (splitting off 2 beside a feeder) is asked for by a message** from the feeder or is her own rule.
+13. **Kaizen.** Its opening and feeding look like forgot's in 1060000 (same splits, suicide orders, the same pace of feeding). Whether it is the same code I cannot know.
+14. Not read move by move: the mid-game of the three small-map games beyond the ram counts; forgot's late game in 1067620 (A read that game from the other side).

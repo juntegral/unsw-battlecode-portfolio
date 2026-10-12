@@ -1,0 +1,218 @@
+{
+  "note": "Endpoint reach is a frozen-state terrain bound using actual length, without future eating or other turns. It is not a counterfactual game.",
+  "games": [
+    {
+      "gid": 1496845,
+      "permanent_behind_round": 0,
+      "final_queen_turn_paths": [
+        {
+          "path": "W",
+          "end": [
+            26,
+            10
+          ],
+          "length": 2,
+          "terrain_reachable_without_eating": [
+            [
+              32,
+              2,
+              1,
+              1
+            ]
+          ]
+        }
+      ],
+      "turns_201_300": [
+        {
+          "turns": 1290,
+          "move_no_eat": 1179,
+          "move_eat": 77,
+          "split": 34
+        },
+        {
+          "turns": 2674,
+          "move_no_eat": 2493,
+          "move_eat": 128,
+          "split": 53
+        }
+      ],
+      "nearest_after_queen_death": {
+        "r": 431,
+        "event": 56886,
+        "d": 35,
+        "id": 270,
+        "head": [
+          19,
+          7
+        ],
+        "qhead": [
+          1,
+          6
+        ]
+      }
+    },
+    {
+      "gid": 1496846,
+      "permanent_behind_round": 164,
+      "final_queen_turn_paths": [
+        {
+          "path": "E",
+          "end": [
+            36,
+            3
+          ],
+          "length": 3,
+          "terrain_reachable_without_eating": [
+            [
+              290,
+              4,
+              2,
+              3
+            ]
+          ]
+        },
+        {
+          "path": "EN",
+          "end": [
+            36,
+            2
+          ],
+          "length": 3,
+          "terrain_reachable_without_eating": [
+            [
+              290,
+              4,
+              3,
+              3
+            ]
+          ]
+        },
+        {
+          "path": "ENE",
+          "end": [
+            37,
+            2
+          ],
+          "length": 2,
+          "terrain_reachable_without_eating": [
+            [
+              290,
+              4,
+              2,
+              3
+            ]
+          ]
+        },
+        {
+          "path": "EE",
+          "end": [
+            37,
+            3
+          ],
+          "length": 2,
+          "terrain_reachable_without_eating": [
+            [
+              290,
+              4,
+              1,
+              3
+            ]
+          ]
+        },
+        {
+          "path": "ES",
+          "end": [
+            36,
+            4
+          ],
+          "length": 2,
+          "terrain_reachable_without_eating": [
+            [
+              290,
+              4,
+              1,
+              3
+            ]
+          ]
+        }
+      ],
+      "turns_201_300": [
+        {
+          "turns": 5691,
+          "move_no_eat": 5431,
+          "move_eat": 190,
+          "split": 70
+        },
+        {
+          "turns": 6346,
+          "move_no_eat": 5821,
+          "move_eat": 419,
+          "split": 106
+        }
+      ],
+      "nearest_after_queen_death": null
+    },
+    {
+      "gid": 1496847,
+      "permanent_behind_round": 189,
+      "final_queen_turn_paths": [
+        {
+          "path": "N",
+          "end": [
+            13,
+            24
+          ],
+          "length": 3,
+          "terrain_reachable_without_eating": [
+            [
+              353,
+              3,
+              2,
+              2
+            ]
+          ]
+        },
+        {
+          "path": "NN",
+          "end": [
+            13,
+            23
+          ],
+          "length": 2,
+          "terrain_reachable_without_eating": [
+            [
+              353,
+              3,
+              1,
+              2
+            ]
+          ]
+        },
+        {
+          "path": "NE",
+          "end": [
+            14,
+            24
+          ],
+          "length": 2,
+          "terrain_reachable_without_eating": []
+        }
+      ],
+      "turns_201_300": [
+        {
+          "turns": 3188,
+          "move_no_eat": 2891,
+          "move_eat": 212,
+          "split": 85
+        },
+        {
+          "turns": 6377,
+          "move_no_eat": 5783,
+          "move_eat": 455,
+          "split": 139
+        }
+      ],
+      "nearest_after_queen_death": null
+    }
+  ]
+}

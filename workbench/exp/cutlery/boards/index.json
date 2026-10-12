@@ -1,0 +1,753 @@
+{
+  "definitions": {
+    "snapshots": "eval/board.js takes first dragon turnStart of chosen round; not necessarily exact roundStart. Full board retrospective, invisible information is not an inferred bot observation.",
+    "selection": "Means/centroids chosen before pictures; medoids from preliminary broadened known-cohort summaries, retained as illustrations after source-primary reweighting. Custom success hand-selected explicitly illustrative; no representative claim.",
+    "evalBoardHeaderIdentity": "eval/board.js labels game using replay parent directory basename. In data/top/<battleId>/<gameId>.replay.gz this is container battleId, not the individual gameId in registry; verify replay filename and battle.games row."
+  },
+  "N": 24,
+  "boards": [
+    {
+      "slug": "reproduction-cutlery",
+      "game": "592400",
+      "map": "Trophy",
+      "team": "B",
+      "rounds": [
+        25,
+        50,
+        100
+      ],
+      "rules": "110",
+      "custom": false,
+      "winner": "B",
+      "family": "재생산·초반 질량 분산",
+      "selection": "Trophy cohort map-mean nearest candidate",
+      "png": "reproduction-cutlery.png",
+      "ascii": "reproduction-cutlery.txt",
+      "producer": "node eval/board.js",
+      "physicsScope": "Replay reconstruction only; no games played",
+      "visuallyInspected": true,
+      "actualSnapshotRounds": [
+        25,
+        50,
+        100
+      ],
+      "snapshotN": 3,
+      "identityProvenance": {
+        "gameId": 592400,
+        "containerBattleId": 592391,
+        "seriesId": "1430fcb6-12bf-481f-a268-d8b7fb2933c5",
+        "replay": "data/top/592391/592400.replay.gz",
+        "asciiHeaderId": 592391,
+        "asciiHeaderMeaning": "eval/board.js prints basename(dirname(replay)), which is container battleId; replay filename and index gameId identify this board",
+        "metadataGameMap": "Trophy",
+        "actualSnapshotRoundsVerified": [
+          25,
+          50,
+          100
+        ]
+      }
+    },
+    {
+      "slug": "reproduction-ours",
+      "game": "677083",
+      "map": "Trophy",
+      "team": "A",
+      "rounds": [
+        25,
+        50,
+        100
+      ],
+      "rules": "110",
+      "custom": false,
+      "winner": "B",
+      "family": "재생산·초반 질량 분산",
+      "selection": "Trophy cohort map-mean nearest candidate",
+      "png": "reproduction-ours.png",
+      "ascii": "reproduction-ours.txt",
+      "producer": "node eval/board.js",
+      "physicsScope": "Replay reconstruction only; no games played",
+      "visuallyInspected": true,
+      "actualSnapshotRounds": [
+        25,
+        50
+      ],
+      "snapshotN": 2
+    },
+    {
+      "slug": "combat-cutlery",
+      "game": "689737",
+      "map": "Trophy",
+      "team": "A",
+      "rounds": [
+        50,
+        72,
+        100
+      ],
+      "rules": "110",
+      "custom": false,
+      "winner": "A",
+      "family": "능동 교환",
+      "selection": "Trophy equal|ahead ram rate closest to cohort mean",
+      "png": "combat-cutlery.png",
+      "ascii": "combat-cutlery.txt",
+      "producer": "node eval/board.js",
+      "physicsScope": "Replay reconstruction only; no games played",
+      "visuallyInspected": true,
+      "actualSnapshotRounds": [
+        50,
+        72,
+        100
+      ],
+      "snapshotN": 3
+    },
+    {
+      "slug": "combat-ours",
+      "game": "748855",
+      "map": "Trophy",
+      "team": "A",
+      "rounds": [
+        50,
+        100,
+        185
+      ],
+      "rules": "110",
+      "custom": false,
+      "winner": "B",
+      "family": "능동 교환",
+      "selection": "Trophy equal|ahead ram rate closest to cohort mean",
+      "png": "combat-ours.png",
+      "ascii": "combat-ours.txt",
+      "producer": "node eval/board.js",
+      "physicsScope": "Replay reconstruction only; no games played",
+      "visuallyInspected": true,
+      "actualSnapshotRounds": [
+        50,
+        100,
+        185
+      ],
+      "snapshotN": 3
+    },
+    {
+      "slug": "cohesion-cutlery",
+      "game": "756247",
+      "map": "Trophy",
+      "team": "B",
+      "rounds": [
+        25,
+        50,
+        100
+      ],
+      "rules": "110",
+      "custom": false,
+      "winner": "A",
+      "family": "아군 간격",
+      "selection": "Trophy capped-distance closest to cohort mean; exact headcount control refutes simple pull",
+      "png": "cohesion-cutlery.png",
+      "ascii": "cohesion-cutlery.txt",
+      "producer": "node eval/board.js",
+      "physicsScope": "Replay reconstruction only; no games played",
+      "visuallyInspected": true,
+      "actualSnapshotRounds": [
+        25,
+        50,
+        100
+      ],
+      "snapshotN": 3
+    },
+    {
+      "slug": "cohesion-ours",
+      "game": "650966",
+      "map": "Trophy",
+      "team": "A",
+      "rounds": [
+        25,
+        50,
+        100
+      ],
+      "rules": "110",
+      "custom": false,
+      "winner": "B",
+      "family": "아군 간격",
+      "selection": "Trophy capped-distance closest to cohort mean; exact headcount control refutes simple pull",
+      "png": "cohesion-ours.png",
+      "ascii": "cohesion-ours.txt",
+      "producer": "node eval/board.js",
+      "physicsScope": "Replay reconstruction only; no games played",
+      "visuallyInspected": true,
+      "actualSnapshotRounds": [
+        25,
+        50,
+        100
+      ],
+      "snapshotN": 3
+    },
+    {
+      "slug": "scout-cutlery",
+      "game": "752457",
+      "map": "Trophy",
+      "team": "A",
+      "rounds": [
+        50,
+        100,
+        250
+      ],
+      "rules": "110",
+      "custom": false,
+      "winner": "B",
+      "family": "정찰 배치",
+      "selection": "Trophy L2-3 near-enemy fraction closest to cohort mean",
+      "png": "scout-cutlery.png",
+      "ascii": "scout-cutlery.txt",
+      "producer": "node eval/board.js",
+      "physicsScope": "Replay reconstruction only; no games played",
+      "visuallyInspected": true,
+      "actualSnapshotRounds": [
+        50,
+        100
+      ],
+      "snapshotN": 2,
+      "identityProvenance": {
+        "gameId": 752457,
+        "containerBattleId": 752448,
+        "seriesId": "db52a53c-8352-408f-8c50-6b7d05fdd98f",
+        "replay": "data/top/752448/752457.replay.gz",
+        "asciiHeaderId": 752448,
+        "asciiHeaderMeaning": "eval/board.js prints basename(dirname(replay)), which is container battleId; replay filename and index gameId identify this board",
+        "metadataGameMap": "Trophy",
+        "actualSnapshotRoundsVerified": [
+          50,
+          100
+        ]
+      }
+    },
+    {
+      "slug": "scout-ours",
+      "game": "724088",
+      "map": "Trophy",
+      "team": "A",
+      "rounds": [
+        50,
+        100,
+        250
+      ],
+      "rules": "110",
+      "custom": false,
+      "winner": "B",
+      "family": "정찰 배치",
+      "selection": "Trophy L2-3 near-enemy fraction closest to cohort mean",
+      "png": "scout-ours.png",
+      "ascii": "scout-ours.txt",
+      "producer": "node eval/board.js",
+      "physicsScope": "Replay reconstruction only; no games played",
+      "visuallyInspected": true,
+      "actualSnapshotRounds": [
+        50,
+        100
+      ],
+      "snapshotN": 2
+    },
+    {
+      "slug": "king-cutlery",
+      "game": "687911",
+      "map": "Trophy",
+      "team": "A",
+      "rounds": [
+        50,
+        100,
+        250
+      ],
+      "rules": "110",
+      "custom": false,
+      "winner": "B",
+      "family": "왕 주변",
+      "selection": "Trophy enemy heads within8 closest to cohort mean",
+      "png": "king-cutlery.png",
+      "ascii": "king-cutlery.txt",
+      "producer": "node eval/board.js",
+      "physicsScope": "Replay reconstruction only; no games played",
+      "visuallyInspected": true,
+      "actualSnapshotRounds": [
+        50
+      ],
+      "snapshotN": 1,
+      "identityProvenance": {
+        "gameId": 687911,
+        "containerBattleId": 687908,
+        "seriesId": "80e5a06f-56c2-473a-b40e-5dff853b9a6e",
+        "replay": "data/top/687908/687911.replay.gz",
+        "asciiHeaderId": 687908,
+        "asciiHeaderMeaning": "eval/board.js prints basename(dirname(replay)), which is container battleId; replay filename and index gameId identify this board",
+        "metadataGameMap": "Trophy",
+        "actualSnapshotRoundsVerified": [
+          50
+        ]
+      }
+    },
+    {
+      "slug": "king-ours",
+      "game": "724133",
+      "map": "Trophy",
+      "team": "A",
+      "rounds": [
+        50,
+        100,
+        250
+      ],
+      "rules": "110",
+      "custom": false,
+      "winner": "B",
+      "family": "왕 주변",
+      "selection": "Trophy enemy heads within8 closest to cohort mean",
+      "png": "king-ours.png",
+      "ascii": "king-ours.txt",
+      "producer": "node eval/board.js",
+      "physicsScope": "Replay reconstruction only; no games played",
+      "visuallyInspected": true,
+      "actualSnapshotRounds": [
+        50,
+        100
+      ],
+      "snapshotN": 2
+    },
+    {
+      "slug": "intake-cutlery",
+      "game": "661410",
+      "map": "Trophy",
+      "team": "B",
+      "rounds": [
+        50,
+        100,
+        250
+      ],
+      "rules": "110",
+      "custom": false,
+      "winner": "B",
+      "family": "섭취",
+      "selection": "Trophy per-move intake closest to cohort mean",
+      "png": "intake-cutlery.png",
+      "ascii": "intake-cutlery.txt",
+      "producer": "node eval/board.js",
+      "physicsScope": "Replay reconstruction only; no games played",
+      "visuallyInspected": true,
+      "actualSnapshotRounds": [
+        50,
+        100,
+        250
+      ],
+      "snapshotN": 3
+    },
+    {
+      "slug": "intake-ours",
+      "game": "666204",
+      "map": "Trophy",
+      "team": "A",
+      "rounds": [
+        50,
+        100,
+        250
+      ],
+      "rules": "110",
+      "custom": false,
+      "winner": "B",
+      "family": "섭취",
+      "selection": "Trophy per-move intake closest to cohort mean",
+      "png": "intake-ours.png",
+      "ascii": "intake-ours.txt",
+      "producer": "node eval/board.js",
+      "physicsScope": "Replay reconstruction only; no games played",
+      "visuallyInspected": true,
+      "actualSnapshotRounds": [
+        50
+      ],
+      "snapshotN": 1
+    },
+    {
+      "slug": "custom-score-loss",
+      "game": "806806",
+      "map": "weakhold",
+      "team": "A",
+      "rounds": [
+        100,
+        250,
+        450,
+        499
+      ],
+      "rules": "110",
+      "custom": true,
+      "winner": "B",
+      "family": "custom surviving score loss",
+      "selection": "closest class centroid N9",
+      "png": "custom-score-loss.png",
+      "ascii": "custom-score-loss.txt",
+      "producer": "node eval/board.js",
+      "physicsScope": "Replay reconstruction only; no games played",
+      "visuallyInspected": true,
+      "actualSnapshotRounds": [
+        100,
+        250,
+        450,
+        499
+      ],
+      "snapshotN": 4
+    },
+    {
+      "slug": "custom-extinction",
+      "game": "806972",
+      "map": "Tower Defense",
+      "team": "A",
+      "rounds": [
+        50,
+        100,
+        150,
+        190
+      ],
+      "rules": "110",
+      "custom": true,
+      "winner": "B",
+      "family": "custom extinction100-249",
+      "selection": "closest class centroid N4",
+      "png": "custom-extinction.png",
+      "ascii": "custom-extinction.txt",
+      "producer": "node eval/board.js",
+      "physicsScope": "Replay reconstruction only; no games played",
+      "visuallyInspected": true,
+      "actualSnapshotRounds": [
+        50,
+        100,
+        150,
+        190
+      ],
+      "snapshotN": 4
+    },
+    {
+      "slug": "custom-success",
+      "game": "806579",
+      "map": "Stripes",
+      "team": "A",
+      "rounds": [
+        50,
+        100,
+        250,
+        499
+      ],
+      "rules": "110",
+      "custom": true,
+      "winner": "A",
+      "family": "custom victory",
+      "selection": "first series Stripes win; illustrative only",
+      "png": "custom-success.png",
+      "ascii": "custom-success.txt",
+      "producer": "node eval/board.js",
+      "physicsScope": "Replay reconstruction only; no games played",
+      "visuallyInspected": true,
+      "actualSnapshotRounds": [
+        50,
+        100
+      ],
+      "snapshotN": 2
+    },
+    {
+      "slug": "loss-surviving_score_loss",
+      "game": "705670",
+      "map": "Trauma",
+      "team": "A",
+      "rounds": [
+        50,
+        100,
+        250,
+        499
+      ],
+      "rules": "110",
+      "custom": false,
+      "winner": "B",
+      "family": "loss/surviving_score_loss",
+      "selection": "closest multivariate class centroid; classN=494",
+      "png": "loss-surviving_score_loss.png",
+      "ascii": "loss-surviving_score_loss.txt",
+      "producer": "node eval/board.js",
+      "physicsScope": "Replay reconstruction only; no games played",
+      "visuallyInspected": true,
+      "actualSnapshotRounds": [
+        50,
+        100,
+        250,
+        499
+      ],
+      "snapshotN": 4
+    },
+    {
+      "slug": "loss-extinct_before100",
+      "game": "733348",
+      "map": "Prisoners Dilemma",
+      "team": "B",
+      "rounds": [
+        25,
+        50,
+        65
+      ],
+      "rules": "110",
+      "custom": false,
+      "winner": "A",
+      "family": "loss/extinct_before100",
+      "selection": "closest multivariate class centroid; classN=51",
+      "png": "loss-extinct_before100.png",
+      "ascii": "loss-extinct_before100.txt",
+      "producer": "node eval/board.js",
+      "physicsScope": "Replay reconstruction only; no games played",
+      "visuallyInspected": true,
+      "actualSnapshotRounds": [
+        25,
+        50,
+        65
+      ],
+      "snapshotN": 3
+    },
+    {
+      "slug": "loss-extinct_100_249",
+      "game": "673533",
+      "map": "Devil",
+      "team": "A",
+      "rounds": [
+        25,
+        50,
+        100,
+        150
+      ],
+      "rules": "110",
+      "custom": false,
+      "winner": "B",
+      "family": "loss/extinct_100_249",
+      "selection": "closest multivariate class centroid; classN=236",
+      "png": "loss-extinct_100_249.png",
+      "ascii": "loss-extinct_100_249.txt",
+      "producer": "node eval/board.js",
+      "physicsScope": "Replay reconstruction only; no games played",
+      "visuallyInspected": true,
+      "actualSnapshotRounds": [
+        25,
+        50,
+        100,
+        150
+      ],
+      "snapshotN": 4
+    },
+    {
+      "slug": "loss-extinct_250plus",
+      "game": "707620",
+      "map": "Devil",
+      "team": "B",
+      "rounds": [
+        50,
+        100,
+        250,
+        350
+      ],
+      "rules": "110",
+      "custom": false,
+      "winner": "A",
+      "family": "loss/extinct_250plus",
+      "selection": "closest multivariate class centroid; classN=146",
+      "png": "loss-extinct_250plus.png",
+      "ascii": "loss-extinct_250plus.txt",
+      "producer": "node eval/board.js",
+      "physicsScope": "Replay reconstruction only; no games played",
+      "visuallyInspected": true,
+      "actualSnapshotRounds": [
+        50,
+        100,
+        250
+      ],
+      "snapshotN": 3
+    },
+    {
+      "slug": "intake-pearl-sprint",
+      "game": "586367",
+      "map": "Autarky",
+      "team": "A",
+      "rounds": [
+        90
+      ],
+      "rules": "110",
+      "family": "섭취",
+      "selection": "Deep mechanism case; illustrative, not population representative",
+      "png": "intake-pearl-sprint.png",
+      "ascii": "intake-pearl-sprint.txt",
+      "producer": "independent raw turnboard supplementary exact before/after actor action",
+      "visuallyInspected": true,
+      "action": {
+        "kind": "move",
+        "steps": [
+          "W",
+          "S"
+        ]
+      },
+      "eaten": [
+        {
+          "xy": [
+            0,
+            12
+          ],
+          "origin": "natural"
+        }
+      ],
+      "deaths": null,
+      "actor": 125
+    },
+    {
+      "slug": "intake-pearl-sprint-pd",
+      "game": "586370",
+      "map": "Prisoners Dilemma",
+      "team": "A",
+      "rounds": [
+        53
+      ],
+      "rules": "110",
+      "family": "섭취",
+      "selection": "Deep mechanism case; illustrative, not population representative",
+      "png": "intake-pearl-sprint-pd.png",
+      "ascii": "intake-pearl-sprint-pd.txt",
+      "producer": "independent raw turnboard supplementary exact before/after actor action",
+      "visuallyInspected": true,
+      "action": {
+        "kind": "move",
+        "steps": [
+          "E",
+          "E",
+          "S"
+        ]
+      },
+      "eaten": [
+        {
+          "xy": [
+            15,
+            11
+          ],
+          "origin": "drop"
+        },
+        {
+          "xy": [
+            16,
+            11
+          ],
+          "origin": "drop"
+        }
+      ],
+      "deaths": null,
+      "actor": 8
+    },
+    {
+      "slug": "intake-pearl-sprint-sf",
+      "game": "588760",
+      "map": "Slithery Fight",
+      "team": "B",
+      "rounds": [
+        264
+      ],
+      "rules": "110",
+      "family": "섭취",
+      "selection": "Deep mechanism case; illustrative, not population representative",
+      "png": "intake-pearl-sprint-sf.png",
+      "ascii": "intake-pearl-sprint-sf.txt",
+      "producer": "independent raw turnboard supplementary exact before/after actor action",
+      "visuallyInspected": true,
+      "action": {
+        "kind": "move",
+        "steps": [
+          "W",
+          "S",
+          "E"
+        ]
+      },
+      "eaten": [
+        {
+          "xy": [
+            31,
+            3
+          ],
+          "origin": "drop"
+        }
+      ],
+      "deaths": null,
+      "actor": 574
+    },
+    {
+      "slug": "combat-cheap-direct",
+      "game": "689737",
+      "map": "Trophy",
+      "team": "A",
+      "rounds": [
+        72
+      ],
+      "rules": "110",
+      "family": "능동 교환",
+      "selection": "Deep mechanism case; illustrative, not population representative",
+      "png": "combat-cheap-direct.png",
+      "ascii": "combat-cheap-direct.txt",
+      "producer": "independent raw turnboard supplementary exact before/after actor action",
+      "visuallyInspected": true,
+      "action": {
+        "kind": "move",
+        "steps": [
+          "E"
+        ]
+      },
+      "eaten": null,
+      "deaths": [
+        {
+          "type": "dragonDeath",
+          "id": 38,
+          "reason": "H"
+        },
+        {
+          "type": "dragonDeath",
+          "id": 20,
+          "reason": "H"
+        }
+      ],
+      "actor": 20
+    },
+    {
+      "slug": "intake-decline-632309",
+      "game": "632309",
+      "map": "Trophy",
+      "team": "A",
+      "rounds": [
+        38
+      ],
+      "actor": 8,
+      "family": "섭취",
+      "selection": "Unsafe-adjacent compatible deep-read illustration; counterfactual exposure real, no safe mistake or intent claim",
+      "png": "../intake/decline-632309.png",
+      "ascii": "../intake/decline-632309.txt",
+      "metadata": "../intake/decline-632309-turn.json",
+      "producer": "intake independent raw turnboard exact before/after",
+      "visuallyInspected": true,
+      "action": {
+        "kind": "move",
+        "steps": [
+          "S"
+        ]
+      },
+      "beforeHead": [
+        23,
+        19
+      ],
+      "afterHead": [
+        23,
+        20
+      ],
+      "pearl": [
+        23,
+        18
+      ],
+      "laterEnemyCapture": {
+        "round": 39,
+        "actor": 10,
+        "team": "B",
+        "action": [
+          "W"
+        ]
+      }
+    }
+  ]
+}

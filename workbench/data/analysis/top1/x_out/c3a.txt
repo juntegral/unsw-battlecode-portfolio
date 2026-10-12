@@ -1,0 +1,243 @@
+games with c34 data: 2478
+
+==================== MAPS OVER 1,200 CELLS (our switch: round 150) ====================
+games: {'meow live': 77, 'meow tc30': 12, 'meow other test': 22, 'meow all': 111, 'our opponents': 111, 'Vibing++': 127, 'SSS': 139, 'forgot': 161, 'top three': 427}
+
+-- 1a. free pearl on the next cell eaten, by round band
+                                  meow live         meow tc30         meow other test   meow all          our opponents     Vibing++          SSS               forgot            top three         
+rounds 0-149                      83% of 16079      84% of 3065       81% of 4447       83% of 23591      85% of 36845      89% of 37715      80% of 46320      94% of 57670      88% of 141705     
+rounds 150-299                    59% of 11428      61% of 2372       54% of 3159       58% of 16959      85% of 31667      89% of 46560      83% of 48080      93% of 64425      89% of 159065     
+rounds 300-399                    57% of 6884       63% of 1557       58% of 1899       58% of 10340      84% of 19750      82% of 27303      82% of 30590      94% of 33409      86% of 91302      
+rounds 400+                       57% of 6545       57% of 1100       56% of 1765       57% of 9410       79% of 11591      72% of 15708      79% of 23153      94% of 12334      80% of 51195      
+
+-- 1b. in 10-round blocks around the switch
+                                  meow live         meow tc30         meow other test   meow all          our opponents     Vibing++          SSS               forgot            top three         
+rounds 100-109                    83% of 1084       86% of 263        78% of 286        83% of 1633       86% of 2906       89% of 3008       82% of 3511       93% of 4830       89% of 11349      
+rounds 110-119                    83% of 1022       84% of 200        77% of 258        82% of 1480       86% of 2748       89% of 3002       82% of 3445       93% of 4609       89% of 11056      
+rounds 120-129                    84% of 985        88% of 218        78% of 257        83% of 1460       86% of 2625       89% of 2988       82% of 3302       94% of 4680       89% of 10970      
+rounds 130-139                    84% of 1027       87% of 226        77% of 252        83% of 1505       86% of 2600       90% of 3138       84% of 3241       93% of 4763       90% of 11142      
+rounds 140-149                    84% of 1027       83% of 207        76% of 251        83% of 1485       86% of 2518       90% of 3188       84% of 3158       93% of 4536       89% of 10882      
+rounds 150-159                    64% of 896        68% of 167        58% of 237        63% of 1300       85% of 2471       89% of 3339       82% of 3177       93% of 4571       89% of 11087      
+rounds 160-169                    60% of 835        58% of 164        51% of 226        58% of 1225       85% of 2379       89% of 3235       83% of 3235       93% of 4635       89% of 11105      
+rounds 170-179                    58% of 875        66% of 145        55% of 206        58% of 1226       84% of 2326       91% of 3216       82% of 3378       93% of 4388       89% of 10982      
+rounds 180-189                    63% of 765        68% of 148        52% of 195        61% of 1108       83% of 2154       90% of 3297       83% of 3359       92% of 4463       89% of 11119      
+rounds 190-199                    59% of 750        68% of 154        55% of 199        60% of 1103       85% of 2199       90% of 3226       82% of 3306       92% of 4449       89% of 10981      
+rounds 200-209                    59% of 771        62% of 156        57% of 203        59% of 1130       85% of 2084       90% of 2992       83% of 3162       93% of 4393       89% of 10547      
+rounds 210-219                    57% of 780        54% of 158        61% of 204        57% of 1142       86% of 2094       89% of 3042       83% of 3186       94% of 4082       89% of 10310      
+
+-- 1c. after the switch (rounds 150-399), by the distance from the pearl to the nearest LONGER own dragon
+                                  meow live         meow tc30         meow other test   meow all          our opponents     Vibing++          SSS               forgot            top three         
+0-3 cells                         51% of 4708       54% of 951        50% of 1385       51% of 7044       82% of 18714      86% of 28358      81% of 28719      92% of 30779      86% of 87856      
+4-6                               52% of 6320       57% of 1390       47% of 1769       52% of 9479       86% of 20491      87% of 23519      82% of 26383      95% of 29856      89% of 79758      
+7-9                               61% of 3098       65% of 683        59% of 794        61% of 4575       85% of 7381       87% of 9678       83% of 11013      94% of 14398      89% of 35089      
+10-12                             70% of 1780       72% of 405        66% of 437        70% of 2622       84% of 2844       86% of 5096       85% of 5600       94% of 7887       89% of 18583      
+13-16                             73% of 1135       72% of 259        73% of 295        73% of 1689       87% of 1291       85% of 3276       86% of 3480       93% of 5802       89% of 12558      
+17+                               76% of 1169       83% of 230        76% of 336        77% of 1735       89% of 671        90% of 3379       91% of 3007       93% of 7569       92% of 13955      
+no longer own dragon on the board 82% of 102        55% of 11         81% of 42         80% of 155        92% of 25         90% of 557        92% of 468        91% of 1543       91% of 2568       
+   the same BEFORE the switch (rounds 0-149)
+0-3 cells                         82% of 3080       82% of 519        78% of 856        81% of 4455       84% of 10637      90% of 11727      79% of 12531      93% of 16190      88% of 40448      
+4-6                               81% of 3942       86% of 748        80% of 1020       82% of 5710       85% of 10310      90% of 9690       78% of 12865      95% of 14669      88% of 37224      
+7-9                               83% of 2350       83% of 452        78% of 709        82% of 3511       83% of 4559       88% of 4991       76% of 5629       95% of 7208       87% of 17828      
+10-12                             85% of 1694       89% of 345        80% of 498        85% of 2537       85% of 2817       86% of 3026       79% of 3323       94% of 4478       87% of 10827      
+13-16                             84% of 1072       83% of 198        81% of 330        83% of 1600       85% of 2085       86% of 2464       83% of 2665       93% of 3481       88% of 8610       
+17+                               82% of 2092       80% of 494        80% of 523        81% of 3109       88% of 4272       88% of 5534       86% of 5281       95% of 7309       90% of 18124      
+no longer own dragon on the board 90% of 1849       90% of 309        91% of 511        90% of 2669       88% of 2165       92% of 283        85% of 4026       95% of 4335       90% of 8644       
+
+-- 1d. after the switch, a longer own dragon within 9 cells: by that dragon's length
+it is 3-4 long                    54% of 7610       57% of 1708       49% of 2165       53% of 11483      84% of 17623      88% of 34119      82% of 38215      94% of 52080      88% of 124414     
+5-9                               56% of 4861       61% of 950        55% of 1291       57% of 7102       84% of 19395      85% of 19969      81% of 19842      93% of 16271      86% of 56082      
+10+                               47% of 1655       57% of 366        43% of 492        48% of 2513       85% of 9568       81% of 7467       85% of 8058       95% of 6682       87% of 22207      
+
+-- 1e. by the dragon's own length: before the switch / after
+own length 2                      83% / 54%         86% / 58%         80% / 51%         83% / 54%         86% / 84%         91% / 88%         79% / 83%         94% / 93%         88% / 89%         
+own length 3                      80% / 57%         79% / 60%         76% / 55%         79% / 57%         83% / 83%         85% / 84%         80% / 80%         96% / 95%         88% / 87%         
+own length 4                      96% / 88%         95% / 91%         95% / 86%         96% / 88%         88% / 86%         93% / 89%         87% / 89%         88% / 90%         89% / 89%         
+
+-- 2. Is it the switch or the state of the game? Our live bot after the switch, by result and by economy band at the switch round
+   games we won           games 9    before 85% of 2429, after 60% of 4214
+   games we lost          games 68   before 83% of 13650, after 58% of 14098
+   band <0.67   at r150   games 47   before 83% of 7611, after 62% of 7842
+   band 0.67-1  at r150   games 19   before 83% of 5397, after 53% of 7136
+   band 1-1.5   at r150   games 10   before 84% of 2897, after 59% of 3051
+   band >1.5    at r150   games 1    before 82% of 174, after 75% of 283
+
+-- 3. Splits per 100 dragon-turns by length class (non-queens), per 50 rounds
+   parent length 4
+                                  meow live         meow tc30         meow other test   meow all          our opponents     Vibing++          SSS               forgot            top three         
+rounds 0-49                       46.3 (19.9/game)  48.1 (22.1/game)  47.2 (20.1/game)  46.7 (20.2/game)  78.0 (33.0/game)  67.1 (29.3/game)  79.1 (31.7/game)  86.1 (41.6/game)  78.5 (34.7/game)  
+rounds 50-99                      50.6 (32.9/game)  52.1 (35.9/game)  51.0 (32.2/game)  50.8 (33.1/game)  39.8 (49.7/game)  59.8 (52.2/game)  40.4 (43.6/game)  66.2 (63.9/game)  55.2 (53.8/game)  
+rounds 100-149                    36.4 (28.8/game)  27.7 (31.4/game)  35.5 (25.4/game)  34.9 (28.4/game)  9.8 (31.1/game)   36.0 (52.1/game)  12.8 (31.5/game)  30.7 (51.5/game)  24.2 (45.2/game)  
+rounds 150-199                    16.0 (14.8/game)  16.9 (20.2/game)  16.3 (13.9/game)  16.2 (15.2/game)  3.9 (17.3/game)   23.6 (48.9/game)  10.8 (32.0/game)  18.1 (42.0/game)  16.6 (40.8/game)  
+rounds 200-249                    29.2 (16.2/game)  37.9 (22.2/game)  28.7 (15.8/game)  30.1 (16.7/game)  3.2 (13.5/game)   18.0 (41.7/game)  10.5 (31.4/game)  19.3 (43.1/game)  15.5 (38.9/game)  
+rounds 250-299                    32.0 (15.5/game)  39.0 (22.2/game)  27.9 (16.3/game)  31.9 (16.4/game)  4.5 (16.5/game)   16.0 (38.7/game)  10.3 (30.5/game)  24.3 (44.6/game)  16.1 (38.3/game)  
+rounds 300-349                    32.6 (15.3/game)  37.1 (20.8/game)  28.5 (16.1/game)  32.2 (16.0/game)  9.1 (24.3/game)   18.3 (40.4/game)  25.1 (43.1/game)  42.0 (55.7/game)  27.4 (47.1/game)  
+rounds 350-399                    30.2 (13.6/game)  33.2 (19.8/game)  26.0 (13.0/game)  29.7 (14.2/game)  10.7 (23.6/game)  15.7 (28.1/game)  25.3 (38.4/game)  11.2 (22.3/game)  16.5 (29.3/game)  
+rounds 400-449                    31.8 (12.4/game)  31.6 (14.6/game)  27.5 (12.2/game)  30.9 (12.6/game)  7.4 (13.8/game)   12.6 (17.5/game)  13.1 (22.8/game)  11.5 (13.9/game)  12.4 (17.9/game)  
+   parent length 5-9
+                                  meow live         meow tc30         meow other test   meow all          our opponents     Vibing++          SSS               forgot            top three         
+rounds 0-49                       45.4 (18.8/game)  44.2 (20.9/game)  44.4 (18.7/game)  45.0 (19.0/game)  58.5 (9.4/game)   55.3 (11.1/game)  72.8 (6.6/game)   85.9 (5.1/game)   66.1 (7.4/game)   
+rounds 50-99                      39.6 (25.6/game)  39.7 (26.4/game)  39.0 (25.2/game)  39.5 (25.6/game)  21.9 (16.9/game)  30.8 (16.8/game)  21.2 (14.1/game)  43.5 (9.1/game)   28.4 (13.0/game)  
+rounds 100-149                    28.7 (27.2/game)  22.5 (27.8/game)  27.0 (22.9/game)  27.5 (26.4/game)  7.7 (24.7/game)   15.3 (19.6/game)  7.6 (21.0/game)   17.4 (14.1/game)  11.3 (18.0/game)  
+rounds 150-199                    8.0 (14.4/game)   6.8 (14.8/game)   7.3 (10.5/game)   7.7 (13.7/game)   4.3 (26.5/game)   11.3 (25.7/game)  6.7 (23.2/game)   9.9 (17.5/game)   8.8 (21.8/game)   
+rounds 200-249                    5.4 (10.4/game)   4.3 (9.1/game)    6.5 (9.8/game)    5.4 (10.1/game)   3.2 (25.2/game)   9.3 (27.5/game)   7.0 (23.2/game)   9.3 (17.5/game)   8.4 (22.3/game)   
+rounds 250-299                    6.7 (12.1/game)   5.2 (11.4/game)   7.0 (9.7/game)    6.6 (11.5/game)   3.3 (26.1/game)   8.9 (28.4/game)   6.5 (22.5/game)   9.3 (15.7/game)   8.0 (21.7/game)   
+rounds 300-349                    6.4 (11.0/game)   6.7 (15.2/game)   6.2 (10.8/game)   6.4 (11.4/game)   4.1 (24.3/game)   9.2 (24.4/game)   6.3 (16.2/game)   19.3 (16.0/game)  9.6 (18.6/game)   
+rounds 350-399                    5.6 (10.2/game)   6.8 (16.0/game)   7.0 (12.3/game)   6.1 (11.3/game)   4.1 (19.4/game)   7.7 (17.7/game)   7.2 (14.2/game)   8.0 (15.4/game)   7.6 (15.7/game)   
+rounds 400-449                    5.9 (8.9/game)    3.7 (7.3/game)    7.7 (12.2/game)   6.0 (9.4/game)    4.0 (15.7/game)   7.4 (14.1/game)   4.9 (13.0/game)   8.4 (16.1/game)   6.8 (14.5/game)   
+   parent length 10+
+                                  meow live         meow tc30         meow other test   meow all          our opponents     Vibing++          SSS               forgot            top three         
+rounds 0-49                       88.3 (2.1/game)   88.9 (2.0/game)   88.5 (2.1/game)   88.4 (2.1/game)   91.1 (1.7/game)   47.8 (0.4/game)   93.3 (0.2/game)   100.0 (0.3/game)  67.2 (0.3/game)   
+rounds 50-99                      100.0 (0.1/game)  60.0 (0.2/game)   100.0 (0.3/game)  90.5 (0.2/game)   8.6 (0.3/game)    16.8 (0.9/game)   7.6 (0.2/game)    7.3 (0.0/game)    13.6 (0.3/game)   
+rounds 100-149                    17.3 (0.3/game)   20.0 (0.2/game)   70.0 (0.6/game)   23.3 (0.4/game)   6.4 (2.7/game)    10.4 (3.0/game)   3.5 (0.9/game)    9.8 (0.5/game)    7.3 (1.4/game)    
+rounds 150-199                    7.5 (1.1/game)    4.3 (1.3/game)    4.6 (0.3/game)    6.5 (0.9/game)    5.1 (6.3/game)    6.6 (4.2/game)    1.8 (1.5/game)    6.3 (1.6/game)    4.3 (2.3/game)    
+rounds 200-249                    4.3 (2.2/game)    3.8 (2.1/game)    4.9 (1.9/game)    4.3 (2.2/game)    3.9 (9.8/game)    5.8 (6.7/game)    1.9 (2.1/game)    6.7 (3.4/game)    4.4 (3.9/game)    
+rounds 250-299                    4.8 (3.6/game)    4.0 (3.1/game)    5.7 (3.3/game)    4.8 (3.5/game)    3.2 (11.9/game)   5.0 (7.6/game)    2.4 (3.3/game)    4.6 (3.3/game)    3.9 (4.6/game)    
+rounds 300-349                    4.8 (4.0/game)    3.7 (3.8/game)    5.2 (2.6/game)    4.7 (3.7/game)    3.2 (14.0/game)   4.6 (8.4/game)    2.2 (3.6/game)    5.1 (5.1/game)    3.9 (5.6/game)    
+rounds 350-399                    5.1 (4.2/game)    4.9 (5.5/game)    5.6 (3.4/game)    5.2 (4.2/game)    3.5 (16.2/game)   4.5 (10.0/game)   2.3 (3.7/game)    3.8 (5.5/game)    3.6 (6.3/game)    
+rounds 400-449                    4.2 (3.9/game)    4.0 (4.4/game)    4.1 (3.8/game)    4.2 (4.0/game)    3.2 (14.4/game)   4.6 (12.3/game)   2.3 (4.2/game)    4.8 (9.5/game)    4.0 (8.6/game)    
+
+-- 4. Units / total length / longest dragon (means over games that reach the round)
+            meow live             meow tc30             meow other test       meow all              our opponents         Vibing++              SSS                   forgot                top three             
+round 100   42.4 / 107 / 4.9 (77) 45.2 / 112 / 4.9 (12) 42.1 / 106 / 5.1 (22) 42.7 / 108 / 5.0 (111)53.9 / 152 / 6.8 (111)41.5 / 115 / 8.7 (127)53.8 / 145 / 6.1 (139)52.1 / 131 / 4.8 (161)49.5 / 131 / 6.4 (427)
+round 150   47.2 / 123 / 5.8 (77) 51.6 / 143 / 6.8 (12) 43.9 / 114 / 4.9 (22) 47.0 / 124 / 5.7 (111)60.4 / 209 / 11.0 (111)49.7 / 151 / 10.9 (127)58.4 / 187 / 9.0 (139)57.8 / 157 / 6.4 (158)55.6 / 165 / 8.6 (424)
+round 200   41.2 / 122 / 9.1 (77) 47.8 / 142 / 10.3 (12)39.2 / 111 / 8.9 (22) 41.5 / 122 / 9.2 (111)61.8 / 261 / 14.5 (111)54.3 / 180 / 12.6 (127)59.7 / 203 / 13.7 (139)59.6 / 172 / 8.3 (158)58.1 / 185 / 11.4 (424)
+round 250   37.2 / 122 / 12.8 (75)42.8 / 135 / 13.8 (12)34.5 / 106 / 12.0 (22)37.3 / 120 / 12.8 (109)62.9 / 301 / 17.7 (109)56.0 / 200 / 14.7 (127)59.9 / 212 / 17.5 (139)59.4 / 180 / 12.7 (158)58.6 / 196 / 14.9 (424)
+round 300   35.9 / 122 / 14.2 (75)42.2 / 147 / 19.2 (12)33.0 / 106 / 13.5 (22)36.0 / 121 / 14.6 (109)61.2 / 327 / 23.4 (109)56.6 / 211 / 16.4 (127)60.3 / 221 / 20.5 (139)59.2 / 188 / 18.1 (158)58.8 / 206 / 18.4 (424)
+round 350   33.1 / 118 / 16.4 (74)39.4 / 148 / 21.0 (12)30.9 / 105 / 13.7 (21)33.4 / 119 / 16.4 (107)57.1 / 340 / 32.6 (107)56.2 / 216 / 20.6 (127)56.1 / 216 / 34.4 (139)56.5 / 195 / 31.2 (158)56.3 / 208 / 29.1 (424)
+round 400   31.6 / 119 / 18.6 (72)38.2 / 145 / 21.7 (12)31.6 / 108 / 14.4 (21)32.3 / 120 / 18.1 (105)50.6 / 351 / 41.8 (105)38.4 / 211 / 36.0 (127)51.4 / 223 / 42.4 (139)32.9 / 198 / 44.0 (157)40.6 / 210 / 41.1 (423)
+round 450   24.0 / 113 / 26.4 (69)27.3 / 122 / 28.7 (12)22.6 / 103 / 23.0 (21)24.1 / 112 / 26.0 (102)36.2 / 333 / 52.5 (102)31.2 / 212 / 46.6 (127)40.6 / 220 / 52.3 (139)21.1 / 189 / 54.2 (154)30.6 / 206 / 51.3 (420)
+   growth of total length 150 -> 300 / of the longest dragon: meow live -2% / +8.5; meow tc30 +3% / +12.3; meow other test -8% / +8.7; meow all -2% / +8.9; our opponents +56% / +12.4; Vibing++ +39% / +5.5; SSS +18% / +11.5; forgot +20% / +11.7; top three +25% / +9.8
+
+-- 5. Pearls eaten per game per 50 rounds: natural by dragons that were 2-4 / natural by 5+ / corpse pearls (all)
+                meow live             meow tc30             meow other test       meow all              our opponents         Vibing++              SSS                   forgot                top three             
+rounds 0-49     64 / 5 / 19           69 / 6 / 20           64 / 5 / 17           64 / 5 / 19           75 / 2 / 21           66 / 2 / 28           73 / 0 / 15           82 / 0 / 24           74 / 1 / 22           
+rounds 50-99    81 / 9 / 46           85 / 9 / 50           79 / 9 / 45           81 / 9 / 46           117 / 6 / 67          105 / 5 / 69          113 / 4 / 54          119 / 1 / 72          113 / 3 / 65          
+rounds 100-149  67 / 12 / 58          76 / 14 / 68          61 / 10 / 51          67 / 12 / 58          107 / 23 / 88         106 / 14 / 97         107 / 14 / 74         112 / 4 / 98          109 / 10 / 90         
+rounds 150-199  40 / 12 / 40          47 / 13 / 49          34 / 7 / 33           40 / 11 / 39          92 / 38 / 100         109 / 22 / 118        99 / 16 / 93          102 / 9 / 109         103 / 15 / 106        
+rounds 200-249  35 / 11 / 41          38 / 10 / 56          33 / 8 / 38           35 / 10 / 42          79 / 48 / 106         100 / 27 / 122        96 / 14 / 97          95 / 11 / 117         97 / 17 / 112         
+rounds 250-299  34 / 12 / 41          46 / 11 / 51          32 / 10 / 41          35 / 12 / 42          72 / 52 / 118         98 / 31 / 129         92 / 16 / 101         93 / 14 / 115         94 / 20 / 115         
+rounds 300-349  31 / 11 / 42          41 / 13 / 57          32 / 9 / 40           32 / 10 / 43          73 / 45 / 125         91 / 29 / 131         85 / 15 / 107         96 / 11 / 126         91 / 18 / 121         
+rounds 350-399  30 / 12 / 41          44 / 15 / 52          30 / 11 / 35          31 / 12 / 41          68 / 42 / 120         66 / 33 / 119         85 / 14 / 99          72 / 24 / 103         74 / 23 / 106         
+rounds 400-449  25 / 15 / 45          27 / 12 / 54          25 / 15 / 53          25 / 14 / 48          50 / 42 / 117         49 / 35 / 92          64 / 20 / 89          46 / 31 / 86          53 / 29 / 89          
+rounds 450-499  23 / 17 / 40          21 / 18 / 45          18 / 19 / 43          22 / 18 / 41          27 / 42 / 88          41 / 50 / 80          50 / 24 / 76          28 / 32 / 66          39 / 35 / 73          
+
+==================== MAPS OF 1,200 CELLS OR FEWER (our switch: round 300) ====================
+games: {'meow live': 198, 'meow tc30': 30, 'meow other test': 62, 'meow all': 290, 'our opponents': 290, 'Vibing++': 375, 'SSS': 364, 'forgot': 471, 'top three': 1210}
+
+-- 1a. free pearl on the next cell eaten, by round band
+                                  meow live         meow tc30         meow other test   meow all          our opponents     Vibing++          SSS               forgot            top three         
+rounds 0-149                      90% of 13577      90% of 1914       89% of 3794       90% of 19285      86% of 25444      89% of 38706      88% of 33508      93% of 39619      90% of 111833     
+rounds 150-299                    86% of 14530      88% of 2545       86% of 4555       86% of 21630      82% of 31066      89% of 45366      84% of 38205      91% of 47198      88% of 130769     
+rounds 300-399                    53% of 8202       56% of 1152       54% of 3140       54% of 12494      78% of 17509      88% of 26035      80% of 19353      91% of 21285      87% of 66673      
+rounds 400+                       47% of 6252       48% of 904        50% of 2290       48% of 9446       67% of 8347       79% of 16188      77% of 9604       91% of 8129       81% of 33921      
+
+-- 1b. in 10-round blocks around the switch
+                                  meow live         meow tc30         meow other test   meow all          our opponents     Vibing++          SSS               forgot            top three         
+rounds 250-259                    85% of 866        86% of 154        86% of 304        86% of 1324       82% of 1950       88% of 2919       82% of 2294       91% of 2854       88% of 8067       
+rounds 260-269                    87% of 740        88% of 161        84% of 324        86% of 1225       81% of 1989       90% of 2783       84% of 2128       92% of 2832       89% of 7743       
+rounds 270-279                    86% of 751        84% of 170        84% of 320        85% of 1241       80% of 1995       89% of 2807       82% of 2227       92% of 2747       88% of 7781       
+rounds 280-289                    85% of 776        85% of 170        87% of 320        86% of 1266       81% of 2081       89% of 2804       82% of 2139       91% of 2762       88% of 7705       
+rounds 290-299                    83% of 768        85% of 134        85% of 316        84% of 1218       81% of 1975       89% of 2714       82% of 2121       91% of 2707       88% of 7542       
+rounds 300-309                    64% of 759        56% of 129        63% of 281        63% of 1169       82% of 1908       90% of 2682       81% of 2215       92% of 2763       88% of 7660       
+rounds 310-319                    51% of 815        51% of 125        49% of 315        50% of 1255       80% of 1932       89% of 2694       81% of 2061       92% of 2633       88% of 7388       
+rounds 320-329                    52% of 920        56% of 116        58% of 302        53% of 1338       80% of 1919       89% of 2765       80% of 2095       92% of 2615       87% of 7475       
+rounds 330-339                    54% of 799        63% of 107        55% of 270        55% of 1176       78% of 1793       89% of 2697       78% of 2035       90% of 2561       86% of 7293       
+rounds 340-349                    49% of 824        59% of 102        51% of 360        50% of 1286       78% of 1855       90% of 2645       80% of 2011       93% of 2566       88% of 7222       
+rounds 350-359                    52% of 743        61% of 109        56% of 330        54% of 1182       79% of 1765       89% of 2682       80% of 1952       89% of 2185       87% of 6819       
+rounds 360-369                    53% of 792        63% of 108        50% of 323        53% of 1223       77% of 1744       87% of 2648       81% of 1929       92% of 1797       86% of 6374       
+
+-- 1c. after the switch (rounds 300-399), by the distance from the pearl to the nearest LONGER own dragon
+                                  meow live         meow tc30         meow other test   meow all          our opponents     Vibing++          SSS               forgot            top three         
+0-3 cells                         46% of 2420       41% of 300        42% of 873        45% of 3593       77% of 5797       90% of 8747       83% of 6060       91% of 5937       88% of 20744      
+4-6                               51% of 2802       57% of 414        51% of 1111       51% of 4327       78% of 5783       88% of 8536       81% of 6301       92% of 7050       87% of 21887      
+7-9                               56% of 1383       62% of 228        60% of 557        58% of 2168       80% of 2729       87% of 3834       75% of 3406       92% of 3934       85% of 11174      
+10-12                             63% of 640        66% of 92         73% of 239        66% of 971        77% of 1284       84% of 1896       75% of 1721       90% of 1859       83% of 5476       
+13-16                             68% of 413        75% of 44         72% of 156        70% of 613        80% of 698        85% of 1056       78% of 1029       92% of 1120       85% of 3205       
+17+                               69% of 303        78% of 32         78% of 134        72% of 469        83% of 594        89% of 1031       80% of 628        90% of 845        88% of 2504       
+no longer own dragon on the board 73% of 241        69% of 42         69% of 70         72% of 353        82% of 624        94% of 935        85% of 208        93% of 540        93% of 1683       
+   the same BEFORE the switch (rounds 0-299)
+0-3 cells                         88% of 6583       88% of 1126       88% of 1783       88% of 9492       83% of 15466      92% of 23531      86% of 20732      90% of 23070      89% of 67333      
+4-6                               85% of 6938       88% of 1163       84% of 2130       85% of 10231      83% of 15527      89% of 22634      85% of 17374      92% of 22684      89% of 62692      
+7-9                               87% of 3873       86% of 593        86% of 1183       87% of 5649       83% of 7734       83% of 11985      83% of 9488       92% of 12742      86% of 34215      
+10-12                             85% of 2260       90% of 334        84% of 646        85% of 3240       80% of 4144       80% of 6445       82% of 5211       93% of 6864       85% of 18520      
+13-16                             85% of 1495       92% of 220        82% of 430        85% of 2145       85% of 2718       81% of 4137       84% of 3351       94% of 4480       87% of 11968      
+17+                               91% of 1314       83% of 184        90% of 489        90% of 1987       90% of 2448       91% of 3910       90% of 3516       94% of 4579       92% of 12005      
+no longer own dragon on the board 92% of 5644       94% of 839        93% of 1688       92% of 8171       89% of 8473       94% of 11430      90% of 12041      94% of 12398      92% of 35869      
+
+-- 1d. after the switch, a longer own dragon within 9 cells: by that dragon's length
+it is 3-4 long                    52% of 4487       52% of 598        51% of 1678       52% of 6763       76% of 9607       89% of 14408      80% of 10599      92% of 11489      87% of 36496      
+5-9                               51% of 1566       57% of 243        51% of 674        52% of 2483       81% of 3032       89% of 5284       82% of 2864       90% of 3164       88% of 11312      
+10+                               32% of 552        50% of 101        38% of 189        36% of 842        82% of 1670       79% of 1425       82% of 2304       93% of 2268       85% of 5997       
+
+-- 1e. by the dragon's own length: before the switch / after
+own length 2                      87% / 50%         88% / 52%         86% / 50%         87% / 50%         82% / 75%         88% / 89%         85% / 81%         91% / 91%         88% / 87%         
+own length 3                      87% / 55%         89% / 59%         87% / 57%         88% / 56%         85% / 80%         88% / 87%         85% / 78%         93% / 93%         89% / 86%         
+own length 4                      97% / 88%         97% / 88%         99% / 91%         98% / 89%         90% / 89%         97% / 94%         95% / 87%         92% / 87%         95% / 90%         
+
+-- 2. Is it the switch or the state of the game? Our live bot after the switch, by result and by economy band at the switch round
+   games we won           games 68   before 90% of 15232, after 56% of 2899
+   games we lost          games 130  before 85% of 12875, after 52% of 5303
+   band <0.67   at r300   games 59   before 86% of 5353, after 48% of 1823
+   band 0.67-1  at r300   games 27   before 83% of 6745, after 52% of 3590
+   band 1-1.5   at r300   games 8    before 88% of 1947, after 55% of 840
+   band >1.5    at r300   games 17   before 91% of 4545, after 61% of 1949
+
+-- 3. Splits per 100 dragon-turns by length class (non-queens), per 50 rounds
+   parent length 4
+                                  meow live         meow tc30         meow other test   meow all          our opponents     Vibing++          SSS               forgot            top three         
+rounds 0-49                       57.4 (7.5/game)   55.8 (6.7/game)   57.6 (8.0/game)   57.3 (7.5/game)   65.9 (7.0/game)   66.5 (9.7/game)   70.1 (7.9/game)   78.0 (9.2/game)   71.7 (8.9/game)   
+rounds 50-99                      58.2 (13.8/game)  58.3 (13.0/game)  53.4 (11.9/game)  57.3 (13.3/game)  63.6 (14.8/game)  71.4 (18.6/game)  71.3 (16.5/game)  76.5 (19.9/game)  73.4 (18.4/game)  
+rounds 100-149                    54.4 (15.5/game)  57.3 (15.2/game)  51.6 (12.9/game)  54.1 (14.9/game)  53.3 (18.2/game)  65.0 (21.2/game)  66.6 (20.4/game)  58.6 (19.7/game)  62.9 (20.4/game)  
+rounds 150-199                    51.0 (16.3/game)  55.2 (18.2/game)  50.3 (13.7/game)  51.3 (16.0/game)  28.8 (16.0/game)  48.6 (20.3/game)  47.6 (19.8/game)  54.8 (20.4/game)  50.5 (20.2/game)  
+rounds 200-249                    51.6 (15.4/game)  53.8 (16.7/game)  50.5 (15.0/game)  51.6 (15.4/game)  26.7 (15.7/game)  40.7 (18.2/game)  37.3 (17.7/game)  55.3 (19.5/game)  44.3 (18.6/game)  
+rounds 250-299                    51.9 (13.3/game)  56.9 (16.0/game)  51.6 (15.2/game)  52.3 (14.0/game)  26.0 (15.0/game)  38.6 (16.6/game)  27.6 (16.0/game)  51.2 (16.4/game)  37.8 (16.3/game)  
+rounds 300-349                    39.0 (9.3/game)   35.6 (7.7/game)   36.4 (9.6/game)   38.1 (9.2/game)   27.3 (13.0/game)  36.6 (15.5/game)  38.9 (15.1/game)  50.9 (15.1/game)  41.9 (15.2/game)  
+rounds 350-399                    44.0 (8.3/game)   42.6 (6.8/game)   45.6 (9.7/game)   44.3 (8.4/game)   19.1 (9.0/game)   23.5 (11.7/game)  29.9 (10.6/game)  10.4 (4.8/game)   19.7 (8.7/game)   
+rounds 400-449                    38.9 (5.0/game)   46.7 (4.3/game)   48.1 (6.0/game)   41.5 (5.1/game)   7.8 (3.5/game)    24.3 (8.3/game)   9.7 (3.9/game)    9.5 (2.8/game)    14.1 (4.9/game)   
+   parent length 5-9
+                                  meow live         meow tc30         meow other test   meow all          our opponents     Vibing++          SSS               forgot            top three         
+rounds 0-49                       54.0 (2.3/game)   56.6 (2.0/game)   56.3 (2.4/game)   54.7 (2.3/game)   75.3 (2.2/game)   78.4 (3.8/game)   58.4 (2.9/game)   80.7 (1.9/game)   71.2 (2.8/game)   
+rounds 50-99                      52.5 (4.6/game)   54.1 (4.6/game)   54.5 (4.6/game)   53.1 (4.6/game)   61.5 (4.5/game)   53.7 (4.9/game)   53.7 (5.0/game)   60.8 (3.1/game)   55.5 (4.2/game)   
+rounds 100-149                    50.3 (6.1/game)   52.1 (5.4/game)   51.5 (5.4/game)   50.7 (5.9/game)   46.3 (6.4/game)   31.4 (6.5/game)   52.8 (6.9/game)   62.6 (5.2/game)   45.0 (6.1/game)   
+rounds 150-199                    49.4 (6.3/game)   50.1 (6.9/game)   48.5 (6.3/game)   49.3 (6.4/game)   25.5 (7.7/game)   23.1 (8.2/game)   36.9 (7.0/game)   57.7 (5.5/game)   33.2 (6.8/game)   
+rounds 200-249                    48.4 (6.3/game)   49.1 (6.6/game)   51.9 (6.5/game)   49.2 (6.4/game)   22.5 (7.9/game)   19.7 (8.8/game)   32.3 (6.8/game)   55.2 (5.4/game)   28.7 (6.9/game)   
+rounds 250-299                    48.5 (5.5/game)   46.9 (5.4/game)   50.6 (6.5/game)   48.8 (5.7/game)   17.9 (7.3/game)   21.3 (9.2/game)   12.9 (4.3/game)   44.4 (5.0/game)   22.0 (6.1/game)   
+rounds 300-349                    8.7 (2.4/game)    7.4 (2.2/game)    7.3 (2.9/game)    8.2 (2.5/game)    16.5 (6.9/game)   20.9 (8.2/game)   11.1 (3.5/game)   40.9 (4.8/game)   20.8 (5.5/game)   
+rounds 350-399                    7.7 (2.8/game)    6.5 (2.5/game)    8.3 (4.0/game)    7.7 (3.0/game)    13.0 (5.9/game)   17.5 (7.7/game)   10.6 (3.1/game)   8.0 (4.2/game)    11.5 (5.0/game)   
+rounds 400-449                    5.4 (1.6/game)    7.0 (1.7/game)    5.6 (2.0/game)    5.6 (1.7/game)    9.0 (4.3/game)    15.1 (6.0/game)   5.8 (2.7/game)    8.5 (4.0/game)    9.5 (4.2/game)    
+   parent length 10+
+                                  meow live         meow tc30         meow other test   meow all          our opponents     Vibing++          SSS               forgot            top three         
+rounds 0-49                       69.8 (0.2/game)   0.0 (0.0/game)    71.4 (0.2/game)   70.2 (0.1/game)   51.2 (0.2/game)   95.4 (0.4/game)   100.0 (0.4/game)  100.0 (0.3/game)  98.4 (0.4/game)   
+rounds 50-99                      66.7 (0.0/game)   0.0 (0.0/game)    0.0 (0.0/game)    66.7 (0.0/game)   39.8 (0.1/game)   15.2 (0.0/game)   0.0 (0.0/game)    100.0 (0.0/game)  16.8 (0.0/game)   
+rounds 100-149                    100.0 (0.0/game)  0.0 (0.0/game)    0.0 (0.0/game)    100.0 (0.0/game)  27.6 (0.1/game)   18.5 (0.2/game)   100.0 (0.0/game)  100.0 (0.0/game)  18.8 (0.1/game)   
+rounds 150-199                    75.0 (0.0/game)   0.0 (0.0/game)    0.0 (0.0/game)    75.0 (0.0/game)   14.3 (0.2/game)   15.5 (0.4/game)   16.3 (0.0/game)   80.0 (0.0/game)   15.8 (0.1/game)   
+rounds 200-249                    75.0 (0.0/game)   0.0 (0.0/game)    0.0 (0.0/game)    75.0 (0.0/game)   18.0 (0.3/game)   11.4 (0.6/game)   9.4 (0.0/game)    33.3 (0.0/game)   11.4 (0.2/game)   
+rounds 250-299                    100.0 (0.0/game)  0.0 (0.0/game)    0.0 (0.0/game)    100.0 (0.0/game)  11.5 (0.5/game)   10.1 (0.8/game)   4.2 (0.0/game)    6.1 (0.1/game)    9.2 (0.3/game)    
+rounds 300-349                    6.0 (0.2/game)    7.4 (0.3/game)    8.1 (0.4/game)    6.7 (0.2/game)    8.2 (1.1/game)    11.0 (1.1/game)   3.2 (0.4/game)    6.4 (0.2/game)    6.8 (0.5/game)    
+rounds 350-399                    5.4 (0.6/game)    6.1 (0.8/game)    5.8 (0.7/game)    5.6 (0.6/game)    7.4 (1.5/game)    8.6 (0.9/game)    3.6 (0.6/game)    5.4 (0.9/game)    5.5 (0.8/game)    
+rounds 400-449                    5.0 (0.9/game)    4.5 (1.0/game)    4.9 (1.2/game)    4.9 (1.0/game)    4.8 (1.6/game)    5.9 (1.1/game)    3.2 (0.8/game)    7.3 (2.3/game)    5.8 (1.5/game)    
+
+-- 4. Units / total length / longest dragon (means over games that reach the round)
+            meow live             meow tc30             meow other test       meow all              our opponents         Vibing++              SSS                   forgot                top three             
+round 100   14.6 / 36 / 3.7 (182) 14.3 / 34 / 3.5 (29)  12.6 / 31 / 3.5 (54)  14.1 / 34 / 3.6 (265) 18.0 / 44 / 3.8 (265) 17.9 / 44 / 4.1 (345) 19.2 / 47 / 4.0 (338) 18.8 / 45 / 3.6 (421) 18.7 / 46 / 3.9 (1104)
+round 150   19.1 / 47 / 3.9 (158) 18.4 / 46 / 3.8 (25)  17.5 / 43 / 3.9 (45)  18.7 / 46 / 3.9 (228) 26.2 / 65 / 4.0 (228) 24.0 / 61 / 4.6 (301) 28.7 / 70 / 4.1 (298) 23.7 / 58 / 3.7 (361) 25.3 / 63 / 4.1 (960) 
+round 200   21.8 / 54 / 4.1 (141) 24.0 / 58 / 3.9 (23)  25.1 / 63 / 4.2 (36)  22.6 / 56 / 4.1 (200) 30.1 / 79 / 4.8 (200) 28.4 / 76 / 5.8 (257) 34.8 / 87 / 4.4 (245) 27.7 / 69 / 3.9 (308) 30.1 / 77 / 4.7 (810) 
+round 250   22.8 / 56 / 3.9 (126) 21.9 / 53 / 3.6 (20)  29.0 / 71 / 4.3 (34)  23.9 / 59 / 4.0 (180) 32.7 / 87 / 5.1 (180) 30.1 / 84 / 7.3 (226) 37.6 / 95 / 4.4 (214) 26.4 / 72 / 9.3 (274) 30.9 / 83 / 7.2 (714) 
+round 300   22.6 / 57 / 4.3 (111) 21.6 / 53 / 4.1 (17)  29.4 / 72 / 4.3 (31)  23.8 / 59 / 4.3 (159) 34.8 / 96 / 7.8 (159) 30.8 / 90 / 10.5 (195)38.5 / 102 / 5.9 (195)25.8 / 77 / 15.2 (242)31.2 / 88 / 10.9 (632)
+round 350   19.9 / 58 / 9.2 (103) 17.5 / 52 / 8.1 (15)  25.4 / 75 / 9.3 (30)  20.8 / 61 / 9.1 (148) 31.9 / 99 / 14.1 (148)31.3 / 94 / 12.9 (186)31.4 / 96 / 16.6 (182)26.3 / 84 / 20.1 (219)29.5 / 91 / 16.7 (587)
+round 400   19.5 / 62 / 11.8 (99) 17.6 / 59 / 11.6 (14) 24.3 / 78 / 13.7 (30) 20.3 / 65 / 12.2 (143)24.0 / 95 / 21.2 (143)28.5 / 97 / 17.3 (173)24.9 / 95 / 25.5 (165)14.8 / 85 / 27.5 (209)22.2 / 92 / 23.7 (547)
+round 450   10.1 / 51 / 22.8 (93) 7.4 / 45 / 23.5 (14)  12.2 / 62 / 24.7 (28) 10.3 / 53 / 23.3 (135)11.4 / 86 / 35.0 (135)18.0 / 84 / 30.3 (156)15.5 / 85 / 33.0 (155)9.9 / 81 / 37.9 (201) 14.1 / 83 / 34.1 (512)
+   growth of total length 150 -> 300 / of the longest dragon: meow live +20% / +0.4; meow tc30 +15% / +0.3; meow other test +67% / +0.4; meow all +28% / +0.4; our opponents +47% / +3.8; Vibing++ +48% / +5.8; SSS +45% / +1.8; forgot +32% / +11.5; top three +41% / +6.8
+
+-- 5. Pearls eaten per game per 50 rounds: natural by dragons that were 2-4 / natural by 5+ / corpse pearls (all)
+                meow live             meow tc30             meow other test       meow all              our opponents         Vibing++              SSS                   forgot                top three             
+rounds 0-49     17 / 0 / 6            16 / 0 / 5            17 / 0 / 7            17 / 0 / 6            17 / 0 / 5            22 / 0 / 9            17 / 0 / 8            18 / 0 / 7            19 / 0 / 8            
+rounds 50-99    27 / 0 / 16           27 / 0 / 14           25 / 0 / 14           27 / 0 / 16           34 / 0 / 14           37 / 0 / 20           35 / 1 / 16           37 / 0 / 18           36 / 0 / 18           
+rounds 100-149  29 / 1 / 23           29 / 0 / 21           25 / 0 / 20           28 / 1 / 22           38 / 1 / 24           39 / 1 / 28           41 / 1 / 24           36 / 0 / 25           38 / 1 / 26           
+rounds 150-199  28 / 1 / 26           31 / 1 / 28           25 / 1 / 23           27 / 1 / 26           33 / 1 / 28           37 / 2 / 34           38 / 1 / 30           33 / 0 / 31           36 / 1 / 32           
+rounds 200-249  24 / 0 / 28           26 / 0 / 29           24 / 0 / 26           24 / 0 / 27           28 / 1 / 31           32 / 2 / 35           31 / 1 / 30           28 / 0 / 35           30 / 1 / 34           
+rounds 250-299  20 / 0 / 25           22 / 0 / 29           23 / 0 / 28           21 / 0 / 26           27 / 2 / 32           30 / 3 / 35           26 / 1 / 29           25 / 0 / 30           27 / 1 / 31           
+rounds 300-349  14 / 1 / 19           12 / 1 / 16           16 / 2 / 19           14 / 2 / 19           23 / 2 / 32           27 / 3 / 33           22 / 1 / 32           24 / 0 / 27           24 / 1 / 30           
+rounds 350-399  13 / 2 / 17           11 / 3 / 16           15 / 3 / 21           13 / 2 / 18           19 / 3 / 28           24 / 3 / 29           19 / 1 / 25           15 / 4 / 23           19 / 3 / 26           
+rounds 400-449  7 / 2 / 16            7 / 3 / 15            9 / 3 / 19            7 / 3 / 17            10 / 5 / 24           15 / 3 / 28           11 / 3 / 19           10 / 5 / 19           12 / 4 / 21           
+rounds 450-499  5 / 3 / 9             5 / 2 / 9             6 / 4 / 12            5 / 3 / 10            5 / 7 / 13            10 / 6 / 18           6 / 3 / 13            6 / 5 / 13            7 / 5 / 15            

@@ -1,0 +1,240 @@
+[
+  {
+    "name": "on-hunter22",
+    "bot": "exp/q2box/bot-on",
+    "out": "exp/q2box/on",
+    "maps": "exp/q2box/maps",
+    "only": [
+      "Colosseum",
+      "arena",
+      "around_unsw",
+      "australia",
+      "autarky",
+      "big_empty",
+      "default",
+      "default_small",
+      "devil",
+      "islands",
+      "maze",
+      "portals",
+      "prisoners_dilemma",
+      "queen_of_spades",
+      "schooltime",
+      "slithery_fight",
+      "stripes",
+      "stronghold",
+      "tower_defense",
+      "trauma",
+      "trophy",
+      "weakhold"
+    ],
+    "opps": [
+      "exp/q2/bot-hunter"
+    ],
+    "seeds": [
+      1
+    ],
+    "sides": [
+      "A",
+      "B"
+    ],
+    "cpu": true
+  },
+  {
+    "name": "on-king15",
+    "bot": "exp/q2box/bot-on",
+    "out": "exp/q2box/on",
+    "maps": "exp/q2box/maps",
+    "only": [
+      "around_unsw",
+      "autarky",
+      "prisoners_dilemma",
+      "slithery_fight",
+      "arena",
+      "big_empty",
+      "Colosseum",
+      "default_small",
+      "stronghold",
+      "gen_S_03",
+      "gen_M_03",
+      "gen_M_07",
+      "gen_L_02",
+      "gen_R_01",
+      "gen_X_07"
+    ],
+    "opps": [
+      "proxy4_king"
+    ],
+    "seeds": [
+      1
+    ],
+    "sides": [
+      "A",
+      "B"
+    ],
+    "cpu": true
+  },
+  {
+    "name": "on-around-seed2",
+    "bot": "exp/q2box/bot-on",
+    "out": "exp/q2box/on",
+    "maps": "exp/q2box/maps",
+    "only": [
+      "around_unsw"
+    ],
+    "opps": [
+      "proxy4_king",
+      "exp/q2/bot-hunter"
+    ],
+    "seeds": [
+      2
+    ],
+    "sides": [
+      "A",
+      "B"
+    ],
+    "cpu": true
+  },
+  {
+    "name": "off-hunter22",
+    "bot": "exp/q2box/bot-off",
+    "out": "exp/q2box/off",
+    "maps": "exp/q2box/maps",
+    "only": [
+      "Colosseum",
+      "arena",
+      "around_unsw",
+      "australia",
+      "autarky",
+      "big_empty",
+      "default",
+      "default_small",
+      "devil",
+      "islands",
+      "maze",
+      "portals",
+      "prisoners_dilemma",
+      "queen_of_spades",
+      "schooltime",
+      "slithery_fight",
+      "stripes",
+      "stronghold",
+      "tower_defense",
+      "trauma",
+      "trophy",
+      "weakhold"
+    ],
+    "opps": [
+      "exp/q2/bot-hunter"
+    ],
+    "seeds": [
+      1
+    ],
+    "sides": [
+      "A",
+      "B"
+    ],
+    "cpu": true
+  },
+  {
+    "name": "off-king15",
+    "bot": "exp/q2box/bot-off",
+    "out": "exp/q2box/off",
+    "maps": "exp/q2box/maps",
+    "only": [
+      "around_unsw",
+      "autarky",
+      "prisoners_dilemma",
+      "slithery_fight",
+      "arena",
+      "big_empty",
+      "Colosseum",
+      "default_small",
+      "stronghold",
+      "gen_S_03",
+      "gen_M_03",
+      "gen_M_07",
+      "gen_L_02",
+      "gen_R_01",
+      "gen_X_07"
+    ],
+    "opps": [
+      "proxy4_king"
+    ],
+    "seeds": [
+      1
+    ],
+    "sides": [
+      "A",
+      "B"
+    ],
+    "cpu": true
+  },
+  {
+    "name": "off-around-seed2",
+    "bot": "exp/q2box/bot-off",
+    "out": "exp/q2box/off",
+    "maps": "exp/q2box/maps",
+    "only": [
+      "around_unsw"
+    ],
+    "opps": [
+      "proxy4_king",
+      "exp/q2/bot-hunter"
+    ],
+    "seeds": [
+      2
+    ],
+    "sides": [
+      "A",
+      "B"
+    ],
+    "cpu": true
+  },
+  {
+    "name": "identity-off",
+    "bot": "exp/q2box/bot-off",
+    "out": "exp/q2box/id-off",
+    "maps": "exp/q2box/maps",
+    "only": [
+      "trophy",
+      "around_unsw",
+      "gen_M_07"
+    ],
+    "opps": [
+      "proxy4_king",
+      "exp/q2/bot-hunter"
+    ],
+    "seeds": [
+      1
+    ],
+    "sides": [
+      "A",
+      "B"
+    ],
+    "cpu": true
+  },
+  {
+    "name": "identity-base",
+    "bot": "versions/v1.8/bot",
+    "out": "exp/q2box/id-base",
+    "maps": "exp/q2box/maps",
+    "only": [
+      "trophy",
+      "around_unsw",
+      "gen_M_07"
+    ],
+    "opps": [
+      "proxy4_king",
+      "exp/q2/bot-hunter"
+    ],
+    "seeds": [
+      1
+    ],
+    "sides": [
+      "A",
+      "B"
+    ],
+    "cpu": true
+  }
+]

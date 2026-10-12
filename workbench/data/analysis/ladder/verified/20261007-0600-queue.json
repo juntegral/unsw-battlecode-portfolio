@@ -1,0 +1,192 @@
+[
+ {
+  "id": "F25",
+  "claim": "On layouts with 2000 or more open tiles, when our total length at raw round 100 is at least 0.95 of theirs, our share of total length is 10 points or more lower at round 300 in most games and almost never 10 points higher at round 200; on other layouts this is rare.",
+  "how_to_count": "Per game, state after all events of raw rounds 100, 200, 300 (the curves in rows.jsonl; recount from replays). Total = summed body length of living dragons per side. Share = ours / (ours + theirs). Include games with ours at r100 >= 0.95 * theirs at r100 that reached the later round. Fall = share(later) <= share(100) - 0.10; rise = share(later) >= share(100) + 0.10. Large = maps.json open_tiles >= 2000 joined on map_key. our_code main and v31 separately; test builds out.",
+  "your_numbers": {
+   "fall_by_r300": {
+    "main_large": "17 of 27",
+    "v31_large": "35 of 45",
+    "main_other": "12 of 55",
+    "v31_other": "28 of 95"
+   },
+   "fall_by_r200": {
+    "main_large": "8 of 27",
+    "v31_large": "20 of 45",
+    "main_other": "8 of 73",
+    "v31_other": "19 of 121"
+   },
+   "rise_by_r200": {
+    "main_large": "2 of 27",
+    "v31_large": "0 of 45",
+    "main_other": "30 of 73",
+    "v31_other": "39 of 121"
+   },
+   "wins_from_that_position": {
+    "main_large": "13 of 27",
+    "v31_large": "25 of 45",
+    "main_other_reaching_r200": "56 of 73",
+    "v31_other_reaching_r200": "77 of 121"
+   },
+   "per_layout_fall_by_r300_main_then_v31": {
+    "Australia": "5 of 5, 14 of 17",
+    "Islands": "2 of 3, 11 of 11",
+    "Around UNSW": "5 of 10, 5 of 9",
+    "Schooltime 1": "3 of 6, 1 of 2",
+    "Schooltime 2": "2 of 3, 4 of 6",
+    "Slithery Fight": "2 of 12, 3 of 16",
+    "Portals": "3 of 6, 5 of 9",
+    "Trauma": "4 of 8, 4 of 9"
+   }
+  },
+  "slices": [
+   "main games (255)",
+   "v31 games (410)"
+  ],
+  "please_also_check": "Whether the fall by r200 survives leaving out any one large layout or opponent; whether it is only our feeding (no feeder death happens before round 201); whether a 10-point threshold on a share is fair at small totals (Schooltime starts scarce)."
+ },
+ {
+  "id": "F26",
+  "claim": "On large layouts opponents finish about nine in ten of the natural pearls born nearer to one of their heads and we finish under eight in ten of ours, for pearls inside the nearer dragon 7 by 7 view; on other layouts both sides finish about three quarters. Our nearer dragon is farther from the pearl after its next turn more often than theirs (by 4 points on main, 8 on v31).",
+  "how_to_count": "Natural pearl births (a tile gains a pearl, not a drop from a death). At the birth: wrapped Manhattan distance from the tile to the nearest head of each side; keep births with both <= 6 and one side strictly nearer; nearer dragon = that head (lowest id on ties within the side). In view = Chebyshev distance (wrapped) from that head to the tile <= 3. Only pearls later eaten count; eater side = side of the dragon whose turn removed it. Finished = eaten by the nearer side. Walked away = the pearl is still there when the nearer dragon completes its first turn that starts after the birth, and its head is then farther (wrapped Manhattan) from the tile than at the birth; a pearl eaten before that turn ends, or a nearer dragon that dies first, is not a walk-away. Left lying = eaten by the other side with (meal round - birth round) >= 3. Pool births per side over games. Script: data/analysis/ladder/work/h10b_pass.py (conv key documented at its top).",
+  "your_numbers": {
+   "in_view_large_finished": {
+    "main_ours": "0.787 of 9717",
+    "main_theirs": "0.889 of 14203",
+    "v31_ours": "0.775 of 14085",
+    "v31_theirs": "0.911 of 21359"
+   },
+   "in_view_other_finished": {
+    "main_ours": "0.776 of 19545",
+    "main_theirs": "0.765 of 22201",
+    "v31_ours": "0.726 of 30587",
+    "v31_theirs": "0.737 of 36779"
+   },
+   "in_view_large_walked_away": {
+    "main_ours": 0.378,
+    "main_theirs": 0.335,
+    "v31_ours": 0.386,
+    "v31_theirs": 0.303
+   },
+   "in_view_other_walked_away": {
+    "main_ours": 0.41,
+    "main_theirs": 0.424,
+    "v31_ours": 0.422,
+    "v31_theirs": 0.425
+   },
+   "in_view_large_left_lying": {
+    "main_ours": 0.168,
+    "main_theirs": 0.085,
+    "v31_ours": 0.174,
+    "v31_theirs": 0.066
+   },
+   "in_view_other_left_lying": {
+    "main_ours": 0.181,
+    "main_theirs": 0.17,
+    "v31_ours": 0.215,
+    "v31_theirs": 0.188
+   },
+   "large_distance_0_or_1_walked_away_all_births": {
+    "main_ours": "0.344 of 3160",
+    "main_theirs": "0.244 of 4689",
+    "v31_ours": "0.350 of 4513",
+    "v31_theirs": "0.226 of 7883"
+   },
+   "large_games_with_our_walk_away_share_higher_min_30_births_a_side": {
+    "main": "42 against 16",
+    "v31": "72 against 16"
+   },
+   "main_large_by_band_walk_away_ours_theirs": {
+    "1700-1899": "0.376, 0.344",
+    "1900-2099": "0.383, 0.326",
+    "2100+": "0.352, 0.354"
+   },
+   "out_of_view_births_large": {
+    "main": "398 ours, 455 theirs",
+    "v31": "585, 703"
+   }
+  },
+  "slices": [
+   "main games on large layouts (65)",
+   "v31 games on large layouts (95)",
+   "other layouts in each code as the contrast"
+  ],
+  "please_also_check": "Whether the walk-away gap on main (4.3 points against a bar of 4) is clear of zero by game resampling; whether a walk-away is mostly a dragon eating another pearl in that turn; whether it is a head-count effect (more of their heads near the same pearl)."
+ },
+ {
+  "id": "F24",
+  "claim": "Teams rated 2100+ do not have their heads within reach of our queen more often than 1700-1899 teams, but a much larger share of their rams on our queen are paid sprints (the rammer covers more steps than its free steps).",
+  "how_to_count": "Free layouts (maps.json queen_spawn_dead_end false), our_code v31 and main separately, bands by opponent_rating. (a) Reach: every turn start of our queen in raw rounds 0-200; exposed = some enemy head is within min(12, ceil(L/4) + L - 2) path steps of her head (L = that enemy length; steps over open edges and portals, kelp blocks, dragons ignored). Share = exposed turns / queen turns per band. Script work/h10_pass.py, field reach.us[0] = [turns, exposed full, exposed free, ...]. (b) Sprint: every cross-team head-on in which our queen is the stationary victim and the rammer was alive at her last own turn start; d1 = path steps from the rammer head at that moment to her head at the ram; paid = d1 > ceil(rammer length at that moment / 4). Script work/h4_pass.py, rams with victim us (its shards stop at battle 1270027). Also: her last step shortened the path to the rammer when d1 < d0 (d0 = same path distance to her head before her last move).",
+  "your_numbers": {
+   "exposed_share_v31_by_band": {
+    "1700-1899": "390 of 24107 (0.0162)",
+    "1900-2099": "0.0204",
+    "2100+": "45 of 4415 (0.0102)"
+   },
+   "exposed_share_main_by_band": {
+    "1700-1899": 0.0118,
+    "1900-2099": 0.0174,
+    "2100+": "31 of 2194 (0.0141)"
+   },
+   "rams_on_our_queen_by_r200_per_game": {
+    "v31": "0.27, 0.43, 0.53",
+    "main": "0.32, 0.36, 0.53"
+   },
+   "paid_share_v31_by_band": {
+    "1700-1899": "31 of 72",
+    "1900-2099": "33 of 64",
+    "2100+": "20 of 26"
+   },
+   "paid_share_main_by_band": {
+    "1700-1899": "11 of 23",
+    "1900-2099": "30 of 54",
+    "2100+": "3 of 6"
+   },
+   "our_rams_on_their_queen_paid_share": {
+    "v31": "38 of 94, 27 of 47, 7 of 17",
+    "main": "11 of 30, 16 of 58, 2 of 2"
+   },
+   "her_last_step_shortened_the_path": {
+    "main": "65 of 83",
+    "v31": "152 of 170",
+    "v31_2100+": "26 of 26"
+   },
+   "mean_path_distance_v31_2100+": "3.23 before her step, 2.23 after",
+   "one_step_ram_chances_taken_own_queen_alive_F27": {
+    "v31_ours": "59 of 67",
+    "v31_theirs": "51 of 66",
+    "main_ours": "37 of 39",
+    "main_theirs": "30 of 31"
+   }
+  },
+  "slices": [
+   "v31 by rating band (the code with 43 games against 2100+)",
+   "main by rating band, reported, 17 games against 2100+"
+  ],
+  "please_also_check": "Whether the paid share against 2100+ on v31 is carried by one or two of the 8 opponents; whether paid sprints are simply rams by longer dragons; the same paid share on the main games after battle 1270027 (not in the h4 shards)."
+ },
+ {
+  "id": "F28",
+  "claim": "At a queen turn start with the nearest short enemy head exactly 4 path steps away, our queen ends her turn closer to that head about twice as often as their queens do (main and v31); from exactly 3 steps the main queen comes closer less often than theirs.",
+  "how_to_count": "Free layouts (queen_spawn_dead_end false), raw rounds 0-200, our_code main and v31 separately. Case = a turn start of a living queen at which, among enemy heads of length 6 or less, the smallest path distance to her head (steps over open edges and portals, kelp blocks, dragons ignored, search depth 4) is exactly 3 or 4; that head (lowest dragon id on ties) is the reference and its position is frozen. Closer = at the end of her turn the path distance from that frozen position to her head is smaller than at the start; a queen that dies in her turn is counted separately. Rate = closer / cases per side (ours = our queen against their heads, theirs = their queen against our heads). Script: data/analysis/ladder/work/h12_pass.py (fields documented at its top).",
+  "your_numbers": {
+   "pooled_main": "ours 400 of 2173 (0.184), theirs 279 of 1847 (0.151)",
+   "pooled_v31": "ours 860 of 3505 (0.245), theirs 448 of 2926 (0.153)",
+   "distance_4_main": "ours 316 of 1025 (0.308), theirs 163 of 970 (0.168)",
+   "distance_4_v31": "ours 590 of 1895 (0.311), theirs 220 of 1358 (0.162)",
+   "distance_3_main": "ours 84 of 1148 (0.073), theirs 116 of 877 (0.132)",
+   "distance_3_v31": "ours 270 of 1610 (0.168), theirs 228 of 1568 (0.145)",
+   "with_a_legal_step_that_does_not_come_closer": "main ours 288 of 2041, theirs 178 of 1728; v31 ours 653 of 3285, theirs 247 of 2695",
+   "by_band_main_ours_theirs": "0.176 / 0.118, 0.189 / 0.172, 0.179 / 0.137",
+   "games_ours_higher_vs_lower_min_8_cases_a_side": {
+    "main": "23 against 18",
+    "v31": "50 against 16"
+   }
+  },
+  "slices": [
+   "main games on free layouts (217)",
+   "v31 games on free layouts (362)"
+  ],
+  "please_also_check": "The distance split was seen after the count, so treat it as a new claim: is the distance-4 gap clear of zero when games are resampled, and does it survive counting each queen once per run of consecutive turns at distance 4 (cases repeat within a game)? Is it carried by a few layouts (weakhold, Devil, Prisoners Dilemma 1 are high on our side)?"
+ }
+]

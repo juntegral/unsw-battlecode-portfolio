@@ -1,0 +1,64 @@
+=== chances taken, by whether she was in the attacker's view, and attacker length
+  Vibing++  in view      L2-3:  186/  186 = 1.000 | L4:   25/   25 = 1.000 | L5-9:   38/   38 = 1.000 | L10-12:   17/   18 = 0.944 | all:  266/  267 = 0.996
+  Vibing++  not in view  L2-3:    1/    5 = 0.200 | L4:    0/    2 = 0.000 | L5-9:    0/   91 = 0.000 | L10-12:    0/  116 = 0.000 | all:    1/  214 = 0.005
+  SSS       in view      L2-3:  155/  155 = 1.000 | L4:   26/   26 = 1.000 | L5-9:   59/   61 = 0.967 | L10-12:   10/   12 = 0.833 | all:  250/  254 = 0.984
+  SSS       not in view  L2-3:    0/    2 = 0.000 | L4:    0/    2 = 0.000 | L5-9:    0/  136 = 0.000 | L10-12:    0/  133 = 0.000 | all:    0/  273 = 0.000
+  forgot    in view      L2-3:  221/  317 = 0.697 | L4:   12/   53 = 0.226 | L5-9:   21/   65 = 0.323 | L10-12:    0/   22 = 0.000 | all:  254/  457 = 0.556
+  forgot    not in view  L2-3:    2/   12 = 0.167 | L4:    0/    6 = 0.000 | L5-9:    0/  118 = 0.000 | L10-12:    0/   74 = 0.000 | all:    2/  210 = 0.010
+  meow      in view      L2-3:   87/  231 = 0.377 | L4:    5/   39 = 0.128 | L5-9:    5/  137 = 0.036 | L10-12:    2/   39 = 0.051 | all:   99/  446 = 0.222
+  meow      not in view  L2-3:    2/    7 = 0.286 | L4:    0/    4 = 0.000 | L5-9:    0/  310 = 0.000 | L10-12:    0/  221 = 0.000 | all:    2/  542 = 0.004
+  other 2000+ teams in the top-team games:
+  others    in view      L2-3:  366/  399 = 0.917 | L4:   88/  108 = 0.815 | L5-9:   84/  162 = 0.519 | L10-12:   17/   68 = 0.250
+  others    not in view  L2-3:    4/   24 = 0.167 | L4:    0/   14 = 0.000 | L5-9:    3/  433 = 0.007 | L10-12:    0/  445 = 0.000
+
+=== in-view chances by paid steps needed
+  Vibing++  free:  118/  118 = 1.000 | 1 paid:   92/   92 = 1.000 | 2 paid:   33/   33 = 1.000 | 3 paid:   15/   15 = 1.000 | 4 paid:    8/    9 = 0.889
+  SSS       free:   94/   94 = 1.000 | 1 paid:   88/   88 = 1.000 | 2 paid:   36/   36 = 1.000 | 3 paid:   20/   22 = 0.909 | 4 paid:   12/   14 = 0.857
+  forgot    free:  146/  207 = 0.705 | 1 paid:   83/  149 = 0.557 | 2 paid:   16/   63 = 0.254 | 3 paid:    9/   23 = 0.391 | 4 paid:    0/   15 = 0.000
+  meow      free:   69/  129 = 0.535 | 1 paid:   20/  149 = 0.134 | 2 paid:    8/   71 = 0.113 | 3 paid:    2/   54 = 0.037 | 4 paid:    0/   43 = 0.000
+
+=== in-view chances by map class and whether the attacker is its team's longest
+  SSS       <=1200 cells  longest        21/   21 = 1.000
+  SSS       <=1200 cells  not longest   138/  139 = 0.993
+  SSS       >1200 cells   longest         7/    7 = 1.000
+  SSS       >1200 cells   not longest    84/   87 = 0.966
+  Vibing++  <=1200 cells  longest        25/   25 = 1.000
+  Vibing++  <=1200 cells  not longest   166/  166 = 1.000
+  Vibing++  >1200 cells   longest         5/    5 = 1.000
+  Vibing++  >1200 cells   not longest    70/   71 = 0.986
+  forgot    <=1200 cells  longest         3/   39 = 0.077
+  forgot    <=1200 cells  not longest   171/  282 = 0.606
+  forgot    >1200 cells   longest         1/    8 = 0.125
+  forgot    >1200 cells   not longest    79/  128 = 0.617
+  meow      <=1200 cells  longest         7/   65 = 0.108
+  meow      <=1200 cells  not longest    72/  198 = 0.364
+  meow      >1200 cells   longest         1/   52 = 0.019
+  meow      >1200 cells   not longest    19/  131 = 0.145
+
+=== in-view chances by phase and own queen
+  SSS       r300+  own queen alive    13/   14 = 0.929
+  SSS       r300+  own queen dead      9/   11 = 0.818
+  SSS       r<300  own queen alive   179/  179 = 1.000
+  SSS       r<300  own queen dead     49/   50 = 0.980
+  Vibing++  r300+  own queen alive    16/   16 = 1.000
+  Vibing++  r300+  own queen dead     24/   25 = 0.960
+  Vibing++  r<300  own queen alive   136/  136 = 1.000
+  Vibing++  r<300  own queen dead     90/   90 = 1.000
+  forgot    r300+  own queen alive     7/   26 = 0.269
+  forgot    r300+  own queen dead     24/   38 = 0.632
+  forgot    r<300  own queen alive   156/  290 = 0.538
+  forgot    r<300  own queen dead     67/  103 = 0.650
+  meow      r300+  own queen alive     0/    4 = 0.000
+  meow      r300+  own queen dead     17/  112 = 0.152
+  meow      r<300  own queen alive    30/  112 = 0.268
+  meow      r<300  own queen dead     52/  218 = 0.239
+
+=== per game: games with an in-view chance, in-view chances per game, taken, games with an in-view chance and no ram at all
+  SSS       <=1200 cells  games 364  with an in-view chance 160 (0.44)  in-view chances/game 0.44  taken 159  had one but never rammed her 1
+  SSS       >1200 cells   games 139  with an in-view chance  93 (0.67)  in-view chances/game 0.68  taken 91  had one but never rammed her 2
+  Vibing++  <=1200 cells  games 375  with an in-view chance 191 (0.51)  in-view chances/game 0.51  taken 191  had one but never rammed her 0
+  Vibing++  >1200 cells   games 127  with an in-view chance  75 (0.59)  in-view chances/game 0.60  taken 75  had one but never rammed her 0
+  forgot    <=1200 cells  games 471  with an in-view chance 221 (0.47)  in-view chances/game 0.68  taken 174  had one but never rammed her 46
+  forgot    >1200 cells   games 161  with an in-view chance  87 (0.54)  in-view chances/game 0.84  taken 80  had one but never rammed her 7
+  meow      <=1200 cells  games 290  with an in-view chance 122 (0.42)  in-view chances/game 0.91  taken 79  had one but never rammed her 42
+  meow      >1200 cells   games 111  with an in-view chance  54 (0.49)  in-view chances/game 1.65  taken 20  had one but never rammed her 34

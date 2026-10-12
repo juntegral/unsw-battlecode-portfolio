@@ -1,0 +1,10 @@
+== exp/q2/cand2-hunter: games 38, won 21
+   our queen:   alive at the end 10/38; deaths rammed 16, trap 9, sac 3 (median round 161); median length r50/100/250/end 4/4/0/0
+   their queen: alive at the end 4/38; deaths rammed 13, trap 11, sac 8, allyHead 2 (median round 164); median length r50/100/250/end 4/4/0/0; killed: rammed by us 13, trap by them 11, sac by them 8, allyHead by them 2
+   our tags (turns): qs 2001, qk 13, escape-split 2167, qd 155
+== exp/q2/cand2d-hunter: games 38, won 26
+   our queen:   alive at the end 6/38; deaths rammed 18, trap 12, enemyBody 1, sac 1 (median round 169); median length r50/100/250/end 4/4/0/0
+   their queen: alive at the end 3/38; deaths rammed 11, ram 2, trap 17, sac 5 (median round 153); median length r50/100/250/end 4/4/0/0; killed: rammed by us 11, ram by us 2, trap by them 17, sac by them 5
+   our tags (turns): qs 1795, qk 11, escape-split 2459, qd 273
+cand2-hunter: rammed while L>=4 13, trap after escape-split 7, rammed after escape-split 2, sac while L>=4 2, trap while L>=4 1, trap while L<=3 1, sac after escape-split 1, rammed while L<=3 1
+cand2d-hunter: rammed while L>=4 15, trap after escape-split 9, rammed after escape-split 2, trap while L>=4 2, enemyBody while L>=4 1, rammed while L<=3 1, trap while L<=3 1, sac while L>=4 1

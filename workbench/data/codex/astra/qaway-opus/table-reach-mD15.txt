@@ -1,0 +1,24 @@
+opponent mD15; cell = res q100/q200/q350/q400/qend p100 d100 | queen turns with an enemy head in view / her turns (gap<=3) mean gap | queen
+ladder_islands_1-seed1-side1
+  qa_L  win    4/ 4/ 0/ 0/ 0 p 253 d 59 | seen  62/239 (<=3: 17) mean 3.90 end<=4:  36 | r238 L4 rammed | vs qa_L: -
+  qa_t3 win    4/ 4/ 0/ 0/ 0 p 253 d 59 | seen  62/239 (<=3: 17) mean 3.90 end<=4:  36 | r238 L4 rammed | vs qa_L: identical
+ladder_queen_of_spades_1-seed1-side1
+  qa_L  loss   4/ 3/17/ 0/ 0 p  60 d 14 | seen  69/368 (<=3: 25) mean 4.13 end<=4:  28 | r367 L17 rammed | vs qa_L: -
+  qa_t3 win    4/ 0/ 0/ 0/ 0 p  60 d 14 | seen  44/201 (<=3: 13) mean 4.36 end<=4:  19 | r200 L3 rammed | vs qa_L: r188 QUEEN
+ladder_slithery_fight_1-seed1-side0
+  qa_L  loss   4/ 0/ 0/ 0/ 0 p 456 d 58 | seen  24/158 (<=3: 13) mean 3.42 end<=4:  18 | r157 L2 rammed | vs qa_L: -
+  qa_t3 loss   4/ 0/ 0/ 0/ 0 p 456 d 58 | seen  24/158 (<=3: 13) mean 3.42 end<=4:  18 | r157 L2 rammed | vs qa_L: identical
+ladder_slithery_fight_1-seed1-side1
+  qa_L  win    3/ 3/ 0/ 0/ 0 p 462 d 59 | seen  29/351 (<=3: 11) mean 3.86 end<=4:  26 | r350 L17 rammed | vs qa_L: -
+  qa_t3 loss   3/ 3/ 0/ 0/ 0 p 462 d 59 | seen  29/350 (<=3: 11) mean 3.86 end<=4:  26 | r349 L18 rammed | vs qa_L: r348 QUEEN
+ladder_slithery_fight_1-seed2-side1
+  qa_L  loss   4/ 5/ 0/ 0/ 0 p 434 d 56 | seen  31/249 (<=3: 12) mean 4.03 end<=4:  17 | r248 L2 own | vs qa_L: -
+  qa_t3 win    4/ 3/ 6/14/51 p 434 d 56 | seen  30/500 (<=3: 12) mean 3.90 end<=4:  17 | lives | vs qa_L: r192 QUEEN
+ladder_slithery_fight_1-seed3-side1
+  qa_L  loss   4/ 2/ 0/ 0/ 0 p 444 d 58 | seen  55/318 (<=3: 26) mean 3.64 end<=4:  37 | r317 L4 rammed | vs qa_L: -
+  qa_t3 loss   4/ 2/ 0/ 0/ 0 p 444 d 58 | seen  55/318 (<=3: 26) mean 3.64 end<=4:  37 | r317 L4 rammed | vs qa_L: identical
+ladder_slithery_fight_1-seed4-side1
+  qa_L  win    3/ 3/18/28/67 p 445 d 51 | seen  63/500 (<=3: 23) mean 3.62 end<=4:  46 | lives | vs qa_L: -
+  qa_t3 win    3/ 3/18/28/53 p 445 d 51 | seen  66/500 (<=3: 27) mean 3.55 end<=4:  47 | lives | vs qa_L: r484 QUEEN
+qa_L {"n": 7, "win": 3, "qalive": 1, "qend": 67, "q100": 26, "q200": 20, "p100": 2554, "d100": 355, "near": 333, "nearsum": 1274, "turns": 2183, "deathsum": 2176, "near3": 127, "end4": 208, "q350": 35, "q400": 28, "meanNear": 3.83}
+qa_t3 {"n": 7, "win": 4, "qalive": 2, "qend": 104, "q100": 26, "q200": 15, "p100": 2554, "d100": 355, "near": 310, "nearsum": 1179, "turns": 2266, "deathsum": 2259, "near3": 119, "end4": 200, "q350": 24, "q400": 42, "meanNear": 3.8}

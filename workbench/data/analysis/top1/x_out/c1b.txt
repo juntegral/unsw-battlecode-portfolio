@@ -1,0 +1,197 @@
+== 1. Take-up per team (in-view strict chances, attackers <= 12), every team with 15+ chances; opponents rated 2000+ or not
+team                           elo games    won  all                attacker 2-3       attacker 4-12     
+SSS                           2327   503    65%  250 of 252 = 99%   155 of 155 = 100%  95 of 97 = 98%    
+Vibing++                      2319   516    64%  271 of 272 = 100%  189 of 189 = 100%  82 of 83 = 99%    
+forgot to mention             2307   652    58%  263 of 462 = 57%   230 of 326 = 71%   33 of 136 = 24%   
+Sponge(Albert and Bob)        2268   182    57%  79 of 80 = 99%     55 of 55 = 100%    24 of 25 = 96%    
+bread first search            2218   102    34%  45 of 46 = 98%     26 of 26 = 100%    19 of 20 = 95%    
+dev test 1 :P                 2200    90    70%  48 of 57 = 84%     42 of 43 = 98%     6 of 14 = 43%     
+horse                         2191   100    50%  49 of 55 = 89%     29 of 34 = 85%     20 of 21 = 95%    
+Cache me outside              2176    53    42%  26 of 31 = 84%     16 of 16 = 100%    10 of 15 = 67%    
+test4                         2174   269    57%  128 of 145 = 88%   80 of 80 = 100%    48 of 65 = 74%    
+WeHaveQuizzes                 2148   199    64%  89 of 89 = 100%    68 of 68 = 100%    21 of 21 = 100%   
+tungtung67                    2139    46    52%  23 of 23 = 100%    19 of 19 = 100%    4 of 4 = 100%     
+𓎼𓃭𓅱𓂋𓇌 𓏏𓅱 𓂋𓄿                   2131   179    37%  68 of 86 = 79%     40 of 40 = 100%    28 of 46 = 61%    
+fandagong                     2131   154    26%  53 of 112 = 47%    42 of 62 = 68%     11 of 50 = 22%    
+cheji bt                      2109     5    20%  2 of 44 = 5%       1 of 5 = 20%       1 of 39 = 3%      
+aAah                          2104    23    74%  12 of 30 = 40%     7 of 7 = 100%      5 of 23 = 22%     
+Team SKKU                     2085    38    37%  15 of 27 = 56%     10 of 17 = 59%     5 of 10 = 50%     
+Settlers of Battlecode        2041   126    19%  33 of 60 = 55%     20 of 23 = 87%     13 of 37 = 35%    
+UnderTheC                     1921    14    64%  8 of 16 = 50%      8 of 15 = 53%      0 of 1 = 0%       
+meow                          1845   662    37%  169 of 843 = 20%   150 of 419 = 36%   19 of 424 = 4%    
+doofenshmirtz good incorpor   1800    10    40%  1 of 63 = 2%       1 of 30 = 3%       0 of 33 = 0%      
+food                          1793    14    50%  5 of 21 = 24%      5 of 8 = 62%       0 of 13 = 0%      
+WeLikCoding                   1788    14    36%  8 of 21 = 38%      6 of 13 = 46%      2 of 8 = 25%      
+avid coders                   1741    39    62%  10 of 72 = 14%     8 of 31 = 26%      2 of 41 = 5%      
+teams: 23  correlation of take-up share with elo: Pearson 0.78, Spearman 0.80
+without meow: Pearson 0.76, Spearman 0.78
+take-up under 60%: [('forgot to mention', 2307, '57%'), ('fandagong', 2131, '47%'), ('cheji bt', 2109, '5%'), ('aAah', 2104, '40%'), ('Team SKKU', 2085, '56%'), ('Settlers of Battle', 2041, '55%'), ('UnderTheC', 1921, '50%'), ('meow', 1845, '20%'), ('doofenshmirtz good', 1800, '2%'), ('food', 1793, '24%'), ('WeLikCoding', 1788, '38%'), ('avid coders', 1741, '14%')]
+
+== 2. First in-view chance of a game taken or not (per game and side; attackers <= 12; study filter: opponent 2000+, no Schooltime)
+
+-- meow, all 401 games: 175 games with a first chance; taken 54, not taken 121
+first chance taken                 n=54   won 38 of 54 = 70%   [80%: 62-78%]  her queen dead at end 100%   wiped-out games 69%   median round 158  median ratio 3.41
+first chance NOT taken             n=121  won 42 of 121 = 35%  [80%: 29-40%]  her queen dead at end 67%    wiped-out games 41%   median round 145  median ratio 0.84
+ ... not taken, rammed her later   n=45   won 29 of 45 = 64%   [80%: 55-73%]  her queen dead at end 100%   wiped-out games 49%   median round 123  median ratio 1.00
+ ... not taken, never rammed her   n=76   won 13 of 76 = 17%   [80%: 12-23%]  her queen dead at end 47%    wiped-out games 37%   median round 170  median ratio 0.74
+   by economy band at the chance (own/enemy total length) and own queen:    taken: won/n   |  not taken: won/n
+   band <0.67   own queen alive    0/1   0%    |   0/7   0%   
+   band <0.67   own queen dead     1/10  10%   |   1/43  2%   
+   band 0.67-1  own queen alive    0/2   0%    |   4/9   44%  
+   band 0.67-1  own queen dead     1/5   20%   |   4/10  40%  
+   band 1-1.5   own queen alive    3/3   100%  |   7/16  44%  
+   band 1-1.5   own queen dead     0/0   -     |   5/8   62%  
+   band >1.5    own queen alive   13/13  100%  |  10/13  77%  
+   band >1.5    own queen dead    20/20  100%  |  11/15  73%  
+   standardised difference in win rate, taken minus not taken, weighted like the NOT-taken games: +11.8 points over 113 games
+   the same weighted like the taken games: +16.5 points
+   rounds 0-99: taken 17 of 21 = 81% | not taken 20 of 40 = 50%
+   rounds 100-199: taken 14 of 20 = 70% | not taken 15 of 33 = 45%
+   rounds 200-299: taken 4 of 7 = 57% | not taken 5 of 26 = 19%
+   rounds 300-499: taken 3 of 6 = 50% | not taken 2 of 22 = 9%
+   (numpy missing, no fit)
+
+-- meow, live bot: 117 games with a first chance; taken 34, not taken 83
+first chance taken                 n=34   won 29 of 34 = 85%   [80%: 76-91%]  her queen dead at end 100%   wiped-out games 79%   median round 158  median ratio 4.38
+first chance NOT taken             n=83   won 30 of 83 = 36%   [80%: 30-43%]  her queen dead at end 65%    wiped-out games 42%   median round 144  median ratio 0.73
+ ... not taken, rammed her later   n=33   won 22 of 33 = 67%   [80%: 56-76%]  her queen dead at end 100%   wiped-out games 45%   median round 123  median ratio 0.96
+ ... not taken, never rammed her   n=50   won 8 of 50 = 16%    [80%: 10-24%]  her queen dead at end 42%    wiped-out games 40%   median round 180  median ratio 0.66
+   by economy band at the chance (own/enemy total length) and own queen:    taken: won/n   |  not taken: won/n
+   band <0.67   own queen alive    0/1   0%    |   0/5   0%   
+   band <0.67   own queen dead     1/3   33%   |   1/32  3%   
+   band 0.67-1  own queen alive    0/1   0%    |   4/8   50%  
+   band 0.67-1  own queen dead     1/2   50%   |   3/5   60%  
+   band 1-1.5   own queen alive    3/3   100%  |   5/11  45%  
+   band 1-1.5   own queen dead     0/0   -     |   4/6   67%  
+   band >1.5    own queen alive   10/10  100%  |   6/8   75%  
+   band >1.5    own queen dead    14/14  100%  |   7/8   88%  
+   standardised difference in win rate, taken minus not taken, weighted like the NOT-taken games: +18.4 points over 77 games
+   the same weighted like the taken games: +17.9 points
+   rounds 0-99: taken 11 of 12 = 92% | not taken 15 of 27 = 56%
+   rounds 100-199: taken 12 of 14 = 86% | not taken 11 of 23 = 48%
+   rounds 200-299: taken 3 of 5 = 60% | not taken 3 of 17 = 18%
+   rounds 300-499: taken 3 of 3 = 100% | not taken 1 of 16 = 6%
+   (numpy missing, no fit)
+
+-- forgot: 308 games with a first chance; taken 204, not taken 104
+first chance taken                 n=204  won 154 of 204 = 75% [80%: 71-79%]  her queen dead at end 100%   wiped-out games 53%   median round 124  median ratio 1.95
+first chance NOT taken             n=104  won 62 of 104 = 60%  [80%: 53-66%]  her queen dead at end 80%    wiped-out games 62%   median round 69  median ratio 1.19
+ ... not taken, rammed her later   n=49   won 37 of 49 = 76%   [80%: 67-82%]  her queen dead at end 100%   wiped-out games 63%   median round 83  median ratio 1.67
+ ... not taken, never rammed her   n=55   won 25 of 55 = 45%   [80%: 37-54%]  her queen dead at end 62%    wiped-out games 60%   median round 49  median ratio 1.00
+   by economy band at the chance (own/enemy total length) and own queen:    taken: won/n   |  not taken: won/n
+   band <0.67   own queen alive    1/9   11%   |   2/10  20%  
+   band <0.67   own queen dead     2/12  17%   |   0/7   0%   
+   band 0.67-1  own queen alive   10/20  50%   |   4/14  29%  
+   band 0.67-1  own queen dead     7/18  39%   |   2/5   40%  
+   band 1-1.5   own queen alive   18/23  78%   |  13/22  59%  
+   band 1-1.5   own queen dead     5/8   62%   |   3/4   75%  
+   band >1.5    own queen alive   78/80  98%   |  32/34  94%  
+   band >1.5    own queen dead    33/34  97%   |   6/8   75%  
+   standardised difference in win rate, taken minus not taken, weighted like the NOT-taken games: +9.5 points over 104 games
+   the same weighted like the taken games: +9.3 points
+   rounds 0-99: taken 54 of 69 = 78% | not taken 41 of 73 = 56%
+   rounds 100-199: taken 70 of 89 = 79% | not taken 9 of 13 = 69%
+   rounds 200-299: taken 14 of 22 = 64% | not taken 3 of 4 = 75%
+   rounds 300-499: taken 16 of 24 = 67% | not taken 9 of 14 = 64%
+   (numpy missing, no fit)
+
+-- Vibing++: 265 games with a first chance; taken 264, not taken 1
+first chance taken                 n=264  won 209 of 264 = 79% [80%: 76-82%]  her queen dead at end 100%   wiped-out games 53%   median round 126  median ratio 1.61
+first chance NOT taken             n=1    won 0 of 1 = 0%      [80%:  0-62%]  her queen dead at end 100%   wiped-out games 0%    median round 456  median ratio 0.27
+ ... not taken, rammed her later   n=1    won 0 of 1 = 0%      [80%:  0-62%]  her queen dead at end 100%   wiped-out games 0%    median round 456  median ratio 0.27
+ ... not taken, never rammed her   n=0
+   by economy band at the chance (own/enemy total length) and own queen:    taken: won/n   |  not taken: won/n
+   band <0.67   own queen alive    3/11  27%   |   0/0   -    
+   band <0.67   own queen dead     2/17  12%   |   0/1   0%   
+   band 0.67-1  own queen alive   13/25  52%   |   0/0   -    
+   band 0.67-1  own queen dead     8/13  62%   |   0/0   -    
+   band 1-1.5   own queen alive   28/39  72%   |   0/0   -    
+   band 1-1.5   own queen dead    18/19  95%   |   0/0   -    
+   band >1.5    own queen alive   73/76  96%   |   0/0   -    
+   band >1.5    own queen dead    64/64  100%  |   0/0   -    
+   standardised difference in win rate, taken minus not taken, weighted like the NOT-taken games: +11.8 points over 1 games
+   the same weighted like the taken games: +11.8 points
+   rounds 0-99: taken 71 of 99 = 72% | not taken 0 of 0
+   rounds 100-199: taken 66 of 84 = 79% | not taken 0 of 0
+   rounds 200-299: taken 38 of 43 = 88% | not taken 0 of 0
+   rounds 300-499: taken 34 of 38 = 89% | not taken 0 of 1 = 0%
+
+-- SSS: 251 games with a first chance; taken 249, not taken 2
+first chance taken                 n=249  won 185 of 249 = 74% [80%: 71-78%]  her queen dead at end 100%   wiped-out games 51%   median round 129  median ratio 1.71
+first chance NOT taken             n=2    won 2 of 2 = 100%    [80%: 55-100%]  her queen dead at end 100%   wiped-out games 0%    median round 421  median ratio 2.23
+ ... not taken, rammed her later   n=1    won 1 of 1 = 100%    [80%: 38-100%]  her queen dead at end 100%   wiped-out games 0%    median round 236  median ratio 1.76
+ ... not taken, never rammed her   n=1    won 1 of 1 = 100%    [80%: 38-100%]  her queen dead at end 100%   wiped-out games 0%    median round 421  median ratio 2.23
+   by economy band at the chance (own/enemy total length) and own queen:    taken: won/n   |  not taken: won/n
+   band <0.67   own queen alive    1/13  8%    |   0/0   -    
+   band <0.67   own queen dead     0/11  0%    |   0/0   -    
+   band 0.67-1  own queen alive   11/24  46%   |   0/0   -    
+   band 0.67-1  own queen dead     4/5   80%   |   0/0   -    
+   band 1-1.5   own queen alive   33/47  70%   |   0/0   -    
+   band 1-1.5   own queen dead     8/9   89%   |   0/0   -    
+   band >1.5    own queen alive  100/108 93%   |   1/1   100% 
+   band >1.5    own queen dead    28/32  88%   |   1/1   100% 
+   standardised difference in win rate, taken minus not taken, weighted like the NOT-taken games: -10.0 points over 2 games
+   the same weighted like the taken games: -8.6 points
+   rounds 0-99: taken 47 of 69 = 68% | not taken 0 of 0
+   rounds 100-199: taken 92 of 123 = 75% | not taken 0 of 0
+   rounds 200-299: taken 30 of 36 = 83% | not taken 1 of 1 = 100%
+   rounds 300-499: taken 16 of 21 = 76% | not taken 1 of 1 = 100%
+
+-- our opponents (on our queen): 0 games with a first chance; taken 0, not taken 0
+
+-- every other team rated 2000+ (not us, not the top three), playing the top three or us: 584 games with a first chance; taken 514, not taken 70
+first chance taken                 n=514  won 279 of 514 = 54% [80%: 51-57%]  her queen dead at end 100%   wiped-out games 48%   median round 115  median ratio 1.13
+first chance NOT taken             n=70   won 29 of 70 = 41%   [80%: 34-49%]  her queen dead at end 71%    wiped-out games 40%   median round 256  median ratio 1.05
+ ... not taken, rammed her later   n=32   won 19 of 32 = 59%   [80%: 48-70%]  her queen dead at end 100%   wiped-out games 41%   median round 165  median ratio 1.21
+ ... not taken, never rammed her   n=38   won 10 of 38 = 26%   [80%: 18-36%]  her queen dead at end 47%    wiped-out games 39%   median round 301  median ratio 1.00
+   by economy band at the chance (own/enemy total length) and own queen:    taken: won/n   |  not taken: won/n
+   band <0.67   own queen alive    5/54  9%    |   2/2   100% 
+   band <0.67   own queen dead     5/42  12%   |   0/14  0%   
+   band 0.67-1  own queen alive   27/79  34%   |   1/6   17%  
+   band 0.67-1  own queen dead    15/33  45%   |   2/9   22%  
+   band 1-1.5   own queen alive   46/84  55%   |   9/19  47%  
+   band 1-1.5   own queen dead    14/34  41%   |   4/7   57%  
+   band >1.5    own queen alive  104/116 90%   |   3/3   100% 
+   band >1.5    own queen dead    63/72  88%   |   8/10  80%  
+   standardised difference in win rate, taken minus not taken, weighted like the NOT-taken games: +5.3 points over 70 games
+   the same weighted like the taken games: -5.5 points
+   rounds 0-99: taken 108 of 227 = 48% | not taken 14 of 25 = 56%
+   rounds 100-199: taken 82 of 147 = 56% | not taken 4 of 9 = 44%
+   rounds 200-299: taken 33 of 56 = 59% | not taken 1 of 5 = 20%
+   rounds 300-499: taken 56 of 84 = 67% | not taken 10 of 31 = 32%
+   (numpy missing, no fit)
+
+== 3. Pooled over every team with variation (meow, forgot, the other 2000+ teams), with a team term
+
+-- pooled: meow + forgot + other 2000+ teams: 1067 games with a first chance; taken 772, not taken 295
+first chance taken                 n=772  won 471 of 772 = 61% [80%: 59-63%]  her queen dead at end 100%   wiped-out games 51%   median round 120  median ratio 1.28
+first chance NOT taken             n=295  won 133 of 295 = 45% [80%: 41-49%]  her queen dead at end 73%    wiped-out games 48%   median round 113  median ratio 1.01
+ ... not taken, rammed her later   n=126  won 85 of 126 = 67%  [80%: 62-73%]  her queen dead at end 100%   wiped-out games 52%   median round 99  median ratio 1.32
+ ... not taken, never rammed her   n=169  won 48 of 169 = 28%  [80%: 24-33%]  her queen dead at end 52%    wiped-out games 45%   median round 131  median ratio 0.91
+   by economy band at the chance (own/enemy total length) and own queen:    taken: won/n   |  not taken: won/n
+   band <0.67   own queen alive    6/64  9%    |   4/19  21%  
+   band <0.67   own queen dead     8/64  12%   |   1/64  2%   
+   band 0.67-1  own queen alive   37/101 37%   |   9/29  31%  
+   band 0.67-1  own queen dead    23/56  41%   |   8/24  33%  
+   band 1-1.5   own queen alive   67/110 61%   |  29/57  51%  
+   band 1-1.5   own queen dead    19/42  45%   |  12/19  63%  
+   band >1.5    own queen alive  195/209 93%   |  45/50  90%  
+   band >1.5    own queen dead   116/126 92%   |  25/33  76%  
+   standardised difference in win rate, taken minus not taken, weighted like the NOT-taken games: +6.0 points over 295 games
+   the same weighted like the taken games: +5.2 points
+   rounds 0-99: taken 179 of 317 = 56% | not taken 75 of 138 = 54%
+   rounds 100-199: taken 166 of 256 = 65% | not taken 28 of 55 = 51%
+   rounds 200-299: taken 51 of 85 = 60% | not taken 9 of 35 = 26%
+   rounds 300-499: taken 75 of 114 = 66% | not taken 21 of 67 = 31%
+   (numpy missing, no fit)
+
+== 4. forgot by the length of the attacker at the first chance (its long dragons mostly pass)
+  attacker 2-3   n=233  taken 178 of 233 = 76% won 165 of 233 = 71% her queen dead at end 96%
+      taken      n=178  won 135 of 178 = 76% median round 118  median ratio 2.00
+      not taken  n=55   won 30 of 55 = 55%   median round 46  median ratio 1.00
+  attacker 4     n=37   taken 10 of 37 = 27%   won 24 of 37 = 65%   her queen dead at end 95%
+      taken      n=10   won 6 of 10 = 60%    median round 253  median ratio 1.04
+      not taken  n=27   won 18 of 27 = 67%   median round 67  median ratio 1.20
+  attacker 5-12  n=38   taken 16 of 38 = 42%   won 27 of 38 = 71%   her queen dead at end 74%
+      taken      n=16   won 13 of 16 = 81%   median round 225  median ratio 2.00
+      not taken  n=22   won 14 of 22 = 64%   median round 368  median ratio 2.30

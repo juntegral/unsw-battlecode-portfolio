@@ -1,0 +1,99 @@
+
+=== meow: 80 queen deaths before round 50 in 401 games (20%)
+map (cells) | games | dead before r50 | stepped in | stayed in | cornered | unseen | boxed by own | boxed by enemy | terrain | own ram | other
+Stripes (288) | 29 | 13 | 2 | 1 | 6 | 0 | 0 | 1 | 1 | 2 | 0
+Portals (512) | 27 | 12 | 0 | 0 | 0 | 0 | 11 | 0 | 1 | 0 | 0
+Prisoners Dilemma (512) | 8 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+Devil (512) | 30 | 23 | 9 | 2 | 7 | 1 | 2 | 0 | 0 | 2 | 0
+Tower Defense (512) | 24 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+weakhold (600) | 27 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+Trophy (625) | 28 | 9 | 3 | 2 | 2 | 1 | 0 | 0 | 0 | 1 | 0
+Queen Of Spades (875) | 28 | 4 | 0 | 1 | 2 | 1 | 0 | 0 | 0 | 0 | 0
+Autarky (972) | 8 | 2 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0
+Default (1024) | 27 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+Trauma (1152) | 27 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+Maze (1152) | 27 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+Slithery Fight (1701) | 29 | 10 | 0 | 0 | 0 | 0 | 10 | 0 | 0 | 0 | 0
+Islands (2240) | 30 | 2 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 0 | 0
+Around UNSW (4096) | 24 | 5 | 1 | 0 | 3 | 1 | 0 | 0 | 0 | 0 | 0
+Australia (4096) | 28 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+all | 401 | 80 | 15 | 7 | 22 | 5 | 23 | 1 | 2 | 5 | 0
+
+patterns (3 or more deaths on one map, same kind, within 3 cells and 4 rounds):
+  Devil ram: cornered: 3 games, rounds 23-27, around [16, 9], her length {2: 1, 4: 2}, runs {'live': 1, 'candidate': 2}, results {'wipe W': 2, 'wipe L': 1}
+     games: 1027967 1068060 1069658
+     last turns of 1069658 : r18 L3 (12, 11) move E +1 | r19 L4 (13, 11) SPLIT | r20 L2 (13, 11) move E | r21 L2 (14, 11) move E +1 | r22 L3 (15, 11) move E +1 | r23 L4 (16, 11) SPLIT | r24 L2 (16, 11) move N +1 | r25 L3 (16, 10) move N +1
+  Devil ram: stepped in: 4 games, rounds 18-18, around [15, 4], her length {2: 4}, runs {'live': 3, 'candidate': 1}, results {'wipe L': 2, 'wipe W': 2}
+     games: 1045200 1053783 1058154 1067914
+     last turns of 1045200 : r11 L2 (11, 7) move E | r12 L2 (12, 7) move N +1 | r13 L3 (12, 6) move N +1 | r14 L4 (12, 5) SPLIT | r15 L2 (12, 5) move N | r16 L2 (12, 4) move E | r17 L2 (13, 4) move E | r18 L2 (14, 4) move E
+  Portals boxed: ally body: 7 games, rounds 9-9, around [4, 7], her length {5: 5, 4: 2}, runs {'live': 5, 'candidate': 2}, results {'r500 L her alive': 3, 'r500 L her dead': 3, 'r500 W her dead': 1}
+     games: 1021859 1023829 1029031 1045387 1052767 1053785 1059085
+     last turns of 1021859 : r2 L3 (29, 10) move W | r3 L3 (28, 10) move N | r4 L3 (28, 9) move N +1 | r5 L4 (4, 6) SPLIT | r6 L2 (4, 6) move E +1 | r7 L3 (5, 6) move S +1 | r8 L4 (5, 7) move W +1 | r9 L5 (4, 7) move N
+  Portals boxed: ally body: 4 games, rounds 9-10, around [27, 8], her length {2: 2, 3: 1, 5: 1}, runs {'candidate': 2, 'live': 2}, results {'r500 L her dead': 3, 'r500 L her alive': 1}
+     games: 1029016 1063682 1068692 990350
+     last turns of 1063682 : r2 L3 (2, 5) move S | r3 L3 (2, 6) move E | r4 L3 (3, 6) move S | r5 L3 (27, 9) move W +1 | r6 L4 (26, 9) SPLIT | r7 L2 (26, 9) move N +1 | r8 L3 (26, 8) move E | r9 L3 (27, 8) move S
+  Slithery Fight boxed: ally body: 9 games, rounds 3-3, around [4, 21], her length {2: 8, 3: 1}, runs {'candidate': 3, 'live': 6}, results {'r500 L her dead': 4, 'r500 L her alive': 1, 'r500 W her dead': 4}
+     games: 1029032 1051357 1052768 1053032 1053786 1059086 1063024 1063252 1063776
+     last turns of 1029032 : r0 L25 (3, 22) SPLIT | r1 L2 (3, 22) move E | r2 L2 (4, 22) move N | r3 L2 (4, 21) move E
+  not in a pattern: 53 deaths: cornered 19, stepped in 11, stayed in 7, own ram 5, unseen 5, boxed by own 3, terrain 2, boxed by enemy 1
+     by map: {'Devil': 16, 'Stripes': 13, 'Trophy': 9, 'Around UNSW': 5, 'Queen Of Spades': 4, 'Islands': 2, 'Autarky': 2, 'Slithery Fight': 1, 'Portals': 1}
+
+=== meow live: 53 queen deaths before round 50 in 275 games (19%)
+map (cells) | games | dead before r50 | stepped in | stayed in | cornered | unseen | boxed by own | boxed by enemy | terrain | own ram | other
+Stripes (288) | 20 | 10 | 2 | 1 | 4 | 0 | 0 | 1 | 0 | 2 | 0
+Portals (512) | 18 | 7 | 0 | 0 | 0 | 0 | 7 | 0 | 0 | 0 | 0
+Prisoners Dilemma (512) | 6 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+Devil (512) | 21 | 14 | 6 | 1 | 4 | 1 | 1 | 0 | 0 | 1 | 0
+Tower Defense (512) | 17 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+weakhold (600) | 18 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+Trophy (625) | 19 | 6 | 1 | 2 | 1 | 1 | 0 | 0 | 0 | 1 | 0
+Queen Of Spades (875) | 19 | 2 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0
+Autarky (972) | 6 | 2 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0
+Default (1024) | 18 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+Trauma (1152) | 18 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+Maze (1152) | 18 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+Slithery Fight (1701) | 20 | 7 | 0 | 0 | 0 | 0 | 7 | 0 | 0 | 0 | 0
+Islands (2240) | 21 | 2 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 0 | 0
+Around UNSW (4096) | 17 | 3 | 1 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 0
+Australia (4096) | 19 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+all | 275 | 53 | 10 | 6 | 13 | 4 | 15 | 1 | 0 | 4 | 0
+
+=== opp: 19 queen deaths before round 50 in 401 games (5%)
+map (cells) | games | dead before r50 | stepped in | stayed in | cornered | unseen | boxed by own | boxed by enemy | terrain | own ram | other
+Stripes (288) | 29 | 3 | 0 | 0 | 1 | 0 | 0 | 1 | 0 | 1 | 0
+Portals (512) | 27 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0
+Prisoners Dilemma (512) | 8 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+Devil (512) | 30 | 6 | 2 | 1 | 3 | 0 | 0 | 0 | 0 | 0 | 0
+Tower Defense (512) | 24 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+weakhold (600) | 27 | 1 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0
+Trophy (625) | 28 | 7 | 1 | 4 | 0 | 0 | 1 | 0 | 0 | 0 | 1
+Queen Of Spades (875) | 28 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+Autarky (972) | 8 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+Default (1024) | 27 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+Trauma (1152) | 27 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+Maze (1152) | 27 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+Slithery Fight (1701) | 29 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+Islands (2240) | 30 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+Around UNSW (4096) | 24 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+Australia (4096) | 28 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+all | 401 | 19 | 3 | 6 | 5 | 0 | 1 | 1 | 1 | 1 | 1
+
+=== top three: 214 queen deaths before round 50 in 1637 games (13%)
+map (cells) | games | dead before r50 | stepped in | stayed in | cornered | unseen | boxed by own | boxed by enemy | terrain | own ram | other
+Stripes (288) | 98 | 25 | 3 | 0 | 10 | 0 | 6 | 3 | 0 | 3 | 0
+Portals (512) | 106 | 3 | 0 | 0 | 0 | 0 | 2 | 0 | 0 | 1 | 0
+Prisoners Dilemma (512) | 104 | 35 | 2 | 4 | 13 | 10 | 1 | 0 | 5 | 0 | 0
+Devil (512) | 114 | 61 | 4 | 5 | 33 | 5 | 11 | 1 | 0 | 2 | 0
+Tower Defense (512) | 97 | 6 | 0 | 0 | 0 | 0 | 6 | 0 | 0 | 0 | 0
+weakhold (600) | 104 | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0
+Trophy (625) | 102 | 35 | 3 | 7 | 18 | 4 | 1 | 1 | 0 | 1 | 0
+Queen Of Spades (875) | 88 | 8 | 2 | 2 | 1 | 0 | 1 | 0 | 0 | 2 | 0
+Autarky (972) | 101 | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0
+Default (1024) | 99 | 11 | 0 | 0 | 5 | 0 | 4 | 0 | 0 | 1 | 1
+Trauma (1152) | 100 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+Maze (1152) | 97 | 1 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0
+Slithery Fight (1701) | 104 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+Islands (2240) | 111 | 6 | 0 | 0 | 4 | 2 | 0 | 0 | 0 | 0 | 0
+Around UNSW (4096) | 101 | 19 | 3 | 3 | 11 | 2 | 0 | 0 | 0 | 0 | 0
+Australia (4096) | 111 | 2 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0
+all | 1637 | 214 | 18 | 21 | 96 | 25 | 32 | 6 | 5 | 10 | 1

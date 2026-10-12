@@ -1,0 +1,12 @@
+# v1.3 HV: fountain-pocket economy per game (v15 vs v13)
+
+Paired games: 32. Net = natural + drops eaten - sprint cost - death lengths over our episodes in fountain pockets (exp/pocket/extract.js). Local proxies: sanity only.
+
+| map | set | games | wins | net / game | natural / game | drops eaten | pocket deaths (length) / game | our pocket drops recovered us / enemy / left | harvest splits · inside turns / game | final longest |
+|---|---|---:|---:|---:|---:|---:|---|---|---|---:|
+| slithery_fight | v15 | 16 | 4 | 28.4 | 160.0 | 136.6 | 122.4 (268.1) | 2159 / 95 / 56 | 89.3 · 180.7 | 29.9 |
+| slithery_fight | v13 | 16 | 2 | 29.9 | 151.1 | 126.0 | 114.3 (247.2) | 1971 / 103 / 52 | 85.0 · 171.7 | 30.1 |
+| slithery_fight_b | v15 | 16 | 3 | 19.7 | 116.2 | 100.6 | 90.0 (196.9) | 1525 / 113 / 72 | 62.8 · 132.5 | 21.7 |
+| slithery_fight_b | v13 | 16 | 1 | 26.5 | 126.4 | 102.8 | 93.3 (202.6) | 1576 / 108 / 64 | 69.0 · 145.3 | 23.6 |
+| all | v15 | 32 | 7 | 24.0 | 138.1 | 118.6 | 106.2 (232.5) | 3684 / 208 / 128 | 76.0 · 156.6 | 25.8 |
+| all | v13 | 32 | 3 | 28.2 | 138.8 | 114.4 | 103.8 (224.9) | 3547 / 211 / 116 | 77.0 · 158.5 | 26.8 |

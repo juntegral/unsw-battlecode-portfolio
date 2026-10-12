@@ -1,0 +1,44 @@
+{
+  "commands": [
+    "python3 -B data/analysis/ladder/losses/counts/count_replays.py",
+    "python3 -B data/analysis/ladder/losses/counts/report_counts.py"
+  ],
+  "hunt.json": {
+    "format": "Array of per-game objects; Q1 and reference groups are disjoint.",
+    "turns_columns": [
+      "round",
+      "their_queen_length_at_turn_start",
+      "our_heads_within_12_path_steps",
+      "our_heads_length_le4_within_12_path_steps",
+      "nearest_our_length_le4_path_distance_from_their_queen_or_null",
+      "freshest_sighting_age_rounds_or_null_if_never",
+      "our_length_le4_dragons_alive"
+    ],
+    "closest_short": "Minimum reachable path distance over all reconstructed states while their queen is alive, entire game; null if no reachable short dragon in any such state.",
+    "closest_short_window": "Same minimum restricted to round >100, our queen dead, their queen alive.",
+    "adjacent_steps": "Successful moves by our heads onto an open-edge or portal neighbour of their living queen; entire game.",
+    "adjacent_short_steps": "Subset of adjacent_steps where the moving dragon had length <=4 immediately before that step.",
+    "adjacent_steps_window": "Subset of adjacent_steps in the round >100 / our queen dead window.",
+    "adjacent_short_steps_window": "Subset of adjacent_short_steps in that window.",
+    "queen_death": "Their queen's death, or null when she survives. length is hers; other_length is collision partner's length, or null if no other dragon was involved. queen_lengths_before records both queen lengths before this death event. Head-on partners die simultaneously despite event serialization.",
+    "our_queen_death": "Our queen's death object in the same format."
+  },
+  "growth.json": {
+    "format": "Array of per-game objects; never_grew or grew, using only shared layouts.",
+    "joint_columns": [
+      "known_pearl_distance_class: none, le6, 7_15, gt15, unreachable",
+      "first_successful_step_reduced_path_distance_to_centre_0_or_1",
+      "enemy_head_in_own_turn_start_view_0_or_1",
+      "no_successful_step_in_turn_0_or_1",
+      "no_meal_turn_count"
+    ],
+    "no_meal": "Counts over all our no-meal turns in rounds 0..100 inclusive. Missing counter keys mean zero. known_unreachable means at least one remembered pearl but no remembered pearl is reachable. gt15 excludes unreachable here; the summary combines both and also gives the unreachable subset.",
+    "net_centre_reduce": "No-meal turns where the last successful step position is closer to the centre than the turn-start position; extra metric separate from the requested first-step metric.",
+    "alive_end_round100": "End-of-round-100 population; zero if we were eliminated before round 100.",
+    "first_meal_round": "Our first pearl consumption over the entire replay; null if none.",
+    "first_split_round": "Our first dragonSplit event over the entire replay; null if none.",
+    "pearls_through50": "Actual consumption counts, natural pearls and death drops, rounds 0..50 inclusive, separately for us and them."
+  },
+  "aggregate.json": "Raw denominators and totals underlying summary.md; null distances are split into no_short and unreachable in mid_age_distances.",
+  "validation.json": "All main games, including those outside the comparison groups; reconstructed alive/total/longest/queen_length for both sides and winner compared to rows.jsonl."
+}

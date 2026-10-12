@@ -1,0 +1,5 @@
+switch: FREECOST2_ON=false (bot-on만 true; FREECOST_ON=false 유지)
+files: versions/v1.8/bot/{params.hpp,plan.hpp,plan.cpp}, versions/v1.8/VERSION.md, exp/freecost2/{bot-base,bot-on,bot-off,spec.json,ANALYZE.md,실행·분석·검증 도구/결과}
+spec: exp/freecost2/spec.json — 160판 (68 on/off짝 + 12 identity키)
+run: python3 exp/freecost2/validate.py && node exp/freecost2/runq.js exp/freecost2/spec.json --jobs 3 --cap 6; 이후 ANALYZE.md 순서대로 분석
+risk: 부분 관측/기존 portal 몸 기억 한계; firstdiv·지급·실판 identity·CPU 미측정; nice10 환경 거부; 게임/네트워크/커밋0

@@ -1,0 +1,84 @@
+=== 1045196 Default 32x32 (1024 cells) run dl-20261004 | B = test4 (2233) vs meow (1853) | winner A by longest after 500 rounds
+queen #1 start (31, 31); enemy queen #0 start (0, 0); path between the starts 6
+DEATH r394 headon L6 at (4, 30) by #141A L3 from (4, 31) with N
+splits (round, before -> keeps + child, child id): r2:4->2+2(#15) r348:4->2+2(#199)
+block | head | from start | len | ate nat/corpse | splits | rounds enemy in view | nearest enemy | cells used | own heads<=4 | units own/enemy
+r  0 | (31, 31)  |   0 |  4 | 0/0 | 1 |  3 | 4 | 15 | 1.0 | 4/4
+r 25 | (30, 30)  |   2 |  2 | 0/0 | 0 | 12 | 3 | 19 | 0.3 | 8/8
+r 50 | (27, 24)  |  11 |  2 | 0/0 | 0 | 13 | 2 | 17 | 0.2 | 8/11
+r 75 | (30, 24)  |   8 |  2 | 0/0 | 0 | 13 | 3 | 24 | 0.2 | 9/18
+r100 | (3, 22)   |  13 |  2 | 0/0 | 0 | 12 | 3 | 22 | 0.1 | 11/21
+r125 | (30, 14)  |  16 |  2 | 0/0 | 0 | 10 | 5 | 24 | 0.3 | 11/21
+r150 | (26, 7)   |  13 |  2 | 0/0 | 0 |  1 | 5 |  9 | 0.7 | 13/22
+r175 | (29, 5)   |   8 |  2 | 0/0 | 0 |  1 | 4 | 17 | 0.2 | 11/26
+r200 | (21, 4)   |  15 |  2 | 0/0 | 0 | 13 | 2 | 18 | 1.1 | 11/26
+r225 | (25, 5)   |  12 |  2 | 0/0 | 0 | 16 | 3 | 15 | 0.7 | 13/37
+r250 | (21, 6)   |  17 |  2 | 1/0 | 0 | 15 | 4 | 25 | 0.6 | 11/38
+r275 | (8, 8)    |  20 |  3 | 0/0 | 0 | 25 | 2 | 23 | 0.7 | 8/34
+r300 | (4, 1)    |   9 |  3 | 0/0 | 0 | 16 | 2 | 25 | 0.4 | 10/32
+r325 | (23, 29)  |  10 |  3 | 1/0 | 1 | 10 | 2 | 14 | 0.2 | 14/27
+r350 | (17, 29)  |  16 |  2 | 3/1 | 0 |  5 | 5 | 22 | 0.6 | 15/24
+r375 | (18, 29)  |  15 |  6 | 1/0 | 0 | 13 | 2 | 20 | 0.2 | 21/26
+moves from round 364:
+   364:E  365:E  366:E  367:E  368:E  369:S!9  370:E  371:E+  372:N+  373:E  374:S  375:E
+   376:EN+!5  377:E!2  378:S!2  379:ESS!2  380:WN!4  381:WW!3  382:W!4  383:W!6  384:WW  385:WW  386:WW  387:W
+   388:S  389:W!7  390:WN  391:WW!5  392:SW!2  393:N!2  394:W!2
+death record: {"round": 394, "reason": "headon", "len": 6, "pos": [4, 30], "own": 0, "killer": {"id": 141, "team": "A", "len": 3, "steps": 1, "nsteps": 1, "start": [4, 31], "born": 0, "dirs": "N", "parent": [121, 237], "cheb_now": 1, "seen_last": 1, "seen_last3": 1}}
+  r387 L6 at (11, 30) move W -> [10, 30] ate 0 | free 2 safe 2 | in reach at start 0, at end 0 | froom 40 tree 0 | N=K E=o(12,30) #1L6s1 S=F(11,31) reach0 room40 W=F(10,30) reach0 room40 | enemies #196L2@(14,2)c4p-1
+  r388 L6 at (10, 30) move S -> [10, 31] ate 0 | free 2 safe 2 | in reach at start 0, at end 0 | froom 40 tree 0 | N=K E=o(11,30) #1L6s1 S=F(10,31) reach0 room40 W=F(9,30) reach0 room40 | enemies #202L2@(11,26)c4p-1
+  r389 L6 at (10, 31) move W -> [9, 31] ate 0 | free 3 safe 3 | in reach at start 0, at end 0 | froom 40 tree 0 | N=o(10,30) #1L6s1 E=F(11,31) reach0 room40 S=F(10,0) reach0 room40 W=F(9,31) reach0 room40 | enemies #196L3@(12,2)c3p7V
+  r390 L6 at (9, 31) move WN -> [8, 30] ate 0 | free 3 safe 3 | in reach at start 0, at end 0 | froom 40 tree 0 | N=F(9,30) reach0 room40 E=o(10,31) #1L6s1 S=F(9,0) reach0 room40 W=F(8,31) reach0 room40 | enemies #158L3@(4,0)c5p6 #209L2@(9,5)c6p6
+  r391 L6 at (8, 30) move WW -> [6, 30] ate 0 | free 2 safe 2 | in reach at start 0, at end 0 | froom 40 tree 0 | N=K E=F(9,30) reach0 room0 S=o(8,31) #1L6s1 W=F(7,30) reach0 room40 | enemies #158L3@(5,0)c3p5V
+  r392 L6 at (6, 30) move SW -> [5, 31] ate 0 | free 2 safe 1 | in reach at start 2, at end 2 | froom 40 tree 0 | N=K E=o(7,30) #1L6s1 S=F(6,31) reach1 room40 W=F(5,30) reach0 room40 | enemies #141L3@(2,31)c4p5 #158L3@(6,0)c2p2V
+  r393 L6 at (5, 31) move N -> [5, 30] ate 0 | free 2 safe 1 | in reach at start 2, at end 0 | froom 40 tree 0 | N=F(5,30) reach0 room40 E=o(6,31) #1L6s1 S=e(5,0) #158L3s2 W=F(4,31) reach1 room40 | enemies #137L2@(1,31)c4p4 #141L3@(3,31)c2p2V #158L3@(7,0)c2p3V
+  r394 L6 at (5, 30) move W -> [4, 30] ate 0 | free 1 safe 0 | in reach at start 2, at end 1 | froom 40 tree 0 | N=K E=o(6,30) #1L6s3 S=o(5,31) #1L6s1 W=F(4,30) reach1 room40 | enemies #137L2@(1,0)c4p6 #141L3@(4,31)c1p2V #158L3@(8,0)c3p5V
+--- board at the start of her turn, round 391
+      3 4 5 6 7 8 910111213
+     + + + + + + + + + + + 
+ 25   . . . . . . . . . . .
+     + + + + + + + + + + + 
+ 26   . . . . . . . . . . a
+     + + + + + + + + + + + 
+ 27   . . . . . . . . . . .
+     +-+-+-+-+-+-+-+-+-+-+-
+ 28   B b B . . . . . . . .
+     + + + + + + + + + + + 
+ 29   . . b . * . . . . * .
+     +-+-+-+-+-+-+-+-+-+-+-
+ 30   . . . . . & . b b . .
+     + + + + + + + + + + + 
+ 31   . . . . . b b b . . .
+     + + + + + + + + + + + 
+  0   . a A . . . . . . . .
+     + + + + + + + + + + + 
+  1   . a . . . . . . . . .
+     +-+-+-+-+ + + +-+-+-+-
+  2   b b B .|b B . B . a .
+     + + + + + + + + + + + 
+  3   . . . .|. . . b b a A
+heads: #1B L6 (8, 30); #158A L3 (5, 0); #179B L2 (8, 2); #196A L3 (13, 3); #205B L3 (10, 2); #210B L3 (5, 2); #220B L2 (5, 28); #232B L2 (3, 28)
+--- board at the start of her turn, round 394
+      0 1 2 3 4 5 6 7 8 910
+     + + + + + + + + + + + 
+ 25   . b . . . . . . . . .
+     + + + + + + + + + + + 
+ 26   . b . . . . . . . . .
+     + + + + + + + + + + + 
+ 27   . . . . . . . . . . .
+     + + +-+-+-+-+-+-+-+-+-
+ 28   . . . . . . b b . . .
+     + + + + + + + + + + + 
+ 29   . B b . . . . B . . .
+     + + +-+-+-+-+-+-+-+-+-
+ 30   . . . . . & b b b . .
+     + + + + + + + + + + + 
+ 31  |. a a a A b b . . . .
+     +-+ + + + + + + + + + 
+  0  |. A . . . . a a A . .
+     + + + + + + + + + + + 
+  1   . . . . . . . . . b B
+     + + +-+-+-+-+-+ + + +-
+  2   . .|. . . . b|. . . .
+     + + + + + + + + + + + 
+  3   . .|B . . B b|. a . .
+heads: #1B L6 (5, 30); #92B L2 (2, 3); #137A L2 (1, 0); #141A L3 (4, 31); #158A L3 (8, 0); #179B L2 (10, 1); #210B L3 (5, 3); #220B L3 (7, 29); #232B L2 (1, 29)

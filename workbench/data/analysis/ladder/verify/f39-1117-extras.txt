@@ -1,0 +1,91 @@
+pairs with 150 or more fresh turns: 31 ; A 8 ; B 17
+games with lone turns from r100 per such pair: least 1, median 3, most 19; pairs with 3 or fewer: 19
+    A pairs: [3, 3, 4, 4, 4, 5, 9, 12]  B pairs: [1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 4, 5]
+
+=== bring by layout (all games of the set, our lone queen, fresh turns from r100) ===
+    Trophy #1                bring 6.74 over   445 fresh turns; deaths  5 in   769 lone turns (6.5 per 1,000)
+    Islands #1               bring 6.06 over  1404 fresh turns; deaths 13 in  1562 lone turns (8.3 per 1,000)
+    Prisoners Dilemma #1     bring 3.78 over    51 fresh turns; deaths  4 in    89 lone turns (44.9 per 1,000)
+    Australia #1             bring 3.27 over  1775 fresh turns; deaths 16 in  2372 lone turns (6.7 per 1,000)
+    Queen Of Spades #1       bring 2.74 over  2230 fresh turns; deaths 14 in  3596 lone turns (3.9 per 1,000)
+    Default #1               bring 2.68 over  2019 fresh turns; deaths 14 in  2854 lone turns (4.9 per 1,000)
+    Around UNSW #1           bring 1.98 over  1366 fresh turns; deaths 16 in  2161 lone turns (7.4 per 1,000)
+    Stripes #1               bring 1.79 over   262 fresh turns; deaths 10 in   285 lone turns (35.1 per 1,000)
+    Prisoners Dilemma #2     bring 1.78 over    50 fresh turns; deaths  2 in    63 lone turns (31.7 per 1,000)
+    Autarky #1               bring 1.71 over  1677 fresh turns; deaths  8 in  2647 lone turns (3.0 per 1,000)
+    Maze #1                  bring 1.20 over  1179 fresh turns; deaths 17 in  1749 lone turns (9.7 per 1,000)
+    Tower Defense #1         bring 0.61 over  1259 fresh turns; deaths 10 in  2145 lone turns (4.7 per 1,000)
+    weakhold #1              bring 0.61 over   612 fresh turns; deaths 10 in  1000 lone turns (10.0 per 1,000)
+    Trauma #1                bring 0.09 over  1397 fresh turns; deaths  2 in  1747 lone turns (1.1 per 1,000)
+    Devil #1                 bring n/a over     0 fresh turns; deaths  3 in    71 lone turns (42.3 per 1,000)
+
+=== each pair: bring seen, and bring expected from the layouts of its fresh turns (layout bring taken from all other pairs) ===
+    CookAgent (716)                main kind A   bring 5.75, layouts alone give 2.61; fresh turns on: Queen Of Spades 307, Autarky 96, Trophy 53
+    err404 (485)                   v31  kind A   bring 5.50, layouts alone give 3.31; fresh turns on: Queen Of Spades 135, Islands 115, Tower Defense 64, Maze 11
+    :3 (217)                       main kind A   bring 5.46, layouts alone give 3.25; fresh turns on: Around UNSW 473, Islands 450
+    doofenshmirtz good incorporate v31  kind A   bring 4.68, layouts alone give 4.35; fresh turns on: Trophy 130, Autarky 89, Islands 89, Default 30
+    calc (20)                      main kind A   bring 4.41, layouts alone give 3.44; fresh turns on: Default 302, Islands 202, Maze 71, Trophy 63
+    ddabap (457)                   v31  kind A   bring 4.29, layouts alone give 3.37; fresh turns on: Default 189, Islands 55, Australia 52
+    Settlers of Battlecode (258)   main kind A   bring 3.98, layouts alone give 2.02; fresh turns on: Queen Of Spades 216, weakhold 67, Stripes 11
+    the uncancelables (899)        v31  kind A   bring 3.60, layouts alone give 3.12; fresh turns on: Australia 239, Default 69, Trophy 9
+    NUSW Battlecode (262)          v31  kind mid bring 2.69, layouts alone give 6.48; fresh turns on: Islands 188, weakhold 3
+    CookAgent (716)                v31  kind mid bring 2.64, layouts alone give 2.22; fresh turns on: Autarky 174, Australia 151, Maze 54
+    byte_force (959)               main kind mid bring 2.47, layouts alone give 2.36; fresh turns on: Queen Of Spades 121, Maze 58, Australia 19
+    calc (20)                      v31  kind mid bring 2.37, layouts alone give 1.80; fresh turns on: Around UNSW 72, Stripes 65, Maze 47, Prisoners Dilemma 26
+    NUSW Battlecode (262)          main kind mid bring 2.31, layouts alone give 2.43; fresh turns on: Default 530, Australia 493, Autarky 288, Trauma 195
+    中国人不准飞😡😡😡😡😡😡😡 (791)            v31  kind mid bring 2.29, layouts alone give 3.14; fresh turns on: Australia 653, Queen Of Spades 442, Autarky 385, Islands 207
+    Maccas (762)                   main kind B   bring 1.46, layouts alone give 2.51; fresh turns on: Default 190, Stripes 67
+    dev test 1 :P (545)            main kind B   bring 1.46, layouts alone give 0.43; fresh turns on: Tower Defense 228
+    we love gru (998)              main kind B   bring 1.41, layouts alone give 3.38; fresh turns on: Queen Of Spades 113, Islands 42, Around UNSW 41
+    Cache me outside (952)         v31  kind B   bring 1.18, layouts alone give 1.27; fresh turns on: Tower Defense 158, Islands 20, Australia 1
+    AllRed (40)                    main kind B   bring 1.09, layouts alone give 1.98; fresh turns on: Autarky 338, Maze 264, Queen Of Spades 222
+    Nitronics (837)                main kind B   bring 0.98, layouts alone give 1.24; fresh turns on: Autarky 116, weakhold 103
+    doofenshmirtz good incorporate main kind B   bring 0.95, layouts alone give 0.86; fresh turns on: Tower Defense 301, Autarky 104
+    food (871)                     v31  kind B   bring 0.68, layouts alone give 1.76; fresh turns on: Around UNSW 104, Maze 63
+    TheActualPlayer (1132)         main kind B   bring 0.66, layouts alone give 1.29; fresh turns on: Maze 164
+    Bot (11)                       main kind B   bring 0.65, layouts alone give 0.50; fresh turns on: weakhold 191, Trauma 26
+    中国人不准飞😡😡😡😡😡😡😡 (791)            main kind B   bring 0.63, layouts alone give 2.26; fresh turns on: Around UNSW 209, Default 196, Trauma 49
+    y (71)                         main kind B   bring 0.45, layouts alone give 0.98; fresh turns on: weakhold 163, Prisoners Dilemma 35, Islands 3
+    Proof by Intimidation (465)    v31  kind B   bring 0.18, layouts alone give 0.76; fresh turns on: Tower Defense 218, Queen Of Spades 4
+    food (871)                     main kind B   bring 0.16, layouts alone give 0.57; fresh turns on: Trauma 180, Maze 120
+    Peanut Butter (104)            v31  kind B   bring 0.12, layouts alone give 0.30; fresh turns on: Trauma 244, Australia 16
+    Vodyanitsa (1052)              v31  kind B   bring 0.03, layouts alone give 0.23; fresh turns on: Trauma 355, Trophy 6
+    Wapowpow (879)                 main kind B   bring 0.01, layouts alone give 0.12; fresh turns on: Trauma 268, Stripes 2
+rank correlation of a pair bring with what its layouts alone give: 0.82 over 31 pairs
+A pairs: bring seen 4.84, layouts alone give 3.23; B pairs: 0.72 and 1.27
+
+=== A against B with the layout held ===
+held by layout (Mantel-Haenszel rate ratio): 1.40; cells with turns of both kinds 11 of 15
+held by layout and code (Mantel-Haenszel rate ratio): 1.19; cells with turns of both kinds 15 of 30
+    Around UNSW #1           A  1 in  581 (1.7) | B  2 in  567 (3.5)
+    Australia #1             A  3 in  426 (7.0) | B  2 in   86 (23.3)
+    Autarky #1               A  1 in  254 (3.9) | B  0 in  805 (0.0)
+    Default #1               A  4 in  820 (4.9) | B  0 in  624 (0.0)
+    Devil #1                 A  0 in    0 (n/a) | B  0 in    0 (n/a)
+    Islands #1               A  6 in  923 (6.5) | B  3 in   65 (46.2)
+    Maze #1                  A  2 in  123 (16.3) | B  3 in  685 (4.4)
+    Prisoners Dilemma #1     A  0 in    0 (n/a) | B  0 in   12 (0.0)
+    Prisoners Dilemma #2     A  0 in    0 (n/a) | B  1 in   35 (28.6)
+    Queen Of Spades #1       A  5 in  801 (6.2) | B  1 in  742 (1.3)
+    Stripes #1               A  2 in   38 (52.6) | B  2 in   92 (21.7)
+    Tower Defense #1         A  1 in  161 (6.2) | B  5 in 1249 (4.0)
+    Trauma #1                A  0 in    0 (n/a) | B  1 in 1434 (0.7)
+    Trophy #1                A  3 in  463 (6.5) | B  0 in   19 (0.0)
+    weakhold #1              A  2 in  249 (8.0) | B  3 in  616 (4.9)
+
+=== does the kind hold in other games of the same pair? random halves, 1,000 times ===
+kind from one random half of a pair games (75 or more fresh turns there), deaths and turns from the other half: pooled over the splits A 5.57 per 1,000, B 4.84, between 4.99
+ratio A over B per split: median 1.17, 5th to 95th percentile 0.73 to 1.75; at or above 1.0 in 700 of 1000 splits; at or above 1.9 in 26
+bring in one half against bring in the other half of the same pair (both halves 75 or more fresh turns): mean rank correlation 0.51 over a mean of 12.6 pairs; same kind in both halves in 0.57 of such pairs
+
+=== the pairs left out by the 150 fresh turns bar ===
+52 pairs: 57 deaths in 4093 lone turns (13.93 per 1,000), fresh turns 2268, bring 2.14; lone games 77
+    left-out pairs with bring 3.0 or more: 9 pairs, 16 deaths in 794 lone turns (20.15 per 1,000)
+    left-out pairs with 1.5 to 3.0: 12 pairs, 23 deaths in 1409 lone turns (16.32 per 1,000)
+    left-out pairs with under 1.5: 15 pairs, 16 deaths in 1870 lone turns (8.56 per 1,000)
+with no bar at all (every pair with a fresh turn): 3.0 or more: 17 pairs, 46 in 5633 (8.17) | 1.5 to 3.0: 18 pairs, 57 in 8556 (6.66) | under 1.5: 32 pairs, 39 in 8901 (4.38)
+
+=== the game as the unit: bring of a game (25 or more fresh turns) and whether she dies in it ===
+    games with bring 3.0 or more: 39 games, she dies in 39 (1.00), 4644 lone turns, 8.40 per 1,000
+    games with 1.5 to 3.0: 32 games, she dies in 21 (0.66), 5171 lone turns, 4.06 per 1,000
+    games with under 1.5: 67 games, she dies in 33 (0.49), 11038 lone turns, 2.99 per 1,000

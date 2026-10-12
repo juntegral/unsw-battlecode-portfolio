@@ -1,0 +1,113 @@
+== 1. splits at round 300 on the other layouts: which game set gives the analyst 48 and 74 games ==
+  main, reached 325, 10 or more of ours at the start of round 300 (the definition): 91 games, ours 0.641 (1885 then 1209), theirs 0.971 (1590 then 1544)
+  main, reached 325, 20 or more at the start of round 300: 66 games, ours 0.637 (1639 then 1044), theirs 0.953 (1130 then 1077)
+  main, reached 325, 20 or more after round 300: 66 games, ours 0.637 (1639 then 1044), theirs 0.953 (1130 then 1077)
+  main, reached 325, 20 or more at the start of round 150 and 10 or more at the start of round 300: 48 games, ours 0.623 (1290 then 804), theirs 0.947 (998 then 945)
+  main, reached 325, 25 or more at the start of round 300: 56 games, ours 0.605 (1328 then 804), theirs 0.951 (918 then 873)
+  main, reached 325, 30 or more at the start of round 300: 49 games, ours 0.594 (1181 then 701), theirs 0.945 (802 then 758)
+  v31, reached 325, 10 or more of ours at the start of round 300 (the definition): 115 games, ours 0.609 (2729 then 1662), theirs 0.903 (2069 then 1868)
+  v31, reached 325, 20 or more at the start of round 300: 96 games, ours 0.606 (2464 then 1493), theirs 0.907 (1664 then 1510)
+  v31, reached 325, 20 or more after round 300: 95 games, ours 0.600 (2445 then 1467), theirs 0.918 (1654 then 1519)
+  v31, reached 325, 20 or more at the start of round 150 and 10 or more at the start of round 300: 74 games, ours 0.580 (2087 then 1211), theirs 0.921 (1396 then 1286)
+  v31, reached 325, 25 or more at the start of round 300: 75 games, ours 0.593 (1919 then 1138), theirs 0.899 (1281 then 1152)
+  v31, reached 325, 30 or more at the start of round 300: 57 games, ours 0.560 (1419 then 795), theirs 0.939 (929 then 872)
+
+== 2. where the step is on each layout: our left rate / turns per bin, main and v31 together; then theirs ==
+  bins: r101-125 r126-150 r151-175 r176-200 r201-250 r251-300 r301-325 r326-350 r351-400 r401-450
+  Around UNSW #1         4096 cells n= 46 ours   0.26/3433 0.25/3128 0.37/2994 0.40/2978 0.39/6839 0.39/7675 0.40/3649 0.38/3725 0.38/8170 0.41/8384
+                                          theirs 0.23/5340 0.24/5257 0.24/5504 0.21/5216 0.23/10879 0.23/10557 0.23/5310 0.23/5448 0.25/10089 0.24/9081
+  Australia #1           4096 cells n= 45 ours   0.22/2917 0.22/3020 0.30/2610 0.29/2296 0.33/3689 0.33/3555 0.31/1885 0.34/1916 0.33/3781 0.37/4284
+                                          theirs 0.17/2956 0.15/3108 0.18/3539 0.16/3686 0.17/6938 0.18/6803 0.18/3231 0.19/3424 0.21/6214 0.21/5849
+  Schooltime #1          2400 cells n= 25 ours   0.29/452 0.33/528 0.37/558 0.39/581 0.42/1039 0.45/656 0.48/329 0.50/391 0.49/773 0.54/812
+                                          theirs 0.18/515 0.22/735 0.24/1034 0.23/1240 0.22/2386 0.26/2740 0.29/1444 0.26/1572 0.26/3114 0.26/2937
+  Schooltime #2          2400 cells n= 21 ours   0.26/1888 0.24/1916 0.48/2187 0.45/2246 0.50/4572 0.51/4396 0.47/2119 0.51/2373 0.50/4771 0.50/4774
+                                          theirs 0.26/2354 0.26/2384 0.23/2235 0.22/2446 0.23/4986 0.22/4865 0.23/2558 0.22/2490 0.24/4808 0.25/4294
+  Islands #1             2240 cells n= 29 ours   0.27/2437 0.31/2431 0.47/1798 0.47/1532 0.51/2655 0.54/2136 0.54/795 0.54/750 0.53/1475 0.56/1354
+                                          theirs 0.25/2896 0.27/3232 0.27/3410 0.28/3577 0.33/6703 0.34/7148 0.35/3540 0.37/3404 0.37/6611 0.36/5397
+  Slithery Fight #1      1701 cells n= 41 ours   0.16/4978 0.19/4759 0.44/4217 0.43/4425 0.44/10209 0.41/10658 0.42/5587 0.40/5290 0.41/10549 0.43/10861
+                                          theirs 0.23/6720 0.23/6769 0.24/6716 0.24/6865 0.24/13303 0.24/13503 0.25/6407 0.24/6548 0.26/12427 0.27/10636
+  Maze #1                1152 cells n= 47 ours   0.15/1782 0.14/2475 0.15/2959 0.16/3500 0.21/7423 0.21/7956 0.50/4249 0.50/4777 0.50/10185 0.51/8862
+                                          theirs 0.18/2272 0.19/2956 0.19/3439 0.19/3898 0.20/6932 0.20/7510 0.21/3787 0.21/3935 0.21/7164 0.20/6227
+  Trauma #1              1152 cells n= 40 ours   0.33/807 0.31/990 0.27/1190 0.23/1372 0.28/2801 0.30/2592 0.46/1224 0.51/1194 0.52/2059 0.63/1559
+                                          theirs 0.25/1084 0.27/1496 0.34/1772 0.30/2109 0.31/4057 0.29/4203 0.29/2051 0.31/2219 0.34/3892 0.36/3478
+  Default #1             1024 cells n= 32 ours   0.17/783 0.15/791 0.18/887 0.16/851 0.15/1638 0.15/1281 0.39/385 0.36/382 0.50/860 0.58/903
+                                          theirs 0.17/509 0.11/436 0.15/540 0.14/492 0.16/1115 0.16/1117 0.13/478 0.15/338 0.16/728 0.23/535
+  Autarky #1              972 cells n= 42 ours   0.05/1655 0.05/1502 0.05/1406 0.05/1450 0.06/2571 0.06/1948 0.26/584 0.25/513 0.26/989 0.32/938
+                                          theirs 0.09/636 0.10/629 0.10/623 0.10/650 0.09/1212 0.12/938 0.08/386 0.09/398 0.09/802 0.12/690
+  Queen Of Spades #1      875 cells n= 47 ours   0.39/1065 0.37/978 0.35/855 0.35/856 0.38/1376 0.36/1251 0.47/637 0.54/449 0.48/687 0.49/460
+                                          theirs 0.36/1128 0.36/1123 0.39/1108 0.38/1000 0.39/1628 0.37/1038 0.40/428 0.36/457 0.34/578 0.38/480
+  Trophy #1               625 cells n= 36 ours   0.22/589 0.20/338 0.20/148 0.15/132 0.31/239 0.14/87 0.42/24 0.37/41 0.47/49 0.44/45
+                                          theirs 0.26/790 0.31/490 0.31/254 0.28/315 0.31/294 0.30/172 0.30/64 0.26/39 0.28/102 0.24/92
+  weakhold #1             600 cells n= 44 ours   0.10/1590 0.09/1507 0.08/1515 0.10/1609 0.14/3303 0.17/3159 0.55/1477 0.58/1527 0.59/2903 0.54/2295
+                                          theirs 0.18/833 0.16/849 0.17/953 0.19/954 0.18/1936 0.20/1955 0.19/959 0.20/1064 0.23/1739 0.22/1448
+  Devil #1                512 cells n= 44 ours   0.17/2269 0.17/2085 0.17/1700 0.17/1161 0.18/1405 0.25/260 0.17/60 0.34/61 0.31/81 0.57/118
+                                          theirs 0.18/1009 0.17/973 0.16/802 0.18/750 0.17/1278 0.18/1210 0.14/386 0.21/283 0.16/436 0.19/95
+  Portals #1              512 cells n= 37 ours   0.24/1731 0.22/1765 0.22/1813 0.21/1925 0.21/3978 0.22/4179 0.30/2133 0.33/2123 0.33/4560 0.52/3915
+                                          theirs 0.27/1720 0.28/1782 0.28/1836 0.30/1883 0.29/3686 0.29/3429 0.29/1816 0.30/1835 0.31/3017 0.29/2453
+  Prisoners Dilemma #1    512 cells n= 23 ours   0.09/107 0.10/81 0.03/34 0.10/21 0.12/41 0.15/33 0.00/8 0.57/21 0.60/103 0.61/79
+                                          theirs 0.13/119 0.11/53 0.05/22 0.00/21 0.03/39 0.00/28 0.00/11 0.07/14 0.09/43 0.02/45
+  Prisoners Dilemma #2    512 cells n= 13 ours   0.05/20 0.00/28 0.02/58 0.03/39 0.08/92 0.19/16 0.00/5 0.43/7 0.75/44 0.69/54
+                                          theirs 0.02/46 0.06/52 0.00/53 0.07/56 0.03/96 0.05/73 0.00/32 0.06/35 0.00/68 0.04/72
+  Tower Defense #1        512 cells n= 41 ours   0.08/26 0.15/103 0.26/151 0.31/146 0.35/387 0.28/385 0.57/191 0.54/242 0.58/487 0.48/639
+                                          theirs 0.28/1336 0.29/1598 0.30/1630 0.33/1697 0.28/3554 0.28/3493 0.28/1839 0.30/1788 0.30/3444 0.31/3094
+  Stripes #1              288 cells n= 37 ours   0.51/368 0.53/308 0.47/158 0.46/142 0.42/322 0.40/83 1.00/4 1.00/4 0.83/6 -
+                                          theirs 0.20/480 0.18/540 0.20/464 0.21/212 0.22/221 0.17/76 0.31/26 0.21/43 0.09/47 -
+  per code on the two doubtful layouts and their neighbours:
+  Schooltime #1      main n= 14 ours 0.29/256 0.32/314 0.37/315 0.40/341 0.44/640 0.45/391 0.48/193 0.46/267 0.48/460 0.46/483 | games still running at round 150: 14, at 300: 14; our dragons after round 150 (median) 21, after 300 16
+  Schooltime #1      v31  n= 11 ours 0.29/196 0.34/214 0.36/243 0.38/240 0.40/399 0.44/265 0.49/136 0.59/124 0.51/313 0.64/329 | games still running at round 150: 11, at 300: 11; our dragons after round 150 (median) 19, after 300 8
+  Schooltime #2      main n=  8 ours 0.24/710 0.24/687 0.43/780 0.39/798 0.43/1450 0.48/1479 0.46/708 0.52/729 0.44/1485 0.45/1711 | games still running at round 150: 8, at 300: 8; our dragons after round 150 (median) 60, after 300 53
+  Schooltime #2      v31  n= 13 ours 0.28/1178 0.24/1229 0.50/1407 0.49/1448 0.54/3122 0.52/2917 0.48/1411 0.51/1644 0.52/3286 0.53/3063 | games still running at round 150: 13, at 300: 13; our dragons after round 150 (median) 55, after 300 44
+  Devil #1           main n= 16 ours 0.19/901 0.19/1001 0.19/764 0.16/548 0.16/912 0.28/204 0.19/42 0.34/58 0.32/78 0.57/118 | games still running at round 150: 10, at 300: 1; our dragons after round 150 (median) 41, after 300 15
+  Devil #1           v31  n= 28 ours 0.16/1368 0.16/1084 0.15/936 0.17/613 0.20/493 0.14/56 0.11/18 0.33/3 0.00/3 - | games still running at round 150: 16, at 300: 4; our dragons after round 150 (median) 38, after 300 4
+  Portals #1         main n= 10 ours 0.29/473 0.24/521 0.22/548 0.24/592 0.19/1133 0.21/1080 0.36/514 0.34/497 0.35/1080 0.54/1124 | games still running at round 150: 10, at 300: 10; our dragons after round 150 (median) 21, after 300 25
+  Portals #1         v31  n= 27 ours 0.23/1258 0.21/1244 0.22/1265 0.19/1333 0.22/2845 0.22/3099 0.29/1619 0.32/1626 0.32/3480 0.51/2791 | games still running at round 150: 27, at 300: 27; our dragons after round 150 (median) 21, after 300 24
+  Tower Defense #1   main n= 19 ours 0.12/16 0.12/85 0.30/129 0.40/92 0.46/212 0.26/260 0.54/109 0.53/148 0.57/260 0.51/351 | games still running at round 150: 19, at 300: 17; our dragons after round 150 (median) 3, after 300 4
+  Tower Defense #1   v31  n= 22 ours 0.00/10 0.28/18 0.05/22 0.15/54 0.21/175 0.30/125 0.60/82 0.56/94 0.59/227 0.43/288 | games still running at round 150: 22, at 300: 20; our dragons after round 150 (median) 3, after 300 5
+  Schooltime #1 single rounds 146-156 (25 games), ours: 0.18/17 0.40/20 0.22/27 0.48/25 0.47/17 0.52/25 0.46/24 0.38/29 0.54/13 0.35/20 0.31/26
+  Devil #1 single rounds 296-306 (4 games), ours: 0.00/3 0.00/2 0.00/3 0.00/2 0.33/3 0.17/6 0.00/5 0.00/4 1.00/1 0.00/2 0.00/2
+  Devil #1 single rounds 146-156 (24 games), ours: 0.16/94 0.16/87 0.19/74 0.17/69 0.15/68 0.16/83 0.22/86 0.22/88 0.21/85 0.18/79 0.11/101
+  Maze #1 single rounds 296-306 (47 games), ours: 0.19/141 0.22/168 0.21/151 0.21/172 0.21/164 0.46/158 0.41/174 0.35/130 0.41/160 0.53/158 0.46/147
+  Trauma #1 single rounds 296-306 (40 games), ours: 0.26/54 0.26/57 0.24/50 0.34/47 0.36/58 0.66/59 0.35/51 0.41/49 0.47/45 0.47/51 0.39/38
+
+== 3. per opponent, big layouts, our left rate r126-150 then r151-175 and theirs (opponents with 3 or more big games) ==
+  main: 14 opponents with 3 or more big games; rise smallest 0.048, largest 0.279; opponents with a rise under 0.05: 1
+     smallest: Knight Capital (226) n=4 ours 0.31/133 to 0.36/185, theirs 0.15/274 to 0.17/358
+     smallest: calc (20) n=3 ours 0.27/237 to 0.36/237, theirs 0.24/454 to 0.24/485
+     smallest: 中国人不准飞😡😡😡😡😡😡😡 (791) n=3 ours 0.25/259 to 0.38/229, theirs 0.20/335 to 0.17/338
+     smallest: :3 (217) n=7 ours 0.28/465 to 0.41/364, theirs 0.31/852 to 0.34/773
+     named: Knight Capital (226) n=4 ours 0.31/133 to 0.36/185, theirs 0.15/274 to 0.17/358
+     named: calc (20) n=3 ours 0.27/237 to 0.36/237, theirs 0.24/454 to 0.24/485
+     all opponents with 20 or more such turns in both windows: our left rate rose against 27 of 29
+  v31: 21 opponents with 3 or more big games; rise smallest 0.052, largest 0.325; opponents with a rise under 0.05: 0
+     smallest: Proof by Intimidation (465) n=3 ours 0.23/316 to 0.29/311, theirs 0.27/291 to 0.28/287
+     smallest: Delusion Tax (375) n=4 ours 0.26/233 to 0.33/168, theirs 0.28/430 to 0.25/410
+     smallest: NUSW Battlecode (262) n=5 ours 0.23/418 to 0.31/359, theirs 0.13/475 to 0.12/519
+     smallest: err404 (485) n=4 ours 0.30/330 to 0.39/257, theirs 0.34/415 to 0.38/410
+     all opponents with 20 or more such turns in both windows: our left rate rose against 39 of 39
+
+== 4. own length against a longer own dragon within 9 (big layouts, ours): left rate / turns ==
+  main r101-150: length 1-2: near 0.229 of 3670, far 0.174 of 625, none longer nan of 0, all 0.221 of 4295; length 3: near 0.317 of 1826, far 0.287 of 1708, none longer 0.258 of 524, all 0.297 of 4058; length 4-5: near 0.125 of 1226, far 0.188 of 847, none longer 0.312 of 638, all 0.188 of 2711; length 6+: near 0.123 of 593, far 0.264 of 515, none longer 0.167 of 755, all 0.180 of 1863
+  main r151-199: length 1-2: near 0.472 of 3397, far 0.293 of 410, none longer nan of 0, all 0.453 of 3807; length 3: near 0.489 of 1958, far 0.373 of 1268, none longer 0.492 of 65, all 0.444 of 3291; length 4-5: near 0.372 of 1023, far 0.315 of 962, none longer 0.313 of 134, all 0.343 of 2119; length 6+: near 0.319 of 474, far 0.343 of 1076, none longer 0.270 of 722, all 0.315 of 2272
+  v31 r101-150: length 1-2: near 0.241 of 5707, far 0.172 of 801, none longer nan of 0, all 0.233 of 6508; length 3: near 0.282 of 2642, far 0.254 of 2416, none longer 0.258 of 796, all 0.267 of 5854; length 4-5: near 0.130 of 1743, far 0.216 of 1268, none longer 0.353 of 914, all 0.210 of 3925; length 6+: near 0.088 of 930, far 0.235 of 753, none longer 0.178 of 990, all 0.163 of 2673
+  v31 r151-199: length 1-2: near 0.456 of 5077, far 0.282 of 556, none longer nan of 0, all 0.439 of 5633; length 3: near 0.506 of 2998, far 0.356 of 1774, none longer 0.482 of 114, all 0.451 of 4886; length 4-5: near 0.392 of 1478, far 0.354 of 1128, none longer 0.265 of 147, all 0.370 of 2753; length 6+: near 0.317 of 791, far 0.349 of 1452, none longer 0.294 of 885, all 0.325 of 3128
+  other layouts, ours, by own length, r251-300 then r301-350:
+  main r251-300: length 1-2 0.222 of 4295, length 3 0.220 of 3761, length 4-5 0.191 of 1731, length 6+ 0.106 of 217
+  main r301-350: length 1-2 0.477 of 4337, length 3 0.459 of 3439, length 4-5 0.465 of 1274, length 6+ 0.353 of 547
+  v31 r251-300: length 1-2 0.202 of 5642, length 3 0.220 of 4989, length 4-5 0.199 of 2353, length 6+ 0.145 of 242
+  v31 r301-350: length 1-2 0.462 of 5813, length 3 0.449 of 4414, length 4-5 0.423 of 1700, length 6+ 0.357 of 798
+
+== 5. the 40 games of other builds: is there a build without the step ==
+  bot 18355: 15 games (4 big, 11 other), won 5; big left rate ours r126-150 0.23/368, r151-175 0.35/280; other layouts r251-300 0.26/776, r301-350 0.45/410
+  bot 17997: 10 games (3 big, 7 other), won 5; big left rate ours r126-150 0.40/182, r151-175 0.46/153; other layouts r251-300 0.24/525, r301-350 0.46/611
+  bot 18425: 5 games (4 big, 1 other), won 2; big left rate ours r126-150 0.25/294, r151-175 0.44/259; other layouts r251-300 -, r301-350 -
+  bot 18467: 5 games (1 big, 4 other), won 3; big left rate ours r126-150 0.36/81, r151-175 0.66/44; other layouts r251-300 0.12/174, r301-350 0.31/169
+  bot 18537: 5 games (1 big, 4 other), won 2; big left rate ours r126-150 0.30/104, r151-175 0.33/97; other layouts r251-300 0.29/246, r301-350 0.53/276
+
+== 6. cost bar again, medians within layout and code ==
+  big layouts, median within layout and code: lower halves won 42 of 93, upper halves 37 of 93; Fisher p = 0.55
+  median within layout only (from the numbers file): lower 44 of 95, upper 38 of 95; Fisher p = 0.46
+  other layouts at 300 (pearls 301-400 / 201-300), median within layout and code: lower halves won 40 of 89, upper halves 62 of 89; Fisher p = 0.00
+  main big, 88 games reaching round 300: our share of all length after round 150 0.479, after round 300 0.385; our longest longer / theirs longer after round 150: 29 / 48, after round 300: 47 / 36; our share of dragons alive 0.487 then 0.400
+  main other, 96 games reaching round 450: our share of all length after round 300 0.466, after round 450 0.457; our longest longer / theirs longer after round 300: 36 / 39, after round 450: 62 / 31; our share of dragons alive 0.479 then 0.425
+  v31 big, 118 games reaching round 300: our share of all length after round 150 0.475, after round 300 0.367; our longest longer / theirs longer after round 150: 47 / 58, after round 300: 60 / 54; our share of dragons alive 0.481 then 0.400
+  v31 other, 128 games reaching round 450: our share of all length after round 300 0.476, after round 450 0.440; our longest longer / theirs longer after round 300: 36 / 61, after round 450: 67 / 58; our share of dragons alive 0.496 then 0.472

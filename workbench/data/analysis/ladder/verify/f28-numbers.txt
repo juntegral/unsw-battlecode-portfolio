@@ -1,0 +1,146 @@
+games loaded 705 errors 0
+
+===== main free layouts, games 217 battles 51
+ cases where the path from the reference to her differs from the path from her to it: 0
+ pooled    : ours 400 of 2171 (0.184), theirs 279 of 1844 (0.151), gap +0.033, Fisher p 0.00601 (died in her turn: ours 2, theirs 3)
+ distance 4: ours 316 of 1025 (0.308), theirs 163 of 969 (0.168), gap +0.140, Fisher p 2.31e-13 (died in her turn: ours 0, theirs 1)
+ distance 3: ours 84 of 1146 (0.073), theirs 116 of 875 (0.133), gap -0.059, Fisher p 1.18e-05 (died in her turn: ours 2, theirs 2)
+ with a legal first step that does not come closer, pooled: ours 288 of 2041 (0.141), theirs 178 of 1727 (0.103), gap +0.038, Fisher p 0.000416 (died in her turn: ours 0, theirs 1)
+   the same, distance 4: ours 257 of 961 (0.267), theirs 116 of 916 (0.127), gap +0.141, Fisher p 1.38e-14 (died in her turn: ours 0, theirs 1)
+   the same, distance 3: ours 31 of 1080 (0.029), theirs 62 of 811 (0.076), gap -0.048, Fisher p 2.68e-06 (died in her turn: ours 0, theirs 0)
+ a real choice (a legal first step that comes closer and one that does not), distance 4: ours 257 of 779 (0.330), theirs 116 of 695 (0.167), gap +0.163, Fisher p 4.41e-13 (died in her turn: ours 0, theirs 0)
+   the same, distance 3: ours 31 of 825 (0.038), theirs 62 of 640 (0.097), gap -0.059, Fisher p 4.46e-06 (died in her turn: ours 0, theirs 0)
+ no legal first step at all (nl = 0), distance 4: ours 2 theirs 0
+ by rating band, pooled then distance 4
+   1700-1899  games  77: ours 118 of 671 (0.176), theirs 68 of 574 (0.118), gap +0.057, Fisher p 0.00518 (died in her turn: ours 1, theirs 1)
+   1700-1899       d 4: ours 83 of 284 (0.292), theirs 39 of 291 (0.134), gap +0.158, Fisher p 3.76e-06 (died in her turn: ours 0, theirs 1)
+   1900-2099  games 123: ours 249 of 1316 (0.189), theirs 181 of 1051 (0.172), gap +0.017, Fisher p 0.308 (died in her turn: ours 1, theirs 2)
+   1900-2099       d 4: ours 205 of 666 (0.308), theirs 109 of 609 (0.179), gap +0.129, Fisher p 8.75e-08 (died in her turn: ours 0, theirs 0)
+   2100+      games  17: ours 33 of 184 (0.179), theirs 30 of 219 (0.137), gap +0.042, Fisher p 0.272 (died in her turn: ours 0, theirs 0)
+   2100+           d 4: ours 28 of 75 (0.373), theirs 15 of 69 (0.217), gap +0.156, Fisher p 0.0465 (died in her turn: ours 0, theirs 0)
+ games with 8 or more cases a side, pooled: ours higher 23, lower 18, equal 2, sign p 0.533
+ games with 8 or more cases a side, distance 4: ours higher 15, lower 3, equal 2, sign p 0.00754
+ games with 4 or more cases a side, distance 4: ours higher 28, lower 5, equal 3, sign p 6.62e-05
+ resampling (2000), gap ours - theirs: 2.5 pct, 97.5 pct, share at or below zero
+   distance 4                               games (0.0941, 0.1874, 0.0) | battles (0.0913, 0.1895, 0.0) | opponents (0.0849, 0.1932, 0.0) | layouts (0.0867, 0.1913, 0.0)
+   distance 3                               games (-0.1036, -0.016, 0.9985) | battles (-0.109, -0.0166, 0.9965) | opponents (-0.1176, -0.0148, 0.9975) | layouts (-0.0991, -0.024, 0.9995)
+   pooled                                   games (-0.0029, 0.0696, 0.036) | battles (-0.0096, 0.0717, 0.069) | opponents (-0.0102, 0.0759, 0.0665) | layouts (-0.0088, 0.0644, 0.0585)
+   distance 4 with a non-closing legal step games (0.0999, 0.1818, 0.0) | battles (0.0974, 0.1836, 0.0) | opponents (0.089, 0.1894, 0.0) | layouts (0.0903, 0.1889, 0.0)
+ runs of consecutive turns at distance 4: ours 418 runs, closer on the first turn 167 of 418 (0.400), closer on any turn 230 of 418 (0.550) | theirs 310 runs, first 94 of 310 (0.303), any 150 of 310 (0.484)
+     first turn of the run: Fisher p 0.0079; any turn: p 0.0845
+ runs of consecutive turns at distance 3: ours 311 runs, closer on the first turn 36 of 311 (0.116), closer on any turn 64 of 311 (0.206) | theirs 267 runs, first 47 of 267 (0.176), any 111 of 267 (0.416)
+     first turn of the run: Fisher p 0.0434; any turn: p 4.55e-08
+ per layout, distance 4
+   Around UNSW #1         games  20: ours 17 of 63 (0.270), theirs 7 of 37 (0.189), gap +0.081, Fisher p 0.469 (died in her turn: ours 0, theirs 0)
+   Australia #1           games  13: ours 36 of 115 (0.313), theirs 11 of 97 (0.113), gap +0.200, Fisher p 0.000472 (died in her turn: ours 0, theirs 0)
+   Autarky #1             games  12: ours 23 of 100 (0.230), theirs 16 of 72 (0.222), gap +0.008, Fisher p 1 (died in her turn: ours 0, theirs 1)
+   Default #1             games  15: ours 56 of 264 (0.212), theirs 28 of 269 (0.104), gap +0.108, Fisher p 0.000802 (died in her turn: ours 0, theirs 0)
+   Devil #1               games  15: ours 9 of 17 (0.529), theirs 12 of 66 (0.182), gap +0.348, Fisher p 0.00947 (died in her turn: ours 0, theirs 0)
+   Islands #1             games  10: ours 42 of 117 (0.359), theirs 17 of 65 (0.262), gap +0.097, Fisher p 0.191 (died in her turn: ours 0, theirs 0)
+   Maze #1                games  21: ours 2 of 16 (0.125), theirs 6 of 10 (0.600), gap -0.475, Fisher p 0.0256 (died in her turn: ours 0, theirs 0)
+   Portals #1             games  10: ours 0 of 0 (-), theirs 0 of 0 (-) (died in her turn: ours 0, theirs 0)
+   Prisoners Dilemma #1   games   3: ours 0 of 0 (-), theirs 4 of 24 (0.167) (died in her turn: ours 0, theirs 0)
+   Prisoners Dilemma #2   games   6: ours 3 of 4 (0.750), theirs 10 of 48 (0.208), gap +0.542, Fisher p 0.0438 (died in her turn: ours 0, theirs 0)
+   Queen Of Spades #1     games  18: ours 64 of 150 (0.427), theirs 32 of 162 (0.198), gap +0.229, Fisher p 1.51e-05 (died in her turn: ours 0, theirs 0)
+   Stripes #1             games  10: ours 15 of 54 (0.278), theirs 9 of 48 (0.188), gap +0.090, Fisher p 0.352 (died in her turn: ours 0, theirs 0)
+   Tower Defense #1       games  16: ours 2 of 19 (0.105), theirs 0 of 0 (-) (died in her turn: ours 0, theirs 0)
+   Trauma #1              games  23: ours 0 of 0 (-), theirs 1 of 4 (0.250) (died in her turn: ours 0, theirs 0)
+   Trophy #1              games  10: ours 17 of 56 (0.304), theirs 5 of 57 (0.088), gap +0.216, Fisher p 0.00437 (died in her turn: ours 0, theirs 0)
+   weakhold #1            games  15: ours 30 of 50 (0.600), theirs 5 of 10 (0.500), gap +0.100, Fisher p 0.728 (died in her turn: ours 0, theirs 0)
+   layouts with 10 or more cases a side: ours higher on 10, not higher on 1
+ distance 4 without weakhold, Devil and Prisoners Dilemma #1: ours 277 of 958 (0.289), theirs 142 of 869 (0.163), gap +0.126, Fisher p 1.74e-10 (died in her turn: ours 0, theirs 1)
+ distance 4, one layout left out: gap from +0.126 (without Queen Of Spades #1) to +0.153 (without Autarky #1)
+ distance 4, one opponent left out (30): gap from +0.126 (without Computers (112)) to +0.154 (without ComTamSuonNuong (193))
+ distance 4 without the three games with most of our closer turns ([[19, 40], [14, 35], [13, 46]]): ours 270 of 904 (0.299), theirs 156 of 918 (0.170), gap +0.129, Fisher p 7.91e-11 (died in her turn: ours 0, theirs 1)
+ by evening, distance 4
+   10-06: ours 316 of 1025 (0.308), theirs 163 of 969 (0.168), gap +0.140, Fisher p 2.31e-13 (died in her turn: ours 0, theirs 1)
+ distance 4, turns in which she ate no pearl: ours 306 of 995 (0.308), theirs 160 of 949 (0.169), gap +0.139, Fisher p 5.72e-13 (died in her turn: ours 0, theirs 1)
+ distance 4, turns in which she ate a pearl : ours 10 of 30 (0.333), theirs 3 of 20 (0.150), gap +0.183, Fisher p 0.197 (died in her turn: ours 0, theirs 0)
+ distance 4, the reference is not a queen: ours 301 of 986 (0.305), theirs 159 of 937 (0.170), gap +0.136, Fisher p 2.84e-12 (died in her turn: ours 0, theirs 1)
+ distance 4, the reference is a queen    : ours 15 of 39 (0.385), theirs 4 of 32 (0.125), gap +0.260, Fisher p 0.0166 (died in her turn: ours 0, theirs 0)
+ distance 4, reference length 1-2: ours 241 of 735 (0.328), theirs 97 of 582 (0.167), gap +0.161, Fisher p 1.94e-11 (died in her turn: ours 0, theirs 0)
+ distance 4, reference length 3-4: ours 71 of 273 (0.260), theirs 66 of 385 (0.171), gap +0.089, Fisher p 0.0064 (died in her turn: ours 0, theirs 1)
+ distance 4, reference length 5-6: ours 4 of 17 (0.235), theirs 0 of 2 (0.000), gap +0.235, Fisher p 1 (died in her turn: ours 0, theirs 0)
+ distance 4, queen length 1-3: ours 316 of 1009 (0.313), theirs 133 of 803 (0.166), gap +0.148, Fisher p 3.54e-13 (died in her turn: ours 0, theirs 1)
+ distance 4, queen length 4-6: ours 0 of 16 (0.000), theirs 26 of 141 (0.184), gap -0.184, Fisher p 0.0757 (died in her turn: ours 0, theirs 0)
+ distance 4, queen length 7-999: ours 0 of 0 (-), theirs 4 of 25 (0.160) (died in her turn: ours 0, theirs 0)
+ distance 4, rounds 0-50: ours 85 of 347 (0.245), theirs 46 of 280 (0.164), gap +0.081, Fisher p 0.0137 (died in her turn: ours 0, theirs 0)
+ distance 4, rounds 51-100: ours 141 of 364 (0.387), theirs 46 of 344 (0.134), gap +0.254, Fisher p 1.27e-14 (died in her turn: ours 0, theirs 1)
+ distance 4, rounds 101-200: ours 90 of 314 (0.287), theirs 71 of 345 (0.206), gap +0.081, Fisher p 0.0182 (died in her turn: ours 0, theirs 0)
+ distance 4 ours: path after her turn [(3, 316), (4, 19), (5, 690)]; steps in the turn [(0, 15), (1, 1006), (2, 4)]
+ distance 4 theirs: path after her turn [(3, 163), (4, 12), (5, 779), (6, 12), (7, 3)]; steps in the turn [(0, 7), (1, 936), (2, 17), (3, 9)]
+ queen turns in rounds 0-200 (all, for scale): ours 29043, theirs 30124; distance-4 cases per 100 queen turns: ours 3.53, theirs 3.22
+
+===== v31 free layouts, games 362 battles 82
+ cases where the path from the reference to her differs from the path from her to it: 0
+ pooled    : ours 860 of 3502 (0.246), theirs 448 of 2920 (0.153), gap +0.092, Fisher p 4.34e-20 (died in her turn: ours 3, theirs 6)
+ distance 4: ours 590 of 1894 (0.312), theirs 220 of 1357 (0.162), gap +0.149, Fisher p 7.12e-23 (died in her turn: ours 1, theirs 1)
+ distance 3: ours 270 of 1608 (0.168), theirs 228 of 1563 (0.146), gap +0.022, Fisher p 0.0969 (died in her turn: ours 2, theirs 5)
+ with a legal first step that does not come closer, pooled: ours 653 of 3285 (0.199), theirs 247 of 2695 (0.092), gap +0.107, Fisher p 8.1e-32 (died in her turn: ours 0, theirs 0)
+   the same, distance 4: ours 467 of 1767 (0.264), theirs 129 of 1258 (0.103), gap +0.162, Fisher p 6.77e-30 (died in her turn: ours 0, theirs 0)
+   the same, distance 3: ours 186 of 1518 (0.123), theirs 118 of 1437 (0.082), gap +0.040, Fisher p 0.00034 (died in her turn: ours 0, theirs 0)
+ a real choice (a legal first step that comes closer and one that does not), distance 4: ours 467 of 1469 (0.318), theirs 129 of 951 (0.136), gap +0.182, Fisher p 1.68e-25 (died in her turn: ours 0, theirs 0)
+   the same, distance 3: ours 186 of 1220 (0.152), theirs 118 of 1211 (0.097), gap +0.055, Fisher p 4.91e-05 (died in her turn: ours 0, theirs 0)
+ no legal first step at all (nl = 0), distance 4: ours 1 theirs 2
+ by rating band, pooled then distance 4
+   <1700      games  13: ours 52 of 185 (0.281), theirs 20 of 98 (0.204), gap +0.077, Fisher p 0.197 (died in her turn: ours 0, theirs 0)
+   <1700           d 4: ours 36 of 77 (0.468), theirs 4 of 23 (0.174), gap +0.294, Fisher p 0.0148 (died in her turn: ours 0, theirs 0)
+   1700-1899  games 186: ours 461 of 2029 (0.227), theirs 238 of 1575 (0.151), gap +0.076, Fisher p 9.05e-09 (died in her turn: ours 2, theirs 3)
+   1700-1899       d 4: ours 300 of 1033 (0.290), theirs 128 of 751 (0.170), gap +0.120, Fisher p 3.32e-09 (died in her turn: ours 0, theirs 1)
+   1900-2099  games 120: ours 255 of 923 (0.276), theirs 123 of 826 (0.149), gap +0.127, Fisher p 8.43e-11 (died in her turn: ours 1, theirs 2)
+   1900-2099       d 4: ours 183 of 556 (0.329), theirs 55 of 386 (0.142), gap +0.187, Fisher p 3.85e-11 (died in her turn: ours 1, theirs 0)
+   2100+      games  43: ours 92 of 365 (0.252), theirs 67 of 421 (0.159), gap +0.093, Fisher p 0.00134 (died in her turn: ours 0, theirs 1)
+   2100+           d 4: ours 71 of 228 (0.311), theirs 33 of 197 (0.168), gap +0.144, Fisher p 0.000658 (died in her turn: ours 0, theirs 0)
+ games with 8 or more cases a side, pooled: ours higher 50, lower 16, equal 2, sign p 3.33e-05
+ games with 8 or more cases a side, distance 4: ours higher 20, lower 4, equal 0, sign p 0.00154
+ games with 4 or more cases a side, distance 4: ours higher 44, lower 11, equal 1, sign p 8.7e-06
+ resampling (2000), gap ours - theirs: 2.5 pct, 97.5 pct, share at or below zero
+   distance 4                               games (0.1088, 0.1925, 0.0) | battles (0.1036, 0.1954, 0.0) | opponents (0.1029, 0.2012, 0.0) | layouts (0.12, 0.2018, 0.0)
+   distance 3                               games (-0.0118, 0.0548, 0.091) | battles (-0.0143, 0.0566, 0.113) | opponents (-0.0181, 0.057, 0.144) | layouts (-0.0028, 0.0834, 0.055)
+   pooled                                   games (0.0647, 0.1191, 0.0) | battles (0.0604, 0.1213, 0.0) | opponents (0.0677, 0.1133, 0.0) | layouts (0.0688, 0.1409, 0.0)
+   distance 4 with a non-closing legal step games (0.1259, 0.1979, 0.0) | battles (0.128, 0.1994, 0.0) | opponents (0.1245, 0.21, 0.0) | layouts (0.136, 0.2052, 0.0)
+ runs of consecutive turns at distance 4: ours 758 runs, closer on the first turn 294 of 758 (0.388), closer on any turn 407 of 758 (0.537) | theirs 476 runs, first 135 of 476 (0.284), any 195 of 476 (0.410)
+     first turn of the run: Fisher p 0.000179; any turn: p 1.47e-05
+ runs of consecutive turns at distance 3: ours 546 runs, closer on the first turn 139 of 546 (0.255), closer on any turn 204 of 546 (0.374) | theirs 460 runs, first 104 of 460 (0.226), any 203 of 460 (0.441)
+     first turn of the run: Fisher p 0.301; any turn: p 0.0333
+ per layout, distance 4
+   Around UNSW #1         games  26: ours 56 of 183 (0.306), theirs 17 of 95 (0.179), gap +0.127, Fisher p 0.0224 (died in her turn: ours 0, theirs 0)
+   Australia #1           games  28: ours 86 of 286 (0.301), theirs 12 of 124 (0.097), gap +0.204, Fisher p 4.22e-06 (died in her turn: ours 1, theirs 0)
+   Autarky #1             games  28: ours 47 of 211 (0.223), theirs 30 of 201 (0.149), gap +0.073, Fisher p 0.059 (died in her turn: ours 0, theirs 0)
+   Default #1             games  15: ours 69 of 309 (0.223), theirs 28 of 222 (0.126), gap +0.097, Fisher p 0.00438 (died in her turn: ours 0, theirs 0)
+   Devil #1               games  28: ours 23 of 43 (0.535), theirs 24 of 111 (0.216), gap +0.319, Fisher p 0.000196 (died in her turn: ours 0, theirs 0)
+   Islands #1             games  17: ours 38 of 143 (0.266), theirs 17 of 93 (0.183), gap +0.083, Fisher p 0.158 (died in her turn: ours 0, theirs 1)
+   Maze #1                games  24: ours 11 of 21 (0.524), theirs 4 of 17 (0.235), gap +0.289, Fisher p 0.1 (died in her turn: ours 0, theirs 0)
+   Portals #1             games  27: ours 0 of 0 (-), theirs 0 of 0 (-) (died in her turn: ours 0, theirs 0)
+   Prisoners Dilemma #1   games  18: ours 33 of 62 (0.532), theirs 25 of 105 (0.238), gap +0.294, Fisher p 0.000187 (died in her turn: ours 0, theirs 0)
+   Prisoners Dilemma #2   games   7: ours 7 of 11 (0.636), theirs 1 of 46 (0.022), gap +0.615, Fisher p 9.29e-06 (died in her turn: ours 0, theirs 0)
+   Queen Of Spades #1     games  26: ours 81 of 283 (0.286), theirs 21 of 115 (0.183), gap +0.104, Fisher p 0.0321 (died in her turn: ours 0, theirs 0)
+   Stripes #1             games  26: ours 47 of 133 (0.353), theirs 19 of 88 (0.216), gap +0.137, Fisher p 0.0354 (died in her turn: ours 0, theirs 0)
+   Tower Defense #1       games  22: ours 23 of 38 (0.605), theirs 0 of 0 (-) (died in her turn: ours 0, theirs 0)
+   Trauma #1              games  17: ours 0 of 0 (-), theirs 0 of 0 (-) (died in her turn: ours 0, theirs 0)
+   Trophy #1              games  24: ours 52 of 146 (0.356), theirs 14 of 108 (0.130), gap +0.227, Fisher p 4.31e-05 (died in her turn: ours 0, theirs 0)
+   weakhold #1            games  29: ours 17 of 25 (0.680), theirs 8 of 32 (0.250), gap +0.430, Fisher p 0.00151 (died in her turn: ours 0, theirs 0)
+   layouts with 10 or more cases a side: ours higher on 13, not higher on 0
+ distance 4 without weakhold, Devil and Prisoners Dilemma #1: ours 517 of 1764 (0.293), theirs 163 of 1109 (0.147), gap +0.146, Fisher p 4.96e-20 (died in her turn: ours 1, theirs 1)
+ distance 4, one layout left out: gap from +0.143 (without Prisoners Dilemma #2) to +0.160 (without Default #1)
+ distance 4, one opponent left out (43): gap from +0.135 (without err404 (485)) to +0.163 (without doofenshmirtz good incorporated (1015))
+ distance 4 without the three games with most of our closer turns ([[24, 64], [16, 33], [15, 24]]): ours 535 of 1773 (0.302), theirs 214 of 1312 (0.163), gap +0.139, Fisher p 2.16e-19 (died in her turn: ours 1, theirs 1)
+ by evening, distance 4
+   10-05: ours 228 of 593 (0.384), theirs 84 of 443 (0.190), gap +0.195, Fisher p 9.01e-12 (died in her turn: ours 0, theirs 1)
+   10-06: ours 362 of 1301 (0.278), theirs 136 of 914 (0.149), gap +0.129, Fisher p 3.4e-13 (died in her turn: ours 1, theirs 0)
+ distance 4, turns in which she ate no pearl: ours 555 of 1826 (0.304), theirs 210 of 1317 (0.159), gap +0.144, Fisher p 3.42e-21 (died in her turn: ours 1, theirs 1)
+ distance 4, turns in which she ate a pearl : ours 35 of 68 (0.515), theirs 10 of 40 (0.250), gap +0.265, Fisher p 0.00868 (died in her turn: ours 0, theirs 0)
+ distance 4, the reference is not a queen: ours 538 of 1778 (0.303), theirs 196 of 1290 (0.152), gap +0.151, Fisher p 1.15e-22 (died in her turn: ours 1, theirs 1)
+ distance 4, the reference is a queen    : ours 52 of 116 (0.448), theirs 24 of 67 (0.358), gap +0.090, Fisher p 0.277 (died in her turn: ours 0, theirs 0)
+ distance 4, reference length 1-2: ours 402 of 1227 (0.328), theirs 141 of 905 (0.156), gap +0.172, Fisher p 5.01e-20 (died in her turn: ours 0, theirs 1)
+ distance 4, reference length 3-4: ours 182 of 648 (0.281), theirs 76 of 441 (0.172), gap +0.109, Fisher p 3.35e-05 (died in her turn: ours 1, theirs 0)
+ distance 4, reference length 5-6: ours 6 of 19 (0.316), theirs 3 of 11 (0.273), gap +0.043, Fisher p 1 (died in her turn: ours 0, theirs 0)
+ distance 4, queen length 1-3: ours 581 of 1846 (0.315), theirs 186 of 1128 (0.165), gap +0.150, Fisher p 2.25e-20 (died in her turn: ours 1, theirs 1)
+ distance 4, queen length 4-6: ours 7 of 36 (0.194), theirs 24 of 162 (0.148), gap +0.046, Fisher p 0.458 (died in her turn: ours 0, theirs 0)
+ distance 4, queen length 7-999: ours 2 of 12 (0.167), theirs 10 of 67 (0.149), gap +0.017, Fisher p 1 (died in her turn: ours 0, theirs 0)
+ distance 4, rounds 0-50: ours 149 of 499 (0.299), theirs 73 of 394 (0.185), gap +0.113, Fisher p 9.53e-05 (died in her turn: ours 0, theirs 0)
+ distance 4, rounds 51-100: ours 193 of 589 (0.328), theirs 74 of 505 (0.147), gap +0.181, Fisher p 1.9e-12 (died in her turn: ours 0, theirs 0)
+ distance 4, rounds 101-200: ours 248 of 806 (0.308), theirs 73 of 458 (0.159), gap +0.148, Fisher p 2.82e-09 (died in her turn: ours 1, theirs 1)
+ distance 4 ours: path after her turn [(3, 590), (4, 26), (5, 1273), (6, 4), (7, 1)]; steps in the turn [(0, 25), (1, 1862), (2, 5), (3, 2)]
+ distance 4 theirs: path after her turn [(2, 5), (3, 215), (4, 37), (5, 1056), (6, 41), (7, 3)]; steps in the turn [(0, 17), (1, 1266), (2, 62), (3, 8), (4, 4)]
+ queen turns in rounds 0-200 (all, for scale): ours 43792, theirs 46697; distance-4 cases per 100 queen turns: ours 4.33, theirs 2.91

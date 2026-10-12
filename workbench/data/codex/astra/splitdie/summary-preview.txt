@@ -1,0 +1,1164 @@
+{
+  "원래 패배 54판": {
+    "games": 54,
+    "sides": {
+      "us": {
+        "turns": 66247,
+        "splits": 2279,
+        "deaths": 1766,
+        "causes": {
+          "wall": 779,
+          "self": 333,
+          "rams": 129,
+          "mate_body": 128,
+          "rammed": 355,
+          "mate_head": 34,
+          "enemy_body": 8
+        },
+        "post": 786,
+        "boxed": 722,
+        "affected_splits": 760,
+        "boundary_splits": 16
+      },
+      "them": {
+        "turns": 115691,
+        "splits": 4045,
+        "deaths": 2547,
+        "causes": {
+          "wall": 723,
+          "self": 324,
+          "rammed": 129,
+          "enemy_body": 7,
+          "rams": 355,
+          "no action": 695,
+          "mate_body": 209,
+          "mate_head": 78,
+          "illegal split": 27
+        },
+        "post": 1199,
+        "boxed": 1101,
+        "affected_splits": 1151,
+        "boundary_splits": 49
+      }
+    },
+    "all_post": {
+      "n": 786,
+      "roles": {
+        "parent": 625,
+        "child": 161
+      },
+      "lengths": {
+        "2": 763,
+        "3": 22,
+        "4": 1
+      },
+      "closure": {
+        "분열 시 이미 막힘": 693,
+        "사망 시 빈 출구 있음": 49,
+        "움직인 뒤 다른 자리에서 막힘": 37,
+        "나중 봉쇄:mate": 7
+      },
+      "kind": {
+        "비여왕 머리 봉쇄 탈출": 618,
+        "비여왕 일반 성장 (자식 크기로 식별)": 87,
+        "비여왕 일반 성장/주머니 탈출 구별 불가": 65,
+        "여왕 대기/안전/기타 분열 (분기 미확인)": 16
+      },
+      "already_closed_visible": 477,
+      "body": 1596,
+      "drops": 809,
+      "recovered5": {
+        "pending": 517,
+        "us": 273,
+        "them": 19
+      },
+      "recovered_end": {
+        "us": 756,
+        "them": 49,
+        "nobody": 4
+      },
+      "child_eaten": 185,
+      "own5_child": 73,
+      "queen_eaten": 6,
+      "censored5": 0
+    },
+    "boxed": {
+      "n": 722,
+      "roles": {
+        "parent": 596,
+        "child": 126
+      },
+      "lengths": {
+        "2": 711,
+        "3": 11
+      },
+      "closure": {
+        "분열 시 이미 막힘": 680,
+        "움직인 뒤 다른 자리에서 막힘": 35,
+        "나중 봉쇄:mate": 7
+      },
+      "kind": {
+        "비여왕 머리 봉쇄 탈출": 603,
+        "비여왕 일반 성장 (자식 크기로 식별)": 78,
+        "비여왕 일반 성장/주머니 탈출 구별 불가": 29,
+        "여왕 대기/안전/기타 분열 (분기 미확인)": 12
+      },
+      "already_closed_visible": 475,
+      "body": 1455,
+      "drops": 733,
+      "recovered5": {
+        "pending": 493,
+        "us": 239,
+        "them": 1
+      },
+      "recovered_end": {
+        "us": 707,
+        "them": 23,
+        "nobody": 3
+      },
+      "child_eaten": 174,
+      "own5_child": 62,
+      "queen_eaten": 5,
+      "censored5": 0
+    },
+    "filters": {
+      "눈앞에서 자식 봉쇄 확정": {
+        "delayed_splits": 0,
+        "near_deaths": 0,
+        "boxed_deaths": 0,
+        "child_deaths": 0,
+        "split_without_child_death": 0
+      },
+      "자식 출구 0 (전지적)": {
+        "delayed_splits": 100,
+        "near_deaths": 78,
+        "boxed_deaths": 76,
+        "child_deaths": 76,
+        "split_without_child_death": 24
+      },
+      "관측된 빈 자식 출구 없으면 보류": {
+        "delayed_splits": 441,
+        "near_deaths": 104,
+        "boxed_deaths": 97,
+        "child_deaths": 98,
+        "split_without_child_death": 343
+      }
+    }
+  },
+  "원래 전체 73판": {
+    "games": 73,
+    "sides": {
+      "us": {
+        "turns": 106622,
+        "splits": 3637,
+        "deaths": 2645,
+        "causes": {
+          "wall": 1157,
+          "self": 514,
+          "rams": 227,
+          "mate_body": 223,
+          "rammed": 467,
+          "mate_head": 44,
+          "enemy_body": 13
+        },
+        "post": 1112,
+        "boxed": 1009,
+        "affected_splits": 1081,
+        "boundary_splits": 28
+      },
+      "them": {
+        "turns": 142644,
+        "splits": 4902,
+        "deaths": 3223,
+        "causes": {
+          "wall": 842,
+          "self": 358,
+          "rammed": 227,
+          "enemy_body": 9,
+          "rams": 467,
+          "no action": 934,
+          "mate_body": 257,
+          "mate_head": 102,
+          "illegal split": 27
+        },
+        "post": 1420,
+        "boxed": 1283,
+        "affected_splits": 1366,
+        "boundary_splits": 59
+      }
+    },
+    "all_post": {
+      "n": 1112,
+      "roles": {
+        "parent": 846,
+        "child": 266
+      },
+      "lengths": {
+        "2": 1077,
+        "3": 33,
+        "11": 1,
+        "4": 1
+      },
+      "closure": {
+        "분열 시 이미 막힘": 947,
+        "사망 시 빈 출구 있음": 85,
+        "움직인 뒤 다른 자리에서 막힘": 61,
+        "나중 봉쇄:mate": 19
+      },
+      "kind": {
+        "비여왕 머리 봉쇄 탈출": 841,
+        "비여왕 일반 성장 (자식 크기로 식별)": 115,
+        "비여왕 일반 성장/주머니 탈출 구별 불가": 136,
+        "여왕 대기/안전/기타 분열 (분기 미확인)": 19,
+        "비여왕 큰 자식 탈출": 1
+      },
+      "already_closed_visible": 647,
+      "body": 2268,
+      "drops": 1151,
+      "recovered5": {
+        "pending": 689,
+        "us": 438,
+        "them": 24
+      },
+      "recovered_end": {
+        "us": 1077,
+        "them": 59,
+        "nobody": 15
+      },
+      "child_eaten": 229,
+      "own5_child": 89,
+      "queen_eaten": 8,
+      "censored5": 6
+    },
+    "boxed": {
+      "n": 1009,
+      "roles": {
+        "parent": 805,
+        "child": 204
+      },
+      "lengths": {
+        "2": 988,
+        "3": 21
+      },
+      "closure": {
+        "분열 시 이미 막힘": 932,
+        "움직인 뒤 다른 자리에서 막힘": 58,
+        "나중 봉쇄:mate": 19
+      },
+      "kind": {
+        "비여왕 머리 봉쇄 탈출": 824,
+        "비여왕 일반 성장 (자식 크기로 식별)": 104,
+        "비여왕 일반 성장/주머니 탈출 구별 불가": 65,
+        "여왕 대기/안전/기타 분열 (분기 미확인)": 15,
+        "비여왕 큰 자식 탈출": 1
+      },
+      "already_closed_visible": 644,
+      "body": 2039,
+      "drops": 1030,
+      "recovered5": {
+        "pending": 652,
+        "us": 377,
+        "them": 1
+      },
+      "recovered_end": {
+        "us": 991,
+        "them": 27,
+        "nobody": 12
+      },
+      "child_eaten": 217,
+      "own5_child": 77,
+      "queen_eaten": 7,
+      "censored5": 5
+    },
+    "filters": {
+      "눈앞에서 자식 봉쇄 확정": {
+        "delayed_splits": 0,
+        "near_deaths": 0,
+        "boxed_deaths": 0,
+        "child_deaths": 0,
+        "split_without_child_death": 0
+      },
+      "자식 출구 0 (전지적)": {
+        "delayed_splits": 144,
+        "near_deaths": 108,
+        "boxed_deaths": 106,
+        "child_deaths": 106,
+        "split_without_child_death": 38
+      },
+      "관측된 빈 자식 출구 없으면 보류": {
+        "delayed_splits": 711,
+        "near_deaths": 151,
+        "boxed_deaths": 139,
+        "child_deaths": 143,
+        "split_without_child_death": 568
+      }
+    }
+  },
+  "WHQ one3–5": {
+    "games": 30,
+    "sides": {
+      "us": {
+        "turns": 50536,
+        "splits": 1802,
+        "deaths": 1266,
+        "causes": {
+          "wall": 580,
+          "self": 260,
+          "rams": 104,
+          "mate_body": 118,
+          "rammed": 176,
+          "mate_head": 26,
+          "enemy_body": 2
+        },
+        "post": 512,
+        "boxed": 463,
+        "affected_splits": 495,
+        "boundary_splits": 14
+      },
+      "them": {
+        "turns": 58272,
+        "splits": 2072,
+        "deaths": 1397,
+        "causes": {
+          "wall": 633,
+          "self": 102,
+          "rammed": 104,
+          "enemy_body": 6,
+          "rams": 176,
+          "no action": 251,
+          "mate_body": 93,
+          "mate_head": 32
+        },
+        "post": 636,
+        "boxed": 574,
+        "affected_splits": 611,
+        "boundary_splits": 20
+      }
+    },
+    "all_post": {
+      "n": 512,
+      "roles": {
+        "parent": 381,
+        "child": 131
+      },
+      "lengths": {
+        "2": 496,
+        "3": 15,
+        "4": 1
+      },
+      "closure": {
+        "분열 시 이미 막힘": 426,
+        "사망 시 빈 출구 있음": 40,
+        "움직인 뒤 다른 자리에서 막힘": 35,
+        "나중 봉쇄:mate": 11
+      },
+      "kind": {
+        "비여왕 머리 봉쇄 탈출": 382,
+        "비여왕 일반 성장 (자식 크기로 식별)": 50,
+        "비여왕 일반 성장/주머니 탈출 구별 불가": 72,
+        "여왕 대기/안전/기타 분열 (분기 미확인)": 7,
+        "비여왕 큰 자식 탈출": 1
+      },
+      "already_closed_visible": 278,
+      "body": 1041,
+      "drops": 528,
+      "recovered5": {
+        "pending": 304,
+        "us": 211,
+        "them": 13
+      },
+      "recovered_end": {
+        "us": 501,
+        "them": 22,
+        "nobody": 5
+      },
+      "child_eaten": 98,
+      "own5_child": 37,
+      "queen_eaten": 2,
+      "censored5": 3
+    },
+    "boxed": {
+      "n": 463,
+      "roles": {
+        "parent": 359,
+        "child": 104
+      },
+      "lengths": {
+        "2": 453,
+        "3": 10
+      },
+      "closure": {
+        "분열 시 이미 막힘": 418,
+        "움직인 뒤 다른 자리에서 막힘": 34,
+        "나중 봉쇄:mate": 11
+      },
+      "kind": {
+        "비여왕 머리 봉쇄 탈출": 373,
+        "비여왕 일반 성장 (자식 크기로 식별)": 43,
+        "비여왕 일반 성장/주머니 탈출 구별 불가": 41,
+        "여왕 대기/안전/기타 분열 (분기 미확인)": 5,
+        "비여왕 큰 자식 탈출": 1
+      },
+      "already_closed_visible": 277,
+      "body": 936,
+      "drops": 473,
+      "recovered5": {
+        "pending": 290,
+        "us": 182,
+        "them": 1
+      },
+      "recovered_end": {
+        "us": 461,
+        "them": 9,
+        "nobody": 3
+      },
+      "child_eaten": 95,
+      "own5_child": 34,
+      "queen_eaten": 2,
+      "censored5": 2
+    },
+    "filters": {
+      "눈앞에서 자식 봉쇄 확정": {
+        "delayed_splits": 0,
+        "near_deaths": 0,
+        "boxed_deaths": 0,
+        "child_deaths": 0,
+        "split_without_child_death": 0
+      },
+      "자식 출구 0 (전지적)": {
+        "delayed_splits": 69,
+        "near_deaths": 47,
+        "boxed_deaths": 47,
+        "child_deaths": 46,
+        "split_without_child_death": 23
+      },
+      "관측된 빈 자식 출구 없으면 보류": {
+        "delayed_splits": 375,
+        "near_deaths": 72,
+        "boxed_deaths": 65,
+        "child_deaths": 66,
+        "split_without_child_death": 309
+      }
+    }
+  },
+  "Cache one5-c1": {
+    "games": 10,
+    "sides": {
+      "us": {
+        "turns": 16575,
+        "splits": 559,
+        "deaths": 409,
+        "causes": {
+          "wall": 164,
+          "self": 80,
+          "rams": 25,
+          "rammed": 96,
+          "enemy_body": 2,
+          "mate_head": 4,
+          "mate_body": 38
+        },
+        "post": 166,
+        "boxed": 147,
+        "affected_splits": 161,
+        "boundary_splits": 6
+      },
+      "them": {
+        "turns": 23368,
+        "splits": 886,
+        "deaths": 626,
+        "causes": {
+          "enemy_body": 2,
+          "mate_body": 107,
+          "rammed": 25,
+          "self": 365,
+          "rams": 96,
+          "wall": 31
+        },
+        "post": 285,
+        "boxed": 274,
+        "affected_splits": 270,
+        "boundary_splits": 10
+      }
+    },
+    "all_post": {
+      "n": 166,
+      "roles": {
+        "parent": 130,
+        "child": 36
+      },
+      "lengths": {
+        "2": 159,
+        "3": 6,
+        "4": 1
+      },
+      "closure": {
+        "분열 시 이미 막힘": 134,
+        "움직인 뒤 다른 자리에서 막힘": 12,
+        "사망 시 빈 출구 있음": 17,
+        "나중 봉쇄:mate": 2,
+        "나중 봉쇄:enemy": 1
+      },
+      "kind": {
+        "비여왕 머리 봉쇄 탈출": 125,
+        "비여왕 일반 성장 (자식 크기로 식별)": 15,
+        "여왕 대기/안전/기타 분열 (분기 미확인)": 2,
+        "비여왕 일반 성장/주머니 탈출 구별 불가": 24
+      },
+      "already_closed_visible": 88,
+      "body": 340,
+      "drops": 173,
+      "recovered5": {
+        "pending": 107,
+        "us": 60,
+        "them": 6
+      },
+      "recovered_end": {
+        "us": 160,
+        "them": 13
+      },
+      "child_eaten": 41,
+      "own5_child": 21,
+      "queen_eaten": 1,
+      "censored5": 0
+    },
+    "boxed": {
+      "n": 147,
+      "roles": {
+        "parent": 121,
+        "child": 26
+      },
+      "lengths": {
+        "2": 145,
+        "3": 2
+      },
+      "closure": {
+        "분열 시 이미 막힘": 133,
+        "움직인 뒤 다른 자리에서 막힘": 11,
+        "나중 봉쇄:mate": 2,
+        "나중 봉쇄:enemy": 1
+      },
+      "kind": {
+        "비여왕 머리 봉쇄 탈출": 123,
+        "비여왕 일반 성장 (자식 크기로 식별)": 15,
+        "비여왕 일반 성장/주머니 탈출 구별 불가": 9
+      },
+      "already_closed_visible": 88,
+      "body": 296,
+      "drops": 149,
+      "recovered5": {
+        "pending": 99,
+        "us": 49,
+        "them": 1
+      },
+      "recovered_end": {
+        "us": 146,
+        "them": 3
+      },
+      "child_eaten": 36,
+      "own5_child": 16,
+      "queen_eaten": 0,
+      "censored5": 0
+    },
+    "filters": {
+      "눈앞에서 자식 봉쇄 확정": {
+        "delayed_splits": 0,
+        "near_deaths": 0,
+        "boxed_deaths": 0,
+        "child_deaths": 0,
+        "split_without_child_death": 0
+      },
+      "자식 출구 0 (전지적)": {
+        "delayed_splits": 18,
+        "near_deaths": 13,
+        "boxed_deaths": 13,
+        "child_deaths": 13,
+        "split_without_child_death": 5
+      },
+      "관측된 빈 자식 출구 없으면 보류": {
+        "delayed_splits": 107,
+        "near_deaths": 22,
+        "boxed_deaths": 21,
+        "child_deaths": 20,
+        "split_without_child_death": 87
+      }
+    }
+  },
+  "dev one3–5 (보조)": {
+    "games": 30,
+    "sides": {
+      "us": {
+        "turns": 36920,
+        "splits": 1194,
+        "deaths": 919,
+        "causes": {
+          "wall": 369,
+          "self": 171,
+          "rammed": 223,
+          "rams": 71,
+          "mate_body": 66,
+          "enemy_body": 7,
+          "mate_head": 12
+        },
+        "post": 376,
+        "boxed": 346,
+        "affected_splits": 369,
+        "boundary_splits": 9
+      },
+      "them": {
+        "turns": 68343,
+        "splits": 2318,
+        "deaths": 1454,
+        "causes": {
+          "no action": 671,
+          "rams": 223,
+          "rammed": 71,
+          "illegal split": 27,
+          "self": 241,
+          "enemy_body": 2,
+          "mate_body": 144,
+          "wall": 13,
+          "mate_head": 62
+        },
+        "post": 595,
+        "boxed": 536,
+        "affected_splits": 574,
+        "boundary_splits": 35
+      }
+    },
+    "all_post": {
+      "n": 376,
+      "roles": {
+        "parent": 291,
+        "child": 85
+      },
+      "lengths": {
+        "2": 364,
+        "3": 11,
+        "11": 1
+      },
+      "closure": {
+        "분열 시 이미 막힘": 330,
+        "나중 봉쇄:mate": 5,
+        "사망 시 빈 출구 있음": 24,
+        "움직인 뒤 다른 자리에서 막힘": 17
+      },
+      "kind": {
+        "비여왕 머리 봉쇄 탈출": 283,
+        "비여왕 일반 성장/주머니 탈출 구별 불가": 43,
+        "여왕 대기/안전/기타 분열 (분기 미확인)": 7,
+        "비여왕 일반 성장 (자식 크기로 식별)": 43
+      },
+      "already_closed_visible": 224,
+      "body": 772,
+      "drops": 392,
+      "recovered5": {
+        "pending": 262,
+        "us": 123,
+        "them": 7
+      },
+      "recovered_end": {
+        "us": 368,
+        "them": 22,
+        "nobody": 2
+      },
+      "child_eaten": 81,
+      "own5_child": 31,
+      "queen_eaten": 3,
+      "censored5": 0
+    },
+    "boxed": {
+      "n": 346,
+      "roles": {
+        "parent": 275,
+        "child": 71
+      },
+      "lengths": {
+        "2": 339,
+        "3": 7
+      },
+      "closure": {
+        "분열 시 이미 막힘": 325,
+        "나중 봉쇄:mate": 5,
+        "움직인 뒤 다른 자리에서 막힘": 16
+      },
+      "kind": {
+        "비여왕 머리 봉쇄 탈출": 279,
+        "비여왕 일반 성장/주머니 탈출 구별 불가": 19,
+        "여왕 대기/안전/기타 분열 (분기 미확인)": 6,
+        "비여왕 일반 성장 (자식 크기로 식별)": 42
+      },
+      "already_closed_visible": 223,
+      "body": 699,
+      "drops": 353,
+      "recovered5": {
+        "pending": 245,
+        "us": 108
+      },
+      "recovered_end": {
+        "us": 343,
+        "them": 9,
+        "nobody": 1
+      },
+      "child_eaten": 74,
+      "own5_child": 24,
+      "queen_eaten": 3,
+      "censored5": 0
+    },
+    "filters": {
+      "눈앞에서 자식 봉쇄 확정": {
+        "delayed_splits": 0,
+        "near_deaths": 0,
+        "boxed_deaths": 0,
+        "child_deaths": 0,
+        "split_without_child_death": 0
+      },
+      "자식 출구 0 (전지적)": {
+        "delayed_splits": 53,
+        "near_deaths": 44,
+        "boxed_deaths": 42,
+        "child_deaths": 43,
+        "split_without_child_death": 10
+      },
+      "관측된 빈 자식 출구 없으면 보류": {
+        "delayed_splits": 225,
+        "near_deaths": 55,
+        "boxed_deaths": 53,
+        "child_deaths": 54,
+        "split_without_child_death": 171
+      }
+    }
+  },
+  "랭크 기타": {
+    "games": 13,
+    "sides": {
+      "us": {
+        "turns": 19166,
+        "splits": 641,
+        "deaths": 460,
+        "causes": {
+          "rams": 52,
+          "rammed": 68,
+          "mate_body": 39,
+          "self": 83,
+          "enemy_body": 4,
+          "wall": 208,
+          "mate_head": 6
+        },
+        "post": 224,
+        "boxed": 200,
+        "affected_splits": 217,
+        "boundary_splits": 5
+      },
+      "them": {
+        "turns": 16029,
+        "splits": 512,
+        "deaths": 372,
+        "causes": {
+          "rammed": 52,
+          "rams": 68,
+          "no action": 12,
+          "mate_body": 20,
+          "self": 15,
+          "wall": 196,
+          "enemy_body": 1,
+          "mate_head": 8
+        },
+        "post": 189,
+        "boxed": 173,
+        "affected_splits": 181,
+        "boundary_splits": 4
+      }
+    },
+    "all_post": {
+      "n": 224,
+      "roles": {
+        "child": 50,
+        "parent": 174
+      },
+      "lengths": {
+        "2": 217,
+        "3": 7
+      },
+      "closure": {
+        "사망 시 빈 출구 있음": 21,
+        "나중 봉쇄:mate": 3,
+        "분열 시 이미 막힘": 191,
+        "움직인 뒤 다른 자리에서 막힘": 9
+      },
+      "kind": {
+        "비여왕 일반 성장/주머니 탈출 구별 불가": 21,
+        "비여왕 일반 성장 (자식 크기로 식별)": 22,
+        "비여왕 머리 봉쇄 탈출": 176,
+        "여왕 대기/안전/기타 분열 (분기 미확인)": 5
+      },
+      "already_closed_visible": 145,
+      "body": 455,
+      "drops": 231,
+      "recovered5": {
+        "us": 104,
+        "pending": 123,
+        "them": 4
+      },
+      "recovered_end": {
+        "us": 208,
+        "nobody": 8,
+        "them": 15
+      },
+      "child_eaten": 50,
+      "own5_child": 21,
+      "queen_eaten": 3,
+      "censored5": 3
+    },
+    "boxed": {
+      "n": 200,
+      "roles": {
+        "parent": 171,
+        "child": 29
+      },
+      "lengths": {
+        "2": 196,
+        "3": 4
+      },
+      "closure": {
+        "나중 봉쇄:mate": 3,
+        "분열 시 이미 막힘": 189,
+        "움직인 뒤 다른 자리에서 막힘": 8
+      },
+      "kind": {
+        "비여왕 일반 성장/주머니 탈출 구별 불가": 5,
+        "비여왕 일반 성장 (자식 크기로 식별)": 19,
+        "비여왕 머리 봉쇄 탈출": 172,
+        "여왕 대기/안전/기타 분열 (분기 미확인)": 4
+      },
+      "already_closed_visible": 144,
+      "body": 404,
+      "drops": 204,
+      "recovered5": {
+        "us": 87,
+        "pending": 117
+      },
+      "recovered_end": {
+        "us": 187,
+        "nobody": 8,
+        "them": 9
+      },
+      "child_eaten": 48,
+      "own5_child": 19,
+      "queen_eaten": 2,
+      "censored5": 3
+    },
+    "filters": {
+      "눈앞에서 자식 봉쇄 확정": {
+        "delayed_splits": 0,
+        "near_deaths": 0,
+        "boxed_deaths": 0,
+        "child_deaths": 0,
+        "split_without_child_death": 0
+      },
+      "자식 출구 0 (전지적)": {
+        "delayed_splits": 22,
+        "near_deaths": 17,
+        "boxed_deaths": 17,
+        "child_deaths": 17,
+        "split_without_child_death": 5
+      },
+      "관측된 빈 자식 출구 없으면 보류": {
+        "delayed_splits": 111,
+        "near_deaths": 24,
+        "boxed_deaths": 21,
+        "child_deaths": 23,
+        "split_without_child_death": 88
+      }
+    }
+  },
+  "WHQ one5": {
+    "games": 10,
+    "sides": {
+      "us": {
+        "turns": 18367,
+        "splits": 679,
+        "deaths": 470,
+        "causes": {
+          "wall": 208,
+          "self": 98,
+          "rammed": 69,
+          "rams": 39,
+          "mate_body": 39,
+          "mate_head": 16,
+          "enemy_body": 1
+        },
+        "post": 186,
+        "boxed": 167,
+        "affected_splits": 177,
+        "boundary_splits": 6
+      },
+      "them": {
+        "turns": 19310,
+        "splits": 677,
+        "deaths": 475,
+        "causes": {
+          "wall": 215,
+          "self": 39,
+          "rams": 69,
+          "no action": 65,
+          "rammed": 39,
+          "mate_body": 29,
+          "enemy_body": 1,
+          "mate_head": 18
+        },
+        "post": 221,
+        "boxed": 198,
+        "affected_splits": 214,
+        "boundary_splits": 7
+      }
+    },
+    "all_post": {
+      "n": 186,
+      "roles": {
+        "parent": 127,
+        "child": 59
+      },
+      "lengths": {
+        "2": 184,
+        "3": 1,
+        "4": 1
+      },
+      "closure": {
+        "분열 시 이미 막힘": 150,
+        "움직인 뒤 다른 자리에서 막힘": 17,
+        "사망 시 빈 출구 있음": 13,
+        "나중 봉쇄:mate": 6
+      },
+      "kind": {
+        "비여왕 머리 봉쇄 탈출": 135,
+        "비여왕 일반 성장 (자식 크기로 식별)": 17,
+        "비여왕 일반 성장/주머니 탈출 구별 불가": 31,
+        "여왕 대기/안전/기타 분열 (분기 미확인)": 2,
+        "비여왕 큰 자식 탈출": 1
+      },
+      "already_closed_visible": 97,
+      "body": 375,
+      "drops": 188,
+      "recovered5": {
+        "pending": 104,
+        "us": 79,
+        "them": 5
+      },
+      "recovered_end": {
+        "us": 179,
+        "them": 6,
+        "nobody": 3
+      },
+      "child_eaten": 34,
+      "own5_child": 12,
+      "queen_eaten": 2,
+      "censored5": 3
+    },
+    "boxed": {
+      "n": 167,
+      "roles": {
+        "parent": 120,
+        "child": 47
+      },
+      "lengths": {
+        "2": 166,
+        "3": 1
+      },
+      "closure": {
+        "분열 시 이미 막힘": 145,
+        "움직인 뒤 다른 자리에서 막힘": 16,
+        "나중 봉쇄:mate": 6
+      },
+      "kind": {
+        "비여왕 머리 봉쇄 탈출": 130,
+        "비여왕 일반 성장 (자식 크기로 식별)": 13,
+        "비여왕 일반 성장/주머니 탈출 구별 불가": 21,
+        "여왕 대기/안전/기타 분열 (분기 미확인)": 2,
+        "비여왕 큰 자식 탈출": 1
+      },
+      "already_closed_visible": 96,
+      "body": 335,
+      "drops": 168,
+      "recovered5": {
+        "pending": 99,
+        "us": 68,
+        "them": 1
+      },
+      "recovered_end": {
+        "us": 165,
+        "them": 2,
+        "nobody": 1
+      },
+      "child_eaten": 34,
+      "own5_child": 12,
+      "queen_eaten": 2,
+      "censored5": 2
+    },
+    "filters": {
+      "눈앞에서 자식 봉쇄 확정": {
+        "delayed_splits": 0,
+        "near_deaths": 0,
+        "boxed_deaths": 0,
+        "child_deaths": 0,
+        "split_without_child_death": 0
+      },
+      "자식 출구 0 (전지적)": {
+        "delayed_splits": 21,
+        "near_deaths": 15,
+        "boxed_deaths": 15,
+        "child_deaths": 15,
+        "split_without_child_death": 6
+      },
+      "관측된 빈 자식 출구 없으면 보류": {
+        "delayed_splits": 134,
+        "near_deaths": 27,
+        "boxed_deaths": 23,
+        "child_deaths": 25,
+        "split_without_child_death": 109
+      }
+    }
+  },
+  "dev one5 (보조)": {
+    "games": 10,
+    "sides": {
+      "us": {
+        "turns": 11118,
+        "splits": 371,
+        "deaths": 292,
+        "causes": {
+          "self": 63,
+          "wall": 120,
+          "rammed": 62,
+          "rams": 13,
+          "mate_body": 27,
+          "enemy_body": 1,
+          "mate_head": 6
+        },
+        "post": 126,
+        "boxed": 120,
+        "affected_splits": 121,
+        "boundary_splits": 1
+      },
+      "them": {
+        "turns": 18752,
+        "splits": 650,
+        "deaths": 400,
+        "causes": {
+          "no action": 183,
+          "rams": 62,
+          "rammed": 13,
+          "illegal split": 17,
+          "mate_head": 22,
+          "self": 75,
+          "wall": 2,
+          "mate_body": 26
+        },
+        "post": 164,
+        "boxed": 144,
+        "affected_splits": 154,
+        "boundary_splits": 14
+      }
+    },
+    "all_post": {
+      "n": 126,
+      "roles": {
+        "parent": 105,
+        "child": 21
+      },
+      "lengths": {
+        "2": 123,
+        "3": 3
+      },
+      "closure": {
+        "분열 시 이미 막힘": 113,
+        "움직인 뒤 다른 자리에서 막힘": 10,
+        "사망 시 빈 출구 있음": 2,
+        "나중 봉쇄:mate": 1
+      },
+      "kind": {
+        "비여왕 머리 봉쇄 탈출": 108,
+        "비여왕 일반 성장/주머니 탈출 구별 불가": 11,
+        "비여왕 일반 성장 (자식 크기로 식별)": 5,
+        "여왕 대기/안전/기타 분열 (분기 미확인)": 2
+      },
+      "already_closed_visible": 78,
+      "body": 255,
+      "drops": 129,
+      "recovered5": {
+        "pending": 80,
+        "us": 48,
+        "them": 1
+      },
+      "recovered_end": {
+        "us": 118,
+        "them": 9,
+        "nobody": 2
+      },
+      "child_eaten": 33,
+      "own5_child": 13,
+      "queen_eaten": 0,
+      "censored5": 0
+    },
+    "boxed": {
+      "n": 120,
+      "roles": {
+        "parent": 102,
+        "child": 18
+      },
+      "lengths": {
+        "2": 117,
+        "3": 3
+      },
+      "closure": {
+        "분열 시 이미 막힘": 110,
+        "움직인 뒤 다른 자리에서 막힘": 9,
+        "나중 봉쇄:mate": 1
+      },
+      "kind": {
+        "비여왕 머리 봉쇄 탈출": 106,
+        "비여왕 일반 성장 (자식 크기로 식별)": 5,
+        "비여왕 일반 성장/주머니 탈출 구별 불가": 7,
+        "여왕 대기/안전/기타 분열 (분기 미확인)": 2
+      },
+      "already_closed_visible": 78,
+      "body": 243,
+      "drops": 123,
+      "recovered5": {
+        "pending": 77,
+        "us": 46
+      },
+      "recovered_end": {
+        "us": 115,
+        "them": 7,
+        "nobody": 1
+      },
+      "child_eaten": 33,
+      "own5_child": 13,
+      "queen_eaten": 0,
+      "censored5": 0
+    },
+    "filters": {
+      "눈앞에서 자식 봉쇄 확정": {
+        "delayed_splits": 0,
+        "near_deaths": 0,
+        "boxed_deaths": 0,
+        "child_deaths": 0,
+        "split_without_child_death": 0
+      },
+      "자식 출구 0 (전지적)": {
+        "delayed_splits": 8,
+        "near_deaths": 6,
+        "boxed_deaths": 4,
+        "child_deaths": 5,
+        "split_without_child_death": 3
+      },
+      "관측된 빈 자식 출구 없으면 보류": {
+        "delayed_splits": 73,
+        "near_deaths": 11,
+        "boxed_deaths": 9,
+        "child_deaths": 10,
+        "split_without_child_death": 63
+      }
+    }
+  }
+}

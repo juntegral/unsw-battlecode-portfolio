@@ -1,0 +1,107 @@
+
+===== all: medians in r500 games (round: longest / total / units / longest share of total)
+  meow   r200: 5 / 73 / 29 / 8% | r300: 5 / 72 / 26 / 10% | r400: 12 / 74 / 20 / 17% | r499: 26 / 57 / 7 / 46%
+  Vib    r200: 8 / 112 / 47 / 7% | r300: 12 / 141 / 52 / 8% | r400: 25 / 145 / 34 / 15% | r499: 45 / 131 / 14 / 34%
+  SSS    r200: 6 / 150 / 60 / 5% | r300: 8 / 167 / 60 / 7% | r400: 31 / 151 / 41 / 23% | r499: 44 / 136 / 16 / 37%
+  forgot r200: 4 / 125 / 50 / 4% | r300: 15 / 127 / 44 / 13% | r400: 34 / 121 / 22 / 26% | r499: 50 / 106 / 9 / 46%
+  r500 games with both queens dead at the end, by own/enemy total length at r400: wins/games; median own longest r400 -> end vs enemy's
+    <0.5     meow     1/ 55 (  2%) own longest 8 -> 14, enemy 37 -> 67
+    <0.5     Vib      3/ 18 ( 17%) own longest 8 -> 16, enemy 30 -> 44
+    <0.5     SSS      0/ 11 (  0%) own longest 9 -> 11, enemy 14 -> 46
+    <0.5     forgot   4/ 26 ( 15%) own longest 10 -> 16, enemy 18 -> 48
+    0.5-0.8  meow    11/ 33 ( 33%) own longest 21 -> 53, enemy 32 -> 64
+    0.5-0.8  Vib      5/ 12 ( 42%) own longest 37 -> 38, enemy 38 -> 52
+    0.5-0.8  SSS      7/ 20 ( 35%) own longest 34 -> 36, enemy 35 -> 61
+    0.5-0.8  forgot   8/ 29 ( 28%) own longest 31 -> 41, enemy 28 -> 53
+    0.8-1.25 meow    13/ 36 ( 36%) own longest 13 -> 32, enemy 21 -> 39
+    0.8-1.25 Vib     28/ 44 ( 64%) own longest 32 -> 56, enemy 26 -> 47
+    0.8-1.25 SSS     37/ 61 ( 61%) own longest 37 -> 54, enemy 30 -> 51
+    0.8-1.25 forgot  30/ 51 ( 59%) own longest 40 -> 61, enemy 22 -> 45
+    1.25-2   meow     6/  7 ( 86%) own longest 15 -> 49, enemy 22 -> 33
+    1.25-2   Vib     25/ 37 ( 68%) own longest 35 -> 57, enemy 17 -> 35
+    1.25-2   SSS     24/ 34 ( 71%) own longest 48 -> 69, enemy 26 -> 38
+    1.25-2   forgot  14/ 18 ( 78%) own longest 41 -> 65, enemy 19 -> 32
+    2+       meow    10/ 12 ( 83%) own longest 12 -> 30, enemy 11 -> 9
+    2+       Vib     38/ 41 ( 93%) own longest 10 -> 41, enemy 7 -> 13
+    2+       SSS     14/ 15 ( 93%) own longest 31 -> 49, enemy 4 -> 13
+    2+       forgot  29/ 30 ( 97%) own longest 24 -> 50, enemy 5 -> 12
+
+===== large: medians in r500 games (round: longest / total / units / longest share of total)
+  meow   r200: 9 / 143 / 50 / 7% | r300: 13 / 152 / 52 / 11% | r400: 14 / 132 / 40 / 15% | r499: 27 / 110 / 17 / 30%
+  Vib    r200: 13 / 188 / 60 / 7% | r300: 17 / 213 / 60 / 7% | r400: 35 / 211 / 40 / 17% | r499: 54 / 244 / 20 / 24%
+  SSS    r200: 14 / 201 / 61 / 6% | r300: 18 / 221 / 61 / 9% | r400: 41 / 214 / 54 / 18% | r499: 53 / 217 / 32 / 26%
+  forgot r200: 6 / 164 / 62 / 4% | r300: 17 / 183 / 62 / 8% | r400: 43 / 198 / 33 / 21% | r499: 60 / 186 / 13 / 32%
+  r500 games with both queens dead at the end, by own/enemy total length at r400: wins/games; median own longest r400 -> end vs enemy's
+    <0.5     meow     1/ 35 (  3%) own longest 11 -> 21, enemy 51 -> 80
+    <0.5     Vib      1/  7 ( 14%) own longest 21 -> 35, enemy 42 -> 57
+    <0.5     SSS      0/  3 (  0%) own longest 23 -> 22, enemy 33 -> 79
+    <0.5     forgot   1/  6 ( 17%) own longest 27 -> 48, enemy 37 -> 56
+    0.5-0.8  meow     6/ 23 ( 26%) own longest 25 -> 51, enemy 38 -> 52
+    0.5-0.8  Vib      4/  7 ( 57%) own longest 44 -> 39, enemy 41 -> 51
+    0.5-0.8  SSS      6/ 16 ( 38%) own longest 32 -> 36, enemy 38 -> 66
+    0.5-0.8  forgot   7/ 26 ( 27%) own longest 34 -> 44, enemy 32 -> 59
+    0.8-1.25 meow     4/  6 ( 67%) own longest 34 -> 56, enemy 32 -> 46
+    0.8-1.25 Vib     20/ 32 ( 62%) own longest 38 -> 58, enemy 28 -> 48
+    0.8-1.25 SSS     29/ 47 ( 62%) own longest 39 -> 56, enemy 33 -> 51
+    0.8-1.25 forgot  24/ 37 ( 65%) own longest 46 -> 62, enemy 28 -> 49
+    1.25-2   meow     1/  1 (100%) own longest 27 -> 58, enemy 36 -> 35
+    1.25-2   Vib     18/ 29 ( 62%) own longest 36 -> 63, enemy 22 -> 41
+    1.25-2   SSS     22/ 30 ( 73%) own longest 50 -> 74, enemy 26 -> 38
+    1.25-2   forgot   8/ 11 ( 73%) own longest 52 -> 66, enemy 21 -> 36
+    2+       Vib      9/ 10 ( 90%) own longest 36 -> 68, enemy 23 -> 22
+    2+       SSS      2/  3 ( 67%) own longest 42 -> 48, enemy 21 -> 49
+    2+       forgot   8/  9 ( 89%) own longest 58 -> 79, enemy 13 -> 27
+
+===== medium: medians in r500 games (round: longest / total / units / longest share of total)
+  meow   r200: 4 / 66 / 26 / 6% | r300: 4 / 77 / 32 / 7% | r400: 14 / 78 / 24 / 19% | r499: 29 / 57 / 6 / 61%
+  Vib    r200: 6 / 101 / 40 / 6% | r300: 10 / 109 / 42 / 8% | r400: 12 / 124 / 40 / 10% | r499: 37 / 106 / 17 / 38%
+  SSS    r200: 5 / 118 / 48 / 4% | r300: 6 / 148 / 58 / 4% | r400: 30 / 127 / 31 / 28% | r499: 41 / 93 / 10 / 49%
+  forgot r200: 4 / 98 / 40 / 4% | r300: 14 / 95 / 30 / 20% | r400: 29 / 97 / 17 / 34% | r499: 47 / 94 / 8 / 51%
+  r500 games with both queens dead at the end, by own/enemy total length at r400: wins/games; median own longest r400 -> end vs enemy's
+    <0.5     meow     0/  7 (  0%) own longest 8 -> 12, enemy 22 -> 47
+    <0.5     Vib      1/  6 ( 17%) own longest 4 -> 14, enemy 20 -> 38
+    <0.5     SSS      0/  3 (  0%) own longest 6 -> 26, enemy 12 -> 45
+    <0.5     forgot   2/ 14 ( 14%) own longest 12 -> 12, enemy 18 -> 50
+    0.5-0.8  meow     4/  8 ( 50%) own longest 12 -> 79, enemy 32 -> 73
+    0.5-0.8  Vib      0/  1 (  0%) own longest 6 -> 14, enemy 17 -> 38
+    0.5-0.8  SSS      0/  2 (  0%) own longest 35 -> 16, enemy 7 -> 46
+    0.5-0.8  forgot   1/  2 ( 50%) own longest 14 -> 14, enemy 10 -> 14
+    0.8-1.25 meow     5/ 11 ( 45%) own longest 14 -> 68, enemy 45 -> 79
+    0.8-1.25 Vib      5/  7 ( 71%) own longest 13 -> 68, enemy 13 -> 35
+    0.8-1.25 SSS      3/  5 ( 60%) own longest 54 -> 74, enemy 29 -> 52
+    0.8-1.25 forgot   3/  8 ( 38%) own longest 25 -> 68, enemy 20 -> 67
+    1.25-2   meow     3/  4 ( 75%) own longest 14 -> 63, enemy 29 -> 38
+    1.25-2   Vib      5/  5 (100%) own longest 15 -> 47, enemy 8 -> 21
+    1.25-2   SSS      0/  1 (  0%) own longest 12 -> 19, enemy 8 -> 26
+    1.25-2   forgot   5/  5 (100%) own longest 30 -> 93, enemy 6 -> 17
+    2+       meow     6/  6 (100%) own longest 12 -> 38, enemy 6 -> 7
+    2+       Vib      8/ 10 ( 80%) own longest 14 -> 52, enemy 18 -> 36
+    2+       SSS      9/  9 (100%) own longest 32 -> 52, enemy 4 -> 13
+    2+       forgot   6/  6 (100%) own longest 26 -> 49, enemy 4 -> 18
+
+===== small: medians in r500 games (round: longest / total / units / longest share of total)
+  meow   r200: 4 / 49 / 19 / 9% | r300: 4 / 52 / 20 / 9% | r400: 10 / 61 / 16 / 18% | r499: 23 / 42 / 3 / 67%
+  Vib    r200: 6 / 69 / 26 / 10% | r300: 6 / 64 / 18 / 12% | r400: 10 / 68 / 12 / 20% | r499: 36 / 63 / 4 / 66%
+  SSS    r200: 4 / 86 / 34 / 5% | r300: 5 / 90 / 35 / 6% | r400: 21 / 72 / 16 / 34% | r499: 31 / 56 / 4 / 71%
+  forgot r200: 4 / 80 / 32 / 5% | r300: 13 / 81 / 26 / 21% | r400: 22 / 79 / 12 / 32% | r499: 37 / 62 / 5 / 63%
+  r500 games with both queens dead at the end, by own/enemy total length at r400: wins/games; median own longest r400 -> end vs enemy's
+    <0.5     meow     0/ 13 (  0%) own longest 4 -> 7, enemy 28 -> 51
+    <0.5     Vib      1/  5 ( 20%) own longest 5 -> 11, enemy 13 -> 36
+    <0.5     SSS      0/  5 (  0%) own longest 7 -> 5, enemy 14 -> 42
+    <0.5     forgot   1/  6 ( 17%) own longest 4 -> 20, enemy 10 -> 26
+    0.5-0.8  meow     1/  2 ( 50%) own longest 11 -> 18, enemy 10 -> 27
+    0.5-0.8  Vib      1/  4 ( 25%) own longest 30 -> 43, enemy 38 -> 56
+    0.5-0.8  SSS      1/  2 ( 50%) own longest 39 -> 54, enemy 29 -> 41
+    0.5-0.8  forgot   0/  1 (  0%) own longest 10 -> 26, enemy 5 -> 34
+    0.8-1.25 meow     4/ 19 ( 21%) own longest 11 -> 25, enemy 12 -> 37
+    0.8-1.25 Vib      3/  5 ( 60%) own longest 7 -> 30, enemy 18 -> 42
+    0.8-1.25 SSS      5/  9 ( 56%) own longest 24 -> 42, enemy 18 -> 25
+    0.8-1.25 forgot   3/  6 ( 50%) own longest 17 -> 38, enemy 18 -> 40
+    1.25-2   meow     2/  2 (100%) own longest 14 -> 34, enemy 7 -> 28
+    1.25-2   Vib      2/  3 ( 67%) own longest 12 -> 34, enemy 10 -> 26
+    1.25-2   SSS      2/  3 ( 67%) own longest 16 -> 39, enemy 24 -> 37
+    1.25-2   forgot   1/  2 ( 50%) own longest 22 -> 40, enemy 23 -> 32
+    2+       meow     4/  6 ( 67%) own longest 12 -> 26, enemy 14 -> 16
+    2+       Vib     21/ 21 (100%) own longest 8 -> 29, enemy 4 -> 8
+    2+       SSS      3/  3 (100%) own longest 27 -> 26, enemy 3 -> 4
+    2+       forgot  15/ 15 (100%) own longest 19 -> 39, enemy 3 -> 7

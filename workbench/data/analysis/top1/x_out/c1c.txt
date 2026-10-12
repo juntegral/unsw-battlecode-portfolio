@@ -1,0 +1,147 @@
+
+== 1. meow: win rate by state at round R. Cells: own queen / her queen = alive-alive, alive-DEAD, dead-alive, dead-DEAD
+R     band     A/A                A/D                D/A                D/D                  gain from her death: own alive | own dead
+100   <0.67    5 of 94 = 5%       0 of 3 = 0%        5 of 71 = 7%       0 of 9 = 0%          -5 | -7
+100   0.67-1   9 of 54 = 17%      1 of 2 = 50%       8 of 31 = 26%      0 of 2 = 0%          +33 | -26
+100   1-1.5    8 of 24 = 33%      0 of 0             4 of 12 = 33%      3 of 5 = 60%           - | +27
+100   >1.5     22 of 28 = 79%     9 of 10 = 90%      14 of 20 = 70%     10 of 11 = 91%       +11 | +21
+200   <0.67    2 of 36 = 6%       0 of 3 = 0%        8 of 107 = 7%      1 of 29 = 3%         -6 | -4
+200   0.67-1   2 of 21 = 10%      0 of 1 = 0%        9 of 33 = 27%      5 of 11 = 45%        -10 | +18
+200   1-1.5    2 of 5 = 40%       0 of 0             3 of 13 = 23%      2 of 2 = 100%          - | +77
+200   >1.5     7 of 10 = 70%      6 of 6 = 100%      11 of 17 = 65%     15 of 17 = 88%       +30 | +24
+300   <0.67    2 of 25 = 8%       0 of 1 = 0%        7 of 79 = 9%       3 of 63 = 5%         -8 | -4
+300   0.67-1   1 of 8 = 12%       0 of 0             7 of 30 = 23%      8 of 23 = 35%          - | +11
+300   1-1.5    0 of 0             0 of 0             1 of 7 = 14%       5 of 5 = 100%          - | +86
+300   >1.5     2 of 5 = 40%       2 of 2 = 100%      5 of 9 = 56%       8 of 11 = 73%        +60 | +17
+400   <0.67    1 of 16 = 6%       1 of 1 = 100%      3 of 60 = 5%       1 of 64 = 2%         +94 | -3
+400   0.67-1   1 of 2 = 50%       0 of 0             3 of 22 = 14%      10 of 27 = 37%         - | +23
+400   1-1.5    0 of 1 = 0%        0 of 0             1 of 8 = 12%       9 of 21 = 43%          - | +30
+400   >1.5     1 of 2 = 50%       2 of 2 = 100%      2 of 8 = 25%       12 of 14 = 86%       +50 | +61
+
+== 1. top three: win rate by state at round R. Cells: own queen / her queen = alive-alive, alive-DEAD, dead-alive, dead-DEAD
+R     band     A/A                A/D                D/A                D/D                  gain from her death: own alive | own dead
+100   <0.67    46 of 147 = 31%    9 of 35 = 26%      13 of 102 = 13%    1 of 55 = 2%         -6 | -11
+100   0.67-1   95 of 188 = 51%    16 of 26 = 62%     12 of 36 = 33%     8 of 12 = 67%        +11 | +33
+100   1-1.5    171 of 269 = 64%   26 of 41 = 63%     19 of 32 = 59%     8 of 15 = 53%        -0 | -6
+100   >1.5     277 of 323 = 86%   109 of 119 = 92%   64 of 71 = 90%     59 of 60 = 98%       +6 | +8
+200   <0.67    14 of 51 = 27%     4 of 23 = 17%      7 of 78 = 9%       9 of 90 = 10%        -10 | +1
+200   0.67-1   65 of 121 = 54%    29 of 45 = 64%     18 of 52 = 35%     21 of 35 = 60%       +11 | +25
+200   1-1.5    102 of 165 = 62%   50 of 78 = 64%     26 of 53 = 49%     17 of 26 = 65%       +2 | +16
+200   >1.5     111 of 129 = 86%   129 of 145 = 89%   27 of 35 = 77%     100 of 108 = 93%     +3 | +15
+300   <0.67    11 of 38 = 29%     4 of 20 = 20%      4 of 49 = 8%       6 of 64 = 9%         -9 | +1
+300   0.67-1   50 of 86 = 58%     19 of 29 = 66%     13 of 60 = 22%     34 of 66 = 52%       +7 | +30
+300   1-1.5    61 of 107 = 57%    66 of 87 = 76%     16 of 44 = 36%     46 of 74 = 62%       +19 | +26
+300   >1.5     73 of 89 = 82%     116 of 129 = 90%   19 of 27 = 70%     83 of 87 = 95%       +8 | +25
+400   <0.67    7 of 22 = 32%      5 of 14 = 36%      4 of 51 = 8%       11 of 75 = 15%       +4 | +7
+400   0.67-1   46 of 79 = 58%     25 of 32 = 78%     7 of 46 = 15%      45 of 85 = 53%       +20 | +38
+400   1-1.5    41 of 73 = 56%     60 of 76 = 79%     14 of 39 = 36%     55 of 93 = 59%       +23 | +23
+400   >1.5     49 of 58 = 84%     98 of 101 = 97%    13 of 22 = 59%     96 of 104 = 92%      +13 | +33
+
+== 1. every team rated 2000+ in the data: win rate by state at round R. Cells: own queen / her queen = alive-alive, alive-DEAD, dead-alive, dead-DEAD
+R     band     A/A                A/D                D/A                D/D                  gain from her death: own alive | own dead
+100   <0.67    91 of 533 = 17%    17 of 108 = 16%    26 of 270 = 10%    2 of 110 = 2%        -1 | -8
+100   0.67-1   193 of 474 = 41%   28 of 53 = 53%     28 of 96 = 29%     12 of 26 = 46%       +12 | +17
+100   1-1.5    256 of 468 = 55%   47 of 70 = 67%     31 of 68 = 46%     15 of 29 = 52%       +12 | +6
+100   >1.5     375 of 467 = 80%   187 of 209 = 89%   102 of 125 = 82%   109 of 112 = 97%     +9 | +16
+200   <0.67    33 of 216 = 15%    14 of 60 = 23%     28 of 321 = 9%     16 of 205 = 8%       +8 | -1
+200   0.67-1   120 of 283 = 42%   50 of 84 = 60%     47 of 142 = 33%    34 of 71 = 48%       +17 | +15
+200   1-1.5    151 of 278 = 54%   74 of 114 = 65%    38 of 99 = 38%     34 of 63 = 54%       +11 | +16
+200   >1.5     156 of 189 = 83%   198 of 218 = 91%   54 of 74 = 73%     175 of 192 = 91%     +8 | +18
+300   <0.67    25 of 145 = 17%    15 of 48 = 31%     22 of 253 = 9%     13 of 203 = 6%       +14 | -2
+300   0.67-1   87 of 190 = 46%    41 of 66 = 62%     37 of 158 = 23%    64 of 143 = 45%      +16 | +21
+300   1-1.5    101 of 193 = 52%   102 of 132 = 77%   26 of 78 = 33%     69 of 126 = 55%      +25 | +21
+300   >1.5     99 of 124 = 80%    161 of 176 = 91%   37 of 55 = 67%     138 of 150 = 92%     +12 | +25
+400   <0.67    17 of 99 = 17%     18 of 39 = 46%     9 of 206 = 4%      17 of 214 = 8%       +29 | +4
+400   0.67-1   74 of 146 = 51%    45 of 60 = 75%     24 of 139 = 17%    77 of 184 = 42%      +24 | +25
+400   1-1.5    73 of 148 = 49%    97 of 119 = 82%    17 of 70 = 24%     103 of 185 = 56%     +32 | +31
+400   >1.5     67 of 84 = 80%     142 of 148 = 96%   23 of 46 = 50%     145 of 163 = 89%     +16 | +39
+
+== 2. Real rams on the enemy queen: how those games ended, against the state table (same checkpoint, band, own queen; her queen alive)
+
+-- meow: 99 rams
+   all                                  n=99   won 67 of 99 = 68%   | same state, her queen alive:   45% | same state, her queen dead (table):   63%
+   attacker 2-4                         n=92   won 66 of 92 = 72%   | same state, her queen alive:   48% | same state, her queen dead (table):   66%
+   attacker 5-12                        n=7    won 1 of 7 = 14%     | same state, her queen alive:    7% | same state, her queen dead (table):   25%
+   rounds 0-99                          n=36   won 28 of 36 = 78%   | same state, her queen alive:   59% | same state, her queen dead (table):   82%
+   rounds 100-299                       n=46   won 31 of 46 = 67%   | same state, her queen alive:   46% | same state, her queen dead (table):   60%
+   rounds 300+                          n=17   won 8 of 17 = 47%    | same state, her queen alive:   11% | same state, her queen dead (table):   31%
+   own queen alive at the ram: n=30   won 24 of 30 = 80%   | same state, her queen alive:   55%
+   own queen dead  at the ram: n=69   won 43 of 69 = 62%   | same state, her queen alive:   40%
+
+-- top three: 794 rams
+   all                                  n=794  won 608 of 794 = 77% | same state, her queen alive:   66% | same state, her queen dead (table):   74%
+   attacker 2-4                         n=625  won 472 of 625 = 76% | same state, her queen alive:   68% | same state, her queen dead (table):   74%
+   attacker 5-12                        n=146  won 117 of 146 = 80% | same state, her queen alive:   61% | same state, her queen dead (table):   76%
+   attacker 13+                         n=23   won 19 of 23 = 83%   | same state, her queen alive:   47% | same state, her queen dead (table):   76%
+   attacker is the team's longest, 5+   n=34   won 25 of 34 = 74%   | same state, her queen alive:   56% | same state, her queen dead (table):   75%
+   attacker is the team's longest, 10+  n=16   won 12 of 16 = 75%   | same state, her queen alive:   57% | same state, her queen dead (table):   81%
+   rounds 0-99                          n=253  won 185 of 253 = 73% | same state, her queen alive:   70% | same state, her queen dead (table):   73%
+   rounds 100-299                       n=429  won 333 of 429 = 78% | same state, her queen alive:   68% | same state, her queen dead (table):   75%
+   rounds 300+                          n=112  won 90 of 112 = 80%  | same state, her queen alive:   48% | same state, her queen dead (table):   72%
+   own queen alive at the ram: n=518  won 402 of 518 = 78% | same state, her queen alive:   73%
+   own queen dead  at the ram: n=276  won 206 of 276 = 75% | same state, her queen alive:   53%
+
+-- every team rated 2000+ in the data: 1460 rams
+   all                                  n=1460 won 986 of 1460 = 68% | same state, her queen alive:   54% | same state, her queen dead (table):   67%
+   attacker 2-4                         n=1165 won 780 of 1165 = 67% | same state, her queen alive:   56% | same state, her queen dead (table):   67%
+   attacker 5-12                        n=253  won 175 of 253 = 69% | same state, her queen alive:   49% | same state, her queen dead (table):   68%
+   attacker 13+                         n=42   won 31 of 42 = 74%   | same state, her queen alive:   36% | same state, her queen dead (table):   66%
+   attacker is the team's longest, 5+   n=64   won 38 of 64 = 59%   | same state, her queen alive:   46% | same state, her queen dead (table):   63%
+   attacker is the team's longest, 10+  n=28   won 16 of 28 = 57%   | same state, her queen alive:   47% | same state, her queen dead (table):   73%
+   rounds 0-99                          n=526  won 329 of 526 = 63% | same state, her queen alive:   57% | same state, her queen dead (table):   65%
+   rounds 100-299                       n=686  won 481 of 686 = 70% | same state, her queen alive:   58% | same state, her queen dead (table):   70%
+   rounds 300+                          n=248  won 176 of 248 = 71% | same state, her queen alive:   38% | same state, her queen dead (table):   64%
+   own queen alive at the ram: n=898  won 620 of 898 = 69% | same state, her queen alive:   60%
+   own queen dead  at the ram: n=562  won 366 of 562 = 65% | same state, her queen alive:   44%
+
+== 3. What the rule would add in OUR games, priced by state tables (first untaken in-view chance of each game; attackers <= 12)
+   table of meow                                 meow all 401 : 121 games with an untaken first chance, really won 42; table says 33.5 wins with her alive at that state, 55.3 with her dead: gain +21.8 wins (against the real 42: +13.3)
+   table of meow                                 meow live    : 83 games with an untaken first chance, really won 30; table says 21.4 wins with her alive at that state, 35.5 with her dead: gain +14.1 wins (against the real 30: +5.5)
+   table of top three                            meow all 401 : 121 games with an untaken first chance, really won 42; table says 51.9 wins with her alive at that state, 58.2 with her dead: gain +6.3 wins (against the real 42: +16.2)
+   table of top three                            meow live    : 83 games with an untaken first chance, really won 30; table says 33.5 wins with her alive at that state, 37.6 with her dead: gain +4.1 wins (against the real 30: +7.6)
+   table of every team rated 2000+ in the data   meow all 401 : 121 games with an untaken first chance, really won 42; table says 44.4 wins with her alive at that state, 53.6 with her dead: gain +9.1 wins (against the real 42: +11.6)
+   table of every team rated 2000+ in the data   meow live    : 83 games with an untaken first chance, really won 30; table says 28.6 wins with her alive at that state, 34.3 with her dead: gain +5.8 wins (against the real 30: +4.3)
+
+== 4a. What a team builds once its queen is dead: its longest NON-queen dragon at the end of round-500 games
+-- our opponents (in our 401 games)
+   total length at round 400 in [0,80): queen dead before 300 n=45 median longest non-queen 29 (longest incl. queen 29) | queen died 300+ n=17 median longest non-queen 24 (longest incl. queen 24) | queen alive at end n=50 median longest non-queen 9 (longest incl. queen 19) | 
+   total length at round 400 in [80,160): queen dead before 300 n=33 median longest non-queen 50 (longest incl. queen 50) | queen died 300+ n=18 median longest non-queen 31 (longest incl. queen 31) | queen alive at end n=42 median longest non-queen 18 (longest incl. queen 36) | 
+   total length at round 400 in [160,9999): queen dead before 300 n=68 median longest non-queen 63 (longest incl. queen 63) | queen died 300+ n=47 median longest non-queen 43 (longest incl. queen 43) | queen alive at end n=64 median longest non-queen 29 (longest incl. queen 54) | 
+-- test4
+   total length at round 400 in [0,80): queen dead before 300 n=20 median longest non-queen 37 (longest incl. queen 37) | queen died 300+ n=5 median longest non-queen 10 (longest incl. queen 10) | queen alive at end n=4 median longest non-queen 14 (longest incl. queen 24) | 
+   total length at round 400 in [80,160): queen dead before 300 n=14 median longest non-queen 41 (longest incl. queen 41) | queen died 300+ n=10 median longest non-queen 43 (longest incl. queen 43) | queen alive at end n=26 median longest non-queen 9 (longest incl. queen 33) | 
+   total length at round 400 in [160,9999): queen dead before 300 n=24 median longest non-queen 54 (longest incl. queen 54) | queen died 300+ n=17 median longest non-queen 30 (longest incl. queen 30) | queen alive at end n=33 median longest non-queen 20 (longest incl. queen 60) | 
+-- WeHaveQuizzes
+   total length at round 400 in [0,80): queen dead before 300 n=20 median longest non-queen 33 (longest incl. queen 33) | queen died 300+ n=6 median longest non-queen 33 (longest incl. queen 33) | queen alive at end n=6 median longest non-queen 14 (longest incl. queen 39) | 
+   total length at round 400 in [80,160): queen dead before 300 n=15 median longest non-queen 67 (longest incl. queen 67) | queen died 300+ n=5 median longest non-queen 37 (longest incl. queen 37) | queen alive at end n=9 median longest non-queen 29 (longest incl. queen 49) | 
+   total length at round 400 in [160,9999): queen dead before 300 n=29 median longest non-queen 89 (longest incl. queen 89) | queen died 300+ n=14 median longest non-queen 79 (longest incl. queen 79) | queen alive at end n=6 median longest non-queen 53 (longest incl. queen 104) | 
+-- top three
+   total length at round 400 in [0,80): queen dead before 300 n=113 median longest non-queen 27 (longest incl. queen 27) | queen died 300+ n=36 median longest non-queen 27 (longest incl. queen 27) | queen alive at end n=69 median longest non-queen 10 (longest incl. queen 34) | 
+   total length at round 400 in [80,160): queen dead before 300 n=111 median longest non-queen 51 (longest incl. queen 51) | queen died 300+ n=65 median longest non-queen 39 (longest incl. queen 39) | queen alive at end n=151 median longest non-queen 16 (longest incl. queen 41) | 
+   total length at round 400 in [160,9999): queen dead before 300 n=172 median longest non-queen 66 (longest incl. queen 66) | queen died 300+ n=90 median longest non-queen 57 (longest incl. queen 57) | queen alive at end n=128 median longest non-queen 44 (longest incl. queen 58) | 
+-- meow
+   total length at round 400 in [0,80): queen dead before 300 n=137 median longest non-queen 15 (longest incl. queen 15) | queen died 300+ n=30 median longest non-queen 12 (longest incl. queen 12) | queen alive at end n=22 median longest non-queen 5 (longest incl. queen 30) | 
+   total length at round 400 in [80,160): queen dead before 300 n=85 median longest non-queen 36 (longest incl. queen 36) | queen died 300+ n=9 median longest non-queen 20 (longest incl. queen 20) | queen alive at end n=13 median longest non-queen 13 (longest incl. queen 42) | 
+   total length at round 400 in [160,9999): queen dead before 300 n=79 median longest non-queen 48 (longest incl. queen 48) | queen died 300+ n=9 median longest non-queen 39 (longest incl. queen 39) | 
+
+== 4b. Rams by the team's longest dragon (10+): each game
+-- Vibing++: 9 such rams; won 6
+   game 1046973 Autarky          r262 attacker 15  her queen 4   own queen 0   totals 101 vs 29 -> WON (rounds 425, final longest 8 vs 0)
+   game 1052249 Islands          r272 attacker 11  her queen 3   own queen 0   totals 177 vs 180 -> WON (rounds 500, final longest 62 vs 55)
+   game 1055289 Around UNSW      r230 attacker 29  her queen 4   own queen 26  totals 296 vs 198 -> lost (rounds 500, final longest 50 vs 56)
+   game 1056426 Islands          r214 attacker 18  her queen 21  own queen 16  totals 227 vs 87 -> lost (rounds 500, final longest 44 vs 50)
+   game 1063785 Maze             r348 attacker 11  her queen 39  own queen 0   totals 189 vs 110 -> WON (rounds 500, final longest 77 vs 67)
+   game 1064241 Devil            r116 attacker 12  her queen 3   own queen 3   totals 105 vs 16 -> WON (rounds 353, final longest 14 vs 0)
+   game 1064502 weakhold         r477 attacker 27  her queen 6   own queen 0   totals 50 vs 10 -> WON (rounds 500, final longest 22 vs 8)
+   game 1067623 Slithery Fight   r150 attacker 10  her queen 4   own queen 7   totals 164 vs 151 -> lost (rounds 500, final longest 75 vs 83)
+   game 1068403 Maze             r491 attacker 64  her queen 47  own queen 0   totals 233 vs 86 -> WON (rounds 500, final longest 17 vs 6)
+-- SSS: 7 such rams; won 6
+   game 1050152 Islands          r357 attacker 29  her queen 17  own queen 0   totals 180 vs 153 -> WON (rounds 500, final longest 56 vs 38)
+   game 1050692 Islands          r299 attacker 12  her queen 3   own queen 0   totals 198 vs 129 -> WON (rounds 500, final longest 47 vs 41)
+   game 1052238 Maze             r476 attacker 62  her queen 21  own queen 25  totals 97 vs 192 -> lost (rounds 500, final longest 12 vs 44)
+   game 1052247 weakhold         r451 attacker 20  her queen 12  own queen 2   totals 22 vs 57 -> WON (rounds 500, final longest 2 vs 34)
+   game 1055274 weakhold         r448 attacker 32  her queen 2   own queen 2   totals 43 vs 40 -> WON (rounds 500, final longest 4 vs 26)
+   game 1067060 weakhold         r474 attacker 32  her queen 3   own queen 0   totals 69 vs 5 -> WON (rounds 500, final longest 26 vs 13)
+   game 1069373 Maze             r437 attacker 14  her queen 65  own queen 3   totals 180 vs 109 -> WON (rounds 500, final longest 48 vs 37)
+-- meow: 0 such rams; won 0
+-- forgot: 0 such rams; won 0

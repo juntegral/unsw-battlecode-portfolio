@@ -1,0 +1,21 @@
+v30 = v22 main + queen-safety (#39)
+new bot 30 games | wins: new 8/30 vs live 5.5/30 (live baseline pooled over 60 games: 4/30, 7/30)
+our avg score 65.3 -> 84.6 | their avg score 163.8 -> 152.5
+games where we scored 0: 7.0 -> 7
+vs test4: wins new 4/15 vs live 2.0/15 | our avg score 59.2 -> 79.0 | their avg score 185.2 -> 183.3
+vs WeHaveQuizzes: wins new 4/15 vs live 3.5/15 | our avg score 71.5 -> 90.1 | their avg score 142.5 -> 121.7
+  Around UNSW        wins  0.5->0 | ours  342.0-> 510 | theirs  780.0-> 692
+  Australia          wins  0.0->0 | ours  172.5-> 269 | theirs  774.0-> 782
+  Default            wins  0.5->1 | ours  126.5-> 143 | theirs  243.0-> 117
+  Devil              wins  1.0->2 | ours  152.0-> 231 | theirs  100.5->   0
+  Islands            wins  0.0->0 | ours   90.5->   0 | theirs  574.5-> 796
+  Maze               wins  0.5->0 | ours  215.5-> 148 | theirs  321.0-> 329
+  Portals            wins  0.5->1 | ours  103.0-> 116 | theirs   93.5-> 108
+  Queen Of Spades    wins  0.5->0 | ours   33.0->  13 | theirs  117.0-> 162
+  Schooltime         wins  0.5->2 | ours  157.5-> 274 | theirs  642.5-> 514
+  Slithery Fight     wins  0.5->0 | ours  314.0-> 388 | theirs  430.5-> 452
+  Stripes            wins  0.0->0 | ours    0.0->   5 | theirs   99.0-> 108
+  Tower Defense      wins  0.0->0 | ours   11.5->   0 | theirs  225.5-> 248
+  Trauma             wins  0.0->0 | ours   53.0-> 105 | theirs  248.0-> 213
+  Trophy             wins  1.0->2 | ours  133.0-> 226 | theirs  202.0->   0
+  weakhold           wins  0.0->0 | ours   56.0-> 109 | theirs   64.0->  54

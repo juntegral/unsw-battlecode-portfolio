@@ -1,0 +1,81 @@
+game bot-hunter_portals_B_1 map portals/a us=B result {"winner":"B","end":"roundLimit"}
+tags(our turns): {"sx":0,"sr":0,"sd":0,"sf":0,"sq":0,"sc":0,"sk":0,"esc":0,"split":4}
+timeline r | our units / longest / total | their units / longest / total
+  r  0 |   3 /   3 /    9 |   3 /   3 /    9
+  r 25 |   5 /   5 /   15 |   5 /   7 /   19
+  r 50 |   7 /   7 /   22 |   9 /   6 /   26
+  r 75 |  11 /   7 /   36 |  14 /   9 /   46
+  r100 |  16 /   7 /   51 |  19 /  13 /   66
+  r125 |  17 /   9 /   46 |  23 /  15 /   80
+  r150 |  21 /   8 /   59 |  35 /  10 /  103
+  r175 |  25 /   6 /   67 |  29 /  11 /   84
+  r200 |  29 /   6 /   74 |  30 /   9 /   88
+  r225 |  26 /   7 /   71 |  34 /   7 /   98
+  r250 |  36 /   7 /   92 |  36 /   7 /  100
+  r275 |  30 /   8 /   95 |  34 /   8 /  115
+  r300 |  21 /  12 /   88 |  25 /   8 /   95
+  r325 |  16 /  14 /   98 |  17 /  14 /   96
+  r350 |  12 /  15 /   85 |  12 /  17 /   80
+  r375 |  10 /  24 /   61 |  11 /  20 /   80
+  r400 |   7 /  32 /   65 |   8 /  29 /   67
+  r425 |   8 /  33 /   62 |   4 /  36 /   55
+  r450 |   7 /  11 /   39 |   3 /  43 /   60
+  r475 |   7 /  15 /   57 |   6 /  44 /   62
+local feeds (sf) 0: first 12 → 
+--- r443: ours 9 dragons [32 10 9 5 2 2 2 2 2] total 66 | theirs 4 [43 13 2 2] total 60
++--------------------------------+
+|   xxx  oo        oo      oo    |
+|   x xK oo     o  oo .....oo  ..|
+|xx x%%  %   oo       .oo .    ..|
+|xxxxoo     %%% o .....oo .   ...|
+| xXxxxxxoo       .oo    2.oo # .|
+|  xx xxx%%   Xx% .oo .. ..%%   .|
+|xxx ooxx    oo % . ...oo..      |
+|x   ooxx    oo o%...  oo...#    |
+|x      xoo     %o oo .    oo9. 2|
+|xx    xxoo      % oo 2    oo . .|
+| x  %%x     oo  o     %%  . ..  |
+|xx  oox%    oo    ... oo  ...   |
+|xx  xxx oo      o %%.5    oo    |
+|    xxxxoo        oo .    %%    |
+|    %o xxxxKoo  o    2oo        |
+|    o%      oo        o%  2.    |
++--------------------------------+
+--- r444: ours 8 dragons [10 10 5 2 2 2 2 2] total 35 | theirs 3 [43 13 2] total 58
++--------------------------------+
+|   xxx  oo        oo      oo    |
+|   x xx oo     o  oo % % %oo  ..|
+|xx x%%K %   oo        oo      ..|
+| xxxoo     %%% o % % %oo %   ...|
+|  %xxxxxoo   X    oo   2. oo . .|
+|  xx xxx%%   x % %oo %   %%% #  |
+|xxx ooxx    oo %    % oo%       |
+|x   #oxx    oo o%% %  oo % %   2|
+|x      xoo     %o oo      oo.. .|
+|xx    xxoo      % oo .2   oo .  |
+| x  %%x     oo  o     %%  . ..  |
+|xx  oox%    oo     .. oo  ...   |
+|x   xxx oo      o %%..5   oo    |
+|    xxxxoo K      oo      %%    |
+|    %o xxxxxoo  o   2.oo        |
+|    o%      oo        o% 2.     |
++--------------------------------+
+--- r450: ours 7 dragons [11 11 5 4 3 3 2] total 39 | theirs 3 [43 15 2] total 60
++--------------------------------+
+|   xxx  oo        oo      oo    |
+|   x xx oo  Xx o  oo % % %oo    |
+|   x%%xxx   oo        oo      . |
+|   xoo  xxxK%% o % % %oo %   .. |
+|  %xxxxxoo        oo     4oo .  |
+|  xx xxx%%     % %oo %   .%%..  |
+|xxx o xx    oo %    .3oo.. ..  %|
+|x     xx    oo o%% %. oo % ..#  |
+|x      xoo     %o oo    5#oo .  |
+|      xxoo      % oo    ..oo%.  |
+|    %%x     ooK o     %%... ..  |
+|    oox%    oox       oo. ...   |
+|    xxx oo xxxx o %%    . oo    |
+|    xxxxoo x      oo     2%%    |
+|    %o xxxxxoo  3     oo .      |
+|    o%      oo  ..    o%        |
++--------------------------------+

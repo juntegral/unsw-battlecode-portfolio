@@ -1,0 +1,69 @@
+BOT 1510787 '21377' ''
+BAND 0 50 turns 102 eats 5 Qturns 51 Qeat 4 Qdistinct 42
+BAND 51 100 turns 92 eats 3 Qturns 50 Qeat 2 Qdistinct 45
+BAND 101 200 turns 299 eats 37 Qturns 100 Qeat 0 Qdistinct 36
+BAND 201 300 turns 66 eats 0 Qturns 63 Qeat 0 Qdistinct 27
+BAND 450 499 turns 0 eats 0 Qturns 0 Qeat 0 Qdistinct 0
+Q 29 L 4 action 0 dirs [1] head [10, 9] end [11, 9] units 2
+Q 30 L 4 action 1 dirs [] head [11, 9] end [11, 9] units 1
+Q 57 L 4 action 0 dirs [1] head [1, 3] end [2, 3] units 2
+Q 58 L 4 action 1 dirs [] head [2, 3] end [2, 3] units 1
+Q 94 L 3 action 0 dirs [2] head [5, 3] end [5, 4] units 1
+Q 95 L 4 action 1 dirs [] head [5, 4] end [5, 4] units 1
+Q 201 L 2 action 0 dirs [3] head [5, 7] end [4, 7] units 2
+Q 202 L 2 action 0 dirs [3] head [4, 7] end [3, 7] units 2
+Q 260 L 2 action 0 dirs [2] head [6, 7] end [6, 8] units 1
+Q 261 L 2 action 0 dirs [3] head [6, 8] end [5, 8] units 1
+Q 262 L 2 action 0 dirs [3] head [5, 8] end [4, 8] units 1
+Q 263 L 2 action 0 dirs [0] head [4, 8] end [4, 7] units 1
+BOT 1510788 '21377' ''
+BAND 0 50 turns 102 eats 3 Qturns 51 Qeat 1 Qdistinct 40
+BAND 51 100 turns 134 eats 10 Qturns 43 Qeat 0 Qdistinct 30
+BAND 101 200 turns 38 eats 1 Qturns 0 Qeat 0 Qdistinct 0
+BAND 201 300 turns 0 eats 0 Qturns 0 Qeat 0 Qdistinct 0
+BAND 450 499 turns 0 eats 0 Qturns 0 Qeat 0 Qdistinct 0
+Q 50 L 3 action 0 dirs [2] head [1, 10] end [1, 11] units 2
+Q 66 L 3 action 0 dirs [2] head [9, 14] end [9, 15] units 6
+Q 72 L 3 action 0 dirs [0] head [12, 13] end [12, 12] units 4
+Q 77 L 3 action 0 dirs [3] head [12, 12] end [11, 12] units 3
+Q 90 L 2 action 0 dirs [0] head [11, 7] end [11, 6] units 2
+Q 91 L 2 action 0 dirs [0] head [11, 6] end [11, 5] units 2
+Q 92 L 2 action 0 dirs [0] head [11, 5] end [11, 4] units 2
+Q 93 L 2 action 0 dirs [0] head [11, 4] end [11, 3] units 2
+BOT 1510789 '21377' ''
+BAND 0 50 turns 1152 eats 75 Qturns 51 Qeat 2 Qdistinct 46
+BAND 51 100 turns 2606 eats 136 Qturns 50 Qeat 0 Qdistinct 42
+BAND 101 200 turns 6162 eats 294 Qturns 100 Qeat 0 Qdistinct 43
+BAND 201 300 turns 6062 eats 234 Qturns 22 Qeat 0 Qdistinct 17
+BAND 450 499 turns 2564 eats 137 Qturns 0 Qeat 0 Qdistinct 0
+Q 220 L 3 action 0 dirs [0] head [44, 36] end [44, 35] units 61
+Q 221 L 3 action 0 dirs [3] head [44, 35] end [43, 35] units 61
+Q 222 L 3 action 0 dirs [3] head [43, 35] end [42, 35] units 61
+LATE 926 start (450, 20) end 20 eat 0 steps 80 unique 49 splits []
+pos 926 450 [19, 13] 20 20
+pos 926 460 [21, 3] 20 20
+pos 926 470 [22, 3] 20 20
+pos 926 471 [22, 4] 20 20
+pos 926 480 [13, 9] 20 20
+pos 926 490 [6, 18] 20 20
+pos 926 499 [10, 23] 20 20
+LATE 1091 start (450, 20) end 22 eat 2 steps 72 unique 48 splits []
+pos 1091 450 [43, 28] 20 20
+pos 1091 460 [37, 20] 20 20
+pos 1091 470 [40, 22] 21 21
+pos 1091 471 [40, 23] 21 21
+pos 1091 480 [45, 28] 21 21
+pos 1091 490 [54, 23] 21 21
+pos 1091 499 [49, 16] 22 22
+LATE 1214 start (485, 24) end 25 eat 1 steps 30 unique 15 splits []
+pos 1214 490 [42, 5] 24 24
+pos 1214 499 [44, 9] 25 25
+LATE 1120 start (450, 22) end 39 eat 17 steps 95 unique 44 splits []
+pos 1120 450 [12, 37] 22 22
+pos 1120 460 [12, 36] 22 22
+pos 1120 470 [17, 44] 24 25
+pos 1120 471 [17, 45] 25 26
+pos 1120 480 [8, 42] 28 29
+pos 1120 490 [9, 40] 32 32
+pos 1120 499 [19, 41] 38 39
+LONG SPLITS [{'round': 420, 'event': 264686, 'parent': 967, 'child': 1064, 'before': 20, 'keep': 2, 'childL': 18, 'head': [58, 11]}, {'round': 435, 'event': 273732, 'parent': 985, 'child': 1091, 'before': 22, 'keep': 2, 'childL': 20, 'head': [38, 28]}, {'round': 461, 'event': 289420, 'parent': 1064, 'child': 1171, 'before': 27, 'keep': 2, 'childL': 25, 'head': [32, 23]}, {'round': 485, 'event': 303547, 'parent': 1171, 'child': 1214, 'before': 26, 'keep': 2, 'childL': 24, 'head': [42, 7]}, {'round': 494, 'event': 308312, 'parent': 950, 'child': 1223, 'before': 20, 'keep': 2, 'childL': 18, 'head': [28, 60]}]

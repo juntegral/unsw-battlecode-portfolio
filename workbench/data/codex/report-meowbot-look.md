@@ -1,0 +1,5 @@
+- `needs-look`가 `~/meow-loop-out/card-N/look.json`의 기보를 최대 3개 첨부하며, 24 MiB 초과·읽을 수 없는 파일은 건너뛴다.
+- 메모는 짧은 한 줄로, 공식 visualiser에서 내려받은 `.replay`를 선택하는 안내도 한 줄로 추가했다. JSON이 없으면 기존 알림을 유지한다.
+- 지정 저장소 README/docs에 열기 안내가 없어 공식 안내로 확인했다: https://game.battlecode.au/docs/quickstart
+- `tools/check-meowbot-look.py` 가짜 Discord 테스트 7개, `py_compile`, `git diff --check` 통과(2026-10-04 00:31:46 KST).
+- 봇 실행·재시작·종료, 실제 메시지 전송, 커밋은 하지 않았다.

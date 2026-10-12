@@ -1,0 +1,26 @@
+Zhe, found it. not cpu, not a crash, it's our own feeding step. after r400 a small dragon that reaches the leader ends its turn with no MOVE on purpose (it logs FEEDDIE) and the engine books that as "no valid action". on maps of 600 tiles or less the queen counts as a plain dragon, so she feeds herself too
+
+measured
+- reran the 4 games with logs on. 76 of 76 no-action deaths have a FEEDDIE log that turn, queen included (r403, "FEEDDIE 3 50 9" = her length, leader id, leader length)
+- cpu, no. same game in the judge sandbox
+```
+                     points per turn
+the 19 feed turns    4.3M to 4.9M
+whole game max       26.6M
+online TD max        36.6M (38 games, 0 timeouts)
+limit                100M
+```
+- "always side A" was our 2 seeds. with 6 more seeds B does most of it in 3, A in 1, both in 2. it's the side with 4+ units and a leader twice as long
+- "whichever bot" because main vs main gives the identical game
+- is_queen() to real_queen() at main.cpp 2303 on a copy, 8 games, she never feeds. mechanism check, not a strength test
+- no result flips in the 4 local games. online our queen died this way in 2 of 660 games, both lost. in 1163279 (tower defense) their queen was dead since r58, ours fed at r418, we lost 24 to 37 on longest
+
+read from code, not tested
+- main.cpp 551-554 returns with no action when ready_to_die(), feeding starts after ENDGAME_ROUND 400
+- pick_feed_target skips is_queen(), which is false at 600 tiles or less (3332)
+- that the online deaths are the same path, server replays have no logs
+
+3 replays attached, look at r401-403. to remake the first
+```
+unswbc run tune_runs/official127/tower_defense.map mybot2 mybot2 --sandbox --seed 3000
+```

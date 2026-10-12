@@ -1,0 +1,194 @@
+[
+ {
+  "id": "F13",
+  "claim": "When our queen is rammed after their queen has died (free layouts), she is alone and in most cases had a single step that ended beyond the rammer free steps.",
+  "how_to_count": "Games: rows with our_code main (then v31 separately), map_key not queen_spawn_dead_end. Event: a cross-team head-on (death reason 3) whose stationary victim (the dragon that dies first, not the one whose turn it is) is our queen, at a moment when their queen has already died in an earlier event. For each: (1) friends = our other living heads within wrapped Manhattan 5 of her head at the ram; count rams with friends under 2 and with friends 0. (2) Take the board at the start of her own last turn before the ram (turnStart of the queen). Rammer head R and rammer length L0 at that moment (leave the ram out and count it separately if the rammer did not exist yet). free = ceil(L0/4). Path distance = steps over the board graph with kelp edges closed, portal edges followed, wrap applied, dragons ignored. A legal step = a neighbour of her head over that graph that no dragon body tile (any dragon, her own included) is on at that moment. Count rams in which at least one legal step ends at path distance greater than free from R. Also count rams in which at least one legal step ends farther from R than max(free, path distance from R to her head at the ram). (3) Count rams with R inside the square of Chebyshev radius 3 (wrapped) around her head at her last turn. Same three counts for their lone queen when our dragon is the mover.",
+  "your_numbers": {
+   "main": {
+    "rams": 30,
+    "friends_under_2": 27,
+    "friends_0": 18,
+    "with_board": 27,
+    "rammer_born_later": 3,
+    "escape_beyond_free_steps": 17,
+    "escape_beyond_actual_ram": 11,
+    "rammer_in_7x7_square": 23,
+    "band_b": "7 of 8 alone",
+    "band_c": "18 of 20 alone"
+   },
+   "v31": {
+    "rams": 75,
+    "friends_under_2": 57,
+    "friends_0": 35,
+    "with_board": 75,
+    "escape_beyond_free_steps": 59,
+    "escape_beyond_actual_ram": 43,
+    "rammer_in_7x7_square": 66
+   },
+   "their_lone_queen_main": {
+    "rams": 42,
+    "friends_under_2": 35,
+    "with_board": 41,
+    "escape_beyond_free_steps": 25
+   },
+   "their_lone_queen_v31": {
+    "rams": 58,
+    "friends_under_2": 46,
+    "with_board": 57,
+    "escape_beyond_free_steps": 33
+   },
+   "our_other_dragons_alive_at_the_ram_median": {
+    "main": 14,
+    "v31": 16
+   }
+  },
+  "slices": [
+   "main and v31",
+   "main opponent rating 1700-1899 and 1900-2099"
+  ]
+ },
+ {
+  "id": "F11",
+  "claim": "On large layouts, among natural pearls born within 6 tiles of a head of both sides, their head is the nearer one in about 6 of 10, and they eat more of the pearls they are nearer to than we eat of ours.",
+  "how_to_count": "Games: our_code main (then v31), split into large (maps open_tiles 2000 or more) and other. Event: a natural pearl birth = a tileChange that adds a pearl and is not part of the run of tileChange events that directly follows a dragonDeath (those are drops). At the birth take the wrapped Manhattan distance from the tile to the nearest head of each side; keep births where both are 6 or less. Class: ours strictly nearer, tie, theirs strictly nearer. Credit the pearl to the side whose dragon turn removes it (never removed = uneaten). Report: ours-nearer births / (ours-nearer + theirs-nearer); of eaten ours-nearer pearls the share we ate; of eaten theirs-nearer pearls the share they ate; of eaten tied pearls the share we ate.",
+  "your_numbers": {
+   "main_large": {
+    "ours_nearer": 8887,
+    "tie": 2684,
+    "theirs_nearer": 12667,
+    "our_nearer_share": 0.412,
+    "we_eat_when_ours_nearer": 0.774,
+    "they_eat_when_theirs_nearer": 0.882,
+    "we_eat_ties": 0.422
+   },
+   "v31_large": {
+    "ours_nearer": 14912,
+    "tie": 4484,
+    "theirs_nearer": 22284,
+    "our_nearer_share": 0.401,
+    "we_eat_when_ours_nearer": 0.764,
+    "they_eat_when_theirs_nearer": 0.906,
+    "we_eat_ties": 0.396
+   },
+   "main_other": {
+    "ours_nearer": 17897,
+    "tie": 5102,
+    "theirs_nearer": 20289,
+    "our_nearer_share": 0.469,
+    "we_eat_when_ours_nearer": 0.774,
+    "they_eat_when_theirs_nearer": 0.774
+   },
+   "v31_other": {
+    "ours_nearer": 32279,
+    "tie": 9898,
+    "theirs_nearer": 38525,
+    "our_nearer_share": 0.456,
+    "we_eat_when_ours_nearer": 0.724,
+    "they_eat_when_theirs_nearer": 0.735
+   },
+   "per_large_layout_our_nearer_share_main": {
+    "Around_UNSW": 0.43,
+    "Australia": 0.414,
+    "Islands": 0.356,
+    "Schooltime_1": 0.389,
+    "Schooltime_2": 0.432
+   },
+   "per_large_layout_our_nearer_share_v31": {
+    "Around_UNSW": 0.395,
+    "Australia": 0.44,
+    "Islands": 0.372,
+    "Schooltime_1": 0.338,
+    "Schooltime_2": 0.4
+   },
+   "main_large_band_b": 0.435,
+   "main_large_band_c": 0.405
+  },
+  "slices": [
+   "main and v31",
+   "the five large layouts one by one",
+   "main opponent rating 1700-1899 and 1900-2099"
+  ]
+ },
+ {
+  "id": "F20",
+  "claim": "At moments when the two sides have the same number of dragons (within 10 percent), a larger share of their heads than of ours is within 2 tiles of a tile that keeps giving pearls.",
+  "how_to_count": "Games: our_code main (then v31) on layouts with open_tiles 1500 or more. Per game: busy tile = a tile with 8 or more natural pearl births in that game (natural birth as in F11: a pearl-adding tileChange not directly following a dragonDeath). Snapshots: the board at the roundStart event of raw rounds 100, 125, 150, ..., 300 (state before that round is played); keep snapshots where each side has at least 1 dragon and neither side has more than 1.1 times the other. A head counts when its wrapped Manhattan distance to some busy tile is 2 or less. Pool heads over kept snapshots: ours near / our heads, theirs near / their heads. Same per layout.",
+  "your_numbers": {
+   "main": {
+    "snapshots": 197,
+    "our_heads": 11350,
+    "their_heads": 11698,
+    "our_share": 0.212,
+    "their_share": 0.318
+   },
+   "v31": {
+    "snapshots": 301,
+    "our_heads": 17554,
+    "their_heads": 18041,
+    "our_share": 0.203,
+    "their_share": 0.317
+   },
+   "per_layout_main_ours_theirs": {
+    "Around_UNSW": "0.160 / 0.274 (91 snapshots)",
+    "Slithery_Fight": "0.267 / 0.368 (69)",
+    "Schooltime_2": "0.289 / 0.430 (19)",
+    "Schooltime_1": "0.099 / 0.119 (8)",
+    "Islands": "0.180 / 0.231 (6)",
+    "Australia": "0.167 / 0.175 (4)"
+   },
+   "per_layout_v31_ours_theirs": {
+    "Around_UNSW": "0.156 / 0.308 (128)",
+    "Slithery_Fight": "0.260 / 0.372 (114)",
+    "Australia": "0.124 / 0.124 (30)",
+    "Schooltime_2": "0.364 / 0.413 (14)",
+    "Islands": "0.175 / 0.238 (11)",
+    "Schooltime_1": "0.156 / 0.144 (4)"
+   },
+   "nearest_friend_distance_ours_smaller_of_non_tied": {
+    "main_large": "12 of 78",
+    "v31_large": "18 of 122"
+   }
+  },
+  "slices": [
+   "main and v31",
+   "Around UNSW and Slithery Fight separately"
+  ]
+ },
+ {
+  "id": "F18",
+  "claim": "On Stripes our dragons pass up a pearl that is one step away through a portal about nine times in ten; opponents pass it up about four times in ten; on other layouts we do not pass up adjacent pearls more than opponents do.",
+  "how_to_count": "Games: our_code main (then v31). Chance = a turnStart of a living dragon at which some tile next to its head (over an open edge or through a portal edge; kelp closed; wrap applied) holds a pearl and no dragon body is on that tile. Passed up = no pearl is removed during that dragon turn. (1) All layouts, raw rounds 0-100: passed up / chances per side. (2) Stripes only, rounds 0-100, same. (3) Stripes, raw rounds 0-199. Region of a tile = tiles reachable over open edges only (kelp and portal edges closed). Pocket chance = every such adjacent pearl tile has a region under 48 tiles and (dragon length + 1) is greater than region size // 2. Among pocket chances, via portal = every such adjacent pearl is reached through a portal edge. Report passed up / chances per side for pocket chances via portal and not via portal. (4) The same pocket-chance rate, rounds 0-100, on all layouts except Stripes.",
+  "your_numbers": {
+   "all_layouts_r0_100": {
+    "main": "ours 0.203 of 29539, theirs 0.243 of 31816",
+    "v31": "ours 0.199 of 58183, theirs 0.229 of 60852"
+   },
+   "stripes_r0_100": {
+    "main": "ours 0.691 of 366, theirs 0.246 of 447 (9 games)",
+    "v31": "ours 0.621 of 978, theirs 0.212 of 1144 (26 games)",
+    "main_by_opponent_rating": "under 1900: 0.765 against 0.220; 1900+: 0.657 against 0.249",
+    "v31_by_opponent_rating": "under 1900: 0.620 against 0.251; 1900+: 0.621 against 0.159"
+   },
+   "stripes_r0_199_pocket_via_portal": {
+    "main": "ours 0.906 of 385, theirs 0.395 of 301",
+    "v31": "ours 0.867 of 1175, theirs 0.375 of 856"
+   },
+   "stripes_r0_199_pocket_not_via_portal": {
+    "main": "ours 0.063 of 79, theirs 0.114 of 411",
+    "v31": "ours 0.047 of 408, theirs 0.130 of 1159"
+   },
+   "pocket_chances_r0_100_without_stripes": {
+    "main": "ours 0.273 of 2163, theirs 0.385 of 1466",
+    "v31": "ours 0.279 of 6635, theirs 0.392 of 4516"
+   },
+   "stripes_results": {
+    "main": "9 games, 2 won, eliminated in 7",
+    "v31": "26 games, 9 won, eliminated in 17"
+   }
+  },
+  "slices": [
+   "main and v31",
+   "Stripes opponents rated under 1900 and 1900 or more"
+  ]
+ }
+]

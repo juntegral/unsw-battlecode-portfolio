@@ -1,0 +1,51 @@
+=== T1. rams on the queen of the same opponent: kills / games (and that opponent's queen alive at the end)
+  vs team  19 all    meow      games 112 kills/game 0.21  her queen alive at end 0.48
+  vs team  19 all    top three games  73 kills/game 0.48  her queen alive at end 0.29
+  vs team  19 large  meow      games  30 kills/game 0.10  her queen alive at end 0.53
+  vs team  19 large  top three games  20 kills/game 0.35  her queen alive at end 0.35
+  vs team  19 medium meow      games  34 kills/game 0.21  her queen alive at end 0.68
+  vs team  19 medium top three games  22 kills/game 0.55  her queen alive at end 0.32
+  vs team  19 small  meow      games  48 kills/game 0.27  her queen alive at end 0.31
+  vs team  19 small  top three games  31 kills/game 0.52  her queen alive at end 0.23
+  vs team  87 all    meow      games 117 kills/game 0.32  her queen alive at end 0.27
+  vs team  87 large  meow      games  32 kills/game 0.22  her queen alive at end 0.19
+  vs team  87 medium meow      games  35 kills/game 0.26  her queen alive at end 0.31
+  vs team  87 small  meow      games  50 kills/game 0.42  her queen alive at end 0.30
+
+=== T2. approaches in which the attacker got within 2 steps of the queen
+  meow      L2-3  any          close approaches   411 rammed the queen 0.114
+  meow      L2-3  big map      close approaches    49 rammed the queen 0.041
+  meow      L2-3  map <= 1200  close approaches   362 rammed the queen 0.124
+  meow      L4    any          close approaches    11 rammed the queen 0.091
+  meow      L4    big map      close approaches     4 rammed the queen 0.000
+  meow      L4    map <= 1200  close approaches     7 rammed the queen 0.143
+  meow      L5+   any          close approaches    13 rammed the queen 0.077
+  meow      L5+   big map      close approaches     9 rammed the queen 0.111
+  meow      L5+   map <= 1200  close approaches     4 rammed the queen 0.000
+  top three L2-3  any          close approaches  1237 rammed the queen 0.214
+  top three L2-3  big map      close approaches   272 rammed the queen 0.169
+  top three L2-3  map <= 1200  close approaches   965 rammed the queen 0.227
+  top three L4    any          close approaches    27 rammed the queen 0.222
+  top three L4    big map      close approaches    10 rammed the queen 0.100
+  top three L4    map <= 1200  close approaches    17 rammed the queen 0.294
+  top three L5+   any          close approaches    28 rammed the queen 0.179
+  top three L5+   big map      close approaches    19 rammed the queen 0.263
+  top three L5+   map <= 1200  close approaches     9 rammed the queen 0.000
+
+=== T3. OUR games (opp >= 2000): win rate by 'we rammed their queen', economy at r150, and our queen's fate
+  ahead  she died otherwise    13/ 16 = 0.81
+  ahead  she lived              1/  8 = 0.12
+  ahead  we rammed her         26/ 29 = 0.90
+  behind she died otherwise    11/ 65 = 0.17
+  behind she lived              1/ 75 = 0.01
+  behind we rammed her          4/ 20 = 0.20
+  even   she died otherwise     3/ 11 = 0.27
+  even   she lived              0/ 14 = 0.00
+  even   we rammed her          4/  5 = 0.80
+
+=== T4. our kills of their queen: our dragon's length, her length, round, result
+  {'her len 10+': 10, 'her len 2-3': 54, 'her len 4-9': 10, 'killer len 2-3': 65, 'killer len 4': 3, 'killer len 5+': 6, 'map class large': 14, 'map class medium': 20, 'map class small': 40, 'result L longest': 18, 'result L wipe-out': 2, 'result W longest': 11, 'result W total': 1, 'result W wipe-out': 42}
+
+=== T5. how the ENEMY queen ended, share of games: against the top three (pooled) and against us
+  top three n=1159 rammed by us=0.56 alive=0.25 crashed or own/ally ram=0.15 no-action (own doing)=0.05
+  meow      n=289 alive=0.41 crashed or own/ally ram=0.30 rammed by us=0.26 no-action (own doing)=0.03

@@ -1,0 +1,1816 @@
+{
+  "totals": {
+    "stops": 12,
+    "stop_segments": 29,
+    "stop_drops": 17,
+    "stop_drops_to_queen": 14,
+    "adjacent_pearl_eaten_turns": 923,
+    "adjacent_pearl_miss_turns": 177,
+    "stationary_without_split": 0,
+    "queen_L4_no_split_units2": 369,
+    "small_sprint_threat_input_pairs": 865,
+    "portal_edge_count": 18,
+    "portal_id_guard_inputs": 0,
+    "unit_cap_feed_input_turns": 0,
+    "games": 4,
+    "queen_alive_end": 3,
+    "enemy_queen_rams": 2,
+    "small_input_games": 4,
+    "portal_games": 3
+  },
+  "games": [
+    {
+      "gid": 1493877,
+      "bot": "21126",
+      "queens": [
+        1,
+        0
+      ],
+      "last_round": 362,
+      "final": {
+        "us": {
+          "alive": 34,
+          "total": 85,
+          "longest": 5,
+          "pearls": 473,
+          "queen_alive": false,
+          "queen_length": 0
+        },
+        "them": {
+          "alive": 0,
+          "total": 0,
+          "longest": 0,
+          "pearls": 98,
+          "queen_alive": false,
+          "queen_length": 0
+        }
+      },
+      "permanent_ahead": 355,
+      "logs": {},
+      "anomalies": {},
+      "q_deaths": [
+        {
+          "death": "1493877:4698",
+          "gid": 1493877,
+          "map": "weakhold",
+          "folder": "data/online/smoke/one8-c2-old",
+          "ours": "A",
+          "id": 1,
+          "side": "us",
+          "round": 87,
+          "event": 4698,
+          "length": 3,
+          "dropped": 2,
+          "cause": "head-on",
+          "reason": 3,
+          "actor": 4,
+          "hit": null,
+          "destination": null,
+          "body": [
+            [
+              24,
+              12
+            ],
+            [
+              25,
+              12
+            ],
+            [
+              25,
+              13
+            ]
+          ],
+          "pearls": [
+            "1493877:4699",
+            "1493877:4700"
+          ],
+          "collision": "1493877:4698",
+          "other": null
+        },
+        {
+          "death": "1493877:53123",
+          "gid": 1493877,
+          "map": "weakhold",
+          "folder": "data/online/smoke/one8-c2-old",
+          "ours": "A",
+          "id": 0,
+          "side": "them",
+          "round": 336,
+          "event": 53123,
+          "length": 2,
+          "dropped": 1,
+          "cause": "head-on",
+          "reason": 3,
+          "actor": 216,
+          "hit": null,
+          "destination": null,
+          "body": [
+            [
+              6,
+              3
+            ],
+            [
+              6,
+              2
+            ]
+          ],
+          "pearls": [
+            "1493877:53124"
+          ],
+          "collision": "1493877:53123",
+          "other": null
+        }
+      ],
+      "stops": 0,
+      "stop_segments": 0,
+      "stop_drops": 0,
+      "stop_drops_to_queen": 0,
+      "stop_drop_examples": [],
+      "adjacent_pearl_eaten_turns": 472,
+      "adjacent_pearl_miss_turns": 66,
+      "miss_moments": [
+        {
+          "r": 96,
+          "id": 36,
+          "length": 2,
+          "start": [
+            29,
+            14
+          ],
+          "end": [
+            30,
+            14
+          ],
+          "dirs": [
+            1
+          ],
+          "adj_pearls": [
+            [
+              28,
+              14
+            ]
+          ]
+        },
+        {
+          "r": 99,
+          "id": 32,
+          "length": 3,
+          "start": [
+            22,
+            13
+          ],
+          "end": [
+            22,
+            12
+          ],
+          "dirs": [
+            0
+          ],
+          "adj_pearls": [
+            [
+              21,
+              13
+            ]
+          ]
+        },
+        {
+          "r": 110,
+          "id": 39,
+          "length": 3,
+          "start": [
+            20,
+            13
+          ],
+          "end": [
+            20,
+            12
+          ],
+          "dirs": [
+            0
+          ],
+          "adj_pearls": [
+            [
+              20,
+              14
+            ]
+          ]
+        }
+      ],
+      "stationary_without_split": 0,
+      "queen_L4_no_split_units2": 71,
+      "small_sprint_threat_input_pairs": 255,
+      "small_sprint_examples": [
+        {
+          "round": 75,
+          "actor": 25,
+          "enemy": 17,
+          "visible_parts": 3,
+          "actual": 3
+        },
+        {
+          "round": 76,
+          "actor": 25,
+          "enemy": 17,
+          "visible_parts": 3,
+          "actual": 3
+        },
+        {
+          "round": 77,
+          "actor": 25,
+          "enemy": 17,
+          "visible_parts": 3,
+          "actual": 3
+        }
+      ],
+      "ram_enemy_queen": [
+        {
+          "r": 336,
+          "id": 216,
+          "length": 2,
+          "start": [
+            5,
+            3
+          ],
+          "dirs": [
+            1
+          ],
+          "deaths": [
+            {
+              "id": 0,
+              "side": 1,
+              "reason": 3,
+              "length": 2,
+              "head": [
+                6,
+                3
+              ]
+            },
+            {
+              "id": 216,
+              "side": 0,
+              "reason": 3,
+              "length": 2,
+              "head": [
+                5,
+                3
+              ]
+            }
+          ],
+          "queen_lengths": [
+            0,
+            2
+          ],
+          "units": [
+            41,
+            2
+          ],
+          "heads": [
+            {
+              "id": 0,
+              "side": 1,
+              "length": 2,
+              "pos": [
+                6,
+                3
+              ],
+              "gap": 1,
+              "visible": true,
+              "parts": 2,
+              "cut": false
+            },
+            {
+              "id": 34,
+              "side": 0,
+              "length": 2,
+              "pos": [
+                13,
+                2
+              ],
+              "gap": 9,
+              "visible": false,
+              "parts": 0,
+              "cut": false
+            },
+            {
+              "id": 148,
+              "side": 0,
+              "length": 2,
+              "pos": [
+                8,
+                13
+              ],
+              "gap": 8,
+              "visible": false,
+              "parts": 0,
+              "cut": false
+            },
+            {
+              "id": 167,
+              "side": 0,
+              "length": 3,
+              "pos": [
+                6,
+                10
+              ],
+              "gap": 8,
+              "visible": false,
+              "parts": 0,
+              "cut": false
+            },
+            {
+              "id": 182,
+              "side": 0,
+              "length": 2,
+              "pos": [
+                37,
+                6
+              ],
+              "gap": 11,
+              "visible": false,
+              "parts": 0,
+              "cut": false
+            },
+            {
+              "id": 196,
+              "side": 0,
+              "length": 2,
+              "pos": [
+                4,
+                13
+              ],
+              "gap": 6,
+              "visible": false,
+              "parts": 0,
+              "cut": false
+            },
+            {
+              "id": 207,
+              "side": 0,
+              "length": 2,
+              "pos": [
+                6,
+                5
+              ],
+              "gap": 3,
+              "visible": true,
+              "parts": 2,
+              "cut": false
+            },
+            {
+              "id": 211,
+              "side": 0,
+              "length": 2,
+              "pos": [
+                12,
+                5
+              ],
+              "gap": 9,
+              "visible": false,
+              "parts": 0,
+              "cut": false
+            },
+            {
+              "id": 232,
+              "side": 0,
+              "length": 2,
+              "pos": [
+                10,
+                14
+              ],
+              "gap": 9,
+              "visible": false,
+              "parts": 0,
+              "cut": false
+            },
+            {
+              "id": 233,
+              "side": 1,
+              "length": 2,
+              "pos": [
+                7,
+                1
+              ],
+              "gap": 4,
+              "visible": true,
+              "parts": 2,
+              "cut": false
+            }
+          ]
+        }
+      ],
+      "portal_edge_count": 0,
+      "portal_id_guard_inputs": 0,
+      "unit_cap_feed_input_turns": 0,
+      "selected_rounds": {
+        "14": [
+          {
+            "count": 3,
+            "total": 9,
+            "longest": 4,
+            "queen": 4
+          },
+          {
+            "count": 3,
+            "total": 8,
+            "longest": 4,
+            "queen": 4
+          }
+        ],
+        "38": [
+          {
+            "count": 5,
+            "total": 12,
+            "longest": 4,
+            "queen": 4
+          },
+          {
+            "count": 3,
+            "total": 9,
+            "longest": 4,
+            "queen": 4
+          }
+        ],
+        "39": [
+          {
+            "count": 5,
+            "total": 12,
+            "longest": 4,
+            "queen": 4
+          },
+          {
+            "count": 3,
+            "total": 9,
+            "longest": 4,
+            "queen": 4
+          }
+        ],
+        "52": [
+          {
+            "count": 5,
+            "total": 14,
+            "longest": 4,
+            "queen": 4
+          },
+          {
+            "count": 4,
+            "total": 10,
+            "longest": 4,
+            "queen": 4
+          }
+        ],
+        "53": [
+          {
+            "count": 5,
+            "total": 14,
+            "longest": 4,
+            "queen": 4
+          },
+          {
+            "count": 4,
+            "total": 10,
+            "longest": 4,
+            "queen": 4
+          }
+        ],
+        "54": [
+          {
+            "count": 6,
+            "total": 14,
+            "longest": 4,
+            "queen": 4
+          },
+          {
+            "count": 4,
+            "total": 10,
+            "longest": 4,
+            "queen": 4
+          }
+        ],
+        "86": [
+          {
+            "count": 11,
+            "total": 30,
+            "longest": 5,
+            "queen": 3
+          },
+          {
+            "count": 7,
+            "total": 19,
+            "longest": 4,
+            "queen": 4
+          }
+        ],
+        "87": [
+          {
+            "count": 10,
+            "total": 25,
+            "longest": 4,
+            "queen": 0
+          },
+          {
+            "count": 6,
+            "total": 17,
+            "longest": 4,
+            "queen": 4
+          }
+        ],
+        "100": [
+          {
+            "count": 12,
+            "total": 28,
+            "longest": 3,
+            "queen": 0
+          },
+          {
+            "count": 5,
+            "total": 16,
+            "longest": 4,
+            "queen": 4
+          }
+        ],
+        "300": [
+          {
+            "count": 41,
+            "total": 92,
+            "longest": 6,
+            "queen": 0
+          },
+          {
+            "count": 1,
+            "total": 4,
+            "longest": 4,
+            "queen": 4
+          }
+        ],
+        "335": [
+          {
+            "count": 40,
+            "total": 90,
+            "longest": 4,
+            "queen": 0
+          },
+          {
+            "count": 1,
+            "total": 4,
+            "longest": 4,
+            "queen": 4
+          }
+        ],
+        "336": [
+          {
+            "count": 40,
+            "total": 90,
+            "longest": 3,
+            "queen": 0
+          },
+          {
+            "count": 1,
+            "total": 2,
+            "longest": 2,
+            "queen": 0
+          }
+        ],
+        "354": [
+          {
+            "count": 38,
+            "total": 89,
+            "longest": 3,
+            "queen": 0
+          },
+          {
+            "count": 2,
+            "total": 6,
+            "longest": 4,
+            "queen": 0
+          }
+        ],
+        "355": [
+          {
+            "count": 37,
+            "total": 88,
+            "longest": 3,
+            "queen": 0
+          },
+          {
+            "count": 3,
+            "total": 6,
+            "longest": 2,
+            "queen": 0
+          }
+        ]
+      }
+    },
+    {
+      "gid": 1493885,
+      "bot": "21126",
+      "queens": [
+        1,
+        0
+      ],
+      "last_round": 221,
+      "final": {
+        "us": {
+          "alive": 37,
+          "total": 89,
+          "longest": 4,
+          "pearls": 223,
+          "queen_alive": true,
+          "queen_length": 4
+        },
+        "them": {
+          "alive": 0,
+          "total": 0,
+          "longest": 0,
+          "pearls": 91,
+          "queen_alive": false,
+          "queen_length": 0
+        }
+      },
+      "permanent_ahead": 53,
+      "logs": {},
+      "anomalies": {},
+      "q_deaths": [
+        {
+          "death": "1493885:2452",
+          "gid": 1493885,
+          "map": "Queen Of Spades",
+          "folder": "data/online/smoke/one8-c2-old",
+          "ours": "A",
+          "id": 0,
+          "side": "them",
+          "round": 54,
+          "event": 2452,
+          "length": 3,
+          "dropped": 2,
+          "cause": "own body",
+          "reason": 1,
+          "actor": 0,
+          "hit": null,
+          "destination": [
+            11,
+            32
+          ],
+          "body": [
+            [
+              11,
+              33
+            ],
+            [
+              11,
+              32
+            ],
+            [
+              10,
+              32
+            ]
+          ],
+          "pearls": [
+            "1493885:2453",
+            "1493885:2454"
+          ],
+          "collision": null,
+          "other": null
+        }
+      ],
+      "stops": 0,
+      "stop_segments": 0,
+      "stop_drops": 0,
+      "stop_drops_to_queen": 0,
+      "stop_drop_examples": [],
+      "adjacent_pearl_eaten_turns": 223,
+      "adjacent_pearl_miss_turns": 82,
+      "miss_moments": [
+        {
+          "r": 18,
+          "id": 3,
+          "length": 2,
+          "start": [
+            15,
+            2
+          ],
+          "end": [
+            14,
+            2
+          ],
+          "dirs": [
+            3
+          ],
+          "adj_pearls": [
+            [
+              15,
+              1
+            ]
+          ]
+        },
+        {
+          "r": 24,
+          "id": 3,
+          "length": 3,
+          "start": [
+            13,
+            2
+          ],
+          "end": [
+            13,
+            3
+          ],
+          "dirs": [
+            2
+          ],
+          "adj_pearls": [
+            [
+              13,
+              1
+            ]
+          ]
+        },
+        {
+          "r": 29,
+          "id": 10,
+          "length": 2,
+          "start": [
+            14,
+            3
+          ],
+          "end": [
+            15,
+            3
+          ],
+          "dirs": [
+            1
+          ],
+          "adj_pearls": [
+            [
+              13,
+              3
+            ]
+          ]
+        }
+      ],
+      "stationary_without_split": 0,
+      "queen_L4_no_split_units2": 72,
+      "small_sprint_threat_input_pairs": 150,
+      "small_sprint_examples": [
+        {
+          "round": 38,
+          "actor": 5,
+          "enemy": 0,
+          "visible_parts": 3,
+          "actual": 3
+        },
+        {
+          "round": 39,
+          "actor": 5,
+          "enemy": 0,
+          "visible_parts": 3,
+          "actual": 3
+        },
+        {
+          "round": 40,
+          "actor": 5,
+          "enemy": 0,
+          "visible_parts": 3,
+          "actual": 3
+        }
+      ],
+      "ram_enemy_queen": [],
+      "portal_edge_count": 4,
+      "portal_id_guard_inputs": 0,
+      "unit_cap_feed_input_turns": 0,
+      "selected_rounds": {
+        "14": [
+          {
+            "count": 2,
+            "total": 8,
+            "longest": 5,
+            "queen": 3
+          },
+          {
+            "count": 3,
+            "total": 8,
+            "longest": 3,
+            "queen": 3
+          }
+        ],
+        "38": [
+          {
+            "count": 5,
+            "total": 13,
+            "longest": 3,
+            "queen": 3
+          },
+          {
+            "count": 5,
+            "total": 11,
+            "longest": 3,
+            "queen": 3
+          }
+        ],
+        "39": [
+          {
+            "count": 5,
+            "total": 14,
+            "longest": 4,
+            "queen": 4
+          },
+          {
+            "count": 5,
+            "total": 12,
+            "longest": 3,
+            "queen": 3
+          }
+        ],
+        "52": [
+          {
+            "count": 9,
+            "total": 25,
+            "longest": 4,
+            "queen": 4
+          },
+          {
+            "count": 4,
+            "total": 12,
+            "longest": 5,
+            "queen": 5
+          }
+        ],
+        "53": [
+          {
+            "count": 9,
+            "total": 25,
+            "longest": 4,
+            "queen": 4
+          },
+          {
+            "count": 4,
+            "total": 10,
+            "longest": 3,
+            "queen": 3
+          }
+        ],
+        "54": [
+          {
+            "count": 8,
+            "total": 23,
+            "longest": 4,
+            "queen": 4
+          },
+          {
+            "count": 3,
+            "total": 7,
+            "longest": 3,
+            "queen": 0
+          }
+        ],
+        "86": [
+          {
+            "count": 13,
+            "total": 34,
+            "longest": 4,
+            "queen": 3
+          },
+          {
+            "count": 6,
+            "total": 14,
+            "longest": 3,
+            "queen": 0
+          }
+        ],
+        "87": [
+          {
+            "count": 14,
+            "total": 36,
+            "longest": 4,
+            "queen": 3
+          },
+          {
+            "count": 6,
+            "total": 14,
+            "longest": 3,
+            "queen": 0
+          }
+        ],
+        "100": [
+          {
+            "count": 17,
+            "total": 41,
+            "longest": 3,
+            "queen": 3
+          },
+          {
+            "count": 6,
+            "total": 14,
+            "longest": 3,
+            "queen": 0
+          }
+        ]
+      }
+    },
+    {
+      "gid": 1493887,
+      "bot": "21126",
+      "queens": [
+        1,
+        0
+      ],
+      "last_round": 63,
+      "final": {
+        "us": {
+          "alive": 27,
+          "total": 68,
+          "longest": 4,
+          "pearls": 86,
+          "queen_alive": true,
+          "queen_length": 4
+        },
+        "them": {
+          "alive": 0,
+          "total": 0,
+          "longest": 0,
+          "pearls": 16,
+          "queen_alive": false,
+          "queen_length": 0
+        }
+      },
+      "permanent_ahead": 39,
+      "logs": {},
+      "anomalies": {},
+      "q_deaths": [
+        {
+          "death": "1493887:1256",
+          "gid": 1493887,
+          "map": "Trophy",
+          "folder": "data/online/smoke/one8-c2-old",
+          "ours": "A",
+          "id": 0,
+          "side": "them",
+          "round": 39,
+          "event": 1256,
+          "length": 5,
+          "dropped": 3,
+          "cause": "head-on",
+          "reason": 3,
+          "actor": 9,
+          "hit": null,
+          "destination": null,
+          "body": [
+            [
+              12,
+              6
+            ],
+            [
+              11,
+              6
+            ],
+            [
+              11,
+              7
+            ],
+            [
+              10,
+              7
+            ],
+            [
+              10,
+              8
+            ]
+          ],
+          "pearls": [
+            "1493887:1257",
+            "1493887:1258",
+            "1493887:1259"
+          ],
+          "collision": "1493887:1256",
+          "other": null
+        }
+      ],
+      "stops": 0,
+      "stop_segments": 0,
+      "stop_drops": 0,
+      "stop_drops_to_queen": 0,
+      "stop_drop_examples": [],
+      "adjacent_pearl_eaten_turns": 86,
+      "adjacent_pearl_miss_turns": 3,
+      "miss_moments": [
+        {
+          "r": 33,
+          "id": 1,
+          "length": 3,
+          "start": [
+            12,
+            6
+          ],
+          "end": [
+            13,
+            6
+          ],
+          "dirs": [
+            1
+          ],
+          "adj_pearls": [
+            [
+              12,
+              21
+            ]
+          ]
+        },
+        {
+          "r": 34,
+          "id": 4,
+          "length": 3,
+          "start": [
+            13,
+            21
+          ],
+          "end": [
+            14,
+            21
+          ],
+          "dirs": [
+            1
+          ],
+          "adj_pearls": [
+            [
+              12,
+              21
+            ]
+          ]
+        },
+        {
+          "r": 36,
+          "id": 5,
+          "length": 3,
+          "start": [
+            11,
+            21
+          ],
+          "end": [
+            11,
+            22
+          ],
+          "dirs": [
+            2
+          ],
+          "adj_pearls": [
+            [
+              12,
+              21
+            ]
+          ]
+        }
+      ],
+      "stationary_without_split": 0,
+      "queen_L4_no_split_units2": 12,
+      "small_sprint_threat_input_pairs": 14,
+      "small_sprint_examples": [
+        {
+          "round": 34,
+          "actor": 9,
+          "enemy": 0,
+          "visible_parts": 4,
+          "actual": 6
+        },
+        {
+          "round": 46,
+          "actor": 15,
+          "enemy": 7,
+          "visible_parts": 3,
+          "actual": 3
+        },
+        {
+          "round": 47,
+          "actor": 8,
+          "enemy": 12,
+          "visible_parts": 3,
+          "actual": 3
+        }
+      ],
+      "ram_enemy_queen": [
+        {
+          "r": 39,
+          "id": 9,
+          "length": 3,
+          "start": [
+            12,
+            8
+          ],
+          "dirs": [
+            0,
+            0
+          ],
+          "deaths": [
+            {
+              "id": 0,
+              "side": 1,
+              "reason": 3,
+              "length": 5,
+              "head": [
+                12,
+                6
+              ]
+            },
+            {
+              "id": 9,
+              "side": 0,
+              "reason": 3,
+              "length": 3,
+              "head": [
+                12,
+                7
+              ]
+            }
+          ],
+          "queen_lengths": [
+            4,
+            5
+          ],
+          "units": [
+            7,
+            4
+          ],
+          "heads": [
+            {
+              "id": 0,
+              "side": 1,
+              "length": 5,
+              "pos": [
+                12,
+                6
+              ],
+              "gap": 2,
+              "visible": true,
+              "parts": 5,
+              "cut": false
+            },
+            {
+              "id": 1,
+              "side": 0,
+              "length": 4,
+              "pos": [
+                17,
+                8
+              ],
+              "gap": 5,
+              "visible": false,
+              "parts": 2,
+              "cut": true
+            },
+            {
+              "id": 6,
+              "side": 1,
+              "length": 2,
+              "pos": [
+                11,
+                13
+              ],
+              "gap": 6,
+              "visible": false,
+              "parts": 0,
+              "cut": false
+            },
+            {
+              "id": 7,
+              "side": 1,
+              "length": 3,
+              "pos": [
+                7,
+                10
+              ],
+              "gap": 7,
+              "visible": false,
+              "parts": 0,
+              "cut": false
+            },
+            {
+              "id": 8,
+              "side": 0,
+              "length": 3,
+              "pos": [
+                8,
+                14
+              ],
+              "gap": 10,
+              "visible": false,
+              "parts": 0,
+              "cut": false
+            },
+            {
+              "id": 12,
+              "side": 1,
+              "length": 2,
+              "pos": [
+                12,
+                13
+              ],
+              "gap": 5,
+              "visible": false,
+              "parts": 0,
+              "cut": false
+            },
+            {
+              "id": 14,
+              "side": 0,
+              "length": 4,
+              "pos": [
+                18,
+                10
+              ],
+              "gap": 8,
+              "visible": false,
+              "parts": 1,
+              "cut": true
+            }
+          ]
+        }
+      ],
+      "portal_edge_count": 2,
+      "portal_id_guard_inputs": 0,
+      "unit_cap_feed_input_turns": 0,
+      "selected_rounds": {
+        "14": [
+          {
+            "count": 2,
+            "total": 4,
+            "longest": 2,
+            "queen": 2
+          },
+          {
+            "count": 1,
+            "total": 3,
+            "longest": 3,
+            "queen": 3
+          }
+        ],
+        "38": [
+          {
+            "count": 7,
+            "total": 21,
+            "longest": 4,
+            "queen": 4
+          },
+          {
+            "count": 4,
+            "total": 12,
+            "longest": 5,
+            "queen": 5
+          }
+        ],
+        "39": [
+          {
+            "count": 7,
+            "total": 20,
+            "longest": 4,
+            "queen": 4
+          },
+          {
+            "count": 3,
+            "total": 7,
+            "longest": 3,
+            "queen": 0
+          }
+        ],
+        "52": [
+          {
+            "count": 16,
+            "total": 46,
+            "longest": 5,
+            "queen": 5
+          },
+          {
+            "count": 1,
+            "total": 3,
+            "longest": 3,
+            "queen": 0
+          }
+        ],
+        "53": [
+          {
+            "count": 19,
+            "total": 48,
+            "longest": 4,
+            "queen": 3
+          },
+          {
+            "count": 1,
+            "total": 3,
+            "longest": 3,
+            "queen": 0
+          }
+        ],
+        "54": [
+          {
+            "count": 20,
+            "total": 50,
+            "longest": 4,
+            "queen": 3
+          },
+          {
+            "count": 1,
+            "total": 3,
+            "longest": 3,
+            "queen": 0
+          }
+        ]
+      }
+    },
+    {
+      "gid": 1493889,
+      "bot": "21126",
+      "queens": [
+        1,
+        0
+      ],
+      "last_round": 499,
+      "final": {
+        "us": {
+          "alive": 1,
+          "total": 28,
+          "longest": 28,
+          "pearls": 152,
+          "queen_alive": true,
+          "queen_length": 28
+        },
+        "them": {
+          "alive": 38,
+          "total": 143,
+          "longest": 19,
+          "pearls": 1206,
+          "queen_alive": true,
+          "queen_length": 19
+        }
+      },
+      "permanent_ahead": 420,
+      "logs": {},
+      "anomalies": {},
+      "q_deaths": [],
+      "stops": 12,
+      "stop_segments": 29,
+      "stop_drops": 17,
+      "stop_drops_to_queen": 14,
+      "stop_drop_examples": [
+        {
+          "pearl": "1493889:50404",
+          "gid": 1493889,
+          "map": "Trauma",
+          "death": "1493889:50403",
+          "dragon": 219,
+          "drop_side": "us",
+          "drop_round": 302,
+          "spawn_event": 50404,
+          "xy": [
+            43,
+            7
+          ],
+          "segment_index": 0,
+          "fountain": false,
+          "eater": "us",
+          "eat_round": 305,
+          "remove_event": 51162,
+          "update_event": 51163,
+          "eater_id": 1,
+          "wait": 3
+        },
+        {
+          "pearl": "1493889:51409",
+          "gid": 1493889,
+          "map": "Trauma",
+          "death": "1493889:51408",
+          "dragon": 315,
+          "drop_side": "us",
+          "drop_round": 305,
+          "spawn_event": 51409,
+          "xy": [
+            43,
+            5
+          ],
+          "segment_index": 0,
+          "fountain": false,
+          "eater": "us",
+          "eat_round": 307,
+          "remove_event": 51707,
+          "update_event": 51708,
+          "eater_id": 1,
+          "wait": 2
+        },
+        {
+          "pearl": "1493889:53156",
+          "gid": 1493889,
+          "map": "Trauma",
+          "death": "1493889:53155",
+          "dragon": 246,
+          "drop_side": "us",
+          "drop_round": 312,
+          "spawn_event": 53156,
+          "xy": [
+            42,
+            8
+          ],
+          "segment_index": 0,
+          "fountain": false,
+          "eater": "us",
+          "eat_round": 314,
+          "remove_event": 53587,
+          "update_event": 53588,
+          "eater_id": 1,
+          "wait": 2
+        }
+      ],
+      "adjacent_pearl_eaten_turns": 142,
+      "adjacent_pearl_miss_turns": 26,
+      "miss_moments": [
+        {
+          "r": 60,
+          "id": 5,
+          "length": 2,
+          "start": [
+            32,
+            5
+          ],
+          "end": [
+            32,
+            6
+          ],
+          "dirs": [
+            2
+          ],
+          "adj_pearls": [
+            [
+              33,
+              5
+            ]
+          ]
+        },
+        {
+          "r": 62,
+          "id": 5,
+          "length": 2,
+          "start": [
+            32,
+            7
+          ],
+          "end": [
+            32,
+            8
+          ],
+          "dirs": [
+            2
+          ],
+          "adj_pearls": [
+            [
+              33,
+              7
+            ]
+          ]
+        },
+        {
+          "r": 66,
+          "id": 5,
+          "length": 2,
+          "start": [
+            32,
+            7
+          ],
+          "end": [
+            32,
+            6
+          ],
+          "dirs": [
+            0
+          ],
+          "adj_pearls": [
+            [
+              33,
+              7
+            ]
+          ]
+        }
+      ],
+      "stationary_without_split": 0,
+      "queen_L4_no_split_units2": 214,
+      "small_sprint_threat_input_pairs": 446,
+      "small_sprint_examples": [
+        {
+          "round": 115,
+          "actor": 3,
+          "enemy": 18,
+          "visible_parts": 3,
+          "actual": 3
+        },
+        {
+          "round": 116,
+          "actor": 3,
+          "enemy": 18,
+          "visible_parts": 4,
+          "actual": 4
+        },
+        {
+          "round": 122,
+          "actor": 70,
+          "enemy": 8,
+          "visible_parts": 3,
+          "actual": 3
+        }
+      ],
+      "ram_enemy_queen": [],
+      "portal_edge_count": 12,
+      "portal_id_guard_inputs": 0,
+      "unit_cap_feed_input_turns": 0,
+      "selected_rounds": {
+        "14": [
+          {
+            "count": 3,
+            "total": 8,
+            "longest": 4,
+            "queen": 4
+          },
+          {
+            "count": 3,
+            "total": 8,
+            "longest": 4,
+            "queen": 4
+          }
+        ],
+        "38": [
+          {
+            "count": 3,
+            "total": 8,
+            "longest": 4,
+            "queen": 4
+          },
+          {
+            "count": 8,
+            "total": 20,
+            "longest": 4,
+            "queen": 4
+          }
+        ],
+        "39": [
+          {
+            "count": 3,
+            "total": 8,
+            "longest": 4,
+            "queen": 4
+          },
+          {
+            "count": 9,
+            "total": 21,
+            "longest": 4,
+            "queen": 4
+          }
+        ],
+        "52": [
+          {
+            "count": 3,
+            "total": 8,
+            "longest": 4,
+            "queen": 4
+          },
+          {
+            "count": 11,
+            "total": 26,
+            "longest": 4,
+            "queen": 4
+          }
+        ],
+        "53": [
+          {
+            "count": 3,
+            "total": 8,
+            "longest": 4,
+            "queen": 4
+          },
+          {
+            "count": 12,
+            "total": 28,
+            "longest": 5,
+            "queen": 5
+          }
+        ],
+        "54": [
+          {
+            "count": 3,
+            "total": 8,
+            "longest": 4,
+            "queen": 4
+          },
+          {
+            "count": 12,
+            "total": 29,
+            "longest": 5,
+            "queen": 5
+          }
+        ],
+        "86": [
+          {
+            "count": 4,
+            "total": 10,
+            "longest": 4,
+            "queen": 4
+          },
+          {
+            "count": 23,
+            "total": 52,
+            "longest": 6,
+            "queen": 6
+          }
+        ],
+        "87": [
+          {
+            "count": 4,
+            "total": 10,
+            "longest": 4,
+            "queen": 4
+          },
+          {
+            "count": 23,
+            "total": 51,
+            "longest": 6,
+            "queen": 6
+          }
+        ],
+        "100": [
+          {
+            "count": 4,
+            "total": 10,
+            "longest": 4,
+            "queen": 4
+          },
+          {
+            "count": 24,
+            "total": 56,
+            "longest": 6,
+            "queen": 6
+          }
+        ],
+        "300": [
+          {
+            "count": 13,
+            "total": 35,
+            "longest": 6,
+            "queen": 6
+          },
+          {
+            "count": 52,
+            "total": 137,
+            "longest": 17,
+            "queen": 17
+          }
+        ],
+        "335": [
+          {
+            "count": 7,
+            "total": 30,
+            "longest": 15,
+            "queen": 15
+          },
+          {
+            "count": 56,
+            "total": 151,
+            "longest": 19,
+            "queen": 19
+          }
+        ],
+        "336": [
+          {
+            "count": 7,
+            "total": 30,
+            "longest": 15,
+            "queen": 15
+          },
+          {
+            "count": 55,
+            "total": 151,
+            "longest": 19,
+            "queen": 19
+          }
+        ],
+        "354": [
+          {
+            "count": 5,
+            "total": 28,
+            "longest": 18,
+            "queen": 18
+          },
+          {
+            "count": 61,
+            "total": 163,
+            "longest": 22,
+            "queen": 22
+          }
+        ],
+        "355": [
+          {
+            "count": 5,
+            "total": 28,
+            "longest": 18,
+            "queen": 18
+          },
+          {
+            "count": 62,
+            "total": 166,
+            "longest": 22,
+            "queen": 22
+          }
+        ],
+        "400": [
+          {
+            "count": 2,
+            "total": 27,
+            "longest": 23,
+            "queen": 23
+          },
+          {
+            "count": 53,
+            "total": 159,
+            "longest": 30,
+            "queen": 30
+          }
+        ],
+        "401": [
+          {
+            "count": 1,
+            "total": 23,
+            "longest": 23,
+            "queen": 23
+          },
+          {
+            "count": 50,
+            "total": 160,
+            "longest": 32,
+            "queen": 32
+          }
+        ],
+        "410": [
+          {
+            "count": 1,
+            "total": 23,
+            "longest": 23,
+            "queen": 23
+          },
+          {
+            "count": 59,
+            "total": 171,
+            "longest": 33,
+            "queen": 33
+          }
+        ],
+        "414": [
+          {
+            "count": 1,
+            "total": 23,
+            "longest": 23,
+            "queen": 23
+          },
+          {
+            "count": 56,
+            "total": 164,
+            "longest": 33,
+            "queen": 33
+          }
+        ],
+        "419": [
+          {
+            "count": 1,
+            "total": 23,
+            "longest": 23,
+            "queen": 23
+          },
+          {
+            "count": 56,
+            "total": 155,
+            "longest": 23,
+            "queen": 23
+          }
+        ],
+        "420": [
+          {
+            "count": 1,
+            "total": 23,
+            "longest": 23,
+            "queen": 23
+          },
+          {
+            "count": 57,
+            "total": 155,
+            "longest": 21,
+            "queen": 21
+          }
+        ],
+        "499": [
+          {
+            "count": 1,
+            "total": 28,
+            "longest": 28,
+            "queen": 28
+          },
+          {
+            "count": 38,
+            "total": 143,
+            "longest": 19,
+            "queen": 19
+          }
+        ]
+      }
+    }
+  ]
+}

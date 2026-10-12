@@ -1,0 +1,16 @@
+=== 1044205 Trophy 25x25 (625 cells) run dl-20261004 | A = meow (1853) vs test4 (2233) | winner A by wipe-out after 157 rounds
+queen #1 start (20, 9); enemy queen #0 start (4, 9); path between the starts 25
+ALIVE at the end, length 2
+splits (round, before -> keeps + child, child id): r14:4->2+2(#6) r22:4->2+2(#9) r40:4->2+2(#16) r51:4->2+2(#26)
+block | head | from start | len | ate nat/corpse | splits | rounds enemy in view | nearest enemy | cells used | own heads<=4 | units own/enemy
+r  0 | (20, 9)   |   0 |  3 | 3/0 | 2 |  5 | 3 | 23 | 0.3 | 2/2
+r 25 | (17, 9)   |  19 |  2 | 3/0 | 1 |  0 | 6 | 24 | 1.1 | 7/3
+r 50 | (19, 9)   |   1 |  3 | 1/0 | 1 |  1 | 4 | 24 | 1.3 | 17/5
+r 75 | (20, 18)  |  11 |  2 | 0/0 | 0 |  1 | 5 | 25 | 1.4 | 29/5
+r100 | (19, 1)   |  18 |  2 | 0/0 | 0 |  0 | 7 | 21 | 2.4 | 38/4
+r125 | (5, 1)    |  29 |  2 | 0/0 | 0 |  0 | 9 | 21 | 1.8 | 45/2
+r150 | (3, 4)    |  27 |  2 | 0/0 | 0 |  0 | 9 |  7 | 3.4 | 51/1
+moves from round 126:
+   126:N  127:E  128:N  129:N  130:W  131:W  132:S  133:W  134:N  135:E  136:S  137:E
+   138:S  139:S  140:W  141:S  142:W  143:S  144:S  145:W  146:W  147:S  148:E  149:E
+   150:S  151:E  152:N  153:N  154:W  155:N  156:N

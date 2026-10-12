@@ -1,0 +1,12 @@
+# smoke_pick 결과
+- 완료 시각: 2026-10-03 22:39:39 KST.
+- `tools/smoke_pick.py` 구현: 다운로드 메타데이터와 기보에서 우리 진영을 식별한다.
+- 여왕 사망·생존 라운드·포털 통과, r150–300 분열, r300 이후 자살, 최종 최장 길이를 출력한다.
+- `--us 1119`, `--n 5`, `--focus queen|split|feed|all` 지원; 동점은 패배 우선이다.
+- stdout과 `<dir>/pick.md`에 동일한 표와 정렬 기준을 쓴다.
+- 외부 battlecode `replay.py`를 sys.path로 import하며 복사하지 않았다. Python stdlib만 사용한다.
+- 검증: `python3 -m py_compile tools/smoke_pick.py` 통과.
+- 임시 자료: 진영 반전, 포털 다중 이동, 집계 경계, 사망, 최종 길이, 정렬, CLI 파일 일치 통과.
+- 실제 외부 파서로 임시 gzip/packed 기보의 raw-event fallback 검증도 통과했다.
+- 기존 다운로드 디렉터리 목록: 없음 (`data/online/` 자체가 없음); 실제 다운로드 기보 시험은 수행 불가.
+- 네트워크·키 접근 없음; `tools/smoke.py` 수정 없음; 변경은 미커밋 상태다.

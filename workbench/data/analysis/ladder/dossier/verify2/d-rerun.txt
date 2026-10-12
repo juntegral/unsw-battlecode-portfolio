@@ -1,0 +1,10 @@
+Australia #1 35 games; short dragons (length 2-4, not queens), rounds 101 300 ; per game
+side, our count | turns | enemy head in view | chance (equal or longer head in reach) | of those with the local edge | meets the size rule | rams made | rams at a chance: with edge / without | take rate with edge / without | ends turn exposed | exposed and outnumbered | rammed by an exposing head | hazard exposed / exposed and outnumbered
+ours below | 6082 | 1981.6 | 64.4 | 19.2 | 12.9 | 3.9 | 2.1 / 1.1 | 0.111 / 0.025 | 129.7 | 89.4 | 26.9 | 0.208 / 0.255
+      raw {'turns': 212878, 'seen': 69357, 'exposed': 4539, 'exposed_out': 3130, 'hit_tracked': 1211, 'exposed_hit': 942, 'exposed_out_hit': 798, 'can': 2254, 'can_edge': 673, 'can_rule': 450, 'rams': 136, 'rams_can': 114, 'rams_can_edge': 75, 'took_edge': 75, 'took_noedge': 39}
+ours cap   | 1241 | 307.7 | 7.3 | 2.2 | 0.3 | 2.2 | 1.8 / 0.2 | 0.805 / 0.033 | 17.9 | 9.7 | 3.9 | 0.219 / 0.332
+      raw {'turns': 43442, 'seen': 10770, 'exposed': 625, 'exposed_out': 340, 'hit_tracked': 156, 'exposed_hit': 137, 'exposed_out_hit': 113, 'can': 257, 'can_edge': 77, 'can_rule': 11, 'rams': 77, 'rams_can': 68, 'rams_can_edge': 62, 'took_edge': 62, 'took_noedge': 6}
+theirs below | 8192 | 1893.0 | 44.5 | 19.4 | 5.5 | 32.9 | 13.5 / 7.0 | 0.696 / 0.278 | 107.4 | 58.5 | 1.9 | 0.018 / 0.014
+      raw {'turns': 286734, 'seen': 66256, 'can': 1558, 'can_edge': 680, 'can_rule': 191, 'rams': 1153, 'rams_can': 717, 'rams_can_edge': 473, 'took_edge': 473, 'took_noedge': 244, 'exposed': 3758, 'exposed_out': 2049, 'hit_tracked': 96, 'exposed_hit': 68, 'exposed_out_hit': 28}
+theirs cap   | 959 | 310.0 | 9.7 | 2.9 | 1.0 | 5.0 | 2.1 / 1.1 | 0.718 / 0.165 | 24.5 | 15.7 | 1.7 | 0.069 / 0.099
+      raw {'turns': 33574, 'seen': 10850, 'exposed': 857, 'exposed_out': 548, 'can': 339, 'can_edge': 103, 'can_rule': 35, 'rams': 174, 'rams_can': 113, 'rams_can_edge': 74, 'took_edge': 74, 'took_noedge': 39, 'hit_tracked': 60, 'exposed_hit': 59, 'exposed_out_hit': 54}

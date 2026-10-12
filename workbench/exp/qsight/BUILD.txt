@@ -1,0 +1,5 @@
+switch: Q2SIGHT_ON (constexpr bool, default false)
+files: versions/v1.8/bot/{params.hpp,qsight.hpp,qsight.cpp,world.hpp,world.cpp,plan.cpp,main.cpp}; versions/v1.8/VERSION.md; exp/qsight/**
+spec: exp/qsight/spec.json — 196 games (184 on/off + 12 identity)
+run: node exp/qsight/runq.js exp/qsight/spec.json --jobs 3 --cap 6; then UNSW_RULES=123 node exp/qsight/analyze.js
+risk: blocked/reflected sonar, estimated enemy lengths and stale reach; live latency/deaths/CPU unverified; seed 2 deferred

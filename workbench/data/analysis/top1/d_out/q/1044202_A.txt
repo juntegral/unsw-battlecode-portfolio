@@ -1,0 +1,74 @@
+=== 1044202 Default 32x32 (1024 cells) run dl-20261004 | A = meow (1853) vs test4 (2233) | winner B by wipe-out after 288 rounds
+queen #0 start (0, 0); enemy queen #1 start (31, 31); path between the starts 6
+DEATH r149 headon L2 at (6, 9) by #30B L4 from (6, 7) with WSES
+splits (round, before -> keeps + child, child id): r1:4->2+2(#11)
+block | head | from start | len | ate nat/corpse | splits | rounds enemy in view | nearest enemy | cells used | own heads<=4 | units own/enemy
+r  0 | (0, 0)    |   0 |  4 | 0/0 | 1 | 24 | 4 | 24 | 0.2 | 4/4
+r 25 | (1, 21)   |  12 |  2 | 0/0 | 0 |  1 | 4 | 23 | 0.0 | 9/8
+r 50 | (13, 24)  |  21 |  2 | 0/0 | 0 |  9 | 2 | 24 | 0.2 | 13/11
+r 75 | (23, 15)  |  24 |  2 | 0/0 | 0 | 17 | 2 | 19 | 0.0 | 10/11
+r100 | (25, 10)  |  17 |  2 | 0/0 | 0 | 17 | 3 | 21 | 0.1 | 13/19
+r125 | (3, 11)   |  14 |  2 | 0/0 | 0 | 15 | 3 | 18 | 0.3 | 13/23
+moves from round 119:
+   119:S!5  120:E!7  121:E!5  122:S!3  123:S!5  124:S  125:S  126:E  127:E  128:E  129:N  130:E!5
+   131:S  132:S  133:S  134:E  135:N!5  136:W!5  137:S  138:W!3  139:N!3  140:E!5  141:N!3  142:W!3
+   143:N!3  144:E!5  145:E!3  146:N!5  147:W!3  148:W!3  149:N!5
+death record: {"round": 149, "reason": "headon", "len": 2, "pos": [6, 9], "own": 0, "killer": {"id": 30, "team": "B", "len": 4, "steps": 4, "nsteps": 4, "start": [6, 7], "born": 0, "dirs": "WSES", "parent": [29, 61], "cheb_now": 2, "seen_last": 1, "seen_last3": 1}}
+  r142 L2 at (7, 12) move W -> [6, 12] ate 0 | free 3 safe 3 | in reach at start 0, at end 0 | froom 40 tree 0 | N=F(7,11) reach0 room40 E=F(8,12) reach0 room40 S=o(7,13) #0L2s1 W=F(6,12) reach0 room40 | enemies #29L3@(10,10)c3p7V #46L2@(9,13)c2p3V
+  r143 L2 at (6, 12) move N -> [6, 11] ate 0 | free 3 safe 3 | in reach at start 0, at end 0 | froom 40 tree 0 | N=F(6,11) reach0 room40 E=o(7,12) #0L2s1 S=F(6,13) reach0 room40 W=F(5,12) reach0 room40 | enemies #29L3@(11,10)c5p5 #44L2@(1,13)c5p6 #46L2@(8,13)c2p3V
+  r144 L2 at (6, 11) move E -> [7, 11] ate 0 | free 3 safe 3 | in reach at start 0, at end 0 | froom 40 tree 0 | N=F(6,10) reach0 room40 E=F(7,11) reach0 room40 S=o(6,12) #0L2s1 W=F(5,11) reach0 room40 | enemies #29L3@(12,10)c6p5 #44L2@(1,12)c5p6 #46L2@(8,14)c3p5V #61L3@(10,15)c4p-1
+  r145 L2 at (7, 11) move E -> [8, 11] ate 0 | free 3 safe 3 | in reach at start 0, at end 0 | froom 40 tree 0 | N=F(7,10) reach0 room40 E=F(8,11) reach0 room40 S=F(7,12) reach0 room40 W=o(6,11) #0L2s1 | enemies #44L2@(1,11)c6p6 #46L2@(7,14)c3p3V
+  r146 L2 at (8, 11) move N -> [8, 10] ate 0 | free 3 safe 3 | in reach at start 0, at end 0 | froom 40 tree 0 | N=F(8,10) reach0 room40 E=F(9,11) reach0 room40 S=F(8,12) reach0 room40 W=o(7,11) #0L2s1 | enemies #30L3@(8,6)c5p5 #35L3@(11,13)c3p9V #46L2@(6,14)c3p5V
+  r147 L2 at (8, 10) move W -> [7, 10] ate 0 | free 3 safe 2 | in reach at start 0, at end 0 | froom 40 tree 0 | N=F(8,9) reach2 room40 E=F(9,10) reach0 room40 S=o(8,11) #0L2s1 W=F(7,10) reach0 room40 | enemies #24L3@(10,7)c3p5V #30L3@(8,7)c3p3V #35L3@(10,13)c3p9V
+  r148 L2 at (7, 10) move W -> [6, 10] ate 0 | free 3 safe 2 | in reach at start 0, at end 0 | froom 40 tree 0 | N=F(7,9) reach2 room40 E=o(8,10) #0L2s1 S=F(7,11) reach0 room40 W=F(6,10) reach0 room40 | enemies #24L3@(10,8)c3p5V #30L3@(7,7)c3p3V #35L3@(10,12)c3p7V
+  r149 L2 at (6, 10) move N -> [6, 9] ate 0 | free 3 safe 1 | in reach at start 0, at end 4 | froom 40 tree 0 | N=F(6,9) reach4 room40 E=o(7,10) #0L2s1 S=F(6,11) reach0 room40 W=F(5,10) reach4 room40 | enemies #24L3@(10,9)c4p5 #30L4@(6,7)c3p5V #35L3@(10,11)c4p5
+--- board at the start of her turn, round 146
+      3 4 5 6 7 8 910111213
+     + + + + + + + + + + + 
+  6   . . . .|. B b . . . .
+     +-+-+-+-+ + + + + + + 
+  7   . . . * . . . . B b b
+     + + + +O+ + + + + + + 
+  8   . . * . . . . . . . .
+     + + + + + + + + + + + 
+  9   . . . . . . . . . . .
+     + + + + + + + +-+-+-+-
+ 10   . . . . . . .|. . * .
+     + + + + + + + + +O+ + 
+ 11   . . . . a @ .|. * . .
+     + + + + + + + + + + + 
+ 12   . . . . . . .|. b b .
+     + + + + + + + + + +O+ 
+ 13   . . . . . . .|. B . .
+     + + + + + + + +-+-+-+-
+ 14   . . . B b . .|. . . .
+     + + + + + + + + +O+ + 
+ 15   . . . . . . .|b . . .
+     + + + + + + + + + + + 
+ 16   . . . . . . .|b B . .
+heads: #0A L2 (8, 11); #24B L3 (11, 7); #30B L3 (8, 6); #35B L3 (11, 13); #46B L2 (6, 14); #61B L3 (11, 16)
+--- board at the start of her turn, round 149
+      1 2 3 4 5 6 7 8 91011
+     + + + + + + + + + + + 
+  5   .|. A . . .|. . . . .
+     + + + + + + + + + + + 
+  6   .|. . . . .|. b . . .
+     + +-+-+-+-+-+ + + + + 
+  7   B . . . . B b b . b .
+     + + + + + +O+ + + + + 
+  8   b . . . * . . . . b .
+     + + + + + + + + + + + 
+  9   . . . . . . . . . B .
+     + + + + + + + + + +-+-
+ 10   . . . . . @ a . .|. .
+     + + + + + + + + + + +O
+ 11   . . . . . . . . .|B *
+     + + + + + + + + + + + 
+ 12   . . . . . . . . .|b .
+     + + + + + + + + + + + 
+ 13   . . . . . . . . .|b .
+     + + + + + + + + + +-+-
+ 14   . . B b . . . . .|. .
+     + + + + + + + + + + +O
+ 15   . . . . . . . . .|. .
+heads: #0A L2 (6, 10); #24B L3 (10, 9); #30B L4 (6, 7); #35B L3 (10, 11); #44B L2 (1, 7); #46B L2 (3, 14); #73A L2 (3, 5)

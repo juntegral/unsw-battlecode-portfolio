@@ -1,0 +1,19 @@
+=== 1045381 Default 32x32 (1024 cells) run dl-20261004 | A = meow (1853) vs WeHaveQuizzes (2157) | winner A by wipe-out after 250 rounds
+queen #1 start (31, 31); enemy queen #0 start (0, 0); path between the starts 6
+ALIVE at the end, length 2
+splits (round, before -> keeps + child, child id): r1:4->2+2(#12) r100:4->2+2(#52) r104:4->2+2(#57) r113:4->2+2(#63) r150:4->2+2(#88) r194:4->2+2(#107)
+block | head | from start | len | ate nat/corpse | splits | rounds enemy in view | nearest enemy | cells used | own heads<=4 | units own/enemy
+r  0 | (31, 31)  |   0 |  4 | 0/0 | 1 |  4 | 4 | 24 | 0.3 | 4/4
+r 25 | (5, 17)   |  20 |  2 | 1/0 | 0 | 19 | 2 | 23 | 0.2 | 9/7
+r 50 | (27, 24)  |  11 |  3 | 0/0 | 0 | 13 | 1 | 21 | 0.5 | 12/10
+r 75 | (25, 1)   |   8 |  3 | 0/1 | 0 | 20 | 5 | 25 | 0.3 | 16/12
+r100 | (9, 2)    |  15 |  4 | 1/3 | 3 |  5 | 9 | 19 | 0.5 | 14/8
+r125 | (21, 2)   |  13 |  2 | 2/0 | 0 |  0 | 9 | 15 | 0.1 | 23/8
+r150 | (23, 3)   |  12 |  4 | 1/0 | 1 |  6 | 9 | 12 | 1.5 | 32/2
+r175 | (26, 2)   |   8 |  3 | 1/0 | 1 |  0 | 7 | 23 | 1.4 | 41/1
+r200 | (31, 11)  |  14 |  2 | 0/0 | 0 |  0 | 9 | 23 | 1.2 | 47/1
+r225 | (29, 6)   |   9 |  2 | 0/0 | 0 |  0 | 9 | 22 | 0.9 | 52/1
+moves from round 219:
+   219:N  220:W  221:N  222:E  223:E  224:N  225:W  226:S  227:W  228:W  229:N  230:W
+   231:N  232:E  233:S  234:S  235:E  236:S  237:S  238:S  239:S  240:W  241:W  242:W
+   243:S  244:S  245:S  246:S  247:S  248:E  249:S

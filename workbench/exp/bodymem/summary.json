@@ -1,0 +1,206 @@
+{
+  "sets": {
+    "on": {
+      "multi": 3355,
+      "completed": 3249,
+      "predicted": 3249,
+      "unknownInput": 28,
+      "unseenPearls": 16,
+      "oversprint": 0,
+      "selfMulti": 0,
+      "queenSelfMulti": 0,
+      "startBodyDrift": 94,
+      "endBodyDrift": 81,
+      "memoryDrift": 95,
+      "missingTags": 0,
+      "oracleDrift": 0,
+      "stepDrift": 0,
+      "reasons": {
+        "O": 1474,
+        "H": 673,
+        "W": 5654,
+        "S": 1628
+      },
+      "causes": {
+        "enemyBody": 13,
+        "sac": 1612,
+        "rammed": 320,
+        "ram": 219,
+        "allyHead": 134,
+        "trap": 7131
+      },
+      "cpuMaxM": 32.4
+    },
+    "off": {
+      "multi": 3638,
+      "completed": 3504,
+      "predicted": 3504,
+      "unknownInput": 33,
+      "unseenPearls": 14,
+      "oversprint": 1,
+      "selfMulti": 0,
+      "queenSelfMulti": 0,
+      "startBodyDrift": 121,
+      "endBodyDrift": 104,
+      "memoryDrift": 122,
+      "missingTags": 0,
+      "oracleDrift": 0,
+      "stepDrift": 0,
+      "reasons": {
+        "O": 1349,
+        "H": 717,
+        "A": 1,
+        "S": 1591,
+        "W": 5421
+      },
+      "causes": {
+        "enemyBody": 11,
+        "sac": 1592,
+        "rammed": 301,
+        "ram": 268,
+        "sprintDeath": 1,
+        "allyHead": 148,
+        "trap": 6758
+      },
+      "cpuMaxM": 32.4
+    }
+  },
+  "sameHistory": {
+    "memory": {
+      "on": {
+        "turns": 500228,
+        "missingCountdown": 13150770,
+        "ambiguousFacing": 0,
+        "worlds": {
+          "on": {
+            "complete": 484167,
+            "completeDrift": 239,
+            "startDrift": 9775,
+            "postDrift": 9654,
+            "unseenEndOnly": 1156
+          },
+          "off": {
+            "complete": 484167,
+            "completeDrift": 2779,
+            "startDrift": 12318,
+            "postDrift": 491186,
+            "unseenEndOnly": 478916
+          }
+        }
+      },
+      "off": {
+        "turns": 490962,
+        "missingCountdown": 13023625,
+        "ambiguousFacing": 0,
+        "worlds": {
+          "on": {
+            "complete": 476268,
+            "completeDrift": 186,
+            "startDrift": 8275,
+            "postDrift": 8277,
+            "unseenEndOnly": 1057
+          },
+          "off": {
+            "complete": 476268,
+            "completeDrift": 2118,
+            "startDrift": 10207,
+            "postDrift": 482258,
+            "unseenEndOnly": 472099
+          }
+        }
+      }
+    },
+    "memory-strict": {
+      "on": {
+        "turns": 500228,
+        "missingCountdown": 13150770,
+        "ambiguousFacing": 0,
+        "worlds": {
+          "on": {
+            "complete": 483636,
+            "completeDrift": 0,
+            "startDrift": 9775,
+            "postDrift": 9654,
+            "unseenEndOnly": 1156
+          },
+          "off": {
+            "complete": 483636,
+            "completeDrift": 2536,
+            "startDrift": 12318,
+            "postDrift": 491186,
+            "unseenEndOnly": 478916
+          }
+        }
+      },
+      "off": {
+        "turns": 490962,
+        "missingCountdown": 13023625,
+        "ambiguousFacing": 0,
+        "worlds": {
+          "on": {
+            "complete": 475849,
+            "completeDrift": 0,
+            "startDrift": 8275,
+            "postDrift": 8277,
+            "unseenEndOnly": 1057
+          },
+          "off": {
+            "complete": 475849,
+            "completeDrift": 1931,
+            "startDrift": 10207,
+            "postDrift": 482258,
+            "unseenEndOnly": 472099
+          }
+        }
+      }
+    }
+  },
+  "nativeProductionBodyCrosscheck": {
+    "on": {
+      "nativeMultiDrift": 94,
+      "checkedDriftTurns": 94,
+      "mismatch": []
+    },
+    "off": {
+      "nativeMultiDrift": 121,
+      "checkedDriftTurns": 121,
+      "mismatch": []
+    }
+  },
+  "context": {
+    "longer": {
+      "N": 17,
+      "sumDelta": 1731,
+      "minDelta": 5,
+      "maxDelta": 254
+    },
+    "shorter": {
+      "N": 16,
+      "sumDelta": -998,
+      "minDelta": -252,
+      "maxDelta": -10
+    },
+    "same": {
+      "N": 51,
+      "sumDelta": 0,
+      "minDelta": 0,
+      "maxDelta": 0
+    },
+    "depth": {
+      "depthPairs": 197168,
+      "depthLower": 2959,
+      "depthSame": 191106,
+      "depthHigher": 3103
+    },
+    "newQueenDeaths": 4,
+    "rescuedQueenDeaths": 4
+  },
+  "completeness": {
+    "expected": 192,
+    "missing": 0,
+    "historyErrors": 0,
+    "pairs": 84,
+    "identityPairs": 12,
+    "identityMatches": 12
+  }
+}

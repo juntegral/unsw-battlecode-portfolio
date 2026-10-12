@@ -1,0 +1,792 @@
+{
+  "at": "2026-10-01T06:07:11.442Z",
+  "mode": "existing-format-symmetry-connectivity-audit",
+  "rows": [
+    {
+      "file": "maps/online-20260927/autarky.map",
+      "sha256": "6365734fab62d1df1c4b67a96d4caea7c436c32edabfb10c76753abea8f652da",
+      "valid": true,
+      "errors": [],
+      "warnings": [],
+      "connectivity": {
+        "allTiles": true,
+        "allStarts": true,
+        "components": [
+          972
+        ]
+      }
+    },
+    {
+      "file": "maps/online-20260927/default.map",
+      "sha256": "7c2923744cfe111663a8590d048489f8612c97256c26265f00b7bcce84e74851",
+      "valid": true,
+      "errors": [],
+      "warnings": [],
+      "connectivity": {
+        "allTiles": true,
+        "allStarts": true,
+        "components": [
+          1024
+        ]
+      }
+    },
+    {
+      "file": "maps/online-20260927/devil.map",
+      "sha256": "0c24ee0260c3c2f9dd3883934eb2d368d8fe6684e05e53d808dfc87ef1920af8",
+      "valid": true,
+      "errors": [],
+      "warnings": [],
+      "connectivity": {
+        "allTiles": true,
+        "allStarts": true,
+        "components": [
+          512
+        ]
+      }
+    },
+    {
+      "file": "maps/online-20260927/portals.map",
+      "sha256": "63a3e81734bdbaa9d0a97311555a32b795e4eda3f02c74f83845a8856ecfc5d3",
+      "valid": true,
+      "errors": [],
+      "warnings": [
+        "existing topology: 18 components; connectivity is not a format constraint"
+      ],
+      "connectivity": {
+        "allTiles": false,
+        "allStarts": false,
+        "components": [
+          240,
+          240,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "file": "maps/online-20260927/prisoners_dilemma.map",
+      "sha256": "86c2062b659c5d90390fcc49b4ae8dc2c60b884620fa78c1ec46a7bed8d0d2f4",
+      "valid": true,
+      "errors": [],
+      "warnings": [],
+      "connectivity": {
+        "allTiles": true,
+        "allStarts": true,
+        "components": [
+          512
+        ]
+      }
+    },
+    {
+      "file": "maps/online-20260927/queen_of_spades.map",
+      "sha256": "2f469fde2d441be65d3f4c82270979b1c71dc9589f9c2aba10b5cb6aa6c528a0",
+      "valid": true,
+      "errors": [],
+      "warnings": [
+        "existing topology: 5 components; connectivity is not a format constraint"
+      ],
+      "connectivity": {
+        "allTiles": false,
+        "allStarts": true,
+        "components": [
+          693,
+          85,
+          85,
+          6,
+          6
+        ]
+      }
+    },
+    {
+      "file": "maps/online-20260927/schooltime.map",
+      "sha256": "0f72c0dc19c2d6e5495aef555ab8b829ff2defe879c8eb03b10e7eb6ceb2044c",
+      "valid": true,
+      "errors": [],
+      "warnings": [
+        "existing topology: 41 components; connectivity is not a format constraint"
+      ],
+      "connectivity": {
+        "allTiles": false,
+        "allStarts": true,
+        "components": [
+          2062,
+          115,
+          115,
+          32,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "file": "maps/online-20260927/slithery_fight.map",
+      "sha256": "4d3b8da8026711f441492e2add20e8f09bb77e209e6a58371172753ed5c01478",
+      "valid": true,
+      "errors": [],
+      "warnings": [
+        "existing topology: 3 components; connectivity is not a format constraint"
+      ],
+      "connectivity": {
+        "allTiles": false,
+        "allStarts": true,
+        "components": [
+          1699,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "file": "maps/online-20260927/trauma.map",
+      "sha256": "f7082d028d08c36084e79dcee070d0ce01fd4f3a1af25ed646634e24ed0eb041",
+      "valid": true,
+      "errors": [],
+      "warnings": [
+        "existing topology: 3 components; connectivity is not a format constraint"
+      ],
+      "connectivity": {
+        "allTiles": false,
+        "allStarts": true,
+        "components": [
+          1144,
+          4,
+          4
+        ]
+      }
+    },
+    {
+      "file": "maps/online-20260927/trophy.map",
+      "sha256": "04ae92569d6482104fd897eaf0c0e457899575d0c85b4f098858362952dce4c6",
+      "valid": true,
+      "errors": [],
+      "warnings": [],
+      "connectivity": {
+        "allTiles": true,
+        "allStarts": true,
+        "components": [
+          625
+        ]
+      }
+    },
+    {
+      "file": "maps/bundled/Colosseum.map",
+      "sha256": "7b6bb7f72473903e8c525173bd5d5be780f0f2ca718a84d5cb892a2e90cd223b",
+      "valid": true,
+      "errors": [],
+      "warnings": [],
+      "connectivity": {
+        "allTiles": true,
+        "allStarts": true,
+        "components": [
+          256
+        ]
+      }
+    },
+    {
+      "file": "maps/bundled/arena.map",
+      "sha256": "2481ba5ef81dad382bac8ffc15852cf2b72c3df091f1575cd9bc8cecc10dbbbb",
+      "valid": true,
+      "errors": [],
+      "warnings": [],
+      "connectivity": {
+        "allTiles": true,
+        "allStarts": true,
+        "components": [
+          121
+        ]
+      }
+    },
+    {
+      "file": "maps/bundled/autarky.map",
+      "sha256": "6365734fab62d1df1c4b67a96d4caea7c436c32edabfb10c76753abea8f652da",
+      "valid": true,
+      "errors": [],
+      "warnings": [],
+      "connectivity": {
+        "allTiles": true,
+        "allStarts": true,
+        "components": [
+          972
+        ]
+      }
+    },
+    {
+      "file": "maps/bundled/big_empty.map",
+      "sha256": "093335fb2bda721133e052e788052b0a1524c40fee2b5c06468b52f24c81a26f",
+      "valid": true,
+      "errors": [],
+      "warnings": [],
+      "connectivity": {
+        "allTiles": true,
+        "allStarts": true,
+        "components": [
+          4096
+        ]
+      }
+    },
+    {
+      "file": "maps/bundled/default.map",
+      "sha256": "7c2923744cfe111663a8590d048489f8612c97256c26265f00b7bcce84e74851",
+      "valid": true,
+      "errors": [],
+      "warnings": [],
+      "connectivity": {
+        "allTiles": true,
+        "allStarts": true,
+        "components": [
+          1024
+        ]
+      }
+    },
+    {
+      "file": "maps/bundled/default_small.map",
+      "sha256": "991e4097c2b73750240fc4939f2abc65d99d7e658aff5ab78ba989f6036b85fc",
+      "valid": true,
+      "errors": [],
+      "warnings": [],
+      "connectivity": {
+        "allTiles": true,
+        "allStarts": true,
+        "components": [
+          256
+        ]
+      }
+    },
+    {
+      "file": "maps/bundled/devil.map",
+      "sha256": "0c24ee0260c3c2f9dd3883934eb2d368d8fe6684e05e53d808dfc87ef1920af8",
+      "valid": true,
+      "errors": [],
+      "warnings": [],
+      "connectivity": {
+        "allTiles": true,
+        "allStarts": true,
+        "components": [
+          512
+        ]
+      }
+    },
+    {
+      "file": "maps/bundled/dilemma.map",
+      "sha256": "86c2062b659c5d90390fcc49b4ae8dc2c60b884620fa78c1ec46a7bed8d0d2f4",
+      "valid": true,
+      "errors": [],
+      "warnings": [],
+      "connectivity": {
+        "allTiles": true,
+        "allStarts": true,
+        "components": [
+          512
+        ]
+      }
+    },
+    {
+      "file": "maps/bundled/queen_of_spades.map",
+      "sha256": "2f469fde2d441be65d3f4c82270979b1c71dc9589f9c2aba10b5cb6aa6c528a0",
+      "valid": true,
+      "errors": [],
+      "warnings": [
+        "existing topology: 5 components; connectivity is not a format constraint"
+      ],
+      "connectivity": {
+        "allTiles": false,
+        "allStarts": true,
+        "components": [
+          693,
+          85,
+          85,
+          6,
+          6
+        ]
+      }
+    },
+    {
+      "file": "maps/bundled/schooltime.map",
+      "sha256": "0f72c0dc19c2d6e5495aef555ab8b829ff2defe879c8eb03b10e7eb6ceb2044c",
+      "valid": true,
+      "errors": [],
+      "warnings": [
+        "existing topology: 41 components; connectivity is not a format constraint"
+      ],
+      "connectivity": {
+        "allTiles": false,
+        "allStarts": true,
+        "components": [
+          2062,
+          115,
+          115,
+          32,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "file": "maps/bundled/stronghold.map",
+      "sha256": "b05a5a87950fbc2e0f51740a4bd033115ee46a598e036c7decb7a3758cfe95f3",
+      "valid": true,
+      "errors": [],
+      "warnings": [],
+      "connectivity": {
+        "allTiles": true,
+        "allStarts": true,
+        "components": [
+          1152
+        ]
+      }
+    },
+    {
+      "file": "maps/bundled/trauma.map",
+      "sha256": "f7082d028d08c36084e79dcee070d0ce01fd4f3a1af25ed646634e24ed0eb041",
+      "valid": true,
+      "errors": [],
+      "warnings": [
+        "existing topology: 3 components; connectivity is not a format constraint"
+      ],
+      "connectivity": {
+        "allTiles": false,
+        "allStarts": true,
+        "components": [
+          1144,
+          4,
+          4
+        ]
+      }
+    },
+    {
+      "file": "maps/bundled/trophy.map",
+      "sha256": "04ae92569d6482104fd897eaf0c0e457899575d0c85b4f098858362952dce4c6",
+      "valid": true,
+      "errors": [],
+      "warnings": [],
+      "connectivity": {
+        "allTiles": true,
+        "allStarts": true,
+        "components": [
+          625
+        ]
+      }
+    },
+    {
+      "file": "maps/server-b/autarky.map",
+      "sha256": "6365734fab62d1df1c4b67a96d4caea7c436c32edabfb10c76753abea8f652da",
+      "valid": true,
+      "errors": [],
+      "warnings": [],
+      "connectivity": {
+        "allTiles": true,
+        "allStarts": true,
+        "components": [
+          972
+        ]
+      }
+    },
+    {
+      "file": "maps/server-b/default.map",
+      "sha256": "7c2923744cfe111663a8590d048489f8612c97256c26265f00b7bcce84e74851",
+      "valid": true,
+      "errors": [],
+      "warnings": [],
+      "connectivity": {
+        "allTiles": true,
+        "allStarts": true,
+        "components": [
+          1024
+        ]
+      }
+    },
+    {
+      "file": "maps/server-b/devil_b.map",
+      "sha256": "aec1e5aafbca774b4b27c0a2d9f43f59da0cb6dd3f5f0b4373f605e8503b99da",
+      "valid": true,
+      "errors": [],
+      "warnings": [],
+      "connectivity": {
+        "allTiles": true,
+        "allStarts": true,
+        "components": [
+          512
+        ]
+      }
+    },
+    {
+      "file": "maps/server-b/portals.map",
+      "sha256": "63a3e81734bdbaa9d0a97311555a32b795e4eda3f02c74f83845a8856ecfc5d3",
+      "valid": true,
+      "errors": [],
+      "warnings": [
+        "existing topology: 18 components; connectivity is not a format constraint"
+      ],
+      "connectivity": {
+        "allTiles": false,
+        "allStarts": false,
+        "components": [
+          240,
+          240,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "file": "maps/server-b/prisoners_dilemma_10.map",
+      "sha256": "7d2d7e4ef20f13c3af83e280b9d4150fabcf7f80c009cd81a0fc587028298810",
+      "valid": true,
+      "errors": [],
+      "warnings": [],
+      "connectivity": {
+        "allTiles": true,
+        "allStarts": true,
+        "components": [
+          512
+        ]
+      }
+    },
+    {
+      "file": "maps/server-b/queen_of_spades_b.map",
+      "sha256": "31a4075845376794bb8faad325463f174b0481d49c7f69181fee035a4f8e925b",
+      "valid": true,
+      "errors": [],
+      "warnings": [
+        "existing topology: 5 components; connectivity is not a format constraint"
+      ],
+      "connectivity": {
+        "allTiles": false,
+        "allStarts": true,
+        "components": [
+          693,
+          85,
+          85,
+          6,
+          6
+        ]
+      }
+    },
+    {
+      "file": "maps/server-b/schooltime_b.map",
+      "sha256": "39f6ec1f240224023a461bc42bc9c06f6d55243a6255012817f0bd267e2d3f67",
+      "valid": true,
+      "errors": [],
+      "warnings": [
+        "existing topology: 41 components; connectivity is not a format constraint"
+      ],
+      "connectivity": {
+        "allTiles": false,
+        "allStarts": true,
+        "components": [
+          2062,
+          115,
+          115,
+          32,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "file": "maps/server-b/slithery_fight_b.map",
+      "sha256": "7133d4342439ba1b2ee4a30b2acc6a7156ff78dfaa19ff5900e22fe581785365",
+      "valid": true,
+      "errors": [],
+      "warnings": [
+        "existing topology: 3 components; connectivity is not a format constraint"
+      ],
+      "connectivity": {
+        "allTiles": false,
+        "allStarts": true,
+        "components": [
+          1699,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "file": "maps/server-b/trauma.map",
+      "sha256": "f7082d028d08c36084e79dcee070d0ce01fd4f3a1af25ed646634e24ed0eb041",
+      "valid": true,
+      "errors": [],
+      "warnings": [
+        "existing topology: 3 components; connectivity is not a format constraint"
+      ],
+      "connectivity": {
+        "allTiles": false,
+        "allStarts": true,
+        "components": [
+          1144,
+          4,
+          4
+        ]
+      }
+    },
+    {
+      "file": "maps/server-b/trophy.map",
+      "sha256": "04ae92569d6482104fd897eaf0c0e457899575d0c85b4f098858362952dce4c6",
+      "valid": true,
+      "errors": [],
+      "warnings": [],
+      "connectivity": {
+        "allTiles": true,
+        "allStarts": true,
+        "components": [
+          625
+        ]
+      }
+    },
+    {
+      "file": "maps/variants/devil_b.map",
+      "sha256": "aec1e5aafbca774b4b27c0a2d9f43f59da0cb6dd3f5f0b4373f605e8503b99da",
+      "valid": true,
+      "errors": [],
+      "warnings": [],
+      "connectivity": {
+        "allTiles": true,
+        "allStarts": true,
+        "components": [
+          512
+        ]
+      }
+    },
+    {
+      "file": "maps/variants/prisoners_dilemma_10.map",
+      "sha256": "7d2d7e4ef20f13c3af83e280b9d4150fabcf7f80c009cd81a0fc587028298810",
+      "valid": true,
+      "errors": [],
+      "warnings": [],
+      "connectivity": {
+        "allTiles": true,
+        "allStarts": true,
+        "components": [
+          512
+        ]
+      }
+    },
+    {
+      "file": "maps/variants/queen_of_spades_b.map",
+      "sha256": "31a4075845376794bb8faad325463f174b0481d49c7f69181fee035a4f8e925b",
+      "valid": true,
+      "errors": [],
+      "warnings": [
+        "existing topology: 5 components; connectivity is not a format constraint"
+      ],
+      "connectivity": {
+        "allTiles": false,
+        "allStarts": true,
+        "components": [
+          693,
+          85,
+          85,
+          6,
+          6
+        ]
+      }
+    },
+    {
+      "file": "maps/variants/schooltime_b.map",
+      "sha256": "39f6ec1f240224023a461bc42bc9c06f6d55243a6255012817f0bd267e2d3f67",
+      "valid": true,
+      "errors": [],
+      "warnings": [
+        "existing topology: 41 components; connectivity is not a format constraint"
+      ],
+      "connectivity": {
+        "allTiles": false,
+        "allStarts": true,
+        "components": [
+          2062,
+          115,
+          115,
+          32,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "file": "maps/variants/slithery_fight_b.map",
+      "sha256": "7133d4342439ba1b2ee4a30b2acc6a7156ff78dfaa19ff5900e22fe581785365",
+      "valid": true,
+      "errors": [],
+      "warnings": [
+        "existing topology: 3 components; connectivity is not a format constraint"
+      ],
+      "connectivity": {
+        "allTiles": false,
+        "allStarts": true,
+        "components": [
+          1699,
+          1,
+          1
+        ]
+      }
+    }
+  ]
+}

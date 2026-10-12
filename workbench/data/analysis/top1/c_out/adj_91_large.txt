@@ -1,0 +1,86 @@
+=== ADJ team 91, large, 60 games: own = the team, opp = its opponents in the same games
+  A turn counts when a pearl lies on a free cell next to the head. ate % = the dragon ate a pearl that turn. Of the turns it did not: what happened to the pearl within 10 rounds.
+  own | by phase
+      r0-49                                  |    7597 turns | ate  67% | not eaten:   2489 -> own team ate it later  52%, enemy ate it   1%, still lying after 10 rounds  47%
+      r150-299                               |   42689 turns | ate  75% | not eaten:  10459 -> own team ate it later  59%, enemy ate it   3%, still lying after 10 rounds  38%
+      r300+                                  |   50388 turns | ate  73% | not eaten:  13445 -> own team ate it later  54%, enemy ate it   2%, still lying after 10 rounds  41%
+      r50-149                                |   26105 turns | ate  75% | not eaten:   6585 -> own team ate it later  61%, enemy ate it   2%, still lying after 10 rounds  37%
+  own | by length (all rounds)
+      L2                                     |   44056 turns | ate  76% | not eaten:  10751 -> own team ate it later  47%, enemy ate it   2%, still lying after 10 rounds  51%
+      L3                                     |   41044 turns | ate  77% | not eaten:   9639 -> own team ate it later  51%, enemy ate it   2%, still lying after 10 rounds  46%
+      L4                                     |   16422 turns | ate  63% | not eaten:   6001 -> own team ate it later  76%, enemy ate it   2%, still lying after 10 rounds  21%
+      L5+                                    |   18878 turns | ate  75% | not eaten:   4765 -> own team ate it later  62%, enemy ate it   4%, still lying after 10 rounds  33%
+      longest                                |    6379 turns | ate  71% | not eaten:   1822 -> own team ate it later  76%, enemy ate it   4%, still lying after 10 rounds  19%
+  own | by exits of the pearl cell (all rounds)
+      exits 0                                |   17268 turns | ate  51% | not eaten:   8409 -> own team ate it later  45%, enemy ate it   1%, still lying after 10 rounds  52%
+      exits 1                                |   47500 turns | ate  65% | not eaten:  16460 -> own team ate it later  47%, enemy ate it   1%, still lying after 10 rounds  51%
+      exits 2+                               |   62011 turns | ate  87% | not eaten:   8109 -> own team ate it later  89%, enemy ate it   6%, still lying after 10 rounds   4%
+  own | by company (all rounds)
+      alone                                  |  110395 turns | ate  74% | not eaten:  28366 -> own team ate it later  52%, enemy ate it   1%, still lying after 10 rounds  46%
+      enemy near                             |    3672 turns | ate  76% | not eaten:    887 -> own team ate it later  41%, enemy ate it  53%, still lying after 10 rounds   6%
+      mate also next to it                   |   12712 turns | ate  71% | not eaten:   3725 -> own team ate it later  98%, enemy ate it   0%, still lying after 10 rounds   1%
+  own | by region of the pearl cell (all rounds)
+      open region (48+ cells)                |  115757 turns | ate  74% | not eaten:  29955 -> own team ate it later  55%, enemy ate it   3%, still lying after 10 rounds  41%
+      pocket, fits (length+1 <= cells/2)     |    7192 turns | ate  79% | not eaten:   1475 -> own team ate it later  92%, enemy ate it   1%, still lying after 10 rounds   7%
+      pocket, too long (length+1 > cells/2)  |    3830 turns | ate  60% | not eaten:   1548 -> own team ate it later  59%, enemy ate it   0%, still lying after 10 rounds  40%
+  own | by region, exits 1 or more, nobody else near, dragons 2-4 long, not the longest, rounds 0-149
+      open region (48+ cells)                |   20294 turns | ate  75% | not eaten:   5001 -> own team ate it later  44%, enemy ate it   1%, still lying after 10 rounds  55%
+      pocket, fits (length+1 <= cells/2)     |    1716 turns | ate  88% | not eaten:    209 -> own team ate it later  95%, enemy ate it   0%, still lying after 10 rounds   5%
+      pocket, too long (length+1 > cells/2)  |     767 turns | ate  64% | not eaten:    274 -> own team ate it later  58%, enemy ate it   0%, still lying after 10 rounds  42%
+  own | by phase, exits 1 or more, nobody else near, dragons 2-4 long, not the longest
+      r0-49                                  |    5534 turns | ate  70% | not eaten:   1646 -> own team ate it later  36%, enemy ate it   1%, still lying after 10 rounds  63%
+      r150-299                               |   25493 turns | ate  80% | not eaten:   5046 -> own team ate it later  58%, enemy ate it   1%, still lying after 10 rounds  41%
+      r300+                                  |   27699 turns | ate  77% | not eaten:   6400 -> own team ate it later  57%, enemy ate it   1%, still lying after 10 rounds  41%
+      r50-149                                |   17243 turns | ate  78% | not eaten:   3838 -> own team ate it later  52%, enemy ate it   1%, still lying after 10 rounds  47%
+  own | by phase, exits 1 or more, nobody else near, dragons 2-4 long, not the longest, open region only
+      r0-49                                  |    4884 turns | ate  69% | not eaten:   1534 -> own team ate it later  33%, enemy ate it   1%, still lying after 10 rounds  66%
+      r150-299                               |   23117 turns | ate  81% | not eaten:   4466 -> own team ate it later  56%, enemy ate it   1%, still lying after 10 rounds  43%
+      r300+                                  |   25815 turns | ate  78% | not eaten:   5709 -> own team ate it later  57%, enemy ate it   1%, still lying after 10 rounds  40%
+      r50-149                                |   15410 turns | ate  78% | not eaten:   3467 -> own team ate it later  49%, enemy ate it   1%, still lying after 10 rounds  50%
+  own | by phase, exits 0, nobody else near, dragons 2-4 long, not the longest
+      r0-49                                  |     626 turns | ate  72% | not eaten:    173 -> own team ate it later  83%, enemy ate it   1%, still lying after 10 rounds  16%
+      r150-299                               |    3978 turns | ate  50% | not eaten:   1987 -> own team ate it later  35%, enemy ate it   0%, still lying after 10 rounds  65%
+      r300+                                  |    4653 turns | ate  42% | not eaten:   2711 -> own team ate it later  26%, enemy ate it   0%, still lying after 10 rounds  70%
+      r50-149                                |    1947 turns | ate  63% | not eaten:    716 -> own team ate it later  50%, enemy ate it   0%, still lying after 10 rounds  50%
+  opp | by phase
+      r0-49                                  |    7768 turns | ate  74% | not eaten:   2008 -> own team ate it later  73%, enemy ate it   1%, still lying after 10 rounds  26%
+      r150-299                               |   47467 turns | ate  75% | not eaten:  12017 -> own team ate it later  57%, enemy ate it   3%, still lying after 10 rounds  40%
+      r300+                                  |   53396 turns | ate  71% | not eaten:  15699 -> own team ate it later  54%, enemy ate it   2%, still lying after 10 rounds  42%
+      r50-149                                |   28324 turns | ate  76% | not eaten:   6660 -> own team ate it later  69%, enemy ate it   2%, still lying after 10 rounds  28%
+  opp | by length (all rounds)
+      L2                                     |   48942 turns | ate  76% | not eaten:  11832 -> own team ate it later  50%, enemy ate it   2%, still lying after 10 rounds  47%
+      L3                                     |   42758 turns | ate  76% | not eaten:  10125 -> own team ate it later  54%, enemy ate it   3%, still lying after 10 rounds  43%
+      L4                                     |   18361 turns | ate  62% | not eaten:   6992 -> own team ate it later  79%, enemy ate it   2%, still lying after 10 rounds  18%
+      L5+                                    |   22590 turns | ate  73% | not eaten:   6076 -> own team ate it later  58%, enemy ate it   3%, still lying after 10 rounds  38%
+      longest                                |    4304 turns | ate  68% | not eaten:   1359 -> own team ate it later  68%, enemy ate it   2%, still lying after 10 rounds  28%
+  opp | by exits of the pearl cell (all rounds)
+      exits 0                                |   27603 turns | ate  49% | not eaten:  14100 -> own team ate it later  45%, enemy ate it   1%, still lying after 10 rounds  53%
+      exits 1                                |   54519 turns | ate  73% | not eaten:  14731 -> own team ate it later  58%, enemy ate it   2%, still lying after 10 rounds  39%
+      exits 2+                               |   54833 turns | ate  86% | not eaten:   7553 -> own team ate it later  85%, enemy ate it   7%, still lying after 10 rounds   8%
+  opp | by company (all rounds)
+      alone                                  |  121508 turns | ate  74% | not eaten:  31137 -> own team ate it later  54%, enemy ate it   1%, still lying after 10 rounds  44%
+      enemy near                             |    3701 turns | ate  76% | not eaten:    906 -> own team ate it later  38%, enemy ate it  57%, still lying after 10 rounds   6%
+      mate also next to it                   |   11746 turns | ate  63% | not eaten:   4341 -> own team ate it later  97%, enemy ate it   0%, still lying after 10 rounds   3%
+  opp | by region of the pearl cell (all rounds)
+      open region (48+ cells)                |  128256 turns | ate  73% | not eaten:  34223 -> own team ate it later  58%, enemy ate it   2%, still lying after 10 rounds  38%
+      pocket, fits (length+1 <= cells/2)     |    4770 turns | ate  79% | not eaten:    995 -> own team ate it later  83%, enemy ate it   1%, still lying after 10 rounds  15%
+      pocket, too long (length+1 > cells/2)  |    3929 turns | ate  70% | not eaten:   1166 -> own team ate it later  52%, enemy ate it   1%, still lying after 10 rounds  46%
+  opp | by region, exits 1 or more, nobody else near, dragons 2-4 long, not the longest, rounds 0-149
+      open region (48+ cells)                |   21781 turns | ate  82% | not eaten:   3908 -> own team ate it later  65%, enemy ate it   1%, still lying after 10 rounds  34%
+      pocket, fits (length+1 <= cells/2)     |    1176 turns | ate  79% | not eaten:    242 -> own team ate it later  82%, enemy ate it   0%, still lying after 10 rounds  18%
+      pocket, too long (length+1 > cells/2)  |     844 turns | ate  64% | not eaten:    302 -> own team ate it later  50%, enemy ate it   0%, still lying after 10 rounds  50%
+  opp | by phase, exits 1 or more, nobody else near, dragons 2-4 long, not the longest
+      r0-49                                  |    5392 turns | ate  78% | not eaten:   1194 -> own team ate it later  62%, enemy ate it   0%, still lying after 10 rounds  38%
+      r150-299                               |   26949 turns | ate  83% | not eaten:   4563 -> own team ate it later  64%, enemy ate it   1%, still lying after 10 rounds  35%
+      r300+                                  |   27476 turns | ate  79% | not eaten:   5723 -> own team ate it later  66%, enemy ate it   2%, still lying after 10 rounds  31%
+      r50-149                                |   18409 turns | ate  82% | not eaten:   3258 -> own team ate it later  65%, enemy ate it   1%, still lying after 10 rounds  33%
+  opp | by phase, exits 1 or more, nobody else near, dragons 2-4 long, not the longest, open region only
+      r0-49                                  |    4889 turns | ate  78% | not eaten:   1064 -> own team ate it later  61%, enemy ate it   0%, still lying after 10 rounds  39%
+      r150-299                               |   25246 turns | ate  84% | not eaten:   4108 -> own team ate it later  65%, enemy ate it   2%, still lying after 10 rounds  34%
+      r300+                                  |   26183 turns | ate  80% | not eaten:   5352 -> own team ate it later  67%, enemy ate it   2%, still lying after 10 rounds  30%
+      r50-149                                |   16892 turns | ate  83% | not eaten:   2844 -> own team ate it later  66%, enemy ate it   1%, still lying after 10 rounds  33%
+  opp | by phase, exits 0, nobody else near, dragons 2-4 long, not the longest
+      r0-49                                  |    1201 turns | ate  71% | not eaten:    347 -> own team ate it later  85%, enemy ate it   0%, still lying after 10 rounds  15%
+      r150-299                               |    6057 turns | ate  43% | not eaten:   3443 -> own team ate it later  31%, enemy ate it   0%, still lying after 10 rounds  69%
+      r300+                                  |    7175 turns | ate  39% | not eaten:   4390 -> own team ate it later  27%, enemy ate it   0%, still lying after 10 rounds  71%
+      r50-149                                |    3629 turns | ate  63% | not eaten:   1355 -> own team ate it later  56%, enemy ate it   1%, still lying after 10 rounds  43%

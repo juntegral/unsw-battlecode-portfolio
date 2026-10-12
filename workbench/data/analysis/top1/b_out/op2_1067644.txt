@@ -1,0 +1,45 @@
+=== OPEN2 1067644 Tower Defense | A = forgot to mention (264) B = SSS (91) | queen spawns {'A': (5, 4), 'B': (26, 11)} | winner B by wipe-out
+  block | side: units total | ate natural/corpse | splits | deaths K(noaction)/S(self)/B(body)/W(kelp)/H(head-on) | paid moves/segments paid | mean dist from spawn | coverage | nat pearls within 10 of spawn || same for B | natural pearls on board
+  r  0 | A:  2u   4t | ate  0/ 0 | sp 0 | K 0 S 0 B 0 W 0 H 0 | paid  0/ 0 | dist  3.0 | cov   2 | near  0 || B:  2u   4t | ate  0/ 0 | sp 0 | K 0 S 0 B 0 W 0 H 0 | paid  0/ 0 | dist  3.0 | cov   2 | near  0 | board 0
+  r 10 | A:  2u   4t | ate  0/ 0 | sp 0 | K 0 S 0 B 0 W 0 H 0 | paid  0/ 0 | dist  3.0 | cov  21 | near  2 || B:  2u   4t | ate  1/ 0 | sp 0 | K 0 S 0 B 0 W 0 H 0 | paid  0/ 0 | dist  3.0 | cov  17 | near  2 | board 4
+  r 20 | A:  2u   4t | ate  0/ 0 | sp 0 | K 0 S 0 B 0 W 0 H 0 | paid  0/ 0 | dist  7.0 | cov  39 | near  7 || B:  2u   5t | ate  0/ 0 | sp 0 | K 0 S 0 B 0 W 0 H 0 | paid  0/ 0 | dist  5.0 | cov  35 | near  7 | board 14
+  r 30 | A:  2u   4t | ate  0/ 0 | sp 0 | K 0 S 0 B 0 W 0 H 0 | paid  0/ 0 | dist  7.0 | cov  54 | near 12 || B:  2u   5t | ate  1/ 0 | sp 0 | K 0 S 0 B 0 W 0 H 0 | paid  0/ 0 | dist  9.0 | cov  48 | near 12 | board 24
+  r 40 | A:  2u   4t | ate  1/ 0 | sp 0 | K 0 S 0 B 0 W 0 H 0 | paid  0/ 0 | dist 15.0 | cov  65 | near 16 || B:  2u   6t | ate  0/ 0 | sp 0 | K 0 S 0 B 0 W 0 H 0 | paid  0/ 0 | dist  7.0 | cov  60 | near 15 | board 31
+  r 50 | A:  2u   5t | ate  5/ 0 | sp 2 | K 0 S 0 B 0 W 0 H 0 | paid  0/ 0 | dist 13.0 | cov  71 | near 19 || B:  2u   6t | ate  4/ 0 | sp 2 | K 0 S 0 B 0 W 0 H 0 | paid  0/ 0 | dist 11.0 | cov  71 | near 19 | board 37
+  r 60 | A:  4u  10t | ate  4/ 1 | sp 3 | K 1 S 0 B 0 W 0 H 1 | paid  0/ 0 | dist 14.0 | cov  80 | near 19 || B:  4u  10t | ate 11/ 3 | sp 6 | K 0 S 0 B 1 W 0 H 1 | paid  1/ 3 | dist 12.7 | cov  85 | near 20 | board 38
+  r 70 | A:  5u  11t | ate  6/ 0 | sp 3 | K 1 S 0 B 0 W 0 H 1 | paid  0/ 0 | dist 11.2 | cov 103 | near 14 || B:  8u  17t | ate 11/ 2 | sp 6 | K 0 S 0 B 2 W 0 H 1 | paid  0/ 0 | dist 12.1 | cov 112 | near 12 | board 26
+  r 80 | A:  6u  13t | ate  7/ 1 | sp 4 | K 0 S 0 B 0 W 0 H 0 | paid  0/ 0 | dist  9.0 | cov 120 | near  6 || B: 11u  24t | ate  2/ 1 | sp 1 | K 0 S 0 B 1 W 0 H 0 | paid  0/ 0 | dist 12.2 | cov 142 | near 10 | board 16
+  r 90 | A: 10u  21t | ate  6/ 3 | sp 3 | K 1 S 0 B 0 W 0 H 2 | paid  1/ 1 | dist 12.1 | cov 131 | near  6 || B: 11u  25t | ate  3/ 2 | sp 2 | K 0 S 0 B 0 W 0 H 2 | paid  0/ 0 | dist 11.9 | cov 166 | near  9 | board 15
+  r100 | A: 10u  23t | ate  0/ 0 | sp 0 | K 0 S 0 B 0 W 0 H 0 | paid  0/ 0 | dist 11.9 | cov 144 | near 10 || B: 11u  26t | ate  1/ 0 | sp 0 | K 0 S 0 B 0 W 0 H 0 | paid  0/ 0 | dist 12.2 | cov 174 | near  9 | board 19
+  length histogram of living dragons at each block start (6 = 6 or longer):
+    r  0 A {2: 2} | B {2: 2}
+    r 10 A {2: 2} | B {2: 2}
+    r 20 A {2: 2} | B {2: 1, 3: 1}
+    r 30 A {2: 2} | B {2: 1, 3: 1}
+    r 40 A {2: 2} | B {3: 2}
+    r 50 A {2: 1, 3: 1} | B {3: 2}
+    r 60 A {2: 2, 3: 2} | B {2: 2, 3: 2}
+    r 70 A {2: 4, 3: 1} | B {2: 7, 3: 1}
+    r 80 A {2: 5, 3: 1} | B {2: 9, 3: 2}
+    r 90 A {2: 9, 3: 1} | B {2: 8, 3: 3}
+    r100 A {2: 7, 3: 3} | B {2: 7, 3: 4}
+  A (forgot to mention) splits (phase, before -> parent + child): n
+     r0-30: 
+     r31-60: 4->2+2: 2
+     r61-100: 4->2+2: 13
+  A parent-child path distance 5 rounds after the split, per block (n, mean): {50: (1, 11.0), 60: (1, 6.0), 70: (2, 3.0), 80: (3, 6.7)}
+  A non-ram deaths by (kind, length; 6 = 6+): {('K', 2): 3}; their pearls: {'pearls dropped': 3, 'segments': 6, 'eaten by own': 3}
+  A non-ram deaths by (kind, the order given, free neighbour cells of its head at that moment): {('K', 'suicide', 'boxed'): 3}
+  A what blocked the four sides of the head in those deaths: {'kelp 2, own body 1, team-mate 1, enemy 0, free 0': 3}
+  A cells where such deaths happened: 2 different cells for 3 deaths; 2 deaths on cells used twice or more; most used [((15, 2), 2), ((14, 11), 1)]
+  A natural pearls eaten by eater length at the start of its turn (6 = 6+): {2: 15, 3: 14}
+  B (SSS) splits (phase, before -> parent + child): n
+     r0-30: 
+     r31-60: 4->2+2: 2
+     r61-100: 4->2+2: 14, 5->2+3: 1
+  B parent-child path distance 5 rounds after the split, per block (n, mean): {50: (2, 5.5), 60: (3, 5.7), 70: (2, 6.5), 90: (1, 6.0)}
+  B non-ram deaths by (kind, length; 6 = 6+): {('B', 2): 4}; their pearls: {'pearls dropped': 4, 'segments': 8, 'eaten by own': 1}
+  B non-ram deaths by (kind, the order given, free neighbour cells of its head at that moment): {('B', 'move', 'boxed'): 4}
+  B what blocked the four sides of the head in those deaths: {'kelp 2, own body 1, team-mate 1, enemy 0, free 0': 4}
+  B cells where such deaths happened: 3 different cells for 4 deaths; 2 deaths on cells used twice or more; most used [((17, 12), 2), ((17, 4), 1), ((14, 3), 1)]
+  B natural pearls eaten by eater length at the start of its turn (6 = 6+): {2: 21, 3: 13}

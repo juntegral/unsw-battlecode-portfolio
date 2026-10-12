@@ -1,0 +1,84 @@
+=== 990346 Slithery Fight 63x27 (1701 cells) run dl-20261003 | A = meow (1837) vs Team SKKU (2076) | winner B by queen rule after 500 rounds
+queen #0 start (3, 22); enemy queen #1 start (59, 4); path between the starts 80
+DEATH r386 body L2 at (18, 24)
+splits (round, before -> keeps + child, child id): r0:25->2+23(#14) r117:4->2+2(#510) r160:4->2+2(#664) r385:57->2+55(#1326)
+block | head | from start | len | ate nat/corpse | splits | rounds enemy in view | nearest enemy | cells used | own heads<=4 | units own/enemy
+r  0 | (3, 22)   |   0 | 25 | 0/0 | 1 |  0 | 9 | 21 | 2.7 | 7/7
+r 25 | (10, 21)  |   8 |  2 | 0/0 | 0 |  0 | 7 | 25 | 2.6 | 31/30
+r 50 | (20, 20)  |  21 |  2 | 0/0 | 0 |  7 | 2 | 16 | 2.8 | 50/39
+r 75 | (22, 25)  |  24 |  2 | 0/0 | 0 | 15 | 3 |  8 | 3.7 | 46/54
+r100 | (24, 26)  |  27 |  2 | 0/2 | 1 | 18 | 1 | 15 | 3.1 | 55/62
+r125 | (25, 23)  |  27 |  2 | 0/0 | 0 |  0 | 7 | 16 | 3.8 | 57/64
+r150 | (23, 24)  |  24 |  2 | 0/3 | 1 | 16 | 1 | 20 | 1.7 | 61/63
+r175 | (25, 20)  |  26 |  3 | 0/0 | 0 |  3 | 7 | 25 | 2.3 | 59/64
+r200 | (10, 20)  |   9 |  3 | 0/0 | 0 |  0 | 9 | 19 | 2.4 | 53/64
+r225 | (6, 17)   |   8 |  3 | 0/0 | 0 |  3 | 9 | 20 | 4.9 | 58/64
+r250 | (10, 10)  |  19 |  3 | 0/0 | 0 |  0 | 9 | 21 | 2.0 | 54/64
+r275 | (15, 14)  |  20 |  3 | 0/0 | 0 |  1 | 9 | 17 | 4.2 | 55/63
+r300 | (20, 18)  |  27 |  3 | 4/7 | 0 |  5 | 2 | 24 | 2.6 | 54/61
+r325 | (21, 13)  |  27 | 14 | 0/24 | 0 |  4 | 6 | 25 | 0.9 | 37/62
+r350 | (9, 13)   |  15 | 38 | 0/19 | 0 |  3 | 9 | 25 | 0.4 | 19/63
+r375 | (6, 24)   |   5 | 57 | 0/0 | 1 |  5 | 4 | 11 | 0.2 | 14/58
+moves from round 356:
+   356:WS+  357:WS+  358:WW+!9  359:SS+!9  360:SW+!9  361:WS+  362:SSE  363:EEN  364:ESS+  365:EEN++  366:NE+  367:SSS+
+   368:SS+  369:WWN  370:WW+  371:SES  372:SS  373:SS  374:EE  375:EE  376:EE  377:EE  378:SW!6  379:SEEE
+   380:N  381:ENES!4  382:E!7  383:N  384:E  385:SPLIT!6  386:E!5
+death record: {"round": 386, "reason": "body", "len": 2, "pos": [18, 24], "own": 1, "step": 1, "nsteps": 1, "dir": "E", "portal": 0, "hit": ["e", 1209, 18, 10, 19, 24, [1181, 338]]}
+  r379 L57 at (11, 25) move SEEE -> [14, 26] ate 0 | free 2 safe 2 | in reach at start 0, at end 0 | froom 40 tree 0 | N=o(11,24) #0L57s3 E=o(12,25) #0L57s1 S=F(11,26) reach0 room40 W=F(10,25) reach0 room40 | enemies 
+  r380 L57 at (14, 26) move N -> [14, 25] ate 0 | free 1 safe 1 | in reach at start 0, at end 0 | froom 40 tree 0 | N=F(14,25) reach0 room40 E=K S=K W=o(13,26) #0L57s1 | enemies #1244L2@(14,22)c4p4
+  r381 L57 at (14, 25) move ENES -> [16, 25] ate 0 | free 2 safe 2 | in reach at start 0, at end 0 | froom 40 tree 0 | N=F(14,24) reach0 room40 E=F(15,25) reach0 room40 S=o(14,26) #0L57s1 W=K | enemies #1244L2@(13,22)c3p4V
+  r382 L57 at (16, 25) move E -> [17, 25] ate 0 | free 2 safe 2 | in reach at start 0, at end 0 | froom 6 tree 0 | N=o(16,24) #0L57s1 E=F(17,25) reach0 room3 S=F(16,26) reach0 room1 W=K | enemies #1244L2@(13,23)c3p7V
+  r383 L57 at (17, 25) move N -> [17, 24] ate 0 | free 2 safe 2 | in reach at start 0, at end 0 | froom 3 tree 0 | N=F(17,24) reach0 room1 E=K S=F(17,26) reach0 room0 W=o(16,25) #0L57s1 | enemies 
+  r384 L57 at (17, 24) move E -> [18, 24] ate 0 | free 1 safe 1 | in reach at start 0, at end 0 | froom 1 tree 0 | N=e(17,23) #1209L17s11 E=F(18,24) reach0 room0 S=o(17,25) #0L57s1 W=K | enemies 
+  r385 L57 at (18, 24) SPLIT -> None ate 0 | free 0 safe 0 | in reach at start 0, at end 0 | froom 0 tree 0 | N=e(18,23) #1209L17s11 E=e(19,24) #1209L17s9 S=K W=o(17,24) #0L57s1 | enemies #1209L17@(21,21)c3p6V
+  r386 L2 at (18, 24) move E -> None ate 0 | free 0 safe 0 | in reach at start 0, at end 0 | froom 0 tree 0 | N=e(18,23) #1209L18s12 E=e(19,24) #1209L18s10 S=K W=o(17,24) #0L2s1 | enemies #1209L18@(20,21)c3p5V
+--- board at the start of her turn, round 383
+     1213141516171819202122
+     + + + + + + + + + + +-
+ 20   . . .|. .|. . . . .|*
+     + + + + + + + + + + + 
+ 21   . .|. .|b b b . * . *
+     + + + + + + + + + + + 
+ 22   . . .|. b|. . . . b B
+     + + + + + + + + + + + 
+ 23   B b|. .|b b b b . b|*
+     + + + + + + + + + + +-
+ 24   a . .|a a|. . b b b .
+     + + + + + + +-+ + +-+ 
+ 25   a .|a a|a @|* b b *|.
+     + + + + + + + + + + + 
+ 26   a a a|. .|.|* *|* *|.
+     +-+-+-+-+-+-+-+-+-+-+-
+  0   . . . . . . . .|* *|*
+     + + + + + + + + + + + 
+  1   . . . . . . . .|* . .
+     + + + + + + + + +-+ + 
+  2   . . a A . . . .|. b B
+     + + + + + + + +-+ + + 
+  3   . . . . . . .|. . . .
+heads: #0A L57 (17, 25); #1138A L2 (15, 2); #1209B L16 (22, 22); #1244B L2 (12, 23); #1269B L2 (22, 2)
+--- board at the start of her turn, round 386
+     1314151617181920212223
+     +-+-+-+-+-+-+-+-+-+-+-
+ 19   .|. .|. . . . . . . .
+     + + + + + + + + + +-+-
+ 20   . .|. .|. . . . .|* *
+     + + + + + + + + + + + 
+ 21   B|. .|b b . . B b b *
+     + + + + + + + + + + +-
+ 22   b .|. b|. . . . b b *
+     + + + + + + + + + + + 
+ 23   .|. .|b b b b . b|* *
+     + + + + + + + + + +-+-
+ 24   . .|a .|a @ b b b . .
+     + + + + + +-+ + +-+ + 
+ 25   .|a a|. .|* b b *|. .
+     + + + + + + + + + + + 
+ 26   a a|. .|.|* *|* *|. .
+     +-+-+-+-+-+-+-+-+-+-+-
+  0   . . . . . . .|* *|* *
+     + + + + + + + + + + + 
+  1   . . . . . . .|* * * *
+     + + + + + + + +-+ + +-
+  2   . . . . a . .|. B . .
+heads: #0A L2 (18, 24); #1209B L18 (20, 21); #1244B L2 (13, 21); #1269B L2 (21, 2)

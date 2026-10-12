@@ -1,0 +1,88 @@
+[
+ {
+  "id": "F42",
+  "claim": "Of our full-game losses on the queen rule with only their queen alive (layouts where the queen can leave spawn), about two in five are games in which our longest dragon at the end is strictly longer than their longest; their surviving queen in those games is not short.",
+  "how_to_count": "Games with our_code main (second slice: v31). Keep games that reached raw round 499, that we lost, in which at the end our queen (lowest initial dragon id of our side) is dead and theirs is alive, and whose map_key has queen_spawn_dead_end false in maps.json. Flag a game when the length of our longest living dragon at the end is strictly greater than the length of their longest living dragon. Report flagged over kept for main, v31, the two halves of main split at 2026-10-06T14:48:15Z, and by map_key. For flagged games report the final length of their queen, whether she is their longest dragon, the raw round and engine cause of our queen's death, and whether our total length is the larger. Separately the same count on Slithery Fight #1.",
+  "your_numbers": {
+   "main": "15 of 41",
+   "v31": "13 of 36",
+   "main_half_1": "6 of 13",
+   "main_half_2": "9 of 28",
+   "main_1700_1899": "6 of 12",
+   "main_1900_2099": "7 of 21",
+   "main_2100_plus": "2 of 8",
+   "main_flagged_by_layout": "Portals 4, Maze 3, Tower Defense 2, Around UNSW 2, Trauma 1, Prisoners Dilemma 2 1, weakhold 1, Australia 1",
+   "their_queen_length_in_flagged_main": [
+    3,
+    4,
+    7,
+    9,
+    9,
+    11,
+    11,
+    14,
+    15,
+    18,
+    25,
+    32,
+    43,
+    57,
+    64
+   ],
+   "their_queen_is_their_longest_main": "9 of 15",
+   "their_queen_4_or_less": "main 2 of 15, v31 3 of 13",
+   "our_queen_death_round_flagged_main": [
+    10,
+    44,
+    60,
+    78,
+    82,
+    90,
+    97,
+    137,
+    172,
+    187,
+    210,
+    222,
+    257,
+    381,
+    469
+   ],
+   "our_total_larger_flagged_main": "8 of 15",
+   "slithery_fight": "main 5 of 8, v31 5 of 10",
+   "mirror_wins_only_our_queen_alive_with_shorter_longest": "main 4 of 13, v31 4 of 8"
+  },
+  "slices": [
+   "main",
+   "v31",
+   "main half 1",
+   "main half 2"
+  ]
+ },
+ {
+  "id": "F38",
+  "claim": "At the mouth of her long stays on narrow tiles (3 turn starts or more, begun in raw rounds 101-200) our queen had a free wider neighbour tile in well under half of the cases, on main and on v31; an enemy head was within 3 columns and rows in about a quarter.",
+  "how_to_count": "Games with our_code main (second slice v31), map_key with queen_spawn_dead_end false and not Portals #1. Narrow tile = two or fewer sides without kelp (a portal side is open; dragons ignored). A stay = a run of consecutive turn starts of a queen on narrow tiles; long = 3 turn starts or more; counted by the raw round of its first turn start (101 to 200). Mouth turn = the queen's last turn start before the stay (it is on a wider tile). At the mouth turn start: another way = at least one neighbour tile through an open side (portal partner tile included) that is not narrow and holds no body tile of any dragon, her own tail included. Enemy near = a head of the other side within 3 columns and 3 rows (wrapped) of her head. Report for our queen and for theirs, long stays and stays of 1 or 2 turn starts; and for long stays of any round that end in her death.",
+  "your_numbers": {
+   "main_ours_long": "another way 45 of 122, enemy near 32 of 122",
+   "main_theirs_long": "10 of 28, 7 of 28",
+   "v31_ours_long": "33 of 75, 22 of 75",
+   "v31_theirs_long": "10 of 37, 7 of 37",
+   "main_short_stays": "ours 286 of 440, theirs 387 of 508",
+   "v31_short_stays": "ours 292 of 458, theirs 297 of 395",
+   "main_halves_ours_long": "7 of 16 and 38 of 106",
+   "main_bands_ours_long": "1700-1899 24 of 64, 1900-2099 21 of 56",
+   "by_layout_main_ours_long": "Maze 15 of 50, weakhold 6 of 25, Tower Defense 15 of 37",
+   "long_stays_ending_in_death_all_rounds": "main ours 19 of 48, theirs 10 of 26; v31 ours 24 of 45, theirs 18 of 38",
+   "mouth_with_three_open_sides_all_neighbours_narrow_main_ours": "34 of 122",
+   "new_games_after_battle_1298211_long_share_r101_200": "ours 5 of 24, theirs 10 of 51",
+   "script": "work/h24_pass.py"
+  },
+  "slices": [
+   "main",
+   "v31",
+   "main half 1",
+   "main half 2"
+  ]
+ }
+]

@@ -1,0 +1,719 @@
+[
+  {
+    "gid": 1494956,
+    "map": "Maze",
+    "botA": "21126",
+    "botB": "",
+    "last": 499,
+    "final": {
+      "us": {
+        "alive": 22,
+        "total": 133,
+        "longest": 51,
+        "pearls": 1299,
+        "queen_alive": false,
+        "queen_length": 0
+      },
+      "them": {
+        "alive": 14,
+        "total": 188,
+        "longest": 46,
+        "pearls": 1355,
+        "queen_alive": false,
+        "queen_length": 0
+      }
+    },
+    "lead_forever_round_end": 425,
+    "qdeaths": [
+      {
+        "death": "1494956:11785",
+        "gid": 1494956,
+        "map": "Maze",
+        "folder": "data/online/smoke/one8-p1-old",
+        "ours": "A",
+        "id": 1,
+        "side": "them",
+        "round": 83,
+        "event": 11785,
+        "length": 3,
+        "dropped": 2,
+        "cause": "head-on",
+        "reason": 3,
+        "actor": 1,
+        "hit": null,
+        "destination": [
+          21,
+          12
+        ],
+        "body": [
+          [
+            22,
+            12
+          ],
+          [
+            23,
+            12
+          ],
+          [
+            24,
+            12
+          ]
+        ],
+        "pearls": [
+          "1494956:11786",
+          "1494956:11787"
+        ],
+        "collision": "1494956:11783",
+        "other": null
+      },
+      {
+        "death": "1494956:46521",
+        "gid": 1494956,
+        "map": "Maze",
+        "folder": "data/online/smoke/one8-p1-old",
+        "ours": "A",
+        "id": 0,
+        "side": "us",
+        "round": 166,
+        "event": 46521,
+        "length": 3,
+        "dropped": 2,
+        "cause": "own body",
+        "reason": 1,
+        "actor": 0,
+        "hit": null,
+        "destination": [
+          12,
+          6
+        ],
+        "body": [
+          [
+            11,
+            6
+          ],
+          [
+            12,
+            6
+          ],
+          [
+            12,
+            5
+          ]
+        ],
+        "pearls": [
+          "1494956:46522",
+          "1494956:46523"
+        ],
+        "collision": null,
+        "other": null
+      }
+    ],
+    "eats": {
+      "us": {
+        "drop": 613,
+        "spawn": 686
+      },
+      "them": {
+        "drop": 642,
+        "spawn": 713
+      }
+    },
+    "anomalies": {}
+  },
+  {
+    "gid": 1494960,
+    "map": "Default",
+    "botA": "21126",
+    "botB": "",
+    "last": 499,
+    "final": {
+      "us": {
+        "alive": 49,
+        "total": 153,
+        "longest": 11,
+        "pearls": 765,
+        "queen_alive": false,
+        "queen_length": 0
+      },
+      "them": {
+        "alive": 4,
+        "total": 11,
+        "longest": 4,
+        "pearls": 157,
+        "queen_alive": false,
+        "queen_length": 0
+      }
+    },
+    "lead_forever_round_end": 191,
+    "qdeaths": [
+      {
+        "death": "1494960:32043",
+        "gid": 1494960,
+        "map": "Default",
+        "folder": "data/online/smoke/one8-p1-old",
+        "ours": "A",
+        "id": 1,
+        "side": "them",
+        "round": 193,
+        "event": 32043,
+        "length": 2,
+        "dropped": 1,
+        "cause": "head-on",
+        "reason": 3,
+        "actor": 59,
+        "hit": null,
+        "destination": null,
+        "body": [
+          [
+            19,
+            8
+          ],
+          [
+            19,
+            9
+          ]
+        ],
+        "pearls": [
+          "1494960:32044"
+        ],
+        "collision": "1494960:32043",
+        "other": null
+      },
+      {
+        "death": "1494960:127888",
+        "gid": 1494960,
+        "map": "Default",
+        "folder": "data/online/smoke/one8-p1-old",
+        "ours": "A",
+        "id": 0,
+        "side": "us",
+        "round": 467,
+        "event": 127888,
+        "length": 62,
+        "dropped": 31,
+        "cause": "head-on",
+        "reason": 3,
+        "actor": 244,
+        "hit": null,
+        "destination": null,
+        "body": [
+          [
+            22,
+            26
+          ],
+          [
+            22,
+            25
+          ],
+          [
+            23,
+            25
+          ],
+          [
+            24,
+            25
+          ],
+          [
+            24,
+            24
+          ],
+          [
+            24,
+            23
+          ],
+          [
+            23,
+            23
+          ],
+          [
+            22,
+            23
+          ],
+          [
+            22,
+            22
+          ],
+          [
+            22,
+            21
+          ],
+          [
+            23,
+            21
+          ],
+          [
+            23,
+            20
+          ],
+          [
+            23,
+            19
+          ],
+          [
+            23,
+            18
+          ],
+          [
+            24,
+            18
+          ],
+          [
+            24,
+            19
+          ],
+          [
+            24,
+            20
+          ],
+          [
+            25,
+            20
+          ],
+          [
+            26,
+            20
+          ],
+          [
+            27,
+            20
+          ],
+          [
+            27,
+            19
+          ],
+          [
+            27,
+            18
+          ],
+          [
+            27,
+            17
+          ],
+          [
+            27,
+            16
+          ],
+          [
+            27,
+            15
+          ],
+          [
+            27,
+            14
+          ],
+          [
+            26,
+            14
+          ],
+          [
+            26,
+            13
+          ],
+          [
+            26,
+            12
+          ],
+          [
+            26,
+            11
+          ],
+          [
+            26,
+            10
+          ],
+          [
+            26,
+            9
+          ],
+          [
+            26,
+            8
+          ],
+          [
+            25,
+            8
+          ],
+          [
+            24,
+            8
+          ],
+          [
+            23,
+            8
+          ],
+          [
+            23,
+            7
+          ],
+          [
+            22,
+            7
+          ],
+          [
+            21,
+            7
+          ],
+          [
+            20,
+            7
+          ],
+          [
+            19,
+            7
+          ],
+          [
+            18,
+            7
+          ],
+          [
+            17,
+            7
+          ],
+          [
+            16,
+            7
+          ],
+          [
+            15,
+            7
+          ],
+          [
+            14,
+            7
+          ],
+          [
+            13,
+            7
+          ],
+          [
+            12,
+            7
+          ],
+          [
+            11,
+            7
+          ],
+          [
+            10,
+            7
+          ],
+          [
+            10,
+            8
+          ],
+          [
+            9,
+            8
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            9,
+            10
+          ],
+          [
+            9,
+            11
+          ],
+          [
+            9,
+            12
+          ],
+          [
+            8,
+            12
+          ],
+          [
+            7,
+            12
+          ],
+          [
+            6,
+            12
+          ],
+          [
+            5,
+            12
+          ],
+          [
+            4,
+            12
+          ],
+          [
+            3,
+            12
+          ]
+        ],
+        "pearls": [
+          "1494960:127889",
+          "1494960:127890",
+          "1494960:127891",
+          "1494960:127892",
+          "1494960:127893",
+          "1494960:127894",
+          "1494960:127895",
+          "1494960:127896",
+          "1494960:127897",
+          "1494960:127898",
+          "1494960:127899",
+          "1494960:127900",
+          "1494960:127901",
+          "1494960:127902",
+          "1494960:127903",
+          "1494960:127904",
+          "1494960:127905",
+          "1494960:127906",
+          "1494960:127907",
+          "1494960:127908",
+          "1494960:127909",
+          "1494960:127910",
+          "1494960:127911",
+          "1494960:127912",
+          "1494960:127913",
+          "1494960:127914",
+          "1494960:127915",
+          "1494960:127916",
+          "1494960:127917",
+          "1494960:127918",
+          "1494960:127919"
+        ],
+        "collision": "1494960:127888",
+        "other": null
+      }
+    ],
+    "eats": {
+      "us": {
+        "drop": 356,
+        "spawn": 409
+      },
+      "them": {
+        "drop": 75,
+        "spawn": 82
+      }
+    },
+    "anomalies": {}
+  },
+  {
+    "gid": 1494963,
+    "map": "Trophy",
+    "botA": "21126",
+    "botB": "",
+    "last": 111,
+    "final": {
+      "us": {
+        "alive": 59,
+        "total": 154,
+        "longest": 4,
+        "pearls": 203,
+        "queen_alive": true,
+        "queen_length": 4
+      },
+      "them": {
+        "alive": 0,
+        "total": 0,
+        "longest": 0,
+        "pearls": 35,
+        "queen_alive": false,
+        "queen_length": 0
+      }
+    },
+    "lead_forever_round_end": 10,
+    "qdeaths": [
+      {
+        "death": "1494963:22438",
+        "gid": 1494963,
+        "map": "Trophy",
+        "folder": "data/online/smoke/one8-p1-old",
+        "ours": "A",
+        "id": 0,
+        "side": "them",
+        "round": 111,
+        "event": 22438,
+        "length": 2,
+        "dropped": 1,
+        "cause": "head-on",
+        "reason": 3,
+        "actor": 76,
+        "hit": null,
+        "destination": null,
+        "body": [
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            6
+          ]
+        ],
+        "pearls": [
+          "1494963:22439"
+        ],
+        "collision": "1494963:22438",
+        "other": null
+      }
+    ],
+    "eats": {
+      "us": {
+        "drop": 41,
+        "spawn": 162
+      },
+      "them": {
+        "drop": 3,
+        "spawn": 32
+      }
+    },
+    "anomalies": {}
+  },
+  {
+    "gid": 1494966,
+    "map": "Portals",
+    "botA": "21126",
+    "botB": "",
+    "last": 499,
+    "final": {
+      "us": {
+        "alive": 6,
+        "total": 57,
+        "longest": 25,
+        "pearls": 1559,
+        "queen_alive": false,
+        "queen_length": 0
+      },
+      "them": {
+        "alive": 6,
+        "total": 43,
+        "longest": 18,
+        "pearls": 849,
+        "queen_alive": false,
+        "queen_length": 0
+      }
+    },
+    "lead_forever_round_end": 420,
+    "qdeaths": [
+      {
+        "death": "1494966:534",
+        "gid": 1494966,
+        "map": "Portals",
+        "folder": "data/online/smoke/one8-p1-old",
+        "ours": "A",
+        "id": 0,
+        "side": "us",
+        "round": 10,
+        "event": 534,
+        "length": 2,
+        "dropped": 1,
+        "cause": "other dragon body",
+        "reason": 2,
+        "actor": 0,
+        "hit": 8,
+        "destination": [
+          3,
+          7
+        ],
+        "body": [
+          [
+            27,
+            8
+          ],
+          [
+            26,
+            8
+          ]
+        ],
+        "pearls": [
+          "1494966:535"
+        ],
+        "collision": null,
+        "other": null
+      },
+      {
+        "death": "1494966:118163",
+        "gid": 1494966,
+        "map": "Portals",
+        "folder": "data/online/smoke/one8-p1-old",
+        "ours": "A",
+        "id": 1,
+        "side": "them",
+        "round": 410,
+        "event": 118163,
+        "length": 2,
+        "dropped": 1,
+        "cause": "other dragon body",
+        "reason": 2,
+        "actor": 1,
+        "hit": 878,
+        "destination": [
+          30,
+          0
+        ],
+        "body": [
+          [
+            30,
+            1
+          ],
+          [
+            30,
+            2
+          ]
+        ],
+        "pearls": [
+          "1494966:118164"
+        ],
+        "collision": null,
+        "other": null
+      }
+    ],
+    "eats": {
+      "us": {
+        "drop": 881,
+        "spawn": 678
+      },
+      "them": {
+        "drop": 447,
+        "spawn": 402
+      }
+    },
+    "anomalies": {}
+  },
+  {
+    "gid": 1494967,
+    "map": "Slithery Fight",
+    "botA": "21126",
+    "botB": "",
+    "last": 499,
+    "final": {
+      "us": {
+        "alive": 21,
+        "total": 197,
+        "longest": 67,
+        "pearls": 2150,
+        "queen_alive": true,
+        "queen_length": 67
+      },
+      "them": {
+        "alive": 18,
+        "total": 227,
+        "longest": 45,
+        "pearls": 2920,
+        "queen_alive": true,
+        "queen_length": 45
+      }
+    },
+    "lead_forever_round_end": 351,
+    "qdeaths": [],
+    "eats": {
+      "us": {
+        "drop": 1003,
+        "spawn": 1147
+      },
+      "them": {
+        "drop": 1482,
+        "spawn": 1438
+      }
+    },
+    "anomalies": {}
+  }
+]

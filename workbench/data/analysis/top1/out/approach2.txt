@@ -1,0 +1,48 @@
+C1 top-three attackers, queen <= 4 long, before round 300:
+   L2-3                                         approaches  4444  rammed the queen 0.081 (361)
+   L4                                           approaches   213  rammed the queen 0.070 (15)
+   L5-9                                         approaches    57  rammed the queen 0.421 (24)
+   L10+                                         approaches    22  rammed the queen 0.500 (11)
+C2 top-three attackers vs a top-three queen:
+   L2-3                                         approaches  2182  rammed the queen 0.069 (150)
+   L4                                           approaches   105  rammed the queen 0.095 (10)
+   L5-9                                         approaches    73  rammed the queen 0.315 (23)
+   L10+                                         approaches    36  rammed the queen 0.278 (10)
+C3 top-three attackers, by allied heads near the queen at the start:
+   ('L10+', '0 allies')                         approaches    51  rammed the queen 0.137 (7)
+   ('L10+', '1-2 allies')                       approaches    53  rammed the queen 0.358 (19)
+   ('L10+', '3+ allies')                        approaches    33  rammed the queen 0.182 (6)
+   ('L2-3', '0 allies')                         approaches  2670  rammed the queen 0.097 (258)
+   ('L2-3', '1-2 allies')                       approaches  2393  rammed the queen 0.069 (166)
+   ('L2-3', '3+ allies')                        approaches  1451  rammed the queen 0.034 (49)
+   ('L4', '0 allies')                           approaches    83  rammed the queen 0.157 (13)
+   ('L4', '1-2 allies')                         approaches   170  rammed the queen 0.094 (16)
+   ('L4', '3+ allies')                          approaches    66  rammed the queen 0.121 (8)
+   ('L5-9', '0 allies')                         approaches    89  rammed the queen 0.404 (36)
+   ('L5-9', '1-2 allies')                       approaches    85  rammed the queen 0.271 (23)
+   ('L5-9', '3+ allies')                        approaches    72  rammed the queen 0.139 (10)
+C4 all attackers in top-team games, by map: L2-4 vs L5-9
+   Around UNSW        L2-4   45/  548 = 0.082   L5-9  26/  62 = 0.419
+   Australia          L2-4   71/ 1206 = 0.059   L5-9  25/  77 = 0.325
+   Autarky            L2-4   60/ 1056 = 0.057   L5-9   2/  12 = 0.167
+   Default            L2-4   92/ 1929 = 0.048   L5-9   2/  27 = 0.074
+   Devil              L2-4   72/  922 = 0.078   L5-9   1/   5 = 0.200
+   Islands            L2-4   74/ 2069 = 0.036   L5-9  22/ 112 = 0.196
+   Maze               L2-4   29/  334 = 0.087   L5-9   7/  36 = 0.194
+   Prisoners Dilemma  L2-4   69/ 1178 = 0.059   L5-9   2/   7 = 0.286
+   Queen Of Spades    L2-4   69/  885 = 0.078   L5-9   3/  12 = 0.250
+   Slithery Fight     L2-4   35/  351 = 0.100   L5-9  17/  61 = 0.279
+   Tower Defense      L2-4   49/  282 = 0.174   L5-9   2/   8 = 0.250
+   Trauma             L2-4    4/   48 = 0.083   L5-9   2/  13 = 0.154
+   weakhold           L2-4   45/  322 = 0.140   L5-9   4/  16 = 0.250
+C5 our own approaches (meow attacking), by phase / our queen / map class:
+   ('r150-299', 'our queen alive', 'big map')   approaches    38  rammed the queen 0.026 (1)
+   ('r150-299', 'our queen alive', 'map <= 1200') approaches   218  rammed the queen 0.023 (5)
+   ('r150-299', 'our queen dead', 'big map')    approaches   306  rammed the queen 0.013 (4)
+   ('r150-299', 'our queen dead', 'map <= 1200') approaches   492  rammed the queen 0.030 (15)
+   ('r300+', 'our queen dead', 'big map')       approaches   122  rammed the queen 0.049 (6)
+   ('r300+', 'our queen dead', 'map <= 1200')   approaches   175  rammed the queen 0.029 (5)
+   ('r<150', 'our queen alive', 'big map')      approaches   180  rammed the queen 0.000 (0)
+   ('r<150', 'our queen alive', 'map <= 1200')  approaches   774  rammed the queen 0.025 (19)
+   ('r<150', 'our queen dead', 'big map')       approaches    99  rammed the queen 0.010 (1)
+   ('r<150', 'our queen dead', 'map <= 1200')   approaches   405  rammed the queen 0.037 (15)

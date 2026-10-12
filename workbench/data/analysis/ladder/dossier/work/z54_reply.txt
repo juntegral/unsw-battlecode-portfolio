@@ -1,0 +1,7 @@
+checked it. replay 1, round 193. neither was feeding and the pathfinding did not break. both had all four sides shut with the team at 64 units, so no split and every move was a death. with every step rejected the bot takes a tie-break direction, so it looks like a self crash.
+
+the 35 (head 26, 1) had kelp north, its own body east and south, a 3-long enemy's body west. it got there one round earlier through attempt 4's run to the nearest ally, from 27, 2 to 26, 1, a tile with no exit beside that enemy's head. the rule tests the end tile as if the run's own tiles stay free, and the ally it picked (26, 46) is behind the kelp strip at row 0. so this one is card 54.
+
+the 17 (head 44, 46) had its own body north and west, a mate's body east, kelp south. it was born at round 190 from an 18-long that kept 2, head inside a 3 tile pocket, and used those up. under 30, so LONG_SAFETY never touched it, that is the base bot. feed deaths only start after round 200.
+
+fix i'd suggest, a run must end on a tile that still has an exit after the run, and ally distance counts walkable steps.

@@ -1,0 +1,64 @@
+[
+ {
+  "id": "F31",
+  "claim": "On layouts with more than 1200 cells (width times height) our side eats and splits much less from raw round 151 on while the opponent does not, on main and on v31; on layouts of 1200 cells or fewer there is no such step at round 151 and the same step comes at round 301.",
+  "how_to_count": "Three counts. (1) Pearls, from the replays or rows.jsonl curves: for each game that reached raw round 200 with at least 20 of our dragons alive after round 150, pearls eaten by each side in rounds 101-150 and 151-200 (a pearl is credited to the side whose dragon's turn removed it); ratio = sum over games of the second window / sum of the first, per side, for big layouts (width*height > 1200: Around UNSW, Australia, Schooltime #1 and #2, Islands, Slithery Fight) and for the others; main and v31 separately (our_code). Also the number of games in which our ratio is below theirs, the ratio per layout, and for the other layouts the same with windows 201-300 and 301-400 (games reaching round 400 with at least 10 of ours alive after round 300). (2) Splits: dragonSplit events per side in raw rounds 125-149 and 150-174, games that reached round 175 with at least 20 of our dragons alive at the start of round 150; ratio second / first, pooled; and rounds 275-299 against 300-324 for games reaching round 325 with at least 10 of ours alive at the start of round 300. (3) Adjacent pearls: every turn start of a non-queen dragon at which a pearl lies on a tile next to its head (open edge or portal partner tile) that no dragon body is on, and at which not every such pearl has an enemy head within 2 tiles (wrapped Manhattan); left = that dragon removes no pearl during the turn; rate = left / turns per side in raw rounds 101-125, 126-150, 151-175, 176-199 on big layouts, and in 251-300 against 301-350 on the others. Zone split for rounds 151-199 on big layouts: the turn is inside when, for every such adjacent pearl, the wrapped Manhattan distance to the nearest head among the same-side dragons of that side's greatest length (the acting dragon left out) is 9 or less. Neighbour split (rounds 101-199, big layouts): the turn is near when, for every such adjacent pearl, the wrapped Manhattan distance to the nearest head of a same-side dragon strictly longer than the acting dragon is 9 or less; otherwise (farther, or no longer same-side dragon) not near.",
+  "your_numbers": {
+   "pearls_ratio_big": {
+    "main": "ours 0.768 (11403 then 8761, 81 games), theirs 1.134; ours lower in 73 of 81 games",
+    "v31": "ours 0.734 (16851 then 12374, 111 games), theirs 1.098; ours lower in 91 of 111"
+   },
+   "pearls_ratio_other_layouts": {
+    "main": "ours 1.250, theirs 1.236 (68 games)",
+    "v31": "ours 1.186, theirs 1.203 (97 games)"
+   },
+   "pearls_ratio_by_layout_main_then_v31_ours_theirs": {
+    "Islands": "0.51/1.15, 0.59/1.18",
+    "Slithery Fight": "0.69/1.04, 0.63/1.01",
+    "Australia": "0.88/1.32, 0.77/1.24",
+    "Around UNSW": "0.83/1.12, 0.85/1.06",
+    "Schooltime 2": "0.97/1.08, 0.91/1.12",
+    "Schooltime 1": "1.27/2.04, 1.28/1.62"
+   },
+   "pearls_ratio_r301_400_over_r201_300_other_layouts": {
+    "main": "ours 0.811, theirs 1.045 (85 games)",
+    "v31": "ours 0.790, theirs 0.934 (106 games)",
+    "big_layouts": "1.02 against 1.02 in both codes"
+   },
+   "splits_ratio_big": {
+    "main": "ours 0.684 (1853 then 1267, 80 games), theirs 0.982; ours lower in 62 of 80",
+    "v31": "ours 0.666 (2849 then 1897, 111 games), theirs 0.920; ours lower in 90 of 111"
+   },
+   "splits_ratio_other_layouts_round_150": {
+    "main": "1.077 against 1.064 (73 games)",
+    "v31": "1.083 against 1.082 (105 games)"
+   },
+   "splits_ratio_other_layouts_round_300": {
+    "main": "ours 0.623, theirs 0.947 (48 games)",
+    "v31": "ours 0.580, theirs 0.921 (74 games)"
+   },
+   "adjacent_left_big_by_round": {
+    "main_88_games": "ours 0.225, 0.239, 0.401, 0.405; theirs 0.236, 0.245, 0.245, 0.236",
+    "v31_115_of_119_games": "ours 0.227, 0.233, 0.413, 0.413; theirs 0.220, 0.219, 0.224, 0.213"
+   },
+   "adjacent_left_other_layouts_v31_277_games": "ours 0.206 in r251-300 and 0.446 in r301-350; theirs 0.236 and 0.240",
+   "zone_r151_199_big": {
+    "main": "ours inside 0.498 of 1701, outside 0.386 of 9788; theirs 0.254 and 0.237",
+    "v31": "ours inside 0.528 of 2618, outside 0.390 of 13243; theirs 0.218 and 0.219"
+   },
+   "failed_bar_cost": "within layouts, split at the layout median of our pearl ratio: lower halves won 37 of 84, upper halves 35 of 88 (main and v31 together)",
+   "longer_own_dragon_within_9_tiles_r151_199": {
+    "main_88_games": "ours leave 0.451 of 6852 with one near, 0.331 of 4637 without; before round 151 0.225 of 7315 and 0.241 of 5612; theirs after 0.241 and 0.240",
+    "v31_119_games": "ours 0.451 of 10344 and 0.338 of 6056; before 0.221 of 11022 and 0.240 of 7938; theirs after 0.215 and 0.225"
+   },
+   "longest_dragon_at_r300_big_layouts": "ours longer in 47 against 36 non-tied games (main), 60 against 54 (v31); at the end of full games 34 against 50 and 53 against 58",
+   "pearls_ratio_big_with_20_to_44_of_our_dragons_at_r150": "ours 0.761, theirs 1.145 (46 games, main and v31 together)"
+  },
+  "slices": [
+   "main games (280) against v31 games (410), counted separately",
+   "each of the six big layouts against each of the layouts of 1200 cells or fewer",
+   "main opponents rated 1700-1899 against 1900-2099; main games before against from 2026-10-06T14:48:15Z"
+  ],
+  "notes_for_the_verifier": "Please check in particular: whether the step is at round 151 and not gradual from round 100 (25-round bins), whether it survives leaving out any one layout or opponent, whether the dragon limit (we stop splitting at 60 dragons) can produce it without any rule tied to the round, and whether anything in the result data shows a cost (my cost bar failed). The v31 adjacent-pearl count covers 392 of 410 games because a pass was cut by a time limit."
+ }
+]

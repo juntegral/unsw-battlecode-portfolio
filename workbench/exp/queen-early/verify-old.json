@@ -1,0 +1,38 @@
+{
+  "createdAt": "2026-10-01T14:42:44.861Z",
+  "method": "independent replay head/tail updates, splits, deaths; no move cost simulation; separate occupancy BFS",
+  "checks": {
+    "games": 277,
+    "queenTeam": 0,
+    "fates": 0,
+    "death": 0,
+    "other": 0,
+    "length": 0,
+    "turns": 0,
+    "splits": 0,
+    "final": 0,
+    "actions": 0,
+    "reach": 0,
+    "opportunities": 0
+  },
+  "diff": [],
+  "fates": {
+    "both_dead": 262,
+    "winner_only": 15
+  },
+  "reasons": {
+    "H": 223,
+    "A": 55,
+    "W": 169,
+    "O": 23,
+    "S": 69
+  },
+  "deciders": {
+    "longestDragon": 154,
+    "elimination": 123
+  },
+  "rawWrong": {
+    "winnerAlive": 8,
+    "loserAlive": 7
+  }
+}

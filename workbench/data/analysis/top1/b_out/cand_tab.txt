@@ -1,0 +1,78 @@
+=== cand264.txt: 632 games without Schooltime, 359 wins
+  size | map | games | wins | own queen dead by r60 | by r100 | by r200 | alive at end | wins when own queen dead by r100 | wins otherwise | enemy queen dead by r100
+  large  | Around UNSW       |  44 | 15/44 (34%)   |  19 |  27 |  33 |   3 | 6/27 (22%)    | 9/17 (52%)    | 2
+  large  | Australia         |  36 | 25/36 (69%)   |   3 |   8 |  16 |  10 | 4/8 (50%)     | 21/28 (75%)   | 7
+  large  | Islands           |  48 | 26/48 (54%)   |   4 |  11 |  25 |   8 | 5/11 (45%)    | 21/37 (56%)   | 10
+  large  | Slithery Fight    |  33 | 18/33 (54%)   |   0 |   3 |   6 |  21 | 1/3 (33%)     | 17/30 (56%)   | 0
+  medium | Autarky           |  37 | 17/37 (45%)   |   3 |   7 |  13 |  14 | 2/7 (28%)     | 15/30 (50%)   | 5
+  medium | Default           |  41 | 21/41 (51%)   |   5 |  12 |  30 |   9 | 3/12 (25%)    | 18/29 (62%)   | 12
+  medium | Maze              |  38 | 19/38 (50%)   |   1 |   6 |  14 |  13 | 1/6 (16%)     | 18/32 (56%)   | 1
+  medium | Queen Of Spades   |  37 | 9/37 (24%)    |   4 |  13 |  22 |   2 | 2/13 (15%)    | 7/24 (29%)    | 15
+  medium | Trauma            |  38 | 29/38 (76%)   |   0 |   0 |   0 |  34 | 0/0           | 29/38 (76%)   | 0
+  small  | Devil             |  44 | 19/44 (43%)   |  26 |  29 |  36 |   7 | 11/29 (37%)   | 8/15 (53%)    | 17
+  small  | Portals           |  41 | 23/41 (56%)   |   0 |   0 |   2 |  25 | 0/0           | 23/41 (56%)   | 7
+  small  | Prisoners Dilemma |  40 | 24/40 (60%)   |  19 |  21 |  25 |  12 | 10/21 (47%)   | 14/19 (73%)   | 21
+  small  | Stripes           |  43 | 31/43 (72%)   |  11 |  23 |  26 |  17 | 12/23 (52%)   | 19/20 (95%)   | 31
+  small  | Tower Defense     |  34 | 29/34 (85%)   |   0 |   3 |   4 |  22 | 3/3 (100%)    | 26/31 (83%)   | 7
+  small  | Trophy            |  34 | 22/34 (64%)   |  10 |  17 |  19 |  15 | 7/17 (41%)    | 15/17 (88%)   | 24
+  small  | weakhold          |  44 | 32/44 (72%)   |   4 |  11 |  21 |  14 | 9/11 (81%)    | 23/33 (69%)   | 8
+  large: 161 games, wins 84/161 (52%); own queen dead by r100 in 49: wins 16/49 (32%); otherwise wins 68/112 (60%)
+  medium: 191 games, wins 95/191 (49%); own queen dead by r100 in 38: wins 8/38 (21%); otherwise wins 87/153 (56%)
+  small: 280 games, wins 180/280 (64%); own queen dead by r100 in 104: wins 52/104 (50%); otherwise wins 128/176 (72%)
+  losses: 273: queen rule with own queen dead, enemy queen alive: 66; longest with own queen dead, enemy queen dead: 66; wipe-out with own queen dead, enemy queen dead: 60; wipe-out with own queen dead, enemy queen alive: 59; queen rule with own queen alive, enemy queen alive: 19; total with own queen dead, enemy queen dead: 3
+  losses on the longest dragon: 66; of those with the larger total length: 12; with more units: 13
+  wins on the longest dragon: 85; of those with the smaller total length: 28
+  how the own queen ended: {'headon': 354, 'alive': 226, 'noaction': 51, 'body': 1}
+  round-500 games with both queens alive: 71, won 52; mean own queen 50.6 vs enemy queen 38.5
+=== cand91.txt: 503 games without Schooltime, 326 wins
+  size | map | games | wins | own queen dead by r60 | by r100 | by r200 | alive at end | wins when own queen dead by r100 | wins otherwise | enemy queen dead by r100
+  large  | Around UNSW       |  28 | 22/28 (78%)   |   1 |   1 |   3 |   9 | 1/1 (100%)    | 21/27 (77%)   | 6
+  large  | Australia         |  38 | 21/38 (55%)   |   0 |   2 |  14 |   9 | 1/2 (50%)     | 20/36 (55%)   | 8
+  large  | Islands           |  30 | 20/30 (66%)   |   7 |   8 |  18 |   0 | 7/8 (87%)     | 13/22 (59%)   | 2
+  large  | Slithery Fight    |  43 | 29/43 (67%)   |   0 |   0 |   4 |  16 | 0/0           | 29/43 (67%)   | 8
+  medium | Autarky           |  33 | 23/33 (69%)   |   0 |   2 |   4 |  23 | 0/2 (0%)      | 23/31 (74%)   | 6
+  medium | Default           |  29 | 20/29 (68%)   |   1 |   5 |  14 |   8 | 2/5 (40%)     | 18/24 (75%)   | 10
+  medium | Maze              |  32 | 16/32 (50%)   |   0 |   0 |   2 |  19 | 0/0           | 16/32 (50%)   | 1
+  medium | Queen Of Spades   |  26 | 14/26 (53%)   |   2 |   4 |  17 |   7 | 2/4 (50%)     | 12/22 (54%)   | 9
+  medium | Trauma            |  27 | 18/27 (66%)   |   0 |   0 |   0 |  25 | 0/0           | 18/27 (66%)   | 0
+  small  | Devil             |  32 | 26/32 (81%)   |  18 |  20 |  21 |  11 | 14/20 (70%)   | 12/12 (100%)  | 14
+  small  | Portals           |  36 | 22/36 (61%)   |   0 |   0 |   3 |  15 | 0/0           | 22/36 (61%)   | 4
+  small  | Prisoners Dilemma |  31 | 18/31 (58%)   |   6 |  11 |  14 |  14 | 3/11 (27%)    | 15/20 (75%)   | 13
+  small  | Stripes           |  29 | 15/29 (51%)   |   6 |  18 |  22 |   5 | 10/18 (55%)   | 5/11 (45%)    | 18
+  small  | Tower Defense     |  30 | 22/30 (73%)   |   0 |   0 |   3 |  20 | 0/0           | 22/30 (73%)   | 8
+  small  | Trophy            |  31 | 25/31 (80%)   |  13 |  17 |  22 |   9 | 12/17 (70%)   | 13/14 (92%)   | 27
+  small  | weakhold          |  28 | 15/28 (53%)   |   0 |   0 |   2 |  17 | 0/0           | 15/28 (53%)   | 6
+  large: 139 games, wins 92/139 (66%); own queen dead by r100 in 11: wins 9/11 (81%); otherwise wins 83/128 (64%)
+  medium: 147 games, wins 91/147 (61%); own queen dead by r100 in 11: wins 4/11 (36%); otherwise wins 87/136 (63%)
+  small: 217 games, wins 143/217 (65%); own queen dead by r100 in 66: wins 39/66 (59%); otherwise wins 104/151 (68%)
+  losses: 177: longest with own queen dead, enemy queen dead: 59; wipe-out with own queen dead, enemy queen dead: 49; queen rule with own queen dead, enemy queen alive: 28; queen rule with own queen alive, enemy queen alive: 21; wipe-out with own queen dead, enemy queen alive: 20
+  losses on the longest dragon: 59; of those with the larger total length: 20; with more units: 27
+  wins on the longest dragon: 82; of those with the smaller total length: 26
+  how the own queen ended: {'headon': 255, 'alive': 207, 'self': 23, 'body': 18}
+  round-500 games with both queens alive: 48, won 27; mean own queen 36.8 vs enemy queen 38.0
+=== cand306.txt: 502 games without Schooltime, 316 wins
+  size | map | games | wins | own queen dead by r60 | by r100 | by r200 | alive at end | wins when own queen dead by r100 | wins otherwise | enemy queen dead by r100
+  large  | Around UNSW       |  29 | 19/29 (65%)   |   0 |   3 |  11 |   6 | 1/3 (33%)     | 18/26 (69%)   | 14
+  large  | Australia         |  37 | 23/37 (62%)   |   2 |   5 |  19 |   9 | 2/5 (40%)     | 21/32 (65%)   | 9
+  large  | Islands           |  33 | 21/33 (63%)   |   0 |   0 |  14 |   2 | 0/0           | 21/33 (63%)   | 4
+  large  | Slithery Fight    |  28 | 14/28 (50%)   |   1 |   5 |   9 |   9 | 1/5 (20%)     | 13/23 (56%)   | 1
+  medium | Autarky           |  31 | 29/31 (93%)   |   2 |   4 |   9 |  18 | 4/4 (100%)    | 25/27 (92%)   | 5
+  medium | Default           |  29 | 19/29 (65%)   |   9 |  14 |  23 |   3 | 9/14 (64%)    | 10/15 (66%)   | 9
+  medium | Maze              |  27 | 20/27 (74%)   |   1 |   1 |   6 |   7 | 1/1 (100%)    | 19/26 (73%)   | 4
+  medium | Queen Of Spades   |  25 | 22/25 (88%)   |   6 |  16 |  23 |   1 | 15/16 (93%)   | 7/9 (77%)     | 11
+  medium | Trauma            |  35 | 20/35 (57%)   |   0 |   0 |   0 |  34 | 0/0           | 20/35 (57%)   | 0
+  small  | Devil             |  38 | 23/38 (60%)   |  28 |  32 |  36 |   2 | 17/32 (53%)   | 6/6 (100%)    | 21
+  small  | Portals           |  29 | 14/29 (48%)   |   3 |   5 |  11 |  12 | 2/5 (40%)     | 12/24 (50%)   | 3
+  small  | Prisoners Dilemma |  33 | 18/33 (54%)   |  22 |  24 |  27 |   6 | 11/24 (45%)   | 7/9 (77%)     | 16
+  small  | Stripes           |  26 | 25/26 (96%)   |  11 |  13 |  16 |  10 | 12/13 (92%)   | 13/13 (100%)  | 22
+  small  | Tower Defense     |  33 | 12/33 (36%)   |   9 |  13 |  23 |   7 | 0/13 (0%)     | 12/20 (60%)   | 3
+  small  | Trophy            |  37 | 12/37 (32%)   |  22 |  30 |  34 |   3 | 7/30 (23%)    | 5/7 (71%)     | 22
+  small  | weakhold          |  32 | 25/32 (78%)   |   1 |   7 |  20 |   5 | 4/7 (57%)     | 21/25 (84%)   | 3
+  large: 127 games, wins 77/127 (60%); own queen dead by r100 in 13: wins 4/13 (30%); otherwise wins 73/114 (64%)
+  medium: 147 games, wins 110/147 (74%); own queen dead by r100 in 35: wins 29/35 (82%); otherwise wins 81/112 (72%)
+  small: 228 games, wins 129/228 (56%); own queen dead by r100 in 124: wins 53/124 (42%); otherwise wins 76/104 (73%)
+  losses: 186: longest with own queen dead, enemy queen dead: 53; wipe-out with own queen dead, enemy queen dead: 42; queen rule with own queen dead, enemy queen alive: 38; wipe-out with own queen dead, enemy queen alive: 37; queen rule with own queen alive, enemy queen alive: 16
+  losses on the longest dragon: 53; of those with the larger total length: 20; with more units: 26
+  wins on the longest dragon: 98; of those with the smaller total length: 15
+  how the own queen ended: {'headon': 252, 'alive': 134, 'noaction': 112, 'body': 3, 'self': 1}
+  round-500 games with both queens alive: 40, won 24; mean own queen 34.0 vs enemy queen 33.1

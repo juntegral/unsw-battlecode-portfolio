@@ -1,0 +1,110 @@
+
+GAME 1471457 one5-d1 Australia r5..14 ids=[17] cells=[(46, 38)]
+r5 EAT (46, 38) actor=17
+r5 MOVE id=17 head=(46, 38) tail=(43, 38)
+r6 SPLIT parent=17 child=23
+r7 MOVE id=17 head=(46, 39) tail=(46, 38)
+r8 MOVE id=17 head=(45, 39) tail=(46, 39)
+r9 MOVE id=17 head=(45, 38) tail=(45, 39)
+r10 MOVE id=17 head=(45, 37) tail=(45, 38)
+r11 BIRTH (46, 38) actor=None
+r11 MOVE id=17 head=(44, 37) tail=(45, 37)
+r12 MOVE id=17 head=(44, 38) tail=(44, 37)
+r13 MOVE id=17 head=(45, 38) tail=(44, 38)
+r14 EAT (46, 38) actor=17
+r14 MOVE id=17 head=(46, 38) tail=(44, 38)
+
+GAME 1471458 one5-d1 Islands r33..41 ids=[22, 35] cells=[(54, 36)]
+r33 BIRTH (54, 36) actor=None
+r33 EAT (54, 36) actor=22
+r33 MOVE id=22 head=(54, 36) tail=(53, 36)
+r34 SPLIT parent=22 child=33
+r35 MOVE id=22 head=(55, 36) tail=(54, 36)
+r36 MOVE id=22 head=(55, 37) tail=(54, 36)
+r37 MOVE id=22 head=(55, 38) tail=(54, 36)
+r38 SPLIT parent=22 child=35
+r38 MOVE id=35 head=(54, 35) tail=(54, 36)
+r39 MOVE id=22 head=(0, 38) tail=(55, 38)
+r39 MOVE id=35 head=(55, 35) tail=(54, 35)
+r40 BIRTH (54, 36) actor=None
+r40 MOVE id=22 head=(0, 37) tail=(55, 38)
+r40 MOVE id=35 head=(55, 36) tail=(55, 35)
+r41 MOVE id=22 head=(0, 36) tail=(55, 38)
+r41 EAT (54, 36) actor=35
+r41 MOVE id=35 head=(54, 36) tail=(55, 35)
+
+GAME 1471460 one5-d1 Stripes r59..64 ids=[13, 16] cells=[(11, 1)]
+r59 EAT (11, 1) actor=13
+r59 MOVE id=13 head=(11, 1) tail=(13, 0)
+r59 MOVE id=16 head=(15, 1) tail=(15, 2)
+r60 MOVE id=13 head=(11, 0) tail=(12, 1)
+r60 MOVE id=16 head=(14, 1) tail=(15, 1)
+r61 MOVE id=13 head=(12, 0) tail=(12, 1)
+r61 MOVE id=16 head=(14, 0) tail=(14, 1)
+r62 MOVE id=13 head=(13, 1) tail=(11, 1)
+r62 MOVE id=16 head=(13, 0) tail=(14, 0)
+r63 MOVE id=13 head=(14, 1) tail=(11, 0)
+r63 MOVE id=16 head=(12, 1) tail=(13, 0)
+r64 BIRTH (11, 1) actor=None
+r64 MOVE id=13 head=(15, 1) tail=(12, 0)
+r64 EAT (11, 1) actor=16
+r64 MOVE id=16 head=(11, 1) tail=(13, 0)
+
+GAME 1471456 one5-d1 weakhold r68..70 ids=[2, 18] cells=[(21, 6)]
+r68 MOVE id=2 head=(19, 6) tail=(20, 6)
+r68 MOVE id=18 head=(22, 6) tail=(23, 6)
+r69 BIRTH (21, 6) actor=None
+r69 MOVE id=2 head=(19, 5) tail=(19, 6)
+r69 EAT (21, 6) actor=18
+r69 MOVE id=18 head=(21, 6) tail=(23, 6)
+r70 MOVE id=2 head=(20, 5) tail=(19, 5)
+r70 MOVE id=18 head=(21, 5) tail=(22, 6)
+r70 DEATH id=2 reason=3
+r70 DEATH id=18 reason=3
+
+GAME 1471458 one5-d1 Islands r93..94 ids=[42] cells=[(13, 37), (42, 2)]
+r93 MOVE id=42 head=(13, 37) tail=(12, 37)
+r94 MOVE id=42 head=(13, 36) tail=(12, 37)
+
+GAME 1471462 one5-d1 Around UNSW r7..15 ids=[23] cells=[(14, 52), (12, 56), (13, 56)]
+r7 EAT (14, 52) actor=23
+r7 MOVE id=23 head=(14, 52) tail=(14, 50)
+r8 MOVE id=23 head=(13, 52) tail=(14, 51)
+r9 MOVE id=23 head=(13, 53) tail=(14, 52)
+r10 MOVE id=23 head=(13, 54) tail=(13, 52)
+r11 MOVE id=23 head=(13, 55) tail=(13, 53)
+r12 MOVE id=23 head=(12, 55) tail=(13, 54)
+r13 EAT (12, 56) actor=23
+r13 MOVE id=23 head=(12, 56) tail=(13, 54)
+r14 BIRTH (13, 56) actor=None
+r14 SPLIT parent=23 child=35
+r15 EAT (13, 56) actor=23
+r15 MOVE id=23 head=(13, 56) tail=(12, 55)
+
+GAME 1471465 one5-d1 Schooltime r48..56 ids=[5] cells=[(12, 11), (15, 10), (16, 11)]
+r48 EAT (12, 11) actor=5
+r48 MOVE id=5 head=(12, 11) tail=(11, 10)
+r49 MOVE id=5 head=(13, 11) tail=(11, 11)
+r50 MOVE id=5 head=(14, 11) tail=(11, 11)
+r51 SPLIT parent=5 child=20
+r52 MOVE id=5 head=(14, 10) tail=(13, 11)
+r53 EAT (15, 10) actor=5
+r53 MOVE id=5 head=(15, 10) tail=(13, 11)
+r54 SPLIT parent=5 child=22
+r55 MOVE id=5 head=(15, 11) tail=(14, 10)
+r56 EAT (16, 11) actor=5
+r56 MOVE id=5 head=(16, 11) tail=(14, 10)
+
+GAME 1471459 one5-d1 Maze r7..15 ids=[1] cells=[(41, 4), (44, 2)]
+r7 EAT (41, 4) actor=1
+r7 MOVE id=1 head=(41, 4) tail=(40, 7)
+r8 SPLIT parent=1 child=7
+r9 MOVE id=1 head=(41, 3) tail=(40, 4)
+r10 MOVE id=1 head=(42, 3) tail=(41, 4)
+r11 MOVE id=1 head=(42, 2) tail=(41, 4)
+r12 MOVE id=1 head=(43, 2) tail=(41, 3)
+r13 MOVE id=1 head=(43, 3) tail=(42, 3)
+r14 BIRTH (44, 2) actor=None
+r14 MOVE id=1 head=(44, 3) tail=(42, 2)
+r15 EAT (44, 2) actor=1
+r15 MOVE id=1 head=(44, 2) tail=(42, 2)

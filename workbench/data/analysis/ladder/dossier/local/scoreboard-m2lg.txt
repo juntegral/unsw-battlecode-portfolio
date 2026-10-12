@@ -1,0 +1,74 @@
+Matched games per arm: 56; layouts: 14; maps: all
+R/O = shared-layout rank-1/our ladder means; arms = pooled scaled numerator / denominator.
+Changes = arm minus m2base; * closer to R, ! farther from R by >=10% of |O-R|, compared with the first arm.
+Inclusive raw rounds; birth cohorts followed to game end; only full 20-round blocks. NA = no denominator.
+Cache: 28 reused, 84 counted; 212 replay paths retained.
+
+| Rate (unit) | Window | R | O | m2base | m2lg | Δ m2lg-m2base |
+|---|---|---|---|---|---|---|
+| Death: no action (/1k turns) | 0-100 | 0.000 | 0.000 | 0.000 | 0.000 | +0.000 |
+| Same-team head-on meetings (/1k turns) | 101-300 | 0.292 | 0.118 | 0.017 | 0.017 | +0.000 |
+| Death: head-on mover (/1k turns) | 101-300 | 4.189 | 1.991 | 0.415 | 0.415 | +0.000 |
+| Head-on meetings started (/1k turns) | 101-300 | 4.189 | 1.991 | 0.415 | 0.415 | +0.000 |
+| Death: head-on mover (/1k turns) | 0-100 | 4.272 | 2.186 | 0.707 | 0.707 | +0.000 |
+| Head-on meetings started (/1k turns) | 0-100 | 4.272 | 2.186 | 0.707 | 0.707 | +0.000 |
+| Portal steps (/1k turns) | game | 14.938 | 15.097 | 5.139 | 5.010! | -0.129! |
+| Repeated-spawn tile nearby (%) | 101-300 | 35.478 | 25.266 | 52.395 | 52.395 | +0.000 |
+| Blind direction kept (%) | 0-100 | 48.895 | 40.408 | 33.541 | 33.541 | +0.000 |
+| Blind direction kept (%) | 101-300 | 47.895 | 37.413 | 35.102 | 35.103 | +0.000 |
+| Splits per eaten pearl (/pearl) | game | 0.362 | 0.382 | 0.185 | 0.186 | +0.001 |
+| Splits per eaten pearl (/pearl) | 101-300 | 0.373 | 0.387 | 0.178 | 0.178 | +0.000 |
+| Repeated-spawn tile nearby (%) | 0-100 | 19.176 | 13.456 | 29.241 | 29.241 | +0.000 |
+| Blind turns (%) | 101-300 | 40.793 | 48.288 | 38.834 | 38.834 | +0.000 |
+| Blind re-tread (%) | 101-300 | 11.215 | 19.702 | 19.971 | 19.971 | +0.000 |
+| Blind tiles visited per 20-round dragon block (tiles/block) | 101-300 | 8.852 | 10.157 | 10.514 | 10.514 | -0.000 |
+| All deaths (/1k turns) | game | 27.789 | 20.065 | 25.877 | 25.985 | +0.108 |
+| Split frequency (/1k turns) | game | 30.580 | 22.661 | 27.698 | 27.661 | -0.037 |
+| Blind successful movement (%) | 101-300 | 97.490 | 98.431 | 97.347 | 97.347 | +0.000 |
+| Death: illegal split (/1k turns) | 0-100 | 18.111 | 0.000 | 0.000 | 0.000 | +0.000 |
+| Death: illegal split (/1k turns) | 101-300 | 18.792 | 0.000 | 0.000 | 0.000 | +0.000 |
+| Death: timeout (/1k turns) | 101-300 | 0.000 | 0.000 | 0.000 | 0.000 | +0.000 |
+| Death: unpaid sprint (/1k turns) | 101-300 | 0.000 | 0.000 | 0.000 | 0.000 | +0.000 |
+| Queen death: illegal split (%) | 101-300 | 17.739 | 0.000 | 0.000 | 0.000 | +0.000 |
+| Queen death: no action (%) | 0-100 | 0.000 | 0.000 | 0.000 | 0.000 | +0.000 |
+| Queen death: head-on mover (%) | 0-100 | 2.454 | 0.747 | 0.000 | 0.000 | +0.000 |
+| Queen death: wall (%) | 101-300 | 0.000 | 19.733 | 5.714 | 5.714 | +0.000 |
+| Same-team head-on meetings (/1k turns) | 0-100 | 0.228 | 0.079 | 0.000 | 0.000 | +0.000 |
+| Queen death: own body (%) | 0-100 | 0.000 | 2.809 | 3.571 | 3.571 | +0.000 |
+| Death: no action (/1k turns) | 101-300 | 0.000 | 0.639 | 2.950 | 2.950 | +0.000 |
+| Death: wall (/1k turns) | 0-100 | 0.000 | 8.315 | 2.914 | 2.914 | +0.000 |
+| Death: wall (/1k turns) | 101-300 | 0.000 | 7.273 | 3.403 | 3.403 | +0.000 |
+| Queen death: illegal split (%) | 0-100 | 11.063 | 0.000 | 0.000 | 0.000 | +0.000 |
+| Queen death: own body (%) | 101-300 | 0.000 | 7.316 | 5.714 | 5.714 | +0.000 |
+| Queen death: wall (%) | 0-100 | 0.000 | 6.919 | 5.357 | 5.357 | +0.000 |
+| Death: own body (/1k turns) | 0-100 | 0.005 | 3.153 | 2.659 | 2.659 | +0.000 |
+| Death: own body (/1k turns) | 101-300 | 0.008 | 3.436 | 4.176 | 4.176 | +0.000 |
+| First contact in window (%) | 101-300 | 0.277 | 3.659 | 0.000 | 0.000 | +0.000 |
+| Queen death: another body (%) | 0-100 | 0.291 | 2.589 | 3.571 | 3.571 | +0.000 |
+| Death: another body (/1k turns) | 0-100 | 0.298 | 1.889 | 3.774 | 3.774 | +0.000 |
+| Death: another body (/1k turns) | 101-300 | 0.479 | 2.465 | 6.358 | 6.358 | +0.000 |
+| Queen death: another body (%) | 101-300 | 0.658 | 2.742 | 8.571 | 8.571 | +0.000 |
+| Blind re-tread (%) | 0-100 | 10.431 | 17.841 | 20.294 | 20.294 | +0.000 |
+| First contact round (rounds/contact) | game | 12.485 | 19.895 | 19.286 | 19.286 | +0.000 |
+| Birth-cohort wait until eaten (rounds/eaten) | 101-300 | 5.505 | 8.660 | 7.224 | 7.296 | +0.072 |
+| Birth-cohort wait until eaten (rounds/eaten) | 0-100 | 17.058 | 26.550 | 15.744 | 15.727 | -0.017 |
+| First contact round (rounds/contact) | 0-100 | 12.276 | 17.837 | 19.286 | 19.286 | +0.000 |
+| Adjacent pearl missed (%) | 101-300 | 19.331 | 26.872 | 29.053 | 29.053 | +0.000 |
+| Cross-team head-on involvement (/1k turns) | 0-100 | 6.579 | 4.738 | 9.933 | 9.933 | +0.000 |
+| Dead-drop birth-cohort harvest (%) | 101-300 | 55.885 | 40.646 | 49.881 | 49.896 | +0.015 |
+| Split frequency (/1k turns) | 101-300 | 28.904 | 21.072 | 25.309 | 25.309 | +0.000 |
+| Portal-required birth-cohort harvest (%) | 0-100 | 64.643 | 47.999 | 100.000 | 100.000 | +0.000 |
+| Birth-cohort harvest (%) | 101-300 | 56.496 | 42.377 | 50.215 | 50.240 | +0.024 |
+| Natural birth-cohort harvest (%) | 101-300 | 57.070 | 43.548 | 50.541 | 50.574 | +0.033 |
+| Cross-team head-on involvement (/1k turns) | 101-300 | 6.570 | 5.061 | 8.073 | 8.073 | +0.000 |
+| Queen dies in window (%) | 101-300 | 53.334 | 67.634 | 60.000 | 60.000 | +0.000 |
+| Queen death: head-on mover (%) | 101-300 | 2.111 | 1.790 | 0.000 | 0.000 | +0.000 |
+
+m2base: games=56, wins=50
+m2base: pearls eaten/game=3931.375, dragons alive r100/r300=54.875/58.571
+m2base: longest at end=78.964
+m2lg: games=56, wins=50
+m2lg: pearls eaten/game=3907.429, dragons alive r100/r300=54.875/58.571
+m2lg: longest at end=93.750
+Context checkpoints carry terminal standings forward for games ending early.
+Unported rates: none (all displayed fingerprint definitions ported).

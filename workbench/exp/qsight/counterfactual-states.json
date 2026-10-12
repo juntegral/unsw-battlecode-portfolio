@@ -1,0 +1,1024 @@
+[
+  {
+    "key": "proxy4_king:Colosseum:A:1",
+    "r": 46,
+    "id": 0,
+    "p1": 27,
+    "p2": 0,
+    "on": "S",
+    "off": "SS",
+    "onT": 248,
+    "offT": 248,
+    "onPrice": 27,
+    "offPrice": 27,
+    "legal": [
+      {
+        "t": 233,
+        "price": 27
+      },
+      {
+        "t": 248,
+        "price": 27
+      },
+      {
+        "t": 231,
+        "price": 27
+      }
+    ],
+    "visible": [
+      17,
+      26,
+      21,
+      10,
+      5
+    ],
+    "actual": "S",
+    "reproduced": true,
+    "reports": [
+      {
+        "enemy": 11,
+        "round": 43,
+        "t": 57,
+        "len": 4,
+        "sender": 12
+      }
+    ],
+    "body": [
+      {
+        "x": 8,
+        "y": 14
+      },
+      {
+        "x": 8,
+        "y": 13
+      },
+      {
+        "x": 8,
+        "y": 2
+      },
+      {
+        "x": 9,
+        "y": 2
+      },
+      {
+        "x": 10,
+        "y": 2
+      }
+    ],
+    "neighbors": [
+      {
+        "dir": "N",
+        "to": {
+          "x": 8,
+          "y": 13
+        },
+        "tile": 216,
+        "occupant": 0,
+        "actualBodyFree": false
+      },
+      {
+        "dir": "E",
+        "to": {
+          "x": 9,
+          "y": 14
+        },
+        "tile": 233,
+        "occupant": null,
+        "reported": 27,
+        "actualBodyFree": true
+      },
+      {
+        "dir": "S",
+        "to": {
+          "x": 8,
+          "y": 15
+        },
+        "tile": 248,
+        "occupant": null,
+        "reported": 27,
+        "actualBodyFree": true
+      },
+      {
+        "dir": "W",
+        "to": {
+          "x": 7,
+          "y": 14
+        },
+        "tile": 231,
+        "occupant": null,
+        "reported": 27,
+        "actualBodyFree": true
+      }
+    ]
+  },
+  {
+    "key": "proxy4_king:around_unsw:A:1",
+    "r": 177,
+    "id": 0,
+    "p1": 0,
+    "p2": 0,
+    "on": "W",
+    "off": "E",
+    "onT": 2574,
+    "offT": 2576,
+    "onPrice": 0,
+    "offPrice": 27,
+    "legal": [
+      {
+        "t": 2511,
+        "price": 27
+      },
+      {
+        "t": 2576,
+        "price": 27
+      },
+      {
+        "t": 2574,
+        "price": 0
+      }
+    ],
+    "visible": [],
+    "actual": "W",
+    "reproduced": true,
+    "reports": [
+      {
+        "enemy": 148,
+        "round": 175,
+        "t": 2515,
+        "len": 4,
+        "sender": 4
+      }
+    ],
+    "body": [
+      {
+        "x": 15,
+        "y": 40
+      },
+      {
+        "x": 15,
+        "y": 41
+      },
+      {
+        "x": 16,
+        "y": 41
+      },
+      {
+        "x": 17,
+        "y": 41
+      },
+      {
+        "x": 18,
+        "y": 41
+      },
+      {
+        "x": 18,
+        "y": 42
+      },
+      {
+        "x": 18,
+        "y": 43
+      },
+      {
+        "x": 18,
+        "y": 44
+      },
+      {
+        "x": 18,
+        "y": 45
+      },
+      {
+        "x": 17,
+        "y": 45
+      },
+      {
+        "x": 17,
+        "y": 44
+      },
+      {
+        "x": 16,
+        "y": 44
+      },
+      {
+        "x": 15,
+        "y": 44
+      },
+      {
+        "x": 15,
+        "y": 43
+      },
+      {
+        "x": 14,
+        "y": 43
+      },
+      {
+        "x": 13,
+        "y": 43
+      }
+    ],
+    "neighbors": [
+      {
+        "dir": "N",
+        "to": {
+          "x": 15,
+          "y": 39
+        },
+        "tile": 2511,
+        "occupant": null,
+        "reported": 27,
+        "actualBodyFree": true
+      },
+      {
+        "dir": "E",
+        "to": {
+          "x": 16,
+          "y": 40
+        },
+        "tile": 2576,
+        "occupant": null,
+        "reported": 27,
+        "actualBodyFree": true
+      },
+      {
+        "dir": "S",
+        "to": {
+          "x": 15,
+          "y": 41
+        },
+        "tile": 2639,
+        "occupant": 0,
+        "actualBodyFree": false
+      },
+      {
+        "dir": "W",
+        "to": {
+          "x": 14,
+          "y": 40
+        },
+        "tile": 2574,
+        "occupant": null,
+        "reported": 0,
+        "actualBodyFree": true
+      }
+    ]
+  },
+  {
+    "key": "proxy4_king:big_empty:B:1",
+    "r": 193,
+    "id": 1,
+    "p1": 0,
+    "p2": 0,
+    "on": "N",
+    "off": "E",
+    "onT": 2794,
+    "offT": 2859,
+    "onPrice": 0,
+    "offPrice": 27,
+    "legal": [
+      {
+        "t": 2794,
+        "price": 0
+      },
+      {
+        "t": 2859,
+        "price": 27
+      },
+      {
+        "t": 2857,
+        "price": 0
+      }
+    ],
+    "visible": [],
+    "actual": "N",
+    "reproduced": true,
+    "reports": [
+      {
+        "enemy": 86,
+        "round": 192,
+        "t": 3057,
+        "len": 8,
+        "sender": 32
+      }
+    ],
+    "body": [
+      {
+        "x": 42,
+        "y": 44
+      },
+      {
+        "x": 42,
+        "y": 45
+      },
+      {
+        "x": 42,
+        "y": 46
+      },
+      {
+        "x": 42,
+        "y": 47
+      },
+      {
+        "x": 42,
+        "y": 48
+      },
+      {
+        "x": 42,
+        "y": 49
+      },
+      {
+        "x": 42,
+        "y": 50
+      },
+      {
+        "x": 43,
+        "y": 50
+      },
+      {
+        "x": 43,
+        "y": 49
+      },
+      {
+        "x": 43,
+        "y": 48
+      },
+      {
+        "x": 44,
+        "y": 48
+      },
+      {
+        "x": 44,
+        "y": 47
+      },
+      {
+        "x": 44,
+        "y": 46
+      },
+      {
+        "x": 43,
+        "y": 46
+      }
+    ],
+    "neighbors": [
+      {
+        "dir": "N",
+        "to": {
+          "x": 42,
+          "y": 43
+        },
+        "tile": 2794,
+        "occupant": null,
+        "reported": 0,
+        "actualBodyFree": true
+      },
+      {
+        "dir": "E",
+        "to": {
+          "x": 43,
+          "y": 44
+        },
+        "tile": 2859,
+        "occupant": null,
+        "reported": 27,
+        "actualBodyFree": true
+      },
+      {
+        "dir": "S",
+        "to": {
+          "x": 42,
+          "y": 45
+        },
+        "tile": 2922,
+        "occupant": 1,
+        "actualBodyFree": false
+      },
+      {
+        "dir": "W",
+        "to": {
+          "x": 41,
+          "y": 44
+        },
+        "tile": 2857,
+        "occupant": null,
+        "reported": 0,
+        "actualBodyFree": true
+      }
+    ]
+  },
+  {
+    "key": "proxy4_king:trophy:B:1",
+    "r": 22,
+    "id": 1,
+    "p1": 0,
+    "p2": 0,
+    "on": "W",
+    "off": "E",
+    "onT": 594,
+    "offT": 596,
+    "onPrice": 0,
+    "offPrice": 27,
+    "legal": [
+      {
+        "t": 570,
+        "price": 0
+      },
+      {
+        "t": 596,
+        "price": 27
+      },
+      {
+        "t": 594,
+        "price": 0
+      }
+    ],
+    "visible": [],
+    "actual": "W",
+    "reproduced": true,
+    "reports": [
+      {
+        "enemy": 0,
+        "round": 19,
+        "t": 96,
+        "len": 3,
+        "sender": 6
+      }
+    ],
+    "body": [
+      {
+        "x": 20,
+        "y": 23
+      },
+      {
+        "x": 20,
+        "y": 24
+      }
+    ],
+    "neighbors": [
+      {
+        "dir": "N",
+        "to": {
+          "x": 20,
+          "y": 22
+        },
+        "tile": 570,
+        "occupant": null,
+        "reported": 0,
+        "actualBodyFree": true
+      },
+      {
+        "dir": "E",
+        "to": {
+          "x": 21,
+          "y": 23
+        },
+        "tile": 596,
+        "occupant": null,
+        "reported": 27,
+        "actualBodyFree": true
+      },
+      {
+        "dir": "S",
+        "to": {
+          "x": 20,
+          "y": 24
+        },
+        "tile": 620,
+        "occupant": 1,
+        "actualBodyFree": false
+      },
+      {
+        "dir": "W",
+        "to": {
+          "x": 19,
+          "y": 23
+        },
+        "tile": 594,
+        "occupant": null,
+        "reported": 0,
+        "actualBodyFree": true
+      }
+    ]
+  },
+  {
+    "key": "bot-hunter:Colosseum:B:1",
+    "r": 38,
+    "id": 1,
+    "p1": 27,
+    "p2": 0,
+    "on": "SE",
+    "off": "E",
+    "onT": 231,
+    "offT": 216,
+    "onPrice": 27,
+    "offPrice": 27,
+    "legal": [
+      {
+        "t": 39,
+        "price": 45
+      },
+      {
+        "t": 216,
+        "price": 27
+      },
+      {
+        "t": 231,
+        "price": 27
+      }
+    ],
+    "visible": [
+      13
+    ],
+    "actual": "SE",
+    "reproduced": true,
+    "reports": [
+      {
+        "enemy": 11,
+        "round": 37,
+        "t": 22,
+        "len": 4,
+        "sender": 5
+      }
+    ],
+    "body": [
+      {
+        "x": 7,
+        "y": 13
+      },
+      {
+        "x": 6,
+        "y": 13
+      },
+      {
+        "x": 6,
+        "y": 12
+      },
+      {
+        "x": 7,
+        "y": 12
+      },
+      {
+        "x": 7,
+        "y": 11
+      },
+      {
+        "x": 8,
+        "y": 11
+      },
+      {
+        "x": 8,
+        "y": 10
+      },
+      {
+        "x": 8,
+        "y": 9
+      },
+      {
+        "x": 8,
+        "y": 8
+      },
+      {
+        "x": 9,
+        "y": 8
+      },
+      {
+        "x": 10,
+        "y": 8
+      },
+      {
+        "x": 10,
+        "y": 9
+      },
+      {
+        "x": 9,
+        "y": 9
+      }
+    ],
+    "neighbors": [
+      {
+        "dir": "N",
+        "to": {
+          "x": 7,
+          "y": 2
+        },
+        "tile": 39,
+        "occupant": null,
+        "reported": 45,
+        "actualBodyFree": true
+      },
+      {
+        "dir": "E",
+        "to": {
+          "x": 8,
+          "y": 13
+        },
+        "tile": 216,
+        "occupant": null,
+        "reported": 27,
+        "actualBodyFree": true
+      },
+      {
+        "dir": "S",
+        "to": {
+          "x": 7,
+          "y": 14
+        },
+        "tile": 231,
+        "occupant": null,
+        "reported": 27,
+        "actualBodyFree": true
+      },
+      {
+        "dir": "W",
+        "to": {
+          "x": 6,
+          "y": 13
+        },
+        "tile": 214,
+        "occupant": 1,
+        "actualBodyFree": false
+      }
+    ]
+  },
+  {
+    "key": "bot-hunter:default:B:1",
+    "r": 183,
+    "id": 1,
+    "p1": 27,
+    "p2": 0,
+    "on": "E",
+    "off": "W",
+    "onT": 745,
+    "offT": 743,
+    "onPrice": 27,
+    "offPrice": 45,
+    "legal": [
+      {
+        "t": 712,
+        "price": 27
+      },
+      {
+        "t": 745,
+        "price": 27
+      },
+      {
+        "t": 743,
+        "price": 45
+      }
+    ],
+    "visible": [],
+    "actual": "E",
+    "reproduced": true,
+    "reports": [
+      {
+        "enemy": 6,
+        "round": 182,
+        "t": 922,
+        "len": 4,
+        "sender": 44
+      }
+    ],
+    "body": [
+      {
+        "x": 8,
+        "y": 23
+      },
+      {
+        "x": 8,
+        "y": 24
+      },
+      {
+        "x": 7,
+        "y": 24
+      },
+      {
+        "x": 27,
+        "y": 27
+      }
+    ],
+    "neighbors": [
+      {
+        "dir": "N",
+        "to": {
+          "x": 8,
+          "y": 22
+        },
+        "tile": 712,
+        "occupant": null,
+        "reported": 27,
+        "actualBodyFree": true
+      },
+      {
+        "dir": "E",
+        "to": {
+          "x": 9,
+          "y": 23
+        },
+        "tile": 745,
+        "occupant": null,
+        "reported": 27,
+        "actualBodyFree": true
+      },
+      {
+        "dir": "S",
+        "to": {
+          "x": 8,
+          "y": 24
+        },
+        "tile": 776,
+        "occupant": 1,
+        "actualBodyFree": false
+      },
+      {
+        "dir": "W",
+        "to": {
+          "x": 7,
+          "y": 23
+        },
+        "tile": 743,
+        "occupant": null,
+        "reported": 45,
+        "actualBodyFree": true
+      }
+    ]
+  },
+  {
+    "key": "bot-hunter:queen_of_spades:B:1",
+    "r": 115,
+    "id": 1,
+    "p1": 27,
+    "p2": 0,
+    "on": "E",
+    "off": "W",
+    "onT": 867,
+    "offT": 865,
+    "onPrice": 27,
+    "offPrice": 45,
+    "legal": [
+      {
+        "t": 867,
+        "price": 27
+      },
+      {
+        "t": 865,
+        "price": 45
+      }
+    ],
+    "visible": [],
+    "actual": "E",
+    "reproduced": true,
+    "reports": [
+      {
+        "enemy": 5,
+        "round": 113,
+        "t": 33,
+        "len": 10,
+        "sender": 7
+      }
+    ],
+    "body": [
+      {
+        "x": 16,
+        "y": 34
+      },
+      {
+        "x": 16,
+        "y": 0
+      },
+      {
+        "x": 15,
+        "y": 0
+      },
+      {
+        "x": 14,
+        "y": 0
+      }
+    ],
+    "neighbors": [
+      {
+        "dir": "N",
+        "to": null,
+        "tile": null,
+        "occupant": null,
+        "actualBodyFree": false
+      },
+      {
+        "dir": "E",
+        "to": {
+          "x": 17,
+          "y": 34
+        },
+        "tile": 867,
+        "occupant": null,
+        "reported": 27,
+        "actualBodyFree": true
+      },
+      {
+        "dir": "S",
+        "to": {
+          "x": 16,
+          "y": 0
+        },
+        "tile": 16,
+        "occupant": 1,
+        "actualBodyFree": false
+      },
+      {
+        "dir": "W",
+        "to": {
+          "x": 15,
+          "y": 34
+        },
+        "tile": 865,
+        "occupant": null,
+        "reported": 45,
+        "actualBodyFree": true
+      }
+    ]
+  },
+  {
+    "key": "bot-hunter:stripes:B:1",
+    "r": 180,
+    "id": 1,
+    "p1": 27,
+    "p2": 0,
+    "on": "W",
+    "off": "W",
+    "onT": 172,
+    "offT": 172,
+    "onPrice": 27,
+    "offPrice": 27,
+    "legal": [
+      {
+        "t": 174,
+        "price": 0
+      },
+      {
+        "t": 197,
+        "price": 0
+      },
+      {
+        "t": 172,
+        "price": 27
+      }
+    ],
+    "visible": [],
+    "actual": "W",
+    "reproduced": true,
+    "reports": [
+      {
+        "enemy": 4,
+        "round": 179,
+        "t": 145,
+        "len": 4,
+        "sender": 22
+      }
+    ],
+    "body": [
+      {
+        "x": 5,
+        "y": 7
+      },
+      {
+        "x": 5,
+        "y": 6
+      }
+    ],
+    "neighbors": [
+      {
+        "dir": "N",
+        "to": {
+          "x": 5,
+          "y": 6
+        },
+        "tile": 149,
+        "occupant": 1,
+        "actualBodyFree": false
+      },
+      {
+        "dir": "E",
+        "to": {
+          "x": 6,
+          "y": 7
+        },
+        "tile": 174,
+        "occupant": null,
+        "reported": 0,
+        "actualBodyFree": true
+      },
+      {
+        "dir": "S",
+        "to": {
+          "x": 5,
+          "y": 8
+        },
+        "tile": 197,
+        "occupant": null,
+        "reported": 0,
+        "actualBodyFree": true
+      },
+      {
+        "dir": "W",
+        "to": {
+          "x": 4,
+          "y": 7
+        },
+        "tile": 172,
+        "occupant": null,
+        "reported": 27,
+        "actualBodyFree": true
+      }
+    ]
+  },
+  {
+    "key": "bot-hunter:stripes:B:1",
+    "r": 181,
+    "id": 1,
+    "p1": 27,
+    "p2": 0,
+    "on": "S",
+    "off": "N",
+    "onT": 196,
+    "offT": 148,
+    "onPrice": 27,
+    "offPrice": 45,
+    "legal": [
+      {
+        "t": 148,
+        "price": 45
+      },
+      {
+        "t": 196,
+        "price": 27
+      },
+      {
+        "t": 171,
+        "price": 45
+      }
+    ],
+    "visible": [],
+    "actual": "S",
+    "reproduced": true,
+    "reports": [
+      {
+        "enemy": 4,
+        "round": 179,
+        "t": 145,
+        "len": 4,
+        "sender": 22
+      }
+    ],
+    "body": [
+      {
+        "x": 4,
+        "y": 7
+      },
+      {
+        "x": 5,
+        "y": 7
+      }
+    ],
+    "neighbors": [
+      {
+        "dir": "N",
+        "to": {
+          "x": 4,
+          "y": 6
+        },
+        "tile": 148,
+        "occupant": null,
+        "reported": 45,
+        "actualBodyFree": true
+      },
+      {
+        "dir": "E",
+        "to": {
+          "x": 5,
+          "y": 7
+        },
+        "tile": 173,
+        "occupant": 1,
+        "actualBodyFree": false
+      },
+      {
+        "dir": "S",
+        "to": {
+          "x": 4,
+          "y": 8
+        },
+        "tile": 196,
+        "occupant": null,
+        "reported": 27,
+        "actualBodyFree": true
+      },
+      {
+        "dir": "W",
+        "to": {
+          "x": 3,
+          "y": 7
+        },
+        "tile": 171,
+        "occupant": null,
+        "reported": 45,
+        "actualBodyFree": true
+      }
+    ]
+  }
+]

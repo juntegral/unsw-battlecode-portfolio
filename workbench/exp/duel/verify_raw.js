@@ -1,0 +1,15 @@
+'use strict';const fs=require('fs'),path=require('path'),zlib=require('zlib'),os=require('os');const {OUT,guard,resource}=require('./setup'),raw=require('../spatial/lib').raw,{recount}=require('./recount');
+function canonical(ep){return [ep.id,ep.end,ep.outcome,ep.detail?.killer??ep.killer??null,ep.detail?.mover??ep.mover??null];}
+async function main(){if(os.getPriority(0)<10)throw Error('nice >=10 required');fs.mkdirSync(path.join(OUT,'verify-cache'),{recursive:true});let count=0;const start=Date.now();while(true){const P=JSON.parse(fs.readFileSync(path.join(OUT,'population.json')));let pending=0,available=0;
+ for(const t of P.tasks){const target=path.join(OUT,'verify-cache',t.key+'.json.gz');if(fs.existsSync(target)){const previous=JSON.parse(zlib.gunzipSync(fs.readFileSync(target)));if(!previous.mismatchCount)continue;}pending++;const f=path.join(OUT,'cache',t.key+'.json.gz');if(!fs.existsSync(f))continue;available++;if(count%10===0)guard();let r;try{r=JSON.parse(zlib.gunzipSync(fs.readFileSync(f)));}catch{continue;}
+  if(require('./calibrate').PHYSICS.some(k=>r.checks[k]!==0))continue;const I=recount(raw.load(t.file),t),a=r.episodes.map(canonical),b=I.map(canonical),mismatches=[];for(let i=0;i<Math.max(a.length,b.length);i++)if(JSON.stringify(a[i])!==JSON.stringify(b[i])){if(mismatches.length<5)mismatches.push({index:i,primary:a[i],independent:b[i]});}
+  const x={game:t.key,primaryN:a.length,independentN:b.length,primaryOutcomes:{},independentOutcomes:{},mismatchCount:0,mismatchExamples:mismatches};for(const e of r.episodes)x.primaryOutcomes[e.outcome]=(x.primaryOutcomes[e.outcome]||0)+1;for(const e of I)x.independentOutcomes[e.outcome]=(x.independentOutcomes[e.outcome]||0)+1;x.mismatchCount=+!!mismatches.length;
+  fs.writeFileSync(target,zlib.gzipSync(JSON.stringify(x)));count++;if(count%50===0)console.log('RAW VERIFY',count,'sec',Math.round((Date.now()-start)/1000),'last',t.key,'bad',x.mismatchCount);if(x.mismatchCount)throw Error('independent episode mismatch '+JSON.stringify(x));
+ }
+ if(!pending||fs.existsSync(path.join(OUT,'extract.log'))&&fs.readFileSync(path.join(OUT,'extract.log'),'utf8').includes('EXTRACTED')&&!available)break;
+ await new Promise(resolve=>setTimeout(resolve,15000));
+ }
+ const P=JSON.parse(fs.readFileSync(path.join(OUT,'population.json'))),tot={at:resource().at,N_games:0,primaryN:0,independentN:0,mismatchGames:0,primaryOutcomes:{},independentOutcomes:{},missing:[]};for(const t of P.tasks){const f=path.join(OUT,'verify-cache',t.key+'.json.gz');if(!fs.existsSync(f)){tot.missing.push(t.key);continue;}const x=JSON.parse(zlib.gunzipSync(fs.readFileSync(f)));tot.N_games++;tot.primaryN+=x.primaryN;tot.independentN+=x.independentN;tot.mismatchGames+=x.mismatchCount;for(const k of ['primaryOutcomes','independentOutcomes'])for(const [o,v]of Object.entries(x[k]))tot[k][o]=(tot[k][o]||0)+v;}
+ fs.writeFileSync(path.join(OUT,'verification-raw.json'),JSON.stringify(tot,null,2));console.log('RAW VERIFY DONE',tot);
+}
+if(require.main===module)main().catch(e=>{console.error(e.stack);process.exitCode=/RESOURCE PAUSE/.test(String(e))?75:1;});module.exports={canonical};

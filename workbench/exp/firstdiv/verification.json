@@ -1,0 +1,205 @@
+{
+  "verifiedKeys": 328,
+  "verifiedFateCheckpoints": 3512,
+  "expectedKeys": {
+    "bodymem": 84,
+    "bodyx": 84,
+    "freecost": 68,
+    "qsight": 92
+  },
+  "sets": {
+    "bodymem": {
+      "keys": 84,
+      "firstDivergences": 65,
+      "firstAllActionEqual": 65,
+      "noDivergence": 19,
+      "checkpointChecks": 1128,
+      "tables": {
+        "changed": {
+          "1": {
+            "harm": 4,
+            "help": 0,
+            "both": 0,
+            "neither": 61,
+            "censored": 0
+          },
+          "3": {
+            "harm": 3,
+            "help": 0,
+            "both": 2,
+            "neither": 60,
+            "censored": 0
+          },
+          "10": {
+            "harm": 2,
+            "help": 1,
+            "both": 5,
+            "neither": 57,
+            "censored": 0
+          }
+        },
+        "queen": {
+          "10": {
+            "harm": 0,
+            "help": 0,
+            "both": 21,
+            "neither": 44,
+            "censored": 0
+          },
+          "50": {
+            "harm": 2,
+            "help": 3,
+            "both": 24,
+            "neither": 36,
+            "censored": 0
+          }
+        }
+      }
+    },
+    "bodyx": {
+      "keys": 84,
+      "firstDivergences": 60,
+      "firstAllActionEqual": 60,
+      "noDivergence": 24,
+      "checkpointChecks": 1024,
+      "tables": {
+        "changed": {
+          "1": {
+            "harm": 0,
+            "help": 3,
+            "both": 0,
+            "neither": 57,
+            "censored": 0
+          },
+          "3": {
+            "harm": 0,
+            "help": 3,
+            "both": 0,
+            "neither": 57,
+            "censored": 0
+          },
+          "10": {
+            "harm": 0,
+            "help": 5,
+            "both": 1,
+            "neither": 54,
+            "censored": 0
+          }
+        },
+        "queen": {
+          "10": {
+            "harm": 0,
+            "help": 2,
+            "both": 19,
+            "neither": 39,
+            "censored": 0
+          },
+          "50": {
+            "harm": 1,
+            "help": 5,
+            "both": 25,
+            "neither": 28,
+            "censored": 1
+          }
+        }
+      }
+    },
+    "freecost": {
+      "keys": 68,
+      "firstDivergences": 51,
+      "firstAllActionEqual": 51,
+      "noDivergence": 17,
+      "checkpointChecks": 840,
+      "tables": {
+        "changed": {
+          "1": {
+            "harm": 0,
+            "help": 1,
+            "both": 0,
+            "neither": 50,
+            "censored": 0
+          },
+          "3": {
+            "harm": 0,
+            "help": 2,
+            "both": 0,
+            "neither": 49,
+            "censored": 0
+          },
+          "10": {
+            "harm": 0,
+            "help": 3,
+            "both": 5,
+            "neither": 43,
+            "censored": 0
+          }
+        },
+        "queen": {
+          "10": {
+            "harm": 0,
+            "help": 2,
+            "both": 11,
+            "neither": 38,
+            "censored": 0
+          },
+          "50": {
+            "harm": 1,
+            "help": 5,
+            "both": 16,
+            "neither": 28,
+            "censored": 1
+          }
+        }
+      }
+    },
+    "qsight": {
+      "keys": 92,
+      "firstDivergences": 27,
+      "firstAllActionEqual": 27,
+      "noDivergence": 65,
+      "checkpointChecks": 520,
+      "tables": {
+        "changed": {
+          "1": {
+            "harm": 0,
+            "help": 0,
+            "both": 0,
+            "neither": 27,
+            "censored": 0
+          },
+          "3": {
+            "harm": 0,
+            "help": 1,
+            "both": 1,
+            "neither": 25,
+            "censored": 0
+          },
+          "10": {
+            "harm": 1,
+            "help": 0,
+            "both": 3,
+            "neither": 23,
+            "censored": 0
+          }
+        },
+        "queen": {
+          "10": {
+            "harm": 0,
+            "help": 0,
+            "both": 10,
+            "neither": 17,
+            "censored": 0
+          },
+          "50": {
+            "harm": 0,
+            "help": 1,
+            "both": 15,
+            "neither": 11,
+            "censored": 0
+          }
+        }
+      }
+    }
+  },
+  "errors": []
+}

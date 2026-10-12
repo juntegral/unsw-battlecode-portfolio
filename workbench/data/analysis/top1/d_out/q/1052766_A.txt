@@ -1,0 +1,86 @@
+=== 1052766 Trauma 48x24 (1152 cells) run dl-20261004 | A = meow (1853) vs test4 (2233) | winner B by queen rule after 500 rounds
+queen #0 start (4, 15); enemy queen #1 start (43, 8); path between the starts 98
+DEATH r445 headon L34 at (3, 6) by #400B L2 from (2, 6) with E
+splits (round, before -> keeps + child, child id): r1:4->2+2(#5) r81:4->2+2(#36) r141:4->2+2(#90)
+block | head | from start | len | ate nat/corpse | splits | rounds enemy in view | nearest enemy | cells used | own heads<=4 | units own/enemy
+r  0 | (4, 15)   |   0 |  4 | 0/0 | 1 |  0 | 9 | 24 | 0.3 | 2/2
+r 25 | (3, 10)   |   6 |  2 | 0/0 | 0 |  0 | 9 | 21 | 0.0 | 4/5
+r 50 | (1, 3)    |  15 |  2 | 0/0 | 0 |  3 | 9 | 22 | 0.0 | 3/10
+r 75 | (0, 19)   |   8 |  2 | 2/0 | 1 |  8 | 9 | 20 | 0.7 | 5/16
+r100 | (3, 20)   |   6 |  2 | 0/0 | 0 |  0 | 9 | 25 | 1.2 | 8/25
+r125 | (3, 7)    |   9 |  2 | 2/0 | 1 |  7 | 9 | 24 | 0.7 | 12/32
+r150 | (0, 6)    |  13 |  2 | 0/0 | 0 | 15 | 9 | 24 | 0.3 | 20/44
+r175 | (2, 5)    |  12 |  2 | 0/0 | 0 |  3 | 9 | 25 | 0.2 | 19/53
+r200 | (2, 4)    |  13 |  2 | 0/0 | 0 |  0 | 9 | 19 | 0.6 | 21/57
+r225 | (4, 11)   |   4 |  2 | 1/0 | 0 |  0 | 9 | 24 | 1.4 | 22/53
+r250 | (4, 20)   |   5 |  3 | 0/0 | 0 |  0 | 9 | 18 | 0.7 | 17/56
+r275 | (5, 18)   |   4 |  3 | 2/0 | 0 | 18 | 9 | 20 | 0.3 | 15/62
+r300 | (0, 21)   |  10 |  5 | 0/1 | 0 |  9 | 9 | 21 | 0.4 | 16/53
+r325 | (4, 13)   |   2 |  6 | 1/10 | 0 |  1 | 9 | 24 | 0.6 | 15/62
+r350 | (6, 6)    |  11 | 17 | 1/7 | 0 |  4 | 9 | 24 | 0.2 | 14/63
+r375 | (3, 14)   |   2 | 25 | 1/2 | 0 |  9 | 4 | 21 | 0.2 | 12/62
+r400 | (8, 15)   |   4 | 28 | 1/3 | 0 | 11 | 2 | 25 | 0.0 | 10/58
+r425 | (5, 11)   |   5 | 32 | 2/0 | 0 | 10 | 2 | 20 | 0.4 | 3/30
+moves from round 415:
+   415:SEE!4  416:SSS!4  417:WSWSWS!4  418:WWWSSS!3  419:WSSSWW  420:SSSW  421:SEENNN+  422:EENNNE  423:ENNNEE  424:NNNWWW  425:SES!4  426:W!4
+   427:S!4  428:S!4  429:SW!4  430:N!3  431:W!3  432:SSSW!3  433:SSSEEE!2  434:NNNEEE  435:NNNWW  436:NENNWW  437:NNWNEE!5  438:NNNWWW
+   439:NNN  440:NNN+  441:EEESSS+  442:SENESS  443:WSSSEN  444:ESSWWW  445:WNNNWW
+death record: {"round": 445, "reason": "headon", "len": 34, "pos": [3, 6], "own": 0, "killer": {"id": 400, "team": "B", "len": 2, "steps": 1, "nsteps": 1, "start": [2, 6], "born": 0, "dirs": "E", "parent": [322, 373], "cheb_now": 1, "seen_last": 0, "seen_last3": 0}}
+  r438 L32 at (6, 9) move NNNWWW -> [3, 6] ate 0 | free 3 safe 3 | in reach at start 0, at end 0 | froom 40 tree 0 | N=F(6,8) reach0 room40 E=F(7,9) reach0 room40 S=F(6,10) reach0 room40 W=o(5,9) #0L32s1 | enemies 
+  r439 L32 at (3, 6) move NNN -> [3, 3] ate 0 | free 3 safe 3 | in reach at start 0, at end 0 | froom 40 tree 0 | N=F(3,5) reach0 room40 E=o(4,6) #0L32s1 S=F(3,7) reach0 room40 W=F(2,6) reach0 room40 | enemies #1L28@(47,6)c4p-1
+  r440 L32 at (3, 3) move NNN -> [3, 0] ate 1 | free 3 safe 3 | in reach at start 0, at end 0 | froom 40 tree 0 | N=F(3,2) reach0 room40 E=F(4,3) reach0 room40 S=o(3,4) #0L32s1 W=F(2,3) reach0 room40 | enemies #1L28@(47,7)c4p-1
+  r441 L33 at (3, 0) move EEESSS -> [6, 3] ate 1 | free 2 safe 2 | in reach at start 0, at end 0 | froom 40 tree 0 | N=K E=P(4,0) reach0 room40 S=o(3,1) #0L33s1 W=F(2,0) reach0 room40 | enemies 
+  r442 L34 at (6, 3) move SENESS -> [8, 5] ate 0 | free 3 safe 3 | in reach at start 0, at end 0 | froom 40 tree 0 | N=o(6,2) #0L34s1 E=F(7,3) reach0 room40 S=F(6,4) reach0 room40 W=F(5,3) reach0 room40 | enemies 
+  r443 L34 at (8, 5) move WSSSEN -> [8, 7] ate 0 | free 3 safe 3 | in reach at start 0, at end 0 | froom 40 tree 0 | N=o(8,4) #0L34s1 E=F(9,5) reach0 room40 S=F(8,6) reach0 room40 W=F(7,5) reach0 room40 | enemies 
+  r444 L34 at (8, 7) move ESSWWW -> [6, 9] ate 0 | free 2 safe 2 | in reach at start 0, at end 0 | froom 40 tree 0 | N=F(8,6) reach0 room40 E=F(9,7) reach0 room40 S=o(8,8) #0L34s1 W=o(7,7) #0L34s3 | enemies #400L2@(2,7)c6p6
+  r445 L34 at (6, 9) move WNNNWW -> [3, 6] ate 0 | free 3 safe 3 | in reach at start 0, at end 0 | froom 40 tree 0 | N=F(6,8) reach0 room40 E=o(7,9) #0L34s1 S=F(6,10) reach0 room40 W=F(5,9) reach0 room40 | enemies 
+--- board at the start of her turn, round 442
+      1 2 3 4 5 6 7 8 91011
+     + + + + + + + + + + + 
+ 22   . . . . . . . . . .|.
+     + + + + + + + + + + + 
+ 23   . . . . . . . . . .|.
+     +-+-+-+-+-+-+-+-+-+-+-
+  0   * . a a a a . . . .O.
+     + + + + + + + + + + +-
+  1   . . a . . a . . . .|.
+     + + + + + + + + + + + 
+  2   . . a . . a . . . .|*
+     + + + + + + + + + + +-
+  3   . . a . . @ . . . .|.
+     + + + + + + + + + + + 
+  4   . . a . . . . . . .|.
+     + + + + + + + + + + +-
+  5   . . a . . . . . . .|.
+     + + + + +-+ + + + + + 
+  6   . . a a a a . . . .|.
+     + + + + + + + + + + +-
+  7   . . . . . a . . . .|*
+     + + + + + + + + + + +-
+  8   . . . . . a . . . .|.
+heads: #0A L34 (6, 3)
+--- board at the start of her turn, round 445
+      1 2 3 4 5 6 7 8 91011
+     + + + + + + + + + + + 
+  4   . . a . . a a a . .|.
+     + + + + + + + + + + +-
+  5   . . a . . . a a . .|.
+     + + + + +-+ + + + + + 
+  6   . B a a a a a . . .|.
+     + + + + + + + + + + +-
+  7   . b . . . . a a a .|*
+     + + + + + + + + + + +-
+  8   . . . . . . a a a .|.
+     + + + + + + + + + + + 
+  9   . . . . . @ a a a .|.
+     + + + + + + + + + + + 
+ 10   . . . . . . . . . .|*
+     + + + + + + + + + + + 
+ 11   . . . . . . . . . .|*
+     + + + + + + + + + + + 
+ 12   . . . . . . . . . .|*
+     + + + + + + + + + + + 
+ 13   . . . . . . . . . .|*
+     + + + + + + + + + + + 
+ 14   . . . . . . . . . .|*
+heads: #0A L34 (6, 9); #400B L2 (2, 6)

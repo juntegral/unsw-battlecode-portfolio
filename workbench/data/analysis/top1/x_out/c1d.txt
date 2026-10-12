@@ -1,0 +1,84 @@
+our games in the study: 401 won 112
+
+== 1. meow, all builds (401 games)
+   no in-view chance                                226
+   not taken, she died later                        79
+   first chance taken                               54
+   not taken, she lived: round-500 loss             25
+   not taken, she lived: wipe-out loss              15
+   not taken, she died in that same round           2
+   she died later: mean 70 rounds later, median 47
+   round-500 losses with her alive and an untaken chance: 25; strict lenient 13, middle 5, hard 6
+   ... flips that need an attacker of 5+: lenient 7, hard 2; attacker was our longest dragon: 2
+   ... lenient flips that survive taking the attacker out of our final lengths: 13
+   by opp : test4 11 (lenient 7, hard 2); WeHaveQuizzes 8 (lenient 4, hard 2); dev test 1 :P 4 (lenient 1, hard 1); tungtung67 1 (lenient 1, hard 1); Vibing++ 1 (lenient 0, hard 0)
+   by map : Australia 10 (lenient 1, hard 0); Slithery Fight 2 (lenient 2, hard 1); Islands 2 (lenient 0, hard 0); weakhold 2 (lenient 2, hard 1); Around UNSW 2 (lenient 1, hard 1); Prisoners Dilemma 1 (lenient 1, hard 1); Autarky 1 (lenient 1, hard 1); Queen Of Spades 1 (lenient 1, hard 0); Maze 1 (lenient 1, hard 0); Trauma 1 (lenient 1, hard 1); Trophy 1 (lenient 1, hard 0); Tower Defense 1 (lenient 1, hard 0)
+   by set : dl-20261004 8 (lenient 4, hard 1); tc30-test-new 5 (lenient 4, hard 1); stride-new 3 (lenient 2, hard 2); tc30-dev1-old 3 (lenient 1, hard 1); qh31-test-old 2 (lenient 1, hard 0); dl-20261003 1 (lenient 1, hard 1); stride-old 1 (lenient 0, hard 0); passage2-test-new 1 (lenient 0, hard 0); tc30-dev1b-new 1 (lenient 0, hard 0)
+   by map size: over 1,200 cells 16 (lenient 4, hard 2); smaller 9 (lenient 9, hard 4)
+   the games, one line each:
+   game     map              opponent       run                 rnd   L  qL  our long  her best her q  ourQ  lenient/mid/hard  ratio@300  untaken turns
+   990232   Prisoners Dilemma tungtung67     dl-20261003          13   4   3  23        0        9      dead  Y/Y/Y   1.40   3
+   1029017  Slithery Fight   test4          stride-new          401   6  30  60        28       49     dead  Y/Y/Y   0.65   2
+   1029030  Autarky          WeHaveQuizzes  stride-new          228   4   2  93        0        2      dead  Y/Y/Y   67.50   6
+   1053784  Trauma           WeHaveQuizzes  dl-20261004         448   8  39  31        26       39     alive Y/Y/Y   0.82   4
+   1067909  Around UNSW      test4          tc30-test-new        63   3   2  47        33       45     dead  Y/-/Y   0.81   1
+   1068679  weakhold         dev test 1 :P  tc30-dev1-old       461   3   2  32        0        4      dead  Y/Y/Y   6.15   2
+   1044523  Slithery Fight   WeHaveQuizzes  dl-20261004         164   5   6  65        28       104    dead  Y/-/-   0.62   6
+   1045197  Queen Of Spades  test4          dl-20261004         241   3   3  9         4        23     dead  Y/-/-   1.50   10
+   1053380  Maze             test4          dl-20261004         438   5  32  26        16       56     dead  Y/-/-   1.17   1
+   1063010  weakhold         test4          qh31-test-old       479   6  24  9         4        27     dead  Y/-/-   0.36   1
+   1067904  Australia        test4          tc30-test-new       380   5   4  18        15       42     dead  Y/-/-   0.38   2
+   1067913  Trophy           test4          tc30-test-new       174   3   2  13        11       57     dead  Y/-/-   0.29   5
+   1068054  Tower Defense    WeHaveQuizzes  tc30-test-new       369   8  15  28        14       32     dead  Y/-/-   5.75   3
+   1006645  Australia        Vibing++       dl-20261004         330   5  11  17        73       40     dead  -/-/-   0.05   2
+   1027974  Australia        WeHaveQuizzes  stride-old          371   6  29  11        69       92     dead  -/-/-   0.19   2
+   1029019  Australia        test4          stride-new          484  11   9  13        31       12     dead  -/-/-   0.20   1
+   1045190  Australia        test4          dl-20261004         224   5   2  10        28       59     dead  -/-/-   0.08   1
+   1052755  Australia        test4          dl-20261004         320   7   3  11        29       65     dead  -/-/-   0.04   6
+   1053773  Australia        WeHaveQuizzes  dl-20261004         185   5   7  26        53       127    dead  -/-/-   0.13   6
+   1059074  Islands          WeHaveQuizzes  passage2-test-new    61   8   3  2         37       138    dead  -/-/-   0.06   2
+   1063011  Australia        test4          qh31-test-old       482   8  34  9         28       39     dead  -/-/-   0.07   2
+   1068050  Australia        WeHaveQuizzes  tc30-test-new       140   4   2  29        67       70     dead  -/-/-   0.75   6
+   1068680  Australia        dev test 1 :P  tc30-dev1-old       222   8   8  13        36       36     dead  -/-/-   0.51   9
+   1068685  Around UNSW      dev test 1 :P  tc30-dev1-old       448   5  16  13        85       17     dead  -/-/-   0.44   2
+   1069649  Islands          dev test 1 :P  tc30-dev1b-new      265   8   4  15        46       34     dead  -/-/-   0.15   2
+
+== 1. meow, live bot (275 games)
+   no in-view chance                                158
+   not taken, she died later                        54
+   first chance taken                               34
+   not taken, she lived: round-500 loss             15
+   not taken, she lived: wipe-out loss              14
+   she died later: mean 69 rounds later, median 41
+   round-500 losses with her alive and an untaken chance: 15; strict lenient 7, middle 3, hard 3
+   ... flips that need an attacker of 5+: lenient 4, hard 1; attacker was our longest dragon: 1
+   ... lenient flips that survive taking the attacker out of our final lengths: 7
+   by opp : test4 6 (lenient 3, hard 0); WeHaveQuizzes 4 (lenient 2, hard 1); dev test 1 :P 3 (lenient 1, hard 1); tungtung67 1 (lenient 1, hard 1); Vibing++ 1 (lenient 0, hard 0)
+   by map : Australia 7 (lenient 0, hard 0); weakhold 2 (lenient 2, hard 1); Prisoners Dilemma 1 (lenient 1, hard 1); Slithery Fight 1 (lenient 1, hard 0); Queen Of Spades 1 (lenient 1, hard 0); Maze 1 (lenient 1, hard 0); Trauma 1 (lenient 1, hard 1); Around UNSW 1 (lenient 0, hard 0)
+   by set : dl-20261004 8 (lenient 4, hard 1); tc30-dev1-old 3 (lenient 1, hard 1); qh31-test-old 2 (lenient 1, hard 0); dl-20261003 1 (lenient 1, hard 1); stride-old 1 (lenient 0, hard 0)
+   by map size: over 1,200 cells 9 (lenient 1, hard 0); smaller 6 (lenient 6, hard 3)
+
+== 2. Intervals (80% Wilson) for the shares the case rests on, our 401 games
+   attacker 2-3   taken 87 of 231 = 38%    80% interval 34-42%
+   attacker 4     taken 5 of 39 = 13%      80% interval 7-21%
+   attacker 5-12  taken 7 of 165 = 4%      80% interval 3-7%
+   attacker all   taken 99 of 435 = 23%    80% interval 20-25%
+
+== 3. Our take-up by opponent (in-view strict chances, attackers <= 12) and what those games became
+   WeHaveQuizzes      games 159  won 46 of 159 = 29% | games with a chance 86 of 159 = 54% | chances taken 49 of 219 = 22%  (2-3-long 43 of 130 = 33%) | we rammed her 51 of 159 = 32% | her queen alive at end 43 of 159 = 27% | r500 losses, her alive, chance untaken: 8 | rounds with a chance per 1,000 of her queen-rounds 5.7
+   test4              games 154  won 44 of 154 = 29% | games with a chance 56 of 154 = 36% | chances taken 34 of 118 = 29%  (2-3-long 31 of 59 = 53%) | we rammed her 35 of 154 = 23% | her queen alive at end 70 of 154 = 45% | r500 losses, her alive, chance untaken: 11 | rounds with a chance per 1,000 of her queen-rounds 2.5
+   other 2000+ teams  games 39   won 13 of 39 = 33% | games with a chance 14 of 39 = 36% | chances taken 10 of 47 = 21%   (2-3-long 8 of 18 = 44% ) | we rammed her 10 of 39 = 26% | her queen alive at end 21 of 39 = 54% | r500 losses, her alive, chance untaken: 1 | rounds with a chance per 1,000 of her queen-rounds 3.9
+   dev test 1 :P      games 28   won 5 of 28 = 18%  | games with a chance 10 of 28 = 36% | chances taken 2 of 30 = 7%     (2-3-long 2 of 11 = 18% ) | we rammed her 2 of 28 = 7%   | her queen alive at end 17 of 28 = 61% | r500 losses, her alive, chance untaken: 4 | rounds with a chance per 1,000 of her queen-rounds 3.3
+   top three          games 21   won 4 of 21 = 19%  | games with a chance 9 of 21 = 43%  | chances taken 4 of 21 = 19%    (2-3-long 3 of 13 = 23% ) | we rammed her 4 of 21 = 19%  | her queen alive at end 11 of 21 = 52% | r500 losses, her alive, chance untaken: 1 | rounds with a chance per 1,000 of her queen-rounds 3.1
+
+== 4. How often a queen offers an in-view chance (rounds with at least one in-view strict chance on her, any attacker length, per 1,000 of her queen-rounds), and how often she is rammed (per 1,000)
+   rows: the queen's team; columns: who attacks her
+   test4          | meow     : 154 games,  2.6 chance-rounds/1000, rammed  0.8/1000, games with a chance  36% | top three:  78 games,  2.0 chance-rounds/1000, rammed  2.1/1000, games with a chance  44% | other 2000+:  37 games,  1.3 chance-rounds/1000, rammed  1.5/1000, games with a chance  32%
+   WeHaveQuizzes  | meow     : 159 games,  6.0 chance-rounds/1000, rammed  1.3/1000, games with a chance  55% | top three:  30 games,  3.9 chance-rounds/1000, rammed  4.3/1000, games with a chance  53% | other 2000+:  10 games,  4.2 chance-rounds/1000, rammed  4.9/1000, games with a chance  70%
+   dev test 1     | meow     :  28 games,  3.8 chance-rounds/1000, rammed  0.2/1000, games with a chance  36% | top three:  41 games,  2.9 chance-rounds/1000, rammed  2.3/1000, games with a chance  41% | other 2000+:  21 games,  1.6 chance-rounds/1000, rammed  1.6/1000, games with a chance  38%
+   other 2000+    | meow     :  39 games,  4.0 chance-rounds/1000, rammed  0.8/1000, games with a chance  36% | top three: 1002 games,  2.7 chance-rounds/1000, rammed  2.5/1000, games with a chance  52% | other 2000+: 188 games,  2.9 chance-rounds/1000, rammed  2.0/1000, games with a chance  47%
+   Vibing++       | meow     :   5 games,  4.5 chance-rounds/1000, rammed  0.7/1000, games with a chance  60% | top three: 179 games,  3.4 chance-rounds/1000, rammed  2.6/1000, games with a chance  52% | other 2000+: 323 games,  2.3 chance-rounds/1000, rammed  1.9/1000, games with a chance  41%
+   SSS            | meow     : -                                                           | top three: 137 games,  3.1 chance-rounds/1000, rammed  2.4/1000, games with a chance  56% | other 2000+: 366 games,  2.0 chance-rounds/1000, rammed  1.5/1000, games with a chance  44%
+   forgot         | meow     :  16 games,  2.8 chance-rounds/1000, rammed  0.6/1000, games with a chance  38% | top three: 170 games,  2.7 chance-rounds/1000, rammed  3.3/1000, games with a chance  55% | other 2000+: 462 games,  2.3 chance-rounds/1000, rammed  1.9/1000, games with a chance  45%
+   meow           | meow     : -                                                           | top three:  21 games,  3.6 chance-rounds/1000, rammed  4.4/1000, games with a chance  43% | other 2000+: 380 games,  4.1 chance-rounds/1000, rammed  4.5/1000, games with a chance  51%
+   under 2000     | meow     : 261 games,  6.4 chance-rounds/1000, rammed  1.1/1000, games with a chance  48% | top three:  13 games,  2.8 chance-rounds/1000, rammed  2.5/1000, games with a chance  54% | other 2000+:   5 games,  3.2 chance-rounds/1000, rammed  3.2/1000, games with a chance  80%

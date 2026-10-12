@@ -1,0 +1,27 @@
+=== Vibing++ (306): round-500 games with the own queen alive at r300: 142
+  queen first 8+ long (bucket end round), enemy queen alive at that time: n=90: r150:27 r200:11 r250:14 r300:18 r350:6 r400:6 r450:8
+  queen first 8+ long (bucket end round), enemy queen dead at that time: n=42: r150:15 r200:6 r250:4 r300:7 r350:4 r400:2 r450:3 r500:1
+  never 8+ long: {('enemy queen alive at r300', 'died after r300'): 4, ('enemy queen dead by r300', 'died after r300'): 5, ('enemy queen alive at r300', 'alive at the end'): 1}
+  enemy queen alive at r300: mean queen length (n) at r300 / r400 / r450 / r500: 11.2 (69) / 19.7 (60) / 28.8 (59) / 37.0 (56)
+  enemy queen dead by r300: mean queen length (n) at r300 / r400 / r450 / r500: 11.8 (73) / 22.8 (50) / 30.5 (41) / 37.8 (32)
+  at r400 with the own queen alive: {('enemy queen alive at r300', 'queen is the longest'): 48, ('enemy queen dead by r300', 'another dragon is longer'): 29, ('enemy queen dead by r300', 'queen is the longest'): 21, ('enemy queen alive at r300', 'another dragon is longer'): 12}
+  enemy queen alive at r300 (69 games): own queen first 8+ long: by r250 26, r251-300 16, r301-350 7, r351-425 6, r426-500 9, never 5
+  enemy queen dead by r300 (73 games): own queen first 8+ long: by r250 51, r251-300 9, r301-350 3, r351-425 2, r426-500 3, never 5
+=== SSS (91): round-500 games with the own queen alive at r300: 193
+  queen first 8+ long (bucket end round), enemy queen alive at that time: n=69: r300:3 r350:23 r400:8 r450:27 r500:8
+  queen first 8+ long (bucket end round), enemy queen dead at that time: n=45: r350:4 r450:25 r500:16
+  never 8+ long: {('enemy queen dead by r300', 'alive at the end'): 14, ('enemy queen dead by r300', 'died after r300'): 37, ('enemy queen alive at r300', 'died after r300'): 20, ('enemy queen alive at r300', 'alive at the end'): 8}
+  enemy queen alive at r300: mean queen length (n) at r300 / r400 / r450 / r500: 3.2 (102) / 15.6 (88) / 20.6 (82) / 35.2 (71)
+  enemy queen dead by r300: mean queen length (n) at r300 / r400 / r450 / r500: 2.7 (91) / 4.3 (75) / 9.1 (63) / 22.8 (51)
+  at r400 with the own queen alive: {('enemy queen alive at r300', 'another dragon is longer'): 59, ('enemy queen dead by r300', 'another dragon is longer'): 73, ('enemy queen alive at r300', 'queen is the longest'): 29, ('enemy queen dead by r300', 'queen is the longest'): 2}
+  enemy queen alive at r300 (102 games): own queen first 8+ long: by r250 0, r251-300 3, r301-350 24, r351-425 8, r426-500 39, never 28
+  enemy queen dead by r300 (91 games): own queen first 8+ long: by r250 0, r251-300 0, r301-350 3, r351-425 0, r426-500 37, never 51
+=== forgot (264): round-500 games with the own queen alive at r300: 189
+  queen first 8+ long (bucket end round), enemy queen alive at that time: n=128: r250:102 r300:19 r350:6 r450:1
+  queen first 8+ long (bucket end round), enemy queen dead at that time: n=60: r250:37 r300:17 r350:4 r400:1 r450:1
+  never 8+ long: {('enemy queen dead by r300', 'died after r300'): 1}
+  enemy queen alive at r300: mean queen length (n) at r300 / r400 / r450 / r500: 23.0 (120) / 32.8 (106) / 44.4 (97) / 50.4 (84)
+  enemy queen dead by r300: mean queen length (n) at r300 / r400 / r450 / r500: 22.1 (69) / 33.5 (56) / 41.8 (50) / 45.9 (43)
+  at r400 with the own queen alive: {('enemy queen dead by r300', 'queen is the longest'): 35, ('enemy queen alive at r300', 'queen is the longest'): 75, ('enemy queen alive at r300', 'another dragon is longer'): 31, ('enemy queen dead by r300', 'another dragon is longer'): 21}
+  enemy queen alive at r300 (120 games): own queen first 8+ long: by r250 93, r251-300 18, r301-350 7, r351-425 0, r426-500 2, never 0
+  enemy queen dead by r300 (69 games): own queen first 8+ long: by r250 46, r251-300 18, r301-350 3, r351-425 1, r426-500 0, never 1

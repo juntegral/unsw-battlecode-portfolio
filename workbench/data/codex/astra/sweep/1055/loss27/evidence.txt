@@ -1,0 +1,47 @@
+1508962 Slithery Fight side B queens [1, 0] bot 21377 how longest behind 374 final [{'n': 8, 'q': 0, 'longest': 9, 'total': 38, 'leaders': [(9, 1050, [23, 16]), (7, 1461, [39, 10]), (5, 1455, [33, 7])]}, {'n': 30, 'q': 0, 'longest': 28, 'total': 217, 'leaders': [(28, 1419, [16, 7]), (20, 1470, [48, 3]), (16, 1475, [31, 5])]}]
+QDEATH {"r": 374, "id": 1, "side": 0, "L": 2, "head": [61, 6], "reason": 3, "attacker": 1128, "turn": {"r": 374, "id": 1128, "side": 1, "L": 2, "head": [60, 6], "path": [], "eats": 0, "action": "E"}, "state": [{"n": 20, "q": 2, "longest": 26, "total": 78, "leaders": [[26, 1290, [58, 16]], [8, 1287, [38, 25]], [4, 1050, [32, 20]]]}, {"n": 63, "q": 20, "longest": 20, "total": 164, "leaders": [[20, 0, [2, 22]], [4, 1273, [37, 22]], [4, 1270, [40, 24]]]}]}
+QDEATH {"r": 400, "id": 0, "side": 1, "L": 26, "head": [18, 25], "reason": 0, "attacker": 0, "turn": {"r": 400, "id": 0, "side": 1, "L": 26, "head": [18, 25], "path": [], "eats": 0, "action": "N", "near": [[1325, 5, [21, 25], 5]]}, "state": [{"n": 17, "q": 0, "longest": 8, "total": 49, "leaders": [[8, 1335, [35, 25]], [3, 1313, [40, 10]], [3, 1284, [33, 13]]]}, {"n": 64, "q": 26, "longest": 26, "total": 172, "leaders": [[26, 0, [18, 25]], [8, 1279, [4, 9]], [7, 1301, [22, 3]]]}]}
+QSPLIT {'r': 0, 'id': 1, 'child': 15, 'before': 25, 'keep': 23, 'childL': 2}
+QSPLIT {'r': 1, 'id': 1, 'child': 20, 'before': 23, 'keep': 21, 'childL': 2}
+QSPLIT {'r': 2, 'id': 1, 'child': 25, 'before': 21, 'keep': 19, 'childL': 2}
+QSPLIT {'r': 3, 'id': 1, 'child': 32, 'before': 19, 'keep': 17, 'childL': 2}
+QSPLIT {'r': 4, 'id': 1, 'child': 36, 'before': 17, 'keep': 15, 'childL': 2}
+QSPLIT {'r': 5, 'id': 1, 'child': 40, 'before': 15, 'keep': 13, 'childL': 2}
+QSPLIT {'r': 6, 'id': 1, 'child': 44, 'before': 13, 'keep': 11, 'childL': 2}
+QSPLIT {'r': 7, 'id': 1, 'child': 47, 'before': 11, 'keep': 9, 'childL': 2}
+QSPLIT {'r': 8, 'id': 1, 'child': 50, 'before': 9, 'keep': 7, 'childL': 2}
+QSPLIT {'r': 9, 'id': 1, 'child': 54, 'before': 7, 'keep': 5, 'childL': 2}
+QSPLIT {'r': 10, 'id': 1, 'child': 56, 'before': 5, 'keep': 3, 'childL': 2}
+QSPLIT {'r': 15, 'id': 1, 'child': 72, 'before': 5, 'keep': 3, 'childL': 2}
+QSPLIT {'r': 374, 'id': 1, 'child': 1290, 'before': 28, 'keep': 2, 'childL': 26}
+LAST TURNS [{'r': 372, 'id': 1, 'side': 0, 'L': 28, 'head': [61, 4], 'path': [[61, 5]], 'eats': 0, 'action': 'S', 'near': [(1128, 2, [60, 4], 2)], 'endL': 28}, {'r': 373, 'id': 1, 'side': 0, 'L': 28, 'head': [61, 5], 'path': [[61, 6]], 'eats': 0, 'action': 'S', 'near': [(1128, 2, [60, 5], 2)], 'endL': 28}, {'r': 374, 'id': 1, 'side': 0, 'L': 28, 'head': [61, 6], 'path': [], 'eats': 0, 'action': 'split', 'near': [(1128, 2, [60, 6], 2), (1141, 2, [60, 9], 2), (1246, 2, [58, 4], 1)]}]
+1508963 Islands side B queens [0, 1] bot 21377 how longest behind 466 final [{'n': 3, 'q': 0, 'longest': 14, 'total': 19, 'leaders': [(14, 894, [4, 1]), (3, 811, [18, 11]), (2, 711, [14, 18])]}, {'n': 25, 'q': 0, 'longest': 19, 'total': 198, 'leaders': [(19, 880, [45, 12]), (16, 842, [27, 22]), (15, 744, [39, 12])]}]
+QDEATH {"r": 95, "id": 1, "side": 1, "L": 3, "head": [45, 11], "reason": 2, "attacker": 1, "turn": {"r": 95, "id": 1, "side": 1, "L": 3, "head": [45, 11], "path": [], "eats": 0, "action": "N", "near": [[10, 3, [43, 9], 2], [76, 2, [47, 10], 2], [122, 2, [47, 14], 2], [142, 3, [47, 9], 3], [148, 2, [42, 11], 2]]}, "state": [{"n": 60, "q": 2, "longest": 3, "total": 139, "leaders": [[3, 145, [5, 2]], [3, 130, [8, 9]], [3, 127, [18, 39]]]}, {"n": 48, "q": 3, "longest": 3, "total": 114, "leaders": [[3, 142, [47, 9]], [3, 140, [1, 37]], [3, 124, [51, 11]]]}]}
+QDEATH {"r": 339, "id": 0, "side": 0, "L": 2, "head": [1, 35], "reason": 3, "attacker": 560, "turn": {"r": 339, "id": 560, "side": 1, "L": 3, "head": [0, 35], "path": [], "eats": 0, "action": "E"}, "state": [{"n": 58, "q": 2, "longest": 21, "total": 192, "leaders": [[21, 544, [1, 18]], [17, 565, [21, 37]], [11, 454, [34, 25]]]}, {"n": 52, "q": 0, "longest": 3, "total": 126, "leaders": [[3, 642, [14, 37]], [3, 635, [54, 39]], [3, 630, [41, 6]]]}]}
+QSPLIT {'r': 6, 'id': 0, 'child': 11, 'before': 5, 'keep': 3, 'childL': 2}
+QSPLIT {'r': 17, 'id': 0, 'child': 21, 'before': 5, 'keep': 3, 'childL': 2}
+QSPLIT {'r': 28, 'id': 0, 'child': 34, 'before': 5, 'keep': 3, 'childL': 2}
+QSPLIT {'r': 40, 'id': 0, 'child': 48, 'before': 5, 'keep': 3, 'childL': 2}
+QSPLIT {'r': 46, 'id': 0, 'child': 57, 'before': 5, 'keep': 3, 'childL': 2}
+QSPLIT {'r': 131, 'id': 0, 'child': 222, 'before': 5, 'keep': 3, 'childL': 2}
+QSPLIT {'r': 337, 'id': 0, 'child': 646, 'before': 8, 'keep': 2, 'childL': 6}
+LAST TURNS [{'r': 337, 'id': 0, 'side': 0, 'L': 8, 'head': [2, 34], 'path': [], 'eats': 0, 'action': 'split', 'near': [(537, 2, [5, 31], 2), (560, 3, [1, 36], 2)]}, {'r': 338, 'id': 0, 'side': 0, 'L': 2, 'head': [2, 34], 'path': [[1, 34]], 'eats': 0, 'action': 'W', 'near': [(537, 2, [5, 32], 2), (560, 3, [0, 36], 3)], 'endL': 2}, {'r': 339, 'id': 0, 'side': 0, 'L': 2, 'head': [1, 34], 'path': [[1, 35]], 'eats': 0, 'action': 'S', 'near': [(537, 2, [4, 32], 1), (560, 3, [0, 35], 3), (587, 3, [54, 36], 2)], 'endL': 2}]
+1507913 weakhold side A queens [1, 0] bot 21377 how longest behind 348 final [{'n': 3, 'q': 0, 'longest': 3, 'total': 7, 'leaders': [(3, 498, [29, 14]), (2, 573, [35, 6]), (2, 230, [31, 1])]}, {'n': 20, 'q': 0, 'longest': 18, 'total': 135, 'leaders': [(18, 603, [6, 10]), (15, 586, [25, 3]), (14, 506, [29, 8])]}]
+QDEATH {"r": 231, "id": 1, "side": 0, "L": 2, "head": [22, 12], "reason": 3, "attacker": 81, "turn": {"r": 231, "id": 81, "side": 1, "L": 3, "head": [22, 14], "path": [[22, 13]], "eats": 0, "action": "NN", "endL": 3}, "state": [{"n": 18, "q": 2, "longest": 3, "total": 37, "leaders": [[3, 261, [26, 0]], [2, 262, [24, 13]], [2, 257, [31, 1]]]}, {"n": 37, "q": 2, "longest": 6, "total": 92, "leaders": [[6, 209, [13, 0]], [5, 264, [8, 13]], [3, 256, [15, 2]]]}]}
+QDEATH {"r": 249, "id": 0, "side": 1, "L": 2, "head": [21, 11], "reason": 3, "attacker": 190, "turn": {"r": 249, "id": 190, "side": 0, "L": 2, "head": [22, 11], "path": [], "eats": 0, "action": "W"}, "state": [{"n": 17, "q": 0, "longest": 3, "total": 36, "leaders": [[3, 300, [28, 14]], [3, 298, [29, 1]], [2, 297, [29, 13]]]}, {"n": 41, "q": 2, "longest": 4, "total": 94, "leaders": [[4, 287, [13, 0]], [3, 299, [13, 14]], [3, 291, [9, 6]]]}]}
+QSPLIT {'r': 36, 'id': 1, 'child': 21, 'before': 5, 'keep': 3, 'childL': 2}
+QSPLIT {'r': 51, 'id': 1, 'child': 31, 'before': 5, 'keep': 3, 'childL': 2}
+QSPLIT {'r': 65, 'id': 1, 'child': 43, 'before': 5, 'keep': 3, 'childL': 2}
+QSPLIT {'r': 68, 'id': 1, 'child': 47, 'before': 5, 'keep': 3, 'childL': 2}
+QSPLIT {'r': 72, 'id': 1, 'child': 52, 'before': 5, 'keep': 3, 'childL': 2}
+QSPLIT {'r': 75, 'id': 1, 'child': 56, 'before': 5, 'keep': 3, 'childL': 2}
+QSPLIT {'r': 79, 'id': 1, 'child': 60, 'before': 5, 'keep': 3, 'childL': 2}
+QSPLIT {'r': 89, 'id': 1, 'child': 67, 'before': 5, 'keep': 3, 'childL': 2}
+QSPLIT {'r': 105, 'id': 1, 'child': 88, 'before': 5, 'keep': 3, 'childL': 2}
+QSPLIT {'r': 150, 'id': 1, 'child': 143, 'before': 5, 'keep': 3, 'childL': 2}
+QSPLIT {'r': 155, 'id': 1, 'child': 153, 'before': 5, 'keep': 3, 'childL': 2}
+QSPLIT {'r': 159, 'id': 1, 'child': 158, 'before': 5, 'keep': 3, 'childL': 2}
+QSPLIT {'r': 163, 'id': 1, 'child': 167, 'before': 4, 'keep': 2, 'childL': 2}
+QSPLIT {'r': 218, 'id': 1, 'child': 246, 'before': 5, 'keep': 3, 'childL': 2}
+QSPLIT {'r': 230, 'id': 1, 'child': 262, 'before': 4, 'keep': 2, 'childL': 2}
+LAST TURNS [{'r': 229, 'id': 1, 'side': 0, 'L': 4, 'head': [24, 12], 'path': [[23, 12]], 'eats': 0, 'action': 'W', 'near': [(99, 2, [22, 10], 2), (225, 2, [26, 13], 2), (250, 3, [25, 9], 3)], 'endL': 4}, {'r': 230, 'id': 1, 'side': 0, 'L': 4, 'head': [23, 12], 'path': [], 'eats': 0, 'action': 'split', 'near': [(81, 3, [21, 14], 2), (99, 2, [21, 10], 2), (250, 3, [26, 9], 3)]}, {'r': 231, 'id': 1, 'side': 0, 'L': 2, 'head': [23, 12], 'path': [[22, 12]], 'eats': 0, 'action': 'W', 'near': [(81, 3, [22, 14], 3), (99, 2, [20, 10], 2), (186, 3, [22, 9], 1), (261, 3, [26, 0], 1), (262, 2, [24, 13], 2)], 'endL': 2}]

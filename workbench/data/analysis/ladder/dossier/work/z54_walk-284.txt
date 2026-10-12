@@ -1,0 +1,110 @@
+first roundStart value 0
+
+=== round 188, dragon 284 (team 1) turn starts: len 18 head (43, 41) tail (45, 46); team units 62 (enemy 64)
+     37383940414243444546474849
+ 35  . m m . M m m . M . . . m 
+ 36  . . m m m . m m m m m m m 
+ 37  m m m . m m m m m m m M . 
+ 38  m m . . . m . . m m m . m 
+ 39  . . . . m m . . m m m m m 
+ 40  . . M m m . o o o o M . M 
+ 41  m m . . . . O o o o . m m 
+ 42  . m . . m . . o . . m m m 
+ 43  . M . M m . . o . m m m m 
+ 44  . * . . . o o o . m . m m 
+ 45  m m M . . o . * . M . m m 
+ 46  . * . . . o o o T * . m m 
+     # # # # # # # # # # # # # 
+  0  .#.#.#.#.#.#.#.#.#.#.#.#.#
+   head gap 5 mate id 5 len 3 at (40, 43)
+   head gap 5 mate id 23 len 2 at (47, 40)
+   head gap 5 mate id 350 len 18 at (39, 40)
+   head gap 7 mate id 227 len 7 at (49, 40)
+   head gap 7 mate id 368 len 22 at (38, 43)
+   head gap 7 mate id 385 len 32 at (46, 45)
+   head gap 8 mate id 182 len 4 at (41, 35)
+   head gap 8 mate id 382 len 13 at (39, 45)
+   head gap 8 mate id 392 len 12 at (45, 35)
+   head gap 9 mate id 338 len 10 at (48, 37)
+   head gap 11 mate id 369 len 12 at (45, 32)
+   head gap 12 mate id 211 len 5 at (40, 3)
+   head gap 12 mate id 215 len 16 at (46, 3)
+   head gap 12 mate id 311 len 4 at (38, 34)
+   head gap 12 mate id 344 len 16 at (43, 29)
+   step N -> (43, 40): own body idx 1 of 18
+   step E -> (44, 41): own body idx 7 of 18
+   step S -> (43, 42): free
+   step W -> (42, 41): free
+   ACTION kind move dirs ['W'] childSize - tle False points None
+   update: head (42, 41) tail (44, 46) len 18 (actor 284)
+
+=== round 189, dragon 284 (team 1) turn starts: len 18 head (42, 41) tail (44, 46); team units 64 (enemy 64)
+     36373839404142434445464748
+ 35  . . . m . m m m . m m M . 
+ 36  . . . m m m . m m m m m m 
+ 37  m m m m . m m m m m m m m 
+ 38  . m m . . . m . . m . . . 
+ 39  . . . . . m m . . m m . M 
+ 40  . . M m m m . o o o o m m 
+ 41  m m m . . . O o o o o M m 
+ 42  . . m . M . . . o . . m m 
+ 43  M m m . m m . . o . m m m 
+ 44  . m m . . . o o o . m . m 
+ 45  m m m m . . o . * M m . m 
+ 46  m . * M . . o o T m m . m 
+     # # # # # # # # # # # # # 
+  0  .#.#.#.#.#.#.#.#.#.#.#.#.#
+   head gap 3 mate id 5 len 3 at (40, 42)
+   head gap 5 mate id 23 len 2 at (47, 41)
+   head gap 5 mate id 350 len 18 at (38, 40)
+   head gap 7 mate id 385 len 33 at (45, 45)
+   head gap 8 mate id 182 len 4 at (41, 34)
+   head gap 8 mate id 227 len 7 at (48, 39)
+   head gap 8 mate id 368 len 23 at (36, 43)
+   head gap 8 mate id 382 len 13 at (39, 46)
+   head gap 10 mate id 369 len 12 at (43, 32)
+   head gap 11 mate id 211 len 5 at (39, 2)
+   head gap 11 mate id 392 len 12 at (47, 35)
+   head gap 12 mate id 311 len 4 at (37, 34)
+   head gap 12 mate id 344 len 18 at (42, 29)
+   step N -> (42, 40): free
+   step E -> (43, 41): own body idx 1 of 18
+   step S -> (42, 42): free
+   step W -> (41, 41): free
+   ACTION kind move dirs ['W'] childSize - tle False points None
+   update: head (41, 41) tail (43, 46) len 18 (actor 284)
+   (nearby death round 190 id 23 team 1 len 2 reason 2 head (47, 41), during turn of 23)
+
+=== round 190, dragon 284 (team 1) turn starts: len 18 head (41, 41) tail (43, 46); team units 63 (enemy 63)
+     35363738394041424344454647
+ 35  . . . . . . m m . . m m m 
+ 36  . . . . m m m . m m m m . 
+ 37  . . m m m . m m m m m m m 
+ 38  . . m m . . . m . . . . . 
+ 39  . . . . . . m m . . . . M 
+ 40  . . M m m m m . o o o o . 
+ 41  m m m m . . O o o o o o * 
+ 42  . . . m . m M . . o . . m 
+ 43  . m m m . m . . . o . m m 
+ 44  * M m m M m . o o o M m . 
+ 45  . m m m m m . o . * m m . 
+ 46  m m . * m m . o T . m m . 
+     # # # # # # # # # # # # # 
+  0  .#.#.#.#.#.#.#.#.#.#.#.#.#
+   head gap 1 mate id 5 len 3 at (41, 42)
+   head gap 5 mate id 350 len 18 at (37, 40)
+   head gap 5 mate id 382 len 13 at (39, 44)
+   head gap 7 mate id 385 len 33 at (45, 44)
+   head gap 8 mate id 182 len 4 at (42, 34)
+   head gap 8 mate id 227 len 7 at (47, 39)
+   head gap 8 mate id 368 len 23 at (36, 44)
+   head gap 12 mate id 56 len 11 at (30, 40)
+   head gap 12 mate id 211 len 5 at (38, 3)
+   head gap 12 mate id 311 len 4 at (37, 33)
+   head gap 12 mate id 369 len 12 at (45, 33)
+   step N -> (41, 40): mate body id 350 len 18 idx 4
+   step E -> (42, 41): own body idx 1 of 18
+   step S -> (41, 42): mate body id 5 len 3 idx 0
+   step W -> (40, 41): free
+   ACTION kind split dirs [] childSize 16 tle False points None
+   SPLIT round 190 parent 284 (len 2 head (41, 41)) child 398 (len 16 head (43, 46))

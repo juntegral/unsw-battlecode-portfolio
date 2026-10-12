@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File [35m"~/01. Project/개인 프로젝트/unsw-swarm/data/analysis/top1/y_w1.py"[0m, line [35m324[0m, in [35m<module>[0m
+    [31mmain[0m[1;31m()[0m
+    [31m~~~~[0m[1;31m^^[0m
+  File [35m"~/01. Project/개인 프로젝트/unsw-swarm/data/analysis/top1/y_w1.py"[0m, line [35m298[0m, in [35mmain[0m
+    o = run_game(G[gid], check=True)
+  File [35m"~/01. Project/개인 프로젝트/unsw-swarm/data/analysis/top1/y_w1.py"[0m, line [35m270[0m, in [35mrun_game[0m
+    [31mw.run[0m[1;31m(h)[0m
+    [31m~~~~~[0m[1;31m^^^[0m
+  File [35m"~/01. Project/개인 프로젝트/unsw-swarm/data/analysis/top1/lib.py"[0m, line [35m194[0m, in [35mrun[0m
+    [31mhooks.round_start[0m[1;31m(self, self.round)[0m
+    [31m~~~~~~~~~~~~~~~~~[0m[1;31m^^^^^^^^^^^^^^^^^^[0m
+  File [35m"~/01. Project/개인 프로젝트/unsw-swarm/data/analysis/top1/y_w1.py"[0m, line [35m145[0m, in [35mround_start[0m
+    [31mself._verify[0m[1;31m(g)[0m
+    [31m~~~~~~~~~~~~[0m[1;31m^^^[0m
+  File [35m"~/01. Project/개인 프로젝트/unsw-swarm/data/analysis/top1/y_w1.py"[0m, line [35m94[0m, in [35m_verify[0m
+    raise RuntimeError("occupancy mirror differs at round %d: %s owners %s" % (
+        g.round, diff[:8], [(c, owners.get(c)) for c, _, _ in diff[:8]]))
+[1;35mRuntimeError[0m: [35moccupancy mirror differs at round 50: [((2, 2), None, 1), ((43, 21), None, 1), ((1, 15), None, 1), ((4, 2), None, 1), ((45, 21), None, 1), ((3, 15), None, 1), ((44, 8), None, 1), ((44, 21), None, 1)] owners [((2, 2), None), ((43, 21), None), ((1, 15), None), ((4, 2), None), ((45, 21), None), ((3, 15), None), ((44, 8), None), ((44, 21), None)][0m

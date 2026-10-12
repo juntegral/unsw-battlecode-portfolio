@@ -1,0 +1,10 @@
+## 9. Things I could not determine from replays
+
+- **Why she took the step she took.** A replay has no scores. That the threat penalty lost to a pearl (games 8 to 11) or to a ghost of an enemy seen three rounds earlier (game 1) is read from `main.cpp`, not seen. The same goes for the queen's belief about a cell behind a portal (game 24) and for the room her survey saw in the corridor of game 30.
+- **What she knew of the terrain.** "Tree cell" is computed on the whole map. Her bot knows only the edges that have been inside some turn's 7x7 view. In game 30 the corridor was in view when she stepped in; I did not check that for all 30 terrain deaths.
+- **Whether a team-mate saw her.** In the 20 nose-to-nose deaths the other dragon's head was next to her exit; whether its bot had her head in its own view and stepped there anyway is likely (she was within two cells) but not checked per case.
+- **The reach of dragons that move between her turn and the killer's.** The reach model takes bodies where they stand at the start of her turn. It called the fatal cell safe in 17 of 823 checked rams (2%), so it is good enough for counts, not for single close calls.
+- **The effect of the rule.** Sections 7.1 and 5g are arithmetic on games that were played. What a queen that steps away meets next can only be estimated from the turns on which she did step away (`after.txt`); a real answer needs games.
+- **Which build played which ladder game.** The two ladder downloads are "the live bot of that hour"; more than one live build may be in them. The "-old" runs agree with them in every table, so I pooled them.
+- **Intent of opponents.** Whether test4's queen leaves her loop because of the enemy head (the one case read, 1054795, looks like it) or for another reason is not in the replay. Likewise whether WHQ's two dragons in game 2 were following our queen or grazing beside her.
+- **Local results.** The team's local tests of queen toggles are quoted from `work/plan.md`; I did not see those replays.

@@ -1,0 +1,48 @@
+
+ 1493881
+queen 88 2 (20, 1) -> (20, 2) neighbors [('26', 3, (0, 9)), ('50', 2, (17, 1)), ('52', 2, (16, 11)), ('58', 2, (0, 3)), ('59', 2, (17, 10))]
+queen 89 2 (20, 2) -> (21, 2) neighbors [('16', 2, (22, 6)), ('50', 2, (18, 1)), ('52', 2, (17, 11)), ('58', 2, (23, 3)), ('66', 2, (17, 6))]
+queen 90 2 (21, 2) -> (21, 1) neighbors [('16', 2, (21, 6)), ('48', 3, (1, 6)), ('50', 3, (19, 1)), ('52', 2, (18, 11)), ('58', 2, (22, 3))]
+phase 0 30 0 turns 62 eat 2 paid 0 splits 0 deaths Counter({3: 1})
+phase 0 30 1 turns 111 eat 24 paid 0 splits 10 deaths Counter({1: 7, 3: 1})
+phase 31 60 0 turns 96 eat 9 paid 0 splits 3 deaths Counter()
+phase 31 60 1 turns 258 eat 45 paid 0 splits 22 deaths Counter({1: 13})
+phase 61 100 0 turns 162 eat 13 paid 2 splits 6 deaths Counter({3: 6, 0: 2, 1: 1})
+phase 61 100 1 turns 611 eat 78 paid 0 splits 35 deaths Counter({1: 23, 3: 6})
+permanent total lead 14
+
+ 1493882
+queen 83 2 (11, 5) -> (11, 4) neighbors [('2', 3, (11, 2)), ('7', 2, (12, 8)), ('11', 3, (13, 4)), ('13', 2, (15, 6)), ('15', 3, (15, 1)), ('20', 2, (14, 5)), ('32', 2, (15, 8))]
+queen 84 2 (11, 4) -> (11, 3) neighbors [('7', 2, (13, 8)), ('11', 3, (14, 4)), ('13', 2, (14, 6)), ('15', 3, (15, 0)), ('20', 2, (15, 5)), ('25', 3, (13, 0)), ('28', 3, (15, 3))]
+queen 85 2 (11, 3) -> (12, 3) neighbors [('11', 3, (14, 3)), ('13', 2, (13, 6)), ('15', 3, (15, 15)), ('25', 3, (12, 0)), ('28', 3, (15, 4))]
+phase 0 30 0 turns 62 eat 3 paid 0 splits 0 deaths Counter()
+phase 0 30 1 turns 62 eat 3 paid 0 splits 0 deaths Counter()
+phase 31 60 0 turns 60 eat 0 paid 0 splits 0 deaths Counter()
+phase 31 60 1 turns 162 eat 33 paid 0 splits 13 deaths Counter({1: 1, 2: 1})
+phase 61 100 0 turns 48 eat 0 paid 2 splits 0 deaths Counter({3: 2})
+phase 61 100 1 turns 521 eat 42 paid 1 splits 17 deaths Counter({1: 6, 3: 2})
+permanent total lead 36
+
+ 1493883
+queen 96 4 (38, 24) -> (39, 24) neighbors [('36', 2, (39, 28)), ('106', 3, (42, 28)), ('196', 2, (39, 27))]
+queen 97 4 (39, 24) -> (39, 23) neighbors [('36', 3, (40, 28)), ('106', 3, (42, 27)), ('196', 2, (40, 27))]
+queen 98 4 (39, 23) -> (40, 23) neighbors [('106', 3, (43, 27)), ('170', 2, (38, 20)), ('196', 3, (40, 26)), ('252', 2, (43, 19))]
+phase 0 30 0 turns 490 eat 23 paid 0 splits 15 deaths Counter({0: 6})
+phase 0 30 1 turns 599 eat 62 paid 0 splits 30 deaths Counter({1: 8, 2: 1})
+phase 31 60 0 turns 964 eat 81 paid 0 splits 33 deaths Counter({0: 4, 1: 2, 3: 2})
+phase 31 60 1 turns 1250 eat 141 paid 0 splits 60 deaths Counter({1: 39, 2: 4, 3: 2})
+phase 61 100 0 turns 2295 eat 121 paid 0 splits 43 deaths Counter({0: 17, 3: 4, 2: 3, 1: 2})
+phase 61 100 1 turns 2301 eat 179 paid 1 splits 79 deaths Counter({1: 47, 2: 12, 3: 4})
+phase 301 349 0 turns 3018 eat 89 paid 1 splits 21 deaths Counter({3: 12, 1: 5, 0: 5, 2: 2})
+phase 301 349 1 turns 3025 eat 332 paid 0 splits 104 deaths Counter({1: 81, 2: 13, 3: 12})
+phase 350 399 0 turns 2894 eat 95 paid 2 splits 25 deaths Counter({4: 16, 3: 6, 2: 3, 1: 2})
+phase 350 399 1 turns 3156 eat 340 paid 0 splits 116 deaths Counter({1: 89, 2: 21, 3: 6})
+phase 400 499 0 turns 4770 eat 200 paid 1 splits 54 deaths Counter({4: 36, 3: 23, 0: 9, 2: 7, 1: 6})
+phase 400 499 1 turns 5723 eat 708 paid 0 splits 173 deaths Counter({1: 148, 3: 23, 2: 23})
+last large [(615, 16, (14, 0)), (987, 15, (12, 53)), (994, 19, (36, 37)), (1083, 20, (32, 45)), (1098, 42, (15, 7)), (1122, 25, (42, 30)), (1133, 15, (52, 26)), (1157, 36, (13, 46)), (1164, 20, (18, 20)), (1181, 18, (3, 42)), (1196, 16, (34, 29)), (1205, 19, (54, 10)), (1207, 16, (16, 3)), (1213, 54, (31, 19))]
+large splits [{'r': 320, 'parent': 712, 'child': 780, 'before': 19, 'keep': 2, 'give': 17}, {'r': 329, 'parent': 780, 'child': 802, 'before': 21, 'keep': 2, 'give': 19}, {'r': 332, 'parent': 802, 'child': 810, 'before': 20, 'keep': 2, 'give': 18}, {'r': 337, 'parent': 810, 'child': 825, 'before': 18, 'keep': 2, 'give': 16}, {'r': 343, 'parent': 825, 'child': 840, 'before': 16, 'keep': 2, 'give': 14}, {'r': 347, 'parent': 840, 'child': 851, 'before': 18, 'keep': 2, 'give': 16}, {'r': 407, 'parent': 851, 'child': 1011, 'before': 19, 'keep': 2, 'give': 17}, {'r': 418, 'parent': 91, 'child': 1049, 'before': 15, 'keep': 2, 'give': 13}, {'r': 434, 'parent': 518, 'child': 1098, 'before': 29, 'keep': 2, 'give': 27}, {'r': 434, 'parent': 1011, 'child': 1103, 'before': 17, 'keep': 2, 'give': 15}, {'r': 437, 'parent': 642, 'child': 1112, 'before': 20, 'keep': 2, 'give': 18}, {'r': 440, 'parent': 669, 'child': 1122, 'before': 19, 'keep': 2, 'give': 17}, {'r': 443, 'parent': 991, 'child': 1133, 'before': 16, 'keep': 2, 'give': 14}, {'r': 451, 'parent': 1103, 'child': 1155, 'before': 15, 'keep': 2, 'give': 13}, {'r': 457, 'parent': 1112, 'child': 1164, 'before': 19, 'keep': 2, 'give': 17}, {'r': 486, 'parent': 737, 'child': 1207, 'before': 16, 'keep': 2, 'give': 14}, {'r': 491, 'parent': 1037, 'child': 1211, 'before': 16, 'keep': 2, 'give': 14}]
+leader 1098 s 0 growth [(450, 27, 27), (475, 31, 31)] eaten301 15 paid301 0
+leader 1157 s 1 growth [(475, 35, 35)] eaten301 1 paid301 0
+leader 1213 s 1 growth [] eaten301 4 paid301 0
+permanent longest lead 323
+permanent total lead 442

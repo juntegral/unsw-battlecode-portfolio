@@ -1,0 +1,47 @@
+large-layout games read 160 errors 0
+
+===== main large games 65
+   all in view (must equal the first pass)                    ours 3669 of 9717 (0.378), theirs 4760 of 14203 (0.335), gap +0.042, games resampled +0.024 to +0.060, at or below zero 0.000
+   ours: on the pearl tile at the birth (0 nothing, 1 own body, 2 mate, 3 enemy): all in view [(0, 9717)]; nearer distance 1 [(0, 3160)]; distance 1 at the start of its turn [(-1, 21), (0, 3139)]
+   theirs: on the pearl tile at the birth (0 nothing, 1 own body, 2 mate, 3 enemy): all in view [(0, 14203)]; nearer distance 1 [(0, 4689)]; distance 1 at the start of its turn [(-1, 26), (0, 4663)]
+  walked share, nearer distance 1
+   all                                                        ours 1087 of 3160 (0.344), theirs 1145 of 4689 (0.244), gap +0.100, games resampled +0.070 to +0.130, at or below zero 0.000
+   tile free at the birth                                     ours 1087 of 3160 (0.344), theirs 1145 of 4689 (0.244), gap +0.100, games resampled +0.070 to +0.130, at or below zero 0.000
+   tile under a body at the birth                             ours 0 of 0 (-), theirs 0 of 0 (-)
+   tile free at the start of its turn                         ours 1087 of 3139 (0.346), theirs 1145 of 4663 (0.246), gap +0.101, games resampled +0.071 to +0.131, at or below zero 0.000
+   tile free at its turn start and one path step away         ours 767 of 2774 (0.276), theirs 674 of 4133 (0.163), gap +0.113, games resampled +0.081 to +0.146, at or below zero 0.000
+   tile under a body at its turn start                        ours 0 of 0 (-), theirs 0 of 0 (-)
+   one path step away (no kelp between)                       ours 767 of 2791 (0.275), theirs 674 of 4150 (0.162), gap +0.112, games resampled +0.080 to +0.145, at or below zero 0.000
+   kelp between (path longer than 1)                          ours 320 of 369 (0.867), theirs 471 of 539 (0.874), gap -0.007, games resampled -0.051 to +0.044, at or below zero 0.614
+  walked share, all distances
+   tile free at its turn start, no kelp in the way            ours 2229 of 7424 (0.300), theirs 2608 of 10883 (0.240), gap +0.061, games resampled +0.039 to +0.083, at or below zero 0.000
+   distance 2 or more, tile free at its turn start, no kelp   ours 1462 of 4650 (0.314), theirs 1934 of 6750 (0.287), gap +0.028, games resampled +0.005 to +0.050, at or below zero 0.009
+  finished share (eaten by the nearer side) uses the same filter below: ours, theirs
+   distance 1, tile free at its turn start, one path step     2566 of 2774 (0.925), 4032 of 4133 (0.976)
+   distance 1, all                                            2769 of 3160 (0.876), 4451 of 4689 (0.949)
+  what the nearer dragon did with a free pearl one path step away (status: 1 walked away, 2 not farther, 3 ate it that turn, 4 another ate it first, 5 died first)
+   ours n 2774: 1: 767 (0.276), 2: 95 (0.034), 3: 1896 (0.683), 5: 16 (0.006); walked away while eating another pearl 112
+   theirs n 4133: 1: 674 (0.163), 2: 124 (0.030), 3: 3312 (0.801), 5: 23 (0.006); walked away while eating another pearl 148
+
+===== v31 large games 95
+   all in view (must equal the first pass)                    ours 5437 of 14085 (0.386), theirs 6468 of 21359 (0.303), gap +0.083, games resampled +0.067 to +0.100, at or below zero 0.000
+   ours: on the pearl tile at the birth (0 nothing, 1 own body, 2 mate, 3 enemy): all in view [(0, 14085)]; nearer distance 1 [(0, 4513)]; distance 1 at the start of its turn [(-1, 31), (0, 4482)]
+   theirs: on the pearl tile at the birth (0 nothing, 1 own body, 2 mate, 3 enemy): all in view [(0, 21359)]; nearer distance 1 [(0, 7883)]; distance 1 at the start of its turn [(-1, 47), (0, 7836)]
+  walked share, nearer distance 1
+   all                                                        ours 1581 of 4513 (0.350), theirs 1783 of 7883 (0.226), gap +0.124, games resampled +0.099 to +0.151, at or below zero 0.000
+   tile free at the birth                                     ours 1581 of 4513 (0.350), theirs 1783 of 7883 (0.226), gap +0.124, games resampled +0.099 to +0.151, at or below zero 0.000
+   tile under a body at the birth                             ours 0 of 0 (-), theirs 0 of 0 (-)
+   tile free at the start of its turn                         ours 1581 of 4482 (0.353), theirs 1783 of 7836 (0.228), gap +0.125, games resampled +0.100 to +0.152, at or below zero 0.000
+   tile free at its turn start and one path step away         ours 1166 of 4028 (0.289), theirs 1176 of 7143 (0.165), gap +0.125, games resampled +0.101 to +0.149, at or below zero 0.000
+   tile under a body at its turn start                        ours 0 of 0 (-), theirs 0 of 0 (-)
+   one path step away (no kelp between)                       ours 1166 of 4053 (0.288), theirs 1176 of 7186 (0.164), gap +0.124, games resampled +0.100 to +0.148, at or below zero 0.000
+   kelp between (path longer than 1)                          ours 415 of 460 (0.902), theirs 607 of 697 (0.871), gap +0.031, games resampled -0.005 to +0.069, at or below zero 0.044
+  walked share, all distances
+   tile free at its turn start, no kelp in the way            ours 3309 of 10779 (0.307), theirs 3666 of 16970 (0.216), gap +0.091, games resampled +0.078 to +0.106, at or below zero 0.000
+   distance 2 or more, tile free at its turn start, no kelp   ours 2143 of 6751 (0.317), theirs 2490 of 9827 (0.253), gap +0.064, games resampled +0.047 to +0.080, at or below zero 0.000
+  finished share (eaten by the nearer side) uses the same filter below: ours, theirs
+   distance 1, tile free at its turn start, one path step     3761 of 4028 (0.934), 6992 of 7143 (0.979)
+   distance 1, all                                            3996 of 4513 (0.885), 7574 of 7883 (0.961)
+  what the nearer dragon did with a free pearl one path step away (status: 1 walked away, 2 not farther, 3 ate it that turn, 4 another ate it first, 5 died first)
+   ours n 4028: 1: 1166 (0.289), 2: 105 (0.026), 3: 2746 (0.682), 5: 11 (0.003); walked away while eating another pearl 246
+   theirs n 7143: 1: 1176 (0.165), 2: 226 (0.032), 3: 5706 (0.799), 5: 35 (0.005); walked away while eating another pearl 255

@@ -1,0 +1,476 @@
+{
+  "main": {
+    "off": {
+      "N": 88,
+      "deaths": 70,
+      "rammed": 36,
+      "outside": 6,
+      "outsideLong": 2,
+      "unknown": 3,
+      "causes": {
+        "rammed": 36,
+        "trap": 25,
+        "sac": 7,
+        "enemyBody": 1,
+        "ram": 1
+      },
+      "share": 0.05555555555555555
+    },
+    "on": {
+      "N": 88,
+      "deaths": 71,
+      "rammed": 36,
+      "outside": 5,
+      "outsideLong": 1,
+      "unknown": 4,
+      "causes": {
+        "rammed": 36,
+        "trap": 26,
+        "sac": 7,
+        "enemyBody": 1,
+        "ram": 1
+      },
+      "share": 0.027777777777777776
+    }
+  },
+  "generated": {
+    "off": {
+      "N": 4,
+      "deaths": 3,
+      "rammed": 0,
+      "outside": 0,
+      "outsideLong": 0,
+      "unknown": 0,
+      "causes": {
+        "trap": 3
+      },
+      "share": null
+    },
+    "on": {
+      "N": 4,
+      "deaths": 3,
+      "rammed": 0,
+      "outside": 0,
+      "outsideLong": 0,
+      "unknown": 0,
+      "causes": {
+        "trap": 3
+      },
+      "share": null
+    }
+  },
+  "counts": {
+    "signals": 1021,
+    "emitted": 1001,
+    "hit": 74,
+    "receipts": 72,
+    "adopted": 71,
+    "delay0": 0,
+    "delay1": 72,
+    "short": 489,
+    "long": 532,
+    "under": 486,
+    "equal": 240,
+    "over": 295,
+    "cacheTurns": 173,
+    "queenTurns": 17487,
+    "cacheRecords": 175,
+    "expired": 0,
+    "noSignalGames": 41,
+    "noReceiptGames": 68,
+    "failures": {
+      "enemyHead": 58,
+      "enemy": 194,
+      "allyHead": 69,
+      "sender died": 20,
+      "kelp": 368,
+      "self-body/head": 67,
+      "ally": 171
+    }
+  },
+  "native": {
+    "N": 173,
+    "reproduced": 173,
+    "changes": 8,
+    "changesOutside": 3,
+    "changesLower": 3,
+    "actualOutside": 100,
+    "actualInside": 71,
+    "split": 2,
+    "insideWithAlternative": 1,
+    "insideNoAlternative": 70,
+    "noLegal": 3,
+    "directIgnoredReports": 67,
+    "fieldErrors": 0,
+    "senderErrors": 0,
+    "senderN": 1021,
+    "errors": 0
+  },
+  "cpu": {
+    "N": 196,
+    "maxM": 57.6,
+    "alarm": 0,
+    "limit": 0,
+    "missing": 0
+  },
+  "changes": [
+    {
+      "key": "proxy4_king:Colosseum:A:1",
+      "r": 46,
+      "id": 0,
+      "p1": 27,
+      "p2": 0,
+      "on": "S",
+      "off": "SS",
+      "onT": 248,
+      "offT": 248,
+      "onPrice": 27,
+      "offPrice": 27,
+      "legal": [
+        {
+          "t": 233,
+          "price": 27
+        },
+        {
+          "t": 248,
+          "price": 27
+        },
+        {
+          "t": 231,
+          "price": 27
+        }
+      ],
+      "visible": [
+        17,
+        26,
+        21,
+        10,
+        5
+      ],
+      "actual": "S",
+      "reproduced": true,
+      "reports": [
+        {
+          "enemy": 11,
+          "round": 43,
+          "t": 57,
+          "len": 4,
+          "sender": 12
+        }
+      ]
+    },
+    {
+      "key": "proxy4_king:around_unsw:A:1",
+      "r": 177,
+      "id": 0,
+      "p1": 0,
+      "p2": 0,
+      "on": "W",
+      "off": "E",
+      "onT": 2574,
+      "offT": 2576,
+      "onPrice": 0,
+      "offPrice": 27,
+      "legal": [
+        {
+          "t": 2511,
+          "price": 27
+        },
+        {
+          "t": 2576,
+          "price": 27
+        },
+        {
+          "t": 2574,
+          "price": 0
+        }
+      ],
+      "visible": [],
+      "actual": "W",
+      "reproduced": true,
+      "reports": [
+        {
+          "enemy": 148,
+          "round": 175,
+          "t": 2515,
+          "len": 4,
+          "sender": 4
+        }
+      ]
+    },
+    {
+      "key": "proxy4_king:big_empty:B:1",
+      "r": 193,
+      "id": 1,
+      "p1": 0,
+      "p2": 0,
+      "on": "N",
+      "off": "E",
+      "onT": 2794,
+      "offT": 2859,
+      "onPrice": 0,
+      "offPrice": 27,
+      "legal": [
+        {
+          "t": 2794,
+          "price": 0
+        },
+        {
+          "t": 2859,
+          "price": 27
+        },
+        {
+          "t": 2857,
+          "price": 0
+        }
+      ],
+      "visible": [],
+      "actual": "N",
+      "reproduced": true,
+      "reports": [
+        {
+          "enemy": 86,
+          "round": 192,
+          "t": 3057,
+          "len": 8,
+          "sender": 32
+        }
+      ]
+    },
+    {
+      "key": "proxy4_king:trophy:B:1",
+      "r": 22,
+      "id": 1,
+      "p1": 0,
+      "p2": 0,
+      "on": "W",
+      "off": "E",
+      "onT": 594,
+      "offT": 596,
+      "onPrice": 0,
+      "offPrice": 27,
+      "legal": [
+        {
+          "t": 570,
+          "price": 0
+        },
+        {
+          "t": 596,
+          "price": 27
+        },
+        {
+          "t": 594,
+          "price": 0
+        }
+      ],
+      "visible": [],
+      "actual": "W",
+      "reproduced": true,
+      "reports": [
+        {
+          "enemy": 0,
+          "round": 19,
+          "t": 96,
+          "len": 3,
+          "sender": 6
+        }
+      ]
+    },
+    {
+      "key": "bot-hunter:Colosseum:B:1",
+      "r": 38,
+      "id": 1,
+      "p1": 27,
+      "p2": 0,
+      "on": "SE",
+      "off": "E",
+      "onT": 231,
+      "offT": 216,
+      "onPrice": 27,
+      "offPrice": 27,
+      "legal": [
+        {
+          "t": 39,
+          "price": 45
+        },
+        {
+          "t": 216,
+          "price": 27
+        },
+        {
+          "t": 231,
+          "price": 27
+        }
+      ],
+      "visible": [
+        13
+      ],
+      "actual": "SE",
+      "reproduced": true,
+      "reports": [
+        {
+          "enemy": 11,
+          "round": 37,
+          "t": 22,
+          "len": 4,
+          "sender": 5
+        }
+      ]
+    },
+    {
+      "key": "bot-hunter:default:B:1",
+      "r": 183,
+      "id": 1,
+      "p1": 27,
+      "p2": 0,
+      "on": "E",
+      "off": "W",
+      "onT": 745,
+      "offT": 743,
+      "onPrice": 27,
+      "offPrice": 45,
+      "legal": [
+        {
+          "t": 712,
+          "price": 27
+        },
+        {
+          "t": 745,
+          "price": 27
+        },
+        {
+          "t": 743,
+          "price": 45
+        }
+      ],
+      "visible": [],
+      "actual": "E",
+      "reproduced": true,
+      "reports": [
+        {
+          "enemy": 6,
+          "round": 182,
+          "t": 922,
+          "len": 4,
+          "sender": 44
+        }
+      ]
+    },
+    {
+      "key": "bot-hunter:queen_of_spades:B:1",
+      "r": 115,
+      "id": 1,
+      "p1": 27,
+      "p2": 0,
+      "on": "E",
+      "off": "W",
+      "onT": 867,
+      "offT": 865,
+      "onPrice": 27,
+      "offPrice": 45,
+      "legal": [
+        {
+          "t": 867,
+          "price": 27
+        },
+        {
+          "t": 865,
+          "price": 45
+        }
+      ],
+      "visible": [],
+      "actual": "E",
+      "reproduced": true,
+      "reports": [
+        {
+          "enemy": 5,
+          "round": 113,
+          "t": 33,
+          "len": 10,
+          "sender": 7
+        }
+      ]
+    },
+    {
+      "key": "bot-hunter:stripes:B:1",
+      "r": 181,
+      "id": 1,
+      "p1": 27,
+      "p2": 0,
+      "on": "S",
+      "off": "N",
+      "onT": 196,
+      "offT": 148,
+      "onPrice": 27,
+      "offPrice": 45,
+      "legal": [
+        {
+          "t": 148,
+          "price": 45
+        },
+        {
+          "t": 196,
+          "price": 27
+        },
+        {
+          "t": 171,
+          "price": 45
+        }
+      ],
+      "visible": [],
+      "actual": "S",
+      "reproduced": true,
+      "reports": [
+        {
+          "enemy": 4,
+          "round": 179,
+          "t": 145,
+          "len": 4,
+          "sender": 22
+        }
+      ]
+    }
+  ],
+  "regressions": [
+    {
+      "key": "proxy4_king:default:A:1",
+      "off": 258,
+      "on": 253,
+      "newDeath": false
+    },
+    {
+      "key": "proxy4_king:default:B:1",
+      "off": 268,
+      "on": 260,
+      "newDeath": false
+    },
+    {
+      "key": "bot-hunter:portals:B:1",
+      "on": 207,
+      "newDeath": true
+    },
+    {
+      "key": "bot-hunter:queen_of_spades:B:1",
+      "off": 117,
+      "on": 116,
+      "newDeath": false
+    },
+    {
+      "key": "bot-hunter:stronghold:B:1",
+      "on": 336,
+      "newDeath": true
+    }
+  ],
+  "checks": {
+    "sim": 0,
+    "splits": 0,
+    "drops": 0,
+    "eatTC": 0,
+    "ledger": 0,
+    "final": 0,
+    "lineage": 0,
+    "natBal": 0,
+    "dropBal": 0,
+    "unknownDeath": 0
+  }
+}

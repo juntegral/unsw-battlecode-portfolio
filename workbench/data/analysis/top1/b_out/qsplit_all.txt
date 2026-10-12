@@ -1,0 +1,21 @@
+=== Vibing++ (306): 502 games
+  queen splits by kind: {'4 -> 2+2': 692, '4 -> 2+2 in rounds 0-20': 282, 'cut (keeps 2-3)': 77, 'cut (keeps 2-3) in rounds 0-20': 28, 'other': 33, 'shed 2': 246, 'shed 2 in rounds 0-20': 82}
+  shed runs of 3+ rounds in a row after round 20: 7 in 7 games; segments shed 66; longest 7 rounds; started at queen length 14 (median); games won 7
+     of those, runs still going at round 499: 0; examples (game, start round, rounds, length at start, won): [('1055129', 425, 7, 43, True), ('1055066', 457, 6, 52, True), ('1056696', 146, 5, 14, True), ('1050383', 119, 4, 13, True), ('1050710', 110, 4, 11, True), ('1069890', 339, 4, 12, True), ('1050704', 335, 3, 15, True)]
+  cuts after round 20 of a queen 8+ long that keep 2-3: 67 in 61 games; mean length before 19.2; games won 44; biggest: [('1054727', 483, 86, 3), ('1063789', 484, 85, 3), ('1064241', 336, 50, 2), ('1049291', 435, 45, 3), ('1054792', 385, 43, 3), ('1055288', 454, 42, 3)]
+  how the queen ended: {'headon': 252, 'alive': 134, 'noaction': 112, 'body': 3, 'self': 1}
+  games with a shed run that were lost on the queen rule with both queens alive: 0; of those the queen would have been the longer one without the shedding: 0 []
+=== SSS (91): 503 games
+  queen splits by kind: {'4 -> 2+2': 1282, '4 -> 2+2 in rounds 0-20': 409, 'shed 2': 381, 'shed 2 in rounds 0-20': 473}
+  shed runs of 3+ rounds in a row after round 20: 29 in 22 games; segments shed 526; longest 28 rounds; started at queen length 35 (median); games won 12
+     of those, runs still going at round 499: 2; examples (game, start round, rounds, length at start, won): [('1046475', 432, 28, 60, False), ('1056009', 454, 24, 51, False), ('1050148', 474, 23, 50, True), ('1046893', 405, 22, 48, False), ('1046480', 446, 20, 63, True), ('1059843', 384, 15, 51, False), ('1046151', 416, 12, 35, True), ('1056041', 488, 12, 45, False)]
+  cuts after round 20 of a queen 8+ long that keep 2-3: 0 in 0 games; mean length before 0.0; games won 0; biggest: []
+  how the queen ended: {'headon': 255, 'alive': 207, 'self': 23, 'body': 18}
+  games with a shed run that were lost on the queen rule with both queens alive: 6; of those the queen would have been the longer one without the shedding: 3 [('1054717', 'Autarky', 44, 14, 52), ('1056009', 'Maze', 3, 54, 44), ('1059574', 'Maze', 60, 20, 74)]
+=== forgot (264): 632 games
+  queen splits by kind: {'4 -> 2+2': 1179, '4 -> 2+2 in rounds 0-20': 575, 'other': 12, 'shed 2': 1498, 'shed 2 in rounds 0-20': 363}
+  shed runs of 3+ rounds in a row after round 20: 116 in 88 games; segments shed 2488; longest 43 rounds; started at queen length 35 (median); games won 55
+     of those, runs still going at round 499: 11; examples (game, start round, rounds, length at start, won): [('1051323', 423, 43, 89, True), ('1050392', 378, 32, 68, False), ('1059856', 392, 31, 94, True), ('1046988', 475, 25, 66, False), ('1058792', 406, 25, 54, False), ('1055295', 368, 24, 52, True), ('1063802', 449, 24, 79, False), ('1051546', 289, 23, 49, True)]
+  cuts after round 20 of a queen 8+ long that keep 2-3: 0 in 0 games; mean length before 0.0; games won 0; biggest: []
+  how the queen ended: {'headon': 354, 'alive': 226, 'noaction': 51, 'body': 1}
+  games with a shed run that were lost on the queen rule with both queens alive: 7; of those the queen would have been the longer one without the shedding: 5 [('1046988', 'Slithery Fight', 16, 50, 64), ('1051307', 'Portals', 74, 8, 77), ('1051325', 'Portals', 28, 46, 54), ('1063331', 'Maze', 66, 42, 92), ('1070612', 'Portals', 20, 36, 43)]

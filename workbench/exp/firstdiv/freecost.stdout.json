@@ -1,0 +1,374 @@
+{
+  "keys": 68,
+  "status": {
+    "matched": 51,
+    "no_divergence": 17
+  },
+  "tables": {
+    "changed": {
+      "1": {
+        "harm": 0,
+        "help": 1,
+        "both": 0,
+        "neither": 50,
+        "censored": 0
+      },
+      "3": {
+        "harm": 0,
+        "help": 2,
+        "both": 0,
+        "neither": 49,
+        "censored": 0
+      },
+      "10": {
+        "harm": 0,
+        "help": 3,
+        "both": 5,
+        "neither": 43,
+        "censored": 0
+      }
+    },
+    "queen": {
+      "10": {
+        "harm": 0,
+        "help": 2,
+        "both": 11,
+        "neither": 38,
+        "censored": 0
+      },
+      "50": {
+        "harm": 1,
+        "help": 5,
+        "both": 16,
+        "neither": 28,
+        "censored": 1
+      }
+    }
+  },
+  "stateMismatches": [],
+  "errors": [],
+  "noDivergence": [
+    "bot-hunter:gen_L_02:A:1",
+    "bot-hunter:gen_L_02:B:1",
+    "bot-hunter:gen_R_01:A:1",
+    "bot-hunter:gen_R_01:B:1",
+    "bot-hunter:gen_S_03:A:1",
+    "bot-hunter:gen_S_03:B:1",
+    "proxy4_king:Colosseum:B:1",
+    "proxy4_king:gen_L_02:A:1",
+    "proxy4_king:gen_L_02:B:1",
+    "proxy4_king:gen_M_07:A:1",
+    "proxy4_king:gen_M_07:B:1",
+    "proxy4_king:gen_R_01:A:1",
+    "proxy4_king:gen_R_01:B:1",
+    "proxy4_king:gen_S_03:A:1",
+    "proxy4_king:gen_S_03:B:1",
+    "proxy4_king:stripes:B:1",
+    "proxy4_king:trophy:A:1"
+  ],
+  "firstTurnMismatches": [],
+  "priorInfoDifferences": [
+    {
+      "key": "bot-hunter:arena:B:1",
+      "difference": {
+        "on": {
+          "round": 13,
+          "event": {
+            "type": "sonarPing",
+            "senderId": 1,
+            "direction": "W",
+            "value": 0,
+            "origin": {
+              "x": 2,
+              "y": 4
+            },
+            "end": {
+              "x": 0,
+              "y": 4
+            },
+            "value64": "5924472876920534968",
+            "hitKind": "kelp"
+          }
+        },
+        "off": {
+          "round": 13,
+          "event": {
+            "type": "sonarPing",
+            "senderId": 1,
+            "direction": "W",
+            "value": 0,
+            "origin": {
+              "x": 2,
+              "y": 4
+            },
+            "end": {
+              "x": 0,
+              "y": 4
+            },
+            "value64": "5924472876943603647",
+            "hitKind": "kelp"
+          }
+        }
+      }
+    },
+    {
+      "key": "bot-hunter:default_small:B:1",
+      "difference": {
+        "on": {
+          "round": 27,
+          "event": {
+            "type": "sonarPing",
+            "senderId": 1,
+            "direction": "N",
+            "value": 0,
+            "origin": {
+              "x": 9,
+              "y": 10
+            },
+            "end": {
+              "x": 9,
+              "y": 7
+            },
+            "value64": "5924453001986631109",
+            "hitKind": "kelp"
+          }
+        },
+        "off": {
+          "round": 27,
+          "event": {
+            "type": "sonarPing",
+            "senderId": 1,
+            "direction": "N",
+            "value": 0,
+            "origin": {
+              "x": 9,
+              "y": 10
+            },
+            "end": {
+              "x": 9,
+              "y": 7
+            },
+            "value64": "5924453001984533976",
+            "hitKind": "kelp"
+          }
+        }
+      }
+    },
+    {
+      "key": "proxy4_king:arena:A:1",
+      "difference": {
+        "on": {
+          "round": 16,
+          "event": {
+            "type": "sonarPing",
+            "senderId": 0,
+            "direction": "E",
+            "value": 0,
+            "origin": {
+              "x": 4,
+              "y": 8
+            },
+            "end": {
+              "x": 10,
+              "y": 8
+            },
+            "value64": "5924320013665923171",
+            "hitKind": "kelp"
+          }
+        },
+        "off": {
+          "round": 16,
+          "event": {
+            "type": "sonarPing",
+            "senderId": 0,
+            "direction": "E",
+            "value": 0,
+            "origin": {
+              "x": 4,
+              "y": 8
+            },
+            "end": {
+              "x": 10,
+              "y": 8
+            },
+            "value64": "5924320013688991846",
+            "hitKind": "kelp"
+          }
+        }
+      }
+    },
+    {
+      "key": "proxy4_king:default_small:A:1",
+      "difference": {
+        "on": {
+          "round": 38,
+          "event": {
+            "type": "sonarPing",
+            "senderId": 0,
+            "direction": "W",
+            "value": 0,
+            "origin": {
+              "x": 3,
+              "y": 4
+            },
+            "end": {
+              "x": 0,
+              "y": 4
+            },
+            "value64": "5924309066895157978",
+            "hitKind": "kelp"
+          }
+        },
+        "off": {
+          "round": 38,
+          "event": {
+            "type": "sonarPing",
+            "senderId": 0,
+            "direction": "W",
+            "value": 0,
+            "origin": {
+              "x": 3,
+              "y": 4
+            },
+            "end": {
+              "x": 0,
+              "y": 4
+            },
+            "value64": "5924309066893060825",
+            "hitKind": "kelp"
+          }
+        }
+      }
+    },
+    {
+      "key": "proxy4_king:default_small:B:1",
+      "difference": {
+        "on": {
+          "round": 27,
+          "event": {
+            "type": "sonarPing",
+            "senderId": 1,
+            "direction": "E",
+            "value": 0,
+            "origin": {
+              "x": 12,
+              "y": 11
+            },
+            "end": {
+              "x": 15,
+              "y": 11
+            },
+            "value64": "5924452916355753468",
+            "hitKind": "kelp"
+          }
+        },
+        "off": {
+          "round": 27,
+          "event": {
+            "type": "sonarPing",
+            "senderId": 1,
+            "direction": "E",
+            "value": 0,
+            "origin": {
+              "x": 12,
+              "y": 11
+            },
+            "end": {
+              "x": 15,
+              "y": 11
+            },
+            "value64": "5924452916353656307",
+            "hitKind": "kelp"
+          }
+        }
+      }
+    },
+    {
+      "key": "proxy4_king:stripes:A:1",
+      "difference": {
+        "on": {
+          "round": 30,
+          "event": {
+            "type": "sonarPing",
+            "senderId": 0,
+            "direction": "E",
+            "value": 0,
+            "origin": {
+              "x": 18,
+              "y": 2
+            },
+            "end": {
+              "x": 5,
+              "y": 2
+            },
+            "value64": "5924318121222727833",
+            "hitKind": "kelp"
+          }
+        },
+        "off": {
+          "round": 30,
+          "event": {
+            "type": "sonarPing",
+            "senderId": 0,
+            "direction": "E",
+            "value": 0,
+            "origin": {
+              "x": 18,
+              "y": 2
+            },
+            "end": {
+              "x": 5,
+              "y": 2
+            },
+            "value64": "5924318121220630684",
+            "hitKind": "kelp"
+          }
+        }
+      }
+    },
+    {
+      "key": "proxy4_king:trophy:B:1",
+      "difference": {
+        "on": {
+          "round": 30,
+          "event": {
+            "type": "sonarPing",
+            "senderId": 3,
+            "direction": "N",
+            "value": 0,
+            "origin": {
+              "x": 23,
+              "y": 8
+            },
+            "end": {
+              "x": 23,
+              "y": 7
+            },
+            "value64": "5924177368406289830",
+            "hitKind": "kelp"
+          }
+        },
+        "off": {
+          "round": 30,
+          "event": {
+            "type": "sonarPing",
+            "senderId": 3,
+            "direction": "N",
+            "value": 0,
+            "origin": {
+              "x": 23,
+              "y": 8
+            },
+            "end": {
+              "x": 23,
+              "y": 7
+            },
+            "value64": "5924177368429358501",
+            "hitKind": "kelp"
+          }
+        }
+      }
+    }
+  ],
+  "queenDeadBeforeFork": 8
+}

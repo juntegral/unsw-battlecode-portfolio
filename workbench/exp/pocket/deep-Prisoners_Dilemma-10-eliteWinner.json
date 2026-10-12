@@ -1,0 +1,1340 @@
+{
+  "map": "Prisoners Dilemma/10",
+  "role": "eliteWinner",
+  "naturalClass": "1",
+  "best": {
+    "key": "583443:583449",
+    "src": "top",
+    "team": "B",
+    "geometry": "76956bf118f5fc01c41719ae16ca354d4b2f16b6205cd404158b866572a0a872",
+    "episode": {
+      "eid": 25,
+      "id": 29,
+      "team": "B",
+      "pocket": 0,
+      "kind": "entry",
+      "entryRound": 37,
+      "entrySeq": 1560,
+      "entryLength": 4,
+      "entryTile": 110,
+      "entryDepth": 1,
+      "near": [],
+      "teamMassStart": 20,
+      "natural": 1,
+      "fountain": 1,
+      "ownDrop": 1,
+      "enemyDrop": 0,
+      "ownPocketDrop": 1,
+      "sprintCost": 0,
+      "turns": 5,
+      "headRounds": 5,
+      "splits": [
+        {
+          "round": 41,
+          "childId": 36,
+          "parentLength": 2,
+          "childLength": 4,
+          "childHead": 143,
+          "childPocket": -1,
+          "outcome": "exit",
+          "endRound": 41,
+          "endTile": 143,
+          "exitLength": 4,
+          "bornOutside": true
+        }
+      ],
+      "deaths": [
+        26
+      ],
+      "eats": [
+        [
+          39,
+          46,
+          -1,
+          "natural"
+        ],
+        [
+          40,
+          14,
+          16,
+          "ownDrop"
+        ]
+      ],
+      "lastPocketDeath": [
+        25,
+        15,
+        "B",
+        16
+      ],
+      "deathReason": "A",
+      "deathFree": 0,
+      "deathAction": {
+        "kind": "suicide"
+      },
+      "endRound": 42,
+      "endSeq": 1742,
+      "endTile": 14,
+      "outcome": "death",
+      "exitLength": 0,
+      "teamMassEnd": 23,
+      "deathLength": 2,
+      "drops": 1,
+      "recoveredOwn": 1,
+      "recoveredEnemy": 0,
+      "unrecovered": 0,
+      "dropEaters": [
+        [
+          49,
+          42,
+          "B",
+          3,
+          14
+        ]
+      ],
+      "rawNet": 0,
+      "recycledNet": 0,
+      "teamDelta": 3,
+      "childExits": 1,
+      "protocol": "splitEscape",
+      "relayCandidate": false,
+      "protocolOriginal": "splitEscape",
+      "parentEpisode": null,
+      "previousOwnDropPickup": true,
+      "relayType": null,
+      "family": {
+        "eid": 25,
+        "id": 29,
+        "team": "B",
+        "pocket": 0,
+        "kind": "entry",
+        "entryRound": 37,
+        "entrySeq": 1560,
+        "entryLength": 4,
+        "entryTile": 110,
+        "entryDepth": 1,
+        "near": [],
+        "teamMassStart": 20,
+        "natural": 1,
+        "fountain": 1,
+        "ownDrop": 1,
+        "enemyDrop": 0,
+        "ownPocketDrop": 1,
+        "sprintCost": 0,
+        "turns": 5,
+        "headRounds": 5,
+        "splits": [
+          {
+            "round": 41,
+            "childId": 36,
+            "parentLength": 2,
+            "childLength": 4,
+            "childHead": 143,
+            "childPocket": -1,
+            "outcome": "exit",
+            "endRound": 41,
+            "endTile": 143,
+            "exitLength": 4,
+            "bornOutside": true
+          }
+        ],
+        "deaths": [
+          26
+        ],
+        "deathReason": "A",
+        "deathFree": 0,
+        "endRound": 42,
+        "endSeq": 1742,
+        "endTile": 14,
+        "outcome": "exit",
+        "exitLength": 0,
+        "teamMassEnd": 23,
+        "deathLength": 2,
+        "drops": 1,
+        "recoveredOwn": 1,
+        "recoveredEnemy": 0,
+        "unrecovered": 0,
+        "rawNet": 0,
+        "recycledNet": 0,
+        "teamDelta": 3,
+        "childExits": 1,
+        "protocol": "splitEscape",
+        "relayCandidate": false,
+        "protocolOriginal": "splitEscape",
+        "parentEpisode": null,
+        "previousOwnDropPickup": true,
+        "relayType": null,
+        "familyEids": [
+          25
+        ],
+        "familySize": 1
+      }
+    },
+    "familyEpisodes": [
+      {
+        "eid": 25,
+        "id": 29,
+        "team": "B",
+        "pocket": 0,
+        "kind": "entry",
+        "entryRound": 37,
+        "entrySeq": 1560,
+        "entryLength": 4,
+        "entryTile": 110,
+        "entryDepth": 1,
+        "near": [],
+        "teamMassStart": 20,
+        "natural": 1,
+        "fountain": 1,
+        "ownDrop": 1,
+        "enemyDrop": 0,
+        "ownPocketDrop": 1,
+        "sprintCost": 0,
+        "turns": 5,
+        "headRounds": 5,
+        "splits": [
+          {
+            "round": 41,
+            "childId": 36,
+            "parentLength": 2,
+            "childLength": 4,
+            "childHead": 143,
+            "childPocket": -1,
+            "outcome": "exit",
+            "endRound": 41,
+            "endTile": 143,
+            "exitLength": 4,
+            "bornOutside": true
+          }
+        ],
+        "deaths": [
+          26
+        ],
+        "eats": [
+          [
+            39,
+            46,
+            -1,
+            "natural"
+          ],
+          [
+            40,
+            14,
+            16,
+            "ownDrop"
+          ]
+        ],
+        "lastPocketDeath": [
+          25,
+          15,
+          "B",
+          16
+        ],
+        "deathReason": "A",
+        "deathFree": 0,
+        "deathAction": {
+          "kind": "suicide"
+        },
+        "endRound": 42,
+        "endSeq": 1742,
+        "endTile": 14,
+        "outcome": "death",
+        "exitLength": 0,
+        "teamMassEnd": 23,
+        "deathLength": 2,
+        "drops": 1,
+        "recoveredOwn": 1,
+        "recoveredEnemy": 0,
+        "unrecovered": 0,
+        "dropEaters": [
+          [
+            49,
+            42,
+            "B",
+            3,
+            14
+          ]
+        ],
+        "rawNet": 0,
+        "recycledNet": 0,
+        "teamDelta": 3,
+        "childExits": 1,
+        "protocol": "splitEscape",
+        "relayCandidate": false,
+        "protocolOriginal": "splitEscape",
+        "parentEpisode": null,
+        "previousOwnDropPickup": true,
+        "relayType": null,
+        "family": {
+          "eid": 25,
+          "id": 29,
+          "team": "B",
+          "pocket": 0,
+          "kind": "entry",
+          "entryRound": 37,
+          "entrySeq": 1560,
+          "entryLength": 4,
+          "entryTile": 110,
+          "entryDepth": 1,
+          "near": [],
+          "teamMassStart": 20,
+          "natural": 1,
+          "fountain": 1,
+          "ownDrop": 1,
+          "enemyDrop": 0,
+          "ownPocketDrop": 1,
+          "sprintCost": 0,
+          "turns": 5,
+          "headRounds": 5,
+          "splits": [
+            {
+              "round": 41,
+              "childId": 36,
+              "parentLength": 2,
+              "childLength": 4,
+              "childHead": 143,
+              "childPocket": -1,
+              "outcome": "exit",
+              "endRound": 41,
+              "endTile": 143,
+              "exitLength": 4,
+              "bornOutside": true
+            }
+          ],
+          "deaths": [
+            26
+          ],
+          "deathReason": "A",
+          "deathFree": 0,
+          "endRound": 42,
+          "endSeq": 1742,
+          "endTile": 14,
+          "outcome": "exit",
+          "exitLength": 0,
+          "teamMassEnd": 23,
+          "deathLength": 2,
+          "drops": 1,
+          "recoveredOwn": 1,
+          "recoveredEnemy": 0,
+          "unrecovered": 0,
+          "rawNet": 0,
+          "recycledNet": 0,
+          "teamDelta": 3,
+          "childExits": 1,
+          "protocol": "splitEscape",
+          "relayCandidate": false,
+          "protocolOriginal": "splitEscape",
+          "parentEpisode": null,
+          "previousOwnDropPickup": true,
+          "relayType": null,
+          "familyEids": [
+            25
+          ],
+          "familySize": 1
+        }
+      }
+    ],
+    "rounds": 500,
+    "timeline": [
+      {
+        "round": 36,
+        "seq": 1521,
+        "type": "turnStart",
+        "id": 29
+      },
+      {
+        "round": 36,
+        "seq": 1522,
+        "type": "dragonAction",
+        "id": 29,
+        "action": {
+          "kind": "move",
+          "steps": [
+            "W"
+          ]
+        }
+      },
+      {
+        "round": 36,
+        "seq": 1523,
+        "type": "dragonUpdate",
+        "id": 29,
+        "facing": "W",
+        "head": {
+          "x": 14,
+          "y": 4
+        },
+        "tail": {
+          "x": 15,
+          "y": 6
+        }
+      },
+      {
+        "round": 37,
+        "seq": 1558,
+        "type": "turnStart",
+        "id": 29
+      },
+      {
+        "round": 37,
+        "seq": 1559,
+        "type": "dragonAction",
+        "id": 29,
+        "action": {
+          "kind": "move",
+          "steps": [
+            "N"
+          ]
+        }
+      },
+      {
+        "round": 37,
+        "seq": 1560,
+        "type": "dragonUpdate",
+        "id": 29,
+        "facing": "N",
+        "head": {
+          "x": 14,
+          "y": 3
+        },
+        "tail": {
+          "x": 15,
+          "y": 5
+        }
+      },
+      {
+        "round": 38,
+        "seq": 1590,
+        "type": "turnStart",
+        "id": 29
+      },
+      {
+        "round": 38,
+        "seq": 1591,
+        "type": "dragonAction",
+        "id": 29,
+        "action": {
+          "kind": "move",
+          "steps": [
+            "N"
+          ]
+        }
+      },
+      {
+        "round": 38,
+        "seq": 1592,
+        "type": "dragonUpdate",
+        "id": 29,
+        "facing": "N",
+        "head": {
+          "x": 14,
+          "y": 2
+        },
+        "tail": {
+          "x": 15,
+          "y": 4
+        }
+      },
+      {
+        "round": 39,
+        "seq": 1627,
+        "type": "turnStart",
+        "id": 29
+      },
+      {
+        "round": 39,
+        "seq": 1628,
+        "type": "dragonAction",
+        "id": 29,
+        "action": {
+          "kind": "move",
+          "steps": [
+            "N"
+          ]
+        }
+      },
+      {
+        "round": 39,
+        "seq": 1629,
+        "type": "tileChange",
+        "tile": {
+          "x": 14,
+          "y": 1
+        },
+        "hasPearl": false
+      },
+      {
+        "round": 39,
+        "seq": 1630,
+        "type": "dragonUpdate",
+        "id": 29,
+        "facing": "N",
+        "head": {
+          "x": 14,
+          "y": 1
+        },
+        "tail": {
+          "x": 15,
+          "y": 4
+        }
+      },
+      {
+        "round": 40,
+        "seq": 1666,
+        "type": "turnStart",
+        "id": 29
+      },
+      {
+        "round": 40,
+        "seq": 1667,
+        "type": "dragonAction",
+        "id": 29,
+        "action": {
+          "kind": "move",
+          "steps": [
+            "N"
+          ]
+        }
+      },
+      {
+        "round": 40,
+        "seq": 1668,
+        "type": "tileChange",
+        "tile": {
+          "x": 14,
+          "y": 0
+        },
+        "hasPearl": false
+      },
+      {
+        "round": 40,
+        "seq": 1669,
+        "type": "dragonUpdate",
+        "id": 29,
+        "facing": "N",
+        "head": {
+          "x": 14,
+          "y": 0
+        },
+        "tail": {
+          "x": 15,
+          "y": 4
+        }
+      },
+      {
+        "round": 41,
+        "seq": 1702,
+        "type": "turnStart",
+        "id": 29
+      },
+      {
+        "round": 41,
+        "seq": 1703,
+        "type": "dragonAction",
+        "id": 29,
+        "action": {
+          "kind": "split",
+          "childSegmentCount": 4
+        }
+      },
+      {
+        "round": 41,
+        "seq": 1704,
+        "type": "dragonSplit",
+        "parentId": 29,
+        "childId": 36,
+        "team": "B",
+        "childFacing": "E",
+        "parentBody": [
+          {
+            "x": 14,
+            "y": 0
+          },
+          {
+            "x": 14,
+            "y": 1
+          }
+        ],
+        "childBody": [
+          {
+            "x": 15,
+            "y": 4
+          },
+          {
+            "x": 14,
+            "y": 4
+          },
+          {
+            "x": 14,
+            "y": 3
+          },
+          {
+            "x": 14,
+            "y": 2
+          }
+        ]
+      },
+      {
+        "round": 41,
+        "seq": 1712,
+        "type": "turnStart",
+        "id": 36
+      },
+      {
+        "round": 41,
+        "seq": 1713,
+        "type": "dragonAction",
+        "id": 36,
+        "action": {
+          "kind": "move",
+          "steps": [
+            "S"
+          ]
+        }
+      },
+      {
+        "round": 41,
+        "seq": 1714,
+        "type": "dragonUpdate",
+        "id": 36,
+        "facing": "S",
+        "head": {
+          "x": 15,
+          "y": 5
+        },
+        "tail": {
+          "x": 14,
+          "y": 3
+        }
+      },
+      {
+        "round": 42,
+        "seq": 1740,
+        "type": "turnStart",
+        "id": 29
+      },
+      {
+        "round": 42,
+        "seq": 1741,
+        "type": "dragonAction",
+        "id": 29,
+        "action": {
+          "kind": "suicide"
+        }
+      },
+      {
+        "round": 42,
+        "seq": 1742,
+        "type": "dragonDeath",
+        "id": 29,
+        "reason": "A"
+      },
+      {
+        "round": 42,
+        "seq": 1743,
+        "type": "tileChange",
+        "tile": {
+          "x": 14,
+          "y": 0
+        },
+        "hasPearl": true
+      },
+      {
+        "round": 42,
+        "seq": 1752,
+        "type": "turnStart",
+        "id": 36
+      },
+      {
+        "round": 42,
+        "seq": 1753,
+        "type": "dragonAction",
+        "id": 36,
+        "action": {
+          "kind": "move",
+          "steps": [
+            "E"
+          ]
+        }
+      },
+      {
+        "round": 42,
+        "seq": 1754,
+        "type": "dragonUpdate",
+        "id": 36,
+        "facing": "E",
+        "head": {
+          "x": 16,
+          "y": 5
+        },
+        "tail": {
+          "x": 14,
+          "y": 4
+        }
+      },
+      {
+        "round": 43,
+        "seq": 1790,
+        "type": "turnStart",
+        "id": 36
+      },
+      {
+        "round": 43,
+        "seq": 1791,
+        "type": "dragonAction",
+        "id": 36,
+        "action": {
+          "kind": "move",
+          "steps": [
+            "S"
+          ]
+        }
+      },
+      {
+        "round": 43,
+        "seq": 1792,
+        "type": "tileChange",
+        "tile": {
+          "x": 16,
+          "y": 6
+        },
+        "hasPearl": false
+      },
+      {
+        "round": 43,
+        "seq": 1793,
+        "type": "dragonUpdate",
+        "id": 36,
+        "facing": "S",
+        "head": {
+          "x": 16,
+          "y": 6
+        },
+        "tail": {
+          "x": 14,
+          "y": 4
+        }
+      },
+      {
+        "round": 44,
+        "seq": 1832,
+        "type": "turnStart",
+        "id": 36
+      },
+      {
+        "round": 44,
+        "seq": 1833,
+        "type": "dragonAction",
+        "id": 36,
+        "action": {
+          "kind": "move",
+          "steps": [
+            "S"
+          ]
+        }
+      },
+      {
+        "round": 44,
+        "seq": 1834,
+        "type": "tileChange",
+        "tile": {
+          "x": 16,
+          "y": 7
+        },
+        "hasPearl": false
+      },
+      {
+        "round": 44,
+        "seq": 1835,
+        "type": "dragonUpdate",
+        "id": 36,
+        "facing": "S",
+        "head": {
+          "x": 16,
+          "y": 7
+        },
+        "tail": {
+          "x": 14,
+          "y": 4
+        }
+      },
+      {
+        "round": 45,
+        "seq": 1879,
+        "type": "turnStart",
+        "id": 36
+      },
+      {
+        "round": 45,
+        "seq": 1880,
+        "type": "dragonAction",
+        "id": 36,
+        "action": {
+          "kind": "split",
+          "childSegmentCount": 4
+        }
+      },
+      {
+        "round": 45,
+        "seq": 1881,
+        "type": "dragonSplit",
+        "parentId": 36,
+        "childId": 42,
+        "team": "B",
+        "childFacing": "W",
+        "parentBody": [
+          {
+            "x": 16,
+            "y": 7
+          },
+          {
+            "x": 16,
+            "y": 6
+          }
+        ],
+        "childBody": [
+          {
+            "x": 14,
+            "y": 4
+          },
+          {
+            "x": 15,
+            "y": 4
+          },
+          {
+            "x": 15,
+            "y": 5
+          },
+          {
+            "x": 16,
+            "y": 5
+          }
+        ]
+      },
+      {
+        "round": 46,
+        "seq": 1928,
+        "type": "turnStart",
+        "id": 36
+      },
+      {
+        "round": 46,
+        "seq": 1929,
+        "type": "dragonAction",
+        "id": 36,
+        "action": {
+          "kind": "move",
+          "steps": [
+            "W"
+          ]
+        }
+      },
+      {
+        "round": 46,
+        "seq": 1930,
+        "type": "tileChange",
+        "tile": {
+          "x": 15,
+          "y": 7
+        },
+        "hasPearl": false
+      },
+      {
+        "round": 46,
+        "seq": 1931,
+        "type": "dragonUpdate",
+        "id": 36,
+        "facing": "W",
+        "head": {
+          "x": 15,
+          "y": 7
+        },
+        "tail": {
+          "x": 16,
+          "y": 6
+        }
+      },
+      {
+        "round": 47,
+        "seq": 1973,
+        "type": "turnStart",
+        "id": 36
+      },
+      {
+        "round": 47,
+        "seq": 1974,
+        "type": "dragonAction",
+        "id": 36,
+        "action": {
+          "kind": "move",
+          "steps": [
+            "N"
+          ]
+        }
+      },
+      {
+        "round": 47,
+        "seq": 1975,
+        "type": "dragonUpdate",
+        "id": 36,
+        "facing": "N",
+        "head": {
+          "x": 15,
+          "y": 6
+        },
+        "tail": {
+          "x": 16,
+          "y": 7
+        }
+      },
+      {
+        "round": 48,
+        "seq": 2029,
+        "type": "turnStart",
+        "id": 36
+      },
+      {
+        "round": 48,
+        "seq": 2030,
+        "type": "dragonAction",
+        "id": 36,
+        "action": {
+          "kind": "move",
+          "steps": [
+            "E"
+          ]
+        }
+      },
+      {
+        "round": 48,
+        "seq": 2031,
+        "type": "dragonUpdate",
+        "id": 36,
+        "facing": "E",
+        "head": {
+          "x": 16,
+          "y": 6
+        },
+        "tail": {
+          "x": 15,
+          "y": 7
+        }
+      },
+      {
+        "round": 49,
+        "seq": 2083,
+        "type": "turnStart",
+        "id": 36
+      },
+      {
+        "round": 49,
+        "seq": 2084,
+        "type": "dragonAction",
+        "id": 36,
+        "action": {
+          "kind": "move",
+          "steps": [
+            "N"
+          ]
+        }
+      },
+      {
+        "round": 49,
+        "seq": 2085,
+        "type": "dragonUpdate",
+        "id": 36,
+        "facing": "N",
+        "head": {
+          "x": 16,
+          "y": 5
+        },
+        "tail": {
+          "x": 15,
+          "y": 6
+        }
+      }
+    ],
+    "snapshots": [
+      {
+        "label": "Entry completed",
+        "round": 37,
+        "seq": 1560,
+        "actor": 29,
+        "bodies": [
+          {
+            "id": 2,
+            "team": "B",
+            "body": [
+              406,
+              407,
+              375
+            ]
+          },
+          {
+            "id": 3,
+            "team": "A",
+            "body": [
+              242,
+              243,
+              211
+            ]
+          },
+          {
+            "id": 5,
+            "team": "A",
+            "body": [
+              244,
+              276,
+              275
+            ]
+          },
+          {
+            "id": 6,
+            "team": "B",
+            "body": [
+              182,
+              183
+            ]
+          },
+          {
+            "id": 8,
+            "team": "B",
+            "body": [
+              291,
+              323
+            ]
+          },
+          {
+            "id": 23,
+            "team": "B",
+            "body": [
+              358,
+              326,
+              327
+            ]
+          },
+          {
+            "id": 28,
+            "team": "B",
+            "body": [
+              366,
+              367,
+              368,
+              336
+            ]
+          },
+          {
+            "id": 29,
+            "team": "B",
+            "body": [
+              110,
+              142,
+              143,
+              175
+            ]
+          },
+          {
+            "id": 32,
+            "team": "B",
+            "body": [
+              237,
+              269
+            ]
+          },
+          {
+            "id": 34,
+            "team": "A",
+            "body": [
+              465,
+              433,
+              401,
+              369,
+              337,
+              305,
+              273,
+              241,
+              209,
+              177,
+              145,
+              113
+            ]
+          }
+        ],
+        "pearls": [
+          14,
+          46,
+          150,
+          119,
+          101,
+          494,
+          462,
+          497,
+          17,
+          49
+        ]
+      },
+      {
+        "label": "Split completed",
+        "round": 41,
+        "seq": 1704,
+        "actor": 29,
+        "bodies": [
+          {
+            "id": 2,
+            "team": "B",
+            "body": [
+              294,
+              293,
+              325
+            ]
+          },
+          {
+            "id": 3,
+            "team": "A",
+            "body": [
+              275,
+              307,
+              306
+            ]
+          },
+          {
+            "id": 5,
+            "team": "A",
+            "body": [
+              243,
+              244
+            ]
+          },
+          {
+            "id": 6,
+            "team": "B",
+            "body": [
+              182,
+              183
+            ]
+          },
+          {
+            "id": 8,
+            "team": "B",
+            "body": [
+              163,
+              195
+            ]
+          },
+          {
+            "id": 23,
+            "team": "B",
+            "body": [
+              387,
+              388,
+              389
+            ]
+          },
+          {
+            "id": 28,
+            "team": "B",
+            "body": [
+              494,
+              462,
+              430,
+              398,
+              366,
+              367
+            ]
+          },
+          {
+            "id": 29,
+            "team": "B",
+            "body": [
+              14,
+              46
+            ]
+          },
+          {
+            "id": 32,
+            "team": "B",
+            "body": [
+              239,
+              207
+            ]
+          },
+          {
+            "id": 35,
+            "team": "A",
+            "body": [
+              17,
+              49,
+              81,
+              113,
+              145,
+              177,
+              209,
+              241,
+              273,
+              305,
+              337,
+              369,
+              401
+            ]
+          },
+          {
+            "id": 36,
+            "team": "B",
+            "body": [
+              143,
+              142,
+              110,
+              78
+            ]
+          }
+        ],
+        "pearls": [
+          150,
+          119,
+          101,
+          240,
+          271,
+          497,
+          465,
+          208,
+          303
+        ]
+      },
+      {
+        "label": "After death and drops",
+        "round": 42,
+        "seq": 1744,
+        "actor": 32,
+        "bodies": [
+          {
+            "id": 2,
+            "team": "B",
+            "body": [
+              295,
+              294,
+              293
+            ]
+          },
+          {
+            "id": 3,
+            "team": "A",
+            "body": [
+              274,
+              275,
+              307
+            ]
+          },
+          {
+            "id": 5,
+            "team": "A",
+            "body": [
+              211,
+              243
+            ]
+          },
+          {
+            "id": 6,
+            "team": "B",
+            "body": [
+              181,
+              182
+            ]
+          },
+          {
+            "id": 8,
+            "team": "B",
+            "body": [
+              164,
+              163
+            ]
+          },
+          {
+            "id": 23,
+            "team": "B",
+            "body": [
+              355,
+              387,
+              388
+            ]
+          },
+          {
+            "id": 28,
+            "team": "B",
+            "body": [
+              494,
+              462
+            ]
+          },
+          {
+            "id": 32,
+            "team": "B",
+            "body": [
+              271,
+              239,
+              207
+            ]
+          },
+          {
+            "id": 35,
+            "team": "A",
+            "body": [
+              17,
+              49
+            ]
+          },
+          {
+            "id": 36,
+            "team": "B",
+            "body": [
+              175,
+              143,
+              142,
+              110
+            ]
+          },
+          {
+            "id": 37,
+            "team": "A",
+            "body": [
+              433,
+              401,
+              369,
+              337,
+              305,
+              273,
+              241,
+              209,
+              177,
+              145,
+              113
+            ]
+          },
+          {
+            "id": 38,
+            "team": "B",
+            "body": [
+              367,
+              366,
+              398,
+              430
+            ]
+          }
+        ],
+        "pearls": [
+          150,
+          119,
+          101,
+          240,
+          497,
+          465,
+          208,
+          303,
+          14
+        ]
+      }
+    ],
+    "replay": "~/01. Project/개인 프로젝트/unsw-swarm/data/top/583443/583449.replay.gz"
+  },
+  "score": 0.03917123872130342,
+  "candidateN": 12503,
+  "classN": 14952
+}

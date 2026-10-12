@@ -1,0 +1,191 @@
+{
+ "NInputs": 4,
+ "NDeploymentGames": 0,
+ "passed": true,
+ "cases": [
+  {
+   "targets": {
+    "heads25": {
+     "value": 7,
+     "conditionalOnReachingRound": true,
+     "usesFeatureRule": false,
+     "familyMAE": 4.227634775591311,
+     "familyN": 10,
+     "geometryHoldoutMAE": 4.153577051231824
+    },
+    "heads50": {
+     "value": 13,
+     "conditionalOnReachingRound": true,
+     "usesFeatureRule": false,
+     "familyMAE": 7.166003012327452,
+     "familyN": 10,
+     "geometryHoldoutMAE": 6.653603697452106
+    },
+    "heads100": {
+     "value": 23,
+     "conditionalOnReachingRound": true,
+     "usesFeatureRule": false,
+     "familyMAE": 10.287802743591321,
+     "familyN": 10,
+     "geometryHoldoutMAE": 9.87289579825489
+    },
+    "heads250": {
+     "value": 38,
+     "conditionalOnReachingRound": true,
+     "usesFeatureRule": false,
+     "familyMAE": 8.658791304038148,
+     "familyN": 10,
+     "geometryHoldoutMAE": 8.547100202205089
+    },
+    "middle100": {
+     "value": 0.2666229135442692,
+     "conditionalOnReachingRound": false,
+     "usesFeatureRule": false,
+     "familyMAE": 0.20652146206866276,
+     "familyN": 10,
+     "geometryHoldoutMAE": 0.2293785636371164
+    },
+    "splitSpeed50": {
+     "value": 0.6551735533722249,
+     "conditionalOnReachingRound": false,
+     "usesFeatureRule": false,
+     "familyMAE": 0.09560616803875445,
+     "familyN": 10,
+     "geometryHoldoutMAE": 0.10527698416449773
+    }
+   },
+   "warnings": [
+    "middle share requires verified starting-body distance geometry; reference target is not an allocation command",
+    "Early fitted inputs were allied-vision union means: use local confidence, not assumed global knowledge",
+    "Successful spawn count is a lower bound, not hidden potential rate; do not cap demand from this alone",
+    "These targets predict observed elite behavior; new engine score/win effect N=0"
+   ],
+   "deploymentTrialsN": 0,
+   "inputCalibrationRound": 10,
+   "plan": "swarm survey and production; reconsider as confidence improves"
+  },
+  {
+   "targets": {
+    "heads25": {
+     "value": 7,
+     "conditionalOnReachingRound": true,
+     "usesFeatureRule": false,
+     "familyMAE": 4.227634775591311,
+     "familyN": 10,
+     "geometryHoldoutMAE": 4.153577051231824
+    },
+    "heads50": {
+     "value": 13,
+     "conditionalOnReachingRound": true,
+     "usesFeatureRule": false,
+     "familyMAE": 7.166003012327452,
+     "familyN": 10,
+     "geometryHoldoutMAE": 6.653603697452106
+    },
+    "heads100": {
+     "value": 16,
+     "conditionalOnReachingRound": true,
+     "usesFeatureRule": false,
+     "familyMAE": 10.287802743591321,
+     "familyN": 10,
+     "geometryHoldoutMAE": 9.87289579825489
+    },
+    "heads250": {
+     "value": 16,
+     "conditionalOnReachingRound": true,
+     "usesFeatureRule": false,
+     "familyMAE": 8.658791304038148,
+     "familyN": 10,
+     "geometryHoldoutMAE": 8.547100202205089
+    },
+    "middle100": {
+     "value": 0,
+     "conditionalOnReachingRound": false,
+     "usesFeatureRule": false,
+     "familyMAE": 0.20652146206866276,
+     "familyN": 10,
+     "geometryHoldoutMAE": 0.2293785636371164
+    },
+    "splitSpeed50": {
+     "value": 0.6551735533722249,
+     "conditionalOnReachingRound": false,
+     "usesFeatureRule": false,
+     "familyMAE": 0.09560616803875445,
+     "familyN": 10,
+     "geometryHoldoutMAE": 0.10527698416449773
+    }
+   },
+   "warnings": [
+    "middle share requires verified starting-body distance geometry; reference target is not an allocation command",
+    "Early fitted inputs were allied-vision union means: use local confidence, not assumed global knowledge",
+    "Successful spawn count is a lower bound, not hidden potential rate; do not cap demand from this alone",
+    "These targets predict observed elite behavior; new engine score/win effect N=0"
+   ],
+   "deploymentTrialsN": 0,
+   "inputCalibrationRound": 30,
+   "plan": "isolated economy + conversion",
+   "enemyFrontierHeads": 0
+  },
+  {
+   "targets": {
+    "heads25": {
+     "value": 7,
+     "conditionalOnReachingRound": true,
+     "usesFeatureRule": false,
+     "familyMAE": 4.227634775591311,
+     "familyN": 10,
+     "geometryHoldoutMAE": 4.153577051231824
+    },
+    "heads50": {
+     "value": 13,
+     "conditionalOnReachingRound": true,
+     "usesFeatureRule": false,
+     "familyMAE": 7.166003012327452,
+     "familyN": 10,
+     "geometryHoldoutMAE": 6.653603697452106
+    },
+    "heads100": {
+     "value": 23,
+     "conditionalOnReachingRound": true,
+     "usesFeatureRule": false,
+     "familyMAE": 10.287802743591321,
+     "familyN": 10,
+     "geometryHoldoutMAE": 9.87289579825489
+    },
+    "heads250": {
+     "value": 38,
+     "conditionalOnReachingRound": true,
+     "usesFeatureRule": false,
+     "familyMAE": 8.658791304038148,
+     "familyN": 10,
+     "geometryHoldoutMAE": 8.547100202205089
+    },
+    "middle100": {
+     "value": 0.2666229135442692,
+     "conditionalOnReachingRound": false,
+     "usesFeatureRule": false,
+     "familyMAE": 0.20652146206866276,
+     "familyN": 10,
+     "geometryHoldoutMAE": 0.2293785636371164
+    },
+    "splitSpeed50": {
+     "value": 0.6551735533722249,
+     "conditionalOnReachingRound": false,
+     "usesFeatureRule": false,
+     "familyMAE": 0.09560616803875445,
+     "familyN": 10,
+     "geometryHoldoutMAE": 0.10527698416449773
+    }
+   },
+   "warnings": [
+    "middle share requires verified starting-body distance geometry; reference target is not an allocation command",
+    "Early fitted inputs were allied-vision union means: use local confidence, not assumed global knowledge",
+    "Successful spawn count is a lower bound, not hidden potential rate; do not cap demand from this alone",
+    "These targets predict observed elite behavior; new engine score/win effect N=0"
+   ],
+   "deploymentTrialsN": 0,
+   "inputCalibrationRound": 30,
+   "plan": "fortress candidate; preserve seed king and keep producers"
+  }
+ ]
+}

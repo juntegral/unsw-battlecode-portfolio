@@ -1,0 +1,90 @@
+games loaded 675 errors 0 ; main 225 v31 410 other 40
+latest game completed at 2026-10-06T18:59:13.783Z
+
+=== main: 69 games on layouts with 1500 or more open tiles
+  main (busy 8+, radius 2)                     snapshots  197  our heads  11350  their heads  11698  our share 0.212  their share 0.318
+    Around UNSW #1 (17 games)                  snapshots   91  our heads   5415  their heads   5611  our share 0.160  their share 0.274
+    Australia #1 (11 games)                    snapshots    4  our heads    174  their heads    177  our share 0.167  their share 0.175
+    Islands #1 (9 games)                       snapshots    6  our heads    323  their heads    325  our share 0.180  their share 0.231
+    Schooltime #1 (12 games)                   snapshots    8  our heads    181  their heads    176  our share 0.099  their share 0.119
+    Schooltime #2 (6 games)                    snapshots   19  our heads   1102  their heads   1153  our share 0.289  their share 0.430
+    Slithery Fight #1 (14 games)               snapshots   69  our heads   4155  their heads   4256  our share 0.267  their share 0.368
+  kept snapshots by map name {'Around UNSW': 91, 'Australia': 4, 'Schooltime': 27, 'Slithery Fight': 69, 'Islands': 6}
+  [variant] busy 8+, radius 1                  snapshots  197  our heads  11350  their heads  11698  our share 0.123  their share 0.187
+  [variant] busy 8+, radius 3                  snapshots  197  our heads  11350  their heads  11698  our share 0.314  their share 0.452
+  [variant] busy 8+, radius 4                  snapshots  197  our heads  11350  their heads  11698  our share 0.417  their share 0.557
+  [variant] busy 5+, radius 2                  snapshots  197  our heads  11350  their heads  11698  our share 0.276  their share 0.370
+  [variant] busy 12+, radius 2                 snapshots  197  our heads  11350  their heads  11698  our share 0.157  their share 0.237
+  [variant] busy 20+, radius 2                 snapshots  197  our heads  11350  their heads  11698  our share 0.096  their share 0.158
+  [variant] all snapshots, any head counts     snapshots  621  our heads  26899  their heads  33664  our share 0.196  their share 0.273
+  [variant] head counts within 25 percent      snapshots  348  our heads  18743  their heads  19933  our share 0.211  their share 0.320
+  [by round] r100-150                          snapshots   84  our heads   4785  their heads   4860  our share 0.232  their share 0.334
+  [by round] r175-225                          snapshots   74  our heads   4319  their heads   4471  our share 0.193  their share 0.312
+  [by round] r250-300                          snapshots   39  our heads   2246  their heads   2367  our share 0.204  their share 0.297
+  [check] busy = 8+ births in at least half of the OTHER games on the layout snapshots  197  our heads  11350  their heads  11698  our share 0.193  their share 0.269
+      Around UNSW #1                           snapshots   91  our heads   5415  their heads   5611  our share 0.122  their share 0.210
+      Australia #1                             snapshots    4  our heads    174  their heads    177  our share 0.172  their share 0.175
+      Islands #1                               snapshots    6  our heads    323  their heads    325  our share 0.176  their share 0.228
+      Schooltime #1                            snapshots    8  our heads    181  their heads    176  our share 0.116  their share 0.131
+      Schooltime #2                            snapshots   19  our heads   1102  their heads   1153  our share 0.315  their share 0.386
+      Slithery Fight #1                        snapshots   69  our heads   4155  their heads   4256  our share 0.258  their share 0.328
+  [check] busy tiles 4245 (61.5 per game); those where they ate more than we did: 2610 (0.615); pearls eaten on busy tiles: ours 30476, theirs 50425 (their share 0.623)
+  [check] near busy tiles mostly eaten by US   snapshots  197  our heads  11350  their heads  11698  our share 0.164  their share 0.054
+  [check] near busy tiles mostly eaten by THEM snapshots  197  our heads  11350  their heads  11698  our share 0.062  their share 0.283
+  [chance] their share minus ours: 0.107 (game bootstrap 95% 0.082 to 0.133) over 46 games with a kept snapshot
+  [chance] Around UNSW: their share minus ours 0.113 (game bootstrap 95% 0.082 to 0.146) over 16 games
+  [chance] Slithery Fight: their share minus ours 0.101 (game bootstrap 95% 0.046 to 0.160) over 12 games
+  [by snapshot] their share higher in 167, ours higher in 28, equal 2
+  [by game] their pooled share higher in 38 games, ours higher in 6 (sign test p 0.0000)
+  [leave one out] their share minus ours: opponent 0.096 (without byte_force (959)) to 0.120 (without ComTamSuonNuong (193)), 23 groups ; layout 0.101 (without Around UNSW #1) to 0.111 (without Slithery Fight #1), 6 groups ; evening 0.099 (without 10-07a) to 0.111 (without 10-06b), 3 groups
+  [without the three games that add most to the gap] their share minus ours 0.093
+  [band] 1700-1899                             snapshots   63  our heads   3472  their heads   3583  our share 0.209  their share 0.374
+  [band] 1900-2099                             snapshots  121  our heads   7122  their heads   7335  our share 0.211  their share 0.285
+  [band] 2100+                                 snapshots   13  our heads    756  their heads    780  our share 0.226  their share 0.374
+  [result] games we won                        snapshots  114  our heads   6574  their heads   6803  our share 0.218  their share 0.311
+  [result] games we lost                       snapshots   83  our heads   4776  their heads   4895  our share 0.204  their share 0.329
+  [nearest friend, my guess at the definition: median over heads of the distance to the nearest own head, kept snapshots on layouts with 2000+ open tiles] ours smaller 12, ours larger 66, tied 50
+
+=== v31: 119 games on layouts with 1500 or more open tiles
+  v31 (busy 8+, radius 2)                      snapshots  301  our heads  17554  their heads  18041  our share 0.203  their share 0.317
+    Around UNSW #1 (26 games)                  snapshots  128  our heads   7618  their heads   7893  our share 0.156  their share 0.308
+    Australia #1 (28 games)                    snapshots   30  our heads   1660  their heads   1681  our share 0.124  their share 0.124
+    Islands #1 (17 games)                      snapshots   11  our heads    606  their heads    592  our share 0.175  their share 0.238
+    Schooltime #1 (11 games)                   snapshots    4  our heads     96  their heads     97  our share 0.156  their share 0.144
+    Schooltime #2 (13 games)                   snapshots   14  our heads    780  their heads    791  our share 0.364  their share 0.413
+    Slithery Fight #1 (24 games)               snapshots  114  our heads   6794  their heads   6987  our share 0.260  their share 0.372
+  kept snapshots by map name {'Schooltime': 18, 'Around UNSW': 128, 'Islands': 11, 'Australia': 30, 'Slithery Fight': 114}
+  [variant] busy 8+, radius 1                  snapshots  301  our heads  17554  their heads  18041  our share 0.116  their share 0.187
+  [variant] busy 8+, radius 3                  snapshots  301  our heads  17554  their heads  18041  our share 0.296  their share 0.443
+  [variant] busy 8+, radius 4                  snapshots  301  our heads  17554  their heads  18041  our share 0.383  their share 0.548
+  [variant] busy 5+, radius 2                  snapshots  301  our heads  17554  their heads  18041  our share 0.257  their share 0.370
+  [variant] busy 12+, radius 2                 snapshots  301  our heads  17554  their heads  18041  our share 0.161  their share 0.252
+  [variant] busy 20+, radius 2                 snapshots  301  our heads  17554  their heads  18041  our share 0.113  their share 0.176
+  [variant] all snapshots, any head counts     snapshots 1068  our heads  48054  their heads  60455  our share 0.197  their share 0.271
+  [variant] head counts within 25 percent      snapshots  562  our heads  31261  their heads  33269  our share 0.198  their share 0.308
+  [by round] r100-150                          snapshots  115  our heads   6606  their heads   6706  our share 0.235  their share 0.357
+  [by round] r175-225                          snapshots  120  our heads   7145  their heads   7348  our share 0.178  their share 0.314
+  [by round] r250-300                          snapshots   66  our heads   3803  their heads   3987  our share 0.195  their share 0.256
+  [check] busy = 8+ births in at least half of the OTHER games on the layout snapshots  301  our heads  17554  their heads  18041  our share 0.190  their share 0.273
+      Around UNSW #1                           snapshots  128  our heads   7618  their heads   7893  our share 0.123  their share 0.245
+      Australia #1                             snapshots   30  our heads   1660  their heads   1681  our share 0.126  their share 0.125
+      Islands #1                               snapshots   11  our heads    606  their heads    592  our share 0.177  their share 0.242
+      Schooltime #1                            snapshots    4  our heads     96  their heads     97  our share 0.156  their share 0.144
+      Schooltime #2                            snapshots   14  our heads    780  their heads    791  our share 0.337  their share 0.350
+      Slithery Fight #1                        snapshots  114  our heads   6794  their heads   6987  our share 0.266  their share 0.337
+  [check] busy tiles 7436 (62.5 per game); those where they ate more than we did: 4621 (0.621); pearls eaten on busy tiles: ours 54052, theirs 86983 (their share 0.617)
+  [check] near busy tiles mostly eaten by US   snapshots  301  our heads  17554  their heads  18041  our share 0.157  their share 0.047
+  [check] near busy tiles mostly eaten by THEM snapshots  301  our heads  17554  their heads  18041  our share 0.060  their share 0.285
+  [chance] their share minus ours: 0.114 (game bootstrap 95% 0.087 to 0.141) over 77 games with a kept snapshot
+  [chance] Around UNSW: their share minus ours 0.152 (game bootstrap 95% 0.121 to 0.186) over 24 games
+  [chance] Slithery Fight: their share minus ours 0.112 (game bootstrap 95% 0.071 to 0.164) over 21 games
+  [by snapshot] their share higher in 250, ours higher in 49, equal 2
+  [by game] their pooled share higher in 59 games, ours higher in 18 (sign test p 0.0000)
+  [leave one out] their share minus ours: opponent 0.109 (without ouroboros (1022)) to 0.120 (without Just Keep Swimming (7)), 36 groups ; layout 0.085 (without Around UNSW #1) to 0.126 (without Australia #1), 6 groups ; evening 0.110 (without 10-06b) to 0.118 (without 10-06a), 2 groups
+  [without the three games that add most to the gap] their share minus ours 0.102
+  [band] 1700-1899                             snapshots  142  our heads   8304  their heads   8537  our share 0.204  their share 0.320
+  [band] 1900-2099                             snapshots  101  our heads   5834  their heads   5981  our share 0.189  their share 0.301
+  [band] 2100+                                 snapshots   39  our heads   2311  their heads   2398  our share 0.228  their share 0.345
+  [result] games we won                        snapshots  171  our heads  10043  their heads  10316  our share 0.204  their share 0.318
+  [result] games we lost                       snapshots  130  our heads   7511  their heads   7725  our share 0.202  their share 0.316
+  [nearest friend, my guess at the definition: median over heads of the distance to the nearest own head, kept snapshots on layouts with 2000+ open tiles] ours smaller 18, ours larger 104, tied 65

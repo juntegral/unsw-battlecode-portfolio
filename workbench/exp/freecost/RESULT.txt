@@ -1,0 +1,8 @@
+2026-10-02 06:08:24 KST freecost ANALYSIS: 160판, 68 on/off짝, 동일성 12키; 새 게임/봇·params 수정/커밋/네트워크 0.
+기준1 PASS: 무료 다중 이동 off 1630/119526(1.364%) → on 9701/111464(8.703%); 완주 1613→9681; N=68짝(seed1).
+기준2 완전 입력 PASS: fixtures on 2833/off 1386, oracleDrift 0/853339 완주 MOVE; 재구성 checks 전부0/160판.
+기준2 실제 기억 FAIL: knownBodyDrift 6845/347615 unknown=0태그(예측350600), 불확실204·unknown2985·blind845·누락0; 완전 관측 사례16.
+기준3 FAIL: Self 1317→1343(증가23키), Wall 3490→3289(증가17키), 여왕57→57(새 사망4·앞당김12); N=68짝.
+기준4 PASS: 공식 base/off WASM 동일, 사건·메시지12/12 동일; CPU 최대32.4M/160판(<80M), CPU누락0; d비교117173쌍(낮음1631).
+오류/oversprint/invalidAction/missing/historyErrors 모두0/160판; 판면2개·전수 예외·분모는 VERSION.md §13와 exp/freecost/RESULT.md.
+제안: switch OFF — 목적은 개선됐으나 몸 기억 drift와 키별 안전성 회귀가 남아 부분 적용 규칙의 깨짐 없음 미충족.

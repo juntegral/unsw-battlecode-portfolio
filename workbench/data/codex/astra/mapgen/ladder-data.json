@@ -1,0 +1,717 @@
+{
+  "rows": [
+    {
+      "name": "weakhold",
+      "source": "~/meow-redteam/engine/venv/lib/python3.13/site-packages/unswbc/templates/maps/weakhold.map",
+      "historical_metadata": {
+        "width": 40,
+        "height": 15,
+        "wall_share": 0.25416666666666665,
+        "portals": 0,
+        "pearl_tiles": 76,
+        "dragons_at_spawn": 2,
+        "queen_spawn_length": 4,
+        "queen_spawn_distance": 12
+      },
+      "w": 40,
+      "h": 15,
+      "cells": 600,
+      "symmetry": "xy",
+      "kelp": 0.25416666666666665,
+      "portals": 0,
+      "bearing": 76,
+      "bearing_share": 0.12666666666666668,
+      "timers": {
+        "1..1": 22,
+        "1..100": 24,
+        "1..250": 2,
+        "1..500": 28
+      },
+      "starts": [
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "start_distance": 73,
+      "queen_torus_distance": 12
+    },
+    {
+      "name": "Australia",
+      "source": "~/meow-redteam/maps/ladder/ladder_australia_1.map",
+      "historical_metadata": {
+        "width": 64,
+        "height": 64,
+        "wall_share": 0.0791015625,
+        "portals": 4,
+        "pearl_tiles": 338,
+        "dragons_at_spawn": 9,
+        "queen_spawn_length": 4,
+        "queen_spawn_distance": 40
+      },
+      "w": 64,
+      "h": 64,
+      "cells": 4096,
+      "symmetry": "xy",
+      "kelp": 0.0791015625,
+      "portals": 4,
+      "bearing": 338,
+      "bearing_share": 0.08251953125,
+      "timers": {
+        "1..10": 36,
+        "1..200": 62,
+        "1..2000": 112,
+        "100..500": 22,
+        "40..200": 104,
+        "8..30": 2
+      },
+      "starts": [
+        [
+          4,
+          4,
+          2,
+          2,
+          2,
+          2,
+          3,
+          4,
+          3
+        ],
+        [
+          4,
+          4,
+          2,
+          2,
+          2,
+          2,
+          3,
+          4,
+          3
+        ]
+      ],
+      "start_distance": 12,
+      "queen_torus_distance": 40
+    },
+    {
+      "name": "Islands",
+      "source": "~/meow-redteam/maps/ladder/ladder_islands_1.map",
+      "historical_metadata": {
+        "width": 56,
+        "height": 40,
+        "wall_share": 0.22633928571428572,
+        "portals": 12,
+        "pearl_tiles": 330,
+        "dragons_at_spawn": 5,
+        "queen_spawn_length": 3,
+        "queen_spawn_distance": 21
+      },
+      "w": 56,
+      "h": 40,
+      "cells": 2240,
+      "symmetry": "y",
+      "kelp": 0.22633928571428572,
+      "portals": 12,
+      "bearing": 330,
+      "bearing_share": 0.14732142857142858,
+      "timers": {
+        "1..1": 20,
+        "1..10": 8,
+        "1..200": 58,
+        "1..2559": 244
+      },
+      "starts": [
+        [
+          3,
+          3,
+          2,
+          2,
+          2
+        ],
+        [
+          3,
+          3,
+          2,
+          2,
+          2
+        ]
+      ],
+      "start_distance": 5,
+      "queen_torus_distance": 21
+    },
+    {
+      "name": "Maze",
+      "source": "~/meow-redteam/engine/venv/lib/python3.13/site-packages/unswbc/templates/maps/maze.map",
+      "historical_metadata": {
+        "width": 48,
+        "height": 24,
+        "wall_share": 0.2690972222222222,
+        "portals": 16,
+        "pearl_tiles": 350,
+        "dragons_at_spawn": 2,
+        "queen_spawn_length": 4,
+        "queen_spawn_distance": 16
+      },
+      "w": 48,
+      "h": 24,
+      "cells": 1152,
+      "symmetry": "xy",
+      "kelp": 0.2690972222222222,
+      "portals": 16,
+      "bearing": 350,
+      "bearing_share": 0.3038194444444444,
+      "timers": {
+        "1..1": 30,
+        "1..100": 2,
+        "1..1000": 52,
+        "1..200": 198,
+        "1..500": 20,
+        "10..30": 20,
+        "250..500": 28
+      },
+      "starts": [
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "start_distance": 43,
+      "queen_torus_distance": 16
+    },
+    {
+      "name": "Stripes",
+      "source": "~/meow-redteam/maps/ladder/ladder_stripes_1.map",
+      "historical_metadata": {
+        "width": 24,
+        "height": 12,
+        "wall_share": 0.2673611111111111,
+        "portals": 8,
+        "pearl_tiles": 70,
+        "dragons_at_spawn": 2,
+        "queen_spawn_length": 2,
+        "queen_spawn_distance": 8
+      },
+      "w": 24,
+      "h": 12,
+      "cells": 288,
+      "symmetry": "xy",
+      "kelp": 0.2673611111111111,
+      "portals": 8,
+      "bearing": 70,
+      "bearing_share": 0.24305555555555555,
+      "timers": {
+        "1..1": 12,
+        "1..10": 16,
+        "1..500": 42
+      },
+      "starts": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "start_distance": 14,
+      "queen_torus_distance": 8
+    },
+    {
+      "name": "Tower Defense",
+      "source": "~/meow-redteam/maps/ladder/ladder_tower_defense_1.map",
+      "historical_metadata": {
+        "width": 32,
+        "height": 16,
+        "wall_share": 0.28515625,
+        "portals": 0,
+        "pearl_tiles": 150,
+        "dragons_at_spawn": 2,
+        "queen_spawn_length": 2,
+        "queen_spawn_distance": 18
+      },
+      "w": 32,
+      "h": 16,
+      "cells": 512,
+      "symmetry": "xy",
+      "kelp": 0.28515625,
+      "portals": 0,
+      "bearing": 150,
+      "bearing_share": 0.29296875,
+      "timers": {
+        "1..1": 4,
+        "1..100": 60,
+        "1..500": 48,
+        "250..500": 16,
+        "400..500": 22
+      },
+      "starts": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "start_distance": 72,
+      "queen_torus_distance": 18
+    },
+    {
+      "name": "Around UNSW",
+      "source": "~/meow-redteam/maps/ladder/ladder_around_unsw_1.map",
+      "historical_metadata": {
+        "width": 64,
+        "height": 64,
+        "wall_share": 0.104736328125,
+        "portals": 4,
+        "pearl_tiles": 290,
+        "dragons_at_spawn": 10,
+        "queen_spawn_length": 4,
+        "queen_spawn_distance": 44
+      },
+      "w": 64,
+      "h": 64,
+      "cells": 4096,
+      "symmetry": "xy",
+      "kelp": 0.104736328125,
+      "portals": 4,
+      "bearing": 288,
+      "bearing_share": 0.0703125,
+      "timers": {
+        "1..1": 22,
+        "1..10": 8,
+        "1..100": 52,
+        "1..1000": 82,
+        "1..30": 28,
+        "1..500": 26,
+        "10..30": 34,
+        "250..500": 36
+      },
+      "starts": [
+        [
+          4,
+          4,
+          2,
+          2,
+          2,
+          2,
+          3,
+          4,
+          3,
+          10
+        ],
+        [
+          4,
+          4,
+          2,
+          2,
+          2,
+          2,
+          3,
+          4,
+          3,
+          10
+        ]
+      ],
+      "start_distance": 29,
+      "queen_torus_distance": 44
+    },
+    {
+      "name": "Default",
+      "source": "~/meow-redteam/engine/venv/lib/python3.13/site-packages/unswbc/templates/maps/default.map",
+      "historical_metadata": {
+        "width": 32,
+        "height": 32,
+        "wall_share": 0.107421875,
+        "portals": 12,
+        "pearl_tiles": 1021,
+        "dragons_at_spawn": 4,
+        "queen_spawn_length": 4,
+        "queen_spawn_distance": 2
+      },
+      "w": 32,
+      "h": 32,
+      "cells": 1024,
+      "symmetry": "xy",
+      "kelp": 0.107421875,
+      "portals": 12,
+      "bearing": 1024,
+      "bearing_share": 1.0,
+      "timers": {
+        "1..255": 58,
+        "1..3849": 762,
+        "1..385": 76,
+        "1..769": 128
+      },
+      "starts": [
+        [
+          4,
+          4,
+          4,
+          4
+        ],
+        [
+          4,
+          4,
+          4,
+          4
+        ]
+      ],
+      "start_distance": 6,
+      "queen_torus_distance": 2
+    },
+    {
+      "name": "Queen Of Spades",
+      "source": "~/meow-redteam/engine/venv/lib/python3.13/site-packages/unswbc/templates/maps/queen_of_spades.map",
+      "historical_metadata": {
+        "width": 25,
+        "height": 35,
+        "wall_share": 0.16914285714285715,
+        "portals": 2,
+        "pearl_tiles": 472,
+        "dragons_at_spawn": 2,
+        "queen_spawn_length": 3,
+        "queen_spawn_distance": 23
+      },
+      "w": 25,
+      "h": 35,
+      "cells": 875,
+      "symmetry": "xy",
+      "kelp": 0.16914285714285715,
+      "portals": 2,
+      "bearing": 442,
+      "bearing_share": 0.5051428571428571,
+      "timers": {
+        "1..1000": 410,
+        "1..50": 32
+      },
+      "starts": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "start_distance": 24,
+      "queen_torus_distance": 23
+    },
+    {
+      "name": "Schooltime",
+      "source": "~/meow-redteam/maps/ladder/ladder_schooltime_1.map",
+      "historical_metadata": {
+        "width": 60,
+        "height": 40,
+        "wall_share": 0.19270833333333334,
+        "portals": 12,
+        "pearl_tiles": 178,
+        "dragons_at_spawn": 3,
+        "queen_spawn_length": 4,
+        "queen_spawn_distance": 7
+      },
+      "w": 60,
+      "h": 40,
+      "cells": 2400,
+      "symmetry": "y",
+      "kelp": 0.19270833333333334,
+      "portals": 12,
+      "bearing": 178,
+      "bearing_share": 0.07416666666666667,
+      "timers": {
+        "20..200": 158,
+        "20..50": 18,
+        "20..80": 2
+      },
+      "starts": [
+        [
+          4,
+          4,
+          4
+        ],
+        [
+          4,
+          4,
+          4
+        ]
+      ],
+      "start_distance": 13,
+      "queen_torus_distance": 7
+    },
+    {
+      "name": "Trophy",
+      "source": "~/meow-redteam/engine/venv/lib/python3.13/site-packages/unswbc/templates/maps/trophy.map",
+      "historical_metadata": {
+        "width": 25,
+        "height": 25,
+        "wall_share": 0.0736,
+        "portals": 1,
+        "pearl_tiles": 547,
+        "dragons_at_spawn": 2,
+        "queen_spawn_length": 3,
+        "queen_spawn_distance": 9
+      },
+      "w": 25,
+      "h": 25,
+      "cells": 625,
+      "symmetry": "y",
+      "kelp": 0.0736,
+      "portals": 1,
+      "bearing": 547,
+      "bearing_share": 0.8752,
+      "timers": {
+        "1..100": 47,
+        "1..1000": 489,
+        "5..30": 11
+      },
+      "starts": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "start_distance": 9,
+      "queen_torus_distance": 9
+    },
+    {
+      "name": "Devil",
+      "source": "~/meow-redteam/engine/venv/lib/python3.13/site-packages/unswbc/templates/maps/devil.map",
+      "historical_metadata": {
+        "width": 32,
+        "height": 16,
+        "wall_share": 0.23828125,
+        "portals": 0,
+        "pearl_tiles": 176,
+        "dragons_at_spawn": 3,
+        "queen_spawn_length": 4,
+        "queen_spawn_distance": 7
+      },
+      "w": 32,
+      "h": 16,
+      "cells": 512,
+      "symmetry": "y",
+      "kelp": 0.23828125,
+      "portals": 0,
+      "bearing": 174,
+      "bearing_share": 0.33984375,
+      "timers": {
+        "1..1": 18,
+        "1..150": 16,
+        "1..30": 12,
+        "1..300": 64,
+        "1..600": 64
+      },
+      "starts": [
+        [
+          4,
+          4,
+          4
+        ],
+        [
+          4,
+          4,
+          4
+        ]
+      ],
+      "start_distance": 31,
+      "queen_torus_distance": 7
+    },
+    {
+      "name": "Trauma",
+      "source": "~/meow-redteam/engine/venv/lib/python3.13/site-packages/unswbc/templates/maps/trauma.map",
+      "historical_metadata": {
+        "width": 48,
+        "height": 24,
+        "wall_share": 0.24479166666666666,
+        "portals": 6,
+        "pearl_tiles": 142,
+        "dragons_at_spawn": 2,
+        "queen_spawn_length": 4,
+        "queen_spawn_distance": 16
+      },
+      "w": 48,
+      "h": 24,
+      "cells": 1152,
+      "symmetry": "xy",
+      "kelp": 0.24479166666666666,
+      "portals": 6,
+      "bearing": 142,
+      "bearing_share": 0.1232638888888889,
+      "timers": {
+        "1..1": 12,
+        "1..200": 130
+      },
+      "starts": [
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "start_distance": 98,
+      "queen_torus_distance": 16
+    },
+    {
+      "name": "Portals",
+      "source": "~/meow-redteam/maps/ladder/ladder_portals_1.map",
+      "historical_metadata": {
+        "width": 32,
+        "height": 16,
+        "wall_share": 0.279296875,
+        "portals": 20,
+        "pearl_tiles": 104,
+        "dragons_at_spawn": 3,
+        "queen_spawn_length": 3,
+        "queen_spawn_distance": 6
+      },
+      "w": 32,
+      "h": 16,
+      "cells": 512,
+      "symmetry": "xy",
+      "kelp": 0.279296875,
+      "portals": 20,
+      "bearing": 104,
+      "bearing_share": 0.203125,
+      "timers": {
+        "1..1": 8,
+        "1..10": 96
+      },
+      "starts": [
+        [
+          3,
+          3,
+          3
+        ],
+        [
+          3,
+          3,
+          3
+        ]
+      ],
+      "start_distance": null,
+      "queen_torus_distance": 6
+    },
+    {
+      "name": "Slithery Fight",
+      "source": "~/meow-redteam/maps/ladder/ladder_slithery_fight_1.map",
+      "historical_metadata": {
+        "width": 63,
+        "height": 27,
+        "wall_share": 0.15108759553204,
+        "portals": 2,
+        "pearl_tiles": 497,
+        "dragons_at_spawn": 7,
+        "queen_spawn_length": 25,
+        "queen_spawn_distance": 16
+      },
+      "w": 63,
+      "h": 27,
+      "cells": 1701,
+      "symmetry": "xy",
+      "kelp": 0.15108759553204,
+      "portals": 2,
+      "bearing": 497,
+      "bearing_share": 0.29218106995884774,
+      "timers": {
+        "1..1": 18,
+        "1..10": 32,
+        "1..20": 2,
+        "1..5": 58,
+        "1..500": 43,
+        "1..755": 306,
+        "100..300": 12,
+        "100..500": 26
+      },
+      "starts": [
+        [
+          25,
+          7,
+          4,
+          2,
+          5,
+          2,
+          2
+        ],
+        [
+          25,
+          7,
+          4,
+          2,
+          5,
+          2,
+          2
+        ]
+      ],
+      "start_distance": 4,
+      "queen_torus_distance": 16
+    }
+  ],
+  "bounds": {
+    "w": [
+      24,
+      64
+    ],
+    "h": [
+      12,
+      64
+    ],
+    "cells": [
+      288,
+      4096
+    ],
+    "kelp": [
+      0.0736,
+      0.28515625
+    ],
+    "portals": [
+      0,
+      20
+    ],
+    "bearing_share": [
+      0.0703125,
+      1.0
+    ],
+    "start_distance": [
+      4,
+      98
+    ],
+    "timer_lo": [
+      1,
+      400
+    ],
+    "timer_hi": [
+      1,
+      3849
+    ],
+    "start_lengths": [
+      2,
+      3,
+      4,
+      5,
+      7,
+      10,
+      25
+    ],
+    "start_count": [
+      2,
+      10
+    ]
+  }
+}

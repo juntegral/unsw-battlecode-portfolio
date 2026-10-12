@@ -1,0 +1,118 @@
+{
+  "assertions_passed": true,
+  "fixture_checks": [
+    "own_tail_is_fatal",
+    "fatal_step_does_not_move_head",
+    "free_budget_fixed_at_start",
+    "pay_check_precedes_eating",
+    "food_extends_length_only_reach",
+    "split_front_keeps_queen_id",
+    "child_reverse_and_same_round_turn",
+    "illegal_split_kills_parent",
+    "L3_drops_head_and_tail",
+    "L3_feeder_full_collection_free",
+    "friendly_head_to_head_kills_queen",
+    "victim_drops_before_attacker",
+    "body_feed_preserves_queen",
+    "body_feed_drops_before_contact",
+    "wall_drops_at_original_body",
+    "oversprint_drops_only_remaining_length2",
+    "portal_one_step_far_head_attack",
+    "ten_L3_deliveries_gain20",
+    "L4_split_child_attacks_at_distance_4",
+    "L5_split_child_attacks_at_distance_6",
+    "L6_split_child_attacks_at_distance_8",
+    "L7_split_child_attacks_at_distance_11",
+    "L8_split_child_attacks_at_distance_13",
+    "L9_split_child_attacks_at_distance_15",
+    "L10_split_child_attacks_at_distance_17",
+    "L11_split_child_attacks_at_distance_20",
+    "L12_split_child_attacks_at_distance_22",
+    "L13_split_child_attacks_at_distance_24",
+    "L14_split_child_attacks_at_distance_26",
+    "L15_split_child_attacks_at_distance_29",
+    "L16_split_child_attacks_at_distance_31",
+    "L17_split_child_attacks_at_distance_33",
+    "L18_split_child_attacks_at_distance_35",
+    "L19_split_child_attacks_at_distance_38",
+    "L20_split_child_attacks_at_distance_40",
+    "L21_split_child_attacks_at_distance_42",
+    "L22_split_child_attacks_at_distance_44",
+    "L23_split_child_attacks_at_distance_47",
+    "L24_split_child_attacks_at_distance_49",
+    "L25_split_child_attacks_at_distance_51",
+    "L26_split_child_attacks_at_distance_53",
+    "L27_split_child_attacks_at_distance_56",
+    "L28_split_child_attacks_at_distance_58",
+    "L29_split_child_attacks_at_distance_60",
+    "L30_split_child_attacks_at_distance_62",
+    "L31_split_child_attacks_at_distance_65",
+    "L32_split_child_attacks_at_distance_67",
+    "L33_split_child_attacks_at_distance_69",
+    "L34_split_child_attacks_at_distance_71",
+    "L35_split_child_attacks_at_distance_74",
+    "L36_split_child_attacks_at_distance_76",
+    "L37_split_child_attacks_at_distance_78",
+    "L38_split_child_attacks_at_distance_80",
+    "L39_split_child_attacks_at_distance_83",
+    "L40_split_child_attacks_at_distance_85",
+    "living_short_queen_beats_dead_queen_huge_backup",
+    "both_dead_backup_longest_precedes_total"
+  ],
+  "rooms": {
+    "masks": 209,
+    "mask_length_cases": 862,
+    "body_states": 9648,
+    "viable_states": 3596,
+    "symmetry_distinct_safe_shape_length_cases": 50
+  },
+  "reach_lengths": 39,
+  "exact_reach_lengths": 7,
+  "vault": {
+    "phase_cases": 575,
+    "safe_cases": 72,
+    "Q9_fixture_turns": 1280
+  },
+  "assassination": [
+    {
+      "name": "open_Q2_H2_one",
+      "legal_queen_choices": 3,
+      "all_choices_killed": false
+    },
+    {
+      "name": "open_Q2_H2_two",
+      "legal_queen_choices": 3,
+      "all_choices_killed": true
+    },
+    {
+      "name": "corridor_Q3_H3",
+      "legal_queen_choices": 2,
+      "all_choices_killed": true
+    },
+    {
+      "name": "corridor_Q4_H2",
+      "legal_queen_choices": 4,
+      "all_choices_killed": false
+    },
+    {
+      "name": "mouth_Q3_H3",
+      "legal_queen_choices": 1,
+      "all_choices_killed": true
+    },
+    {
+      "name": "open_Q2_H4_one",
+      "legal_queen_choices": 3,
+      "all_choices_killed": true
+    },
+    {
+      "name": "open_Q3_H5_one",
+      "legal_queen_choices": 10,
+      "all_choices_killed": false
+    },
+    {
+      "name": "open_Q3_H6_one",
+      "legal_queen_choices": 10,
+      "all_choices_killed": true
+    }
+  ]
+}

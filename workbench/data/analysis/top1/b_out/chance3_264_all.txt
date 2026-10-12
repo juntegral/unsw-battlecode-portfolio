@@ -1,0 +1,85 @@
+team 264: rounds 0-499, attackers up to 12 long: 457 in-view chances in 308 games; taken 254
+  a pearl within 1 step of the attacker: False: 241/409 | True: 13/48
+  a pearl within 2 steps: False: 217/356 | True: 37/101
+  own heads within 4 steps of the attacker: 0: 127/284 | 1: 80/114 | 2: 33/44 | 3: 14/15
+  enemy heads (not the queen) within 4 steps of the attacker: 0: 201/317 | 1: 40/97 | 2: 10/33 | 3: 3/10
+  own heads within 2 steps of her: 0: 212/403 | 1: 41/52 | 2: 1/2
+  her own heads within 3 steps of her: 0: 219/356 | 1: 30/79 | 2: 4/18 | 3: 1/4
+  own queen alive: 0: 91/141 | 1: 163/316
+  age of the attacker (rounds since born): 0-4: 30/44 | 20+: 160/274 | 5-19: 64/139
+  attacker length, her length: L10 vs her 3: 0/3 | L10 vs her 4: 0/6 | L12 vs her 2: 0/1 | L12 vs her 3: 0/5 | L12 vs her 4: 0/7 | L2 vs her 2: 62/86 | L2 vs her 3: 23/29 | L2 vs her 4: 21/23 | L3 vs her 2: 37/75 | L3 vs her 3: 43/64 | L3 vs her 4: 35/40 | L4 vs her 2: 1/18 | L4 vs her 3: 2/18 | L4 vs her 4: 9/17 | L5 vs her 2: 1/1 | L5 vs her 3: 0/3 | L5 vs her 4: 10/12 | L6 vs her 2: 1/1 | L6 vs her 4: 3/11 | L7 vs her 2: 1/2 | L7 vs her 3: 1/1 | L7 vs her 4: 2/25 | L8 vs her 2: 0/2 | L8 vs her 4: 1/4 | L9 vs her 4: 1/3
+  map: Around UNSW: 21/30 | Australia: 20/47 | Autarky: 16/31 | Default: 21/40 | Devil: 16/37 | Islands: 33/46 | Maze: 10/11 | Prisoners Dilemma: 19/22 | Queen Of Spades: 16/30 | Slithery Fight: 6/13 | Stripes: 22/47 | Tower Defense: 19/33 | Trauma: 0/1 | Trophy: 18/39 | weakhold: 17/30
+  allies4 minus foes4 (incl. the queen as one foe): -1: 117/232 | -2: 30/95 | 0: 64/81 | 1: 31/37 | 2: 12/12
+  not taken: 203; what it did instead: {'farther': 104, 'closer': 39, 'split': 47, 'same': 12, 'died': 1}; ate that turn: 19; she was rammed by another dragon of the team that round: 3
+  not taken, what it did instead, by attacker length: 10-12: {'farther': 9, 'closer': 11, 'split': 1, 'same': 1}; 2-3: {'farther': 77, 'closer': 15, 'same': 3, 'died': 1}; 4: {'split': 40, 'closer': 1}; 5-9: {'split': 6, 'closer': 12, 'farther': 18, 'same': 8}
+  attackers 5-12 long, taken by her length relative to the attacker: her length <= attacker - 3: 6/41; her length = attacker - 1 or - 2: 4/14; her length >= attacker: 11/32
+    1046186 Queen Of Spades r58 #23 L2 needs 1 her L2; did: farther; pearl within 1: False; own heads near me 0, enemy heads near me 1, her escort 1; own queen alive 1; age 6
+    1046186 Queen Of Spades r61 #23 L2 needs 1 her L2; did: farther; pearl within 1: False; own heads near me 0, enemy heads near me 1, her escort 0; own queen alive 1; age 9
+    1046192 Trophy r20 #3 L3 needs 2 her L2; did: closer and ate; pearl within 1: True; own heads near me 0, enemy heads near me 0, her escort 1; own queen alive 1; age 20
+    1046962 Around UNSW r87 #157 L2 needs 1 her L3; did: farther; pearl within 1: False; own heads near me 0, enemy heads near me 0, her escort 0; own queen alive 0; age 12
+    1046962 Around UNSW r102 #157 L5 needs 2 her L9; did: split; pearl within 1: False; own heads near me 0, enemy heads near me 1, her escort 0; own queen alive 0; age 27
+    1046962 Around UNSW r137 #282 L10 needs 10 her L3; did: farther; pearl within 1: False; own heads near me 0, enemy heads near me 0, her escort 0; own queen alive 0; age 23
+    1046962 Around UNSW r177 #365 L8 needs 5 her L10; did: closer; pearl within 1: False; own heads near me 0, enemy heads near me 0, her escort 0; own queen alive 0; age 24
+    1046963 weakhold r78 #20 L3 needs 2 her L2; did: farther; pearl within 1: False; own heads near me 0, enemy heads near me 0, her escort 0; own queen alive 1; age 38
+    1046966 Devil r33 #13 L3 needs 2 her L3; did: farther; pearl within 1: False; own heads near me 0, enemy heads near me 0, her escort 2; own queen alive 0; age 18
+    1046966 Devil r69 #46 L4 needs 2 her L2; did: split; pearl within 1: True; own heads near me 1, enemy heads near me 1, her escort 3; own queen alive 0; age 20
+    1046968 Australia r191 #141 L7 needs 4 her L5; did: closer; pearl within 1: False; own heads near me 0, enemy heads near me 1, her escort 0; own queen alive 1; age 73
+    1046968 Australia r192 #141 L7 needs 5 her L4; did: farther; pearl within 1: False; own heads near me 0, enemy heads near me 1, her escort 0; own queen alive 1; age 74
+    1046968 Australia r195 #141 L7 needs 7 her L4; did: farther; pearl within 1: False; own heads near me 0, enemy heads near me 3, her escort 0; own queen alive 1; age 77
+    1046968 Australia r196 #141 L7 needs 5 her L4; did: farther; pearl within 1: False; own heads near me 0, enemy heads near me 3, her escort 1; own queen alive 1; age 78
+    1046968 Australia r197 #141 L7 needs 5 her L4; did: farther; pearl within 1: False; own heads near me 0, enemy heads near me 2, her escort 0; own queen alive 1; age 79
+    1046968 Australia r200 #141 L7 needs 4 her L4; did: farther; pearl within 1: False; own heads near me 0, enemy heads near me 0, her escort 0; own queen alive 1; age 82
+    1046968 Australia r201 #141 L7 needs 4 her L4; did: farther; pearl within 1: False; own heads near me 0, enemy heads near me 1, her escort 0; own queen alive 1; age 83
+    1046968 Australia r203 #141 L7 needs 5 her L4; did: farther and ate; pearl within 1: False; own heads near me 0, enemy heads near me 1, her escort 0; own queen alive 1; age 85
+    1046973 Autarky r180 #191 L4 needs 3 her L4; did: split; pearl within 1: True; own heads near me 1, enemy heads near me 1, her escort 0; own queen alive 1; age 15
+    1046985 Australia r81 #13 L2 needs 1 her L2; did: farther; pearl within 1: False; own heads near me 0, enemy heads near me 1, her escort 1; own queen alive 0; age 81
+    1046990 Autarky r87 #55 L4 needs 3 her L2; did: split; pearl within 1: False; own heads near me 0, enemy heads near me 1, her escort 0; own queen alive 1; age 39
+    1047000 Devil r35 #26 L4 needs 3 her L2; did: split; pearl within 1: False; own heads near me 0, enemy heads near me 0, her escort 2; own queen alive 1; age 5
+    1047010 Default r368 #155 L7 needs 4 her L8; did: same; pearl within 1: False; own heads near me 0, enemy heads near me 0, her escort 0; own queen alive 0; age 93
+    1049823 Australia r144 #146 L12 needs 5 her L5; did: closer; pearl within 1: False; own heads near me 2, enemy heads near me 1, her escort 1; own queen alive 0; age 47
+    1050077 Maze r375 #769 L12 needs 6 her L19; did: closer; pearl within 1: False; own heads near me 1, enemy heads near me 0, her escort 0; own queen alive 1; age 4
+    1050218 Autarky r453 #413 L9 needs 4 her L25; did: closer and ate; pearl within 1: True; own heads near me 0, enemy heads near me 1, her escort 0; own queen alive 1; age 63
+    1050218 Autarky r454 #413 L10 needs 4 her L25; did: closer; pearl within 1: False; own heads near me 0, enemy heads near me 2, her escort 0; own queen alive 1; age 64
+    1050218 Autarky r455 #413 L10 needs 4 her L25; did: closer and ate; pearl within 1: False; own heads near me 0, enemy heads near me 2, her escort 0; own queen alive 1; age 65
+    1050220 Default r235 #99 L4 needs 3 her L4; did: split; pearl within 1: False; own heads near me 0, enemy heads near me 3, her escort 1; own queen alive 0; age 71
+    1050393 Slithery Fight r398 #1462 L7 needs 5 her L5; did: closer; pearl within 1: False; own heads near me 0, enemy heads near me 0, her escort 3; own queen alive 1; age 15
+    1050393 Slithery Fight r399 #1462 L7 needs 4 her L6; did: farther; pearl within 1: False; own heads near me 0, enemy heads near me 1, her escort 2; own queen alive 1; age 16
+    1050393 Slithery Fight r407 #1462 L7 needs 6 her L10; did: closer; pearl within 1: False; own heads near me 0, enemy heads near me 0, her escort 1; own queen alive 1; age 24
+    1050393 Slithery Fight r408 #1462 L7 needs 5 her L11; did: closer and ate; pearl within 1: True; own heads near me 0, enemy heads near me 1, her escort 1; own queen alive 1; age 25
+    1050722 Queen Of Spades r57 #8 L2 needs 1 her L2; did: farther; pearl within 1: False; own heads near me 0, enemy heads near me 2, her escort 2; own queen alive 1; age 34
+    1050725 Tower Defense r280 #97 L5 needs 3 her L6; did: split; pearl within 1: True; own heads near me 0, enemy heads near me 1, her escort 0; own queen alive 1; age 81
+    1051267 Default r20 #8 L2 needs 1 her L2; did: farther; pearl within 1: False; own heads near me 0, enemy heads near me 0, her escort 0; own queen alive 1; age 20
+    1051267 Default r21 #8 L2 needs 1 her L2; did: farther; pearl within 1: False; own heads near me 0, enemy heads near me 0, her escort 0; own queen alive 1; age 21
+    1051269 Queen Of Spades r49 #14 L5 needs 1 her L3; did: farther; pearl within 1: False; own heads near me 1, enemy heads near me 0, her escort 0; own queen alive 1; age 11
+    1051271 weakhold r59 #26 L3 needs 2 her L2; did: closer; pearl within 1: True; own heads near me 2, enemy heads near me 0, her escort 0; own queen alive 1; age 10
+    1051271 weakhold r63 #26 L3 needs 1 her L2; did: farther; pearl within 1: False; own heads near me 0, enemy heads near me 0, her escort 0; own queen alive 1; age 14
+    1051272 Trophy r29 #4 L3 needs 2 her L2; did: farther; pearl within 1: False; own heads near me 0, enemy heads near me 0, her escort 0; own queen alive 1; age 23
+    1051274 Devil r24 #2 L4 needs 3 her L3; did: split; pearl within 1: False; own heads near me 0, enemy heads near me 1, her escort 1; own queen alive 1; age 24
+    1051274 Devil r38 #24 L2 needs 1 her L2; did: farther; pearl within 1: False; own heads near me 1, enemy heads near me 1, her escort 0; own queen alive 1; age 8
+    1051274 Devil r59 #22 L3 needs 2 her L4; did: closer and ate; pearl within 1: True; own heads near me 0, enemy heads near me 0, her escort 0; own queen alive 0; age 31
+    1051274 Devil r60 #22 L4 needs 1 her L2; did: split; pearl within 1: False; own heads near me 0, enemy heads near me 1, her escort 1; own queen alive 0; age 32
+    1051281 Autarky r73 #62 L3 needs 2 her L3; did: farther; pearl within 1: False; own heads near me 1, enemy heads near me 1, her escort 2; own queen alive 0; age 22
+    1051284 Default r131 #6 L7 needs 5 her L2; did: split; pearl within 1: False; own heads near me 2, enemy heads near me 0, her escort 1; own queen alive 0; age 131
+    1051285 Stripes r20 #5 L2 needs 1 her L2; did: farther; pearl within 1: False; own heads near me 0, enemy heads near me 0, her escort 0; own queen alive 1; age 8
+    1051285 Stripes r37 #9 L3 needs 1 her L2; did: farther; pearl within 1: False; own heads near me 0, enemy heads near me 0, her escort 0; own queen alive 1; age 6
+    1051289 Trophy r21 #3 L3 needs 2 her L3; did: farther; pearl within 1: False; own heads near me 0, enemy heads near me 2, her escort 1; own queen alive 1; age 21
+    1051289 Trophy r28 #11 L4 needs 2 her L2; did: split; pearl within 1: True; own heads near me 0, enemy heads near me 0, her escort 0; own queen alive 1; age 4; another dragon rammed her this round
+    1051301 Default r107 #48 L2 needs 1 her L3; did: farther; pearl within 1: False; own heads near me 0, enemy heads near me 1, her escort 0; own queen alive 1; age 9
+    1051301 Default r112 #48 L2 needs 1 her L3; did: farther; pearl within 1: False; own heads near me 0, enemy heads near me 3, her escort 1; own queen alive 1; age 14
+    1051314 Islands r124 #91 L5 needs 3 her L3; did: split; pearl within 1: False; own heads near me 0, enemy heads near me 0, her escort 0; own queen alive 1; age 65
+    1051315 Autarky r60 #19 L4 needs 1 her L3; did: split; pearl within 1: False; own heads near me 1, enemy heads near me 1, her escort 1; own queen alive 1; age 57
+    1051315 Autarky r62 #75 L2 needs 1 her L2; did: farther; pearl within 1: False; own heads near me 0, enemy heads near me 3, her escort 2; own queen alive 1; age 2
+    1051315 Autarky r77 #19 L4 needs 1 her L2; did: split; pearl within 1: False; own heads near me 0, enemy heads near me 1, her escort 1; own queen alive 0; age 74
+    1051315 Autarky r89 #104 L3 needs 2 her L2; did: farther; pearl within 1: False; own heads near me 0, enemy heads near me 0, her escort 0; own queen alive 0; age 1
+    1051315 Autarky r90 #104 L3 needs 2 her L2; did: closer; pearl within 1: False; own heads near me 0, enemy heads near me 0, her escort 0; own queen alive 0; age 2
+    1051315 Autarky r91 #104 L3 needs 2 her L2; did: closer and ate; pearl within 1: True; own heads near me 0, enemy heads near me 0, her escort 0; own queen alive 0; age 3
+    1051316 Trauma r457 #479 L7 needs 6 her L37; did: closer; pearl within 1: False; own heads near me 0, enemy heads near me 2, her escort 0; own queen alive 1; age 124
+    1051317 Tower Defense r85 #33 L2 needs 1 her L2; did: farther; pearl within 1: False; own heads near me 0, enemy heads near me 2, her escort 2; own queen alive 1; age 4
+    1051317 Tower Defense r86 #33 L2 needs 1 her L2; did: farther; pearl within 1: False; own heads near me 1, enemy heads near me 2, her escort 2; own queen alive 1; age 5
+    1051317 Tower Defense r89 #35 L3 needs 2 her L2; did: same; pearl within 1: False; own heads near me 1, enemy heads near me 1, her escort 2; own queen alive 1; age 5
+    1051317 Tower Defense r90 #35 L2 needs 1 her L2; did: farther; pearl within 1: False; own heads near me 2, enemy heads near me 2, her escort 1; own queen alive 1; age 6
+    1051317 Tower Defense r95 #35 L2 needs 1 her L2; did: farther; pearl within 1: False; own heads near me 1, enemy heads near me 1, her escort 1; own queen alive 1; age 11
+    1051324 Islands r471 #1046 L12 needs 9 her L4; did: farther; pearl within 1: False; own heads near me 0, enemy heads near me 0, her escort 0; own queen alive 0; age 29
+    1051324 Islands r473 #1046 L12 needs 13 her L5; did: closer; pearl within 1: False; own heads near me 0, enemy heads near me 0, her escort 0; own queen alive 0; age 31
+    1051324 Islands r474 #1046 L12 needs 11 her L6; did: farther; pearl within 1: True; own heads near me 0, enemy heads near me 0, her escort 0; own queen alive 0; age 32
+    1051324 Islands r482 #1046 L12 needs 3 her L6; did: farther; pearl within 1: False; own heads near me 0, enemy heads near me 0, her escort 0; own queen alive 0; age 40

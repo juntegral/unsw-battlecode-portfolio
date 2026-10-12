@@ -1,0 +1,64 @@
+game 733344 map Prisoners Dilemma/a us=B result {"winner":"A","end":"teamEliminated"}
+tags(our turns): {"sx":0,"sr":0,"sd":0,"sf":0,"sq":0,"sc":0,"sk":0,"esc":0,"split":0}
+timeline r | our units / longest / total | their units / longest / total
+  r  0 |   5 /  11 /   21 |   5 /  11 /   21
+  r 25 |   4 /   3 /   10 |   9 /   4 /   21
+  r 50 |   3 /   3 /    8 |  13 /   4 /   32
+local feeds (sf) 0: first 12 → 
+--- r25: ours 4 dragons [3 3 2 2] total 10 | theirs 9 [4 3 2 2 2 2 2 2 …] total 21
++--------------------------------+
+|              %  %              |
+|              o  o             3|
+|                              ..|
+|              X  X         2    |
+|            x x  x         .    |
+|            X x      ..3        |
+|             xX     xX          |
+|                 x             X|
+|              Xx x             x|
+|                xx              |
+|              % XX              |
+|         2.                     |
+|                                |
+|              %                 |
+|              o  o              |
+|              %  %              |
++--------------------------------+
+--- r50: ours 3 dragons [3 3 2] total 8 | theirs 13 [4 3 3 3 3 2 2 2 …] total 32
++--------------------------------+
+|              %  %              |
+|              o  o              |
+|              %X X .            |
+|               x x3.            |
+|         X     x x              |
+|             x   xX   .   x     |
+|             X   x  xX.         |
+|                   x  3         |
+|                   X            |
+|                  Xx            |
+|              x                 |
+|        xX    X Xx 2 Xx         |
+|               xxx .            |
+|                 x              |
+|              o  X              |
+|              %  %              |
++--------------------------------+
+--- r65: ours 1 dragons [3] total 3 | theirs 14 [4 3 3 3 3 2 2 2 …] total 34
++--------------------------------+
+|              %  %              |
+|              o  o Xxx          |
+|              X  X              |
+|              x  x              |
+|          X   xx x  .           |
+|          x  xX    3.           |
+|                                |
+|            Xx     xX           |
+|                 xxX            |
+|                  X             |
+|              X   x   xX        |
+|              x x  X            |
+|                X  x            |
+|                 x              |
+|              o  x              |
+|              %  X              |
++--------------------------------+

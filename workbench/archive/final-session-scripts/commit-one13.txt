@@ -1,0 +1,10 @@
+Switches of the live bot one13 into main (all off by default) and the server profile updated
+
+mybot2/main.cpp now carries every switch tried on the night of 8-9 Oct, each
+off by default. With all switches off the bot plays move for move like the
+previous main (12 local games against old main, replays equal except for the
+bot name). work/server_profile.txt holds the 45 switch values of the live bot
+one13 (submission 21377); work/server_bot.py with this profile reproduces the
+live source exactly.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>

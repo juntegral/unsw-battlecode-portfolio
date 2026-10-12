@@ -1,0 +1,666 @@
+{
+ "N": 15,
+ "mismatch": [],
+ "maps": {
+  "Autarky/a": {
+   "NLayouts": 1,
+   "primary": {
+    "spawnTiles": 188,
+    "pocketTiles": 16,
+    "capacity": 10.391580475412757,
+    "kelpDensity": 0.10905349794238683,
+    "startDistance": 7
+   },
+   "independent": {
+    "spawnTiles": 188,
+    "pocketTiles": 16,
+    "capacity": 10.391580475412827,
+    "kelpDensity": 0.10905349794238683,
+    "startDistance": 7
+   },
+   "corridorWidthPrimary": {
+    "N": 972,
+    "mean": 12.510288065843621,
+    "p10": 3,
+    "median": 16
+   },
+   "corridorWidthIndependent": {
+    "N": 972,
+    "mean": 12.510288065843621,
+    "p10": 3,
+    "median": 16
+   },
+   "graphMismatch": 0,
+   "coreMismatch": 0,
+   "startVertexCut": 21,
+   "extraFeatures": {
+    "corridorWidthMean": 12.510288065843621,
+    "corridorWidthP10": 3,
+    "corridorWidthMedian": 16,
+    "widthTileN": 972,
+    "initialKing": 14,
+    "symmetryReference": "xy",
+    "homeCapacity": 5.187806205770285,
+    "reachableComponentAreaA": 972,
+    "reachableComponentAreaB": 972
+   },
+   "source": "independent spatial edge-pair graph and iterative 2-core; atlas geometry for capacity/path/kelp"
+  },
+  "Default/a": {
+   "NLayouts": 1,
+   "primary": {
+    "spawnTiles": 1024,
+    "pocketTiles": 0,
+    "capacity": 1.575219071731387,
+    "kelpDensity": 0.10546875,
+    "startDistance": 2
+   },
+   "independent": {
+    "spawnTiles": 1024,
+    "pocketTiles": 0,
+    "capacity": 1.575219071731373,
+    "kelpDensity": 0.10546875,
+    "startDistance": 2
+   },
+   "corridorWidthPrimary": {
+    "N": 1024,
+    "mean": 13.5625,
+    "p10": 2,
+    "median": 6
+   },
+   "corridorWidthIndependent": {
+    "N": 1024,
+    "mean": 13.5625,
+    "p10": 2,
+    "median": 6
+   },
+   "graphMismatch": 0,
+   "coreMismatch": 0,
+   "startVertexCut": 12,
+   "extraFeatures": {
+    "corridorWidthMean": 13.5625,
+    "corridorWidthP10": 2,
+    "corridorWidthMedian": 6,
+    "widthTileN": 1024,
+    "initialKing": 4,
+    "symmetryReference": "xy",
+    "homeCapacity": 0.7501460618397089,
+    "reachableComponentAreaA": 1024,
+    "reachableComponentAreaB": 1024
+   },
+   "source": "independent spatial edge-pair graph and iterative 2-core; atlas geometry for capacity/path/kelp"
+  },
+  "Devil/a": {
+   "NLayouts": 1,
+   "primary": {
+    "spawnTiles": 174,
+    "pocketTiles": 0,
+    "capacity": 19.624341617008007,
+    "kelpDensity": 0.23828125,
+    "startDistance": 31
+   },
+   "independent": {
+    "spawnTiles": 174,
+    "pocketTiles": 0,
+    "capacity": 19.624341617008007,
+    "kelpDensity": 0.23828125,
+    "startDistance": 31
+   },
+   "corridorWidthPrimary": {
+    "N": 512,
+    "mean": 4.90625,
+    "p10": 1,
+    "median": 2
+   },
+   "corridorWidthIndependent": {
+    "N": 512,
+    "mean": 4.90625,
+    "p10": 1,
+    "median": 2
+   },
+   "graphMismatch": 0,
+   "coreMismatch": 0,
+   "startVertexCut": 3,
+   "extraFeatures": {
+    "corridorWidthMean": 4.90625,
+    "corridorWidthP10": 1,
+    "corridorWidthMedian": 2,
+    "widthTileN": 512,
+    "initialKing": 4,
+    "symmetryReference": "y",
+    "homeCapacity": 9.812170808504003,
+    "reachableComponentAreaA": 512,
+    "reachableComponentAreaB": 512
+   },
+   "source": "independent spatial edge-pair graph and iterative 2-core; atlas geometry for capacity/path/kelp"
+  },
+  "Devil/b": {
+   "NLayouts": 1,
+   "primary": {
+    "spawnTiles": 76,
+    "pocketTiles": 0,
+    "capacity": 20.477701260698332,
+    "kelpDensity": 0.23828125,
+    "startDistance": 31
+   },
+   "independent": {
+    "spawnTiles": 76,
+    "pocketTiles": 0,
+    "capacity": 20.47770126069834,
+    "kelpDensity": 0.23828125,
+    "startDistance": 31
+   },
+   "corridorWidthPrimary": {
+    "N": 512,
+    "mean": 4.90625,
+    "p10": 1,
+    "median": 2
+   },
+   "corridorWidthIndependent": {
+    "N": 512,
+    "mean": 4.90625,
+    "p10": 1,
+    "median": 2
+   },
+   "graphMismatch": 0,
+   "coreMismatch": 0,
+   "startVertexCut": 3,
+   "extraFeatures": {
+    "corridorWidthMean": 4.90625,
+    "corridorWidthP10": 1,
+    "corridorWidthMedian": 2,
+    "widthTileN": 512,
+    "initialKing": 4,
+    "symmetryReference": "y",
+    "homeCapacity": 10.23885063034917,
+    "reachableComponentAreaA": 512,
+    "reachableComponentAreaB": 512
+   },
+   "source": "independent spatial edge-pair graph and iterative 2-core; atlas geometry for capacity/path/kelp"
+  },
+  "Portals/a": {
+   "NLayouts": 1,
+   "primary": {
+    "spawnTiles": 104,
+    "pocketTiles": 66,
+    "capacity": 25.454545454545503,
+    "kelpDensity": 0.279296875,
+    "startDistance": null
+   },
+   "independent": {
+    "spawnTiles": 104,
+    "pocketTiles": 66,
+    "capacity": 25.454545454545446,
+    "kelpDensity": 0.279296875,
+    "startDistance": null
+   },
+   "corridorWidthPrimary": {
+    "N": 512,
+    "mean": 3.625,
+    "p10": 1,
+    "median": 3
+   },
+   "corridorWidthIndependent": {
+    "N": 512,
+    "mean": 3.625,
+    "p10": 1,
+    "median": 3
+   },
+   "graphMismatch": 0,
+   "coreMismatch": 0,
+   "startVertexCut": 0,
+   "extraFeatures": {
+    "corridorWidthMean": 3.625,
+    "corridorWidthP10": 1,
+    "corridorWidthMedian": 3,
+    "widthTileN": 512,
+    "initialKing": 3,
+    "symmetryReference": "xy",
+    "homeCapacity": 9.818181818181815,
+    "reachableComponentAreaA": 240,
+    "reachableComponentAreaB": 240
+   },
+   "source": "independent spatial edge-pair graph and iterative 2-core; atlas geometry for capacity/path/kelp"
+  },
+  "Prisoners Dilemma/10": {
+   "NLayouts": 1,
+   "primary": {
+    "spawnTiles": 76,
+    "pocketTiles": 16,
+    "capacity": 8.695247524752471,
+    "kelpDensity": 0.125,
+    "startDistance": 7
+   },
+   "independent": {
+    "spawnTiles": 76,
+    "pocketTiles": 16,
+    "capacity": 8.695247524752471,
+    "kelpDensity": 0.125,
+    "startDistance": 7
+   },
+   "corridorWidthPrimary": {
+    "N": 512,
+    "mean": 9.67578125,
+    "p10": 2,
+    "median": 8
+   },
+   "corridorWidthIndependent": {
+    "N": 512,
+    "mean": 9.67578125,
+    "p10": 2,
+    "median": 8
+   },
+   "graphMismatch": 0,
+   "coreMismatch": 0,
+   "startVertexCut": 20,
+   "extraFeatures": {
+    "corridorWidthMean": 9.67578125,
+    "corridorWidthP10": 2,
+    "corridorWidthMedian": 8,
+    "widthTileN": 512,
+    "initialKing": 11,
+    "symmetryReference": "xy",
+    "homeCapacity": 4.327623762376236,
+    "reachableComponentAreaA": 512,
+    "reachableComponentAreaB": 512
+   },
+   "source": "independent spatial edge-pair graph and iterative 2-core; atlas geometry for capacity/path/kelp"
+  },
+  "Prisoners Dilemma/6": {
+   "NLayouts": 1,
+   "primary": {
+    "spawnTiles": 88,
+    "pocketTiles": 16,
+    "capacity": 12.285979381443294,
+    "kelpDensity": 0.125,
+    "startDistance": 14
+   },
+   "independent": {
+    "spawnTiles": 88,
+    "pocketTiles": 16,
+    "capacity": 12.285979381443294,
+    "kelpDensity": 0.125,
+    "startDistance": 14
+   },
+   "corridorWidthPrimary": {
+    "N": 512,
+    "mean": 9.67578125,
+    "p10": 2,
+    "median": 8
+   },
+   "corridorWidthIndependent": {
+    "N": 512,
+    "mean": 9.67578125,
+    "p10": 2,
+    "median": 8
+   },
+   "graphMismatch": 0,
+   "coreMismatch": 0,
+   "startVertexCut": 8,
+   "extraFeatures": {
+    "corridorWidthMean": 9.67578125,
+    "corridorWidthP10": 2,
+    "corridorWidthMedian": 8,
+    "widthTileN": 512,
+    "initialKing": 11,
+    "symmetryReference": "xy",
+    "homeCapacity": 6.142989690721647,
+    "reachableComponentAreaA": 512,
+    "reachableComponentAreaB": 512
+   },
+   "source": "independent spatial edge-pair graph and iterative 2-core; atlas geometry for capacity/path/kelp"
+  },
+  "Queen Of Spades/a": {
+   "NLayouts": 1,
+   "primary": {
+    "spawnTiles": 442,
+    "pocketTiles": 16,
+    "capacity": 2.0740827799651314,
+    "kelpDensity": 0.16914285714285715,
+    "startDistance": 24
+   },
+   "independent": {
+    "spawnTiles": 442,
+    "pocketTiles": 16,
+    "capacity": 2.074082779965135,
+    "kelpDensity": 0.16914285714285715,
+    "startDistance": 24
+   },
+   "corridorWidthPrimary": {
+    "N": 875,
+    "mean": 6.643428571428571,
+    "p10": 2,
+    "median": 5
+   },
+   "corridorWidthIndependent": {
+    "N": 875,
+    "mean": 6.643428571428571,
+    "p10": 2,
+    "median": 5
+   },
+   "graphMismatch": 0,
+   "coreMismatch": 0,
+   "startVertexCut": 12,
+   "extraFeatures": {
+    "corridorWidthMean": 6.643428571428571,
+    "corridorWidthP10": 2,
+    "corridorWidthMedian": 5,
+    "widthTileN": 875,
+    "initialKing": 3,
+    "symmetryReference": "xy",
+    "homeCapacity": 0.8352431881843685,
+    "reachableComponentAreaA": 693,
+    "reachableComponentAreaB": 693
+   },
+   "source": "independent spatial edge-pair graph and iterative 2-core; atlas geometry for capacity/path/kelp"
+  },
+  "Queen Of Spades/b": {
+   "NLayouts": 1,
+   "primary": {
+    "spawnTiles": 364,
+    "pocketTiles": 16,
+    "capacity": 1.7549924585218692,
+    "kelpDensity": 0.16914285714285715,
+    "startDistance": 24
+   },
+   "independent": {
+    "spawnTiles": 364,
+    "pocketTiles": 16,
+    "capacity": 1.7549924585218715,
+    "kelpDensity": 0.16914285714285715,
+    "startDistance": 24
+   },
+   "corridorWidthPrimary": {
+    "N": 875,
+    "mean": 6.643428571428571,
+    "p10": 2,
+    "median": 5
+   },
+   "corridorWidthIndependent": {
+    "N": 875,
+    "mean": 6.643428571428571,
+    "p10": 2,
+    "median": 5
+   },
+   "graphMismatch": 0,
+   "coreMismatch": 0,
+   "startVertexCut": 12,
+   "extraFeatures": {
+    "corridorWidthMean": 6.643428571428571,
+    "corridorWidthP10": 2,
+    "corridorWidthMedian": 5,
+    "widthTileN": 875,
+    "initialKing": 3,
+    "symmetryReference": "xy",
+    "homeCapacity": 0.7036700554347637,
+    "reachableComponentAreaA": 693,
+    "reachableComponentAreaB": 693
+   },
+   "source": "independent spatial edge-pair graph and iterative 2-core; atlas geometry for capacity/path/kelp"
+  },
+  "Schooltime/a": {
+   "NLayouts": 1,
+   "primary": {
+    "spawnTiles": 326,
+    "pocketTiles": 104,
+    "capacity": 7.586320346320312,
+    "kelpDensity": 0.19020833333333334,
+    "startDistance": 7
+   },
+   "independent": {
+    "spawnTiles": 326,
+    "pocketTiles": 104,
+    "capacity": 7.5863203463203615,
+    "kelpDensity": 0.19020833333333334,
+    "startDistance": 7
+   },
+   "corridorWidthPrimary": {
+    "N": 2376,
+    "mean": 5.903198653198653,
+    "p10": 2,
+    "median": 5
+   },
+   "corridorWidthIndependent": {
+    "N": 2376,
+    "mean": 5.903198653198653,
+    "p10": 2,
+    "median": 5
+   },
+   "graphMismatch": 0,
+   "coreMismatch": 0,
+   "startVertexCut": 17,
+   "extraFeatures": {
+    "corridorWidthMean": 5.903198653198653,
+    "corridorWidthP10": 2,
+    "corridorWidthMedian": 5,
+    "widthTileN": 2376,
+    "initialKing": 4,
+    "symmetryReference": "y",
+    "homeCapacity": 3.598354978354986,
+    "reachableComponentAreaA": 2062,
+    "reachableComponentAreaB": 2062
+   },
+   "source": "independent spatial edge-pair graph and iterative 2-core; atlas geometry for capacity/path/kelp"
+  },
+  "Schooltime/b": {
+   "NLayouts": 1,
+   "primary": {
+    "spawnTiles": 178,
+    "pocketTiles": 104,
+    "capacity": 1.9906493506493435,
+    "kelpDensity": 0.19020833333333334,
+    "startDistance": 7
+   },
+   "independent": {
+    "spawnTiles": 178,
+    "pocketTiles": 104,
+    "capacity": 1.9906493506493481,
+    "kelpDensity": 0.19020833333333334,
+    "startDistance": 7
+   },
+   "corridorWidthPrimary": {
+    "N": 2376,
+    "mean": 5.903198653198653,
+    "p10": 2,
+    "median": 5
+   },
+   "corridorWidthIndependent": {
+    "N": 2376,
+    "mean": 5.903198653198653,
+    "p10": 2,
+    "median": 5
+   },
+   "graphMismatch": 0,
+   "coreMismatch": 0,
+   "startVertexCut": 17,
+   "extraFeatures": {
+    "corridorWidthMean": 5.903198653198653,
+    "corridorWidthP10": 2,
+    "corridorWidthMedian": 5,
+    "widthTileN": 2376,
+    "initialKing": 4,
+    "symmetryReference": "y",
+    "homeCapacity": 0.7122077922077911,
+    "reachableComponentAreaA": 2062,
+    "reachableComponentAreaB": 2062
+   },
+   "source": "independent spatial edge-pair graph and iterative 2-core; atlas geometry for capacity/path/kelp"
+  },
+  "Slithery Fight/a": {
+   "NLayouts": 1,
+   "primary": {
+    "spawnTiles": 339,
+    "pocketTiles": 62,
+    "capacity": 59.962208408341006,
+    "kelpDensity": 0.15108759553204,
+    "startDistance": 4
+   },
+   "independent": {
+    "spawnTiles": 339,
+    "pocketTiles": 62,
+    "capacity": 59.96220840834073,
+    "kelpDensity": 0.15108759553204,
+    "startDistance": 4
+   },
+   "corridorWidthPrimary": {
+    "N": 1699,
+    "mean": 8.509123013537375,
+    "p10": 2,
+    "median": 8
+   },
+   "corridorWidthIndependent": {
+    "N": 1699,
+    "mean": 8.509123013537375,
+    "p10": 2,
+    "median": 8
+   },
+   "graphMismatch": 0,
+   "coreMismatch": 0,
+   "startVertexCut": 5,
+   "extraFeatures": {
+    "corridorWidthMean": 8.509123013537375,
+    "corridorWidthP10": 2,
+    "corridorWidthMedian": 8,
+    "widthTileN": 1699,
+    "initialKing": 25,
+    "symmetryReference": "xy",
+    "homeCapacity": 29.481104204170382,
+    "reachableComponentAreaA": 1699,
+    "reachableComponentAreaB": 1699
+   },
+   "source": "independent spatial edge-pair graph and iterative 2-core; atlas geometry for capacity/path/kelp"
+  },
+  "Slithery Fight/b": {
+   "NLayouts": 1,
+   "primary": {
+    "spawnTiles": 350,
+    "pocketTiles": 62,
+    "capacity": 55.535160984848574,
+    "kelpDensity": 0.15108759553204,
+    "startDistance": 4
+   },
+   "independent": {
+    "spawnTiles": 350,
+    "pocketTiles": 62,
+    "capacity": 55.53516098484836,
+    "kelpDensity": 0.15108759553204,
+    "startDistance": 4
+   },
+   "corridorWidthPrimary": {
+    "N": 1699,
+    "mean": 8.509123013537375,
+    "p10": 2,
+    "median": 8
+   },
+   "corridorWidthIndependent": {
+    "N": 1699,
+    "mean": 8.509123013537375,
+    "p10": 2,
+    "median": 8
+   },
+   "graphMismatch": 0,
+   "coreMismatch": 0,
+   "startVertexCut": 5,
+   "extraFeatures": {
+    "corridorWidthMean": 8.509123013537375,
+    "corridorWidthP10": 2,
+    "corridorWidthMedian": 8,
+    "widthTileN": 1699,
+    "initialKing": 25,
+    "symmetryReference": "xy",
+    "homeCapacity": 27.76758049242418,
+    "reachableComponentAreaA": 1699,
+    "reachableComponentAreaB": 1699
+   },
+   "source": "independent spatial edge-pair graph and iterative 2-core; atlas geometry for capacity/path/kelp"
+  },
+  "Trauma/a": {
+   "NLayouts": 1,
+   "primary": {
+    "spawnTiles": 142,
+    "pocketTiles": 78,
+    "capacity": 13.29353233830847,
+    "kelpDensity": 0.24479166666666666,
+    "startDistance": 98
+   },
+   "independent": {
+    "spawnTiles": 142,
+    "pocketTiles": 78,
+    "capacity": 13.29353233830847,
+    "kelpDensity": 0.24479166666666666,
+    "startDistance": 98
+   },
+   "corridorWidthPrimary": {
+    "N": 1152,
+    "mean": 6.28125,
+    "p10": 1,
+    "median": 4
+   },
+   "corridorWidthIndependent": {
+    "N": 1152,
+    "mean": 6.28125,
+    "p10": 1,
+    "median": 4
+   },
+   "graphMismatch": 0,
+   "coreMismatch": 0,
+   "startVertexCut": 1,
+   "extraFeatures": {
+    "corridorWidthMean": 6.28125,
+    "corridorWidthP10": 1,
+    "corridorWidthMedian": 4,
+    "widthTileN": 1152,
+    "initialKing": 4,
+    "symmetryReference": "xy",
+    "homeCapacity": 6.6467661691542315,
+    "reachableComponentAreaA": 1144,
+    "reachableComponentAreaB": 1144
+   },
+   "source": "independent spatial edge-pair graph and iterative 2-core; atlas geometry for capacity/path/kelp"
+  },
+  "Trophy/a": {
+   "NLayouts": 1,
+   "primary": {
+    "spawnTiles": 625,
+    "pocketTiles": 1,
+    "capacity": 2.425071957745247,
+    "kelpDensity": 0.0704,
+    "startDistance": 9
+   },
+   "independent": {
+    "spawnTiles": 625,
+    "pocketTiles": 1,
+    "capacity": 2.4250719577452378,
+    "kelpDensity": 0.0704,
+    "startDistance": 9
+   },
+   "corridorWidthPrimary": {
+    "N": 625,
+    "mean": 13.6976,
+    "p10": 5,
+    "median": 13
+   },
+   "corridorWidthIndependent": {
+    "N": 625,
+    "mean": 13.6976,
+    "p10": 5,
+    "median": 13
+   },
+   "graphMismatch": 0,
+   "coreMismatch": 0,
+   "startVertexCut": 16,
+   "extraFeatures": {
+    "corridorWidthMean": 13.6976,
+    "corridorWidthP10": 5,
+    "corridorWidthMedian": 13,
+    "widthTileN": 625,
+    "initialKing": 3,
+    "symmetryReference": "y",
+    "homeCapacity": 0.8023461686828078,
+    "reachableComponentAreaA": 625,
+    "reachableComponentAreaB": 625
+   },
+   "source": "independent spatial edge-pair graph and iterative 2-core; atlas geometry for capacity/path/kelp"
+  }
+ }
+}

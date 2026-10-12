@@ -1,0 +1,1 @@
+Sub-session subB.md has finished (ran 10:30-11:37 KST, exit code 0). What it printed is in subB.out (2964 bytes). The .md files in this directory written while it ran: h_p0_head.md h_p1_c1.md h_p2_c2.md h_p3_c3.md h_p4_c4.md h_p5_rank.md h_p6_not.md h_p8_counts.md h_p9_unknown.md hypotheses.md.

@@ -1,0 +1,8 @@
+Q1c ANALYSIS 2026-10-02 07:10:31 KST; 기존196판, UNSW_RULES=123, 새 판/봇수정/커밋/네트워크0.
+b 길이: 공통12키(관측10/null2), r350/400/430 Δ중앙값 +1/0/+2.5; PASS/FAIL/PASS.
+b 안전: crowd 공통checkpoint 증가5/162(원5키), 중앙값·≥2몫 유지; FAIL. r300후 trap 0→0 PASS.
+c 관문: 위반0/2195 feed, 여왕feed45; PASS. 믿음 정확도 원지도 c45.60/on49.67/self47.74% FAIL.
+c 전파·감쇠:4752/4752 채택≤1라운드, 제외993;655277차례 재구성오류/만료true/수신만true송신0 PASS.
+공통:196/196 누락·오류·checks0, 동일성6/6·WASM동일, CPU최대32.7M/누락0 PASS; both 새trap1 FAIL.
+판면2개·모든 값/N/PASS/FAIL: versions/v1.8/VERSION.md §14; 하위표·예외 exp/q1c/RESULT.md.
+제안: switch OFF (Q1B_BACKUP_ON=OFF, Q1C_SIGHT_ON=OFF); crowd·초기행동·새함정으로 깨짐 없음 미충족.

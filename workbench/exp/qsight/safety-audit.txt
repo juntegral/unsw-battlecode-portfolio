@@ -1,0 +1,92 @@
+[
+  {
+    key: 'proxy4_king:default:A:1',
+    set: 'on',
+    r: 253,
+    cause: 'rammed',
+    edges: [ [Object], [Object], [Object], [Object] ],
+    action: { kind: 'move', steps: [Array] },
+    killer: 90
+  },
+  {
+    key: 'proxy4_king:default:A:1',
+    set: 'off',
+    r: 258,
+    cause: 'rammed',
+    edges: [ [Object], [Object], [Object], [Object] ],
+    action: { kind: 'split', childSegmentCount: 2 },
+    killer: 85
+  },
+  {
+    key: 'proxy4_king:default:B:1',
+    set: 'on',
+    r: 260,
+    cause: 'rammed',
+    edges: [ [Object], [Object], [Object], [Object] ],
+    action: { kind: 'move', steps: [Array] },
+    killer: 62
+  },
+  {
+    key: 'proxy4_king:default:B:1',
+    set: 'off',
+    r: 268,
+    cause: 'rammed',
+    edges: [ [Object], [Object], [Object], [Object] ],
+    action: { kind: 'move', steps: [Array] },
+    killer: 55
+  },
+  {
+    key: 'bot-hunter:portals:B:1',
+    set: 'on',
+    r: 207,
+    cause: 'trap',
+    edges: [ [Object], [Object], [Object], [Object] ],
+    action: { kind: 'move', steps: [Array] },
+    killer: undefined
+  },
+  {
+    key: 'bot-hunter:portals:B:1',
+    set: 'off',
+    r: 207,
+    cause: undefined,
+    edges: [ [Object], [Object], [Object], [Object] ],
+    action: { kind: 'move', steps: [Array] },
+    killer: undefined
+  },
+  {
+    key: 'bot-hunter:queen_of_spades:B:1',
+    set: 'on',
+    r: 116,
+    cause: 'rammed',
+    edges: [ [Object], [Object], [Object], [Object] ],
+    action: { kind: 'move', steps: [Array] },
+    killer: 2
+  },
+  {
+    key: 'bot-hunter:queen_of_spades:B:1',
+    set: 'off',
+    r: 117,
+    cause: 'rammed',
+    edges: [ [Object], [Object], [Object], [Object] ],
+    action: { kind: 'move', steps: [Array] },
+    killer: 5
+  },
+  {
+    key: 'bot-hunter:stronghold:B:1',
+    set: 'on',
+    r: 336,
+    cause: 'trap',
+    edges: [ [Object], [Object], [Object], [Object] ],
+    action: { kind: 'move', steps: [Array] },
+    killer: 209
+  },
+  {
+    key: 'bot-hunter:stronghold:B:1',
+    set: 'off',
+    r: 336,
+    cause: undefined,
+    edges: [ [Object], [Object], [Object], [Object] ],
+    action: { kind: 'move', steps: [Array] },
+    killer: undefined
+  }
+]

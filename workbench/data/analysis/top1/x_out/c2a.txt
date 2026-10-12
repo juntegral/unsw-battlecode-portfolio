@@ -1,0 +1,87 @@
+games with data: 2478  version: Counter({2: 2478})
+column sizes: {'meow all': 401, 'meow live': 275, 'meow test': 126, 'meow vs t4/WHQ': 313, 'meow >600 cells': 256, 'meow <=600 cells': 145, 'our opponents': 401, 'forgot': 632, 'SSS': 503, 'Vibing++': 502, 'top three': 1637, 'top3 vs t4/WHQ': 108}
+
+============================== REACH MODEL: PEARL ==============================
+
+== 1. Turns with an enemy head in view
+                                                              meow all       meow live      meow test      meow vs t4/WHQ meow >600 cell meow <=600 cel our opponents  forgot         SSS            Vibing++       top three      top3 vs t4/WHQ 
+share of her rounds with an enemy head in view                20.1%          20.3%          19.4%          20.2%          19.0%          23.5%          17.0%          20.6%          17.9%          21.0%          19.8%          20.4%          
+A. outside reach, safe step exists: ends in reach             0.77%          0.70%          0.94%          0.78%          0.59%          1.23%          0.41%          0.16%          0.16%          0.21%          0.18%          0.06%          
+A. per 1,000 queen-rounds                                     1.46           1.34           1.73           1.51           1.07           2.72           0.65           0.32           0.28           0.42           0.33           0.12           
+B. inside reach, safe step exists: ends in reach again        16%            15%            20%            17%            18%            11%            11%            8%             7%             8%             8%             10%            
+B. per 1,000 queen-rounds                                     0.99           1.01           0.96           0.84           1.12           0.60           0.69           0.37           0.26           0.44           0.35           0.24           
+C. no safe step, per 1,000 queen-rounds                       3.20           2.81           4.12           2.92           3.07           3.63           4.40           6.42           2.36           4.61           4.49           3.19           
+all turns that end in reach, per 1,000                        5.17           4.75           6.16           4.82           4.93           5.97           4.53           3.24           2.71           3.07           3.00           1.98           
+... by her own choice (A + B), per 1,000                      2.45           2.35           2.69           2.35           2.18           3.32           1.34           0.69           0.54           0.85           0.68           0.36           
+... by choice: number of turns                                138            93             45             103            94             44             149            100            76             92             268            9              
+... by choice: a roomy safe step existed                      118            80             38             89             78             40             115            78             61             68             207            7              
+... by choice: she ate a pearl / it was a split               22 / 6         17 / 5         5 / 1          15 / 3         19 / 6         3 / 0          18 / 9         7 / 10         7 / 4          10 / 6         24 / 20        1 / 0          
+a turn that ends in reach is punished by a ram that round     76%            76%            76%            82%            73%            84%            19%            53%            48%            48%            50%            86%            
+... by choice, punished                                       106 of 138     70 of 93       36 of 45       85 of 103      70 of 94       36 of 44       27 of 149      40 of 100      38 of 76       34 of 92       112 of 268     7 of 9         
+
+== 2. How each queen ended (games)
+                                                meow all       meow live      meow test      meow vs t4/WHQ meow >600 cell meow <=600 cel our opponents  forgot         SSS            Vibing++       top three      top3 vs t4/WHQ 
+rammed: cornered (no safe step)                 114 (28%)      72 (26%)       42 (33%)       88 (28%)       84 (33%)       30 (21%)       67 (17%)       209 (33%)      141 (28%)      125 (25%)      475 (29%)      35 (32%)       
+boxed in (no free cell)                         91 (23%)       67 (24%)       24 (19%)       69 (22%)       38 (15%)       53 (37%)       110 (27%)      52 (8%)        39 (8%)        115 (23%)      206 (13%)      14 (13%)       
+rammed: stepped into reach, safe step existed   67 (17%)       41 (15%)       26 (21%)       55 (18%)       39 (15%)       28 (19%)       14 (3%)        23 (4%)        18 (4%)        19 (4%)        60 (4%)        3 (3%)         
+rammed: stayed in reach, safe step existed      39 (10%)       29 (11%)       10 (8%)        30 (10%)       31 (12%)       8 (6%)         12 (3%)        17 (3%)        20 (4%)        15 (3%)        52 (3%)        4 (4%)         
+alive                                           39 (10%)       27 (10%)       12 (10%)       32 (10%)       35 (14%)       4 (3%)         162 (40%)      226 (36%)      207 (41%)      134 (27%)      567 (35%)      35 (32%)       
+rammed: killer not in her view                  31 (8%)        23 (8%)        8 (6%)         26 (8%)        27 (11%)       4 (3%)         8 (2%)         70 (11%)       58 (12%)       68 (14%)       196 (12%)      15 (14%)       
+own ram, a free safe cell existed               10 (2%)        8 (3%)         2 (2%)         8 (3%)         0 (0%)         10 (7%)        1 (0%)         4 (1%)         0 (0%)         3 (1%)         7 (0%)         0 (0%)         
+own ram, boxed in                               9 (2%)         8 (3%)         1 (1%)         4 (1%)         2 (1%)         7 (5%)         17 (4%)        14 (2%)        9 (2%)         15 (3%)        38 (2%)        0 (0%)         
+own move into something with a free cell        1 (0%)         0 (0%)         1 (1%)         1 (0%)         0 (0%)         1 (1%)         6 (1%)         0 (0%)         2 (0%)         1 (0%)         3 (0%)         0 (0%)         
+rammed by a team-mate                           0 (0%)         0 (0%)         0 (0%)         0 (0%)         0 (0%)         0 (0%)         3 (1%)         8 (1%)         6 (1%)         2 (0%)         16 (1%)        1 (1%)         
+rammed on a cell the model called safe          0 (0%)         0 (0%)         0 (0%)         0 (0%)         0 (0%)         0 (0%)         1 (0%)         8 (1%)         3 (1%)         3 (1%)         14 (1%)        1 (1%)         
+own ram, a free cell but none safe              0 (0%)         0 (0%)         0 (0%)         0 (0%)         0 (0%)         0 (0%)         0 (0%)         1 (0%)         0 (0%)         0 (0%)         1 (0%)         0 (0%)         
+own ram, ?                                      0 (0%)         0 (0%)         0 (0%)         0 (0%)         0 (0%)         0 (0%)         0 (0%)         0 (0%)         0 (0%)         2 (0%)         2 (0%)         0 (0%)         
+all deaths per 1,000 queen-rounds               6.4            6.3            6.8            6.4            5.1            10.6           2.1            2.8            2.1            3.4            2.7            2.9            
+avoidable rams (the two kinds), games           106 of 401     70 of 275      36 of 126      85 of 313      70 of 256      36 of 145      26 of 401      40 of 632      38 of 503      34 of 502      112 of 1637    7 of 108       
+
+============================== REACH MODEL: PLAIN ==============================
+
+== 1. Turns with an enemy head in view
+                                                              meow all       meow live      meow test      meow vs t4/WHQ meow >600 cell meow <=600 cel our opponents  forgot         SSS            Vibing++       top three      top3 vs t4/WHQ 
+share of her rounds with an enemy head in view                20.1%          20.3%          19.4%          20.2%          19.0%          23.5%          17.0%          20.6%          17.9%          21.0%          19.8%          20.4%          
+A. outside reach, safe step exists: ends in reach             0.73%          0.67%          0.90%          0.75%          0.63%          1.02%          0.39%          0.09%          0.16%          0.21%          0.15%          0.08%          
+A. per 1,000 queen-rounds                                     1.40           1.29           1.67           1.46           1.14           2.27           0.62           0.17           0.27           0.43           0.28           0.16           
+B. inside reach, safe step exists: ends in reach again        10%            8%             14%            8%             11%            6%             10%            5%             5%             6%             6%             12%            
+B. per 1,000 queen-rounds                                     0.53           0.51           0.60           0.34           0.60           0.30           0.55           0.19           0.19           0.32           0.22           0.24           
+C. no safe step, per 1,000 queen-rounds                       2.72           2.35           3.59           2.53           2.67           2.87           3.81           5.95           2.04           3.91           4.00           2.66           
+all turns that end in reach, per 1,000                        4.18           3.74           5.20           3.88           4.09           4.46           3.82           2.47           2.32           2.56           2.44           1.61           
+... by her own choice (A + B), per 1,000                      1.94           1.80           2.27           1.80           1.74           2.57           1.16           0.36           0.46           0.75           0.50           0.40           
+... by choice: number of turns                                109            71             38             79             75             34             130            52             64             81             197            10             
+... by choice: a roomy safe step existed                      90             59             31             66             60             30             99             32             50             60             142            8              
+... by choice: she ate a pearl / it was a split               22 / 4         15 / 3         7 / 1          16 / 2         17 / 4         5 / 0          18 / 13        2 / 4          3 / 3          10 / 3         15 / 10        1 / 1          
+a turn that ends in reach is punished by a ram that round     76%            78%            72%            81%            74%            81%            22%            62%            52%            51%            56%            85%            
+... by choice, punished                                       84 of 109      55 of 71       29 of 38       63 of 79       57 of 75       27 of 34       29 of 130      32 of 52       36 of 64       31 of 81       99 of 197      6 of 10        
+
+== 2. How each queen ended (games)
+                                                meow all       meow live      meow test      meow vs t4/WHQ meow >600 cell meow <=600 cel our opponents  forgot         SSS            Vibing++       top three      top3 vs t4/WHQ 
+rammed: cornered (no safe step)                 94 (23%)       60 (22%)       34 (27%)       74 (24%)       73 (29%)       21 (14%)       65 (16%)       194 (31%)      132 (26%)      111 (22%)      437 (27%)      28 (26%)       
+boxed in (no free cell)                         91 (23%)       67 (24%)       24 (19%)       69 (22%)       38 (15%)       53 (37%)       110 (27%)      52 (8%)        39 (8%)        115 (23%)      206 (13%)      14 (13%)       
+rammed: stepped into reach, safe step existed   67 (17%)       42 (15%)       25 (20%)       53 (17%)       43 (17%)       24 (17%)       20 (5%)        20 (3%)        21 (4%)        22 (4%)        63 (4%)        3 (3%)         
+rammed on a cell the model called safe          42 (10%)       27 (10%)       15 (12%)       36 (12%)       24 (9%)        18 (12%)       1 (0%)         31 (5%)        15 (3%)        20 (4%)        66 (4%)        9 (8%)         
+alive                                           39 (10%)       27 (10%)       12 (10%)       32 (10%)       35 (14%)       4 (3%)         162 (40%)      226 (36%)      207 (41%)      134 (27%)      567 (35%)      35 (32%)       
+rammed: killer not in her view                  31 (8%)        23 (8%)        8 (6%)         26 (8%)        27 (11%)       4 (3%)         8 (2%)         70 (11%)       58 (12%)       68 (14%)       196 (12%)      15 (14%)       
+rammed: stayed in reach, safe step existed      17 (4%)        13 (5%)        4 (3%)         10 (3%)        14 (5%)        3 (2%)         8 (2%)         12 (2%)        14 (3%)        9 (2%)         35 (2%)        3 (3%)         
+own ram, a free safe cell existed               10 (2%)        8 (3%)         2 (2%)         8 (3%)         0 (0%)         10 (7%)        1 (0%)         4 (1%)         0 (0%)         3 (1%)         7 (0%)         0 (0%)         
+own ram, boxed in                               9 (2%)         8 (3%)         1 (1%)         4 (1%)         2 (1%)         7 (5%)         17 (4%)        14 (2%)        9 (2%)         15 (3%)        38 (2%)        0 (0%)         
+own move into something with a free cell        1 (0%)         0 (0%)         1 (1%)         1 (0%)         0 (0%)         1 (1%)         6 (1%)         0 (0%)         2 (0%)         1 (0%)         3 (0%)         0 (0%)         
+rammed by a team-mate                           0 (0%)         0 (0%)         0 (0%)         0 (0%)         0 (0%)         0 (0%)         3 (1%)         8 (1%)         6 (1%)         2 (0%)         16 (1%)        1 (1%)         
+own ram, a free cell but none safe              0 (0%)         0 (0%)         0 (0%)         0 (0%)         0 (0%)         0 (0%)         0 (0%)         1 (0%)         0 (0%)         0 (0%)         1 (0%)         0 (0%)         
+own ram, ?                                      0 (0%)         0 (0%)         0 (0%)         0 (0%)         0 (0%)         0 (0%)         0 (0%)         0 (0%)         0 (0%)         2 (0%)         2 (0%)         0 (0%)         
+all deaths per 1,000 queen-rounds               6.4            6.3            6.8            6.4            5.1            10.6           2.1            2.8            2.1            3.4            2.7            2.9            
+avoidable rams (the two kinds), games           84 of 401      55 of 275      29 of 126      63 of 313      57 of 256      27 of 145      28 of 401      32 of 632      35 of 503      31 of 502      98 of 1637     6 of 108       
+
+== 3. Splits of a queen with no free cell (boxed in), by her length; cut = she keeps 2-3 and gives more than 2, shed = the child gets 2
+                                                meow all       meow live      meow test      meow vs t4/WHQ meow >600 cell meow <=600 cel our opponents  forgot         SSS            Vibing++       top three      top3 vs t4/WHQ 
+boxed, length 4-5: cut                          9              6              3              5              4              5              4              3              0              2              5              2              
+boxed, length 4-5: shed                         16             11             5              14             3              13             56             82             16             52             150            12             
+boxed, length 6+: cut                           39             28             11             27             38             1              61             0              0              104            104            5              
+boxed, length 6+: other                         0              0              0              0              0              0              15             0              0              31             31             1              
+boxed, length 6+: shed                          0              0              0              0              0              0              109            1448           394            74             1916           102            
+free, length 4-5: cut                           0              0              0              0              0              0              3              9              0              0              9              0              
+free, length 4-5: shed                          1020           721            299            811            724            296            1386           1819           1758           960            4537           309            
+free, length 6+: cut                            1              0              1              1              0              1              24             0              0              1              1              0              
+free, length 6+: other                          0              0              0              0              0              0              1              0              0              0              0              0              
+free, length 6+: shed                           7              4              3              6              2              5              77             266            377            216            859            40             

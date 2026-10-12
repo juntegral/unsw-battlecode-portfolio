@@ -1,0 +1,22 @@
+# Smoke 팀 규칙 추가 보고서
+- 첫 브리프 보고서와 기존 `tools/smoke_pick.py`를 확인하고 최종 smoke 코드에 규칙을 적용했다.
+- DEV 구분은 `team.dev`이며 별도 신청 플래그는 없다. 일반 상대는 거부한다.
+- `online.js`는 DEV 상대 게임을 별도 시간당 60게임 풀로 계산한다. 잔량은 추정이며 전용 보장값이 아니다.
+- 기본 `--games 60 --maps all`: 선택 지도를 순환하는 총 60게임, 중복 지도 없이 여러 신청으로 나눈다.
+- 같은 상대의 이전 묶음이 끝난 뒤 다음 묶음을 신청한다. 기본 묶음 대기 상한은 1,800초이다.
+- 전체 DEV 추정 잔량이 부족하면 업로드 전 중단한다. 매 신청의 잔량·활성 제출은 기존 도구도 재검증한다.
+- 계획 출력은 게임 수·묶음 수·지도·DEV 비용·복귀 대상·baseline 누락 또는 불일치를 보여 준다.
+- baseline: `python3 tools/smoke.py baseline --name v61 --opp dev_test_1 --confirm`.
+- baseline은 현재 활성 봇을 그대로 사용하며 `data/online/smoke/baseline-v61.json`에 저장한다. 덮어쓰지 않는다.
+- baseline 조회·보고: `status v61 --baseline`, `report v61 --baseline`.
+- 후보 계획·시작에는 `--baseline v61`이 기본이다. 다른 baseline 이름도 지정할 수 있다.
+- 비교 조건: 우리 팀·복귀 제출 id·상대 id·지도별 신청 일정이 동일해야 한다.
+- 보고 시 두 다운로드 폴더에 `smoke_pick.py --us <recorded-team> --focus all --n 5`를 실행한다.
+- 여왕 생존·사인·포털·분열·후반 자살·최장 길이와 상위 replay id를 제공하고, 선택 순위별 기제 값을 나란히 표시한다.
+- 표는 독립적으로 고른 사례이며 전수 평균이나 짝대전이 아니다. 자살 횟수는 먹이기 성공의 증거가 아니다.
+- 승수는 `noise at 60 games (±8)`로 표시한다. 자동 채택·복귀는 없다.
+- 마지막 줄: `Keep vs roll back: the area owner decides, plus one OK from someone else. Nothing is automatic.`
+- 검증: fake 검사 13개(60게임, baseline 재사용, 보고, 실패·불확실 응답·부분 수집, DEV·이름·예산 거부, 복귀 검증, picker 실패), py_compile 통과.
+- 실제 Node 온라인 실행·업로드·신청·활성화는 없었다. 기존 smoke_pick.py와 사용자 변경은 수정하지 않았다.
+- 미검증: 실제 DEV 팀의 순위표 노출, 서버 지연, 티켓 경쟁, picker의 외부 replay 모듈. 오류·coverage 부족은 보고에 표시한다.
+- 변경은 미커밋이다. `docs/online.md` 부재는 첫 보고서에도 기록했다.

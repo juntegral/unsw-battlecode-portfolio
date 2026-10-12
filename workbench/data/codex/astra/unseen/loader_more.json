@@ -1,0 +1,157 @@
+{
+  "asymmetric-None": {
+    "loaded": true,
+    "notices": [],
+    "initial": "ID 0\nTEAM A\nMAP 16 16\nUNIT_LIMIT 64\n"
+  },
+  "asymmetric-x": {
+    "loaded": false,
+    "notices": [],
+    "error": "pearl bed at (8, 7) doesn't match its mirror at (8, 8)"
+  },
+  "asymmetric-y": {
+    "loaded": false,
+    "notices": [],
+    "error": "pearl bed at (7, 8) doesn't match its mirror at (8, 8)"
+  },
+  "asymmetric-xy": {
+    "loaded": false,
+    "notices": [],
+    "error": "pearl bed at (7, 7) doesn't match its mirror at (8, 8)"
+  },
+  "timer-1": {
+    "loaded": true,
+    "notices": [],
+    "initial": "ID 0\nTEAM A\nMAP 16 16\nUNIT_LIMIT 64\n"
+  },
+  "timer-501": {
+    "loaded": true,
+    "notices": [],
+    "initial": "ID 0\nTEAM A\nMAP 16 16\nUNIT_LIMIT 64\n"
+  },
+  "timer-1000000": {
+    "loaded": true,
+    "notices": [],
+    "initial": "ID 0\nTEAM A\nMAP 16 16\nUNIT_LIMIT 64\n"
+  },
+  "timer-2147483647": {
+    "loaded": true,
+    "notices": [],
+    "initial": "ID 0\nTEAM A\nMAP 16 16\nUNIT_LIMIT 64\n"
+  },
+  "portal-id--2": {
+    "loaded": false,
+    "notices": [],
+    "error": "portal EDGE needs a portal id: EDGE 0 2 -2"
+  },
+  "portal-id--1": {
+    "loaded": false,
+    "notices": [],
+    "error": "portal EDGE needs a portal id: EDGE 0 2 -1"
+  },
+  "portal-id-0": {
+    "loaded": true,
+    "notices": [],
+    "initial": "ID 0\nTEAM A\nMAP 16 16\nUNIT_LIMIT 64\n"
+  },
+  "portal-id-8000000": {
+    "loaded": true,
+    "notices": [],
+    "initial": "ID 0\nTEAM A\nMAP 16 16\nUNIT_LIMIT 64\n"
+  },
+  "portal-id-2147483647": {
+    "loaded": true,
+    "notices": [],
+    "initial": "ID 0\nTEAM A\nMAP 16 16\nUNIT_LIMIT 64\n"
+  },
+  "edge-case-EDGE 0 2 0\nEDGE 17 2 0": {
+    "loaded": false,
+    "notices": [],
+    "error": "portal 0 joins a horizontal edge to a vertical one"
+  },
+  "edge-case-EDGE 0 2 0\nEDGE 1 2 0\nEDGE 2 2 0": {
+    "loaded": false,
+    "notices": [],
+    "error": "portal 0 has 3 end(s) and joins nothing at top of (0, 0)"
+  },
+  "edge-case-EDGE 0 1 -1\nEDGE 544 1 -1": {
+    "loaded": true,
+    "notices": [],
+    "initial": "ID 0\nTEAM A\nMAP 16 16\nUNIT_LIMIT 64\n"
+  },
+  "edge-case-EDGE 0 1 -1": {
+    "loaded": true,
+    "notices": [],
+    "initial": "ID 0\nTEAM A\nMAP 16 16\nUNIT_LIMIT 64\n"
+  },
+  "starters-0": {
+    "loaded": false,
+    "error": "Returned without a spawn",
+    "notices": []
+  },
+  "starters-1": {
+    "loaded": true,
+    "notices": [],
+    "initial": "ID 0\nTEAM A\nMAP 16 16\nUNIT_LIMIT 64\n"
+  },
+  "starters-2": {
+    "loaded": true,
+    "notices": [],
+    "initial": "ID 0\nTEAM A\nMAP 16 16\nUNIT_LIMIT 64\n"
+  },
+  "starters-3": {
+    "loaded": true,
+    "notices": [],
+    "initial": "ID 0\nTEAM A\nMAP 16 16\nUNIT_LIMIT 64\n"
+  },
+  "starters-65": {
+    "loaded": true,
+    "notices": [],
+    "initial": "ID 0\nTEAM A\nMAP 16 16\nUNIT_LIMIT 64\n"
+  },
+  "starters-128": {
+    "loaded": true,
+    "notices": [],
+    "initial": "ID 0\nTEAM A\nMAP 16 16\nUNIT_LIMIT 64\n"
+  },
+  "length-1": {
+    "loaded": false,
+    "notices": [],
+    "error": "DRAGON is too short: DRAGON 0 1 0 0"
+  },
+  "length-2": {
+    "loaded": true,
+    "notices": [],
+    "initial": "ID 0\nTEAM A\nMAP 16 16\nUNIT_LIMIT 64\n"
+  },
+  "length-4": {
+    "loaded": true,
+    "notices": [],
+    "initial": "ID 0\nTEAM A\nMAP 16 16\nUNIT_LIMIT 64\n"
+  },
+  "length-25": {
+    "loaded": true,
+    "notices": [],
+    "initial": "ID 0\nTEAM A\nMAP 16 16\nUNIT_LIMIT 64\n"
+  },
+  "length-128": {
+    "loaded": true,
+    "notices": [],
+    "initial": "ID 0\nTEAM A\nMAP 16 16\nUNIT_LIMIT 64\n"
+  },
+  "ROUND_LIMIT 17": {
+    "loaded": false,
+    "notices": [],
+    "error": "unknown map line: ROUND_LIMIT 17"
+  },
+  "MAX_ROUNDS 17": {
+    "loaded": false,
+    "notices": [],
+    "error": "unknown map line: MAX_ROUNDS 17"
+  },
+  "TORUS 0": {
+    "loaded": false,
+    "notices": [],
+    "error": "unknown map line: TORUS 0"
+  }
+}

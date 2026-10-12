@@ -1,0 +1,45 @@
+[
+ {
+  "id": "F38",
+  "claim": "On main, once our queen starts a turn on a narrow tile she stays on narrow tiles for 3 or more consecutive turn starts about five times as often as their queens do (stays begun in raw rounds 101-200), in both halves and both rating bands; per turn inside such long stays the two queens die equally often; it is not our own dragons that hold her there.",
+  "how_to_count": "Games with our_code main (v31 as a second slice), layouts with queen_spawn_dead_end false and map_key not 'Portals #1'. Queen = lowest initial dragon id of a side. Narrow tile = a tile with two or fewer of its four edges free of kelp (a portal edge counts as open; dragons ignored). At every turnStart of a living queen note whether her head tile is narrow. A stay = a maximal run of consecutive turn starts of that queen on narrow tiles; its round is the raw round of the first of them, its length the number of turn starts. It ends when she starts a turn on a wider tile, when she dies before her next turn start (ended in death), or at the end of the game. Count per side: stays begun in raw rounds 101-200, and those of length 3 or more (long). Slices on main: time before / from 2026-10-06T14:48:15Z, opponent_rating 1700-1899 and 1900-2099; one opponent left out; one layout left out; without Maze, weakhold and Tower Defense. Own-dragon flag for a stay: at some turn start of it a body tile of ANOTHER dragon of her side lies on a tile next to her head through an open side (non-kelp edge, a portal edge followed to its partner tile). All rounds on main: long stays per side, how many end in her death (with the engine reason), queen turn starts inside long stays, all queen turn starts and all queen deaths.",
+  "your_numbers": {
+   "long_share_r101_200_main": "ours 117 of 538 (0.217), theirs 18 of 485 (0.037), 5.9 times",
+   "main_half_1": "16 of 174 against 1 of 101",
+   "main_half_2": "101 of 364 against 17 of 384",
+   "main_1700_1899": "64 of 231 against 6 of 169",
+   "main_1900_2099": "53 of 295 against 12 of 289",
+   "v31": "75 of 533 against 37 of 432 (1.64 times)",
+   "leave_one_out_main": "one opponent out 4.4 to 7.5; one layout out 5.1 to 8.1",
+   "by_layout_both_codes": "Maze 87 of 328 against 17 of 104; weakhold 39 of 122 against 14 of 162; Tower Defense 39 of 86 against 16 of 91; without the three main 9 of 236 against 4 of 317, v31 18 of 299 against 4 of 243",
+   "own_dragon_beside_her_long_stays_both_codes": "ours 20 of 192 (19 of the 20 end in her death), theirs 1 of 55; enemy head within 3 columns and rows 77 and 18; dead-end tile 13 and 4",
+   "death_per_long_stay_r101_200_both_codes": "ours 38 of 192, theirs 8 of 55",
+   "all_rounds_main": "long stays 372 against 154; ended in her death 45 (19 wall, 11 own body, 12 head-on, 3 other dragon body) against 24; turn starts inside long stays 1,898 against 996; all queen turn starts 57,905 against 61,931; all queen deaths 223 against 221; games lost among our 45: 16",
+   "all_rounds_v31": "long stays 318 against 248; deaths 45 against 38; turns inside 1,609 against 1,544",
+   "other_windows_main": "r0-100 157 of 1,055 against 82 of 804; r201-300 54 of 257 against 17 of 340; r301 on 44 of 225 against 37 of 345",
+   "other_windows_v31": "r0-100 213 of 1,430 against 142 of 869; r201-300 21 of 173 against 42 of 236; r301 on 9 of 134 against 27 of 358"
+  },
+  "slices": [
+   "main games before 2026-10-06T14:48:15Z and main games from then on",
+   "main against opponents rated 1700-1899 and against 1900-2099",
+   "v31 as a second code (weak there)"
+  ]
+ },
+ {
+  "id": "F39",
+  "claim": "Our lone queen dies about 1.9 times as fast per lone turn against opponents that bring 3 or more short dragons within 12 path steps of her at her fresh turns as against opponents that bring under 1.5, on main and on v31; we do not lose more games to the first kind.",
+  "how_to_count": "Games with our_code main or v31, layouts with queen_spawn_dead_end false and map_key not 'Portals #1'. Lone-queen turn of ours = a turnStart of our queen at raw round 100 or later while their queen died in an earlier round. Seen = at that turn start a head of the other side is within 3 columns and 3 rows (wrapped) of any tile of her body; the seen test is made at every lone turn start of hers from the round their queen died, also before round 100. Fresh = seen at one of her turn starts in the last 20 rounds (this one included). At each fresh turn count the other side's dragons of length 4 or less whose head is within 12 path steps of her head (kelp blocks, portals pass, dragons ignored). Group games by (opponent_id, our_code); keep pairs with 150 or more fresh turns; bring = that count summed over fresh turns divided by fresh turns. Kind A = bring 3.0 or more, kind B = under 1.5. For each kind: lone turns of ours from round 100 summed, and deaths = games in which our queen died at raw round 100 or later after their queen had died in an earlier round. Rate = deaths per 1,000 lone turns. Beside it: our game results (all games of that opponent and code in rows.jsonl) per kind.",
+  "your_numbers": {
+   "kind_A": "8 pairs (main 4, v31 4): 30 deaths in 4,843 lone turns, 6.19 per 1,000; largest single opponent 6 deaths, without it 24 in 4,089 (5.87)",
+   "kind_B": "17 pairs (main 12, v31 5): 23 deaths in 7,033 lone turns, 3.27 per 1,000",
+   "between": "6 pairs: 34 deaths in 7,150 turns, 4.76",
+   "by_code": "main 13 in 2,881 (4.51) against 15 in 5,410 (2.77); v31 17 in 1,962 (8.66) against 8 in 1,623 (4.93)",
+   "game_wins": "A 67 of 110, between 70 of 115, B 54 of 115",
+   "new_games_6_step_flag": "34 main games on free layouts after battle 1289717: a short enemy head within 6 path steps in 531 of 1,965 of our lone-queen turns (all rounds) and 253 of 2,012 of theirs"
+  },
+  "slices": [
+   "main pairs and v31 pairs",
+   "with and without the opponent that holds the most deaths"
+  ]
+ }
+]

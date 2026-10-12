@@ -1,0 +1,20 @@
+== exp/q2/v17-hunter: games 38, won 24
+   our queen:   alive at the end 1/38; deaths sac 4, trap 23, rammed 10 (median round 111); median length r50/100/250/end 2/2/0/0
+   their queen: alive at the end 5/38; deaths sac 8, ram 2, trap 17, rammed 5, allyHead 1 (median round 154); median length r50/100/250/end 5/4/0/0; killed: sac by them 8, ram by us 2, trap by them 16, rammed by us 5, trap by us 1, allyHead by them 1
+   our tags (turns): escape-split 2696
+== exp/q2/cand-hunter: games 38, won 21
+   our queen:   alive at the end 5/38; deaths trap 19, rammed 9, sac 5 (median round 131); median length r50/100/250/end 4/4/0/0
+   their queen: alive at the end 4/38; deaths rammed 14, trap 14, allyHead 2, sac 4 (median round 164); median length r50/100/250/end 4/4/0/0; killed: rammed by us 14, trap by them 14, allyHead by them 2, sac by them 4
+   our tags (turns): qs 1817, qk 14, escape-split 2123, qd 248
+== exp/q2/cand-king: games 38, won 9
+   our queen:   alive at the end 2/38; deaths rammed 15, trap 13, sac 4, ram 3, enemyBody 1 (median round 139); median length r50/100/250/end 4/3/0/0
+   their queen: alive at the end 3/38; deaths sac 2, trap 25, rammed 6, allyHead 2 (median round 113); median length r50/100/250/end 2/2/0/0; killed: sac by them 2, trap by them 25, rammed by us 6, allyHead by them 2
+   our tags (turns): qs 1300, escape-split 824, qk 6, qd 170
+== exp/q2/v17x-king: games 36, won 10
+   our queen:   alive at the end 1/36; deaths rammed 9, trap 23, sac 1, ram 2 (median round 82); median length r50/100/250/end 2/0/0/0
+   their queen: alive at the end 2/36; deaths ram 5, trap 26, sac 3 (median round 119); median length r50/100/250/end 2/2/0/0; killed: ram by us 5, trap by them 26, sac by them 3
+   our tags (turns): escape-split 1322
+v17-hunter: trap after escape-split 12, trap while L<=3 10, rammed while L<=3 7, sac while L<=3 3, rammed after escape-split 2, sac while L>=4 1, trap after csplit 1, rammed while L>=4 1
+cand-hunter: trap after escape-split 16, rammed while L>=4 8, trap while L<=3 3, sac while L<=3 2, sac while L>=4 2, rammed after escape-split 1, sac after escape-split 1
+cand-king: trap after escape-split 13, rammed while L>=4 9, rammed while L<=3 6, sac while L>=4 3, ram after escape-split 2, ram while L>=4 1, enemyBody while L>=4 1, sac while L<=3 1
+v17x-king: trap after escape-split 14, trap while L<=3 8, rammed while L<=3 7, rammed while L>=4 1, sac while L>=4 1, rammed after escape-split 1, trap after csplit 1, ram while L<=3 1, ram after escape-split 1

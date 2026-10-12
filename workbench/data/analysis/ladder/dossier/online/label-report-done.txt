@@ -1,0 +1,51 @@
+완료: 2026-10-08 22:37:59 KST
+사용법: nice -n 10 python3 -B data/analysis/ladder/dossier/online/label_report.py <label> [--ref <label>[:old|:new] ...]
+시험 명령: nice -n 10 python3 -B data/analysis/ladder/dossier/online/label_report.py agg8-q1 --ref nc62-whq1:old --ref agg7-m2
+시험 결과 (5줄):
+agg8-q1:new: 30판 14승; Big Bobs Bots 8/15, WeHaveQuizzes 6/15; agg7.md와 상대별 로그 일치.
+nc62-whq1:old: 15판 4승; WeHaveQuizzes만 포함; 단일 상대 this run only 로그 일치.
+agg7-m2:new: 30판 7승; Big Bobs Bots 5/15, WeHaveQuizzes 2/15; 기존 agg7 행과 상대별 로그 일치.
+고유 경기 75/75; 회귀 시험 8개 통과; 기존 tq2 60판의 모든 여왕 턴·공통 체크포인트·추격 구간 일치.
+캐시 재사용 75, 새 집계 0; 지정 명령 재실행 약 0.36초, 종료 코드 0.
+알려진 한계:
+- 가져온 agg7 count_job은 팀 1119 전용이다. 다른 팀 입력은 누락/집계 불가 항목으로 명시한다.
+- boxed in은 기존 tq2의 비머리충돌 사망 범주다. 벽·몸·불법 행동·타임아웃 등 세부 원인을 병기하며 공간 봉쇄의 인과를 증명하지 않는다.
+- 실제 스위치 실행·일상/탈출 분열·먹이기 의도는 기보에서 구별할 수 없다. 기존 사건 정의와 extra.counts는 agg7_report를 import하여 사용한다.
+- 가까운 적 머리는 열린 변·포털 최단거리(몸 무시); 아군 5칸·7×7·접근 방향은 토러스 거리다. 성공하지 못한 마지막 이동은 걸음 비율에서 제외한다.
+- 여왕 길이 비율은 기존 agg7대로 r0-300, HERD는 r51-300, 추격·진주·FALLBACK은 경기 전체다. HERD의 아군 수에 여왕 자신을 포함한다.
+- 조기 종료 뒤 체크포인트는 최종 상태를 유지한다. 시간은 startedAt, requestedAt, completedAt, batch requested_at 순으로 찾고 출처를 JSON에 보존한다.
+- 참조는 같은 상대 id만 포함하며 시간·지도·상대 버전을 맞춘 인과 비교가 아니다. 상단 수치 차이는 표시 단위의 절대 차이로 정렬한다.
+- old의 pooled live 승수는 old half 개별 결과로 간주하지 않는다. 단일 상대 this run only 줄이 있으면 그 실제 old 결과와 대조한다.
+- 누락/미완성 파일과 로그는 보고서에 명시하고 완결 입력만 집계한다. 로그 불일치는 보고서를 남긴 뒤 종료 코드가 0이 아니게 한다.
+- 이 환경은 nice 우선순위 변경을 거부했다(setpriority: Operation not permitted). 지정 명령의 Python 집계는 정상 실행됐다.
+산출물: label_report.py, test_label_report.py, label-agg8-q1.md, label-agg8-q1.json, label-report-cache.json.
+모든 쓰기는 data/analysis/ladder/dossier/online/ 내부에 한정했다. 네트워크·게시·대전·봇 컴파일은 실행하지 않았다.
+
+report2 확장 완료: 2026-10-08 23:04:34 KST
+사용법: label_report.py <label>[:old|:new] [--ref <label>[:old|:new] ...] [--dir NAME=FOLDER[,FOLDER...] ...]
+명령: nice -n 10 python3 -B data/analysis/ladder/dossier/online/label_report.py one1-w1:old --ref agg8-q1 --ref nc62-whq1:old
+열별 승수: one1-w1:old 4/15; agg8-q1:new 6/15; nc62-whq1:old 4/15
+agg8-q1: 상대 불일치/중복 15판 제외
+명령: nice -n 10 python3 -B data/analysis/ladder/dossier/online/label_report.py one1-d1:old
+열별 승수: one1-d1:old 1/15
+명령: nice -n 10 python3 -B data/analysis/ladder/dossier/online/label_report.py --dir 'ranked=data/online/live-one1/b*' ranked --ref one1-w1:old
+열별 승수: ranked:new 15/50; one1-w1:old 0/0
+one1-w1: 1460555: 앞 열 ranked:new와 같은 경기; 이 열에서 제외; 1460556: 앞 열 ranked:new와 같은 경기; 이 열에서 제외; 1460557: 앞 열 ranked:new와 같은 경기; 이 열에서 제외; 1460558: 앞 열 ranked:new와 같은 경기; 이 열에서 제외; 1460559: 앞 열 ranked:new와 같은 경기; 이 열에서 제외; 1460560: 앞 열 ranked:new와 같은 경기; 이 열에서 제외; 1460561: 앞 열 ranked:new와 같은 경기; 이 열에서 제외; 1460562: 앞 열 ranked:new와 같은 경기; 이 열에서 제외; 1460563: 앞 열 ranked:new와 같은 경기; 이 열에서 제외; 1460564: 앞 열 ranked:new와 같은 경기; 이 열에서 제외; 1460565: 앞 열 ranked:new와 같은 경기; 이 열에서 제외; 1460566: 앞 열 ranked:new와 같은 경기; 이 열에서 제외; 1460567: 앞 열 ranked:new와 같은 경기; 이 열에서 제외; 1460568: 앞 열 ranked:new와 같은 경기; 이 열에서 제외; 1460569: 앞 열 ranked:new와 같은 경기; 이 열에서 제외; 상대 불일치/중복 15판 제외
+ranked:new 점검 not countable: Cache me outside; 폴더 입력: 상대별 report.log 없음
+ranked:new 점검 not countable: Jingling Munmin; 폴더 입력: 상대별 report.log 없음
+ranked:new 점검 not countable: Knight Capital; 폴더 입력: 상대별 report.log 없음
+ranked:new 점검 not countable: SHINK AI 6500; 폴더 입력: 상대별 report.log 없음
+ranked:new 점검 not countable: WeHaveQuizzes; 폴더 입력: 상대별 report.log 없음
+ranked:new 점검 not countable: dev test 1 :P; 폴더 입력: 상대별 report.log 없음
+one1-w1:old 점검 pending: 전체; 집계 경기/완성 상대별 로그 줄 없음
+ranked 상대별 승/판: Cache me outside 2/5; Jingling Munmin 2/5; Knight Capital 4/5; SHINK AI 6500 2/5; WeHaveQuizzes 4/15; dev test 1 :P 1/15
+집계 불가/누락 입력: 세 지정 시험에서 없음. 폴더 입력은 report.log가 없어 승수 로그 대조 불가(메타데이터 winner·scores는 agg7 count_job에서 기보와 대조).
+ranked 참조 one1-w1:old는 본 열과 동일한 15경기라 기존 열간 중복 제외 원칙에 따라 0/0; 제외 전 실제 4/15. JSON inventories에 15건을 명시.
+거리 정의: 사망 직전 마지막 여왕 차례 시작의 여왕·공격자 머리 사이 열린 변/포털 최단거리(몸 무시). 충돌 용 길이는 피격 순간, 진영은 실제 A/B와 우리/상대 모두 표시.
+agg7-m2:new 1415988은 공격자 #65가 직전 여왕 차례 시작 이후 r33에 태어나 그 시점 거리 NA. 공격자 길이/진영은 집계 가능. 연결 불가 거리도 NA.
+폴더 목록은 실행 시작 때 확보한다. 시험 도중 외부 수집기가 b1462081 5판을 추가하여 첫 ranked 결과 11/45에서 재실행 결과 15/50으로 증가. 이 작업은 다운로드/네트워크를 실행하지 않았다.
+추가 폴더 참조 시험: --dir ranked=data/online/live-one1/b* one1-d1:old --ref ranked; main 1/15, ranked 14/35(중복 15판 제외), 다른 상대 5팀 포함; 필터 해제 확인. 초기 고정 45판 기준 보조 assertion은 입력이 50판으로 늘어나 실패하여 실제 입력에 맞춰 다시 검증; 정상 통과.
+기존 명령 회귀: agg8-q1 --ref nc62-whq1:old --ref agg7-m2 → 14/30, 4/15, 7/30. 캐시 75행 재사용, 새 상세 집계 0. 생성 시각·캐시 통계라는 기존 실행 메타데이터를 제외하면 피격 상세 추가만 다름. 전체 diff: label-report2-regression.diff; 원본: label-agg8-q1.before-report2.md.
+회귀 시험: test_label_report.py 10개 모두 통과(누락/중복 폴더·glob·반대 진영 메타데이터·live-only 로그·기존 tq2/agg7 수치·피격 공격자 일치 포함).
+nice -n 10은 요청했으나 이 환경이 setpriority를 거부했다. 모든 Python 집계 명령은 종료 코드 0.
+수정/산출물 쓰기는 data/analysis/ladder/dossier/online/에만 한정. 네트워크·게시·대전·봇 컴파일 없음.

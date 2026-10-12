@@ -1,0 +1,38 @@
+=== 1046780 Tower Defense 32x16 | Vibing++ (side B) vs SSS (2324) | LOSS by wipe-out | rounds 168 | start dragons 4 | portals 0
+phase table (own | opp): units, total, top3, queen length
+  r  0 |  2u   4t top[2, 2] q2                  |  2u   4t top[2, 2] q2
+  r 50 |  2u   5t top[3, 2] q3                  |  2u   5t top[3, 2] q3
+  r100 |  3u   7t top[3, 2, 2] q2               | 15u  34t top[3, 3, 3] q2
+  r150 |  1u   2t top[2] q0                     | 32u  74t top[4, 3, 3] q4
+opening: first contact (heads within manh 4) r67; first ram (89, 'B', 3, 2) (round, attacker team, attacker len, victim len)
+  first splits of starting dragons (id: round, len -> parent+child): {}
+  queen splits own: ['r68 5->3+2', 'r74 9->3+6', 'r82 4->2+2'] | opp: ['r94 4->2+2']
+queen routine (own):
+  r  0 (26, 11) L2 ball35 home0 enemies<=8:[] allies<=6:1 cells/25r:1
+  r 25 (23, 7) L3 ball15 home7 enemies<=8:[] allies<=6:0 cells/25r:24
+  r 50 (30, 5) L3 ball29 home10 enemies<=8:[] allies<=6:1 cells/25r:25
+  r 75 (17, 4) L3 ball9 home16 enemies<=8:[(5, 'L2')] allies<=6:1 cells/25r:23
+  r100 (22, 0) L2 ball20 home9 enemies<=8:[(2, 'L2'), (3, 'L2'), (6, 'L2'), (7, 'L2')] allies<=6:0 cells/25r:16
+  enemy heads that came within 6 steps of the own queen: 7 episodes; outcomes {'left': 2, 'it rammed someone': 2, 'died self': 1, 'still near at end/queen death': 2}
+    r88-106 #13 L2 min dist 2 allies<=6 at start 2 -> it rammed someone
+    r87-156 #19 L2 min dist 2 allies<=6 at start 1 -> died self
+    r80-167 #4 L2 min dist 2 allies<=6 at start 3 -> it rammed someone
+    r93-168 #2 L2 min dist 3 allies<=6 at start 1 -> still near at end/queen death
+queen deaths:
+  OWN queen #1 died r106: headon, L2, at (23, 0)
+      killer #13 team A L2 from (22, 0), 1 of 1 steps, born r72
+      killer distance to the queen / its length, last rounds: r95:d4/L2 r96:d6/L2 r97:d6/L2 r98:d4/L2 r99:d2/L2 r100:d2/L2 r101:d2/L2 r102:d2/L2 r103:d4/L2 r104:d4/L2 r105:d4/L2 r106:d2/L2
+      queen track: r101:(22, 1)L2 r102:(23, 1)L2 r103:(23, 0)L2 r104:(24, 0)L2 r105:(24, 1)L2 r106:(23, 1)L2
+      other heads within manh 6 of the death cell: [(2, 'A', 2), (4, 'A', 2), (5, 'A', 3), (5, 'B', 2)]
+rams on enemy heads by own: per 100 rounds {0: 1}; by attacker length/steps {('3-4', 'adjacent'): 1}
+   attacker len -> victim len: {('3-4', '2'): 1}
+rams on enemy heads by opp: per 100 rounds {0: 2, 1: 3}; by attacker length/steps {('2', 'adjacent'): 2, ('3-4', 'sprint2'): 2, ('3-4', 'sprint3'): 1}
+   attacker len -> victim len: {('2', '2'): 2, ('3-4', '2'): 2, ('3-4', '3-4'): 1}
+late game (own): leader every 25 rounds from r200:
+  self-kills ('noaction' deaths) per 50 rounds: n, mean len, share within manh 6 of own longest, share within 6 of own queen:
+    {50: (5, 2.2, 0.6, 0.6), 100: (2, 2.0, 0.5, 0.5), 150: (1, 2.0, 0.0, 0.0)}
+  what own dragons ate per 100 rounds: {0: {'queen<-natural': 10, 'other<-natural': 8, 'other<-own_suicide': 3, 'queen<-own_suicide': 1, 'longest<-natural': 1}, 100: {'longest<-own_suicide': 3, 'longest<-natural': 2}}
+  'reverse' splits (child bigger than parent, len >= 12): 0 total; first: []
+  deaths of dragons >= 15:
+roles (own): length histogram every 100 rounds: [(0, {'2': 2}), (100, {'2': 2, '3-4': 1})]
+sonar pings per 100 rounds: own {0: 582, 1: 202} | opp {0: 325, 1: 5585}

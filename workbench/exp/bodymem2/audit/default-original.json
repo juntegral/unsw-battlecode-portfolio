@@ -1,0 +1,59 @@
+{
+  "file": "exp/bodyx/on/games/bot-hunter_default_A_1/game.replay",
+  "side": "A",
+  "checks": {
+    "sim": 0,
+    "splits": 0,
+    "drops": 0,
+    "eatTC": 0,
+    "ledger": 0,
+    "final": 0,
+    "lineage": 0,
+    "natBal": 0,
+    "dropBal": 0,
+    "unknownDeath": 0
+  },
+  "uncertain": {
+    "missingCountdown": 0,
+    "ambiguousFacing": 0
+  },
+  "scope": "native diagnostics with common observed input and forced recorded past actions; not a judge-clock or three-round causal gate",
+  "arms": {
+    "on": {
+      "turns": 147,
+      "startDrift": [],
+      "choicesReproduced": 146
+    },
+    "off": {
+      "turns": 147,
+      "startDrift": [],
+      "choicesReproduced": 147
+    }
+  },
+  "changed": [
+    {
+      "round": 188,
+      "id": 14,
+      "on": "N",
+      "off": "NW",
+      "actual": "NW",
+      "onNativeReproduced": false,
+      "offNativeReproduced": true,
+      "onOracle": {
+        "survived": true,
+        "body": [
+          891,
+          775
+        ]
+      },
+      "offOracle": {
+        "survived": false,
+        "reason": "A",
+        "step": 1
+      },
+      "onIndicator": "N v-1.1 d7 L2 bodymem2r3 tgx",
+      "offIndicator": "NW v-0.6 d7 L2 bodyx1,1,3,0,2615463712,3470953599,2 tg",
+      "future3Rounds": "UNMEASURED"
+    }
+  ]
+}

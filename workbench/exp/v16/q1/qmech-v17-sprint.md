@@ -1,0 +1,41 @@
+# Q1 mechanism check (2026-10-01T14:38Z): 28 games from exp/v16/q1/v17-sprint2
+
+- games 28; our queen alive at r300 7, at r400 2, at r500 0
+- labelled feeds from r300: 217 (conv 98, feed 119, cv2 0); while the queen was alive 3, of which to the queen 0 (0%)
+- late feeds (r >= 430) to a non-queen while the queen was alive: 0
+- drops of feeds to the queen: 0; eaten by the queen 0 (–), another of ours 0, the enemy 0
+- drops of feeds to others while the queen was alive: 6; eaten by their target or another of ours 6
+- queen deaths after r300 by cause (trap/a = an ally body blocked a side, /e enemy body, /s self or kelp): trap/a 3, rammed 2, ram 1, sac 1
+- queen length (games with the queen alive at the round): r100 3, r250 2, r300 3, r350 2, r400 4, r450 5, r500 –
+- the queen's pearls from r300 (games with the queen alive at r300): from our feeds 0, other deaths 8, natural 3
+
+| game | queen death | queen L r100/250/300/350/400/450/500 | queen pearls from r300: feeds / other deaths / natural | feeds from r300 (r L→K, q = queen, x = queen dead) |
+|---|---|---|---|---|
+| proxy4_king:around_unsw:A:1 | r96 trap/a | 0/0/0/0/0/0/0 | 0 / 0 / 0 | r347 L2→#367x conv 0/1; r383 L2→#252x conv 0/1; r388 L6→#406x feed 0/3; r402 L2→#406x conv 0/1; r409 L2→#406x conv 0/1; r434 L5→#419x feed 0/3; r435 L8→#447x feed 0/4; r441 L5→#447x feed 0/3; r443 L7→#419x feed 0/4; r449 L6→#447x feed 0/3; r455 L7→#447x feed 0/4; r460 L3→#447x conv 0/2; r496 L15→#342x feed 0/8 |
+| proxy4_king:around_unsw:B:1 | r6 trap/a | 0/0/0/0/0/0/0 | 0 / 0 / 0 | r344 L4→#166x feed 0/2; r359 L4→#257x feed 0/2; r378 L4→#469x feed 0/2; r395 L6→#400x feed 0/3; r404 L6→#400x feed 0/3; r415 L3→#400x conv 0/2; r416 L6→#400x feed 0/3; r416 L2→#400x conv 0/1; r419 L4→#400x conv 0/2; r425 L3→#204x conv 0/2; r444 L13→#400x feed 0/7; r482 L10→#400x feed 0/5 |
+| proxy4_king:australia:A:1 | r80 trap/a | 0/0/0/0/0/0/0 | 0 / 0 / 0 | r406 L4→#139x feed 0/2; r411 L4→#139x feed 0/2; r421 L3→#290x conv 0/2; r430 L3→#139x conv 0/2; r433 L4→#139x conv 0/2; r435 L3→#290x conv 0/2; r435 L4→#181x feed 0/2; r445 L9→#139x feed 0/5; r447 L3→#295x conv 0/2; r454 L4→#139x feed 0/2; r469 L12→#290x feed 0/6 |
+| proxy4_king:australia:B:1 | r364 trap/a | 3/2/2/2/0/0/0 | 0 / 1 / 0 | r302 L3→#247 conv 0/2; r346 L4→#258 feed 0/2; r364 L4→#238x feed 0/2; r367 L4→#238x feed 0/2; r392 L5→#238x feed 0/3; r396 L3→#238x conv 0/2; r397 L3→#238x conv 0/2; r397 L4→#238x conv 0/2; r398 L6→#238x feed 0/3; r398 L4→#238x conv 0/2; r402 L3→#238x conv 0/2; r404 L4→#238x feed 0/2; r486 L2→#232x feed 0/1 |
+| proxy4_king:islands:A:1 | r304 rammed | 18/2/2/0/0/0/0 | 0 / 1 / 0 | r486 L2→#60x feed 0/1 |
+| proxy4_king:islands:B:1 | r108 rammed | 17/0/0/0/0/0/0 | 0 / 0 / 0 |  |
+| proxy4_king:maze:A:1 | r324 trap/a | 3/3/4/0/0/0/0 | 0 / 0 / 1 | r343 L4→#439x feed 0/2; r346 L4→#439x feed 0/2; r348 L4→#439x feed 0/2; r351 L4→#439x feed 0/2; r353 L4→#439x feed 0/2; r357 L3→#439x conv 0/2; r362 L5→#519x feed 0/3; r372 L4→#379x feed 0/2; r374 L6→#379x feed 0/3; r376 L5→#245x feed 0/3; r377 L4→#379x feed 0/2; r378 L3→#379x conv 0/2; r378 L4→#379x conv 0/2; r382 L2→#379x conv 0/1; r382 L5→#379x feed 0/3; r382 L4→#379x conv 0/2; r385 L6→#379x feed 0/3; r388 L5→#379x feed 0/3; r388 L5→#392x feed 0/3; r401 L11→#379x feed 0/6; r403 L6→#563x feed 0/3; r409 L4→#379x feed 0/2; r412 L4→#379x feed 0/2; r434 L4→#588x feed 0/2 |
+| proxy4_king:stripes:A:1 | r39 trap/s | 0/0/0/0/0/0/0 | 0 / 0 / 0 |  |
+| proxy4_king:stripes:B:1 | r47 ram | 0/0/0/0/0/0/0 | 0 / 0 / 0 |  |
+| proxy4_king:maze:B:1 | r149 trap/a | 3/0/0/0/0/0/0 | 0 / 0 / 0 | r312 L2→#270x conv 0/1; r315 L3→#270x conv 0/2; r317 L2→#270x conv 0/1; r319 L3→#270x conv 0/2; r321 L3→#270x conv 0/2; r321 L3→#270x conv 0/2; r323 L3→#270x conv 0/2; r325 L2→#270x conv 0/1; r326 L3→#270x conv 0/2; r348 L3→#270x conv 0/2; r351 L2→#270x conv 0/1; r351 L3→#270x conv 0/2; r353 L2→#270x conv 0/1; r366 L5→#519x feed 0/3; r369 L4→#519x conv 0/2; r370 L2→#519x conv 0/1; r404 L2→#459x conv 0/1; r426 L4→#584x conv 0/2 |
+| proxy4_king:tower_defense:A:1 | r426 rammed | 2/2/2/2/2/0/0 | 0 / 0 / 0 |  |
+| proxy4_king:tower_defense:B:1 | r458 ram | 3/2/3/4/4/5/0 | 0 / 5 / 1 |  |
+| proxy4_king:weakhold:A:1 | r196 trap/s | 2/0/0/0/0/0/0 | 0 / 0 / 0 | r445 L5→#272x feed 0/3; r448 L4→#272x feed 0/2; r461 L3→#272x conv 0/2; r463 L4→#272x conv 0/2; r483 L4→#272x conv 0/2; r487 L2→#185x feed 0/1 |
+| proxy4_king:weakhold:B:1 | r82 trap/s | 0/0/0/0/0/0/0 | 0 / 0 / 0 | r433 L4→#244x feed 0/2; r443 L3→#265x conv 0/2; r444 L2→#265x conv 0/1; r494 L2→#299x feed 0/1 |
+| proxy4_swarm:around_unsw:A:1 | r206 trap/a | 4/0/0/0/0/0/0 | 0 / 0 / 0 | r368 L8→#14x feed 0/4; r373 L5→#14x feed 0/3; r387 L3→#14x conv 0/2; r395 L4→#439x feed 0/2; r404 L4→#276x feed 0/2; r405 L4→#447x feed 0/2; r410 L4→#447x feed 0/2; r415 L5→#447x feed 0/3; r418 L4→#447x feed 0/2; r423 L7→#498x feed 0/4; r439 L8→#498x feed 0/4; r451 L8→#498x feed 0/4; r457 L6→#522x feed 0/3; r477 L6→#566x feed 0/3; r487 L5→#566x feed 0/3 |
+| proxy4_swarm:around_unsw:B:1 | r6 trap/a | 0/0/0/0/0/0/0 | 0 / 0 / 0 | r356 L4→#290x feed 0/2; r385 L5→#290x feed 0/3; r392 L4→#290x conv 0/2 |
+| proxy4_swarm:australia:A:1 | r175 trap/a | 11/0/0/0/0/0/0 | 0 / 0 / 0 | r367 L4→#169x feed 0/2; r369 L4→#169x feed 0/2; r369 L4→#169x feed 0/2; r372 L4→#169x feed 0/2; r376 L4→#169x conv 0/2; r378 L4→#169x conv 0/2; r379 L2→#169x conv 0/1; r381 L3→#169x conv 0/2; r386 L3→#169x conv 0/2; r388 L3→#169x conv 0/2; r399 L2→#316x conv 0/1; r416 L4→#186x feed 0/2; r419 L4→#186x feed 0/2; r438 L4→#186x feed 0/2; r438 L4→#186x conv 0/2; r440 L3→#186x conv 0/2; r444 L4→#186x conv 0/2; r445 L4→#244x feed 0/2; r448 L2→#186x conv 0/1; r451 L6→#186x feed 0/3; r455 L2→#186x conv 0/1; r460 L4→#186x feed 0/2 |
+| proxy4_swarm:australia:B:1 | r326 trap/a | 2/3/3/0/0/0/0 | 0 / 0 / 1 | r330 L3→#240x conv 0/2; r337 L2→#240x conv 0/1; r341 L2→#240x conv 0/1; r389 L4→#143x feed 0/2; r393 L3→#240x conv 0/2; r398 L4→#240x feed 0/2; r400 L5→#240x feed 0/3; r404 L4→#240x feed 0/2; r405 L4→#240x conv 0/2; r406 L4→#240x feed 0/2; r409 L5→#240x feed 0/3; r410 L4→#240x conv 0/2; r410 L2→#240x conv 0/1; r411 L6→#240x feed 0/3; r412 L4→#240x feed 0/2; r412 L4→#240x feed 0/2 |
+| proxy4_swarm:islands:A:1 | r86 allyHead | 0/0/0/0/0/0/0 | 0 / 0 / 0 | r487 L3→#191x feed 0/2 |
+| proxy4_swarm:islands:B:1 | r139 rammed | 18/0/0/0/0/0/0 | 0 / 0 / 0 |  |
+| proxy4_swarm:maze:A:1 | r49 trap/a | 0/0/0/0/0/0/0 | 0 / 0 / 0 | r307 L3→#327x conv 0/2; r310 L2→#327x conv 0/1; r311 L3→#327x conv 0/2; r312 L2→#327x conv 0/1; r319 L2→#327x conv 0/1; r321 L2→#327x conv 0/1; r329 L3→#327x conv 0/2; r329 L4→#327x conv 0/2; r331 L3→#327x conv 0/2; r333 L2→#327x conv 0/1; r344 L2→#327x conv 0/1; r344 L2→#327x conv 0/1; r350 L5→#327x feed 0/3; r356 L3→#327x conv 0/2; r359 L5→#327x feed 0/3; r364 L3→#327x conv 0/2; r377 L2→#435x conv 0/1; r380 L2→#435x conv 0/1; r418 L7→#435x feed 0/4; r419 L4→#435x feed 0/2; r419 L4→#435x feed 0/2; r424 L11→#435x feed 0/6; r434 L6→#462x feed 0/3; r438 L3→#465x conv 0/2 |
+| proxy4_swarm:stripes:A:1 | r61 rammed | 0/0/0/0/0/0/0 | 0 / 0 / 0 |  |
+| proxy4_swarm:stripes:B:1 | r112 rammed | 3/0/0/0/0/0/0 | 0 / 0 / 0 |  |
+| proxy4_swarm:maze:B:1 | r322 sac | 2/3/5/0/0/0/0 | 0 / 1 / 0 | r322 L4→#60 conv 0/2; r322 L3→#60x conv 0/2; r329 L3→#60x conv 0/2; r334 L2→#60x conv 0/1; r335 L3→#60x conv 0/2; r336 L2→#60x conv 0/1; r347 L6→#60x feed 0/3; r348 L4→#60x feed 0/2; r350 L4→#60x feed 0/2; r351 L4→#60x feed 0/2; r354 L5→#60x feed 0/3; r355 L5→#60x feed 0/3; r364 L7→#60x feed 0/4; r367 L3→#60x conv 0/2; r368 L4→#60x conv 0/2; r370 L4→#306x feed 0/2; r372 L5→#60x feed 0/3; r374 L4→#60x feed 0/2; r377 L4→#60x feed 0/2 |
+| proxy4_swarm:tower_defense:A:1 | r248 trap/a | 2/0/0/0/0/0/0 | 0 / 0 / 0 | r367 L4→#69x feed 0/2; r404 L3→#69x conv 0/2 |
+| proxy4_swarm:tower_defense:B:1 | r220 trap/s | 3/0/0/0/0/0/0 | 0 / 0 / 0 |  |
+| proxy4_swarm:weakhold:A:1 | r52 trap/s | 0/0/0/0/0/0/0 | 0 / 0 / 0 | r423 L5→#205x feed 0/3; r426 L4→#205x feed 0/2; r428 L4→#205x feed 0/2; r437 L5→#218x feed 0/3; r440 L4→#205x feed 0/2; r459 L2→#205x conv 0/1; r474 L3→#218x conv 0/2 |
+| proxy4_swarm:weakhold:B:1 | r210 trap/s | 2/0/0/0/0/0/0 | 0 / 0 / 0 | r419 L4→#235x feed 0/2; r429 L4→#235x feed 0/2; r436 L6→#235x feed 0/3; r438 L3→#235x conv 0/2; r444 L4→#235x feed 0/2; r447 L2→#235x conv 0/1 |

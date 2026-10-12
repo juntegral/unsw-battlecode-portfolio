@@ -1,0 +1,1 @@
+Sub-session subC2.md has finished (ran 15:05-16:09 KST, exit code 0). What it printed is in subC2.out (3167 bytes). The .md files in this directory written while it ran: redteam-2.md y_p0_head.md y_p1_claimA.md y_p2_c5.md y_p3_c3z.md y_p4_final.md y_p5_corr.md y_p6_unknown.md.

@@ -1,0 +1,23 @@
+== against mD17
+map                      arm p100 d100 u100  div result                             queen death: round class | detail | f1 f0a
+gx_corridors_24x12_91110 off  133   24   61 same w0 elimination (by elimination)    alive, final len 4
+gx_corridors_24x12_91110 on   133   24   61 same w0 elimination (by elimination)    alive, final len 4
+gx_rooms_24x12_911001    off   38    3    7 same w1 elimination (by elimination)    r34 R2 rammed with 2+ free cells | seenQ paid | f1=1 f0a=1 
+gx_rooms_24x12_911001    on    38    3    7 same w1 elimination (by elimination)    r34 R2 rammed with 2+ free cells | seenQ paid | f1=1 f0a=1 
+ladder_islands_1         off  180   39   97   50 w0 round_limit (longest dragon, 42 r195 R2 rammed with 2+ free cells | unseen paid | f1=2 f0a=2 
+ladder_islands_1         on   167   34   83   50 w0 round_limit (longest dragon, 24 r81 BQ boxed: her own move left 0 free | f0=2 | f1=0 f0a=0 own:b3,wall,wall,wall
+ladder_maze_1            off   69   30   74  175 w1 round_limit (longer queen, 74 t r209 R2 rammed with 2+ free cells | seenQ paid | f1=1 f0a=1 
+ladder_maze_1            on    69   30   74  175 w1 round_limit (longer queen, 82 t r395 BQ boxed: her own move left 0 free | f0=1 | f1=0 f0a=0 wall,own:b5,wall,wall
+ladder_portals_1         off  251   22   56  150 w0 round_limit (longer queen, 12 t alive, final len 12
+ladder_portals_1         on   251   22   56  150 w1 round_limit (longer queen, 6 to r161 BQ boxed: her own split left 0 fre | f0=0 | f1=0 f0a=0 wall,wall,wall,own:t2
+ladder_slithery_fight_1  off  433   52  144   50 w1 round_limit (longest dragon, 79 r311 R2 rammed with 2+ free cells | seenMate paid | f1=3 f0a=3 
+ladder_slithery_fight_1  on   436   60  154   50 w1 round_limit (longest dragon, 65 r356 R2 rammed with 2+ free cells | seenMate paid | f1=3 f0a=3 
+== against m3base
+map                      arm p100 d100 u100  div result                             queen death: round class | detail | f1 f0a
+ladder_islands_1         off  249   57  143    - w0 elimination (by elimination)    r177 H she rams a foe head on her own m | free cells at turn start: 0 | f1=0 f0a=1 foe:h2,own:t2,wall,wall
+ladder_maze_1            off   81   29   76 same w1 round_limit (longest dragon, 72 r80 BQ boxed: her own move left 0 free | f0=1 | f1=0 f0a=0 wall,wall,wall,own:t2
+ladder_maze_1            on    81   29   76 same w1 round_limit (longest dragon, 72 r80 BQ boxed: her own move left 0 free | f0=1 | f1=0 f0a=0 wall,wall,wall,own:t2
+ladder_portals_1         off  271   28   70  200 w0 round_limit (longer queen, 37 t alive, final len 37
+ladder_portals_1         on   271   28   70  200 w0 round_limit (longest dragon, 42 r206 BQ boxed: her own split left 0 fre | f0=0 | f1=0 f0a=0 wall,own:b3,wall,wall
+ladder_slithery_fight_1  off  399   61  188  200 w0 round_limit (longer queen, 65 t alive, final len 65
+ladder_slithery_fight_1  on   399   61  188  200 w0 round_limit (longest dragon, 58 r447 R2 rammed with 2+ free cells | seenQ free | f1=1 f0a=1 

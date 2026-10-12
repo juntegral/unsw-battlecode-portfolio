@@ -1,0 +1,101 @@
+=== PACK 1029030 Autarky 54x18 | protagonist side A (team 1119) vs WeHaveQuizzes (2087.0) | winner B by queen rule | rounds 500
+final: {'A': {'units': 24, 'total': 159, 'longest': 93, 'queen': 0}, 'B': {'units': 1, 'total': 2, 'longest': 2, 'queen': 2}} | queens: {'A': 0, 'B': 1}
+
+-- opening: units/total/longest every 10 rounds (own | opp)
+  r  0 own (6, 29, 14) | opp (6, 29, 14) | ownQ ((7, 1), 3) oppQ ((46, 16), 3)
+  r 10 own (11, 26, 3) | opp (12, 30, 4) | ownQ ((9, 9), 3) oppQ ((51, 11), 3)
+  r 20 own (13, 32, 5) | opp (8, 22, 4) | ownQ ((14, 8), 2) oppQ ((43, 9), 4)
+  r 30 own (17, 38, 3) | opp (11, 28, 4) | ownQ ((20, 6), 2) oppQ ((46, 6), 2)
+  r 40 own (18, 44, 4) | opp (12, 31, 5) | ownQ ((23, 9), 2) oppQ ((43, 8), 2)
+  r 50 own (16, 39, 4) | opp (10, 25, 4) | ownQ ((23, 11), 2) oppQ ((44, 11), 3)
+  r 60 own (15, 38, 3) | opp (9, 23, 3) | ownQ ((26, 8), 3) oppQ ((44, 6), 2)
+  r 80 own (17, 41, 3) | opp (11, 28, 4) | ownQ ((22, 4), 3) oppQ ((43, 6), 3)
+  r100 own (20, 52, 4) | opp (13, 35, 3) | ownQ ((19, 9), 3) oppQ ((36, 3), 3)
+  own splits r0-60 (before,parent,child):n [((4, 2, 2), 19), ((5, 2, 3), 6), ((5, 3, 2), 1), ((6, 2, 4), 5), ((7, 2, 5), 1), ((7, 5, 2), 1), ((9, 7, 2), 1), ((11, 9, 2), 1), ((13, 11, 2), 1), ((15, 13, 2), 1)] | self-kills 0 | rams made 5
+  own queen first 30 actions: 0:mv S 1:mv E 2:mv S 3:mv S 4:mv S 5:mv S 6:mv E 7:mv S 8:mv S 9:mv S 10:mv S 11:SPLIT 12:mv E 13:mv N 14:mv N 15:SPLIT 16:mv E 17:mv E 18:mv E 19:mv E 20:mv S 21:mv E 22:mv E 23:mv E 24:mv N 25:mv N 26:mv N 27:mv E 28:mv E 29:mv E
+  opp splits r0-60 (before,parent,child):n [((4, 2, 2), 19), ((5, 2, 3), 9), ((6, 2, 4), 1), ((8, 2, 6), 1), ((10, 2, 8), 1), ((12, 2, 10), 1), ((14, 2, 12), 1)] | self-kills 0 | rams made 9
+  opp queen first 30 actions: 0:mv E 1:mv E 2:mv E 3:mv E 4:mv E 5:mv N 6:mv N 7:mv N 8:mv N 9:mv N 10:mv N 11:mv N 12:mv W 13:mv W 14:mv W 15:mv W 16:mv W 17:mv W 18:mv W 19:mv W 20:SPLIT 21:mv N 22:mv N 23:mv E 24:SPLIT 25:mv S 26:mv E 27:mv N 28:mv N 29:mv E
+
+-- own queen splits: [(11, '4->2+2', (9, 10)), (15, '4->2+2', (10, 8))]
+   own queen eats per 50 rounds: {0: {'natural': 3}, 50: {'natural': 1}}
+   own queen every 20 rounds (round: head, len, ball, nearest enemy d/L, allies<=6): 0:(7, 1) L3 b31 e- a0 | 20:(14, 8) L2 b42 e- a4 | 40:(23, 9) L2 b41 e- a2 | 60:(26, 8) L3 b41 e(6, 3) a6 | 80:(22, 4) L3 b41 e- a3 | 100:(19, 9) L3 b30 e- a2 | 120:(17, 13) L3 b37 e(4, 2) a1
+
+-- opp queen splits: [(20, '4->2+2', (43, 9)), (24, '4->2+2', (44, 7)), (37, '4->2+2', (43, 6)), (57, '4->2+2', (45, 7)), (65, '4->2+2', (43, 6)), (202, '4->2+2', (36, 11))]
+   opp queen eats per 50 rounds: {0: {'natural': 6}, 50: {'natural': 4}, 200: {'own_headon': 4, 'enemy_headon': 1}, 400: {'natural': 3}}
+   opp queen every 20 rounds (round: head, len, ball, nearest enemy d/L, allies<=6): 0:(46, 16) L3 b31 e- a0 | 20:(43, 9) L4 b41 e- a1 | 40:(43, 8) L2 b41 e- a2 | 60:(44, 6) L2 b40 e- a2 | 80:(43, 6) L3 b39 e- a2 | 100:(36, 3) L3 b37 e(5, 3) a2 | 120:(37, 2) L3 b29 e- a2 | 140:(41, 8) L3 b43 e- a1 | 160:(34, 13) L3 b40 e(6, 2) a3 | 180:(32, 15) L3 b33 e- a3 | 200:(35, 14) L3 b39 e(6, 2) a1 | 220:(37, 9) L2 b33 e(5, 3) a2 | 240:(37, 9) L2 b33 e(1, 2) a0 | 260:(45, 13) L2 b36 e(3, 2) a0 | 280:(45, 17) L2 b25 e(3, 2) a0 | 300:(48, 16) L2 b26 e(6, 3) a0 | 320:(47, 15) L2 b31 e(3, 2) a0 | 340:(53, 11) L2 b24 e(2, 3) a0 | 360:(52, 0) L2 b19 e(5, 2) a0 | 380:(52, 0) L2 b19 e(3, 2) a0 | 400:(50, 0) L2 b21 e- a0 | 420:(51, 5) L4 b29 e(3, 2) a0 | 440:(53, 4) L3 b21 e- a0 | 460:(52, 9) L4 b32 e(6, 3) a0 | 480:(49, 8) L2 b43 e(4, 2) a0
+
+-- own queen: 3 episodes with an enemy head within 3 steps; rounds [(62, 66), (108, 111), (116, 131)]
+  episode r62-66:
+    r 60 Q(26, 8) L3 ball41 mv E | en: d6 L3 #60(mv E) | al: d3 L2 #10(mv N), d3 L2 #24(mv N), d3 L2 #58(mv N), d4 L3 #41(mv S)
+    r 61 Q(27, 8) L3 ball41 mv S | en: d6 L4 #60(SPLIT) | al: d3 L2 #58(mv W), d4 L3 #41(mv E), d5 L2 #10(mv N), d5 L2 #24(mv N) | deaths: #75A L3 headon by #74B L3 from (33, 6) step 2/3; #74B L3 headon
+    r 62 Q(27, 9) L3 ball41 mv E | en: d3 L2 #82(mv N) | al: d3 L2 #42(mv S), d3 L2 #58(mv N), d4 L3 #41(mv E), d6 L2 #83(mv E)
+    r 63 Q(28, 9) L3 ball41 mv S | en: d3 L3 #82(mv E) | al: d4 L3 #41(mv E), d5 L2 #42(mv W), d5 L2 #58(mv N), d6 L2 #83(mv E)
+    r 64 Q(28, 10) L3 ball41 mv W | en: d5 L3 #82(mv N) | al: d4 L3 #41(mv S), d5 L2 #42(mv N)
+    r 65 Q(27, 10) L3 ball41 mv N | en: - | al: d3 L2 #42(mv E), d6 L3 #41(mv E)
+    r 66 Q(27, 9) L3 ball41 mv W | en: d2 L2 #89(mv N), d6 L2 #82(mv N) | al: d3 L2 #42(mv E)
+    r 67 Q(26, 9) L3 ball41 mv W | en: d4 L2 #89(mv N) | al: d5 L2 #42(mv E)
+    r 68 Q(25, 9) L3 ball41 mv N | en: d6 L2 #89(mv W) | al: -
+  episode r108-111:
+    r106 Q(21, 11) L3 ball41 mv E | en: - | al: d3 L2 #103(mv S), d3 L2 #122(mv W), d4 L2 #115(mv S), d6 L4 #130(mv N) | deaths: #121A L2 self
+    r107 Q(22, 11) L3 ball41 mv S | en: d5 L2 #40(mv W), d6 L3 #120(mv N) | al: d4 L2 #115(mv E), d5 L2 #103(mv E), d5 L2 #122(mv S), d6 L4 #130(SPLIT)
+    r108 Q(22, 12) L3 ball41 mv W | en: d3 L2 #40(mv W), d4 L3 #120(mv WW) | al: d3 L2 #103(mv E), d4 L2 #115(mv E), d5 L2 #122(mv E), d5 L2 #130(mv E) | deaths: #103A L2 headon by #120B L3 from (24, 14) step 1/2; #120B L3 headon
+    r109 Q(21, 12) L3 ball41 mv W | en: d3 L2 #40(mv S) | al: d3 L2 #122(mv N), d3 L2 #130(mv N), d6 L2 #115(mv N)
+    r110 Q(20, 12) L3 ball41 mv S | en: d5 L3 #40(mv W) | al: d3 L2 #130(mv E), d5 L2 #122(mv E)
+    r111 Q(20, 13) L3 ball41 mv W | en: d3 L4 #40(SPLIT) | al: d3 L2 #130(mv N)
+    r112 Q(19, 13) L3 ball40 mv W | en: d4 L2 #40(mv W), d6 L2 #137(mv S) | al: d3 L2 #130(mv E), d3 L3 #138(mv W), d6 L2 #133(mv E) | deaths: #133A L2 wall
+    r113 Q(18, 13) L3 ball40 mv W | en: d4 L2 #40(mv N) | al: d3 L3 #138(mv S), d5 L2 #130(mv N), d5 L3 #50(mv E) | deaths: #128A L2 wall
+  episode r116-131:
+    r114 Q(17, 13) L3 ball37 mv N | en: d4 L2 #40(mv W) | al: d3 L3 #50(mv N), d3 L3 #138(mv W)
+    r115 Q(17, 12) L3 ball38 mv E | en: d4 L2 #40(mv N) | al: d3 L3 #50(mv N), d5 L2 #118(mv N), d5 L3 #138(mv N)
+    r116 Q(18, 12) L3 ball40 mv S | en: d2 L2 #40(mv W) | al: d5 L3 #50(mv W), d5 L3 #138(mv N)
+    r117 Q(18, 13) L3 ball40 mv S | en: d2 L2 #40(mv S) | al: d3 L3 #138(mv N)
+    r118 Q(18, 14) L3 ball39 mv W | en: d2 L2 #40(mv E) | al: d5 L3 #138(mv N)
+    r119 Q(17, 14) L3 ball37 mv N | en: d4 L2 #40(mv N) | al: d5 L3 #138(mv W) | deaths: #141A L2 wall
+    r120 Q(17, 13) L3 ball37 mv E | en: d4 L2 #40(mv W) | al: d5 L3 #138(mv W)
+    r121 Q(18, 13) L3 ball40 mv S | en: d2 L2 #40(mv S) | al: -
+    r122 Q(18, 14) L3 ball39 mv W | en: d2 L2 #40(mv E), d5 L2 #146(mv N) | al: -
+    r123 Q(17, 14) L3 ball37 mv N | en: d4 L2 #40(mv N), d5 L2 #146(mv N) | al: -
+    r124 Q(17, 13) L3 ball37 mv E | en: d4 L2 #40(mv W), d5 L2 #146(mv N) | al: d6 L2 #110(mv W)
+    r125 Q(18, 13) L3 ball40 mv S | en: d2 L2 #40(mv S), d5 L2 #146(mv W) | al: -
+    r126 Q(18, 14) L3 ball39 mv W | en: d2 L2 #40(mv E), d5 L2 #146(mv W) | al: -
+    r127 Q(17, 14) L3 ball37 mv N | en: d4 L2 #40(mv S), d5 L2 #146(mv W) | al: d5 L3 #104(mv E) | deaths: #147A L2 wall
+
+-- queen deaths
+  OWN queen died r131 headon len 3 at [16, 14]
+   her last 10 rounds:
+    r122 Q(18, 14) L3 ball39 mv W | en: d2 L2 #40(mv E), d5 L2 #146(mv N) | al: -
+    r123 Q(17, 14) L3 ball37 mv N | en: d4 L2 #40(mv N), d5 L2 #146(mv N) | al: -
+    r124 Q(17, 13) L3 ball37 mv E | en: d4 L2 #40(mv W), d5 L2 #146(mv N) | al: d6 L2 #110(mv W)
+    r125 Q(18, 13) L3 ball40 mv S | en: d2 L2 #40(mv S), d5 L2 #146(mv W) | al: -
+    r126 Q(18, 14) L3 ball39 mv W | en: d2 L2 #40(mv E), d5 L2 #146(mv W) | al: -
+    r127 Q(17, 14) L3 ball37 mv N | en: d4 L2 #40(mv S), d5 L2 #146(mv W) | al: d5 L3 #104(mv E) | deaths: #147A L2 wall
+    r128 Q(17, 13) L3 ball37 mv W | en: d3 L2 #146(mv W), d4 L2 #40(mv W) | al: d5 L3 #104(mv E)
+    r129 Q(16, 13) L3 ball34 mv W | en: d3 L2 #146(mv W), d4 L2 #40(mv W) | al: d3 L3 #104(mv S), d6 L3 #110(mv S)
+    r130 Q(15, 13) L3 ball31 mv S | en: d3 L2 #146(mv N), d4 L2 #40(mv W) | al: d3 L3 #104(mv W), d4 L3 #110(mv E)
+    r131 Q(15, 14) L3 ball31 mv E | en: d2 L2 #40(mv W), d5 L2 #146(mv W) | al: d3 L3 #104(mv N), d4 L3 #110(mv E) | deaths: #0A L3 headon by #40B L2 from (17, 14) step 0/1; #40B L2 headon
+   killer #40 team B born (20, 1, 2) (round, parent, length at birth)
+   killer track (round: head, len, path distance to her head, its action): r101:(30, 14) L2 d17 [mv W] r111:(22, 14) L4 d3 [SPLIT] r116:(20, 12) L2 d2 [mv W] r121:(19, 12) L2 d2 [mv S] r123:(20, 13) L2 d4 [mv N] r125:(19, 12) L2 d2 [mv S] r126:(19, 13) L2 d2 [mv E] r127:(20, 13) L2 d4 [mv S] r128:(20, 14) L2 d4 [mv W] r129:(19, 14) L2 d4 [mv W] r130:(18, 14) L2 d4 [mv W] r131:(17, 14) L2 d2 [mv W]
+   killer ate (round:source), last 30 rounds: [(109, 'own_headon'), (110, 'enemy_headon')]
+   rounds (of the 40 before) in which the killer's head had her inside its 7x7 square: [107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131]
+   number of the killer's team-mates with her inside their 7x7 square, per round: 91:0 92:0 93:0 94:0 95:0 96:0 97:0 98:0 99:0 100:0 101:0 102:0 103:0 104:0 105:0 106:0 107:1 108:2 109:1 110:1 111:1 112:1 113:1 114:1 115:1 116:1 117:1 118:1 119:1 120:1 121:1 122:1 123:1 124:1 125:1 126:2 127:2 128:2 129:2 130:2 131:2
+   sonar rays that ended on the killer, per round: (n rays, n from a dragon that had her in view in the last 3 rounds): 91:3/0 92:3/0 93:3/0 94:2/0 95:2/0 96:1/0 97:2/0 98:3/0 99:2/0 100:4/0 101:3/0 102:3/0 103:2/0 104:3/0 105:2/0 106:4/0 107:2/0 108:1/0 109:2/0 110:4/0 111:2/0 112:1/0 113:2/0 114:4/0 115:1/0 116:1/0 118:1/0 119:2/0 120:3/0 121:1/0 122:1/0 123:3/0 124:3/0 125:1/0 126:3/1 127:2/0 129:1/0 130:3/1 131:1/0
+  ENEMY queen alive at the end, len 2
+
+-- deaths of dragons >= 15 long (both teams)
+
+-- own self-kills (noaction) by length class per 100 rounds, and top eaters of own self-kill pearls
+   {(200, '2'): 5, (200, '3-4'): 1, (300, '2'): 16, (300, '3-4'): 4, (400, '2'): 34, (400, '3-4'): 24}
+
+-- reverse splits (before >= 12, parent keeps <= 3) own: 0 opp: 2
+   own reverse splits of 20+ (round, id, before->p+c, at): []
+
+-- ram chances on the enemy queen (q3): own side
+   total 7, taken 0, not taken 7
+   r227 #262 L6 at (37, 11) needs 4 steps (free 2, cost 2); view-dist(cheb) to her head at round start 4, after her move 4; her L2 at (41, 10); longest 0; own queen alive 0; it did: SPLIT; then died r229 headon
+   r228 #262 L4 at (37, 11) needs 3 steps (free 1, cost 2); view-dist(cheb) to her head at round start 4, after her move 3; her L2 at (41, 11); longest 0; own queen alive 0; it did: SPLIT; then died r229 headon
+   r234 #267 L3 at (38, 10) needs 1 steps (free 1, cost 0); view-dist(cheb) to her head at round start 1, after her move 1; her L2 at (39, 9); longest 0; own queen alive 0; it did: mv E
+   r236 #259 L3 at (36, 7) needs 2 steps (free 1, cost 1); view-dist(cheb) to her head at round start 2, after her move 2; her L2 at (37, 9); longest 0; own queen alive 0; it did: mv S
+   r238 #259 L3 at (37, 8) needs 2 steps (free 1, cost 1); view-dist(cheb) to her head at round start 2, after her move 2; her L2 at (36, 10); longest 0; own queen alive 0; it did: mv N
+   r240 #259 L3 at (36, 7) needs 2 steps (free 1, cost 1); view-dist(cheb) to her head at round start 2, after her move 2; her L2 at (37, 9); longest 0; own queen alive 0; it did: mv N
+   r248 #292 L3 at (36, 13) needs 2 steps (free 1, cost 1); view-dist(cheb) to her head at round start 2, after her move 2; her L2 at (38, 12); longest 0; own queen alive 0; it did: mv W
+   (opponent's chances on the own queen: total 1, taken 1)

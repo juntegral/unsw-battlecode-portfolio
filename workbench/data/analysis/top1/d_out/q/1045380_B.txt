@@ -1,0 +1,73 @@
+=== 1045380 Around UNSW 64x64 (4096 cells) run dl-20261004 | B = WeHaveQuizzes (2157) vs meow (1853) | winner B by longest after 500 rounds
+queen #1 start (43, 21); enemy queen #0 start (20, 42); path between the starts 62
+DEATH r101 self L16 at (31, 28)
+splits (round, before -> keeps + child, child id): r0:4->2+2(#20) r19:4->2+2(#38) r68:4->2+2(#139)
+block | head | from start | len | ate nat/corpse | splits | rounds enemy in view | nearest enemy | cells used | own heads<=4 | units own/enemy
+r  0 | (43, 21)  |   0 |  4 | 2/0 | 2 |  0 | 9 | 17 | 1.4 | 10/10
+r 25 | (40, 17)  |   9 |  2 | 0/0 | 0 |  0 | 9 | 22 | 1.2 | 19/17
+r 50 | (34, 24)  |  22 |  2 | 4/0 | 1 |  0 | 9 | 21 | 2.1 | 44/29
+r 75 | (34, 32)  |  32 |  4 | 9/2 | 0 |  0 | 9 | 25 | 1.2 | 63/43
+r100 | (31, 27)  |  38 | 15 | 0/1 | 0 |  0 | 9 |  2 | 1.0 | 64/54
+moves from round 71:
+   71:W  72:N  73:W+  74:W+  75:S  76:E+  77:SE  78:NE  79:N  80:NE  81:NW  82:W
+   83:W  84:S+  85:W  86:WS+  87:S+  88:S+  89:W+  90:NNW++  91:W+  92:N  93:N+  94:N
+   95:N  96:N  97:N  98:E  99:S+  100:S+  101:N
+death record: {"round": 101, "reason": "self", "len": 16, "pos": [31, 28], "own": 1, "step": 1, "nsteps": 1, "dir": "N", "portal": 0, "hit": ["o", 1, 16, 1, 31, 27]}
+  r94 L14 at (30, 30) move N -> [30, 29] ate 0 | free 1 safe 1 | in reach at start 0, at end 0 | froom 37 tree 0 | N=F(30,29) reach0 room36 E=K S=o(30,31) #1L14s1 W=K | enemies 
+  r95 L14 at (30, 29) move N -> [30, 28] ate 0 | free 3 safe 3 | in reach at start 0, at end 0 | froom 29 tree 0 | N=F(30,28) reach0 room22 E=P(31,29) reach0 room5 S=o(30,30) #1L14s1 W=F(29,29) reach0 room22 | enemies 
+  r96 L14 at (30, 28) move N -> [30, 27] ate 0 | free 2 safe 2 | in reach at start 0, at end 0 | froom 14 tree 0 | N=F(30,27) reach0 room10 E=K S=o(30,29) #1L14s1 W=F(29,28) reach0 room2 | enemies 
+  r97 L14 at (30, 27) move N -> [30, 26] ate 0 | free 2 safe 2 | in reach at start 0, at end 0 | froom 4 tree 0 | N=F(30,26) reach0 room3 E=P(31,27) reach0 room3 S=o(30,28) #1L14s1 W=K | enemies 
+  r98 L14 at (30, 26) move E -> [31, 26] ate 0 | free 1 safe 1 | in reach at start 0, at end 0 | froom 3 tree 0 | N=K E=F(31,26) reach0 room2 S=o(30,27) #1L14s1 W=a(29,26) #25L2s1 | enemies 
+  r99 L14 at (31, 26) move S -> [31, 27] ate 1 | free 1 safe 1 | in reach at start 0, at end 0 | froom 2 tree 0 | N=K E=K S=P(31,27) reach0 room1 W=o(30,26) #1L14s1 | enemies 
+  r100 L15 at (31, 27) move S -> [31, 28] ate 1 | free 1 safe 1 | in reach at start 0, at end 0 | froom 1 tree 0 | N=o(31,26) #1L15s1 E=K S=P(31,28) reach0 room0 W=o(30,27) #1L15s3 | enemies 
+  r101 L16 at (31, 28) move N -> None ate 0 | free 0 safe 0 | in reach at start 0, at end 0 | froom 0 tree 1 | N=o(31,27) #1L16s1 E=K S=K W=K | enemies 
+--- board at the start of her turn, round 98
+     2526272829303132333435
+     + + + + +-+ + + + +-+ 
+ 21   . . . .|. . . .|*|. .
+     + + + + + + + + + + + 
+ 22   . . . .|. . . b|*|. .
+     + + +-+-+ + + + +-+ + 
+ 23   . .|b B|. . . b b|. .
+     + +-+ + + + + + + + + 
+ 24   .|. b .|. . B b b|. .
+     + + + + + + + +-+ + + 
+ 25   .|. b . .|. .|.|*|. .
+     + +-+ + + +-+-+ + + + 
+ 26   .|. b|B b & .|.|*|. .
+     +-+ + +-+-+ + + +-+ + 
+ 27   .|. b b .|b *|. . . .
+     + +-+-+ + + + + + + +-
+ 28   . . b b|. b|*|. . b .
+     + + + + + + +-+-+ + + 
+ 29  |. . . .|* b * .|. B .
+     + + + + +-+ + + + + + 
+ 30  |. . .|. *|b|*|*|. .|.
+     +-+ + + + + + + +-+ + 
+ 31   . .|. . *|b * . . . .
+heads: #1B L14 (30, 26); #25B L2 (28, 26); #95B L2 (34, 29); #147B L9 (28, 23); #163B L6 (31, 24)
+--- board at the start of her turn, round 101
+     2627282930313233343536
+     + +-+-+ + + + +-+ + + 
+ 23   .|. .|. . b b B|. . .
+     +-+ + + + + + + + + + 
+ 24  |. B b|B . b . .|. . .
+     + + + + + + +-+ + + + 
+ 25  |. . . b|. .|.|*|. . b
+     +-+ + + +-+-+ + + + + 
+ 26  |. b|. . b b|.|*|. . B
+     + + +-+-+ + + +-+ + + 
+ 27  |. b b .|b b|. . . . .
+     +-+-+ + + + + + + +-+ 
+ 28   . . b|. b|&|. . . . .
+     + + + + + +-+-+ + + + 
+ 29   . . b|* b * .|B . . .
+     + + + +-+ + + + + + + 
+ 30   . .|b *|b|*|*|b .|. .
+     + + + + + + + +-+ + +-
+ 31   .|. B *|b * . . . . .
+     + +-+-+-+ +-+-+ +-+-+-
+ 32   . . . . b b b .|. . .
+     + +-+ + +-+ + + + + + 
+ 33   . . .|. .|*|b|b|. .|.
+heads: #1B L16 (31, 28); #25B L2 (29, 24); #95B L2 (33, 29); #113B L2 (36, 26); #147B L2 (27, 24); #163B L6 (33, 23); #196B L7 (28, 31)

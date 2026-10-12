@@ -1,0 +1,91 @@
+game proxy4_king_big_empty_A_1 map big_empty/a us=A result {"winner":"A","end":"roundLimit"}
+tags(our turns): {"sx":0,"sr":0,"sd":0,"sf":0,"sq":0,"sc":0,"sk":0,"esc":37,"split":63}
+timeline r | our units / longest / total | their units / longest / total
+  r  0 |   3 /   6 /   18 |   3 /   6 /   18
+  r 25 |   7 /   9 /   34 |  14 /   3 /   33
+  r 50 |   7 /  10 /   49 |  26 /   5 /   68
+  r 75 |  34 /  10 /   98 |  60 /   6 /  165
+  r100 |  40 /   9 /  131 |  64 /  11 /  311
+  r125 |  40 /  10 /  146 |  64 /  14 /  357
+  r150 |  41 /  10 /  168 |  64 /  19 /  415
+  r175 |  40 /  11 /  173 |  64 /  15 /  430
+  r200 |  41 /  13 /  189 |  64 /  17 /  479
+  r225 |  43 /  13 /  213 |  64 /  18 /  526
+  r250 |  40 /  13 /  208 |  64 /  18 /  568
+  r275 |  40 /  16 /  219 |  64 /  19 /  594
+  r300 |  40 /  17 /  242 |  64 /  20 /  658
+  r325 |  40 /  18 /  253 |  64 /  23 /  625
+  r350 |  40 /  23 /  270 |  64 /  25 /  677
+  r375 |  37 /  27 /  270 |  36 /  27 /  585
+  r400 |  40 /  34 /  308 |  33 /  33 /  551
+  r425 |  36 /  44 /  338 |  23 /  36 /  557
+  r450 |  21 /  56 /  331 |  25 /  46 /  608
+  r475 |  14 /  62 /  353 |  20 /  51 /  636
+local feeds (sf) 0: first 12 → 
+--- r380: ours 38 dragons [29 26 22 21 18 11 11 10 8 7 7 6 …] total 266 | theirs 36 [29 27 26 25 24 24 23 22 …] total 571
++----------------------------------------------------------------+
+| ..   .         ...5..  2                                       |
+|..    .            %   .  xxxx                            xo    |
+|........              3.  x      o                        x     |
+| xxxx.....        xxxxxxxxx                            .  x     |
+|    x .# ...    Kxx                .               .   .  x     |
+|    xxxx.. ...6 %   %   ...        .  ...      .....   .xxx %   |
+|       x.       % % %  ...2        .4..        .      5.x  xxxxx|
+|     ..x...    % ....... .   ...5  o .        ..        x ox   x|
+|x    . x  #      ..  .....   .      8.        .......   x  x   x|
+|x    4 x ..       #  ...   .     .2    o     x      ... x  x  o |
+|x      xx3   o         .   2  ... ..5        x        . x  xxxx |
+|x       x          %   .      ... .        o x     o  ..xxxxxxxx|
+|x       x       .3%            .. .          x    o  o ....#%x%x|
+|   K    x  ..   .  % %        .2.     5     ox           ..  x x|
+| xxx    x  .....                #   % ..     x               xxx|
+| xxx    x  #   .                      ..    ox                xx|
+|Kxxx    x      .                             x               xxx|
+|xxxx    xxo .  .....    3..         .2       xxxxxxK      Kxxx x|
+|xxxxx o  K  .2  ....                       xxxx    o      o  Kxx|
+|xxx   Kxx% 4.. 2. ..                 o       ox     xxx    Kxxx |
+|xxxxx  xx %                           o       xxxxxx  x       xx|
+|xx  x  x %%%      Kxx                              x  xxxxx    x|
+|xx  xxxx%%    Kxx xxxxx          xxX               xxxK   xxxxxx|
+|xxKxxxxx%o Kx   x   xx    %         o            o              |
+|x  x % %  xxxx  xxxx       %                o  o                |
+|x xx%    Kxx xx    x                   o                    Kxxx|
+|x x%      %xx%x    x  %   X                            o xxxxx%x|
+|%xx % % xxx x x    xxx    x  oXx o                       x % xx |
+|   % % %xxx%x xxxxx       xx            o       K        x    x |
+|x xx% % xxKxxxxxx x     xxKo                  xxx  o     xxx  xx|
+|xKxxxxxxx  x  %xx     xxx %                   x           %x xxx|
+|xxxxx%xxxxxx   xx     x %%                    x xx      xxxx xXX|
+|x Kxxxx   xxxxxxx     xx  % %                 x x       x   xxxx|
+|x  xXxx   % % % o      x xx%     o            x x x% xxxx    x  |
+|x  xx x  %  o  % %     xxxxx        o      o  xxx x   xxxxxxxx x|
+|xxxx  x   %% %         o   x            o         x   xK       x|
+|  xxxxxxxx                 x      o      oo       xxx          x|
+| Kxxxxxxxx   %             x             o          xxxxxxK o  x|
+|  xxxK  x               o                                      x|
+|  x    xx       K                                   xxxxx      x|
+|  x    x        x                                   x o x     ox|
+|  xxxxxx        x                               o   x   xK  xxxx|
+|      xx  7.    x                                   x    o  K o |
+|     xx    ..  Kxxxxxxxxxx                         ox        o  |
+|     x%     ...xxxx      xxx                  o     x           |
+|     x            x        x        o            o  x o  o      |
+|  o xx            x                                 x       o   |
+| oo x             x   o                             x           |
+|    x          o  xo                       o   o    x           |
+|o   x     xxxxxxxxx o               o             o x      o    |
+|  o x %  xxxxxx   o                    o                        |
+|     %  xx.. ox          o                                      |
+|o   xxxxx ..6       o        o    o               o             |
+|    K% xxx.                    o                  o             |
+| o    %x x          o   o                                       |
+|       xxx                 o              o          o  o      o|
+|     o                      o     o     o               o       |
+|                                           o                    |
+|                 ....                               o         . |
+|            .2   ....                                         . |
+|                 .       ..             oo                    ..|
+|..4              .  . #....   o    6                           .|
+| ..   ..         # ....7   4       ....                    ..   |
+| ..   .         .  ...  .  ...        .                     3   |
++----------------------------------------------------------------+

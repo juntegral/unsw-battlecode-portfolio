@@ -1,0 +1,85 @@
+[
+ {
+  "bot": "exp/v11/bot-v11b-beaconoff",
+  "out": "exp/v11/v11bc-idoff",
+  "sides": [
+   "A"
+  ],
+  "opps": [
+   "proxy4_king"
+  ],
+  "seeds": [
+   1,
+   2
+  ],
+  "maps": "maps/online-20260927",
+  "only": [
+   "autarky",
+   "portals",
+   "prisoners_dilemma"
+  ]
+ },
+ {
+  "bot": "exp/v11/bot-v11b",
+  "out": "exp/v11/v11bc-fort",
+  "sides": [
+   "A",
+   "B"
+  ],
+  "opps": [
+   "proxy4_king"
+  ],
+  "seeds": [
+   1,
+   2
+  ],
+  "maps": "maps/online-20260927",
+  "only": [
+   "autarky",
+   "portals",
+   "prisoners_dilemma"
+  ]
+ },
+ {
+  "bot": "exp/v11/bot-v11b",
+  "out": "exp/v11/v11bc-fort",
+  "opps": [
+   "proxy4_king"
+  ],
+  "seeds": [
+   1
+  ],
+  "maps": "maps/server-b",
+  "sides": [
+   "A",
+   "B"
+  ],
+  "only": [
+   "prisoners_dilemma_10"
+  ]
+ },
+ {
+  "bot": "exp/v11/bot-v11b",
+  "out": "exp/v11/v11bc-a-px4",
+  "opps": [
+   "proxy4_king",
+   "proxy4_swarm"
+  ],
+  "seeds": [
+   1
+  ],
+  "maps": "exp/v1/maps-swarm-a"
+ },
+ {
+  "bot": "exp/v11/bot-v11b",
+  "out": "exp/v11/v11bc-b-px4",
+  "opps": [
+   "proxy4_king",
+   "proxy4_swarm"
+  ],
+  "seeds": [
+   2
+  ],
+  "maps": "exp/v1/maps-swarm-b"
+ }
+]

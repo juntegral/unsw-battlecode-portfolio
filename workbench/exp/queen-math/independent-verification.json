@@ -1,0 +1,25 @@
+{
+  "all_checks_passed": true,
+  "checks": [
+    "rule_source_hashes_unchanged",
+    "all_39_reach_rows_and_two_turn_optimization",
+    "all_37_same_round_split_assassination_distance_witnesses",
+    "all_37_two_turn_split_family_fixed_target_witnesses",
+    "L2_to_L8_exact_reach_by_unmerged_command_DFS",
+    "every_finite_room_witness_transition_and_period_closure",
+    "all_862_room_censuses_recomputed_by_cyclic_SCC_reachability",
+    "all_81_general_rectangle_cycle_constructions",
+    "all_stored_assassination_witnesses_replayed_independently",
+    "all_negative_single_hunter_cases_include_recursive_splits_independently",
+    "every_vault_phase_edge_substep_and_gate_body_invariant",
+    "concrete_EV_enumerated_from_all_tiebreaks",
+    "literal_feed_everything_EV_includes_early_elimination",
+    "report_rule_citation_files_and_line_numbers_exist"
+  ],
+  "independent_legal_move_prefixes": 10762,
+  "room_witness_steps": 1242,
+  "assassination_responses": 31,
+  "independently_checked_negative_split_families": 5,
+  "report_rule_line_citations": 159,
+  "limits": "Independent implementations check artifacts, not the official engine; no game/network. Geometry uses isolated no-wrap/no-portal cells unless stated."
+}

@@ -1,0 +1,82 @@
+{
+  "time": "2026-10-02 13:36:09 KST",
+  "proposal": "ON",
+  "criterion1": {
+    "fixtures": "PASS",
+    "purposeDirection": "PASS",
+    "strictFullArrayZero": "FAIL",
+    "residualCause": "legacy own portal-chain reconstruction, same-input on/off both drift"
+  },
+  "criterion2": "PASS",
+  "criterion3": "PASS",
+  "criterion4": "PASS",
+  "stats": {
+    "on": {
+      "multi": 3677,
+      "completed": 3548,
+      "predicted": 3552,
+      "unknownInput": 32,
+      "unseenPearls": 17,
+      "rejected": 70,
+      "oversprint": 0,
+      "startBodyDrift": 114,
+      "endBodyDrift": 98,
+      "missingTags": 125,
+      "oracleDrift": 0,
+      "stepDrift": 0,
+      "reasons": {
+        "H": 715,
+        "O": 1352,
+        "S": 1597,
+        "W": 5434
+      },
+      "causes": {
+        "rammed": 299,
+        "trap": 6776,
+        "ram": 270,
+        "sac": 1599,
+        "allyHead": 146,
+        "enemyBody": 8
+      },
+      "queenCensored": 15
+    },
+    "off": {
+      "multi": 3638,
+      "completed": 3504,
+      "predicted": 3513,
+      "unknownInput": 33,
+      "unseenPearls": 23,
+      "rejected": 0,
+      "oversprint": 1,
+      "startBodyDrift": 121,
+      "endBodyDrift": 104,
+      "missingTags": 125,
+      "oracleDrift": 0,
+      "stepDrift": 0,
+      "reasons": {
+        "H": 717,
+        "O": 1349,
+        "S": 1591,
+        "W": 5421,
+        "A": 1
+      },
+      "causes": {
+        "rammed": 301,
+        "trap": 6758,
+        "ram": 268,
+        "sac": 1592,
+        "allyHead": 148,
+        "enemyBody": 11,
+        "sprintDeath": 1
+      },
+      "queenCensored": 15
+    }
+  },
+  "CPUmaxM": 32.4,
+  "identityN": 12,
+  "pairsN": 84,
+  "gamesN": 192,
+  "changedN": 5,
+  "noDivergenceN": 79,
+  "partialRule": "purpose improves; no new harm at preregistered horizons; identity/CPU/errors pass; strict legacy array counterexample retained"
+}

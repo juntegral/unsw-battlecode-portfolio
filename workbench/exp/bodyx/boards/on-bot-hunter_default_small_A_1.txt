@@ -1,0 +1,779 @@
+on bot-hunter:default_small:A:1 r35 turn #0 around 3,5 x=15
+  1 .........
+  2 .........
+  3 .........
+  4 .........
+  5 ....AaaBb
+  6 ......aab
+  7 .........
+  8 .........
+  9 ....Xxxx.
+a=#0 L5 b=#2 L3 c=#4 L3 d=#6 L3
+
+on bot-hunter:default_small:A:1 r35 after action #0 around 3,6 x=15
+  2 .........
+  3 .........
+  4 .........
+  5 ....aaaBb
+  6 ....A.a.b
+  7 .........
+  8 .........
+  9 ....Xxxx.
+ 10 .........
+a=#0 L5 b=#2 L3 c=#4 L3 d=#6 L3
+
+on bot-hunter:default_small:A:1 r35 death #0 around 3,6 x=15
+  2 .........
+  3 .........
+  4 .........
+  5 ....aaabb
+  6 ....A.aB.
+  7 ....X....
+  8 ....x....
+  9 ....x....
+ 10 ........X
+a=#0 L5 b=#2 L3 c=#4 L3 d=#6 L3
+
+on bot-hunter:default_small:A:1 r42 after #2 pearl-multi around 4,7 x=0
+  3 .........
+  4 .........
+  5 ...a...eE
+  6 ...a.....
+  7 ...aA..*.
+  8 ........x
+  9 ...*.XxXx
+ 10 ....X*...
+ 11 ....xx...
+a=#2 L4 b=#4 L4 c=#6 L3 d=#10 L2 e=#11 L2
+
+on bot-hunter:default_small:A:1 r107 turn #29 around 13,8 x=9
+  4 ........*
+  5 xxxxxdD..
+  6 xx..Xd...
+  7 .o.......
+  8 .o..I..X.
+  9 .O.ii..xx
+ 10 .......xX
+ 11 .........
+ 12 x........
+a=#2 L3 b=#6 L2 c=#11 L2 d=#13 L3 e=#14 L2 f=#18 L2 g=#26 L3 h=#28 L2 i=#29 L3 j=#31 L3 k=#33 L2 l=#38 L2 m=#41 L2 n=#42 L2 o=#44 L3
+
+on bot-hunter:default_small:A:1 r107 after action #29 around 13,7 x=9
+  3 ...*...Xx
+  4 ........*
+  5 xxxxxdD..
+  6 xx..Xd...
+  7 .o..I....
+  8 .o..i..X.
+  9 .O..i..xx
+ 10 .......xX
+ 11 .........
+a=#2 L3 b=#6 L2 c=#11 L2 d=#13 L3 e=#14 L2 f=#18 L2 g=#26 L3 h=#28 L2 i=#29 L3 j=#31 L3 k=#33 L2 l=#38 L2 m=#41 L2 n=#42 L2 o=#44 L3
+
+on bot-hunter:default_small:A:1 r107 death #29 around 13,7 x=9
+  3 ...*...Xx
+  4 ........*
+  5 .*.*.dD..
+  6 *...*d...
+  7 .o..I....
+  8 .o..i..X.
+  9 .O..i..xx
+ 10 .......xX
+ 11 .........
+a=#2 L3 b=#6 L2 c=#11 L2 d=#13 L3 e=#14 L2 f=#18 L2 g=#26 L3 h=#28 L2 i=#29 L3 j=#31 L3 k=#33 L2 l=#38 L2 m=#41 L2 n=#42 L2 o=#44 L3
+
+on bot-hunter:default_small:A:1 r210 turn #93 around 2,7 x=14
+  3 Q.....nnk
+  4 pP.xdD.Nk
+  5 ...Xa..jJ
+  6 ....A...M
+  7 Xxx.SXx..
+  8 ..X.s...C
+  9 .....Xx.x
+ 10 Xxxx...Xx
+ 11 ..Xxx..x.
+a=#2 L2 b=#6 L3 c=#11 L3 d=#18 L2 e=#26 L2 f=#31 L3 g=#41 L3 h=#42 L2 i=#53 L3 j=#58 L2 k=#60 L3 l=#64 L3 m=#76 L3 n=#80 L3 o=#85 L3 p=#86 L2 q=#87 L4 r=#89 L2 s=#93 L2 t=#96 L2 u=#97 L2 v=#99 L2 w=#100 L2
+
+on bot-hunter:default_small:A:1 r210 after action #93 around 2,7 x=14
+  3 Q.....nnk
+  4 pP.xdD.Nk
+  5 ...Xa..jJ
+  6 ....A...M
+  7 Xxx.SXx..
+  8 ..X.s...C
+  9 .....Xx.x
+ 10 Xxxx...Xx
+ 11 ..Xxx..x.
+a=#2 L2 b=#6 L3 c=#11 L3 d=#18 L2 e=#26 L2 f=#31 L3 g=#41 L3 h=#42 L2 i=#53 L3 j=#58 L2 k=#60 L3 l=#64 L3 m=#76 L3 n=#80 L3 o=#85 L3 p=#86 L2 q=#87 L4 r=#89 L2 s=#93 L2 t=#96 L2 u=#97 L2 v=#99 L2 w=#100 L2
+
+on bot-hunter:default_small:A:1 r210 death #93 around 2,7 x=14
+  3 Q.....nnk
+  4 pP.xdD.Nk
+  5 ...Xa..jJ
+  6 ....A...M
+  7 Xxx.S*...
+  8 ..X.s...C
+  9 .....Xx.x
+ 10 Xxxx...Xx
+ 11 ..Xxx..x.
+a=#2 L2 b=#6 L3 c=#11 L3 d=#18 L2 e=#26 L2 f=#31 L3 g=#41 L3 h=#42 L2 i=#53 L3 j=#58 L2 k=#60 L3 l=#64 L3 m=#76 L3 n=#80 L3 o=#85 L3 p=#86 L2 q=#87 L4 r=#89 L2 s=#93 L2 t=#96 L2 u=#97 L2 v=#99 L2 w=#100 L2
+
+on bot-hunter:default_small:A:1 r249 turn #110 around 1,5 x=13
+  1 .f.....hH
+  2 ....kK.h.
+  3 r.u..TlL.
+  4 rrueEt..I
+  5 ..UvVa..X
+  6 C...XaA..
+  7 ....x..j.
+  8 NBbXx..J.
+  9 n..X..xxx
+a=#2 L3 b=#6 L2 c=#11 L3 d=#18 L2 e=#26 L2 f=#31 L2 g=#42 L2 h=#53 L3 i=#58 L2 j=#60 L2 k=#76 L2 l=#80 L2 m=#85 L2 n=#86 L2 o=#87 L3 p=#89 L2 q=#96 L2 r=#103 L4 s=#104 L2 t=#105 L2 u=#107 L3 v=#110 L2 w=#114 L2 x=#115 L2 y=#117 L2 z=#118 L2 a=#119 L2 b=#121 L2
+
+on bot-hunter:default_small:A:1 r249 after action #110 around 1,5 x=13
+  1 .f.....hH
+  2 ....kK.h.
+  3 r.u..TlL.
+  4 rrueEt..I
+  5 ..UvVa..X
+  6 C...XaA..
+  7 ....x..j.
+  8 NBbXx..J.
+  9 n..X..xxx
+a=#2 L3 b=#6 L2 c=#11 L3 d=#18 L2 e=#26 L2 f=#31 L2 g=#42 L2 h=#53 L3 i=#58 L2 j=#60 L2 k=#76 L2 l=#80 L2 m=#85 L2 n=#86 L2 o=#87 L3 p=#89 L2 q=#96 L2 r=#103 L4 s=#104 L2 t=#105 L2 u=#107 L3 v=#110 L2 w=#114 L2 x=#115 L2 y=#117 L2 z=#118 L2 a=#119 L2 b=#121 L2
+
+on bot-hunter:default_small:A:1 r249 death #110 around 1,5 x=13
+  1 .f.....hH
+  2 ....kK.h.
+  3 r.u..TlL.
+  4 rrueEt..I
+  5 ..UvVa..X
+  6 C...*aA..
+  7 .......j.
+  8 NBbXx..J.
+  9 n..X..xxx
+a=#2 L3 b=#6 L2 c=#11 L3 d=#18 L2 e=#26 L2 f=#31 L2 g=#42 L2 h=#53 L3 i=#58 L2 j=#60 L2 k=#76 L2 l=#80 L2 m=#85 L2 n=#86 L2 o=#87 L3 p=#89 L2 q=#96 L2 r=#103 L4 s=#104 L2 t=#105 L2 u=#107 L3 v=#110 L2 w=#114 L2 x=#115 L2 y=#117 L2 z=#118 L2 a=#119 L2 b=#121 L2
+
+on bot-hunter:default_small:A:1 r310 turn #132 around 14,3 x=10
+ 15 .......x.
+  0 .Lll.....
+  1 .tttt...x
+  2 .tttt....
+  3 .gttQq...
+  4 .G.T..fF.
+  5 ppp......
+  6 ..P.iI...
+  7 .O..i...A
+a=#2 L2 b=#18 L3 c=#26 L2 d=#42 L2 e=#53 L3 f=#58 L2 g=#60 L2 h=#76 L2 i=#86 L3 j=#87 L2 k=#105 L2 l=#107 L3 m=#115 L4 n=#119 L2 o=#121 L2 p=#128 L6 q=#132 L2 r=#135 L4 s=#137 L3 t=#138 L11
+
+on bot-hunter:default_small:A:1 r310 after action #132 around 14,3 x=10
+ 15 .......x.
+  0 .Lll.....
+  1 .tttt...x
+  2 .tttt....
+  3 .gttQq...
+  4 .G.T..fF.
+  5 ppp......
+  6 ..P.iI...
+  7 .O..i...A
+a=#2 L2 b=#18 L3 c=#26 L2 d=#42 L2 e=#53 L3 f=#58 L2 g=#60 L2 h=#76 L2 i=#86 L3 j=#87 L2 k=#105 L2 l=#107 L3 m=#115 L4 n=#119 L2 o=#121 L2 p=#128 L6 q=#132 L2 r=#135 L4 s=#137 L3 t=#138 L11
+
+on bot-hunter:default_small:A:1 r310 death #132 around 14,3 x=10
+ 15 .......x.
+  0 .Lll.....
+  1 .tttt...x
+  2 .tttt....
+  3 .gttQq...
+  4 .G.T..fF.
+  5 ppp......
+  6 ..P.iI...
+  7 .O..i...A
+a=#2 L2 b=#18 L3 c=#26 L2 d=#42 L2 e=#53 L3 f=#58 L2 g=#60 L2 h=#76 L2 i=#86 L3 j=#87 L2 k=#105 L2 l=#107 L3 m=#115 L4 n=#119 L2 o=#121 L2 p=#128 L6 q=#132 L2 r=#135 L4 s=#137 L3 t=#138 L11
+
+on bot-hunter:default_small:A:1 r313 turn #86 around 14,5 x=10
+  1 Lsss.....
+  2 .sss.....
+  3 ..sssS...
+  4 ..*ss...A
+  5 ppp.Ii..a
+  6 Ppp..iFf.
+  7 q.o.....X
+  8 q.O..R..x
+  9 q....r...
+a=#2 L2 b=#18 L3 c=#26 L2 d=#42 L2 e=#53 L2 f=#58 L2 g=#60 L2 h=#76 L2 i=#86 L3 j=#87 L2 k=#105 L2 l=#107 L3 m=#115 L4 n=#119 L2 o=#121 L2 p=#128 L6 q=#135 L5 r=#137 L3 s=#138 L12
+
+on bot-hunter:default_small:A:1 r313 after action #86 around 14,5 x=10
+  1 Lsss.....
+  2 .sss.....
+  3 ..sssS...
+  4 ..*ss...A
+  5 ppp.Ii..a
+  6 Ppp..iFf.
+  7 q.o.....X
+  8 q.O..R..x
+  9 q....r...
+a=#2 L2 b=#18 L3 c=#26 L2 d=#42 L2 e=#53 L2 f=#58 L2 g=#60 L2 h=#76 L2 i=#86 L3 j=#87 L2 k=#105 L2 l=#107 L3 m=#115 L4 n=#119 L2 o=#121 L2 p=#128 L6 q=#135 L5 r=#137 L3 s=#138 L12
+
+on bot-hunter:default_small:A:1 r313 death #86 around 14,5 x=10
+  1 Lsss.....
+  2 .sss.....
+  3 ..sssS...
+  4 ..*ss...A
+  5 ppp.Ii..a
+  6 Ppp..iFf.
+  7 q.o.....X
+  8 q.O..R..x
+  9 q....r...
+a=#2 L2 b=#18 L3 c=#26 L2 d=#42 L2 e=#53 L2 f=#58 L2 g=#60 L2 h=#76 L2 i=#86 L3 j=#87 L2 k=#105 L2 l=#107 L3 m=#115 L4 n=#119 L2 o=#121 L2 p=#128 L6 q=#135 L5 r=#137 L3 s=#138 L12
+
+on bot-hunter:default_small:A:1 r340 turn #135 around 11,11 x=7
+  7 .*o..k.Qq
+  8 mLoO...qq
+  9 ml.......
+ 10 m.....xx.
+ 11 M..nNXxxx
+ 12 .bBf..xX.
+ 13 Ffff.....
+ 14 ......xX.
+ 15 ......Xx.
+a=#2 L2 b=#18 L2 c=#26 L2 d=#42 L2 e=#58 L2 f=#60 L5 g=#76 L6 h=#87 L2 i=#105 L3 j=#107 L4 k=#115 L3 l=#121 L2 m=#128 L7 n=#135 L2 o=#137 L3 p=#138 L15 q=#140 L4
+
+on bot-hunter:default_small:A:1 r340 after action #135 around 11,11 x=7
+  7 .*o..k.Qq
+  8 mLoO...qq
+  9 ml.......
+ 10 m.....xx.
+ 11 M..nNXxxx
+ 12 .bBf..xX.
+ 13 Ffff.....
+ 14 ......xX.
+ 15 ......Xx.
+a=#2 L2 b=#18 L2 c=#26 L2 d=#42 L2 e=#58 L2 f=#60 L5 g=#76 L6 h=#87 L2 i=#105 L3 j=#107 L4 k=#115 L3 l=#121 L2 m=#128 L7 n=#135 L2 o=#137 L3 p=#138 L15 q=#140 L4
+
+on bot-hunter:default_small:A:1 r340 death #135 around 11,11 x=7
+  7 .*o..k.Qq
+  8 mLoO...qq
+  9 ml.......
+ 10 m.....*..
+ 11 M..nN*.*.
+ 12 .bBf..xX.
+ 13 Ffff.....
+ 14 ......xX.
+ 15 ......Xx.
+a=#2 L2 b=#18 L2 c=#26 L2 d=#42 L2 e=#58 L2 f=#60 L5 g=#76 L6 h=#87 L2 i=#105 L3 j=#107 L4 k=#115 L3 l=#121 L2 m=#128 L7 n=#135 L2 o=#137 L3 p=#138 L15 q=#140 L4
+
+on bot-hunter:default_small:A:1 r340 turn #140 around 14,7 x=10
+  3 ..ooooxX.
+  4 ....O....
+  5 ...*...xX
+  6 *.kK.....
+  7 ..k.Pp...
+  8 nN..ppiiD
+  9 ......I..
+ 10 ...*.....
+ 11 .**.*...*
+a=#2 L2 b=#18 L2 c=#26 L2 d=#42 L2 e=#58 L2 f=#60 L5 g=#76 L6 h=#87 L2 i=#105 L3 j=#107 L4 k=#115 L3 l=#121 L2 m=#128 L7 n=#137 L3 o=#138 L15 p=#140 L4
+
+on bot-hunter:default_small:A:1 r340 after action #140 around 14,7 x=10
+  3 ..ooooxX.
+  4 ....O....
+  5 ...*...xX
+  6 *.kK.....
+  7 ..k.Pp...
+  8 nN..ppiiD
+  9 ......I..
+ 10 ...*.....
+ 11 .**.*...*
+a=#2 L2 b=#18 L2 c=#26 L2 d=#42 L2 e=#58 L2 f=#60 L5 g=#76 L6 h=#87 L2 i=#105 L3 j=#107 L4 k=#115 L3 l=#121 L2 m=#128 L7 n=#137 L3 o=#138 L15 p=#140 L4
+
+on bot-hunter:default_small:A:1 r340 death #140 around 14,7 x=10
+  3 ..ooooxX.
+  4 ....O....
+  5 ...*...xX
+  6 *.kK.....
+  7 ..k.Pp...
+  8 nN..ppiiD
+  9 ......I..
+ 10 ...*.....
+ 11 .**.*...*
+a=#2 L2 b=#18 L2 c=#26 L2 d=#42 L2 e=#58 L2 f=#60 L5 g=#76 L6 h=#87 L2 i=#105 L3 j=#107 L4 k=#115 L3 l=#121 L2 m=#128 L7 n=#137 L3 o=#138 L15 p=#140 L4
+
+on bot-hunter:default_small:A:1 r352 turn #76 around 9,7 x=5
+  3 ......*mm
+  4 dDkk.nN..
+  5 E.kkjJlL.
+  6 e.Kk.ooO.
+  7 cc*kG.bB.
+  8 ...*g....
+  9 ....ggg..
+ 10 ......g.x
+ 11 .........
+a=#2 L2 b=#18 L2 c=#26 L3 d=#42 L2 e=#58 L2 f=#60 L6 g=#76 L6 h=#105 L2 i=#107 L4 j=#121 L2 k=#128 L7 l=#137 L2 m=#138 L17 n=#144 L2 o=#145 L3
+
+on bot-hunter:default_small:A:1 r352 after action #76 around 9,7 x=5
+  3 ......*mm
+  4 dDkk.nN..
+  5 E.kkjJlL.
+  6 e.Kk.ooO.
+  7 cc*kG.bB.
+  8 ...*g....
+  9 ....ggg..
+ 10 ......g.x
+ 11 .........
+a=#2 L2 b=#18 L2 c=#26 L3 d=#42 L2 e=#58 L2 f=#60 L6 g=#76 L6 h=#105 L2 i=#107 L4 j=#121 L2 k=#128 L7 l=#137 L2 m=#138 L17 n=#144 L2 o=#145 L3
+
+on bot-hunter:default_small:A:1 r352 death #76 around 9,7 x=5
+  3 ......*mm
+  4 dDkk.nN..
+  5 E.kkjJlL.
+  6 e.Kk.ooO.
+  7 cc*kG.bB.
+  8 ...*g....
+  9 ....ggg..
+ 10 ......g.x
+ 11 .........
+a=#2 L2 b=#18 L2 c=#26 L3 d=#42 L2 e=#58 L2 f=#60 L6 g=#76 L6 h=#105 L2 i=#107 L4 j=#121 L2 k=#128 L7 l=#137 L2 m=#138 L17 n=#144 L2 o=#145 L3
+
+on bot-hunter:default_small:A:1 r353 turn #26 around 4,7 x=0
+  3 ..X......
+  4 .....dDii
+  5 X....E.ii
+  6 x....e.ii
+  7 ....CccIi
+  8 ..Gg....*
+  9 xxfff....
+ 10 xxff.....
+ 11 x..F.....
+a=#2 L2 b=#18 L2 c=#26 L3 d=#42 L2 e=#58 L2 f=#60 L6 g=#105 L2 h=#107 L4 i=#128 L8 j=#137 L2 k=#138 L17 l=#144 L3 m=#145 L3
+
+on bot-hunter:default_small:A:1 r353 after action #26 around 4,7 x=0
+  3 ..X......
+  4 .....dDii
+  5 X....E.ii
+  6 x....e.ii
+  7 ....CccIi
+  8 ..Gg....*
+  9 xxfff....
+ 10 xxff.....
+ 11 x..F.....
+a=#2 L2 b=#18 L2 c=#26 L3 d=#42 L2 e=#58 L2 f=#60 L6 g=#105 L2 h=#107 L4 i=#128 L8 j=#137 L2 k=#138 L17 l=#144 L3 m=#145 L3
+
+on bot-hunter:default_small:A:1 r353 death #26 around 4,7 x=0
+  3 ..X......
+  4 .....dDii
+  5 X....E.ii
+  6 x....e.ii
+  7 ....CccIi
+  8 ..Gg....*
+  9 xxfff....
+ 10 xxff.....
+ 11 x..F.....
+a=#2 L2 b=#18 L2 c=#26 L3 d=#42 L2 e=#58 L2 f=#60 L6 g=#105 L2 h=#107 L4 i=#128 L8 j=#137 L2 k=#138 L17 l=#144 L3 m=#145 L3
+
+on bot-hunter:default_small:A:1 r354 turn #58 around 6,5 x=2
+  1 X........
+  2 ..a......
+  3 x.A.cC..J
+  4 X....hh..
+  5 ...dDhh.*
+  6 .....hh..
+  7 F.*.Hhh*.
+  8 f.....*..
+  9 ee.....*.
+a=#2 L2 b=#18 L2 c=#42 L2 d=#58 L2 e=#60 L6 f=#105 L2 g=#107 L4 h=#128 L9 i=#138 L18 j=#144 L3 k=#145 L4
+
+on bot-hunter:default_small:A:1 r354 after action #58 around 6,5 x=2
+  1 X........
+  2 ..a......
+  3 x.A.cC..J
+  4 X....hh..
+  5 ...dDhh.*
+  6 .....hh..
+  7 F.*.Hhh*.
+  8 f.....*..
+  9 ee.....*.
+a=#2 L2 b=#18 L2 c=#42 L2 d=#58 L2 e=#60 L6 f=#105 L2 g=#107 L4 h=#128 L9 i=#138 L18 j=#144 L3 k=#145 L4
+
+on bot-hunter:default_small:A:1 r354 death #58 around 6,5 x=2
+  1 X........
+  2 ..a......
+  3 x.A.cC..J
+  4 X....hh..
+  5 ...dDhh.*
+  6 .....hh..
+  7 F.*.Hhh*.
+  8 f.....*..
+  9 ee.....*.
+a=#2 L2 b=#18 L2 c=#42 L2 d=#58 L2 e=#60 L6 f=#105 L2 g=#107 L4 h=#128 L9 i=#138 L18 j=#144 L3 k=#145 L4
+
+on bot-hunter:default_small:A:1 r354 turn #107 around 10,0 x=6
+ 12 ........X
+ 13 ...xX....
+ 14 .........
+ 15 .Xxxx...X
+  0 .fffF....
+  1 .........
+  2 ......hHh
+  3 cC..Iihhh
+  4 .gg..i..h
+a=#2 L2 b=#18 L2 c=#42 L2 d=#60 L6 e=#105 L2 f=#107 L4 g=#128 L9 h=#138 L18 i=#144 L3 j=#145 L4
+
+on bot-hunter:default_small:A:1 r354 after action #107 around 10,0 x=6
+ 12 ........X
+ 13 ...xX....
+ 14 .........
+ 15 .Xxxx...X
+  0 .fffF....
+  1 .........
+  2 ......hHh
+  3 cC..Iihhh
+  4 .gg..i..h
+a=#2 L2 b=#18 L2 c=#42 L2 d=#60 L6 e=#105 L2 f=#107 L4 g=#128 L9 h=#138 L18 i=#144 L3 j=#145 L4
+
+on bot-hunter:default_small:A:1 r354 death #107 around 10,0 x=6
+ 12 ........X
+ 13 ...xX....
+ 14 .........
+ 15 .Xxxx...X
+  0 .fffF....
+  1 .........
+  2 ......hHh
+  3 cC..Iihhh
+  4 .gg..i..h
+a=#2 L2 b=#18 L2 c=#42 L2 d=#60 L6 e=#105 L2 f=#107 L4 g=#128 L9 h=#138 L18 i=#144 L3 j=#145 L4
+
+on bot-hunter:default_small:A:1 r358 turn #18 around 10,7 x=6
+  3 a.C......
+  4 affh....g
+  5 Af.h*ii.g
+  6 .f.H.iI.g
+  7 ffF*Bb..g
+  8 fff.....g
+  9 ...*.....
+ 10 .........
+ 11 D.Xx.....
+a=#2 L3 b=#18 L2 c=#42 L2 d=#60 L6 e=#105 L3 f=#128 L10 g=#138 L18 h=#144 L3 i=#145 L4
+
+on bot-hunter:default_small:A:1 r358 after action #18 around 10,7 x=6
+  3 a.C......
+  4 affh....g
+  5 Af.h*ii.g
+  6 .f.H.iI.g
+  7 ffF*Bb..g
+  8 fff.....g
+  9 ...*.....
+ 10 .........
+ 11 D.Xx.....
+a=#2 L3 b=#18 L2 c=#42 L2 d=#60 L6 e=#105 L3 f=#128 L10 g=#138 L18 h=#144 L3 i=#145 L4
+
+on bot-hunter:default_small:A:1 r358 death #18 around 10,7 x=6
+  3 a.C......
+  4 affh....g
+  5 Af.h*ii.g
+  6 .f.H.iI.g
+  7 ffF*Bb..g
+  8 fff.....g
+  9 ...*.....
+ 10 .........
+ 11 D.Xx.....
+a=#2 L3 b=#18 L2 c=#42 L2 d=#60 L6 e=#105 L3 f=#128 L10 g=#138 L18 h=#144 L3 i=#145 L4
+
+on bot-hunter:default_small:A:1 r360 turn #145 around 12,8 x=8
+  4 .bB....f.
+  5 ..gG..ff.
+  6 .gghh.ff.
+  7 eee.h.ff.
+  8 e.E.H.ff.
+  9 .*.......
+ 10 x........
+ 11 ...x...Xx
+ 12 ...X...xx
+a=#2 L3 b=#42 L2 c=#60 L6 d=#105 L2 e=#128 L12 f=#138 L20 g=#144 L4 h=#145 L4
+
+on bot-hunter:default_small:A:1 r360 after action #145 around 12,8 x=8
+  4 .bB....f.
+  5 ..gG..ff.
+  6 .gghh.ff.
+  7 eee.h.ff.
+  8 e.E.H.ff.
+  9 .*.......
+ 10 x........
+ 11 ...x...Xx
+ 12 ...X...xx
+a=#2 L3 b=#42 L2 c=#60 L6 d=#105 L2 e=#128 L12 f=#138 L20 g=#144 L4 h=#145 L4
+
+on bot-hunter:default_small:A:1 r360 death #145 around 12,8 x=8
+  4 .bB....f.
+  5 ..gG..ff.
+  6 .gghh.ff.
+  7 eee.h.ff.
+  8 e.E.H.ff.
+  9 .*.......
+ 10 x........
+ 11 ...x...Xx
+ 12 ...X...xx
+a=#2 L3 b=#42 L2 c=#60 L6 d=#105 L2 e=#128 L12 f=#138 L20 g=#144 L4 h=#145 L4
+
+on bot-hunter:default_small:A:1 r362 turn #144 around 11,6 x=7
+  2 ......fff
+  3 ...bB...f
+  4 ........f
+  5 ...gg*..f
+  6 e..gG*..f
+  7 eeee...ff
+  8 ee.e.*.ff
+  9 ..*eE....
+ 10 .......X.
+a=#2 L3 b=#42 L2 c=#60 L6 d=#105 L2 e=#128 L12 f=#138 L20 g=#144 L4
+
+on bot-hunter:default_small:A:1 r362 after action #144 around 11,6 x=7
+  2 ......fff
+  3 ...bB...f
+  4 ........f
+  5 ...gg*..f
+  6 e..gG*..f
+  7 eeee...ff
+  8 ee.e.*.ff
+  9 ..*eE....
+ 10 .......X.
+a=#2 L3 b=#42 L2 c=#60 L6 d=#105 L2 e=#128 L12 f=#138 L20 g=#144 L4
+
+on bot-hunter:default_small:A:1 r362 death #144 around 11,6 x=7
+  2 ......fff
+  3 ...bB...f
+  4 ........f
+  5 ...gg*..f
+  6 e..gG*..f
+  7 eeee...ff
+  8 ee.e.*.ff
+  9 ..*eE....
+ 10 .......X.
+a=#2 L3 b=#42 L2 c=#60 L6 d=#105 L2 e=#128 L12 f=#138 L20 g=#144 L4
+
+on bot-hunter:default_small:A:1 r368 turn #42 around 12,5 x=8
+  1 f..fff...
+  2 ffF*.fff.
+  3 gG...*.f.
+  4 ..b..*.f.
+  5 .*bbB....
+  6 ...**....
+  7 eee......
+  8 ..e.*....
+  9 Eeee.....
+a=#2 L3 b=#42 L4 c=#60 L7 d=#105 L2 e=#128 L11 f=#138 L20 g=#146 L2
+
+on bot-hunter:default_small:A:1 r368 after action #42 around 12,5 x=8
+  1 f..fff...
+  2 ffF*.fff.
+  3 gG...*.f.
+  4 ..b..*.f.
+  5 .*bbB....
+  6 ...**....
+  7 eee......
+  8 ..e.*....
+  9 Eeee.....
+a=#2 L3 b=#42 L4 c=#60 L7 d=#105 L2 e=#128 L11 f=#138 L20 g=#146 L2
+
+on bot-hunter:default_small:A:1 r368 death #42 around 12,5 x=8
+  1 f..fff...
+  2 ffF*.fff.
+  3 gG...*.f.
+  4 ..b..*.f.
+  5 .*bbB....
+  6 ...**....
+  7 eee......
+  8 ..e.*....
+  9 Eeee.....
+a=#2 L3 b=#42 L4 c=#60 L7 d=#105 L2 e=#128 L11 f=#138 L20 g=#146 L2
+
+on bot-hunter:default_small:A:1 r373 turn #146 around 12,8 x=8
+  4 ...e.*...
+  5 ...eeE...
+  6 ...ff....
+  7 .dddf...B
+  8 dd.DF....
+  9 dd.......
+ 10 .ddd.....
+ 11 Xxxx.....
+ 12 xX......C
+a=#2 L3 b=#60 L5 c=#105 L3 d=#128 L11 e=#138 L21 f=#146 L4 g=#147 L3
+
+on bot-hunter:default_small:A:1 r373 after action #146 around 12,8 x=8
+  4 ...e.*...
+  5 ...eeE...
+  6 ...ff....
+  7 .dddf...B
+  8 dd.DF....
+  9 dd.......
+ 10 .ddd.....
+ 11 Xxxx.....
+ 12 xX......C
+a=#2 L3 b=#60 L5 c=#105 L3 d=#128 L11 e=#138 L21 f=#146 L4 g=#147 L3
+
+on bot-hunter:default_small:A:1 r373 death #146 around 12,8 x=8
+  4 ...e.*...
+  5 ...eeE...
+  6 ...ff....
+  7 .dddf...B
+  8 dd.DF....
+  9 dd.......
+ 10 .ddd.....
+ 11 Xxxx.....
+ 12 xX......C
+a=#2 L3 b=#60 L5 c=#105 L3 d=#128 L11 e=#138 L21 f=#146 L4 g=#147 L3
+
+on bot-hunter:default_small:A:1 r376 turn #128 around 12,7 x=8
+  3 ..ee.*...
+  4 ...e.*...
+  5 ...eee...
+  6 ..*.*e...
+  7 .dddDE..b
+  8 dd.dd...b
+  9 dd......b
+ 10 xdd......
+ 11 x.......c
+a=#2 L2 b=#60 L5 c=#105 L3 d=#128 L12 e=#138 L21 f=#147 L4
+
+on bot-hunter:default_small:A:1 r376 after action #128 around 12,7 x=8
+  3 ..ee.*...
+  4 ...e.*...
+  5 ...eee...
+  6 ..*.*e...
+  7 .dddDE..b
+  8 dd.dd...b
+  9 dd......b
+ 10 xdd......
+ 11 x.......c
+a=#2 L2 b=#60 L5 c=#105 L3 d=#128 L12 e=#138 L21 f=#147 L4
+
+on bot-hunter:default_small:A:1 r376 death #128 around 12,7 x=8
+  3 ..ee.*...
+  4 ...e.*...
+  5 ...eee...
+  6 ..*.*e...
+  7 .dddDE..b
+  8 dd.dd...b
+  9 dd......b
+ 10 xdd......
+ 11 x.......c
+a=#2 L2 b=#60 L5 c=#105 L3 d=#128 L12 e=#138 L21 f=#147 L4
+
+on bot-hunter:default_small:A:1 r386 turn #147 around 5,8 x=1
+  4 .....xxXx
+  5 .....x..x
+  6 bB.....XX
+  7 b......xx
+  8 beeeE...x
+  9 b.......x
+ 10 ....aa..*
+ 11 .c...a..*
+ 12 Cc...a...
+a=#2 L5 b=#60 L5 c=#105 L3 d=#138 L23 e=#147 L4
+
+on bot-hunter:default_small:A:1 r386 after action #147 around 5,8 x=1
+  4 .....xxXx
+  5 .....x..x
+  6 bB.....XX
+  7 b......xx
+  8 beeeE...x
+  9 b.......x
+ 10 ....aa..*
+ 11 .c...a..*
+ 12 Cc...a...
+a=#2 L5 b=#60 L5 c=#105 L3 d=#138 L23 e=#147 L4
+
+on bot-hunter:default_small:A:1 r386 death #147 around 5,8 x=1
+  4 .....xxXx
+  5 .....x..x
+  6 bB.....XX
+  7 b......xx
+  8 beeeE...x
+  9 b.......x
+ 10 ....aa..*
+ 11 .c...a..*
+ 12 Cc...a...
+a=#2 L5 b=#60 L5 c=#105 L3 d=#138 L23 e=#147 L4
+
+on bot-hunter:default_small:A:1 r387 turn #105 around 1,12 x=13
+  8 .d..b.*.*
+  9 dd.......
+ 10 .........
+ 11 .....c...
+ 12 ....Cc...
+ 13 ....X.xx.
+ 14 ....xx.xx
+ 15 .....xxxx
+  0 *......x.
+a=#2 L5 b=#60 L5 c=#105 L3 d=#138 L23
+
+on bot-hunter:default_small:A:1 r387 after action #105 around 1,12 x=13
+  8 .d..b.*.*
+  9 dd.......
+ 10 .........
+ 11 .....c...
+ 12 ....Cc...
+ 13 ....X.xx.
+ 14 ....xx.xx
+ 15 .....xxxx
+  0 *......x.
+a=#2 L5 b=#60 L5 c=#105 L3 d=#138 L23
+
+on bot-hunter:default_small:A:1 r387 death #105 around 1,12 x=13
+  8 .d..b.*.*
+  9 dd.......
+ 10 .........
+ 11 .....c...
+ 12 ....Cc...
+ 13 ....*.*..
+ 14 .....*.*.
+ 15 ......*.*
+  0 *......x.
+a=#2 L5 b=#60 L5 c=#105 L3 d=#138 L23
+
+on bot-hunter:default_small:A:1 r432 turn #2 around 7,8 x=3
+  4 ..x...x..
+  5 ..x.ccx..
+  6 ..xxccxxx
+  7 ...Ccc...
+  8 aaaaAcc..
+  9 abbb..c.c
+ 10 abb...c.c
+ 11 *bb...ccc
+ 12 .bbBdD...
+a=#2 L20 b=#60 L12 c=#138 L32 d=#151 L2
+
+on bot-hunter:default_small:A:1 r432 after action #2 around 7,8 x=3
+  4 ..x...x..
+  5 ..x.ccx..
+  6 ..xxccxxx
+  7 ...Ccc...
+  8 aaaaAcc..
+  9 abbb..c.c
+ 10 abb...c.c
+ 11 *bb...ccc
+ 12 .bbBdD...
+a=#2 L20 b=#60 L12 c=#138 L32 d=#151 L2
+
+on bot-hunter:default_small:A:1 r432 death #2 around 7,8 x=3
+  4 ..x...x..
+  5 ..x.ccx..
+  6 ..xxccxxx
+  7 ...Ccc...
+  8 aaaaAcc..
+  9 abbb..c.c
+ 10 abb...c.c
+ 11 *bb...ccc
+ 12 .bbBdD...
+a=#2 L20 b=#60 L12 c=#138 L32 d=#151 L2
+
+on bot-hunter:default_small:A:1 r438 death #138 around 2,7 x=14
+  3 .b....x..
+  4 .b.xxxx..
+  5 .b.xx....
+  6 .b.*X....
+  7 .b..B..bb
+  8 .b.*bbbb.
+  9 .b*.*.aaa
+ 10 bb...*aAa
+ 11 ..xxx*a.a
+a=#60 L13 b=#138 L35 c=#151 L2

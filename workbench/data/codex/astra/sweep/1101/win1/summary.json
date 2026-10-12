@@ -1,0 +1,173 @@
+{
+  "games": [
+    {
+      "gid": 1518019,
+      "map": "Autarky",
+      "final": {
+        "us": {
+          "alive": 59,
+          "total": 143,
+          "longest": 6,
+          "pearls": 509,
+          "queen_alive": false,
+          "queen_length": 0
+        },
+        "them": {
+          "alive": 0,
+          "total": 0,
+          "longest": 0,
+          "pearls": 177,
+          "queen_alive": false,
+          "queen_length": 0
+        }
+      },
+      "decisive": 226,
+      "last": 256,
+      "how": "elim",
+      "far": 71,
+      "event_types": {
+        "dragonUpdate": 10525,
+        "roundStart": 257,
+        "tileChange": 1382,
+        "turnStart": 11017,
+        "dragonAction": 11017,
+        "sonarPing": 43100,
+        "dragonSplit": 312,
+        "dragonDeath": 265
+      },
+      "own_no_action": 0,
+      "drop_recovery": {
+        "us": 178,
+        "them": 24,
+        "nobody": 5
+      }
+    },
+    {
+      "gid": 1518020,
+      "map": "Islands",
+      "final": {
+        "us": {
+          "alive": 48,
+          "total": 337,
+          "longest": 50,
+          "pearls": 1812,
+          "queen_alive": false,
+          "queen_length": 0
+        },
+        "them": {
+          "alive": 5,
+          "total": 34,
+          "longest": 16,
+          "pearls": 1039,
+          "queen_alive": false,
+          "queen_length": 0
+        }
+      },
+      "decisive": 410,
+      "last": 499,
+      "how": "longest",
+      "far": 0,
+      "event_types": {
+        "dragonUpdate": 42865,
+        "roundStart": 500,
+        "tileChange": 5766,
+        "turnStart": 37621,
+        "dragonAction": 37621,
+        "sonarPing": 147160,
+        "dragonSplit": 910,
+        "dragonDeath": 867
+      },
+      "own_no_action": 117,
+      "drop_recovery": {
+        "us": 631,
+        "them": 154,
+        "nobody": 29
+      }
+    },
+    {
+      "gid": 1518022,
+      "map": "Tower Defense",
+      "final": {
+        "us": {
+          "alive": 45,
+          "total": 109,
+          "longest": 3,
+          "pearls": 215,
+          "queen_alive": false,
+          "queen_length": 0
+        },
+        "them": {
+          "alive": 0,
+          "total": 0,
+          "longest": 0,
+          "pearls": 84,
+          "queen_alive": false,
+          "queen_length": 0
+        }
+      },
+      "decisive": 281,
+      "last": 281,
+      "how": "elim",
+      "far": 247,
+      "event_types": {
+        "dragonUpdate": 6661,
+        "roundStart": 282,
+        "tileChange": 612,
+        "turnStart": 6808,
+        "dragonAction": 6808,
+        "sonarPing": 27016,
+        "dragonSplit": 121,
+        "dragonDeath": 80
+      },
+      "own_no_action": 0,
+      "drop_recovery": {
+        "nobody": 3,
+        "us": 46,
+        "them": 11
+      }
+    },
+    {
+      "gid": 1518023,
+      "map": "Devil",
+      "final": {
+        "us": {
+          "alive": 53,
+          "total": 133,
+          "longest": 4,
+          "pearls": 548,
+          "queen_alive": true,
+          "queen_length": 2
+        },
+        "them": {
+          "alive": 0,
+          "total": 0,
+          "longest": 0,
+          "pearls": 85,
+          "queen_alive": false,
+          "queen_length": 0
+        }
+      },
+      "decisive": 96,
+      "last": 161,
+      "how": "elim",
+      "far": 9,
+      "event_types": {
+        "dragonUpdate": 6038,
+        "roundStart": 162,
+        "tileChange": 1291,
+        "turnStart": 6458,
+        "dragonAction": 6458,
+        "dragonSplit": 260,
+        "sonarPing": 25080,
+        "dragonDeath": 213
+      },
+      "own_no_action": 0,
+      "drop_recovery": {
+        "us": 222,
+        "them": 11,
+        "nobody": 12
+      }
+    }
+  ],
+  "definition": "Rounds are replay zero-based, states are end of round; ahead compares elimination, queen, longest, total."
+}

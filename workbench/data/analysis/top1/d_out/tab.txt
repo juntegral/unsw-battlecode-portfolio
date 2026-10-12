@@ -1,0 +1,517 @@
+=== 1. kind of queen death, count and share of games, by group
+kind | meow | meow live | cand stride | cand passage2 | cand qh31 | cand tc30 | opp | forgot | SSS | Vibing++
+alive | 39 (10%) | 27 (10%) | 5 (18%) | 2 (7%) | 2 (7%) | 3 (7%) | 162 (40%) | 226 (36%) | 207 (41%) | 134 (27%)
+ram: unseen | 31 (8%) | 23 (8%) | 2 (7%) | 4 (14%) | 0 (0%) | 2 (5%) | 7 (2%) | 70 (11%) | 57 (11%) | 67 (13%)
+ram: stepped in | 66 (16%) | 40 (15%) | 7 (25%) | 7 (25%) | 5 (18%) | 7 (17%) | 15 (4%) | 22 (3%) | 18 (4%) | 19 (4%)
+ram: stayed in | 38 (9%) | 28 (10%) | 1 (4%) | 3 (11%) | 3 (11%) | 3 (7%) | 12 (3%) | 17 (3%) | 20 (4%) | 16 (3%)
+ram: cornered | 114 (28%) | 72 (26%) | 8 (29%) | 4 (14%) | 11 (39%) | 19 (45%) | 67 (17%) | 209 (33%) | 142 (28%) | 125 (25%)
+ram: model miss | 2 (0%) | 2 (1%) | 0 (0%) | 0 (0%) | 0 (0%) | 0 (0%) | 1 (0%) | 9 (1%) | 3 (1%) | 3 (1%)
+boxed: terrain dead end | 30 (7%) | 21 (8%) | 1 (4%) | 3 (11%) | 1 (4%) | 4 (10%) | 37 (9%) | 29 (5%) | 15 (3%) | 21 (4%)
+boxed: ally body | 58 (14%) | 43 (16%) | 4 (14%) | 5 (18%) | 4 (14%) | 2 (5%) | 59 (15%) | 18 (3%) | 22 (4%) | 85 (17%)
+boxed: ally+enemy | 1 (0%) | 1 (0%) | 0 (0%) | 0 (0%) | 0 (0%) | 0 (0%) | 2 (0%) | 0 (0%) | 0 (0%) | 2 (0%)
+boxed: enemy body | 2 (0%) | 2 (1%) | 0 (0%) | 0 (0%) | 0 (0%) | 0 (0%) | 5 (1%) | 5 (1%) | 2 (0%) | 7 (1%)
+boxed: own body | 0 (0%) | 0 (0%) | 0 (0%) | 0 (0%) | 0 (0%) | 0 (0%) | 7 (2%) | 0 (0%) | 0 (0%) | 0 (0%)
+crash: portal | 1 (0%) | 0 (0%) | 0 (0%) | 0 (0%) | 0 (0%) | 1 (2%) | 1 (0%) | 0 (0%) | 1 (0%) | 1 (0%)
+crash: stride | 0 (0%) | 0 (0%) | 0 (0%) | 0 (0%) | 0 (0%) | 0 (0%) | 0 (0%) | 0 (0%) | 1 (0%) | 0 (0%)
+crash: other | 0 (0%) | 0 (0%) | 0 (0%) | 0 (0%) | 0 (0%) | 0 (0%) | 0 (0%) | 0 (0%) | 0 (0%) | 0 (0%)
+no action | 0 (0%) | 0 (0%) | 0 (0%) | 0 (0%) | 0 (0%) | 0 (0%) | 5 (1%) | 0 (0%) | 0 (0%) | 0 (0%)
+own ram | 19 (5%) | 16 (6%) | 0 (0%) | 0 (0%) | 2 (7%) | 1 (2%) | 18 (4%) | 19 (3%) | 9 (2%) | 20 (4%)
+ally ram | 0 (0%) | 0 (0%) | 0 (0%) | 0 (0%) | 0 (0%) | 0 (0%) | 3 (1%) | 8 (1%) | 6 (1%) | 2 (0%)
+games | 401 | 275 | 28 | 28 | 28 | 42 | 401 | 632 | 503 | 502
+
+families:
+alive | 39 (10%) | 27 (10%) | 5 (18%) | 2 (7%) | 2 (7%) | 3 (7%) | 162 (40%) | 226 (36%) | 207 (41%) | 134 (27%)
+rammed | 251 (63%) | 165 (60%) | 18 (64%) | 18 (64%) | 19 (68%) | 31 (74%) | 102 (25%) | 327 (52%) | 240 (48%) | 230 (46%)
+boxed | 91 (23%) | 67 (24%) | 5 (18%) | 8 (29%) | 5 (18%) | 6 (14%) | 110 (27%) | 52 (8%) | 39 (8%) | 115 (23%)
+own crash / ram / no action | 20 (5%) | 16 (6%) | 0 (0%) | 0 (0%) | 2 (7%) | 2 (5%) | 27 (7%) | 27 (4%) | 17 (3%) | 23 (5%)
+
+=== 1b. the same, live bot by run
+kind | dl-20261003 | dl-20261004 | passage2-test-new | passage2-test-old | qh31-test-new | qh31-test-old | stride-new | stride-old | tc30-dev1-old | tc30-dev1b-new | tc30-test-new
+alive | 1 | 15 | 2 | 3 | 2 | 4 | 5 | 3 | 1 | 1 | 2
+ram: unseen | 1 | 14 | 4 | 6 | 0 | 1 | 2 | 0 | 1 | 1 | 1
+ram: stepped in | 3 | 17 | 7 | 4 | 5 | 6 | 7 | 6 | 4 | 2 | 5
+ram: stayed in | 3 | 18 | 3 | 3 | 3 | 1 | 1 | 3 | 0 | 0 | 3
+ram: cornered | 6 | 39 | 4 | 8 | 11 | 6 | 8 | 10 | 3 | 7 | 12
+ram: model miss | 0 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+boxed: terrain dead end | 3 | 13 | 3 | 1 | 1 | 2 | 1 | 2 | 0 | 3 | 1
+boxed: ally body | 3 | 25 | 5 | 3 | 4 | 5 | 4 | 3 | 4 | 0 | 2
+boxed: ally+enemy | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+boxed: enemy body | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+boxed: own body | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+crash: portal | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1
+crash: stride | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+crash: other | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+no action | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+own ram | 2 | 9 | 0 | 0 | 2 | 3 | 0 | 1 | 1 | 0 | 1
+ally ram | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+games | 24 | 153 | 28 | 28 | 28 | 28 | 28 | 28 | 14 | 14 | 28
+
+=== 2. meow: kind by round band (0-49 / 50-99 / 100-299 / 300+), games 401
+  ram: unseen                31 | 5 / 2 / 18 / 6
+  ram: stepped in            66 | 15 / 22 / 26 / 3
+  ram: stayed in             38 | 7 / 11 / 19 / 1
+  ram: cornered             114 | 22 / 33 / 50 / 9
+  ram: model miss             2 | 0 / 1 / 0 / 1
+  boxed: terrain dead end    30 | 2 / 11 / 16 / 1
+  boxed: ally body           58 | 23 / 13 / 18 / 4
+  boxed: ally+enemy           1 | 0 / 1 / 0 / 0
+  boxed: enemy body           2 | 1 / 0 / 0 / 1
+  crash: portal               1 | 0 / 0 / 1 / 0
+  own ram                    19 | 5 / 6 / 8 / 0
+  all deaths                362 | 80 / 100 / 156 / 26
+
+=== 2. meow live: kind by round band (0-49 / 50-99 / 100-299 / 300+), games 275
+  ram: unseen                23 | 4 / 1 / 13 / 5
+  ram: stepped in            40 | 10 / 14 / 15 / 1
+  ram: stayed in             28 | 6 / 8 / 13 / 1
+  ram: cornered              72 | 13 / 24 / 30 / 5
+  ram: model miss             2 | 0 / 1 / 0 / 1
+  boxed: terrain dead end    21 | 0 / 6 / 14 / 1
+  boxed: ally body           43 | 15 / 10 / 14 / 4
+  boxed: ally+enemy           1 | 0 / 1 / 0 / 0
+  boxed: enemy body           2 | 1 / 0 / 0 / 1
+  own ram                    16 | 4 / 4 / 8 / 0
+  all deaths                248 | 53 / 69 / 107 / 19
+
+=== 2. opp: kind by round band (0-49 / 50-99 / 100-299 / 300+), games 401
+  ram: unseen                 7 | 0 / 1 / 3 / 3
+  ram: stepped in            15 | 3 / 5 / 7 / 0
+  ram: stayed in             12 | 6 / 3 / 2 / 1
+  ram: cornered              67 | 5 / 15 / 35 / 12
+  ram: model miss             1 | 0 / 0 / 0 / 1
+  boxed: terrain dead end    37 | 1 / 3 / 21 / 12
+  boxed: ally body           59 | 1 / 6 / 35 / 17
+  boxed: ally+enemy           2 | 1 / 0 / 1 / 0
+  boxed: enemy body           5 | 0 / 2 / 1 / 2
+  boxed: own body             7 | 0 / 0 / 6 / 1
+  crash: portal               1 | 1 / 0 / 0 / 0
+  no action                   5 | 0 / 0 / 0 / 5
+  own ram                    18 | 1 / 4 / 12 / 1
+  ally ram                    3 | 0 / 1 / 2 / 0
+  all deaths                239 | 19 / 40 / 125 / 55
+
+=== 2. forgot: kind by round band (0-49 / 50-99 / 100-299 / 300+), games 632
+  ram: unseen                70 | 10 / 17 / 14 / 29
+  ram: stepped in            22 | 5 / 7 / 9 / 1
+  ram: stayed in             17 | 8 / 5 / 4 / 0
+  ram: cornered             209 | 43 / 59 / 85 / 22
+  ram: model miss             9 | 2 / 4 / 1 / 2
+  boxed: terrain dead end    29 | 2 / 9 / 6 / 12
+  boxed: ally body           18 | 4 / 1 / 8 / 5
+  boxed: enemy body           5 | 1 / 1 / 3 / 0
+  own ram                    19 | 5 / 6 / 8 / 0
+  ally ram                    8 | 0 / 2 / 1 / 5
+  all deaths                406 | 80 / 111 / 139 / 76
+
+=== 2. SSS: kind by round band (0-49 / 50-99 / 100-299 / 300+), games 503
+  ram: unseen                57 | 6 / 6 / 23 / 22
+  ram: stepped in            18 | 8 / 4 / 6 / 0
+  ram: stayed in             20 | 5 / 2 / 9 / 4
+  ram: cornered             142 | 25 / 24 / 64 / 29
+  ram: model miss             3 | 1 / 1 / 0 / 1
+  boxed: terrain dead end    15 | 0 / 2 / 5 / 8
+  boxed: ally body           22 | 0 / 0 / 10 / 12
+  boxed: enemy body           2 | 2 / 0 / 0 / 0
+  crash: portal               1 | 0 / 0 / 1 / 0
+  crash: stride               1 | 0 / 0 / 1 / 0
+  own ram                     9 | 0 / 2 / 5 / 2
+  ally ram                    6 | 0 / 0 / 3 / 3
+  all deaths                296 | 47 / 41 / 127 / 81
+
+=== 2. Vibing++: kind by round band (0-49 / 50-99 / 100-299 / 300+), games 502
+  ram: unseen                67 | 9 / 15 / 22 / 21
+  ram: stepped in            19 | 5 / 5 / 8 / 1
+  ram: stayed in             16 | 8 / 2 / 5 / 1
+  ram: cornered             125 | 25 / 27 / 56 / 17
+  ram: model miss             3 | 0 / 0 / 0 / 3
+  boxed: terrain dead end    21 | 3 / 5 / 11 / 2
+  boxed: ally body           85 | 28 / 16 / 31 / 10
+  boxed: ally+enemy           2 | 1 / 1 / 0 / 0
+  boxed: enemy body           7 | 2 / 3 / 2 / 0
+  crash: portal               1 | 0 / 0 / 0 / 1
+  own ram                    20 | 5 / 10 / 5 / 0
+  ally ram                    2 | 1 / 0 / 1 / 0
+  all deaths                368 | 87 / 84 / 141 / 56
+
+=== 3. meow: kind by queen rules (map over 600 cells = rules on), all runs and live bot
+  meow: rules on 256 games, off 145 games
+    alive                    on  35 (14%)  off   4 (3%)
+    ram: unseen              on  27 (11%)  off   4 (3%)
+    ram: stepped in          on  38 (15%)  off  28 (19%)
+    ram: stayed in           on  30 (12%)  off   8 (6%)
+    ram: cornered            on  84 (33%)  off  30 (21%)
+    ram: model miss          on   2 (1%)  off   0 (0%)
+    boxed: terrain dead end  on   9 (4%)  off  21 (14%)
+    boxed: ally body         on  28 (11%)  off  30 (21%)
+    boxed: ally+enemy        on   0 (0%)  off   1 (1%)
+    boxed: enemy body        on   1 (0%)  off   1 (1%)
+    crash: portal            on   0 (0%)  off   1 (1%)
+    own ram                  on   2 (1%)  off  17 (12%)
+  meow live: rules on 175 games, off 100 games
+    alive                    on  25 (14%)  off   2 (2%)
+    ram: unseen              on  20 (11%)  off   3 (3%)
+    ram: stepped in          on  23 (13%)  off  17 (17%)
+    ram: stayed in           on  23 (13%)  off   5 (5%)
+    ram: cornered            on  50 (29%)  off  22 (22%)
+    ram: model miss          on   2 (1%)  off   0 (0%)
+    boxed: terrain dead end  on   8 (5%)  off  13 (13%)
+    boxed: ally body         on  21 (12%)  off  22 (22%)
+    boxed: ally+enemy        on   0 (0%)  off   1 (1%)
+    boxed: enemy body        on   1 (1%)  off   1 (1%)
+    own ram                  on   2 (1%)  off  14 (14%)
+  by map size class (600 or fewer / 601-1500 / over 1500), meow all runs:
+    alive                      4 /  35 /   0
+    ram: unseen                4 /  10 /  17
+    ram: stepped in           28 /  15 /  23
+    ram: stayed in             8 /  17 /  13
+    ram: cornered             30 /  48 /  36
+    ram: model miss            0 /   2 /   0
+    boxed: terrain dead end   21 /   5 /   4
+    boxed: ally body          30 /  12 /  16
+    boxed: ally+enemy          1 /   0 /   0
+    boxed: enemy body          1 /   0 /   1
+    crash: portal              1 /   0 /   0
+    own ram                   17 /   1 /   1
+
+=== 4. her length at death, the killer's length and steps (rammed kinds)
+  meow
+    ram: unseen              n= 31 her length 2/3/4/5/6+: 9/13/0/1/8 | killer length 2/3/4/5-9/10+: 1/12/5/12/1 | killer steps 1/2/3/4/5+: 3/0/14/7/7 | killer born that round 1
+    ram: stepped in          n= 66 her length 2/3/4/5/6+: 45/15/2/1/3 | killer length 2/3/4/5-9/10+: 27/25/14/0/0 | killer steps 1/2/3/4/5+: 18/23/16/8/1 | killer born that round 1
+    ram: stayed in           n= 38 her length 2/3/4/5/6+: 14/17/7/0/0 | killer length 2/3/4/5-9/10+: 11/21/3/3/0 | killer steps 1/2/3/4/5+: 17/12/3/5/1 | killer born that round 1
+    ram: cornered            n=114 her length 2/3/4/5/6+: 54/44/7/4/5 | killer length 2/3/4/5-9/10+: 38/46/15/13/2 | killer steps 1/2/3/4/5+: 44/40/14/11/5 | killer born that round 0
+    ram: model miss          n=  2 her length 2/3/4/5/6+: 0/0/1/1/0 | killer length 2/3/4/5-9/10+: 0/2/0/0/0 | killer steps 1/2/3/4/5+: 0/1/0/1/0 | killer born that round 0
+    boxed: terrain dead end  n= 30 her length 2/3/4/5/6+: 19/11/0/0/0
+    boxed: ally body         n= 58 her length 2/3/4/5/6+: 28/22/2/6/0
+    boxed: ally+enemy        n=  1 her length 2/3/4/5/6+: 0/1/0/0/0
+    boxed: enemy body        n=  2 her length 2/3/4/5/6+: 2/0/0/0/0
+    crash: portal            n=  1 her length 2/3/4/5/6+: 1/0/0/0/0
+    own ram                  n= 19 her length 2/3/4/5/6+: 16/3/0/0/0
+  meow live
+    ram: unseen              n= 23 her length 2/3/4/5/6+: 7/9/0/0/7 | killer length 2/3/4/5-9/10+: 1/9/4/9/0 | killer steps 1/2/3/4/5+: 2/0/11/6/4 | killer born that round 1
+    ram: stepped in          n= 40 her length 2/3/4/5/6+: 26/10/2/1/1 | killer length 2/3/4/5-9/10+: 13/16/11/0/0 | killer steps 1/2/3/4/5+: 9/15/9/6/1 | killer born that round 0
+    ram: stayed in           n= 28 her length 2/3/4/5/6+: 11/13/4/0/0 | killer length 2/3/4/5-9/10+: 8/14/3/3/0 | killer steps 1/2/3/4/5+: 14/5/3/5/1 | killer born that round 0
+    ram: cornered            n= 72 her length 2/3/4/5/6+: 39/24/3/3/3 | killer length 2/3/4/5-9/10+: 23/31/7/9/2 | killer steps 1/2/3/4/5+: 29/23/9/8/3 | killer born that round 0
+    ram: model miss          n=  2 her length 2/3/4/5/6+: 0/0/1/1/0 | killer length 2/3/4/5-9/10+: 0/2/0/0/0 | killer steps 1/2/3/4/5+: 0/1/0/1/0 | killer born that round 0
+    boxed: terrain dead end  n= 21 her length 2/3/4/5/6+: 15/6/0/0/0
+    boxed: ally body         n= 43 her length 2/3/4/5/6+: 21/16/1/5/0
+    boxed: ally+enemy        n=  1 her length 2/3/4/5/6+: 0/1/0/0/0
+    boxed: enemy body        n=  2 her length 2/3/4/5/6+: 2/0/0/0/0
+    own ram                  n= 16 her length 2/3/4/5/6+: 13/3/0/0/0
+  opp
+    ram: unseen              n=  7 her length 2/3/4/5/6+: 3/0/0/1/3 | killer length 2/3/4/5-9/10+: 1/3/1/2/0 | killer steps 1/2/3/4/5+: 4/1/0/1/1 | killer born that round 3
+    ram: stepped in          n= 15 her length 2/3/4/5/6+: 7/3/0/1/4 | killer length 2/3/4/5-9/10+: 8/5/2/0/0 | killer steps 1/2/3/4/5+: 9/4/2/0/0 | killer born that round 0
+    ram: stayed in           n= 12 her length 2/3/4/5/6+: 2/8/1/0/1 | killer length 2/3/4/5-9/10+: 5/6/0/1/0 | killer steps 1/2/3/4/5+: 10/1/0/1/0 | killer born that round 0
+    ram: cornered            n= 67 her length 2/3/4/5/6+: 26/24/5/0/12 | killer length 2/3/4/5-9/10+: 30/32/2/1/2 | killer steps 1/2/3/4/5+: 49/14/1/0/3 | killer born that round 0
+    ram: model miss          n=  1 her length 2/3/4/5/6+: 0/0/0/0/1 | killer length 2/3/4/5-9/10+: 0/0/0/1/0 | killer steps 1/2/3/4/5+: 0/0/0/0/1 | killer born that round 0
+    boxed: terrain dead end  n= 37 her length 2/3/4/5/6+: 25/10/0/0/2
+    boxed: ally body         n= 59 her length 2/3/4/5/6+: 30/18/1/2/8
+    boxed: ally+enemy        n=  2 her length 2/3/4/5/6+: 1/1/0/0/0
+    boxed: enemy body        n=  5 her length 2/3/4/5/6+: 2/2/0/0/1
+    boxed: own body          n=  7 her length 2/3/4/5/6+: 0/0/0/1/6
+    crash: portal            n=  1 her length 2/3/4/5/6+: 1/0/0/0/0
+    no action                n=  5 her length 2/3/4/5/6+: 0/0/0/0/5
+    own ram                  n= 18 her length 2/3/4/5/6+: 11/7/0/0/0
+    ally ram                 n=  3 her length 2/3/4/5/6+: 1/2/0/0/0
+  forgot
+    ram: unseen              n= 70 her length 2/3/4/5/6+: 16/16/3/1/34 | killer length 2/3/4/5-9/10+: 10/15/14/22/9 | killer steps 1/2/3/4/5+: 11/13/17/9/20 | killer born that round 18
+    ram: stepped in          n= 22 her length 2/3/4/5/6+: 9/12/0/0/1 | killer length 2/3/4/5-9/10+: 5/16/1/0/0 | killer steps 1/2/3/4/5+: 4/14/3/1/0 | killer born that round 0
+    ram: stayed in           n= 17 her length 2/3/4/5/6+: 9/7/1/0/0 | killer length 2/3/4/5-9/10+: 2/11/3/1/0 | killer steps 1/2/3/4/5+: 3/6/4/3/1 | killer born that round 0
+    ram: cornered            n=209 her length 2/3/4/5/6+: 84/84/12/3/26 | killer length 2/3/4/5-9/10+: 61/107/23/13/5 | killer steps 1/2/3/4/5+: 86/85/25/7/6 | killer born that round 0
+    ram: model miss          n=  9 her length 2/3/4/5/6+: 4/3/0/0/2 | killer length 2/3/4/5-9/10+: 0/5/2/2/0 | killer steps 1/2/3/4/5+: 0/1/5/2/1 | killer born that round 0
+    boxed: terrain dead end  n= 29 her length 2/3/4/5/6+: 19/9/0/0/1
+    boxed: ally body         n= 18 her length 2/3/4/5/6+: 7/11/0/0/0
+    boxed: enemy body        n=  5 her length 2/3/4/5/6+: 4/1/0/0/0
+    own ram                  n= 19 her length 2/3/4/5/6+: 7/12/0/0/0
+    ally ram                 n=  8 her length 2/3/4/5/6+: 0/2/0/0/6
+  SSS
+    ram: unseen              n= 57 her length 2/3/4/5/6+: 10/28/3/1/15 | killer length 2/3/4/5-9/10+: 6/8/13/25/5 | killer steps 1/2/3/4/5+: 5/4/17/13/18 | killer born that round 8
+    ram: stepped in          n= 18 her length 2/3/4/5/6+: 7/11/0/0/0 | killer length 2/3/4/5-9/10+: 5/11/2/0/0 | killer steps 1/2/3/4/5+: 5/11/2/0/0 | killer born that round 0
+    ram: stayed in           n= 20 her length 2/3/4/5/6+: 7/11/0/0/2 | killer length 2/3/4/5-9/10+: 0/12/3/4/1 | killer steps 1/2/3/4/5+: 5/5/6/3/1 | killer born that round 0
+    ram: cornered            n=142 her length 2/3/4/5/6+: 51/81/2/1/7 | killer length 2/3/4/5-9/10+: 41/62/11/17/11 | killer steps 1/2/3/4/5+: 58/44/13/8/19 | killer born that round 0
+    ram: model miss          n=  3 her length 2/3/4/5/6+: 2/1/0/0/0 | killer length 2/3/4/5-9/10+: 0/2/0/0/1 | killer steps 1/2/3/4/5+: 0/2/0/0/1 | killer born that round 0
+    boxed: terrain dead end  n= 15 her length 2/3/4/5/6+: 6/9/0/0/0
+    boxed: ally body         n= 22 her length 2/3/4/5/6+: 9/8/1/2/2
+    boxed: enemy body        n=  2 her length 2/3/4/5/6+: 1/1/0/0/0
+    crash: portal            n=  1 her length 2/3/4/5/6+: 1/0/0/0/0
+    crash: stride            n=  1 her length 2/3/4/5/6+: 0/0/0/0/1
+    own ram                  n=  9 her length 2/3/4/5/6+: 2/7/0/0/0
+    ally ram                 n=  6 her length 2/3/4/5/6+: 4/2/0/0/0
+  Vibing++
+    ram: unseen              n= 67 her length 2/3/4/5/6+: 11/12/5/2/37 | killer length 2/3/4/5-9/10+: 9/17/8/23/10 | killer steps 1/2/3/4/5+: 13/12/18/8/16 | killer born that round 23
+    ram: stepped in          n= 19 her length 2/3/4/5/6+: 13/3/2/0/1 | killer length 2/3/4/5-9/10+: 6/8/5/0/0 | killer steps 1/2/3/4/5+: 6/8/5/0/0 | killer born that round 0
+    ram: stayed in           n= 16 her length 2/3/4/5/6+: 9/4/1/0/2 | killer length 2/3/4/5-9/10+: 2/6/6/2/0 | killer steps 1/2/3/4/5+: 5/3/5/1/2 | killer born that round 0
+    ram: cornered            n=125 her length 2/3/4/5/6+: 71/19/9/0/26 | killer length 2/3/4/5-9/10+: 48/53/14/8/2 | killer steps 1/2/3/4/5+: 59/34/20/7/5 | killer born that round 0
+    ram: model miss          n=  3 her length 2/3/4/5/6+: 0/1/1/0/1 | killer length 2/3/4/5-9/10+: 0/0/0/2/1 | killer steps 1/2/3/4/5+: 0/0/1/0/2 | killer born that round 0
+    boxed: terrain dead end  n= 21 her length 2/3/4/5/6+: 10/10/0/1/0
+    boxed: ally body         n= 85 her length 2/3/4/5/6+: 48/37/0/0/0
+    boxed: ally+enemy        n=  2 her length 2/3/4/5/6+: 1/1/0/0/0
+    boxed: enemy body        n=  7 her length 2/3/4/5/6+: 5/2/0/0/0
+    crash: portal            n=  1 her length 2/3/4/5/6+: 0/0/0/0/1
+    own ram                  n= 20 her length 2/3/4/5/6+: 13/7/0/0/0
+    ally ram                 n=  2 her length 2/3/4/5/6+: 0/0/1/0/1
+
+=== 5. what the game became, by kind (wipe W / wipe L / r500 W her dead / r500 W her alive / r500 L her dead / r500 L her alive)
+  meow
+    alive                    n= 39 | 24 / 0 / 1 / 3 / 0 / 11
+    ram: unseen              n= 31 | 0 / 7 / 4 / 0 / 14 / 6
+    ram: stepped in          n= 66 | 8 / 26 / 4 / 0 / 14 / 14
+    ram: stayed in           n= 38 | 4 / 16 / 2 / 0 / 12 / 4
+    ram: cornered            n=114 | 20 / 35 / 8 / 0 / 29 / 22
+    ram: model miss          n=  2 | 0 / 1 / 0 / 0 / 0 / 1
+    boxed: terrain dead end  n= 30 | 1 / 6 / 8 / 0 / 8 / 7
+    boxed: ally body         n= 58 | 8 / 3 / 14 / 0 / 17 / 16
+    boxed: ally+enemy        n=  1 | 0 / 0 / 0 / 0 / 0 / 1
+    boxed: enemy body        n=  2 | 0 / 1 / 0 / 0 / 0 / 1
+    crash: portal            n=  1 | 0 / 0 / 1 / 0 / 0 / 0
+    own ram                  n= 19 | 2 / 8 / 0 / 0 / 8 / 1
+  meow live
+    alive                    n= 27 | 16 / 0 / 1 / 2 / 0 / 8
+    ram: unseen              n= 23 | 0 / 4 / 3 / 0 / 11 / 5
+    ram: stepped in          n= 40 | 5 / 19 / 3 / 0 / 3 / 10
+    ram: stayed in           n= 28 | 4 / 9 / 2 / 0 / 11 / 2
+    ram: cornered            n= 72 | 14 / 22 / 4 / 0 / 21 / 11
+    ram: model miss          n=  2 | 0 / 1 / 0 / 0 / 0 / 1
+    boxed: terrain dead end  n= 21 | 0 / 5 / 5 / 0 / 6 / 5
+    boxed: ally body         n= 43 | 6 / 2 / 10 / 0 / 11 / 14
+    boxed: ally+enemy        n=  1 | 0 / 0 / 0 / 0 / 0 / 1
+    boxed: enemy body        n=  2 | 0 / 1 / 0 / 0 / 0 / 1
+    own ram                  n= 16 | 2 / 7 / 0 / 0 / 6 / 1
+  opp
+    alive                    n=162 | 75 / 0 / 73 / 11 / 0 / 3
+    ram: unseen              n=  7 | 0 / 0 / 5 / 0 / 2 / 0
+    ram: stepped in          n= 15 | 3 / 5 / 4 / 0 / 3 / 0
+    ram: stayed in           n= 12 | 1 / 8 / 1 / 0 / 2 / 0
+    ram: cornered            n= 67 | 4 / 39 / 16 / 0 / 8 / 0
+    ram: model miss          n=  1 | 0 / 0 / 1 / 0 / 0 / 0
+    boxed: terrain dead end  n= 37 | 5 / 0 / 25 / 0 / 7 / 0
+    boxed: ally body         n= 59 | 13 / 2 / 30 / 0 / 13 / 1
+    boxed: ally+enemy        n=  2 | 1 / 0 / 1 / 0 / 0 / 0
+    boxed: enemy body        n=  5 | 0 / 0 / 5 / 0 / 0 / 0
+    boxed: own body          n=  7 | 0 / 0 / 7 / 0 / 0 / 0
+    crash: portal            n=  1 | 1 / 0 / 0 / 0 / 0 / 0
+    no action                n=  5 | 0 / 0 / 2 / 0 / 3 / 0
+    own ram                  n= 18 | 0 / 13 / 3 / 0 / 2 / 0
+    ally ram                 n=  3 | 0 / 0 / 2 / 0 / 1 / 0
+  forgot
+    alive                    n=226 | 99 / 0 / 56 / 52 / 0 / 19
+    ram: unseen              n= 70 | 10 / 17 / 17 / 0 / 13 / 13
+    ram: stepped in          n= 22 | 2 / 9 / 1 / 0 / 9 / 1
+    ram: stayed in           n= 17 | 4 / 8 / 3 / 0 / 2 / 0
+    ram: cornered            n=209 | 33 / 69 / 47 / 0 / 31 / 29
+    ram: model miss          n=  9 | 1 / 3 / 1 / 0 / 2 / 2
+    boxed: terrain dead end  n= 29 | 5 / 1 / 10 / 0 / 6 / 7
+    boxed: ally body         n= 18 | 5 / 2 / 3 / 0 / 3 / 5
+    boxed: enemy body        n=  5 | 1 / 3 / 0 / 0 / 0 / 1
+    own ram                  n= 19 | 6 / 6 / 2 / 0 / 2 / 3
+    ally ram                 n=  8 | 0 / 1 / 1 / 0 / 1 / 5
+  SSS
+    alive                    n=207 | 85 / 0 / 74 / 27 / 0 / 21
+    ram: unseen              n= 57 | 7 / 6 / 19 / 0 / 17 / 8
+    ram: stepped in          n= 18 | 8 / 6 / 2 / 0 / 2 / 0
+    ram: stayed in           n= 20 | 6 / 5 / 3 / 0 / 3 / 3
+    ram: cornered            n=142 | 30 / 46 / 35 / 0 / 27 / 4
+    ram: model miss          n=  3 | 0 / 0 / 1 / 0 / 1 / 1
+    boxed: terrain dead end  n= 15 | 3 / 0 / 6 / 0 / 1 / 5
+    boxed: ally body         n= 22 | 1 / 0 / 12 / 0 / 5 / 4
+    boxed: enemy body        n=  2 | 0 / 2 / 0 / 0 / 0 / 0
+    crash: portal            n=  1 | 1 / 0 / 0 / 0 / 0 / 0
+    crash: stride            n=  1 | 0 / 0 / 0 / 0 / 0 / 1
+    own ram                  n=  9 | 2 / 4 / 2 / 0 / 1 / 0
+    ally ram                 n=  6 | 0 / 0 / 2 / 0 / 2 / 2
+  Vibing++
+    alive                    n=134 | 47 / 0 / 47 / 24 / 0 / 16
+    ram: unseen              n= 67 | 10 / 12 / 23 / 0 / 11 / 11
+    ram: stepped in          n= 19 | 8 / 5 / 2 / 0 / 3 / 1
+    ram: stayed in           n= 16 | 5 / 7 / 1 / 0 / 2 / 1
+    ram: cornered            n=125 | 27 / 29 / 37 / 0 / 21 / 11
+    ram: model miss          n=  3 | 0 / 0 / 2 / 0 / 0 / 1
+    boxed: terrain dead end  n= 21 | 4 / 4 / 8 / 0 / 3 / 2
+    boxed: ally body         n= 85 | 33 / 17 / 17 / 0 / 8 / 10
+    boxed: ally+enemy        n=  2 | 1 / 1 / 0 / 0 / 0 / 0
+    boxed: enemy body        n=  7 | 4 / 0 / 3 / 0 / 0 / 0
+    crash: portal            n=  1 | 0 / 0 / 0 / 0 / 1 / 0
+    own ram                  n= 20 | 7 / 3 / 5 / 0 / 4 / 1
+    ally ram                 n=  2 | 0 / 1 / 1 / 0 / 0 / 0
+
+=== 6. boxed-in deaths: what stood around her, and how she got there (P ate in the last turns, S split, E enemy head in view)
+  meow: 91 boxed-in deaths
+    boxed: ally body         story -    17
+    boxed: ally body         story E    9
+    boxed: ally body         story PE   12
+    boxed: ally body         story PS   4
+    boxed: ally body         story PSE  5
+    boxed: ally body         story S    9
+    boxed: ally body         story SE   2
+    boxed: ally+enemy        story E    1
+    boxed: enemy body        story E    1
+    boxed: enemy body        story SE   1
+    boxed: terrain dead end  story -    2
+    boxed: terrain dead end  story E    1
+    boxed: terrain dead end  story PE   9
+    boxed: terrain dead end  story PS   4
+    boxed: terrain dead end  story PSE  13
+    boxed: terrain dead end  story SE   1
+    boxed: ally body         blocking team-mate: other team-mate 34
+    boxed: ally body         blocking team-mate: own recent child 24
+    boxed: ally+enemy        blocking team-mate: other team-mate 1
+    her length: {2: 49, 3: 34, 4: 2, 5: 6}
+  meow live: 67 boxed-in deaths
+    boxed: ally body         story -    14
+    boxed: ally body         story E    6
+    boxed: ally body         story PE   10
+    boxed: ally body         story PS   4
+    boxed: ally body         story PSE  1
+    boxed: ally body         story S    6
+    boxed: ally body         story SE   2
+    boxed: ally+enemy        story E    1
+    boxed: enemy body        story E    1
+    boxed: enemy body        story SE   1
+    boxed: terrain dead end  story -    1
+    boxed: terrain dead end  story PE   5
+    boxed: terrain dead end  story PS   4
+    boxed: terrain dead end  story PSE  10
+    boxed: terrain dead end  story SE   1
+    boxed: ally body         blocking team-mate: other team-mate 26
+    boxed: ally body         blocking team-mate: own recent child 17
+    boxed: ally+enemy        blocking team-mate: other team-mate 1
+    her length: {2: 38, 3: 23, 4: 1, 5: 5}
+  opp: 110 boxed-in deaths
+    boxed: ally body         story -    19
+    boxed: ally body         story E    10
+    boxed: ally body         story P    6
+    boxed: ally body         story PS   12
+    boxed: ally body         story PSE  4
+    boxed: ally body         story S    5
+    boxed: ally body         story SE   3
+    boxed: ally+enemy        story E    1
+    boxed: ally+enemy        story SE   1
+    boxed: enemy body        story E    2
+    boxed: enemy body        story PSE  2
+    boxed: enemy body        story SE   1
+    boxed: own body          story E    2
+    boxed: own body          story P    3
+    boxed: own body          story PE   1
+    boxed: own body          story PS   1
+    boxed: terrain dead end  story -    2
+    boxed: terrain dead end  story E    1
+    boxed: terrain dead end  story P    2
+    boxed: terrain dead end  story PE   1
+    boxed: terrain dead end  story PS   8
+    boxed: terrain dead end  story PSE  21
+    boxed: terrain dead end  story S    1
+    boxed: terrain dead end  story SE   1
+    boxed: ally body         blocking team-mate: other team-mate 43
+    boxed: ally body         blocking team-mate: own recent child 16
+    boxed: ally+enemy        blocking team-mate: other team-mate 1
+    boxed: ally+enemy        blocking team-mate: own recent child 1
+    her length: {2: 58, 3: 31, 4: 1, 5: 3, 6: 1, 7: 2, 8: 2, 9: 2, 10: 2, 12: 3, 14: 1, 16: 2, 27: 1, 49: 1}
+  forgot: 52 boxed-in deaths
+    boxed: ally body         story -    1
+    boxed: ally body         story E    7
+    boxed: ally body         story PE   1
+    boxed: ally body         story PS   1
+    boxed: ally body         story PSE  5
+    boxed: ally body         story SE   3
+    boxed: enemy body        story E    5
+    boxed: terrain dead end  story -    2
+    boxed: terrain dead end  story E    4
+    boxed: terrain dead end  story P    1
+    boxed: terrain dead end  story PE   1
+    boxed: terrain dead end  story PS   6
+    boxed: terrain dead end  story PSE  8
+    boxed: terrain dead end  story S    4
+    boxed: terrain dead end  story SE   3
+    boxed: ally body         blocking team-mate: other team-mate 17
+    boxed: ally body         blocking team-mate: own recent child 1
+    her length: {2: 30, 3: 21, 9: 1}
+  SSS: 39 boxed-in deaths
+    boxed: ally body         story -    4
+    boxed: ally body         story E    2
+    boxed: ally body         story P    2
+    boxed: ally body         story PE   3
+    boxed: ally body         story PS   3
+    boxed: ally body         story PSE  7
+    boxed: ally body         story S    1
+    boxed: enemy body        story E    1
+    boxed: enemy body        story PSE  1
+    boxed: terrain dead end  story -    1
+    boxed: terrain dead end  story P    1
+    boxed: terrain dead end  story PE   1
+    boxed: terrain dead end  story PS   7
+    boxed: terrain dead end  story PSE  5
+    boxed: ally body         blocking team-mate: other team-mate 22
+    her length: {2: 16, 3: 18, 4: 1, 5: 2, 7: 1, 14: 1}
+  Vibing++: 115 boxed-in deaths
+    boxed: ally body         story -    26
+    boxed: ally body         story E    22
+    boxed: ally body         story PE   3
+    boxed: ally body         story PS   13
+    boxed: ally body         story PSE  15
+    boxed: ally body         story S    5
+    boxed: ally body         story SE   1
+    boxed: ally+enemy        story -    1
+    boxed: ally+enemy        story PS   1
+    boxed: enemy body        story E    4
+    boxed: enemy body        story PSE  2
+    boxed: enemy body        story SE   1
+    boxed: terrain dead end  story PE   2
+    boxed: terrain dead end  story PS   4
+    boxed: terrain dead end  story PSE  13
+    boxed: terrain dead end  story S    1
+    boxed: terrain dead end  story SE   1
+    boxed: ally body         blocking team-mate: other team-mate 65
+    boxed: ally body         blocking team-mate: own recent child 20
+    boxed: ally+enemy        blocking team-mate: other team-mate 2
+    her length: {2: 64, 3: 50, 5: 1}
+
+=== 7. per map, meow (all runs): kinds
+  Stripes             288 n=29 | ram: unseen 1, ram: stepped in 6, ram: stayed in 2, ram: cornered 11, boxed: terrain dead end 3, boxed: ally body 3, boxed: enemy body 1, own ram 2
+  Devil               512 n=30 | alive 1, ram: unseen 1, ram: stepped in 10, ram: stayed in 2, ram: cornered 9, boxed: ally body 5, own ram 2
+  Portals             512 n=27 | boxed: terrain dead end 12, boxed: ally body 14, crash: portal 1
+  Prisoners Dilemma   512 n= 8 | alive 3, ram: cornered 1, boxed: terrain dead end 3, boxed: ally+enemy 1
+  Tower Defense       512 n=24 | ram: unseen 2, ram: stepped in 7, ram: stayed in 3, ram: cornered 2, boxed: ally body 2, own ram 8
+  weakhold            600 n=27 | ram: stepped in 5, ram: stayed in 1, ram: cornered 7, boxed: terrain dead end 3, boxed: ally body 6, own ram 5
+  Trophy              625 n=28 | alive 14, ram: unseen 2, ram: stepped in 4, ram: stayed in 4, ram: cornered 3, own ram 1
+  Queen Of Spades     875 n=28 | alive 1, ram: unseen 1, ram: stepped in 4, ram: stayed in 5, ram: cornered 17
+  Autarky             972 n= 8 | alive 1, ram: unseen 2, ram: stepped in 1, ram: stayed in 1, ram: cornered 2, ram: model miss 1
+  Default            1024 n=27 | alive 4, ram: unseen 2, ram: stepped in 3, ram: stayed in 4, ram: cornered 11, ram: model miss 1, boxed: ally body 2
+  Maze               1152 n=27 | ram: stepped in 2, ram: stayed in 2, ram: cornered 10, boxed: terrain dead end 5, boxed: ally body 8
+  Trauma             1152 n=27 | alive 15, ram: unseen 3, ram: stepped in 1, ram: stayed in 1, ram: cornered 5, boxed: ally body 2
+  Slithery Fight     1701 n=29 | ram: unseen 5, ram: stepped in 2, ram: cornered 6, boxed: terrain dead end 2, boxed: ally body 13, boxed: enemy body 1
+  Islands            2240 n=30 | ram: unseen 3, ram: stepped in 7, ram: stayed in 4, ram: cornered 13, boxed: terrain dead end 2, boxed: ally body 1
+  Australia          4096 n=28 | ram: unseen 3, ram: stepped in 8, ram: stayed in 7, ram: cornered 10
+  Around UNSW        4096 n=24 | ram: unseen 6, ram: stepped in 6, ram: stayed in 2, ram: cornered 7, boxed: ally body 2, own ram 1
+  --- opp
+  Stripes            n= 29 | alive 18, ram: stayed in 1, ram: cornered 3, boxed: terrain dead end 1, boxed: ally body 2, boxed: ally+enemy 1, own ram 3
+  Devil              n= 30 | alive 6, ram: stepped in 3, ram: stayed in 2, ram: cornered 11, boxed: ally body 7, own ram 1
+  Portals            n= 27 | alive 7, boxed: terrain dead end 13, boxed: ally body 5, ally ram 2
+  Prisoners Dilemma  n=  8 | alive 4, ram: stayed in 1, ram: cornered 2, own ram 1
+  Tower Defense      n= 24 | alive 14, ram: unseen 1, ram: cornered 2, boxed: terrain dead end 4, boxed: ally body 3
+  weakhold           n= 27 | alive 7, ram: stepped in 2, ram: stayed in 2, ram: cornered 7, boxed: terrain dead end 3, boxed: enemy body 1, own ram 5
+  Trophy             n= 28 | alive 6, ram: stepped in 2, ram: stayed in 5, ram: cornered 10, boxed: ally body 1, crash: portal 1, own ram 3
+  Queen Of Spades    n= 28 | alive 16, ram: unseen 1, ram: stepped in 1, ram: cornered 5, boxed: terrain dead end 1, boxed: ally body 2, own ram 2
+  Autarky            n=  8 | alive 4, ram: stepped in 1, ram: cornered 2, no action 1
+  Default            n= 27 | alive 6, ram: stepped in 3, ram: cornered 13, boxed: ally body 2, own ram 2, ally ram 1
+  Maze               n= 27 | alive 7, ram: cornered 1, boxed: terrain dead end 5, boxed: ally body 9, boxed: enemy body 2, no action 2, own ram 1
+  Trauma             n= 27 | alive 26, boxed: ally body 1
+  Slithery Fight     n= 29 | alive 13, ram: unseen 2, ram: stepped in 3, ram: cornered 5, boxed: terrain dead end 3, boxed: ally body 2, boxed: own body 1
+  Islands            n= 30 | alive 11, ram: cornered 2, boxed: terrain dead end 4, boxed: ally body 10, boxed: ally+enemy 1, boxed: own body 2
+  Australia          n= 28 | alive 15, ram: unseen 1, ram: cornered 1, ram: model miss 1, boxed: terrain dead end 1, boxed: ally body 5, boxed: enemy body 1, boxed: own body 2, no action 1
+  Around UNSW        n= 24 | alive 2, ram: unseen 2, ram: stayed in 1, ram: cornered 3, boxed: terrain dead end 2, boxed: ally body 10, boxed: enemy body 1, boxed: own body 2, no action 1
+  --- top three
+  Stripes            n= 98 | alive 32, ram: unseen 3, ram: stepped in 9, ram: stayed in 3, ram: cornered 33, boxed: terrain dead end 2, boxed: ally body 8, boxed: enemy body 3, own ram 5
+  Devil              n=114 | alive 20, ram: unseen 7, ram: stepped in 4, ram: stayed in 6, ram: cornered 45, ram: model miss 3, boxed: ally body 20, boxed: enemy body 2, own ram 7
+  Portals            n=106 | alive 52, boxed: terrain dead end 14, boxed: ally body 28, crash: stride 1, own ram 1, ally ram 10
+  Prisoners Dilemma  n=104 | alive 32, ram: unseen 19, ram: stepped in 6, ram: stayed in 7, ram: cornered 26, ram: model miss 2, boxed: terrain dead end 9, boxed: ally body 2, boxed: enemy body 1
+  Tower Defense      n= 97 | alive 49, ram: unseen 4, ram: stepped in 3, ram: stayed in 2, ram: cornered 14, boxed: terrain dead end 7, boxed: ally body 16, own ram 2
+  weakhold           n=104 | alive 36, ram: unseen 4, ram: stepped in 3, ram: stayed in 3, ram: cornered 34, boxed: terrain dead end 6, boxed: ally body 11, boxed: enemy body 2, own ram 5
+  Trophy             n=102 | alive 27, ram: unseen 8, ram: stepped in 6, ram: stayed in 9, ram: cornered 40, boxed: terrain dead end 2, boxed: ally body 4, boxed: ally+enemy 1, boxed: enemy body 2, crash: portal 1, own ram 2
+  Queen Of Spades    n= 88 | alive 10, ram: unseen 11, ram: stepped in 7, ram: stayed in 5, ram: cornered 40, boxed: terrain dead end 1, boxed: ally body 4, boxed: enemy body 3, own ram 6, ally ram 1
+  Autarky            n=101 | alive 55, ram: unseen 16, ram: stayed in 1, ram: cornered 27, boxed: ally body 1, own ram 1
+  Default            n= 99 | alive 20, ram: unseen 7, ram: stepped in 8, ram: stayed in 2, ram: cornered 40, ram: model miss 2, boxed: ally body 7, boxed: ally+enemy 1, own ram 10, ally ram 2
+  Maze               n= 97 | alive 39, ram: unseen 8, ram: stayed in 1, ram: cornered 21, ram: model miss 1, boxed: terrain dead end 10, boxed: ally body 11, boxed: enemy body 1, crash: portal 1, own ram 3, ally ram 1
+  Trauma             n=100 | alive 93, ram: unseen 4, ram: cornered 3
+  Slithery Fight     n=104 | alive 46, ram: unseen 24, ram: stepped in 1, ram: stayed in 3, ram: cornered 21, ram: model miss 1, boxed: terrain dead end 1, boxed: ally body 6, own ram 1
+  Islands            n=111 | alive 10, ram: unseen 29, ram: stepped in 5, ram: stayed in 6, ram: cornered 43, ram: model miss 1, boxed: terrain dead end 8, boxed: ally body 5, own ram 2, ally ram 2
+  Australia          n=111 | alive 28, ram: unseen 19, ram: stepped in 3, ram: stayed in 1, ram: cornered 53, ram: model miss 2, boxed: terrain dead end 1, boxed: ally body 1, own ram 3
+  Around UNSW        n=101 | alive 18, ram: unseen 31, ram: stepped in 4, ram: stayed in 4, ram: cornered 36, ram: model miss 3, boxed: terrain dead end 4, boxed: ally body 1

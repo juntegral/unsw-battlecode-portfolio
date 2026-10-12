@@ -1,0 +1,61 @@
+team 91: 50 queen deaths that were not a ram by an enemy
+  by reason: {'body': 18, 'headon': 9, 'self': 23}
+  by free neighbour cells at the start of her fatal turn: {0: 48, 1: 2}
+  by her length: {'10+': 2, '2': 19, '3': 25, '4-9': 4}
+  by her order: {'move 1 steps': 48, 'move 2 steps': 2}
+  by an enemy head within 3 steps: {False: 38, True: 12}
+  by what blocked her (kelp, own body, team-mate, enemy body): {'kelp 0 own 1 mate 2 enemy 0 free 1': 1, 'kelp 0 own 1 mate 3 enemy 0 free 0': 5, 'kelp 1 own 1 mate 0 enemy 2 free 0': 2, 'kelp 1 own 1 mate 1 enemy 1 free 0': 1, 'kelp 1 own 1 mate 2 enemy 0 free 0': 1, 'kelp 2 own 1 mate 0 enemy 0 free 1': 1, 'kelp 2 own 1 mate 0 enemy 1 free 0': 8, 'kelp 2 own 1 mate 1 enemy 0 free 0': 16, 'kelp 3 own 1 mate 0 enemy 0 free 0': 15}
+  by blocked by a team-mate's body on at least one side (boxed cases only): {'n/a': 2, 'no': 25, 'yes': 23}
+  by she had split in the 20 rounds before: {False: 18, True: 32}
+  by round: {'0-99': 6, '100-299': 22, '300+': 22}
+  by map: {'Around UNSW': 1, 'Australia': 1, 'Default': 1, 'Devil': 3, 'Islands': 1, 'Maze': 5, 'Portals': 16, 'Queen Of Spades': 2, 'Slithery Fight': 6, 'Stripes': 4, 'Tower Defense': 3, 'Trophy': 2, 'weakhold': 5}
+    1046152 Queen Of Spades r158 headon L3 at (0, 9) order move S; free 0 kelp 1 own 1 mate 0 enemy 2; enemy head within 3: True; last split None
+    1046476 Portals r326 body L7 at (27, 1) order move N; free 0 kelp 2 own 1 mate 1 enemy 0; enemy head within 3: False; last split (307, 4, 2, 2)
+    1046537 Around UNSW r472 body L2 at (20, 50) order move N; free 0 kelp 0 own 1 mate 3 enemy 0; enemy head within 3: False; last split (471, 4, 2, 2)
+    1046896 Slithery Fight r445 body L2 at (46, 13) order move N; free 0 kelp 0 own 1 mate 3 enemy 0; enemy head within 3: False; last split (443, 4, 2, 2)
+    1049263 Stripes r92 self L2 at (20, 10) order move S; free 0 kelp 3 own 1 mate 0 enemy 0; enemy head within 3: False; last split (91, 4, 2, 2)
+    1050177 Trophy r130 body L2 at (12, 6) order move N; free 1 kelp 0 own 1 mate 2 enemy 0; enemy head within 3: False; last split (122, 4, 2, 2)
+    1050686 Portals r308 body L5 at (4, 7) order move N; free 0 kelp 2 own 1 mate 1 enemy 0; enemy head within 3: False; last split (303, 4, 2, 2)
+    1050695 weakhold r464 self L2 at (15, 14) order move W; free 0 kelp 3 own 1 mate 0 enemy 0; enemy head within 3: False; last split (463, 4, 2, 2)
+    1050850 Slithery Fight r284 body L3 at (38, 11) order move E; free 0 kelp 2 own 1 mate 1 enemy 0; enemy head within 3: False; last split (133, 4, 2, 2)
+    1050853 Portals r294 body L2 at (19, 8) order move W; free 0 kelp 2 own 1 mate 1 enemy 0; enemy head within 3: False; last split (293, 4, 2, 2)
+    1050898 Portals r443 body L5 at (4, 6) order move SE; free 0 kelp 2 own 1 mate 1 enemy 0; enemy head within 3: False; last split (440, 5, 3, 2)
+    1051285 Stripes r93 self L2 at (20, 10) order move S; free 0 kelp 3 own 1 mate 0 enemy 0; enemy head within 3: False; last split (92, 4, 2, 2)
+    1051290 Portals r195 self L2 at (13, 15) order move W; free 0 kelp 2 own 1 mate 1 enemy 0; enemy head within 3: False; last split (194, 4, 2, 2)
+    1051292 Maze r211 self L2 at (12, 21) order move E; free 0 kelp 2 own 1 mate 1 enemy 0; enemy head within 3: False; last split (66, 4, 2, 2)
+    1051825 Portals r341 self L3 at (9, 5) order move W; free 0 kelp 3 own 1 mate 0 enemy 0; enemy head within 3: False; last split (338, 4, 2, 2)
+    1052809 Portals r319 self L2 at (19, 12) order move W; free 0 kelp 3 own 1 mate 0 enemy 0; enemy head within 3: False; last split (318, 4, 2, 2)
+    1053723 Portals r374 self L3 at (23, 10) order move W; free 0 kelp 3 own 1 mate 0 enemy 0; enemy head within 3: False; last split (331, 4, 2, 2)
+    1054705 Slithery Fight r476 body L3 at (61, 9) order move N; free 0 kelp 0 own 1 mate 3 enemy 0; enemy head within 3: False; last split (241, 4, 2, 2)
+    1054720 Portals r459 body L2 at (13, 7) order move W; free 0 kelp 2 own 1 mate 1 enemy 0; enemy head within 3: False; last split (458, 4, 2, 2)
+    1054721 Slithery Fight r351 body L2 at (13, 19) order move S; free 0 kelp 2 own 1 mate 1 enemy 0; enemy head within 3: False; last split (350, 4, 2, 2)
+    1055271 Islands r152 self L3 at (8, 4) order move S; free 0 kelp 3 own 1 mate 0 enemy 0; enemy head within 3: False; last split (62, 4, 2, 2)
+    1056004 Maze r202 self L3 at (6, 23) order move N; free 0 kelp 1 own 1 mate 2 enemy 0; enemy head within 3: False; last split (197, 4, 2, 2)
+    1056005 Maze r197 self L2 at (36, 23) order move N; free 0 kelp 3 own 1 mate 0 enemy 0; enemy head within 3: False; last split (196, 4, 2, 2)
+    1056007 Maze r378 body L3 at (42, 15) order move E; free 0 kelp 0 own 1 mate 3 enemy 0; enemy head within 3: False; last split (357, 4, 2, 2)
+    1056017 Slithery Fight r444 headon L3 at (43, 26) order move N; free 0 kelp 2 own 1 mate 0 enemy 1; enemy head within 3: True; last split (125, 4, 2, 2)
+    1056042 Portals r218 self L3 at (26, 5) order move E; free 0 kelp 3 own 1 mate 0 enemy 0; enemy head within 3: False; last split (192, 4, 2, 2)
+    1056044 Portals r143 self L3 at (19, 0) order move S; free 0 kelp 2 own 1 mate 1 enemy 0; enemy head within 3: False; last split (141, 4, 2, 2)
+    1056422 Stripes r80 headon L3 at (0, 5) order move W; free 0 kelp 2 own 1 mate 0 enemy 1; enemy head within 3: True; last split (73, 4, 2, 2)
+    1056693 Portals r290 body L10 at (22, 14) order move EE; free 1 kelp 2 own 1 mate 0 enemy 0; enemy head within 3: False; last split (219, 4, 2, 2)
+    1056810 Tower Defense r378 headon L3 at (30, 12) order move N; free 0 kelp 2 own 1 mate 0 enemy 1; enemy head within 3: True; last split (195, 4, 2, 2)
+    1056812 weakhold r469 self L3 at (24, 0) order move E; free 0 kelp 3 own 1 mate 0 enemy 0; enemy head within 3: False; last split (467, 4, 2, 2)
+    1056815 Slithery Fight r268 self L2 at (32, 7) order move W; free 0 kelp 2 own 1 mate 1 enemy 0; enemy head within 3: False; last split (266, 4, 2, 2)
+    1058066 Stripes r21 body L2 at (18, 9) order move E; free 0 kelp 2 own 1 mate 0 enemy 1; enemy head within 3: True; last split None
+    1059416 Portals r313 body L14 at (4, 6) order move S; free 0 kelp 2 own 1 mate 1 enemy 0; enemy head within 3: False; last split (306, 10, 8, 2)
+    1059576 Portals r388 body L4 at (12, 15) order move E; free 0 kelp 2 own 1 mate 1 enemy 0; enemy head within 3: False; last split (384, 4, 2, 2)
+    1059831 Default r373 body L3 at (7, 24) order move N; free 0 kelp 0 own 1 mate 3 enemy 0; enemy head within 3: False; last split (338, 4, 2, 2)
+    1059835 weakhold r257 headon L2 at (10, 1) order move W; free 0 kelp 2 own 1 mate 0 enemy 1; enemy head within 3: True; last split (0, 4, 2, 2)
+    1059839 Maze r255 self L2 at (11, 5) order move E; free 0 kelp 2 own 1 mate 1 enemy 0; enemy head within 3: True; last split (207, 4, 2, 2)
+    1060087 Queen Of Spades r115 headon L3 at (7, 8) order move W; free 0 kelp 2 own 1 mate 0 enemy 1; enemy head within 3: True; last split (107, 4, 2, 2)
+    1060088 Trophy r156 self L3 at (12, 20) order move N; free 0 kelp 3 own 1 mate 0 enemy 0; enemy head within 3: False; last split (154, 4, 2, 2)
+    1060488 Tower Defense r488 self L2 at (22, 4) order move W; free 0 kelp 3 own 1 mate 0 enemy 0; enemy head within 3: False; last split (487, 4, 2, 2)
+    1063803 Australia r176 headon L3 at (15, 15) order move E; free 0 kelp 2 own 1 mate 0 enemy 1; enemy head within 3: True; last split (0, 4, 2, 2)
+    1064582 Tower Defense r176 headon L3 at (24, 15) order move E; free 0 kelp 2 own 1 mate 0 enemy 1; enemy head within 3: True; last split (60, 4, 2, 2)
+    1064591 Devil r24 body L3 at (15, 8) order move E; free 0 kelp 1 own 1 mate 0 enemy 2; enemy head within 3: True; last split (22, 4, 2, 2)
+    1065198 weakhold r466 self L3 at (24, 0) order move E; free 0 kelp 3 own 1 mate 0 enemy 0; enemy head within 3: False; last split (464, 4, 2, 2)
+    1067060 weakhold r462 self L3 at (24, 0) order move E; free 0 kelp 3 own 1 mate 0 enemy 0; enemy head within 3: False; last split (460, 4, 2, 2)
+    1067245 Devil r111 self L3 at (17, 7) order move N; free 0 kelp 2 own 1 mate 1 enemy 0; enemy head within 3: False; last split (63, 4, 2, 2)
+    1067548 Portals r240 self L3 at (4, 14) order move E; free 0 kelp 2 own 1 mate 1 enemy 0; enemy head within 3: False; last split (238, 4, 2, 2)
+    1068409 Portals r109 self L3 at (22, 10) order move E; free 0 kelp 3 own 1 mate 0 enemy 0; enemy head within 3: False; last split (106, 4, 2, 2)
+    1068412 Devil r70 headon L2 at (19, 10) order move S; free 0 kelp 1 own 1 mate 1 enemy 1; enemy head within 3: True; last split (69, 4, 2, 2)

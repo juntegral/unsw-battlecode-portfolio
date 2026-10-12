@@ -1,0 +1,56 @@
+=== F23 extras: visits to small rooms on Portals (a visit = her room at a turn start changes to one of 6 or fewer)
+  main us: visits by room size [(1, 5), (4, 20)]; deaths by room size [(1, 5), (4, 4)]; died on the first visit 2, on a later visit 7 (9 games)
+  main them: visits by room size [(1, 1), (4, 1)]; deaths by room size [(1, 1)]; died on the first visit 1, on a later visit 0 (9 games)
+  main: their queen alive at the end: we won 0 of 4; their queen dead: we won 4 of 5
+  v31 us: visits by room size [(1, 11), (4, 37)]; deaths by room size [(1, 11), (4, 15)]; died on the first visit 12, on a later visit 14 (27 games)
+  v31 them: visits by room size [(1, 8), (4, 26)]; deaths by room size [(1, 8), (4, 2)]; died on the first visit 5, on a later visit 5 (27 games)
+  v31: their queen alive at the end: we won 0 of 6; their queen dead: we won 13 of 21
+  first-visit deaths main 2 of 9 against v31 12 of 27: Fisher p 0.432
+  died in a small room given she ever entered one, ours 35 of 36 against theirs 11 of 14: Fisher p 0.061
+
+=== F24 extras
+  main first to die by death round, same-round pairs left out:
+     <1700      ours 0, theirs 0, same round 0
+     1700-1899  ours 36, theirs 22, same round 1
+     1900-2099  ours 59, theirs 48, same round 2
+     2100+      ours 10, theirs 3, same round 0
+     all        ours 105, theirs 73, same round 3
+  main rammed and alive by 100-point band (band: rammed, alive, games, battles, opponents):
+     1700-1799: 10, 7, 30, 7, 7
+     1800-1899: 15, 13, 39, 10, 7
+     1900-1999: 30, 17, 74, 17, 9
+     2000-2099: 28, 8, 45, 10, 6
+     2100-2199: 5, 0, 8, 2, 1
+     2300-2399: 4, 0, 5, 1, 1
+     under 1800: rammed 10 of 30 = 0.333
+     1800-1899: rammed 15 of 39 = 0.385
+     1900 and over: rammed 67 of 132 = 0.508
+     rating trend with the 1800-1899 battles left out: shuffles reaching it 4 of 4000 (37 battles)
+  v31 first to die by death round, same-round pairs left out:
+     <1700      ours 3, theirs 10, same round 0
+     1700-1899  ours 87, theirs 90, same round 1
+     1900-2099  ours 65, theirs 46, same round 4
+     2100+      ours 27, theirs 13, same round 1
+     all        ours 182, theirs 159, same round 6
+  v31 rammed and alive by 100-point band (band: rammed, alive, games, battles, opponents):
+     1600-1699: 8, 1, 13, 3, 2
+     1700-1799: 35, 11, 68, 15, 11
+     1800-1899: 38, 33, 118, 27, 13
+     1900-1999: 40, 9, 76, 17, 12
+     2000-2099: 25, 6, 44, 10, 5
+     2100-2199: 15, 2, 26, 6, 5
+     2200-2299: 5, 0, 8, 2, 2
+     2400-2499: 6, 0, 9, 2, 1
+     under 1800: rammed 43 of 81 = 0.531
+     1800-1899: rammed 38 of 118 = 0.322
+     1900 and over: rammed 91 of 163 = 0.558
+     rating trend with the 1800-1899 battles left out: shuffles reaching it 650 of 4000 (55 battles)
+  both codes, 2100 and over: our queen alive at the end 2 of 56; rammed 35
+
+=== F20 extras: is the main gap different between 1700-1899 and 1900-2099? band labels shuffled between games inside each layout
+  main: gap at 1700-1899 minus gap at 1900-2099 = +0.090; shuffles reaching it (either sign): 3 of 4000
+  v31: gap at 1700-1899 minus gap at 1900-2099 = +0.004; shuffles reaching it (either sign): 3568 of 4000
+
+=== F13 extras: the rams in which the rammer made more steps than ceil(L/4)+L-2 (length at turn start, steps made, length just before the ram step)
+  [((2, 2, 3), 2), ((2, 3, 3), 4), ((3, 3, 3), 6), ((3, 4, 3), 2), ((4, 4, 3), 3)]
+  of these 17, the rammer was longer just before the ram step than its paid steps alone would leave it (it ate on the way): 17

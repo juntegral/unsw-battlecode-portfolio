@@ -1,0 +1,74 @@
+from pathlib import Path
+import json
+import subprocess
+
+task = Path('exp/qsight')
+s = json.loads((task / 'summary.json').read_text())
+clock = subprocess.check_output(['date', '+%Y-%m-%d %H:%M:%S %Z'], text=True).strip()
+board1 = (task / 'boards/long-send-r192.txt').read_text().strip()
+board2 = (task / 'boards/long-avoid-r193.txt').read_text().strip()
+body = f'''기존 196판을 `ANALYZE.md`대로 `UNSW_RULES=123`으로 분석했다. 주 집계는 원22지도 88짝, 생성 M_07 4짝은 별도다. 승패·최종 총길이는 판정에 쓰지 않았다. 봇·params·스위치 변경, 새 게임, 커밋, 네트워크는 모두 0이다.
+
+| 사전 기준 | 값 | N | 판정 |
+|---|---|---|---|
+| a: 현재 직접 머리·좌표·원 라운드·송신자·팀 | 위반0; L≥9 보고532 / L<9 보고489 | 송신 기회1021 | PASS |
+| a: 내부 길이 추정/하한·L/도달 조건·우선순위 | 원 World 재구성 및 독립 후보 정렬 불일치0; 여왕 소식 나이0–20 | 1021; 짧은 보고489 | PASS |
+| a: 송신 방향·한 보고/세 기존 광선 | 원 main의 MOVE/SPLIT 방향 재현 불일치0; 발사 시4광선·보고1개 | 기회1021 / 실제 발사1001 | PASS |
+| a: 실제 송신→여왕 hit→다음 차례 수신 | 1021→1001→74→72; 여왕이 수신 전 죽은2도 hit 분모에 포함 | 기회1021, hit74, 다음 차례 존재72 | PASS(존재한 차례72/72); 소실2 |
+| a: 신선 채택·동일/오래된 보고·만료·비메아리 | 수신72 / 새 채택71 / 미채택1; cache/qsn 재구성 오류0; age>3 기록0; 모든 송신은 새 직접 목격 | 여왕17487차례, cache175기록/173차례; 송신1021 | PASS |
+| a: 물리 도달 지연≤1 | 지연1인72, >1인0 | 수신72 | PASS |
+| a: 실제 길이와 추정 구분 | 과소486 / 일치240 / 과대295; 실제 길이라고 주장하지 않음 | 보고1021 | PASS(규약); 정확한 적 길이 보장은 아님 |
+| b: 보고 BFS 가격·age·max·직접 관측 제외 | 독립 전 타일장 및 실제 qsp 불일치0; 0/27/45 선택102/59/12(0에 split2 포함) | cache 차례173 / 기록175 | PASS |
+| b: 같은 관측 입력 Planner·후보/선택 변화 | 실제 on 행동173/173 재현; 가격장만 끈 동일 상태와 선택 차이8; 밖으로3, 45→27로3, 경로만2 | 173; 변화8 | PASS(기제 발동) |
+| b: 도달 밖 합법 대안이 있을 때 회피 | 기존 선택이 도달 안인4건 중 밖으로3; stripes B/hunter r180은 합법 E/S 가격0에도 W 가격27 유지 | 대안 있는 위험 선택4 | FAIL(회피 실패1); 개선3 |
+| b: 무대안·split·직접 관측 우선 공개 | 도달 안71: 밖 대안없음70 / 대안있음1; split2; 합법 첫걸음0인3; 직접 보이는 보고67개 제외 | cache173차례 / 기록175 | PASS(분리 집계) |
+| c: 시야 밖 L≥9 rammed 수·전체 rammed 중 몫 감소 | 2→1; 2/36=5.56%→1/36=2.78%; 전체 rammed36→36 | 원지도88짝; rammed 각36 | PASS(관측 감소); 전체 안전은 아래 FAIL |
+| c: 시야 밖/미상 분리 | 전체 시야 밖6→5; 그중 L≥9 2→1; rammer 미상3→4 | rammed 각36 | PASS(분모 공개); 미상을 밖으로 세지 않음 |
+| c: 다른 사인·전체 여왕 사망 비증가 | trap25→26, sac7→7, enemyBody1→1, ram1→1; 총70→71 | 원지도88짝 | FAIL |
+| c: 키별 새/조기 사망 비증가 | 새2키; 양쪽 죽은 키에서 조기3키(아래 전수); 앞당김 flag는 새 사망 포함5키 | 원지도88짝, 공통 사망69키 | FAIL |
+| c: 생성 지도 별도 | 사망3→3(trap), rammed0→0; 신호/수신0→0; 새/조기0 | M_07 4짝 | PASS(깨짐); 전달·회피·사냥꾼 감소는 미확인(N0) |
+| c: 기존 시작 주머니 초기 사망 비증가 | Autarky r4 4/4, PD r3 4/4, Slithery r3 4/4 유지; Around UNSW B r6 2/2 유지 | 14짝 | PASS |
+| 깨짐: 완료·오류 이력·ledger 검증 | expected/loaded196, pairs92, identity6, missing/historyErrors/errors0; checks 전 항0 | 196판 | PASS |
+| 깨짐: off WASM 바이트·소스/지도/명세 | base/off 각각518494 bytes 및 SHA 동일; 전후 validate 통과 | WASM2, 검증2회 | PASS |
+| 깨짐: off 사건·소나 동일 | analyze identity6/6; 기존 replay fingerprint도6/6 | 6키/12판 | PASS |
+| 깨짐: CPU 경보80M·한도100M·누락 | 우리 팀 최대57.6M(on), off32.1M; ≥80M/≥100M/누락 각0 | 196판 | PASS |
+| 합성: 형식/CRC·wrap·TTL·중복/cap16·양 팀 여왕·reach·벽/포털·direct max·legacy/왕/hotspot/Q1c 호환 | 공식 재컴파일 및 합성 검사 모두 통과; CRC 단일 bit 거부는 on/compat 각64 | WASM3, fixture3변형, CRC128 | PASS |
+
+- **전달 실패 전수:** 죽은 송신자20, 켈프368, 자기 몸/머리67, 다른 아군 몸171/머리69, 적 몸194/머리58 =947/1021. 발사1001 중 여왕 hit74, 수신72, 채택71이다. hit 뒤 다음 차례가 없는2건은 Devil B/king r61, big_empty A/hunter r446의 여왕 사망이다. 실패 분모에서 빼지 않았다. 광선 방향이 바뀐 자기 몸 굴절은 최소86건(실패84), 실제 광선의 포털 경유21건(실패18)으로 위 종료 원인과 겹친다. 동일 방향 굴절 및 ‘미지 포털만이 원인’인 실패 수는 미확인이다. 거리 비교에서 관측 간선 BFS와 실제 지도 BFS가 다른 것은143/1021이며 이를 구현 오류로 세지 않았다. 전체92판 중 송신 기회0은41판, 수신0은68판이다.
+- **같은 입력:** 재구성한 원 관측·소나·자식 초기화·몸/간선/거울 기억을 원 C++ World에 순서대로 넣었다. 여왕 World/Planner를 복제해 가격장만0으로 만들고 동일 후보 규칙으로 비교했다(게임0). 실제 on 선택173/173, qsp173/173, 독립 BFS장173/173, 송신 조건/길이/우선순위/방향1021/1021 일치다. 밖으로 바뀐3건은 Around UNSW A/king r177 E→W, big_empty B/king r193 E→N, Trophy B/king r22 E→W다. 45→27은 Default B/hunter r183, Queen Of Spades B/hunter r115, stripes B/hunter r181이다. Colosseum A/king r46 SS→S, B/hunter r38 E→SE는 첫 가격27 유지다. 변화8건과 회피 실패1건의 실제 이웃·몸을 `counterfactual-states.json`으로 대조했다. 가격0은 보고 도달 밖을 뜻하며 미지 간선·몸 기억·과소추정까지 포함한 안전 보장은 아니다.
+- **사냥꾼 감소:** arena B/hunter r40은 양쪽 모두 시야 밖 긴 머리에 죽었다. big_empty A/hunter는 off r258의 시야 밖 L22 rammed가 on r446의 직접 보이는 L39 rammed로 바뀌었다(충돌 시 길이도 각22/39). 해당 on 여왕은 생전에 채택0이므로 이를 여왕 보고장 회피의 인과 효과로 주장하지 않는다. 전체 사망이 증가했으므로 몫 감소만으로 성공 판정하지 않았다. 지도/편/상대/키별 사인·분모·null, 두 시점 rammer 길이, CPU는 `summary.json`에 있다.
+- **안전 회귀 전수:** Default A/king 258→253에서 여왕 W 후 #90의 EE가 (12,17)에 충돌; Default B/king 268→260에서 S 후 #62의 E가 (8,11)에 충돌; Queen Of Spades B/hunter 117→116에서 S 후 #2의 SWWW가 (17,0)에 충돌했다. 새 사망은 Portals B/hunter r207(자기 꼬리로 돌아가는 W 포털과 나머지 켈프로 출구0, no-exit E), stronghold B/hunter r336(N=#59, E=#209, S=#219 아군 몸, W=자기 몸; no-exit E)다. off/on 양쪽 라운드 판면10개와 실제 여왕/사냥꾼 차례·행동·죽기 전/후 몸·벽/포털 이웃은 `boards/`, `board-selection.json`, `safety-audit.json`에 전수 보존했다. 이후 다른 행동/소나로 달라진 판면을 같은 상태의 인과 비교로 취급하지 않았다.
+- **원자료/재현:** `analysis.json`, `review.json`, `signal-paths.json`, `summary.json`, `counterfactual-states.json`, `safety-audit.json`; 분석·합성 호출·fingerprint·공식 compile/fixtures/validate를 재실행했다. `nice -n 10`은 환경이 setpriority를 거부했으나 분석 명령은 정상 종료했다. 시드2/추가 지도·게임은 없다.
+
+**의도한 상황의 판면2개: big_empty B/proxy4_king/시드1.** 첫 그림의 아군 #32는 자기 시야 안 적 #86의 실제 L11을 보고 L8로 추정해 r192 위치(49,47)를 W 광선으로 보냈다. 광선은 (46,45)→여왕 #1 몸(42,45)에 닿았고, r193 여왕 차례에 qsn1,1/qsr86,192,3057,8,32로 채택됐다. 두 번째 그림에서 같은 입력의 보고 OFF 선택 E(43,44)는 가격27, ON 선택 N(42,43)은0이다. age1의 free4/reach10에 맞으며 실제 기보도 N이다. 실제 L11의 도달 밖이라는 뜻은 아니다. 그림은 라운드 시작이며 켈프선은 생략한다; 순간 시야·합법성은 실제 차례 훅으로 확인했다.
+
+```text
+{board1}
+```
+
+```text
+{board2}
+```
+
+**제안: switch OFF (`Q2SIGHT_ON=OFF`).** 전달·일부 회피는 의도한 방향으로 움직였지만 새/조기 여왕 사망과 trap 증가가 남아 “목적 개선 + 깨짐 없음”의 부분 적용 규칙을 충족하지 않는다. 스위치는 수정하지 않았다.
+'''
+title = f'## 16. QSIGHT ANALYSIS 결과 ({clock})'
+(task / 'RESULT.md').write_text(title + '\n\n' + body)
+with Path('versions/v1.8/VERSION.md').open('a') as f:
+    f.write('\n\n' + title + '\n\n' + body)
+lines = [
+    f'QSIGHT ANALYSIS {clock}; 기존196판/92짝(주88+생성4), 새 게임·봇/params 수정·커밋·네트워크0.',
+    'a PASS: 직접 목격·조건/우선순위·추정길이·방향 일치1021/1021; 실제 길이 과소/같음/과대486/240/295.',
+    'a PASS(다음 차례 존재): 기회1021→발사1001→여왕hit74→수신72→채택71; 지연1 72/72, TTL/재구성오류0; hit뒤여왕사망2 공개.',
+    'b 가격 PASS N173/오류0; 동일 입력 on 재현173/173, 선택변화8; 밖 회피3/4 FAIL(실패1), 무대안70·split2·직접보고제외67.',
+    'c 감소 PASS N88: 시야밖L≥9 rammed2/36→1/36(5.56%→2.78%); 전체여왕사망70→71·trap25→26 FAIL; 생성N4 사망3→3/기제N0미확인.',
+    '안전 FAIL N88: 새사망2·기존사망앞당김3; 오류/누락/이력0 N196, off WASM518494 bytes 동일·사건/소나6/6 PASS; 합성3변형 PASS.',
+    'CPU PASS N196: 우리최대57.6M, ≥80M/≥100M/누락0; 판면2개 boards/long-send-r192.txt, boards/long-avoid-r193.txt; 전수표 RESULT.md·VERSION.md §16.',
+    '제안: switch OFF — 목적은 일부 개선됐지만 새/조기 여왕 사망·trap 증가로 “목적 개선 + 깨짐 없음”을 충족하지 않는다.'
+]
+assert len(lines) == 8
+(task / 'RESULT.txt').write_text('\n'.join(lines) + '\n')
+with Path('DECISIONS.md').open('a') as f:
+    f.write(f'\n- {clock} QSIGHT ANALYSIS: 기존196판, 직접 보고1021/1021·가격173/173 검증, 같은 입력 밖 회피3/4; 주88짝 시야밖 긴 사냥꾼 사망2→1이나 여왕 총사망70→71/trap25→26·새2/조기3으로 switch OFF 제안. 봇/params 변경·새 게임·커밋·네트워크0. 상세 `versions/v1.8/VERSION.md` §16, `exp/qsight/RESULT.txt`(8줄).\n')
+print(clock)
+print('\n'.join(lines))

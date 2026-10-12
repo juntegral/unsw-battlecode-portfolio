@@ -1,0 +1,79 @@
+=== PACK 1063789 Slithery Fight 63x27 | protagonist side B (team 306) vs forgot to mention (2288.0) | winner A by queen rule | rounds 500
+final: {'A': {'units': 35, 'total': 298, 'longest': 54, 'queen': 50}, 'B': {'units': 13, 'total': 150, 'longest': 82, 'queen': 4}} | queens: {'A': 1, 'B': 0}
+
+-- opening: units/total/longest every 10 rounds (own | opp)
+  r  0 own (7, 47, 25) | opp (7, 47, 25) | ownQ ((3, 22), 25) oppQ ((59, 4), 25)
+  r 10 own (14, 38, 6) | opp (23, 51, 7) | ownQ ((5, 22), 6) oppQ ((60, 5), 7)
+  r 20 own (26, 76, 9) | opp (33, 82, 5) | ownQ ((0, 24), 6) oppQ ((62, 11), 3)
+  r 30 own (35, 92, 6) | opp (41, 94, 4) | ownQ ((2, 24), 6) oppQ ((60, 19), 3)
+  r 40 own (42, 107, 7) | opp (56, 127, 4) | ownQ ((3, 24), 7) oppQ ((56, 17), 3)
+  r 50 own (44, 115, 7) | opp (56, 131, 4) | ownQ ((3, 26), 7) oppQ ((56, 17), 3)
+  r 60 own (53, 131, 7) | opp (58, 134, 4) | ownQ ((12, 26), 7) oppQ ((55, 16), 3)
+  r 80 own (59, 158, 7) | opp (61, 149, 4) | ownQ ((7, 20), 7) oppQ ((56, 15), 3)
+  r100 own (57, 184, 8) | opp (61, 156, 5) | ownQ ((12, 9), 8) oppQ ((60, 3), 3)
+  own splits r0-60 (before,parent,child):n [((4, 2, 2), 97), ((5, 2, 3), 28), ((5, 3, 2), 2), ((6, 2, 4), 10), ((7, 2, 5), 3), ((7, 5, 2), 1), ((8, 2, 6), 2), ((8, 6, 2), 2), ((9, 2, 7), 4), ((10, 2, 8), 2), ((25, 3, 22), 1)] | self-kills 102 | rams made 4
+  own queen first 30 actions: 0:SPLIT 1:mv W 2:mv W 3:mv N 4:mv N 5:mv E 6:mv E 7:mv ES 8:mv SE 9:SPLIT 10:mv SS 11:mv W 12:mv W 13:SPLIT 14:mv S 15:mv S 16:mv WW 17:mv N 18:mv W 19:mv N 20:mv N 21:mv N 22:mv E 23:mv S 24:mv SS 25:mv W 26:mv S 27:mv EE 28:mv N 29:mv N
+  opp splits r0-60 (before,parent,child):n [((4, 2, 2), 136), ((5, 2, 3), 6), ((5, 3, 2), 3), ((6, 2, 4), 1), ((6, 4, 2), 1), ((7, 5, 2), 2), ((8, 2, 6), 1), ((9, 7, 2), 1), ((11, 9, 2), 1), ((13, 11, 2), 1), ((15, 13, 2), 1), ((17, 15, 2), 1), ((19, 17, 2), 1), ((21, 19, 2), 1), ((23, 21, 2), 1), ((25, 23, 2), 1)] | self-kills 93 | rams made 4
+  opp queen first 30 actions: 0:SPLIT 1:SPLIT 2:SPLIT 3:SPLIT 4:SPLIT 5:SPLIT 6:SPLIT 7:SPLIT 8:SPLIT 9:mv ES 10:SPLIT 11:SPLIT 12:mv E 13:mv S 14:mv S 15:mv E 16:mv S 17:mv S 18:mv S 19:mv S 20:mv S 21:mv S 22:mv W 23:mv S 24:mv S 25:mv W 26:mv S 27:mv S 28:mv S 29:mv S
+
+-- own queen splits: [(0, '25->3+22', (3, 22)), (9, '8->6+2', (5, 22)), (13, '8->6+2', (3, 24)), (484, '85->3+82', (21, 14))]
+   own queen eats per 50 rounds: {0: {'own_noaction': 7, 'natural': 1}, 50: {'own_noaction': 1}, 200: {'own_noaction': 2, 'natural': 3}, 300: {'own_noaction': 9, 'natural': 1}, 350: {'own_noaction': 30, 'natural': 1}, 400: {'own_noaction': 18}, 450: {'own_noaction': 7, 'natural': 5, 'own_headon': 3}}
+   own queen every 20 rounds (round: head, len, ball, nearest enemy d/L, allies<=6): 0:(3, 22) L25 b40 e- a0 | 20:(0, 24) L6 b22 e- a1 | 40:(3, 24) L7 b36 e- a0 | 60:(12, 26) L7 b23 e- a1 | 80:(7, 20) L7 b38 e- a0 | 100:(12, 9) L8 b31 e- a2 | 120:(16, 14) L8 b41 e- a2 | 140:(13, 18) L8 b25 e- a0 | 160:(12, 14) L8 b41 e- a2 | 180:(21, 18) L8 b23 e- a0 | 200:(16, 13) L8 b41 e- a2 | 220:(25, 13) L10 b18 e- a2 | 240:(23, 17) L12 b23 e- a1 | 260:(12, 18) L13 b24 e- a2 | 280:(11, 16) L13 b34 e- a4 | 300:(11, 14) L13 b41 e- a5 | 320:(13, 18) L13 b25 e- a2 | 340:(18, 11) L19 b40 e- a4 | 360:(20, 18) L25 b24 e- a2 | 380:(19, 11) L39 b41 e- a2 | 400:(8, 12) L54 b38 e- a0 | 420:(14, 1) L60 b32 e- a1 | 440:(7, 4) L68 b41 e- a0 | 460:(11, 18) L78 b22 e- a0 | 480:(22, 11) L82 b34 e(4, 2) a0
+
+-- opp queen splits: [(0, '25->23+2', (59, 4)), (1, '23->21+2', (59, 4)), (2, '21->19+2', (59, 4)), (3, '19->17+2', (59, 4)), (4, '17->15+2', (59, 4)), (5, '15->13+2', (59, 4)), (6, '13->11+2', (59, 4)), (7, '11->9+2', (59, 4)), (8, '9->7+2', (59, 4)), (10, '7->5+2', (60, 5)), (11, '5->3+2', (60, 5))]
+   opp queen eats per 50 rounds: {200: {'own_noaction': 11}, 250: {'own_noaction': 13, 'natural': 1}, 300: {'own_noaction': 12}, 450: {'own_noaction': 10}}
+   opp queen every 20 rounds (round: head, len, ball, nearest enemy d/L, allies<=6): 0:(59, 4) L25 b40 e- a0 | 20:(62, 11) L3 b25 e- a2 | 40:(56, 17) L3 b33 e- a3 | 60:(55, 16) L3 b34 e- a5 | 80:(56, 15) L3 b37 e- a7 | 100:(60, 3) L3 b36 e- a1 | 120:(60, 1) L3 b28 e- a1 | 140:(60, 3) L3 b36 e- a2 | 160:(60, 1) L3 b28 e- a3 | 180:(60, 3) L3 b36 e- a2 | 200:(60, 1) L3 b28 e- a5 | 220:(58, 4) L9 b41 e- a3 | 240:(62, 2) L10 b22 e- a2 | 260:(59, 6) L17 b40 e- a2 | 280:(58, 8) L22 b40 e- a3 | 300:(60, 5) L28 b37 e- a2 | 320:(60, 1) L33 b28 e- a0 | 340:(62, 11) L35 b25 e- a2 | 360:(58, 4) L40 b41 e- a1 | 380:(62, 6) L40 b25 e- a0 | 400:(62, 12) L40 b25 e- a0 | 420:(59, 17) L40 b39 e- a0 | 440:(58, 16) L40 b35 e- a0 | 460:(54, 25) L43 b32 e- a0 | 480:(60, 8) L49 b37 e- a1
+
+-- own queen: 2 episodes with an enemy head within 3 steps; rounds [(483, 483), (490, 493)]
+  episode r483-483:
+    r481 Q(22, 13) L83 ball40 mv SS | en: d5 L3 #2309(mv E), d5 L21 #2282(mv SESSWN) | al: -
+    r482 Q(22, 15) L84 ball37 mv W | en: d5 L22 #2282(mv WSSEES), d6 L3 #2309(mv N) | al: -
+    r483 Q(21, 15) L85 ball39 mv N | en: d2 L23 #2282(mv W) | al: -
+    r484 Q(21, 14) L85 ball41 SPLIT | en: d4 L23 #2282(mv WWWNE), d6 L3 #2309(mv W) | al: -
+    r485 Q(21, 14) L3 ball41 mv E | en: d5 L24 #2282(mv NWWWSE) | al: -
+  episode r490-493:
+    r488 Q(22, 12) L4 ball38 mv N | en: - | al: -
+    r489 Q(22, 11) L5 ball34 mv W | en: - | al: -
+    r490 Q(21, 11) L5 ball39 mv S | en: d3 L3 #2343(mv S) | al: - | deaths: #2309A L2 noaction
+    r491 Q(21, 12) L5 ball40 mv SE | en: d3 L3 #2343(mv S), d6 L2 #2346(mv N) | al: - | deaths: #2283A L2 noaction
+    r492 Q(22, 13) L5 ball40 mv N | en: d4 L4 #2343(mv S) | al: -
+    r493 Q(22, 12) L5 ball38 mv E | en: d2 L4 #2343(mv S) | al: -
+    r494 Q(23, 12) L5 ball33 mv NE | en: d4 L4 #2343(mv S) | al: d5 L13 #2262(mv S)
+    r495 Q(24, 11) L5 ball19 mv NW | en: - | al: d6 L13 #2262(mv WWW)
+
+-- queen deaths
+  OWN queen alive at the end, len 4
+  ENEMY queen alive at the end, len 50
+
+-- deaths of dragons >= 15 long (both teams)
+  r0 own #14 L22 noaction at (1, 24) (team longest then 25) born (0, 0, 22) | own queen then: at (3, 22) L25, manh 4
+      pearls eaten by: #0Bx7(Q), #48Bx3, #64Bx1
+  r175 own #861 L16 headon at (34, 4) (team longest then 16) born (173, 796, 13)
+      killer #717 L3 from (35, 3) step 1/2 born (144, 489, 2); its length / path distance before: r174:L3 d4 r175:L3 d2
+      pearls eaten by: #851Bx4, #718Bx2, #729Ax1, #738Bx1
+  r181 own #890 L16 noaction at (26, 8) (team longest then 16) born (179, 857, 14) | own queen then: at (20, 17) L8, manh 15
+      pearls eaten by: #874Bx8
+  r294 own #1472 L21 noaction at (33, 11) (team longest then 27) born (294, 1471, 21) | own queen then: at (9, 17) L13, manh 30
+      pearls eaten by: #1337Bx4, #1377Bx3, #1185Bx2, #1539Bx1
+  r310 own #1513 L15 noaction at (23, 6) (team longest then 15) born (305, 1489, 13) | own queen then: at (9, 14) L13, manh 22
+      pearls eaten by: #1531Bx2, #1546Bx2, #1368Bx2, #1561Ax1
+  r433 opp #1646 L15 noaction at (50, 15) (team longest then 48) born (329, 1634, 3) | own queen then: at (58, 23) L40, manh 16
+      pearls eaten by: #1911Ax7, #1687Ax1
+  r461 opp #2218 L15 noaction at (42, 22) (team longest then 59) born (459, 2149, 18) | own queen then: at (54, 24) L43, manh 14
+      pearls eaten by: #2191Ax6, #2304Ax1, #2074Ax1
+  r470 opp #2191 L67 headon at (38, 16) (team longest then 67) born (453, 1911, 52)
+      killer #2138 L8 from (39, 14) step 2/3 born (438, 2107, 8); its length / path distance before: r460:L8 d21 r465:L8 d13 r467:L8 d12 r468:L8 d6 r469:L8 d4 r470:L8 d3
+      pearls eaten by: #2251Ax19, #2276Ax8, #2323Ax3, #2317Ax2
+  r491 own #2306 L19 headon at (40, 14) (team longest then 82) born (477, 2255, 16)
+      killer #2276 L6 from (43, 13) step 5/6 born (473, 1687, 4); its length / path distance before: r481:L6 d30 r486:L7 d19 r488:L5 d14 r489:L6 d12 r490:L6 d7 r491:L6 d4
+      pearls eaten by: #2350Ax10
+
+-- own self-kills (noaction) by length class per 100 rounds, and top eaters of own self-kill pearls
+   {(0, '10+'): 1, (0, '2'): 164, (0, '3-4'): 27, (100, '10+'): 2, (100, '2'): 170, (100, '3-4'): 52, (100, '5-9'): 15, (200, '10+'): 6, (200, '2'): 168, (200, '3-4'): 77, (200, '5-9'): 14, (300, '10+'): 4, (300, '2'): 110, (300, '3-4'): 70, (300, '5-9'): 17, (400, '10+'): 3, (400, '2'): 66, (400, '3-4'): 34, (400, '5-9'): 2}
+
+-- reverse splits (before >= 12, parent keeps <= 3) own: 97 opp: 38
+   own reverse splits of 20+ (round, id, before->p+c, at): [(0, 0, '25->3+22', (3, 22)), (266, 1292, '21->2+19', (30, 6)), (294, 1337, '27->2+25', (32, 12)), (294, 1468, '25->2+23', (33, 13)), (294, 1471, '23->2+21', (32, 14)), (371, 1749, '21->2+19', (37, 14)), (484, 0, '85->3+82', (21, 14)), (493, 2275, '20->2+18', (37, 16))]
+
+-- ram chances on the enemy queen (q3): own side
+   total 0, taken 0, not taken 0
+   (opponent's chances on the own queen: total 0, taken 0)

@@ -1,0 +1,71 @@
+=== R1. win rate by 'we rammed their queen', economy held even at round 150 (top three pooled; each game counted from each top team's side)
+  small  behind at r150 (<0.83)   did not / kept ours from rams: 17/41=0.41 | did not / lost ours to a ram: 0/42=0.00 | killed theirs / kept ours from rams: 3/4=0.75 | killed theirs / lost ours to a ram: 2/27=0.07
+  small  even at r150 (0.83-1.2)  did not / kept ours from rams: 20/39=0.51 | did not / lost ours to a ram: 1/3=0.33 | killed theirs / kept ours from rams: 3/4=0.75 | killed theirs / lost ours to a ram: 1/2=0.50
+  small  ahead at r150 (>1.2)     did not / kept ours from rams: 44/58=0.76 | did not / lost ours to a ram: 7/15=0.47 | killed theirs / kept ours from rams: 68/69=0.99 | killed theirs / lost ours to a ram: 37/39=0.95
+  medium behind at r150 (<0.83)   did not / kept ours from rams: 7/16=0.44 | did not / lost ours to a ram: 1/34=0.03 | killed theirs / kept ours from rams: 2/8=0.25 | killed theirs / lost ours to a ram: 4/27=0.15
+  medium even at r150 (0.83-1.2)  did not / kept ours from rams: 26/42=0.62 | did not / lost ours to a ram: 1/10=0.10 | killed theirs / kept ours from rams: 10/11=0.91 | killed theirs / lost ours to a ram: 11/19=0.58
+  medium ahead at r150 (>1.2)     did not / kept ours from rams: 38/51=0.75 | did not / lost ours to a ram: 2/5=0.40 | killed theirs / kept ours from rams: 65/66=0.98 | killed theirs / lost ours to a ram: 32/35=0.91
+  large  behind at r150 (<0.83)   did not / kept ours from rams: 5/6=0.83 | did not / lost ours to a ram: 7/31=0.23 | killed theirs / kept ours from rams: 9/9=1.00 | killed theirs / lost ours to a ram: 25/46=0.54
+  large  even at r150 (0.83-1.2)  did not / kept ours from rams: 8/14=0.57 | did not / lost ours to a ram: 5/25=0.20 | killed theirs / kept ours from rams: 23/24=0.96 | killed theirs / lost ours to a ram: 19/27=0.70
+  large  ahead at r150 (>1.2)     did not / kept ours from rams: 3/4=0.75 | did not / lost ours to a ram: 5/18=0.28 | killed theirs / kept ours from rams: 42/50=0.84 | killed theirs / lost ours to a ram: 43/68=0.63
+  all    behind at r150 (<0.83)   did not / kept ours from rams: 29/63=0.46 | did not / lost ours to a ram: 8/107=0.07 | killed theirs / kept ours from rams: 14/21=0.67 | killed theirs / lost ours to a ram: 31/100=0.31
+  all    even at r150 (0.83-1.2)  did not / kept ours from rams: 54/95=0.57 | did not / lost ours to a ram: 7/38=0.18 | killed theirs / kept ours from rams: 36/39=0.92 | killed theirs / lost ours to a ram: 31/48=0.65
+  all    ahead at r150 (>1.2)     did not / kept ours from rams: 85/113=0.75 | did not / lost ours to a ram: 14/38=0.37 | killed theirs / kept ours from rams: 175/185=0.95 | killed theirs / lost ours to a ram: 112/142=0.79
+
+=== R1b. the same, only kills BEFORE round 200 vs no kill before round 200, games that were even at the kill horizon (r150)
+  large  early kill / lost ours early                  4/5 = 0.80
+  large  early kill / ours alive at r200               11/17 = 0.65
+  large  no early kill / lost ours early               13/23 = 0.57
+  large  no early kill / ours alive at r200            27/45 = 0.60
+  medium early kill / lost ours early                  3/6 = 0.50
+  medium early kill / ours alive at r200               4/7 = 0.57
+  medium no early kill / lost ours early               4/7 = 0.57
+  medium no early kill / ours alive at r200            37/62 = 0.60
+  small  early kill / ours alive at r200               2/3 = 0.67
+  small  no early kill / lost ours early               1/2 = 0.50
+  small  no early kill / ours alive at r200            22/43 = 0.51
+
+=== R2. economy at the moment of the kill: total length of the killer's team / victim's team (top three as killers)
+  small  n=251 median 2.57; killer's team behind (<0.9): 0.18, about even (0.9-1.1): 0.05, ahead (>1.1): 0.77
+  medium n=173 median 1.73; killer's team behind (<0.9): 0.21, about even (0.9-1.1): 0.07, ahead (>1.1): 0.72
+  large  n=226 median 1.29; killer's team behind (<0.9): 0.22, about even (0.9-1.1): 0.13, ahead (>1.1): 0.65
+
+=== R3. queen-kill rate of the top three by opponent (rams on the enemy queen per game)
+  large  vs another top-3 team    81/102 = 0.79
+  large  vs elo 2000-2150         90/136 = 0.66
+  large  vs elo<2000              1/2 = 0.50
+  large  vs elo>=2150             55/86 = 0.64
+  large  vs meow                  5/6 = 0.83
+  medium vs another top-3 team    55/98 = 0.56
+  medium vs elo 2000-2150         72/151 = 0.48
+  medium vs elo<2000              1/2 = 0.50
+  medium vs elo>=2150             46/85 = 0.54
+  medium vs meow                  5/6 = 0.83
+  small  vs another top-3 team    79/158 = 0.50
+  small  vs elo 2000-2150         110/220 = 0.50
+  small  vs elo<2000              3/5 = 0.60
+  small  vs elo>=2150             62/123 = 0.50
+  small  vs meow                  1/9 = 0.11
+
+=== R4. their queen within one-turn reach of one of our heads: share of her rounds and rams per 1000 such rounds, by our trade mode
+  Vibing++  <=1200 cells  games=276 kills/game=0.58 reach-rounds/game=  2.8 (0.014 of her rounds) rams per 1000 reach-rounds=83
+  Vibing++  >1200 cells   games=103 kills/game=0.71 reach-rounds/game=  7.7 (0.034 of her rounds) rams per 1000 reach-rounds=54
+  SSS       <=1200 cells  games=264 kills/game=0.55 reach-rounds/game=  2.3 (0.011 of her rounds) rams per 1000 reach-rounds=73
+  SSS       >1200 cells   games=115 kills/game=0.80 reach-rounds/game=  5.8 (0.029 of her rounds) rams per 1000 reach-rounds=90
+  forgot    <=1200 cells  games=295 kills/game=0.40 reach-rounds/game=  3.1 (0.016 of her rounds) rams per 1000 reach-rounds=48
+  forgot    >1200 cells   games=106 kills/game=0.58 reach-rounds/game=  6.7 (0.025 of her rounds) rams per 1000 reach-rounds=34
+  meow      <=1200 cells  games=210 kills/game=0.29 reach-rounds/game=  3.5 (0.015 of her rounds) rams per 1000 reach-rounds=44
+  meow      >1200 cells   games= 79 kills/game=0.18 reach-rounds/game= 10.2 (0.030 of her rounds) rams per 1000 reach-rounds=11
+
+=== R5. escort check (top-three queens, own side): small enemy within 3 steps at round start; rammed within the next 5 rounds?
+  meow  ally within 3     queen len<=4  rammed within 5 rounds: 54/330 = 0.164
+  meow  ally within 3     queen len>=5  rammed within 5 rounds: 1/17 = 0.059
+  meow  no ally within 3  queen len<=4  rammed within 5 rounds: 238/1658 = 0.144
+  meow  no ally within 3  queen len>=5  rammed within 5 rounds: 6/62 = 0.097
+  top3  ally within 3     queen len<=4  rammed within 5 rounds: 170/1382 = 0.123
+  top3  ally within 3     queen len>=5  rammed within 5 rounds: 8/133 = 0.060
+  top3  no ally within 3  queen len<=4  rammed within 5 rounds: 696/4758 = 0.146
+  top3  no ally within 3  queen len>=5  rammed within 5 rounds: 109/777 = 0.140
+
+=== R6. our games: which queen dies first (any cause), non-sealed, opp >= 2000
+  {'ours first': 241, 'ours died, theirs never': 108, 'theirs first': 38, 'neither/same': 10, 'theirs died, ours never': 19}

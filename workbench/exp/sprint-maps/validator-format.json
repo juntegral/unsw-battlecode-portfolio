@@ -1,0 +1,132 @@
+{
+  "at": "2026-10-01T11:42:11.831Z",
+  "mode": "existing-format-symmetry-connectivity-audit",
+  "rows": [
+    {
+      "file": "maps/sprint/around_unsw.map",
+      "sha256": "5997b87f03476fc8f0689669501946cc36e3e6e73eb2f42eba429869e24125b4",
+      "valid": true,
+      "errors": [],
+      "warnings": [],
+      "connectivity": {
+        "allTiles": true,
+        "allStarts": true,
+        "components": [
+          4096
+        ]
+      }
+    },
+    {
+      "file": "maps/sprint/australia.map",
+      "sha256": "733dfba1aa2df333c121fd0760385fc31988945eb4bcaf378284f0d4d23d9562",
+      "valid": true,
+      "errors": [],
+      "warnings": [],
+      "connectivity": {
+        "allTiles": true,
+        "allStarts": true,
+        "components": [
+          4096
+        ]
+      }
+    },
+    {
+      "file": "maps/sprint/islands.map",
+      "sha256": "4caae67d4810dd239d090a233a7a587a02fb213f2acb2fe5b0b36a3537acb4a2",
+      "valid": true,
+      "errors": [],
+      "warnings": [
+        "existing topology: 23 components; connectivity is not a format constraint"
+      ],
+      "connectivity": {
+        "allTiles": false,
+        "allStarts": true,
+        "components": [
+          2192,
+          11,
+          11,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "file": "maps/sprint/maze.map",
+      "sha256": "dba07e618802d7692c172a2dfd86eb17905cd5081602730fbe0299c83a178e4c",
+      "valid": true,
+      "errors": [],
+      "warnings": [],
+      "connectivity": {
+        "allTiles": true,
+        "allStarts": true,
+        "components": [
+          1152
+        ]
+      }
+    },
+    {
+      "file": "maps/sprint/stripes.map",
+      "sha256": "a17cc4ed56bb89fabd7a5c345e2b9bc7a16342e4b1126a79004ca5c436b763d1",
+      "valid": true,
+      "errors": [],
+      "warnings": [
+        "existing topology: 3 components; connectivity is not a format constraint"
+      ],
+      "connectivity": {
+        "allTiles": false,
+        "allStarts": true,
+        "components": [
+          280,
+          4,
+          4
+        ]
+      }
+    },
+    {
+      "file": "maps/sprint/tower_defense.map",
+      "sha256": "c909727a7a8bfe44f21e99d0d51e57ce975628b4225b2f62b6cd3d6f78d84955",
+      "valid": true,
+      "errors": [],
+      "warnings": [],
+      "connectivity": {
+        "allTiles": true,
+        "allStarts": true,
+        "components": [
+          512
+        ]
+      }
+    },
+    {
+      "file": "maps/sprint/weakhold.map",
+      "sha256": "074a516991880a6a94674985fd5dd5d78bc6200fd61d9e27babf6863b8a554ba",
+      "valid": true,
+      "errors": [],
+      "warnings": [],
+      "connectivity": {
+        "allTiles": true,
+        "allStarts": true,
+        "components": [
+          600
+        ]
+      }
+    }
+  ]
+}

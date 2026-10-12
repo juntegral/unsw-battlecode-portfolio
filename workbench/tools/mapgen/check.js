@@ -1,0 +1,34 @@
+#!/usr/bin/env node
+// Adversarial static checks and comparison against the existing research graph.
+'use strict';
+const assert=require('assert/strict'),L=require('./lib'),V=require('./validate'),G=require('./mapgen'),S=require('./smoke');
+const {fs,path,ROOT}=L;
+function replayMap(m){const N=m.W*m.H,M={width:m.W,height:m.H,initialHEdges:Array((m.H+1)*m.W).fill(0),initialVEdges:Array(m.H*(m.W+1)).fill(0),portals:[],initialDragons:m.dragons.map((d,id)=>({id,team:d.team?'B':'A',body:d.body.map(k=>({x:k%m.W,y:Math.floor(k/m.W)}))}))};const p=new Map();m.edges.forEach(([t,id],e)=>{const k=e%N,x=k%m.W,y=Math.floor(k/m.W);if(e<N)M.initialHEdges[y*m.W+x]=t;else M.initialVEdges[y*(m.W+1)+x]=t;if(t===2){if(!p.has(id))p.set(id,[]);p.get(id).push({x,y,side:e<N?'N':'W'});}});M.portals=[...p.values()];return M;}
+function check(){
+ const tests=[],test=(name,f)=>{f();tests.push({name,pass:true});},expectInvalid=(m,s)=>assert(V.validate(m,{connected:true}).errors.some(x=>x.includes(s)));
+ const m=L.blank(12,10,'y','check');m.dragons=[{team:0,body:[26,25]},{team:1,body:[33,34]}];
+ test('valid x-axis/y-axis/rotation interpretation',()=>{for(const symmetry of ['x','y','xy']){const z=L.blank(12,10,symmetry,'check');const b=[26,25];z.dragons=[{team:0,body:b},{team:1,body:b.map(k=>L.mirrorTile(z,k))}];assert(V.validate(z,{connected:true}).valid);}});
+ test('edge symmetry agrees with transformed endpoints',()=>{for(const symmetry of ['x','y','xy']){const z={...m,symmetry};for(let e=0;e<z.edges.length;e++)assert.deepEqual(L.endpoints(z,L.mirrorEdge(z,e)).sort((a,b)=>a-b),L.endpoints(z,e).map(k=>L.mirrorTile(z,k)).sort((a,b)=>a-b));}});
+ test('count mismatch rejected',()=>assert.throws(()=>L.parse(L.serialize(m).replace('TILE_COUNT 120','TILE_COUNT 119')),/COUNT mismatch/));
+ test('invalid size, tile and padding edge rejected',()=>{assert.throws(()=>L.parse('MAP 9 12\n'),/dimensions/);assert.throws(()=>L.parse(L.serialize(m).replace('TILE 0 0 0 0','TILE 12 0 0 0')),/bounds/);assert.throws(()=>L.parse(L.serialize(m).replace('EDGE_COUNT 0','EDGE_COUNT 1\nEDGE 12 1 -1')),/padding/);});
+ test('noninteger, minGap, duplicated tile rejected',()=>{const a=L.serialize(m);assert.throws(()=>L.parse(a.replace('TILE 0 0 0 0','TILE 0.5 0 0 0')),/invalid/);assert.throws(()=>L.parse(a.replace('TILE 0 0 0 0','TILE 0 0 0 8')),/gap/);assert.throws(()=>L.parse(a.replace('TILE 0 0 0 0','TILE 1 0 0 0')),/duplicate tile/);});
+ test('one asymmetric tile rejected',()=>{const z=structuredClone(m);z.tiles[0]=[4,12];expectInvalid(z,'tile symmetry');});
+ test('dragon overlap and nonadjacency rejected',()=>{const z=structuredClone(m);z.dragons[1].body=z.dragons[0].body.slice();expectInvalid(z,'overlap');const q=structuredClone(m);q.dragons[0].body=[26,29];expectInvalid(q,'nonadjacent');});
+ test('portal cardinality, orientation and mirrored pairing rejected',()=>{const z=structuredClone(m);z.edges[0]=[2,0];expectInvalid(z,'endpoints');z.edges[120]=[2,0];expectInvalid(z,'orientation');const q=structuredClone(m);q.edges[0]=q.edges[1]=[2,0];q.edges[11]=[2,1];q.edges[10]=[2,2];expectInvalid(q,'mirror pairing');});
+ test('disconnected symmetric topology rejected',()=>{const z=structuredClone(m);z.edges=z.edges.map(()=>[1,-1]);expectInvalid(z,'disconnected');});
+ test('CPU max parser records precision and unknown teams',()=>{assert.deepEqual(S.parseCpu('team A points per turn: p50 1.0M  p99 9.0M  mean 3.0M  max 10.1M  (44 turns)').A,{maxPoints:10100000,reported:'10.1M',precisionPoints:100000,turns:44});assert.equal(S.parseCpu('').B,null);});
+ test('35+13 planned smoke tasks, no result columns',()=>{const manifest=JSON.parse(fs.readFileSync(path.join(ROOT,'maps/generated/manifest.json'),'utf8'));const ts=S.tasks(manifest);assert.equal(ts.length,48);assert.equal(ts.filter(t=>t.side==='B').length,13);assert(ts.every(t=>!('won'in t)&&!('winner'in t)&&!('G'in t)));});
+ const AR=require(path.join(ROOT,'exp/general/atlas_recount')),SP=require(path.join(ROOT,'exp/spatial/lib')),cross=[];
+ for(const file of L.mapFiles(L.EXISTING)){const a=L.read(file),M=replayMap(a),nb=L.graph(a),other=AR.graph(M);let diffs=0;for(let k=0;k<nb.length;k++){const ref=[...new Set([...other.nb.slice(k*4,k*4+4)].filter(x=>x>=0))].sort((a,b)=>a-b);if(JSON.stringify(nb[k].slice().sort((a,b)=>a-b))!==JSON.stringify(ref))diffs++;}assert.equal(diffs,0,file+' graph');const row={file,graphMismatches:diffs};
+  if(file.startsWith('maps/online-20260927/')||file.startsWith('maps/variants/')){const lay=file.includes('_10.map')?'10':file.includes('_b.map')?'b':'a',g=SP.geometry(M,a.name,lay),met=L.metrics(a),spawn=g.gap.flatMap((v,k)=>v&&v[1]>0?[k]:[]),cap=k=>2/(g.gap[k][0]+g.gap[k][1]),total=spawn.reduce((s,k)=>s+cap(k),0),centre=spawn.filter(k=>g.bin.A[k]===2).reduce((s,k)=>s+cap(k),0)/total,pocket=spawn.filter(k=>!g.core[k]).reduce((s,k)=>s+cap(k),0)/total;
+   assert.equal(met.pocketTiles,g.core.filter(x=>!x).length,file+' pocket');assert(Math.abs(centre-met.centreSupplyShare)<1e-12,file+' centre');assert(Math.abs(pocket-met.pocketSupplyShare)<1e-12,file+' supply');row.researchMetricMismatches=0;
+  }cross.push(row);
+ }
+ test('same plan and seed serialize identically',()=>{const plan={...G.plans[0],name:'check'};assert.equal(L.serialize(G.make(plan,123).m),L.serialize(G.make(plan,123).m));});
+ test('six alternative seeds across all ordinary families are valid',()=>{for(const seed of [0,1,2,7,123,0xffffffff])for(const p of G.plans){const made=G.make({...p,name:'check'},seed);assert(V.validate(made.m,{connected:true}).valid,p.family+'/'+p.style+'/'+seed);}});
+ const manifest=JSON.parse(fs.readFileSync(path.join(ROOT,'maps/generated/manifest.json'),'utf8'));
+ test('saved maps exactly match plan seed and manifest hash',()=>{for(const x of manifest.maps){const saved=L.read(x.file);assert.equal(L.hash(saved),x.sha256);assert.equal(Object.values(x.metrics.corridorWidthDistribution).reduce((a,b)=>a+b,0),x.metrics.area);assert.equal(Object.values(x.metrics.gapDistribution).reduce((a,b)=>a+b,0),x.metrics.spawnTiles);}});
+ test('trap neighbourhoods and starts retained, outside change >=40%',()=>{for(const x of manifest.maps.filter(x=>x.trap)){const base=L.read(x.source),made=L.read(x.file),r=G.protectedRegion(base);assert.deepEqual(made.dragons,base.dragons);for(let k=0;k<r.mask.length;k++)if(r.mask[k])assert.deepEqual(made.tiles[k],base.tiles[k]);for(const e of r.edges)assert.deepEqual(made.edges[e],base.edges[e]);assert(x.trap.mutableEdgeChangeShare>=.4&&x.trap.mutableSpawnChangeShare>=.4);}});
+ const out={at:new Date().toISOString(),tests,crossChecks:cross,allPassed:true};fs.writeFileSync(path.join(ROOT,'exp/mapgen/checks.json'),JSON.stringify(out,null,2)+'\n');console.log(JSON.stringify({checks:tests.length,existingGraphChecks:cross.length,researchMetricChecks:cross.filter(x=>x.researchMetricMismatches===0).length,allPassed:true}));
+}
+if(require.main===module)check();module.exports={check,replayMap};

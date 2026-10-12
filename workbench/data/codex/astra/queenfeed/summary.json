@@ -1,0 +1,417 @@
+{
+  "aggregates": {
+    "one5-w1": {
+      "n": 15,
+      "q": 110,
+      "qmean": 7.333333333333333,
+      "fe": 81,
+      "alone": 565,
+      "turns": 1539,
+      "alone_pct": 36.71215074723847,
+      "p300": 450.06666666666666
+    },
+    "one4-w1": {
+      "n": 15,
+      "q": 91,
+      "qmean": 6.066666666666666,
+      "fe": 89,
+      "alone": 564,
+      "turns": 1510,
+      "alone_pct": 37.35099337748344,
+      "p300": 453.6
+    },
+    "one1-d1": {
+      "n": 15,
+      "q": 122,
+      "qmean": 8.133333333333333,
+      "fe": 73,
+      "alone": 522,
+      "turns": 1357,
+      "alone_pct": 38.467207074428885,
+      "p300": 366.6666666666667
+    },
+    "one2-w1": {
+      "n": 15,
+      "q": 244,
+      "qmean": 16.266666666666666,
+      "fe": 144,
+      "alone": 391,
+      "turns": 1524,
+      "alone_pct": 25.656167979002625,
+      "p300": 517.4666666666667
+    },
+    "one3-w1": {
+      "n": 15,
+      "q": 253,
+      "qmean": 16.866666666666667,
+      "fe": 141,
+      "alone": 190,
+      "turns": 1543,
+      "alone_pct": 12.313674659753726,
+      "p300": 533.4
+    },
+    "one3-d1": {
+      "n": 15,
+      "q": 142,
+      "qmean": 9.466666666666667,
+      "fe": 67,
+      "alone": 506,
+      "turns": 1520,
+      "alone_pct": 33.28947368421053,
+      "p300": 335.1333333333333
+    },
+    "one5-d1": {
+      "n": 15,
+      "q": 164,
+      "qmean": 10.933333333333334,
+      "fe": 115,
+      "alone": 613,
+      "turns": 1486,
+      "alone_pct": 41.251682368775235,
+      "p300": 455.26666666666665
+    },
+    "one4-d1": {
+      "n": 15,
+      "q": 189,
+      "qmean": 12.6,
+      "fe": 123,
+      "alone": 425,
+      "turns": 1530,
+      "alone_pct": 27.77777777777778,
+      "p300": 374.3333333333333
+    }
+  },
+  "whq": {
+    "q": {
+      "eligible": 15,
+      "worse": [
+        "Default",
+        "Devil",
+        "Queen Of Spades",
+        "Slithery Fight",
+        "Trauma",
+        "weakhold"
+      ],
+      "better": [
+        "Australia",
+        "Islands",
+        "Maze",
+        "Trophy"
+      ]
+    },
+    "feed": {
+      "eligible": 15,
+      "worse": [
+        "Australia",
+        "Default",
+        "Slithery Fight",
+        "weakhold"
+      ],
+      "better": [
+        "Around UNSW",
+        "Islands",
+        "Queen Of Spades",
+        "Trophy"
+      ]
+    },
+    "alone": {
+      "eligible": 12,
+      "worse": [
+        "Default",
+        "Devil",
+        "Islands",
+        "Maze",
+        "Schooltime",
+        "Trauma",
+        "weakhold"
+      ],
+      "better": [
+        "Around UNSW",
+        "Australia",
+        "Queen Of Spades",
+        "Slithery Fight"
+      ]
+    },
+    "p300": {
+      "eligible": 15,
+      "worse": [
+        "Default",
+        "Devil",
+        "Islands",
+        "Maze",
+        "Schooltime",
+        "Slithery Fight",
+        "Trauma",
+        "weakhold"
+      ],
+      "better": [
+        "Australia",
+        "Queen Of Spades",
+        "Stripes",
+        "Tower Defense",
+        "Trophy"
+      ]
+    }
+  },
+  "dev": {
+    "q": {
+      "eligible": 15,
+      "worse": [
+        "Default",
+        "Devil",
+        "Portals",
+        "Trophy",
+        "weakhold"
+      ],
+      "better": [
+        "Islands",
+        "Maze",
+        "Slithery Fight",
+        "Trauma"
+      ]
+    },
+    "feed": {
+      "eligible": 15,
+      "worse": [
+        "Australia",
+        "Tower Defense",
+        "Trophy"
+      ],
+      "better": [
+        "Devil",
+        "Islands",
+        "Portals",
+        "Queen Of Spades",
+        "Schooltime",
+        "Slithery Fight"
+      ]
+    },
+    "alone": {
+      "eligible": 12,
+      "worse": [
+        "Australia",
+        "Default",
+        "Schooltime",
+        "Trauma"
+      ],
+      "better": [
+        "Around UNSW",
+        "Islands",
+        "Maze",
+        "Queen Of Spades",
+        "Slithery Fight"
+      ]
+    },
+    "p300": {
+      "eligible": 15,
+      "worse": [
+        "Maze",
+        "Tower Defense",
+        "Trauma",
+        "Trophy"
+      ],
+      "better": [
+        "Portals",
+        "Queen Of Spades",
+        "Schooltime",
+        "Slithery Fight"
+      ]
+    }
+  },
+  "paired": [
+    [
+      "w1",
+      12,
+      15,
+      "5.33 / 6.00",
+      "1.40 / 1.07",
+      "0.53 / 0.73",
+      "3.47 / 3.47",
+      4,
+      3
+    ],
+    [
+      "w1",
+      30,
+      15,
+      "5.79(∞1) / 7.27",
+      "1.13 / 0.67",
+      "1.87 / 1.60",
+      "3.47 / 3.60",
+      4,
+      2
+    ],
+    [
+      "w1",
+      60,
+      11,
+      "3.90(∞1) / 7.09",
+      "1.82 / 1.55",
+      "2.00 / 2.00",
+      "3.36 / 3.45",
+      1,
+      2
+    ],
+    [
+      "w1",
+      100,
+      6,
+      "4.33 / 6.00",
+      "2.50 / 1.50",
+      "2.33 / 3.17",
+      "3.17 / 2.83",
+      2,
+      1
+    ],
+    [
+      "d1",
+      12,
+      14,
+      "6.43 / 5.38(∞1)",
+      "1.29 / 1.07",
+      "0.79 / 0.57",
+      "3.64 / 3.57",
+      1,
+      2
+    ],
+    [
+      "d1",
+      30,
+      14,
+      "6.92(∞1) / 7.00(∞1)",
+      "0.50 / 0.93",
+      "1.57 / 1.36",
+      "3.29 / 3.36",
+      1,
+      3
+    ],
+    [
+      "d1",
+      60,
+      11,
+      "8.82 / 5.80(∞1)",
+      "0.73 / 0.73",
+      "2.09 / 2.27",
+      "3.27 / 3.36",
+      1,
+      2
+    ],
+    [
+      "d1",
+      100,
+      7,
+      "3.43 / 6.50(∞1)",
+      "2.14 / 0.71",
+      "4.29 / 3.71",
+      "3.14 / 3.29",
+      3,
+      0
+    ]
+  ],
+  "bands": [
+    [
+      "one2-w1",
+      57,
+      73,
+      114
+    ],
+    [
+      "one3-w1",
+      61,
+      20,
+      172
+    ],
+    [
+      "one4-w1",
+      58,
+      12,
+      21
+    ],
+    [
+      "one5-w1",
+      58,
+      17,
+      35
+    ],
+    [
+      "one1-d1",
+      76,
+      18,
+      28
+    ],
+    [
+      "one3-d1",
+      73,
+      16,
+      53
+    ],
+    [
+      "one4-d1",
+      53,
+      16,
+      120
+    ],
+    [
+      "one5-d1",
+      62,
+      27,
+      75
+    ]
+  ],
+  "provenance": {
+    "w1": {
+      "same_full_map_text": 0,
+      "same_api_team_side": 15,
+      "same_unaligned_natural_births_to30": 0,
+      "same_unaligned_actions_to11": 0
+    },
+    "d1": {
+      "same_full_map_text": 0,
+      "same_api_team_side": 15,
+      "same_unaligned_natural_births_to30": 0,
+      "same_unaligned_actions_to11": 0
+    }
+  },
+  "competition": [
+    [
+      "one2-w1",
+      2,
+      13
+    ],
+    [
+      "one3-w1",
+      1,
+      27
+    ],
+    [
+      "one4-w1",
+      1,
+      28
+    ],
+    [
+      "one5-w1",
+      0,
+      35
+    ],
+    [
+      "one1-d1",
+      0,
+      32
+    ],
+    [
+      "one3-d1",
+      3,
+      25
+    ],
+    [
+      "one4-d1",
+      1,
+      9
+    ],
+    [
+      "one5-d1",
+      0,
+      6
+    ]
+  ]
+}

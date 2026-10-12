@@ -1,0 +1,209 @@
+games walked: {'SSS large': 50, 'SSS other': 103, 'Vibing++ large': 52, 'Vibing++ other': 113, 'forgot large': 45, 'forgot other': 129, 'meow large': 111, 'meow other': 290, 'meow cand large': 34, 'meow cand other': 92, 'meow live large': 77, 'meow live other': 198, 'opp of meow large': 111, 'opp of meow other': 290, 'top3 large': 147, 'top3 other': 345}
+
+===== maps over 1,200 cells: our clock is round 150
+A. a free pearl next to the head is eaten (dragon 2-4, no enemy head in view), by whether a LONGER own dragon's head is within 9 cells of the pearl
+  rounds 0-149:   any | no longer own dragon near | a longer one near | ... of 3-4 | ... of 5-9 | ... of 10+
+     meow live     83% of  16079 |  85% of   6679 |  82% of   9400 |  81% of   5493 |  83% of   3833 |  74% of     74
+     meow cand     82% of   7512 |  84% of   3199 |  81% of   4313 |  80% of   2667 |  82% of   1625 |  81% of     21
+     meow          83% of  23591 |  85% of   9878 |  82% of  13713 |  81% of   8160 |  83% of   5458 |  76% of     95
+     opp of meow   85% of  36845 |  87% of  11245 |  84% of  25600 |  85% of  14350 |  84% of   9961 |  84% of   1289
+     Vibing++      88% of  15722 |  85% of   4490 |  89% of  11232 |  91% of   5448 |  87% of   4806 |  87% of    978
+     SSS           80% of  16154 |  84% of   5583 |  78% of  10571 |  80% of   6766 |  75% of   3494 |  75% of    311
+     forgot        94% of  16807 |  95% of   5460 |  94% of  11347 |  94% of   8948 |  95% of   2359 |  98% of     40
+     top3          87% of  48683 |  88% of  15533 |  87% of  33150 |  89% of  21162 |  85% of  10659 |  85% of   1329
+  rounds 150-399:   any | no longer own dragon near | a longer one near | ... of 3-4 | ... of 5-9 | ... of 10+
+     meow live     58% of  18312 |  73% of   4152 |  54% of  14160 |  60% of   3856 |  54% of   6739 |  46% of   3565
+     meow cand     58% of   8987 |  73% of   1997 |  54% of   6990 |  57% of   2014 |  56% of   3158 |  47% of   1818
+     meow          58% of  27299 |  73% of   6149 |  54% of  21150 |  59% of   5870 |  55% of   9897 |  47% of   5383
+     opp of meow   84% of  51417 |  85% of   4746 |  84% of  46671 |  84% of   5366 |  83% of  19797 |  85% of  21508
+     Vibing++      85% of  30994 |  85% of   4642 |  86% of  26352 |  90% of   6330 |  86% of  11837 |  82% of   8185
+     SSS           83% of  28512 |  88% of   4815 |  82% of  23697 |  84% of   7653 |  81% of   9805 |  82% of   6239
+     forgot        94% of  29240 |  93% of   6963 |  94% of  22277 |  94% of  11180 |  94% of   7498 |  95% of   3599
+     top3          87% of  88746 |  89% of  16420 |  87% of  72326 |  90% of  25163 |  86% of  29140 |  85% of  18023
+  rounds 400+:   any | no longer own dragon near | a longer one near | ... of 3-4 | ... of 5-9 | ... of 10+
+     meow live     57% of   6545 |  67% of   1594 |  54% of   4951 |  57% of   1273 |  55% of   1784 |  52% of   1894
+     meow cand     56% of   2865 |  67% of    759 |  52% of   2106 |  57% of    448 |  56% of    811 |  47% of    847
+     meow          57% of   9410 |  67% of   2353 |  54% of   7057 |  57% of   1721 |  56% of   2595 |  50% of   2741
+     opp of meow   79% of  11591 |  81% of   1605 |  79% of   9986 |  80% of   1209 |  76% of   2919 |  80% of   5858
+     Vibing++      71% of   7013 |  79% of   1104 |  70% of   5909 |  75% of    790 |  73% of   1889 |  67% of   3230
+     SSS           80% of   7728 |  82% of   1197 |  80% of   6531 |  78% of   1147 |  81% of   2687 |  80% of   2697
+     forgot        95% of   3340 |  94% of    523 |  95% of   2817 |  97% of    278 |  94% of    905 |  95% of   1634
+     top3          79% of  18081 |  83% of   2824 |  79% of  15257 |  79% of   2215 |  80% of   5481 |  77% of   7561
+A2. the same for a 2-long only / 3-long only / 4-long only, after the clock (any | none near | longer near)
+     L2 meow live     54% of   9675 |  73% of    799 |  52% of   8876
+     L2 opp of meow   84% of  20728 |  79% of    779 |  84% of  19949
+     L2 top3          88% of  41789 |  85% of   2240 |  88% of  39549
+     L3 meow live     57% of   6917 |  67% of   2554 |  52% of   4363
+     L3 opp of meow   83% of  19336 |  85% of   2123 |  83% of  17213
+     L3 top3          86% of  35745 |  90% of  10135 |  85% of  25610
+     L4 meow live     88% of   1720 |  92% of    799 |  85% of    921
+     L4 opp of meow   86% of  11353 |  89% of   1844 |  86% of   9509
+     L4 top3          89% of  11212 |  91% of   4045 |  88% of   7167
+B. pearls declined after the clock (first decline of each pearl): what became of them, per game
+     after  meow live     64.4 per game: eaten by own team within 10 rounds 35.5 (55%); eaten by the enemy within 10 rounds 3.1 (5%); still lying after 10 rounds 25.8 (40%)
+     after  meow cand     70.0 per game: eaten by own team within 10 rounds 39.4 (56%); eaten by the enemy within 10 rounds 3.7 (5%); still lying after 10 rounds 27.0 (39%)
+     after  opp of meow   59.8 per game: eaten by own team within 10 rounds 34.5 (58%); eaten by the enemy within 10 rounds 0.4 (1%); still lying after 10 rounds 24.8 (41%)
+     after  top3          65.3 per game: eaten by own team within 10 rounds 47.5 (73%); eaten by the enemy within 10 rounds 1.1 (2%); still lying after 10 rounds 16.8 (26%)
+     late   meow live     22.2 per game: eaten by own team within 10 rounds 12.2 (55%); eaten by the enemy within 10 rounds 0.7 (3%); still lying after 10 rounds 9.3 (42%)
+     late   meow cand     21.9 per game: eaten by own team within 10 rounds 11.5 (52%); eaten by the enemy within 10 rounds 0.8 (4%); still lying after 10 rounds 9.6 (44%)
+     late   opp of meow   16.4 per game: eaten by own team within 10 rounds 9.1 (56%); eaten by the enemy within 10 rounds 0.1 (1%); still lying after 10 rounds 7.2 (44%)
+     late   top3          19.5 per game: eaten by own team within 10 rounds 12.6 (64%); eaten by the enemy within 10 rounds 0.2 (1%); still lying after 10 rounds 6.8 (35%)
+C. a dragon of exactly 4 / of 5-9 splits (no enemy head in view): share of such turns;  any | it is the longest own dragon within 9 cells | it is not
+  rounds 0-149, length 4:
+     meow live     42% of  10368 |  49% of   7133 |  25% of   3235
+     meow cand     41% of   4913 |  49% of   3518 |  23% of   1395
+     meow          42% of  15281 |  49% of  10651 |  25% of   4630
+     opp of meow   23% of  42967 |  36% of  21227 |   9% of  21740
+     Vibing++      47% of  11006 |  56% of   6119 |  36% of   4887
+     SSS           31% of  13717 |  48% of   7654 |   9% of   6063
+     forgot        53% of  11138 |  59% of   8952 |  26% of   2186
+     top3          43% of  35861 |  55% of  22725 |  22% of  13136
+  rounds 0-149, length 5-9:
+     meow live     37% of   9198 |  42% of   6710 |  24% of   2488
+     meow cand     36% of   3906 |  39% of   2982 |  26% of    924
+     meow          37% of  13104 |  41% of   9692 |  24% of   3412
+     opp of meow   12% of  35860 |  15% of  23299 |   7% of  12561
+     Vibing++      26% of   7615 |  29% of   5329 |  18% of   2286
+     SSS           12% of  11734 |  16% of   7777 |   5% of   3957
+     forgot        32% of   3275 |  35% of   2742 |  13% of    533
+     top3          20% of  22624 |  23% of  15848 |  10% of   6776
+  rounds 150-399, length 4:
+     meow live     26% of  12653 |  22% of   7084 |  33% of   5569
+     meow cand     26% of   6590 |  21% of   3742 |  33% of   2848
+     meow          26% of  19243 |  21% of  10826 |  33% of   8417
+     opp of meow    5% of 154715 |   6% of  26193 |   5% of 128522
+     Vibing++      17% of  45721 |  22% of  13704 |  15% of  32017
+     SSS           16% of  42717 |  22% of  15905 |  12% of  26812
+     forgot        24% of  31455 |  29% of  17332 |  18% of  14123
+     top3          18% of 119893 |  25% of  46941 |  14% of  72952
+  rounds 150-399, length 5-9:
+     meow live      5% of  45126 |   5% of  31322 |   6% of  13804
+     meow cand      5% of  20008 |   4% of  14368 |   6% of   5640
+     meow           5% of  65134 |   5% of  45690 |   6% of  19444
+     opp of meow    3% of 293846 |   3% of 107487 |   4% of 186359
+     Vibing++      10% of  54092 |   9% of  26918 |  11% of  27174
+     SSS            6% of  48766 |   6% of  29063 |   7% of  19703
+     forgot        12% of  24945 |  12% of  17219 |  10% of   7726
+     top3           9% of 127803 |   9% of  73200 |   9% of  54603
+  rounds 400+, length 4:
+     meow live     33% of   3645 |  25% of   2103 |  44% of   1542
+     meow cand     28% of   1712 |  20% of   1027 |  41% of    685
+     meow          32% of   5357 |  24% of   3130 |  43% of   2227
+     opp of meow    6% of  28757 |   9% of   5147 |   5% of  23610
+     Vibing++       9% of  12398 |   5% of   4194 |  10% of   8204
+     SSS           10% of  14162 |  11% of   4058 |  10% of  10104
+     forgot         9% of   6742 |   4% of   2319 |  12% of   4423
+     top3           9% of  33302 |   7% of  10571 |  10% of  22731
+  rounds 400+, length 5-9:
+     meow live      5% of  13972 |   4% of   9784 |   6% of   4188
+     meow cand      5% of   7172 |   5% of   4815 |   6% of   2357
+     meow           5% of  21144 |   4% of  14599 |   6% of   6545
+     opp of meow    3% of  65417 |   3% of  19743 |   3% of  45674
+     Vibing++       7% of  18490 |   5% of   8784 |   8% of   9706
+     SSS            3% of  22952 |   3% of  11948 |   4% of  11004
+     forgot         8% of  11944 |   5% of   6757 |  12% of   5187
+     top3           6% of  53386 |   4% of  27489 |   7% of  25897
+
+===== maps of 1,200 cells or fewer: our clock is round 300
+A. a free pearl next to the head is eaten (dragon 2-4, no enemy head in view), by whether a LONGER own dragon's head is within 9 cells of the pearl
+  rounds 0-299:   any | no longer own dragon near | a longer one near | ... of 3-4 | ... of 5-9 | ... of 10+
+     meow live     88% of  28107 |  89% of  10697 |  87% of  17410 |  88% of  14109 |  84% of   3278 |  91% of     23
+     meow cand     88% of  12808 |  90% of   4814 |  87% of   7994 |  87% of   6441 |  84% of   1548 | 100% of      5
+     meow          88% of  40915 |  90% of  15511 |  87% of  25404 |  87% of  20550 |  84% of   4826 |  93% of     28
+     opp of meow   84% of  56510 |  86% of  17731 |  83% of  38779 |  83% of  27174 |  82% of  10623 |  87% of    982
+     Vibing++      88% of  24008 |  86% of   7284 |  89% of  16724 |  89% of  10608 |  87% of   5187 |  88% of    929
+     SSS           87% of  20318 |  88% of   6986 |  86% of  13332 |  86% of  10374 |  86% of   2902 |  91% of     56
+     forgot        93% of  24567 |  95% of   8075 |  92% of  16492 |  92% of  13556 |  91% of   2092 |  93% of    844
+     top3          89% of  68893 |  90% of  22345 |  89% of  46548 |  89% of  34538 |  88% of  10181 |  90% of   1829
+  rounds 300-399:   any | no longer own dragon near | a longer one near | ... of 3-4 | ... of 5-9 | ... of 10+
+     meow live     53% of   8202 |  67% of   1595 |  50% of   6607 |  57% of   2719 |  50% of   2684 |  34% of   1204
+     meow cand     55% of   4292 |  73% of    804 |  51% of   3488 |  57% of   1438 |  49% of   1447 |  40% of    603
+     meow          54% of  12494 |  69% of   2399 |  50% of  10095 |  57% of   4157 |  50% of   4131 |  36% of   1807
+     opp of meow   78% of  17509 |  80% of   3180 |  78% of  14329 |  74% of   6321 |  79% of   4668 |  84% of   3340
+     Vibing++      88% of   7700 |  85% of   1370 |  88% of   6330 |  89% of   2640 |  90% of   2473 |  83% of   1217
+     SSS           80% of   5455 |  77% of   1044 |  81% of   4411 |  78% of   1786 |  82% of   1343 |  84% of   1282
+     forgot        92% of   6332 |  92% of   1313 |  92% of   5019 |  93% of   2403 |  91% of   1297 |  92% of   1319
+     top3          87% of  19487 |  85% of   3727 |  87% of  15760 |  88% of   6829 |  88% of   5113 |  87% of   3818
+  rounds 400+:   any | no longer own dragon near | a longer one near | ... of 3-4 | ... of 5-9 | ... of 10+
+     meow live     47% of   6252 |  57% of   1563 |  44% of   4689 |  53% of   1394 |  47% of   1094 |  38% of   2201
+     meow cand     50% of   3194 |  59% of    710 |  47% of   2484 |  56% of    727 |  51% of    633 |  39% of   1124
+     meow          48% of   9446 |  57% of   2273 |  45% of   7173 |  54% of   2121 |  49% of   1727 |  38% of   3325
+     opp of meow   67% of   8347 |  70% of   1444 |  67% of   6903 |  55% of   2320 |  66% of   2109 |  78% of   2474
+     Vibing++      79% of   5185 |  79% of    781 |  79% of   4404 |  82% of    991 |  80% of   1580 |  76% of   1833
+     SSS           80% of   2905 |  73% of    495 |  81% of   2410 |  79% of    479 |  82% of    821 |  81% of   1110
+     forgot        93% of   2456 |  86% of    403 |  94% of   2053 |  94% of    324 |  93% of    586 |  95% of   1143
+     top3          82% of  10546 |  79% of   1679 |  83% of   8867 |  83% of   1794 |  83% of   2987 |  83% of   4086
+A2. the same for a 2-long only / 3-long only / 4-long only, after the clock (any | none near | longer near)
+     L2 meow live     50% of   4744 |  63% of    188 |  50% of   4556
+     L2 opp of meow   75% of   8785 |  65% of    250 |  76% of   8535
+     L2 top3          87% of   9774 |  72% of    288 |  88% of   9486
+     L3 meow live     55% of   3138 |  64% of   1200 |  49% of   1938
+     L3 opp of meow   80% of   7131 |  78% of   2237 |  80% of   4894
+     L3 top3          86% of   8117 |  85% of   2710 |  86% of   5407
+     L4 meow live     88% of    320 |  88% of    207 |  87% of    113
+     L4 opp of meow   89% of   1593 |  91% of    693 |  87% of    900
+     L4 top3          91% of   1596 |  90% of    729 |  91% of    867
+B. pearls declined after the clock (first decline of each pearl): what became of them, per game
+     after  meow live     10.3 per game: eaten by own team within 10 rounds 5.8 (56%); eaten by the enemy within 10 rounds 0.1 (1%); still lying after 10 rounds 4.4 (42%)
+     after  meow cand     11.4 per game: eaten by own team within 10 rounds 6.5 (57%); eaten by the enemy within 10 rounds 0.1 (1%); still lying after 10 rounds 4.8 (42%)
+     after  opp of meow    9.2 per game: eaten by own team within 10 rounds 4.8 (52%); eaten by the enemy within 10 rounds 0.0 (0%); still lying after 10 rounds 4.4 (47%)
+     after  top3           5.5 per game: eaten by own team within 10 rounds 3.7 (67%); eaten by the enemy within 10 rounds 0.0 (1%); still lying after 10 rounds 1.8 (32%)
+     late   meow live      9.3 per game: eaten by own team within 10 rounds 4.9 (53%); eaten by the enemy within 10 rounds 0.1 (2%); still lying after 10 rounds 4.3 (46%)
+     late   meow cand      9.6 per game: eaten by own team within 10 rounds 5.5 (57%); eaten by the enemy within 10 rounds 0.0 (0%); still lying after 10 rounds 4.1 (43%)
+     late   opp of meow    5.6 per game: eaten by own team within 10 rounds 2.1 (37%); eaten by the enemy within 10 rounds 0.0 (0%); still lying after 10 rounds 3.6 (63%)
+     late   top3           3.8 per game: eaten by own team within 10 rounds 2.1 (55%); eaten by the enemy within 10 rounds 0.0 (0%); still lying after 10 rounds 1.7 (44%)
+C. a dragon of exactly 4 / of 5-9 splits (no enemy head in view): share of such turns;  any | it is the longest own dragon within 9 cells | it is not
+  rounds 0-299, length 4:
+     meow live     54% of  16793 |  54% of  14730 |  49% of   2063
+     meow cand     54% of   7624 |  54% of   6733 |  52% of    891
+     meow          54% of  24417 |  54% of  21463 |  50% of   2954
+     opp of meow   33% of  50117 |  44% of  31036 |  15% of  19081
+     Vibing++      48% of  16573 |  60% of  10359 |  28% of   6214
+     SSS           43% of  14073 |  50% of  10663 |  22% of   3410
+     forgot        59% of  14391 |  61% of  12559 |  47% of   1832
+     top3          50% of  45037 |  57% of  33581 |  29% of  11456
+  rounds 0-299, length 5-9:
+     meow live     52% of   6320 |  52% of   6097 |  42% of    223
+     meow cand     55% of   2997 |  55% of   2896 |  50% of    101
+     meow          53% of   9317 |  53% of   8993 |  44% of    324
+     opp of meow   25% of  24547 |  29% of  18199 |  12% of   6348
+     Vibing++      27% of  11727 |  32% of   7838 |  16% of   3889
+     SSS           34% of   6975 |  35% of   6395 |  15% of    580
+     forgot        63% of   3090 |  63% of   2877 |  58% of    213
+     top3          34% of  21792 |  38% of  17110 |  18% of   4682
+  rounds 300-399, length 4:
+     meow live     40% of   4013 |  34% of   2504 |  50% of   1509
+     meow cand     39% of   2225 |  34% of   1351 |  47% of    874
+     meow          40% of   6238 |  34% of   3855 |  49% of   2383
+     opp of meow   22% of  19124 |  28% of   8242 |  18% of  10882
+     Vibing++      28% of   8079 |  41% of   3022 |  20% of   5057
+     SSS           33% of   4646 |  32% of   2547 |  34% of   2099
+     forgot        23% of   7656 |  28% of   3977 |  17% of   3679
+     top3          27% of  20381 |  33% of   9546 |  22% of  10835
+  rounds 300-399, length 5-9:
+     meow live      6% of   6629 |   7% of   4859 |   6% of   1770
+     meow cand      6% of   4196 |   5% of   2925 |   6% of   1271
+     meow           6% of  10825 |   6% of   7784 |   6% of   3041
+     opp of meow   13% of  15798 |  14% of   9563 |  12% of   6235
+     Vibing++      16% of   7643 |  19% of   4103 |  14% of   3540
+     SSS           11% of   3752 |  11% of   2906 |  14% of    846
+     forgot        14% of   5336 |  15% of   2830 |  12% of   2506
+     top3          15% of  16731 |  15% of   9839 |  13% of   6892
+  rounds 400+, length 4:
+     meow live     38% of   2807 |  31% of   1639 |  49% of   1168
+     meow cand     45% of   1234 |  44% of    627 |  47% of    607
+     meow          40% of   4041 |  34% of   2266 |  48% of   1775
+     opp of meow    6% of  16256 |   8% of   6168 |   5% of  10088
+     Vibing++      19% of   6244 |  20% of   1976 |  19% of   4268
+     SSS           10% of   5439 |  11% of   1809 |   9% of   3630
+     forgot         8% of   6195 |   6% of   2468 |   9% of   3727
+     top3          12% of  17878 |  12% of   6253 |  12% of  11625
+  rounds 400+, length 5-9:
+     meow live      4% of   7041 |   4% of   4437 |   4% of   2604
+     meow cand      5% of   3211 |   5% of   1743 |   6% of   1468
+     meow           4% of  10252 |   4% of   6180 |   5% of   4072
+     opp of meow    6% of  19082 |   7% of   8552 |   5% of  10530
+     Vibing++      14% of   7326 |  13% of   3579 |  15% of   3747
+     SSS            5% of   6850 |   5% of   3417 |   4% of   3433
+     forgot         9% of   6878 |   7% of   3021 |  10% of   3857
+     top3           9% of  21054 |   9% of  10017 |  10% of  11037

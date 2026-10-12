@@ -1,0 +1,64 @@
+[
+ {
+  "id": "F38",
+  "claim": "Our queen's deaths by wall or own body happen on narrow tiles; per queen turn that starts on a narrow tile in raw rounds 101-200 she dies that way about three times as often as their queens; and on Maze and weakhold she starts a turn on a narrow tile two to four times as often as their queens. It is not a property of corridor-heavy layouts.",
+  "how_to_count": "Games: our_code main or v31, layouts with queen_spawn_dead_end false (join on map_key). Queen = lowest initial dragon id of each side. At every turnStart of a living queen take her head tile on the rebuilt board. Open sides = number of the four edges of that tile that are not kelp (a portal edge counts as open; dragons are ignored; wrap applies). Narrow tile = two or fewer open sides; dead-end tile = one. Window by the raw round of the turn: 0-100, 101-200, 201-300, 301 on. (1) Share of queen turns on a narrow tile, per side, r0-200, for main Maze #1, main weakhold #1, v31 Maze #1, v31 weakhold #1; the same pooled over Tower Defense #1, Trauma #1 and Devil #1 (both codes); and per layout. (2) For every queen death with engine reason 0 (wall) or 1 (own body) whose raw round is 101-200: open sides of her head tile at the start of her last turn. Count deaths that start on a narrow tile and divide by that side's queen turns on narrow tiles in r101-200 (per 1,000), main and v31 apart and pooled; also the two halves of main (before and from 2026-10-06T14:48:15Z). (3) Seen after my count, please recount and judge: among narrow-tile turn starts in r101-200, those with a body tile of another dragon of her own team on a neighbour tile (the tile across each open side; follow portals), per side; and the deaths in (2) split into own dragon beside her, dead-end tile, other. Please also check whether the per-turn gap survives leaving out Portals #1 and whether any one opponent carries it.",
+  "your_numbers": {
+   "share_narrow_r0_200": {
+    "main Maze": "ours 0.138 of 4035, theirs 0.032 of 4209",
+    "main weakhold": "0.337 of 2437, 0.138 of 2511",
+    "v31 Maze": "0.187 of 3704, 0.088 of 3874",
+    "v31 weakhold": "0.294 of 3270, 0.080 of 4104",
+    "Tower Defense, Trauma, Devil pooled both codes": "0.045 of 19065, 0.061 of 20318",
+    "all free main": "0.076 of 36701, 0.053 of 37147",
+    "all free v31": "0.083 of 43792, 0.055 of 46697"
+   },
+   "deaths_r101_200": {
+    "main ours": "24 deaths, 23 from a narrow tile, 1,068 narrow-tile turns (21.5 per 1,000)",
+    "main theirs": "2 deaths, 2 from narrow, 615 turns (3.3)",
+    "v31 ours": "37 deaths, 35 from narrow, 966 turns (36.2)",
+    "v31 theirs": "14 deaths, 11 from narrow, 712 turns (15.5)",
+    "pooled": "58 in 2,034 (28.5) against 13 in 1,327 (9.8)",
+    "open tiles pooled": "3 deaths in 24,696 turns against 3 in 28,746",
+    "main halves": "6 in 294 against 1 in 125; 17 in 774 against 1 in 490",
+    "without Portals pooled": "50 in 1,990 against 10 in 1,253"
+   },
+   "own_dragon_beside_on_narrow_tile_r101_200": "turn starts: ours 41 (17 main, 24 v31), theirs 8 (1 and 7); deaths from narrow tiles with an own dragon beside her: ours 31 (14 and 17), theirs 2; on a dead-end tile: ours 25 (8 and 17), theirs 9 (1 and 8)",
+   "all_rounds_main": "wall or own-body queen deaths ours 65, 60 from a narrow tile; theirs 32, 30 from a narrow tile",
+   "games_with_such_a_death": "main 23 games, 12 won; v31 35 games, 20 won"
+  },
+  "slices": [
+   "main and v31",
+   "earlier and later half of main",
+   "Maze and weakhold as two layouts"
+  ]
+ },
+ {
+  "id": "F39",
+  "claim": "Over turns spent as the only living queen, a short enemy head (length 4 or less) is within 6 path steps of our queen two and a half to four times as often as a short head of ours is within 6 path steps of theirs, and our lone queen has fewer heads of her own team within 5 tiles.",
+  "how_to_count": "Games: our_code main or v31, layouts with queen_spawn_dead_end false. Queen = lowest initial dragon id of each side. A queen turn is a lone turn when the other side's queen died in an earlier event of the game (any earlier round or earlier in the same round). At the turnStart of each lone turn: (1) breadth-first search from her head over open edges and portal edges (kelp blocks, dragons ignored, wrap applies) to depth 6; flag the turn if any living enemy dragon of body length 4 or less has its head on a reached tile (distance 0 to 6). (2) count living dragons of her own team other than herself whose head is within 5 tiles of her head by wrapped Manhattan distance (no kelp, no portals). Report per side: lone turns, flagged turns, sum and mean of (2), turns with (2) equal to 0. Sets: full games (last_round 499), all endings, and level games (curves 100 total: min at least 0.8 of max), main and v31 apart; main by opponent rating band; by 50-round bins since the other queen died. Base rate: the same flag over queen turns with both queens alive, by window r0-100, r101-200, r201-300, r301 on. Please judge whether the gap is more than the two sides simply having different numbers of short dragons alive at those turns, and whether one opponent or layout carries it.",
+  "your_numbers": {
+   "full_games": {
+    "main": "ours 0.256 of 7,549 lone turns, theirs 0.102 of 18,226; own heads within 5 mean 1.72 against 2.27; none within 5 in 0.307 against 0.240",
+    "v31": "ours 0.241 of 9,172, theirs 0.055 of 23,941; own heads 1.49 against 2.56; none 0.319 against 0.212"
+   },
+   "all_endings": {
+    "main": "0.260 of 13,644 against 0.140 of 21,033; own heads 1.71 against 2.14",
+    "v31": "0.278 of 14,233 against 0.080 of 29,474; own heads 1.56 against 2.50"
+   },
+   "level_games_all_endings": {
+    "pooled": "0.268 of 5,810 against 0.090 of 15,780; own heads 1.69 against 2.70",
+    "main": "0.318 of 2,293 against 0.117 of 6,850",
+    "v31": "0.235 of 3,517 against 0.070 of 8,930"
+   },
+   "main_full_by_band": "1700-1899 0.186 of 2,563 against 0.135 of 6,030; 1900-2099 0.294 of 4,660 against 0.082 of 9,209; 2100+ 0.255 of 326 against 0.100 of 2,987",
+   "both_queens_alive_base_rate_main": "r0-100 0.159 against 0.130; r101-200 0.118 against 0.082; r201-300 0.060 against 0.017; r301 on 0.113 against 0.023",
+   "both_queens_alive_base_rate_v31": "0.137 against 0.136; 0.222 against 0.166; 0.155 against 0.125; 0.084 against 0.062"
+  },
+  "slices": [
+   "main and v31",
+   "full games and level games",
+   "opponent rating bands on main"
+  ]
+ }
+]
