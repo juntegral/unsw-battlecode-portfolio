@@ -309,7 +309,7 @@ never by going back to an old bot. The builds from then on are "one1", "one2", .
 Sources: `S/data/guide/px-live-one*.txt` (one per version), `S/docs/SESSION-STATE.md` lines 444-858,
 `S/data/online/smoke/versions.tsv`, `git -C B log`. Ladder standing during the night: 51st / 2,018 at 05:23, 27th /
 2,158 at 09:01, 41st / 2,092 at the deadline [M, lines 681, 861]. By jun's account the team went out in the
-quarterfinal on 10-10; the bracket games were not available to me.
+quarterfinal on 10-10; the bracket games were not available to me. [Corrected 2026-11-09: round of 64, not quarterfinal, per the team repository's public README.]
 
 ### 3.3 Reversals of our own switches, and what each cost
 

@@ -1,6 +1,6 @@
 # Card loop
 
-My files from the team's private repository: the loop that took idea cards from the GitHub board, built them behind
+My files from the team's repository (public): the loop that took idea cards from the GitHub board, built them behind
 default-off switches, tested them and brought the decision back to a person. Only files whose every commit is mine
 are here; the team's bot and my teammates' scripts are not.
 

@@ -10,5 +10,8 @@ Written for this repository, on top of the project record.
   3. [Default-off switches, proven by hash](case-studies/03-switches-proven-by-hash.md)
   4. [Measurement, and learning the noise the hard way](case-studies/04-measurement-and-noise.md)
   5. [Running AI sessions as a workforce](case-studies/05-ai-workforce.md)
+- [How I use AI: six rules and whether they held](HOW-I-USE-AI.md) ([한국어](HOW-I-USE-AI.ko.md))
+- [The last two days: where control was loosened, and what it cost](LAST-TWO-DAYS.md) ([한국어](LAST-TWO-DAYS.ko.md))
+- [Changelog of corrections made after publication](CHANGELOG.md)
 
 The numbers in these pages are taken from the [write-up](../writeup), which gives the source of each.

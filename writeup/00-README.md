@@ -3,7 +3,7 @@
 > **Reading this in the public portfolio.** These chapters were written for the private project archive and are
 > published with personal details and private chat removed. Paths are quoted as they were in the original
 > repositories: `S/...` (or a bare `tools/...`, `docs/...`, `data/...`, `archive/...`) is [`workbench/`](../workbench)
-> here, `R/...` is [`local-rig/`](../local-rig), and `B/...` is the team's private repository, of which my files are
+> here, `R/...` is [`local-rig/`](../local-rig), and `B/...` is the team's repository (public), of which my files are
 > in [`card-loop/`](../card-loop) and the final bot in [`final-bot/`](../final-bot). This folder itself was
 > `docs/retro/`. Some cited sources (the channel mirror, replays, bulk data, a few private notes) are not published.
 
@@ -22,9 +22,11 @@ we learnt that would help in the next bot-programming contest, and a map of wher
   before the deadline. jun ran the tools, the tests and the AI sessions; the base bot was QWQ's; Zhe supplied most of
   the strategic reads.
 - The final bot is "one21" (submission 21857, uploaded 14:49 on the last day): one C++ file with 49 switch values.
-  At the deadline it was rated 2092, rank 41; jun reported a final seed of 39.
+  At the deadline it was rated 2092, rank 41; jun reported a final seed of 39. [Corrected 2026-11-09: the team
+  repository's public README (2026-10-15) gives final rank 38 and seed 36.]
 - The team was knocked out on 2026-10-10. jun reports a quarterfinal exit; the bracket, the opponent and the scores
-  are not in any file here (see "Gaps" below).
+  are not in any file here (see "Gaps" below). [Corrected 2026-11-09: that README states a loss in the round of 64;
+  jun's quarterfinal report is replaced by it.]
 
 ## Chapters
 
@@ -117,7 +119,9 @@ To restore one: download its parts, then run `cat online-top1.tar.xz.part-* | xz
 
 - **The bracket.** Which round ended the run, the opponent, the maps and the scores are not in the files. The channel
   mirror has no message between the evening of 10-09 and the afternoon of 10-10. jun's statement (quarterfinal exit)
-  is the only source.
+  is the only source. [Corrected 2026-11-09: the team repository's public README (2026-10-15,
+  [link](https://github.com/forrest-gan2005/battlecode/blob/main/README.md)) states the round (64) and the seed (36), replacing jun's statement. Maps and per-game scores are
+  still not in the files.]
 - **The last three versions were never checked online.** No game of one19, one20 or one21 had been downloaded by the
   deadline; they were shipped on local checks ("plays the same games as the version before") and code review.
 - **A scene flagged by jun and Zhe at the end** (game 1532570, round 469, our side) was not traced.

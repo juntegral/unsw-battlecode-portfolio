@@ -25,7 +25,8 @@ maps nobody had seen, decided who reached the finals (`archive/claude-memory/qua
 days, uploaded its final bot "one21" (submission 21857) at 14:49:38 on 10-09, about ten minutes before the deadline, stood
 41st at 2092 when submissions closed, and was seeded 39th. The result of the bracket match(es) is not in any file in
 this repository. Not recorded; jun reports a quarterfinal exit on 2026-10-10. See section 6, item 1 for what the chat
-mirror does and does not say.
+mirror does and does not say. [Corrected 2026-11-09: the team repository's public README (2026-10-15) gives seed 36,
+final rank 38 and a loss in the round of 64.]
 
 **Teams and people**
 
@@ -64,7 +65,7 @@ mirror does and does not say.
 - Ranked battles our collector downloaded from 10-08 22:41 to the deadline: 69, of which we won 33 and lost 36; plus
   62 unranked test battles, 19 won and 43 lost (`data/online/live-one1/index.txt`, counted by me; the unranked ones
   were our own test games against named teams).
-- Final seed 39 (jun, Discord 10-09 19:19).
+- Final seed 39 (jun, Discord 10-09 19:19). [Corrected 2026-11-09: seed 36 in the team repository's public README.]
 
 **What the dates show (my reading, offered as lessons)**
 
@@ -347,7 +348,9 @@ games online" (10-08 19:59) and "one model, forward only" (10-08 22:19).
    The exchange can be read as a first-round loss (the "if we reach the round of 32" condition was not met) or
    as something else; the screenshot is not in the files. The qualifier format (section 5.1) says eight
    quarterfinalists qualify and round-of-16 losers play a second-chance bracket; nothing in the record says whether
-   the second-chance bracket was played or which round ended the run.
+   the second-chance bracket was played or which round ended the run. **[Corrected 2026-11-09:** the team repository's
+   public README (2026-10-15) states a loss in the round of 64 with seed 36. That replaces jun's quarterfinal report and
+   is consistent with the first reading above.**]**
 2. **Which bot was in the final submission.** Server records: active 21857 (one21) at 14:49:42, confirmed again at
    14:52:49 and 14:59:42 (SESSION-STATE 858, 861). In chat at 15:00 jun: "that bot isnt 21 maybe queued 19 or 20"; Zhe, with
    two screenshots, 15:01 and 15:02: "its 20"; QWQ: "nvm we submit 21". My reading: the screenshots show the
@@ -371,7 +374,7 @@ games online" (10-08 19:59) and "one model, forward only" (10-08 22:19).
    position is not stated, though the park log shows our v47 at 1953 then. Treated as a reference, not our rank.
 9. **Final rating after the deadline.** jun's 15:12 screenshot and a number "103" are mentioned in chat; the rating
    itself is not recorded. The seed (39) is recorded, but how the seed was computed (final rating, autoscrim results)
-   is not; Zhe's claim that seeds follow the final rating is unconfirmed (HANDOVER-2026-10-07 s.12).
+   is not; Zhe's claim that seeds follow the final rating is unconfirmed (HANDOVER-2026-10-07 s.12). [Corrected 2026-11-09: the team repository's public README gives seed 36; the 39 above is jun's message of 10-09 19:19.]
 10. **Claims of "strongest bot".** At 14:57 jun wrote in #meow that every change had been confirmed to improve the
     bot. What was verified for one19 to one21: local games identical to the previous version for the changed paths and
     audits of control flow (SESSION-STATE lines 845 to 862). No online game of those three versions is on disk. The
@@ -381,7 +384,7 @@ games online" (10-08 19:59) and "one model, forward only" (10-08 22:19).
 12. **Discord mirror duplicates.** The mirror sometimes stores a message twice with the same id (HANDOVER-2026-10-07
     s.10); counts of messages are not reliable, times are.
 13. **Bracket size.** The number of teams and rounds in the seeded bracket is not recorded in any file I read, so a seed
-    of 39 cannot be turned into a first opponent or a number of rounds to the quarterfinal.
+    of 39 cannot be turned into a first opponent or a number of rounds to the quarterfinal. [Corrected 2026-11-09: the team repository's public README names a round of 256, a round of 128 and a round of 64; the number of teams on the ladder is still not recorded.]
 
 ---
 
