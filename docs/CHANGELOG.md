@@ -17,3 +17,5 @@ Additions that do not change a stated fact (new pages, links, the start-here blo
 | 2026-11-09 | `writeup/00-README.md`, `writeup/01-playbook.md`, `writeup/03-bot-design.md`, `writeup/06-timeline.md` | "jun reports a quarterfinal exit", "seed 39", "the round is not recorded" → each left in place with a bracketed correction: round of 64, seed 36, final rank 38 | Same record |
 | 2026-11-09 | `README.md`, `README.ko.md`, `writeup/00-README.md`, `card-loop/README.md` | The team repository described as private → public | `https://github.com/forrest-gan2005/battlecode` opens without login (checked 2026-11-09) |
 | 2026-11-09 | `writeup/05-ai-workforce.md` section 4 | "who applied the change at 22:13 is not recorded" → jun confirmed with "ㄱㄱ" at 22:13 and the lead session edited `tools/smoke.py` | `workbench/docs/SESSION-STATE.md` line 431 |
+
+Provenance: compiled by an AI session under my direction from the records linked on this page; quotes are verbatim.

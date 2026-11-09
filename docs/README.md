@@ -12,6 +12,8 @@ Written for this repository, on top of the project record.
   5. [Running AI sessions as a workforce](case-studies/05-ai-workforce.md)
 - [How I use AI: six rules and whether they held](HOW-I-USE-AI.md) ([한국어](HOW-I-USE-AI.ko.md))
 - [The last two days: where control was loosened, and what it cost](LAST-TWO-DAYS.md) ([한국어](LAST-TWO-DAYS.ko.md))
+- [Who made what: direct work and AI work, with the evidence](AUTHORSHIP.md)
+- [Known issues: code problems and missing project files](KNOWN-ISSUES.md)
 - [Changelog of corrections made after publication](CHANGELOG.md)
 
 The numbers in these pages are taken from the [write-up](../writeup), which gives the source of each.

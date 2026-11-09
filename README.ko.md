@@ -191,6 +191,8 @@ Claude 세션이 위임을 받아 올렸다([docs/LAST-TWO-DAYS.ko.md](docs/LAST
 | [`lineage-loop/`](lineage-loop) | 비공개 저장소 `unsw-battlecode-2026` | 초기 계통 루프와 봇 |
 | [`first-bot/`](first-bot) | 비공개 저장소 `unsw-heuristic` (커밋 133개) | 첫 봇, 연구 노트, 실험 스크립트 |
 
+코드의 알려진 문제와 없는 프로젝트 파일(라이선스, 의존성 목록, CI): [docs/KNOWN-ISSUES.md](docs/KNOWN-ISSUES.md)(영어).
+
 처음 읽을 때 필요 없는 것: `workbench/data/`(4,777개 파일)와 `workbench/exp/`(2,568개 파일)의 분석가 스크립트, 지시문,
 시간별 보고서, 그리고 중복 파일(추적 파일 9,888개 중 1,090개는 다른 파일과 내용이 완전히 같은 사본이다. 내용 해시로 센
 값).
@@ -216,6 +218,7 @@ Claude 세션이 위임을 받아 올렸다([docs/LAST-TWO-DAYS.ko.md](docs/LAST
   도구가 포함된다. 팀 저장소 이력에서 이 파일들을 건드린 커밋 67개 중 61개에 `Co-Authored-By: Claude` 표기가 있고, 나머지
   6개는 러너가 스스로 만드는 "Prepare candidate" 커밋이다([`runner.py`](card-loop/work/loop/runner.py) 843행. 85행의
   주석은 도구가 "jun의 로그인으로 게시한다"고 적었다).
+- 항목별로 누가 무엇을 만들었는지와 커밋·세션 근거: [docs/AUTHORSHIP.md](docs/AUTHORSHIP.md)(영어).
 - 이 저장소의 코드, 분석, 글의 상당 부분은 내 지시문에 따라 AI 에이전트가 만들었다. 무엇을 무엇으로 확인했는지는
   [회고 05 3절](writeup/05-ai-workforce.md#3-verification-confident-reports-that-were-wrong)에 있다: 스크립트(바이너리 해시
   동일성, 서버 사본과 업로드 폴더 비교, 리플레이에서 읽은 봇 id), 핵심 숫자 하나를 다시 세는 리드 AI 세션, 마지막 후보를

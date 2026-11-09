@@ -203,6 +203,9 @@ Each of these has a section with numbers in [chapter 01](writeup/01-playbook.md)
 | [`lineage-loop/`](lineage-loop) | private repo `unsw-battlecode-2026` | Earlier lineage loop and its bots |
 | [`first-bot/`](first-bot) | private repo `unsw-heuristic` (133 commits) | First bot, research notes, experiment scripts |
 
+Known problems with the code and missing project files (license, dependency list, CI):
+[docs/KNOWN-ISSUES.md](docs/KNOWN-ISSUES.md).
+
 Not needed for a first read: the analysts' scripts, briefs and per-hour reports under `workbench/data/` (4,777 files)
 and `workbench/exp/` (2,568 files), and duplicate files (1,090 of the 9,888 tracked files are exact copies of another
 file, counted by content hash).
@@ -233,6 +236,7 @@ Each folder keeps the layout of the repository it came from, so the paths quoted
   carry a `Co-Authored-By: Claude` trailer, and the other 6 are "Prepare candidate" commits that the runner creates
   itself ([`runner.py`](card-loop/work/loop/runner.py) line 843; a comment at line 85 notes that tools "post under
   jun's login").
+- Who made what, item by item, with the commit and session evidence: [docs/AUTHORSHIP.md](docs/AUTHORSHIP.md).
 - Much of the code, analysis and prose in this repository was produced by AI agents working to my briefs. What was
   checked, and by what, is recorded in [write-up 05, section 3](writeup/05-ai-workforce.md#3-verification-confident-reports-that-were-wrong):
   scripts (binary hash identity, comparison of the server copy with the uploaded folder, the bot id read from the
